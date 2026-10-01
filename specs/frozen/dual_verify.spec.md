@@ -111,9 +111,12 @@ statuses 内代理 id 按码点升序）、**同输入同输出**。与 grading 
 - **N2 空白折叠**：内部空白串（`\s+` 语义）折叠为单个半角空格，再去首尾空白。
 - **N3 尾部剥离**：从右端循环删除 `{'。', '、', ',', '.', ';', '!', '?'}` 及空白字符
   （只剥尾部、不动内部；`"3或7。"`→`"3或7"`、`"　全程　。"`→`"全程"`）。
-- **N4 千分位逗号删除**：删除所有「左侧是 ASCII 数字 `0-9`、右侧恰为 3 位 ASCII 数字
-  （第 4 位仍是数字则不算）」的逗号（`"1,234"`→`"1234"`；保留坐标 `"(4,1)"`、
-  `"12,34"`、`"1,2345"`）。
+- **N4 千分位逗号删除**：删除所有满足「紧邻左侧为 ASCII 数字 `0-9`、紧邻右侧恰为 3
+  个 ASCII 数字、且其后一位（若存在）不是 ASCII 数字」的 ASCII 逗号（`"1,234"`→`"1234"`；
+  保留坐标 `"(4,1)"`——右侧仅 1 位、`"12,34"`——右侧仅 2 位、`"1,2345"`——右侧 4 位数字
+  判错不予剥离；`"1,234x"` 与 `"1,234"` 右侧 3 位数字后到串尾，`x` 非数字故剥离）。
+  等价于正则 `(?<=[0-9]),(?=[0-9]{3}(?![0-9]))`，自左向右非重叠匹配（`re.sub` 单次
+  扫描后结果不再二次扫描）。
 - **N5 小写化**：`str.lower()`。
 
 本函数与 `grading.normalize_answer` 在规则表上完全一致：契约测试以 13 例电池逐条断言
@@ -174,9 +177,12 @@ verification 级标答-提案等值判定。
 3. 否则 → **字面相等**：`_key` 去空白后相等。
 
 **数值解析文法（ASCII `[0-9]`，全文锚定；与 grading 同）**：按序——百分数（`%` 结尾，
-剥 `%` 再 `strip()` 后按下面三条解析，值 ÷100）；带分数 `[+-]?[0-9]+ [0-9]+/[0-9]+`
-（整数部与分数部之间恰一个空格；符号取整数部、作用于整体，`"-1 1/2"`→−1.5）；
-分数 `[+-]?[0-9]+/[0-9]+`；小数（含 `.5`、`3.`、`1e3`）。分母 0 → 不可解析（None）；
+剥 `%` 再 `strip()` 后按下面三条解析，值 ÷100）；带分数 `[+-]?[0-9]+ [0-9]+\s*/\s*[0-9]+`
+（整数部与分数部之间恰一个空格、分数斜杠两侧容忍任意 `\s*` 空白；符号取整数部、
+作用于整体，`"-1 1/2"`→−1.5、`"-1 1 / 2"` 同样→−1.5）；
+分数 `[+-]?[0-9]+\s*/\s*[0-9]+`（斜杠两侧容忍 `\s*` 空白，`"1 / 2"` ≡ `"1/2"`）；
+小数 `[+-]?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?`（含 `.5`、`3.`、
+`1e3`/`"1E3"`、正负号与正指数）。分母 0 → 不可解析（None）；
 `nan`/`inf`/unicode 数字不匹配文法 → None。
 
 **赋值前缀剥离**（R4 的分量级前处理）：分量归一化文本中，首个 `=` 之前由
@@ -226,13 +232,17 @@ options=["A. 1","B. 2"])` → `False`；对比 grading 对不可解析标答抛 
 | `answers_match("1:3", "1/3")` | `False`（比号不与分数互化） |
 
 补充实测（参考裁定，探针 P5/P23）：`answers_match("x=5", "5")` → `True`（单分量也剥
-赋值前缀）；`answers_match("1,234或2,345", "1234或2345")` → `True`（N4 作用于分量）。
+赋值前缀）；`answers_match("1,234或2,345", "1234或2345")` → `True`（N4 作用于分量）；
+`answers_match("1 / 2", "1/2")` ≡ `True`、`answers_match("-1 1 / 2", "-1.5")` ≡ `True`
+（分数/带分数斜杠两侧容忍 `\s*`，§3.3 数值解析文法已固化，契约测试未单独覆盖）。
 
 ### 3.4 `verify_item(item, agent_answers) -> dict`
 
-单题双代理裁决。返回**新构造**的 JSON 形 dict：
+单题双代理裁决。返回**新构造**的 dict，**仅含且恰好包含三个键**（实现可自由选择
+键顺序，键集必须恰为这三键）：
 `{"item_id": item_id, "verdict": verdict, "statuses": ((agent_id, status), ...)}`——
 `statuses` 为 tuple of tuple，按 agent id **码点升序**（`sorted(dict)` 语义，`"B" < "a"`）。
+`item_id` 取自校验后的原值（不做 N1–N5 归一化，契约测试逐字断言 `item_id`）。
 
 **题目侧校验（先于一切裁决，任一不过 → `DualVerifyError`）**〔测试裁定
 `test_verify_item_input_guards`〕：
@@ -293,6 +303,11 @@ tests/contract/test_dual_verify_contract.py:148-174）：
 入参非 dict 或缺 `"verdict"` 键 → `DualVerifyError`；`verdict != "agree"`
 （disagree/incomplete）→ **`None`**（诚实缺口/分歧不回填）；`agree` →
 `make_record(所有 status 为 "match" 的 agent id)`。
+
+若 `agree` 但 match 状态的代理 < 2（含手工 dict `{"verdict": "agree"}` 无 statuses、
+或 `{"verdict": "agree", "statuses": (("a","match"),)}` 单 match 等情形），`make_record`
+下限触发 → **`DualVerifyError`**。验证测试电池只覆盖 `verify_item` 自然产出的 agree
+结果；手工 dict 的下限路径仅 P9 探针覆盖。
 
 - 〔测试裁定 `test_record_only_for_agree_and_passes_itembank_v2`〕
   `verification_record(verify_item(_fill(), {"b": "2", "a": "2"}))` →
@@ -477,6 +492,36 @@ tests/contract/test_dual_verify_contract.py:148-174）：
   无状态、无版本号/时间戳记录。
 - **不做双代理以外的裁决策略**：不实现"代理数 ≠ 2 的加权"、不裁决裁判agent等多种
   格局外的聚合规则；三值裁决语义按 §3.4 冻结。
+
+### 7.1 实现自由（盲实现者怎么做都算合格）
+
+下列条目契约测试与参考实现均未覆盖，盲实现者按自己理解实现均可通过：
+
+- **`verify_bank` / `arbitration_rows` 的 `items` 入参类型**：规范仅校验
+  `answers_by_item` 必须为 `dict`、以及逐元素缺 `"id"` 键时抛 `KeyError`（§6）；`items`
+  的容器类型（list / tuple / generator / 其它可迭代）不约束，`items=None` /
+  非可迭代时的异常类型（`TypeError` 或 `DualVerifyError`）也属实现自由。
+- **`verify_bank` / `arbitration_rows` 的 `items == []`（空题库）**：返回的
+  `DualVerifyReport` 各字段必为空 tuple、`counts()` 三键值均为 0（无歧义）；但
+  `verification_record(None)` 路径上是否触发特殊处理属实现自由——本节点的输入不会
+  触发 `verification_record`。
+- **`make_record` 入参为生成器且迭代中抛错**：部分合法化结果（`<2` 或抛错）属实现
+  自由；只要正常情况按确定集都返回 `{"agents": [...升序去重...], "answers_agree": True}`。
+- **Choice 选项含重复文本/重复标签（如 `["A. 1", "A. 2"]`）**：`_resolve_option` 走
+  `labels.index(target)` / 首个匹配全文趟，行为由实现自由选择；契约测试未覆盖。
+- **纯单位词输入**（如 `answers_match("米", "米")` 全部走单位门返回 `(原文, None)`、
+  再字面对比）：等价于字面相等 `True`，但具体在 R1 / R3 / R5 哪一支命中属实现自由。
+- **`answers_match` 的 `proposed` 全部为分隔符的极端输入**（`"或或或"` 之类）：
+  `_split_components` 防御性回退到原串作单分量，分量相等则 `True`；具体回退策略属
+  实现自由。
+- **`agent_answers` 同一 agent id 多次出现**：Python `dict` 语义保留最后一份，
+  `verify_item` 据此仅裁决一份；保留中间键或其他合并策略不在本规范内——直接复用
+  `dict` 即可。
+- **`arbitration_rows` 的 `proposed` 与 `key_answer` 字段**：文本必须为原始入参字面
+  （不做 N1–N5 归一化），但若 `proposed` 因上游为非 `str` 而无法成行（no_answer 不成
+  行），不存在该路径，无须约定非 `str` 时的取值。
+- **`verify_item` 返回 dict 的键顺序**：实现自由；契约测试只断言键集恰为三键
+  `{"item_id", "verdict", "statuses"}`，不约束 dict 键序。
 
 ## 附录 A：冻结证据与契约未裁定的参考行为
 

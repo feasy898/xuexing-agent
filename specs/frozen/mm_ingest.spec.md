@@ -118,7 +118,10 @@ reason="low_confidence", detail="d").to_dict() == {"number": 1, "item_id": "c1",
 "answer": "B", "confidence": 0.9, "reason": "low_confidence", "detail": "d"}`〕。
 
 各 reason 的字段与 detail 冻结格式（detail 为可观测输出字段；测试对四种 reason 的
-detail 断言子串——见不变量 I8；完整文案按参考实现冻结）：
+detail 断言子串——见 `test_ingest_routes_happy_duplicate_low_unknown_missing` 的
+`"not on paper"` / `"transcribed 2 times"` / `"min_confidence"` / `"missing from transcript"`
+四个子串断言；完整文案按参考实现冻结；`answer_form` 的 detail 文案为参考裁定，测试
+不覆盖其子串）：
 
 | reason | number | item_id | answer | confidence | detail 格式 |
 |---|---|---|---|---|---|
@@ -266,8 +269,8 @@ client 调用）：
      标答必须 ∈ 标签列或等于某选项原文（去空白大写）〔参考裁定：标答存选项**全文**
      （如 `"B. -2/3"`）亦合法，探针 P1；测试只覆盖标答既非标签也非选项全文
      （`"Z"`）的拒绝支〕
-  5. **空卷门**：展开后零题 → `IngestError("empty paper: no questions to ingest")`
-     （sections 空且 item_ids 空、或节内 item_ids 空，均触发）
+  5. **空卷门**：展开后零题 → `IngestError`（消息文本不作承诺，见 §6；
+     sections 空且 item_ids 空、或节内 item_ids 空，均触发）
 
 随后：
 
@@ -295,7 +298,8 @@ client 调用）：
      全串**）；否则 → `answer_form` 复核（`E`、`AB`、`B. -2/3`、`A.`、`3` 等一律
      复核，不猜）；
   6. fill/solve 题：`grader(item, answer)`（**原文透传，不 strip**〔参考裁定，
-     探针 P3；测试只覆盖全空白串走 None 支〕）。
+     探针 P3；测试只覆盖全空白串走 None 支〕：transcript 给什么字符串，grader
+     收到完全相等的那一串——前后空白也透传，由 grader 自行处理）。
 - **缺号**：转写里完全没出现的卷面题号 → `missing_number` 复核，按卷面题号**升序**
   排在全部条目级复核之后。
 - **产出排序**：`responses` 按卷面题号升序（判分调用按转写序发生，产出在末尾统一

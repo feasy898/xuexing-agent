@@ -97,10 +97,18 @@ ASR 转写文本 → 清洗后的口语串。**冻结流程（顺序为绑定条
    `U+3000` 全角空格 → 半角空格，其余字符原样保留。与 `grading.normalize_answer` 的
    N1 **同闭式**（逐行对照：`asr_answer.py:85-95` vs `grading.py:66-76`）；只做折叠，
    **不做** grading 的 N2 内部空白折叠、N3 尾部剥离、N4 千分位逗号、N5 小写化。
-3. **首尾空白剥离**（Python `str.strip()` 语义）。
-4. **循环到不动点**：剥上下缘字符（`EDGE_CHARS` 集合，左端与右端各自连续剥）→ 剥**一个**
-   句首引导语（`HEAD_FILLERS` 中首个前缀命中，即最长命中）→ 再剥一次上下缘；串不再
-   变化即返回。
+3. **首尾空白剥离**（Python `str.strip()` 语义；**仅在进入循环前做一次**，循环本身
+   **不**含 `.strip()`）。
+4. **循环到不动点**（绑定条款）：
+   - 状态 `s` 初始为第 3 步的结果；
+   - 每次迭代（按序）：
+     a) 剥 `s` 的**上下缘**字符：左端从下标 0 起连续跳过 `EDGE_CHARS` 成员，右端从
+        下标 `len(s)-1` 起连续跳过 `EDGE_CHARS` 成员，**两侧各剥一段连续的同集合字符**，
+        不接触内部；
+     b) **只剥一个**句首引导语：按 `HEAD_FILLERS` 表序遍历，**首个**前缀命中即剥
+        （长度非增序 ⇒ 等价于最长命中；等长时按表序决胜），命中即跳出；无命中则不动；
+     c) 再剥一次上下缘（同 a 步骤）；
+   - 若本次迭代结束时 `s` 与迭代开始时**相等**，返回 `s`（不动点）；否则继续循环。
 5. 引导语**只在头部**剥、标点**只在上下缘**剥——`「x等于3」` 的「等于」不在头部、
    `「-2」` 的负号不在缘集合，核心内容不被触碰。
 
@@ -122,11 +130,16 @@ ASR 转写文本 → 清洗后的口语串。**冻结流程（顺序为绑定条
 `clean_transcript("-2") == "-2"`、`clean_transcript("0.5") == "0.5"`、
 `clean_transcript("1 1/2") == "1 1/2"`（内部空白不折叠）。
 
-〔参考裁定，本轮实测〕空白（半角空格）不在 `EDGE_CHARS` 中，故 `clean_transcript` 的
-返回值**可能残留首尾空白**：`clean_transcript("嗯 三") == " 三"`（前导空格）、
-`clean_transcript("答案 是三") == " 是三"`；`extract_answer` 末尾的 `.strip()` 才是把它
-抹掉的一步（`extract_answer("嗯 三") == "3"`）。另：多段引导语会被连续剥
-（`clean_transcript("答案答案是三") == "三"`、`clean_transcript("答得选") == ""`）。
+〔参考裁定〕以下闭式由第 4 步的循环规则唯一确定（手算可复核）：
+
+- **半角空格不在 `EDGE_CHARS` 中**，故循环内 `_strip_edges` 不会跨越空格；首尾空白
+  一旦在第 3 步未被消化，第 4 步循环也**不再**额外 `.strip()`，因此返回值**可能残留
+  首尾空白**：`clean_transcript("嗯 三") == " 三"`（前导空格）、
+  `clean_transcript("答案 是三") == " 是三"`。`extract_answer` 末尾的 `.strip()` 才是
+  把它们抹掉的一步（`extract_answer("嗯 三") == "3"`）。
+- **多段引导语被连续剥**至不动点：`clean_transcript("答案答案是三") == "三"`、
+  `clean_transcript("答得选") == ""`（空串也是合法不动点，函数返回 `""`，由
+  `extract_answer` 翻成 `None`）。
 
 ### 3.3 `spoken_to_math(text) -> str`
 
@@ -136,8 +149,10 @@ ASR 转写文本 → 清洗后的口语串。**冻结流程（顺序为绑定条
 2. **数表达式**（`_number`，最大匹配，见下方文法）命中 → 追加其串形式、前进到其结束下标；
 3. 否则**口语算符**（`SPOKEN_OPERATORS` 表序前缀匹配，因表序 = 最长优先）→ 追加符号；
 4. 否则**当前字符原样透传**、前进一位。
-5. **不做全角折叠**（折叠只发生在 `clean_transcript`）：`spoken_to_math("Ｂ") == "Ｂ"`
-   〔参考裁定，本轮实测〕；全角作答的折叠是 `extract_answer` 管线第一步的功劳
+5. **不做全角折叠**（折叠只发生在 `clean_transcript`）：本函数对每个字符判定为「数字/
+   单位/算符/其他」后**直接透传原码点**，不做 `[0xFF01,0xFF5E] → 半角` 折叠
+   〔参考裁定：本轮实测 `spoken_to_math("Ｂ") == "Ｂ"`〕；全角作答的折叠是
+   `extract_answer` 管线第一步 `clean_transcript` 的功劳
    （`extract_answer("选择Ｂ") == "B"`〔测试裁定:360〕）。
 6. **不求值**：`spoken_to_math("三加五") == "3+5"` 而不是 `8`〔测试裁定:190〕；
    单位词（厘米/升/元/平方米……）与未知文本透传，交判分器的单位门/字面支
@@ -174,10 +189,20 @@ ASR 转写文本 → 清洗后的口语串。**冻结流程（顺序为绑定条
 `六除以二`=`6/2`、`B`=`B`、`5平方米`=`5平方米`、`负`=`负`、`点`=`点`、`万`=`万`、
 `负负二`=`负-2`。
 
-〔参考裁定，本轮实测〕未入文法组合的逐字符后果同样由冻结文法唯一确定：
-`三又五` → `3又5`（「又」后面不是分数，透传）、`百分之负五十` → `100分之-50`
-（`百分之` 后面必须紧跟数，否则回落为「百」段内单位读数 + 逐字符透传）、
-`一千万` → `10000000`、`三点五零` → `3.50`。
+〔参考裁定：以下闭式由冻结文法唯一确定，手算可复核〕
+
+- `三又五` → `3又5`：「又」后面不是分数文法（缺 `分之` 分子），回落为整数前缀 + 「又」
+  单字符透传。
+- `百分之负五十` → `100分之-50`：`百分之` 后面必须紧跟一个合法 `decimal_prefix`，否则
+  整条百分数支不命中、回到「百」段内单位读数 + 后续逐字符透传（`百` 段内单位得 100，
+  `分`/`之` 非字符集 → 透传，`负五十` 由 `_number` 的「负 + 数」规则合成 `-50`）。
+- `一千万` → `10000000`：整数前缀一次性消费「一千」×`万` 大段单位，得 10,000,000。
+- `三点五零` → `3.50`：整数前缀给 3；遇 `点` 进入小数分支，**逐位**消费 `五`/`零`，
+  末尾的 `零` 不折叠也不剥。
+- 〔参考裁定，与上述同源：`spoken_to_math("万三") == "万3"`（孤立大段单位，无前置整数，透传）〕
+
+> 这五条都不是任意行为——任何严格按本节文法的实现都会得到同样的字符串。盲实现者只要把
+> 文法按子句抄齐，无需猜测。
 
 ### 3.4 `extract_answer(text) -> str | None`
 
@@ -206,17 +231,23 @@ ASR 转写文本 → 候选答案串；**清洗后可抽取内容为空 → `Non
 口述作答管线入口（`asr_answer.py:285-309`）。`item` 与判分结果均为鸭子对象：`item`
 **不校验、不透出、原样交给 grader**；grader 的返回值**原样返回**（不包装、不改写）。
 
-**守卫顺序冻结（任一失败抛 `ASRError`，且 `client.asr` 零次调用、grader 零次调用）**
-〔参考裁定：四个守卫抛同一异常类型，多守卫同时失败时命中顺序不可外部观测；
-测试只断言「抛 `ASRError` + 零出网」（`test_asr_answer_guards_zero_calls:268-289`），
-故顺序按参考实现冻结为绑定条款〕：
+**守卫检查顺序冻结为绑定条款**（任一失败抛 `ASRError`，且 `client.asr` 零次调用、
+grader 零次调用）〔参考裁定：测试只断言「抛 `ASRError` + 零出网」
+（`test_asr_answer_guards_zero_calls:268-289`），不测序；但本规格把序列本身作为契约面，
+多守卫同时失败时**先命中者抛错**——即按 V1 → V2 → V3 → V4 顺序检查〕：
 
-| # | 守卫 | 失败判据 |
-|---|---|---|
-| V1 | `client` 必须有 callable 的 `asr` 属性 | `getattr(client, "asr", None)` 不可调用 |
-| V2 | `grader` 必须 callable | `callable(grader)` 为假 |
-| V3 | `audio` 必须非空 `bytes` | 非 `bytes` 实例或空 `bytes` |
-| V4 | `filename` 必须非空白 `str` | 非 `str` 或 `filename.strip()` 为空 |
+| 序 | 守卫 | 失败判据（绑定） | 错误消息（参考实现；非契约面，但含可观察特征） |
+|---|---|---|---|
+| V1 | `client` 必须有 callable 的 `asr` 属性 | `getattr(client, "asr", None)` **不可调用**（缺属性、属性为 `None`、属性为不可调用对象——包括方法被设为 `None` 的情况） | `"client must provide a callable asr()"`（不嵌入类型名） |
+| V2 | `grader` 必须 callable | `callable(grader)` 为假（`grader is None`、`grader` 是 `int`/`str`/`bytes` 等） | `"grader must be callable"`（不嵌入类型名） |
+| V3 | `audio` 必须非空 `bytes` | **`isinstance(audio, bytes) is False`** **或** `len(audio) == 0`（`None`/`int`/`str`/`bytearray`/`memoryview`/空 `bytes` 全部拒绝） | 含 `type(audio).__name__` 片段（参考实现：`f"audio must be non-empty bytes, got {type(audio).__name__}"`） |
+| V4 | `filename` 必须非空白 `str` | **`isinstance(filename, str) is False`** **或** `filename.strip() == ""`（`""`/`"   "`/`None`/`int`/`bytes` 全部拒绝） | `"filename must be a non-blank str"`（不嵌入类型名） |
+
+**注**：当前契约测试只对**单一**守卫失败形态断言；上表的「错误消息」列是**参考实现当前
+冻结的文案**——本规格不把文案作为契约面，但 V3 文案会嵌入 `type(audio).__name__` 的
+现象属于**可外部观测**的事实：当多守卫同时失败时（例如 `client` 缺 `asr` 且 `audio`
+非 `bytes`），哪一条命中由 V1 → V2 → V3 → V4 顺序唯一决定，因此**仅 V1/V2/V4** 命中
+的消息不会嵌入类型名，**仅 V3** 命中会嵌入 `type(audio).__name__`。
 
 **随后（守卫全过）**：
 
@@ -229,8 +260,10 @@ ASR 转写文本 → 候选答案串；**清洗后可抽取内容为空 → `Non
    纯语气词 ⇒ `extract_answer` 返回 `None` ⇒ `grader(item, None)`（不伪造作答）
    〔测试裁定 `test_asr_answer_blank_transcript_hands_none:261-265`〕。
 4. `client.asr` 抛出的异常**原样传播**（不包装成 `ASRError`），grader 不被调用
-   〔测试裁定 `test_asr_answer_client_exception_propagates:301-306`〕；grader 自身抛出的
-   异常同样原样传播〔参考裁定，本轮实测：`KeyError` 不被包装〕。
+   〔测试裁定 `test_asr_answer_client_exception_propagates:301-306`〕；**grader 自身抛出的
+   异常同样原样传播**〔参考裁定：本轮实测 `KeyError` 不被包装，模块不捕获、不包装、
+   不改写异常链〕——即模块**从不**捕获 `client.asr` 或 `grader` 的异常，二者抛什么就
+   抛什么（仅 `ASRError` 路径才是本模块自行抛出的）。
 
 行为对照〔测试裁定 `test_asr_answer_happy_path_exact_call_shape:244-251`〕：
 `asr_answer(b"AUDIO-BYTES-01", FILL_NEG2, MockASR("答案是负二"), RecGrader())` →
@@ -239,12 +272,20 @@ ASR 转写文本 → 候选答案串；**清洗后可抽取内容为空 → `Non
 〔测试裁定 `test_asr_answer_filename_passthrough:254-258`〕：`filename="answer.mp3"`
 时 `client.calls[0]["filename"] == "answer.mp3"`。
 
-〔参考裁定，本轮实测〕空白判定只针对 `filename.strip()` 为空：`filename="  a.wav "`
-这类**非空白但带首尾空白的**串被接受，并**原样**传给 client
-（`client.calls[0]["filename"] == "  a.wav "`）；`bytearray`/`memoryview` 音频被 V3 拒绝
-（`isinstance(audio, bytes)` 严格判定，实测报 `audio must be non-empty bytes, got
-bytearray`/`memoryview`）；`filename` 只能以关键字传入（位置实参 → `TypeError`：
-`asr_answer() takes 4 positional arguments but 5 were given`）。
+〔参考裁定：以下行为虽未被契约测试逐条断言，但由 §3.5 的绑定条款唯一决定，手算可复核〕
+
+- **`filename` 空白判定只针对 `filename.strip()` 为空**：非空串内含首尾空白被**接受**
+  并**原样**传给 `client.asr`（不 `.strip()`，不改写），即
+  `asr_answer(b"...", item, client, grader, filename="  a.wav  ")` 时
+  `client.calls[0]["filename"] == "  a.wav  "`。
+- **`audio` 类型严格性**：V3 用 `isinstance(audio, bytes)` 判定，**`bytearray`** /
+  **`memoryview`** 不被认作 `bytes`，**与空 `bytes` 同样拒收**——本模块不支持任何非
+  `bytes` 的 buffer 协议类型。
+- **`filename` 只能以关键字传入**：签名为 `asr_answer(audio, item, client, grader, *,
+  filename=...)`，`*` 之后无位置参数；若调用方写 `asr_answer(b"...", item, client,
+  grader, "x.wav")`，Python 解释器在绑定阶段抛 `TypeError`（消息形如
+  `asr_answer() takes 4 positional arguments but 5 were given`）——这是 Python 自身的
+  参数绑定机制，**不是**本模块的守卫，不属于 `ASRError` 路径。
 
 ## 4. 不变量（编号列出，全部可被契约测试检验）
 
@@ -324,21 +365,25 @@ bytearray`/`memoryview`）；`filename` 只能以关键字传入（位置实参 
 
 | 非法输入 / 情形 | 行为（异常类型与触发时机） |
 |---|---|
-| `clean_transcript`/`spoken_to_math`/`extract_answer` 的入参非 `str`（`None`/`int`/`bytes`/`list`） | 进入函数体**立即**抛 `ASRError`（`ValueError` 子类），无任何前置处理 |
-| V1：`client` 无 callable 的 `asr` 属性（缺属性、属性不可调用） | 守卫期抛 `ASRError`；`client.asr` 零次调用、grader 零次调用 |
-| V2：`grader` 不可调用（`None`/`int`/`str`） | 守卫期抛 `ASRError`；client 零次调用 |
+| `clean_transcript`/`spoken_to_math`/`extract_answer` 的入参非 `str`（`None`/`int`/`bytes`/`list` 等任意非 `str`） | 进入函数体**立即**抛 `ASRError`（`ValueError` 子类），无任何前置处理；按 Python 习惯推荐 `isinstance(text, str)` 即可覆盖全部非 `str` |
+| V1：`client` 无 callable 的 `asr` 属性（缺属性、属性为 `None`、属性不可调用） | 守卫期抛 `ASRError`；`client.asr` 零次调用、grader 零次调用 |
+| V2：`grader` 不可调用（`None`/`int`/`str`/`bytes` 等） | 守卫期抛 `ASRError`；client 零次调用 |
 | V3：`audio` 非 `bytes` 或空 `bytes`（`None`/`b""`/`int`/`str`；`bytearray`/`memoryview` 同样拒绝） | 守卫期抛 `ASRError`；client 零次调用 |
-| V4：`filename` 非 `str` 或 `strip()` 后为空（`""`/`"   "`/`None`/`bytes`） | 守卫期抛 `ASRError`；client 零次调用 |
-| `client.asr` 回写非 `str`（`None`/`bytes`/`int`） | **出网一次之后**抛 `ASRError`；grader 不被调用 |
-| `client.asr` 抛出任何异常（如 `RuntimeError`） | **原样传播**，不包装成 `ASRError`；grader 不被调用 |
-| grader 抛出任何异常 | 原样传播（模块不包装） |
+| V4：`filename` 非 `str` 或 `strip()` 后为空（`""`/`"   "`/`None`/`bytes`/`int`） | 守卫期抛 `ASRError`；client 零次调用 |
+| `client.asr` 回写非 `str`（`None`/`bytes`/`int` 等） | **出网一次之后**抛 `ASRError`；grader 不被调用 |
+| `client.asr` 抛出任何异常（如 `RuntimeError`/`KeyError`） | **原样传播**，不包装成 `ASRError`；grader 不被调用 |
+| grader 抛出任何异常（如 `KeyError`/`ValueError`/自定义异常） | **原样传播**（模块不捕获、不包装、不改写异常链）；非 `ASRError` |
 | 转写为空白 / 纯语气词 / 纯引导语 | **容忍**，不抛错：`extract_answer` → `None` ⇒ `grader(item, None)`（不伪造作答） |
 | 转写含单位词、未知文本、孤立记号（`负`/`点`/`万`）、非答案句式 | **容忍**，机械转换后透传，交判分器字面支/单位门诚实判错 |
 | `item` 为任意对象（含 `None`） | **不校验**，原样交 grader；模块不读 `item` 任何属性 |
+| `filename` 以位置实参传入（`asr_answer(b"...", item, client, grader, "x.wav")`） | Python 参数绑定阶段抛 `TypeError`（非 `ASRError`，本模块不参与校验） |
 
-异常类型一律 `ASRError`（`ValueError` 直接子类）；唯一的非 `ASRError` 出口是注入方自身
-抛出的异常（原样传播）。`filename` 位置传参属签名误用，抛 `TypeError`（Python 自身
-机制，非本模块校验）。异常消息文案不作承诺（不是契约面）。
+异常类型一律 `ASRError`（`ValueError` 直接子类）；非 `ASRError` 的出口有且仅有三处：
+(a) `client.asr` 自身抛出的异常（原样传播）、(b) `grader` 自身抛出的异常（原样传播）、
+(c) `filename` 位置传参导致的 `TypeError`（Python 自身机制）。**异常消息文案不作承诺**
+（不是契约面），但 §3.5 的 V1/V2/V3/V4 错误消息**含可观察特征**（见该节）：V3 消息嵌入
+`type(audio).__name__`，V1/V2/V4 不嵌入；多守卫失败按 V1 → V2 → V3 → V4 顺序**先命中
+者抛错**。
 
 ## 7. 非目标
 

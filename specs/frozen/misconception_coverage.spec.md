@@ -63,9 +63,10 @@ MisconceptionEntry, MisconceptionReport, audit, audit_dicts, parse_bank`，与�
 class MisconceptionCoverageError(ValueError): ...
 ```
 
-本模块**唯一**异常类型，`ValueError` 直接子类（`issubclass` 断言：
-test_parse_bank_rejections，tests:133）。契约内任何校验失败都抛它，不抛其他异常类型
-（§6）。
+本模块**校验异常**的统一定义，`ValueError` 直接子类（`issubclass` 断言：
+test_parse_bank_rejections，tests:133）。契约覆盖的所有字段级校验失败都抛它，不抛其他
+异常类型——`parse_bank` / `audit_dicts` 路径（dict 输入）和 `audit` 路径中除 DuckType
+`.signature` 非可迭代（§7）以外的所有失败，都统一抛 `MisconceptionCoverageError`。
 
 ### 3.2 `MisconceptionEntry` 与 `Exemption`
 
@@ -84,9 +85,12 @@ class Exemption:
     reason: str           # 「该 KP 无误解」的非空理由
 ```
 
-- 两个都是 dataclass：支持按位置与按键构造；**构造时不校验**（全部校验在 `parse_bank` /
-  `audit` 内）〔参考裁定：探针 P4 构造 `MisconceptionEntry(id=7, ...)` 不抛，错误发生在
-  `audit`〕；dataclass 逐字段相等是本模块对象比较的唯一方式。
+- 两个都是 dataclass：支持按位置与按键构造；**构造函数（默认 `__init__`，不得挂
+  `__post_init__` 字段校验）不抛任何字段错**——所有字段（包括 `id` 非 str / 空串 / 首尾
+  空白、`kp_id` 同左、`description` / `hint` 缺键 / 空 / 纯空白、`signature` 非 list /
+  空 list / 元素非 str / 含首尾空白 / 条目内重复）均可被构造而不抛任何异常；一切字段级
+  校验都发生在 `parse_bank` / `audit`（`__post_init__` 不得抛字段错）。dataclass 逐字段
+  相等是本模块对象比较的唯一方式。
 - `MisconceptionEntry.signature` 与 `xuexing.types.Misconception.signature` 同域不同形：
   解析产物是 tuple（文件里是 list，`parse_bank` 负责 list→tuple），`Misconception` 原生
   是 list；`audit` 内部对两者统一 `tuple()` 化（§3.5）。
@@ -111,15 +115,12 @@ class MisconceptionReport:
 - 六个序列字段**全部是 tuple**（含 `counts` 的每个元素也是 tuple）——测试以
   `rep.deficient_kp_ids.append(...)` / `rep.counts[0].append(...)` 必抛 `AttributeError`
   钉死（test_audit_purity，tests:252-255）〔测试裁定〕。
-- `counts` 对**每个**输入 KP 恰一项（含 0 条与豁免 KP 的 0 项）〔测试裁定：
-  test_audit_closed_form `counts == (("k1",2),("k2",1),("k3",0))`；参考裁定：探针 P11/P17
-  无条目时每 KP 记 0、豁免 KP counts 记 0〕。
+- `counts` 对**每个**输入 KP 恰一项（含 0 条与豁免 KP 的 0 项）——顺序按 `kp_ids` 输入原序
+  （test_audit_closed_form `counts == (("k1",2),("k2",1),("k3",0))`）〔测试裁定〕。
 - `total_misconceptions` = entries 总数（条目 id 全局唯一已校验，故 = 全局 id 集合大小）
-  〔测试裁定：test_audit_partitions `rep.total_misconceptions == len(entries)`；参考裁定：
-  实现取 `len(seen_entry_ids)`，`src/xuexing/misconception_coverage.py:245`〕。
-- `is_complete()` 返回 `bool`（`not deficient_kp_ids` 的求值结果）〔测试裁定 `is False` /
-  `is True`（tests:148/156/188）；参考裁定：探针 P15 `type(...) is bool`〕。对空 KP 宇宙
-  为 True（I13）。
+  （test_audit_partitions `rep.total_misconceptions == len(entries)`）〔测试裁定〕。
+- `is_complete()` 返回 `bool`（`not deficient_kp_ids` 的求值结果）；断言 `is False` /
+  `is True` 必然通过（tests:148/156/188）〔测试裁定〕。对空 KP 宇宙为 True（I13）。
 
 ### 3.4 `parse_bank`
 
@@ -142,9 +143,10 @@ def parse_bank(data) -> tuple[list[MisconceptionEntry], list[Exemption]]
    `reason` 经文本校验。
 
 容忍（不抛错）：空 `misconceptions` list（空库合法，缺口交由 `audit` 报告）；
-条目/豁免 dict 的**额外键**（只读约定键，其余忽略）〔参考裁定：探针 P8〕；
-`parse_bank` **不做**「豁免 KP 与已有误解矛盾」检查——该检查只属于 `audit`
-（§3.5）〔参考裁定：实现 `src/xuexing/misconception_coverage.py:159-167` 无此分支〕。
+条目/豁免 dict 的**额外键**被静默忽略——除 §3.4 列出的字段外，dict 中任何多余键（如
+`"c"`、`"extra"`、`"note"`）一律忽略，不视为非法；`parse_bank` **不做**「豁免 KP 与已有
+误解矛盾」检查（即豁免的 KP 名下若在 `misconceptions` 列表中已有条目，`parse_bank` 不抛
+错）——该检查只属于 `audit`（§3.5）。
 
 **输入输出例子**（全部〔测试裁定〕，test_parse_bank_fields_and_order /
 test_parse_bank_exemptions_default_empty，tests:69-84）：
@@ -175,21 +177,24 @@ del bank_data["exemptions"]
 def audit(kp_ids, entries, exemptions=(), min_per_kp: int = 2) -> MisconceptionReport
 ```
 
-- `kp_ids`：**任意可迭代对象**，元素为非空且无首尾空白的 str〔测试裁定 list 用法；
-  参考裁定：探针 P5 生成器可用〕；重复 KP id 抛错。
-- `entries`：**鸭子类型**，元素只需有 `.id`（非空 str，strip 后非空）与 `.kp_id`
-  （命中 `kp_ids` 清单）；`.signature` 可选，缺省按空 tuple 处理〔参考裁定：探针
-  P2/P3/P4〕。`MisconceptionEntry` 与 `xuexing.types.Misconception`（signature 为 list）
-  均 accepted，内部统一 `tuple()` 化（`src/xuexing/misconception_coverage.py:208`）。
-- `exemptions`：鸭子类型，元素只需有 `.kp_id`（命中清单）；`audit` **不读** `.reason`
-  〔参考裁定：探针 P6——只有 `.kp_id` 的对象也能通过 `audit`；`.reason` 必填是
-  `parse_bank` 侧规则〕。
-- `min_per_kp`：必须是 `int`（`bool` 不算）且 `>= 1`〔测试裁定〕。
+- `kp_ids`：**可迭代对象**（list / tuple / set / generator / iterator 等，元素类型不限
+  iterable 实现），元素逐个按 §3.4 id 校验（非空 str、无首尾空白），同一清单内元素重复
+  即抛 `MisconceptionCoverageError`；迭代只发生一次（即 generator 也能用尽一次）。
+- `entries`：元素只需有 `.id`（非空 str，strip 后非空）与 `.kp_id`（命中 `kp_ids` 清单）
+  属性；`.signature` 属性**若存在必须可被 `tuple()` 化为非空 tuple**（list / tuple / 其
+  他可迭代对象均接受）——若存在但**不可迭代**（如 `None`、int），参考实现会以
+  `TypeError` 失败，该边界情形**不在契约保证内**（§7）；若 `.signature` 属性**缺失**
+  则按空 tuple `()` 处理。`MisconceptionEntry` 与 `xuexing.types.Misconception`
+  （signature 为 list）均 accepted，内部统一 `tuple()` 化。
+- `exemptions`：元素只需有 `.kp_id` 属性（命中 `kp_ids` 清单）；`audit` 仅读取 `.kp_id`，
+  **不读取**其他属性（如 `.reason`）——豁免对象无 `.reason` 属性也不抛错。`.reason` 必
+  填是 `parse_bank` 的纪律（§3.4），不是 `audit` 的纪律。
+- `min_per_kp`：必须是 `int`（`bool` 不算，包括 `True` 与 `False`）且 `>= 1`〔测试裁定〕。
 
-**校验顺序（绑定条款；〔参考裁定〕——全部失败同为一种异常类型，次序只在探查上可观察）**：
-`min_per_kp` → `kp_ids`（逐元素 id 校验 + 重复检查）→ `entries`（id 非空/全局唯一 →
-`kp_id` 命中清单）→ `exemptions`（未知 KP → 重复 → 与已有误解矛盾）→ 同 KP 内 signature
-跨条目唯一性 → 构建报告。
+**校验次序为实现自由**——参考实现按 `min_per_kp` → `kp_ids` → `entries` → `exemptions`
+→ 同 KP 内 signature 跨条目唯一性 → 构建报告 的顺序执行；重生成实例可任意调换上述次
+序，只要同输入同输出（I16）且失败时抛 `MisconceptionCoverageError`（DuckType `.signature`
+非 iterable 的 `TypeError` 边界除外，§7）。
 
 **报告构造**：`counts` 按 `kp_ids` 输入原序每 KP 一项；`deficient` = 条数 < `min_per_kp`
 且未豁免；`exempt` = 豁免清单 ∩ 输入原序；`covered` = 条数 ≥ `min_per_kp`（豁免 KP 条数为 0
@@ -223,10 +228,10 @@ def audit_dicts(kp_dicts, bank_data, min_per_kp: int = 2) -> MisconceptionReport
 ```
 
 knowledge json 形状（dict 列表）× 误解库文件 dict 的便捷入口。**校验顺序（绑定条款）**：
-先校验 `kp_dicts`（必须是 list 或 tuple〔参考裁定：探针 P7 tuple 接受；错误消息文案
-不作承诺〕；每个元素必须是 dict 且 `"id"` 经 id 校验——非空 str 且无首尾空白，
-与 §3.4 同规则），再 `parse_bank(bank_data)`（解析错误原样抛出），最后把解析产物交给
-`audit`（重复 KP id 由 `audit` 的重复检查抛出）。
+先校验 `kp_dicts`（必须是 list 或 tuple——其他类型如 set / generator / dict / str 一律
+抛 `MisconceptionCoverageError`，错误消息文案不作契约承诺；每个元素必须是 dict 且 `"id"`
+经 id 校验——非空 str 且无首尾空白，与 §3.4 同规则），再 `parse_bank(bank_data)`（解析
+错误原样抛出），最后把解析产物交给 `audit`（重复 KP id 由 `audit` 的重复检查抛出）。
 
 **输入输出例子**（〔测试裁定〕，test_dicts_entry_equivalence，tests:284-290）：
 
@@ -326,8 +331,10 @@ rep = audit_dicts([{"id": "k1"}, {"id": "k2"}, {"id": "k3"}], bank_data)
 - 空 `misconceptions` list（空库；缺口由 `audit` 报告）与空 KP 宇宙（诚实空报告，
   I13）；
 - 豁免 KP 条数为 0（合法豁免，不是缺口，I8）；
-- 条目/豁免 dict 的额外键；鸭子条目缺 `.signature` 属性（按空 tuple）；`kp_dicts` 传
-  tuple；`exemptions` 缺省为空〔以上参考裁定：探针 P2/P6/P7/P8〕；
+- 条目/豁免 dict 的额外键（除 §3.4 列出的字段外，其他键一律忽略）；
+- DuckType 鸭子条目缺 `.signature` 属性（按空 tuple `()` 处理）；
+- `kp_dicts` 传 tuple（与 list 同等接受）；
+- `exemptions` 缺省为空 tuple `()`（§3.5 函数签名默认值）；
 - KP 清单中存在无任何条目引用的 KP（只是缺口，不是错误，I9）。
 
 ## 7. 非目标
@@ -349,3 +356,10 @@ rep = audit_dicts([{"id": "k1"}, {"id": "k2"}, {"id": "k3"}], bank_data)
   鸭子兼容（I14），禁止 import。
 - **不引入第三方库**：依赖仅标准库 `dataclasses`（§2）。
 - **不引入随机/时钟**：无 seed、无时间戳、无环境读取（§5）。
+- **不固定校验次序**：`audit` 内部各段校验（`min_per_kp` / `kp_ids` / `entries` /
+  `exemptions` / 同 KP signature 唯一性）的执行次序由实现自由决定（§3.5）。
+- **不保证 DuckType `.signature` 非可迭代时的异常类型**：`audit` 接收鸭子条目时，若
+  `.signature` 属性存在但不可迭代（`None` / int / 不可迭代对象），参考实现会以
+  `TypeError`（来自 `tuple(...)`）失败——该边界情形**不在契约保证内**，重生成实例可
+  选择抛 `MisconceptionCoverageError`、直接 `TypeError` 透传、或其他实现自由处置
+  （§3.5）。

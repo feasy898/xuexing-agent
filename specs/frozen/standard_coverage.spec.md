@@ -158,15 +158,17 @@ KP 对象序列 × 条目清单 → 对照报告。
 
 - `topics` 为空（`[]`/`()`）→ `StandardCoverageError`（**先于**任何 KP 检查，
   tests:232-234）。
-- `kps`：可迭代（参考实现 `list(kps)` 单遍物化，`src/xuexing/standard_coverage.py:181`；
-  〔参考裁定〕生成器等一次性可迭代可用，契约测试域为 list）。
+- `kps`：可迭代（list / tuple / 生成器等均接受；函数内部单遍物化为 list，
+  `src/xuexing/standard_coverage.py:181`；〔参考裁定〕契约测试域仅 `list`）。
 - 每个 KP 按鸭子类型读 `.id` 与 `.standard_ref`（`KnowledgePoint` 即满足）。缺属性 →
   **原生 `AttributeError` 传播**，不包装（tests:248-255）。
 
 **逐 KP 校验**（按输入序，遇首个非法即抛）：
 
-- `kp.id` 非 `str` 或空白 → `StandardCoverageError`（tests:229）；
-- `kp.id` 与已见 id 重复 → `StandardCoverageError`（tests:225-227）；
+- `kp.id` 非 `str` 或 `kp.id.strip() == ""`（含纯空白 ` `、空串 `""` 等）
+  → `StandardCoverageError`（tests:229）；`kp.id` 内部含空白（如 `"a b"`）
+  **不**在此拒。
+- `kp.id` 与已见 id 重复 → `StandardCoverageError`（tests:225-227，输入序遇首个重复）；
 - `kp.standard_ref` 为 `None` → 视为空串（未归属）；非 `str` 非 `None` →
   `StandardCoverageError`（tests:248-249 与 src:193-198）。
 
@@ -224,8 +226,8 @@ class CoverageReport:
   的直接相等断言即用，tests:264）。
 - `coverage_rate`（property，非字段）：`len(covered_topic_ids) / len(topics)`，
   IEEE 754 除法唯一结果。经契约入口 `topics` 必非空（构造前置校验保证）；
-  **直接构造 `CoverageReport(topics=())` 再取 `coverage_rate` 会抛原生
-  `ZeroDivisionError`——该路径不在契约域**〔参考裁定，src:70-73〕。
+  绕过契约入口直接以 `topics == ()` 构造 `CoverageReport` 并访问
+  `coverage_rate` / `is_complete` 的场景见 §7。
 - `is_complete() -> bool`：`not uncovered_topic_ids and not unmatched_kp_ids`
   （双向均无缺口时为 True；恒返回 bool）。
 
@@ -236,11 +238,12 @@ knowledge json 形状的便捷入口（`kp_dicts` 为 dict 列表，`topics_data
 
 **处理次序（绑定）**：先 `topics = parse_topics(topics_data)`（清单非法 →
 `StandardCoverageError`，tests:282-283）；再校验 `kp_dicts` 须为 `list` 或 `tuple`
-（否则 `StandardCoverageError`，src:230-231；tuple 为参考实现行为，测试域为 list）；
-逐条目：非 dict → 错；缺 `"id"` 或 id 非非空 str → 错；`"standard_ref"` 可省略
-（缺省 = None = 空），为 `str` 或 `None`，其他值 → 错（经 `check_coverage` 的
-ref 校验，tests:280-281）；其余键忽略。内部以 dataclass `_KPLike(id, standard_ref)`
-适配后转 `check_coverage`。
+（否则 `StandardCoverageError`，src:230-231；tuple 为参考实现行为，测试域仅 list〔参考裁定〕）；
+逐条目：非 dict → 错；缺 `"id"` 或 id 非 `str` 或 `id.strip() == ""` → 错；
+`"standard_ref"` 可省略（缺省 = None = 空），为 `str` 或 `None`，其他值 → 错（经
+`check_coverage` 的 ref 校验，tests:280-281）；其余键忽略。内部以满足 §3.6
+鸭子接口（仅读 `.id` / `.standard_ref`）的对象适配后转 `check_coverage`
+（实现可自由选用 dataclass、namedtuple、SimpleNamespace 或自定义类——契约不要求特定形态）。
 
 **入口等价**：`kp_dicts` 由 KP 对象逐字段搬来（`{"id":…, "standard_ref":…}`）时，
 `check_coverage_dicts(kp_dicts, topic_data) == check_coverage(kps, topics)`
@@ -277,8 +280,9 @@ ref 校验，tests:280-281）；其余键忽略。内部以 dataclass `_KPLike(i
 - I8 **双向分划完备**：`set(matched) | set(unmatched) == KP 全集` 且不相交；
   `set(covered) | set(uncovered) == 条目 id 全集` 且不相交；
   `coverage_rate == len(covered)/len(topics)`（`test_coverage_partitions_and_rate`）。
-- I9 **KP 侧校验与容忍**：kp id 空/非 str/重复 → `StandardCoverageError`；
-  空 `topics` → `StandardCoverageError`；`standard_ref` 为 None/缺失键 → 容忍视为空；
+- I9 **KP 侧校验与容忍**：kp id 非 str / `kp.id.strip() == ""` / 与已见 id 重复
+  → `StandardCoverageError`；空 `topics` → `StandardCoverageError`；
+  `standard_ref` 为 None/缺失键 → 容忍视为空；
   ref 非 str 非 None → 拒；**缺 `.standard_ref`/.id 属性 → 原生 `AttributeError`
   传播**（`test_check_coverage_duplicate_kp_id`、`test_check_coverage_empty_topics`、
   `test_check_coverage_none_ref_and_missing_attr`、`test_dicts_entry_validation`）。
@@ -287,8 +291,9 @@ ref 校验，tests:280-281）；其余键忽略。内部以 dataclass `_KPLike(i
   （`test_check_coverage_purity`）。
 - I11 **dict 入口等价与校验**：`check_coverage_dicts` 与 `check_coverage(parse_topics)`
   逐字段相等；`standard_ref` 键缺省视为空；`kp_dicts` 非 list/tuple、条目非 dict、
-  id 缺失/空 → `StandardCoverageError`；`topics_data` 非法 → 经 `parse_topics` 拒
-  （`test_dicts_entry_equivalence`、`test_dicts_entry_validation`）。
+  id 缺失 / 非 str / `id.strip() == ""` → `StandardCoverageError`；`topics_data`
+  非法 → 经 `parse_topics` 拒（`test_dicts_entry_equivalence`、
+  `test_dicts_entry_validation`）。
 - I12 **确定性**：同 `(kps, topics)` 两次调用报告相等；同 `(kp_dicts, topics_data)`
   两次调用相等（`test_determinism`）。
 
@@ -320,20 +325,20 @@ ref 校验，tests:280-281）；其余键忽略。内部以 dataclass `_KPLike(i
 | `match_ref` 的 `ref` 非 str（如 `123`） | 抛 `StandardCoverageError` |
 | `match_ref` 的 `ref` 为 None/空串/全空白 | 容忍，返回 `()` |
 | `check_coverage` 的 `topics` 为空 | 抛 `StandardCoverageError`，**先于**任何 KP 检查 |
-| kp `id` 非 str / 空白 / 与已见 id 重复 | 按输入序遇首个即抛 `StandardCoverageError` |
+| kp `id` 非 str / `kp.id.strip() == ""` / 与已见 id 重复 | 按输入序遇首个即抛 `StandardCoverageError` |
 | kp `standard_ref` 非 str 且非 None | 抛 `StandardCoverageError` |
 | kp 缺 `.id` / `.standard_ref` 属性 | **原生 `AttributeError` 传播**（不包装、不吞） |
-| `kps` 不可迭代（如 `None`）〔参考裁定，测试未覆盖〕 | 原生 `TypeError` 传播 |
+| `kps` 不可迭代（如 `None`）〔参考裁定，测试未覆盖〕 | 原生 `TypeError` 传播（参考实现因 `list(None)` 抛 `TypeError`，其它实现亦须不包装、不吞） |
 | `check_coverage_dicts` 的 `kp_dicts` 非 list/tuple | 抛 `StandardCoverageError`（清单先解析；两者同时非法时清单错先抛） |
 | `kp_dicts` 条目非 dict / 缺 `"id"` / id 空或非 str | 抛 `StandardCoverageError` |
 | `kp_dicts` 条目的 `standard_ref` 非 str 非 None | 经 `check_coverage` 抛 `StandardCoverageError` |
 | `topics_data` 非法（如 `{"domains": []}`） | 经 `parse_topics` 抛 `StandardCoverageError` |
 | `kps` 为 `[]` / `kp_dicts` 为 `[]` | 合法：双侧 KP 类输出空，uncovered = 全清单，rate 0.0 |
 | `standard_ref` 键缺省 / None / 空白串 | 容忍，视为空（进 unmatched） |
-| 直接构造 `CoverageReport(topics=())` 取 `coverage_rate`〔参考裁定〕 | 原生 `ZeroDivisionError`（契约入口不可达） |
+| 绕过契约入口直接构造 `CoverageReport`（如 `topics=()`）并访问 `coverage_rate` / `is_complete` | 见 §7（实现自由） |
 
 异常类型一律 `StandardCoverageError`（`ValueError` 直接子类）或上表明列的原生
-`AttributeError`/`TypeError`/`ZeroDivisionError`；契约内输入不抛其他异常。
+`AttributeError`/`TypeError`；契约内输入不抛其他异常。
 
 ## 7. 非目标
 
@@ -351,3 +356,11 @@ ref 校验，tests:280-281）；其余键忽略。内部以 dataclass `_KPLike(i
   无持久化、无网络。
 - **不做下游动作**：只产对照报告；不出推荐、调度、判分、通知。
 - **不做多租户/国际化**：无租户维度、无语言分支、无时间/日历概念。
+- **`CoverageReport` 绕过契约入口的直接构造**：`CoverageReport(topics=(),
+  matches=(), uncovered_topic_ids=(), unmatched_kp_ids=(), matched_kp_ids=(),
+  covered_topic_ids=())` 等显式以空 `topics`（或其他任意值）构造、并访问
+  `coverage_rate` / `is_complete` 等派生量的路径，行为**实现自由**——
+  参考实现因 `len(covered) / len(())` 抛原生 `ZeroDivisionError`，但契约
+  不做承诺。契约仅约束 `check_coverage(...)` / `check_coverage_dicts(...)`
+  两条入口产出的 `CoverageReport` 字段形态与派生量取值；亦不约束
+  `CoverageReport` 是否为 `frozen`/`__hash__` 等内省行为。

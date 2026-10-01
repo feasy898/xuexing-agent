@@ -134,11 +134,13 @@ choice 题选项标签列。鸭子 item 只用 `item.options`（`item.id` 仅用
 `test_reading_text_guards`〕：`id` 缺失（`del item.id`）/空白/非 str；`stem` 空白
 （`"   "`）/非 str（`42`）；`item_type=None`；域外题型（`"essay"`）；选项正文空白
 （`"B. "`）；choice 选项 `<2`。
-〔参考裁定〕choice 题 `options` **属性整体缺失**时，参考实现先直接访问
-`item.options`（`tts_reader.py:178`）再进入 `option_labels` 校验，抛
-**AttributeError**（探针 P11b：`AttributeError: 'It' object has no attribute
-'options'`；同一物件单独调 `option_labels` 则抛 TTSError，探针 P11a）。该形态契约
-测试未覆盖（`test_reading_text_guards` 的缺属性用例只走 `option_labels`）。
+〔参考裁定〕choice 题 `options` **属性整体缺失**时（`del item.options`），参考实现
+先直接访问 `item.options` 再进入 `option_labels` 校验，抛 **AttributeError**
+（探针 P11b：`AttributeError: 'It' object has no attribute 'options'`；同一物件
+单独调 `option_labels` 则抛 TTSError，探针 P11a）。该形态契约测试未覆盖
+（`test_reading_text_guards` 的缺属性用例只走 `option_labels`），**属实现自由**——
+盲实现者也可改用 `getattr` 安全访问使其抛 `TTSError`，两种均视为合格，详见 §7.1
+「缺 options 属性的实现自由度」。
 
 ### 3.4 `ItemAudio` 与 `ItemAudio.to_dict()`
 
@@ -153,7 +155,8 @@ class ItemAudio:
 ```
 
 - 支持按位置构造 `ItemAudio("c1", "v", "t", b"ab", False)`；dataclass 逐字段相等。
-  〔参考裁定，探针 P9；测试按关键字构造见 `test_item_audio_to_dict_shape`〕
+  〔参考裁定，探针 P9；测试按关键字构造见 `test_item_audio_to_dict_shape`——本条为
+  dataclass 自动派生能力（不在契约测试断言面），属实现副产品，不影响合格判定〕
 - `to_dict() -> dict`：键序恰为
   `["item_id", "voice", "format", "text", "audio_size", "audio_sha256",
   "from_cache"]`〔测试裁定：`list(aud.to_dict()) == list(expected)` 键序冻结〕。
@@ -178,8 +181,9 @@ class ItemAudio:
 - **V2**：`tts` 必须提供可调用的 `tts` 成员（鸭子表面）。
 - **V3**：`cache` 必须为 `None` 或 `MutableMapping`（`dict`/`UserDict` 等鸭子；
   `list`/`str`/非 Mapping 一律拒绝）。
-- **V4**：`build_reading_text(item)`——**缓存命中也照常执行**（text 恒重建）
-  〔参考裁定，探针 P13：命中路径上传非法 stem 仍 TTSError〕。
+- **V4**：`build_reading_text(item)`——**缓存命中也照常执行**（text 恒重建；
+  命中路径上传非法 stem 仍抛 TTSError，探针 P13）。V1→V2→V3→V4 严格绑定，
+  任一 V 失败即抛 TTSError、cache 不被触碰。
 
 缓存键 = `(item.id, voice)`：
 
@@ -211,8 +215,8 @@ class ItemAudio:
   `UserDict({("c1", DEFAULT_VOICE): b"CACHED-AUDIO"})` 命中、零调用。
 - 非法音频不回填〔`test_synthesize_bad_audio_not_cached`〕：tts 返 `b""` 或
   `"not-bytes"` → TTSError 且 `cache == {}`（各恰好 1 次调用）。
-- 〔参考裁定〕命中路径缓存值为 `b""`/`bytearray` → TTSError（探针 P1/P5b；tts 侧
-  返 `bytearray` 同样拒绝，探针 P5a）。
+- 命中路径缓存值校验：`isinstance(audio, bytes) and len(audio) > 0`，否则
+  TTSError（探针 P1/P5b：包含 `b""`；探针 P5a：tts 侧返回 `bytearray` 同样拒绝）。
 
 ### 3.6 `read_paper(paper, bank, tts, *, voice=DEFAULT_VOICE, cache=None) -> list[ItemAudio]`
 
@@ -222,8 +226,8 @@ class ItemAudio:
 - **V1**：`voice` 非空白 str（同 §3.5，原样使用）。
 - **V2**：tts 表面（可调用 `tts`）。
 - **V3**：cache 表面（None 或 MutableMapping）。
-- **V4**：paper 表面——`paper.paper_id`、`paper.title` 必须为 `str`（**不做非空白
-  校验，空串接受**〔参考裁定，探针 P2；契约测试只覆盖 `None` 与非 str〕）。
+- **V4**：paper 表面——`paper.paper_id`、`paper.title` 必须为 `str`
+  （`isinstance` 单判；**空串合法**——契约测试只覆盖 `None` 与非 str，探针 P2）。
 - **V5**：bank 表面——`bank.items` 必须可调用且返回**可迭代**（list/generator 均可，
   探针 P8；返回 `42` → TTSError，探针 P7）；逐题 `id` 必须为非空白 str；bank 内
   id 不得重复（对全部题目生效，含未被卷面引用者）。
@@ -234,12 +238,11 @@ class ItemAudio:
   - **空 sections 回退**：`sections` 长度为 0 时回退 `paper.item_ids`（必须为
     `list`/`tuple`）作为单一隐式节；
   - 卷面引用的 id 必须能在 bank 索引中查到；其 `item_type` 必须 ∈ ITEM_TYPES
-    （**只校验卷面引用到的题**——未被引用的题目 item_type 非法不影响〔参考裁定，
-    探针 P3〕）；
+    （**只校验卷面引用到的题**——未被引用的题目 item_type 非法不影响，探针 P3）；
   - 展开后题目数为 0 → TTSError（空卷门）。
-- **V7**：全量朗读文本预校验——对每一道卷面题目调用 `build_reading_text`，任一失败
-  → TTSError；即**先校验全卷再合成，首题失败前零出网**〔参考裁定，探针 P12：首题
-  合法、次题非法时 `tts.calls == []`〕。
+- **V7**：全量朗读文本预校验——对每一道卷面题目依次调用 `build_reading_text`，
+  任一失败即抛 TTSError；**先校验全卷再合成，首题失败前零出网**（探针 P12：首题
+  合法、次题非法时 `tts.calls == []`）。
 
 **卷面题序**（与 omr_sheet/paper_layout/mm_ingest 同编号语义）：节序 × 节内
 `item_ids` 序；空 sections 回退 `paper.item_ids` 序。卷内同一题出现多次时，第二次起
@@ -347,10 +350,10 @@ BANK 含 c1/f1/s1/c2；MockTTS 按调用序回 `b"MOCKMP3-<n>"`）：
 | `item.item_type` 为 None 或域外值 | V4 `TTSError` |
 | `item.options` 非 list/tuple、`<2`、`>26`、含非 str/空白项、标签重复 | `TTSError` |
 | choice 选项正文（标签之后）空白 | `TTSError` |
-| choice 题 `options` 属性整体缺失 | **`AttributeError`**（参考实现直接属性访问先于校验，§3.3〔参考裁定〕、探针 P11b；契约测试未覆盖，见返回值 ambiguities） |
-| 缓存命中但缓存值非 bytes / 空 bytes | `TTSError`（不写回任何值）〔参考裁定，探针 P1/P5b〕 |
-| tts 返回值非 bytes / 空 bytes | `TTSError` 且**不回填缓存** |
-| `paper.paper_id` / `paper.title` 非 str（`None`、`5` 等） | V4 抛 `TTSError`（空串合法，§3.6〔参考裁定〕） |
+| choice 题 `options` 属性整体缺失 | **见 §7.1「缺 options 属性的实现自由度」**——参考实现泄漏 `AttributeError`，实现可改抛 `TTSError`，两种均合格 |
+| 缓存命中但缓存值非 bytes / 空 bytes | `TTSError`（不写回任何值），判据 `isinstance(audio, bytes) and len(audio) > 0` |
+| tts 返回值非 bytes / 空 bytes | `TTSError` 且**不回填缓存**，判据同上 |
+| `paper.paper_id` / `paper.title` 非 str（`None`、`5` 等） | V4 抛 `TTSError`（**空串合法**，仅 `isinstance(value, str)` 单判） |
 | `paper.sections` 非 list/tuple；元素非 dict；`item_ids` 非 list/tuple；id 空白/非 str | V6 抛 `TTSError` |
 | sections 空且 `paper.item_ids` 非 list/tuple | V6 抛 `TTSError` |
 | 卷面引用 id 在 bank 中不存在 | V6 抛 `TTSError` |
@@ -358,9 +361,8 @@ BANK 含 c1/f1/s1/c2；MockTTS 按调用序回 `b"MOCKMP3-<n>"`）：
 | 展开后题目数为 0（空节 / 空回退列表） | 空卷门 `TTSError` |
 | 任一题朗读文本校验失败（V7） | 合成开始前 `TTSError`，零 tts 调用 |
 
-- 异常类型一律 `TTSError`（ValueError 直接子类），**唯一例外**为上表第 8 行——
-  choice 缺 `options` 属性时参考实现泄漏的 `AttributeError`（§3.3/§7；该形态
-  契约测试未覆盖，属已知行为分叉点，已在冻结轮 ambiguities 上报）。
+- 异常类型一律 `TTSError`（ValueError 直接子类）；唯一可能泄漏的非 `TTSError`
+  异常是 choice 题 `options` 属性整体缺失（见上表第 8 行 + §7.1 实现自由度）。
 - tts 客户端自身抛出的异常**原样传播**（类型与消息不变——实测
   `RuntimeError("tts down")` 穿透且 cache 不被触碰）；模块不重试、不包装。
 - 必须容忍的「非错误」输入（不抛错、按语义处理）：sections 中的额外键（`kp_id`/
@@ -389,3 +391,15 @@ BANK 含 c1/f1/s1/c2；MockTTS 按调用序回 `b"MOCKMP3-<n>"`）：
   response_format=…) -> bytes`；chat/embedding 等不在本模块。
 - **不做冒烟联网验证**：`test_smoke_real_stepfun_tts`（`XX_MM_SMOKE=1`）是测试侧
   env-gated 用例，不在默认契约套件，也不构成本模块行为。
+
+### 7.1 实现自由度（契约测试未仲裁、两种行为均合格）
+
+以下行为契约测试未覆盖，参考实现的行为与「替代实现」的行为均视为合格，盲实现者
+可自由选择：
+
+- **缺 options 属性的处理**：choice 题 `del item.options`（属性整体缺失）时，
+  参考实现因 `build_reading_text` 内 `item.options` 直接属性访问，泄漏
+  `AttributeError`（探针 P11b）；改用 `getattr(item, "options", None)` 安全访问
+  并统一抛 `TTSError` 也合格（与 `option_labels` 走相同入口即对齐）。**注意**：
+  `option_labels(item)` 自身走 `getattr` 缺省路径，无论对象形态均抛 `TTSError`
+  （探针 P11a；`test_option_labels_guards` 已覆盖）。

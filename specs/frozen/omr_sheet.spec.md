@@ -141,7 +141,9 @@ bytes）；`position` 非 `int` 或为 `bool`（`float` 如 `1.0` 亦拒）；`p
 
 列名 → 自然排序键 `[前缀: str, 数字: int]`（OMRChecker `custom_sort_output_columns`
 同款）。`label` 非非空 `str` → `OMRError`。取正则 `([^\d]+)(\d*)` 的 `findall`
-**首个匹配组**：前缀 = 首组、数字位 = `int(次组)`（无数字尾缀则为 `0`）〔测试裁定〕。
+**首个匹配组**：前缀 = 首组、数字位 = `int(次组)`（无数字尾缀则为 `0`）。`findall`
+返回空列表时（即 `label` 不含任何非数字前缀，如 `"123"`），按实现自由处理
+〔参考裁定——契约测试未覆盖此输入面；参考实现返回 `["", 0]`〕。
 
 例：`natural_sort_key("q12") == ["q", 12]`、`natural_sort_key("q1") == ["q", 1]`、
 `natural_sort_key("roll") == ["roll", 0]`、`natural_sort_key("q2") <
@@ -360,7 +362,7 @@ to_responses({"file_id": "scan001.jpg", "values": {"q1": "B", "q5": "A"}},
 - I2 **选项标签解析闭式 + 跨模块同款**：`parse_option` 先 strip、显式标签
   （单 ASCII 字母 + `.．、)）` 分隔符）优先且标签归一大写、正文 strip 可为空串；
   否则按位回退 `A`–`Z`、整串作正文；与 `paper_layout.parse_option` 在
-  battery（12 个输入）× position {0,5,10,15,20,25} 上逐对相等；
+  battery（**13 个输入**）× position {0,5,10,15,20,25} 上逐对相等；
   `option_text` 非 str/空、`position` 非 int（含 bool）或越界一律 `OMRError`
   （`test_parse_option_closed_forms`、`test_parse_option_matches_paper_layout_on_battery`、
   `test_parse_option_input_guards`）。

@@ -92,8 +92,9 @@ ASCII 数字或中文数字 + 恰一个分隔符 + 紧随空白）→ 再 strip 
 ### 3.3 `match_key(text) -> str`
 
 匹配键：全角折叠（码点 ∈ `[0xFF01, 0xFF5E]` → `chr(cp − 0xFEE0)`；`U+3000` → 半角空格）
-→ 删除**全部**空白（`\s+`）→ 小写化。不做尾部标点剥离（双向包含已吸收标点差异）。
-非 str → `GradeError`。
+→ 删除**全部**空白（`\s+`，等同 `str.translate`/`re.sub` 全空白归一为空串）→ 小写化。
+**不做尾部标点剥离**（双向包含已吸收标点差异）。**fold→sub→lower 三步对所有输入幂等**，
+中间可夹一个 `strip()` 但不产生可见差异（实现自由）。非 str → `GradeError`。
 
 **例子**〔测试裁定 `test_match_key_closed_forms`〕：`match_key("Ｘ＝１５０")` → `"x=150"`；
 `match_key("a  b　c")` → `"abc"`；`match_key("解：设乙队每天修 X 米。")` →
@@ -141,7 +142,8 @@ solve 题 → 确定性 VLM 转写提示词。**只含题面，绝不含 answer/
 VLM 回复文本 → `{"steps": [{"text": str, "confidence": float}, ...], "final_answer": str | None}`。
 
 冻结处理：文本先 `strip()`；取**首个 `"{"` 到最后一个 `"}"`** 的切片做 JSON 解析
-（前后闲话 / 代码围栏容忍）；切片范围非法或 JSON 解析失败 → `GradeError`；顶层必须是
+（前后闲话 / 代码围栏容忍）；切片范围非法或 JSON 解析失败 → `GradeError`（**前者消息含
+`"no json"`、后者消息含 `"not valid json"`**，契约测试 `match=` 锚点）；顶层必须是
 `dict`；`steps` 必须存在且为 `list`（空 list 合法）。每条步骤必须为 `dict` 且必含
 `text`（str）与 `confidence`（[0,1] 的**有限**数字，拒 `bool`，int 规整为 float）两键，
 未知键忽略；空白 `text` 合法（评分侧永不匹配）。`final_answer` 可选：缺席 / `null` /
@@ -209,7 +211,9 @@ VLM 辅助判分管线。**守卫顺序冻结（任一失败抛 `GradeError`，�
    `image_format` 原样透传。
 2. `parse_transcription(raw)`：任何解析失败 → `GradeError`，且 **`answer_grader` 不被调用**。
 3. **恰好一次答案判定**：`verdict = answer_grader(item, final_answer)`（`final_answer` 可为
-   `None`——**无证据也诚实判定一次，不伪造**）；返回值必须为 `bool`，否则 `GradeError`。
+   `None`——**无证据也诚实判定一次，不伪造**）；返回值必须为 `bool`，否则 `GradeError`
+   （**消息含 `"bool"`**，契约测试 `match=` 锚点；严格 `isinstance(verdict, bool)`，
+   `numpy.bool_` / `int` 等非 Python-`bool` 一律拒）。
 4. **分步给分（规则冻结）**：`confidence < min_confidence` 的学生步骤**不参与匹配**、
    原文按转写序进 `flagged_steps`；其余（trusted）步骤按参考步骤序贪心配对——每个参考
    步骤取转写序中**第一个未被占用且 `steps_match`** 的学生步骤，配对计 1 分，每个学生步骤
@@ -217,8 +221,10 @@ VLM 辅助判分管线。**守卫顺序冻结（任一失败抛 `GradeError`，�
    `suggested_points = Σawarded`。
 5. **复核路由（按 `REVIEW_REASONS` 词表序累积）**：有 `flagged_steps` → `low_confidence`；
    `final_answer is None` → `final_answer_missing`；`suggested < max_points` → `partial_match`；
-   `suggested == max_points and verdict is False` → `contradiction`。`reasons` 非空即
-   `needs_review`。`partial_match` 与 `contradiction` 互斥（建议分不可能既等于又小于满分）。
+   `suggested == max_points and verdict is False` → `contradiction`（**`verdict is False` 用
+   严格同一性**——`verdict` 已由上一步保证是 Python `bool`，等价于 `not verdict`）。
+   `reasons` 非空即 `needs_review`。`partial_match` 与 `contradiction` 互斥（建议分不可能
+   既等于又小于满分）。
 6. `client` / `answer_grader` 抛出的异常**原样传播**（不包装、不吞）。
 
 **例子**〔测试裁定 `test_grade_solution_full_match_clean_auto`〕：参考解切出 4 步（§3.2），
@@ -239,13 +245,18 @@ def confirm_review(suggestion, correct, learner_answer=None, response_ms=None) -
 - `suggest_response`：干净建议（`needs_review` 为 `False`）→
   `Response(item_id=..., correct=True, learner_answer=suggestion.final_answer,
   response_ms=response_ms)`。干净建议按构造必是「步骤全配对 + 最终答案在场且判对」，
-  故 `correct` 恒 `True`。`needs_review=True` 的建议 → `GradeError`（必须走人审）。
+  故 `correct` 恒 `True`。`needs_review=True` 的建议 → `GradeError`
+  （**消息含 `"review"`**，锚点，契约测试 `match=`）。实现自由：`learner_answer` 取自
+  `suggestion.final_answer`，鸭子取数可用 `getattr(s, "final_answer", None)`。
 - `confirm_review`：需复核建议（`needs_review` 为 `True`）→
   `Response(item_id=..., correct=correct, learner_answer=<传入值或 suggestion.final_answer>,
-  response_ms=response_ms)`。`correct` 必须为 `bool`；`learner_answer` 缺省（`None`）记录
-  转写的 `final_answer`，传入非 `None` 值则按人审改写记录。`needs_review=False` 的干净
-  建议 → `GradeError`（防止人审路径静默绕过自动结论）。
-- 两者的 `suggestion` 必须暴露非空 str `item_id` 与 bool `needs_review`，否则 `GradeError`。
+  response_ms=response_ms)`。`correct` 必须为 `bool`（**严格 `isinstance(..., bool)`**，
+  拒 `int`）；`learner_answer` 缺省的判定是 `is None`（**仅 `None` 视为「未改写」**——
+  传入 `""` / `0` 等「假值」仍按人审改写记录，不回落到 `suggestion.final_answer`，实现自由）。
+  `needs_review=False` 的干净建议 → `GradeError`（消息内容实现自由；防止人审路径静默
+  绕过自动结论）。
+- 两者的 `suggestion` 必须暴露非空 str `item_id` 与 bool `needs_review`，否则 `GradeError`
+  （消息内容实现自由）。
 
 **例子**〔测试裁定 `test_confirm_review_human_path_and_gate`、
 `test_suggest_response_gate_on_needs_review`〕：部分配对（前 2 步）的建议
@@ -364,7 +375,7 @@ def confirm_review(suggestion, correct, learner_answer=None, response_ms=None) -
 | `image_format` 不在 `IMAGE_FORMATS`（`"bmp"` / `"PNG"` 大小写敏感） | `GradeError`（V4，零出网） |
 | `min_confidence` 非 [0,1] 有限数字（`-0.1` / `1.5` / `True` / `"0.9"` / `nan`） | `GradeError`（V5，零出网） |
 | `parse_transcription` 入参非 str（`None`） | `GradeError`（已出网 1 次，`answer_grader` 未调用） |
-| `parse_transcription` 收到空/全空白文本、无 JSON 对象（`"no braces"`、`"{"`、`"}"`）、JSON 解析失败（`"not json {bad} tail"`） | `GradeError` |
+| `parse_transcription` 收到空/全空白文本、无 JSON 对象（`"no braces"`、`"{"`、`"}"`）、JSON 解析失败（`"not json {bad} tail"`） | `GradeError`（前者消息含 `"no json"`、后者消息含 `"not valid json"`） |
 | `parse_transcription` 顶层非 dict（`"[1]"`） | `GradeError` |
 | `parse_transcription` 缺 `steps` 或 `steps` 非 list（`"{}"`、`'{"steps": {}}'`） | `GradeError` |
 | `parse_transcription` 步骤非 dict（`'{"steps": [5]}'`）、缺 `text`/`confidence`、`text` 非 str、`confidence` 非 [0,1] 有限数字（`-0.1` / `1.1` / `"0.9"` / `True` / `None` / `inf` / `nan`） | `GradeError` |
@@ -372,10 +383,10 @@ def confirm_review(suggestion, correct, learner_answer=None, response_ms=None) -
 | `parse_transcription` 的 `final_answer` 为空白串（`"  "`）或缺席或 `null` | 容忍，规整为 `None` |
 | `parse_transcription` 未知顶层/步骤内键（`extra` / `junk`） | 容忍，忽略 |
 | `parse_transcription` 的 `steps` 为空 list | 容忍，得 `{"steps": [], "final_answer": ...}` |
-| `answer_grader` 返回非 `bool`（如 `"yes"`） | `GradeError`（已出网 1 次） |
+| `answer_grader` 返回非 `bool`（如 `"yes"` / `0` / `numpy.bool_`） | `GradeError`（已出网 1 次，消息含 `"bool"`） |
 | `client.vision` 抛 `RuntimeError` | 原样传播 `RuntimeError`（不包装） |
 | `answer_grader` 抛 `ValueError` | 原样传播 `ValueError`（不包装） |
-| `suggest_response(needs_review=True 的建议)` | `GradeError` |
+| `suggest_response(needs_review=True 的建议)` | `GradeError`（消息含 `"review"`） |
 | `suggest_response(object())` 等无 bool `needs_review` 的鸭子对象 | `GradeError` |
 | `confirm_review(needs_review=False 的干净建议, ...)` | `GradeError` |
 | `confirm_review(..., correct=1)` 等非 bool | `GradeError` |

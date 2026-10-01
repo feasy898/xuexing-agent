@@ -268,9 +268,11 @@ TTS_VOICE, DEFAULT_TIMEOUT)`）〔测试裁定 `test_client_defaults_and_attribu
 （:287-294）〕。
 
 **内部请求管线** `_post(cap, body, content_type)`〔参考裁定整体存在性，见下〕：
-`check_url(ENDPOINTS[cap], resolve=self._resolve)`（**每次请求前必过白名单**，
-含 MockTransport 注入路径——与 HttpTransport 双保险）→ headers 恰两键
-`{"Authorization": f"Bearer {self._key}", "Content-Type": content_type}` →
+参考实现会在每次请求前调用 `check_url(ENDPOINTS[cap], resolve=self._resolve)`，
+与 `HttpTransport` 内部前向 `check_url` 互为双保险。**此调用契约测试未仲裁**——
+`ENDPOINTS` 已是冻结常量，重生成实例可自由决定是否在 `_post` 内重复校验
+（保留则属纵深防御，省略亦不影响 28 项契约测试全绿）。其后是契约化步骤：
+headers 恰两键 `{"Authorization": f"Bearer {self._key}", "Content-Type": content_type}` →
 `transport.post(url, headers=..., body=..., content_type=..., timeout=self.timeout)`
 → 非 200 → `LLMError(f"mm http {status}")`。
 
@@ -300,7 +302,9 @@ payload `{"model": self.model, "messages": messages}` 以
 
 委托 `vision_content(prompt, images, image_format)` 构造 content，payload
 `{"model": self.model, "messages": [{"role": "user", "content": content}]}`，
-**与 chat 同一端点（`ENDPOINTS["chat"]`）**、同一 JSON 序列化与应答解析。
+**与 chat 同一端点（`ENDPOINTS["chat"]`）**、同一 JSON 序列化与应答解析（响应形状错误消息同样为 `'bad chat response'`，与 `chat` 方法一致
+〔测试裁定 `test_client_bad_response_bodies`（tests/contract/
+test_mm_client_contract.py:464-480）〕）。
 
 实测〔测试裁定 `test_client_vision_payload_and_shared_endpoint`（:345-363）〕：
 `client.vision("图里是什么颜色？", [b"\x89PNG\r\n\x1a\n"])` → `"模拟回答"`，
@@ -410,7 +414,7 @@ headers `Content-Type == MULTIPART_CONTENT_TYPE`，body 与
 | `check_url`：非 str/空串 | 调用即抛 `LLMError` |
 | `check_url`：scheme ≠ `https` | 调用即抛 `LLMError` |
 | `check_url`：含 userinfo | 调用即抛 `LLMError` |
-| `check_url`：host ≠ `api.stepfun.com`（含后缀伪装、尾点） | 调用即抛 `LLMError` |
+| `check_url`：host ≠ `api.stepfun.com`（含后缀伪装） | 调用即抛 `LLMError` |
 | `check_url`：显式端口非 443 / 端口串非法 | 调用即抛 `LLMError`（端口串经 `ValueError` 包装） |
 | `check_url`：resolver 抛异常 / 返回空 / 非 str / 不可解析地址 | 调用即抛 `LLMError` |
 | `check_url`：解析 IP 属私网/环回/链路本地/保留/组播/未指定任一（混合列表任一坏即全拒） | 调用即抛 `LLMError` |
@@ -442,3 +446,7 @@ headers `Content-Type == MULTIPART_CONTENT_TYPE`，body 与
 - **不扩展第五能力**：vision 复用 chat 端点，不引入新端点/新协议；四能力外的
   多模态调用（如图生图、视频）不在本模块。
 - **不引入随机与时钟**（§5）；不做绝对日历/时区处理（模块无时间戳字段）。
+- `vision_content` 的 `image_format` 校验仅在遇到 `bytes` 元素时通过
+  `data_url(img, image_format)` 间接触发；**纯 `data:image/...` 前缀 str 入参**
+  （如 `["data:image/png;base64,AAA"]`）时该参数不被校验、实现可自由决定是否
+  触发 `LLMError`（契约测试未覆盖，参考实现按惰性校验实现）。
