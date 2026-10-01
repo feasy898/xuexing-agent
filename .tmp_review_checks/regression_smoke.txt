@@ -1,0 +1,15 @@
+离线冒烟（进程内 TestClient，零网络）：13 项检查
+  [1/13] POST /papers/diagnostic 出卷（item_ids 与蓝图等长） ...... PASS
+  [2/13] POST /trace 学习轨迹 → 存画像（profile_saved=True，3 快照） ...... PASS
+  [3/13] GET /learners/smoke-1/profile 画像五字段 ...... PASS
+  [4/13] GET /learners/smoke-1/plan 路线（steps 非空、含 reviews） ...... PASS
+  [5/13] GET /learners/smoke-1/next_item 自适应选题（item_id 非空） ...... PASS
+  [6/13] POST /learners/smoke-1/reviews 复习打卡（rating 9 → 400） ...... PASS
+  [7/13] POST /grade 判分（原子 + 批量 n=3） ...... PASS
+  [8/13] POST /blueprint 蓝图（budget=3 → counts 合计 3） ...... PASS
+  [9/13] POST /recommend 推荐（kp 模式 + 画像模式） ...... PASS
+  [10/13] POST /attribute 错因归因（签名命中 mc_sign_neg，零 LLM） ...... PASS
+  [11/13] POST /itembank/v2/validate 全库 schema v2（valid=True，total=题数） ...... PASS
+  [12/13] POST /coverage/standard 课标覆盖（grade7 kps × 课标清单） ...... PASS
+  [13/13] 多租户 X-Org-Id（org-a 隔离；缺省归并 default；/orgs 可见） ...... PASS
+SMOKE OK: 13/13 checks passed (bank=math_grade7_items.json items=222, kps=37)

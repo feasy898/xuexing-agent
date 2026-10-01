@@ -1,6 +1,6 @@
 # PM-STATE — 学情诊断 Agent 开发台账
 
-> 更新：2026-09-28 夜间开发会话。本文件是断点续作的权威依据：任何新会话从这里恢复上下文。
+> 更新：2026-10-02 契约第三波 + D 扩量 + P 阶段收口会话。本文件是断点续作的权威依据：任何新会话从这里恢复上下文。
 
 ## 产品愿景（一句话）
 
@@ -31,12 +31,18 @@
 | M4c | 终版实例替换 src/xuexing/ | ✅ | 110 测试全绿；commit d162578；**tag v0.1.0**。spec 驱动闭环完成：oracle→冻结→契约内重生成→终版入库 |
 | M3 | 工作流#2：知识注入 | ✅ | commit ab541ec：101 知识点（带课标出处）、321 题（每知识点≥3 道、独立审题员验算）、65 误解模式、52 母题模式；validate_knowledge 通过；抽样 5 题人工验算正确 | 
 | M5 | night-iteration + 契约冻结第二波 | ✅ **整夜完成** | 夜间 13 项迭代（KT/蓝图/判分/母题/课标/误解/schema v2/server API/双代理复验 321-321/版面/xAPI/OMR/多租户）+ 契约冻结第二波（8/8 新规格冻结、各 3 轮重生成全过）；终版替换 src → commit c0a116f → **tag v0.2.0 → 558 测试全绿、BACKLOG 清零** |
+| M6 | 契约第三波 + 知识注入第三波 + P 阶段（runbook/冒烟） | ✅ **2026-10-02 收口** | C：9 模块清单冻结（tag `wave3-contracts-list`，9839a3f）→ 9 份契约冻结（specs/frozen 16→25，028eafa/1776b3a）→ 两轮盲重写全过（第 1 轮 GLM-5.3-Flash b571523，第 2 轮 MiniMax-M3.1-Flash 异模型独立盲写 058fe72）→ 终版入库 **tag `v0.3.0`**（545392d）。D：MiniMax-M3 原创命题 320（ce192fa）→ 双代理 agree 301 合并、19 分歧入仲裁队列未回填（431648c/9bca515/e3ae481）→ **题库 810→1111，1111/1111 dual-agent-verified**。P：`docs/runbook.md` 成文 + `tools/smoke_api.py` 起服冒烟 14/14 端点通过（239a136）；全量 **709 测试全绿**。渠道路线 P-3 保持 WAITING_HUMAN |
 
 ## 当前状态（下一会话从这里开始）
 
-- 仓库在 **v0.2.0**（commit c0a116f），BACKLOG 全清。下一批候选（待用户定优先级）：
-  新学科（物理/英语）、高中段、机构 OpenAPI 聚合层、多模态批改接入、总部数据看板。
-- 恢复协议：读本文件 → `python -m pytest`（应 558 passed）→ 定新 BACKLOG →
+- 仓库在 **v0.3.0**（tag = 545392d「C-5 第三波终版入库」；HEAD 239a136 为其后的 P 阶段文档收口），契约第三波 + D 扩量 + P runbook/冒烟全部收口，TASK.md 主体目标达成。
+- 2026-10-02 实测基线：`python -m pytest` → **709 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → **VALIDATION OK: 189 kps, 1111 items, 343 misconceptions (58 exempt), 52 archetypes, 1111/1111 dual-agent-verified**；`tools/run_contract.py` → exit 0；`git ls-files` 无 `.env`。本地 tag：`v0.3.0`、`wave3-contracts-list`。
+- 待办（等 owner / 下一批）：
+  **P-3 三渠道路线裁定 = WAITING_HUMAN（不可代签，裁定前不扩做渠道）**；
+  仲裁队列 19 条分歧待人工裁定（`data/verification/arbitration_queue_wave3_annotated.json`，归因 wrong_solve=6，未回填）；
+  多模态真调需自备凭据（`STEPFUN_API_KEY`/`XX_LLM_API_KEY`）。
+  新批次候选（待用户定优先级）：新学科（物理/英语）、高中段、机构 OpenAPI 聚合层、多模态真调接入、总部数据看板。
+- 恢复协议：读本文件 → `python -m pytest`（应 709 passed）→ 定新 BACKLOG →
   用 night-iteration(saved workflow) 逐项跑 → 每次完成通知后审查+提交+发下一项。
 
 ## 模块与契约清单（重生成范围）

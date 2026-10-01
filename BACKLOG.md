@@ -272,6 +272,13 @@
   全套 693 测试 + 2 skip + validate_knowledge --min-items-per-kp 3
   （321/321 dual-agent-verified 保留）+ run_contract 参考实现 / --impl-dir
   src/xuexing 注入（mm_grade 单模块）全绿）
-- [ ] **知识注入第三波·初中加深**：题库 321→1000+（每 KP 6-10 题）、误解 202→300+、母题 52→100+，双代理复验回填
+- [x] **知识注入第三波·初中加深**：题库 321→1000+（每 KP 6-10 题）、误解 202→300+、母题 52→100+，双代理复验回填
+  （✅ 完成于 2026-10-02，按 TASK.md 阶段 D 验收口径：题库 321→**1111**（≥1000 达成；其中本轮 810→1111）、**1111/1111 dual-agent-verified**、误解覆盖门通过（343 条，58 豁免）。
+  实绩：MiniMax-M3 原创命题 320 → 双代理 agree 301 合并（分布 g1+40/g2+37/g3+36/g4+33/g5+45/g6+39/g8+71）/19 分歧入仲裁队列未回填/3 跨年级重复移除+3 补题替换；
+  台账 data/verification/verify_manifest_wave3.json + ledger_m3_gen/step5_indep_wave3.json（提交 ce192fa/431648c/9bca515/e3ae481）。
+  残留如实注记：原行内『母题 52→100+』未纳入本轮（现 52）；全库均值 ~5.9 题/KP（原注 6-10 未严格达成）——如需列入下一批待 owner 定优先级）
 - [ ] **学段扩张·小学 1-6 年级数学**：图谱~80 KP（低龄策略：游戏化优先）+ 基础题库~200 + 误解库，validate_knowledge 覆盖
-- [ ] **冻结契约第三波 + 终版入库 v0.3.0**
+- [x] **冻结契约第三波 + 终版入库 v0.3.0**
+  （✅ 完成于 2026-10-02：C-1 9 模块清单冻结 tag `wave3-contracts-list`（9839a3f）→ C-2 契约 9 份冻结（specs/frozen 16→25，028eafa/1776b3a）→
+  C-3 两轮盲重写全过（b571523 GLM-5.3-Flash / 058fe72 MiniMax-M3.1-Flash 异模型）→ C-5 终版入库 regen/wave3final→src 打 **tag `v0.3.0`**（545392d）；
+  全量 G0 零回归：709 passed / 0 failed + validate_knowledge VALIDATION OK + run_contract exit 0）
