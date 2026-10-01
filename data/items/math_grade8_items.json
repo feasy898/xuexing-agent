@@ -2506,31 +2506,6 @@
       }
     },
     {
-      "id": "m8_130",
-      "item_type": "choice",
-      "stem": "下列各式中，正确的是（　）",
-      "answer": "D",
-      "kps": [
-        "kp_mul_formula"
-      ],
-      "difficulty": 0.55,
-      "solution": "A应为a²−9；B应为a²+6a+9；C应为4a²+4a+1；D为平方差公式，正确。",
-      "source": "llm_generated",
-      "options": [
-        "A. (a+3)(a-3)=a²+9",
-        "B. (a+3)²=a²+9",
-        "C. (2a+1)²=4a²+2a+1",
-        "D. (a+b)(a-b)=a²-b²"
-      ],
-      "verification": {
-        "agents": [
-          "m3-gen-wave3-20261002",
-          "step5-indep-wave3-20261002"
-        ],
-        "answers_agree": true
-      }
-    },
-    {
       "id": "m8_131",
       "item_type": "solve",
       "stem": "利用完全平方公式计算：99²=____。",
@@ -2897,31 +2872,6 @@
       }
     },
     {
-      "id": "m8_150",
-      "item_type": "choice",
-      "stem": "下列说法中，正确的是（　）",
-      "answer": "B",
-      "kps": [
-        "kp_quadratic_radical"
-      ],
-      "difficulty": 0.55,
-      "solution": "A：√4=2（算术平方根为非负），不是±2；B：-√9=-3，正确；C：√(a²)=|a|，a<0时不等；D：二次根式有意义的条件是被开方数≥0（不一定是正数）。B正确。",
-      "source": "llm_generated",
-      "options": [
-        "A. √4=±2",
-        "B. -√9=-3",
-        "C. √(a²)=a",
-        "D. 二次根式有意义的条件是被开方数为正数"
-      ],
-      "verification": {
-        "agents": [
-          "m3-gen-wave3-20261002",
-          "step5-indep-wave3-20261002"
-        ],
-        "answers_agree": true
-      }
-    },
-    {
       "id": "m8_151",
       "item_type": "fill",
       "stem": "计算：√6·√15=____。",
@@ -2989,31 +2939,6 @@
       "difficulty": 0.3,
       "solution": "矩形的对角线相等且互相平分，所以BD=AC=10。",
       "source": "llm_generated",
-      "verification": {
-        "agents": [
-          "m3-gen-wave3-20261002",
-          "step5-indep-wave3-20261002"
-        ],
-        "answers_agree": true
-      }
-    },
-    {
-      "id": "m8_155",
-      "item_type": "choice",
-      "stem": "下列说法正确的是（　）",
-      "answer": "B",
-      "kps": [
-        "kp_special_quadrilaterals"
-      ],
-      "difficulty": 0.55,
-      "solution": "A对角线相等的四边形不一定是矩形（如等腰梯形）；B对角线互相垂直的平行四边形是菱形，正确；C有两个角是直角的四边形不一定是矩形（还可能是直角梯形）；D一组邻边相等的四边形不一定是菱形（还可能是筝形）。B正确。",
-      "source": "llm_generated",
-      "options": [
-        "A. 对角线相等的四边形是矩形",
-        "B. 对角线互相垂直的平行四边形是菱形",
-        "C. 有两个角是直角的四边形是矩形",
-        "D. 一组邻边相等的四边形是菱形"
-      ],
       "verification": {
         "agents": [
           "m3-gen-wave3-20261002",
@@ -3298,6 +3223,81 @@
       "difficulty": 0.7,
       "solution": "用售出件数作权的加权平均数=(50×40+30×60)÷(40+60)=(2000+1800)÷100=3800÷100=38(元/件)。",
       "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "m8_171",
+      "item_type": "choice",
+      "stem": "计算：(2x+3)²=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_mul_formula"
+      ],
+      "difficulty": 0.55,
+      "solution": "利用完全平方公式(a+b)²=a²+2ab+b²：(2x+3)²=(2x)²+2·(2x)·3+3²=4x²+12x+9。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4x²+12x+9",
+        "B. 4x²+6x+9",
+        "C. 2x²+12x+9",
+        "D. 4x²+12x+6"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "m8_172",
+      "item_type": "choice",
+      "stem": "下列各式中，一定是二次根式的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_quadratic_radical"
+      ],
+      "difficulty": 0.55,
+      "solution": "对任意实数a，a²+1≥1>0恒成立，故√(a²+1)一定是二次根式；A需a≥0；C需a²≥1；D中根号下恒为非正，无意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. √a",
+        "B. √(a²+1)",
+        "C. √(a²-1)",
+        "D. √(-a²)"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "m8_173",
+      "item_type": "choice",
+      "stem": "在菱形ABCD中，对角线AC=6，BD=8，则菱形的边长为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_special_quadrilaterals"
+      ],
+      "difficulty": 0.55,
+      "solution": "菱形对角线互相垂直且互相平分，边长=√((AC/2)²+(BD/2)²)=√(3²+4²)=√25=5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 7",
+        "D. 10"
+      ],
       "verification": {
         "agents": [
           "m3-gen-wave3-20261002",

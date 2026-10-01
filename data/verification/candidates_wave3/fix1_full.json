@@ -1,0 +1,56 @@
+[
+  {
+    "id": "m8_171",
+    "item_type": "choice",
+    "stem": "计算：(2x+3)²=（　）",
+    "options": [
+      "A. 4x²+12x+9",
+      "B. 4x²+6x+9",
+      "C. 2x²+12x+9",
+      "D. 4x²+12x+6"
+    ],
+    "answer": "A",
+    "kps": [
+      "kp_mul_formula"
+    ],
+    "difficulty": 0.55,
+    "solution": "利用完全平方公式(a+b)²=a²+2ab+b²：(2x+3)²=(2x)²+2·(2x)·3+3²=4x²+12x+9。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_172",
+    "item_type": "choice",
+    "stem": "下列各式中，一定是二次根式的是（　）",
+    "options": [
+      "A. √a",
+      "B. √(a²+1)",
+      "C. √(a²-1)",
+      "D. √(-a²)"
+    ],
+    "answer": "B",
+    "kps": [
+      "kp_quadratic_radical"
+    ],
+    "difficulty": 0.55,
+    "solution": "对任意实数a，a²+1≥1>0恒成立，故√(a²+1)一定是二次根式；A需a≥0；C需a²≥1；D中根号下恒为非正，无意义。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_173",
+    "item_type": "choice",
+    "stem": "在菱形ABCD中，对角线AC=6，BD=8，则菱形的边长为（　）",
+    "options": [
+      "A. 4",
+      "B. 5",
+      "C. 7",
+      "D. 10"
+    ],
+    "answer": "B",
+    "kps": [
+      "kp_special_quadrilaterals"
+    ],
+    "difficulty": 0.55,
+    "solution": "菱形对角线互相垂直且互相平分，边长=√((AC/2)²+(BD/2)²)=√(3²+4²)=√25=5。",
+    "source": "llm_generated"
+  }
+]

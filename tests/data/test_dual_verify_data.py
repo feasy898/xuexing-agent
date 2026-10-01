@@ -25,6 +25,13 @@
   注：data/verification/ledger_m8deep_blind_20260930.json 是八年级深挖批
   （m8_101..187，87 题）的盲解台账，该批题目尚未落库——它是无主产物，
   不构成本库运行，待八年级深挖批落库时再按本文件口径登记。
+- 2026-10-02 run（D 阶段第三波扩库批，G1-6 每 KP 补至 >=6 + G8 全补，候选 320
+  题经 MiniMax-M3 生成自答 × step-5-preview 盲解双代理复验，agree 301 题合并；
+  19 题分歧入 arbitration_queue_wave3.json 未回填；3 题跨年级题干重复被移除并
+  由补题批 m8_171..173 替换）：代理对 m3-gen-wave3-20261002 ×
+  step5-indep-wave3-20261002，合并台账 ledger_m3_gen_wave3.json /
+  ledger_step5_indep_wave3.json；题内 verification 记录即为覆盖凭证，
+  由 WAVE3_AGENTS 圈定并在并集检查与代理登记中强制。
 
 三次 ledger 运行各自验证：ledger 逐题覆盖其子库且与标答判等；manifest 与
 现场重跑裁决逐位一致；回填记录 agents 与 manifest 代理身份一致、
@@ -64,6 +71,16 @@ P12_QUEUE_PATH = os.path.join(VERIFICATION_DIR, "arbitration_queue_p12_20260930.
 NIGHT_AGENTS = ["m3-reviewer", "night-reverify-20260929"]
 P34_AGENTS = ["p34-reviewer", "recheck-20260930"]
 P12_AGENTS = ["p12-editor-20260930", "step-p12-blind-20260930"]
+# 2026-10-02 D 阶段第三波扩库批（G1-6 每 KP 补至 >=6 + G8 全补；agree 合并 301 题）：
+# m3-gen-wave3-20261002(生成自答) × step5-indep-wave3-20261002(盲解)，代理对落库
+# 原序一致；台账 ledger_m3_gen_wave3.json / ledger_step5_indep_wave3.json，
+# 分歧 19 条入 arbitration_queue_wave3.json 未回填（含补题批 disputed=0）。
+WAVE3_AGENTS = ["m3-gen-wave3-20261002", "step5-indep-wave3-20261002"]
+WAVE3_PREFIXES = ("p1_", "p2_", "p3_", "p4_", "p5_", "p6_", "m8_")
+
+
+def _is_wave3(it):
+    return it.get("verification", {}).get("agents") == WAVE3_AGENTS
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
 DEEPEN_AGENTS_BY_GRADE = {
     "m7": [["step-3.7-flash", "g7-deepen-review-20260930"]],
@@ -115,7 +132,8 @@ def night_bank(night_items, ledger):
 
 @pytest.fixture(scope="module")
 def p34_items():
-    return _load_items(P34_ITEM_FILES)
+    # 2026-10-02 wave3 扩库批的 3-4 年级新题不属于本运行，按代理身份剔除
+    return [it for it in _load_items(P34_ITEM_FILES) if not _is_wave3(it)]
 
 
 @pytest.fixture(scope="module")
@@ -155,7 +173,8 @@ def p34_queue():
 
 @pytest.fixture(scope="module")
 def p12_items():
-    return _load_items(P12_ITEM_FILES)
+    # 2026-10-02 wave3 扩库批的 1-2 年级新题不属于本运行，按代理身份剔除
+    return [it for it in _load_items(P12_ITEM_FILES) if not _is_wave3(it)]
 
 
 @pytest.fixture(scope="module")
@@ -403,29 +422,39 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     p34_ids = set(p34_ledger["answers"])
     p12_ids = set(p12_ledger["answers"])
     all_ids = {it["id"] for it in all_items}
+    # 2026-10-02 wave3 扩库批：按题内 verification 代理身份圈定（agree 合并才落库）
+    wave3_ids = {it["id"] for it in all_items if _is_wave3(it)}
     assert len(all_items) == len(all_ids), "duplicate item id across files"
     assert not (night_ids & p34_ids) and not (night_ids & p12_ids) \
         and not (p34_ids & p12_ids), "两运行覆盖重叠"
-    assert p34_ids == {i for i in all_ids if i.startswith(("p3_", "p4_"))}, (
-        "p34 运行须恰好覆盖全部 3-4 年级题")
-    assert p12_ids == {i for i in all_ids if i.startswith(("p1_", "p2_"))}, (
-        "p12 运行须恰好覆盖全部 1-2 年级题")
+    assert not (wave3_ids & (night_ids | p34_ids | p12_ids)), "wave3 与存量运行重叠"
+    assert all(i.startswith(WAVE3_PREFIXES) for i in wave3_ids), \
+        "wave3 批只允许落在 p1-p6/m8 段"
+    assert p34_ids == {i for i in all_ids if i.startswith(("p3_", "p4_"))} - wave3_ids, (
+        "p34 运行须恰好覆盖全部 3-4 年级存量题（wave3 扩出部分除外）")
+    assert p12_ids == {i for i in all_ids if i.startswith(("p1_", "p2_"))} - wave3_ids, (
+        "p12 运行须恰好覆盖全部 1-2 年级存量题（wave3 扩出部分除外）")
     # 7-9 库 = night 存量 321 + g7 deepen 93（m7_130..222）+ m9 deepen 105
-    #（m9_106..210）；deepen 批无独立台账，题内 verification 记录即为覆盖凭证
+    #（m9_106..210）；deepen 批无独立台账，题内 verification 记录即为覆盖凭证；
+    # m8 的 wave3 扩出部分归 wave3 批
     m_ids = {i for i in all_ids if i.startswith(("m7_", "m8_", "m9_"))}
-    deepen_ids = m_ids - night_ids
-    assert night_ids | deepen_ids == m_ids and not (night_ids & deepen_ids), (
-        "night 与 deepen 批须合并覆盖全部 7-9 年级题且互不重叠")
+    deepen_ids = m_ids - night_ids - wave3_ids
+    assert night_ids | deepen_ids | (m_ids & wave3_ids) == m_ids, (
+        "night/deepen/wave3 须合并覆盖全部 7-9 年级题")
     assert len(night_ids) == 321 and len(p34_ids) == 94 and len(p12_ids) == 96
     assert len(deepen_ids) == 198, (
         "deepen 批规模变化（现 198=93+105）：新增批次须先登记 "
         "DEEPEN_AGENTS_BY_GRADE 并在本闭式同步")
     # 五/六年级扩库批 101 题（3+3 original × p56 对 + 47+48 llm × reviewer）
     # 不在任何 ledger 运行内，由代理登记表覆盖（见下一测试）
-    p56_ids = {i for i in all_ids if i.startswith(("p5_", "p6_"))}
+    p56_ids = {i for i in all_ids if i.startswith(("p5_", "p6_"))} - wave3_ids
     assert len(p56_ids) == 101
+    # 2026-10-02 wave3 批闭式：G1-6+G8 双代理 agree 合并恰 301 题
+    #（320 生成 - 19 分歧未回填 - 3 跨年级题干重复移除 + 3 补题替换）
+    assert len(wave3_ids) == 301, (
+        "wave3 批规模变化：扩库/移除/补题后须同步本闭式")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
-    assert night_ids | p34_ids | p12_ids | deepen_ids | p56_ids == all_ids
+    assert night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids == all_ids
 
 
 def test_verification_agents_match_owning_run(all_items, ledger):
@@ -436,6 +465,8 @@ def test_verification_agents_match_owning_run(all_items, ledger):
         iid = it["id"]
         if iid in night_ids:
             assert rec["agents"] == NIGHT_AGENTS, iid
+        elif rec["agents"] == WAVE3_AGENTS:
+            assert iid.startswith(WAVE3_PREFIXES), iid
         elif iid.startswith(("p3_", "p4_")):
             assert rec["agents"] == P34_AGENTS, iid
         elif iid.startswith(("p1_", "p2_")):
