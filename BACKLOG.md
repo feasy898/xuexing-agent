@@ -282,3 +282,17 @@
   （✅ 完成于 2026-10-02：C-1 9 模块清单冻结 tag `wave3-contracts-list`（9839a3f）→ C-2 契约 9 份冻结（specs/frozen 16→25，028eafa/1776b3a）→
   C-3 两轮盲重写全过（b571523 GLM-5.3-Flash / 058fe72 MiniMax-M3.1-Flash 异模型）→ C-5 终版入库 regen/wave3final→src 打 **tag `v0.3.0`**（545392d）；
   全量 G0 零回归：709 passed / 0 failed + validate_knowledge VALIDATION OK + run_contract exit 0）
+
+## K12 全量建设（2026-10-02 owner 新使命，当前主线）
+
+- [ ] **K12-0 基建**：工具层多学科化（validate_knowledge/check_standard_coverage/dual_agent_verify，`<subject>_grade<N>`、年级 1-12）+ item schema v3（form/acceptable_variants/scoring_points/rubric/textbook_ref）+ paper_spec 卷型新契约 + 测试层学科中立化；.env 真调（✅ key 已验证 2026-10-02）
+- [ ] **K12-R 课标与真题研究**：9 学科课标结构 + 题型目录 + 真题卷型（近 3 年加权）+ 海南专项（中考卷型/高考 II卷×海南选考/教材版本/3+3 转换分）→ docs/research/k12/
+- [ ] **K12-1 数学全学段**：小学 88 KP 课标清单补建与审计；初中 28 主题复验 + 题型矩阵（对齐海南中考）；高中数学新建（人教A版锚，~120 KP）+ 高中题库母题（双代理复验）
+- [ ] **K12-2 九学科图谱**：语/英/物/化/生/史/地/政（含小学道法）+ 小学科学，每 KP 带 topic_id + textbook_ref + prereqs + 题型矩阵（预估 ~1350 KP）
+- [ ] **K12-3 九学科题库母题**：题型矩阵配额（每 KP ≥3 题且主要形态 ≥1、母题 ≥1/KP）；主观题变体集/采分点、作文 rubric；双代理 agree 入库（~4000-5000 题）
+- [ ] **K12-4 卷型与出卷**：paper_spec 卷型库（学科×学段×用途，加权真题结构）+ 海南默认 profile + 学校惯例卷面
+- [ ] **K12-5 比对审计**：题型覆盖审计 ≥98% + 卷面加权比对（>15% 差异不过线）+ 答案质量抽检 → docs/audits/
+- [ ] **K12-6 多模态真调**：stepaudio asr/tts + step-5 vision 真调冒烟
+- [ ] **K12 收口 v0.4.0**：G0 零回退贯穿，每学科完成即提交
+- [ ] （沿承）母题 52→100+（数学初中）与全库 6 题/KP 加密——K12-3 完成后排期
+- [ ] （沿承）P-3 渠道裁定 WAITING_HUMAN；19 条仲裁分歧人工复核

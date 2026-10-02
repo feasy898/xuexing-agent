@@ -35,15 +35,15 @@
 
 ## 当前状态（下一会话从这里开始）
 
-- 仓库在 **v0.3.0**（tag = 545392d「C-5 第三波终版入库」；HEAD 239a136 为其后的 P 阶段文档收口），契约第三波 + D 扩量 + P runbook/冒烟全部收口，TASK.md 主体目标达成。
+- 仓库在 **v0.3.0**（tag = 545392d「C-5 第三波终版入库」；其后为 P 阶段文档收口与 K12 立项文档），契约第三波 + D 扩量 + P runbook/冒烟全部收口；远端 github.com/feasy898/xuexing-agent 已同步（59 提交 + 双 tag）。
 - 2026-10-02 实测基线：`python -m pytest` → **709 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → **VALIDATION OK: 189 kps, 1111 items, 343 misconceptions (58 exempt), 52 archetypes, 1111/1111 dual-agent-verified**；`tools/run_contract.py` → exit 0；`git ls-files` 无 `.env`。本地 tag：`v0.3.0`、`wave3-contracts-list`。
+- **当前主线（2026-10-02 owner 新使命）：K12 全量建设**——9 学科 × 小一～高三 × 课标全对齐 × 卷子生成为核心，验收四指标（KP 全入 / 题型覆盖 ≥98% / 答案三层准确性 / 加权对齐+海南默认 profile），阶段 K12-0..6 详见 TASK.md §4 与 BACKLOG「K12 全量建设」节。StepFun step_plan 凭据在 `.env`（已验证可用）。
 - 待办（等 owner / 下一批）：
   **P-3 三渠道路线裁定 = WAITING_HUMAN（不可代签，裁定前不扩做渠道）**；
   仲裁队列 19 条分歧待人工裁定（`data/verification/arbitration_queue_wave3_annotated.json`，归因 wrong_solve=6，未回填）；
-  多模态真调需自备凭据（`STEPFUN_API_KEY`/`XX_LLM_API_KEY`）。
-  新批次候选（待用户定优先级）：新学科（物理/英语）、高中段、机构 OpenAPI 聚合层、多模态真调接入、总部数据看板。
-- 恢复协议：读本文件 → `python -m pytest`（应 709 passed）→ 定新 BACKLOG →
-  用 night-iteration(saved workflow) 逐项跑 → 每次完成通知后审查+提交+发下一项。
+  数学初中母题 52→100+ 与全库 6 题/KP 加密（K12-3 后排期）。
+- 恢复协议：读本文件 → `python -m pytest`（应 709 passed）→ 读 TASK.md §4 K12 阶段 →
+  按学科流水线跑 K12 工作流（研究→图谱→题库→卷型→审计）→ 每次完成通知后审查+提交+发下一项。
 
 ## 模块与契约清单（重生成范围）
 
