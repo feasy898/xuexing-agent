@@ -81,6 +81,19 @@ WAVE3_PREFIXES = ("p1_", "p2_", "p3_", "p4_", "p5_", "p6_", "m8_")
 
 def _is_wave3(it):
     return it.get("verification", {}).get("agents") == WAVE3_AGENTS
+
+
+# 2026-10-03 K12 高中数学题库批（G1=0 高一必修/高二选必一、G2=11 必修二/选必二、
+# G3=12 选必三；候选 393 题经 agree 合并 377 题、16 分歧未回填）：
+# hsg-gen-w1-20261003(生成自答) × hsg-indep-w1-20261003(盲解)，代理对落库原序一致。
+HS_MATH_AGENTS = ["hsg-gen-w1-20261003", "hsg-indep-w1-20261003"]
+HS_MATH_PREFIX = "h_"
+
+
+def _is_hs_math(it):
+    return it.get("verification", {}).get("agents") == HS_MATH_AGENTS
+
+
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
 DEEPEN_AGENTS_BY_GRADE = {
     "m7": [["step-3.7-flash", "g7-deepen-review-20260930"]],
@@ -453,8 +466,14 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     #（320 生成 - 19 分歧未回填 - 3 跨年级题干重复移除 + 3 补题替换）
     assert len(wave3_ids) == 301, (
         "wave3 批规模变化：扩库/移除/补题后须同步本闭式")
+    # 2026-10-03 K12 高中数学批闭式：候选 393 → agree 377 入库、16 分歧未回填
+    hs_ids = {it["id"] for it in all_items if _is_hs_math(it)}
+    assert len(hs_ids) == 377, (
+        "K12 高中批规模变化（现 377）：新增批次须先登记 HS_MATH_AGENTS 并在本闭式同步")
+    assert all(i.startswith(HS_MATH_PREFIX) for i in hs_ids), "高中批题 id 前缀须为 h_"
+    assert not (hs_ids & (night_ids | p34_ids | p12_ids | wave3_ids)), "高中批与既有批次重叠"
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
-    assert night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids == all_ids
+    assert night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids == all_ids
 
 
 def test_verification_agents_match_owning_run(all_items, ledger):
@@ -465,6 +484,8 @@ def test_verification_agents_match_owning_run(all_items, ledger):
         iid = it["id"]
         if iid in night_ids:
             assert rec["agents"] == NIGHT_AGENTS, iid
+        elif rec["agents"] == HS_MATH_AGENTS:
+            assert iid.startswith(HS_MATH_PREFIX), iid
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
         elif iid.startswith(("p3_", "p4_")):

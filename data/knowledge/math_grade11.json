@@ -1,0 +1,860 @@
+{
+  "subject": "math",
+  "grade_band": [
+    11
+  ],
+  "standard": "普通高中课程标准（2017年版2020年修订）必修课程·主题三 几何与代数/主题四 概率与统计",
+  "knowledge_points": [
+    {
+      "id": "kp_h11_vec_concept",
+      "name": "平面向量的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "向量是既有大小又有方向的量，用有向线段表示；掌握向量的模、零向量、单位向量、相等向量与共线（平行）向量的概念，规定零向量与任意向量共线",
+      "standard_ref": "2017版课标：通过力、速度等物理背景，理解平面向量的意义，掌握平面向量的几何表示",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_lines_rays"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_addsub",
+      "name": "向量的加法与减法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "向量加法的三角形法则与平行四边形法则、减法法则 a-b=a+(-b)；加法满足交换律与结合律，|a+b|≤|a|+|b|（同向时取等号）",
+      "standard_ref": "2017版课标：借助几何直观，掌握平面向量加、减运算及其运算律，理解其几何意义",
+      "prereqs": [
+        "kp_h11_vec_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_scalar",
+      "name": "向量的数乘与共线定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "实数 λ 与向量 a 的乘积 λa 的大小与方向规定及三条运算律（λ(μa)=(λμ)a、(λ+μ)a=λa+μa、λ(a+b)=λa+λb）；向量共线定理：b∥a（a≠0）当且仅当存在唯一实数 λ 使 b=λa",
+      "standard_ref": "2017版课标：掌握平面向量数乘运算及其运算律，理解其几何意义，理解两个平面向量共线的含义",
+      "prereqs": [
+        "kp_h11_vec_addsub"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_basic_theorem",
+      "name": "平面向量基本定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "若 e₁、e₂ 是同一平面内两个不共线的向量，则该平面内任一向量 a 可唯一表示为 a=λ₁e₁+λ₂e₂（λ₁、λ₂∈R）；基底的概念与向量的正交分解",
+      "standard_ref": "2017版课标：理解平面向量基本定理及其意义",
+      "prereqs": [
+        "kp_h11_vec_scalar"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_coords",
+      "name": "平面向量的坐标表示与坐标运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "取分别与 x 轴、y 轴同方向的单位向量 i、j 为基底，a=xi+yj=(x,y)；向量加减与数乘的坐标运算、中点坐标公式；两向量共线的坐标条件 x₁y₂-x₂y₁=0",
+      "standard_ref": "2017版课标：理解平面向量的正交分解及其坐标表示，掌握平面向量的坐标运算，理解其几何意义",
+      "prereqs": [
+        "kp_h11_vec_basic_theorem",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_dot_product",
+      "name": "平面向量的数量积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "非零向量 a 与 b 的夹角 θ∈[0,π]，数量积 a·b=|a||b|cosθ；数量积的运算律与投影（投影向量）意义；a⊥b 等价于 a·b=0，a·a=|a|²",
+      "standard_ref": "2017版课标：理解平面向量数量积的含义及其物理意义，能用数量积表示两个向量的夹角，判断两个平面向量的垂直关系",
+      "prereqs": [
+        "kp_h11_vec_addsub",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_dot_coords",
+      "name": "数量积的坐标表示与向量法的应用",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a·b=x₁x₂+y₁y₂，|a|=√(x₁²+y₁²)，cosθ=(x₁x₂+y₁y₂)/(√(x₁²+y₁²)·√(x₂²+y₂²))；用向量方法证明垂直、求夹角与长度，解决简单的平面几何、力学及其他实际问题",
+      "standard_ref": "2017版课标：掌握平面向量数量积的坐标表达式，会进行数量积的运算；会用向量方法解决简单的平面几何问题、力学问题与其他实际问题",
+      "prereqs": [
+        "kp_h11_vec_dot_product",
+        "kp_h11_vec_coords",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_law_of_cosines",
+      "name": "余弦定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a²=b²+c²-2bc·cosA 及其轮换形式；推论 cosA=(b²+c²-a²)/(2bc)；已知两边及其夹角或三边解三角形，并用于判断三角形形状",
+      "standard_ref": "2017版课标：借助向量的运算，探索三角形边长与角度的关系，掌握余弦定理，能用余弦定理解决简单的实际问题",
+      "prereqs": [
+        "kp_h11_vec_dot_product",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_law_of_sines",
+      "name": "正弦定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a/sinA=b/sinB=c/sinC=2R（R 为三角形外接圆半径）；已知两角及一边或两边及其中一边的对角解三角形，注意边角关系下解个数的判断",
+      "standard_ref": "2017版课标：借助向量的运算，探索三角形边长与角度的关系，掌握正弦定理，能用正弦定理解决简单的实际问题",
+      "prereqs": [
+        "kp_h11_vec_concept",
+        "kp_trig_def",
+        "kp_circle_basic"
+      ]
+    },
+    {
+      "id": "kp_h11_triangle_solve",
+      "name": "解三角形的实际应用",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "测量距离、高度与角度等实际问题：抽象出三角形模型，综合运用正弦定理、余弦定理与三角形面积公式 S=½ab·sinC 求解并检验",
+      "standard_ref": "2017版课标：掌握余弦定理、正弦定理，能用它们解决测量等简单的实际问题",
+      "prereqs": [
+        "kp_h11_law_of_sines",
+        "kp_h11_law_of_cosines",
+        "kp_rta_apply"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_concept",
+      "name": "复数的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "虚数单位 i 满足 i²=-1；复数 z=a+bi（a、b∈R）的代数形式，a 为实部、b 为虚部；b=0 时为实数，b≠0 时为虚数，a=0 且 b≠0 时为纯虚数；a+bi=c+di 当且仅当 a=c 且 b=d",
+      "standard_ref": "2017版课标：通过方程的解，认识复数，理解复数的代数表示，理解两个复数相等的含义",
+      "prereqs": [
+        "kp_qe_formula",
+        "kp_real_numbers"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_plane",
+      "name": "复数的几何意义、模与共轭复数",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "复平面：x 轴为实轴、y 轴为虚轴，复数 z=a+bi 与复平面内的点 Z(a,b) 及向量OZ 一一对应；模 |z|=√(a²+b²)；共轭复数 z̄=a-bi 且 |z̄|=|z|",
+      "standard_ref": "2017版课标：会用复平面上的点和平面向量表示复数，了解复数的几何意义，理解复数的模、共轭复数的概念",
+      "prereqs": [
+        "kp_h11_complex_concept",
+        "kp_coordinates",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_addsub",
+      "name": "复数的加法与减法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "(a+bi)±(c+di)=(a±c)+(b±d)i；复数加法满足交换律与结合律；复数加减法的几何意义即对应点（向量）的加减，符合平行四边形法则",
+      "standard_ref": "2017版课标：掌握复数代数表示式的加法、减法运算",
+      "prereqs": [
+        "kp_h11_complex_concept",
+        "kp_h11_vec_addsub"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_muldiv",
+      "name": "复数的乘法与除法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "(a+bi)(c+di)=(ac-bd)+(ad+bc)i，乘法满足交换律、结合律及对加法的分配律；除法将分子分母同乘分母的共轭复数实现分母实数化",
+      "standard_ref": "2017版课标：掌握复数代数表示式的乘法、除法运算",
+      "prereqs": [
+        "kp_h11_complex_addsub",
+        "kp_h11_complex_plane"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_trig",
+      "name": "复数的三角表示（选学）",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "z=r(cosθ+isinθ)，其中 r=|z| 为模，θ 为辐角（辐角主值取 [0,2π)）；三角形式下乘、除运算的几何意义：模相乘（相除）、辐角相加（相减）",
+      "standard_ref": "2017版课标（选学*）：能在复平面内用三角形式表示复数，了解复数三角形式乘、除运算的三角表示及其几何意义",
+      "prereqs": [
+        "kp_h11_complex_plane",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_polyhedron",
+      "name": "棱柱、棱锥、棱台的结构特征",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "棱柱：两底面是互相平行且全等的多边形，侧棱平行且相等（直棱柱、正棱柱）；棱锥：一个底面为多边形，侧面是有一个公共顶点的三角形（正棱锥）；棱台：用平行于底面的平面截棱锥，截面与底面之间的部分",
+      "standard_ref": "2017版课标：利用实物、计算机软件等观察空间图形，认识柱、锥、台及其简单组合体的结构特征，并能运用这些特征描述现实生活中简单物体的结构",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_polygon_angles"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_rotation",
+      "name": "圆柱、圆锥、圆台与球的结构特征",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "旋转体：矩形、直角三角形、直角梯形、半圆分别绕其一边（轴）旋转生成圆柱、圆锥、圆台、球；认识轴、母线、底面以及球的球心、半径，球的截面是圆面",
+      "standard_ref": "2017版课标：利用实物、计算机软件等观察空间图形，认识球及其简单组合体的结构特征，并能运用这些特征描述现实生活中简单物体的结构",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_rotation",
+        "kp_circle_basic"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_intuitive",
+      "name": "立体图形的直观图（斜二测画法）",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "斜二测画法：画 x' 轴水平、y' 轴与 x' 轴成 45°，保持平行性不变，平行于 x 轴的线段长度不变、平行于 y 轴的线段长度变为原来的一半；会画长方体、棱柱、圆柱、球及其简单组合体的直观图",
+      "standard_ref": "2017版课标：会用斜二测画法画出简单空间图形（长方体、球、圆柱、圆锥、棱柱及其简单组合体）的直观图",
+      "prereqs": [
+        "kp_h11_solid_polyhedron"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_surface",
+      "name": "简单几何体的表面积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "由侧面展开图得侧面积：圆柱 2πrl、圆锥 πrl、圆台 π(r+r')l（l 为母线长）；直棱柱为 ch（c 为底面周长、h 为侧棱长）、正棱锥 ½ch'（h' 为斜高）、正棱台 ½(c+c')h'；球面面积 S=4πR²；会求简单组合体的表面积",
+      "standard_ref": "2017版课标：了解球、棱柱、棱锥、棱台的表面积的计算公式，能用公式计算简单几何体的表面积",
+      "prereqs": [
+        "kp_h11_solid_polyhedron",
+        "kp_h11_solid_rotation",
+        "kp_circle_arc"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_volume",
+      "name": "简单几何体的体积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "柱体 V=Sh（圆柱为 πr²h）、锥体 V=⅓Sh、台体 V=⅓h(S+√(SS')+S')、球 V=(4/3)πR³；用割补法、等体积变换求简单组合体的体积",
+      "standard_ref": "2017版课标：了解球、棱柱、棱锥、棱台的体积的计算公式，能用公式计算简单几何体的体积",
+      "prereqs": [
+        "kp_h11_solid_polyhedron",
+        "kp_h11_solid_rotation",
+        "kp_p5_cuboid_volume",
+        "kp_p6_cylinder_cone"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_basics",
+      "name": "平面的基本性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "平面用平行四边形表示；基本事实1：若一条直线上的两点在一个平面内，则该直线在此平面内；基本事实2：过不在同一条直线上的三点有且只有一个平面（及三条推论）；基本事实3：两个不重合的平面有一个公共点，则有且只有一条过该点的公共直线；解决点共线、线共面等问题",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中点、直线、平面之间的位置关系，抽象出立体几何的基本图形——平面，了解平面的基本性质与作用",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_lines_rays"
+      ]
+    },
+    {
+      "id": "kp_h11_space_lines",
+      "name": "空间中直线与直线的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "空间两条直线相交、平行、异面三种位置关系；基本事实4：平行于同一条直线的两条直线平行；等角定理（空间中两边分别平行的两个角相等或互补）；异面直线所成的角：平移到相交所得的锐角或直角，范围 (0°,90°]",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中直线与直线之间的位置关系，理解异面直线所成的角",
+      "prereqs": [
+        "kp_h11_plane_basics",
+        "kp_parallel_judge"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_position",
+      "name": "直线与平面、平面与平面的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "直线与平面：直线在平面内、相交、平行三种关系；两个平面：平行、相交（交线为一条直线）两种关系；会用文字、图形与符号语言表示空间点、线、面的位置关系",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中直线与平面、平面与平面之间的位置关系",
+      "prereqs": [
+        "kp_h11_space_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_parallel",
+      "name": "直线与平面平行的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "判定定理：平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行；性质定理：一条直线与一个平面平行，如果过该直线的平面与此平面相交，那么该直线与交线平行",
+      "standard_ref": "2017版课标：理解空间中直线与平面平行的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_position"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_plane_parallel",
+      "name": "平面与平面平行的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "判定定理：一个平面内的两条相交直线与另一个平面平行，则这两个平面平行；性质：两个平面平行，则其中一个平面内的直线平行于另一个平面；两个平行平面同时与第三个平面相交，交线平行",
+      "standard_ref": "2017版课标：理解空间中平面与平面平行的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_parallel"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_perp",
+      "name": "直线与平面垂直的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "直线垂直于平面内任意一条直线时称线面垂直；判定定理：一条直线与一个平面内的两条相交直线都垂直，则该直线与此平面垂直；性质定理：垂直于同一个平面的两条直线平行；直线与平面所成的角（射影与该直线所成的角，范围 [0°,90°]）",
+      "standard_ref": "2017版课标：理解空间中直线与平面垂直的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_position",
+        "kp_h11_space_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_plane_perp",
+      "name": "平面与平面垂直的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "二面角及其平面角（在棱上取一点，在两个半平面内作棱的垂线所成的角，范围 [0°,180°]）；判定定理：一个平面经过另一个平面的一条垂线，则这两个平面垂直；性质定理：两个平面垂直，则一个平面内垂直于交线的直线垂直于另一个平面",
+      "standard_ref": "2017版课标：理解空间中平面与平面垂直的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_perp"
+      ]
+    },
+    {
+      "id": "kp_h11_sampling_simple",
+      "name": "简单随机抽样",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "总体、个体、样本与样本量的含义；简单随机抽样是逐个、不放回且每个个体每次被抽到概率相等的抽样，用抽签法或随机数法实现",
+      "standard_ref": "2017版课标：理解简单随机抽样的含义及其样本抽取的公平性，掌握抽签法、随机数法",
+      "prereqs": [
+        "kp_data_collect"
+      ]
+    },
+    {
+      "id": "kp_h11_sampling_stratified",
+      "name": "分层随机抽样",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "按总体的结构差异分层，各层内独立进行简单随机抽样，样本量按比例分配（某层样本量=抽样比×该层个体数）；分层加权平均可提高总体平均数估计的精度",
+      "standard_ref": "2017版课标：了解分层随机抽样的特点与适用范围，掌握按比例分配各层样本量的方法",
+      "prereqs": [
+        "kp_h11_sampling_simple",
+        "kp_weighted_average"
+      ]
+    },
+    {
+      "id": "kp_h11_freq_histogram",
+      "name": "频率分布直方图",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "求极差、决定组距与组数、列频率分布表；画频率分布直方图，纵轴为频率/组距，各小长方形的面积等于相应频率、总面积为1；频率折线图；用样本的频率分布估计总体的取值规律",
+      "standard_ref": "2017版课标：会列频率分布表、画频率分布直方图，能用样本的频率分布估计总体分布",
+      "prereqs": [
+        "kp_data_histogram",
+        "kp_data_charts"
+      ]
+    },
+    {
+      "id": "kp_h11_percentile",
+      "name": "百分位数",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "第 p 百分位数使数据中有 p% 的数据不大于它；计算：数据从小到大排列后取 i=n×p%，i 为整数时取第 i 与第 i+1 个数据的平均数，i 不是整数时取第大于 i 的最小整数位次的数据；中位数即第50百分位数",
+      "standard_ref": "2017版课标：理解百分位数的含义，会计算第25、50、75、90百分位数等",
+      "prereqs": [
+        "kp_h11_freq_histogram",
+        "kp_median_mode"
+      ]
+    },
+    {
+      "id": "kp_h11_center_trend",
+      "name": "总体集中趋势的估计",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "样本平均数 x̄=(1/n)(x₁+x₂+…+xₙ)（含加权平均数）、中位数与众数；理解三个集中趋势参数的意义与区别，会用样本的集中趋势估计总体",
+      "standard_ref": "2017版课标：理解样本平均数、中位数、众数的意义，会利用样本的集中趋势估计总体的集中趋势",
+      "prereqs": [
+        "kp_weighted_average",
+        "kp_median_mode"
+      ]
+    },
+    {
+      "id": "kp_h11_dispersion",
+      "name": "总体离散程度的估计",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "极差、样本方差 s²=(1/n)[(x₁-x̄)²+(x₂-x̄)²+…+(xₙ-x̄)²]、标准差 s=√s²；方差（标准差）越大，数据离散程度越大；会用样本的离散程度参数估计总体并比较两组数据的稳定性",
+      "standard_ref": "2017版课标：理解样本极差、方差、标准差的意义和作用，会计算并能利用样本的离散程度参数估计总体的离散程度",
+      "prereqs": [
+        "kp_h11_center_trend",
+        "kp_variance"
+      ]
+    },
+    {
+      "id": "kp_h11_sample_space",
+      "name": "有限样本空间与随机事件",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "随机试验的每个可能的基本结果称为样本点，全体样本点组成样本空间 Ω；随机事件是样本空间的子集；包含所有样本点的事件为必然事件，不包含任何样本点的事件为不可能事件",
+      "standard_ref": "2017版课标：结合具体实例，理解样本点和有限样本空间的含义，理解随机事件与样本点、样本空间的关系",
+      "prereqs": [
+        "kp_re_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_event_ops",
+      "name": "事件的关系与运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "用集合语言表示事件：包含 A⊆B、相等、并（和）事件 A∪B、交（积）事件 A∩B；互斥事件（A∩B=∅）与对立事件（A∩B=∅ 且 A∪B=Ω）的区别与联系",
+      "standard_ref": "2017版课标：结合具体实例，理解事件的关系与运算（包含、相等、并、交、互斥、对立）",
+      "prereqs": [
+        "kp_h11_sample_space"
+      ]
+    },
+    {
+      "id": "kp_h11_classical_prob",
+      "name": "古典概型",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "古典概型的特征：样本空间只含有限个样本点且每个样本点等可能；P(A)=A 包含的样本点数/样本空间的样本点总数；用列举法（列表、树状图）计算古典概型中随机事件的概率",
+      "standard_ref": "2017版课标：结合具体实例，理解古典概型及其概率计算公式，会计算古典概型中随机事件的概率",
+      "prereqs": [
+        "kp_h11_sample_space",
+        "kp_re_list"
+      ]
+    },
+    {
+      "id": "kp_h11_prob_props",
+      "name": "概率的基本性质与加法公式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "概率的规范性：0≤P(A)≤1，P(Ω)=1，P(∅)=0；互斥事件的概率加法公式 P(A∪B)=P(A)+P(B)；一般地 P(A∪B)=P(A)+P(B)-P(A∩B)；对立事件 P(A)+P(Ā)=1",
+      "standard_ref": "2017版课标：了解概率的基本性质，掌握概率的加法公式",
+      "prereqs": [
+        "kp_h11_event_ops",
+        "kp_h11_classical_prob"
+      ]
+    },
+    {
+      "id": "kp_h11_event_independence",
+      "name": "事件的独立性",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "若 P(AB)=P(A)P(B)，则事件 A 与 B 相互独立；相互独立与互斥的区别（独立研究概率乘积，互斥研究事件不相交）；会利用独立性计算两事件同时发生、至少一个发生等概率",
+      "standard_ref": "2017版课标：结合具体实例，了解两个随机事件相互独立的含义，会利用事件的独立性计算概率",
+      "prereqs": [
+        "kp_h11_prob_props"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_concept",
+      "name": "空间向量的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量是空间中具有大小和方向的量；模、零向量、单位向量、相等向量（方向相同且模相等）、相反向量的概念；空间任意两个向量都可以平移到同一平面内，因此空间向量的运算与平面向量的一致",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：经历由平面向量推广到空间向量的过程，了解空间向量的概念",
+      "prereqs": []
+    },
+    {
+      "id": "kp_h11_sv_linear",
+      "name": "空间向量的加减与数乘运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量加法（三角形法则、平行四边形法则）与减法的几何意义；数乘 λa 的意义；加法交换律、结合律与数乘分配律在空间中仍然成立",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的加、减、数乘运算及其运算律",
+      "prereqs": [
+        "kp_h11_sv_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_coplanar",
+      "name": "共线向量与共面向量",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "共线向量定理：b≠0 时 a∥b ⇔ 存在唯一实数 t 使 a=tb，并用于判定三点共线（如 AP=tAB）；共面向量定理：向量 p 与不共线向量 a、b 共面 ⇔ 存在唯一有序实数对 (x,y) 使 p=xa+yb，并用于判定四点共面",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的线性运算，会用共线向量定理、共面向量定理判断空间中的共线与共面问题",
+      "prereqs": [
+        "kp_h11_sv_linear"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_dot",
+      "name": "空间向量的数量积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "数量积 a·b=|a||b|cos⟨a,b⟩（夹角范围 [0,π]）；性质：非零向量 a⊥b ⇔ a·b=0，a·a=|a|²，|a·b|≤|a||b|；a 在 b 方向上的投影向量为 (a·b/|b|²)b；数量积满足交换律与分配律，不满足结合律",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的数量积运算，能用数量积表示两向量的夹角、判断两向量的垂直关系",
+      "prereqs": [
+        "kp_h11_sv_concept",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_basis",
+      "name": "空间向量基本定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量基本定理：若三个向量 e₁、e₂、e₃ 不共面，则对空间任一向量 p，存在唯一的有序实数组 (x,y,z) 使 p=xe₁+ye₂+ze₃；{e₁,e₂,e₃} 叫作空间的一个基底；基底为单位正交向量组时得正交分解，这是建立空间直角坐标系的依据",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示",
+      "prereqs": [
+        "kp_h11_sv_coplanar"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_coord",
+      "name": "空间直角坐标系与向量运算的坐标表示",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间直角坐标系 O-xyz（右手系）与向量的坐标表示；线性运算的坐标公式：a±b=(x₁±x₂, y₁±y₂, z₁±z₂)，λa=(λx₁, λy₁, λz₁)；a∥b ⇔ 对应坐标成比例；线段中点坐标等于两端点对应坐标的平均值",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量线性运算的坐标表示，能用坐标进行空间向量的加、减、数乘运算",
+      "prereqs": [
+        "kp_h11_sv_basis",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_dot_coord",
+      "name": "数量积与模、夹角、距离的坐标运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "数量积坐标公式 a·b=x₁x₂+y₁y₂+z₁z₂；模长公式 |a|=√(x²+y²+z²)；夹角公式 cos⟨a,b⟩=a·b/(|a||b|)；空间两点 A(x₁,y₁,z₁)、B(x₂,y₂,z₂) 间的距离 |AB|=√((x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²)；a⊥b ⇔ x₁x₂+y₁y₂+z₁z₂=0",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量数量积的坐标表示，能用坐标运算求向量的模、两向量的夹角和两点间的距离",
+      "prereqs": [
+        "kp_h11_sv_dot",
+        "kp_h11_sv_coord",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_normal",
+      "name": "直线的方向向量与平面的法向量",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "直线的方向向量是与该直线平行的非零向量；平面的法向量是垂直于该平面的非零向量（不唯一，任意两个法向量互相平行）；坐标法求法向量：设 n=(x,y,z)，由 n 与平面内两个不共线向量的数量积都为 0 建立方程组，取一组非零解",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述直线与直线、直线与平面、平面与平面的位置关系，会用坐标法求直线的方向向量和平面的法向量",
+      "prereqs": [
+        "kp_h11_sv_dot_coord"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_parallel",
+      "name": "用空间向量研究平行关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法判定平行：线线平行 ⇔ 两直线的方向向量共线；线面平行 ⇔ 直线的方向向量 a 与平面的法向量 n 满足 a·n=0（且直线不在平面内）；面面平行 ⇔ 两平面的法向量共线（n₁=tn₂）",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述并判定直线与直线、直线与平面、平面与平面的平行关系",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_h11_sv_coplanar"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_perp",
+      "name": "用空间向量研究垂直关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法判定垂直：线线垂直 ⇔ 两方向向量的数量积为 0（a·b=0）；线面垂直 ⇔ 直线的方向向量与平面的法向量共线（a=tn）；面面垂直 ⇔ 两平面的法向量的数量积为 0（n₁·n₂=0）",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述并判定直线与直线、直线与平面、平面与平面的垂直关系",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_h11_sv_dot"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_distance",
+      "name": "用空间向量求距离",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法求距离：点到直线的距离（投影向量法）；点到平面的距离 d=|AP·n|/|n|（P 为平面内一点，n 为该平面的法向量）；两条平行直线、直线与其平行的平面、两个平行平面间的距离都转化为点到直线或点到平面的距离；两条异面直线间的距离用与它们都垂直的向量（公垂线方向）投影计算",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量方法解决立体几何中的距离问题（点到直线、点到平面以及简单情形下两异面直线间的距离）",
+      "prereqs": [
+        "kp_h11_sv_normal"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_angle",
+      "name": "用空间向量求空间角",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "异面直线所成的角 θ 满足 cosθ=|a·b|/(|a||b|)，θ∈(0°,90°]；直线与平面所成的角 θ 满足 sinθ=|cos⟨a,n⟩|，θ∈[0°,90°]；二面角的平面角 θ 满足 |cosθ|=|n₁·n₂|/(|n₁||n₂|)，θ∈[0°,180°]，结果取锐角还是钝角需结合图形确定",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量方法求异面直线所成的角、直线与平面所成的角和二面角的大小",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_line_slope",
+      "name": "直线的倾斜角与斜率",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "倾斜角：x 轴正向与直线向上的方向所成的角 α，取值范围 0°≤α<180°；斜率 k=tanα（α≠90°），α=90° 时斜率不存在；过两点的斜率公式 k=(y₂-y₁)/(x₂-x₁)（x₁≠x₂）；倾斜角与斜率刻画直线的倾斜程度",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：在平面直角坐标系中，结合图形探索确定直线位置的几何要素，建立直线的倾斜角与斜率的概念",
+      "prereqs": [
+        "kp_coordinates",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_line_parallel_perp",
+      "name": "两条直线平行和垂直的判定",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两直线斜率都存在时：l₁∥l₂ ⇔ k₁=k₂（且两直线不重合）；l₁⊥l₂ ⇔ k₁k₂=-1；当一条直线斜率不存在（垂直于 x 轴）时，与它平行的直线斜率也不存在，与它垂直的直线斜率为 0",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据斜率判定两条直线平行或垂直",
+      "prereqs": [
+        "kp_h11_line_slope",
+        "kp_intersect_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_line_forms",
+      "name": "直线方程的五种形式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "点斜式 y-y₀=k(x-x₀) 与斜截式 y=kx+b（都不能表示垂直于 x 轴的直线，斜截式即一次函数的形式）；两点式 (y-y₁)/(y₂-y₁)=(x-x₁)/(x₂-x₁) 与截距式 x/a+y/b=1（分别不适用于与坐标轴垂直和过原点的直线）；一般式 Ax+By+C=0（A、B 不同时为零）可以表示所有直线；会依据条件选择形式并相互转化",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：根据确定直线位置的几何要素，探索并掌握直线方程的几种形式（点斜式、两点式、一般式），体会斜截式与一次函数的关系",
+      "prereqs": [
+        "kp_h11_line_slope",
+        "kp_linear_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_line_intersect",
+      "name": "两条直线的交点",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两条直线的交点坐标即联立两条直线的方程所得二元一次方程组的解：唯一解 ⇔ 相交，无解 ⇔ 平行，无穷多解 ⇔ 重合；会用代数方法（方程组解的情况）判断两条直线的位置关系",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能用解方程组的方法求两条直线的交点坐标，并根据方程组解的情况判断两直线的位置关系",
+      "prereqs": [
+        "kp_h11_line_forms",
+        "kp_sys_solve"
+      ]
+    },
+    {
+      "id": "kp_h11_line_distance",
+      "name": "距离公式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "平面上两点间的距离公式 |P₁P₂|=√((x₂-x₁)²+(y₂-y₁)²)；点到直线的距离公式 d=|Ax₀+By₀+C|/√(A²+B²)；两平行直线 Ax+By+C₁=0 与 Ax+By+C₂=0 间的距离 d=|C₁-C₂|/√(A²+B²)（需先将 x、y 的系数化为对应相同）",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：推导并掌握两点间的距离公式、点到直线的距离公式，会求两条平行直线间的距离",
+      "prereqs": [
+        "kp_h11_line_forms",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_circle_eq",
+      "name": "圆的标准方程与一般方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "圆心为 (a,b)、半径为 r 的圆的标准方程 (x-a)²+(y-b)²=r²；一般方程 x²+y²+Dx+Ey+F=0（D²+E²-4F>0，配方后圆心为 (-D/2,-E/2)、半径为 ½√(D²+E²-4F)）；会用待定系数法或几何性质（弦的垂直平分线过圆心、直径的条件等）求圆的方程",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：掌握圆的标准方程与一般方程，能根据给定条件求圆的方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_circle_basic",
+        "kp_qe_complete"
+      ]
+    },
+    {
+      "id": "kp_h11_line_circle",
+      "name": "直线与圆的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "判定：几何法比较圆心到直线的距离 d 与半径 r（d>r 相离、d=r 相切、d<r 相交）；代数法联立消元用判别式符号判断；求切线方程（注意检验斜率不存在的情形）；弦长计算：半弦长、弦心距、半径构成直角三角形，弦长=2√(r²-d²)；能用直线与圆的方程解决简单的数学问题与实际问题",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据给定直线和圆的方程，判断直线与圆的位置关系，能用直线和圆的方程解决一些简单的数学问题与实际问题",
+      "prereqs": [
+        "kp_h11_circle_eq",
+        "kp_circle_position",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_circle_circle",
+      "name": "圆与圆的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两圆位置关系由圆心距 d 与半径 r₁、r₂（r₁≥r₂）判定：d>r₁+r₂ 外离，d=r₁+r₂ 外切，|r₁-r₂|<d<r₁+r₂ 相交，d=|r₁-r₂| 内切，d<|r₁-r₂| 内含（含同心圆）；相交两圆的公共弦所在直线方程由两圆方程相减（消去二次项）得到",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据给定两个圆的方程，判断两个圆之间的位置关系",
+      "prereqs": [
+        "kp_h11_circle_eq",
+        "kp_circle_position"
+      ]
+    },
+    {
+      "id": "kp_h11_ellipse_def",
+      "name": "椭圆的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "椭圆的定义：平面内与两个定点 F₁、F₂ 的距离的和等于常数 2a（2a>|F₁F₂|=2c）的点的轨迹（当 2a=2c 时轨迹为线段 F₁F₂）；标准方程 x²/a²+y²/b²=1（a>b>0，焦点 (±c,0)）或 y²/a²+x²/b²=1（焦点 (0,±c)），其中 b²=a²-c²；会用定义和待定系数法求椭圆的标准方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：经历从具体情境中抽象出椭圆的过程，掌握椭圆的定义、标准方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_radical_ops"
+      ]
+    },
+    {
+      "id": "kp_h11_ellipse_prop",
+      "name": "椭圆的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "椭圆 x²/a²+y²/b²=1（a>b>0）的简单几何性质：范围 |x|≤a、|y|≤b；关于 x 轴、y 轴和原点对称；顶点 (±a,0)、(0,±b)，长轴长 2a、短轴长 2b；离心率 e=c/a∈(0,1)，e 越小椭圆越圆，e 越大椭圆越扁；会用这些性质解决简单的范围、对称与最值问题",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：掌握椭圆的简单几何性质：范围、对称性、顶点、离心率",
+      "prereqs": [
+        "kp_h11_ellipse_def",
+        "kp_axis_symmetry"
+      ]
+    },
+    {
+      "id": "kp_h11_hyperbola_def",
+      "name": "双曲线的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "双曲线的定义：平面内与两个定点 F₁、F₂ 的距离的差的绝对值等于常数 2a（0<2a<|F₁F₂|=2c）的点的轨迹（当 2a=2c 时轨迹为两条射线）；标准方程 x²/a²-y²/b²=1（焦点 (±c,0)）或 y²/a²-x²/b²=1（焦点 (0,±c)），其中 b²=c²-a²；了解双曲线的几何图形和标准方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：了解双曲线的定义、几何图形和标准方程",
+      "prereqs": [
+        "kp_h11_ellipse_def"
+      ]
+    },
+    {
+      "id": "kp_h11_hyperbola_prop",
+      "name": "双曲线的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "双曲线 x²/a²-y²/b²=1 的简单几何性质：范围 x≥a 或 x≤-a；关于 x 轴、y 轴和原点对称；顶点 (±a,0)，实轴长 2a、虚轴长 2b；渐近线方程 y=±(b/a)x（等轴双曲线 a=b 时渐近线为 y=±x 且互相垂直）；离心率 e=c/a>1，e 越大双曲线的开口越开阔",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：知道双曲线的简单几何性质：范围、对称性、顶点、渐近线、离心率",
+      "prereqs": [
+        "kp_h11_hyperbola_def",
+        "kp_if_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_parabola_def",
+      "name": "抛物线的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "抛物线的定义：平面内与一个定点 F（焦点）和一条不过 F 的定直线 l（准线）的距离相等的点的轨迹；四种标准方程：y²=2px（p>0，开口向右）、y²=-2px（开口向左）、x²=2py（开口向上）、x²=-2py（开口向下）；p 为焦点到准线的距离，以 y²=2px 为例焦点为 (p/2,0)、准线为 x=-p/2",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：经历从具体情境中抽象出抛物线的过程，掌握抛物线的定义、标准方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_qf_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_parabola_prop",
+      "name": "抛物线的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "抛物线 y²=2px（p>0）的简单几何性质：范围 x≥0、y∈R；关于 x 轴（对称轴）对称；顶点为原点、开口向右；离心率 e=1；过焦点且垂直于对称轴的弦（通径）长为 2p；会根据方程判断开口方向与对称性，并求焦点坐标和准线方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：掌握抛物线的简单几何性质：范围、对称性、顶点、离心率",
+      "prereqs": [
+        "kp_h11_parabola_def",
+        "kp_axis_symmetry"
+      ]
+    },
+    {
+      "id": "kp_h11_conic_line",
+      "name": "直线与圆锥曲线的位置关系及弦长",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "联立直线与圆锥曲线的方程消元，得到一元二次（或一次）方程，用判别式判断交点个数（注意二次项系数为 0 及直线斜率不存在的情形）；结合根与系数的关系 x₁+x₂、x₁x₂ 求弦长 |AB|=√(1+k²)|x₁-x₂|（k 为直线斜率，也可消 x 用 |AB|=√(1+1/k²)|y₁-y₂|）；中点弦问题用点差法；体会设而不求与数形结合的思想",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：通过圆锥曲线与方程的学习，进一步体会数形结合的思想，能用坐标法解决与圆锥曲线有关的简单几何问题（位置关系、弦长与中点弦）",
+      "prereqs": [
+        "kp_h11_ellipse_def",
+        "kp_h11_hyperbola_def",
+        "kp_h11_parabola_def",
+        "kp_qe_vieta"
+      ]
+    },
+    {
+      "id": "kp_h11_conic_apply",
+      "name": "圆锥曲线的应用与数形结合",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "利用圆锥曲线的定义（距离的和、差为定值，到焦点与准线等距）求轨迹方程与最值；实际背景问题：行星轨道与椭圆、双曲线时差定位、抛物线的反射性质（如抛物面天线把平行于对称轴的光线汇聚于焦点）与抛物线拱桥等；能用坐标法解决与圆锥曲线有关的简单几何问题",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：了解圆锥曲线的简单应用，通过圆锥曲线与方程的学习进一步体会数形结合的思想",
+      "prereqs": [
+        "kp_h11_ellipse_prop",
+        "kp_h11_hyperbola_prop",
+        "kp_h11_parabola_prop"
+      ]
+    }
+  ]
+}

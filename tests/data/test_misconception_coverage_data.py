@@ -33,13 +33,18 @@ GRADE_FILES = [os.path.join(ROOT, "data", "knowledge", f"math_grade{g}.json")
                for g in (3, 4, 7, 8, 9)]
 
 # 小学中段落库闭式：豁免的知识点清单（knowledge 文件序，即审计输入原序）
+# 共 21 个：18 个基础闭式 + kp_p3_ton_measure / kp_p4_bignum_rewrite /
+# kp_p4_optimize（2026-10-03 并入：重量单位/大数改写/优化策略，研究批次扩
+# 容，豁免理由：典型错误形态待学情数据沉淀后补充）。
 EXPECTED_EXEMPT = (
     "kp_p3_time_read", "kp_p3_measure_units", "kp_p3_mult_1digit",
     "kp_p3_mult_2x2digit", "kp_p3_area", "kp_p3_ymd_date",
     "kp_p3_decimal_intro", "kp_p3_stats_table", "kp_p3_combination",
+    "kp_p3_ton_measure",
     "kp_p4_hectare", "kp_p4_angle_measure", "kp_p4_mult_3x2digit",
     "kp_p4_quad_shape", "kp_p4_barchart", "kp_p4_arith_order",
     "kp_p4_decimal_addsub", "kp_p4_compound_bar", "kp_p4_jituitonglong",
+    "kp_p4_bignum_rewrite", "kp_p4_optimize",
 )
 
 
@@ -71,13 +76,13 @@ def report(kp_dicts, bank_data):
 # ---------- 全库闭环：每 KP ≥2 条（豁免点 0 条）；小学段 2 条或显式豁免 ----------
 
 def test_real_library_complete_at_two_per_kp(report, kp_dicts, bank_data):
-    assert len(kp_dicts) == 129
+    assert len(kp_dicts) == 132   # 2026-10-03: kp_p3_ton_measure + kp_p4_bignum_rewrite + kp_p4_optimize 三点扩入（原 129）
     assert len(MC_FILES) == 6
     assert report.total_misconceptions == 262   # 2026-09-30 九年级深挖后闭式（原 222）
     assert report.is_complete() is True
     assert report.deficient_kp_ids == ()
     assert report.exempt_kp_ids == EXPECTED_EXEMPT   # 小学段豁免知识点，输入原序
-    assert len(report.covered_kp_ids) == 129 - len(EXPECTED_EXEMPT)
+    assert len(report.covered_kp_ids) == 132 - len(EXPECTED_EXEMPT)
     assert report.min_per_kp == 2
 
 
@@ -85,11 +90,12 @@ def test_real_counts_two_or_more(report):
     # 更名自 test_real_counts_exactly_two：2026-09-30 九年级深挖批后不变式从
     # 「恰 2 条」变为「≥2 条」（允许富集；豁免点仍必须恰 0 条）。
     counts = dict(report.counts)
-    assert len(counts) == 129
+    assert len(counts) == 132   # 2026-10-03: 三点扩入（原 129）
     assert all(v == 0 or v >= 2 for v in counts.values())
-    # 落库分布闭式：覆盖 111 点 = 76 点恰 2 + 30 点 3 条 + 5 点 4 条
+    # 落库分布闭式：覆盖 111 点 = 76 点恰 2 + 30 点 3 条 + 5 点 4 条；新增 3 个
+    # 豁免点入 0 桶 → 0: 21, 2: 76, 3: 30, 4: 5
     dist = {v: sum(1 for c in counts.values() if c == v) for v in set(counts.values())}
-    assert dist == {0: 18, 2: 76, 3: 30, 4: 5}
+    assert dist == {0: 21, 2: 76, 3: 30, 4: 5}
 
 
 def test_real_hygiene(bank_data, kp_dicts):
@@ -199,14 +205,17 @@ P12_MC_FILES = [
 ]
 P12_GRADE_FILES = [os.path.join(ROOT, "data", "knowledge", f"math_grade{g}.json")
                    for g in (1, 2)]
-# 豁免的知识点清单（grade1/2 knowledge 文件序，即审计输入原序）：19 个知识点豁免，
-# 10 个高频误解知识点（各恰 2 条）被覆盖。
+# 豁免的知识点清单（grade1/2 knowledge 文件序，即审计输入原序）：22 个知识点
+# 豁免（原 19 + kp_p1_num0 / kp_p1_theme_inquiry / kp_p2_muldiv_rel 三个
+# 2026-10-03 扩入的研判点），10 个高频误解知识点（各恰 2 条）被覆盖。
 P12_EXPECTED_EXEMPT = (
     "kp_p1_num20", "kp_p1_addsub10", "kp_p1_addsub100", "kp_p1_3dshapes",
     "kp_p1_2dshapes", "kp_p1_position", "kp_p1_sort", "kp_p1_pattern",
     "kp_p1_wordprob", "kp_p1_compare",
+    "kp_p1_num0", "kp_p1_theme_inquiry",
     "kp_p2_mul_meaning", "kp_p2_div_meaning", "kp_p2_num10000", "kp_p2_angle",
     "kp_p2_view", "kp_p2_motion", "kp_p2_stats", "kp_p2_mass", "kp_p2_reasoning",
+    "kp_p2_muldiv_rel",
 )
 
 
@@ -236,13 +245,13 @@ def p12_report(p12_kp_dicts, p12_bank_data):
 
 
 def test_p12_library_complete(p12_report, p12_kp_dicts, p12_bank_data):
-    assert len(p12_kp_dicts) == 29
+    assert len(p12_kp_dicts) == 32   # 2026-10-03: kp_p1_num0 / kp_p1_theme_inquiry / kp_p2_muldiv_rel 三点扩入（原 29）
     assert len(P12_MC_FILES) == 2
     assert p12_report.total_misconceptions == 20
     assert p12_report.is_complete() is True
     assert p12_report.deficient_kp_ids == ()
     assert p12_report.exempt_kp_ids == P12_EXPECTED_EXEMPT
-    assert len(p12_report.covered_kp_ids) == 29 - len(P12_EXPECTED_EXEMPT)
+    assert len(p12_report.covered_kp_ids) == 32 - len(P12_EXPECTED_EXEMPT)
     assert set(dict(p12_report.counts).values()) == {0, 2}
     assert p12_report.min_per_kp == 2
 

@@ -1,0 +1,469 @@
+[
+  {
+    "id": "h_12a_001",
+    "item_type": "fill",
+    "stem": "已知数列{a_n}的通项公式为a_n=2n−1，则该数列的首项a_1=____。",
+    "answer": "1",
+    "kps": ["kp_h12_seq_concept"],
+    "difficulty": 0.25,
+    "solution": "由通项公式，将n=1代入：a_1=2×1−1=1。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_12a_002",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}的通项公式为a_n=n²+1，则a_5等于（　）",
+    "answer": "C",
+    "kps": ["kp_h12_seq_concept"],
+    "difficulty": 0.5,
+    "solution": "将n=5代入：a_5=5²+1=26，故选C。",
+    "source": "llm_generated",
+    "options": ["A. 24", "B. 25", "C. 26", "D. 36"]
+  },
+  {
+    "id": "h_12a_003",
+    "item_type": "fill",
+    "stem": "已知数列{a_n}的通项公式为a_n=2n+1，则37是数列的第____项。",
+    "answer": "18",
+    "kps": ["kp_h12_seq_concept"],
+    "difficulty": 0.75,
+    "solution": "令2n+1=37，解得n=18，故37是数列的第18项。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_12a_004",
+    "item_type": "choice",
+    "stem": "数列{a_n}的定义域是（　）",
+    "answer": "C",
+    "kps": ["kp_h12_seq_function"],
+    "difficulty": 0.25,
+    "solution": "数列是定义域为正整数集N*（或其有限子集）的特殊函数，故定义域是N*，选C。",
+    "source": "llm_generated",
+    "options": ["A. 实数集R", "B. 非零实数集", "C. 正整数集N*", "D. 自然数集N（含0）"]
+  },
+  {
+    "id": "h_12a_005",
+    "item_type": "choice",
+    "stem": "数列{a_n}的通项公式为a_n=2n，则该数列是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_seq_function"],
+    "difficulty": 0.5,
+    "solution": "a_{n+1}−a_n=2>0恒成立，故数列单调递增，选A。",
+    "source": "llm_generated",
+    "options": ["A. 单调递增数列", "B. 单调递减数列", "C. 常数列", "D. 摆动数列"]
+  },
+  {
+    "id": "h_12a_006",
+    "item_type": "choice",
+    "stem": "数列{a_n}的通项公式为a_n=−n²+5n，n∈N*，则数列的最大项值为（　）",
+    "answer": "C",
+    "kps": ["kp_h12_seq_function"],
+    "difficulty": 0.75,
+    "solution": "a_n=−(n−2.5)²+6.25，n=2或3时取最大6a_3=−9+15=6，故最大项值为6，选C。",
+    "source": "llm_generated",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"]
+  },
+
+  {
+    "id": "h_12a_007",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}满足a_1=1，a_{n+1}=a_n+2，则a_5=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_seq_recursive"],
+    "difficulty": 0.3,
+    "solution": "逐项写出：a_1=1，a_2=3，a_3=5，a_4=7，a_5=9，选B。",
+    "source": "llm_generated",
+    "options": ["A. 7", "B. 9", "C. 11", "D. 13"]
+  },
+  {
+    "id": "h_12a_008",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}满足a_1=2，a_{n+1}=a_n+3n，则数列的通项公式a_n=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_seq_recursive"],
+    "difficulty": 0.5,
+    "solution": "累加：a_n−a_1=3+6+⋯+3(n−1)=3n(n−1)/2，故a_n=2+3n(n−1)/2=(3/2)n²−(3/2)n+2，选C。",
+    "source": "llm_generated",
+    "options": ["A. 3n−1", "B. (3/2)n²−(3/2)n+1", "C. (3/2)n²−(3/2)n+2", "D. (3/2)n²+(1/2)n"]
+  },
+  {
+    "id": "h_12a_009",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}满足a_1=2，a_{n+1}=((n+1)/n)·a_n，则数列的通项公式a_n=（　）",
+    "answer": "A",
+    "kps": ["kp_h12_seq_recursive"],
+    "difficulty": 0.75,
+    "solution": "累乘：a_n=2·(2/1)·(3/2)·⋯·(n/(n−1))=2·n=2n，选A。",
+    "source": "llm_generated",
+    "options": ["A. 2n", "B. 2n+1", "C. 2(n−1)", "D. 2^(n+1)"]
+  },
+
+  {
+    "id": "h_12a_010",
+    "item_type": "fill",
+    "stem": "已知数列{a_n}的前n项和S_n=2n²+3n，则a_1=____。",
+    "answer": "5",
+    "kps": ["kp_h12_seq_sn_relation"],
+    "difficulty": 0.3,
+    "solution": "a_1=S_1=2×1²+3×1=5。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_12a_011",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}的前n项和S_n=3n²+n，则数列的通项公式a_n=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_seq_sn_relation"],
+    "difficulty": 0.5,
+    "solution": "对n≥2：a_n=S_n−S_{n−1}=3n²+n−3(n−1)²−(n−1)=6n−2；n=1时a_1=S_1=4=6×1−2，合并得a_n=6n−2，选C。",
+    "source": "llm_generated",
+    "options": ["A. 6n+2", "B. 6n−1", "C. 6n−2", "D. 3n+1"]
+  },
+  {
+    "id": "h_12a_012",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}的前n项和S_n=n²+1，则数列的通项公式a_n=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_seq_sn_relation"],
+    "difficulty": 0.75,
+    "solution": "对n≥2：a_n=S_n−S_{n−1}=n²+1−(n−1)²−1=2n−1；n=1时a_1=S_1=2≠2×1−1=1，不能合并，需分段，选B。",
+    "source": "llm_generated",
+    "options": ["A. a_n=2n−1，n≥1", "B. a_n=2n−1，n≥2；a_1=2", "C. a_n=2n+1，n≥1", "D. a_n=2n−3，n≥2；a_1=2"]
+  },
+
+  {
+    "id": "h_12a_013",
+    "item_type": "choice",
+    "stem": "下列数列中，是等差数列的是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_arith_concept"],
+    "difficulty": 0.25,
+    "solution": "A中相邻项之差恒为2，为等差数列；B是等比、D是自然数序列但差递增、E相邻项之差不恒定；选A。",
+    "source": "llm_generated",
+    "options": ["A. 1，3，5，7", "B. 1，2，4，8", "C. 2，4，6，9", "D. 1，3，6，10"]
+  },
+  {
+    "id": "h_12a_014",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}中，a_1=2，公差d=3，则a_8=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_arith_concept"],
+    "difficulty": 0.5,
+    "solution": "a_8=a_1+(8−1)d=2+7×3=23，选C。",
+    "source": "llm_generated",
+    "options": ["A. 21", "B. 22", "C. 23", "D. 24"]
+  },
+  {
+    "id": "h_12a_015",
+    "item_type": "fill",
+    "stem": "已知a、A、b三个数成等差数列，且a+b=10，则A=____。",
+    "answer": "5",
+    "kps": ["kp_h12_arith_concept"],
+    "difficulty": 0.75,
+    "solution": "由等差中项定义2A=a+b=10，故A=5。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_12a_016",
+    "item_type": "choice",
+    "stem": "数列{a_n}的通项公式为a_n=5n−3，则{a_n}是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_arith_judge"],
+    "difficulty": 0.3,
+    "solution": "a_{n+1}−a_n=5(n+1)−3−(5n−3)=5为常数，故为等差数列，公差为5，选A。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列，公差为5", "B. 等差数列，公差为−3", "C. 等差数列，公差为3", "D. 不是等差数列"]
+  },
+  {
+    "id": "h_12a_017",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}满足2a_{n+1}=a_n+a_{n+2}对一切正整数n成立，则{a_n}是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_arith_judge"],
+    "difficulty": 0.5,
+    "solution": "由条件a_{n+1}−a_n=a_{n+2}−a_{n+1}对一切n成立，故{a_n}是等差数列，选A。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列", "B. 等比数列", "C. 常数列", "D. 不能确定"]
+  },
+  {
+    "id": "h_12a_018",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}的前n项和S_n=2n²+n，则{a_n}是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_arith_judge"],
+    "difficulty": 0.75,
+    "solution": "S_n=2n²+n为无常数项的二次式，故{a_n}是等差数列，公差d=2A=4。验证：a_1=S_1=3；对n≥2，a_n=S_n−S_{n−1}=4n−1，n=1时亦成立，故选A。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列，公差为4", "B. 等差数列，公差为2", "C. 等差数列，公差为1", "D. 不是等差数列"]
+  },
+
+  {
+    "id": "h_12a_019",
+    "item_type": "fill",
+    "stem": "等差数列{a_n}中，a_2+a_5=12，则a_3+a_4=____。",
+    "answer": "12",
+    "kps": ["kp_h12_arith_props"],
+    "difficulty": 0.3,
+    "solution": "由2+5=3+4，得a_2+a_5=a_3+a_4=12。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_12a_020",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}中，a_1=1，d=2，则a_2，a_5，a_8也成等差数列，公差为（　）",
+    "answer": "C",
+    "kps": ["kp_h12_arith_props"],
+    "difficulty": 0.5,
+    "solution": "下标成等差的子列公差为md=3×2=6，故选C。",
+    "source": "llm_generated",
+    "options": ["A. 2", "B. 4", "C. 6", "D. 8"]
+  },
+  {
+    "id": "h_12a_021",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}中，S_2=4，S_4=12，则S_6=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_arith_props"],
+    "difficulty": 0.75,
+    "solution": "由性质，S_2，S_4−S_2，S_6−S_4成等差数列，公差为(S_4−S_2)−S_2=4，故S_6−S_4=12，S_6=24，选B。",
+    "source": "llm_generated",
+    "options": ["A. 20", "B. 24", "C. 28", "D. 32"]
+  },
+
+  {
+    "id": "h_12a_022",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}中，a_1=2，d=3，则S_10=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_arith_sum"],
+    "difficulty": 0.25,
+    "solution": "S_10=10a_1+10×9×d/2=20+135=155，选C。",
+    "source": "llm_generated",
+    "options": ["A. 130", "B. 145", "C. 155", "D. 165"]
+  },
+  {
+    "id": "h_12a_023",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}中，a_1=3，a_10=30，则S_10=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_arith_sum"],
+    "difficulty": 0.5,
+    "solution": "S_10=10(a_1+a_10)/2=10×33/2=165，选C。",
+    "source": "llm_generated",
+    "options": ["A. 110", "B. 130", "C. 165", "D. 330"]
+  },
+  {
+    "id": "h_12a_024",
+    "item_type": "choice",
+    "stem": "等差数列{a_n}的前n项和S_n=n²−4n，则通项公式a_n=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_arith_sum"],
+    "difficulty": 0.75,
+    "solution": "S_n=n²−4n为无常数项的二次式，故{a_n}是等差数列，公差d=2A=2。a_1=S_1=−3；对n≥2，a_n=S_n−S_{n−1}=2n−5，n=1时a_1=−3=2×1−5亦成立，故a_n=2n−5，选B。",
+    "source": "llm_generated",
+    "options": ["A. 2n+5", "B. 2n−5", "C. 2n−3", "D. n−5"]
+  },
+
+  {
+    "id": "h_12a_025",
+    "item_type": "fill",
+    "stem": "某礼堂第一排有20个座位，以后每一排比前一排多2个座位，则第10排有____个座位。",
+    "answer": "38",
+    "kps": ["kp_h12_arith_apply"],
+    "difficulty": 0.3,
+    "solution": "a_1=20，d=2，a_10=20+(10−1)×2=38。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_12a_026",
+    "item_type": "choice",
+    "stem": "一堆钢管堆放成等边三角形形状，共7层，最上层1根，最下层7根，则这堆钢管总数为（　）",
+    "answer": "B",
+    "kps": ["kp_h12_arith_apply"],
+    "difficulty": 0.5,
+    "solution": "每层根数1,2,3,4,5,6,7成等差数列，S_7=7×8/2=28，选B。",
+    "source": "llm_generated",
+    "options": ["A. 21", "B. 28", "C. 35", "D. 49"]
+  },
+  {
+    "id": "h_12a_027",
+    "item_type": "choice",
+    "stem": "某电影院第一排20个座位，后一排总比前一排多2个座位，已知最后一排80个座位，则该电影院的总座位数为（　）",
+    "answer": "C",
+    "kps": ["kp_h12_arith_apply"],
+    "difficulty": 0.75,
+    "solution": "a_1=20，d=2，a_n=80，n=1+(80−20)/2=31，S_31=31×(20+80)/2=31×50=1550，选C。",
+    "source": "llm_generated",
+    "options": ["A. 1450", "B. 1500", "C. 1550", "D. 1600"]
+  },
+
+  {
+    "id": "h_12a_028",
+    "item_type": "choice",
+    "stem": "下列数列中，是等比数列的是（　）",
+    "answer": "A",
+    "kps": ["kp_h12_geo_concept"],
+    "difficulty": 0.25,
+    "solution": "A中相邻项之比恒为2，为等比数列；B、C相邻项之比不为常数；D含0不可作比；选A。",
+    "source": "llm_generated",
+    "options": ["A. 1，2，4，8", "B. 1，2，3，4", "C. 1，3，5，7", "D. 0，1，2，3"]
+  },
+  {
+    "id": "h_12a_029",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}中，a_1=3，q=2，则a_5=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_geo_concept"],
+    "difficulty": 0.5,
+    "solution": "a_5=a_1·q^(5−1)=3×2^4=48，选C。",
+    "source": "llm_generated",
+    "options": ["A. 24", "B. 36", "C. 48", "D. 96"]
+  },
+  {
+    "id": "h_12a_030",
+    "item_type": "fill",
+    "stem": "已知a=4，b=16，则a、b的等比中项G=____（取正值）。",
+    "answer": "8",
+    "kps": ["kp_h12_geo_concept"],
+    "difficulty": 0.75,
+    "solution": "由G²=ab=4×16=64，故G=8（取正值）。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_12a_031",
+    "item_type": "choice",
+    "stem": "数列{a_n}的通项公式为a_n=2^n，则{a_n}是（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_judge"],
+    "difficulty": 0.3,
+    "solution": "a_{n+1}/a_n=2为非零常数，故{a_n}是等比数列，公比为2，选B。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列，公差为2", "B. 等比数列，公比为2", "C. 等比数列，公比为1", "D. 不是等比数列"]
+  },
+  {
+    "id": "h_12a_032",
+    "item_type": "choice",
+    "stem": "已知数列{a_n}中a_n>0，且a_{n+1}²=a_n·a_{n+2}对一切正整数n成立，则{a_n}是（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_judge"],
+    "difficulty": 0.5,
+    "solution": "由a_n>0，两边取算术平方根得a_{n+1}=√(a_n·a_{n+2})，即a_{n+1}/a_n=a_{n+2}/a_{n+1}，故为等比数列，选B。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列", "B. 等比数列", "C. 常数列", "D. 不能确定"]
+  },
+  {
+    "id": "h_12a_033",
+    "item_type": "choice",
+    "stem": "数列{a_n}的通项公式为a_n=1，则{a_n}是（　）",
+    "answer": "C",
+    "kps": ["kp_h12_geo_judge"],
+    "difficulty": 0.75,
+    "solution": "a_{n+1}−a_n=0，故为等差数列（d=0）；a_{n+1}/a_n=1，故为等比数列（q=1）；选C。",
+    "source": "llm_generated",
+    "options": ["A. 等差数列，公差为1", "B. 等比数列，公比为1", "C. 既是等差数列又是等比数列", "D. 不是等差数列"]
+  },
+
+  {
+    "id": "h_12a_034",
+    "item_type": "fill",
+    "stem": "等比数列{a_n}中，a_2·a_6=9，则a_4²=____。",
+    "answer": "9",
+    "kps": ["kp_h12_geo_props"],
+    "difficulty": 0.3,
+    "solution": "由性质m+n=p+q时a_m·a_n=a_p·a_q，2+6=4+4，故a_2·a_6=a_4²=9。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_12a_035",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}中，a_1=1，q=2，则a_2，a_5，a_8也成等比数列，公比为（　）",
+    "answer": "C",
+    "kps": ["kp_h12_geo_props"],
+    "difficulty": 0.5,
+    "solution": "下标成等差的子列公比为q^m=2^3=8，选C。",
+    "source": "llm_generated",
+    "options": ["A. 2", "B. 4", "C. 8", "D. 16"]
+  },
+  {
+    "id": "h_12a_036",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}中，q>0，则{a_n}的图象（　）",
+    "answer": "D",
+    "kps": ["kp_h12_geo_props"],
+    "difficulty": 0.75,
+    "solution": "数列的图象是定义域为正整数的孤立点；q>0时a_n=(a_1/q)·q^n，这些点分布在指数型曲线y=(a_1/q)·q^x上，故选D。",
+    "source": "llm_generated",
+    "options": ["A. 是一段直线", "B. 是指数型函数曲线的一段", "C. 是抛物线的一段", "D. 是孤立的点，分布在指数型曲线上"]
+  },
+
+  {
+    "id": "h_12a_037",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}中，a_1=2，q=1，则S_5=（　）",
+    "answer": "C",
+    "kps": ["kp_h12_geo_sum"],
+    "difficulty": 0.25,
+    "solution": "q=1时S_n=na_1，故S_5=5×2=10，选C。",
+    "source": "llm_generated",
+    "options": ["A. 2", "B. 5", "C. 10", "D. 32"]
+  },
+  {
+    "id": "h_12a_038",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}中，a_1=1，q=2，则S_10=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_sum"],
+    "difficulty": 0.5,
+    "solution": "q≠1时S_n=a_1(1−q^n)/(1−q)=1×(1−2^10)/(1−2)=1023，选B。",
+    "source": "llm_generated",
+    "options": ["A. 512", "B. 1023", "C. 1024", "D. 2047"]
+  },
+  {
+    "id": "h_12a_039",
+    "item_type": "choice",
+    "stem": "等比数列{a_n}的前n项和S_n=2^n−1，则数列的通项公式a_n=（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_sum"],
+    "difficulty": 0.75,
+    "solution": "a_1=S_1=1；对n≥2，a_n=S_n−S_{n−1}=2^n−1−(2^(n−1)−1)=2^(n−1)；n=1时2^0=1=a_1成立，故a_n=2^(n−1)，选B。",
+    "source": "llm_generated",
+    "options": ["A. 2^n", "B. 2^(n−1)", "C. 2^n−1", "D. 2^n+1"]
+  },
+
+  {
+    "id": "h_12a_040",
+    "item_type": "choice",
+    "stem": "某工厂今年产值为100万元，计划每年比上一年增产10%，则明年的产值为（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_apply"],
+    "difficulty": 0.3,
+    "solution": "明年产值=100×(1+10%)=110万元，选B。",
+    "source": "llm_generated",
+    "options": ["A. 100万元", "B. 110万元", "C. 120万元", "D. 121万元"]
+  },
+  {
+    "id": "h_12a_041",
+    "item_type": "choice",
+    "stem": "某人将10000元存入银行，年利率为2%，按复利计算（每年结算一次），则3年后本息和约为（　）",
+    "answer": "B",
+    "kps": ["kp_h12_geo_apply"],
+    "difficulty": 0.5,
+    "solution": "本息和=10000×(1+2%)^3=10000×1.061208≈10612.08元，选B。",
+    "source": "llm_generated",
+    "options": ["A. 10600元", "B. 10612.08元", "C. 10620元", "D. 11200元"]
+  },
+  {
+    "id": "h_12a_042",
+    "item_type": "choice",
+    "stem": "一种细菌每小时分裂一次（1个分裂为2个）。从1个细菌开始，经5小时后细菌总数为（　）",
+    "answer": "D",
+    "kps": ["kp_h12_geo_apply"],
+    "difficulty": 0.75,
+    "solution": "每小时翻倍，5小时后为2^5=32个，选D。",
+    "source": "llm_generated",
+    "options": ["A. 10", "B. 16", "C. 25", "D. 32"]
+  }
+]

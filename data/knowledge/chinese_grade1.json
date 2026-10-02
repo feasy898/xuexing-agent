@@ -1,0 +1,584 @@
+{
+ "subject": "chinese",
+ "grade_band": [
+  1
+ ],
+ "standard": "义务教育语文课程标准（2022年版）",
+ "knowledge_points": [
+  {
+   "id": "kp_chi1_pinyin_vowels",
+   "name": "单韵母与四声",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "正确认读单韵母 a、o、e、i、u、ü 及其四个声调（一声平、二声扬、三声拐弯、四声降），能在词语和短句中读准带调韵母；结合儿歌（ɑ、o、e 情境歌）巩固发音口型",
+   "standard_ref": "2022课标第一学段·识字与写字：学会汉语拼音，能读准声母、韵母、声调",
+   "prereqs": [],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第二单元（汉语拼音 a o e i u ü）"
+  },
+  {
+   "id": "kp_chi1_pinyin_initials",
+   "name": "声母认读与平翘舌区分",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "正确认读、书写 23 个声母（b p m f、d t n l、g k h、j q x、zh ch sh r、z c s、y w）；区分平舌音 z c s 与翘舌音 zh ch sh r，区分送气与不送气音（b/p、d/t、g/k、j/q、z/c），借助图片和动作记住发音部位",
+   "standard_ref": "2022课标第一学段·识字与写字：能读准声母，正确地拼读音节",
+   "prereqs": [
+    "kp_chi1_pinyin_vowels"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 b p m f…y w）"
+  },
+  {
+   "id": "kp_chi1_pinyin_compound_finals",
+   "name": "复韵母与鼻韵母",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "认读复韵母 ai ei ui ao ou iu ie üe er 和鼻韵母 an en in un ün、ang eng ing ong，认清字形、读准口型滑动；能区分前鼻音 an en in un ün 与后鼻音 ang eng ing ong（如 en/eng、in/ing）",
+   "standard_ref": "2022课标第一学段·识字与写字：能读准韵母",
+   "prereqs": [
+    "kp_chi1_pinyin_vowels"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 复韵母、鼻韵母）"
+  },
+  {
+   "id": "kp_chi1_pinyin_tones",
+   "name": "给音节标调",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "按标调规则给音节标调：有 a 找 a，没 a 找 o、e，i、u 并列标在后，单个韵母直接标；i 上标调去掉点；能给学过的音节写出四个声调的读音",
+   "standard_ref": "2022课标第一学段·识字与写字：学会汉语拼音，能读准声调，能准确地拼读音节",
+   "prereqs": [
+    "kp_chi1_pinyin_vowels",
+    "kp_chi1_pinyin_compound_finals"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第二单元（汉语拼音 声调练习）"
+  },
+  {
+   "id": "kp_chi1_pinyin_splice",
+   "name": "拼读音节（两拼法与三拼法）",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "掌握两拼法（声母+韵母，如 b-ù→bù）和三拼法（声母+介音 i/u/ü+韵母，如 g-u-ā→guā），前音轻短后音重、两音相连猛一碰；能在语言环境中拼读词语、句子",
+   "standard_ref": "2022课标第一学段·识字与写字：能准确地拼读音节",
+   "prereqs": [
+    "kp_chi1_pinyin_initials",
+    "kp_chi1_pinyin_compound_finals",
+    "kp_chi1_pinyin_tones"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 拼读练习）"
+  },
+  {
+   "id": "kp_chi1_pinyin_overall",
+   "name": "整体认读音节",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "认识并整体识记 16 个整体认读音节（zhi chi shi ri zi ci si yi wu yu ye yue yuan yin yun ying），见到这些音节不拼读直接呼读，读准四声",
+   "standard_ref": "2022课标第一学段·识字与写字：能读准整体认读音节",
+   "prereqs": [
+    "kp_chi1_pinyin_splice"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 整体认读音节）"
+  },
+  {
+   "id": "kp_chi1_pinyin_jqx",
+   "name": "j q x y 与 ü 相拼的省写规则",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "掌握 j、q、x、y 与 ü 相拼时省略 ü 上两点的规则：ü 见 j q x 擦去眼泪笑嘻嘻（如 j-ü→ju、q-ü→qu、x-ü→xu），ü 见 y 也去点（yu）；不误写为 ju 韵母 u",
+   "standard_ref": "2022课标第一学段·识字与写字：能准确地拼读音节，正确书写音节",
+   "prereqs": [
+    "kp_chi1_pinyin_splice"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 j q x）"
+  },
+  {
+   "id": "kp_chi1_pinyin_letters",
+   "name": "汉语拼音字母表",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "认识 26 个大写字母，熟记《汉语拼音字母表》顺序并能背诵；建立字母大小写对应关系，为音序查字法打基础；会给学过的生字找第一个字母（按音序排生字）",
+   "standard_ref": "2022课标第一学段·识字与写字：认识大写字母，熟记《汉语拼音字母表》",
+   "prereqs": [
+    "kp_chi1_pinyin_initials",
+    "kp_chi1_pinyin_vowels"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:语文园地（汉语拼音字母表）"
+  },
+  {
+   "id": "kp_chi1_pinyin_similar",
+   "name": "形近音近字母辨析",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "辨析形近字母（b 与 d、p 与 q、f 与 t、m 与 n、n 与 h、iu 与 ui、ei 与 ie），用儿歌、手势和方位法（右下半圆 bbb、左下半圆 ddd）区分，读准音、写对形",
+   "standard_ref": "2022课标第一学段·识字与写字：能读准声母、韵母，正确书写音节",
+   "prereqs": [
+    "kp_chi1_pinyin_initials",
+    "kp_chi1_pinyin_compound_finals"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第三单元（汉语拼音 比较辨析）"
+  },
+  {
+   "id": "kp_chi1_pinyin_write",
+   "name": "规范书写拼音",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "在四线三格中正确书写声母、韵母、音节和字母：分清占格（中格占满 a o e，上中格 b d h，中下格 g p y 等），笔画方向正确、写满格",
+   "standard_ref": "2022课标第一学段·识字与写字：能正确地拼读音节，正确书写声母、韵母和音节",
+   "prereqs": [
+    "kp_chi1_pinyin_vowels",
+    "kp_chi1_pinyin_initials",
+    "kp_chi1_pinyin_tones"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第二、三单元（汉语拼音 书写练习）"
+  },
+  {
+   "id": "kp_chi1_pinyin_read_assist",
+   "name": "借助拼音自主阅读",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "汉语拼音（一年级上册）",
+   "description": "借助拼音朗读浅显的儿歌、小故事和注音课文，遇到不认识的字自己拼读解决；能用学过的音节写出简单的词语和句子",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：喜欢阅读，感受阅读的乐趣，学习用普通话朗读课文",
+   "prereqs": [
+    "kp_chi1_pinyin_splice",
+    "kp_chi1_pinyin_overall"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:和大人一起读（拼音读物）"
+  },
+  {
+   "id": "kp_chi1_pictograph",
+   "name": "看图识记象形字",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "观察图画、古文字与楷书的联系，识记象形字（日、月、水、火、山、石、田、禾、虫、鸟等），把字形和字义联系起来，看见图画能猜出字义",
+   "standard_ref": "2022课标第一学段·识字与写字：喜欢学习汉字，有主动识字、写字的愿望",
+   "prereqs": [
+    "kp_chi1_pinyin_vowels"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第一单元（识字 日月水火 口耳目）"
+  },
+  {
+   "id": "kp_chi1_component_radical",
+   "name": "偏旁部首归类识字",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "认识常用偏旁部首（木字旁、草字头、口字旁、三点水、提手旁、言字旁、单立人、宝盖头、穴宝盖等），按偏旁给生字归类，借助形旁表义的特点记字形、想字义",
+   "standard_ref": "2022课标第一学段·识字与写字：掌握汉字的基本笔画和常用的偏旁部首，能按基本的笔顺规则用硬笔写字",
+   "prereqs": [
+    "kp_chi1_pinyin_read_assist"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第一单元（识字 日月明 小青蛙）"
+  },
+  {
+   "id": "kp_chi1_char_methods",
+   "name": "运用方法独立识字",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "运用加一加、减一减、换一换（换偏旁）、组词、数笔画、猜字谜、找反义词、联系生活等方法独立识字，并根据字形大胆说出记字办法",
+   "standard_ref": "2022课标第一学段·识字与写字：喜欢学习汉字，有主动识字、写字的愿望，学会独立识字",
+   "prereqs": [
+    "kp_chi1_component_radical"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第一单元（识字4 猜字谜）"
+  },
+  {
+   "id": "kp_chi1_strokes",
+   "name": "基本笔画",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "认识并能正确书写汉字基本笔画：横、竖、撇、捺、点、提、横折、竖折、撇折及常用简单复合笔画（竖钩、弯钩），能按笔画名称说出字的组成（如'日'由横折、横、横组成）",
+   "standard_ref": "2022课标第一学段·识字与写字：掌握汉字的基本笔画",
+   "prereqs": [
+    "kp_chi1_pinyin_write"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第一单元（识字 笔顺与笔画练习）"
+  },
+  {
+   "id": "kp_chi1_stroke_order",
+   "name": "笔顺规则",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "按基本笔顺规则用硬笔写字：先横后竖（十）、先撇后捺（人、天）、从上到下（三、古）、从左到右（川、儿）、先外后内再封口（四、回），书写时不写倒笔顺",
+   "standard_ref": "2022课标第一学段·识字与写字：能按基本的笔顺规则用硬笔写字，注意间架结构",
+   "prereqs": [
+    "kp_chi1_strokes"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第一单元（识字 笔顺规则）"
+  },
+  {
+   "id": "kp_chi1_write_habit",
+   "name": "写字姿势与书写习惯",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级上册）",
+   "description": "写字姿势正确：眼离书本一尺、胸离桌子一拳、指离笔尖一寸；书写规范、端正、整洁，养成提笔即练字的习惯，注意用眼卫生",
+   "standard_ref": "2022课标第一学段·识字与写字：努力养成良好的写字习惯，写字姿势正确，书写规范、端正、整洁",
+   "prereqs": [],
+   "textbook_ref": "人教版（统编）:语文一年级上册:我上学了（写字习惯）"
+  },
+  {
+   "id": "kp_chi1_char_count",
+   "name": "识字量达成（认1600写800）",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级）",
+   "description": "第一学年结束时累计认识常用汉字 1600 个左右，其中 800 个左右会写：会认的字读准字音、大致理解意思，会写的字能正确书写并用于组词、写话",
+   "standard_ref": "2022课标第一学段·识字与写字：认识常用汉字1600个左右，其中800个左右会写",
+   "prereqs": [
+    "kp_chi1_component_radical",
+    "kp_chi1_char_methods"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:识字表与写字表"
+  },
+  {
+   "id": "kp_chi1_context_meaning",
+   "name": "结合语境理解词句",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级）",
+   "description": "结合上下文和生活实际了解课文中词句的意思；借助图画、动作演示、联系生活经验猜测不认识的词语的意思，不用生词解释生词",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：结合上下文和生活实际了解课文中词句的意思，在阅读中积累词语",
+   "prereqs": [
+    "kp_chi1_pinyin_read_assist"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:各单元课文"
+  },
+  {
+   "id": "kp_chi1_alphabetic_dict",
+   "name": "音序查字法",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级下册）",
+   "description": "会用音序查字法查字典：查不认识的字时先确定音节首字母的大写，在《汉语拼音音节索引》中找到音节，再按页码在正文中选择正确义项；查认识的字验证读音",
+   "standard_ref": "2022课标第一学段·识字与写字：学会汉语拼音，认识大写字母，熟记《汉语拼音字母表》（音序查字法基础）",
+   "prereqs": [
+    "kp_chi1_pinyin_letters"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地一（音序查字法）"
+  },
+  {
+   "id": "kp_chi1_live_literacy",
+   "name": "在生活中主动识字",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "识字与写字（一年级）",
+   "description": "做生活的有心人，在路牌、招牌、商品包装、广告、图书中主动识字，把认识的字教给家人和同学；遇到不认识的字主动查字典或请教他人",
+   "standard_ref": "2022课标第一学段·识字与写字：喜欢学习汉字，有主动识字、写字的愿望",
+   "prereqs": [
+    "kp_chi1_char_methods"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:展示台（生活识字）"
+  },
+  {
+   "id": "kp_chi1_picture_reading",
+   "name": "借助图画阅读",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "借助读物中的图画阅读：图文对照理解故事内容，借助图画猜测生字词义、情节发展，读完能说说图上画了什么、讲了一件什么事",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：借助读物中的图画阅读",
+   "prereqs": [
+    "kp_chi1_pinyin_read_assist"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第四—八单元（连环画课文）"
+  },
+  {
+   "id": "kp_chi1_aloud_reading",
+   "name": "正确流利朗读",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "学习用普通话正确、流利地朗读课文：读准字音、吐字清楚，不丢字、不添字、不改字，按标点符号停顿，不唱读、不指读，逐步做到边读边想",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：学习用普通话正确、流利、有感情地朗读课文",
+   "prereqs": [
+    "kp_chi1_context_meaning"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:各单元课文"
+  },
+  {
+   "id": "kp_chi1_tone_reading",
+   "name": "读出不同语气",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "根据标点和内容读出陈述、疑问、感叹等不同语气，读好人物对话（如'我还要吃'的请求、'下雪啦'的惊喜），借助感叹号、问号体会语气变化",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：阅读中体会句号、问号、感叹号所表达的不同语气",
+   "prereqs": [
+    "kp_chi1_aloud_reading"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第五—七单元（对话课文）"
+  },
+  {
+   "id": "kp_chi1_recite_poem",
+   "name": "诵读积累古诗儿歌",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "诵读儿歌、儿童诗和浅近的古诗（《江南》《静夜思》《池上》《小池》等），展开想象，获得初步的情感体验；随文背诵并积累（第一学段背诵优秀诗文约 50 篇段）",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：诵读儿歌、儿童诗和浅近的古诗，展开想象，获得初步的情感体验",
+   "prereqs": [
+    "kp_chi1_aloud_reading"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:第四单元（《静夜思》等）"
+  },
+  {
+   "id": "kp_chi1_fairy_tale",
+   "name": "阅读浅近的童话寓言故事",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "阅读浅近的童话、寓言、故事（《乌鸦喝水》《小蜗牛》《小猴子下山》等），能说出故事里有谁、发生了什么事，谈谈自己喜欢的人物和明白的道理",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：阅读浅近的童话、寓言、故事，向往美好的情境，关心自然和生命",
+   "prereqs": [
+    "kp_chi1_picture_reading"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第七、八单元（故事课文）"
+  },
+  {
+   "id": "kp_chi1_punctuation",
+   "name": "认识常用标点符号",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "认识逗号、句号、问号、感叹号，在阅读中体会它们表达的停顿和语气；朗读时按标点停顿，并能在说话、写话中对应使用",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：认识课文中出现的常用标点符号，在阅读中体会句号、问号、感叹号所表达的不同语气",
+   "prereqs": [
+    "kp_chi1_tone_reading"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:第六单元（《青蛙写诗》标点）"
+  },
+  {
+   "id": "kp_chi1_accumulate",
+   "name": "积累词语与日积月累",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "在阅读中积累词语：摘抄喜欢的词句，注意词语搭配（如'弯弯的月儿'），背诵'日积月累'中的成语、格言和俗语，并试着在说话写话中运用",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：在阅读中积累词语",
+   "prereqs": [
+    "kp_chi1_recite_poem"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:语文园地（日积月累）"
+  },
+  {
+   "id": "kp_chi1_listen_retell",
+   "name": "听故事复述情节",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "听故事、看音像作品时集中注意听，能复述大意和自己感兴趣的情节；听读、跟读、分角色朗读中记住故事内容",
+   "standard_ref": "2022课标第一学段·表达与交流：听故事、看音像作品，能复述大意和自己感兴趣的情节",
+   "prereqs": [
+    "kp_chi1_fairy_tale"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:和大人一起读"
+  },
+  {
+   "id": "kp_chi1_love_books",
+   "name": "爱书与亲子共读",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "课文阅读（一年级）",
+   "description": "喜爱图书、爱护图书，乐于和大人一起读，愿意把自己读到的故事讲给家人、同伴听；逐步养成每天课外阅读的习惯（第一学段课外阅读总量不少于 5 万字）",
+   "standard_ref": "2022课标第一学段·阅读与鉴赏：喜爱图书，爱护图书",
+   "prereqs": [],
+   "textbook_ref": "人教版（统编）:语文一年级上、下册:和大人一起读"
+  },
+  {
+   "id": "kp_chi1_mandarin",
+   "name": "学说普通话",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "学说普通话，逐步养成说普通话的习惯；在集体面前敢说话、乐于表达，积极参加口语交际活动，有自信心",
+   "standard_ref": "2022课标第一学段·表达与交流：学说普通话，逐步养成说普通话的习惯，有表达的自信心",
+   "prereqs": [],
+   "textbook_ref": "人教版（统编）:语文一年级上册:口语交际（我说你做）"
+  },
+  {
+   "id": "kp_chi1_listen_obey",
+   "name": "听清指令做动作",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "认真听他人讲话，努力了解讲话内容：听准'我说你做'类指令中的动作、次数、顺序，按指令做动作不出错；别人说话时不随便插嘴",
+   "standard_ref": "2022课标第一学段·表达与交流：能认真听他人讲话，努力了解讲话的主要内容",
+   "prereqs": [
+    "kp_chi1_mandarin"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:口语交际一（我说你做）"
+  },
+  {
+   "id": "kp_chi1_self_intro",
+   "name": "礼貌交谈与自我介绍",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "与他人交谈时态度自然大方、有礼貌：主动问好，使用'你好''谢谢''对不起'等礼貌用语，能向新同学介绍自己的名字和爱好（《我们做朋友》）",
+   "standard_ref": "2022课标第一学段·表达与交流：与他人交谈，态度自然大方，有礼貌",
+   "prereqs": [
+    "kp_chi1_mandarin"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:口语交际（我们做朋友）"
+  },
+  {
+   "id": "kp_chi1_voice_control",
+   "name": "按场合控制音量",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "能根据说话场合调节音量：在图书馆、医院等需要安静的场合轻声说话，在课堂上发言、喊口令时声音响亮，听懂'用多大的声音'的交际要求",
+   "standard_ref": "2022课标第一学段·表达与交流：积极参加表达活动，能根据需要用普通话清楚地进行表达",
+   "prereqs": [
+    "kp_chi1_mandarin"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级上册:口语交际（用多大的声音）"
+  },
+  {
+   "id": "kp_chi1_tell_story",
+   "name": "讲小故事与说见闻",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "能较完整地讲述小故事（按顺序讲清人物和经过），简要讲述自己感兴趣的见闻（看到的新鲜事、去过的地方），说的时候让别人听清楚",
+   "standard_ref": "2022课标第一学段·表达与交流：能较完整地讲述小故事，能简要讲述自己感兴趣的见闻",
+   "prereqs": [
+    "kp_chi1_listen_retell"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:口语交际（听故事，讲故事）"
+  },
+  {
+   "id": "kp_chi1_polite_request",
+   "name": "礼貌请求与请教",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "在具体情境中有礼貌地请别人帮忙或向别人请教：说清楚需要什么帮助、为什么；用商量的语气，被拒绝时得体回应（《请你帮个忙》）",
+   "standard_ref": "2022课标第一学段·表达与交流：与他人交谈，态度自然大方，有礼貌",
+   "prereqs": [
+    "kp_chi1_self_intro"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:口语交际（请你帮个忙）"
+  },
+  {
+   "id": "kp_chi1_phone",
+   "name": "情境中打电话",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "在模拟情境中打电话：接通后先问好并报身份，说清楚找谁、有什么事，用'请问''谢谢''再见'等礼貌用语结束通话，通话简明、不纠缠无关话题",
+   "standard_ref": "2022课标第一学段·表达与交流：结合具体情境进行清楚、有礼貌的表达",
+   "prereqs": [
+    "kp_chi1_polite_request"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:口语交际（打电话）"
+  },
+  {
+   "id": "kp_chi1_game_rule",
+   "name": "讲清游戏规则",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "口语交际（一年级）",
+   "description": "用普通话把游戏规则说完整、说清楚（分几步说，边说边做动作示范），能邀请伙伴一起做游戏，游戏中商量着玩、守规则",
+   "standard_ref": "2022课标第一学段·表达与交流：能较完整地讲述、有顺序地表达，积极参加表达活动",
+   "prereqs": [
+    "kp_chi1_tell_story"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:口语交际（一起做游戏）"
+  },
+  {
+   "id": "kp_chi1_drawing_composition",
+   "name": "看图写话",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "写话（一年级下册）",
+   "description": "对写话有兴趣，留心周围事物，写自己想说的话、写想象中的事物：能根据单幅图的意思写几句话，写清时间、地点、谁、干什么；先想后写，写完读一读改一改",
+   "standard_ref": "2022课标第一学段·表达与交流：对写话有兴趣，留心周围事物，写自己想说的话，写想象中的事物",
+   "prereqs": [
+    "kp_chi1_tell_story",
+    "kp_chi1_game_rule"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:写话（看图写话）"
+  },
+  {
+   "id": "kp_chi1_writing_marks",
+   "name": "学用基本标点",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "写话（一年级下册）",
+   "description": "在写话中学习使用逗号、句号、问号、感叹号：一句话说完用句号，句子中间停顿用逗号，提问用问号，表示强烈感情用感叹号；开头空两格",
+   "standard_ref": "2022课标第一学段·表达与交流：在写话中乐于运用阅读和生活中学到的词语，学习使用逗号、句号、问号、感叹号",
+   "prereqs": [
+    "kp_chi1_drawing_composition"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地四、八（标点运用）"
+  },
+  {
+   "id": "kp_chi1_word_use",
+   "name": "写话中运用积累的词语",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "写话（一年级下册）",
+   "description": "在写话中乐于运用阅读和生活中学到的词语：把日积月累的词语、课文中的好词用到自己的句子里，学用'有…有…还有…'等句式把句子写具体",
+   "standard_ref": "2022课标第一学段·表达与交流：在写话中乐于运用阅读和生活中学到的词语",
+   "prereqs": [
+    "kp_chi1_writing_marks",
+    "kp_chi1_accumulate"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地（词句运用）"
+  },
+  {
+   "id": "kp_chi1_char_shape_change",
+   "name": "观察字形部件关系",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "梳理与探究（一年级）",
+   "description": "观察字形，体会汉字部件之间的关系：一个字加一笔、减一笔或换部件可变成另一个字（如'日'加一笔成'白、目、田'），在比较中感受汉字构字规律",
+   "standard_ref": "2022课标第一学段·梳理与探究：观察字形，体会汉字部件之间的关系",
+   "prereqs": [
+    "kp_chi1_char_methods"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地（字词句运用）"
+  },
+  {
+   "id": "kp_chi1_ask_question",
+   "name": "提出问题与搜集资料",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "梳理与探究（一年级）",
+   "description": "对周围事物有好奇心，能就感兴趣的内容提出问题；能提出学习和生活中的问题，有目的地搜集图片、实物等资料，与同学共同讨论、交流",
+   "standard_ref": "2022课标第一学段·梳理与探究：对周围事物有好奇心，能就感兴趣的内容提出问题；能提出学习和生活中的问题，有目的地搜集资料，共同讨论",
+   "prereqs": [
+    "kp_chi1_char_shape_change"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地七、八（展示台）"
+  },
+  {
+   "id": "kp_chi1_observe_express",
+   "name": "观察所得的口头与图文表达",
+   "subject": "chinese",
+   "grade": 1,
+   "cluster": "梳理与探究（一年级）",
+   "description": "结合语文学习观察大自然（季节、天气、动植物变化）和校园生活，用口头或图文等方式表达自己的观察所得，能把观察到的按顺序说清楚、画明白",
+   "standard_ref": "2022课标第一学段·梳理与探究：结合语文学习，观察大自然，用口头或图文等方式表达自己的观察所得",
+   "prereqs": [
+    "kp_chi1_ask_question"
+   ],
+   "textbook_ref": "人教版（统编）:语文一年级下册:语文园地（四季观察）"
+  }
+ ]
+}

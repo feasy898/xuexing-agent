@@ -1,0 +1,3962 @@
+{
+  "items": [
+    {
+      "id": "h_12a_001",
+      "item_type": "fill",
+      "stem": "已知数列{a_n}的通项公式为a_n=2n−1，则该数列的首项a_1=____。",
+      "answer": "1",
+      "kps": [
+        "kp_h12_seq_concept"
+      ],
+      "difficulty": 0.25,
+      "solution": "由通项公式，将n=1代入：a_1=2×1−1=1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_002",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}的通项公式为a_n=n²+1，则a_5等于（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_seq_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "将n=5代入：a_5=5²+1=26，故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 24",
+        "B. 25",
+        "C. 26",
+        "D. 36"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_003",
+      "item_type": "fill",
+      "stem": "已知数列{a_n}的通项公式为a_n=2n+1，则37是数列的第____项。",
+      "answer": "18",
+      "kps": [
+        "kp_h12_seq_concept"
+      ],
+      "difficulty": 0.75,
+      "solution": "令2n+1=37，解得n=18，故37是数列的第18项。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_004",
+      "item_type": "choice",
+      "stem": "数列{a_n}的定义域是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_seq_function"
+      ],
+      "difficulty": 0.25,
+      "solution": "数列是定义域为正整数集N*（或其有限子集）的特殊函数，故定义域是N*，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 实数集R",
+        "B. 非零实数集",
+        "C. 正整数集N*",
+        "D. 自然数集N（含0）"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_005",
+      "item_type": "choice",
+      "stem": "数列{a_n}的通项公式为a_n=2n，则该数列是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_seq_function"
+      ],
+      "difficulty": 0.5,
+      "solution": "a_{n+1}−a_n=2>0恒成立，故数列单调递增，选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单调递增数列",
+        "B. 单调递减数列",
+        "C. 常数列",
+        "D. 摆动数列"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_006",
+      "item_type": "choice",
+      "stem": "数列{a_n}的通项公式为a_n=−n²+5n，n∈N*，则数列的最大项值为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_seq_function"
+      ],
+      "difficulty": 0.75,
+      "solution": "a_n=−(n−2.5)²+6.25，n=2或3时取最大6a_3=−9+15=6，故最大项值为6，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 6",
+        "D. 7"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_007",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}满足a_1=1，a_{n+1}=a_n+2，则a_5=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_seq_recursive"
+      ],
+      "difficulty": 0.3,
+      "solution": "逐项写出：a_1=1，a_2=3，a_3=5，a_4=7，a_5=9，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 7",
+        "B. 9",
+        "C. 11",
+        "D. 13"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_008",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}满足a_1=2，a_{n+1}=a_n+3n，则数列的通项公式a_n=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_seq_recursive"
+      ],
+      "difficulty": 0.5,
+      "solution": "累加：a_n−a_1=3+6+⋯+3(n−1)=3n(n−1)/2，故a_n=2+3n(n−1)/2=(3/2)n²−(3/2)n+2，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3n−1",
+        "B. (3/2)n²−(3/2)n+1",
+        "C. (3/2)n²−(3/2)n+2",
+        "D. (3/2)n²+(1/2)n"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_009",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}满足a_1=2，a_{n+1}=((n+1)/n)·a_n，则数列的通项公式a_n=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_seq_recursive"
+      ],
+      "difficulty": 0.75,
+      "solution": "累乘：a_n=2·(2/1)·(3/2)·⋯·(n/(n−1))=2·n=2n，选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2n",
+        "B. 2n+1",
+        "C. 2(n−1)",
+        "D. 2^(n+1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_010",
+      "item_type": "fill",
+      "stem": "已知数列{a_n}的前n项和S_n=2n²+3n，则a_1=____。",
+      "answer": "5",
+      "kps": [
+        "kp_h12_seq_sn_relation"
+      ],
+      "difficulty": 0.3,
+      "solution": "a_1=S_1=2×1²+3×1=5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_011",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}的前n项和S_n=3n²+n，则数列的通项公式a_n=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_seq_sn_relation"
+      ],
+      "difficulty": 0.5,
+      "solution": "对n≥2：a_n=S_n−S_{n−1}=3n²+n−3(n−1)²−(n−1)=6n−2；n=1时a_1=S_1=4=6×1−2，合并得a_n=6n−2，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6n+2",
+        "B. 6n−1",
+        "C. 6n−2",
+        "D. 3n+1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_012",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}的前n项和S_n=n²+1，则数列的通项公式a_n=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_seq_sn_relation"
+      ],
+      "difficulty": 0.75,
+      "solution": "对n≥2：a_n=S_n−S_{n−1}=n²+1−(n−1)²−1=2n−1；n=1时a_1=S_1=2≠2×1−1=1，不能合并，需分段，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. a_n=2n−1，n≥1",
+        "B. a_n=2n−1，n≥2；a_1=2",
+        "C. a_n=2n+1，n≥1",
+        "D. a_n=2n−3，n≥2；a_1=2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_013",
+      "item_type": "choice",
+      "stem": "下列数列中，是等差数列的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_arith_concept"
+      ],
+      "difficulty": 0.25,
+      "solution": "A中相邻项之差恒为2，为等差数列；B是等比、D是自然数序列但差递增、E相邻项之差不恒定；选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1，3，5，7",
+        "B. 1，2，4，8",
+        "C. 2，4，6，9",
+        "D. 1，3，6，10"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_014",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}中，a_1=2，公差d=3，则a_8=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_arith_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "a_8=a_1+(8−1)d=2+7×3=23，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 21",
+        "B. 22",
+        "C. 23",
+        "D. 24"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_015",
+      "item_type": "fill",
+      "stem": "已知a、A、b三个数成等差数列，且a+b=10，则A=____。",
+      "answer": "5",
+      "kps": [
+        "kp_h12_arith_concept"
+      ],
+      "difficulty": 0.75,
+      "solution": "由等差中项定义2A=a+b=10，故A=5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_016",
+      "item_type": "choice",
+      "stem": "数列{a_n}的通项公式为a_n=5n−3，则{a_n}是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_arith_judge"
+      ],
+      "difficulty": 0.3,
+      "solution": "a_{n+1}−a_n=5(n+1)−3−(5n−3)=5为常数，故为等差数列，公差为5，选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列，公差为5",
+        "B. 等差数列，公差为−3",
+        "C. 等差数列，公差为3",
+        "D. 不是等差数列"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_017",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}满足2a_{n+1}=a_n+a_{n+2}对一切正整数n成立，则{a_n}是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_arith_judge"
+      ],
+      "difficulty": 0.5,
+      "solution": "由条件a_{n+1}−a_n=a_{n+2}−a_{n+1}对一切n成立，故{a_n}是等差数列，选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列",
+        "B. 等比数列",
+        "C. 常数列",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_018",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}的前n项和S_n=2n²+n，则{a_n}是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_arith_judge"
+      ],
+      "difficulty": 0.75,
+      "solution": "S_n=2n²+n为无常数项的二次式，故{a_n}是等差数列，公差d=2A=4。验证：a_1=S_1=3；对n≥2，a_n=S_n−S_{n−1}=4n−1，n=1时亦成立，故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列，公差为4",
+        "B. 等差数列，公差为2",
+        "C. 等差数列，公差为1",
+        "D. 不是等差数列"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_019",
+      "item_type": "fill",
+      "stem": "等差数列{a_n}中，a_2+a_5=12，则a_3+a_4=____。",
+      "answer": "12",
+      "kps": [
+        "kp_h12_arith_props"
+      ],
+      "difficulty": 0.3,
+      "solution": "由2+5=3+4，得a_2+a_5=a_3+a_4=12。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_020",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}中，a_1=1，d=2，则a_2，a_5，a_8也成等差数列，公差为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_arith_props"
+      ],
+      "difficulty": 0.5,
+      "solution": "下标成等差的子列公差为md=3×2=6，故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 6",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_021",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}中，S_2=4，S_4=12，则S_6=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_arith_props"
+      ],
+      "difficulty": 0.75,
+      "solution": "由性质，S_2，S_4−S_2，S_6−S_4成等差数列，公差为(S_4−S_2)−S_2=4，故S_6−S_4=12，S_6=24，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 20",
+        "B. 24",
+        "C. 28",
+        "D. 32"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_022",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}中，a_1=2，d=3，则S_10=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_arith_sum"
+      ],
+      "difficulty": 0.25,
+      "solution": "S_10=10a_1+10×9×d/2=20+135=155，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 130",
+        "B. 145",
+        "C. 155",
+        "D. 165"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_023",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}中，a_1=3，a_10=30，则S_10=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_arith_sum"
+      ],
+      "difficulty": 0.5,
+      "solution": "S_10=10(a_1+a_10)/2=10×33/2=165，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 110",
+        "B. 130",
+        "C. 165",
+        "D. 330"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_024",
+      "item_type": "choice",
+      "stem": "等差数列{a_n}的前n项和S_n=n²−4n，则通项公式a_n=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_arith_sum"
+      ],
+      "difficulty": 0.75,
+      "solution": "S_n=n²−4n为无常数项的二次式，故{a_n}是等差数列，公差d=2A=2。a_1=S_1=−3；对n≥2，a_n=S_n−S_{n−1}=2n−5，n=1时a_1=−3=2×1−5亦成立，故a_n=2n−5，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2n+5",
+        "B. 2n−5",
+        "C. 2n−3",
+        "D. n−5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_025",
+      "item_type": "fill",
+      "stem": "某礼堂第一排有20个座位，以后每一排比前一排多2个座位，则第10排有____个座位。",
+      "answer": "38",
+      "kps": [
+        "kp_h12_arith_apply"
+      ],
+      "difficulty": 0.3,
+      "solution": "a_1=20，d=2，a_10=20+(10−1)×2=38。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_026",
+      "item_type": "choice",
+      "stem": "一堆钢管堆放成等边三角形形状，共7层，最上层1根，最下层7根，则这堆钢管总数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_arith_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "每层根数1,2,3,4,5,6,7成等差数列，S_7=7×8/2=28，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 21",
+        "B. 28",
+        "C. 35",
+        "D. 49"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_027",
+      "item_type": "choice",
+      "stem": "某电影院第一排20个座位，后一排总比前一排多2个座位，已知最后一排80个座位，则该电影院的总座位数为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_arith_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "a_1=20，d=2，a_n=80，n=1+(80−20)/2=31，S_31=31×(20+80)/2=31×50=1550，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1450",
+        "B. 1500",
+        "C. 1550",
+        "D. 1600"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_028",
+      "item_type": "choice",
+      "stem": "下列数列中，是等比数列的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_geo_concept"
+      ],
+      "difficulty": 0.25,
+      "solution": "A中相邻项之比恒为2，为等比数列；B、C相邻项之比不为常数；D含0不可作比；选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1，2，4，8",
+        "B. 1，2，3，4",
+        "C. 1，3，5，7",
+        "D. 0，1，2，3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_029",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}中，a_1=3，q=2，则a_5=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_geo_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "a_5=a_1·q^(5−1)=3×2^4=48，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 24",
+        "B. 36",
+        "C. 48",
+        "D. 96"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_031",
+      "item_type": "choice",
+      "stem": "数列{a_n}的通项公式为a_n=2^n，则{a_n}是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_judge"
+      ],
+      "difficulty": 0.3,
+      "solution": "a_{n+1}/a_n=2为非零常数，故{a_n}是等比数列，公比为2，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列，公差为2",
+        "B. 等比数列，公比为2",
+        "C. 等比数列，公比为1",
+        "D. 不是等比数列"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_032",
+      "item_type": "choice",
+      "stem": "已知数列{a_n}中a_n>0，且a_{n+1}²=a_n·a_{n+2}对一切正整数n成立，则{a_n}是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_judge"
+      ],
+      "difficulty": 0.5,
+      "solution": "由a_n>0，两边取算术平方根得a_{n+1}=√(a_n·a_{n+2})，即a_{n+1}/a_n=a_{n+2}/a_{n+1}，故为等比数列，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列",
+        "B. 等比数列",
+        "C. 常数列",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_033",
+      "item_type": "choice",
+      "stem": "数列{a_n}的通项公式为a_n=1，则{a_n}是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_geo_judge"
+      ],
+      "difficulty": 0.75,
+      "solution": "a_{n+1}−a_n=0，故为等差数列（d=0）；a_{n+1}/a_n=1，故为等比数列（q=1）；选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等差数列，公差为1",
+        "B. 等比数列，公比为1",
+        "C. 既是等差数列又是等比数列",
+        "D. 不是等差数列"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_034",
+      "item_type": "fill",
+      "stem": "等比数列{a_n}中，a_2·a_6=9，则a_4²=____。",
+      "answer": "9",
+      "kps": [
+        "kp_h12_geo_props"
+      ],
+      "difficulty": 0.3,
+      "solution": "由性质m+n=p+q时a_m·a_n=a_p·a_q，2+6=4+4，故a_2·a_6=a_4²=9。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_035",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}中，a_1=1，q=2，则a_2，a_5，a_8也成等比数列，公比为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_geo_props"
+      ],
+      "difficulty": 0.5,
+      "solution": "下标成等差的子列公比为q^m=2^3=8，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 8",
+        "D. 16"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_036",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}中，q>0，则{a_n}的图象（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_geo_props"
+      ],
+      "difficulty": 0.75,
+      "solution": "数列的图象是定义域为正整数的孤立点；q>0时a_n=(a_1/q)·q^n，这些点分布在指数型曲线y=(a_1/q)·q^x上，故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 是一段直线",
+        "B. 是指数型函数曲线的一段",
+        "C. 是抛物线的一段",
+        "D. 是孤立的点，分布在指数型曲线上"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_037",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}中，a_1=2，q=1，则S_5=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_geo_sum"
+      ],
+      "difficulty": 0.25,
+      "solution": "q=1时S_n=na_1，故S_5=5×2=10，选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 5",
+        "C. 10",
+        "D. 32"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_038",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}中，a_1=1，q=2，则S_10=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_sum"
+      ],
+      "difficulty": 0.5,
+      "solution": "q≠1时S_n=a_1(1−q^n)/(1−q)=1×(1−2^10)/(1−2)=1023，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 512",
+        "B. 1023",
+        "C. 1024",
+        "D. 2047"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_039",
+      "item_type": "choice",
+      "stem": "等比数列{a_n}的前n项和S_n=2^n−1，则数列的通项公式a_n=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_sum"
+      ],
+      "difficulty": 0.75,
+      "solution": "a_1=S_1=1；对n≥2，a_n=S_n−S_{n−1}=2^n−1−(2^(n−1)−1)=2^(n−1)；n=1时2^0=1=a_1成立，故a_n=2^(n−1)，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2^n",
+        "B. 2^(n−1)",
+        "C. 2^n−1",
+        "D. 2^n+1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_040",
+      "item_type": "choice",
+      "stem": "某工厂今年产值为100万元，计划每年比上一年增产10%，则明年的产值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_apply"
+      ],
+      "difficulty": 0.3,
+      "solution": "明年产值=100×(1+10%)=110万元，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 100万元",
+        "B. 110万元",
+        "C. 120万元",
+        "D. 121万元"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_041",
+      "item_type": "choice",
+      "stem": "某人将10000元存入银行，年利率为2%，按复利计算（每年结算一次），则3年后本息和约为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_geo_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "本息和=10000×(1+2%)^3=10000×1.061208≈10612.08元，选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10600元",
+        "B. 10612.08元",
+        "C. 10620元",
+        "D. 11200元"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_12a_042",
+      "item_type": "choice",
+      "stem": "一种细菌每小时分裂一次（1个分裂为2个）。从1个细菌开始，经5小时后细菌总数为（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_geo_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "每小时翻倍，5小时后为2^5=32个，选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 16",
+        "C. 25",
+        "D. 32"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ssm_001",
+      "item_type": "choice",
+      "stem": "数列 {a_n} 的通项公式为 a_n = 1/[n(n+1)]，则其前 10 项和 S_10 = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_seq_sum_methods"
+      ],
+      "difficulty": 0.3,
+      "solution": "裂项: a_n = 1/[n(n+1)] = 1/n - 1/(n+1)。S_10 = (1-1/2)+(1/2-1/3)+…+(1/10-1/11) = 1 - 1/11 = 10/11。",
+      "source": "llm_generated",
+      "options": [
+        "A. 9/10",
+        "B. 10/11",
+        "C. 11/12",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ssm_002",
+      "item_type": "choice",
+      "stem": "数列 {a_n} 的通项公式为 a_n = 2^n + 3n，则 S_5 = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_seq_sum_methods"
+      ],
+      "difficulty": 0.5,
+      "solution": "分组求和: Σ 2^n (n=1..5) = 2+4+8+16+32 = 62; Σ 3n (n=1..5) = 3(1+2+3+4+5) = 45; S_5 = 62 + 45 = 107。",
+      "source": "llm_generated",
+      "options": [
+        "A. 95",
+        "B. 107",
+        "C. 102",
+        "D. 110"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ssm_003",
+      "item_type": "choice",
+      "stem": "数列 {a_n} 的通项公式为 a_n = n·2^n，则其前 n 项和 S_n = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_seq_sum_methods"
+      ],
+      "difficulty": 0.72,
+      "solution": "错位相减法: S_n = 1·2+2·4+…+n·2^n；两边乘 2 得 2S_n = 1·4+2·8+…+n·2^(n+1)。相减: -S_n = 2+4+…+2^n - n·2^(n+1) = 2(2^n - 1) - n·2^(n+1) = 2^(n+1) - 2 - n·2^(n+1)，故 S_n = (n-1)·2^(n+1) + 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. (n-1)·2^(n+1) + 2",
+        "B. n·2^(n+1) + 2",
+        "C. (n+1)·2^n - 2",
+        "D. (n-1)·2^n + 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ac_001",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^2 在区间 [1, 3] 上的平均变化率为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_avg_change"
+      ],
+      "difficulty": 0.28,
+      "solution": "Δy/Δx = [f(3) - f(1)]/(3 - 1) = (9 - 1)/2 = 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 6",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ac_002",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^2 - 2x + 1 在区间 [0, 2] 上的平均变化率为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_avg_change"
+      ],
+      "difficulty": 0.48,
+      "solution": "f(0) = 1, f(2) = 4 - 4 + 1 = 1; Δy/Δx = (1 - 1)/2 = 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ac_003",
+      "item_type": "choice",
+      "stem": "一物体沿直线运动，其位置函数 s(t) = 3t^2 + 2t（米），则该物体在 t = 2 s 到 t = 3 s 的平均速度为（　） m/s",
+      "answer": "C",
+      "kps": [
+        "kp_h12_avg_change"
+      ],
+      "difficulty": 0.65,
+      "solution": "s(2) = 12 + 4 = 16, s(3) = 27 + 6 = 33; 平均速度 = (33 - 16)/(3 - 2) = 17 m/s。",
+      "source": "llm_generated",
+      "options": [
+        "A. 11",
+        "B. 13",
+        "C. 17",
+        "D. 33"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dc_001",
+      "item_type": "choice",
+      "stem": "用导数定义求 y = x^2 在 x = 1 处的导数，结果为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_concept"
+      ],
+      "difficulty": 0.32,
+      "solution": "f'(1) = lim(Δx→0) [(1+Δx)^2 - 1]/Δx = lim(Δx→0) [2Δx + Δx^2]/Δx = lim(Δx→0) (2 + Δx) = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dc_002",
+      "item_type": "choice",
+      "stem": "用导数定义求 f(x) = √x 在 x = 1 处的导数，结果为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_concept"
+      ],
+      "difficulty": 0.52,
+      "solution": "f'(1) = lim(Δx→0) [√(1+Δx) - 1]/Δx，分子分母同乘 √(1+Δx)+1 后 = lim(Δx→0) Δx/[Δx·(√(1+Δx)+1)] = 1/(1+1) = 1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2",
+        "B. 1",
+        "C. 2",
+        "D. 1/√2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dc_003",
+      "item_type": "choice",
+      "stem": "已知 f(x) 在 x = x_0 处可导，且 lim(Δx→0) [f(x_0 + 2Δx) - f(x_0)]/Δx = 4，则 f'(x_0) = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_concept"
+      ],
+      "difficulty": 0.72,
+      "solution": "lim(Δx→0) [f(x_0+2Δx)-f(x_0)]/Δx = 2·lim(Δx→0) [f(x_0+2Δx)-f(x_0)]/(2Δx) = 2·f'(x_0) = 4，故 f'(x_0) = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 4",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dg_001",
+      "item_type": "choice",
+      "stem": "曲线 y = x^3 在点 (1, 1) 处的切线斜率为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_deriv_geo"
+      ],
+      "difficulty": 0.3,
+      "solution": "y' = 3x^2，在 x=1 处 y' = 3，即切线斜率为 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 3",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dg_002",
+      "item_type": "choice",
+      "stem": "曲线 y = sin x 在 x = π/6 处的切线斜率为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_deriv_geo"
+      ],
+      "difficulty": 0.5,
+      "solution": "y' = cos x，在 x = π/6 处 y' = cos(π/6) = √3/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. -1/2",
+        "B. 1/2",
+        "C. √3/2",
+        "D. -√3/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dg_003",
+      "item_type": "choice",
+      "stem": "已知曲线 y = x^3 - 3x 上点 P 处的切线斜率为 0，则点 P 的坐标为（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_deriv_geo"
+      ],
+      "difficulty": 0.68,
+      "solution": "y' = 3x^2 - 3 = 0，得 x = ±1。x = 1 时 y = -2，点 (1, -2)；x = -1 时 y = 2，点 (-1, 2)。两个点都满足。",
+      "source": "llm_generated",
+      "options": [
+        "A. (1, -2)",
+        "B. (-1, 2)",
+        "C. (1, 2)",
+        "D. (1, -2) 或 (-1, 2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_tan_001",
+      "item_type": "choice",
+      "stem": "曲线 y = x^2 在点 (1, 1) 处的切线方程为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_tangent"
+      ],
+      "difficulty": 0.32,
+      "solution": "y' = 2x，在 x=1 处切线斜率 k=2。切线方程: y - 1 = 2(x - 1)，化简得 y = 2x - 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = 2x - 1",
+        "B. y = 2x + 1",
+        "C. y = x",
+        "D. y = -2x + 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_tan_002",
+      "item_type": "choice",
+      "stem": "曲线 y = e^x 在点 (0, 1) 处的切线方程为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_tangent"
+      ],
+      "difficulty": 0.48,
+      "solution": "y' = e^x，在 x=0 处斜率 k=1。切线方程: y - 1 = 1·(x - 0)，即 y = x + 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = x + 1",
+        "B. y = x",
+        "C. y = x - 1",
+        "D. y = -x + 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_tan_003",
+      "item_type": "choice",
+      "stem": "已知直线 y = kx 是曲线 y = ln x 的切线，则 k = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_tangent"
+      ],
+      "difficulty": 0.72,
+      "solution": "设切点 (a, ln a)，切线斜率 1/a。切线: y - ln a = (1/a)(x - a)，即 y = x/a - 1 + ln a。该直线过原点（截距为零）: 0 = 0/a - 1 + ln a，故 ln a = 1，a = e。k = 1/a = 1/e。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/e",
+        "B. e",
+        "C. 1",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bd_001",
+      "item_type": "choice",
+      "stem": "函数 y = 3^x 的导数为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_basic_derivs"
+      ],
+      "difficulty": 0.28,
+      "solution": "由 (a^x)' = a^x·ln a，得 y' = 3^x·ln 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3^x·ln 3",
+        "B. 3^x/ln 3",
+        "C. 3·3^(x-1)",
+        "D. 3^x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bd_002",
+      "item_type": "choice",
+      "stem": "函数 y = log_2 x 的导数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_basic_derivs"
+      ],
+      "difficulty": 0.48,
+      "solution": "由 (log_a x)' = 1/(x·ln a)，得 y' = 1/(x·ln 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/x",
+        "B. 1/(x ln 2)",
+        "C. 1/ln 2",
+        "D. 2/x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bd_003",
+      "item_type": "choice",
+      "stem": "设 f(x) = sin x + 2 cos x，则 f'(π/6) = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_basic_derivs"
+      ],
+      "difficulty": 0.66,
+      "solution": "f'(x) = cos x - 2 sin x；f'(π/6) = cos(π/6) - 2 sin(π/6) = √3/2 - 2·1/2 = (√3 - 2)/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. (√3-2)/2",
+        "B. (√3+2)/2",
+        "C. 1",
+        "D. (√3-1)/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dr_001",
+      "item_type": "choice",
+      "stem": "函数 y = x^2 + 2x 的导数为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_rules"
+      ],
+      "difficulty": 0.3,
+      "solution": "由 (x^n)' = n x^(n-1) 和加减法则，y' = 2x + 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2x + 2",
+        "B. 2x - 2",
+        "C. x + 2",
+        "D. 2x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dr_002",
+      "item_type": "choice",
+      "stem": "函数 y = x·e^x 的导数为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_deriv_rules"
+      ],
+      "difficulty": 0.52,
+      "solution": "由乘积法则 (uv)' = u'v + uv'：y' = 1·e^x + x·e^x = e^x(1 + x)。",
+      "source": "llm_generated",
+      "options": [
+        "A. e^x",
+        "B. x·e^x",
+        "C. e^x + x·e^x",
+        "D. e^x(1 - x)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dr_003",
+      "item_type": "choice",
+      "stem": "函数 y = x/sin x 的导数为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_rules"
+      ],
+      "difficulty": 0.68,
+      "solution": "由除法法则 (u/v)' = (u'v - uv')/v²：y' = [1·sin x - x·cos x]/sin²x = (sin x - x cos x)/sin²x。",
+      "source": "llm_generated",
+      "options": [
+        "A. (sin x - x cos x)/sin²x",
+        "B. (sin x + x cos x)/sin²x",
+        "C. 1/cos x",
+        "D. (cos x - x sin x)/sin²x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cd_001",
+      "item_type": "choice",
+      "stem": "函数 y = (3x + 1)^2 的导数为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_composite_deriv"
+      ],
+      "difficulty": 0.28,
+      "solution": "由链式法则：y' = 2(3x+1)·(3x+1)' = 2(3x+1)·3 = 6(3x+1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2(3x + 1)",
+        "B. 3(3x + 1)",
+        "C. 6(3x + 1)",
+        "D. 9(3x + 1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cd_002",
+      "item_type": "choice",
+      "stem": "函数 y = sin(2x + π/3) 的导数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_composite_deriv"
+      ],
+      "difficulty": 0.5,
+      "solution": "由链式法则：y' = cos(2x + π/3)·(2x + π/3)' = 2cos(2x + π/3)。",
+      "source": "llm_generated",
+      "options": [
+        "A. cos(2x + π/3)",
+        "B. 2cos(2x + π/3)",
+        "C. -2cos(2x + π/3)",
+        "D. -sin(2x + π/3)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cd_003",
+      "item_type": "choice",
+      "stem": "函数 y = ln(x^2 + 1) 的导数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_composite_deriv"
+      ],
+      "difficulty": 0.7,
+      "solution": "由链式法则：y' = 1/(x^2+1)·(x^2+1)' = 1/(x^2+1)·2x = 2x/(x^2+1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/(x^2 + 1)",
+        "B. 2x/(x^2 + 1)",
+        "C. 2x",
+        "D. 1/(2x)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmo_001",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^2 - 2x + 3 的单调递增区间为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_mono"
+      ],
+      "difficulty": 0.3,
+      "solution": "f'(x) = 2x - 2，令 f'(x) ≥ 0 得 x ≥ 1，故单调递增区间为 (1, +∞)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (-∞, 1)",
+        "B. (1, +∞)",
+        "C. (-∞, -1)",
+        "D. (-1, +∞)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmo_002",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^3 - 3x^2 + 4 的单调递减区间为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_mono"
+      ],
+      "difficulty": 0.52,
+      "solution": "f'(x) = 3x^2 - 6x = 3x(x - 2)；f'(x) < 0 当 0 < x < 2，故单调递减区间为 (0, 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (0, 2)",
+        "B. (-∞, 0) ∪ (2, +∞)",
+        "C. (0, +∞)",
+        "D. (-∞, 2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmo_003",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^3 - 3x + 1 的单调递增区间为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_deriv_mono"
+      ],
+      "difficulty": 0.7,
+      "solution": "f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1)；f'(x) > 0 当 x < -1 或 x > 1，故单调递增区间为 (-∞, -1) ∪ (1, +∞)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (-∞, -1)",
+        "B. (1, +∞)",
+        "C. (-∞, -1) ∪ (1, +∞)",
+        "D. (-1, 1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_de_001",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^2 - 4x + 5 的极小值点为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_extreme"
+      ],
+      "difficulty": 0.3,
+      "solution": "f'(x) = 2x - 4 = 0，得 x = 2。f''(x) = 2 > 0，故 x = 2 为极小值点。",
+      "source": "llm_generated",
+      "options": [
+        "A. x = 1",
+        "B. x = 2",
+        "C. x = 3",
+        "D. x = 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_de_002",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^3 - 3x 的极大值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_extreme"
+      ],
+      "difficulty": 0.5,
+      "solution": "f'(x) = 3x^2 - 3 = 3(x-1)(x+1)；x = -1 附近左侧 f' > 0、右侧 f' < 0，是极大值点，f(-1) = -1 + 3 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. -2",
+        "B. 2",
+        "C. -3",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_de_003",
+      "item_type": "choice",
+      "stem": "函数 f(x) = (1/3)x^3 - 4x + 4 的极值为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_extreme"
+      ],
+      "difficulty": 0.72,
+      "solution": "f'(x) = x^2 - 4 = (x-2)(x+2)，得 x = -2 或 x = 2。f''(-2) = -4 < 0，x = -2 为极大值点，f(-2) = -8/3 + 8 + 4 = 28/3；f''(2) = 4 > 0，x = 2 为极小值点，f(2) = 8/3 - 8 + 4 = -4/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 极大值 28/3，极小值 -4/3",
+        "B. 极大值 4，极小值 -4",
+        "C. 极大值 28/3，极小值 -28/3",
+        "D. 极大值 12，极小值 -4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmm_001",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^2 - 4x + 3 在区间 [0, 5] 上的最小值为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_minmax"
+      ],
+      "difficulty": 0.3,
+      "solution": "f'(x) = 2x - 4 = 0 得 x = 2。f(0) = 3, f(2) = -1, f(5) = 8；最小值为 -1。",
+      "source": "llm_generated",
+      "options": [
+        "A. -1",
+        "B. 0",
+        "C. 3",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmm_002",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x^3 - 3x 在区间 [-2, 3] 上的最大值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_minmax"
+      ],
+      "difficulty": 0.52,
+      "solution": "f'(x) = 3x^2 - 3 = 0 得 x = ±1。f(-2) = -2, f(-1) = 2, f(1) = -2, f(3) = 18；最大值为 18。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 18",
+        "C. 0",
+        "D. -2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dmm_003",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x + 4/x 在 (0, +∞) 上的最小值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_minmax"
+      ],
+      "difficulty": 0.7,
+      "solution": "f'(x) = 1 - 4/x^2 = 0 得 x = 2 (x > 0)。当 0 < x < 2 时 f' < 0 (递减)；当 x > 2 时 f' > 0 (递增)。最小值 f(2) = 2 + 2 = 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 8",
+        "D. 不存在"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_do_001",
+      "item_type": "choice",
+      "stem": "用 36 cm 长的铁丝围成一个矩形，要使矩形面积最大，长和宽应分别为（　）（单位：cm）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_optimize"
+      ],
+      "difficulty": 0.3,
+      "solution": "设长 x、宽 y，则 2(x+y) = 36，即 x+y = 18。面积 S = xy ≤ ((x+y)/2)^2 = 81，当且仅当 x = y = 9 时取等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 9, 9",
+        "B. 18, 9",
+        "C. 12, 12",
+        "D. 36, 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_do_002",
+      "item_type": "choice",
+      "stem": "一工厂生产 Q 件产品的总成本为 C(Q) = 1000 + 20Q + 0.1Q^2（元），则使平均成本最小时的产量为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_deriv_optimize"
+      ],
+      "difficulty": 0.55,
+      "solution": "平均成本 f(Q) = C(Q)/Q = 1000/Q + 20 + 0.1Q (Q>0)。f'(Q) = -1000/Q^2 + 0.1 = 0 得 Q^2 = 10000，Q = 100。f''(Q) = 2000/Q^3 > 0，是极小值点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 50",
+        "B. 80",
+        "C. 100",
+        "D. 200"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_do_003",
+      "item_type": "choice",
+      "stem": "用长为 16 m 的篱笆围成一个矩形菜园（一面靠墙不用篱笆），则菜园面积最大时矩形的长和宽分别为（　）（单位：m）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_optimize"
+      ],
+      "difficulty": 0.72,
+      "solution": "设垂直墙的宽为 x，平行墙的长为 y，则 2x + y = 16，y = 16 - 2x (0 < x < 8)。面积 S = xy = 16x - 2x^2。S' = 16 - 4x = 0 得 x = 4。S'' = -4 < 0，是极大值。此时 y = 8，最大面积 S = 32 m^2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 8, 4",
+        "B. 4, 8",
+        "C. 16, 4",
+        "D. 8, 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dp_001",
+      "item_type": "choice",
+      "stem": "已知 f(x) = x^3 + ax^2 + 9x 在 R 上单调递增，则实数 a 的取值范围为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_param"
+      ],
+      "difficulty": 0.32,
+      "solution": "f'(x) = 3x^2 + 2ax + 9，要使其对任意 x ∈ R 都非负，判别式 Δ = 4a^2 - 108 ≤ 0，即 a^2 ≤ 27，故 -3√3 ≤ a ≤ 3√3。",
+      "source": "llm_generated",
+      "options": [
+        "A. [-3, 3]",
+        "B. [-3√3, 3√3]",
+        "C. [-√3, √3]",
+        "D. R"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dp_002",
+      "item_type": "choice",
+      "stem": "已知函数 f(x) = ax^2 - x + 1 在 (0, +∞) 上单调递减，则实数 a 的取值范围是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_param"
+      ],
+      "difficulty": 0.52,
+      "solution": "f'(x) = 2ax - 1。当 a = 0 时，f'(x) = -1 < 0，递减 ✓；当 a < 0 时，对 x > 0 有 2ax ≤ 0，故 f'(x) ≤ -1 < 0，递减 ✓；当 a > 0 时，f' 在 x = 1/(2a) > 0 处变号，不单调 ✗。故 a ≤ 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. a ≤ 0",
+        "B. a = 0",
+        "C. a < 0",
+        "D. a ≥ 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dzi_001",
+      "item_type": "choice",
+      "stem": "不等式 x^2 - 2x + 3 > m 对一切实数 x 恒成立，则 m 的取值范围是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_deriv_zero_ineq"
+      ],
+      "difficulty": 0.3,
+      "solution": "x^2 - 2x + 3 = (x - 1)^2 + 2 ≥ 2，故 m < 2 时不等式恒成立。",
+      "source": "llm_generated",
+      "options": [
+        "A. m < 2",
+        "B. m ≤ 2",
+        "C. m > 2",
+        "D. m ≥ 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_dzi_002",
+      "item_type": "choice",
+      "stem": "已知函数 f(x) = x^3 - 3x 的极大值与极小值之和为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_deriv_zero_ineq"
+      ],
+      "difficulty": 0.5,
+      "solution": "f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1)。x = -1 处为极大值点 f(-1) = 2；x = 1 处为极小值点 f(1) = -2；极大值与极小值之和 = 2 + (-2) = 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. -2",
+        "B. 0",
+        "C. 2",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coup_001",
+      "item_type": "choice",
+      "stem": "从甲、乙、丙、丁四人中选出一人担任班长，再从剩下的三人中选出一人担任副班长，则不同的选法共有（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_counting_principles"
+      ],
+      "difficulty": 0.25,
+      "solution": "两步依次完成，班长有4种选法，副班长有3种选法，由分步乘法计数原理得 4×3=12。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 7",
+        "C. 12",
+        "D. 16"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coup_002",
+      "item_type": "choice",
+      "stem": "从1,2,3,4,5这5个数字中，选取两个不同的数字组成有序数对(a,b)，要求a+b为偶数，则满足条件的有序数对共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_counting_principles"
+      ],
+      "difficulty": 0.5,
+      "solution": "奇数集{1,3,5}，偶数集{2,4}。两数之和为偶数需同为奇或同为偶：两奇C(3,2)·A(2,2)=6，两偶C(2,2)·A(2,2)=2，共8个。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 8",
+        "C. 10",
+        "D. 12"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coup_003",
+      "item_type": "choice",
+      "stem": "用0,1,2,3,4,5这六个数字（不重复）组成三位数，要求十位数字小于个位数字，则这样的三位数共有（　　）个",
+      "answer": "C",
+      "kps": [
+        "kp_h12_counting_principles"
+      ],
+      "difficulty": 0.75,
+      "solution": "无重复三位数共5×5×4=100个（百位不能为0）。对任意三位数，将十位与个位互换得到另一合法三位数，且十位<个位与十位>个位各占一半，故100/2=50。",
+      "source": "llm_generated",
+      "options": [
+        "A. 40",
+        "B. 45",
+        "C. 50",
+        "D. 60"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coua_001",
+      "item_type": "choice",
+      "stem": "用3种不同颜色给A、B、C三个区域涂色（相邻区域不同色，A与B相邻、B与C相邻、A与C不相邻），则不同的涂色方案共有（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_counting_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "按A→B→C的次序：A有3种，B有2种（≠A），C有2种（≠B），由分步乘法 3×2×2=12。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 8",
+        "C. 12",
+        "D. 18"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coua_002",
+      "item_type": "choice",
+      "stem": "5人排成一排照相，要求甲必须站在中间位置（第3位），乙不能站在排头或排尾，则不同的排法共有（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_counting_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "甲固定在第3位。剩余4个位置{1,2,4,5}由乙丙丁戊填充，乙不能放在1或5位，即只能在2位或4位（2种），其余3人在剩下3个位置全排列3!=6，共2×6=12。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12",
+        "B. 18",
+        "C. 24",
+        "D. 36"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_coua_003",
+      "item_type": "choice",
+      "stem": "6个人分成3组（每组2人）参加3项不同的活动，要求甲、乙不能分在同一组，则不同的分配方法共有（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_counting_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "无限制：C(6,2)C(4,2)C(2,2)/A(3,3)·A(3,3)=15×6=90。甲乙同组：甲乙成对，剩4人分两组C(4,2)/A(2,2)=3，共3×6=18。所求=90−18=72。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30",
+        "B. 36",
+        "C. 48",
+        "D. 72"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_perm_001",
+      "item_type": "choice",
+      "stem": "计算 A(5,3)+A(5,2) 的值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_permutation"
+      ],
+      "difficulty": 0.25,
+      "solution": "A(5,3)=5×4×3=60，A(5,2)=5×4=20，和为80。",
+      "source": "llm_generated",
+      "options": [
+        "A. 60",
+        "B. 80",
+        "C. 100",
+        "D. 140"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_perm_002",
+      "item_type": "choice",
+      "stem": "由数字1,2,3,4,5组成无重复数字的三位数，要求百位大于十位、十位大于个位，则这样的三位数共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_permutation"
+      ],
+      "difficulty": 0.5,
+      "solution": "从5个数字选3个C(5,3)=10，每组数字严格递减排列唯一，共10个。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5",
+        "B. 10",
+        "C. 20",
+        "D. 60"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_perm_003",
+      "item_type": "choice",
+      "stem": "用1,2,3,4,5这5个数字（不重复）组成五位数，要求数字1不出现在首位，数字5不出现在末位，则这样的五位数共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_permutation"
+      ],
+      "difficulty": 0.75,
+      "solution": "总数5!=120。1在首位4!=24，5在末位4!=24，1首位且5末位3!=6，由容斥得120−24−24+6=78。",
+      "source": "llm_generated",
+      "options": [
+        "A. 72",
+        "B. 78",
+        "C. 84",
+        "D. 96"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_comb_001",
+      "item_type": "choice",
+      "stem": "计算 C(8,2)−C(6,2) 的值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_combination"
+      ],
+      "difficulty": 0.25,
+      "solution": "C(8,2)=28，C(6,2)=15，差为13。",
+      "source": "llm_generated",
+      "options": [
+        "A. 11",
+        "B. 13",
+        "C. 15",
+        "D. 28"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_comb_002",
+      "item_type": "choice",
+      "stem": "某班有4名男生和3名女生，要从中选出3人参加活动，要求至少有1名女生，则不同的选法共有（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_combination"
+      ],
+      "difficulty": 0.5,
+      "solution": "总数C(7,3)=35，全男生C(4,3)=4，至少1女=35−4=31。",
+      "source": "llm_generated",
+      "options": [
+        "A. 20",
+        "B. 24",
+        "C. 31",
+        "D. 34"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_comb_003",
+      "item_type": "choice",
+      "stem": "从5名男生和4名女生中选出3名男生和2名女生组成5人学习小组，要求甲（男）和丙（女）不能同时入选，则不同的选法共有（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_combination"
+      ],
+      "difficulty": 0.75,
+      "solution": "无限制C(5,3)C(4,2)=10×6=60。甲丙同时入选C(4,2)C(3,1)=6×3=18。所求=60−18=42。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30",
+        "B. 36",
+        "C. 42",
+        "D. 54"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cmpp_001",
+      "item_type": "choice",
+      "stem": "已知 C(n,5)=C(n,7)，则 n 的值为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_combination_properties"
+      ],
+      "difficulty": 0.25,
+      "solution": "由对称性C(n,5)=C(n,n−5)，令n−5=7得n=12。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 11",
+        "C. 12",
+        "D. 13"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cmpp_002",
+      "item_type": "choice",
+      "stem": "计算 C(100,98) 的值为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_combination_properties"
+      ],
+      "difficulty": 0.5,
+      "solution": "由对称性C(100,98)=C(100,2)=100×99/2=4950。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4950",
+        "B. 9900",
+        "C. 49500",
+        "D. 495"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cmpp_003",
+      "item_type": "choice",
+      "stem": "已知组合恒等式 k·C(n,k) = n·C(n−1,k−1)，由此可得 Σ(k=1..4) k·C(4,k) 的值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_combination_properties"
+      ],
+      "difficulty": 0.75,
+      "solution": "Σ k·C(4,k) = 4·Σ C(3,k−1) = 4·2^3 = 32（令 j=k−1，j从0到3求和得C(3,0)+C(3,1)+C(3,2)+C(3,3)=2^3）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4·2^4",
+        "B. 4·2^3",
+        "C. 2^4",
+        "D. 4·3^4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pcap_001",
+      "item_type": "choice",
+      "stem": "4男2女共6人排成一排照相，要求2名女生相邻，则不同的排法共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_perm_comb_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "将2名女生捆绑成一个元素，5个元素全排列5!=120，内部排列2!=2，共240。",
+      "source": "llm_generated",
+      "options": [
+        "A. 120",
+        "B. 240",
+        "C. 480",
+        "D. 720"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pcap_003",
+      "item_type": "choice",
+      "stem": "5人站成一排，其中甲不站在排头，乙不站在排尾，则不同的排法共有（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_perm_comb_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "总数5!=120。甲在排头4!=24，乙在排尾4!=24，甲排头且乙排尾3!=6，由容斥得120−24−24+6=78。",
+      "source": "llm_generated",
+      "options": [
+        "A. 78",
+        "B. 84",
+        "C. 96",
+        "D. 108"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bith_001",
+      "item_type": "choice",
+      "stem": "(a+b)^5 的展开式中，第3项的二项式系数为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_theorem"
+      ],
+      "difficulty": 0.25,
+      "solution": "通项T(k+1)=C(5,k)a^(5−k)b^k，第3项对应k=2，二项式系数C(5,2)=10。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5",
+        "B. 10",
+        "C. 20",
+        "D. 5a^3b^2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bith_002",
+      "item_type": "choice",
+      "stem": "(x−1/x)^6 展开式中的常数项为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_binomial_theorem"
+      ],
+      "difficulty": 0.5,
+      "solution": "通项T(k+1)=C(6,k)(−1)^k x^(6−2k)。令6−2k=0得k=3，常数项C(6,3)(−1)^3=−20。",
+      "source": "llm_generated",
+      "options": [
+        "A. −20",
+        "B. 20",
+        "C. −120",
+        "D. 120"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bith_003",
+      "item_type": "choice",
+      "stem": "(√x − 1/(2x))^n 展开式中所有二项式系数之和为64，则展开式中的常数项为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_binomial_theorem"
+      ],
+      "difficulty": 0.75,
+      "solution": "由2^n=64得n=6。通项T(k+1)=C(6,k)(−1)^k·(1/2^k)·x^((6−3k)/2)，令(6−3k)/2=0得k=2，常数项=C(6,2)·(1/4)=15/4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 15/4",
+        "B. 15/16",
+        "C. 5/4",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bicp_001",
+      "item_type": "choice",
+      "stem": "(a+b)^n（n为正整数）的展开式共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_coeff_props"
+      ],
+      "difficulty": 0.25,
+      "solution": "展开式从k=0到k=n共有n+1项。",
+      "source": "llm_generated",
+      "options": [
+        "A. n项",
+        "B. n+1项",
+        "C. n−1项",
+        "D. 2n项"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bicp_002",
+      "item_type": "choice",
+      "stem": "(1+x)^6 展开式中二项式系数最大的项为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_coeff_props"
+      ],
+      "difficulty": 0.5,
+      "solution": "n=6为偶数，中间一项（T(4)）二项式系数最大：C(6,3)x^3=20x^3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6x^2",
+        "B. 20x^3",
+        "C. 15x^3",
+        "D. 20x^4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_bicp_003",
+      "item_type": "choice",
+      "stem": "求 (1+x)^2+(1+x)^3+⋯+(1+x)^10 展开式中 x^2 项的系数（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_binomial_coeff_props"
+      ],
+      "difficulty": 0.75,
+      "solution": "每个 (1+x)^k 对x^2的贡献为C(k,2)，求和Σ(k=2..10)C(k,2)=C(11,3)=165（hockey stick）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 165",
+        "B. 180",
+        "C. 55",
+        "D. 330"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_biap_001",
+      "item_type": "choice",
+      "stem": "利用二项式定理 (1+x)^n 的前2项作近似计算，则 1.01^5 ≈ （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "1.01^5=(1+0.01)^5≈1+5×0.01=1.05。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1.04",
+        "B. 1.05",
+        "C. 1.06",
+        "D. 1.10"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_biap_002",
+      "item_type": "choice",
+      "stem": "(x^2−1/x)^9 展开式中 x^3 项的系数为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "通项T(k+1)=C(9,k)(−1)^k x^(18−3k)。令18−3k=3得k=5，系数C(9,5)(−1)^5=126×(−1)=−126。",
+      "source": "llm_generated",
+      "options": [
+        "A. 126",
+        "B. −126",
+        "C. 84",
+        "D. −84"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_biap_003",
+      "item_type": "choice",
+      "stem": "在4次独立重复试验中，每次成功的概率为0.5，则\"成功次数为偶数\"的概率为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_binomial_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "X~B(4,0.5)，P(X=0)=1/16，P(X=2)=6/16，P(X=4)=1/16，和为8/16=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/4",
+        "B. 1/2",
+        "C. 5/8",
+        "D. 3/4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_conp_001",
+      "item_type": "choice",
+      "stem": "袋中有5个红球3个白球，每次取一个（不放回），已知第一次取到红球，则第二次也取到红球的概率为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_conditional_prob"
+      ],
+      "difficulty": 0.25,
+      "solution": "条件概率：取出一红后袋中剩4红3白共7球，P(再取红)=4/7。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4/7",
+        "B. 3/7",
+        "C. 5/8",
+        "D. 4/5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_conp_002",
+      "item_type": "choice",
+      "stem": "盒中有10个零件（7正品3次品），每次取一个（不放回），连取两次，则两次都取到次品的概率为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_conditional_prob"
+      ],
+      "difficulty": 0.5,
+      "solution": "P(两次都次品)=P(1次)×P(2次|1次)=(3/10)×(2/9)=6/90=1/15。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/5",
+        "B. 1/10",
+        "C. 1/15",
+        "D. 1/30"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_conp_003",
+      "item_type": "choice",
+      "stem": "盒中有6个正品4个次品，每次取一个（不放回），连取两次。已知第二次取到次品，则第一次也取到次品的概率为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_conditional_prob"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(1次|2次)=P(1次∩2次)/P(2次)=[(4/10)(3/9)]/(4/10)=(2/15)/(2/5)=1/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/3",
+        "B. 2/5",
+        "C. 1/4",
+        "D. 2/7"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_evti_001",
+      "item_type": "choice",
+      "stem": "抛掷一枚均匀硬币两次，记事件A=\"第一次正面朝上\"，B=\"第二次正面朝上\"，则A与B（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_event_independence"
+      ],
+      "difficulty": 0.25,
+      "solution": "两次抛掷独立，P(B|A)=P(B)=1/2，由独立性定义A、B相互独立。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相互独立",
+        "B. 互斥",
+        "C. 既独立又互斥",
+        "D. 既不独立又不互斥"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_evti_002",
+      "item_type": "choice",
+      "stem": "甲、乙两人独立向同一目标各射击一次，甲击中概率0.8、乙击中概率0.6，则目标被击中的概率为（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_event_independence"
+      ],
+      "difficulty": 0.5,
+      "solution": "对立事件：P(击中)=1−P(都未击中)=1−(0.2)(0.4)=1−0.08=0.92。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.48",
+        "B. 0.6",
+        "C. 0.8",
+        "D. 0.92"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_evti_003",
+      "item_type": "choice",
+      "stem": "已知 P(A)=0.5，P(B)=0.6，且A、B相互独立，则 P(A∪B) 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_event_independence"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(A∪B)=P(A)+P(B)−P(AB)=0.5+0.6−0.5×0.6=1.1−0.3=0.8。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.3",
+        "B. 0.5",
+        "C. 0.8",
+        "D. 1.1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_totp_001",
+      "item_type": "choice",
+      "stem": "甲袋中有3个红球2个白球，乙袋中有2个红球3个白球。从甲袋中任取1球放入乙袋，再从乙袋中任取1球，则从乙袋中取到红球的概率为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_total_probability"
+      ],
+      "difficulty": 0.25,
+      "solution": "由全概率公式：P(乙红)=(3/5)(1/2)+(2/5)(1/3)=3/10+2/15=13/30。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2",
+        "B. 13/30",
+        "C. 11/30",
+        "D. 2/5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_totp_002",
+      "item_type": "choice",
+      "stem": "某厂有三条生产线生产同一产品，产量占比分别为40%、35%、25%，次品率分别为2%、1%、3%。从产品中随机取一件，则该件是次品的概率为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_total_probability"
+      ],
+      "difficulty": 0.5,
+      "solution": "由全概率公式：P(次品)=0.4×0.02+0.35×0.01+0.25×0.03=0.008+0.0035+0.0075=0.019。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.015",
+        "B. 0.019",
+        "C. 0.025",
+        "D. 0.030"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_totp_003",
+      "item_type": "choice",
+      "stem": "甲袋4红1白2球，乙袋1红2白2球。从甲袋任取1球放入乙袋，再从乙袋任取1球。已知从乙袋取到红球，则从甲袋取出红球的概率为（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_total_probability"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(甲红)=(4/5)(2/6)=(4/5)(1/3)=4/15；P(甲白)=(1/5)(1/6)=1/30；P(乙红)=4/15+1/30=9/30=3/10；P(甲红|乙红)=(4/15)/(3/10)=8/9。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2",
+        "B. 2/3",
+        "C. 5/6",
+        "D. 8/9"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvct_001",
+      "item_type": "choice",
+      "stem": "下列各量中，是随机变量的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_random_variable_concept"
+      ],
+      "difficulty": 0.25,
+      "solution": "B随明日实际天气变化而变化，是随机变量；A、C、D均为确定的常数。",
+      "source": "llm_generated",
+      "options": [
+        "A. 某班学生人数",
+        "B. 明天某城市的最高气温",
+        "C. 圆周率π",
+        "D. 某校全体学生的平均身高"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvct_002",
+      "item_type": "choice",
+      "stem": "抛掷一枚均匀硬币3次，正面朝上的次数为X，则X的可能取值为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_random_variable_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "3次独立抛掷，正面次数最少0、最多3，可取0,1,2,3四个值。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0或1",
+        "B. 1或2",
+        "C. 0,1,2,3",
+        "D. 0,1,2,3,4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvct_003",
+      "item_type": "choice",
+      "stem": "某人射击5次，命中的次数为X，则事件{X≥2}表示（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_random_variable_concept"
+      ],
+      "difficulty": 0.75,
+      "solution": "{X≥2}即命中次数大于等于2，至少命中2次。",
+      "source": "llm_generated",
+      "options": [
+        "A. 命中次数不超过2次",
+        "B. 至少命中2次",
+        "C. 恰好命中2次",
+        "D. 命中次数为2次或3次"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvds_001",
+      "item_type": "choice",
+      "stem": "已知离散型随机变量X的分布列为 X:0,1,2; P:0.3,0.5,0.2，则 P(X≥1) 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_rv_distribution"
+      ],
+      "difficulty": 0.25,
+      "solution": "P(X≥1)=P(X=1)+P(X=2)=0.5+0.2=0.7。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.3",
+        "B. 0.5",
+        "C. 0.7",
+        "D. 0.2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvds_002",
+      "item_type": "choice",
+      "stem": "设随机变量X服从两点分布，P(X=1)=0.6，则 P(X=0) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_distribution"
+      ],
+      "difficulty": 0.5,
+      "solution": "由 P(X=0)+P(X=1)=1 得 P(X=0)=0.4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.3",
+        "B. 0.4",
+        "C. 0.6",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvds_003",
+      "item_type": "choice",
+      "stem": "袋中有5个球（3红2白），从中随机取2个，设X为取到的红球数，则X的分布列为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_rv_distribution"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(X=0)=C(2,2)/C(5,2)=1/10；P(X=1)=C(3,1)C(2,1)/C(5,2)=6/10；P(X=2)=C(3,2)/C(5,2)=3/10。",
+      "source": "llm_generated",
+      "options": [
+        "A. X:0,1,2; P:1/10,6/10,3/10",
+        "B. X:0,1,2; P:3/10,6/10,1/10",
+        "C. X:0,1,2; P:1/10,3/10,6/10",
+        "D. X:0,1,2; P:1/10,5/10,4/10"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvmn_001",
+      "item_type": "choice",
+      "stem": "已知随机变量X的分布列为 X:1,2,3; P:0.2,0.5,0.3，则 E(X) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_mean"
+      ],
+      "difficulty": 0.25,
+      "solution": "E(X)=1×0.2+2×0.5+3×0.3=0.2+1.0+0.9=2.1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2.0",
+        "B. 2.1",
+        "C. 2.2",
+        "D. 2.5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvmn_002",
+      "item_type": "choice",
+      "stem": "某射手每次射击命中概率为0.8，射击5次，命中的次数为X，则 E(X) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_mean"
+      ],
+      "difficulty": 0.5,
+      "solution": "X~B(5,0.8)，E(X)=np=5×0.8=4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.8",
+        "B. 4",
+        "C. 5",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvmn_003",
+      "item_type": "choice",
+      "stem": "设随机变量X满足 P(X=k)=k/15（k=1,2,3,4,5），则 E(X) 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_rv_mean"
+      ],
+      "difficulty": 0.75,
+      "solution": "E(X)=Σ k·(k/15)=Σ k^2/15=(1+4+9+16+25)/15=55/15=11/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 11/3",
+        "B. 2",
+        "C. 7/3",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvva_001",
+      "item_type": "choice",
+      "stem": "设X服从两点分布，P(X=1)=0.4，则 D(X) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_variance"
+      ],
+      "difficulty": 0.25,
+      "solution": "两点分布方差 D(X)=p(1−p)=0.4×0.6=0.24。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.16",
+        "B. 0.24",
+        "C. 0.4",
+        "D. 0.6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvva_002",
+      "item_type": "choice",
+      "stem": "设随机变量X~B(10,0.5)，则 D(X) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_variance"
+      ],
+      "difficulty": 0.5,
+      "solution": "二项分布方差 D(X)=np(1−p)=10×0.5×0.5=2.5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 2.5",
+        "C. 5",
+        "D. 25"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_rvva_003",
+      "item_type": "choice",
+      "stem": "已知 E(X)=2，D(X)=9，则 E(3X+5) 与 D(3X+5) 分别为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_rv_variance"
+      ],
+      "difficulty": 0.75,
+      "solution": "E(3X+5)=3E(X)+5=11；D(3X+5)=3²D(X)=9×9=81。",
+      "source": "llm_generated",
+      "options": [
+        "A. 11, 9",
+        "B. 11, 81",
+        "C. 6, 27",
+        "D. 11, 27"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_berb_001",
+      "item_type": "choice",
+      "stem": "某人投篮命中率为0.6，独立投篮3次，设命中的次数为X，则 P(X=2) 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_bernoulli_binomial"
+      ],
+      "difficulty": 0.25,
+      "solution": "X~B(3,0.6)，P(X=2)=C(3,2)(0.6)^2(0.4)=3×0.36×0.4=0.432。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.216",
+        "B. 0.288",
+        "C. 0.432",
+        "D. 0.648"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_berb_002",
+      "item_type": "choice",
+      "stem": "设X~B(n,p)，且 E(X)=12，D(X)=8，则 n 与 p 的值为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_bernoulli_binomial"
+      ],
+      "difficulty": 0.5,
+      "solution": "由 np=12、np(1−p)=8 得 1−p=2/3、p=1/3，n=36。",
+      "source": "llm_generated",
+      "options": [
+        "A. n=36, p=1/3",
+        "B. n=24, p=1/2",
+        "C. n=48, p=1/4",
+        "D. n=18, p=2/3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_berb_003",
+      "item_type": "choice",
+      "stem": "在4次独立重复试验中，每次成功的概率为p，已知 P(X=1)=P(X=3)，则 p 的值为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_bernoulli_binomial"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(X=1)=4p(1−p)^3，P(X=3)=4p^3(1−p)，相等化简得(1−p)^2=p^2，又0<p<1，故p=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/4",
+        "B. 1/3",
+        "C. 1/2",
+        "D. 2/3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hypg_001",
+      "item_type": "choice",
+      "stem": "100件产品中有5件次品，从中随机抽取10件，设X为抽到的次品数，则X服从（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_hypergeometric"
+      ],
+      "difficulty": 0.25,
+      "solution": "总体有限、不放回抽样，X服从超几何分布。",
+      "source": "llm_generated",
+      "options": [
+        "A. 二项分布",
+        "B. 超几何分布",
+        "C. 正态分布",
+        "D. 泊松分布"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hypg_002",
+      "item_type": "choice",
+      "stem": "50件产品中有45件正品，从中随机抽取3件，设抽到的次品数为X，则 E(X) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_hypergeometric"
+      ],
+      "difficulty": 0.5,
+      "solution": "超几何分布均值 E(X)=nM/N=3×5/50=0.3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.15",
+        "B. 0.3",
+        "C. 0.45",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hypg_003",
+      "item_type": "choice",
+      "stem": "袋中有10个球（6红4白），不放回随机抽取4个，X为取到的红球数，则 P(X=2) 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_hypergeometric"
+      ],
+      "difficulty": 0.75,
+      "solution": "P(X=2)=C(6,2)C(4,2)/C(10,4)=15×6/210=90/210=3/7。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/7",
+        "B. 2/7",
+        "C. 3/7",
+        "D. 4/7"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrmd_001",
+      "item_type": "choice",
+      "stem": "正态分布的密度曲线关于下列哪条直线对称（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_normal_dist"
+      ],
+      "difficulty": 0.25,
+      "solution": "正态分布密度函数关于直线 x=μ（均值）对称。",
+      "source": "llm_generated",
+      "options": [
+        "A. x=0",
+        "B. x=μ",
+        "C. x=σ",
+        "D. y=0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrmd_002",
+      "item_type": "choice",
+      "stem": "设X~N(μ,σ²)，则密度函数f(x)在何处取得最大值（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_normal_dist"
+      ],
+      "difficulty": 0.5,
+      "solution": "正态密度在x=μ处取得最大值 1/(√(2π)σ)。",
+      "source": "llm_generated",
+      "options": [
+        "A. x=0",
+        "B. x=μ",
+        "C. x=σ",
+        "D. x=μ+σ"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrmd_003",
+      "item_type": "choice",
+      "stem": "设X~N(0,1)，已知 P(−1<X<1)=0.6826，则 P(X>1) 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_normal_dist"
+      ],
+      "difficulty": 0.75,
+      "solution": "由对称性 P(X>1)=P(X<−1)=(1−0.6826)/2=0.1587。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.1587",
+        "B. 0.3413",
+        "C. 0.6826",
+        "D. 0.8413"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrma_001",
+      "item_type": "choice",
+      "stem": "设X~N(0,1)，则 P(X<0) 等于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_normal_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "标准正态分布关于0对称，P(X<0)=0.5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 0.5",
+        "C. 1",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrma_002",
+      "item_type": "choice",
+      "stem": "设X~N(2,9)，则标准化变量 Z=(X−2)/3 服从（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_normal_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "由标准化公式 X~N(μ,σ²) ⇒ (X−μ)/σ~N(0,1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. N(0,1)",
+        "B. N(0,3)",
+        "C. N(2,3)",
+        "D. N(0,9)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nrma_003",
+      "item_type": "choice",
+      "stem": "某厂生产的零件长度服从N(50, 0.04)（mm），σ=0.2，则零件长度在(49.6, 50.4)内的概率约为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_normal_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "(49.6, 50.4)=(μ−2σ, μ+2σ)，由2σ原则 P≈0.9544。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.6826",
+        "B. 0.9544",
+        "C. 0.9974",
+        "D. 0.5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corr_001",
+      "item_type": "choice",
+      "stem": "散点图中的点整体呈上升趋势，表明两个变量之间为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_correlation"
+      ],
+      "difficulty": 0.25,
+      "solution": "点整体上升趋势即一个变量增大另一变量也增大，正相关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 正相关",
+        "B. 负相关",
+        "C. 不相关",
+        "D. 函数关系"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corr_002",
+      "item_type": "choice",
+      "stem": "下列两个变量中，具有相关关系（而非确定函数关系）的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_correlation"
+      ],
+      "difficulty": 0.5,
+      "solution": "A、B、D均为确定函数关系；只有C是统计相关关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 匀速运动中路程s与时间t",
+        "B. 圆的面积S与半径r",
+        "C. 人的身高h与体重w",
+        "D. 三角形面积S与底边a（高固定）"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corr_003",
+      "item_type": "choice",
+      "stem": "下列说法中，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h12_correlation"
+      ],
+      "difficulty": 0.75,
+      "solution": "A错误：相关非函数；B错误：相关不等于因果；C错误：可能为带噪声的线性；D正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相关关系就是函数关系",
+        "B. 两个变量相关则必存在因果关系",
+        "C. 散点图呈曲线形态一定是非线性相关",
+        "D. 散点大致分布在一条直线附近，则两变量线性相关"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corc_001",
+      "item_type": "choice",
+      "stem": "样本相关系数 r 的取值范围是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_corr_coefficient"
+      ],
+      "difficulty": 0.25,
+      "solution": "由柯西-施瓦茨不等式，|r|≤1，即r∈[−1,1]。",
+      "source": "llm_generated",
+      "options": [
+        "A. [0,1]",
+        "B. (−1,1)",
+        "C. [−1,1]",
+        "D. [0,+∞)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corc_002",
+      "item_type": "choice",
+      "stem": "已知两变量x、y的样本相关系数 r=−0.85，则下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_corr_coefficient"
+      ],
+      "difficulty": 0.5,
+      "solution": "r<0为负相关，|r|=0.85接近1表明线性相关程度很强。",
+      "source": "llm_generated",
+      "options": [
+        "A. x、y正相关",
+        "B. x、y不相关",
+        "C. x、y线性相关程度很强",
+        "D. x、y完全线性无关"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_corc_003",
+      "item_type": "choice",
+      "stem": "已知 Σ(xᵢ−x̄)²=18，Σ(yᵢ−ȳ)²=8，Σ(xᵢ−x̄)(yᵢ−ȳ)=6，则样本相关系数 r 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_corr_coefficient"
+      ],
+      "difficulty": 0.75,
+      "solution": "r=6/√(18×8)=6/12=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2",
+        "B. 1",
+        "C. 1/3",
+        "D. 1/6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lnrg_001",
+      "item_type": "choice",
+      "stem": "一元线性回归模型 y=β₀+β₁x+ε 中，参数 β₁ 表示（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_linear_regression"
+      ],
+      "difficulty": 0.25,
+      "solution": "β₁为回归系数即斜率，表示x每增加1单位时y的平均变化量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 截距",
+        "B. 斜率",
+        "C. 随机误差项",
+        "D. 因变量的均值"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lnrg_002",
+      "item_type": "choice",
+      "stem": "由最小二乘法求得的回归直线必经过下列哪一点（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_linear_regression"
+      ],
+      "difficulty": 0.5,
+      "solution": "经验回归直线必过样本中心 (x̄, ȳ)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (0,0)",
+        "B. (x̄, ȳ)",
+        "C. (1,1)",
+        "D. (0, ȳ)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lnrg_003",
+      "item_type": "choice",
+      "stem": "已知5组数据：x:1,2,3,4,5；y:2,3,5,6,7。则经验回归方程为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_linear_regression"
+      ],
+      "difficulty": 0.75,
+      "solution": "x̄=3, ȳ=4.6；Σxᵢyᵢ=82, Σxᵢ²=55；b̂=(82−5·3·4.6)/(55−5·9)=13/10=1.3；â=4.6−1.3·3=0.7。故ŷ=1.3x+0.7。",
+      "source": "llm_generated",
+      "options": [
+        "A. ŷ=1.3x+0.7",
+        "B. ŷ=0.7x+1.3",
+        "C. ŷ=1.3x−0.7",
+        "D. ŷ=1.4x+0.6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_resr_001",
+      "item_type": "choice",
+      "stem": "在一元线性回归中，残差 êᵢ 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_residual_r2"
+      ],
+      "difficulty": 0.25,
+      "solution": "残差定义为观测值与预测值之差 êᵢ=yᵢ−ŷᵢ。",
+      "source": "llm_generated",
+      "options": [
+        "A. yᵢ−ŷᵢ",
+        "B. ŷᵢ−yᵢ",
+        "C. yᵢ−xᵢ",
+        "D. ŷᵢ−xᵢ"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_resr_002",
+      "item_type": "choice",
+      "stem": "某回归模型的决定系数 R²=0.96，下列解释合理的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_residual_r2"
+      ],
+      "difficulty": 0.5,
+      "solution": "R²=0.96接近1，96%的总偏差可由回归方程解释，拟合效果很好。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拟合效果很好",
+        "B. 拟合效果较差",
+        "C. 拟合效果一般",
+        "D. 拟合完全准确"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_resr_003",
+      "item_type": "choice",
+      "stem": "已知总偏差平方和 SST=100，残差平方和 SSE=20，则决定系数 R² 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_residual_r2"
+      ],
+      "difficulty": 0.75,
+      "solution": "R²=1−SSE/SST=1−20/100=0.8。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.2",
+        "B. 0.5",
+        "C. 0.8",
+        "D. 1.2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nnrg_001",
+      "item_type": "choice",
+      "stem": "对幂函数模型 y=a·x^b，可通过下列哪种变量代换化为一元线性回归（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_nonlinear_regression"
+      ],
+      "difficulty": 0.25,
+      "solution": "取对数 ln y=ln a+b·ln x，令u=ln y、v=ln x即化为u=bv+ln a线性模型。",
+      "source": "llm_generated",
+      "options": [
+        "A. u=y, v=x",
+        "B. u=ln y, v=ln x",
+        "C. u=1/y, v=1/x",
+        "D. u=y², v=x²"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nnrg_002",
+      "item_type": "choice",
+      "stem": "对指数模型 y=a·e^(bx)，可通过下列哪种变量代换化为一元线性回归（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_nonlinear_regression"
+      ],
+      "difficulty": 0.5,
+      "solution": "取对数 ln y=ln a+bx，令u=ln y、v=x即化为u=bv+ln a线性模型。",
+      "source": "llm_generated",
+      "options": [
+        "A. u=y, v=x",
+        "B. u=e^x, v=e^y",
+        "C. u=ln y, v=x",
+        "D. u=y, v=ln x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_nnrg_003",
+      "item_type": "choice",
+      "stem": "某产量数据散点呈指数型 y=a·e^(bx) 增长，5组样本经 u=ln y、v=x 变换后得线性回归方程 û=0.5v+1.2，则原指数模型方程为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_nonlinear_regression"
+      ],
+      "difficulty": 0.75,
+      "solution": "由 û=ln a+bv=1.2+0.5v，得 ln a=1.2、b=0.5，故 y=e^1.2·e^(0.5x)=e^(1.2+0.5x)。",
+      "source": "llm_generated",
+      "options": [
+        "A. y=e^(1.2+0.5x)",
+        "B. y=e^(0.5+1.2x)",
+        "C. y=1.2·e^(0.5x)",
+        "D. y=0.5·e^(1.2x)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ctta_001",
+      "item_type": "choice",
+      "stem": "在2×2列联表中，比较频率 a/(a+b) 与 c/(c+d) 的差异，可以初步判断（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h12_contingency_table"
+      ],
+      "difficulty": 0.25,
+      "solution": "比较两条件频率的差异是判断两个分类变量是否有关联的直观方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两个分类变量是否独立",
+        "B. 两个分类变量是否有关联",
+        "C. 样本是否随机",
+        "D. 数据是否完整"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ctta_002",
+      "item_type": "choice",
+      "stem": "某项关于吸烟与慢性病的2×2列联表：吸烟(60,140)、不吸烟(30,270)，四格依次为患病/不患病，则吸烟者中患病的频率为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_contingency_table"
+      ],
+      "difficulty": 0.5,
+      "solution": "吸烟者总数60+140=200，患病60人，频率=60/200=0.3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.3",
+        "B. 0.15",
+        "C. 0.4",
+        "D. 0.5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ctta_003",
+      "item_type": "choice",
+      "stem": "根据上题2×2列联表，不吸烟者中患病的频率为（　　），并可得出何种初步结论",
+      "answer": "A",
+      "kps": [
+        "kp_h12_contingency_table"
+      ],
+      "difficulty": 0.75,
+      "solution": "不吸烟患病频率=30/(30+270)=30/300=0.1；吸烟患病频率0.3>不吸烟0.1，初步判断吸烟与患病可能有关联。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.1；吸烟与患病可能有关联",
+        "B. 0.3；吸烟与患病可能无关",
+        "C. 0.1；吸烟与患病可能无关",
+        "D. 0.3；吸烟与患病可能有关联"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_chit_001",
+      "item_type": "choice",
+      "stem": "在独立性检验中，若 Χ²≥6.635，则可以认为两个分类变量有关联的把握程度约为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h12_chi2_test"
+      ],
+      "difficulty": 0.25,
+      "solution": "P(Χ²≥6.635)≈0.01，故有99%的把握认为两变量有关联。",
+      "source": "llm_generated",
+      "options": [
+        "A. 90%",
+        "B. 95%",
+        "C. 99%",
+        "D. 99.5%"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_chit_003",
+      "item_type": "choice",
+      "stem": "在2×2列联表中 a=80、b=20、c=40、d=60，则统计量 Χ² 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h12_chi2_test"
+      ],
+      "difficulty": 0.75,
+      "solution": "n=200；ad−bc=4800−800=4000；(ad−bc)²=1.6×10⁷；(a+b)(c+d)(a+c)(b+d)=100·100·120·80=9.6×10⁷；Χ²=200×1.6×10⁷/9.6×10⁷=200/6≈33.33。",
+      "source": "llm_generated",
+      "options": [
+        "A. 33.33",
+        "B. 16.5",
+        "C. 25",
+        "D. 40"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

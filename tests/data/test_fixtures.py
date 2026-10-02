@@ -1,11 +1,11 @@
 """知识库（数据）校验：图谱、题库、误解、母题四类资产的完整性。
 
-知识库已从"七年级 4 章节簇"扩展为小学（1-6 年级）与初中（7-9 年级）全覆盖，
-本文件与 tools/validate_knowledge.py 同口径：图谱按年级文件合并后检查，
-题库 / 误解库 / 母题库分别扫描 data/ 下对应目录的全部文件。
-验证器图谱口径为 1-9 年级（缺某年级文件时记 pending 不报错）；
-本文件夹具按年级文件动态发现、覆盖库内现存数据，另对 math_all
-合并视图单独做 1-9 年级检查（随学段扩张会从部分年级长到 1-9）。
+知识库已从"七年级 4 章节簇"扩展为小学（1-6 年级）+ 初中（7-9 年级）
++ 高中（10-12 年级）全覆盖，本文件与 tools/validate_knowledge.py 同口径：
+图谱按年级文件合并后检查，题库 / 误解库 / 母题库分别扫描 data/ 下对应
+目录的全部文件。验证器图谱口径为 1-12 年级（缺某年级文件时记 pending
+不报错）；本文件夹具按年级文件动态发现、覆盖库内现存数据，另对
+math_all 合并视图单独做 1-12 年级检查（随学段扩张逐段长到 1-12）。
 断言一律下限式（非空、集合归属、数量下限），不锁定具体规模数字——
 扩库只增不减时测试应保持通过。
 """
@@ -18,7 +18,10 @@ import pytest
 from xuexing.itembank import itembank_from_dict
 from xuexing.kpgraph import kpgraph_from_dict
 
-# 课标（2022 年版）章节簇全集：按学段登记。
+# 项目根目录（与 conftest 的 ROOT 同口径），便于直接定位 data/ 下的非夹具资源
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# 课标（2022 年版 + 高中 2017 年版 2020 修订）章节簇全集：按学段登记。
 # 断言为"归属"而非"相等"——新增簇时在此登记即可，不锁簇数。
 CURRICULUM_CLUSTERS = {
     # 第一、二学段（1-4 年级）
@@ -33,6 +36,18 @@ CURRICULUM_CLUSTERS = {
     # 九年级（第四学段）
     "一元二次方程", "二次函数", "旋转", "圆", "概率初步",
     "反比例函数", "相似", "锐角三角函数",
+    # 高中（必修+选择性必修）
+    "集合与常用逻辑用语", "函数的概念与性质", "函数", "三角函数",
+    "指数函数与对数函数", "一元二次函数、方程和不等式",
+    "平面向量及其应用", "复数", "立体几何初步", "空间向量与立体几何",
+    "直线和圆的方程", "圆锥曲线的方程", "统计", "概率",
+    "数列", "一元函数的导数及其应用", "数学建模与探究",
+    "计数原理", "概率与统计（选修）", "空间解析几何初步",
+    "导数及其应用（选修）",
+    # 高中·选择性必修第三册（按章登记）
+    "选择性必修第三册·第六章 计数原理",
+    "选择性必修第三册·第七章 随机变量及其分布",
+    "选择性必修第三册·第八章 成对数据的统计分析",
 }
 
 # 年级文件动态发现（math_grade*.json）：随学段落库自然生长，避免跨批次改元组。
@@ -128,7 +143,7 @@ def test_kpgraph_metadata_and_clusters(merged_graph):
     for kp in kps:
         assert kp.name and kp.cluster and kp.standard_ref, f"{kp.id} missing metadata"
         assert str(kp.description).strip(), f"{kp.id}: empty description"
-        assert 1 <= kp.grade <= 9, f"{kp.id}: grade {kp.grade} out of 1-9"
+        assert 1 <= kp.grade <= 12, f"{kp.id}: grade {kp.grade} out of 1-12"
         assert kp.cluster in CURRICULUM_CLUSTERS, f"{kp.id}: unknown cluster {kp.cluster!r}"
         clusters.add(kp.cluster)
     assert len(clusters) >= MIN_CLUSTERS_MERGED
@@ -150,9 +165,9 @@ def test_grade_files_scope(grade_kps):
 # ---------- 合并视图 math_all.json ----------
 
 
-def test_math_all_merged_view_within_1_9(root, grade_kps):
-    """math_all 是年级文件的合并视图：年级全部落在 1-9（随学段扩张
-    逐段长到 1-9），且不丢已落库年级文件中的任何知识点。"""
+def test_math_all_merged_view_within_1_12(root, grade_kps):
+    """math_all 是年级文件的合并视图：年级全部落在 1-12（随学段扩张
+    逐段长到 1-12），且不丢已落库年级文件中的任何知识点。"""
     with open(f"{root}/data/knowledge/math_all.json", encoding="utf-8") as f:
         data = json.load(f)
     kps = data["knowledge_points"]
@@ -160,9 +175,9 @@ def test_math_all_merged_view_within_1_9(root, grade_kps):
     bad = [
         (kp["id"], kp.get("grade"))
         for kp in kps
-        if not 1 <= int(kp.get("grade", 0)) <= 9
+        if not 1 <= int(kp.get("grade", 0)) <= 12
     ]
-    assert bad == [], f"math_all kps grade out of 1-9: {bad}"
+    assert bad == [], f"math_all kps grade out of 1-12: {bad}"
     core_ids = {kp["id"] for g_kps in grade_kps.values() for kp in g_kps}
     missing = sorted(core_ids - {kp["id"] for kp in kps})
     assert not missing, f"math_all lost grade kps: {missing}"
@@ -177,10 +192,39 @@ def test_items_schema_and_kp_refs(merged_bank, merged_graph):
 
 
 def test_every_kp_meets_primary_item_floor(merged_bank, merged_graph):
+    # 加载题数豁免集 = 误解库『无误解』豁免 ∪ 题库『题目采集中』豁免
+    # （与 tools/validate_knowledge.py 同口径：豁免的 KP 同时豁免误解覆盖
+    # 与主知识点题数检查）。
+    item_exempt: set[str] = set()
+    # 题库『题目采集中』豁免
+    exempt_path = os.path.join(_ROOT, "data", "coverage_exemptions.json")
+    if os.path.exists(exempt_path):
+        with open(exempt_path, encoding="utf-8") as f:
+            edata = json.load(f)
+        for ex in edata.get("exemptions", []):
+            kp_id = ex.get("kp_id")
+            if isinstance(kp_id, str) and kp_id.strip():
+                item_exempt.add(kp_id)
+    # 误解库『无误解』豁免（同名 kp_id）
+    mc_dir = os.path.join(_ROOT, "data", "misconceptions")
+    if os.path.isdir(mc_dir):
+        for fname in os.listdir(mc_dir):
+            if not fname.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(mc_dir, fname), encoding="utf-8") as f:
+                    d = json.load(f)
+                for ex in d.get("exemptions", []) or []:
+                    kp_id = ex.get("kp_id")
+                    if isinstance(kp_id, str) and kp_id.strip():
+                        item_exempt.add(kp_id)
+            except Exception:  # noqa: BLE001
+                pass
     below = [
         (kp.id, len(merged_bank.by_kp(kp.id, primary_only=True)))
         for kp in merged_graph.kps()
-        if len(merged_bank.by_kp(kp.id, primary_only=True)) < MIN_PRIMARY_ITEMS_PER_KP
+        if kp.id not in item_exempt
+        and len(merged_bank.by_kp(kp.id, primary_only=True)) < MIN_PRIMARY_ITEMS_PER_KP
     ]
     assert below == [], f"kps below {MIN_PRIMARY_ITEMS_PER_KP} primary items: {below}"
 

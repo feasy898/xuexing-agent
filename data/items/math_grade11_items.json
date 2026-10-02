@@ -1,0 +1,2649 @@
+{
+  "items": [
+    {
+      "id": "h_h11a_001",
+      "item_type": "choice",
+      "stem": "下列各量中，是向量的为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "速度既有大小又有方向，是向量；时间、长度、质量只有大小没有方向，是标量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时间",
+        "B. 长度",
+        "C. 速度",
+        "D. 质量"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_003",
+      "item_type": "choice",
+      "stem": "下列说法中，正确的是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h11_vec_concept"
+      ],
+      "difficulty": 0.7,
+      "solution": "A错，AB与BA方向相反；B错，单位向量模都为1但方向可不同；C错，共线包括方向相反的情形（且零向量与任意向量共线）；D正确，零向量的模为0。",
+      "source": "llm_generated",
+      "options": [
+        "A. 向量AB与向量BA相等",
+        "B. 任意两个单位向量都相等",
+        "C. 若向量a与b共线，则a与b方向相同",
+        "D. 零向量的模为0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_004",
+      "item_type": "choice",
+      "stem": "在下列向量运算中，AB+BC=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_vec_addsub"
+      ],
+      "difficulty": 0.2,
+      "solution": "由向量加法的三角形法则，首尾相接：AB+BC=AC。",
+      "source": "llm_generated",
+      "options": [
+        "A. AC",
+        "B. CA",
+        "C. 0",
+        "D. AB+CB"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_005",
+      "item_type": "fill",
+      "stem": "若a与b互为相反向量，则a+b=____。",
+      "answer": "0",
+      "kps": [
+        "kp_h11_vec_addsub"
+      ],
+      "difficulty": 0.45,
+      "solution": "相反向量是大小相等、方向相反的向量，b=-a，故a+b=0。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_006",
+      "item_type": "choice",
+      "stem": "已知非零向量a、b满足|a+b|=|a-b|，则a与b的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_vec_addsub"
+      ],
+      "difficulty": 0.7,
+      "solution": "|a+b|=|a-b|两边平方：|a|²+2a·b+|b|²=|a|²-2a·b+|b|²，得4a·b=0，即a·b=0，所以a⊥b。",
+      "source": "llm_generated",
+      "options": [
+        "A. a∥b",
+        "B. a⊥b",
+        "C. a=b",
+        "D. a=0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_007",
+      "item_type": "choice",
+      "stem": "已知a≠0，则λa=0当且仅当（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_vec_scalar"
+      ],
+      "difficulty": 0.2,
+      "solution": "由向量数乘的定义，a≠0时，|λa|=|λ|·|a|，故λa=0当且仅当λ=0。",
+      "source": "llm_generated",
+      "options": [
+        "A. λ=0",
+        "B. a=0",
+        "C. λ>0",
+        "D. λ<0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_008",
+      "item_type": "fill",
+      "stem": "已知a≠0，b∥a当且仅当存在唯一实数____使b=λa。",
+      "answer": "λ",
+      "kps": [
+        "kp_h11_vec_scalar"
+      ],
+      "difficulty": 0.45,
+      "solution": "向量共线定理：a≠0时，b∥a当且仅当存在唯一实数λ使b=λa。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_009",
+      "item_type": "choice",
+      "stem": "已知向量a、b不共线，且λa+μb=0，则（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_vec_scalar"
+      ],
+      "difficulty": 0.7,
+      "solution": "若a、b不共线，则它们线性无关，由线性无关的定义，λa+μb=0当且仅当λ=μ=0。",
+      "source": "llm_generated",
+      "options": [
+        "A. λ=μ=0",
+        "B. λ≠0且μ≠0",
+        "C. λ、μ不全为零",
+        "D. λ>0，μ<0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_010",
+      "item_type": "choice",
+      "stem": "平面向量基本定理中，作为基底的两个向量应满足（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_vec_basic_theorem"
+      ],
+      "difficulty": 0.2,
+      "solution": "平面向量基本定理要求基底中的两个向量不共线（不平行）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行且不相等",
+        "B. 不平行（不共线）",
+        "C. 相等",
+        "D. 模相等"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_011",
+      "item_type": "fill",
+      "stem": "已知e₁、e₂是同一平面内不共线的两个向量，若a=3e₁-2e₂，则a关于基底{e₁,e₂}的坐标为____。",
+      "answer": "(3,-2)",
+      "kps": [
+        "kp_h11_vec_basic_theorem"
+      ],
+      "difficulty": 0.5,
+      "solution": "按平面向量基本定理，向量a=λ₁e₁+λ₂e₂的唯一表示中，a关于基底{e₁,e₂}的坐标为(λ₁,λ₂)=(3,-2)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_012",
+      "item_type": "choice",
+      "stem": "在△ABC中，点D在边BC上且BD:DC=1:2，则AD=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_vec_basic_theorem"
+      ],
+      "difficulty": 0.7,
+      "solution": "BD:DC=1:2则BD=(1/3)BC，AD=AB+BD=AB+(1/3)(AC-AB)=(2/3)AB+(1/3)AC。",
+      "source": "llm_generated",
+      "options": [
+        "A. (1/3)AB+(2/3)AC",
+        "B. (2/3)AB+(1/3)AC",
+        "C. (1/3)AB+(1/3)AC",
+        "D. AB+AC"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_013",
+      "item_type": "choice",
+      "stem": "已知A(1,3)、B(4,5)，则AB=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_vec_coords"
+      ],
+      "difficulty": 0.2,
+      "solution": "由坐标公式，AB=(4-1,5-3)=(3,2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (3,2)",
+        "B. (-3,-2)",
+        "C. (5,8)",
+        "D. (3,-2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_014",
+      "item_type": "fill",
+      "stem": "已知A(-1,2)、B(3,-4)、C(2,1)，则AB+AC=____。",
+      "answer": "(7,-7)",
+      "kps": [
+        "kp_h11_vec_coords"
+      ],
+      "difficulty": 0.45,
+      "solution": "AB=(4,-6)，AC=(3,-1)，AB+AC=(7,-7)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_015",
+      "item_type": "choice",
+      "stem": "已知向量a=(1,2)，b=(x,1)，且a∥b，则x=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_coords"
+      ],
+      "difficulty": 0.7,
+      "solution": "a∥b等价于1·1-2·x=0，解得x=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. -2",
+        "B. -1/2",
+        "C. 1/2",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_016",
+      "item_type": "choice",
+      "stem": "平面向量a、b的夹角θ的取值范围是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_vec_dot_product"
+      ],
+      "difficulty": 0.2,
+      "solution": "两非零向量夹角θ的取值范围是[0,π]。",
+      "source": "llm_generated",
+      "options": [
+        "A. (0,π)",
+        "B. [0,π]",
+        "C. (0,π/2]",
+        "D. [0,π/2]"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_018",
+      "item_type": "choice",
+      "stem": "已知|a|=1，|b|=2，a·b=-1，则a与b的夹角为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_dot_product"
+      ],
+      "difficulty": 0.7,
+      "solution": "cosθ=a·b/(|a||b|)=-1/(1×2)=-1/2，θ∈[0,π]，故θ=120°。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30°",
+        "B. 60°",
+        "C. 120°",
+        "D. 150°"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_019",
+      "item_type": "choice",
+      "stem": "已知a=(-1,2)，b=(2,-4)，则a·b=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_dot_coords"
+      ],
+      "difficulty": 0.2,
+      "solution": "由数量积的坐标公式，a·b=(-1)×2+2×(-4)=-2-8=-10。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. -8",
+        "C. -10",
+        "D. -6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_020",
+      "item_type": "fill",
+      "stem": "已知a=(3,-4)，则|a|=____。",
+      "answer": "5",
+      "kps": [
+        "kp_h11_vec_dot_coords"
+      ],
+      "difficulty": 0.45,
+      "solution": "|a|=√(3²+(-4)²)=√25=5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_021",
+      "item_type": "choice",
+      "stem": "已知A(1,2)、B(3,4)、C(-1,4)，则△ABC中∠A=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_dot_coords"
+      ],
+      "difficulty": 0.7,
+      "solution": "AB=(2,2)，AC=(-2,2)，AB·AC=-4+4=0，所以∠A=90°。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30°",
+        "B. 60°",
+        "C. 90°",
+        "D. 120°"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_023",
+      "item_type": "fill",
+      "stem": "在△ABC中，若a=3、b=4、C=60°，则c=____。",
+      "answer": "√13",
+      "kps": [
+        "kp_h11_law_of_cosines"
+      ],
+      "difficulty": 0.45,
+      "solution": "由余弦定理，c²=a²+b²-2abcosC=9+16-24×(1/2)=13，故c=√13。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_024",
+      "item_type": "choice",
+      "stem": "在△ABC中，若a=7、b=5、c=3，则cosA=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_law_of_cosines"
+      ],
+      "difficulty": 0.7,
+      "solution": "由余弦定理推论，cosA=(b²+c²-a²)/(2bc)=(25+9-49)/(30)=-15/30=-1/5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/5",
+        "B. -1/5",
+        "C. 1/7",
+        "D. -1/7"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_025",
+      "item_type": "fill",
+      "stem": "正弦定理：a/sinA=b/sinB=c/sinC=____（其中R为三角形外接圆半径）。",
+      "answer": "2R",
+      "kps": [
+        "kp_h11_law_of_sines"
+      ],
+      "difficulty": 0.2,
+      "solution": "正弦定理表明三角形各边与对应角正弦的比相等，等于外接圆直径2R。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_026",
+      "item_type": "choice",
+      "stem": "在△ABC中，若A=30°、B=45°、a=2，则b=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_law_of_sines"
+      ],
+      "difficulty": 0.5,
+      "solution": "由正弦定理，b=asinB/sinA=2×sin45°/sin30°=2×(√2/2)/(1/2)=2√2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2√2",
+        "B. 2√3",
+        "C. 4",
+        "D. √2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_027",
+      "item_type": "choice",
+      "stem": "在△ABC中，若a=5、b=7、A=30°，则满足条件的三角形（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_law_of_sines"
+      ],
+      "difficulty": 0.7,
+      "solution": "由正弦定理sinB=bsinA/a=7×sin30°/5=7/10=0.7。因a<b，且a>bsinA=3.5，所以B有两解（一个锐角一个钝角），三角形有两个。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有一个",
+        "B. 有两个",
+        "C. 不存在",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_028",
+      "item_type": "choice",
+      "stem": "三角形面积公式S=(1/2)absinC中，sinC是角C的（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_triangle_solve"
+      ],
+      "difficulty": 0.2,
+      "solution": "sinC是角C的正弦值。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对边比斜边",
+        "B. 邻边比斜边",
+        "C. 正弦值",
+        "D. 余弦值"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_029",
+      "item_type": "fill",
+      "stem": "在△ABC中，若a=2、B=30°、C=45°，则A=____，b=____。",
+      "answer": "A=105°，b=√6-√2",
+      "kps": [
+        "kp_h11_triangle_solve"
+      ],
+      "difficulty": 0.5,
+      "solution": "A=180°-B-C=180°-30°-45°=105°；b=asinB/sinA=2×sin30°/sin105°=1/sin105°=4/(√6+√2)=√6-√2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_031",
+      "item_type": "choice",
+      "stem": "复数z=a+bi（a,b∈R）为纯虚数的充要条件是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_complex_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "纯虚数要求实部为0且虚部不为0，即a=0且b≠0。",
+      "source": "llm_generated",
+      "options": [
+        "A. a=0",
+        "B. b=0",
+        "C. a=0且b≠0",
+        "D. b≠0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_032",
+      "item_type": "fill",
+      "stem": "i²+i³+i⁴=____（用最简形式表示）。",
+      "answer": "-i",
+      "kps": [
+        "kp_h11_complex_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "i²=-1，i³=i²·i=-i，i⁴=(i²)²=1，故i²+i³+i⁴=-1-i+1=-i。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_033",
+      "item_type": "choice",
+      "stem": "已知x,y∈R，复数z₁=x+3i，z₂=5+yi，若z₁=z₂，则x+y=（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_complex_concept"
+      ],
+      "difficulty": 0.7,
+      "solution": "两个复数相等当且仅当实部与虚部分别相等：x=5且3=y，故x+y=5+3=8。",
+      "source": "llm_generated",
+      "options": [
+        "A. 8",
+        "B. 2",
+        "C. -2",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_034",
+      "item_type": "choice",
+      "stem": "复数z=3-4i在复平面内对应的点位于（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h11_complex_plane"
+      ],
+      "difficulty": 0.2,
+      "solution": "z=3-4i对应复平面上的点(3,-4)，位于第四象限。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一象限",
+        "B. 第二象限",
+        "C. 第三象限",
+        "D. 第四象限"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_035",
+      "item_type": "fill",
+      "stem": "复数z=1+i的模|z|=____。",
+      "answer": "√2",
+      "kps": [
+        "kp_h11_complex_plane"
+      ],
+      "difficulty": 0.45,
+      "solution": "|z|=√(1²+1²)=√2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_036",
+      "item_type": "choice",
+      "stem": "已知复数z=1+i，则z̄+|z|=（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_complex_plane"
+      ],
+      "difficulty": 0.7,
+      "solution": "z=1+i的共轭z̄=1-i，模|z|=√2，故z̄+|z|=(1+√2)-i。",
+      "source": "llm_generated",
+      "options": [
+        "A. (1+√2)+i",
+        "B. (1+√2)-i",
+        "C. 2-i",
+        "D. 2+i"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_037",
+      "item_type": "fill",
+      "stem": "(3+2i)+(1-4i)=____。",
+      "answer": "4-2i",
+      "kps": [
+        "kp_h11_complex_addsub"
+      ],
+      "difficulty": 0.2,
+      "solution": "(3+2i)+(1-4i)=(3+1)+(2-4)i=4-2i。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_038",
+      "item_type": "choice",
+      "stem": "已知复数z₁=1+i，z₂=2-3i，则z₁-z₂在复平面内对应的点位于（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_complex_addsub"
+      ],
+      "difficulty": 0.5,
+      "solution": "z₁-z₂=(1-2)+(1-(-3))i=-1+4i，对应点(-1,4)位于第二象限。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一象限",
+        "B. 第二象限",
+        "C. 第三象限",
+        "D. 第四象限"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_039",
+      "item_type": "fill",
+      "stem": "已知(x+2i)+(3-yi)=5+i（x,y为实数），则x+y=____。",
+      "answer": "3",
+      "kps": [
+        "kp_h11_complex_addsub"
+      ],
+      "difficulty": 0.7,
+      "solution": "(x+3)+(2-y)i=5+i。由复数相等得x+3=5、2-y=1，故x=2、y=1，x+y=3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_040",
+      "item_type": "fill",
+      "stem": "(1+i)(1-i)=____。",
+      "answer": "2",
+      "kps": [
+        "kp_h11_complex_muldiv"
+      ],
+      "difficulty": 0.2,
+      "solution": "(1+i)(1-i)=1²-i²=1-(-1)=2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_041",
+      "item_type": "choice",
+      "stem": "复数z=(1+i)/(1-i)等于（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_complex_muldiv"
+      ],
+      "difficulty": 0.5,
+      "solution": "z=(1+i)/(1-i)=(1+i)²/[(1-i)(1+i)]=(1+2i+i²)/2=(1+2i-1)/2=i。",
+      "source": "llm_generated",
+      "options": [
+        "A. i",
+        "B. -i",
+        "C. 1+i",
+        "D. 1-i"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_042",
+      "item_type": "fill",
+      "stem": "已知复数z满足z(1+i)=2，则z=____。",
+      "answer": "1-i",
+      "kps": [
+        "kp_h11_complex_muldiv"
+      ],
+      "difficulty": 0.7,
+      "solution": "z=2/(1+i)=2(1-i)/[(1+i)(1-i)]=2(1-i)/2=1-i。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_044",
+      "item_type": "choice",
+      "stem": "复数z=2(cos(π/3)+isin(π/3))在复平面内对应的点为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_complex_trig"
+      ],
+      "difficulty": 0.5,
+      "solution": "z=2cos(π/3)+2sin(π/3)i=2×(1/2)+2×(√3/2)i=1+√3i，对应点(1,√3)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (1,√3)",
+        "B. (2,√3)",
+        "C. (√3,1)",
+        "D. (√3,2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_045",
+      "item_type": "fill",
+      "stem": "若z₁=2(cos60°+isin60°)，z₂=3(cos30°+isin30°)，则z₁·z₂=____（用三角形式表示）。",
+      "answer": "6(cos90°+isin90°)",
+      "kps": [
+        "kp_h11_complex_trig"
+      ],
+      "difficulty": 0.7,
+      "solution": "三角形式乘法：模相乘为2×3=6，辐角相加为60°+30°=90°，故z₁·z₂=6(cos90°+isin90°)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_046",
+      "item_type": "choice",
+      "stem": "下列几何体中，是棱柱的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_solid_polyhedron"
+      ],
+      "difficulty": 0.2,
+      "solution": "三棱柱是棱柱；三棱锥是棱锥，圆柱是旋转体，圆锥是旋转体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三棱锥",
+        "B. 圆柱",
+        "C. 三棱柱",
+        "D. 圆锥"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_047",
+      "item_type": "fill",
+      "stem": "一个正四棱台的上底面边长为2，下底面边长为6，则它的侧面数为____。",
+      "answer": "4",
+      "kps": [
+        "kp_h11_solid_polyhedron"
+      ],
+      "difficulty": 0.5,
+      "solution": "正四棱台有两个平行的四边形底面，连接上下底面对应顶点的4条侧棱，4个侧面都是等腰梯形，故侧面数为4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_048",
+      "item_type": "choice",
+      "stem": "下列说法中，正确的是（　） [#h_h11a_048]",
+      "answer": "C",
+      "kps": [
+        "kp_h11_solid_polyhedron"
+      ],
+      "difficulty": 0.7,
+      "solution": "A错，仅当侧面延长交于一点时才是棱台；B错，仅正棱锥侧棱相等；C对，棱柱定义要求两个底面平行且全等；D错，仅正棱台所有侧棱相等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有两个面平行，其余各面都是四边形的几何体一定是棱台",
+        "B. 棱锥的侧棱长都相等",
+        "C. 棱柱的两个底面平行且全等",
+        "D. 棱台的所有侧棱都相等"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_049",
+      "item_type": "choice",
+      "stem": "以矩形的一边所在直线为轴旋转一周得到的几何体是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_solid_rotation"
+      ],
+      "difficulty": 0.2,
+      "solution": "矩形绕其一边旋转一周形成的几何体是圆柱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 圆柱",
+        "B. 圆锥",
+        "C. 圆台",
+        "D. 球"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_050",
+      "item_type": "fill",
+      "stem": "用一个平行于圆锥底面的平面截圆锥，截面与底面之间的部分称为____。",
+      "answer": "圆台",
+      "kps": [
+        "kp_h11_solid_rotation"
+      ],
+      "difficulty": 0.5,
+      "solution": "圆台是用平行于圆锥底面的平面截圆锥，截面与底面之间的部分。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_051",
+      "item_type": "choice",
+      "stem": "球的截面是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_solid_rotation"
+      ],
+      "difficulty": 0.7,
+      "solution": "球的任意截面都是圆面，不过球心的截面为小圆面，过球心的截面为最大圆面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 圆面",
+        "B. 三角形",
+        "C. 长方形",
+        "D. 圆周"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_053",
+      "item_type": "choice",
+      "stem": "用斜二测画法画一个面积为4的矩形的直观图，则直观图的面积为（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h11_solid_intuitive"
+      ],
+      "difficulty": 0.5,
+      "solution": "斜二测画法下图形面积变为原面积的√2/4倍，故直观图面积为4×√2/4=√2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 2√2",
+        "C. 4",
+        "D. √2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_054",
+      "item_type": "fill",
+      "stem": "用斜二测画法画水平放置的△ABC的直观图△A'B'C'，已知△A'B'C'的面积为√2，则原△ABC的面积为____。",
+      "answer": "4",
+      "kps": [
+        "kp_h11_solid_intuitive"
+      ],
+      "difficulty": 0.7,
+      "solution": "斜二测画法下直观图面积是原面积的√2/4倍，故原面积=直观图面积÷(√2/4)=√2×4/√2=4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_055",
+      "item_type": "choice",
+      "stem": "圆柱的侧面积公式为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_solid_surface"
+      ],
+      "difficulty": 0.2,
+      "solution": "圆柱侧面展开图为矩形，长为底面周长2πr，宽为高h，故侧面积=2πrh。",
+      "source": "llm_generated",
+      "options": [
+        "A. πr²",
+        "B. πrh",
+        "C. 2πrh",
+        "D. πr²h"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_056",
+      "item_type": "fill",
+      "stem": "圆锥的底面半径为3，母线长为5，则它的侧面积为____（结果保留π）。",
+      "answer": "15π",
+      "kps": [
+        "kp_h11_solid_surface"
+      ],
+      "difficulty": 0.5,
+      "solution": "圆锥侧面展开图为扇形，半径为母线长l=5，弧长为底面周长2πr=6π，侧面积=(1/2)×弧长×半径=(1/2)×6π×5=15π。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_h11a_057",
+      "item_type": "choice",
+      "stem": "一个球的半径为3，则它的表面积为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_solid_surface"
+      ],
+      "difficulty": 0.7,
+      "solution": "球的表面积公式S=4πR²，代入R=3得S=4π×9=36π。",
+      "source": "llm_generated",
+      "options": [
+        "A. 9π",
+        "B. 36π",
+        "C. 27π",
+        "D. 12π"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svc_001",
+      "item_type": "choice",
+      "stem": "下列关于空间向量的说法中，正确的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "空间向量既有大小又有方向，A错；零向量方向任意，B对；向量相等要求方向相同且模相等，C错；单位向量模为 1，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 空间向量的大小与方向都不确定",
+        "B. 零向量的方向是任意的",
+        "C. 两个空间向量相等当且仅当它们的方向相同",
+        "D. 单位向量的模为 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svc_003",
+      "item_type": "choice",
+      "stem": "设 a, b 是两个空间向量，下列说法中错误的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_concept"
+      ],
+      "difficulty": 0.8,
+      "solution": "若 a = b 则 |a| = |b|（A对）；方向相反时 a = -t b（t > 0）（B对）；模相等的向量不一定相等，例如 (1,0,0) 与 (-1,0,0) 模均为 1 但不相等，故 C 错；零向量方向任意，与任意向量平行（D对）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 若 a = b，则 |a| = |b|",
+        "B. 若 a 与 b 方向相反，则存在 t > 0 使 a = -t b",
+        "C. 若 |a| = |b|，则 a = b",
+        "D. 零向量与任意向量平行"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svl_001",
+      "item_type": "choice",
+      "stem": "已知 a = (1, 2, 3), b = (4, 5, 6)，则 a + b = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_linear"
+      ],
+      "difficulty": 0.2,
+      "solution": "a + b = (1+4, 2+5, 3+6) = (5, 7, 9)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (5, 7, 9)",
+        "B. (5, 7, 8)",
+        "C. (4, 7, 9)",
+        "D. (5, 6, 9)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svl_002",
+      "item_type": "choice",
+      "stem": "设 a = (1, -2, 3), b = (-2, 4, 1)，则 2a - b = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_linear"
+      ],
+      "difficulty": 0.5,
+      "solution": "2a = (2, -4, 6); 2a - b = (2-(-2), -4-4, 6-1) = (4, -8, 5)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (4, -8, 5)",
+        "B. (0, 0, 5)",
+        "C. (4, -8, 7)",
+        "D. (3, -6, 2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svl_003",
+      "item_type": "choice",
+      "stem": "已知空间向量 a, b 满足 a + b = (1, 2, 3), a - b = (3, -2, 1)，则 3a = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_linear"
+      ],
+      "difficulty": 0.8,
+      "solution": "a = [(a+b)+(a-b)]/2 = [(1+3, 2+(-2), 3+1)]/2 = (4, 0, 4)/2 = (2, 0, 2); 3a = (6, 0, 6)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (6, 0, 6)",
+        "B. (6, 0, 3)",
+        "C. (3, 0, 3)",
+        "D. (3, 0, 6)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svm_001",
+      "item_type": "choice",
+      "stem": "设 a, b 是两个不共线的向量，则与 a, b 共面的向量 p 的形式是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_coplanar"
+      ],
+      "difficulty": 0.2,
+      "solution": "共面向量定理：与两个不共线向量共面的向量 p，必可唯一写成 p = xa + yb (x, y ∈ R)。",
+      "source": "llm_generated",
+      "options": [
+        "A. p = xa (x ∈ R)",
+        "B. p = xb (x ∈ R)",
+        "C. p = xa + yb (x, y ∈ R)",
+        "D. p = xa + b (x ∈ R)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svm_002",
+      "item_type": "choice",
+      "stem": "已知空间三点 A, B, M，若存在实数 t 使 AM = t·AB，则 A, M, B （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_coplanar"
+      ],
+      "difficulty": 0.5,
+      "solution": "共线向量定理：AM = t·AB ⟺ AM 与 AB 共线 ⟺ A, M, B 三点共线。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三点共线",
+        "B. 三点一定不共线",
+        "C. 三点共面但不共线",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svm_003",
+      "item_type": "choice",
+      "stem": "已知 A, B, C 是空间中不共线的三点，点 D 满足 AD = (1/3)AB + (1/3)AC，则 D 在（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_coplanar"
+      ],
+      "difficulty": 0.8,
+      "solution": "由共面向量定理，AD 可由 AB, AC 线性表示，说明 AD 与 AB, AC 共面，故 D 在平面 ABC 内。",
+      "source": "llm_generated",
+      "options": [
+        "A. 直线 AB 上",
+        "B. 直线 AC 上",
+        "C. 平面 ABC 内",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svd_001",
+      "item_type": "choice",
+      "stem": "已知 |a| = 3, |b| = 4, ⟨a, b⟩ = 60°，则 a·b = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_dot"
+      ],
+      "difficulty": 0.2,
+      "solution": "a·b = |a||b|cos⟨a,b⟩ = 3 × 4 × cos 60° = 12 × (1/2) = 6。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 6√2",
+        "C. 12",
+        "D. 12√3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svd_002",
+      "item_type": "choice",
+      "stem": "已知 a ⊥ b, |a| = 3, |b| = 4，则 (a + b)·(a - b) = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_dot"
+      ],
+      "difficulty": 0.5,
+      "solution": "(a + b)·(a - b) = a·a - b·b = |a|² - |b|² = 9 - 16 = -7。",
+      "source": "llm_generated",
+      "options": [
+        "A. -7",
+        "B. -1",
+        "C. 7",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svd_003",
+      "item_type": "choice",
+      "stem": "已知 |a| = 3, |b| = 2, ⟨a, b⟩ = 120°，则向量 a + b 在 a 方向上的投影长度为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_dot"
+      ],
+      "difficulty": 0.8,
+      "solution": "向量 a+b 在 a 方向上的投影 = (a+b)·a/|a| = (|a|² + a·b)/|a| = (9 + 3·2·cos 120°)/3 = (9 - 3)/3 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. -2",
+        "B. 1",
+        "C. 2",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svb_001",
+      "item_type": "choice",
+      "stem": "若 e₁, e₂, e₃ 是空间的三个不共面向量，则它们可以构成空间的（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_basis"
+      ],
+      "difficulty": 0.2,
+      "solution": "空间向量基本定理：三个不共面向量可构成空间的一个基底。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一组平行向量",
+        "B. 一组共面向量",
+        "C. 一组基底",
+        "D. 一组正交向量"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svb_002",
+      "item_type": "choice",
+      "stem": "已知 e₁, e₂, e₃ 是空间的一个基底，且 a = e₁ + 2e₂ + 3e₃, b = 2e₁ + e₂ + e₃，则 a - b 在基底下的坐标为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_basis"
+      ],
+      "difficulty": 0.5,
+      "solution": "a - b = (1-2, 2-1, 3-1) = (-1, 1, 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (-1, 1, 2)",
+        "B. (1, -1, 2)",
+        "C. (1, 1, 2)",
+        "D. (-1, 1, -2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svb_003",
+      "item_type": "choice",
+      "stem": "设 e₁, e₂, e₃ 是空间的一个基底，e₁', e₂', e₃' 也构成一个基底。若 p = xe₁ + ye₂ + ze₃ = x'e₁' + y'e₂' + z'e₃'，则（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_basis"
+      ],
+      "difficulty": 0.8,
+      "solution": "空间向量基本定理：基底给定时，任一向量的坐标表示唯一。但不同基底下的坐标一般不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. x = x', y = y', z = z'",
+        "B. x, y, z 与 x', y', z' 至少一组相等",
+        "C. x, y, z 与 x', y', z' 一般不相等",
+        "D. x, y, z 与 x', y', z' 必有一个不相等"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svr_001",
+      "item_type": "choice",
+      "stem": "已知 A(1, 2, 3), B(4, 6, 9)，则向量 AB 的坐标为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_coord"
+      ],
+      "difficulty": 0.2,
+      "solution": "AB = B - A = (4-1, 6-2, 9-3) = (3, 4, 6)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (3, 4, 6)",
+        "B. (3, 4, 7)",
+        "C. (3, 5, 6)",
+        "D. (-3, -4, -6)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svr_002",
+      "item_type": "choice",
+      "stem": "设 A(2, -1, 3), B(4, 2, 1)，则线段 AB 的中点坐标为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_coord"
+      ],
+      "difficulty": 0.5,
+      "solution": "中点坐标为 ((2+4)/2, (-1+2)/2, (3+1)/2) = (3, 1/2, 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (3, 1/2, 2)",
+        "B. (3, 0, 2)",
+        "C. (6, 1, 4)",
+        "D. (1, 3, -2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svr_003",
+      "item_type": "choice",
+      "stem": "已知 a = (1, 2, 3), b = (3, 2, 1), c = (-1, 0, 1)，则 a + 2b - 3c = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_coord"
+      ],
+      "difficulty": 0.8,
+      "solution": "a + 2b - 3c = (1, 2, 3) + (6, 4, 2) - (-3, 0, 3) = (1+6+3, 2+4+0, 3+2-3) = (10, 6, 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (10, 6, 2)",
+        "B. (10, 6, 1)",
+        "C. (10, 5, 2)",
+        "D. (8, 6, 2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svk_001",
+      "item_type": "choice",
+      "stem": "已知 a = (1, 2, 3), b = (-1, 0, 1)，则 a·b = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_dot_coord"
+      ],
+      "difficulty": 0.2,
+      "solution": "a·b = 1·(-1) + 2·0 + 3·1 = -1 + 0 + 3 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. -2",
+        "C. 4",
+        "D. 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svk_002",
+      "item_type": "choice",
+      "stem": "已知 a = (1, 0, 0), b = (1, 1, 0)，则 ⟨a, b⟩ 的余弦值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_dot_coord"
+      ],
+      "difficulty": 0.5,
+      "solution": "a·b = 1, |a| = 1, |b| = √2, cos⟨a,b⟩ = 1/√2 = √2/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. √3/2",
+        "B. √2/2",
+        "C. √2",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svk_003",
+      "item_type": "choice",
+      "stem": "已知 a = (1, 2, -2), b = (-2, 1, 1)，则 (a + b)·b = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_dot_coord"
+      ],
+      "difficulty": 0.8,
+      "solution": "a·b = -2 + 2 - 2 = -2, |b|² = 4 + 1 + 1 = 6, (a+b)·b = a·b + |b|² = -2 + 6 = 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. -4",
+        "C. 6",
+        "D. 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svn_001",
+      "item_type": "choice",
+      "stem": "下列说法中正确的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_normal"
+      ],
+      "difficulty": 0.2,
+      "solution": "零向量方向任意，不能作为确定直线的方向向量或平面的法向量，A、B错；平面有无穷多个法向量（任两个法向量平行），C对；直线有无穷多个方向向量（与该直线平行的任一非零向量都是其方向向量），D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 零向量是任何直线的方向向量",
+        "B. 零向量是任何平面的法向量",
+        "C. 平面的法向量不唯一",
+        "D. 直线的方向向量只有一个"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svn_002",
+      "item_type": "choice",
+      "stem": "已知平面 α 内的两个不共线向量 u = (1, 1, 0), v = (1, 0, 1)，则 α 的一个法向量为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_normal"
+      ],
+      "difficulty": 0.5,
+      "solution": "设 n = (x, y, z), 由 n·u = 0 与 n·v = 0 得 x + y = 0 与 x + z = 0, 取 x = 1, 则 y = -1, z = -1, 故 n = (1, -1, -1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (1, 1, 1)",
+        "B. (1, -1, -1)",
+        "C. (0, 1, 1)",
+        "D. (1, 1, -1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svn_003",
+      "item_type": "choice",
+      "stem": "已知平面 α 的一个法向量 n = (1, 2, -2)，则与 α 垂直的直线的一个方向向量为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_normal"
+      ],
+      "difficulty": 0.8,
+      "solution": "与平面垂直的直线方向向量平行于法向量。(2, 4, -4) = 2·(1, 2, -2) 是法向量的倍数，故可作为方向向量。",
+      "source": "llm_generated",
+      "options": [
+        "A. (2, 4, -4)",
+        "B. (1, 2, 1)",
+        "C. (1, 1, 1)",
+        "D. (0, 0, 1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svp_001",
+      "item_type": "choice",
+      "stem": "已知直线 l 的方向向量 a = (1, 1, 0), 平面 α 的法向量 n = (1, -1, 0), 且 l 不在 α 内，则 l 与 α 的位置关系是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_parallel"
+      ],
+      "difficulty": 0.2,
+      "solution": "l ∥ α 当且仅当 a ⊥ n。a·n = 1·1 + 1·(-1) + 0 = 0，故 l ∥ α。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 相交且不垂直",
+        "D. l 在 α 内"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svp_002",
+      "item_type": "choice",
+      "stem": "已知直线 l₁, l₂ 的方向向量分别为 a₁ = (1, 2, 3), a₂ = (-2, -4, -6)，则 l₁, l₂ 的位置关系是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_parallel"
+      ],
+      "difficulty": 0.5,
+      "solution": "a₂ = -2·a₁，故两直线方向向量共线，又无其他条件，l₁ 与 l₂ 平行或重合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行或重合",
+        "B. 垂直",
+        "C. 相交",
+        "D. 异面"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svp_003",
+      "item_type": "choice",
+      "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 2, 3), n₂ = (2, 4, 6)，则 α, β 的位置关系是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_parallel"
+      ],
+      "difficulty": 0.8,
+      "solution": "n₂ = 2·n₁，故两平面法向量共线，α, β 平行或重合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行或重合",
+        "B. 垂直",
+        "C. 相交不垂直",
+        "D. 既不平行也不垂直"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_sve_001",
+      "item_type": "choice",
+      "stem": "已知直线 l₁, l₂ 的方向向量分别为 a₁ = (1, 0, 0), a₂ = (0, 1, 0)，则 l₁, l₂ 的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_perp"
+      ],
+      "difficulty": 0.2,
+      "solution": "l₁ ⊥ l₂ ⟺ a₁ · a₂ = 0。a₁ · a₂ = 0 + 0 + 0 = 0，故 l₁ ⊥ l₂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 相交但不垂直",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_sve_002",
+      "item_type": "choice",
+      "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 1, 0), n₂ = (1, -1, 0)，则 α, β 的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_perp"
+      ],
+      "difficulty": 0.5,
+      "solution": "α ⊥ β ⟺ n₁ · n₂ = 0。n₁ · n₂ = 1 - 1 + 0 = 0，故 α ⊥ β。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 相交但不垂直",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_sve_003",
+      "item_type": "choice",
+      "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 1, 1), n₂ = (1, -2, 1)，则 α, β 的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_perp"
+      ],
+      "difficulty": 0.8,
+      "solution": "α ⊥ β ⟺ n₁ · n₂ = 0。n₁ · n₂ = 1 - 2 + 1 = 0，故 α ⊥ β。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 相交但不垂直",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svi_001",
+      "item_type": "choice",
+      "stem": "已知点 A(1, 1, 1), 平面 α: x + y + z + 1 = 0，则 A 到 α 的距离为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_distance"
+      ],
+      "difficulty": 0.2,
+      "solution": "d = |1 + 1 + 1 + 1| / √(1² + 1² + 1²) = 4/√3 = 4√3/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4√3/3",
+        "B. 4/3",
+        "C. 4",
+        "D. 3√3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svi_002",
+      "item_type": "choice",
+      "stem": "已知两平行平面 α: x + y + z - 1 = 0, β: x + y + z + 2 = 0，则 α, β 间的距离为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_distance"
+      ],
+      "difficulty": 0.5,
+      "solution": "d = |C₁ - C₂| / √(A² + B² + C²) = |-1 - 2| / √3 = 3/√3 = √3。",
+      "source": "llm_generated",
+      "options": [
+        "A. √3",
+        "B. 3",
+        "C. 3/√3",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_svi_003",
+      "item_type": "choice",
+      "stem": "已知异面直线 l₁, l₂ 的公垂线方向 n = (0, 0, 1), l₁ 上的点 P(0, 0, 0), l₂ 上的点 Q(0, 0, 1)，则 l₁ 与 l₂ 间的距离为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_sv_distance"
+      ],
+      "difficulty": 0.8,
+      "solution": "d = |PQ · n| / |n| = |(0,0,1) · (0,0,1)| / 1 = 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. √2",
+        "C. √3",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_sva_001",
+      "item_type": "choice",
+      "stem": "已知直线 l 的方向向量 a = (1, 1, 0), 平面 α 的法向量 n = (1, 0, 0)，则 l 与 α 所成角 θ = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_sv_angle"
+      ],
+      "difficulty": 0.2,
+      "solution": "sin θ = |cos⟨a, n⟩| = |a · n| / (|a| |n|) = 1 / √2 = √2/2, 故 θ = 45°。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30°",
+        "B. 45°",
+        "C. 60°",
+        "D. 90°"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_sva_002",
+      "item_type": "choice",
+      "stem": "已知平面 α 的法向量 n₁ = (1, 1, 0), 平面 β 的法向量 n₂ = (0, 1, 1)，则二面角 α-l-β 的大小为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sv_angle"
+      ],
+      "difficulty": 0.5,
+      "solution": "|cos θ| = |n₁ · n₂| / (|n₁| |n₂|) = |0 + 1 + 0| / (√2 · √2) = 1/2, 故 θ = 60°。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30°",
+        "B. 45°",
+        "C. 60°",
+        "D. 90°"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lsl_001",
+      "item_type": "choice",
+      "stem": "直线 l 经过点 (1, 2) 和 (-1, 4)，则 l 的斜率为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_slope"
+      ],
+      "difficulty": 0.2,
+      "solution": "k = (4 - 2) / (-1 - 1) = 2 / (-2) = -1。",
+      "source": "llm_generated",
+      "options": [
+        "A. -1",
+        "B. 1",
+        "C. 1/2",
+        "D. -1/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lsl_002",
+      "item_type": "choice",
+      "stem": "直线 l 的倾斜角为 135°，则 l 的斜率为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_slope"
+      ],
+      "difficulty": 0.5,
+      "solution": "k = tan 135° = -1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. -1",
+        "C. √3",
+        "D. -√3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lsl_003",
+      "item_type": "choice",
+      "stem": "直线 l 经过点 A(-1, 2), B(3, -2), C(2m, m+2), 若 l 的斜率为 -1，则 m = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_slope"
+      ],
+      "difficulty": 0.8,
+      "solution": "AB 斜率 = (-2-2)/(3-(-1)) = -1, 与题设一致。AC 斜率 = (m+2-2)/(2m-(-1)) = m/(2m+1) = -1, 解得 m = -1/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. -1/3",
+        "B. 1/3",
+        "C. -1",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lpp_001",
+      "item_type": "choice",
+      "stem": "已知 l₁: y = 2x + 1, l₂: y = 2x - 1，则 l₁ 与 l₂ 的位置关系是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_parallel_perp"
+      ],
+      "difficulty": 0.2,
+      "solution": "两直线斜率皆为 2，截距不同，故 l₁ ∥ l₂（不重合）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 重合",
+        "D. 相交"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lpp_002",
+      "item_type": "choice",
+      "stem": "直线 l₁ 经过 (1, 2), 斜率为 2, l₂ 经过 (0, 1), 斜率为 -1/2，则 l₁ 与 l₂ 的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_parallel_perp"
+      ],
+      "difficulty": 0.5,
+      "solution": "k₁ · k₂ = 2 × (-1/2) = -1，故 l₁ ⊥ l₂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 垂直",
+        "C. 重合",
+        "D. 相交但不垂直"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_lpp_003",
+      "item_type": "choice",
+      "stem": "已知 l₁: 2x + y - 1 = 0, l₂: kx - y + 3 = 0, 若 l₁ ⊥ l₂, 则 k = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_parallel_perp"
+      ],
+      "difficulty": 0.8,
+      "solution": "l₁ 的斜率 k₁ = -2, l₂ 的斜率 k₂ = k。由 k₁ · k₂ = -1 得 -2k = -1, 即 k = 1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. -2",
+        "B. 1/2",
+        "C. -1/2",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ed_001",
+      "item_type": "choice",
+      "stem": "椭圆 x²/16 + y²/9 = 1 的焦距为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_ellipse_def"
+      ],
+      "difficulty": 0.25,
+      "solution": "由 a²=16, b²=9 得 c²=a²-b²=16-9=7，故 c=√7，焦距 2c=2√7，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2√7",
+        "B. √7",
+        "C. 2√25",
+        "D. 7"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ed_002",
+      "item_type": "fill",
+      "stem": "已知椭圆 x²/9 + y²/4 = 1 上一点 P 到左焦点 F₁ 的距离为 5/3，则点 P 到右焦点 F₂ 的距离为____",
+      "answer": "13/3",
+      "kps": [
+        "kp_h11_ellipse_def"
+      ],
+      "difficulty": 0.5,
+      "solution": "由椭圆定义 |PF₁|+|PF₂|=2a=6，故 |PF₂|=6-5/3=18/3-5/3=13/3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ed_003",
+      "item_type": "fill",
+      "stem": "设 F₁、F₂ 是椭圆 x²/25 + y²/9 = 1 的两个焦点，P 为椭圆上一点，且 ∠F₁PF₂ = 60°，则 △F₁PF₂ 的面积为____",
+      "answer": "3√3",
+      "kps": [
+        "kp_h11_ellipse_def"
+      ],
+      "difficulty": 0.75,
+      "solution": "a²=25, b²=9, c²=16, c=4, |F₁F₂|=8，|PF₁|+|PF₂|=2a=10。由余弦定理 |F₁F₂|²=|PF₁|²+|PF₂|²-2|PF₁||PF₂|cos60°，即 64=(|PF₁|+|PF₂|)²-3|PF₁||PF₂|=100-3|PF₁||PF₂|，解得 |PF₁||PF₂|=12，故面积=(1/2)·12·sin60°=3√3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ep_001",
+      "item_type": "choice",
+      "stem": "椭圆 x²/9 + y²/4 = 1 的离心率为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_ellipse_prop"
+      ],
+      "difficulty": 0.25,
+      "solution": "a²=9, b²=4, c²=5, c=√5，离心率 e=c/a=√5/3，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. √5/3",
+        "B. 2/3",
+        "C. √13/3",
+        "D. 3/5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ep_002",
+      "item_type": "fill",
+      "stem": "椭圆 x²/4 + y² = 1 的左、右焦点分别为 F₁、F₂，过 F₂ 作垂直于 x 轴的直线交椭圆于 A、B 两点，则 |AB| =____",
+      "answer": "1",
+      "kps": [
+        "kp_h11_ellipse_prop"
+      ],
+      "difficulty": 0.5,
+      "solution": "a²=4, b²=1, c²=3, c=√3, F₂=(√3, 0)。将 x=√3 代入椭圆方程得 3/4+y²=1，y²=1/4，y=±1/2，故 |AB|=2·1/2=1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hd_001",
+      "item_type": "choice",
+      "stem": "双曲线 x²/9 - y²/16 = 1 的焦距为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_hyperbola_def"
+      ],
+      "difficulty": 0.25,
+      "solution": "a²=9, b²=16, c²=a²+b²=25, c=5，焦距 2c=10，选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5",
+        "B. 10",
+        "C. 7",
+        "D. 14"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hd_002",
+      "item_type": "fill",
+      "stem": "已知双曲线 x²/4 - y²/5 = 1 的右焦点为 F，点 P 在双曲线上，且 |PF| = √7，则点 P 到左焦点的距离为____",
+      "answer": "4+√7",
+      "kps": [
+        "kp_h11_hyperbola_def"
+      ],
+      "difficulty": 0.5,
+      "solution": "a²=4, c²=9, c=3, 2a=4。因 √7>0 且 |PF| = √7 ≈ 2.65 ≥ c-a=1，P 在右支上，故 |P到左焦点| - |PF|=2a=4，即 |P到左焦点|=4+√7。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hd_003",
+      "item_type": "fill",
+      "stem": "设 F₁、F₂ 是双曲线 x²/9 - y²/16 = 1 的左、右焦点，P 为双曲线上一点，且 ∠F₁PF₂ = 60°，若点 P 在右支上，则 △F₁PF₂ 的面积为____",
+      "answer": "16√3",
+      "kps": [
+        "kp_h11_hyperbola_def"
+      ],
+      "difficulty": 0.75,
+      "solution": "a²=9, b²=16, c²=25, c=5, |F₁F₂|=10, 2a=6。设 |PF₁|=m, |PF₂|=n，P 在右支上 m-n=2a=6。由余弦定理 m²+n²-2mn·cos60°=100，即 m²+n²-mn=100。又 (m-n)²+mn=36+mn=100，故 mn=64，面积=(1/2)·64·sin60°=16√3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hp_001",
+      "item_type": "choice",
+      "stem": "双曲线 x²/9 - y²/16 = 1 的渐近线方程为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_hyperbola_prop"
+      ],
+      "difficulty": 0.25,
+      "solution": "渐近线方程为 y=±(b/a)x=±(4/3)x，选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = ±(3/4)x",
+        "B. y = ±(4/3)x",
+        "C. y = ±(3/16)x",
+        "D. y = ±(16/9)x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hp_002",
+      "item_type": "fill",
+      "stem": "双曲线 x²/4 - y²/12 = 1 的离心率为____",
+      "answer": "2",
+      "kps": [
+        "kp_h11_hyperbola_prop"
+      ],
+      "difficulty": 0.5,
+      "solution": "a²=4, b²=12, c²=a²+b²=16, c=4，离心率 e=c/a=4/2=2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_hp_003",
+      "item_type": "choice",
+      "stem": "已知双曲线 x²/a² - y²/b² = 1 (a > 0, b > 0) 的一条渐近线方程为 y = (4/3)x，则该双曲线的离心率为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_hyperbola_prop"
+      ],
+      "difficulty": 0.75,
+      "solution": "由 y=(b/a)x 得 b/a=4/3，故 c²=a²+b²=a²(1+16/9)=(25/9)a²，e=c/a=5/3，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5/3",
+        "B. 5/4",
+        "C. 3",
+        "D. 4/3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pd_001",
+      "item_type": "choice",
+      "stem": "抛物线 y² = 8x 的焦点坐标为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_parabola_def"
+      ],
+      "difficulty": 0.25,
+      "solution": "y²=8x=2·4·x，即 2p=8, p=4，焦点为 (p/2, 0)=(2, 0)，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. (2, 0)",
+        "B. (4, 0)",
+        "C. (8, 0)",
+        "D. (0, 2)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pd_002",
+      "item_type": "fill",
+      "stem": "抛物线 y² = -4x 的准线方程为____",
+      "answer": "x = 1",
+      "kps": [
+        "kp_h11_parabola_def"
+      ],
+      "difficulty": 0.5,
+      "solution": "y²=-4x 开口向左，p=2，焦点为 (-1, 0)，准线为 x=p/2=1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pd_003",
+      "item_type": "choice",
+      "stem": "过抛物线 y² = 4x 的焦点 F 的直线 l 与抛物线交于 A、B 两点，若 |AF| = 3，则 |BF| =（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_parabola_def"
+      ],
+      "difficulty": 0.75,
+      "solution": "y²=4x, 2p=4, p=2。由焦点弦性质 1/|AF|+1/|BF|=2/p=1，故 1/|BF|=1-1/3=2/3，即 |BF|=3/2，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3/2",
+        "B. 1",
+        "C. 4/3",
+        "D. 1/3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pp_001",
+      "item_type": "choice",
+      "stem": "抛物线 y² = 8x 的准线方程为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_parabola_prop"
+      ],
+      "difficulty": 0.25,
+      "solution": "y²=8x, 2p=8, p=4，准线为 x=-p/2=-2，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. x = -2",
+        "B. x = 2",
+        "C. x = -4",
+        "D. x = 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pp_002",
+      "item_type": "fill",
+      "stem": "抛物线 x² = 4y 上一点 P 到焦点的距离为 3，则 P 点的横坐标为____",
+      "answer": "±2√2",
+      "kps": [
+        "kp_h11_parabola_prop"
+      ],
+      "difficulty": 0.5,
+      "solution": "x²=4y, 2p=4, p=2, 焦点为 (0,1)，准线为 y=-1。由抛物线定义 |PF|=y_P+1=3，故 y_P=2，x²=4·2=8，x=±2√2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_pp_003",
+      "item_type": "fill",
+      "stem": "过抛物线 y² = 4x 的焦点 F 作倾斜角为 45° 的直线 l，交抛物线于 A、B 两点，则 |AB| =____",
+      "answer": "8",
+      "kps": [
+        "kp_h11_parabola_prop"
+      ],
+      "difficulty": 0.75,
+      "solution": "F=(1, 0)，倾斜角 45°，斜率 k=1，l: y=x-1。代入 y²=4x 得 (x-1)²=4x, x²-6x+1=0, x₁+x₂=6, x₁x₂=1, |x₁-x₂|²=36-4=32, |x₁-x₂|=4√2，故 |AB|=√2·4√2=8。或用焦点弦公式 |AB|=2p/sin²θ=4/sin²45°=4/(1/2)=8。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cl_001",
+      "item_type": "choice",
+      "stem": "直线 y = x + 1 与椭圆 x²/4 + y²/3 = 1 的位置关系是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_conic_line"
+      ],
+      "difficulty": 0.25,
+      "solution": "联立 x²/4+(x+1)²/3=1，即 3x²+4(x+1)²=12, 7x²+8x-8=0，判别式 Δ=64+4·7·8=288>0，故两交点，直线与椭圆相交，选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相离",
+        "B. 相切",
+        "C. 相交",
+        "D. 不确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cl_002",
+      "item_type": "fill",
+      "stem": "椭圆 x²/9 + y²/4 = 1 的一条弦 AB 的中点为 M(1, 1)，则直线 AB 的斜率为____",
+      "answer": "-4/9",
+      "kps": [
+        "kp_h11_conic_line"
+      ],
+      "difficulty": 0.5,
+      "solution": "设 A(x₁,y₁), B(x₂,y₂)，代入椭圆方程后相减：(x₁²-x₂²)/9+(y₁²-y₂²)/4=0，即 (x₁+x₂)(x₁-x₂)/9+(y₁+y₂)(y₁-y₂)/4=0。由 M(1,1) 知 x₁+x₂=2, y₁+y₂=2，代入得 2(x₁-x₂)/9+2(y₁-y₂)/4=0，故 k=(y₁-y₂)/(x₁-x₂)=-4/9。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_cl_003",
+      "item_type": "choice",
+      "stem": "已知直线 l 与抛物线 y² = 4x 交于 A、B 两点，且 OA⊥OB（O 为原点），则 |AB| 的最小值为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_conic_line"
+      ],
+      "difficulty": 0.75,
+      "solution": "设 A(t₁², 2t₁), B(t₂², 2t₂)，由 OA⊥OB 得 t₁²t₂²+4t₁t₂=t₁t₂(t₁t₂+4)=0，因 t₁, t₂≠0，故 t₁t₂=-4。|AB|²=(t₁²-t₂²)²+(2t₁-2t₂)²=(t₁-t₂)²((t₁+t₂)²+4)。令 s=t₁+t₂，则 (t₁-t₂)²=s²+16，|AB|²=(s²+16)(s²+4)，当 s=0 时 |AB|²=16·4=64，|AB|=8，选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 8",
+        "B. 4",
+        "C. 16",
+        "D. 32"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ca_001",
+      "item_type": "choice",
+      "stem": "已知抛物线 y² = 4x，过焦点 F 且垂直于对称轴的弦（通径）的长度为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_conic_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "y²=4x, 2p=4, 通径长度为 2p=4，选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 6",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_ca_003",
+      "item_type": "fill",
+      "stem": "过抛物线 y² = 4x 的焦点 F 作直线 l 交抛物线于 A、B 两点，则 △AOB（O 为原点）的面积的最小值为____",
+      "answer": "2",
+      "kps": [
+        "kp_h11_conic_apply"
+      ],
+      "difficulty": 0.75,
+      "solution": "F=(1, 0)，设 l 与 x 轴正方向夹角为 θ，由焦点弦公式 |AB|=2p/sin²θ=4/sin²θ。O 到 l 的距离为 |sinθ|（因 l 过 F=(1,0)，方程为 sinθ·x-cosθ·y-sinθ=0）。S=(1/2)·|AB|·d=(1/2)·(4/sin²θ)·sinθ=2/sinθ。当 sinθ=1 即 θ=90° 时 S 取最小值 2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

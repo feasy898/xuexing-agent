@@ -9,9 +9,12 @@
     6,
     7,
     8,
-    9
+    9,
+    10,
+    11,
+    12
   ],
-  "standard": "义务教育数学课程标准（2022年版）（1-9年级合并视图）",
+  "standard": "《义务教育数学课程标准（2022年版）》+《普通高中数学课程标准（2017年版2020修订）》必修+选择性必修",
   "knowledge_points": [
     {
       "id": "kp_p1_num20",
@@ -183,13 +186,2023 @@
       "standard_ref": "2022课标第一学段：经历比较的过程，会用一一对应等方法比较多少、长短和高矮，并做简单的排序"
     },
     {
+      "id": "kp_p1_num0",
+      "name": "0的认识",
+      "subject": "math",
+      "grade": 1,
+      "cluster": "数与运算",
+      "description": "认识0的含义：0既可以表示没有，也可以表示起点，能正确读写0，会计算一个数与0相加减的简单算式",
+      "standard_ref": "2022课标第一学段：结合具体情境认识0的含义，知道0可以表示“没有”和“起点”，能正确读写0，会计算与0有关的加减法",
+      "prereqs": []
+    },
+    {
+      "id": "kp_p1_theme_inquiry",
+      "name": "综合与实践：主题活动与数学游戏",
+      "subject": "math",
+      "grade": 1,
+      "cluster": "综合与实践",
+      "description": "在主题活动、数学游戏、探究活动等实践活动中综合运用数与运算、图形与几何等知识解决简单的现实问题，经历发现和提出问题、分析和解决问题的全过程，体会数学与生活的联系",
+      "standard_ref": "2022课标第一学段：在综合与实践的主题活动中，通过数学游戏、探究活动和实践活动，综合运用数与运算、图形与几何、统计与概率的知识解决简单的现实问题，经历发现问题、提出问题、解决问题的全过程",
+      "prereqs": []
+    },
+    {
+      "id": "kp_h10_set_concept",
+      "name": "集合的概念与表示",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "集合与常用逻辑用语",
+      "description": "集合与元素的概念及属于（∈）、不属于（∉）关系；元素的确定性、互异性、无序性；用列举法、描述法表示集合，认识常用数集 N（自然数集）、Z（整数集）、Q（有理数集）、R（实数集）的记号",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：通过实例，了解集合的含义，理解元素与集合的属于关系；能在自然语言和图形语言的基础上，用符号语言刻画集合",
+      "prereqs": [
+        "kp_real_numbers"
+      ]
+    },
+    {
+      "id": "kp_h10_set_relations",
+      "name": "集合间的基本关系",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "集合与常用逻辑用语",
+      "description": "子集（A⊆B）、真子集（A⫋B）、集合相等（A⊆B 且 B⊆A）的含义；空集 ∅ 是任何集合的子集、是任何非空集合的真子集；含 n 个元素的集合有 2ⁿ 个子集、2ⁿ−1 个真子集；会用 Venn 图表示集合间的关系",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：理解集合之间包含与相等的含义，能识别给定集合的子集；在具体情境中，了解全集与空集的含义",
+      "prereqs": [
+        "kp_h10_set_concept"
+      ]
+    },
+    {
+      "id": "kp_h10_set_ops",
+      "name": "集合的基本运算",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "集合与常用逻辑用语",
+      "description": "交集 A∩B={x|x∈A 且 x∈B}、并集 A∪B={x|x∈A 或 x∈B}、全集 U 与补集 ∁ᵤA={x|x∈U 且 x∉A} 的含义与运算；会借助数轴和 Venn 图求交、并、补并解决简单集合问题",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：理解两个集合的并集与交集的含义，会求两个简单集合的并集与交集；理解在给定集合中一个子集的补集的含义，会求给定子集的补集；能使用 Venn 图表达集合的基本关系与基本运算",
+      "prereqs": [
+        "kp_h10_set_relations",
+        "kp_numberline"
+      ]
+    },
+    {
+      "id": "kp_h10_sufficient_condition",
+      "name": "充分条件与必要条件",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "集合与常用逻辑用语",
+      "description": "若 p⇒q，则 p 是 q 的充分条件、q 是 p 的必要条件；若 p⇔q，则 p 与 q 互为充要条件；会结合方程、不等式、几何判定等具体命题判断条件与结论之间的充分、必要、充要关系",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：通过具体实例，理解充分条件、必要条件、充要条件的意义",
+      "prereqs": []
+    },
+    {
+      "id": "kp_h10_quantifiers",
+      "name": "全称量词与存在量词",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "集合与常用逻辑用语",
+      "description": "全称量词命题 ∀x∈M, p(x) 与存在量词命题 ∃x∈M, p(x) 的结构、记号与真假判断；含量词命题的否定：¬(∀x∈M, p(x)) 即 ∃x∈M, ¬p(x)，¬(∃x∈M, p(x)) 即 ∀x∈M, ¬p(x)",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：理解全称量词与存在量词的意义；能正确地对含有一个量词的命题进行否定",
+      "prereqs": [
+        "kp_h10_set_concept",
+        "kp_h10_sufficient_condition"
+      ]
+    },
+    {
+      "id": "kp_h10_ineq_props",
+      "name": "不等式的性质",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "一元二次函数、方程和不等式",
+      "description": "作差比较法（a−b>0 ⇔ a>b，a−b=0 ⇔ a=b，a−b<0 ⇔ a<b）；不等式性质：对称性（a>b ⇔ b<a）、传递性、可加性（a>b ⇒ a+c>b+c）、可乘性（c>0 时不等号方向不变，c<0 时方向改变）等；体会等式与不等式性质的共性与差异",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：梳理等式的性质，理解不等式的性质，体会等式与不等式的共性与差异",
+      "prereqs": [
+        "kp_ineq_concept",
+        "kp_real_numbers"
+      ]
+    },
+    {
+      "id": "kp_h10_basic_inequality",
+      "name": "基本不等式",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "一元二次函数、方程和不等式",
+      "description": "基本不等式 √(ab) ≤ (a+b)/2（a>0，b>0），当且仅当 a=b 时取等号；了解其代数证明与几何（半圆）背景；会用基本不等式求最值：'一正、二定、三相等'，积定和最小、和定积最大",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：掌握基本不等式 (a+b)/2≥√(ab)（a>0，b>0），能用基本不等式解决简单的最大（小）值问题",
+      "prereqs": [
+        "kp_h10_ineq_props",
+        "kp_square_root"
+      ]
+    },
+    {
+      "id": "kp_h10_quadratic_inequality",
+      "name": "一元二次不等式",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "一元二次函数、方程和不等式",
+      "description": "从二次函数观点看'三个二次'的联系：Δ>0、Δ=0、Δ<0 时抛物线与 x 轴交点个数决定解集形态；会求 ax²+bx+c>0（a>0）型不等式的解集并用集合表示；a<0 时先两边同乘 −1 化为 a>0 情形",
+      "standard_ref": "2017课标（2020修订）必修·预备知识：能够从函数观点认识一元二次方程和一元二次不等式，会求一元二次不等式的解集，了解一元二次不等式与相应函数、方程的联系",
+      "prereqs": [
+        "kp_qf_zeros",
+        "kp_ineq_solve",
+        "kp_h10_set_concept"
+      ]
+    },
+    {
+      "id": "kp_h10_function_concept",
+      "name": "函数的概念",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "用集合与对应的语言定义函数：设 A、B 为非空数集，按对应关系 f 使 A 中任意数 x 都有唯一确定的数 y 与之对应，记 y=f(x)，x∈A；函数三要素为定义域、对应关系、值域；会求简单函数的定义域与值域；掌握区间记号 [a,b]、(a,b)、[a,+∞)、(−∞,b) 等",
+      "standard_ref": "2017课标（2020修订）必修·函数：在初中函数的基础上，用集合语言与对应关系刻画函数概念，了解构成函数的要素（定义域、对应关系、值域），会求一些简单函数的定义域和值域",
+      "prereqs": [
+        "kp_function_concept",
+        "kp_h10_set_concept"
+      ]
+    },
+    {
+      "id": "kp_h10_function_repr",
+      "name": "函数的表示法与分段函数",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "解析法、图象法、列表法三种表示法及各自适用情境；分段函数的概念、图象与求值（如 f(x)=|x| 的分段表示）；判断两个函数是否为同一函数（定义域与对应关系都相同）",
+      "standard_ref": "2017课标（2020修订）必修·函数：在实际情境中，会根据不同的需要选择恰当的方法（如图象法、列表法、解析法）表示函数；了解简单的分段函数，并能简单应用",
+      "prereqs": [
+        "kp_h10_function_concept"
+      ]
+    },
+    {
+      "id": "kp_h10_monotonicity",
+      "name": "函数的单调性",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "增函数、减函数的符号语言定义：任取 x₁,x₂∈D，当 x₁<x₂ 时有 f(x₁)<f(x₂)（增）或 f(x₁)>f(x₂)（减）；单调区间的概念；用定义证明单调性（取值、作差、变形、定号、下结论）；利用单调性比较函数值大小",
+      "standard_ref": "2017课标（2020修订）必修·函数：借助函数图象，会用符号语言表达函数的单调性，理解其作用和几何意义",
+      "prereqs": [
+        "kp_h10_function_concept",
+        "kp_qf_graph"
+      ]
+    },
+    {
+      "id": "kp_h10_function_extremum",
+      "name": "函数的最大（小）值",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "最大值（最小值）定义：存在 x₀∈D 使 f(x₀)=M，且对任意 x∈D 都有 f(x)≤M（f(x)≥M）；几何意义为图象最高（低）点的纵坐标；会结合单调性求简单函数（如二次函数、y=x+a/x（a>0）型）的最大、最小值",
+      "standard_ref": "2017课标（2020修订）必修·函数：借助函数图象，会用符号语言表达函数的最大（小）值，理解其作用和几何意义",
+      "prereqs": [
+        "kp_h10_monotonicity"
+      ]
+    },
+    {
+      "id": "kp_h10_parity",
+      "name": "函数的奇偶性",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "偶函数 f(−x)=f(x)，图象关于 y 轴对称；奇函数 f(−x)=−f(x)，图象关于原点对称；定义域关于原点对称是函数具有奇偶性的前提；用定义判断奇偶性的步骤；利用奇偶性补全图象、求解析式或函数值",
+      "standard_ref": "2017课标（2020修订）必修·函数：借助函数图象，会用符号语言表达函数的奇偶性，理解奇偶性是对函数图象对称性的刻画，会用奇偶性研究函数",
+      "prereqs": [
+        "kp_h10_function_concept",
+        "kp_axis_symmetry",
+        "kp_central_sym"
+      ]
+    },
+    {
+      "id": "kp_h10_power_function",
+      "name": "幂函数",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "幂函数 y=x^α 的概念；五个基本幂函数 y=x、y=x²、y=x³、y=x^(1/2)=√x、y=x^(−1)=1/x 的图象与性质（定义域、奇偶性、单调性、均过点 (1,1)）；在 (0,+∞) 上 α>0 时单调递增、α<0 时单调递减",
+      "standard_ref": "2017课标（2020修订）必修·函数：通过具体实例，了解幂函数的概念；结合 y=x，y=x²，y=x³，y=1/x，y=√x 的图象，了解它们的变化情况",
+      "prereqs": [
+        "kp_h10_function_concept",
+        "kp_h10_monotonicity"
+      ]
+    },
+    {
+      "id": "kp_h10_function_app1",
+      "name": "函数的应用（一）",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "函数的概念与性质",
+      "description": "用已学的一次函数、二次函数、幂函数、分段函数模型解决实际问题：审题设自变量、建立函数解析式、明确定义域、求解并检验作答（如出租车计费、利润最值等情境）",
+      "standard_ref": "2017课标（2020修订）必修·函数：能根据实际问题的特点，选择恰当的函数模型（包括分段函数）刻画现实世界中的变化规律",
+      "prereqs": [
+        "kp_h10_function_repr",
+        "kp_qf_apply"
+      ]
+    },
+    {
+      "id": "kp_h10_fractional_exponent",
+      "name": "n次方根与实数指数幂",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "n 次方根与根式 ⁿ√a 的概念（n 为奇数时任意实数都有唯一 n 次方根，n 为偶数时负数没有偶次方根）；分数指数幂 a^(m/n)=ⁿ√(a^m)（a>0）及负分数指数幂；了解无理数指数幂的意义；实数指数幂运算性质 a^r·a^s=a^(r+s)，(a^r)^s=a^(rs)，(ab)^r=a^r·b^r（a>0，b>0）",
+      "standard_ref": "2017课标（2020修订）必修·函数：通过有理数指数幂及其运算性质的回顾，把指数幂扩充到实数指数幂，能进行简单的指数运算",
+      "prereqs": [
+        "kp_square_root",
+        "kp_cube_root",
+        "kp_power_rules"
+      ]
+    },
+    {
+      "id": "kp_h10_exponential_fn",
+      "name": "指数函数的图象与性质",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "指数函数 y=a^x（a>0 且 a≠1）的概念；定义域 R、值域 (0,+∞)，图象过定点 (0,1)；a>1 时在 R 上单调递增、0<a<1 时单调递减；同底数幂比较大小及底数大小与图象升降的关系",
+      "standard_ref": "2017课标（2020修订）必修·函数：能画出具体指数函数的图象，探索并理解指数函数 y=a^x（a>0 且 a≠1）的单调性与特殊点，体会指数增长一类函数模型",
+      "prereqs": [
+        "kp_h10_fractional_exponent",
+        "kp_h10_monotonicity"
+      ]
+    },
+    {
+      "id": "kp_h10_log_concept",
+      "name": "对数的概念",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "若 a^x=N（a>0 且 a≠1，N>0），则 x=log_a N；对数式与指数式互化求值；常用对数 lg N 与自然对数 ln N；对数恒等式 a^(log_a N)=N 及 log_a 1=0、log_a a=1",
+      "standard_ref": "2017课标（2020修订）必修·函数：理解对数的概念，理解对数运算是指数运算的逆运算，了解常用对数与自然对数",
+      "prereqs": [
+        "kp_h10_exponential_fn"
+      ]
+    },
+    {
+      "id": "kp_h10_log_ops",
+      "name": "对数的运算与换底公式",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "运算性质（a>0 且 a≠1，M>0，N>0）：log_a(MN)=log_a M+log_a N，log_a(M/N)=log_a M−log_a N，log_a M^n=n·log_a M；换底公式 log_a b=log_c b/log_c a（a,b,c>0，a≠1，c≠1）及其推论 log_a b·log_b a=1",
+      "standard_ref": "2017课标（2020修订）必修·函数：理解对数的运算性质，知道用换底公式能将一般对数转化成自然对数或常用对数",
+      "prereqs": [
+        "kp_h10_log_concept"
+      ]
+    },
+    {
+      "id": "kp_h10_log_fn",
+      "name": "对数函数的图象与性质",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "对数函数 y=log_a x（a>0 且 a≠1）的概念；定义域 (0,+∞)、值域 R，图象过定点 (1,0)；a>1 时在 (0,+∞) 上单调递增、0<a<1 时单调递减；指数函数 y=a^x 与对数函数 y=log_a x 互为反函数，图象关于直线 y=x 对称",
+      "standard_ref": "2017课标（2020修订）必修·函数：能画出具体对数函数的图象，探索并理解对数函数 y=log_a x（a>0 且 a≠1）的单调性与特殊点；知道指数函数与对数函数互为反函数（图象关于直线 y=x 对称）",
+      "prereqs": [
+        "kp_h10_log_concept",
+        "kp_h10_exponential_fn"
+      ]
+    },
+    {
+      "id": "kp_h10_function_zero",
+      "name": "函数的零点与方程的解",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "零点定义：使 f(x)=0 的实数 x；函数 y=f(x) 的零点即方程 f(x)=0 的实数解，也是图象与 x 轴交点的横坐标；零点存在定理：若 y=f(x) 在闭区间 [a,b] 上的图象连续不断，且 f(a)·f(b)<0，则在开区间 (a,b) 内至少存在一点 c 使 f(c)=0（定理只能判定存在性）",
+      "standard_ref": "2017课标（2020修订）必修·函数：结合学过的函数图象，了解函数零点与方程解的关系，理解零点存在定理",
+      "prereqs": [
+        "kp_h10_function_concept",
+        "kp_qf_zeros"
+      ]
+    },
+    {
+      "id": "kp_h10_bisection",
+      "name": "用二分法求方程的近似解",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "二分法求方程 f(x)=0 近似解的步骤：确定有解区间 [a,b]，取中点并检查 f(a)·f(中点) 的符号，把有解区间每次缩小一半，直至区间长度小于精确度 ε，取区间内一点作为近似解；体会逐步逼近思想",
+      "standard_ref": "2017课标（2020修订）必修·函数：能用二分法求相应方程的近似解，体会其中的逐步逼近与算法思想",
+      "prereqs": [
+        "kp_h10_function_zero"
+      ]
+    },
+    {
+      "id": "kp_h10_growth_compare",
+      "name": "不同函数增长的差异",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "在 (0,+∞) 上比较 y=kx（k>0）、y=log_a x（a>1）与 y=a^x（a>1）的增长：随 x 增大指数增长快于幂增长、幂增长快于对数增长（'直线上升、对数增长、指数爆炸'）；会根据图象或数据特征选择增长模型",
+      "standard_ref": "2017课标（2020修订）必修·函数：了解指数增长、对数增长等不同函数增长方式的差异",
+      "prereqs": [
+        "kp_h10_exponential_fn",
+        "kp_h10_log_fn"
+      ]
+    },
+    {
+      "id": "kp_h10_function_app2",
+      "name": "函数模型的应用（二）",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "指数函数与对数函数",
+      "description": "根据实际数据选择或拟合函数模型（一次、指数、对数、幂函数模型）解决实际问题：收集数据、画散点图、选取模型、求解析式、检验修正（如人口或生物增长、碳14衰减、地震震级、溶液酸碱度等情境）",
+      "standard_ref": "2017课标（2020修订）必修·函数：收集函数模型在社会生活中广泛运用的实例，能根据实际问题的特点选择恰当的函数模型模拟和预测变化规律",
+      "prereqs": [
+        "kp_h10_growth_compare",
+        "kp_h10_function_app1"
+      ]
+    },
+    {
+      "id": "kp_h10_arbitrary_angle",
+      "name": "任意角",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "按旋转方向把角分为正角、负角、零角；在平面直角坐标系中讨论角，象限角与终边落在坐标轴上的角；终边相同的角：与角 α 终边相同的角的集合为 {β|β=α+k·360°，k∈Z}",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：了解任意角的概念，会把角按旋转方向与终边位置分类，会用集合表示终边相同的角",
+      "prereqs": [
+        "kp_angles"
+      ]
+    },
+    {
+      "id": "kp_h10_radian",
+      "name": "弧度制",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "弧度制规定：弧长等于半径长的弧所对的圆心角为 1 弧度的角；180°=π rad，据此进行弧度与角度的互化；正角的弧度数为正、负角为负、零角为 0；弧长公式 l=|α|·r 与扇形面积公式 S=½|α|·r²=½·l·r（α 为圆心角弧度数，r 为半径）",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：理解弧度制的概念，能进行弧度与角度的互化",
+      "prereqs": [
+        "kp_h10_arbitrary_angle",
+        "kp_circle_arc"
+      ]
+    },
+    {
+      "id": "kp_h10_trig_definition",
+      "name": "任意角三角函数的概念",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "借助单位圆定义：设角 α 的终边与单位圆交于点 P(x,y)，则 sin α=y，cos α=x，tan α=y/x（x≠0），其值由角唯一确定且与点 P 位置无关的证明依赖相似；正弦、余弦定义域为 R，正切定义域为 {x|x≠π/2+kπ，k∈Z}；各象限符号（一全正、二正弦、三正切、四余弦）；特殊角（π/6、π/4、π/3 等）的三角函数值",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：借助单位圆，理解任意角三角函数（正弦、余弦、正切）的定义",
+      "prereqs": [
+        "kp_h10_radian",
+        "kp_trig_def",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h10_trig_relations",
+      "name": "同角三角函数的基本关系",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "基本关系式：sin²α+cos²α=1；sin α/cos α=tan α；已知某角的一个三角函数值求其余两个（符号由角所在象限确定）；sin α±cos α 与 sin α·cos α 之间的恒等关系及简单应用",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：理解同角三角函数的基本关系式：sin²α+cos²α=1，sin α/cos α=tan α",
+      "prereqs": [
+        "kp_h10_trig_definition"
+      ]
+    },
+    {
+      "id": "kp_h10_induction_formulas",
+      "name": "诱导公式",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "借助单位圆的对称性推导六组诱导公式：角 α+k·2π、π+α、−α、π−α、π/2−α、π/2+α 与角 α 的三角函数关系；记忆口诀'奇变偶不变、符号看象限'；用于把任意角三角函数化为锐角三角函数求值",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：能借助单位圆推导出诱导公式，并能应用诱导公式化简、求值",
+      "prereqs": [
+        "kp_h10_trig_definition"
+      ]
+    },
+    {
+      "id": "kp_h10_sincos_fn",
+      "name": "正弦函数、余弦函数的图象与性质",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "五点法画 y=sin x 在 [0,2π] 上的简图（关键点 (0,0)、(π/2,1)、(π,0)、(3π/2,−1)、(2π,0)）；y=cos x 的图象可由 y=sin x 向左平移 π/2 得到；性质：定义域 R、值域 [−1,1]、最小正周期 2π、sin x 为奇函数而 cos x 为偶函数、单调区间与最值、对称轴与对称中心",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：能画出 y=sin x、y=cos x 的图象，了解三角函数的周期性；借助图象理解正弦函数、余弦函数在 [0,2π] 上的性质（如单调性、最大和最小值、图象与 x 轴的交点等）",
+      "prereqs": [
+        "kp_h10_trig_definition",
+        "kp_h10_monotonicity",
+        "kp_h10_parity"
+      ]
+    },
+    {
+      "id": "kp_h10_tan_fn",
+      "name": "正切函数的图象与性质",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "由 tan(α+π)=tan α 知正切函数周期为 π；正切曲线由无穷多支曲线组成，平行于 y 轴的直线 x=π/2+kπ（k∈Z）为其渐近线；定义域 {x|x≠π/2+kπ，k∈Z}、值域 R、奇函数、在每个开区间 (−π/2+kπ，π/2+kπ)（k∈Z）内单调递增",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：能画出 y=tan x 的图象，借助图象理解正切函数在 (−π/2, π/2) 上的性质",
+      "prereqs": [
+        "kp_h10_trig_definition",
+        "kp_h10_sincos_fn"
+      ]
+    },
+    {
+      "id": "kp_h10_sum_diff_formulas",
+      "name": "两角和与差的三角公式",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "两角差的余弦公式 C(α−β)：cos(α−β)=cos α·cos β+sin α·sin β（单位圆推导）；由它推导 C(α+β)、S(α±β)：sin(α±β)=sin α·cos β±cos α·sin β、T(α±β)：tan(α±β)=(tan α±tan β)/(1∓tan α·tan β)；公式的正用、逆用与角的拼拆（如 2α=(α+β)+α）",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：经历推导两角差的余弦公式的过程，知道两角和与差的正弦、余弦、正切公式，能运用公式进行简单的三角恒等变换",
+      "prereqs": [
+        "kp_h10_trig_relations",
+        "kp_h10_induction_formulas"
+      ]
+    },
+    {
+      "id": "kp_h10_double_angle",
+      "name": "二倍角公式与简单的三角恒等变换",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "二倍角公式：sin 2α=2sin α·cos α；cos 2α=cos²α−sin²α=2cos²α−1=1−2sin²α；tan 2α=2tan α/(1−tan²α)；降幂公式 sin²α=(1−cos 2α)/2、cos²α=(1+cos 2α)/2；辅助角公式 a·sin α+b·cos α=√(a²+b²)·sin(α+φ)（其中 tan φ=b/a）；用于化简、求值与证明",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：知道二倍角的正弦、余弦、正切公式，能运用两角和差、二倍角公式进行简单的三角恒等变换（化简、求值、证明）",
+      "prereqs": [
+        "kp_h10_sum_diff_formulas"
+      ]
+    },
+    {
+      "id": "kp_h10_asinwx",
+      "name": "函数 y=Asin(ωx+φ) 的图象",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "A、ω、φ 的意义：A 为振幅（值域 [−A,A]，A>0）、周期 T=2π/ω（ω>0）、φ 为初相；图象变换：y=sin x 经平移（左加右减）得 y=sin(x+φ)，再横坐标伸缩得 y=sin(ωx+φ)，再纵坐标伸缩得 y=Asin(ωx+φ)；注意先伸缩后平移时平移量为 |φ|/ω；会由图象求解析式",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：结合具体实例，了解 y=Asin(ωx+φ) 的实际意义；能借助图象理解参数 A、ω、φ 对函数图象变化的影响，能由 y=sin x 的图象经过变换得到 y=Asin(ωx+φ) 的图象",
+      "prereqs": [
+        "kp_h10_sincos_fn"
+      ]
+    },
+    {
+      "id": "kp_h10_trig_model",
+      "name": "三角函数模型的应用",
+      "subject": "math",
+      "grade": 10,
+      "cluster": "三角函数",
+      "description": "用三角函数模型刻画周期变化现象（潮汐、摩天轮、气温变化、交流电等）：收集数据、画散点图、选择 y=A·sin(ωx+φ)+b 型模型、利用图象与数据确定参数 A、ω、φ、b、检验修正并用于预测",
+      "standard_ref": "2017课标（2020修订）必修·三角函数：会用三角函数模型解决简单的实际问题，体会三角函数是描述周期变化现象的重要函数模型",
+      "prereqs": [
+        "kp_h10_asinwx",
+        "kp_h10_function_app1"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_concept",
+      "name": "平面向量的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "向量是既有大小又有方向的量，用有向线段表示；掌握向量的模、零向量、单位向量、相等向量与共线（平行）向量的概念，规定零向量与任意向量共线",
+      "standard_ref": "2017版课标：通过力、速度等物理背景，理解平面向量的意义，掌握平面向量的几何表示",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_lines_rays"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_addsub",
+      "name": "向量的加法与减法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "向量加法的三角形法则与平行四边形法则、减法法则 a-b=a+(-b)；加法满足交换律与结合律，|a+b|≤|a|+|b|（同向时取等号）",
+      "standard_ref": "2017版课标：借助几何直观，掌握平面向量加、减运算及其运算律，理解其几何意义",
+      "prereqs": [
+        "kp_h11_vec_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_scalar",
+      "name": "向量的数乘与共线定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "实数 λ 与向量 a 的乘积 λa 的大小与方向规定及三条运算律（λ(μa)=(λμ)a、(λ+μ)a=λa+μa、λ(a+b)=λa+λb）；向量共线定理：b∥a（a≠0）当且仅当存在唯一实数 λ 使 b=λa",
+      "standard_ref": "2017版课标：掌握平面向量数乘运算及其运算律，理解其几何意义，理解两个平面向量共线的含义",
+      "prereqs": [
+        "kp_h11_vec_addsub"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_basic_theorem",
+      "name": "平面向量基本定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "若 e₁、e₂ 是同一平面内两个不共线的向量，则该平面内任一向量 a 可唯一表示为 a=λ₁e₁+λ₂e₂（λ₁、λ₂∈R）；基底的概念与向量的正交分解",
+      "standard_ref": "2017版课标：理解平面向量基本定理及其意义",
+      "prereqs": [
+        "kp_h11_vec_scalar"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_coords",
+      "name": "平面向量的坐标表示与坐标运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "取分别与 x 轴、y 轴同方向的单位向量 i、j 为基底，a=xi+yj=(x,y)；向量加减与数乘的坐标运算、中点坐标公式；两向量共线的坐标条件 x₁y₂-x₂y₁=0",
+      "standard_ref": "2017版课标：理解平面向量的正交分解及其坐标表示，掌握平面向量的坐标运算，理解其几何意义",
+      "prereqs": [
+        "kp_h11_vec_basic_theorem",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_dot_product",
+      "name": "平面向量的数量积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "非零向量 a 与 b 的夹角 θ∈[0,π]，数量积 a·b=|a||b|cosθ；数量积的运算律与投影（投影向量）意义；a⊥b 等价于 a·b=0，a·a=|a|²",
+      "standard_ref": "2017版课标：理解平面向量数量积的含义及其物理意义，能用数量积表示两个向量的夹角，判断两个平面向量的垂直关系",
+      "prereqs": [
+        "kp_h11_vec_addsub",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_vec_dot_coords",
+      "name": "数量积的坐标表示与向量法的应用",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a·b=x₁x₂+y₁y₂，|a|=√(x₁²+y₁²)，cosθ=(x₁x₂+y₁y₂)/(√(x₁²+y₁²)·√(x₂²+y₂²))；用向量方法证明垂直、求夹角与长度，解决简单的平面几何、力学及其他实际问题",
+      "standard_ref": "2017版课标：掌握平面向量数量积的坐标表达式，会进行数量积的运算；会用向量方法解决简单的平面几何问题、力学问题与其他实际问题",
+      "prereqs": [
+        "kp_h11_vec_dot_product",
+        "kp_h11_vec_coords",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_law_of_cosines",
+      "name": "余弦定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a²=b²+c²-2bc·cosA 及其轮换形式；推论 cosA=(b²+c²-a²)/(2bc)；已知两边及其夹角或三边解三角形，并用于判断三角形形状",
+      "standard_ref": "2017版课标：借助向量的运算，探索三角形边长与角度的关系，掌握余弦定理，能用余弦定理解决简单的实际问题",
+      "prereqs": [
+        "kp_h11_vec_dot_product",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_law_of_sines",
+      "name": "正弦定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "a/sinA=b/sinB=c/sinC=2R（R 为三角形外接圆半径）；已知两角及一边或两边及其中一边的对角解三角形，注意边角关系下解个数的判断",
+      "standard_ref": "2017版课标：借助向量的运算，探索三角形边长与角度的关系，掌握正弦定理，能用正弦定理解决简单的实际问题",
+      "prereqs": [
+        "kp_h11_vec_concept",
+        "kp_trig_def",
+        "kp_circle_basic"
+      ]
+    },
+    {
+      "id": "kp_h11_triangle_solve",
+      "name": "解三角形的实际应用",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "平面向量及其应用",
+      "description": "测量距离、高度与角度等实际问题：抽象出三角形模型，综合运用正弦定理、余弦定理与三角形面积公式 S=½ab·sinC 求解并检验",
+      "standard_ref": "2017版课标：掌握余弦定理、正弦定理，能用它们解决测量等简单的实际问题",
+      "prereqs": [
+        "kp_h11_law_of_sines",
+        "kp_h11_law_of_cosines",
+        "kp_rta_apply"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_concept",
+      "name": "复数的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "虚数单位 i 满足 i²=-1；复数 z=a+bi（a、b∈R）的代数形式，a 为实部、b 为虚部；b=0 时为实数，b≠0 时为虚数，a=0 且 b≠0 时为纯虚数；a+bi=c+di 当且仅当 a=c 且 b=d",
+      "standard_ref": "2017版课标：通过方程的解，认识复数，理解复数的代数表示，理解两个复数相等的含义",
+      "prereqs": [
+        "kp_qe_formula",
+        "kp_real_numbers"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_plane",
+      "name": "复数的几何意义、模与共轭复数",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "复平面：x 轴为实轴、y 轴为虚轴，复数 z=a+bi 与复平面内的点 Z(a,b) 及向量OZ 一一对应；模 |z|=√(a²+b²)；共轭复数 z̄=a-bi 且 |z̄|=|z|",
+      "standard_ref": "2017版课标：会用复平面上的点和平面向量表示复数，了解复数的几何意义，理解复数的模、共轭复数的概念",
+      "prereqs": [
+        "kp_h11_complex_concept",
+        "kp_coordinates",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_addsub",
+      "name": "复数的加法与减法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "(a+bi)±(c+di)=(a±c)+(b±d)i；复数加法满足交换律与结合律；复数加减法的几何意义即对应点（向量）的加减，符合平行四边形法则",
+      "standard_ref": "2017版课标：掌握复数代数表示式的加法、减法运算",
+      "prereqs": [
+        "kp_h11_complex_concept",
+        "kp_h11_vec_addsub"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_muldiv",
+      "name": "复数的乘法与除法",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "(a+bi)(c+di)=(ac-bd)+(ad+bc)i，乘法满足交换律、结合律及对加法的分配律；除法将分子分母同乘分母的共轭复数实现分母实数化",
+      "standard_ref": "2017版课标：掌握复数代数表示式的乘法、除法运算",
+      "prereqs": [
+        "kp_h11_complex_addsub",
+        "kp_h11_complex_plane"
+      ]
+    },
+    {
+      "id": "kp_h11_complex_trig",
+      "name": "复数的三角表示（选学）",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "复数",
+      "description": "z=r(cosθ+isinθ)，其中 r=|z| 为模，θ 为辐角（辐角主值取 [0,2π)）；三角形式下乘、除运算的几何意义：模相乘（相除）、辐角相加（相减）",
+      "standard_ref": "2017版课标（选学*）：能在复平面内用三角形式表示复数，了解复数三角形式乘、除运算的三角表示及其几何意义",
+      "prereqs": [
+        "kp_h11_complex_plane",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_polyhedron",
+      "name": "棱柱、棱锥、棱台的结构特征",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "棱柱：两底面是互相平行且全等的多边形，侧棱平行且相等（直棱柱、正棱柱）；棱锥：一个底面为多边形，侧面是有一个公共顶点的三角形（正棱锥）；棱台：用平行于底面的平面截棱锥，截面与底面之间的部分",
+      "standard_ref": "2017版课标：利用实物、计算机软件等观察空间图形，认识柱、锥、台及其简单组合体的结构特征，并能运用这些特征描述现实生活中简单物体的结构",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_polygon_angles"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_rotation",
+      "name": "圆柱、圆锥、圆台与球的结构特征",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "旋转体：矩形、直角三角形、直角梯形、半圆分别绕其一边（轴）旋转生成圆柱、圆锥、圆台、球；认识轴、母线、底面以及球的球心、半径，球的截面是圆面",
+      "standard_ref": "2017版课标：利用实物、计算机软件等观察空间图形，认识球及其简单组合体的结构特征，并能运用这些特征描述现实生活中简单物体的结构",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_rotation",
+        "kp_circle_basic"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_intuitive",
+      "name": "立体图形的直观图（斜二测画法）",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "斜二测画法：画 x' 轴水平、y' 轴与 x' 轴成 45°，保持平行性不变，平行于 x 轴的线段长度不变、平行于 y 轴的线段长度变为原来的一半；会画长方体、棱柱、圆柱、球及其简单组合体的直观图",
+      "standard_ref": "2017版课标：会用斜二测画法画出简单空间图形（长方体、球、圆柱、圆锥、棱柱及其简单组合体）的直观图",
+      "prereqs": [
+        "kp_h11_solid_polyhedron"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_surface",
+      "name": "简单几何体的表面积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "由侧面展开图得侧面积：圆柱 2πrl、圆锥 πrl、圆台 π(r+r')l（l 为母线长）；直棱柱为 ch（c 为底面周长、h 为侧棱长）、正棱锥 ½ch'（h' 为斜高）、正棱台 ½(c+c')h'；球面面积 S=4πR²；会求简单组合体的表面积",
+      "standard_ref": "2017版课标：了解球、棱柱、棱锥、棱台的表面积的计算公式，能用公式计算简单几何体的表面积",
+      "prereqs": [
+        "kp_h11_solid_polyhedron",
+        "kp_h11_solid_rotation",
+        "kp_circle_arc"
+      ]
+    },
+    {
+      "id": "kp_h11_solid_volume",
+      "name": "简单几何体的体积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "柱体 V=Sh（圆柱为 πr²h）、锥体 V=⅓Sh、台体 V=⅓h(S+√(SS')+S')、球 V=(4/3)πR³；用割补法、等体积变换求简单组合体的体积",
+      "standard_ref": "2017版课标：了解球、棱柱、棱锥、棱台的体积的计算公式，能用公式计算简单几何体的体积",
+      "prereqs": [
+        "kp_h11_solid_polyhedron",
+        "kp_h11_solid_rotation",
+        "kp_p5_cuboid_volume",
+        "kp_p6_cylinder_cone"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_basics",
+      "name": "平面的基本性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "平面用平行四边形表示；基本事实1：若一条直线上的两点在一个平面内，则该直线在此平面内；基本事实2：过不在同一条直线上的三点有且只有一个平面（及三条推论）；基本事实3：两个不重合的平面有一个公共点，则有且只有一条过该点的公共直线；解决点共线、线共面等问题",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中点、直线、平面之间的位置关系，抽象出立体几何的基本图形——平面，了解平面的基本性质与作用",
+      "prereqs": [
+        "kp_geometry_basic",
+        "kp_lines_rays"
+      ]
+    },
+    {
+      "id": "kp_h11_space_lines",
+      "name": "空间中直线与直线的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "空间两条直线相交、平行、异面三种位置关系；基本事实4：平行于同一条直线的两条直线平行；等角定理（空间中两边分别平行的两个角相等或互补）；异面直线所成的角：平移到相交所得的锐角或直角，范围 (0°,90°]",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中直线与直线之间的位置关系，理解异面直线所成的角",
+      "prereqs": [
+        "kp_h11_plane_basics",
+        "kp_parallel_judge"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_position",
+      "name": "直线与平面、平面与平面的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "直线与平面：直线在平面内、相交、平行三种关系；两个平面：平行、相交（交线为一条直线）两种关系；会用文字、图形与符号语言表示空间点、线、面的位置关系",
+      "standard_ref": "2017版课标：借助长方体模型，认识空间中直线与平面、平面与平面之间的位置关系",
+      "prereqs": [
+        "kp_h11_space_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_parallel",
+      "name": "直线与平面平行的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "判定定理：平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行；性质定理：一条直线与一个平面平行，如果过该直线的平面与此平面相交，那么该直线与交线平行",
+      "standard_ref": "2017版课标：理解空间中直线与平面平行的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_position"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_plane_parallel",
+      "name": "平面与平面平行的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "判定定理：一个平面内的两条相交直线与另一个平面平行，则这两个平面平行；性质：两个平面平行，则其中一个平面内的直线平行于另一个平面；两个平行平面同时与第三个平面相交，交线平行",
+      "standard_ref": "2017版课标：理解空间中平面与平面平行的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_parallel"
+      ]
+    },
+    {
+      "id": "kp_h11_line_plane_perp",
+      "name": "直线与平面垂直的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "直线垂直于平面内任意一条直线时称线面垂直；判定定理：一条直线与一个平面内的两条相交直线都垂直，则该直线与此平面垂直；性质定理：垂直于同一个平面的两条直线平行；直线与平面所成的角（射影与该直线所成的角，范围 [0°,90°]）",
+      "standard_ref": "2017版课标：理解空间中直线与平面垂直的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_position",
+        "kp_h11_space_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_plane_plane_perp",
+      "name": "平面与平面垂直的判定与性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "立体几何初步",
+      "description": "二面角及其平面角（在棱上取一点，在两个半平面内作棱的垂线所成的角，范围 [0°,180°]）；判定定理：一个平面经过另一个平面的一条垂线，则这两个平面垂直；性质定理：两个平面垂直，则一个平面内垂直于交线的直线垂直于另一个平面",
+      "standard_ref": "2017版课标：理解空间中平面与平面垂直的判定与性质，能运用获得的结论证明一些空间位置关系的简单命题",
+      "prereqs": [
+        "kp_h11_line_plane_perp"
+      ]
+    },
+    {
+      "id": "kp_h11_sampling_simple",
+      "name": "简单随机抽样",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "总体、个体、样本与样本量的含义；简单随机抽样是逐个、不放回且每个个体每次被抽到概率相等的抽样，用抽签法或随机数法实现",
+      "standard_ref": "2017版课标：理解简单随机抽样的含义及其样本抽取的公平性，掌握抽签法、随机数法",
+      "prereqs": [
+        "kp_data_collect"
+      ]
+    },
+    {
+      "id": "kp_h11_sampling_stratified",
+      "name": "分层随机抽样",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "按总体的结构差异分层，各层内独立进行简单随机抽样，样本量按比例分配（某层样本量=抽样比×该层个体数）；分层加权平均可提高总体平均数估计的精度",
+      "standard_ref": "2017版课标：了解分层随机抽样的特点与适用范围，掌握按比例分配各层样本量的方法",
+      "prereqs": [
+        "kp_h11_sampling_simple",
+        "kp_weighted_average"
+      ]
+    },
+    {
+      "id": "kp_h11_freq_histogram",
+      "name": "频率分布直方图",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "求极差、决定组距与组数、列频率分布表；画频率分布直方图，纵轴为频率/组距，各小长方形的面积等于相应频率、总面积为1；频率折线图；用样本的频率分布估计总体的取值规律",
+      "standard_ref": "2017版课标：会列频率分布表、画频率分布直方图，能用样本的频率分布估计总体分布",
+      "prereqs": [
+        "kp_data_histogram",
+        "kp_data_charts"
+      ]
+    },
+    {
+      "id": "kp_h11_percentile",
+      "name": "百分位数",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "第 p 百分位数使数据中有 p% 的数据不大于它；计算：数据从小到大排列后取 i=n×p%，i 为整数时取第 i 与第 i+1 个数据的平均数，i 不是整数时取第大于 i 的最小整数位次的数据；中位数即第50百分位数",
+      "standard_ref": "2017版课标：理解百分位数的含义，会计算第25、50、75、90百分位数等",
+      "prereqs": [
+        "kp_h11_freq_histogram",
+        "kp_median_mode"
+      ]
+    },
+    {
+      "id": "kp_h11_center_trend",
+      "name": "总体集中趋势的估计",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "样本平均数 x̄=(1/n)(x₁+x₂+…+xₙ)（含加权平均数）、中位数与众数；理解三个集中趋势参数的意义与区别，会用样本的集中趋势估计总体",
+      "standard_ref": "2017版课标：理解样本平均数、中位数、众数的意义，会利用样本的集中趋势估计总体的集中趋势",
+      "prereqs": [
+        "kp_weighted_average",
+        "kp_median_mode"
+      ]
+    },
+    {
+      "id": "kp_h11_dispersion",
+      "name": "总体离散程度的估计",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "统计",
+      "description": "极差、样本方差 s²=(1/n)[(x₁-x̄)²+(x₂-x̄)²+…+(xₙ-x̄)²]、标准差 s=√s²；方差（标准差）越大，数据离散程度越大；会用样本的离散程度参数估计总体并比较两组数据的稳定性",
+      "standard_ref": "2017版课标：理解样本极差、方差、标准差的意义和作用，会计算并能利用样本的离散程度参数估计总体的离散程度",
+      "prereqs": [
+        "kp_h11_center_trend",
+        "kp_variance"
+      ]
+    },
+    {
+      "id": "kp_h11_sample_space",
+      "name": "有限样本空间与随机事件",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "随机试验的每个可能的基本结果称为样本点，全体样本点组成样本空间 Ω；随机事件是样本空间的子集；包含所有样本点的事件为必然事件，不包含任何样本点的事件为不可能事件",
+      "standard_ref": "2017版课标：结合具体实例，理解样本点和有限样本空间的含义，理解随机事件与样本点、样本空间的关系",
+      "prereqs": [
+        "kp_re_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_event_ops",
+      "name": "事件的关系与运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "用集合语言表示事件：包含 A⊆B、相等、并（和）事件 A∪B、交（积）事件 A∩B；互斥事件（A∩B=∅）与对立事件（A∩B=∅ 且 A∪B=Ω）的区别与联系",
+      "standard_ref": "2017版课标：结合具体实例，理解事件的关系与运算（包含、相等、并、交、互斥、对立）",
+      "prereqs": [
+        "kp_h11_sample_space"
+      ]
+    },
+    {
+      "id": "kp_h11_classical_prob",
+      "name": "古典概型",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "古典概型的特征：样本空间只含有限个样本点且每个样本点等可能；P(A)=A 包含的样本点数/样本空间的样本点总数；用列举法（列表、树状图）计算古典概型中随机事件的概率",
+      "standard_ref": "2017版课标：结合具体实例，理解古典概型及其概率计算公式，会计算古典概型中随机事件的概率",
+      "prereqs": [
+        "kp_h11_sample_space",
+        "kp_re_list"
+      ]
+    },
+    {
+      "id": "kp_h11_prob_props",
+      "name": "概率的基本性质与加法公式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "概率的规范性：0≤P(A)≤1，P(Ω)=1，P(∅)=0；互斥事件的概率加法公式 P(A∪B)=P(A)+P(B)；一般地 P(A∪B)=P(A)+P(B)-P(A∩B)；对立事件 P(A)+P(Ā)=1",
+      "standard_ref": "2017版课标：了解概率的基本性质，掌握概率的加法公式",
+      "prereqs": [
+        "kp_h11_event_ops",
+        "kp_h11_classical_prob"
+      ]
+    },
+    {
+      "id": "kp_h11_event_independence",
+      "name": "事件的独立性",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "概率",
+      "description": "若 P(AB)=P(A)P(B)，则事件 A 与 B 相互独立；相互独立与互斥的区别（独立研究概率乘积，互斥研究事件不相交）；会利用独立性计算两事件同时发生、至少一个发生等概率",
+      "standard_ref": "2017版课标：结合具体实例，了解两个随机事件相互独立的含义，会利用事件的独立性计算概率",
+      "prereqs": [
+        "kp_h11_prob_props"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_concept",
+      "name": "空间向量的概念",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量是空间中具有大小和方向的量；模、零向量、单位向量、相等向量（方向相同且模相等）、相反向量的概念；空间任意两个向量都可以平移到同一平面内，因此空间向量的运算与平面向量的一致",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：经历由平面向量推广到空间向量的过程，了解空间向量的概念",
+      "prereqs": []
+    },
+    {
+      "id": "kp_h11_sv_linear",
+      "name": "空间向量的加减与数乘运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量加法（三角形法则、平行四边形法则）与减法的几何意义；数乘 λa 的意义；加法交换律、结合律与数乘分配律在空间中仍然成立",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的加、减、数乘运算及其运算律",
+      "prereqs": [
+        "kp_h11_sv_concept"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_coplanar",
+      "name": "共线向量与共面向量",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "共线向量定理：b≠0 时 a∥b ⇔ 存在唯一实数 t 使 a=tb，并用于判定三点共线（如 AP=tAB）；共面向量定理：向量 p 与不共线向量 a、b 共面 ⇔ 存在唯一有序实数对 (x,y) 使 p=xa+yb，并用于判定四点共面",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的线性运算，会用共线向量定理、共面向量定理判断空间中的共线与共面问题",
+      "prereqs": [
+        "kp_h11_sv_linear"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_dot",
+      "name": "空间向量的数量积",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "数量积 a·b=|a||b|cos⟨a,b⟩（夹角范围 [0,π]）；性质：非零向量 a⊥b ⇔ a·b=0，a·a=|a|²，|a·b|≤|a||b|；a 在 b 方向上的投影向量为 (a·b/|b|²)b；数量积满足交换律与分配律，不满足结合律",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量的数量积运算，能用数量积表示两向量的夹角、判断两向量的垂直关系",
+      "prereqs": [
+        "kp_h11_sv_concept",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_basis",
+      "name": "空间向量基本定理",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间向量基本定理：若三个向量 e₁、e₂、e₃ 不共面，则对空间任一向量 p，存在唯一的有序实数组 (x,y,z) 使 p=xe₁+ye₂+ze₃；{e₁,e₂,e₃} 叫作空间的一个基底；基底为单位正交向量组时得正交分解，这是建立空间直角坐标系的依据",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示",
+      "prereqs": [
+        "kp_h11_sv_coplanar"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_coord",
+      "name": "空间直角坐标系与向量运算的坐标表示",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "空间直角坐标系 O-xyz（右手系）与向量的坐标表示；线性运算的坐标公式：a±b=(x₁±x₂, y₁±y₂, z₁±z₂)，λa=(λx₁, λy₁, λz₁)；a∥b ⇔ 对应坐标成比例；线段中点坐标等于两端点对应坐标的平均值",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量线性运算的坐标表示，能用坐标进行空间向量的加、减、数乘运算",
+      "prereqs": [
+        "kp_h11_sv_basis",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_dot_coord",
+      "name": "数量积与模、夹角、距离的坐标运算",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "数量积坐标公式 a·b=x₁x₂+y₁y₂+z₁z₂；模长公式 |a|=√(x²+y²+z²)；夹角公式 cos⟨a,b⟩=a·b/(|a||b|)；空间两点 A(x₁,y₁,z₁)、B(x₂,y₂,z₂) 间的距离 |AB|=√((x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²)；a⊥b ⇔ x₁x₂+y₁y₂+z₁z₂=0",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：掌握空间向量数量积的坐标表示，能用坐标运算求向量的模、两向量的夹角和两点间的距离",
+      "prereqs": [
+        "kp_h11_sv_dot",
+        "kp_h11_sv_coord",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_normal",
+      "name": "直线的方向向量与平面的法向量",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "直线的方向向量是与该直线平行的非零向量；平面的法向量是垂直于该平面的非零向量（不唯一，任意两个法向量互相平行）；坐标法求法向量：设 n=(x,y,z)，由 n 与平面内两个不共线向量的数量积都为 0 建立方程组，取一组非零解",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述直线与直线、直线与平面、平面与平面的位置关系，会用坐标法求直线的方向向量和平面的法向量",
+      "prereqs": [
+        "kp_h11_sv_dot_coord"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_parallel",
+      "name": "用空间向量研究平行关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法判定平行：线线平行 ⇔ 两直线的方向向量共线；线面平行 ⇔ 直线的方向向量 a 与平面的法向量 n 满足 a·n=0（且直线不在平面内）；面面平行 ⇔ 两平面的法向量共线（n₁=tn₂）",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述并判定直线与直线、直线与平面、平面与平面的平行关系",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_h11_sv_coplanar"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_perp",
+      "name": "用空间向量研究垂直关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法判定垂直：线线垂直 ⇔ 两方向向量的数量积为 0（a·b=0）；线面垂直 ⇔ 直线的方向向量与平面的法向量共线（a=tn）；面面垂直 ⇔ 两平面的法向量的数量积为 0（n₁·n₂=0）",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量语言表述并判定直线与直线、直线与平面、平面与平面的垂直关系",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_h11_sv_dot"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_distance",
+      "name": "用空间向量求距离",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "向量法求距离：点到直线的距离（投影向量法）；点到平面的距离 d=|AP·n|/|n|（P 为平面内一点，n 为该平面的法向量）；两条平行直线、直线与其平行的平面、两个平行平面间的距离都转化为点到直线或点到平面的距离；两条异面直线间的距离用与它们都垂直的向量（公垂线方向）投影计算",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量方法解决立体几何中的距离问题（点到直线、点到平面以及简单情形下两异面直线间的距离）",
+      "prereqs": [
+        "kp_h11_sv_normal"
+      ]
+    },
+    {
+      "id": "kp_h11_sv_angle",
+      "name": "用空间向量求空间角",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "空间向量与立体几何",
+      "description": "异面直线所成的角 θ 满足 cosθ=|a·b|/(|a||b|)，θ∈(0°,90°]；直线与平面所成的角 θ 满足 sinθ=|cos⟨a,n⟩|，θ∈[0°,90°]；二面角的平面角 θ 满足 |cosθ|=|n₁·n₂|/(|n₁||n₂|)，θ∈[0°,180°]，结果取锐角还是钝角需结合图形确定",
+      "standard_ref": "2017课标（2020修订）选必·空间向量与立体几何：能用向量方法求异面直线所成的角、直线与平面所成的角和二面角的大小",
+      "prereqs": [
+        "kp_h11_sv_normal",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_line_slope",
+      "name": "直线的倾斜角与斜率",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "倾斜角：x 轴正向与直线向上的方向所成的角 α，取值范围 0°≤α<180°；斜率 k=tanα（α≠90°），α=90° 时斜率不存在；过两点的斜率公式 k=(y₂-y₁)/(x₂-x₁)（x₁≠x₂）；倾斜角与斜率刻画直线的倾斜程度",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：在平面直角坐标系中，结合图形探索确定直线位置的几何要素，建立直线的倾斜角与斜率的概念",
+      "prereqs": [
+        "kp_coordinates",
+        "kp_trig_def"
+      ]
+    },
+    {
+      "id": "kp_h11_line_parallel_perp",
+      "name": "两条直线平行和垂直的判定",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两直线斜率都存在时：l₁∥l₂ ⇔ k₁=k₂（且两直线不重合）；l₁⊥l₂ ⇔ k₁k₂=-1；当一条直线斜率不存在（垂直于 x 轴）时，与它平行的直线斜率也不存在，与它垂直的直线斜率为 0",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据斜率判定两条直线平行或垂直",
+      "prereqs": [
+        "kp_h11_line_slope",
+        "kp_intersect_lines"
+      ]
+    },
+    {
+      "id": "kp_h11_line_forms",
+      "name": "直线方程的五种形式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "点斜式 y-y₀=k(x-x₀) 与斜截式 y=kx+b（都不能表示垂直于 x 轴的直线，斜截式即一次函数的形式）；两点式 (y-y₁)/(y₂-y₁)=(x-x₁)/(x₂-x₁) 与截距式 x/a+y/b=1（分别不适用于与坐标轴垂直和过原点的直线）；一般式 Ax+By+C=0（A、B 不同时为零）可以表示所有直线；会依据条件选择形式并相互转化",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：根据确定直线位置的几何要素，探索并掌握直线方程的几种形式（点斜式、两点式、一般式），体会斜截式与一次函数的关系",
+      "prereqs": [
+        "kp_h11_line_slope",
+        "kp_linear_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_line_intersect",
+      "name": "两条直线的交点",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两条直线的交点坐标即联立两条直线的方程所得二元一次方程组的解：唯一解 ⇔ 相交，无解 ⇔ 平行，无穷多解 ⇔ 重合；会用代数方法（方程组解的情况）判断两条直线的位置关系",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能用解方程组的方法求两条直线的交点坐标，并根据方程组解的情况判断两直线的位置关系",
+      "prereqs": [
+        "kp_h11_line_forms",
+        "kp_sys_solve"
+      ]
+    },
+    {
+      "id": "kp_h11_line_distance",
+      "name": "距离公式",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "平面上两点间的距离公式 |P₁P₂|=√((x₂-x₁)²+(y₂-y₁)²)；点到直线的距离公式 d=|Ax₀+By₀+C|/√(A²+B²)；两平行直线 Ax+By+C₁=0 与 Ax+By+C₂=0 间的距离 d=|C₁-C₂|/√(A²+B²)（需先将 x、y 的系数化为对应相同）",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：推导并掌握两点间的距离公式、点到直线的距离公式，会求两条平行直线间的距离",
+      "prereqs": [
+        "kp_h11_line_forms",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_circle_eq",
+      "name": "圆的标准方程与一般方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "圆心为 (a,b)、半径为 r 的圆的标准方程 (x-a)²+(y-b)²=r²；一般方程 x²+y²+Dx+Ey+F=0（D²+E²-4F>0，配方后圆心为 (-D/2,-E/2)、半径为 ½√(D²+E²-4F)）；会用待定系数法或几何性质（弦的垂直平分线过圆心、直径的条件等）求圆的方程",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：掌握圆的标准方程与一般方程，能根据给定条件求圆的方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_circle_basic",
+        "kp_qe_complete"
+      ]
+    },
+    {
+      "id": "kp_h11_line_circle",
+      "name": "直线与圆的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "判定：几何法比较圆心到直线的距离 d 与半径 r（d>r 相离、d=r 相切、d<r 相交）；代数法联立消元用判别式符号判断；求切线方程（注意检验斜率不存在的情形）；弦长计算：半弦长、弦心距、半径构成直角三角形，弦长=2√(r²-d²)；能用直线与圆的方程解决简单的数学问题与实际问题",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据给定直线和圆的方程，判断直线与圆的位置关系，能用直线和圆的方程解决一些简单的数学问题与实际问题",
+      "prereqs": [
+        "kp_h11_circle_eq",
+        "kp_circle_position",
+        "kp_pythagorean"
+      ]
+    },
+    {
+      "id": "kp_h11_circle_circle",
+      "name": "圆与圆的位置关系",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "直线和圆的方程",
+      "description": "两圆位置关系由圆心距 d 与半径 r₁、r₂（r₁≥r₂）判定：d>r₁+r₂ 外离，d=r₁+r₂ 外切，|r₁-r₂|<d<r₁+r₂ 相交，d=|r₁-r₂| 内切，d<|r₁-r₂| 内含（含同心圆）；相交两圆的公共弦所在直线方程由两圆方程相减（消去二次项）得到",
+      "standard_ref": "2017课标（2020修订）选必·直线与圆的方程：能根据给定两个圆的方程，判断两个圆之间的位置关系",
+      "prereqs": [
+        "kp_h11_circle_eq",
+        "kp_circle_position"
+      ]
+    },
+    {
+      "id": "kp_h11_ellipse_def",
+      "name": "椭圆的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "椭圆的定义：平面内与两个定点 F₁、F₂ 的距离的和等于常数 2a（2a>|F₁F₂|=2c）的点的轨迹（当 2a=2c 时轨迹为线段 F₁F₂）；标准方程 x²/a²+y²/b²=1（a>b>0，焦点 (±c,0)）或 y²/a²+x²/b²=1（焦点 (0,±c)），其中 b²=a²-c²；会用定义和待定系数法求椭圆的标准方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：经历从具体情境中抽象出椭圆的过程，掌握椭圆的定义、标准方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_radical_ops"
+      ]
+    },
+    {
+      "id": "kp_h11_ellipse_prop",
+      "name": "椭圆的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "椭圆 x²/a²+y²/b²=1（a>b>0）的简单几何性质：范围 |x|≤a、|y|≤b；关于 x 轴、y 轴和原点对称；顶点 (±a,0)、(0,±b)，长轴长 2a、短轴长 2b；离心率 e=c/a∈(0,1)，e 越小椭圆越圆，e 越大椭圆越扁；会用这些性质解决简单的范围、对称与最值问题",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：掌握椭圆的简单几何性质：范围、对称性、顶点、离心率",
+      "prereqs": [
+        "kp_h11_ellipse_def",
+        "kp_axis_symmetry"
+      ]
+    },
+    {
+      "id": "kp_h11_hyperbola_def",
+      "name": "双曲线的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "双曲线的定义：平面内与两个定点 F₁、F₂ 的距离的差的绝对值等于常数 2a（0<2a<|F₁F₂|=2c）的点的轨迹（当 2a=2c 时轨迹为两条射线）；标准方程 x²/a²-y²/b²=1（焦点 (±c,0)）或 y²/a²-x²/b²=1（焦点 (0,±c)），其中 b²=c²-a²；了解双曲线的几何图形和标准方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：了解双曲线的定义、几何图形和标准方程",
+      "prereqs": [
+        "kp_h11_ellipse_def"
+      ]
+    },
+    {
+      "id": "kp_h11_hyperbola_prop",
+      "name": "双曲线的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "双曲线 x²/a²-y²/b²=1 的简单几何性质：范围 x≥a 或 x≤-a；关于 x 轴、y 轴和原点对称；顶点 (±a,0)，实轴长 2a、虚轴长 2b；渐近线方程 y=±(b/a)x（等轴双曲线 a=b 时渐近线为 y=±x 且互相垂直）；离心率 e=c/a>1，e 越大双曲线的开口越开阔",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：知道双曲线的简单几何性质：范围、对称性、顶点、渐近线、离心率",
+      "prereqs": [
+        "kp_h11_hyperbola_def",
+        "kp_if_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_parabola_def",
+      "name": "抛物线的定义与标准方程",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "抛物线的定义：平面内与一个定点 F（焦点）和一条不过 F 的定直线 l（准线）的距离相等的点的轨迹；四种标准方程：y²=2px（p>0，开口向右）、y²=-2px（开口向左）、x²=2py（开口向上）、x²=-2py（开口向下）；p 为焦点到准线的距离，以 y²=2px 为例焦点为 (p/2,0)、准线为 x=-p/2",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：经历从具体情境中抽象出抛物线的过程，掌握抛物线的定义、标准方程",
+      "prereqs": [
+        "kp_h11_line_distance",
+        "kp_qf_graph"
+      ]
+    },
+    {
+      "id": "kp_h11_parabola_prop",
+      "name": "抛物线的简单几何性质",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "抛物线 y²=2px（p>0）的简单几何性质：范围 x≥0、y∈R；关于 x 轴（对称轴）对称；顶点为原点、开口向右；离心率 e=1；过焦点且垂直于对称轴的弦（通径）长为 2p；会根据方程判断开口方向与对称性，并求焦点坐标和准线方程",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：掌握抛物线的简单几何性质：范围、对称性、顶点、离心率",
+      "prereqs": [
+        "kp_h11_parabola_def",
+        "kp_axis_symmetry"
+      ]
+    },
+    {
+      "id": "kp_h11_conic_line",
+      "name": "直线与圆锥曲线的位置关系及弦长",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "联立直线与圆锥曲线的方程消元，得到一元二次（或一次）方程，用判别式判断交点个数（注意二次项系数为 0 及直线斜率不存在的情形）；结合根与系数的关系 x₁+x₂、x₁x₂ 求弦长 |AB|=√(1+k²)|x₁-x₂|（k 为直线斜率，也可消 x 用 |AB|=√(1+1/k²)|y₁-y₂|）；中点弦问题用点差法；体会设而不求与数形结合的思想",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：通过圆锥曲线与方程的学习，进一步体会数形结合的思想，能用坐标法解决与圆锥曲线有关的简单几何问题（位置关系、弦长与中点弦）",
+      "prereqs": [
+        "kp_h11_ellipse_def",
+        "kp_h11_hyperbola_def",
+        "kp_h11_parabola_def",
+        "kp_qe_vieta"
+      ]
+    },
+    {
+      "id": "kp_h11_conic_apply",
+      "name": "圆锥曲线的应用与数形结合",
+      "subject": "math",
+      "grade": 11,
+      "cluster": "圆锥曲线的方程",
+      "description": "利用圆锥曲线的定义（距离的和、差为定值，到焦点与准线等距）求轨迹方程与最值；实际背景问题：行星轨道与椭圆、双曲线时差定位、抛物线的反射性质（如抛物面天线把平行于对称轴的光线汇聚于焦点）与抛物线拱桥等；能用坐标法解决与圆锥曲线有关的简单几何问题",
+      "standard_ref": "2017课标（2020修订）选必·圆锥曲线的方程：了解圆锥曲线的简单应用，通过圆锥曲线与方程的学习进一步体会数形结合的思想",
+      "prereqs": [
+        "kp_h11_ellipse_prop",
+        "kp_h11_hyperbola_prop",
+        "kp_h11_parabola_prop"
+      ]
+    },
+    {
+      "id": "kp_h12_seq_concept",
+      "name": "数列的概念与通项公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "按照一定次序排列的一列数称为数列 a₁,a₂,…,aₙ,…，理解项、首项、第 n 项 aₙ 的含义；会用列表、图象、通项公式 aₙ=f(n) 表示数列，能由通项公式求数列的项并判断某数是否为数列中的项",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过日常生活和数学中的实例，了解数列的概念和表示方法（列表、图象、通项公式），了解数列是一种特殊的函数",
+      "prereqs": [
+        "kp_function_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_seq_function",
+      "name": "数列的函数特性与图象",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "数列是定义域为正整数集 N*（或其有限子集 {1,2,…,n}）的函数 aₙ=f(n)，其图象是一系列孤立的点 (n, aₙ)；由此定义递增数列（aₙ₊₁>aₙ 对一切 n 成立）与递减数列，并从函数视角分析数列的增减与最值",
+      "standard_ref": "2017课标（2020修订）选择性必修：了解数列是一种特殊的函数，能结合图象（孤立的点）认识数列的变化规律",
+      "prereqs": [
+        "kp_h12_seq_concept",
+        "kp_coordinates"
+      ]
+    },
+    {
+      "id": "kp_h12_seq_recursive",
+      "name": "数列的递推公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "递推公式由首项（或前几项）及任一项与前一项（或前几项）的关系给出数列，如 a₁=1，aₙ₊₁=aₙ+2；会用递推公式逐项写出数列，掌握累加法（aₙ₊₁=aₙ+f(n) 型）与累乘法（aₙ₊₁=f(n)·aₙ 型）求简单递推数列的通项公式",
+      "standard_ref": "2017课标（2020修订）选择性必修：了解数列的表示方法（人教A版教材将递推公式列为数列的重要表示方法之一）",
+      "prereqs": [
+        "kp_h12_seq_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_seq_sn_relation",
+      "name": "数列的 an 与 Sn 的关系",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "前 n 项和 Sₙ=a₁+a₂+…+aₙ；由 Sₙ 求通项：a₁=S₁（n=1），aₙ=Sₙ−Sₙ₋₁（n≥2），并检验 n=1 的情形能否并入同一表达式（不能并入时用分段形式表示）",
+      "standard_ref": "2017课标（2020修订）选择性必修：理解等差数列（等比数列）的通项公式和前 n 项和公式的关系，推广为一般数列中 aₙ 与 Sₙ 的关系",
+      "prereqs": [
+        "kp_h12_seq_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_arith_concept",
+      "name": "等差数列的概念与通项公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "若 aₙ₊₁−aₙ=d（d 为与 n 无关的常数），则 {aₙ} 叫等差数列，d 为公差；通项公式 aₙ=a₁+(n−1)d 及推广 aₙ=aₘ+(n−m)d；若 a,A,b 成等差，则 2A=a+b，A 叫 a 与 b 的等差中项",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过实例，理解等差数列的概念和通项公式的意义",
+      "prereqs": [
+        "kp_h12_seq_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_arith_judge",
+      "name": "等差数列的判定与证明",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "判定与证明 {aₙ} 为等差数列的方法：定义法（aₙ₊₁−aₙ 等于同一常数）、等差中项法（2aₙ₊₁=aₙ+aₙ₊₂ 对一切 n∈N* 成立）；反之，若 Sₙ=An²+Bn（无常数项的二次式），则 {aₙ} 为等差数列",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过实例，理解等差数列的概念和通项公式的意义（会用定义法与中项法判定等差数列）",
+      "prereqs": [
+        "kp_h12_arith_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_arith_props",
+      "name": "等差数列的性质",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "若 m+n=p+q（m,n,p,q∈N*），则 aₘ+aₙ=aₚ+a_q；下标成等差的子列 aₖ,aₖ₊ₘ,aₖ₊₂ₘ,… 仍成等差数列，公差为 md；Sₘ、S₂ₘ−Sₘ、S₃ₘ−S₂ₘ（m∈N*）成等差数列；d≠0 时 aₙ=a₁+(n−1)d 是关于 n 的一次函数，体会等差数列与一次函数的关系",
+      "standard_ref": "2017课标（2020修订）选择性必修：理解等差数列的概念和通项公式，掌握等差数列的变化规律，体会等差数列与一元一次函数的关系",
+      "prereqs": [
+        "kp_h12_arith_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_arith_sum",
+      "name": "等差数列的前 n 项和",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "用倒序相加法推导 Sₙ=n(a₁+aₙ)/2=na₁+n(n−1)d/2；能由 a₁、d、n、aₙ、Sₙ 中的两个独立条件求其余量；理解 Sₙ/n=a₁+(n−1)d/2 是 n 的一次（或常数）函数，即通项公式与前 n 项和公式的关系",
+      "standard_ref": "2017课标（2020修订）选择性必修：探索并掌握等差数列的前 n 项和公式，理解等差数列的通项公式和前 n 项和公式的关系",
+      "prereqs": [
+        "kp_h12_arith_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_arith_apply",
+      "name": "等差数列的实际应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "将座位排布、堆放层数、阶梯计价、里程累计等实际问题抽象为等差数列模型，明确 a₁、d、n、aₙ、Sₙ 中的已知量，求目标量并检验实际意义",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用等差数列、等比数列的知识解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_arith_sum",
+        "kp_h12_arith_props"
+      ]
+    },
+    {
+      "id": "kp_h12_geo_concept",
+      "name": "等比数列的概念与通项公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "若 aₙ₊₁/aₙ=q（q 为非零常数，且数列各项均不为零），则 {aₙ} 叫等比数列，q 为公比；通项公式 aₙ=a₁·qⁿ⁻¹ 及推广 aₙ=aₘ·qⁿ⁻ᵐ；若 a,G,b 成等比（ab>0），则 G²=ab，G=±√(ab) 叫 a 与 b 的等比中项",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过实例，理解等比数列的概念和通项公式的意义",
+      "prereqs": [
+        "kp_h12_seq_concept",
+        "kp_power_rules"
+      ]
+    },
+    {
+      "id": "kp_h12_geo_judge",
+      "name": "等比数列的判定与证明",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "判定与证明 {aₙ} 为等比数列的方法：定义法（aₙ₊₁/aₙ 等于同一非零常数）、等比中项法（aₙ₊₁²=aₙ·aₙ₊₂ 且各项非零，对一切 n∈N* 成立）；注意各项不为零、q≠0 的前提与 q=1 的特例辨析",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过实例，理解等比数列的概念和通项公式的意义（会用定义法与中项法判定等比数列）",
+      "prereqs": [
+        "kp_h12_geo_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_geo_props",
+      "name": "等比数列的性质",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "若 m+n=p+q（m,n,p,q∈N*），则 aₘ·aₙ=aₚ·a_q；下标成等差的子列 aₖ,aₖ₊ₘ,aₖ₊₂ₘ,… 仍成等比数列，公比为 qᵐ；q>0 时 aₙ=(a₁/q)·qⁿ 的图象是指数型曲线上孤立的点，体会等比数列与指数函数的关系",
+      "standard_ref": "2017课标（2020修订）选择性必修：理解等比数列的概念和通项公式，掌握等比数列的变化规律，体会等比数列与指数函数的关系",
+      "prereqs": [
+        "kp_h12_geo_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_geo_sum",
+      "name": "等比数列的前 n 项和",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "q=1 时 Sₙ=na₁；q≠1 时用错位相减法得 Sₙ=a₁(1−qⁿ)/(1−q)=(a₁−aₙq)/(1−q)；求和必须先对 q 是否等于 1 分类讨论，并理解通项公式与前 n 项和公式的关系",
+      "standard_ref": "2017课标（2020修订）选择性必修：探索并掌握等比数列的前 n 项和公式，理解等比数列的通项公式和前 n 项和公式的关系",
+      "prereqs": [
+        "kp_h12_geo_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_geo_apply",
+      "name": "等比数列的实际应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "平均增长率（a(1+p)ⁿ 型）、复利计息、细胞分裂、信息传播等实际问题抽象为等比数列模型，求某项或前 n 项和，并对结果作实际意义解释",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用等差数列、等比数列的知识解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_geo_sum"
+      ]
+    },
+    {
+      "id": "kp_h12_seq_sum_methods",
+      "name": "数列求和的常用方法",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "数列",
+      "description": "在公式法（等差、等比求和公式）之外：分组转化求和（aₙ=bₙ+cₙ 时分别求和相加）、裂项相消法（如 1/[n(n+1)]=1/n−1/(n+1)，求和后剩首尾若干项）、错位相减法（aₙ 为\"等差×等比\"型时两边乘公比相减化为等比求和）",
+      "standard_ref": "2017课标（2020修订）选择性必修：掌握等差数列、等比数列的前 n 项和公式（学业要求延伸：能求数列的前 n 项和，会用分组、裂项相消、错位相减等方法）",
+      "prereqs": [
+        "kp_h12_arith_sum",
+        "kp_h12_geo_sum"
+      ]
+    },
+    {
+      "id": "kp_h12_avg_change",
+      "name": "平均变化率与瞬时变化率",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "函数 y=f(x) 在 [x₁,x₂] 上的平均变化率为 Δy/Δx=[f(x₂)−f(x₁)]/(x₂−x₁)（如平均速度、膨胀率）；当 Δx→0 时平均变化率无限趋近于一个定值，即瞬时变化率（如瞬时速度），经历由平均到瞬时的极限过程",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过丰富的实例，经历由平均变化率到瞬时变化率刻画现实问题的过程，体会导数的思想，理解导数的含义",
+      "prereqs": [
+        "kp_function_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_concept",
+      "name": "导数的概念与定义求导",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "f(x) 在 x=x₀ 处的导数 f′(x₀)=lim(Δx→0) [f(x₀+Δx)−f(x₀)]/Δx，即瞬时变化率；会由定义求 y=c、y=x、y=x²、y=x³、y=1/x、y=√x 的导数；当 x 在区间内变化时，f′(x) 是 x 的函数，称为导函数",
+      "standard_ref": "2017课标（2020修订）选择性必修：经历由平均变化率到瞬时变化率的过程，理解导数的含义；能根据导数的定义求函数 y=c，y=x，y=x²，y=x³，y=1/x，y=√x 的导数",
+      "prereqs": [
+        "kp_h12_avg_change"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_geo",
+      "name": "导数的几何意义",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "f′(x₀) 是曲线 y=f(x) 在点 (x₀, f(x₀)) 处切线的斜率，即割线斜率当 Δx→0 时的极限位置（切线）；体会以直代曲的思想，能由函数图象估计切线斜率、由导数符号判断曲线升降",
+      "standard_ref": "2017课标（2020修订）选择性必修：能用函数图象直观地说明导数的几何意义（切线的斜率）",
+      "prereqs": [
+        "kp_h12_deriv_concept",
+        "kp_linear_graph"
+      ]
+    },
+    {
+      "id": "kp_h12_tangent",
+      "name": "利用导数求曲线的切线",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "曲线 y=f(x) 在点 (x₀, f(x₀)) 处的切线方程为 y−f(x₀)=f′(x₀)(x−x₀)；求\"过某点（该点不一定在曲线上）\"的切线时，需设切点 (x₀, f(x₀))，由 f′(x₀) 等于所连直线的斜率及切点在曲线上联立解出 x₀，区分\"在某点处\"与\"过某点\"两类切线问题",
+      "standard_ref": "2017课标（2020修订）选择性必修：能用函数图象直观地理解导数的几何意义，能根据导数的几何意义求曲线上某点处的切线方程",
+      "prereqs": [
+        "kp_h12_deriv_geo",
+        "kp_h12_basic_derivs"
+      ]
+    },
+    {
+      "id": "kp_h12_basic_derivs",
+      "name": "基本初等函数的导数公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "c′=0；(xⁿ)′=n·xⁿ⁻¹；(sin x)′=cos x；(cos x)′=−sin x；(aˣ)′=aˣ·ln a；(eˣ)′=eˣ；(logₐx)′=1/(x·ln a)；(ln x)′=1/x；能利用公式直接写出基本初等函数的导数",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用给出的基本初等函数的导数公式求简单函数的导数",
+      "prereqs": [
+        "kp_h12_deriv_concept",
+        "kp_quadratic_radical"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_rules",
+      "name": "导数的四则运算法则",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "[f(x)±g(x)]′=f′(x)±g′(x)；[c·f(x)]′=c·f′(x)；[f(x)·g(x)]′=f′(x)g(x)+f(x)g′(x)；[f(x)/g(x)]′=[f′(x)g(x)−f(x)g′(x)]/g²(x)（g(x)≠0）；能结合基本公式用法则求简单函数的导数",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用给出的基本初等函数的导数公式和导数的四则运算法则求简单函数的导数",
+      "prereqs": [
+        "kp_h12_basic_derivs"
+      ]
+    },
+    {
+      "id": "kp_h12_composite_deriv",
+      "name": "简单复合函数的导数",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "由 y=f(u)、u=g(x) 复合得 y=f(g(x))，其导数为 y′ₓ=f′(u)·g′(x)（链式法则）；会求形如 f(ax+b) 的简单复合函数的导数，如 (sin 2x)′=2cos 2x、(e³ˣ⁺¹)′=3e³ˣ⁺¹",
+      "standard_ref": "2017课标（2020修订）选择性必修：能求简单的复合函数（仅限于形如 f(ax+b)）的导数",
+      "prereqs": [
+        "kp_h12_deriv_rules"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_mono",
+      "name": "导数与函数的单调性",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "在区间 I 上 f′(x)>0 时 f(x) 单调递增，f′(x)<0 时单调递减；求单调区间的一般步骤：确定定义域→求 f′(x)→解不等式 f′(x)>0（或 <0）；会求不超过三次的多项式函数的单调区间，并能由单调性比较大小、画函数草图",
+      "standard_ref": "2017课标（2020修订）选择性必修：结合实例，借助几何直观探索并了解函数的单调性与导数的关系；能利用导数研究函数的单调性，会求不超过三次的多项式函数的单调区间",
+      "prereqs": [
+        "kp_h12_deriv_rules",
+        "kp_ineq_solve",
+        "kp_qf_graph"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_extreme",
+      "name": "函数的极值与导数",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "若 f′(x₀)=0 且 x₀ 附近左侧 f′(x)>0、右侧 f′(x)<0（由正变负），则 f(x₀) 为极大值；反之由负变正得极小值；f′(x₀)=0 是可导函数在 x₀ 处取得极值的必要条件而非充分条件（如 y=x³ 在 x=0 处导数为 0 但无极值）；会用列表法求不超过三次多项式函数的极大值、极小值",
+      "standard_ref": "2017课标（2020修订）选择性必修：结合函数的图象，了解函数在某点取得极值的必要条件和充分条件；会用导数求函数的极大值与极小值，其中多项式函数不超过三次",
+      "prereqs": [
+        "kp_h12_deriv_mono"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_minmax",
+      "name": "函数的最大（小）值",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "闭区间 [a,b] 上函数的最大（小）值在极值点或区间端点处取得；求法：求 f′(x) 与极值→计算各极值及端点值 f(a)、f(b)→比较得出最大（小）值；开区间或无穷区间需结合单调性与图象变化趋势判断最值是否存在",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用导数求闭区间上不超过三次的多项式函数的最大值与最小值（学业要求：能利用导数研究函数的最值）",
+      "prereqs": [
+        "kp_h12_deriv_extreme"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_optimize",
+      "name": "导数在实际优化问题中的应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "利润最大化、用料最省、容积最大、效率最高等优化问题：设变量、建立目标函数→确定自变量的实际定义域→求导数、求最值→按实际意义检验并作答",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用导数解决实际问题（利润最大化、用料最省、效率最高等），体会导数在解决实际问题中的作用",
+      "prereqs": [
+        "kp_h12_deriv_minmax"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_param",
+      "name": "含参数函数的单调性与极值讨论",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "f(x) 含参数 a 时，按 f′(x) 的符号对参数取值分类讨论，确定每种范围内函数的单调区间、极值点与极值；掌握\"定义域优先、分类标准不重不漏、结论按参数范围分述\"的规范表述",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用导数研究函数的单调性、极值（学业要求延伸：含参数时需对参数取值范围分类讨论）",
+      "prereqs": [
+        "kp_h12_deriv_mono",
+        "kp_h12_deriv_extreme"
+      ]
+    },
+    {
+      "id": "kp_h12_deriv_zero_ineq",
+      "name": "导数与函数零点、不等式恒成立",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "一元函数的导数及其应用",
+      "description": "利用导数研究函数零点个数：分析单调区间与极值，结合图象趋势判断 f(x)=0（或与定值交点）解的个数；不等式恒成立（能成立）求参数范围时转化为函数最值问题（如 f(x)>m 恒成立 ⇔ f 的最小值大于 m）；构造函数法证明不等式（证 f(x)>g(x) 转化为证 h(x)=f(x)−g(x) 的最小值大于 0）",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用导数研究函数的单调性、极值与最值（学业要求延伸：据此判断函数零点个数、解决不等式恒成立与参数范围问题）",
+      "prereqs": [
+        "kp_h12_deriv_minmax",
+        "kp_h12_deriv_param"
+      ]
+    },
+    {
+      "id": "kp_h12_counting_principles",
+      "name": "分类加法计数原理与分步乘法计数原理",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "完成一件事有 n 类不同方案（任选一类即可完成），各类分别有 m₁,…,mₙ 种不同方法，则共有 N=m₁+m₂+…+mₙ 种方法；完成一件事需 n 个步骤（依次完成所有步骤才算完成），各步分别有 m₁,…,mₙ 种方法，则共有 N=m₁×m₂×…×mₙ 种方法；核心区别：分类相加（类间互斥、不重不漏），分步相乘（步间依次、缺一不可）",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解分类加法计数原理、分步乘法计数原理及其意义，会用它们解决一些简单的实际问题",
+      "prereqs": [
+        "kp_p3_combination",
+        "kp_re_list"
+      ]
+    },
+    {
+      "id": "kp_h12_counting_apply",
+      "name": "计数原理的综合应用（涂色、数字与排队问题）",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "运用两个计数原理解决涂色（区域地图着色）、数字组成（含 0 与不含 0、奇偶性限制）、排队选派与几何计数等实际问题；复杂问题通常先分类再分步，或正难则反用间接法（从全部方法数中减去不满足限制的方法数）",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用分类加法计数原理、分步乘法计数原理解决一些简单的实际问题",
+      "prereqs": [
+        "kp_h12_counting_principles"
+      ]
+    },
+    {
+      "id": "kp_h12_permutation",
+      "name": "排列与排列数公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "从 n 个不同元素中取出 m（m≤n）个元素，按照一定的顺序排成一列，叫做从 n 个不同元素中取出 m 个元素的一个排列（与顺序有关）；排列数 A(n,m)=n(n−1)(n−2)…(n−m+1)=n!/(n−m)!，全排列 A(n,n)=n!；排列数公式用分步乘法计数原理推导",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，理解排列、组合的概念；能利用计数原理推导排列数公式、组合数公式，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_counting_principles"
+      ]
+    },
+    {
+      "id": "kp_h12_combination",
+      "name": "组合与组合数公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "从 n 个不同元素中取出 m（m≤n）个元素作为一组（不考虑顺序），叫做组合（与顺序无关）；组合数 C(n,m)=A(n,m)/A(m,m)=n!/(m!(n−m)!)，规定 C(n,0)=1；排列与组合的区别是是否与顺序有关（先选后排：A(n,m)=C(n,m)×A(m,m)）",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，理解排列、组合的概念；能利用计数原理推导排列数公式、组合数公式，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_counting_principles",
+        "kp_h12_permutation"
+      ]
+    },
+    {
+      "id": "kp_h12_combination_properties",
+      "name": "组合数的性质与杨辉三角",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "性质1（对称性）C(n,m)=C(n,n−m)；性质2（递推性）C(n+1,m)=C(n,m)+C(n,m−1)；杨辉三角第 n 行恰为 C(n,0),C(n,1),…,C(n,n)，两条性质在表中直观体现；用于组合数的化简计算与简单组合恒等式的证明",
+      "standard_ref": "2017课标（2020修订）选择性必修：能利用计数原理推导排列数公式、组合数公式，并能解决简单的实际问题（组合数两条性质为公式的推论，人教A版教材6.2.3节）",
+      "prereqs": [
+        "kp_h12_combination"
+      ]
+    },
+    {
+      "id": "kp_h12_perm_comb_apply",
+      "name": "排列与组合的综合应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "有限制条件的排列组合问题的常用方法：特殊元素（特殊位置）优先安排、相邻问题捆绑法（整体当作一个元素再考虑内部排序）、不相邻问题插空法、定序问题先全排再除以定序元素的全排列数、『至多至少』类问题正难则反的间接法；均匀分组要除以组数的全排列数（消除组间顺序），分配问题先分组后分配",
+      "standard_ref": "2017课标（2020修订）选择性必修：能用排列、组合的知识解决一些简单的实际问题",
+      "prereqs": [
+        "kp_h12_permutation",
+        "kp_h12_combination",
+        "kp_h12_combination_properties"
+      ]
+    },
+    {
+      "id": "kp_h12_binomial_theorem",
+      "name": "二项式定理与通项公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "(a+b)ⁿ=C(n,0)aⁿ+C(n,1)aⁿ⁻¹b+…+C(n,k)aⁿ⁻ᵏbᵏ+…+C(n,n)bⁿ（n∈N*）；通项公式 T(k+1)=C(n,k)aⁿ⁻ᵏbᵏ（k=0,1,…,n）；区分『二项式系数 C(n,k)』与『该项的系数』；用计数原理（第 k+1 项的 bᵏ 来自从 n 个因式中任取 k 个取 b）证明定理",
+      "standard_ref": "2017课标（2020修订）选择性必修：能用计数原理证明二项式定理；会用二项式定理解决与二项展开式有关的简单问题",
+      "prereqs": [
+        "kp_h12_combination",
+        "kp_h12_combination_properties",
+        "kp_poly_multiply"
+      ]
+    },
+    {
+      "id": "kp_h12_binomial_coeff_props",
+      "name": "二项式系数的性质与赋值法",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "展开式共 n+1 项；对称性：与首末两端等距离的两项二项式系数相等，C(n,k)=C(n,n−k)；增减性与最大值：n 为偶数时中间一项最大，n 为奇数时中间两项相等且最大；二项式系数之和 C(n,0)+C(n,1)+…+C(n,n)=2ⁿ；用赋值法（在展开式中令 a=b=1 或令 x=1、x=−1 等）求各项系数之和、奇（偶）次项系数之和",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用二项式定理解决与二项展开式有关的简单问题（二项式系数性质，人教A版教材6.3.2节）",
+      "prereqs": [
+        "kp_h12_binomial_theorem"
+      ]
+    },
+    {
+      "id": "kp_h12_binomial_apply",
+      "name": "二项式定理的应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第六章 计数原理",
+      "description": "求展开式中的特定项（令通项中指数满足条件解出 k，如常数项、有理项、指定 x 幂的项）与系数最大项；近似计算（如用 (1+x)ⁿ 的展开式求 0.99⁶ 的近似值）；整除与余数问题（把底数凑成二项式再展开分析余项）；构造二项式或用赋值、求导思想证明简单组合恒等式（如 Σk·C(n,k)=n·2ⁿ⁻¹）",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用二项式定理解决与二项展开式有关的简单问题",
+      "prereqs": [
+        "kp_h12_binomial_theorem",
+        "kp_h12_binomial_coeff_props"
+      ]
+    },
+    {
+      "id": "kp_h12_conditional_prob",
+      "name": "条件概率",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "设 P(A)>0，在事件 A 发生的条件下事件 B 发生的条件概率 P(B|A)=P(AB)/P(A)；古典概型下可理解为在缩小的样本空间 A 中事件 B 的概率，即 P(B|A)=n(AB)/n(A)；乘法公式 P(AB)=P(A)P(B|A)=P(B)P(A|B)；条件概率仍是概率，满足概率的加法公式等基本性质",
+      "standard_ref": "2017课标（2020修订）选择性必修：结合古典概型，了解条件概率，能计算简单随机事件的条件概率",
+      "prereqs": [
+        "kp_re_concept",
+        "kp_re_list"
+      ]
+    },
+    {
+      "id": "kp_h12_event_independence",
+      "name": "事件的相互独立性（条件概率刻画）",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "若 P(AB)=P(A)P(B)，则称事件 A 与 B 相互独立，等价于 P(B|A)=P(B)（或 P(A|B)=P(A)），即一个事件发生不影响另一个事件发生的概率；与互斥的区别：互斥关注能否同时发生（互斥时 P(AB)=0），独立关注是否相互影响；若 A 与 B 相互独立，则 A 与 B̄、Ā 与 B、Ā 与 B̄ 也相互独立",
+      "standard_ref": "2017课标（2020修订）选择性必修：结合古典概型，了解条件概率与两个事件相互独立的概念，理解相互独立事件的概率满足 P(AB)=P(A)P(B)",
+      "prereqs": [
+        "kp_h12_conditional_prob",
+        "kp_re_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_total_probability",
+      "name": "全概率公式",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "若 A₁,A₂,…,Aₙ 两两互斥、P(Aᵢ)>0 且 A₁∪A₂∪…∪Aₙ=Ω（样本空间的一个分割），则对任意事件 B 有 P(B)=ΣP(Aᵢ)P(B|Aᵢ)；『由因溯果』：把结果 B 的概率按各种『原因』分解后求和；贝叶斯公式 P(Aᵢ|B)=P(Aᵢ)P(B|Aᵢ)/P(B)（由果溯因）为课标选学内容（带*）",
+      "standard_ref": "2017课标（2020修订）选择性必修：结合古典概型，会用全概率公式计算概率（*贝叶斯公式为选学内容）",
+      "prereqs": [
+        "kp_h12_conditional_prob"
+      ]
+    },
+    {
+      "id": "kp_h12_random_variable_concept",
+      "name": "随机变量与离散型随机变量的概念",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "随机变量把随机试验的每一个结果都唯一对应到一个实数（常记为 X、Y），随试验结果变化而变化；所有可能取值为有限个或可以一一列举出来的随机变量称为离散型随机变量；会用随机变量的取值或取值范围表示事件（如 {X=k}、{X≥3}）",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解离散型随机变量的概念",
+      "prereqs": [
+        "kp_re_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_rv_distribution",
+      "name": "离散型随机变量的分布列与两点分布",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "设离散型随机变量 X 的可能取值为 x₁,x₂,…，称 P(X=xₖ)=pₖ（k=1,2,…）为 X 的分布列，两条性质：pₖ≥0 且 p₁+p₂+…=1；分布列常用表格表示；两点分布：X 只取 1、0 两个值，P(X=1)=p、P(X=0)=1−p；求分布列的步骤是先确定 X 的全部取值，再求每个取值的概率，最后列表验证概率和为 1",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，理解离散型随机变量的分布列及其数字特征（均值、方差），并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_random_variable_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_rv_mean",
+      "name": "离散型随机变量的均值（数学期望）",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "E(X)=x₁p₁+x₂p₂+…（以对应概率为权的加权平均数），刻画 X 取值的平均水平，是一个常数；性质 E(aX+b)=aE(X)+b、E(X±Y)=E(X)±E(Y)；两点分布的均值 E(X)=p；求均值先求分布列",
+      "standard_ref": "2017课标（2020修订）选择性必修：理解离散型随机变量的均值（数学期望）这一数字特征，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_rv_distribution",
+        "kp_weighted_average"
+      ]
+    },
+    {
+      "id": "kp_h12_rv_variance",
+      "name": "离散型随机变量的方差与标准差",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "D(X)=(x₁−E(X))²p₁+(x₂−E(X))²p₂+…（可化为 D(X)=E(X²)−(E(X))²），刻画 X 的取值偏离均值的平均程度，D(X) 越大表明取值越分散（越不稳定）；标准差 σ(X)=√D(X)；性质 D(aX+b)=a²D(X)；两点分布的方差 D(X)=p(1−p)",
+      "standard_ref": "2017课标（2020修订）选择性必修：理解离散型随机变量的方差、标准差等数字特征，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_rv_mean",
+        "kp_variance"
+      ]
+    },
+    {
+      "id": "kp_h12_bernoulli_binomial",
+      "name": "n重伯努利试验与二项分布",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "n 重伯努利试验：在相同条件下独立重复做 n 次试验，每次试验只有『成功/失败』两种结果且每次成功的概率都为 p；设 n 次试验中成功的次数为 X，则 X 服从二项分布，记 X~B(n,p)，P(X=k)=C(n,k)pᵏ(1−p)ⁿ⁻ᵏ（k=0,1,…,n），由二项式定理知各概率之和为 1；E(X)=np，D(X)=np(1−p)；n=1 时即两点分布；建模关键：独立重复、每次成功概率相同、关心成功出现的次数",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解 n 重伯努利试验，理解二项分布及其数字特征，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_rv_distribution",
+        "kp_h12_event_independence",
+        "kp_h12_combination"
+      ]
+    },
+    {
+      "id": "kp_h12_hypergeometric",
+      "name": "超几何分布",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "总体共 N 件、其中 M 件具有特征 A，从中不放回地随机抽取 n 件，设抽到具有特征 A 的件数为 X，则 P(X=k)=C(M,k)C(N−M,n−k)/C(N,n)（k 使各组合数有意义）；均值 E(X)=nM/N；与二项分布的区别：二项分布对应有放回抽取（独立重复试验），超几何分布对应不放回抽取，当总体数量 N 远大于样本量 n 时可用二项分布近似",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解超几何分布及其均值，并能解决简单的实际问题",
+      "prereqs": [
+        "kp_h12_rv_distribution",
+        "kp_h12_rv_mean",
+        "kp_h12_combination"
+      ]
+    },
+    {
+      "id": "kp_h12_normal_dist",
+      "name": "正态分布的概念与正态曲线",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "连续型随机变量的取值充满某个区间，用概率密度曲线刻画：X 落在区间 [a,b] 内的概率等于密度曲线与直线 x=a、x=b 及 x 轴所围成曲边梯形的面积；若密度函数 f(x)=1/(√(2π)·σ)·e^(−(x−μ)²/(2σ²))（x∈R，σ>0），则称 X 服从正态分布，记 X~N(μ,σ²)；曲线关于直线 x=μ 对称、在 x=μ 处取得峰值 1/(√(2π)σ)；μ=E(X) 决定曲线位置，σ²=D(X) 衡量离散程度，σ 越小数据越集中（曲线越『瘦高』）；μ=0、σ=1 时为标准正态分布 N(0,1)",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，借助直观（如误差模型），了解正态分布的特征（对称性、集中与分散等），认识正态分布的均值、标准差",
+      "prereqs": [
+        "kp_h12_random_variable_concept",
+        "kp_h12_rv_mean",
+        "kp_data_histogram"
+      ]
+    },
+    {
+      "id": "kp_h12_normal_apply",
+      "name": "正态分布的概率计算与3σ原则",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第七章 随机变量及其分布",
+      "description": "由曲线关于 x=μ 对称得 P(X<μ)=P(X>μ)=0.5，且 P(X<μ−a)=P(X>μ+a)；非标准正态分布可经标准化 Z=(X−μ)/σ 化为 N(0,1)，再利用对称性或标准正态分布表求概率；3σ 原则：P(μ−σ<X<μ+σ)≈0.6827，P(μ−2σ<X<μ+2σ)≈0.9545，P(μ−3σ<X<μ+3σ)≈0.9973；用于质量控制等生产生活问题（小概率事件在一次试验中几乎不发生）",
+      "standard_ref": "2017课标（2020修订）选择性必修：认识正态分布的均值、标准差及其在生产与生活中的应用",
+      "prereqs": [
+        "kp_h12_normal_dist"
+      ]
+    },
+    {
+      "id": "kp_h12_correlation",
+      "name": "变量的相关关系与散点图",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "相关关系指一个变量的取值不能唯一确定另一变量的取值（区别于函数关系），但两变量的取值存在关联；成对数据 (xᵢ,yᵢ) 用散点图直观表示：点整体呈上升趋势为正相关、呈下降趋势为负相关；散点大致分布在一条直线附近称为线性相关，呈曲线形态为非线性相关；相关关系不等于因果关系",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解两个随机变量的相关关系，能用散点图判断两个随机变量是否正相关、负相关",
+      "prereqs": [
+        "kp_function_concept",
+        "kp_data_charts"
+      ]
+    },
+    {
+      "id": "kp_h12_corr_coefficient",
+      "name": "样本相关系数",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "样本相关系数 r=Σ(xᵢ−x̄)(yᵢ−ȳ)/√(Σ(xᵢ−x̄)²·Σ(yᵢ−ȳ)²)；性质：|r|≤1，r>0 表明成对样本数据正相关，r<0 表明负相关；|r| 越接近 1 两变量线性相关程度越强，越接近 0 越弱；r=1（或 r=−1）时所有样本点都在一条直线上；相关系数只刻画线性相关程度",
+      "standard_ref": "2017课标（2020修订）选择性必修：了解样本相关系数的统计含义，理解用样本相关系数刻画两个随机变量线性相关性的方法",
+      "prereqs": [
+        "kp_h12_correlation",
+        "kp_variance"
+      ]
+    },
+    {
+      "id": "kp_h12_linear_regression",
+      "name": "一元线性回归模型与最小二乘法",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "一元线性回归模型 y=β₀+β₁x+e（β₀ 为截距、β₁ 为斜率，e 为随机误差）；最小二乘法：选取 b̂、â 使残差平方和 Σ(yᵢ−b̂xᵢ−â)² 最小，得经验回归方程 ŷ=b̂x+â，其中 b̂=Σ(xᵢ−x̄)(yᵢ−ȳ)/Σ(xᵢ−x̄)²，â=ȳ−b̂x̄；经验回归直线必过样本中心 (x̄,ȳ)；由经验回归方程在 x=x₀ 处求 ŷ₀ 作预测",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解一元线性回归模型的含义，会用最小二乘法估计一元线性回归模型中的参数，能根据得到的回归直线方程对随机变量进行预测",
+      "prereqs": [
+        "kp_h12_corr_coefficient",
+        "kp_linear_graph"
+      ]
+    },
+    {
+      "id": "kp_h12_residual_r2",
+      "name": "残差分析与决定系数R²",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "残差 êᵢ=yᵢ−ŷᵢ（观测值减经验回归方程的预测值）；残差点比较均匀地分布在以横轴为对称轴的水平带状区域内说明模型选择合适，残差图用于诊断模型；决定系数 R²=1−Σ(yᵢ−ŷᵢ)²/Σ(yᵢ−ȳ)²，R² 越接近 1（残差平方和越小，总偏差平方和中被回归方程解释的比例越大）拟合效果越好；比较不同回归模型时常用残差图与 R²",
+      "standard_ref": "2017课标（2020修订）选择性必修：会用最小二乘法估计一元线性回归模型中的参数；通过残差与决定系数 R² 评价回归模型的拟合效果（人教A版教材8.2.2节）",
+      "prereqs": [
+        "kp_h12_linear_regression"
+      ]
+    },
+    {
+      "id": "kp_h12_nonlinear_regression",
+      "name": "可线性化的非线性回归模型（化直法）",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "散点呈非线性相关时，通过变量代换把非线性模型化为一元线性回归模型（化直）求解后再回代原变量：二次函数型 y=bt+a（令 t=x²，即一元二次型 y=bx²+a）、指数型 y=ae^(bx)（令 u=ln y，得 u=ln a+bx）、对数型 y=a+b lnx（令 t=lnx）、幂函数型 y=a·xᵇ（令 u=ln y、t=lnx，得 u=ln a+b·t）",
+      "standard_ref": "2017课标（2020修订）选择性必修：能根据实际问题选择合适的回归模型——对可线性化的非线性模型先变量代换化直，再用一元线性回归方法建模并预测（人教A版教材8.2节化直思想）",
+      "prereqs": [
+        "kp_h12_linear_regression",
+        "kp_power"
+      ]
+    },
+    {
+      "id": "kp_h12_contingency_table",
+      "name": "分类变量与2×2列联表",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "分类变量（属性变量）的『取值』是类别（如是否吸烟、是否患病）；2×2 列联表按两个分类变量交叉统计频数（四个格子依次记 a、b、c、d）；比较 a/(a+b) 与 c/(c+d)（或画等高堆积条形图）可直观判断两个分类变量是否有关联；频率差异也可能源于抽样的随机性，需要独立性检验作统计推断",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解 2×2 列联表的含义，能由列联表中的频率差异（或等高堆积条形图）直观判断两个分类变量是否有关联（人教A版教材8.3.1节）",
+      "prereqs": [
+        "kp_data_charts",
+        "kp_re_concept"
+      ]
+    },
+    {
+      "id": "kp_h12_chi2_test",
+      "name": "独立性检验的基本思想与应用",
+      "subject": "math",
+      "grade": 12,
+      "cluster": "选择性必修第三册·第八章 成对数据的统计分析",
+      "description": "零假设 H₀：两个分类变量无关联；构造随机变量 χ²=n(ad−bc)²/[(a+b)(c+d)(a+c)(b+d)]（n=a+b+c+d）；依据小概率值 α 查临界值 xα：常用 P(χ²≥3.841)≈0.05、P(χ²≥6.635)≈0.01；若 χ²≥xα 就认为 H₀ 不成立，即有 (1−α) 的把握（如 95%、99%）认为两个分类变量有关联，否则没有足够证据推断有关联；结论是统计推断，不表示百分之百正确，表述时须指明把握程度",
+      "standard_ref": "2017课标（2020修订）选择性必修：通过具体实例，了解独立性检验（只要求 2×2 列联表）的基本思想、方法及初步应用",
+      "prereqs": [
+        "kp_h12_contingency_table",
+        "kp_re_concept"
+      ]
+    },
+    {
       "id": "kp_p2_addsub_written",
       "name": "100以内的加减法（笔算）",
       "subject": "math",
       "grade": 2,
       "cluster": "数与运算",
       "description": "列竖式计算100以内加减法，掌握进位加与退位减",
-      "standard_ref": "2022课标第一学段：能计算100以内数的加减法，探索笔算的算理与算法，能进行简单的整数四则运算",
+      "standard_ref": "2022课标第一学段：能计算100以内数的加减法，能列竖式笔算两位数加减两位数（含进位加与退位减），理解相同数位对齐的算理，能进行简单的整数四则运算",
       "prereqs": [
         "kp_p1_addsub100",
         "kp_p1_borrow20"
@@ -311,7 +2324,7 @@
       "grade": 2,
       "cluster": "图形与几何",
       "description": "感知轴对称、平移、旋转等现象",
-      "standard_ref": "2022课标第一学段：通过观察和操作，感知平移、旋转、轴对称等图形运动的现象",
+      "standard_ref": "2022课标第一学段：通过观察和操作，感知平移现象、旋转现象与轴对称现象，结合实例认识图形平移与图形旋转，知道沿一条直线对折后两部分能完全重合的图形是轴对称图形，这条直线就是对称轴，能在方格纸上画出简单图形平移后的图形",
       "prereqs": [
         "kp_p1_2dshapes"
       ]
@@ -350,6 +2363,19 @@
       "standard_ref": "2022课标第一学段：在解决简单问题的过程中，尝试进行简单的分析和推理，感受推理的作用"
     },
     {
+      "id": "kp_p2_muldiv_rel",
+      "name": "乘除法的数量关系",
+      "subject": "math",
+      "grade": 2,
+      "cluster": "数量关系",
+      "description": "知道乘法算式中因数与积、除法算式中被除数、除数与商各部分的关系，体会乘除法之间的互逆关系，能利用每份数、份数与总数量之间的关系解决简单的乘除法实际问题",
+      "standard_ref": "2022课标第一学段：在具体情境中理解乘除关系，知道因数×因数=积、被除数÷除数=商，体会乘除法之间的互逆关系，能利用每份数、份数与总数的关系解决简单的乘除应用问题",
+      "prereqs": [
+        "kp_p2_mul_table",
+        "kp_p2_div_quotient"
+      ]
+    },
+    {
       "id": "kp_p3_time_read",
       "name": "时分秒与经过时间",
       "subject": "math",
@@ -383,7 +2409,7 @@
       "grade": 3,
       "cluster": "数量关系",
       "description": "理解倍的意义，会解决求几倍、是几倍的实际问题",
-      "standard_ref": "2022课标第二学段·数量关系：在具体情境中理解“倍”的意义，能解决求一个数是另一个数的几倍、一个数的几倍是多少的简单实际问题"
+      "standard_ref": "2022课标第二学段·数量关系：倍的认识——在具体情境中理解“倍”的意义，体会倍与乘除的联系，能解决求一个数是另一个数的几倍、一个数的几倍是多少的简单实际问题"
     },
     {
       "id": "kp_p3_mult_1digit",
@@ -392,7 +2418,7 @@
       "grade": 3,
       "cluster": "数与运算",
       "description": "能口算整十整百数乘一位数，掌握两三位数乘一位数笔算",
-      "standard_ref": "2022课标第二学段·数与运算：探索并掌握两、三位数乘一位数的乘法，理解算理，形成运算能力"
+      "standard_ref": "2022课标第二学段·数与运算：探索并掌握多位数乘一位数的乘法，能口算整十、整百数乘一位数，掌握两、三位数乘一位数的笔算与进位乘法，理解算理，形成运算能力"
     },
     {
       "id": "kp_p3_perimeter",
@@ -413,7 +2439,7 @@
       "grade": 3,
       "cluster": "数与运算",
       "description": "认识几分之一和几分之几，会比较大小，会算简单同分母分数加减",
-      "standard_ref": "2022课标第二学段·数与运算：结合具体情境初步认识分数，能借助直观比较简单分数的大小，会进行简单的同分母分数加减运算"
+      "standard_ref": "2022课标第二学段·数与运算：结合具体情境初步认识分数，能借助直观图形表示几分之一和几分之几，能认、读、写简单的分数，直观比较简单分数的大小，会进行简单的同分母分数加减运算"
     },
     {
       "id": "kp_p3_div_1digit",
@@ -422,7 +2448,7 @@
       "grade": 3,
       "cluster": "数与运算",
       "description": "掌握两三位数除以一位数的口算笔算，会用乘法验算",
-      "standard_ref": "2022课标第二学段·数与运算：探索并掌握两、三位数除以一位数的除法，理解算理，会用乘法验算除法",
+      "standard_ref": "2022课标第二学段·数与运算：探索并掌握除数是一位数的除法，掌握两、三位数除以一位数的除法笔算，理解商是几位数的判断方法，会用乘法进行除法验算",
       "prereqs": [
         "kp_p3_mult_1digit",
         "kp_p3_addsub_3digit"
@@ -471,7 +2497,7 @@
       "grade": 3,
       "cluster": "数与运算",
       "description": "结合价格情境认识小数，会读写并计算一位小数加减法",
-      "standard_ref": "2022课标第二学段·数与运算：结合具体情境初步认识小数，能认、读、写简单的小数，会计算简单的小数加减法",
+      "standard_ref": "2022课标第二学段·数与运算：结合价格等具体情境初步认识小数，能认、读、写一位小数，理解以元为单位的小数含义，能借助直观比较一位小数的大小，会计算简单的小数加减法",
       "prereqs": [
         "kp_p3_fraction_intro"
       ]
@@ -495,13 +2521,25 @@
       "standard_ref": "2022课标第二学段·综合与实践：在解决搭配问题的活动中，学会按一定顺序思考，能有条理地表达解决问题的过程"
     },
     {
+      "id": "kp_p3_ton_measure",
+      "name": "吨的认识",
+      "subject": "math",
+      "grade": 3,
+      "cluster": "数与运算",
+      "description": "认识质量单位吨，知道1吨=1000千克，能结合大象、货车载重等生活实例感知1吨有多重，能进行吨与千克的简单换算",
+      "standard_ref": "2022课标第二学段·数与运算：认识质量单位吨，知道1吨=1000千克，能结合载重等生活实例感知1吨有多重，能进行吨与千克的简单换算",
+      "prereqs": [
+        "kp_p2_mass"
+      ]
+    },
+    {
       "id": "kp_p4_bignum_read",
       "name": "大数的认识",
       "subject": "math",
       "grade": 4,
       "cluster": "数与运算",
       "description": "认识万级亿级的数，能读写含两级的数并比较大数",
-      "standard_ref": "2022课标第二学段·数与运算：在具体情境中认识万以上的数，能正确读、写含两级的数，会用“万”“亿”作单位表示大数"
+      "standard_ref": "2022课标第二学段·数与运算：结合实例进行大数的认识，能正确读写大数，认识万级与亿级，理解十进制计数法，会比较万以上数的大小"
     },
     {
       "id": "kp_p4_hectare",
@@ -510,7 +2548,7 @@
       "grade": 4,
       "cluster": "图形与几何",
       "description": "认识公顷和平方千米，会简单换算，发展量感",
-      "standard_ref": "2022课标第二学段·图形与几何：认识公顷和平方千米，知道它们与平方米之间的进率，能进行简单的换算",
+      "standard_ref": "2022课标第二学段·图形与几何：认识公顷与平方千米，知道它们与平方米之间的进率，能进行简单的面积换算",
       "prereqs": [
         "kp_p3_area"
       ]
@@ -568,7 +2606,7 @@
       "grade": 4,
       "cluster": "统计与概率",
       "description": "认识条形统计图，知道1格可表示多个单位并会分析",
-      "standard_ref": "2022课标第二学段·统计与概率：认识条形统计图，知道1格可以表示1个或多个单位，能根据数据绘制条形统计图并进行简单分析",
+      "standard_ref": "2022课标第二学段·统计与概率：经历数据收集与整理的过程，会把结果填入统计表，认识条形统计图，知道1格可以表示1个或多个单位，能根据数据绘制条形统计图并进行简单分析",
       "prereqs": [
         "kp_p3_stats_table"
       ]
@@ -659,6 +2697,30 @@
       ]
     },
     {
+      "id": "kp_p4_bignum_rewrite",
+      "name": "大数的改写与近似数",
+      "subject": "math",
+      "grade": 4,
+      "cluster": "数与运算",
+      "description": "会把整万、整亿的数改写成用“万”“亿”作单位的数，会用四舍五入法省略万位、亿位后面的尾数求近似数",
+      "standard_ref": "2022课标第二学段·数与运算：会把较大的数改写成用“万”“亿”作单位的数，了解近似数与四舍五入法，能按要求求大数的近似数",
+      "prereqs": [
+        "kp_p4_bignum_read"
+      ]
+    },
+    {
+      "id": "kp_p4_optimize",
+      "name": "数学广角——优化",
+      "subject": "math",
+      "grade": 4,
+      "cluster": "综合与实践",
+      "description": "在沏茶、烙饼等情境中合理安排工序，通过方案对比寻找最优方案，体会优化思想",
+      "standard_ref": "2022课标第二学段·综合与实践：在沏茶、烙饼等生活情境中体会优化思想，通过方案对比寻找最优方案，解决省时问题，初步形成统筹安排的意识",
+      "prereqs": [
+        "kp_p4_arith_order"
+      ]
+    },
+    {
       "id": "kp_p5_decimal_meaning",
       "name": "小数的意义与性质",
       "subject": "math",
@@ -733,7 +2795,7 @@
       "grade": 5,
       "cluster": "数与运算",
       "description": "理解分数意义与分数单位，掌握分数基本性质，会约分通分，能进行分数与小数互化。",
-      "standard_ref": "2022课标第三学段：理解分数的意义，掌握分数的基本性质，能进行约分、通分，会互化分数与小数。",
+      "standard_ref": "2022课标第三学段：理解分数的意义，掌握分数的基本性质，能进行约分与通分，会互化分数与小数。",
       "prereqs": [
         "kp_p5_factor_multiple"
       ]
@@ -745,7 +2807,7 @@
       "grade": 5,
       "cluster": "数与运算",
       "description": "掌握同分母、异分母分数加减法计算方法，理解通分原理，计算结果能约成最简分数。",
-      "standard_ref": "2022课标第三学段：理解分数加减法的算理，掌握计算方法，能正确计算同分母、异分母分数加减法。",
+      "standard_ref": "2022课标第三学段：理解分数加减法的算理，掌握同分母加减与异分母加减的计算方法，计算结果能约成最简分数。",
       "prereqs": [
         "kp_p5_fraction_meaning"
       ]
@@ -757,7 +2819,7 @@
       "grade": 5,
       "cluster": "图形与几何",
       "description": "掌握平行四边形、三角形、梯形面积公式，理解转化推导过程，能计算简单组合图形的面积。",
-      "standard_ref": "2022课标第三学段：探索并掌握平行四边形、三角形、梯形的面积公式，能计算组合图形的面积。"
+      "standard_ref": "2022课标第三学段：以长方形面积、正方形面积为基础，经历面积公式推导，掌握平行四边形面积、三角形面积、梯形面积公式，能计算组合图形的面积。"
     },
     {
       "id": "kp_p5_cuboid_volume",
@@ -784,7 +2846,7 @@
       "grade": 5,
       "cluster": "图形与几何",
       "description": "掌握平移、旋转、轴对称的基本特征，能按要求在方格纸上作图，补全简单的轴对称图形。",
-      "standard_ref": "2022课标第三学段：理解平移、旋转、轴对称的特征，能在方格纸上画出平移、旋转后的图形，补全轴对称图形。"
+      "standard_ref": "2022课标第三学段：认识图形的平移、图形的旋转与轴对称，理解轴对称特征并会画对称轴，能在方格纸上完成运动作图，补全轴对称图形。"
     },
     {
       "id": "kp_p5_line_graph",
@@ -826,6 +2888,30 @@
       "standard_ref": "2022课标第三学段：经历用间隔数与棵数的关系解决植树等实际问题的探究过程，体会数学模型思想。",
       "prereqs": [
         "kp_p5_mixed_ops"
+      ]
+    },
+    {
+      "id": "kp_p5_common_factor_multiple",
+      "name": "公因数与公倍数",
+      "subject": "math",
+      "grade": 5,
+      "cluster": "数与运算",
+      "description": "理解公因数与最大公因数、公倍数与最小公倍数的意义，会用列举法、短除法求两个数的最大公因数和最小公倍数。",
+      "standard_ref": "2022课标第三学段：理解公因数与最大公因数、公倍数与最小公倍数的意义，会求两个数的最大公因数和最小公倍数，为约分与通分做准备。",
+      "prereqs": [
+        "kp_p5_factor_multiple"
+      ]
+    },
+    {
+      "id": "kp_p5_combination",
+      "name": "搭配问题与有序思考",
+      "subject": "math",
+      "grade": 5,
+      "cluster": "综合与实践",
+      "description": "用连线、列举等方法解决穿衣搭配、排队等简单的排列组合问题，学会有序思考，做到不重复不遗漏。",
+      "standard_ref": "2022课标第三学段·综合与实践：在解决搭配问题等活动中学会有序思考，初步体会排列组合的计数方法，做到不重复不遗漏。",
+      "prereqs": [
+        "kp_p3_combination"
       ]
     },
     {
@@ -881,7 +2967,7 @@
       "grade": 6,
       "cluster": "数量关系",
       "description": "掌握求一个数的几分之几、已知一个数的几分之几求这个数、比一个数多或少几分之几的数量关系。",
-      "standard_ref": "2022课标第三学段：能运用分数乘、除法的意义解决求一个数的几分之几等简单的实际问题。",
+      "standard_ref": "2022课标第三学段：把整数问题中求一个数的几倍的方法迁移到分数情境，能运用分数乘、除法的意义解决求一个数的几分之几等简单的实际问题。",
       "prereqs": [
         "kp_p6_fraction_mul",
         "kp_p6_fraction_div"
@@ -954,7 +3040,7 @@
       "grade": 6,
       "cluster": "图形与几何",
       "description": "认识圆心、半径、直径，理解圆周率的意义，掌握圆的周长和面积公式，能计算半圆的周长。",
-      "standard_ref": "2022课标第三学段：认识圆，掌握圆的周长和面积计算公式，体会化曲为直的转化思想。"
+      "standard_ref": "2022课标第三学段：认识圆，掌握圆的周长计算与面积计算公式，体会化曲为直的转化思想。"
     },
     {
       "id": "kp_p6_cylinder_cone",
@@ -976,7 +3062,7 @@
       "grade": 6,
       "cluster": "图形与几何",
       "description": "能根据方向（角度）和距离确定物体的位置，能描述并分析简单的路线。",
-      "standard_ref": "2022课标第三学段：能根据方向和距离确定物体的位置，会描述简单的路线图。",
+      "standard_ref": "2022课标第三学段：能根据方向与距离确定位置，会描述路线，能结合示意图标注物体的位置。",
       "prereqs": [
         "kp_p5_coord_pairs"
       ]

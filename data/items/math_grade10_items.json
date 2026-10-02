@@ -1,0 +1,2604 @@
+{
+  "items": [
+    {
+      "id": "h_10a_001",
+      "item_type": "choice",
+      "stem": "下列各组对象中，能组成集合的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_set_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "集合的元素必须具有确定性'我们班的全体同学'标准明确；'接近 0 的实数'、'著名的数学家'、'较小几个' 标准模糊，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我们班的全体同学",
+        "B. 接近 0 的实数",
+        "C. 著名的数学家",
+        "D. 比 5 大的所有整数中的较小几个"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_002",
+      "item_type": "choice",
+      "stem": "用描述法表示集合 {2, 4, 6, 8}，下列写法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_set_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 是全部偶数（含负偶数），过多；C 含 0, 1 等；D 含 0 及无限多正偶数；只有 B 精确描述该集合。",
+      "source": "llm_generated",
+      "options": [
+        "A. {x | x 是偶数}",
+        "B. {x | x 是小于 10 的正偶数}",
+        "C. {x | x ∈ N, x ≤ 8}",
+        "D. {x | x = 2k, k ∈ N}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_003",
+      "item_type": "choice",
+      "stem": "已知 A = {a, b, c}，下列四个式子：① a ∈ A；② {a} ⊆ A；③ ∅ ⊆ A；④ {a, b} ∈ A。其中正确个数为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_set_concept"
+      ],
+      "difficulty": 0.8,
+      "solution": "① a ∈ A 正确；② {a} 是单元素集合，是 A 的子集，正确；③ ∅ 是任何集合的子集，正确；④ {a, b} 是 A 的子集而不是 A 的元素，故错。正确个数为 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 个",
+        "B. 2 个",
+        "C. 3 个",
+        "D. 4 个"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_004",
+      "item_type": "choice",
+      "stem": "下列各式中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_set_relations"
+      ],
+      "difficulty": 0.2,
+      "solution": "空集是任何集合的子集，A 正确；B 中 {0} 的元素是 0 而不是 ∅；C 错误（∅ 不含元素）；D 错误（∅ 不含任何元素）。",
+      "source": "llm_generated",
+      "options": [
+        "A. ∅ ⊆ {0}",
+        "B. ∅ ∈ {0}",
+        "C. {0} ⊆ ∅",
+        "D. ∅ ∈ ∅"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_005",
+      "item_type": "choice",
+      "stem": "已知集合 A = {x | x² - 1 = 0}，则 A 的所有子集为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_set_relations"
+      ],
+      "difficulty": 0.5,
+      "solution": "A = {-1, 1} 含两个元素，子集数为 2² = 4，依次为 ∅, {-1}, {1}, {-1, 1}。",
+      "source": "llm_generated",
+      "options": [
+        "A. ∅, {1}, {-1}, {1, -1}",
+        "B. {1}, {-1}, {1, -1}",
+        "C. ∅, {1}, {-1}",
+        "D. {1, -1}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_006",
+      "item_type": "choice",
+      "stem": "若 {1, 2} ⊆ M ⊆ {1, 2, 3, 4}，则满足条件的集合 M 的个数为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_set_relations"
+      ],
+      "difficulty": 0.8,
+      "solution": "M 必须包含 1, 2，且是 {1,2,3,4} 的子集，所以从 {3,4} 中任选子集并入 {1,2}：{1,2}, {1,2,3}, {1,2,4}, {1,2,3,4}，共 4 个。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2 个",
+        "B. 3 个",
+        "C. 4 个",
+        "D. 8 个"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_007",
+      "item_type": "choice",
+      "stem": "设 A = {1, 2, 3}, B = {3, 4, 5}，则 A ∪ B = （　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_set_ops"
+      ],
+      "difficulty": 0.2,
+      "solution": "并集包含所有属于 A 或属于 B 的元素，A ∪ B = {1, 2, 3, 4, 5}。",
+      "source": "llm_generated",
+      "options": [
+        "A. {3}",
+        "B. {1, 2, 3, 4}",
+        "C. {1, 2, 3, 4, 5}",
+        "D. {4, 5}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_008",
+      "item_type": "choice",
+      "stem": "设全集 U = {1, 2, 3, 4, 5, 6}，A = {2, 4, 6}，则 ∁ᵤA = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_set_ops"
+      ],
+      "difficulty": 0.5,
+      "solution": "补集 ∁ᵤA 为 U 中不属于 A 的元素，即 {1, 3, 5}。",
+      "source": "llm_generated",
+      "options": [
+        "A. {2, 4, 6}",
+        "B. {1, 3, 5}",
+        "C. {1, 2, 3, 4, 5, 6}",
+        "D. ∅"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_009",
+      "item_type": "choice",
+      "stem": "设 A = {x | x² - 4x + 3 < 0}，B = {x | x ≥ 2}，则 A ∩ B = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_set_ops"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 (x-1)(x-3) < 0 得 A = {x | 1 < x < 3}；与 B = {x | x ≥ 2} 取交集为 {x | 2 ≤ x < 3}。",
+      "source": "llm_generated",
+      "options": [
+        "A. {x | 1 < x < 3}",
+        "B. {x | 2 ≤ x < 3}",
+        "C. {x | x > 2}",
+        "D. {x | x ≥ 2}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_010",
+      "item_type": "choice",
+      "stem": "x = 2 是 x² = 4 的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_sufficient_condition"
+      ],
+      "difficulty": 0.2,
+      "solution": "x = 2 ⇒ x² = 4，充分成立；x² = 4 不能推出 x = 2（x 可能为 -2），故不必要。x = 2 是 x² = 4 的充分不必要条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 充分不必要条件",
+        "B. 必要不充分条件",
+        "C. 充要条件",
+        "D. 既不充分也不必要条件"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_011",
+      "item_type": "choice",
+      "stem": "a > 0 且 b > 0 是 ab > 0 的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_sufficient_condition"
+      ],
+      "difficulty": 0.5,
+      "solution": "a > 0 且 b > 0 ⇒ ab > 0，充分；ab > 0 时 a, b 同号（也可都为负），不能推出都为正，不必要。",
+      "source": "llm_generated",
+      "options": [
+        "A. 充分不必要条件",
+        "B. 必要不充分条件",
+        "C. 充要条件",
+        "D. 既不充分也不必要条件"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_012",
+      "item_type": "choice",
+      "stem": "设 p：x ∈ A ∩ B；q：x ∈ A ∪ B，则 p 是 q 的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_sufficient_condition"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 A ∩ B ⊆ A ∪ B 知 p ⇒ q，充分；反之 q 不能推出 p（x 只在 A 或只在 B 时），不必要。",
+      "source": "llm_generated",
+      "options": [
+        "A. 充分不必要条件",
+        "B. 必要不充分条件",
+        "C. 充要条件",
+        "D. 既不充分也不必要条件"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_013",
+      "item_type": "choice",
+      "stem": "命题 '∀x ∈ R, x² ≥ 0' 的真假为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_quantifiers"
+      ],
+      "difficulty": 0.2,
+      "solution": "任意实数的平方都非负，故该全称命题为真命题。",
+      "source": "llm_generated",
+      "options": [
+        "A. 真命题",
+        "B. 假命题",
+        "C. 与 x 有关",
+        "D. 不能判断"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_014",
+      "item_type": "choice",
+      "stem": "命题 '∃x ∈ N, x² = x' 是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_quantifiers"
+      ],
+      "difficulty": 0.5,
+      "solution": "x = 1 ∈ N 满足 1² = 1，故该存在量词命题为真。",
+      "source": "llm_generated",
+      "options": [
+        "A. 假命题",
+        "B. 真命题",
+        "C. 不能判断",
+        "D. 不一定存在"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_015",
+      "item_type": "choice",
+      "stem": "命题 '∀x ∈ R, x² > 0' 的否定是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_quantifiers"
+      ],
+      "difficulty": 0.8,
+      "solution": "全称命题的否定为存在量词命题，且谓词取否：'∀x, p(x)' 的否定为 '∃x, ¬p(x)'，即 ∃x ∈ R, x² ≤ 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. ∀x ∈ R, x² ≤ 0",
+        "B. ∃x ∈ R, x² ≤ 0",
+        "C. ∃x ∈ R, x² < 0",
+        "D. ∀x ∈ R, x² < 0"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_016",
+      "item_type": "choice",
+      "stem": "若 a > b，则下列不等式一定成立的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_ineq_props"
+      ],
+      "difficulty": 0.2,
+      "solution": "A 中 c = 0 时不成立；B 反例 a = 1, b = -2；D 反例 a, b 同为负。D 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. ac² > bc²",
+        "B. a² > b²",
+        "C. a + c > b + c",
+        "D. 1/a < 1/b"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_017",
+      "item_type": "choice",
+      "stem": "已知 a > b > 0，比较 a² 与 ab 的大小（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_ineq_props"
+      ],
+      "difficulty": 0.5,
+      "solution": "作差法：a² - ab = a(a - b)，因 a > 0 且 a - b > 0，故 a² - ab > 0，即 a² > ab。",
+      "source": "llm_generated",
+      "options": [
+        "A. a² > ab",
+        "B. a² < ab",
+        "C. a² = ab",
+        "D. 不能比较"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_018",
+      "item_type": "choice",
+      "stem": "已知 a > b，c 是任意实数，比较 ac² 与 bc²（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_ineq_props"
+      ],
+      "difficulty": 0.8,
+      "solution": "作差 ac² - bc² = (a - b)c²，因 a - b > 0，c² ≥ 0。当 c ≠ 0 时 c² > 0，则 ac² > bc²；当 c = 0 时 ac² = bc² = 0。故不能确定。",
+      "source": "llm_generated",
+      "options": [
+        "A. ac² > bc²",
+        "B. ac² < bc²",
+        "C. ac² = bc²",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_019",
+      "item_type": "choice",
+      "stem": "已知 a > 0, b > 0，则 (a + b)/2 与 √(ab) 的大小关系是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_basic_inequality"
+      ],
+      "difficulty": 0.2,
+      "solution": "基本不等式 (a+b)/2 ≥ √(ab)（a > 0, b > 0），当且仅当 a = b 时取等号。",
+      "source": "llm_generated",
+      "options": [
+        "A. (a+b)/2 > √(ab)",
+        "B. (a+b)/2 < √(ab)",
+        "C. (a+b)/2 ≥ √(ab)",
+        "D. (a+b)/2 ≤ √(ab)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_020",
+      "item_type": "choice",
+      "stem": "当 x > 0 时，函数 y = x + 4/x 的最小值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_basic_inequality"
+      ],
+      "difficulty": 0.5,
+      "solution": "由基本不等式 x + 4/x ≥ 2√(x · 4/x) = 2√4 = 4，当 x = 4/x 即 x = 2 时取等号。故最小值为 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 8",
+        "D. 不存在"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_021",
+      "item_type": "choice",
+      "stem": "已知 x > 0, y > 0，且 x + 2y = 1，则 1/x + 1/y 的最小值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_basic_inequality"
+      ],
+      "difficulty": 0.8,
+      "solution": "1/x + 1/y = (x + 2y)(1/x + 1/y) = 1 + x/y + 2y/x + 2 = 3 + (x/y + 2y/x) ≥ 3 + 2√(x/y · 2y/x) = 3 + 2√2，当 x/y = 2y/x 即 x = √2 y 时取等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3",
+        "B. 3 + 2√2",
+        "C. 4",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_022",
+      "item_type": "choice",
+      "stem": "不等式 x² - 4 > 0 的解集是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_quadratic_inequality"
+      ],
+      "difficulty": 0.2,
+      "solution": "(x - 2)(x + 2) > 0，解集为 x > 2 或 x < -2。",
+      "source": "llm_generated",
+      "options": [
+        "A. {x | x > 2}",
+        "B. {x | x < -2}",
+        "C. {x | x > 2 或 x < -2}",
+        "D. {x | -2 < x < 2}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_023",
+      "item_type": "choice",
+      "stem": "不等式 -x² + 5x - 6 > 0 的解集是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_quadratic_inequality"
+      ],
+      "difficulty": 0.5,
+      "solution": "两边乘 -1 得 x² - 5x + 6 < 0，即 (x - 2)(x - 3) < 0，解集为 2 < x < 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. {x | x < 2 或 x > 3}",
+        "B. {x | 2 < x < 3}",
+        "C. {x | x > 3}",
+        "D. {x | x < 2}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_024",
+      "item_type": "choice",
+      "stem": "已知关于 x 的方程 x² + mx + 1 = 0 有两个不相等的实数根，则 m 的取值范围是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_quadratic_inequality"
+      ],
+      "difficulty": 0.8,
+      "solution": "Δ = m² - 4 > 0 ⇒ m² > 4 ⇒ m > 2 或 m < -2。",
+      "source": "llm_generated",
+      "options": [
+        "A. m ≥ 2 或 m ≤ -2",
+        "B. m > 2 或 m < -2",
+        "C. -2 < m < 2",
+        "D. m = ±2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_025",
+      "item_type": "choice",
+      "stem": "函数 y = √(x - 1) 的定义域是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "根号下需 x - 1 ≥ 0，即 x ≥ 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. R",
+        "B. {x | x ≥ 1}",
+        "C. {x | x > 1}",
+        "D. {x | x ≤ 1}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_026",
+      "item_type": "choice",
+      "stem": "下列四组函数中，表示同一函数的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_function_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 中 g(x) = |x| 与 f(x) = x 值域不同；B 中看似相同但 g 写法不规范；C 中 ∛(x³) = x，定义域与对应关系都相同；D 中 f 定义域为 R，g 定义域为 [0, +∞)，定义域不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. f(x) = x, g(x) = √(x²)",
+        "B. f(x) = x², g(x) = x·x",
+        "C. f(x) = x, g(x) = ∛(x³)",
+        "D. f(x) = x², g(x) = (√x)²"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_027",
+      "item_type": "choice",
+      "stem": "已知 f(x) 的定义域为 [0, 1]，则函数 f(2x + 1) 的定义域为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_concept"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 0 ≤ 2x + 1 ≤ 1，得 -1 ≤ 2x ≤ 0，即 -1/2 ≤ x ≤ 0，故定义域为 [-1/2, 0]。",
+      "source": "llm_generated",
+      "options": [
+        "A. [0, 1]",
+        "B. [-1/2, 0]",
+        "C. [-1/2, 1]",
+        "D. [0, 2]"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_028",
+      "item_type": "choice",
+      "stem": "设分段函数 f(x) = { x²,  x ≥ 0; -x,  x < 0 }，则 f(-2) = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_repr"
+      ],
+      "difficulty": 0.2,
+      "solution": "因 -2 < 0，代入第二段 f(-2) = -(-2) = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 2",
+        "C. -2",
+        "D. -4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_029",
+      "item_type": "choice",
+      "stem": "设分段函数 f(x) = { x + 1,  x ≤ 0; 2^x,  x > 0 }，则 f(f(-1)) = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_repr"
+      ],
+      "difficulty": 0.5,
+      "solution": "f(-1) = -1 + 1 = 0；再求 f(0)：因 0 ≤ 0 代入第一段 f(0) = 0 + 1 = 1。故 f(f(-1)) = 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_030",
+      "item_type": "choice",
+      "stem": "已知分段函数 f(x) = { x² + 1,  x > 0; 0,  x = 0; -x² - 1,  x < 0 }，则下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_function_repr"
+      ],
+      "difficulty": 0.8,
+      "solution": "对 x > 0，f(x) = x² + 1, f(-x) = -x² - 1 = -f(x)；对 x < 0，f(x) = -x² - 1, f(-x) = x² + 1 = -f(x)；对 x = 0，f(0) = 0 = -f(0)。故 f(x) 是 R 上的奇函数。",
+      "source": "llm_generated",
+      "options": [
+        "A. f(x) 是奇函数",
+        "B. f(x) 是偶函数",
+        "C. f(x) 既奇又偶",
+        "D. f(x) 非奇非偶"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_031",
+      "item_type": "choice",
+      "stem": "函数 y = -x + 1 在 R 上的单调性是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_monotonicity"
+      ],
+      "difficulty": 0.2,
+      "solution": "一次函数 y = -x + 1 的斜率为 -1 < 0，故在 R 上单调递减。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在 R 上单调递增",
+        "B. 在 R 上单调递减",
+        "C. 在 R 上先增后减",
+        "D. 在 R 上先减后增"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_032",
+      "item_type": "choice",
+      "stem": "已知函数 f(x) 在 [0, +∞) 上单调递增，且 f(1) = 2，则 f(x) < 2 的解集是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_monotonicity"
+      ],
+      "difficulty": 0.5,
+      "solution": "由单调递增与 f(1) = 2，f(x) < 2 等价于 x < 1；又 x ∈ [0, +∞)，故解集为 0 ≤ x < 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. {x | x < 0}",
+        "B. {x | x > 0}",
+        "C. {x | 0 ≤ x < 1}",
+        "D. {x | x ≥ 1}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_033",
+      "item_type": "choice",
+      "stem": "已知 f(x) 是 R 上的减函数，a, b ∈ R 且 a + b < 0，则（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_monotonicity"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 a + b < 0 得 a < -b，f 递减 ⇒ f(a) > f(-b)；同理 b < -a ⇒ f(b) > f(-a)。两式相加得 f(a) + f(b) > f(-a) + f(-b)。",
+      "source": "llm_generated",
+      "options": [
+        "A. f(a) + f(b) < f(-a) + f(-b)",
+        "B. f(a) + f(b) > f(-a) + f(-b)",
+        "C. f(a) + f(b) ≤ f(-a) + f(-b)",
+        "D. f(a) + f(b) ≥ f(-a) + f(-b)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_034",
+      "item_type": "choice",
+      "stem": "函数 y = x² - 2x + 3 在 x = 1 处的函数值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_extremum"
+      ],
+      "difficulty": 0.2,
+      "solution": "代入 x = 1，y = 1 - 2 + 3 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_035",
+      "item_type": "choice",
+      "stem": "函数 y = x² - 2x + 3 在区间 [0, 3] 上的最小值为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_function_extremum"
+      ],
+      "difficulty": 0.5,
+      "solution": "配方 y = (x - 1)² + 2，对称轴 x = 1 ∈ [0, 3]，故最小值 y_min = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_036",
+      "item_type": "choice",
+      "stem": "已知 x > 0, y > 0 且 x + 2y = 2，则 xy 的最大值为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_extremum"
+      ],
+      "difficulty": 0.8,
+      "solution": "由基本不等式 xy = (1/2)·x·2y ≤ (1/2)·((x + 2y)/2)² = (1/2)·1 = 1/2，当 x = 1, y = 1/2 时取等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/4",
+        "B. 1/2",
+        "C. 1",
+        "D. 2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_037",
+      "item_type": "choice",
+      "stem": "下列函数中，偶函数是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_parity"
+      ],
+      "difficulty": 0.2,
+      "solution": "f(-x) = (-x)² = x² = f(x)，B 是偶函数；A, C, D 都是奇函数。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = x",
+        "B. y = x²",
+        "C. y = x³",
+        "D. y = 1/x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_038",
+      "item_type": "choice",
+      "stem": "已知 f(x) 是奇函数，且 f(2) = 3，则 f(-2) = （　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_parity"
+      ],
+      "difficulty": 0.5,
+      "solution": "由奇函数定义 f(-x) = -f(x)，故 f(-2) = -f(2) = -3。",
+      "source": "llm_generated",
+      "options": [
+        "A. -3",
+        "B. 3",
+        "C. 0",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_039",
+      "item_type": "choice",
+      "stem": "若 f(x) 是定义在 R 上的奇函数，且当 x ≥ 0 时 f(x) = x² - 2x，则 f(-1) = （　　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_parity"
+      ],
+      "difficulty": 0.8,
+      "solution": "f(1) = 1 - 2 = -1；由 f(-x) = -f(x) 得 f(-1) = -f(1) = 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. -3",
+        "B. 3",
+        "C. -1",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_040",
+      "item_type": "choice",
+      "stem": "幂函数 y = √x 的定义域是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_power_function"
+      ],
+      "difficulty": 0.2,
+      "solution": "幂函数 y = √x = x^{1/2} 要求 x ≥ 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. R",
+        "B. {x | x ≥ 0}",
+        "C. {x | x > 0}",
+        "D. {x | x ≠ 0}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_041",
+      "item_type": "choice",
+      "stem": "幂函数 y = x² 与 y = x³ 在区间 (0, +∞) 上的单调性为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_power_function"
+      ],
+      "difficulty": 0.5,
+      "solution": "在 (0, +∞) 上，指数 α = 2 > 0 与 α = 3 > 0 的幂函数均单调递增。",
+      "source": "llm_generated",
+      "options": [
+        "A. 都单调递增",
+        "B. 都单调递减",
+        "C. y = x² 递增, y = x³ 递减",
+        "D. y = x² 递减, y = x³ 递增"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_042",
+      "item_type": "choice",
+      "stem": "已知幂函数 f(x) = x^α 的图象过点 (4, 2)，则 f(16) = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_power_function"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 4^α = 2 得 α = 1/2，故 f(16) = 16^{1/2} = 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 8",
+        "D. 不能确定"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_043",
+      "item_type": "choice",
+      "stem": "一辆汽车以 60 km/h 的速度匀速行驶 3 小时，行驶的路程为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_function_app1"
+      ],
+      "difficulty": 0.2,
+      "solution": "路程 s = v·t = 60 × 3 = 180 km。",
+      "source": "llm_generated",
+      "options": [
+        "A. 20 km",
+        "B. 60 km",
+        "C. 180 km",
+        "D. 240 km"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_044",
+      "item_type": "choice",
+      "stem": "某出租车计费方法：起步价 10 元（3 公里内），超过 3 公里部分按 2 元/公里收取。行驶 5 公里需付费（　　）元",
+      "answer": "C",
+      "kps": [
+        "kp_h10_function_app1"
+      ],
+      "difficulty": 0.5,
+      "solution": "3 公里内 10 元；超过 2 公里 × 2 元 = 4 元；合计 10 + 4 = 14 元。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 12",
+        "C. 14",
+        "D. 16"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_045",
+      "item_type": "choice",
+      "stem": "某商店销售某种商品，进价为 20 元/件，售价 x 元/件（x ≥ 21），销量为 (100 - x) 件。当售价为多少元时利润最大（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_app1"
+      ],
+      "difficulty": 0.8,
+      "solution": "利润 L = (x - 20)(100 - x) = -(x - 60)² + 1600；当 x = 60 时 L 取最大值 1600 元。",
+      "source": "llm_generated",
+      "options": [
+        "A. 50 元",
+        "B. 60 元",
+        "C. 80 元",
+        "D. 100 元"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_046",
+      "item_type": "choice",
+      "stem": "√4 = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_fractional_exponent"
+      ],
+      "difficulty": 0.2,
+      "solution": "算术平方根默认取非负值，√4 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. ±2",
+        "B. 2",
+        "C. -2",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_047",
+      "item_type": "choice",
+      "stem": "化简：⁵√32 = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_fractional_exponent"
+      ],
+      "difficulty": 0.5,
+      "solution": "由 2⁵ = 32，得 ⁵√32 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. ±2",
+        "B. 2",
+        "C. -2",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_048",
+      "item_type": "choice",
+      "stem": "化简：(a^(1/2) · b^(1/3)) / (a^(1/3) · b^(1/2))（a > 0, b > 0） = （　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_fractional_exponent"
+      ],
+      "difficulty": 0.8,
+      "solution": "= a^(1/2 - 1/3) · b^(1/3 - 1/2) = a^(1/6) · b^(-1/6) = (a/b)^(1/6)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (a/b)^(1/6)",
+        "B. (a/b)^(1/3)",
+        "C. a^(1/6) · b^(-1/6)",
+        "D. (b/a)^(1/6)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_049",
+      "item_type": "choice",
+      "stem": "指数函数 y = a^x（a > 0, a ≠ 1）的图象必过定点（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_exponential_fn"
+      ],
+      "difficulty": 0.2,
+      "solution": "任何 a^0 = 1（a > 0, a ≠ 1），故指数函数图象过定点 (0, 1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (0, 0)",
+        "B. (0, 1)",
+        "C. (1, 0)",
+        "D. (1, 1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_050",
+      "item_type": "choice",
+      "stem": "比较 1.5^0.3 与 1.5^0.5 的大小（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_exponential_fn"
+      ],
+      "difficulty": 0.5,
+      "solution": "底数 1.5 > 1，指数函数 y = 1.5^x 单调递增；0.3 < 0.5，故 1.5^0.3 < 1.5^0.5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1.5^0.3 > 1.5^0.5",
+        "B. 1.5^0.3 < 1.5^0.5",
+        "C. 1.5^0.3 = 1.5^0.5",
+        "D. 不能比较"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_051",
+      "item_type": "choice",
+      "stem": "设 0 < a < 1，则 a^(1/2), a^(1/3), a^0 的大小关系为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_exponential_fn"
+      ],
+      "difficulty": 0.8,
+      "solution": "0 < a < 1，指数函数 y = a^x 单调递减；1/2 > 1/3 > 0，所以 a^(1/2) < a^(1/3) < a^0 = 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. a^(1/2) < a^(1/3) < a^0",
+        "B. a^(1/3) < a^(1/2) < a^0",
+        "C. 1 < a^(1/3) < a^(1/2)",
+        "D. a^(1/2) < a^0 < a^(1/3)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_052",
+      "item_type": "choice",
+      "stem": "log₂ 8 = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_concept"
+      ],
+      "difficulty": 0.2,
+      "solution": "由 2^3 = 8，得 log₂ 8 = 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_053",
+      "item_type": "choice",
+      "stem": "lg 100 = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "lg 100 = log₁₀ 100 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 10",
+        "D. 100"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10a_054",
+      "item_type": "choice",
+      "stem": "若 logₐ 2 = 1/2，则 a = （　　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_concept"
+      ],
+      "difficulty": 0.8,
+      "solution": "由 logₐ 2 = 1/2 得 a^(1/2) = 2，两边平方得 a = 4。",
+      "source": "llm_generated",
+      "options": [
+        "A. √2",
+        "B. 4",
+        "C. 2",
+        "D. 1/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_001",
+      "item_type": "choice",
+      "stem": "计算 log₂8 + log₃27 的值是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_log_ops"
+      ],
+      "difficulty": 0.3,
+      "solution": "log₂8 = 3，log₃27 = 3，所以 log₂8 + log₃27 = 3 + 3 = 6。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 6",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_002",
+      "item_type": "choice",
+      "stem": "log₂3 · log₃4 的值等于（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_ops"
+      ],
+      "difficulty": 0.5,
+      "solution": "log₃4 = log₃2² = 2log₃2，利用 log₂3 · log₃2 = 1，故原式 = log₂3 · 2log₃2 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 4",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_003",
+      "item_type": "choice",
+      "stem": "log₂3 · log₃7 · log₇8 的值等于（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_ops"
+      ],
+      "difficulty": 0.7,
+      "solution": "利用 logₐb · log_bc = logₐc（换底），原式 = log₂3 · log₃7 · log₇8 = log₂8 = 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_004",
+      "item_type": "choice",
+      "stem": "对数函数 y = logₐx (a > 0 且 a ≠ 1) 的定义域是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_fn"
+      ],
+      "difficulty": 0.3,
+      "solution": "对数函数要求真数 x > 0，所以定义域为 (0, +∞)。",
+      "source": "llm_generated",
+      "options": [
+        "A. R",
+        "B. (0,+∞)",
+        "C. [0,+∞)",
+        "D. R \\ {0}"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_005",
+      "item_type": "choice",
+      "stem": "函数 y = log₀.₅x 在其定义域上的单调性是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_log_fn"
+      ],
+      "difficulty": 0.5,
+      "solution": "对数函数 y = logₐx 当 0 < a < 1 时单调递减，a = 0.5 满足，所以单调递减。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单调递增",
+        "B. 单调递减",
+        "C. 先增后减",
+        "D. 先减后增"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_006",
+      "item_type": "choice",
+      "stem": "函数 y = log₂x 的图象与函数 y = 2^x 的图象关于直线（　）对称",
+      "answer": "C",
+      "kps": [
+        "kp_h10_log_fn"
+      ],
+      "difficulty": 0.7,
+      "solution": "互为反函数的两个函数图象关于直线 y = x 对称。y = log₂x 与 y = 2^x 互为反函数，故关于 y = x 对称。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = 0",
+        "B. x = 0",
+        "C. y = x",
+        "D. y = −x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_007",
+      "item_type": "choice",
+      "stem": "函数 f(x) = 2^x − 8 的零点为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_zero"
+      ],
+      "difficulty": 0.3,
+      "solution": "令 f(x) = 0 得 2^x = 8 = 2³，所以 x = 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 6"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_008",
+      "item_type": "choice",
+      "stem": "函数 f(x) = x² − 2 的零点所在的区间为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_zero"
+      ],
+      "difficulty": 0.5,
+      "solution": "f(1) = 1 − 2 = −1 < 0，f(2) = 4 − 2 = 2 > 0，由零点存在定理知零点位于 (1, 2)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (0, 1)",
+        "B. (1, 2)",
+        "C. (2, 3)",
+        "D. (3, +∞)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_009",
+      "item_type": "choice",
+      "stem": "函数 f(x) = 2^x + x − 4 的零点的个数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_zero"
+      ],
+      "difficulty": 0.7,
+      "solution": "f'(x) = 2^x · ln 2 + 1 > 0，f(x) 在 R 上单调递增。又 f(0) = 1 − 4 = −3 < 0, f(2) = 4 + 2 − 4 = 2 > 0，故有且仅有 1 个零点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_010",
+      "item_type": "choice",
+      "stem": "用二分法求方程 f(x) = 0 在区间 [1, 5] 上的近似解，第一次二分的中点横坐标为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_bisection"
+      ],
+      "difficulty": 0.3,
+      "solution": "中点 = (1 + 5)/2 = 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_011",
+      "item_type": "choice",
+      "stem": "用二分法求方程 f(x) = 0 在区间 [0, 4] 内的近似解，已知 f(0) < 0, f(2) > 0，则第二次二分时的中点横坐标为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_bisection"
+      ],
+      "difficulty": 0.5,
+      "solution": "f(0) < 0，f(2) > 0，故根在 (0, 2) 内，第二次二分区间为 [0, 2]，中点为 (0 + 2)/2 = 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_012",
+      "item_type": "choice",
+      "stem": "用二分法求方程 x³ − 2x − 1 = 0 在区间 [1, 2] 内的近似解，要求精确度 ε = 0.25，则至少需要二分的次数为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_bisection"
+      ],
+      "difficulty": 0.7,
+      "solution": "区间长度初始为 1，每二分一次长度减半。1/2^n ≤ 0.25 即 2^n ≥ 4，解得 n ≥ 2，故至少需要二分 2 次。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_013",
+      "item_type": "choice",
+      "stem": "当 x 足够大时，下列函数中增长最快的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_growth_compare"
+      ],
+      "difficulty": 0.3,
+      "solution": "指数增长比对数增长和多项式增长都快，所以 y = 2^x 增长最快。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = x",
+        "B. y = log₂x",
+        "C. y = 2^x",
+        "D. y = x²"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_014",
+      "item_type": "choice",
+      "stem": "当 x 足够大时，下列不等式恒成立的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_growth_compare"
+      ],
+      "difficulty": 0.5,
+      "solution": "x 足够大时，2^x > x > log₂x 恒成立。",
+      "source": "llm_generated",
+      "options": [
+        "A. x > 2^x",
+        "B. log₂x > x",
+        "C. 2^x > x > log₂x",
+        "D. log₂x > 2^x > x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_015",
+      "item_type": "choice",
+      "stem": "当 x → +∞ 时，y = 2^x, y = x, y = log₂x 三者的增长速度由快到慢依次为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_growth_compare"
+      ],
+      "difficulty": 0.7,
+      "solution": "指数增长 > 多项式（线性）增长 > 对数增长，故由快到慢为：2^x > x > log₂x。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = log₂x, y = x, y = 2^x",
+        "B. y = 2^x, y = x, y = log₂x",
+        "C. y = x, y = 2^x, y = log₂x",
+        "D. y = 2^x, y = log₂x, y = x"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_016",
+      "item_type": "choice",
+      "stem": "某植物高度 h (cm) 与生长时间 t (天) 的关系近似为 h = 10 · 2^t，则 4 天后该植物的高度约为（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_function_app2"
+      ],
+      "difficulty": 0.3,
+      "solution": "h(4) = 10 · 2^4 = 10 · 16 = 160 cm。",
+      "source": "llm_generated",
+      "options": [
+        "A. 80 cm",
+        "B. 100 cm",
+        "C. 120 cm",
+        "D. 160 cm"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_017",
+      "item_type": "choice",
+      "stem": "某商品价格 p (元) 与时间 t (天) 满足 p = 100 · (0.9)^t，则价格下降到 81 元时 t = （　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_function_app2"
+      ],
+      "difficulty": 0.5,
+      "solution": "100 · (0.9)^t = 81 ⇒ (0.9)^t = 0.81 = (0.9)² ⇒ t = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 1.5",
+        "C. 2",
+        "D. 3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_018",
+      "item_type": "choice",
+      "stem": "里氏震级 M 与地震释放能量 E 的关系近似为 M = (2/3)lg E + C（C 为常数）。若两次地震释放能量之比为 1000 : 1，则它们的里氏震级之差为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_function_app2"
+      ],
+      "difficulty": 0.7,
+      "solution": "M₁ − M₂ = (2/3)(lg E₁ − lg E₂) = (2/3) lg(E₁/E₂) = (2/3) lg 1000 = (2/3) · 3 = 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_019",
+      "item_type": "choice",
+      "stem": "与角 30° 终边相同的角是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_arbitrary_angle"
+      ],
+      "difficulty": 0.3,
+      "solution": "终边相同的角相差 360° 的整数倍，所以与 30° 终边相同的角为 30° + k · 360° (k ∈ Z)。",
+      "source": "llm_generated",
+      "options": [
+        "A. −30° + k · 360°, k ∈ Z",
+        "B. 30° + k · 180°, k ∈ Z",
+        "C. 30° + k · 360°, k ∈ Z",
+        "D. 150° + k · 180°, k ∈ Z"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_020",
+      "item_type": "choice",
+      "stem": "若角 α 的终边在第二象限，则 α/2 的终边所在的象限为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_arbitrary_angle"
+      ],
+      "difficulty": 0.5,
+      "solution": "α ∈ (90° + 360°k, 180° + 360°k)，则 α/2 ∈ (45° + 180°k, 90° + 180°k)。k = 0 时 α/2 ∈ (45°, 90°)，在第一象限；k = 1 时 α/2 ∈ (225°, 270°)，在第三象限。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一或第三象限",
+        "B. 第二或第四象限",
+        "C. 仅第一象限",
+        "D. 仅第三象限"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_021",
+      "item_type": "choice",
+      "stem": "钟表上的分针在 12 分钟内转过的角度为（按逆时针为正、顺时针为负）（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_arbitrary_angle"
+      ],
+      "difficulty": 0.7,
+      "solution": "分针每分钟转 −6°，12 分钟转 −72° = −2π/5 rad。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/5",
+        "B. −π/5",
+        "C. 2π/5",
+        "D. −2π/5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_022",
+      "item_type": "choice",
+      "stem": "将 60° 化为弧度为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_radian"
+      ],
+      "difficulty": 0.3,
+      "solution": "60° = 60 × π/180 = π/3 rad。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/6",
+        "B. π/4",
+        "C. π/3",
+        "D. π/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_023",
+      "item_type": "choice",
+      "stem": "已知扇形的弧长为 4，半径为 2，则该扇形的圆心角弧度数为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_radian"
+      ],
+      "difficulty": 0.5,
+      "solution": "由弧长公式 l = |α| · r 得 4 = α · 2，所以 α = 2 rad。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. π",
+        "D. 4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_024",
+      "item_type": "choice",
+      "stem": "半径为 3、圆心角为 π/3 弧度的扇形面积为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_radian"
+      ],
+      "difficulty": 0.7,
+      "solution": "S = (1/2) · α · r² = (1/2) · (π/3) · 9 = 3π/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/2",
+        "B. π",
+        "C. 3π/2",
+        "D. 3π"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_025",
+      "item_type": "choice",
+      "stem": "sin 2π/3 的值为（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_trig_definition"
+      ],
+      "difficulty": 0.3,
+      "solution": "sin(2π/3) = sin(π − π/3) = sin(π/3) = √3/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√3/2",
+        "B. −1/2",
+        "C. 1/2",
+        "D. √3/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_026",
+      "item_type": "choice",
+      "stem": "若角 α 的终边经过点 P(−√3, 1)，则 tan α = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_trig_definition"
+      ],
+      "difficulty": 0.5,
+      "solution": "tan α = y/x = 1/(−√3) = −√3/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√3",
+        "B. −√3/3",
+        "C. √3/3",
+        "D. √3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_027",
+      "item_type": "choice",
+      "stem": "若角 α 的终边在直线 y = −x (x ≠ 0) 上，则 sin α · cos α = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_trig_definition"
+      ],
+      "difficulty": 0.7,
+      "solution": "设 P(t, −t)，t ≠ 0，r = √(t² + t²) = |t|√2。则 sin α = −t/(|t|√2), cos α = t/(|t|√2)，故 sin α · cos α = −t²/(2t²) = −1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −1",
+        "B. −1/2",
+        "C. 1/2",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_028",
+      "item_type": "choice",
+      "stem": "若 sin α = 3/5，且 α ∈ (π/2, π)，则 cos α = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_trig_relations"
+      ],
+      "difficulty": 0.3,
+      "solution": "由 sin²α + cos²α = 1 得 cos²α = 1 − 9/25 = 16/25。α ∈ (π/2, π) 故 cos α < 0，所以 cos α = −4/5。",
+      "source": "llm_generated",
+      "options": [
+        "A. −3/5",
+        "B. −4/5",
+        "C. 4/5",
+        "D. 3/5"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_029",
+      "item_type": "choice",
+      "stem": "已知 sin α + cos α = 1/2，则 sin α · cos α = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_trig_relations"
+      ],
+      "difficulty": 0.5,
+      "solution": "(sin α + cos α)² = sin²α + 2sin α cos α + cos²α = 1 + 2sin α cos α = 1/4，所以 sin α cos α = −3/8。",
+      "source": "llm_generated",
+      "options": [
+        "A. −3/8",
+        "B. −1/8",
+        "C. 1/8",
+        "D. 3/8"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_030",
+      "item_type": "choice",
+      "stem": "若 sin α · cos α = −1/8，且 α ∈ (π/2, π)，则 cos α − sin α = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_trig_relations"
+      ],
+      "difficulty": 0.7,
+      "solution": "(cos α − sin α)² = 1 − 2sin α cos α = 1 + 1/4 = 5/4。α ∈ (π/2, π) 中 sin α > 0, cos α < 0，所以 cos α − sin α < 0，故 cos α − sin α = −√5/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√5/2",
+        "B. −1/2",
+        "C. 1/2",
+        "D. √5/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_031",
+      "item_type": "choice",
+      "stem": "sin(−30°) 的值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_induction_formulas"
+      ],
+      "difficulty": 0.3,
+      "solution": "sin(−30°) = −sin 30° = −1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√3/2",
+        "B. −1/2",
+        "C. 1/2",
+        "D. √3/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_032",
+      "item_type": "choice",
+      "stem": "cos(7π/6) 的值为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_induction_formulas"
+      ],
+      "difficulty": 0.5,
+      "solution": "cos(7π/6) = cos(π + π/6) = −cos(π/6) = −√3/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√3/2",
+        "B. −1/2",
+        "C. 1/2",
+        "D. √3/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_033",
+      "item_type": "choice",
+      "stem": "已知 cos(α + π/4) = 1/3，则 sin(α − π/4) = （　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_induction_formulas"
+      ],
+      "difficulty": 0.7,
+      "solution": "由诱导公式 sin(α − π/4) = −cos(α − π/4 + π/2) = −cos(α + π/4) = −1/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. −1/3",
+        "B. 1/3",
+        "C. −√2/3",
+        "D. √2/3"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_034",
+      "item_type": "choice",
+      "stem": "函数 y = sin x 的最小正周期是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_sincos_fn"
+      ],
+      "difficulty": 0.3,
+      "solution": "正弦函数的最小正周期为 2π。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/2",
+        "B. π",
+        "C. 2π",
+        "D. 4π"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_035",
+      "item_type": "choice",
+      "stem": "函数 y = cos x 在区间 [0, 2π] 上的单调递增区间为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_sincos_fn"
+      ],
+      "difficulty": 0.5,
+      "solution": "余弦函数在 [π, 2π] 上单调递增。",
+      "source": "llm_generated",
+      "options": [
+        "A. [0, π/2]",
+        "B. [π, 2π]",
+        "C. [0, π]",
+        "D. [π/2, 3π/2]"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_036",
+      "item_type": "choice",
+      "stem": "函数 y = 2 sin(2x + π/3) 的最小正周期和值域分别为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_sincos_fn"
+      ],
+      "difficulty": 0.7,
+      "solution": "周期 T = 2π/2 = π，振幅 A = 2，值域为 [−2, 2]。",
+      "source": "llm_generated",
+      "options": [
+        "A. 周期 π, 值域 [−2, 2]",
+        "B. 周期 2π, 值域 [−1, 1]",
+        "C. 周期 π/2, 值域 [−2, 2]",
+        "D. 周期 4π, 值域 [−1, 1]"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_037",
+      "item_type": "choice",
+      "stem": "函数 y = tan x 的最小正周期是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_tan_fn"
+      ],
+      "difficulty": 0.3,
+      "solution": "正切函数的最小正周期为 π。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/2",
+        "B. π",
+        "C. 2π",
+        "D. 4π"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_038",
+      "item_type": "choice",
+      "stem": "函数 y = tan(2x) 的最小正周期是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_tan_fn"
+      ],
+      "difficulty": 0.5,
+      "solution": "T = π/2（tan 函数周期为 π，tan(2x) 周期为 π/2）。",
+      "source": "llm_generated",
+      "options": [
+        "A. π/4",
+        "B. π/2",
+        "C. π",
+        "D. 2π"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_039",
+      "item_type": "choice",
+      "stem": "函数 y = tan(x + π/4) 的所有对称中心为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_tan_fn"
+      ],
+      "difficulty": 0.7,
+      "solution": "tan u = 0 时 u = kπ，则 x + π/4 = kπ，x = −π/4 + kπ，对称中心为 (−π/4 + kπ, 0)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (kπ, 0), k ∈ Z",
+        "B. (−π/4 + kπ, 0), k ∈ Z",
+        "C. (π/4 + kπ, 0), k ∈ Z",
+        "D. (kπ/2, 0), k ∈ Z"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_040",
+      "item_type": "choice",
+      "stem": "sin 75° 的值为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.3,
+      "solution": "sin 75° = sin(45° + 30°) = sin 45° cos 30° + cos 45° sin 30° = (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2)/4。",
+      "source": "llm_generated",
+      "options": [
+        "A. (√6 − √2)/4",
+        "B. (√6 + √2)/4",
+        "C. (√2 + √3)/2",
+        "D. √6/4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_041",
+      "item_type": "choice",
+      "stem": "若 α ∈ (π/4, π/2) 且 tan α = 2，则 sin 2α = （　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.5,
+      "solution": "sin 2α = 2 sin α cos α = 2 tan α · cos²α。由 tan α = 2 得 1 + tan²α = sec²α = 1 + 4 = 5，故 cos²α = 1/5，sin 2α = 2 · 2 · 1/5 = 4/5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3/5",
+        "B. 4/5",
+        "C. 4/3",
+        "D. 5/4"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_043",
+      "item_type": "choice",
+      "stem": "sin 60° = （　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_double_angle"
+      ],
+      "difficulty": 0.3,
+      "solution": "sin 60° = sin(2 · 30°) = 2 sin 30° cos 30° = 2 · (1/2) · (√3/2) = √3/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2",
+        "B. √2/2",
+        "C. √3/2",
+        "D. 1"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_044",
+      "item_type": "choice",
+      "stem": "cos²15° − sin²15° = （　）",
+      "answer": "D",
+      "kps": [
+        "kp_h10_double_angle"
+      ],
+      "difficulty": 0.5,
+      "solution": "由二倍角公式 cos 2θ = cos²θ − sin²θ，所以 cos²15° − sin²15° = cos 30° = √3/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. −√3/2",
+        "B. −1/2",
+        "C. 1/2",
+        "D. √3/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_045",
+      "item_type": "choice",
+      "stem": "函数 f(x) = √3 sin x + cos x 的最大值为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_double_angle"
+      ],
+      "difficulty": 0.7,
+      "solution": "f(x) = 2(√3/2 sin x + 1/2 cos x) = 2 sin(x + π/6)，最大值为 2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. √3",
+        "C. 2",
+        "D. √(3 + 1)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_046",
+      "item_type": "choice",
+      "stem": "函数 y = 3 sin(2x + π/4) 的振幅和最小正周期分别为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_asinwx"
+      ],
+      "difficulty": 0.3,
+      "solution": "振幅 A = 3，周期 T = 2π/2 = π。",
+      "source": "llm_generated",
+      "options": [
+        "A. 振幅 3, 周期 π",
+        "B. 振幅 3, 周期 2π",
+        "C. 振幅 2, 周期 π",
+        "D. 振幅 3, 周期 π/2"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_047",
+      "item_type": "choice",
+      "stem": "将 y = sin x 的图象向左平移 π/3 个单位，再将横坐标缩短为原来的 1/2（纵坐标不变），得到的函数解析式为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_asinwx"
+      ],
+      "difficulty": 0.5,
+      "solution": "左移 π/3 得 y = sin(x + π/3)；横坐标缩短为 1/2 即 x → 2x，得 y = sin(2x + π/3)。",
+      "source": "llm_generated",
+      "options": [
+        "A. y = sin(2x + π/3)",
+        "B. y = sin(2x − π/3)",
+        "C. y = sin(x/2 + π/3)",
+        "D. y = sin(x + π/6)"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_048",
+      "item_type": "choice",
+      "stem": "已知函数 y = A sin(ωx + φ) (A > 0, ω > 0) 的一个周期内的图象：最高点为 (π/12, 3)，其后与 x 轴交点为 (7π/12, 0)，则 A, ω, φ 的值分别为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_asinwx"
+      ],
+      "difficulty": 0.7,
+      "solution": "A = 3；从最高点到下一个零点为 T/4，即 7π/12 − π/12 = π/2 = T/4，故 T = 2π, ω = 1；在最高点 π/12 + φ = π/2，得 φ = 5π/12。",
+      "source": "llm_generated",
+      "options": [
+        "A. A = 3, ω = 1, φ = 5π/12",
+        "B. A = 3, ω = 1, φ = π/12",
+        "C. A = 3, ω = 2, φ = 5π/12",
+        "D. A = 1, ω = 1, φ = 5π/12"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_049",
+      "item_type": "choice",
+      "stem": "某地一天中温度 T (°C) 与时间 t (小时, 0 ≤ t ≤ 24) 的函数关系近似为 T = 10 sin(πt/12 + π/2) + 20。则该地一天中的最高温度为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_trig_model"
+      ],
+      "difficulty": 0.3,
+      "solution": "sin 最大值为 1，所以 T_max = 10 · 1 + 20 = 30°C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10°C",
+        "B. 20°C",
+        "C. 30°C",
+        "D. 40°C"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_050",
+      "item_type": "choice",
+      "stem": "某摩天轮半径为 30 米，匀速旋转，每 30 分钟转一圈。乘客距地面高度 h (米) 与时间 t (分钟) 的关系为 h = 30 sin(πt/15 + π/2) + 32。则乘客距地面的最低高度为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_trig_model"
+      ],
+      "difficulty": 0.5,
+      "solution": "sin 最小值为 −1，所以 h_min = 30 · (−1) + 32 = 2 米。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0 米",
+        "B. 2 米",
+        "C. 30 米",
+        "D. 32 米"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_10b_051",
+      "item_type": "choice",
+      "stem": "某港口水深 y (米) 与时间 t (小时, 0 ≤ t ≤ 24) 的函数关系为 y = 5 sin(πt/6 + π/4) + 10。该港口一次从最高水位到最低水位的过程至少需要（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h10_trig_model"
+      ],
+      "difficulty": 0.7,
+      "solution": "周期 T = 2π/(π/6) = 12 小时，从最高水位到最低水位为半个周期，即 T/2 = 6 小时。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3 小时",
+        "B. 6 小时",
+        "C. 9 小时",
+        "D. 12 小时"
+      ],
+      "verification": {
+        "agents": [
+          "hsg-gen-w1-20261003",
+          "hsg-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}
