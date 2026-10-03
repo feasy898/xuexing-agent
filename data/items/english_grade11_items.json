@@ -260,6 +260,157 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_dens02_0004",
+      "item_type": "choice",
+      "stem": "【文化（11年级）·英美地理概况与旅游资源】关于\"英美地理概况与旅游资源\"，下列理解较为全面的是(    )\nA. 与中国完全相同，无需特别关注\nB. 体现中外文化差异，需通过对比加深理解\nC. 只需要记住地名和日期即可\nD. 与语言学习无关，了解即可",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.5,
+      "solution": "文化知识应通过对比理解中外差异，不能简单等同或忽略。了解英美等国地理概况与旅游资源（自然及人文景观、代表性动植物、世界文化遗产等），加深对人与自然关系的理解。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全相同",
+        "B. 通过对比加深理解",
+        "C. 只记地名",
+        "D. 与语言学习无关"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0005",
+      "item_type": "choice",
+      "stem": "【文化（11年级）·英美地理概况与旅游资源·阅读】\nIn many Western countries, people usually greet each other with a smile or a handshake. In some Asian countries, such as China and Japan, people may bow slightly or nod when they meet someone for the first time. Understanding these differences helps us communicate politely across cultures.\n问题：What is the main idea of the passage?",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.6,
+      "solution": "短文对比东西方问候方式，体现文化差异。了解英美等国地理概况与旅游资源（自然及人文景观、代表性动植物、世界文化遗产等），加深对人与自然关系的理解。",
+      "source": "llm_generated",
+      "options": [
+        "A. People in Asia never smile when greeting others.",
+        "B. Different cultures have different greeting customs.",
+        "C. Western greetings are always more polite than Asian ones.",
+        "D. There is only one right way to greet people."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0006",
+      "item_type": "choice",
+      "stem": "【文化（11年级）·英美地理概况与旅游资源·多选】下列关于\"英美地理概况与旅游资源\"的说法，正确的有（多选）：",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.7,
+      "solution": "A、B、C 揭示了文化知识的内涵与意义；D 错——文化需要理解而非死记。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文化现象背后有历史与传统因素",
+        "B. 不同文化存在共性与差异",
+        "C. 文化知识与语言运用密切相关",
+        "D. 文化只需死记硬背，无需理解"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0007",
+      "item_type": "choice",
+      "stem": "【语法（11年级）·rel·从句辨析】下列句子中\"非限制性定语从句\"使用正确的是(    )\nA. I will call you when I will arrive.\nB. The book which I bought it yesterday is interesting.\nC. This is the place where we met last year.\nD. He told me that he is happy today.",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 项 where 引导地点状语从句，时态与主句呼应且结构完整。A 中 when 从句用一般现在时表将来；B 多了代词 it；D 时态与语境不一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. when I will arrive",
+        "B. which I bought it",
+        "C. where we met last year",
+        "D. that he is happy today"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0008",
+      "item_type": "fill",
+      "stem": "【语法（11年级）·rel·从句填空】在空格处填入适当的连词，使句子成为含有\"非限制性定语从句\"的复合句。\nThe reason ______ he was late was ______ the traffic was bad.",
+      "answer": "why; that",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.6,
+      "solution": "The reason why ... was that ... 是固定结构，why 引导定语从句修饰 the reason，that 引导表语从句。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0009",
+      "item_type": "fill",
+      "stem": "【语法（11年级）·rel·从句写作】请写出 2 个含有\"非限制性定语从句\"的复合句（每句 12-18 词），并在句中标出从句部分。\n句1：______\n句2：______",
+      "answer": "(学生按要求写 2 个含从句的复合句)",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.7,
+      "solution": "复合句写作训练，考察对\"非限制性定语从句\"连词选择与陈述语序的掌握。在语篇中正确地理解和使用由 which、who、whom、whose 和关系副词 when、where 引导的非限制性定语从句。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

@@ -1414,6 +1414,998 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_dens02_0157",
+      "item_type": "choice",
+      "stem": "【听力（1年级）·听懂课堂简短指令并作出反应】听力练习中要有效把握\"听懂课堂简短指令并作出反应\"，下列做法最关键的是(    )",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.45,
+      "solution": "听力理解的关键是抓住主旨大意和关键信息，过度纠结单词反而影响理解。听懂“stand up / sit down / open your book”等课堂简短指令并作出相应反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听懂每一个单词",
+        "B. 抓住关键信息和主旨大意",
+        "C. 把内容逐字翻译成中文",
+        "D. 记下所有内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0158",
+      "item_type": "choice",
+      "stem": "【听力（1年级）·听懂课堂简短指令并作出反应·完形】听一段关于校园活动的对话，选择最合适的选项填空。\nA: What are we going to do after class?\nB: Let's ______ on the playground. The weather is fine.\nA: Sounds good! I'll bring my basketball.",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.55,
+      "solution": "let's + 动词原形，球类前不加冠词。play basketball 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. play basketball",
+        "B. play the basketball",
+        "C. playing basketball",
+        "D. played basketball"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0159",
+      "item_type": "fill",
+      "stem": "【听力（1年级）·听懂课堂简短指令并作出反应·填空】听一段短对话并填空（用听到的内容作答）。\n对话中说话人 A 计划周末去 ______，原因是 ______。",
+      "answer": "(依据听力内容填写，例如：the library / to prepare for the exam)",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.65,
+      "solution": "听力填空题，依据所听内容提取关键信息作答。听懂“stand up / sit down / open your book”等课堂简短指令并作出相应反应。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0160",
+      "item_type": "choice",
+      "stem": "【听力（1年级）·在图片和动作提示下听懂简单小故事】听力练习中要有效把握\"在图片和动作提示下听懂简单小故事\"，下列做法最关键的是(    )",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.45,
+      "solution": "听力理解的关键是抓住主旨大意和关键信息，过度纠结单词反而影响理解。借助图片、动作和教师表演听懂语言简单的小故事，并作出适当反应（如点头、选择、复述动作）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听懂每一个单词",
+        "B. 抓住关键信息和主旨大意",
+        "C. 把内容逐字翻译成中文",
+        "D. 记下所有内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0161",
+      "item_type": "choice",
+      "stem": "【听力（1年级）·在图片和动作提示下听懂简单小故事·完形】听一段关于校园活动的对话，选择最合适的选项填空。\nA: What are we going to do after class?\nB: Let's ______ on the playground. The weather is fine.\nA: Sounds good! I'll bring my basketball.",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.55,
+      "solution": "let's + 动词原形，球类前不加冠词。play basketball 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. play basketball",
+        "B. play the basketball",
+        "C. playing basketball",
+        "D. played basketball"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0162",
+      "item_type": "fill",
+      "stem": "【听力（1年级）·在图片和动作提示下听懂简单小故事·填空】听一段短对话并填空（用听到的内容作答）。\n对话中说话人 A 计划周末去 ______，原因是 ______。",
+      "answer": "(依据听力内容填写，例如：the library / to prepare for the exam)",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.65,
+      "solution": "听力填空题，依据所听内容提取关键信息作答。借助图片、动作和教师表演听懂语言简单的小故事，并作出适当反应（如点头、选择、复述动作）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0163",
+      "item_type": "choice",
+      "stem": "【策略（1年级）·敢于开口、不怕出错的学习态度】运用\"敢于开口、不怕出错的学习态度\"这一学习策略时，最有效的做法是(    )\nA. 只用一种策略，从不调整\nB. 结合自身实际灵活选择、持续反思与调整\nC. 完全模仿他人策略\nD. 策略不重要，靠天赋即可",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.4,
+      "solution": "学习策略应结合实际、灵活选择并持续反思调整。在口语活动中大胆开口，把错误视为练习的一部分，保持积极的学习情绪。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只用一种策略",
+        "B. 结合实际、灵活调整",
+        "C. 完全模仿他人",
+        "D. 靠天赋即可"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0164",
+      "item_type": "choice",
+      "stem": "【策略（1年级）·敢于开口、不怕出错的学习态度·完形填空】阅读下面关于学习策略的短文，选择最合适的词填入空格。\nWhen learning English, we should try different ______ (方法). If one doesn't work, we can ______ (尝试) another. The most important thing is to keep ______ (练习) every day.",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.5,
+      "solution": "methods 与\"策略\"对应，句子结构通顺，语义完整。",
+      "source": "llm_generated",
+      "options": [
+        "A. methods",
+        "B. mistakes",
+        "C. meanings",
+        "D. meetings"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0165",
+      "item_type": "fill",
+      "stem": "【策略（1年级）·敢于开口、不怕出错的学习态度·填空】结合自身实际，写出 2 个运用\"敢于开口、不怕出错的学习态度\"策略学习英语的具体做法。\n做法1：______\n做法2：______",
+      "answer": "(学生按要求作答)",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.6,
+      "solution": "策略运用训练，考察对\"敢于开口、不怕出错的学习态度\"的可操作性理解。在口语活动中大胆开口，把错误视为练习的一部分，保持积极的学习情绪。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0166",
+      "item_type": "choice",
+      "stem": "【策略（1年级）·借助图片实物在事物与词语间建立联系】运用\"借助图片实物在事物与词语间建立联系\"这一学习策略时，最有效的做法是(    )\nA. 只用一种策略，从不调整\nB. 结合自身实际灵活选择、持续反思与调整\nC. 完全模仿他人策略\nD. 策略不重要，靠天赋即可",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.4,
+      "solution": "学习策略应结合实际、灵活选择并持续反思调整。把具体事物、图片与英语词汇对应起来，形成“词—物”直观的记忆联结。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只用一种策略",
+        "B. 结合实际、灵活调整",
+        "C. 完全模仿他人",
+        "D. 靠天赋即可"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0167",
+      "item_type": "choice",
+      "stem": "【策略（1年级）·借助图片实物在事物与词语间建立联系·完形填空】阅读下面关于学习策略的短文，选择最合适的词填入空格。\nWhen learning English, we should try different ______ (方法). If one doesn't work, we can ______ (尝试) another. The most important thing is to keep ______ (练习) every day.",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.5,
+      "solution": "methods 与\"策略\"对应，句子结构通顺，语义完整。",
+      "source": "llm_generated",
+      "options": [
+        "A. methods",
+        "B. mistakes",
+        "C. meanings",
+        "D. meetings"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0168",
+      "item_type": "fill",
+      "stem": "【策略（1年级）·借助图片实物在事物与词语间建立联系·填空】结合自身实际，写出 2 个运用\"借助图片实物在事物与词语间建立联系\"策略学习英语的具体做法。\n做法1：______\n做法2：______",
+      "answer": "(学生按要求作答)",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.6,
+      "solution": "策略运用训练，考察对\"借助图片实物在事物与词语间建立联系\"的可操作性理解。把具体事物、图片与英语词汇对应起来，形成“词—物”直观的记忆联结。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0169",
+      "item_type": "choice",
+      "stem": "【语音（1年级）·字母歌与字母名称音】关于\"字母歌与字母名称音\"，下列说法正确的是(    )\nA. 语音不重要，说不清没关系\nB. 语音影响表达效果，需要模仿练习\nC. 只要会用音标就行\nD. 不必在意语调",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.4,
+      "solution": "语音是表达的重要载体，语音清晰、语调自然有助于有效交流。通过唱字母歌和听录音模仿，认读 26 个英文字母的名称音（letter names），能按顺序跟读字母表。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说不清没关系",
+        "B. 模仿练习提升",
+        "C. 只用音标",
+        "D. 不必在意语调"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0170",
+      "item_type": "choice",
+      "stem": "【语音（1年级）·字母歌与字母名称音·多选】训练英语\"字母歌与字母名称音\"时，可以采用的有效方法有（多选）：",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.5,
+      "solution": "A、B、C 是语音训练的有效方法；D 错——语音不能仅靠拼写掌握。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跟读模仿标准发音",
+        "B. 大声朗读并录音对比",
+        "C. 模仿语调、节奏",
+        "D. 完全靠书面拼写"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0171",
+      "item_type": "fill",
+      "stem": "【语音（1年级）·字母歌与字母名称音·填空】听一段录音，写出听到的单词或短语（注意重音与节奏）。\n听到的内容：______",
+      "answer": "(依据听到的内容填写)",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.6,
+      "solution": "听辨训练，考察对\"字母歌与字母名称音\"语音的辨识。通过唱字母歌和听录音模仿，认读 26 个英文字母的名称音（letter names），能按顺序跟读字母表。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0172",
+      "item_type": "choice",
+      "stem": "【语用（1年级）·问候与告别的得体表达】在\"问候与告别的得体表达\"情境下，最得体的表达选择是(    )\nA. 任何场合都用同样的方式表达\nB. 根据场合、对象和情感距离选择合适表达\nC. 直接把中文翻译成英文\nD. 越简短越好，不必考虑礼貌",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.45,
+      "solution": "语用知识要求根据情境选择得体表达，体现对场合、对象、情感距离的敏感性。在见面与分别场合使用合适的问候语和告别语，语气自然、音量合适。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一成不变",
+        "B. 根据场合选择",
+        "C. 直译中文",
+        "D. 越简短越好"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0173",
+      "item_type": "choice",
+      "stem": "【语用（1年级）·问候与告别的得体表达·应用文填空】补全下列对话，体现\"问候与告别的得体表达\"的得体表达。\n（场景：在图书馆，你想要借一本英语词典）\nA: Excuse me, ______?\nB: Sure. Please fill in this form first.",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.55,
+      "solution": "B 项使用委婉礼貌的请求结构，符合图书馆场合的得体表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. Give me the dictionary",
+        "B. Could I borrow an English dictionary, please?",
+        "C. I want the dictionary",
+        "D. Dictionary, here."
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0174",
+      "item_type": "choice",
+      "stem": "【语用（1年级）·问候与告别的得体表达·多选】关于\"问候与告别的得体表达\"的语用原则，下列描述正确的有（多选）：",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、D 是语用基本原则；C 错——英语与中文在表达习惯上有差异。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表达要考虑场合与对象",
+        "B. 语气应自然、得体",
+        "C. 与中文表达习惯完全一致",
+        "D. 注意文化差异，避免冒犯"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0175",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·在英语游戏中进行简单交流】用英语进行\"在英语游戏中进行简单交流\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0176",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·在英语游戏中进行简单交流·应用文填空】补全下列对话，使对话自然流畅地完成\"在英语游戏中进行简单交流\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0177",
+      "item_type": "fill",
+      "stem": "【说·（1年级）·在英语游戏中进行简单交流·应用文】请围绕\"在英语游戏中进行简单交流\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。在教师指导下玩英语课堂游戏，并在游戏中用最简句型进行问答交流。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0178",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·相互致以简单的问候】用英语进行\"相互致以简单的问候\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0179",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·相互致以简单的问候·应用文填空】补全下列对话，使对话自然流畅地完成\"相互致以简单的问候\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0180",
+      "item_type": "fill",
+      "stem": "【说·（1年级）·相互致以简单的问候·应用文】请围绕\"相互致以简单的问候\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。与同伴见面时用英语互致问候、介绍自己的名字，完成简单的见面交往。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0181",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·根据图片说出单词或短句】用英语进行\"根据图片说出单词或短句\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0182",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·根据图片说出单词或短句·应用文填空】补全下列对话，使对话自然流畅地完成\"根据图片说出单词或短句\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0183",
+      "item_type": "fill",
+      "stem": "【说·（1年级）·根据图片说出单词或短句·应用文】请围绕\"根据图片说出单词或短句\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。看着图片说出对应的英语单词或短句，实现从图像意义到英语口语的转换。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0184",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·独立或合作演唱学过的歌曲和歌谣】用英语进行\"独立或合作演唱学过的歌曲和歌谣\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0185",
+      "item_type": "choice",
+      "stem": "【说·（1年级）·独立或合作演唱学过的歌曲和歌谣·应用文填空】补全下列对话，使对话自然流畅地完成\"独立或合作演唱学过的歌曲和歌谣\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0186",
+      "item_type": "fill",
+      "stem": "【说·（1年级）·独立或合作演唱学过的歌曲和歌谣·应用文】请围绕\"独立或合作演唱学过的歌曲和歌谣\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。能独立或与同伴合作完整演唱学过的英语歌曲和童谣，音高、节奏基本准确。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0187",
+      "item_type": "choice",
+      "stem": "【看·（1年级）·观看简单英语动画片理解大意】观看英语短视频或多模态语篇时，要有效把握\"观看简单英语动画片理解大意\"，应该(    )",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"看\"的能力要求综合理解画面、声音、文字、图表等多模态信息。观看语言简单的英语动画片或教学节目，抓住主要信息和简单话语。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只看画面不看字幕",
+        "B. 综合画面、声音、文字等多种信息理解",
+        "C. 只听不看",
+        "D. 跳过不懂的部分"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0188",
+      "item_type": "choice",
+      "stem": "【看·（1年级）·观看简单英语动画片理解大意·多选】关于\"观看简单英语动画片理解大意\"的描述，下列正确的有（多选）：",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、D 都是\"看\"的有效策略；C 只关注外貌忽略了信息整合，过于片面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 观看时可以关注画面切换与配文",
+        "B. 留意字幕中的关键名词",
+        "C. 只需关注人物的外貌",
+        "D. 结合声音与文字把握整体意义"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0189",
+      "item_type": "fill",
+      "stem": "【看·（1年级）·观看简单英语动画片理解大意·填空】观看一段英语短视频后填空：\nThe video is mainly about ______. The most impressive part is ______.",
+      "answer": "(依据视频内容填写)",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.65,
+      "solution": "看图/视频后填空，考查对主旨与重点信息的把握。观看语言简单的英语动画片或教学节目，抓住主要信息和简单话语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0190",
+      "item_type": "choice",
+      "stem": "【词汇（1年级）·greeting】要真正掌握\"问候与告别词块\"这一词汇目标，关键做法是(    )\n（以问候与告别词块（hello / hi / goodbye）为例，结合语境反复运用该词块，听说读写并重）",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.4,
+      "solution": "词汇目标要求多维掌握——既会认读又会听说写用。听说并正确使用 hello、hi、good morning、goodbye 等问候与告别词块，在见面和分别时作出得体回应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听说读写综合训练、语境运用",
+        "B. 等到考试再突击记忆",
+        "C. 只需背诵词典释义即可",
+        "D. 认得就行不必说出来"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0191",
+      "item_type": "choice",
+      "stem": "【词汇（1年级）·greeting】用英语写作时，Anna想用上\"问候与告别词块\"相关词块，下列句子最自然贴切的是(    )\nA. We visited the school last Sunday and saw many pictures on the wall.\nB. We visited the museum last Sunday and saw many 问候与告别词块 on the wall.\nC. We visited the 问候与告别词块 last Sunday and saw many picture on the wall.\nD. We 问候与告别词块 the museum last Sunday and saw many pictures on the wall.",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 项使用\"问候与告别词块\"相关词块作宾语并保持 pictures 复数形式，语义与语境一致；A 缺词块，C picture 单复数错，D 短语搭配不当。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选 A 的内容",
+        "B. 选 B 的内容",
+        "C. 选 C 的内容",
+        "D. 选 D 的内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0192",
+      "item_type": "fill",
+      "stem": "【词汇（1年级）·greeting·填空】阅读下面短文，用所给汉语提示写出正确的英语词块。\nDavid likes travelling. Last year, his family went to Los Angeles and saw many famous ______（问候与告别词块）.\n（用括号内提示的英语词块作答，注意拼写和单复数）",
+      "answer": "问候与告别词块",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.6,
+      "solution": "按括号提示，结合\"问候与告别词块\"的核心词写出正确英语词块，注意名词单复数与拼写。听说并正确使用 hello、hi、good morning、goodbye 等问候与告别词块，在见面和分别时作出得体回应。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0193",
+      "item_type": "choice",
+      "stem": "【词汇（1年级）·school】要真正掌握\"学校生活词块\"这一词汇目标，关键做法是(    )\n（以学校生活词块（school / teacher / class）为例，结合语境反复运用该词块，听说读写并重）",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.4,
+      "solution": "词汇目标要求多维掌握——既会认读又会听说写用。听说 school、teacher、class、book、pen 等学校场景词块，能在学校情境图片中指认并说出。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只需背诵词典释义即可",
+        "B. 认得就行不必说出来",
+        "C. 等到考试再突击记忆",
+        "D. 听说读写综合训练、语境运用"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0194",
+      "item_type": "choice",
+      "stem": "【词汇（1年级）·school】用英语写作时，Anna想用上\"学校生活词块\"相关词块，下列句子最自然贴切的是(    )\nA. We visited the school last Sunday and saw many pictures on the wall.\nB. We visited the museum last Sunday and saw many 学校生活词块 on the wall.\nC. We visited the 学校生活词块 last Sunday and saw many picture on the wall.\nD. We 学校生活词块 the museum last Sunday and saw many pictures on the wall.",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 项使用\"学校生活词块\"相关词块作宾语并保持 pictures 复数形式，语义与语境一致；A 缺词块，C picture 单复数错，D 短语搭配不当。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选 A 的内容",
+        "B. 选 B 的内容",
+        "C. 选 C 的内容",
+        "D. 选 D 的内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0195",
+      "item_type": "fill",
+      "stem": "【词汇（1年级）·school·填空】阅读下面短文，用所给汉语提示写出正确的英语词块。\nDavid likes travelling. Last year, his family went to Los Angeles and saw many famous ______（学校生活词块）.\n（用括号内提示的英语词块作答，注意拼写和单复数）",
+      "answer": "学校生活词块",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.6,
+      "solution": "按括号提示，结合\"学校生活词块\"的核心词写出正确英语词块，注意名词单复数与拼写。听说 school、teacher、class、book、pen 等学校场景词块，能在学校情境图片中指认并说出。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

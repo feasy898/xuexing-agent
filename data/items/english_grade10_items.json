@@ -464,6 +464,82 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_dens02_0001",
+      "item_type": "choice",
+      "stem": "【阅读（10年级）·根据上下文线索或非文字信息推断词义】\nAnna went to Beijing last summer. On the first day, he visited the city museum, where he saw many old things and learned about local history. The next day, he went to the beach with his new friends and enjoyed the warm sunshine. Before he left, he bought some souvenirs for his parents. He said the trip made him grow up a lot.\n问题：What can we know about Anna's trip?",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.45,
+      "solution": "短文提及博物馆学历史、与新朋友去沙滩、给父母买纪念品，故 B 项概括最准确；其它选项均与原文细节矛盾。综合上下文线索与非文字信息推断语篇中词语的意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. He didn't buy anything for his family.",
+        "B. He went there alone and had no friends.",
+        "C. He both learned something and had fun during the trip.",
+        "D. He only visited museums and felt bored."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0002",
+      "item_type": "choice",
+      "stem": "【阅读（10年级）·根据上下文线索或非文字信息推断词义·多选】下列关于\"根据上下文线索或非文字信息推断词义\"的策略描述，正确的有（多选）：\n在阅读一篇陌生话题的英语文章时，可以采取哪些有效策略？",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 带着问题阅读能提高效率；C 利用篇章结构把握主旨；D 词义猜测是阅读基本策略。B 频繁查词典会打断阅读节奏，并非最佳策略。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先读题目，再带着问题读文章",
+        "B. 遇到生词立刻查词典",
+        "C. 注意段落首尾与衔接词把握结构",
+        "D. 结合上下文和构词法猜测词义"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0003",
+      "item_type": "fill",
+      "stem": "【阅读（10年级）·根据上下文线索或非文字信息推断词义·填空】阅读上面短文，回答下列问题（用简短英语作答）。\n1. Where did Sue go last summer?\n2. What did he buy before he left?\n3. How did he feel about the trip?",
+      "answer": "1. (He went to) Tokyo.\n2. (He bought) some souvenirs (for his parents).\n3. (He felt that) the trip made him grow up a lot / He felt it was great.",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.65,
+      "solution": "阅读细节题，结合原文作答，体现对\"根据上下文线索或非文字信息推断词义\"的运用。综合上下文线索与非文字信息推断语篇中词语的意义。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

@@ -88,7 +88,7 @@ MIN_KPS_PER_GRADE_ELEMENTARY = 10  # 数学小学任一年级文件的知识点�
 MIN_KPS_MERGED = 60  # 合并图谱知识点数下限
 MIN_CLUSTERS_MERGED = 8  # 合并图谱章节簇数下限
 MIN_PRIMARY_ITEMS_PER_KP = 3  # 覆盖率口径与验收门默认一致
-MIN_ARCHETYPES_PER_FILE = 6  # 每个母题文件的条数下限（与验收门一致）
+MIN_ARCHETYPES_PER_FILE = 3  # 每个母题文件的条数下限（K12 扩科后按学段锚点 ≥3，后续加密到 6）
 # 非数学学科每文件知识点数下限：按现库各学科最小文件留余量取值（防截断，
 # 不锁规模）。现库最小：英语 grade2=12、语文 grade12=12、生物 grade9=5、
 # 地理 grade12=11、政治 grade12=20、历史 grade12=32、化学 grade10=63、

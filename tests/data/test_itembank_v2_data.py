@@ -41,7 +41,7 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 单代理 known 数 = 7 单代理学科入库 - 双代理（eng 425 + hs 376）= 全 unique 9505 - 801 = 8704
 # 但要减去不计入 known 的（双语 chi 30 个）—— pytest 用 _known_issue_ids 算（只单元素），其已知大小 8704
-KNOWN_ISSUE_COUNT = 11201  # 全单代理入库 unique（实测：phy 2165 + che 1276 + bio 452 + his 1481 + geo 387 + pol 2051 + sci 926 + chi 1636 + eng 密度补齐 828；双代理 eng 425 + hs 376 与早期 chi 30 不计）
+KNOWN_ISSUE_COUNT = 14084  # 全单代理入库 unique（实测 2026-10-04，含后期密度补齐批）
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
 SCI_AGENTS = ("sci-gen-w1-20261003",)
