@@ -1,0 +1,71 @@
+{
+  "subject": "english",
+  "grade_band": [5, 6],
+  "note": "五六年级英语母题库（二级）：过去时日记写作、将来时计划表达、比较级句型、故事框架阅读与复述、听故事归纳情节、看图写话、购物对话、拼读规则拼词等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade5.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g5_past_diary",
+      "name": "一般过去时日记写作（动词过去式变化）",
+      "pattern": "典型情境：根据表格提示或图片，用一般过去时写一篇记录昨天/上周活动的日记（5—8 句）。通法：写前先“锁时态”——日记开头写清日期天气，通篇时间基准是过去，所有动词一次性变为过去式；动词变化三查——①规则动词：直接加 ed；以 e 结尾只加 d（like→liked）；辅音加 y 结尾变 y 为 ied（study→studied）；重读闭音节双写尾字母加 ed（stop→stopped）；②不规则动词单独记（go→went, eat→ate, buy→bought, see→saw）；③be 动词用 was/were。成文按“时间线＋感受”组织：上午…中午…下午…，结尾一句 It was a happy day! 收束。",
+      "example": "例：根据提示用一般过去时写日记（不少于 5 句）：Sunday, June 15th, Sunny；上午去公园（go to the park），中午吃面条（eat noodles），下午和爸爸打篮球（play basketball with Dad），晚上看书（read a book），感受：开心。参考答案：Sunday, June 15th　Sunny — It was Sunday. I went to the park with my friends in the morning. At noon, I ate noodles for lunch. In the afternoon, I played basketball with my dad. In the evening, I read a book at home. I was tired but very happy. What a nice day! 解析：全文以过去时间为基准，go→went、eat→ate（不规则）、play→played、read 的过去式拼写仍为 read 但读音变化；be 动词用 was（It was Sunday / I was tired）；按 in the morning—at noon—in the afternoon—in the evening 时间线排句，结尾用感叹句收束感受。",
+      "kp_ids": ["kp_eng5_gra5_past_simple", "kp_eng5_wri5_diary", "kp_eng5_voc5_chunks"],
+      "variant_axes": ["动词全部规则变化 → 掺入不规则动词（went/ate/bought/saw）", "表格提示 → 图片提示 → 半开放（自选周末活动）", "5 句 → 8 句并加入天气与感受描写", "时间标志词显性（yesterday/last week）→ 隐性（靠日记日期）"]
+    },
+    {
+      "id": "arch_eng_g5_future_plan",
+      "name": "一般将来时计划表达（be going to / will）",
+      "pattern": "典型情境：围绕周末计划、假期安排、新年决心等主题，用 be going to 或 will 口头或书面表达打算。通法：先“三定”——①定结构：be going to＋动词原形表既定打算（I am going to visit my grandma.），will＋动词原形表临时决定或预测（I think it will rain.）；②定 be 动词：主语单数用 is、复数用 I am/you are，going to 后面永远接动词原形；③定时间状语：tomorrow、next week、this summer 常与将来时连用。输出按“总分”结构：先一句总起（I have a good plan for the weekend.）再用 first/then/finally 列 2—3 项安排，结尾加一句意愿（I can't wait!）。",
+      "example": "例：用所给词的适当形式填空并仿写。① We ____ (visit) the Great Wall next Sunday. ② Look at the clouds! It ____ (rain). ③ 仿写：说出你暑假的两项打算。参考答案：① are going to visit / will visit；② is going to rain / will rain；③ 仿写示例：I am going to learn swimming this summer vacation. First, I am going to practice in the pool every morning. Then I am going to watch swimming games with my father. 解析：①next Sunday 是将来时间，主语 we 复数，be going to 结构用 are going to visit（will visit 亦可）；②看到乌云作出预测，is going to rain 语气更“有迹象”，will rain 强调即时判断；③仿写要点：主语 I 用 am going to，动词 visit/learn/practice 保持原形，用 first/then 排序使计划连贯。",
+      "kp_ids": ["kp_eng5_gra5_future_simple", "kp_eng5_spk5_topic_talk", "kp_eng5_gra5_sent_structure"],
+      "variant_axes": ["be going to 与 will 的语气分工（既定打算/临时决定与预测）", "填空 → 仿写句 → 成段计划（first/then/finally）", "主题轮换（周末/假期/新年决心/班级活动）", "疑问形式 Will you…? 与回答（Yes, I will.）"]
+    },
+    {
+      "id": "arch_eng_g5_comparative",
+      "name": "形容词比较级句型（than 比较）",
+      "pattern": "典型情境：比较两个人、两物或两只动物的高矮、长短、快慢，完成比较级填空、句型转换或看图写比较句。通法：句型框架“主语＋be＋比较级＋than＋对比对象”（Tom is taller than Mike.）。比较级变化四规则——单音节词加 er（tall→taller）；以 e 结尾加 r（nice→nicer）；重读闭音节双写加 er（big→bigger, thin→thinner）；辅音加 y 变 y 为 ier（heavy→heavier）；多音节词用 more＋原级（more beautiful）。三大易错点——比较对象要平行（Tom's bag 与 my bag 比，不能与 I 比）；than 不能漏；比较级前可用 much、a little 修饰（much taller 高得多）。做转换题时“比较级句 ⇄ as…as 同级句”互换记忆。",
+      "example": "例：用所给词的适当形式填空。① An elephant is much ____ (big) than a horse. ② This red skirt is ____ (beautiful) than that yellow one. ③ My brother is as ____ (tall) as my father. 参考答案：① bigger；② more beautiful；③ tall。解析：①big 是重读闭音节词，双写 g 加 er 得 bigger，前面的 much 表示“……得多”，是“更”的加强；②beautiful 是多音节词，比较级不能写 beautifuller，要在原级前加 more；③as…as 表示同级比较“和……一样高”，两个 as 之间必须用原级 tall，句意是“我哥哥和我爸爸一样高”。写比较句时牢记框架三件套：比较级＋than＋平行对象。",
+      "kp_ids": ["kp_eng5_gra5_compare_adj", "kp_eng5_gra5_sent_structure", "kp_eng5_voc5_context_accumulate"],
+      "variant_axes": ["比较级变化规则四类轮换（-er/-r/双写/-ier/more）", "同级比较 as…as 与比较级句互换", "比较对象平行性改错（than 前后成分要一致）", "much/a little 修饰比较级的程度表达"]
+    },
+    {
+      "id": "arch_eng_g5_story_frame",
+      "name": "故事类语篇三段框架（开头—经过—结局）阅读与复述",
+      "pattern": "典型情境：阅读一篇 150—250 词的故事（童话、寓言、人物小传），完成情节排序、划分结构或借助关键词复述。通法：读时给故事“切三刀”——开头段找人物＋时间＋地点（One day, a little rabbit lived in the forest.）；经过段找“问题＋尝试”（But one day… / So he… / Then…），注意转折词 but、顺序词 then/after that 是情节推进的路标；结局段找结果＋道理（At last… / The story tells us…）。排序题先定首尾（背景句和结果句最好认），再按时间词串中间；复述时用支架“有一天…后来…最后…”＋关键词卡，先两句再四句逐步脱离原文；寓言类最后回答“告诉我们什么道理”。",
+      "example": "例：读短文《The Thirsty Crow》，把下列句子按故事顺序排序：A. The crow put the stones into the bottle. B. A crow was thirsty, but he could not drink the water. C. The water came up and the crow drank it happily. 参考答案：B—A—C。解析：B 句交代人物（crow 乌鸦）和问题（thirsty 渴但喝不到水），是开头段；A 句是解决问题的尝试（put stones 放石子），对应经过段；C 句 the water came up and drank happily 是结果，属于结局段。排序时可先抓“背景句”定首句、抓“结果句”定尾句，再用因果链验证：因为喝不到→所以放石子→于是水升高。复述支架：One day, a crow was thirsty… Then he… At last…；道理可表述为 Think hard, and you will find a way.（多想办法就能解决问题）。",
+      "kp_ids": ["kp_eng5_dis5_story_frame", "kp_eng5_spk5_retell", "kp_eng5_cul5_literature"],
+      "variant_axes": ["排序 → 分段并概括段意 → 关键词支架复述", "显性时间词（one day/then/at last）→ 隐性因果推进", "童话寓言 → 名人小故事（加“人物品质”要素）", "情节题 → 主旨道理题（What does the story tell us?）"]
+    },
+    {
+      "id": "arch_eng_g5_listen_plot",
+      "name": "听故事归纳主要情节（听记任务）",
+      "pattern": "典型情境：听两遍 150 词左右的故事录音，完成情节排序、判断正误或填入故事地图（Who/Where/What happened/How did it end）。通法：听前读题画“故事地图”框架（人物、地点、事件、结局四格），预测可能词汇；第一遍“抓骨头”——只记每格 1—2 个关键词（首字母或中文速记），不求全；第二遍“补肉”——针对空格定向补听，重点盯顺序词（first, then, after that, finally）和转折词（but, suddenly）处的信息；判断正误题把每句与笔记逐格比对，注意 all/only/never 这类绝对词常设陷阱；听完按地图复述一遍再誊写答案，注意动词过去式拼写。",
+      "example": "例：听短文，判断正（T）误（F）。① Last Saturday, Bill went to the farm with his class. ② It rained on the farm, so they came back early. 录音原文：Last Saturday, Bill and his classmates went to Uncle Li's farm. They fed the chickens and picked apples. In the afternoon, it rained suddenly, but they still worked in the house and helped Uncle Li. They came back at five o'clock, late but happy. 参考答案：① T；② F。解析：①句与原文 Last Saturday, Bill and his classmates went to…farm 一致，with his class 是 classmates 的同义转换，判 T；②句说“下雨所以早回”，原文虽有 it rained suddenly，但 but 之后写“仍在屋里帮忙、五点才回、晚而开心”，结果与“早回”相反，判 F。技巧：转折词 but 后面往往是出题点，绝对词 so…early 需在原文找到直接证据。",
+      "kp_ids": ["kp_eng5_lis5_plot", "kp_eng5_dis5_story_frame", "kp_eng5_lsm5_cog_old_experience"],
+      "variant_axes": ["判断正误 → 排序 → 故事地图填空（四格关键词）", "同义转换干扰（class/classmates）与转折词陷阱（but 后定结果）", "听一遍抓大意 → 听两遍补细节", "听后口头复述 → 笔头摘要（3 句话概括故事）"]
+    },
+    {
+      "id": "arch_eng_g5_pic_paragraph",
+      "name": "看图写话（围绕图片写几句连贯描述）",
+      "pattern": "典型情境：给一幅或多幅图（公园、教室、街头），写出 4—6 句连贯的描述或小记叙文。通法：五步成文——①定“图三问”：谁（人物）、哪儿（地点）、在做什么（动作），多幅图再加“先后”；②定时态：单幅图描写现在场景用现在进行时（Look! The children are playing…），多幅图记事用一般过去时或按时间轴混排；③列词组：把每幅图的动词短语先列成清单（fly a kite, water the flowers）；④套框架组句：总起句（It is Sunday morning. / Look at the picture.）＋细节句 2—4 句＋感受句（How happy they are!）；⑤通读检查：句首大写、标点、单复数、时态一致性，多幅图间加 then/after that 衔接。",
+      "example": "例：看四幅图写一段连贯的话（不少于 5 句）：图 1 孩子们到公园；图 2 男孩们踢足球；图 3 女孩们放风筝；图 4 大家坐在草地上喝水聊天。参考答案：It was Sunday morning. The children went to the park by bike. Some boys played football on the grass. The girls flew kites in the sky. The kites were like birds. Then they sat under the tree, drank some water and talked happily. What a good day! 解析：四幅图按时间先后用一般过去时叙述（went, played, flew, sat, drank）；flew 是 fly 的不规则过去式；图 3 加一句比喻 The kites were like birds 使描写生动；图 4 用 then 衔接，三个动词 sat, drank and talked 并列；结尾感叹句收束。检查要点：每句首字母大写、句末标点、名词单复数（kites）与动词过去式拼写。",
+      "kp_ids": ["kp_eng5_wri5_pic_paragraph", "kp_eng5_wri5_narration", "kp_eng5_gra5_past_simple"],
+      "variant_axes": ["单幅图描写（进行时）→ 多幅图叙事（过去时）", "4 句 → 6—8 句并加入比喻/感受句", "图片内容明确 → 需合理想象补细节（天气、心情）", "衔接词从无到有（then/after that/at last）"]
+    },
+    {
+      "id": "arch_eng_g5_shopping_dialogue",
+      "name": "购物情境对话（售货员与顾客）",
+      "pattern": "典型情境：在商店、文具店、水果店完成一段买东西的对话，补全句子或角色扮演。通法：购物对话“四步一注意”——①招呼：Can I help you? / What can I do for you? 顾客回应 I want… / I'd like…；②询价试穿：How much is it/are they?（单数 is、复数 are）；Can I try it on?；③决定购买：I'll take it. 与付款 Here you are.；④道别：Thank you! — You're welcome. 一注意：售货员说 What can I do for you? 不能回答 Yes, I can，要直接说要买什么。价格问答中 dollars/yuan 常与数字连读，补全对话后两人互换角色完整表演一遍检查语用是否得体。",
+      "example": "例：补全对话。A: Good morning! ____? B: Yes, please. I want a schoolbag. A: What about this blue one? B: It's nice. ____? A: Fifty yuan. B: OK. ____. Here is the money. A: Thank you. Goodbye! 参考答案：① Can I help you（或 What can I do for you）；② How much is it；③ I'll take it。解析：①处是售货员开场招呼，由答句 Yes, please（呼应 Can I…? 请求句）锁定用 Can I help you?；②处下句答 Fifty yuan（价格），必问 How much is it（schoolbag 单数用 is）；③处由 Here is the money（付钱）倒推顾客决定购买，用 I'll take it。整段对话覆盖“招呼—选货—询价—付款—道别”完整购物链，演练时注意 What can I do for you? 的答语直接说要买的东西。",
+      "kp_ids": ["kp_eng5_prg5_shopping", "kp_eng5_voc5_chunks", "kp_eng5_cul5_countries_info"],
+      "variant_axes": ["商品类型（文具/衣服/水果）与单复数询价切换（is/are）", "四步完整链 → 抽空 2—3 处补全 → 角色扮演创编", "加入尺码颜色偏好（What size? I like red.）", "中外货币与礼貌表达差异（Here you are. 与找零用语）"]
+    },
+    {
+      "id": "arch_eng_g5_blend_word",
+      "name": "拼读规则拼词（音形结合判断读音/拼写）",
+      "pattern": "典型情境：给一组学过的单词，判断划线字母或字母组合的读音是否相同（辨音选择题），或根据读音规则和音标拼读、拼写生词。通法：元音“长短音”两手抓——开音节（辅音＋元音＋辅音＋e，如 cake）元音发字母本音 /e/，闭音节（如 cat）发短音 /æ/；常见字母组合归类记：ee/ea 多发长音 /i:/（tree, tea），ow 双面派（snow /əu/ 与 cow /au/）靠“跟词记忆”；辅音组合 ch/sh/th（think 咬舌送气）口型区分。做题三步：逐词读出划线部分→按音归组（相同音打同一记号）→比对选项挑出不同者；拼生词时先切音节（win-ter, rab-bit）再逐段拼读。",
+      "example": "例：判断下列各组单词划线部分读音是否相同，相同写 S，不同写 D。① name　cake ② pig　big ③ bread　tea ④ how　snow 参考答案：① S；② S；③ D；④ D。解析：①name、cake 都是“辅音＋a＋辅音＋e”的开音节，a 发本音 /e/，读音相同；②pig、big 都是闭音节，i 发短音 /ɪ/，相同；③bread 中 ea 发短音 /e/，tea 中 ea 发长音 /i:/，同一组合两种读音，不同；④how 中 ow 发 /aʊ/，snow 中 ow 发 /əʊ/，ow 是双面派组合，需跟词记忆。辨音题先把划线部分大声读出来，再按音归组比对；遇到 ow/ea 这类多音组合，联想课本代表词（cow/goat、head/meat）定音。",
+      "kp_ids": ["kp_eng5_pha5_blend_word", "kp_eng5_voc5_context_accumulate", "kp_eng5_lsm5_preview_review"],
+      "variant_axes": ["单元音长短（开音节/闭音节）→ 字母组合（ee/ea/ow/oo/ai）", "辨音选择 → 根据音标写单词 → 切音节拼读生词", "双面组合（ow/oo/ea）跟词记忆专项", "读音规则迁移到听写与单词记忆（音形挂钩）"]
+    }
+  ]
+}

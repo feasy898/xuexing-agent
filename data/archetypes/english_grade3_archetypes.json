@@ -1,0 +1,71 @@
+{
+  "subject": "english",
+  "grade_band": [3, 4],
+  "note": "三四年级英语母题库（一级）：be 动词选择、两种时态看图辨析、冠词与名词复数、听力抓细节（人物地点数字）、读前预测、实用语篇阅读、看图仿写句子、贺卡与邀请卡写作等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade3.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g3_be_verbs_choice",
+      "name": "be 动词 am/is/are 选择填空",
+      "pattern": "典型情境：给出人称代词或名词主语，选择正确的 be 动词填空（I am / He-She-It 单数 is / You-We-They 复数 are）。通法：口诀“我用 am，你用 are，is 用于他她它，单数 is 复数 are”。操作三步：①找主语——划出 be 动词前面的主语，遇缩写 I'm、he's 先还原；②判单复——I 永远配 am；you 无论“你/你们”都配 are；he/she/it/人名/单数名词配 is；we/they/复数名词配 are；③回头验证——把句子连读一遍，主语和 be 动词“打架”立即能听出来。注意 and 连接两个主语变复数（Tom and I are…）。",
+      "example": "例：用 am、is、are 填空。① I ____ a student. ② Look! The cats ____ on the bed. ③ Tom and I ____ good friends. ④ My mother ____ a teacher. 参考答案：① am；② are；③ are；④ is。解析：①主语是 I，固定用 am；②主语 The cats 是复数（多只猫），用 are；③Tom and I 用 and 连接的两个主语按“我们”算复数，用 are；④主语 My mother 是第三人称单数，用 is。做题时先圈主语再判断单复数，最后把每句连读检查主语与 be 动词是否一致。",
+      "kp_ids": ["kp_eng3_gra3_be_verbs", "kp_eng3_gra3_pronoun_possessive", "kp_eng3_gra3_simple_present"],
+      "variant_axes": ["人称代词主语 → 名词主语（含不可数名词）", "肯定句 → 否定句与一般疑问句改写（Is he…? Yes, he is.）", "缩写形式还原（I'm/he's/they're）", "and/but 连接并列主语的单复数判断"]
+    },
+    {
+      "id": "arch_eng_g3_tense_contrast",
+      "name": "看图辨时态：一般现在时与现在进行时",
+      "pattern": "典型情境：给图片或时间标志词，辨析用一般现在时（习惯性动作）还是现在进行时（正在发生），并写出动词正确形式。通法：抓“两条证据链”——①图上证据：单幅图里人物“正在做”（张嘴说、举笔写）用进行时；图表/日常作息类用一般现在时；②词句证据：看到 now、look、listen 用现在进行时（be＋动词 ing）；看到 every day、on Mondays、usually、always 用一般现在时（三单加 s）。写句时按“主语＋be＋v-ing”或“主语＋v（三单 v-s）＋其它”组装，三单变化按“s/x/ch/sh/o 结尾加 es、辅音加 y 变 y 为 ies”处理。",
+      "example": "例：看图并用所给动词的适当形式填空。① Look! The girl ____ (dance) under the tree. ② My father ____ (watch) TV every evening. ③ The students ____ (read) books now. ④ Mike often ____ (go) to school by bike. 参考答案：① is dancing；② watches；③ are reading；④ goes。解析：①Look! 和图中女孩正在跳舞 → 现在进行时，主语单数用 is dancing；②every evening 表习惯 → 一般现在时，father 三单加 es 得 watches；③now 是进行时标志，students 复数用 are reading；④often 表频率习惯 → 一般现在时，Mike 三单，go 以 o 结尾加 es 得 goes。判断顺序：先找时间词/图证，再定句型，最后处理三单或 ing 形式。",
+      "kp_ids": ["kp_eng3_gra3_present_progressive", "kp_eng3_gra3_simple_present", "kp_eng3_voc3_image_meaning"],
+      "variant_axes": ["时间标志词显性（now/every day）→ 隐性（靠图片动作判断）", "肯定句 → 否定句（isn't v-ing / doesn't v）与疑问句", "单幅图判断 → 四幅图按时间轴连写成小语段", "三单动词变化规则（s/es/ies）与 ing 变化规则（去 e 加 ing、双写加 ing）交叉考查"]
+    },
+    {
+      "id": "arch_eng_g3_article_plural",
+      "name": "冠词 a/an 与名词复数填空",
+      "pattern": "典型情境：在语篇或句子中填 a/an/the 或把名词变为复数形式（加 s/es/ies 及不规则变化）。通法：冠词听“第一个音”——辅音音素开头用 a（a book、a pen），元音音素开头用 an（an apple、an egg、an hour 中 h 不发音也算元音音素）；特指双方都知道的用 the（Open the door, please.）。复数看“结尾字母”——一般加 s；s/x/ch/sh 结尾加 es（bus→buses, box→boxes）；辅音字母加 y 结尾变 y 为 ies（baby→babies）；f/fe 结尾多变为 ves（knife→knives）；不规则单独记（man→men, child→children, foot→feet）。填完连读检查名词前的数词与复数是否呼应（two books 不能写 two book）。",
+      "example": "例：用 a/an 填空并写出名词复数形式。① I have ____ apple and ____ banana. ② There are three ____ (box) and five ____ (child) in the room. 参考答案：① an apple, a banana；② boxes, children。解析：①apple 以元音音素开头用 an，banana 以辅音音素开头用 a，判断依据是读音而非字母；②box 以 x 结尾加 es 得 boxes；child 是不规则变化，复数为 children，前面有 three 和 five 两个数词，必须用复数形式，填完把短语连读（three boxes, five children）验证数量与形式一致。",
+      "kp_ids": ["kp_eng3_gra3_article_plural", "kp_eng3_voc3_people_place"],
+      "variant_axes": ["a/an 选择以“音”定（含 hour/useful 等 h/u 开头陷阱）", "规则复数（s/es/ies/ves）→ 不规则复数（men/children/feet）", "a/an 与 the 的分工（泛指初次/特指已知）", "数词＋复数名词短语的搭配改错"]
+    },
+    {
+      "id": "arch_eng_g3_listen_detail",
+      "name": "听对话抓细节（人物·地点·数字）",
+      "pattern": "典型情境：听简短对话或独白，完成“人物是谁、在哪儿、几个/几点”的细节选择题或表格填写。通法：听前 20 秒读题干和选项，预判要抓的信息类型（Who 问人物、Where 问地点、How many/how much 问数量、What time 问时间），圈出选项中不同的关键词；听第一遍抓与题目直接相关的原词或同义词（听到 in the library 对应选项 at the library），在题边速记首字母或数字；数字题防三大坑——thirteen/thirty 重音区分（-teen 重在后、-ty 重在前）、时间先分后点（8:15 读 a quarter past eight）、价格 dollars 与 cents 单位；听第二遍只核查没把握的题，不重做全部。",
+      "example": "例：听对话，选择正确答案。① Where are they? A. In the park. B. In the library. C. In the zoo. ② How many books does Mike have? A. 13. B. 30. C. 3. 录音原文：W: Be quiet, please. Look at the sign—No talking. M: Sorry. … W: Mike, are these your books? M: Yes, thirteen Chinese books and thirteen storybooks—thirty in all. 参考答案：① B；② B。解析：①题抓场景线索词 be quiet（安静）与 No talking（禁止讲话）的标识语，推出在图书馆；②题是数字总和理解，13＋13＝30，选 B 不选 A（13 只是其中一类书的数量）；thirteen 与 thirty 的区分靠重音：thirTEEN 重音在后，THIRty 重音在前，听时在题边速记数字再核对选项。",
+      "kp_ids": ["kp_eng3_lis3_detail", "kp_eng3_voc3_number_quantity", "kp_eng3_voc3_people_place"],
+      "variant_axes": ["信息类型轮换（Who/Where/How many/What time/How much）", "数字辨音陷阱（-teen/-ty、时间表达、价格）", "直接细节题 → 需简单计算或同义转换的细节题", "选择题 → 表格/短句填空（拼写单词）"]
+    },
+    {
+      "id": "arch_eng_g3_read_predict",
+      "name": "读前预测与读中验证（配图语篇）",
+      "pattern": "典型情境：只给标题和插图，先预测语篇内容并勾选预测项，再阅读配图故事验证、修正。通法：预测三看——①看标题抓主题词（My School Day → 讲学校一天的生活）；②看图片按顺序描述（谁、在哪、做什么），用中文先讲一遍“我猜的故事”；③把预测变成可验证的问题（他会遇到老师吗？）带着问题读。读中两做——逐段对照预测打勾或打叉，读不懂的词先跳过，靠图片和上下文猜；读后一总结——用“人物＋时间＋做了什么”三要素复述大意，并把预测错的证据在原文划出来。这一通法把“猜—读—证”循环固化成阅读习惯。",
+      "example": "例：只看标题 In the Zoo 和四幅图（猴山、大象、冰淇淋、回家路上），先勾选你预测会读到的内容，再读短文验证：A. 喂猴子 B. 踢足球 C. 看大象 D. 买冰淇淋。参考答案：预测可勾 A、C、D；读后验证：短文写道 We see monkeys first. I give a banana to a little monkey. Then we watch a big elephant. It drinks water with its long nose. On our way home, Dad buys me an ice cream. 故 A、C、D 正确，B（踢足球）在文中和图中均无证据，属于过度预测。解析：预测来自图片证据（猴山图→喂猴子），验证靠原文原词（monkey/elephant/ice cream），无证据的选项即使合乎常识也要排除。",
+      "kp_ids": ["kp_eng3_red3_predict", "kp_eng3_red3_intro_text", "kp_eng3_lsm3_cog_old_new"],
+      "variant_axes": ["预测选项三选一 → 开放预测（自己提两个问题）", "图片证据充分 → 图片信息不足需靠标题和常识", "预测人物介绍类 → 预测地点/物品说明类语篇", "读后验证从打勾升级为用原文句子作证据复述"]
+    },
+    {
+      "id": "arch_eng_g3_sign_menu_reading",
+      "name": "实用语篇阅读（提示牌·菜单·购物单）",
+      "pattern": "典型情境：读取生活中的真实短文本——警示牌（No Swimming）、菜单、购物单、课程表，完成判断或查找任务。通法：实用语篇“三定”——①定类型：图形＋短句多为标识牌（No＋v-ing 表示禁止），分栏列价的是菜单，清单式的是购物单；②定关键信息：菜单先看栏目（Food/Drinks）再横向比对价格，购物单核对品名与数量；③定答案位置：题目问什么就只读那一栏，不逐词通读。遇到生词用构词和图片猜（hamburger 旁画着汉堡）；比较价格题先圈出两个数字再作差；判断对错题必须回原文找到原词或同义表达再落笔。",
+      "example": "例：读菜单完成任务。菜单：Food—hamburger ¥10, chicken ¥15, fish ¥18; Drinks—milk ¥5, juice ¥6, water ¥2. ① A hamburger and a glass of juice are ____ yuan. A. 15 B. 16 C. 18 ② Which is the cheapest (最便宜的)? 参考答案：① B（10＋6＝16）；② water（¥2）。解析：①题先在 Food 栏找到 hamburger 定价 10，再切到 Drinks 栏找到 juice 定价 6，相加得 16，选 B；②题 cheapest 意为最便宜，把六个价格圈出逐栏比较（10/15/18/5/6/2），最小数字 2 对应 water。实用语篇不必逐词读，按“题目→栏目→价格→计算”的路径查找即可，这正是生活中真实英语的用法。",
+      "kp_ids": ["kp_eng3_vie3_sign_menu", "kp_eng3_red3_intro_text", "kp_eng3_voc3_number_quantity"],
+      "variant_axes": ["文本类型（警示牌/菜单/购物单/课程表/生日邀请卡）", "查找任务 → 比较与计算任务（差价、合计）", "禁令标识结构（No＋v-ing / Don't…）", "真实语料排版（大小写混用、缩写、图形符号）"]
+    },
+    {
+      "id": "arch_eng_g3_imitation_writing",
+      "name": "看图仿写句子（句型替换写作）",
+      "pattern": "典型情境：给例句和图片，仿照句型结构替换关键词写出新句子。通法：“抄框架、换零件”三步——①画出例句的句子框架（This is my ____ . / I can ____ . / Look at the ____, it is ____ .），框架部分原样保留；②按图片替换“零件”——名词换图片里的物品、动词换图上人物的动作、形容词换颜色大小；③检查四项再誊写——开头大写、单词间留空格、句末标点（陈述句用句点、疑问句用问号）、抄写单词逐字母核对。仿写三句以上时按“总起—分述”排顺序（先写 This is…，再写细节句），使句子围绕同一幅图不跑题。",
+      "example": "例：仿照例句，看图写句子。例句：This is a cat. It is white.（图中：一只黑色的狗在跑）参考答案：This is a dog. It is black. / Look! The dog is running.（写两句及以上均可）。解析：第一句照抄框架 This is a ____，把 cat 替换成图片中的 dog；第二句框架 It is ____ 中 white 替换为 black；能力强的学生可升级为进行时句 Look! The dog is running.（图上狗正在跑）。检查四项：句首 T 大写、单词间有空格、句末句号、dog/black/running 逐字母对照拼写，注意 running 双写 n 加 ing。",
+      "kp_ids": ["kp_eng3_wri3_imitation", "kp_eng3_wri3_letters_words", "kp_eng3_gra3_present_progressive"],
+      "variant_axes": ["句型框架升级（There is/are… / I can… / … like…）", "替换单一零件 → 同时替换主语和表语", "看图仿写 → 根据语境（人物介绍）仿写小语段", "书写规范考查（四线三格、大小写、标点）"]
+    },
+    {
+      "id": "arch_eng_g3_card_writing",
+      "name": "贺卡与邀请卡写作（简单应用文）",
+      "pattern": "典型情境：在节日（教师节、新年、生日）或活动（班级聚会）情景下，写一张 3—5 句的英文贺卡或邀请卡。通法：贺卡/邀请卡三段式——①称呼顶格写（Dear Mum, / Dear Amy,）；②正文 2—3 句完成交际目的：贺卡先点节日或事由再送祝愿（Happy Teachers' Day! / Happy birthday!），邀请卡用 Can you come to my birthday party? 发出邀请，并写清时间（at 5 o'clock on Sunday）和地点（at my home）；③署名换行（Yours, Lily / From, Mike）。写完自查三件事：称呼对象与祝愿语匹配（教师节祝福送给 teacher 而不是 mother）、时间和地点两项要素齐全、每个句子开头大写且句末有标点。",
+      "example": "例：教师节快到了，请给王老师写一张 3—5 句的贺卡。参考答案：Dear Miss Wang,  Happy Teachers' Day! Thank you for your help. I like your English class very much. You are a good teacher.  Yours,  Li Ming。解析：①称呼顶格 Dear Miss Wang 后加逗号；②正文四句依次完成“点明节日—表达感谢—给出理由—送上评价”，祝愿语 Happy Teachers' Day! 独立成句且用感叹号；③署名 Yours, 换行顶右写 Li Ming。评分时对照三要素：对象匹配（贺卡写给老师）、祝愿得体（教师节用 Teachers' Day 而非 birthday）、格式完整（称呼、正文、署名三段齐全），句首大写与句末标点各占一分。",
+      "kp_ids": ["kp_eng3_wri3_card_letter", "kp_eng3_prg3_greet_farewell", "kp_eng3_cul3_symbols_festivals"],
+      "variant_axes": ["卡片类型（生日卡/教师节卡/新年卡/邀请卡）", "交际功能（祝愿→感谢→邀请并写明时间地点）", "要素缺失改错（漏称呼、时间地点不全）", "3 句 → 5 句的信息量递增与署名格式变化"]
+    }
+  ]
+}

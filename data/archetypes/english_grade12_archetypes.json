@@ -1,0 +1,71 @@
+{
+  "subject": "english",
+  "grade_band": [10, 11, 12],
+  "note": "高三英语母题库（选择性必修＋选修·高考冲刺）：听力主旨题、完形填空、语法填空时态体系整合、虚拟语气与倒装、应用文写作、读后续写情节构建、概要写作、阅读深层推理与态度评价等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade12.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g12_listen_main",
+      "name": "听力主旨题与长语篇信息筛选（考试专项）",
+      "pattern": "典型情境：听长对话、独白或学术讲座式材料，概括主旨要义、说话人意图或在多信息干扰下筛选目标信息。通法：主旨题三抓——①抓首尾：首句开门见山点话题（Today I'd like to introduce… / I'm calling to ask about…），末句常总结或提出请求，主旨答案多藏于这两处；②抓高频与改述：重复出现的名词群及同义改述词合并成话题词云，与选项比对时允许同义转换（原文 carbon pollution ↔ 选项 environmental problem）；③抓结构词：lecture 型材料以 first/second/finally 分层，主旨是各层上位的总题（不能选某一层）。信息筛选题坚持“题干定位—信号词守候—速记印证”三步：先读题圈定位词，听到信号词（but、however、the key point is）立即警觉，速记关键词后按题目要求回填；学术讲座题注意定义句（X refers to…）与举例句（such as）的区别，例子不当选主旨。",
+      "example": "例：听一段独白，选择正确答案。① What is the speaker mainly talking about? A. The history of the city library. B. How to use the school library. C. A new reading programme for students. 录音原文（节选）：Good morning, students. Today I'm going to tell you about our new reading programme called Read One Hour a Day. From next Monday, every student is expected to read for one hour after class. The school library will stay open until 6 p.m., and you can borrow up to five books each time. If you have any questions, come to the library office. 参考答案：C。解析：首句 Today I'm going to tell you about… new reading programme 直接点明主旨，是“首句定主旨”的典型样本；A 项 history（历史）与 B 项 how to use（怎么用）只对应中段对图书馆开放时间与借书量的说明，属局部细节；C 项与高频词组 reading programme、read for one hour 同义呼应且覆盖全篇（缘起—安排—配套—咨询渠道）。主旨题作答后用“覆盖度检验”：能否用该选项概括每一层内容。",
+      "kp_ids": ["kp_eng12_exa12_listen_main", "kp_eng12_lis12_lecture_advanced", "kp_eng12_lis12_note_advanced"],
+      "variant_axes": ["对话主旨 → 独白主旨 → 学术讲座分层主旨", "首句点题 → 需合并多层的归纳式主旨", "主旨题＋细节题＋意图题混合组卷", "速记体系升级（缩写/符号/分层笔记）"]
+    },
+    {
+      "id": "arch_eng_g12_cloze_narrative",
+      "name": "完形填空（叙事线索·情感基调·词汇复现三线合围）",
+      "pattern": "典型情境：一篇 250 词左右、以人物成长或善意故事为题材的记叙文挖 15 空，考查实词辨析与语篇衔接。通法：三线合围法——①情节线：首段定“主人公＋困境”，全文沿“困境—转折—行动—结局”推进，选词必须让情节闭环（前文 lost his job，后空选 worried 类情绪词才顺）；②情感线：圈出全文情感形容词与副词，确定基调是先抑后扬还是始终温暖，空格词的褒贬必须与基调一致；③词汇线：上下文复现（原词、同根词、同义词）是最硬证据，形近词干扰（adapt/adopt）靠词义回代排除。操作节律：第一遍 3 分钟不选只读并划线，第二遍逐空寻找三线证据，第三遍 2 分钟代入回读；15 空中动词与名词约占七成，优先保这两类。",
+      "example": "例：完形节选（主题：暴雨天公交司机为老人停车等候）。… The old man was walking slowly with a stick. Seeing him, the driver stopped and waited ____, though the traffic light had turned green. Some passengers began to ____, but the driver smiled and said, “We'll all be old one day.” … 1. A. patiently B. nervously C. angrily D. proudly 2. A. complain B. cheer C. sleep D. leave。参考答案：1. A；2. A。解析：第 1 空由情节线（老人拄拐慢行）与下文司机的话“We'll all be old one day”可知其态度温和有耐心，patiently 与后文 smiled 情感一致；nervously（紧张）、angrily（生气）与微笑矛盾。第 2 空由 but 转折词定位：乘客的初始反应与司机的善意形成对照，再由结尾“全车人安静下来并致意”的常见情节走向锁定 complain（抱怨）；cheer（欢呼）与转折逻辑不符。两空均体现“情节线＋情感线＋转折词”三线合围的证据链。",
+      "kp_ids": ["kp_eng12_exa12_cloze", "kp_eng12_voc12_idiomatic", "kp_eng12_dis12_implicit_cohesion"],
+      "variant_axes": ["题材轮换（成长/善意/探险/职场）与情感基调变化", "复现线索同段 → 跨段与同根词变体", "15 空全实词配置 vs 掺入连词副词的逻辑空", "夹叙夹议文体：结尾议论空的双重定位"]
+    },
+    {
+      "id": "arch_eng_g12_grammar_fill_tense_final",
+      "name": "语法填空·时态体系整合与一致原则",
+      "pattern": "典型情境：语篇型语法填空的谓语空，需在十二个时态（含完成进行与完成被动）中定形，并同步处理主谓一致、冠词与从句连接词。通法：四步锁定——①谓语判定：连词数＝谓语数，所给动词所在分句若无谓语则填谓语形式，否则填非谓语；②时态定位：三重证据——时间标志词（by the end of last year＋过去完成；by now/since then＋现在完成；this time tomorrow＋将来进行）、上下文叙事基准（整段回忆过去则从句跟着过去）、句式规则（hardly…when、no sooner…than 用过去完成＋一般过去）；③语态与一致：承受者被动（be done 按主语配 be），主谓一致查三单、复数、就近原则（either…or）；④若空为冠词/代词/连词位，按“特指用 the、泛指单数可数用 a/an；连接词看从句缺什么”。最后通读全篇验证时态基调统一。",
+      "example": "例：语法填空。① By the time we arrived at the station, the train ____ (leave). ② This is the third time that I ____ (visit) the museum. ③ Neither the teacher nor the students ____ (be) satisfied with the result so far. ④ It was in the small town ____ he spent his childhood. 参考答案：① had left；② have visited；③ are；④ that。解析：①By the time＋过去时（arrived）主句用过去完成 had left，“到达之前火车已走”；②This is the first/second/third time that…固定用现在完成时，从句得 have visited；③neither…nor 遵循就近原则，与 the students 一致用复数 are，so far 呼应完成体意味；④考察强调句 It was＋被强调部分＋that…（非定语从句，因 spent 已有宾语 childhood、不缺成分），用 that。四空覆盖“过去完成”“time that＋完成”“就近一致”“强调句与定语从句辨析”四个整合级考点。",
+      "kp_ids": ["kp_eng12_gra12_tense_final", "kp_eng12_gra12_grammatical_agreement", "kp_eng12_gra12_article_advanced"],
+      "variant_axes": ["完成体家族（过去完成/现在完成/完成被动/完成进行）", "固定句式时态（This is the …time that/hardly…when）", "主谓一致三原则（语法一致/意义一致/就近）", "强调句、倒装句与从句混编的判断训练"]
+    },
+    {
+      "id": "arch_eng_g12_virtual_inversion",
+      "name": "虚拟语气 if 条件句（含省略倒装与错综时间变体）",
+      "pattern": "典型情境：单项选择或语法填空中考 if 虚拟条件句的三种基本式，及 if 省略倒装、wish/as if 从句等衍生结构。通法：三步对表——①定时间层：与现在相反（If I were you, I would… 从句过去式＋主句 would＋动词原形）；与过去相反（If you had come earlier, you would have met him. 从句 had done＋主句 would have done）；与将来相反（If it should rain tomorrow, we would put off… 从句 should/might＋原形）；②识别特殊位：if 省略时 had/were/should 提前（Had you taken my advice…＝If you had taken…）；③延伸结构照表迁移：wish 后用过去式（现在）/had done（过去）；as if/as though、would rather、It is (high) time that＋过去式；错综时间虚拟分别按各自时间配形式（If I had taken the medicine yesterday, I would feel better now. 从句过去层＋主句现在层）。判断入口：句意“未实现/与事实相反”即启动虚拟查表。",
+      "example": "例：单项选择。① If I ____ you, I would accept the offer and go to the summer camp. A. am B. was C. were D. be ② ____ he known the truth earlier, he would have made a different decision. A. Should B. Had C. Were D. If ③ I wish I ____ to the lecture last week, but I was busy with my project. A. went B. had gone C. would go D. have gone。参考答案：① C；② B；③ B。解析：①与现在事实相反（我不是你），从句 be 动词一律用 were，选 C；②从句还原为 If he had known…，与过去相反且省略 if，had 提前构成 Had he known，主句 would have made 相符，选 B（Should/Were 引导的是将来/现在层，与 would have made 不配）；③wish 对过去未实现的愿望用 had gone，后文 was busy 佐证“当时没能去”。三题覆盖“现在层 were、省略倒装 Had＋done、wish 过去层”三个高频虚拟位。",
+      "kp_ids": ["kp_eng12_gra12_subjunctive_if", "kp_eng12_gra12_inversion", "kp_eng12_gra12_ellipsis"],
+      "variant_axes": ["三个时间层基本式轮换", "if 省略倒装（Had/Were/Should 前置）专项", "延伸结构（wish/as if/would rather/It is time that）迁移", "错综时间虚拟（从句过去层＋主句现在层）辨析"]
+    },
+    {
+      "id": "arch_eng_g12_application_writing",
+      "name": "应用文写作（书信邮件·语域与语气控制）",
+      "pattern": "典型情境：高考应用文——建议信、申请信、邀请函、通知或发言稿转书信，80 词左右，考查得体性与要点覆盖。通法：五控制——①身份控制：先定位“我是谁对谁写”（学生会主席对国际友人＝礼貌外向的正式体），决定称谓与语气（Dear Mr. Smith / Hi, Chris）；②要点控制：题干给的要点全上（漏一点扣一档），每个要点 1—2 句展开并加一处细节或理由；③结构控制：开头一句点目的（I'm writing to invite you to…），主体分段或用 To begin with/What's more 分层，结尾礼貌收束（Looking forward to your early reply.）；④语气控制：委婉与热情并存——请求用 would/could（Would it be possible for you to…？），建议不越位（You might as well…），感谢具体化（Thank you for the delicious dinner you prepared last Friday）；⑤语言控制：一个亮点从句＋一个被动或 there be 变换句式即可，杜绝堆砌；写完查字数（80 词左右）、查格式（称呼、落款、分段）。",
+      "example": "例：假定你是李华，你校将举办中国文化节，请写邮件邀请外教 Ms. Brown 参加并参加一项活动，内容包括：时间地点、活动内容（至少两项）、请她表演一个节目。参考答案：Dear Ms. Brown,  I'm delighted to tell you that a Chinese Culture Festival will be held in our school next Friday afternoon, from 2 to 5 p.m. in the school hall. During the festival, paper cutting and Chinese calligraphy will be displayed, and visitors can also taste traditional snacks made by students. Since you are always interested in Chinese culture, we would feel greatly honored if you could perform a short English song at the closing ceremony. Please let me know if you are available. I'm looking forward to your early reply.  Yours sincerely,  Li Hua。解析：五控制落点——身份（学生对老师）决定 Dear Ms. Brown＋Yours sincerely 的正式落款；要点三全（时间地点 next Friday, 2—5 p.m., school hall；活动两项 paper cutting/calligraphy＋taste snacks；邀请表演 would feel greatly honored if you could perform）；语气用 would feel honored、could 委婉得体；语言亮点为被动 will be held、过去分词定语 snacks made by students 与 it 型敬语；全文约 105 词，格式完整。",
+      "kp_ids": ["kp_eng12_exa12_application", "kp_eng12_prg12_tone_control", "kp_eng12_prg12_hedge_language"],
+      "variant_axes": ["文种轮换（建议/申请/邀请/感谢/通知）", "语域三档（正式/半正式/非正式）与句式库切换", "要点式 → 要点＋开放细节（理由与情感）", "委婉与模糊语（might/perhaps/I'm afraid）升级训练"]
+    },
+    {
+      "id": "arch_eng_g12_continuation_writing",
+      "name": "读后续写（情节构建·衔接呼应·情感升华）",
+      "pattern": "典型情境：给一篇 350 词左右、结尾留悬念的英语记叙文和两个段首句，续写两段（各不少于 5 句）使之成为完整故事。通法：四步成文——①读前构架：通读原文圈“人物—冲突—伏笔”，特别标注未解决的线索（a lost dog, an unsent letter）与人物性格关键词（kind, shy），续写必须回收伏笔、不新开无关情节；②定情节骨架：用两段首句作锚——第一段“承接悬念＋第一次尝试”，第二段“转折/结果＋情感升华”，每段按“动作—对话/心理—小结果”三层展开；③语言落地：动词精准（groped, dashed 代替 walked/ran fast），至少 1 处非谓语状语与 1 处直接引语，情绪外化为动作（Her hands trembled as she opened the box.）；④回读自检三问：伏笔是否回收？两段首句关键词是否呼应展开？结尾是否点题升华（不一定大团圆，但要完成情感闭环）？卷面控制 150 词左右。",
+      "example": "例：读后续写。原文梗概：穷男孩 Sam 在旧书店看中一本诗集却买不起，店主老人注意到他一连三天来读同一本书；给定的两个段首句为 Paragraph 1: The old man called Sam to the counter. ____ Paragraph 2: Years later, Sam walked into the bookstore again with a book of his own. ____。参考答案（示例续写）：Paragraph 1: The old man called Sam to the counter. He pushed the poetry book across the desk and said with a warm smile, “A book should stay with someone who truly loves it.” Sam shook his head, his face turning red, because he knew he couldn't afford it. Seeing this, the old man wrote something on the first page and wrapped the book up. “Pay me later—when your poems are published,” he said. Holding the book tightly, Sam promised with tears in his eyes. Paragraph 2: Years later, Sam walked into the bookstore again with a book of his own. Now a young poet, he placed his newly published collection on the counter, with the old poetry book, well kept, in his bag. Opening it, the old man found the money tucked in the first page, beside his own old words “To a future poet”. They hugged without many words. The small shop was again filled with the smell of books and the warmth that never faded. 解析：续写回收了原文全部伏笔（买不起→“以后再付”，爱读诗→成为诗人），段一首句承接“店主叫住他”，完成“赠书—推辞—约定”三拍；段二以“多年后携自己的书归来”呼应书店与诗集，付钱与献书完成情感闭环；语言上用了独立主格（his face turning red）、非谓语（Holding the book tightly, …）、直接引语与细节动作（tucked in the first page），结尾一句点题升华而不空喊。",
+      "kp_ids": ["kp_eng12_wri12_wri_creative", "kp_eng12_dis12_implicit_cohesion", "kp_eng12_red12_evaluate"],
+      "variant_axes": ["题材轮换（成长/助人/冒险/亲情）与伏笔数量", "段首句给一个关键词 → 给转折性关键词（Suddenly/Unfortunately）", "情节合理性与原文细节一致性训练（不得改人设）", "语言升级：非谓语、独立主格、动作化情绪描写的量化要求"]
+    },
+    {
+      "id": "arch_eng_g12_summary_writing",
+      "name": "概要写作（读后概述·信息压缩与改写）",
+      "pattern": "典型情境：读一篇 300 词左右的说明文或议论文，用约 60 词写出涵盖全部要点的概要，禁止照抄原句。通法：五步压缩——①抓骨架：按结构信号词把原文切成 3—5 个要点层（论点—论据—结论或现象—原因—对策），每层用不超过 8 词的中文记在旁边；②并同类：例子、数据、重复论证合并到所属要点，不单独成点；③改写三法：同义替换（important→vital）、词类转换（because of his care→his carefulness）、句式合成（用分词、定语从句、with 复合结构把两句并一句）；④组篇：按原文逻辑用衔接词（therefore, however）串联，首句亮出中心论点；⑤核验三查：要点无遗漏？有无照抄原文连续 5 词以上？词数 60±5 且不含个人评论？概要是“戴镣铐的压缩”，不改观点、不加态度。",
+      "example": "例：概要写作。原文要点：首段提出“碎片时间（fragmented time）被短视频填满，人们越来越难长时间专注”；第二段给原因“大脑偏好即时奖励，短刺激不断强化这种偏好”；第三段给对策“通过番茄工作法、远离手机等专注训练可以重建注意力”。参考答案（约 58 词）：People's ability to concentrate is weakening as fragmented time is filled with short videos. This happens because the brain favors instant rewards, which are repeatedly strengthened by brief stimulation. To rebuild attention, people can practice focused training, such as timed work periods and keeping phones out of reach. 解析：三句话对应“现象—原因—对策”三层骨架：句一合并首段（weakening 替换 harder to focus，as 从句压缩因果）；句二用 This happens because…承上启下，favors 替换 prefers、brief stimulation 替换 short stimulation 实现改写而非抄写；句三把两个例子（番茄工作法、远离手机）降格为 such as 举例并入对策层。全文 58 词无个人评论、无连续照抄，符合概要写作评分要点。",
+      "kp_ids": ["kp_eng12_wri12_wri_summary_adv", "kp_eng12_lsm12_info_reorganise", "kp_eng12_red12_structure_deep"],
+      "variant_axes": ["文体（说明文→议论文→叙事性随笔）", "要点层数 3 层 → 5 层与数据例子的取舍", "改写手段限定训练（同义替换/词类转换/句式合成）", "词数收紧（40—60 词）与照抄判定规则"]
+    },
+    {
+      "id": "arch_eng_g12_reading_infer",
+      "name": "阅读深层推理与作者态度评价（高阶阅读）",
+      "pattern": "典型情境：对学术类或议论类语篇设置推理判断题、作者态度题与修辞手法题，答案不在字面而在字里行间。通法：推理三则——①忠于文本：结论必须是“原文前提的最短一步”，跳两步的推理（文中说实验样本小→推“实验造假”）越界；②态度三源：找形容词/副词的感情色彩（unfortunately, merely）、情态与虚拟（would have been better 隐含批评）、让步转折后的真实立场（Although…, the real problem is…）；③修辞识途：隐喻要译回本义（the flood of information 指信息过量），对比/反问往往就是论点所在。作答流程：先排除字面复述原句的选项（推理题最典型陷阱），再排除无证据、过度引申的选项，最后保留“证据＋一步推理”的选项；态度题把选项按褒/贬/中立三档预分，回到原文定档再选词。",
+      "example": "例：阅读推断题。原文节选：Although the new learning app has won millions of users, its effect on real learning remains doubtful. Studies show that many learners open the app merely to keep their daily streaks, spending less than three minutes on each lesson. The app turns learning into a game where prizes matter more than progress. What is the author's attitude towards the app? A. Fully supportive. B. Slightly critical. C. Completely indifferent. D. Strongly promotional。参考答案：B。解析：态度证据链有三处——remains doubtful（直接的怀疑表述）、merely（“仅仅”为保持打卡记录而打开，贬义副词）、结尾隐喻“把学习变成一场奖品比进步更重要的游戏”（turns learning into a game 是批评性隐喻，需译回本义：形式化、动机异化）；但 Although 让步句先承认其赢得数百万用户，说明批评留有余地，属“略有批评”而非全盘否定，故选 B 不选更极端项。A、D 与感情色彩相反，C 与 doubtful 矛盾；本题演示“让步定基调＋副词定色彩＋隐喻译本义”的三源定态度法。",
+      "kp_ids": ["kp_eng12_red12_logic_infer", "kp_eng12_red12_evaluate", "kp_eng12_red12_metaphor"],
+      "variant_axes": ["推理题 → 态度题 → 写作意图与目的题", "态度证据源（副词/情态/让步转折）专项", "修辞识别（隐喻/反问/对比）与论点关系", "学术语篇（研究结论与限定词 often/may）的谨慎推理"]
+    }
+  ]
+}
