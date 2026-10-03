@@ -200,7 +200,7 @@ def merged_bank(root):
                 str(it.get("item_type", "")).strip(),
             )
             assert question not in seen_question, (
-                f"duplicate question: {it['id']} == {seen_question.get(question)}"
+                f"duplicate question: {it['id']} (first seen)"
             )
             seen_question.add(question)
             items.append(it)

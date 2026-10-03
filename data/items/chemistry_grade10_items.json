@@ -4714,6 +4714,295 @@
         "note": "single-agent generation, blind verification deferred",
         "single_agent": true
       }
+    },
+    {
+      "id": "che_dens01_0001",
+      "item_type": "choice",
+      "stem": "下列关于铝、铜及其化合物的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem10_cu_al"
+      ],
+      "difficulty": 0.45,
+      "solution": "Al2O3和Al(OH)3都是两性物质，既溶于强酸又溶于强碱，A对B错；铜在潮湿空气中生成绿色的碱式碳酸铜（铜绿），灼烧才变黑生成CuO，C错；铝比铜活泼，插入硫酸铜溶液中发生置换反应，表面析出红色固体，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 氧化铝是两性氧化物，既能与盐酸反应，又能与氢氧化钠溶液反应",
+        "B. 氢氧化铝只能与盐酸反应，不能与氢氧化钠溶液反应",
+        "C. 铜在潮湿空气中表面生成氧化铜而变黑",
+        "D. 将铝片插入硫酸铜溶液中，观察不到任何现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0002",
+      "item_type": "solve",
+      "stem": "用坩埚钳夹住一小块铝箔，在酒精灯上充分加热，观察到铝箔熔化但仍不滴落。请回答：（1）解释上述现象；（2）设计一个实验证明铝表面氧化膜的存在与保护作用（写出操作、现象与结论）；（3）写出氧化膜被破坏后铝与稀盐酸反应的离子方程式。",
+      "answer": "（1）铝表面致密的Al2O3薄膜熔点（约2054 ℃）远高于铝（660 ℃），铝先熔化而被外面的固态氧化膜包裹，故熔化的铝不滴落；（2）取两块大小相同的铝片，一块用砂纸充分打磨除去氧化膜，分别同时放入等体积等浓度的稀盐酸中：打磨过的铝片立即剧烈反应产生气泡，未打磨的开始无明显现象（膜先被酸溶解）后逐渐反应，证明铝表面存在氧化膜且对内层金属有保护作用；（3）2Al+6H+=2Al3++3H2↑。",
+      "kps": [
+        "kp_chem10_cu_al"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查氧化膜的保护作用与两性性质的实验探究；对比实验是证明氧化膜存在的关键方法；离子方程式注意气体符号与配平。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0003",
+      "item_type": "solve",
+      "stem": "工业上用铝土矿（主要成分Al2O3，还含Fe2O3、SiO2等杂质）冶炼铝的流程可简化为：铝土矿→加入NaOH溶液溶解→过滤（弃去滤渣）→滤液中通入足量CO2→过滤、洗涤得Al(OH)3→灼烧得Al2O3→电解熔融Al2O3得铝。回答：（1）写出“溶解”步骤中Al2O3与NaOH溶液反应的化学方程式；（2）该步骤利用了Al2O3的什么性质？滤渣的主要成分是什么？（3）写出通入足量CO2时反应的化学方程式；（4）电解时为什么要加入冰晶石？写出电解Al2O3的化学方程式。",
+      "answer": "（1）Al2O3+2NaOH=2NaAlO2+H2O；（2）Al2O3是两性氧化物，能与强碱溶液反应，从而与不溶于碱的Fe2O3、SiO2等杂质分离（SiO2实际也会与NaOH反应，简化流程中按主要杂质Fe2O3计，滤渣以铁的氧化物为主）；（3）NaAlO2+CO2+2H2O=Al(OH)3↓+NaHCO3；（4）冰晶石（Na3AlF6）作助熔剂，降低Al2O3的熔点、节约能源；2Al2O3 --电解--> 4Al+3O2↑。",
+      "kps": [
+        "kp_chem10_cu_al"
+      ],
+      "difficulty": 0.6,
+      "solution": "拜耳法提铝主线：两性溶解—通CO2沉淀—灼烧—电解；足量CO2时产物为NaHCO3；电解熔融Al2O3而非AlCl3（AlCl3是共价化合物，熔融不导电）。",
+      "source": "llm_generated",
+      "form": "process_flow",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0004",
+      "item_type": "choice",
+      "stem": "下列关于气体摩尔体积的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem10_gas_molar_volume"
+      ],
+      "difficulty": 0.4,
+      "solution": "气体摩尔体积约22.4 L/mol必须限定在标准状况（0 ℃、101 kPa）且物质是气体，缺条件则错，B错；标准状况下水是液体，其体积约18 mL，C错；同温同压下相同体积气体含相同数目的分子，但不同气体摩尔质量不同、质量不同，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 标准状况下，1 mol 任何气体的体积都约为22.4 L",
+        "B. 1 mol 任何气体的体积总是22.4 L",
+        "C. 标准状况下，1 mol 水的体积约为22.4 L",
+        "D. 同温同压下，相同体积的任何气体含有相同质量的分子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0005",
+      "item_type": "solve",
+      "stem": "标准状况（0 ℃、101 kPa）下，完成下列计算：（1）11.2 L CO2的物质的量是多少？含有多少个CO2分子？（2）这些CO2的质量是多少克？（3）同温同压下，与11.2 L H2所含分子数相同的O2的体积是多少升？",
+      "answer": "（1）n(CO2)=V/Vm=11.2 L÷22.4 L/mol=0.5 mol；N=0.5 mol×6.02×10^23/mol=3.01×10^23个；（2）m=0.5 mol×44 g/mol=22 g；（3）同温同压下分子数相同即物质的量相同，故O2的体积也为11.2 L。",
+      "kps": [
+        "kp_chem10_gas_molar_volume"
+      ],
+      "difficulty": 0.5,
+      "solution": "核心公式n=V/Vm与N=nNA、m=nM；阿伏加德罗定律推论“同温同压同体积则同分子数”与气体种类无关。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0006",
+      "item_type": "solve",
+      "stem": "下表是1 mol 气体在不同条件下的体积实验数据：0 ℃、101 kPa时为22.4 L；0 ℃、202 kPa时为11.2 L；25 ℃、101 kPa时为24.5 L。回答：（1）由数据归纳气体摩尔体积与温度、压强的关系；（2）为什么同温同压下不同气体的摩尔体积近似相等？（3）判断“1 mol 任何气体的体积都约是22.4 L”的说法是否正确，并说明理由。",
+      "answer": "（1）温度相同（0 ℃）时，压强增大到2倍，体积减小为原来的一半；压强相同（101 kPa）时，温度升高，体积增大。即温度越高、压强越小，气体摩尔体积越大；（2）气体分子间的平均距离远大于分子本身的直径，气体体积主要由分子数目和分子间平均距离决定，与分子种类、大小基本无关，故同温同压下1 mol 任何气体体积近似相等；（3）不正确。22.4 L/mol只在标准状况（0 ℃、101 kPa）下才成立，脱离条件说“1 mol 气体体积约22.4 L”是错误的。",
+      "kps": [
+        "kp_chem10_gas_molar_volume"
+      ],
+      "difficulty": 0.55,
+      "solution": "数据归纳型综合题：控制变量比较得结论；微观解释抓住“分子间距远大于分子直径”；强调Vm的适用条件。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0007",
+      "item_type": "choice",
+      "stem": "下列关于氧化钠和过氧化钠的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem10_na2o_na2o2"
+      ],
+      "difficulty": 0.45,
+      "solution": "过氧化钠是淡黄色固体，与水、二氧化碳反应均放出氧气，可作供氧剂，A对；Na2O2中氧为−1价，B错；氧化钠是白色固体，属碱性氧化物，C错；过氧化钠与CO2反应还放出O2，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过氧化钠是淡黄色固体，与水反应生成氢氧化钠并放出氧气，可用作呼吸面具的供氧剂",
+        "B. 过氧化钠中氧元素的化合价为−2价",
+        "C. 氧化钠是淡黄色固体，常用作呼吸面具的供氧剂",
+        "D. 过氧化钠与二氧化碳反应时，只生成碳酸钠"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0008",
+      "item_type": "solve",
+      "stem": "将7.8 g 过氧化钠投入足量的二氧化碳中，充分反应（2Na2O2+2CO2=2Na2CO3+O2）。计算：（1）生成氧气在标准状况下的体积；（2）该反应中转移电子的物质的量；（3）生成碳酸钠的质量。",
+      "answer": "n(Na2O2)=7.8 g÷78 g/mol=0.1 mol。（1）由方程式，n(O2)=0.05 mol，V(O2)=0.05 mol×22.4 L/mol=1.12 L；（2）Na2O2中氧元素为−1价，反应后一部分升至O2中的0价、一部分降至Na2CO3中的−2价，每摩尔Na2O2转移1 mol 电子，故转移电子0.1 mol；（3）n(Na2CO3)=0.1 mol，m=0.1 mol×106 g/mol=10.6 g。",
+      "kps": [
+        "kp_chem10_na2o_na2o2"
+      ],
+      "difficulty": 0.6,
+      "solution": "Na2O2与CO2反应中，Na2O2既作氧化剂又作还原剂（歧化反应）：2 mol Na2O2转移2 mol 电子，即1 mol Na2O2转移1 mol 电子；按方程式比例依次求n(O2)、n(Na2CO3)。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0009",
+      "item_type": "solve",
+      "stem": "向包有过氧化钠粉末的脱脂棉上滴加几滴水，脱脂棉迅速剧烈燃烧起来。请回答：（1）写出过氧化钠与水反应的化学方程式；（2）从能量变化与反应产物的角度解释脱脂棉燃烧的原因；（3）设计实验检验反应产生的气体；（4）指出该反应中过氧化钠所起的作用。",
+      "answer": "（1）2Na2O2+2H2O=4NaOH+O2↑；（2）该反应放热，使脱脂棉温度升高达到着火点，同时生成助燃的氧气，所以脱脂棉剧烈燃烧；（3）用排水法收集产生的气体，将带火星的木条伸入集气瓶中，木条复燃，证明气体是O2；（4）过氧化钠中氧元素由−1价变为0价（O2中）和−2价（NaOH中），既升高又降低，过氧化钠既作氧化剂又作还原剂（歧化反应）。",
+      "kps": [
+        "kp_chem10_na2o_na2o2"
+      ],
+      "difficulty": 0.55,
+      "solution": "现象解释三要素：放热+氧气+着火点；检验氧气用带火星木条复燃；化合价分析确定歧化与“既氧化又还原”。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0014",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem10_gas_molar_volume"
+      ],
+      "difficulty": 0.62,
+      "solution": "阿伏加德罗定律：同温同压下，相同体积的任何气体含有相同数目的分子；A 错误（水非气体）；C 错误（非气体）；D 错误（还与压强有关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 标准状况下 1 mol 水的体积为 22.4 L",
+        "B. 同温同压下相同体积的任何气体含相同数目的分子",
+        "C. 标准状况下 22.4 L 任何物质均为 1 mol",
+        "D. 气体摩尔体积仅由温度决定"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0113",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem10_na2o_na2o2"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（O 为 -1 价）；B 错（O 部分 -1→0，部分 -1→-2，既被氧化又被还原）；C 对；D 错（Na2O2 不是碱性氧化物，是过氧化物）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na2O2 中 O 元素为 -2 价",
+        "B. Na2O2 与 H2O 反应中 O 元素全部被氧化",
+        "C. Na2O2 与 CO2 反应中 O 元素既被氧化又被还原",
+        "D. Na2O2 是碱性氧化物"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0137",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "B,C",
+      "kps": [
+        "kp_chem10_cu_al"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（生成碱式碳酸铜 Cu2(OH)2CO3）；B 对（Fe+Cu2+=Fe2++Cu）；C 对（Al(OH)3 既溶于强酸又溶于强碱）；D 错（灼烧生成 CuO，黑色）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Cu 在潮湿空气中生成 CuO",
+        "B. CuSO4 溶液与 Fe 反应置换出 Cu",
+        "C. Al(OH)3 是两性氢氧化物",
+        "D. 铜在酒精灯外焰上灼烧变黑生成 Cu2O"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

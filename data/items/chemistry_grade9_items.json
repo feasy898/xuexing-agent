@@ -10166,6 +10166,486 @@
         "note": "single-agent generation, blind verification deferred",
         "single_agent": true
       }
+    },
+    {
+      "id": "che_dens01_0262",
+      "item_type": "choice",
+      "stem": "化学是一门在分子、原子层次上研究物质的组成、结构、性质、转化及应用的基础学科。下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem9_chem_essence"
+      ],
+      "difficulty": 0.35,
+      "solution": "化学不仅能研究已有物质，还能合成新物质（如合成氨、合成药物、合成材料）；化学对材料、能源、环境、健康等领域都有重大贡献；绿色化学可从源头上防止污染，化工生产与环境保护可以协调，不能因噎废食。",
+      "source": "llm_generated",
+      "options": [
+        "A. 化学只能研究自然界中已经存在的物质，不能创造新物质",
+        "B. 化学的发展与材料、能源、环境、健康等领域密切相关",
+        "C. 化学研究只发生在宏观层次，与原子、分子等微观粒子无关",
+        "D. 化学工业必然带来环境污染，应当全面禁止"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0263",
+      "item_type": "solve",
+      "stem": "阅读材料：我国药学家屠呦呦从传统中药黄花蒿中提取出青蒿素，挽救了全球数百万疟疾患者的生命，获得2015年诺贝尔生理学或医学奖。青蒿素是一种含有过氧结构的有机物，后来人们又实现了青蒿素的人工合成与结构改造。回答：（1）化学是在什么层次上研究物质的？（2）结合材料说明化学对人类健康的重大贡献；（3）除药物外，再举一例化学在生产生活领域的重要应用。",
+      "answer": "（1）化学是在分子、原子层次上研究物质的组成、结构、性质、转化及应用的学科；（2）从植物中发现、提取并人工合成青蒿素，制成抗疟药物挽救数百万患者生命，体现了化学在药物研发、保障人类健康方面的巨大价值；（3）示例：合成氨制化肥提高粮食产量、开发合成纤维和塑料等材料、研制锂离子电池支撑新能源产业等（任举一例，合理即可）。",
+      "kps": [
+        "kp_chem9_chem_essence"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查化学的研究对象与价值：层次为分子、原子层次；价值体现在材料、能源、环境、健康（药物）等领域；开放举例言之有理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0264",
+      "item_type": "solve",
+      "stem": "阅读材料：2024年嫦娥六号完成月球背面采样返回，科学家对月壤中矿物的组成与结构展开分析；新能源汽车的动力电池、光伏发电的硅材料、储氢合金等新材料的研发不断取得突破。回答：（1）分析月壤矿物的组成、研究电池材料的结构分别体现了化学的哪方面研究对象？（2）以锂离子电池为例，说明化学科学如何支撑新能源产业；（3）结合实例谈谈你对“化学使世界变得更加绚丽多彩”的理解。",
+      "answer": "（1）分析月壤矿物体现研究物质的组成与结构，电池材料研发体现研究物质的性质、转化与应用；（2）锂离子电池通过电化学反应将化学能转化为电能，正、负极材料和电解质的研发都依赖化学，为新能源汽车提供清洁动力；（3）化学不断创造新物质、新材料，解决能源与环境问题，改善人类生活，使世界更加绚丽多彩（合理表述即可）。",
+      "kps": [
+        "kp_chem9_chem_essence"
+      ],
+      "difficulty": 0.55,
+      "solution": "材料综合题：从组成、结构、性质、转化、应用五个对象中对应提取；电池例子突出化学能→电能转化；第（3）问为开放性简答。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0265",
+      "item_type": "choice",
+      "stem": "日常生活中的下列物质，属于纯净物的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem9_pure_mixture"
+      ],
+      "difficulty": 0.3,
+      "solution": "冰水混合物中只含有H2O一种物质，冰与水只是同种物质的不同状态，属于纯净物；海水、矿泉水中溶有多种矿物质，空气含有氧气、氮气等多种气体，都是混合物；“洁净”只表明含杂质少，不等于纯净。",
+      "source": "llm_generated",
+      "options": [
+        "A. 海水",
+        "B. 冰水混合物",
+        "C. 洁净的空气",
+        "D. 矿泉水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0266",
+      "item_type": "solve",
+      "stem": "现有下列六种物质：①氧气；②海水；③汽水；④液氧；⑤盐酸；⑥冰水混合物。回答：（1）其中属于纯净物的是（填序号）；（2）判断纯净物与混合物的依据是什么？（3）纯净物与混合物在组成上有什么本质区别？",
+      "answer": "（1）①④⑥；（2）由一种物质组成的是纯净物，由两种或多种物质混合而成的是混合物：氧气与液氧都只含O2，冰水混合物只含H2O；海水、汽水、盐酸中分别含有多种物质；（3）纯净物有固定的组成，可用化学式表示；混合物没有固定组成，各组分保持原有性质。",
+      "kps": [
+        "kp_chem9_pure_mixture"
+      ],
+      "difficulty": 0.4,
+      "solution": "物质分类依据是“由几种物质组成”而不是状态或外观；液氧与氧气是同种物质的不同状态；盐酸是氯化氢的水溶液，属于混合物。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0267",
+      "item_type": "solve",
+      "stem": "化学兴趣小组取一杯浑浊的天然水，静置后过滤，得到无色澄清的滤液。请探究并回答：（1）该滤液是纯净物还是混合物？说明理由；（2）设计一个实验证明你的判断（写出操作、现象与结论）；（3）若要由此滤液获得纯净的水，应采用什么操作？",
+      "answer": "（1）混合物。过滤只能除去天然水中的不溶性杂质，水中仍溶有可溶性矿物质等多种物质；（2）取少量滤液置于蒸发皿中加热蒸干，观察到皿内残留有固体（水痕），证明滤液中溶有其他物质，是混合物；（3）蒸馏（得到的蒸馏水中含杂质极少，可视为纯净物）。",
+      "kps": [
+        "kp_chem9_pure_mixture"
+      ],
+      "difficulty": 0.55,
+      "solution": "过滤除不溶性杂质、蒸馏除可溶性杂质；蒸干有残留固体是证明水中含溶解性杂质的常用证据；蒸馏是得到较纯水的操作。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0268",
+      "item_type": "choice",
+      "stem": "下列关于饱和溶液的说法中，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem9_saturated_solution"
+      ],
+      "difficulty": 0.4,
+      "solution": "饱和与不饱和必须指明温度和溶剂量；溶液饱和与否和浓稀没有必然对应，如氢氧化钙的饱和溶液很稀，而浓硫酸等浓溶液未必饱和（浓溶液指溶质多的溶液）；氢氧化钙的溶解度随温度升高而减小，其饱和溶液降温反而变为不饱和，C错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 饱和溶液一定是浓溶液",
+        "B. 在一定温度下、一定量的溶剂里，不能再溶解某种溶质的溶液，叫做这种溶质的饱和溶液",
+        "C. 饱和溶液降低温度后一定有晶体析出",
+        "D. 不饱和溶液一定是稀溶液"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0269",
+      "item_type": "solve",
+      "stem": "在20 ℃时，向盛有50 g水的烧杯中加入适量硝酸钾固体，充分搅拌后仍有固体剩余，上层清液为20 ℃时硝酸钾的饱和溶液（硝酸钾的溶解度随温度升高显著增大）。请回答：（1）将烧杯缓慢升温到40 ℃，可能观察到什么现象？此时溶液是否仍饱和？（2）若要使该不饱和溶液重新变成饱和溶液，可采取哪些措施？（3）本实验说明饱和溶液与不饱和溶液在什么条件下可以相互转化？",
+      "answer": "（1）剩余的硝酸钾固体逐渐溶解（固体量较少时可能全部溶解），溶液变为不饱和溶液（或仍有固体剩余时仍饱和，视固体量而定）；（2）降低温度至有晶体析出、继续加入硝酸钾固体至不再溶解、恒温蒸发溶剂；（3）通过改变温度、溶剂量或溶质的量，饱和溶液与不饱和溶液可以相互转化，且转化与温度、溶剂量密切相关。",
+      "kps": [
+        "kp_chem9_saturated_solution"
+      ],
+      "difficulty": 0.55,
+      "solution": "硝酸钾溶解度受温度影响大，升温可使饱和变不饱和；三种转化手段对应“降温、加溶质、蒸发溶剂”；谈饱和必须限定温度与溶剂量。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0270",
+      "item_type": "solve",
+      "stem": "下表为硝酸钾和氯化钠在不同温度时的溶解度：\n20 ℃：硝酸钾31.6 g，氯化钠36.0 g；60 ℃：硝酸钾110 g，氯化钠37.3 g。回答：（1）20 ℃时，将40 g硝酸钾加入100 g水中充分溶解，所得溶液是否饱和？计算其溶质的质量分数（结果保留到0.1%）。（2）将上述混合物升温到60 ℃，判断溶液状态的变化，并计算此时溶液的溶质质量分数。（3）由表中数据判断，提纯含少量氯化钠的硝酸钾应选用什么结晶方法？为什么？",
+      "answer": "（1）20 ℃时100 g水最多溶解硝酸钾31.6 g，40 g不能全部溶解，所得为饱和溶液；质量分数=31.6 g÷(100 g+31.6 g)≈24.0%；（2）60 ℃时100 g水最多溶解110 g，剩余的8.4 g硝酸钾全部溶解，溶液变为不饱和溶液；质量分数=40 g÷(100 g+40 g)≈28.6%；（3）冷却结晶（降温结晶）。硝酸钾溶解度随温度变化很大，降温时大量析出，而氯化钠溶解度受温度影响很小，基本不析出。",
+      "kps": [
+        "kp_chem9_saturated_solution"
+      ],
+      "difficulty": 0.5,
+      "solution": "关键在“溶解度决定最多能溶多少”：40 g>31.6 g则饱和有剩余；升温后40 g<110 g全部溶解；结晶方法选择依据溶解度随温度的变化幅度。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0271",
+      "item_type": "choice",
+      "stem": "下列做法中，符合绿色化学理念的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem9_sustainable_dev"
+      ],
+      "difficulty": 0.35,
+      "solution": "绿色化学的核心是利用化学原理从源头上防止污染：选用无毒无害原料、提高原子利用率、减少或消除污染物的产生；“先污染、后治理”不符合绿色化学理念；大量使用化石燃料会加剧资源枯竭与环境污染；废渣直接入河严重污染环境。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对已被污染的环境进行治理即可，无需考虑污染来源",
+        "B. 采用无毒无害的原料，从源头上防止污染的产生",
+        "C. 大量开采和使用化石燃料，满足能源需求",
+        "D. 将化工废渣直接倒入河流，降低处理成本"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0272",
+      "item_type": "solve",
+      "stem": "阅读材料：煤等化石燃料燃烧排放的二氧化硫是形成酸雨的主要原因之一；我国大力发展光伏、风电等清洁能源，二氧化硫排放总量已逐年下降。回答：（1）从能源利用的角度，说明开发太阳能、风能等新能源的意义；（2）写出二氧化硫与水反应生成亚硫酸的化学方程式；（3）从绿色化学角度评价“先污染、后治理”的做法。",
+      "answer": "（1）新能源清洁、可再生，可减少化石燃料消耗和二氧化硫、二氧化碳等排放，有利于资源永续利用与环境保护；（2）SO2+H2O=H2SO3；（3）“先污染、后治理”被动且代价高，违背绿色化学从源头防止污染的理念；应通过清洁生产、源头减排来实现发展与环保的统一。",
+      "kps": [
+        "kp_chem9_sustainable_dev"
+      ],
+      "difficulty": 0.5,
+      "solution": "SO2+H2O=H2SO3 是初中酸雨形成的常见方程式；评价题按“源头防止污染”的核心理念作答。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0273",
+      "item_type": "solve",
+      "stem": "某电镀厂产生的酸性含铜废水，处理流程简化如下：废水→过滤→加入适量熟石灰→沉淀分离→检测达标→排放或回用。回答：（1）“过滤”步骤除去的是哪类杂质？（2）加入熟石灰的目的是什么？写出熟石灰与废水中的硫酸铜反应的化学方程式；（3）处理后的水用于厂区绿化和设备冲洗，这体现了什么观念？",
+      "answer": "（1）不溶性杂质（泥沙等不溶性固体）；（2）中和废水中的酸，并使铜离子转化为氢氧化铜沉淀而除去；Ca(OH)2+CuSO4=Cu(OH)2↓+CaSO4；（3）水资源的循环利用与可持续发展的观念。",
+      "kps": [
+        "kp_chem9_sustainable_dev"
+      ],
+      "difficulty": 0.55,
+      "solution": "废水处理流程三要素：过滤除不溶物、加碱中和并沉淀重金属、达标回用；熟石灰兼具中和与沉淀作用。",
+      "source": "llm_generated",
+      "form": "process_flow",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0274",
+      "item_type": "choice",
+      "stem": "NH4NO3（硝酸铵）中氮元素的化合价是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem9_valence"
+      ],
+      "difficulty": 0.35,
+      "solution": "铵根离子中氢为+1价，设氮为x：x+(+1)×4=+1，x=−3；硝酸根中氧为−2价，设氮为y：y+(−2)×3=−1，y=+5。同一化合物中同种元素可表现不同化合价。",
+      "source": "llm_generated",
+      "options": [
+        "A. 都是+5价",
+        "B. 都是−3价",
+        "C. −3价和+5价",
+        "D. +1价和+5价"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0275",
+      "item_type": "solve",
+      "stem": "已知钠为+1价、氧为−2价、铝为+3价、硫酸根原子团为−2价、碳酸根原子团为−2价。回答：（1）依据“化合物中各元素正负化合价的代数和为0”的规则，写出氧化钠、氧化铝、硫酸钠、碳酸铝的化学式；（2）任选其中两个化学式，代入化合价验证代数和为0。",
+      "answer": "（1）氧化钠Na2O；氧化铝Al2O3；硫酸钠Na2SO4；碳酸铝Al2(CO3)3；（2）Na2O：(＋1)×2＋(−2)×1=0；Al2(CO3)3：铝为(+3)×2=+6，碳酸根为(−2)×3=−6，代数和为0（或Al2O3：(+3)×2+(−2)×3=0）。",
+      "kps": [
+        "kp_chem9_valence"
+      ],
+      "difficulty": 0.5,
+      "solution": "书写化学式按“正前负后、价数交叉约简”：如Al(+3)与CO3(−2)交叉得Al2(CO3)3；原子团个数为2及以上时须加括号。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0276",
+      "item_type": "solve",
+      "stem": "化学用语中，化合价与离子电荷的标注常常混淆。回答：（1）写出“2个镁离子”和“+2价的镁元素”的符号；（2）氯化镁中氯元素的化合价是多少？写出判断依据；（3）判断下列说法是否正确并说明理由：①单质中元素的化合价为0；②化合物中各元素正负化合价的代数和为0。",
+      "answer": "（1）2个镁离子：2Mg2+；+2价的镁元素：在镁元素符号正上方标“+2”（写作 Mg 上标+2）；（2）−1价；镁为+2价，设氯为x：(+2)+x×2=0，解得x=−1；（3）①正确，单质由同种元素组成，既不显正价也不显负价；②正确，这是化合价规则，也是书写化学式的依据。",
+      "kps": [
+        "kp_chem9_valence"
+      ],
+      "difficulty": 0.45,
+      "solution": "区别要点：离子电荷标在右上角（Mg2+），化合价标在元素符号正上方（+2价镁）；离子符号前的系数表示离子个数；化合价计算用代数和为0列式求解。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_che_jr_0003",
+      "item_type": "choice",
+      "stem": "化学研究的核心层次是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem9_chem_essence"
+      ],
+      "difficulty": 0.35,
+      "solution": "化学是在分子、原子层次上研究物质的组成、结构、性质、转化及应用的一门基础学科，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 宏观物质",
+        "B. 分子、原子层次",
+        "C. 原子核内部结构",
+        "D. 天体运行"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_che_jr_0112",
+      "item_type": "choice",
+      "stem": "下列叙述中，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem9_saturated_solution"
+      ],
+      "difficulty": 0.55,
+      "solution": "饱和溶液与浓稀无直接关系（氢氧化钙的饱和溶液是稀溶液）；降温不一定会析出晶体（如溶解度随温度升高而增大的物质降温才析出）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 饱和溶液一定是浓溶液",
+        "B. 不饱和溶液一定是稀溶液",
+        "C. 同一温度下，相同溶质的饱和溶液比不饱和溶液浓",
+        "D. 饱和溶液降温一定能析出晶体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_che_jr_0233",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem9_valence"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 错（如 CO2 中 C 为 +4）；C 错（化合物中各元素化合价代数和为零）；D 错（如 H 在 HCl 中为 +1）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单质中元素化合价为零",
+        "B. 化合物中所有元素化合价都正",
+        "C. 化合物中所有元素化合价之和为零",
+        "D. 非金属元素化合价都为负"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_che_jr_0253",
+      "item_type": "choice",
+      "stem": "下列物质中属于混合物的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem9_pure_mixture"
+      ],
+      "difficulty": 0.35,
+      "solution": "石灰石主要含 CaCO3，还含其他杂质，是混合物。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蒸馏水",
+        "B. 高锰酸钾",
+        "C. 石灰石",
+        "D. 液氧"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_che_jr_0379",
+      "item_type": "choice",
+      "stem": "下列做法符合绿色化学理念的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem9_sustainable_dev"
+      ],
+      "difficulty": 0.4,
+      "solution": "A、B、D 都不符合绿色化学。绿色化学核心：原子经济性、无污染。",
+      "source": "llm_generated",
+      "options": [
+        "A. 任意排放工业废水",
+        "B. 焚烧废旧塑料处理垃圾",
+        "C. 化工生产中提高原子利用率",
+        "D. 大量使用一次性塑料制品"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

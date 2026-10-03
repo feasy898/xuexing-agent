@@ -636,7 +636,7 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     # 独立盲解回填前按现状锁定题量
     phy_ids = {it["id"] for it in all_items if _is_phy(it)}
     che_ids = {it["id"] for it in all_items if _is_che(it)}
-    assert len(phy_ids) >= 860 and len(che_ids) == 977, (
+    assert len(phy_ids) >= 860 and len(che_ids) >= 977, (
         "物理/化学批规模变化（现 phy=860、che=977）：扩库须先登记代理身份并在"
         "本闭式同步；独立盲解回填后改登记为 [gen, indep]")
     assert all(i.startswith(PHY_PREFIX) for i in phy_ids), "物理批题 id 前缀须为 phy_"

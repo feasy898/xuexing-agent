@@ -5743,6 +5743,682 @@
         "note": "single-agent generation, blind verification deferred",
         "single_agent": true
       }
+    },
+    {
+      "id": "che_dens01_0010",
+      "item_type": "choice",
+      "stem": "下列关于常见化学电源的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.5,
+      "solution": "铅蓄电池放电时Pb为负极被氧化、PbO2为正极，总反应Pb+PbO2+2H2SO4=2PbSO4+2H2O消耗硫酸，A对；燃料电池中氧气在正极发生还原反应，B错；充电时电池正极接电源正极（遵循“正接正、负接负”），C错；锌锰干电池中锌筒是负极、碳棒是正极，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铅蓄电池放电时，Pb作负极、PbO2作正极，电解质溶液中的H2SO4被消耗",
+        "B. 氢氧燃料电池工作时，氧气在负极上发生还原反应",
+        "C. 二次电池充电时，电池的正极应与电源的负极相连",
+        "D. 锌锰干电池放电时，锌筒作正极、碳棒作负极"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0011",
+      "item_type": "solve",
+      "stem": "氢氧燃料电池（电解质为KOH溶液）是清洁高效的化学电源。回答：（1）写出放电时负极、正极的电极反应式；（2）写出电池的总反应方程式；（3）与氢气在氧气中直接燃烧相比，说明燃料电池在能量转化上的优点；（4）为什么废弃的电池不能随意丢弃？",
+      "answer": "（1）负极：H2−2e−+2OH−=2H2O（或2H2−4e−+4OH−=4H2O）；正极：O2+2H2O+4e−=4OH−；（2）总反应：2H2+O2=2H2O；（3）燃料电池将化学能直接转化为电能，能量转化效率高，且产物是水、不污染环境，而燃烧的化学能大量转化为热能、利用率低；（4）废旧电池中的重金属离子（铅、镉、汞等）和电解质会污染土壤和水体，必须分类回收、集中处理。",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.6,
+      "solution": "KOH介质中电极反应不能出现H+；燃料电池优点扣“直接转化、效率高、清洁”；环保问扣重金属污染与回收。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0012",
+      "item_type": "solve",
+      "stem": "将锌片和铜片用导线连接灵敏电流计后，插入盛有稀硫酸的烧杯中，观察到电流计指针发生偏转。请回答：（1）指针偏转说明了什么？该装置的能量转化方向是什么？（2）指出锌片、铜片上的实验现象；（3）指出电子流动方向与溶液中离子移动方向；（4）为什么锌作负极？写出负极的电极反应式。",
+      "answer": "（1）说明形成了原电池、有电流产生，化学能转化为电能；（2）锌片逐渐溶解，铜片表面有无色气泡产生（铜片本身不反应）；（3）电子由锌片经导线流向铜片；溶液中阳离子（H+）移向铜极（正极），阴离子（SO4^2−）移向锌极（负极）；（4）锌比铜活泼，更易失去电子被氧化；负极反应：Zn−2e−=Zn2+。",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.6,
+      "solution": "单液铜锌原电池的完整分析链：现象→原理→电子与离子方向→电极判断；正极上H+放电生成H2。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0013",
+      "item_type": "choice",
+      "stem": "下列物质中，既含有离子键又含有共价键的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.45,
+      "solution": "NaOH由Na+与OH−之间的离子键和O—H共价键构成；Na2O、KCl只含离子键（活泼金属与氧/氯形成的离子化合物）；CO2是共价化合物，只含极性共价键。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na2O",
+        "B. CO2",
+        "C. NaOH",
+        "D. KCl"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0014",
+      "item_type": "solve",
+      "stem": "现有五种物质：NH4Cl、Na2O2、HCl、KOH、CH4。回答：（1）其中只含共价键（属于共价化合物）的有哪些？（2）既含离子键又含共价键的有哪些？分别指出其中的共价键；（3）由上述归纳：哪两类物质中通常含有离子键？",
+      "answer": "（1）HCl、CH4（H—Cl极性键；C—H极性键）；（2）NH4Cl（N—H键为共价键，NH4+与Cl−间为离子键）、Na2O2（O—O非极性键，Na+与O2^2−间为离子键）、KOH（O—H共价键，K+与OH−间为离子键）；（3）活泼金属元素与活泼非金属元素形成的化合物，以及铵盐，通常含离子键。",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.55,
+      "solution": "含原子团离子的离子化合物往往“既含离子键又含共价键”；铵盐不含金属元素但含离子键是重要特例。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0015",
+      "item_type": "solve",
+      "stem": "为探究物质中化学键的类型，某同学在坩埚中分别加热熔融氯化钠和蔗糖，并试验其导电性：熔融氯化钠能使连接的灯泡发光，熔融蔗糖不能。回答：（1）描述并解释上述现象；（2）由此可得出什么结论？（3）能否改用“水溶液是否导电”来判断化合物是否含离子键？举例说明。",
+      "answer": "（1）熔融氯化钠导电，因为NaCl由Na+与Cl−构成，受热熔化后离子成为自由移动的离子、能导电；蔗糖由蔗糖分子构成，熔融时只存在分子、无自由离子，不导电；（2）熔融态能导电的物质含离子键（属离子化合物），熔融不导电的化合物不含离子键（共价化合物）；（3）不能。如HCl是共价化合物，溶于水后电离出离子、水溶液能导电，与NaCl水溶液导电现象相同，故水溶液导电不能作为判断离子键的依据，应用熔融态导电性判断。",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.6,
+      "solution": "导电本质是自由移动的离子（或电子）；共价化合物溶于水可能电离，故判断键型要用熔融态；这是“由实验事实判断微观结构”的典型探究。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0016",
+      "item_type": "choice",
+      "stem": "下列事实或做法中，与盐类水解有关的是（　　）\n①配制氯化铁溶液时，向溶液中加入少量稀盐酸；②草木灰（主要成分K2CO3）不宜与铵态氮肥混合施用；③用食醋除去水壶内的水垢；④用澄清石灰水检验二氧化碳气体。",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.5,
+      "solution": "①加酸抑制Fe3+水解，防止生成Fe(OH)3，与水解有关；②CO3^2−水解使溶液显碱性，NH4+水解显酸性，混合后相互促进水解放出氨气、降低肥效，与水解有关；③是醋酸与水垢中碳酸钙、氢氧化镁的复分解溶解，与水解无关；④是石灰水与CO2生成沉淀的反应，与水解无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. ①②",
+        "B. ①③",
+        "C. ②④",
+        "D. ③④"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0017",
+      "item_type": "solve",
+      "stem": "探究温度对碳酸钠水解的影响：取两份等浓度、等体积的碳酸钠溶液，分别置于25 ℃和60 ℃的水浴中，各滴入2滴酚酞试液。回答：（1）预测两试管中溶液颜色的深浅并解释原因；（2）写出碳酸钠水解的离子方程式；（3）联系生活，说明为什么用热的纯碱溶液去除油污的效果更好。",
+      "answer": "（1）60 ℃水浴中溶液的红色更深。原因是CO3^2−的水解是吸热反应，升高温度促进水解，溶液中c(OH−)增大、碱性增强；（2）CO3^2−+H2O⇌HCO3−+OH−；（3）升温促进纯碱水解、碱性增强，去油污能力（分解油脂并促进乳化）更强，所以热的纯碱液去油污效果更好。",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.6,
+      "solution": "水解平衡移动的实验证据链：温度变量→颜色深浅→c(OH−)变化；水解离子方程式用“⇌”且不标沉淀气体符号。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0018",
+      "item_type": "solve",
+      "stem": "传统泡沫灭火器内筒盛硫酸铝溶液、外筒盛碳酸氢钠溶液，倒转时两溶液混合，迅速喷出大量含二氧化碳的泡沫。回答：（1）写出两溶液混合时发生反应的离子方程式；（2）为什么灭火器中选用碳酸氢钠而不用碳酸钠？（3）实验室配制硫酸铝溶液时，应注意什么？说明理由。",
+      "answer": "（1）Al3++3HCO3−=Al(OH)3↓+3CO2↑（两种离子的水解相互促进，反应趋于完全）；（2）相同条件下HCO3−与Al3+相互促进水解的速率更快、短时间内产生的CO2更多，能迅速形成灭火所需的泡沫；用碳酸钠时反应速率慢、产气量不足；（3）加入少量稀硫酸抑制Al3+水解，防止配制或存放过程中生成Al(OH)3使溶液变浑浊。",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.6,
+      "solution": "双水解“相互促进、趋于完全”的典型：Al3+与HCO3−；配制易水解的盐溶液“加对应酸抑制水解”；泡沫灭火器是水解应用的经典载体。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0019",
+      "item_type": "choice",
+      "stem": "下列有关离子方程式书写的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.55,
+      "solution": "A正确；B中碳酸钙难溶于水，不能拆写成CO3^2−，应写为CaCO3+2H+=Ca2++H2O+CO2↑；C中方程式未配平（电荷、质量均不守恒），应为Zn+2H+=Zn2++H2↑；D未配平且缺气体符号，应为2Na+2H2O=2Na++2OH−+H2↑。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铁与稀盐酸反应：Fe+2H+=Fe2++H2↑",
+        "B. 碳酸钙与稀盐酸反应：CO3^2−+2H+=H2O+CO2↑",
+        "C. 锌与稀硫酸反应：Zn+H+=Zn2++H2↑",
+        "D. 钠与水反应：Na+H2O=Na++OH−+H2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0020",
+      "item_type": "solve",
+      "stem": "酸性条件下高锰酸钾溶液能将Fe2+氧化为Fe3+，本身被还原为Mn2+。回答：（1）写出并配平该反应的离子方程式（要求同时满足质量守恒、电荷守恒与电子守恒）；（2）完全氧化0.1 mol Fe2+，需要MnO4−的物质的量是多少？（3）该过程转移电子的物质的量是多少？",
+      "answer": "（1）MnO4−+5Fe2++8H+=Mn2++5Fe3++4H2O：Mn由+7价降至+2价得5e−，Fe由+2价升至+3价失1e−，按电子守恒Fe2+配5、MnO4−配1，再用H+和H2O配平电荷与氢氧原子；（2）n(MnO4−)=0.1 mol×1/5=0.02 mol；（3）转移电子0.1 mol×1=0.1 mol。",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.65,
+      "solution": "氧化还原型离子方程式配平顺序：先标变价→电子守恒定系数→电荷守恒配H+（酸性）→质量守恒补H2O；计算按电子守恒列比例。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0021",
+      "item_type": "solve",
+      "stem": "向澄清石灰水中持续通入二氧化碳气体，先出现白色沉淀，继续通入沉淀逐渐溶解，最终得到澄清溶液。回答：（1）写出开始生成沉淀阶段（通入少量CO2）的离子方程式；（2）写出沉淀溶解阶段（CO2过量）的离子方程式；（3）若向少量碳酸氢钠溶液中加入过量澄清石灰水，写出反应的离子方程式；（4）书写“少量/过量”型离子方程式时，如何确定产物？",
+      "answer": "（1）Ca2++2OH−+CO2=CaCO3↓+H2O；（2）CaCO3+CO2+H2O=Ca2++2HCO3−；（3）Ca2++OH−+HCO3−=CaCO3↓+H2O（NaHCO3少量、完全反应，按其组成1:1消耗Ca2+与OH−）；（4）以“少量”的物质为基准：少量物质的离子全部参加反应，各离子的化学计量数之比必须符合该物质的化学式组成，另一物质按需提供离子，多余的留在溶液中。",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.65,
+      "solution": "“先后通入”与“少量/过量”是离子方程式书写的两类经典情境：先沉淀后溶解对应两个方程式；判断基准看谁少量，少量者按组成配比完全消耗。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0022",
+      "item_type": "choice",
+      "stem": "下列关于离子键与离子化合物的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.45,
+      "solution": "NaOH中Na+与OH−间为离子键、O—H为极性共价键，A对；离子键是阴、阳离子间通过静电作用形成的，B错；MgCl2中Mg2+与Cl−个数比为1:2，电子式中1个Mg2+对应2个Cl−，C错；铵盐（如NH4Cl）不含金属元素也含离子键，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在NaOH的电子式中，Na+与OH−之间通过离子键结合，而O—H之间是共价键",
+        "B. 离子键是阴、阳离子通过共用电子对形成的强烈相互作用",
+        "C. 氯化镁的电子式中，1个Mg2+只与1个Cl−相结合",
+        "D. 只有活泼金属元素与活泼非金属元素形成的化合物中才可能含有离子键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0023",
+      "item_type": "solve",
+      "stem": "用电子式表示离子化合物是重要的化学用语。回答：（1）写出Na2O、MgCl2的电子式（可用文字准确描述阴、阳离子及个数比）；（2）过氧化钠的电子式中存在哪类共价键？请描述其电子式的构成；（3）书写离子化合物电子式有哪些注意事项？",
+      "answer": "（1）Na2O：2个Na+（标“+”号）与1个O2−（用中括号括出最外层8个电子、右上角标“2−”）构成，个数比2:1；MgCl2：1个Mg2+与2个Cl−（各用中括号括出最外层8个电子、右上角标“−”）构成，个数比1:2；（2）过氧根离子O2^2−中两个氧原子之间有1对共用电子对，为非极性共价键；电子式为2个Na+与1个O2^2−（中括号内两个O通过一对共用电子结合，整体标“2−”）；（3）注意事项：阴离子须加中括号并标最外层电子与电荷；阳离子只标符号和电荷；离子个数比要体现在微粒个数上；有共价部分的原子团（如OH−）内部要画出共用电子对。",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.55,
+      "solution": "电子式书写的易错点集中在：漏中括号、漏电荷、原子团内部共价键漏画、个数比错误。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0024",
+      "item_type": "solve",
+      "stem": "现有下列物质：K2S、H2O2、CaCl2、NH4Cl、CO2、Ba(OH)2。回答：（1）其中含有离子键的有哪些？（2）NH4Cl中不含金属元素，为什么属于离子化合物？（3）预测含离子键化合物在熔、沸点和熔融态导电性上的特点。",
+      "answer": "（1）K2S、CaCl2、NH4Cl、Ba(OH)2；（2）NH4Cl由铵根离子（NH4+）与氯离子（Cl−）通过离子键结合，阴、阳离子间静电作用即离子键，与是否含金属元素无关，故属于离子化合物（其中N—H键为共价键）；（3）离子键较强，离子化合物一般熔、沸点较高，固态不导电，熔融态（或水溶液中）离子能够自由移动、能导电。",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.5,
+      "solution": "含离子键的判断抓住“阴、阳离子”：活泼金属的化合物与铵盐；Ba(OH)2、NH4Cl兼具离子键与共价键；性质预测体现键型决定性质。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0025",
+      "item_type": "choice",
+      "stem": "石油和煤的加工利用中，属于物理变化的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.4,
+      "solution": "石油分馏利用各组分沸点不同进行分离，没有新物质生成，属于物理变化；裂化、裂解使长链烃断裂生成新物质，煤的干馏隔绝空气加强热得到焦炭、煤焦油、焦炉气等新物质，都属于化学变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 石油的分馏",
+        "B. 石油的裂化",
+        "C. 石油的裂解",
+        "D. 煤的干馏"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0026",
+      "item_type": "solve",
+      "stem": "炼油厂对原油的加工可简化为：原油→脱水脱盐→常压分馏（得汽油、煤油、柴油等馏分）→重油→减压分馏或催化裂化（得更多轻质油品）。回答：（1）分馏的原理是什么？（2）重油为什么采用减压分馏？（3）裂化的目的是什么？（4）要获得乙烯、丙烯等化工基础原料，应采用什么操作？",
+      "answer": "（1）利用原油中各组分沸点不同，加热汽化后逐级冷凝分离，过程中无新物质生成，属物理变化；（2）减压可降低重油组分的沸点，避免高温下重油分解、炭化结焦，同时节约能源；（3）裂化使相对分子质量较大、沸点较高的烃断裂为相对分子质量较小的烃，以提高汽油等轻质油的产量和质量（属化学变化）；（4）采用裂解（深度裂化），获得乙烯、丙烯等短链不饱和烃作为石油化工的基础原料。",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.55,
+      "solution": "石油加工“一条链”：分馏（物理）→裂化（提高轻质油产率）→裂解（得化工原料）；减压分馏的原理是沸点随压强降低而降低。",
+      "source": "llm_generated",
+      "form": "process_flow",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0027",
+      "item_type": "solve",
+      "stem": "煤的综合利用主要有干馏、气化和液化。回答：（1）煤的干馏属于什么变化？可得到哪些主要产品？（2）写出煤气化主要反应的化学方程式；（3）与煤直接燃烧相比，煤的综合利用有什么意义？",
+      "answer": "（1）化学变化（隔绝空气加强热，煤分解生成新物质）；产品有焦炭、煤焦油、焦炉气（含H2、CH4等）、粗氨水、粗苯等；（2）C+H2O --高温--> CO+H2；（3）提高煤的利用率，获得气体燃料、化工原料等多种产品，减少直接燃烧产生的二氧化硫和烟尘污染，实现化石能源的高效清洁利用。",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.5,
+      "solution": "干馏≠蒸馏：干馏是化学变化（分解），石油分馏是物理变化；气化产物CO与H2是合成氨、合成甲醇的原料气。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0028",
+      "item_type": "choice",
+      "stem": "下列关于化学反应方向的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.45,
+      "solution": "复合判据ΔG=ΔH−TΔS：当ΔH<0且ΔS>0时，任何温度下ΔG<0，反应都能自发进行，A对；ΔH>0、ΔS>0时，高温下ΔG<0可自发，B错；ΔH<0、ΔS<0时，低温下可自发而高温不能，C错；吸热且熵增的反应（如高温下碳酸钙分解）可以自发，D错。",
+      "source": "llm_generated",
+      "options": [
+        "A. ΔH<0、ΔS>0的反应，在任何温度下都能自发进行",
+        "B. ΔH>0、ΔS>0的反应，在任何温度下都不能自发进行",
+        "C. ΔH<0、ΔS<0的反应，在任何温度下都能自发进行",
+        "D. 吸热反应一定不能自发进行"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0029",
+      "item_type": "solve",
+      "stem": "分析下列过程：（1）判断各过程能否自发进行，并分别用焓变或熵变解释；①氮气向真空中扩散；②25 ℃时冰融化成水（吸热过程）；③−10 ℃时液态水结冰（放热过程）。（2）由上述分析说明：判断过程的方向需要同时考虑哪些因素？",
+      "answer": "（1）①能自发：气体扩散后混乱度增大、熵增大（ΔS>0）是主要驱动；②能自发：25 ℃下冰融化虽吸热（ΔH>0），但液态水的熵比冰大，熵增效应占主导；③能自发：水结冰放热（ΔH<0），低温下焓减小（放热）效应占主导（尽管熵减小）。（2）需要同时考虑焓变（ΔH）与熵变（ΔS）两个因素，即由复合判据ΔG=ΔH−TΔS综合判断，温度也是重要条件。",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.55,
+      "solution": "“放热倾向自发、熵增倾向自发”都只是判据之一；单独任一因素都不能决定方向，必须复合判断。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_dens01_0030",
+      "item_type": "solve",
+      "stem": "已知碳酸钙分解反应CaCO3(s)=CaO(s)+CO2(g)的ΔH=+178.0 kJ/mol，ΔS=+160.4 J/(mol·K)（ΔG=ΔH−TΔS，ΔG<0时反应自发）。计算：（1）该反应自发进行的最低温度（T=ΔH/ΔS，结果取整数）；（2）解释为什么常温下石灰石不分解，而工业煅烧石灰石需要约1000 K以上的高温。",
+      "answer": "（1）T=ΔH/ΔS=178.0×1000 J/mol ÷ 160.4 J/(mol·K)≈1110 K；（2）该反应吸热（ΔH>0）且熵增（ΔS>0）：当T<1110 K时，ΔH−TΔS>0，反应不自发，石灰石不分解；当T>1110 K时，TΔS>ΔH，ΔG<0，反应自发，故须加热到1000 K以上高温煅烧。",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.6,
+      "solution": "定量判据的计算：注意ΔS单位J/(mol·K)与ΔH单位kJ/mol的换算（×1000）；转折温度T=ΔH/ΔS；升温使熵增项主导。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0209",
+      "item_type": "choice",
+      "stem": "下列离子方程式书写正确的是（　　）",
+      "answer": "B,C,D",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（生成的 BaSO3 溶于强酸 HCl，反向不成立）；B 对（电荷守恒、电子守恒）；C 对（稀 HNO3 与 Cu 反应）；D 对（SO2 被 Cl2 氧化为 SO4^2-）。",
+      "source": "llm_generated",
+      "options": [
+        "A. SO2 通入 BaCl2 溶液中：SO2 + Ba2+ + H2O = BaSO3↓ + 2H+",
+        "B. Cl2 与 FeCl2 溶液反应：Cl2 + 2Fe2+ = 2Fe3+ + 2Cl-",
+        "C. 稀 HNO3 与 Cu 反应：3Cu + 8H+ + 2NO3- = 3Cu2+ + 2NO↑ + 4H2O",
+        "D. SO2 通入氯水中：SO2 + Cl2 + 2H2O = 4H+ + SO4^2- + 2Cl-"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0221",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（如 AlCl3 是共价化合物）；B 错（如 NH4Cl 是离子化合物但不含金属元素）；C 对（离子化合物熔融或溶于水时能电离出自由移动的离子）；D 错（共价化合物熔融不电离）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 含有金属元素的化合物一定是离子化合物",
+        "B. 离子化合物中一定含有金属元素",
+        "C. 离子化合物熔融状态下能导电",
+        "D. 共价化合物熔融状态下能导电"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0233",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（离子化合物 NaOH 中也含共价键 O-H）；B 对（离子化合物可含共价键，如 NaOH、Na2SO4 等）；C 错（共价化合物只含共价键）；D 错误表述模糊；本题选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 含有共价键的化合物一定是共价化合物",
+        "B. 离子化合物中可能含有共价键",
+        "C. 共价化合物中可能含有离子键",
+        "D. 任何化合物中都含有化学键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0266",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（燃料电池能量转化率高）；B 错（燃料电池不燃烧，通过电化学反应直接发电）；C 对；D 对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 燃料电池的能量转化率高",
+        "B. 燃料电池需要燃烧燃料获得能量",
+        "C. 锂电池的优点是比能量高、无记忆效应",
+        "D. 铅蓄电池的电解质是稀硫酸"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0299",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（分馏只按沸点分离，无新物质生成）；B 对（裂化大分子断裂为小分子，新物质生成）；C 对（煤干馏生成焦炭、煤焦油、焦炉气等，新物质生成）；D 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 石油的分馏是物理变化",
+        "B. 石油的裂化是化学变化",
+        "C. 煤的干馏是化学变化",
+        "D. 石油的分馏是化学变化"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0356",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.62,
+      "solution": "A、B 错（取决于 ΔH 和 ΔS 的共同作用）；C 对（ΔS>0 有利于反应自发）；D 错（升温对 ΔG 的影响取决于 ΔS 符号）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 放热反应（ΔH<0）一定自发",
+        "B. 吸热反应（ΔH>0）一定不自发",
+        "C. 体系混乱度增大（ΔS>0）有利于反应自发",
+        "D. 升温使所有反应都更易自发"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "che_hs1_0401",
+      "item_type": "choice",
+      "stem": "下列说法正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（升温促进水解）；B 对（稀释促进水解，盐浓度降低，相对水解程度增大）；C 对（加酸增大 H+ 浓度，使 NH4+ + H2O ⇌ NH3·H2O + H+ 平衡逆向移动，抑制水解）；D 对（同理）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加热可促进盐类水解",
+        "B. 稀释可促进盐类水解",
+        "C. 加入酸可抑制弱碱盐的水解",
+        "D. 加入碱可抑制弱酸盐的水解"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
