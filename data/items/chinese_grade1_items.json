@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "id": "chi_hs_0225",
+      "item_type": "choice",
+      "stem": "文学类文本阅读的选择题，错误项常见“曲解文意”“无中生有”“张冠李戴”三类干扰。下列选项的错误类型是：小说中写了两处“雨”，选项却说“全文未出现‘雨’”。",
+      "answer": "A",
+      "kps": [
+        "kp_chi11_ty_modern1"
+      ],
+      "difficulty": 0.52,
+      "solution": "文中有的内容说成没有，属\"无中生有\"；把人物行为安到另一人头上才是张冠李戴。",
+      "source": "llm_generated",
+      "options": [
+        "A. 无中生有",
+        "B. 曲解文意",
+        "C. 张冠李戴",
+        "D. 推断过度"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003",
+          "chi-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

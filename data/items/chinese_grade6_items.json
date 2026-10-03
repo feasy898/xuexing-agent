@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "id": "chi_prim_hi_0376",
+      "item_type": "choice",
+      "stem": "毕业前夕，班级打算选一幅书法作品作纪念册封面。下面四幅作品，其中楷书四角平稳、笔画端正，最适合选用的是（　）。\nA. 笔势连绵、纵横挥洒的草书作品\nB. 端端正正、一笔不苟的楷书作品\nC. 介于楷草之间、流畅自然的行书作品\nD. 庄重古拙、笔画圆转的篆书作品",
+      "answer": "B",
+      "kps": [
+        "kp_chi6_write6"
+      ],
+      "difficulty": 0.4,
+      "solution": "楷书字体方正、笔画平直、端庄稳重，可作楷模。识别字体要抓特征：楷书“正、直、端”，行书“流、连、活”，草书“省、简、纵”，篆书“圆、转、匀”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 笔势连绵、纵横挥洒的草书作品",
+        "B. 端端正正、一笔不苟的楷书作品",
+        "C. 介于楷草之间、流畅自然的行书作品",
+        "D. 庄重古拙、笔画圆转的篆书作品"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003",
+          "chi-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "chi_prim_hi_0424",
+      "item_type": "fill",
+      "stem": "辛弃疾《西江月·夜行黄沙道中》写丰收景象的名句是：稻花香里说丰年，____________。",
+      "answer": "听取蛙声一片",
+      "kps": [
+        "kp_chi6_poem_nature6"
+      ],
+      "difficulty": 0.45,
+      "solution": "全词写夏夜山村风光：明月、惊鹊、清风、鸣蝉、稻花、蛙声、星天、雨山，以声衬静，是宋词中写农村夏夜的名篇。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003",
+          "chi-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "chi_prim_hi_0425",
+      "item_type": "choice",
+      "stem": "“黑云翻墨未遮山，白雨跳珠乱入船”写雨的特点，最恰当的一项是（　）。\nA. 雨来得又急又猛，云未黑透、雨点已溅上船\nB. 雨下得又稀又慢\nC. 雨在深夜才下\nD. 根本没有下雨",
+      "answer": "A",
+      "kps": [
+        "kp_chi6_poem_nature6"
+      ],
+      "difficulty": 0.45,
+      "solution": "“翻墨”写云，“跳珠”写雨，“未遮山”“乱入船”写出夏雨骤至的特点：云还没来得及完全聚拢，豆大的雨点已经蹦跳着溅进船舱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 雨来得又急又猛，云未黑透、雨点已溅上船",
+        "B. 雨下得又稀又慢",
+        "C. 雨在深夜才下",
+        "D. 根本没有下雨"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003",
+          "chi-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "chi_prim_hi_0451",
+      "item_type": "fill",
+      "stem": "写春节（元日）的诗句：“爆竹声中一岁除，____________。”（王安石《元日》）",
+      "answer": "春风送暖入屠苏",
+      "kps": [
+        "kp_chi6_festival_poem6"
+      ],
+      "difficulty": 0.4,
+      "solution": "“屠苏”指屠苏酒，古人元日饮屠苏酒以驱邪避瘟。全诗写爆竹、春风、屠苏、桃符，渲染春节热闹喜庆的气氛。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003",
+          "chi-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}
