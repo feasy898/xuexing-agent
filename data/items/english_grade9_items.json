@@ -1,0 +1,780 @@
+{
+  "items": [
+    {
+      "id": "eng_en_jr_0110",
+      "item_type": "choice",
+      "stem": "说话人说 'Could you possibly open the window?' 时，最可能的意图是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_lis9_intent"
+      ],
+      "difficulty": 0.4,
+      "solution": "Could you possibly... 是委婉礼貌的请求表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. 命令",
+        "B. 礼貌请求",
+        "C. 抱怨",
+        "D. 告知"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0111",
+      "item_type": "choice",
+      "stem": "句子 'It seems we have a problem here.' 中说话者最可能的意图是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_lis9_intent"
+      ],
+      "difficulty": 0.4,
+      "solution": "It seems... 是英语中委婉指出问题的常用表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表达乐观",
+        "B. 委婉地指出问题",
+        "C. 下达命令",
+        "D. 表示祝贺"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0112",
+      "item_type": "choice",
+      "stem": "分析一篇议论文时，判断内容主次的关键是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_red9_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "议论文的主次靠论点的位置（首尾/反复出现）来识别。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看每段长度",
+        "B. 看论点的位置与重复出现次数",
+        "C. 看插图",
+        "D. 看标题长度"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0113",
+      "item_type": "choice",
+      "stem": "句子 'He displayed great courage during the rescue.' 中 'displayed' 最可能的意思是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_red9_word_from_context_wordform"
+      ],
+      "difficulty": 0.4,
+      "solution": "display + great courage 语境中意为'展示、表现'。",
+      "source": "llm_generated",
+      "options": [
+        "A. 隐藏",
+        "B. 展示、表现",
+        "C. 怀疑",
+        "D. 失去"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0115",
+      "item_type": "choice",
+      "stem": "听一段较长的材料并做记录时，下列做法最有效（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_lis9_selective_note"
+      ],
+      "difficulty": 0.45,
+      "solution": "有选择地记信息应使用缩写、符号记关键信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把每个词都写下来",
+        "B. 用缩写、符号记录关键信息",
+        "C. 只记日期",
+        "D. 不做记录"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0116",
+      "item_type": "choice",
+      "stem": "阅读名人传记时，概括人物特点的关键信息是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_red9_biography_news"
+      ],
+      "difficulty": 0.4,
+      "solution": "传记的特点由主要经历与典型事迹体现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 出生地邮编",
+        "B. 主要经历与典型事迹",
+        "C. 朋友数量",
+        "D. 饮食偏好"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0118",
+      "item_type": "choice",
+      "stem": "课标要求九年级课外阅读累计词量至少（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng9_red9_150k"
+      ],
+      "difficulty": 0.3,
+      "solution": "义教三级·九年级课外阅读累计量 15 万词以上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4 万词",
+        "B. 10 万词",
+        "C. 15 万词以上",
+        "D. 20 万词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0119",
+      "item_type": "choice",
+      "stem": "一段视频中的人物表情严肃、语气沉重，配合字幕 'We lost the game.'，最合理的解读是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_vie9_nonverbal_resource"
+      ],
+      "difficulty": 0.4,
+      "solution": "表情、语气与'输掉比赛'共同传达失落沮丧。",
+      "source": "llm_generated",
+      "options": [
+        "A. 极度开心",
+        "B. 失落、沮丧",
+        "C. 平静",
+        "D. 讽刺"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0124",
+      "item_type": "choice",
+      "stem": "By the time he arrived, the film ______.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng9_gra9_tense_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "'过去的过去'用过去完成时 had started。",
+      "source": "llm_generated",
+      "options": [
+        "A. started",
+        "B. has started",
+        "C. had started",
+        "D. was starting"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0125",
+      "item_type": "choice",
+      "stem": "I ______ for two hours when the bell rang.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng9_gra9_tense_master"
+      ],
+      "difficulty": 0.55,
+      "solution": "过去某一时刻（响铃时）之前一直在做某事，用过去完成进行时。",
+      "source": "llm_generated",
+      "options": [
+        "A. study",
+        "B. am studying",
+        "C. had been studying",
+        "D. have studied"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0126",
+      "item_type": "choice",
+      "stem": "The bridge ______ in 1990.（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_gra9_passive_all"
+      ],
+      "difficulty": 0.4,
+      "solution": "in 1990 是过去时间，主语 bridge 是动作承受者，用一般过去时被动 was built。",
+      "source": "llm_generated",
+      "options": [
+        "A. is built",
+        "B. was built",
+        "C. built",
+        "D. has built"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0128",
+      "item_type": "choice",
+      "stem": "He asked me ______ with me.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng9_gra9_object_clause_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "asked 过去时，从句应用过去的陈述语序：what was the matter。",
+      "source": "llm_generated",
+      "options": [
+        "A. what is the matter",
+        "B. what the matter is",
+        "C. what was the matter",
+        "D. what the matter was"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0129",
+      "item_type": "choice",
+      "stem": "I don't know ______ tomorrow.（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_gra9_object_clause_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "宾语从句用陈述语序：what the weather will be like。",
+      "source": "llm_generated",
+      "options": [
+        "A. what will the weather be like",
+        "B. what the weather will be like",
+        "C. what the weather will like be",
+        "D. what the weather will be"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0130",
+      "item_type": "choice",
+      "stem": "He enjoys ______ in the sea.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng9_gra9_gerund_object"
+      ],
+      "difficulty": 0.45,
+      "solution": "enjoy 后接动名词作宾语，即 enjoy doing sth.。",
+      "source": "llm_generated",
+      "options": [
+        "A. swim",
+        "B. to swim",
+        "C. swimming",
+        "D. swims"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0131",
+      "item_type": "fill",
+      "stem": "填空：Would you mind ______ (close) the door?",
+      "answer": "closing",
+      "kps": [
+        "kp_eng9_gra9_gerund_object"
+      ],
+      "difficulty": 0.45,
+      "solution": "mind 后接动名词：mind doing sth.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0132",
+      "item_type": "choice",
+      "stem": "Mount Qomolangma is ______ mountain in the world.（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_eng9_gra9_comparative_superlative"
+      ],
+      "difficulty": 0.45,
+      "solution": "in the world 范围用最高级；最高级前需加 the。",
+      "source": "llm_generated",
+      "options": [
+        "A. high",
+        "B. higher",
+        "C. highest",
+        "D. the highest"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0133",
+      "item_type": "fill",
+      "stem": "填空：This book is ______ (interesting) than that one.",
+      "answer": "more interesting",
+      "kps": [
+        "kp_eng9_gra9_comparative_superlative"
+      ],
+      "difficulty": 0.45,
+      "solution": "interesting 为多音节形容词，比较级 more interesting。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0134",
+      "item_type": "choice",
+      "stem": "说理类语篇最常用的论证方法是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_dis9_argument_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "议论文以事实与道理论证观点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摆事实、讲道理",
+        "B. 故事加想象",
+        "C. 只用抒情",
+        "D. 单纯叙述"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0135",
+      "item_type": "choice",
+      "stem": "给校长写正式建议信，最得体的开头是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_prg9_speech_style"
+      ],
+      "difficulty": 0.4,
+      "solution": "正式信函应用 Dear + 姓/称呼；其它表达过于随意。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hi, Mr Li!",
+        "B. Dear Mr Li,",
+        "C. Hey, dude!",
+        "D. What's up, Li?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0136",
+      "item_type": "fill",
+      "stem": "写出汉语对应的英语单词：'环境' ______",
+      "answer": "environment",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.35,
+      "solution": "环境对应的英文单词为 environment。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0137",
+      "item_type": "choice",
+      "stem": "下列哪一组词汇主题属于九年级综合掌握范围（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.4,
+      "solution": "B 组覆盖九年级常见主题（环境、科技、通讯），与课标三级词汇范围一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. apple, banana",
+        "B. environment, technology, communication",
+        "C. cat, dog",
+        "D. pen, ruler"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0138",
+      "item_type": "choice",
+      "stem": "句子 'He runs a small company.' 中 'runs' 的含义是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_voc9_polysemy"
+      ],
+      "difficulty": 0.45,
+      "solution": "run a company 中 run 意为'经营、管理'，是一词多义现象。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跑步",
+        "B. 经营、管理",
+        "C. 流动",
+        "D. 比赛"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0140",
+      "item_type": "choice",
+      "stem": "下列关于英国（UK）的描述不正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_eng9_cul9_country_profile"
+      ],
+      "difficulty": 0.4,
+      "solution": "大熊猫是中国的国宝，并非英国。",
+      "source": "llm_generated",
+      "options": [
+        "A. 首都 London",
+        "B. 货币 pound",
+        "C. 官方语言 English",
+        "D. 大熊猫是国宝"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0143",
+      "item_type": "choice",
+      "stem": "按主题组织语言材料的优点不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_eng9_lsm9_topic_plan"
+      ],
+      "difficulty": 0.4,
+      "solution": "按主题组织可以加强词与词之间的联系，D 与此相反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 利于联想记忆",
+        "B. 便于写作时调用",
+        "C. 提高词汇系统性",
+        "D. 让单词之间无联系"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0203",
+      "item_type": "fill",
+      "stem": "填空：九年级课外阅读累计词量应不少于 ______ 词。",
+      "answer": "15万",
+      "kps": [
+        "kp_eng9_red9_150k"
+      ],
+      "difficulty": 0.3,
+      "solution": "九年级课外阅读累计量 15 万词以上。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0204",
+      "item_type": "choice",
+      "stem": "中考复习计划中，下列哪项安排更合理（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_lsm9_plan_exam"
+      ],
+      "difficulty": 0.45,
+      "solution": "均匀分布+小目标+模拟训练是较合理的复习计划。",
+      "source": "llm_generated",
+      "options": [
+        "A. 临考前一周才开始",
+        "B. 均匀分布各阶段任务，每周一个小目标",
+        "C. 只复习喜欢的科目",
+        "D. 完全不模拟训练"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0206",
+      "item_type": "choice",
+      "stem": "下列哪种做法有助于降低考试焦虑（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_lsm9_anxiety_control"
+      ],
+      "difficulty": 0.4,
+      "solution": "深呼吸+积极暗示是有效降低焦虑的方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 考试前一天熬夜",
+        "B. 深呼吸、积极自我暗示",
+        "C. 完全不做准备",
+        "D. 与他人过度比较"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0207",
+      "item_type": "choice",
+      "stem": "下列哪种行为属于志愿服务（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_thm9_volunteer"
+      ],
+      "difficulty": 0.4,
+      "solution": "在社区打扫卫生是无偿为公共利益服务的行为，属于志愿服务。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在社区打扫卫生",
+        "B. 在家睡觉",
+        "C. 玩游戏",
+        "D. 逛街购物"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0208",
+      "item_type": "choice",
+      "stem": "下列做法符合'保护环境'主题的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_thm9_env_protect"
+      ],
+      "difficulty": 0.35,
+      "solution": "节约用电减少能源消耗，符合环保理念。",
+      "source": "llm_generated",
+      "options": [
+        "A. 随手乱扔垃圾",
+        "B. 节约用电",
+        "C. 大量使用一次性筷子",
+        "D. 砍伐森林"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0209",
+      "item_type": "fill",
+      "stem": "填空：Australia 的首都是 ______.",
+      "answer": "Canberra",
+      "kps": [
+        "kp_eng9_cul9_country_profile"
+      ],
+      "difficulty": 0.4,
+      "solution": "澳大利亚的首都是 Canberra（堪培拉），不是 Sydney 或 Melbourne。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0210",
+      "item_type": "choice",
+      "stem": "关于'健康观念'与'理财观念'的关系，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng9_cul9_health_finance_view"
+      ],
+      "difficulty": 0.45,
+      "solution": "健康与理财密切相关：理性消费可以支持健康饮食。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全无关",
+        "B. 健康饮食需要合理消费，二者相互促进",
+        "C. 只有健康重要",
+        "D. 只有理财重要"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

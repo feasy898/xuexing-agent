@@ -1,17 +1,20 @@
 """知识库（数据）校验：图谱、题库、误解、母题四类资产的完整性。
 
-知识库已从"七年级 4 章节簇"扩展为小学（1-6 年级）+ 初中（7-9 年级）
-+ 高中（10-12 年级）全覆盖，本文件与 tools/validate_knowledge.py 同口径：
-图谱按年级文件合并后检查，题库 / 误解库 / 母题库分别扫描 data/ 下对应
-目录的全部文件。验证器图谱口径为 1-12 年级（缺某年级文件时记 pending
-不报错）；本文件夹具按年级文件动态发现、覆盖库内现存数据，另对
-math_all 合并视图单独做 1-12 年级检查（随学段扩张逐段长到 1-12）。
+知识库已从"七年级 4 章节簇"扩展为全学科（数学/英语/语文/物理/化学/生物/
+历史/地理/政治/小学科学）× 小学（1-6 年级）+ 初中（7-9 年级）+ 高中
+（10-12 年级）覆盖，本文件与 tools/validate_knowledge.py 同口径：图谱按
+<subject>_grade<N>.json 全学科扫描后合并检查，题库 / 误解库 / 母题库分别
+扫描 data/ 下对应目录的全部文件。验证器图谱口径为学科文件全量（缺某学科
+某年级文件时记 pending 不报错）；本文件夹具按（年级, 学科, 文件）动态发现、
+覆盖库内现存数据，另对 math_all 合并视图单独做 1-12 年级检查（随学段扩张
+逐段长到 1-12）。
 断言一律下限式（非空、集合归属、数量下限），不锁定具体规模数字——
 扩库只增不减时测试应保持通过。
 """
 import glob
 import json
 import os
+import re
 
 import pytest
 
@@ -21,8 +24,10 @@ from xuexing.kpgraph import kpgraph_from_dict
 # 项目根目录（与 conftest 的 ROOT 同口径），便于直接定位 data/ 下的非夹具资源
 _ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# 课标（2022 年版 + 高中 2017 年版 2020 修订）章节簇全集：按学段登记。
+# 数学课标（2022 年版 + 高中 2017 年版 2020 修订）章节簇全集：按学段登记。
 # 断言为"归属"而非"相等"——新增簇时在此登记即可，不锁簇数。
+# 其余学科的章节簇体系各成一体（语文数百个簇），与 validate_knowledge.py
+# 同口径只做"非空"校验，不在此登记。
 CURRICULUM_CLUSTERS = {
     # 第一、二学段（1-4 年级）
     "数与运算", "数量关系", "图形与几何", "统计与概率", "综合与实践",
@@ -50,25 +55,55 @@ CURRICULUM_CLUSTERS = {
     "选择性必修第三册·第八章 成对数据的统计分析",
 }
 
-# 年级文件动态发现（math_grade*.json）：随学段落库自然生长，避免跨批次改元组。
-# 小学（grade<=6）与初中（grade>=7）分别给防截断下限。
+# 年级文件动态发现（<subject>_grade<N>.json，全学科）：随学段落库自然生长，
+# 避免跨批次改元组。命名规范与 tools/validate_knowledge.py 的
+# SUBJECT_KNOWLEDGE_RE 同口径；math_all.json（合并视图）与非规范命名的
+# 补充批次（如 math_grade11b.json）不入图谱口径。
+_SUBJECT_GRADE_RE = re.compile(r"^([a-z]+)_grade(\d+)\.json$")
+
+
 def _discover_grade_files(root):
+    """扫描全部学科的年级图谱文件 → sorted {grade: {subject: [path, ...]}}。
+
+    每年级每学科的文件作为独立列表（同年级同学科未来出现多个文件时按文件名
+    依次追加），数学/英语/语文/物理/化学/生物/历史/地理/政治/小学科学全部
+    纳入 merged_graph 口径。
+    """
     found = {}
-    for path in sorted(glob.glob(f"{root}/data/knowledge/math_grade*.json")):
-        name = os.path.basename(path)  # math_grade7.json
-        digits = name[len("math_grade"):-len(".json")]
-        if digits.isdigit():
-            found[int(digits)] = path
-    return found
+    for path in sorted(glob.glob(f"{root}/data/knowledge/*_grade*.json")):
+        m = _SUBJECT_GRADE_RE.match(os.path.basename(path))
+        if not m:
+            continue
+        subject, grade = m.group(1), int(m.group(2))
+        found.setdefault(grade, {}).setdefault(subject, []).append(path)
+    return {
+        grade: {subject: paths for subject, paths in sorted(subjects.items())}
+        for grade, subjects in sorted(found.items())
+    }
 
 
 # 下限口径（现库远高于此；取值只防"文件被清空/大幅截断"）。
-MIN_KPS_PER_GRADE = 20  # 初中任一年级文件的知识点数下限
-MIN_KPS_PER_GRADE_ELEMENTARY = 10  # 小学任一年级文件的知识点数下限
+MIN_KPS_PER_GRADE = 20  # 数学初中及以上任一年级文件的知识点数下限
+MIN_KPS_PER_GRADE_ELEMENTARY = 10  # 数学小学任一年级文件的知识点数下限
 MIN_KPS_MERGED = 60  # 合并图谱知识点数下限
 MIN_CLUSTERS_MERGED = 8  # 合并图谱章节簇数下限
 MIN_PRIMARY_ITEMS_PER_KP = 3  # 覆盖率口径与验收门默认一致
 MIN_ARCHETYPES_PER_FILE = 6  # 每个母题文件的条数下限（与验收门一致）
+# 非数学学科每文件知识点数下限：按现库各学科最小文件留余量取值（防截断，
+# 不锁规模）。现库最小：英语 grade2=12、语文 grade12=12、生物 grade9=5、
+# 地理 grade12=11、政治 grade12=20、历史 grade12=32、化学 grade10=63、
+# 物理 grade10=65、小学科学 grade2=48。
+MIN_KPS_PER_FILE_BY_SUBJECT = {
+    "biology": 4,
+    "chemistry": 50,
+    "chinese": 10,
+    "english": 10,
+    "geography": 10,
+    "history": 25,
+    "physics": 50,
+    "politics": 15,
+    "science": 40,
+}
 
 
 # ---------- 夹具：与验收门同口径的合并视图 ----------
@@ -76,30 +111,64 @@ MIN_ARCHETYPES_PER_FILE = 6  # 每个母题文件的条数下限（与验收门�
 
 @pytest.fixture(scope="session")
 def grade_kps(root):
-    """按年级读原始图谱数据；顺带校验 id 跨文件不重复。"""
+    """按（年级, 学科, 文件）读原始图谱数据；顺带校验 id 全库不重复。
+
+    结构：{grade: {subject: [该年级该学科每个文件的 kps, ...]}}。
+    数学沿用原防截断下限（小学 10 / 初中及以上 20），非数学学科用
+    MIN_KPS_PER_FILE_BY_SUBJECT 的学科专属下限。
+    """
     out = {}
     seen = {}
     grade_files = _discover_grade_files(root)
-    assert 7 in grade_files, "grade7 knowledge file missing"
-    for grade, path in sorted(grade_files.items()):
-        with open(path, encoding="utf-8") as f:
-            data = json.load(f)
-        kps = data["knowledge_points"]
-        floor = (MIN_KPS_PER_GRADE_ELEMENTARY if grade <= 6 else MIN_KPS_PER_GRADE)
-        assert len(kps) >= floor, f"grade{grade}: only {len(kps)} kps (< {floor})"
-        for kp in kps:
-            assert kp["id"] not in seen, (
-                f"duplicate kp id: {kp['id']} ({seen.get(kp['id'])} & grade{grade})"
-            )
-            seen[kp["id"]] = f"grade{grade}"
-        out[grade] = kps
+    assert "math" in grade_files.get(7, {}), "grade7 math knowledge file missing"
+    for grade, subjects in grade_files.items():
+        out[grade] = {}
+        for subject, paths in subjects.items():
+            kp_lists = []
+            for path in paths:
+                with open(path, encoding="utf-8") as f:
+                    data = json.load(f)
+                kps = data["knowledge_points"]
+                if subject == "math":
+                    floor = (
+                        MIN_KPS_PER_GRADE_ELEMENTARY if grade <= 6 else MIN_KPS_PER_GRADE
+                    )
+                else:
+                    floor = MIN_KPS_PER_FILE_BY_SUBJECT.get(subject, 0)
+                assert len(kps) >= floor, (
+                    f"{subject} grade{grade}: only {len(kps)} kps (< {floor})"
+                )
+                for kp in kps:
+                    assert kp["id"] not in seen, (
+                        f"duplicate kp id: {kp['id']} "
+                        f"({seen.get(kp['id'])} & {os.path.basename(path)})"
+                    )
+                    seen[kp["id"]] = os.path.basename(path)
+                kp_lists.append(kps)
+            out[grade][subject] = kp_lists
     return out
+
+
+def _iter_subject_kps(grade_kps, subject):
+    """展平指定学科在 grade_kps 中的全部知识点（跨年级、跨文件）。"""
+    return [
+        kp
+        for subjects in grade_kps.values()
+        for kp_list in subjects.get(subject, [])
+        for kp in kp_list
+    ]
 
 
 @pytest.fixture(scope="session")
 def merged_graph(grade_kps):
-    """合并已落库各年级的知识点图谱。"""
-    merged = [kp for grade in sorted(grade_kps) for kp in grade_kps[grade]]
+    """合并全学科已落库各年级的知识点图谱。"""
+    merged = [
+        kp
+        for grade in sorted(grade_kps)
+        for subject in sorted(grade_kps[grade])
+        for kp_list in grade_kps[grade][subject]
+        for kp in kp_list
+    ]
     assert len(merged) >= MIN_KPS_MERGED, f"merged graph only has {len(merged)} kps"
     return kpgraph_from_dict({"knowledge_points": merged})
 
@@ -144,30 +213,36 @@ def test_kpgraph_metadata_and_clusters(merged_graph):
         assert kp.name and kp.cluster and kp.standard_ref, f"{kp.id} missing metadata"
         assert str(kp.description).strip(), f"{kp.id}: empty description"
         assert 1 <= kp.grade <= 12, f"{kp.id}: grade {kp.grade} out of 1-12"
-        assert kp.cluster in CURRICULUM_CLUSTERS, f"{kp.id}: unknown cluster {kp.cluster!r}"
         clusters.add(kp.cluster)
     assert len(clusters) >= MIN_CLUSTERS_MERGED
 
 
 def test_grade_files_scope(grade_kps):
-    """各年级文件的知识点都归属本年级，且章节簇属于课标集合、非空。"""
-    for grade, kps in grade_kps.items():
-        clusters = set()
-        for kp in kps:
-            assert int(kp["grade"]) == grade, f"{kp['id']}: grade {kp['grade']} in grade{grade} file"
-            assert kp.get("cluster") in CURRICULUM_CLUSTERS, f"{kp['id']}: unknown cluster"
-            assert str(kp.get("standard_ref", "")).strip(), f"{kp['id']}: empty standard_ref"
-            assert str(kp.get("description", "")).strip(), f"{kp['id']}: empty description"
-            clusters.add(kp["cluster"])
-        assert clusters, f"grade{grade}: no clusters"
+    """各（年级,学科）文件的知识点都归属本年级、章节簇非空；数学知识点另须
+    归属数学课标簇集合（CURRICULUM_CLUSTERS 仅登记数学课标，其余学科与
+    validate_knowledge.py 同口径只查非空）。"""
+    for grade, subjects in grade_kps.items():
+        for subject, kp_lists in subjects.items():
+            clusters = set()
+            for kps in kp_lists:
+                for kp in kps:
+                    assert int(kp["grade"]) == grade, f"{kp['id']}: grade {kp['grade']} in grade{grade} file"
+                    assert str(kp.get("cluster", "")).strip(), f"{kp['id']}: empty cluster"
+                    if subject == "math":
+                        assert kp.get("cluster") in CURRICULUM_CLUSTERS, f"{kp['id']}: unknown cluster"
+                    assert str(kp.get("standard_ref", "")).strip(), f"{kp['id']}: empty standard_ref"
+                    assert str(kp.get("description", "")).strip(), f"{kp['id']}: empty description"
+                    clusters.add(kp["cluster"])
+            assert clusters, f"{subject} grade{grade}: no clusters"
 
 
 # ---------- 合并视图 math_all.json ----------
 
 
 def test_math_all_merged_view_within_1_12(root, grade_kps):
-    """math_all 是年级文件的合并视图：年级全部落在 1-12（随学段扩张
-    逐段长到 1-12），且不丢已落库年级文件中的任何知识点。"""
+    """math_all 是数学年级文件的合并视图（仅数学口径，其他学科不经它合并）：
+    年级全部落在 1-12（随学段扩张逐段长到 1-12），且不丢已落库数学年级
+    文件中的任何知识点。"""
     with open(f"{root}/data/knowledge/math_all.json", encoding="utf-8") as f:
         data = json.load(f)
     kps = data["knowledge_points"]
@@ -178,7 +253,7 @@ def test_math_all_merged_view_within_1_12(root, grade_kps):
         if not 1 <= int(kp.get("grade", 0)) <= 12
     ]
     assert bad == [], f"math_all kps grade out of 1-12: {bad}"
-    core_ids = {kp["id"] for g_kps in grade_kps.values() for kp in g_kps}
+    core_ids = {kp["id"] for kp in _iter_subject_kps(grade_kps, "math")}
     missing = sorted(core_ids - {kp["id"] for kp in kps})
     assert not missing, f"math_all lost grade kps: {missing}"
 
@@ -191,7 +266,10 @@ def test_items_schema_and_kp_refs(merged_bank, merged_graph):
     assert errs == [], errs
 
 
-def test_every_kp_meets_primary_item_floor(merged_bank, merged_graph):
+def test_every_kp_meets_primary_item_floor(merged_graph, merged_bank, grade_kps):
+    # 覆盖率下限目前只对有题库建设的数学执行（与验收门口径一致：无题库学科
+    # 不入该口径；英语题库 425 题尚未达到 3 题/KP 的主覆盖门，扩科见台账）。
+    math_ids = {kp["id"] for kp in _iter_subject_kps(grade_kps, "math")}
     # 加载题数豁免集 = 误解库『无误解』豁免 ∪ 题库『题目采集中』豁免
     # （与 tools/validate_knowledge.py 同口径：豁免的 KP 同时豁免误解覆盖
     # 与主知识点题数检查）。
@@ -223,7 +301,8 @@ def test_every_kp_meets_primary_item_floor(merged_bank, merged_graph):
     below = [
         (kp.id, len(merged_bank.by_kp(kp.id, primary_only=True)))
         for kp in merged_graph.kps()
-        if kp.id not in item_exempt
+        if kp.id in math_ids
+        and kp.id not in item_exempt
         and len(merged_bank.by_kp(kp.id, primary_only=True)) < MIN_PRIMARY_ITEMS_PER_KP
     ]
     assert below == [], f"kps below {MIN_PRIMARY_ITEMS_PER_KP} primary items: {below}"

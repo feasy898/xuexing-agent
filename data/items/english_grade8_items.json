@@ -1,0 +1,956 @@
+{
+  "items": [
+    {
+      "id": "eng_en_jr_0071",
+      "item_type": "choice",
+      "stem": "听一段关于学校运动会的短文，其要点不包括（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_lis8_gist_detail"
+      ],
+      "difficulty": 0.4,
+      "solution": "家庭住址属于个人隐私，不属于运动会广播的要点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 比赛项目",
+        "B. 获奖情况",
+        "C. 学生家庭住址",
+        "D. 时间地点"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0072",
+      "item_type": "choice",
+      "stem": "在听力中抓住主旨要义的常用做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lis8_gist_detail"
+      ],
+      "difficulty": 0.4,
+      "solution": "抓主旨要义关键在听首尾的总结性表达与反复出现的关键词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听清每一个单词",
+        "B. 注意开头和结尾的总结性句子",
+        "C. 只听人名和数字",
+        "D. 一边听一边翻译"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0073",
+      "item_type": "choice",
+      "stem": "说话人说 'I'm afraid we've missed the bus.' 时，最可能的情感是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lis8_feeling_attitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "I'm afraid... 与 missed the bus 共同传达遗憾与担忧。",
+      "source": "llm_generated",
+      "options": [
+        "A. 兴奋",
+        "B. 遗憾/担心",
+        "C. 愤怒",
+        "D. 惊讶"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0074",
+      "item_type": "choice",
+      "stem": "判断说话者态度变化时，下面哪种语调线索最可靠（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lis8_feeling_attitude"
+      ],
+      "difficulty": 0.45,
+      "solution": "重音、语调升降最能反映情感态度变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 语速始终不变",
+        "B. 重音位置和语调升降",
+        "C. 用词长短",
+        "D. 背景音乐"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0075",
+      "item_type": "choice",
+      "stem": "收听主题相关、语速较慢的英语节目时，下列做法不恰当的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lis8_broadcast"
+      ],
+      "difficulty": 0.4,
+      "solution": "听不懂就放弃不利于听力提升，应结合预测、记录与复述策略。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前预测主题",
+        "B. 听不懂就立刻放弃",
+        "C. 记下关键信息",
+        "D. 听后复述要点"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0076",
+      "item_type": "choice",
+      "stem": "梳理语篇脉络时，下列做法最有效的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_red8_organise"
+      ],
+      "difficulty": 0.4,
+      "solution": "通过主题句梳理段落大意，是把握脉络的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只看首句",
+        "B. 找出段落主题句并归纳每段大意",
+        "C. 跳过段落直接看结尾",
+        "D. 只关注生词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0077",
+      "item_type": "fill",
+      "stem": "在英语语篇中，表示顺序的常用衔接词有 first, next, then, ______.",
+      "answer": "finally",
+      "kps": [
+        "kp_eng8_red8_organise"
+      ],
+      "difficulty": 0.35,
+      "solution": "first / next / then / finally 是常见顺序衔接词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0078",
+      "item_type": "choice",
+      "stem": "一张折线图显示某城市 2010-2020 年汽车数量持续上升，最合理的解读是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_red8_chart_interpret"
+      ],
+      "difficulty": 0.4,
+      "solution": "折线整体上升，对应数量逐年增加。",
+      "source": "llm_generated",
+      "options": [
+        "A. 该城市人口减少",
+        "B. 汽车数量逐年下降",
+        "C. 汽车数量逐年上升",
+        "D. 与年份无关"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0080",
+      "item_type": "choice",
+      "stem": "阅读英语短篇小说时，下列哪项最能帮助你理解情节（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_red8_novel_news"
+      ],
+      "difficulty": 0.35,
+      "solution": "5W（who/what/when/where/why）是理解小说情节的关键信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跳过人物对话",
+        "B. 抓住 who / what / when / where / why",
+        "C. 只看标题",
+        "D. 一字一句翻译"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0082",
+      "item_type": "choice",
+      "stem": "课标要求八年级课外阅读累计词量至少（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_red8_100k"
+      ],
+      "difficulty": 0.3,
+      "solution": "义教三级·八年级课外阅读累计量 10 万词以上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4 万词以上",
+        "B. 10 万词以上",
+        "C. 15 万词以上",
+        "D. 20 万词以上"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0084",
+      "item_type": "choice",
+      "stem": "在特定情境（如医院）下询问某事，最恰当的英语表达是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_spk8_effective_comm"
+      ],
+      "difficulty": 0.4,
+      "solution": "Excuse me, could you tell me... 是英语中礼貌询问的标准表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. You there, give me medicine!",
+        "B. Excuse me, could you tell me where the doctor's office is?",
+        "C. I want medicine.",
+        "D. Where medicine?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0085",
+      "item_type": "fill",
+      "stem": "在餐厅点餐时，你可以礼貌地问：'______, could I see the menu, please?'",
+      "answer": "Excuse me",
+      "kps": [
+        "kp_eng8_spk8_effective_comm"
+      ],
+      "difficulty": 0.35,
+      "solution": "Excuse me 用于礼貌引起对方注意。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0088",
+      "item_type": "choice",
+      "stem": "Look! The boys ______ football on the playground.（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_gra8_progressive_vs_perfect"
+      ],
+      "difficulty": 0.4,
+      "solution": "Look! 是现在进行时的标志词，用 are playing 强调动作正在进行。",
+      "source": "llm_generated",
+      "options": [
+        "A. play",
+        "B. are playing",
+        "C. have played",
+        "D. played"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0089",
+      "item_type": "choice",
+      "stem": "We ______ this film twice. Let's watch something else.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_gra8_progressive_vs_perfect"
+      ],
+      "difficulty": 0.4,
+      "solution": "twice 提示经历；'已经看过两次' 用现在完成时 have seen。",
+      "source": "llm_generated",
+      "options": [
+        "A. see",
+        "B. are seeing",
+        "C. have seen",
+        "D. saw"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0090",
+      "item_type": "choice",
+      "stem": "The ______ (break) window was repaired by Tom.（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_gra8_participle_attr"
+      ],
+      "difficulty": 0.45,
+      "solution": "过去分词 broken 作定语，表示'被打碎的窗户'。",
+      "source": "llm_generated",
+      "options": [
+        "A. breaking",
+        "B. broken",
+        "C. break",
+        "D. to break"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0091",
+      "item_type": "fill",
+      "stem": "填空：The ______ (interest) story attracted many readers.",
+      "answer": "interesting",
+      "kps": [
+        "kp_eng8_gra8_participle_attr"
+      ],
+      "difficulty": 0.45,
+      "solution": "现在分词 interesting 修饰物，作定语表'令人感兴趣的'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0092",
+      "item_type": "choice",
+      "stem": "The man ______ car was stolen called the police.（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_gra8_relative_who_whose"
+      ],
+      "difficulty": 0.4,
+      "solution": "先行词 the man 与 car 之间是所属关系，用 whose 引导定语从句。",
+      "source": "llm_generated",
+      "options": [
+        "A. who",
+        "B. whom",
+        "C. whose",
+        "D. which"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0093",
+      "item_type": "fill",
+      "stem": "填空：The girl ______ won the prize is my sister.",
+      "answer": "who",
+      "kps": [
+        "kp_eng8_gra8_relative_who_whose"
+      ],
+      "difficulty": 0.35,
+      "solution": "先行词 the girl 在从句中作主语，用 who。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0094",
+      "item_type": "choice",
+      "stem": "I don't know ______ he will come tomorrow.（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng8_gra8_subordinate_clause"
+      ],
+      "difficulty": 0.45,
+      "solution": "know 后接宾语从句；'是否来'用 if / whether 引导，if 较口语化。",
+      "source": "llm_generated",
+      "options": [
+        "A. if",
+        "B. when",
+        "C. whether",
+        "D. because"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0095",
+      "item_type": "choice",
+      "stem": "______ he was ill, he still went to school.（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_gra8_subordinate_clause"
+      ],
+      "difficulty": 0.4,
+      "solution": "前后为让步关系，用 Although。",
+      "source": "llm_generated",
+      "options": [
+        "A. Because",
+        "B. Although",
+        "C. If",
+        "D. When"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0096",
+      "item_type": "choice",
+      "stem": "下列最能体现语篇'横向结构'的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_dis8_horiz_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "横向结构指围绕主题的多个并列方面；A 为时间纵向，C 为因果纵向，D 为总分纵向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按时间先后讲述故事",
+        "B. 围绕同一主题展开多个方面",
+        "C. 从原因到结果论述",
+        "D. 由总述到分述"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0097",
+      "item_type": "choice",
+      "stem": "对老师表示关心，下列最得体的表达是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_prg8_relation_appropriate"
+      ],
+      "difficulty": 0.4,
+      "solution": "称谓得体、Would you like...? 句式礼貌，符合对长辈的身份与情感距离。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey teacher, sit down!",
+        "B. Mr Wang, would you like a cup of tea?",
+        "C. You, have tea!",
+        "D. Hi man!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0098",
+      "item_type": "choice",
+      "stem": "关于中外礼仪，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_cul8_customs_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "英美正式场合多握手、保持礼貌距离；其他三项表述过于绝对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中国人见面都用拥抱",
+        "B. 英美人在正式场合也会保持距离、礼貌握手",
+        "C. 中国人从不鞠躬",
+        "D. 英美人从不使用 'Please'"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0099",
+      "item_type": "choice",
+      "stem": "下列作品及其寓意对应正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_cul8_art_implication"
+      ],
+      "difficulty": 0.45,
+      "solution": "达·芬奇《最后的晚餐》体现背叛与牺牲的主题；其他搭配错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 《向日葵》—科技发展",
+        "B. 《最后的晚餐》—背叛与牺牲",
+        "C. 《蒙娜丽莎》—战争与和平",
+        "D. 《清明上河图》—太空探索"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0101",
+      "item_type": "choice",
+      "stem": "'目标—监控—反思'的元认知循环中，'监控'指的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lsm8_goal_monitoring"
+      ],
+      "difficulty": 0.4,
+      "solution": "监控指学习过程中随时检查自己的理解、策略与进度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 定下大目标",
+        "B. 学习中随时检查自己的理解与方法",
+        "C. 考完试再总结",
+        "D. 完全跟着老师走"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0102",
+      "item_type": "choice",
+      "stem": "学语法时'举一反三'的关键是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lsm8_grammar_pattern"
+      ],
+      "difficulty": 0.4,
+      "solution": "举一反三即发现语言规律，并在新情境中迁移运用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 死记硬背规则",
+        "B. 总结规律并在新情境中运用",
+        "C. 不学语法只看语感",
+        "D. 只做一类题目"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0103",
+      "item_type": "choice",
+      "stem": "在写作中监控语言得体性，下列做法最直接的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lsm8_monitor_appropriacy"
+      ],
+      "difficulty": 0.4,
+      "solution": "得体性指语言要符合交际对象与场合，需在写作中随时检查用词与语气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看字数够不够",
+        "B. 检查用词是否符合对象与场合",
+        "C. 看是否有标题",
+        "D. 看字体是否工整"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0107",
+      "item_type": "choice",
+      "stem": "做主旨大意题时，最可靠的判断依据是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_red8_main_idea_q"
+      ],
+      "difficulty": 0.4,
+      "solution": "主旨大意要综合段落主题句与高频词，而非单一信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章第一句的逐字翻译",
+        "B. 综合各段主题句与全文高频词",
+        "C. 自己最熟悉的话题",
+        "D. 最后一段的长度"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0108",
+      "item_type": "choice",
+      "stem": "句子 'He is an avid reader. He reads several books a week.' 中 'avid' 最可能的意思是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_red8_word_guess"
+      ],
+      "difficulty": 0.45,
+      "solution": "后文 'several books a week' 说明他阅读量大，故 avid 意为'狂热的'。",
+      "source": "llm_generated",
+      "options": [
+        "A. 偶尔的",
+        "B. 狂热的、热衷的",
+        "C. 疲倦的",
+        "D. 严厉的"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0109",
+      "item_type": "fill",
+      "stem": "猜测词义：'The plant withered because of the long drought.' withered 意为______.",
+      "answer": "枯萎",
+      "kps": [
+        "kp_eng8_red8_word_guess"
+      ],
+      "difficulty": 0.45,
+      "solution": "由因果关系 because of the long drought 可推断 withered 意为'枯萎'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0177",
+      "item_type": "choice",
+      "stem": "收听 VOA / BBC 慢速英语时，下列哪项做法最有助于提高听力（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lis8_broadcast"
+      ],
+      "difficulty": 0.45,
+      "solution": "反复听+对照文本+记要点是高效练习方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一遍听不懂就放弃",
+        "B. 反复听并对照文本记录要点",
+        "C. 只听自己喜欢的节目",
+        "D. 永远不查生词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0178",
+      "item_type": "fill",
+      "stem": "填空：八年级课外阅读累计词量应不少于 ______ 词。",
+      "answer": "10万",
+      "kps": [
+        "kp_eng8_red8_100k"
+      ],
+      "difficulty": 0.3,
+      "solution": "八年级课外阅读累计量 10 万词以上。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0184",
+      "item_type": "choice",
+      "stem": "关于中外饮食习惯，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_cul8_customs_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "C 客观反映了中外饮食差异；A、B、D 过于绝对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中国人吃饭都用筷子",
+        "B. 英美人吃饭都用筷子",
+        "C. 中餐与西餐在餐具、主食、口味上都有不同",
+        "D. 中国人从不吃牛肉"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0186",
+      "item_type": "choice",
+      "stem": "下列关于'工匠精神'的描述，最恰当的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_cul8_labor_values"
+      ],
+      "difficulty": 0.45,
+      "solution": "工匠精神强调精益求精、专注执着，是劳动精神的具体体现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 追求速度、不顾质量",
+        "B. 精益求精、专注执着",
+        "C. 频繁跳槽",
+        "D. 只看重结果不看过程"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0189",
+      "item_type": "choice",
+      "stem": "给老师发邮件，下列称呼最得体的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lsm8_monitor_appropriacy"
+      ],
+      "difficulty": 0.35,
+      "solution": "正式邮件应用 Dear + 姓氏/称谓。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hi!",
+        "B. Dear Ms Wang,",
+        "C. Hey teacher!",
+        "D. Yo!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0190",
+      "item_type": "choice",
+      "stem": "面对英语学习中的挫折，下列哪种做法最能体现坚持的态度（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_lsm8_persist_attitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "分析原因+继续努力是面对挫折的正确做法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一次失败就放弃",
+        "B. 分析失败原因并继续努力",
+        "C. 假装不在意",
+        "D. 责怪老师"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0191",
+      "item_type": "choice",
+      "stem": "下列哪一项是科技给生活带来的负面影响（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng8_thm8_science_tech"
+      ],
+      "difficulty": 0.45,
+      "solution": "沉迷手机影响健康是科技的负面影响。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通讯更便利",
+        "B. 信息更易获取",
+        "C. 部分人沉迷手机影响视力与睡眠",
+        "D. 学习资源更丰富"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0192",
+      "item_type": "choice",
+      "stem": "体现'身份认同与文化自信'的合适做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng8_thm8_identity"
+      ],
+      "difficulty": 0.4,
+      "solution": "主动介绍中华文化同时取长补短，体现文化自信。",
+      "source": "llm_generated",
+      "options": [
+        "A. 盲目崇拜外国文化",
+        "B. 主动介绍中华文化并取其精华",
+        "C. 完全否定本民族文化",
+        "D. 只学外语不学中文"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

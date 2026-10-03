@@ -1,0 +1,298 @@
+{
+  "items": [
+    {
+      "id": "eng_en_prim_0031",
+      "item_type": "choice",
+      "stem": "下列单词中音节数与其他三个不同的是（　　）\nA. cat  \nB. dog  \nC. apple  \nD. book",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.25,
+      "solution": "cat、dog、book 都是单音节，apple 是双音节。",
+      "source": "llm_generated",
+      "options": [
+        "A. cat",
+        "B. dog",
+        "C. apple",
+        "D. book"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0033",
+      "item_type": "choice",
+      "stem": "看图：图中小朋友头上戴着一件遮阳的衣物。下列哪一个单词对应图片？（　　）\nA. shoes  \nB. coat  \nC. hat  \nD. bag",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.25,
+      "solution": "戴在头上遮阳的衣物是 hat。",
+      "source": "llm_generated",
+      "options": [
+        "A. shoes",
+        "B. coat",
+        "C. hat",
+        "D. bag"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0034",
+      "item_type": "choice",
+      "stem": "看图：图中的鞋是红色的。补全句子：The ____ are red.（　　）\nA. coat  \nB. shoes  \nC. hat  \nD. bag",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.4,
+      "solution": "鞋是复数形式 shoes，与 are 保持一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. coat",
+        "B. shoes",
+        "C. hat",
+        "D. bag"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0035",
+      "item_type": "choice",
+      "stem": "听教师指令：\"Open your book. Point to the pen.\" 下列执行顺序正确的是（　　）\nA. 先指笔，再打开书  \nB. 先打开书，再指笔  \nC. 只打开书  \nD. 只指笔",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.25,
+      "solution": "指令的顺序是先 \"Open your book\" 后 \"Point to the pen\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先指笔，再打开书",
+        "B. 先打开书，再指笔",
+        "C. 只打开书",
+        "D. 只指笔"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0036",
+      "item_type": "fill",
+      "stem": "听指令：\"Stand up. Open your book.\" 补全第二个动词：Stand up. ____ your book.",
+      "answer": "Open",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.4,
+      "solution": "第二句动词为 Open（打开）。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0037",
+      "item_type": "choice",
+      "stem": "听故事 \"The Lost Cat\" 的三段顺序：① The cat is lost. ② Mum finds the cat. ③ Tom looks for the cat. 正确的事件顺序是（　　）\nA. ①②③  \nB. ③①②  \nC. ②③①  \nD. ①③②",
+      "answer": "D",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.25,
+      "solution": "事件顺序应为\"猫走丢 → Tom 去找 → Mum 找到猫\"，即①③②。",
+      "source": "llm_generated",
+      "options": [
+        "A. ①②③",
+        "B. ③①②",
+        "C. ②③①",
+        "D. ①③②"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0040",
+      "item_type": "choice",
+      "stem": "你想向同学介绍你的妈妈，下列哪句最合适？（　　）\nA. This is my mum. She is nice.  \nB. He is my mum.  \nC. She is my dad.  \nD. This is my mum. He is tall.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.4,
+      "solution": "介绍妈妈用 This is my mum，搭配代词 she 描述。",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my mum. She is nice.",
+        "B. He is my mum.",
+        "C. She is my dad.",
+        "D. This is my mum. He is tall."
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0042",
+      "item_type": "choice",
+      "stem": "下列哪一项最适合作为演唱 \"If You're Happy\" 时的动作？（　　）\nA. 拍手（clap your hands）  \nB. 坐下  \nC. 睡觉  \nD. 吃饭",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"If You're Happy\" 经典动作是 clap your hands 拍手。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拍手（clap your hands）",
+        "B. 坐下",
+        "C. 睡觉",
+        "D. 吃饭"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0047",
+      "item_type": "fill",
+      "stem": "补全对话。A: Thank you for your book.  A1: ____ (回应致谢)",
+      "answer": "You're welcome.",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "回应致谢的得体说法是 You're welcome. / That's OK.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0048",
+      "item_type": "choice",
+      "stem": "同学帮你捡起掉在地上的铅笔，你最合适的英语回应是（　　）\nA. Thank you.  \nB. Goodbye.  \nC. Good morning.  \nD. I'm sorry.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.4,
+      "solution": "获得帮助应说 Thank you. 表感谢。",
+      "source": "llm_generated",
+      "options": [
+        "A. Thank you.",
+        "B. Goodbye.",
+        "C. Good morning.",
+        "D. I'm sorry."
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0050",
+      "item_type": "choice",
+      "stem": "学习新词 \"tiger\" 时，下列哪项最能帮助你联系已学词？（　　）\nA. 只记单词表  \nB. 与已学 \"cat\" 对比：cat 小，tiger 大  \nC. 不看不读  \nD. 只抄写字母",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.4,
+      "solution": "在新旧词之间建立形象对比，能帮助理解和记忆。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只记单词表",
+        "B. 与已学 \"cat\" 对比：cat 小，tiger 大",
+        "C. 不看不读",
+        "D. 只抄写字母"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0051",
+      "item_type": "solve",
+      "stem": "老师要在班级开展英语活动，下列哪一项最有助于保持同学们的英语学习兴趣？（　　）\nA. 只做抄写作业  \nB. 只听写单词  \nC. 英语歌曲合唱比赛  \nD. 不安排任何活动",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.25,
+      "solution": "英语歌曲合唱比赛既能调动兴趣又能让大家开口说英语。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

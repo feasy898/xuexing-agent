@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "id": "eng_sv_hs1_0018",
+      "item_type": "choice",
+      "stem": "【七选五·段落还原·续】根据上文短文结构，选项分析：以下哪一选项最合适填入①处？A. Share your feelings with people you trust. B. Choose healthy food. C. Start the day with simple exercise. D. Use a smile to change your mood.",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.45,
+      "solution": "① 段尾\"taking a few deep breaths and stretching your body\"对应 C 项\"Start the day with simple exercise\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. Share your feelings with people you trust.",
+        "B. Choose healthy food.",
+        "C. Start the day with simple exercise.",
+        "D. Use a smile to change your mood."
+      ],
+      "form": "matching",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sv_hs1_0019",
+      "item_type": "choice",
+      "stem": "【七选五·段落还原·续】根据上文短文结构，选项分析：以下哪一选项最合适填入③处？A. Share your feelings with people you trust. B. Exercise regularly. C. Start the day with simple exercise. D. Use a smile to change your mood.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.55,
+      "solution": "③ 段讲\"Doing exercise, even just a short walk\"，对应 B 项\"Exercise regularly\"，选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Share your feelings with people you trust.",
+        "B. Exercise regularly.",
+        "C. Start the day with simple exercise.",
+        "D. Use a smile to change your mood."
+      ],
+      "form": "matching",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_cl_hs1_0021",
+      "item_type": "choice",
+      "stem": "【完形填空】\nMr. Brown is a famous scientist ___1___ has spent most of his life studying climate change. He believes that the earth ___2___ we live on is changing faster than ever. His team, ___3___ consists of ten young researchers from different countries, has published many important papers. They have found that the ice in the Arctic ___4___ about 13 percent every ten years, which worries people all over the world. Mr. Brown often says, \"We must act now, ___5___ it will be too late for our children.\"\n① A. that  B. which  C. who  D. whom\n③ A. that  B. which  C. who  D. whom\n④ A. has reduced  B. has been reduced  C. is reducing  D. reduces\n⑤ A. and  B. but  C. or  D. so",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.7,
+      "solution": "完形填空：① who 引导限制性定语从句指人；② on which（= on the earth）介词前置；③ which 引导非限制性定语从句指代 His team；④ has been reduced 被动语态（冰在减少）；⑤ or 否则。综合选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. that / which / that / has reduced / and",
+        "B. who / on which / which / has been reduced / or",
+        "C. which / where / who / has been reduced / or",
+        "D. whom / that / which / is reducing / but"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_cl_hs1_0022",
+      "item_type": "choice",
+      "stem": "【完形填空·续上题】回顾上文，关于 Mr. Brown 的团队，下列哪一描述是正确的？A. The team has only one member. B. The team is made up of ten young researchers. C. The team members are all from China. D. The team studies only medicine.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "细节题：根据\"consists of ten young researchers from different countries\"，正确答案为 B：团队由十位来自不同国家的年轻研究者组成。",
+      "source": "llm_generated",
+      "options": [
+        "A. The team has only one member.",
+        "B. The team is made up of ten young researchers.",
+        "C. The team members are all from China.",
+        "D. The team studies only medicine."
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

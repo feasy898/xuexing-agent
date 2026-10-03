@@ -1,0 +1,1688 @@
+{
+  "items": [
+    {
+      "id": "eng_hs2_0001",
+      "item_type": "choice",
+      "stem": "下列关于学术研究报告摘要(Abstract)结构特征的表述，最不准确的一项是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_dis12_academic"
+      ],
+      "difficulty": 0.55,
+      "solution": "摘要通常依次呈现研究目的、方法、主要结果与结论。A项目的—方法—结果—结论是IMRaD摘要的常见模板；B项关键词常置于摘要末尾便于检索；C项语言精确、客观，避免主观评价；D项用第一人称叙述研究者的个人感受是科普随笔特征，非学术摘要规范。故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摘要通常按目的—方法—结果—结论的顺序组织。",
+        "B. 摘要末尾常附3~5个关键词便于检索。",
+        "C. 摘要语言追求精确、客观，避免使用主观评价词。",
+        "D. 摘要应以第一人称叙述研究者的个人感受与心路历程。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0002",
+      "item_type": "choice",
+      "stem": "阅读一段关于海洋微塑料污染的学术摘要：This study investigates the distribution of microplastics (<5 mm) in surface waters of the South China Sea. Samples were collected from 24 sites... Polyethylene and polypropylene accounted for 78% of the particles. Concentrations were highest near coastal cities. The results suggest that land-based sources are the major origin of microplastic pollution. 该摘要未明确给出哪一部分？",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_dis12_academic"
+      ],
+      "difficulty": 0.72,
+      "solution": "摘要已呈现目的investigates、结果78% highest和结论suggest；未出现方法细节如采样时间、网具孔径的具体参数。A项采样时间与网具孔径属Methods部分的具体细节，最可能缺失；故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 采样时间与网具孔径等方法细节。",
+        "B. 研究区域(南海)的空间范围。",
+        "C. 主要污染物成分(聚乙烯、聚丙烯)。",
+        "D. 污染来源的初步推断。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0004",
+      "item_type": "fill",
+      "stem": "下列句子中,重音位置不同会改变表达意图:I didn't say he stole the money. 若要强调是别人偷的而非我所说,核心重音应落在______上。",
+      "answer": "he",
+      "kps": [
+        "kp_eng12_pha12_effective_express"
+      ],
+      "difficulty": 0.5,
+      "solution": "原句若重读he,强调是他而不是别人偷了钱;如要强调我没有说(是别人说的),则重读didn't。本题要求强化是别人偷的,故核心重音落在he上。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0005",
+      "item_type": "choice",
+      "stem": "演讲结尾Never, never, never give up.中连续重复never主要起到的修辞作用是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_pha12_effective_express"
+      ],
+      "difficulty": 0.62,
+      "solution": "重复同一否定词never三次构成排比与层递,强化否定语气,凸显不屈意志。B项增强语气、形成层递最准确;A项偏弱;C、D项不符合语境(无讽刺,无对比对象)。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表示对未来的迷茫。",
+        "B. 增强否定语气,形成层递修辞。",
+        "C. 暗示对听众的讽刺与批评。",
+        "D. 引出下文的对比论证。"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0006",
+      "item_type": "choice",
+      "stem": "下列单词均出自高中选必阶段词汇表,其中词义与搭配均恰当的一项是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_voc12_4000_"
+      ],
+      "difficulty": 0.45,
+      "solution": "A项lay与lie混搭,搭配错误;B项affect多用作动词影响,作名词仅在心理学中表示情感,用于日常语境不当;D项principle与principal同音异义,原理应为principle,而校长是principal,混用错误。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. The book lay on the shelf for years, laying forgotten.",
+        "B. His sudden affect surprised the whole class.",
+        "C. The scientist explained the principle behind the phenomenon clearly.",
+        "D. She is the principle of our school and a kind person."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0007",
+      "item_type": "fill",
+      "stem": "根据句意与汉语提示填空:The professor gave a ____ (全面的) overview of recent developments in AI.",
+      "answer": "comprehensive",
+      "kps": [
+        "kp_eng12_voc12_4000_"
+      ],
+      "difficulty": 0.7,
+      "solution": "comprehensive意为全面的、综合的,作定语修饰overview。注意不要误用为comprehensible(可理解的)。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0008",
+      "item_type": "choice",
+      "stem": "下列句子中,划线词用法与其它三项不同的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_voc12_deep_word"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C三项划线词均为抽象名词作动词宾语;D项a sharp中sharp是形容词作定语修饰名词。词性不同,故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. She showed great courage when facing the danger.",
+        "B. The book aroused my interest in history.",
+        "C. They expressed their satisfaction with the result.",
+        "D. The knife has a sharp edge."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0010",
+      "item_type": "choice",
+      "stem": "下列习语/俚语与其英语释义匹配正确的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_voc12_idiomatic"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项break the ice意为打破沉默、活跃气氛,搭配正确;B项cost an arm and a leg应指非常昂贵,而非价格适中;C项once in a blue moon意为极少、难得,而非经常;D项hit the books意为用功读书,而非扔书。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. break the ice: to do or say something to reduce tension or get conversation going in a social situation",
+        "B. cost an arm and a leg: to cost very little and be affordable",
+        "C. once in a blue moon: very often, almost every day",
+        "D. hit the books: to throw books at someone in anger"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0012",
+      "item_type": "choice",
+      "stem": "下列不属于environment/sustainability(语义场)的一组词是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_voc12_semantic_field"
+      ],
+      "difficulty": 0.62,
+      "solution": "A、B、C三项分别与排放、栖息地、节能相关,属于环境/可持续语义场;D项strength / weakness / courage属于性格特征语义场。故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. emission / carbon footprint / pollutant",
+        "B. habitat / biodiversity / ecosystem",
+        "C. conserve / recycle / renewable",
+        "D. strength / weakness / courage"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0014",
+      "item_type": "choice",
+      "stem": "在给校长的正式信函中,下列开头最得体的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_voc12_word_choice"
+      ],
+      "difficulty": 0.58,
+      "solution": "B项Dear Mr. Smith礼貌正式,符合对外信函规范;A项过于亲昵;C项中文式称呼;D项不够正式。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey Mr. Smith, how's it going?",
+        "B. Dear Mr. Smith, I am writing to request...",
+        "C. Mr. Smith 你好:",
+        "D. Hi Smith,"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0016",
+      "item_type": "choice",
+      "stem": "他是个老好人。译成英语时,最恰当的表达是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_voc12_chinese_english"
+      ],
+      "difficulty": 0.5,
+      "solution": "老好人含贬义,指对谁都迁就、不得罪的人;A项a pushover意为容易被说服/利用的人,贴合贬义色彩;B项a kind old man是褒义;D项a good guy也偏褒义;C项a fool与语义不符。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. He is a pushover.",
+        "B. He is a kind old man.",
+        "C. He is a fool.",
+        "D. He is a good guy."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0018",
+      "item_type": "choice",
+      "stem": "下列关于英语语法体系特征的表述,最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_gra12_grammar_system"
+      ],
+      "difficulty": 0.62,
+      "solution": "A项混淆语法与修辞;B项英语重形合(借助连接词、形态变化等显性手段),重主语凸显,与汉语重意合形成对比,符合学界共识;C项过度绝对化;D项几乎不用被动错误,被动语态在英语中频繁使用。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 英语语法主要靠语序,不依赖形态变化。",
+        "B. 英语重形合,多借助连接词、从句与形态变化;汉语重意合,常以短句叠加表达逻辑。",
+        "C. 英语的语序完全固定,永远不允许倒装。",
+        "D. 英语语篇几乎不使用被动语态。"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0019",
+      "item_type": "solve",
+      "stem": "用所给词的适当形式填空:If I ______ (be) you, I would take the opportunity immediately.",
+      "answer": "were",
+      "kps": [
+        "kp_eng12_gra12_grammar_system"
+      ],
+      "difficulty": 0.6,
+      "solution": "与现在事实相反的虚拟条件句,be动词在主语为第一人称时用were,而非was。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0020",
+      "item_type": "fill",
+      "stem": "完成倒装句:______ (Not until he returned) did I realize how much I had missed him.",
+      "answer": "Not until he returned",
+      "kps": [
+        "kp_eng12_gra12_inversion"
+      ],
+      "difficulty": 0.68,
+      "solution": "否定词not until / hardly / scarcely / never / neither等位于句首,主句用部分倒装。本题already给出Not until he returned,待下一复述结构不变。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0021",
+      "item_type": "choice",
+      "stem": "下列句子使用全部倒装(all-inversion)的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_gra12_inversion"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项There stood an old temple是全倒装;B、C、D项用部分倒装did / will / had。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. There stood an old temple at the top of the hill.",
+        "B. Hardly had I fallen asleep when the phone rang.",
+        "C. Only then did I understand the importance of honesty.",
+        "D. Not only does he speak French, but also he speaks German."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0022",
+      "item_type": "solve",
+      "stem": "用倒装结构改写下列句子,保持原意:The villagers had no sooner heard the news than they rushed out.",
+      "answer": "No sooner had the villagers heard the news than they rushed out.",
+      "kps": [
+        "kp_eng12_gra12_inversion"
+      ],
+      "difficulty": 0.72,
+      "solution": "no sooner...than...句型中,no sooner提前需主句部分倒装had + 主语 + 过去分词。than分句保持陈述语序。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0023",
+      "item_type": "choice",
+      "stem": "下列对强调句It was his hard work that led to his success.的判断,最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_gra12_cleft"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项是典型It is/was...that...强调句结构,强调主语his hard work,可还原为His hard work led to his success;A项混淆强调句与定语从句;C项错误强调动词;D项错误认为只能用who。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这是定语从句,his hard work是先行词。",
+        "B. 这是强调句,被强调部分是his hard work。",
+        "C. 这句强调的是动词led。",
+        "D. 强调人必须用who,不能用that。"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0024",
+      "item_type": "fill",
+      "stem": "用强调句改写:My teacher inspired me to pursue biology. → ______",
+      "answer": "It was my teacher who/that inspired me to pursue biology.",
+      "kps": [
+        "kp_eng12_gra12_cleft"
+      ],
+      "difficulty": 0.62,
+      "solution": "强调主语my teacher用It is/was + 被强调部分 + who/that + 其余。若强调宾语me则It was me that my teacher inspired...。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0025",
+      "item_type": "choice",
+      "stem": "下列含有同位语从句的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_gra12_appositive_clause"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项fact后that从句解释fact的具体内容,是同位语从句;B项the news后为定语从句(缺主语,that=the news);C、D项that在句中作宾语,是宾语从句。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. The fact that he had won the prize surprised everyone.",
+        "B. The news that he told us was unbelievable.",
+        "C. I believe that he is honest.",
+        "D. She said that she would come."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0027",
+      "item_type": "choice",
+      "stem": "下列if虚拟语气从句使用正确的一项是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_gra12_subjunctive_if"
+      ],
+      "difficulty": 0.6,
+      "solution": "C项与过去事实相反,主句would have done,从句had done;A项would + 现在完成时不应与if did搭配;B项be在主语为单数第一/第三人称时应用were;D项错把if真实条件句与虚拟混用。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. If I have more time, I would have helped you.",
+        "B. If he was rich, he would travel around the world.",
+        "C. If I had known the news earlier, I would have called you.",
+        "D. If it will rain tomorrow, we would stay at home."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0028",
+      "item_type": "fill",
+      "stem": "填空:If I ______ (have) wings, I would fly to see you right now.",
+      "answer": "had",
+      "kps": [
+        "kp_eng12_gra12_subjunctive_if"
+      ],
+      "difficulty": 0.65,
+      "solution": "与现在事实相反的虚拟条件,从句用一般过去时had(be用were)。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0029",
+      "item_type": "choice",
+      "stem": "下列省略结构使用不恰当的一项是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_gra12_ellipsis"
+      ],
+      "difficulty": 0.55,
+      "solution": "C项将状语从句中的助动词省略,造成歧义;A、B、D项均为常见省略(动词不定式、宾语、主语)且语义完整。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. He didn't come, but he should have (come).",
+        "B. — Do you know him? — Yes, I do (know him).",
+        "C. While (the car) the traffic light was red, the car stopped.",
+        "D. She works harder than (she) used to (work)."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0031",
+      "item_type": "choice",
+      "stem": "下列分词作状语使用错误的一项是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_gra12_participle_advanced"
+      ],
+      "difficulty": 0.62,
+      "solution": "D项Having finished逻辑主语应与if主语一致,且时态不匹配;A、B、C项分词状语使用正确。A项表原因;B项表时间;C项表伴随。故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. Being tired, he went to bed early. (表原因)",
+        "B. Having finished the homework, I went out to play. (表时间)",
+        "C. He sat there, reading a book. (表伴随)",
+        "D. Having lost the key, the door couldn't be opened."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0032",
+      "item_type": "fill",
+      "stem": "用独立主格结构填空:The weather ______ (permit), we will go hiking tomorrow.",
+      "answer": "permitting",
+      "kps": [
+        "kp_eng12_gra12_participle_advanced"
+      ],
+      "difficulty": 0.65,
+      "solution": "Weather与permit构成逻辑主谓关系,独立主格结构作条件状语,用现在分词permitting。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0033",
+      "item_type": "choice",
+      "stem": "下列复合句结构最复杂、最符合学术语体的一项是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_gra12_complex_structure"
+      ],
+      "difficulty": 0.7,
+      "solution": "D项使用嵌套定语从句+介词短语+非谓语,结构严密,符合学术语体;A、B项为简单复合句;C项结构较松散。故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. He works hard. He gets good grades.",
+        "B. If you study hard, you will succeed.",
+        "C. The teacher came in. The students stood up.",
+        "D. The hypothesis that the researchers proposed, which had been debated for years, was finally verified by the data collected from a cohort of 500 participants."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0034",
+      "item_type": "solve",
+      "stem": "将两个简单句合并为含非谓语的复合句:He had finished the report. He handed it to the manager.",
+      "answer": "Having finished the report, he handed it to the manager.",
+      "kps": [
+        "kp_eng12_gra12_complex_structure"
+      ],
+      "difficulty": 0.68,
+      "solution": "用现在分词完成式Having finished...作时间状语,主句he handed it...表达后续动作。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0035",
+      "item_type": "choice",
+      "stem": "关于社论(editorial)的写作目的与结构,下列表述最准确的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_dis12_official_review"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项社论的核心目的是论证观点,常采用现象-观点-论证-结论的四段式;B、C项混淆社论与新闻报道、说明文;D项以个人经历为主是叙事文特征。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 社论旨在论证观点,结构上常采用提出议题—表明立场—论证—总结呼吁。",
+        "B. 社论主要传递信息、记录事件,属于新闻报道。",
+        "C. 社论以客观说明事物特征为目的,属说明文。",
+        "D. 社论以个人经历与感受为主要内容,属记叙文。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0037",
+      "item_type": "choice",
+      "stem": "下列句子中,没有使用but / however等显性转折词,却实现了隐性转折/对比的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_dis12_implicit_cohesion"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项通过时态对比曾认为... 现在发现...实现隐性转折;A、C、D项均为平铺直叙或并列,无对比关系。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. He is a student. He studies hard every day.",
+        "B. I once believed success meant wealth; now I know it means inner peace.",
+        "C. The sun rose. The birds sang.",
+        "D. She sings. She is singing now."
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0039",
+      "item_type": "choice",
+      "stem": "在求职面试的自我介绍中,下列表达最得体的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_prg12_appropriate_wide"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项正式、简洁,突出资历与优势,符合面试场景;A项过于随意;C项仅描述兴趣爱好,未扣岗位;D项无所不能过于夸张。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey, I'm Jack. I just love hanging out with people.",
+        "B. Good morning. I'm Jack Smith, a graduate of XYZ University with two years' experience in marketing. I excel at data analysis.",
+        "C. I like music and playing games. That's all about me.",
+        "D. I'm perfect for any job you can imagine."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0041",
+      "item_type": "choice",
+      "stem": "在向教授请求延期交作业的邮件中,下列表达最委婉得体的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_prg12_hedge_language"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项使用I wonder if / possibly / I would appreciate三个缓和语,既表达请求又留有余地;B项too直接;D项命令式语气。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. I wonder if it would be possible to extend the deadline by two days. I would greatly appreciate your understanding.",
+        "B. Give me two more days, OK?",
+        "C. I can't finish the homework on time. So I want more time.",
+        "D. You must give me an extension."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0043",
+      "item_type": "choice",
+      "stem": "下列关于英美文化特色的表述,最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_cul12_culture_feature"
+      ],
+      "difficulty": 0.5,
+      "solution": "B项感恩节为美国传统节日,火鸡是其标志性食物;A项圣诞节英国/加拿大也庆祝;C项英国皇室不等于美国文化;D项美国饮食单一过于绝对化。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 圣诞节只在美国庆祝,英国不过圣诞节。",
+        "B. 感恩节(Thanksgiving)是美国传统节日,火鸡是标志性食物之一。",
+        "C. 英国皇室传统在美国文化中具有核心地位。",
+        "D. 美国饮食文化单一,以快餐为主。"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0045",
+      "item_type": "choice",
+      "stem": "下列关于马丁·路德·金《我有一个梦想》(I Have a Dream)演讲的表述,最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_cul12_speech_literature"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项我有一个梦想在演讲中多次重复,形成排比与情感层递,是演讲最具感染力的核心修辞;A项混淆主题;C项错把政治演讲混为学术;D项完全不重复错误。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 演讲以学术论证为主,语言克制客观。",
+        "B. 演讲通过I have a dream的反复,形成排比与层递,强化对自由平等理想的呼唤。",
+        "C. 演讲聚焦经济政策分析,避免政治议题。",
+        "D. 演讲为短篇即兴演讲,无重复修辞。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0047",
+      "item_type": "choice",
+      "stem": "在向外国友人介绍中国四大发明时,下列英文表述最恰当的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_cul12_china_influence"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项The Four Great Inventions of ancient China — papermaking, printing, gunpowder and the compass — shaped the modern world简洁地道;A项拼写/搭配错误;C项四大发明全部归功于一个发明人错误;D项无人知晓错误。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. The four invent of China is paper, print, gun and compass.",
+        "B. The Four Great Inventions of ancient China — papermaking, printing, gunpowder and the compass — have shaped the course of human civilisation.",
+        "C. All of China's four inventions were invented by one single person.",
+        "D. Foreigners know nothing about China's four inventions."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0049",
+      "item_type": "choice",
+      "stem": "阅读段落:Though battered by years of criticism, the artist kept creating. Her paintings, once dismissed as childish, now hang in the world's leading museums. 下列对其价值观的阐释最恰当的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_red12_evaluate"
+      ],
+      "difficulty": 0.65,
+      "solution": "A项坚持自我、不被外界质疑击垮,最终获得认可贴合段落主旨;B项强调迎合批评,与文中keep creating矛盾;C项错把被动接受当作主旨;D项放弃创作明显错误。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 艺术家坚守自我、不被外界批评击垮,最终获得认可。",
+        "B. 艺术家最终选择迎合批评,改变了创作风格。",
+        "C. 艺术家被动接受批评,放弃主动创作。",
+        "D. 艺术家放弃创作,转而从事评论。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0051",
+      "item_type": "choice",
+      "stem": "在纪录片中,画面(田野调查镜头)、旁白(专家解释)与受访者采访共同建构意义。下列关于多模态语篇的表述,最准确的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_vie12_media_construct"
+      ],
+      "difficulty": 0.62,
+      "solution": "A项三种模态互补建构,符合多模态语篇特征;B项以文字为主忽略了图像/声音的协同作用;C项互不相关错误;D项过于绝对化。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多模态语篇中,图像、声音、文字等多模态相互补充,共同建构意义。",
+        "B. 多模态语篇以文字为主,图像仅为装饰。",
+        "C. 各种模态在多模态语篇中互不相关,各自独立。",
+        "D. 多模态语篇只用于娱乐节目,不适用于新闻或教育。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0053",
+      "item_type": "choice",
+      "stem": "阅读:The library was unusually quiet yesterday. Only three students were in the reading room, and two of them were sleeping on the books. 可合理推出的结论是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_red12_logic_infer"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项可能是考试前一天,无人认真复习是从事实(异常安静+两人睡觉)推出的合理推断;A、C、D项均超出原文信息(原文未提考试、图书馆关门、座位不足)。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 图书馆昨天临时关门。",
+        "B. 可能是考试前一天,无人认真复习。",
+        "C. 图书馆座位严重不足。",
+        "D. 图书馆禁止学生睡觉。"
+      ],
+      "form": "inference",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0055",
+      "item_type": "choice",
+      "stem": "下列句子中,使用隐喻(metaphor)的一句是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_red12_metaphor"
+      ],
+      "difficulty": 0.6,
+      "solution": "C项信息是海洋将抽象信息比作海洋,是隐喻;A项明喻(人),B项拟人(D),D项夸张。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. She is as brave as a lion.",
+        "B. The flowers nodded in the wind.",
+        "C. The internet is an ocean of information.",
+        "D. I've told you a thousand times."
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0057",
+      "item_type": "choice",
+      "stem": "在描述想象场景时,下列动词最能传达画面感的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_spk12_imagine"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项glimmered金辉闪烁营造出强烈的视觉画面感;B、C项过于平淡;D项were无画面感。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. The dawn light glimmered through the curtains, painting golden patterns on the floor.",
+        "B. The morning was nice.",
+        "C. It was early.",
+        "D. The curtains were there."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0059",
+      "item_type": "choice",
+      "stem": "下列对高中生是否应该带手机入校园的评论中,立场鲜明、论证充分的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_spk12_comment"
+      ],
+      "difficulty": 0.6,
+      "solution": "A项明确表达应该禁用立场,并给出两点理由(分散注意力+影响视力);B项立场模糊;C项以提问回避立场;D项无具体理由。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. I firmly believe that mobile phones should be banned on campus. First, they distract students from learning. Second, prolonged screen time harms their eyesight.",
+        "B. Some people say phones are bad; others say they are good. It is hard to say.",
+        "C. Should phones be banned? What do you think?",
+        "D. Phones are popular."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0061",
+      "item_type": "choice",
+      "stem": "在向同学指出错误时,下列表达最委婉的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_spk12_hedge"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项I'm not sure, but perhaps...使用模糊语可能/或许 + 征询意见,最委婉;B、D项过于直接;C项命令式语气。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. I'm not entirely sure, but perhaps it might be a small typo here. What do you think?",
+        "B. You made a mistake! Fix it!",
+        "C. Do it again from the beginning, immediately!",
+        "D. How could you be so careless?"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0064",
+      "item_type": "choice",
+      "stem": "阅读:Social media use among 13–18 year-olds rose 28% from 2015 to 2020, with daily screen time averaging 4.6 hours by 2020. 在重组信息时,最适合作为分类维度的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_lsm12_info_reorganise"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项按年龄段与年份是最直接的分类维度,便于趋势对比;A项情绪分类不适合数据;C项按地区原文未提;D项错按性别。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按用户情绪分类",
+        "B. 按年龄段(13–18)与年份(2015/2020)分类",
+        "C. 按国家地区分类",
+        "D. 按用户性别分类"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0066",
+      "item_type": "choice",
+      "stem": "在英美文化中,拜访老师办公室时,下列行为最得体的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_lsm12_polite_culture"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项先敲门、说明来意,符合英美office hours文化;B项随意入座违反礼仪;C项立即坐下不礼貌;D项送昂贵礼物超出学生身份且不符合文化习惯。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Knock first, wait to be invited in, briefly state the purpose, and ask if the teacher has time.",
+        "B. Walk in and sit down casually.",
+        "C. Don't wait for invitation; sit down immediately.",
+        "D. Bring an expensive gift to show respect."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0069",
+      "item_type": "choice",
+      "stem": "下列抽象学术概念词的释义最准确的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_voc12_abstract_academic"
+      ],
+      "difficulty": 0.58,
+      "solution": "A项paradigm意为范式、典范,符合学术语境;B、C、D项均错:methodology不是方法论的最广义,empirical不是理论的,heuristic不是演绎的。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. paradigm — a typical example or pattern of something; a model.",
+        "B. methodology — the study of all methods across all sciences.",
+        "C. empirical — based on theory rather than observation or experience.",
+        "D. heuristic — derived by deduction rather than trial-and-error."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0070",
+      "item_type": "fill",
+      "stem": "填空:The professor gave a clear ______ (definition) of the term before discussing its implications.",
+      "answer": "definition",
+      "kps": [
+        "kp_eng12_voc12_abstract_academic"
+      ],
+      "difficulty": 0.55,
+      "solution": "def前有形容词clear,填definition。注意区别def与define的词形变化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0071",
+      "item_type": "choice",
+      "stem": "下列哪个词不属于科技伦理主题词群?",
+      "answer": "D",
+      "kps": [
+        "kp_eng12_voc12_topic_advanced"
+      ],
+      "difficulty": 0.55,
+      "solution": "D项nutrition(营养)属于健康/饮食主题,与科技伦理无关;A、B、C项均与科技伦理相关(基因编辑、AI决策、隐私)。故选D。",
+      "source": "llm_generated",
+      "options": [
+        "A. gene editing",
+        "B. AI decision-making",
+        "C. data privacy",
+        "D. nutrition"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0073",
+      "item_type": "choice",
+      "stem": "下列句子时态使用错误的一项是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_gra12_tense_final"
+      ],
+      "difficulty": 0.62,
+      "solution": "C项By next year与将来完成时will have finished匹配,但主语I与主句将完成...,未矛盾;A项现在完成时正确;B、D项语境与时态匹配。再仔细检查:C项By the time you arrive, I will finish dinner.,主句应用将来完成时will have finished而非will finish;故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. I have lived here for ten years.",
+        "B. She was reading when the phone rang.",
+        "C. By the time you arrive, I will finish dinner.",
+        "D. He said he had already left."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0074",
+      "item_type": "fill",
+      "stem": "用恰当时态填空:By the end of next month, we ______ (complete) the project.",
+      "answer": "will have completed",
+      "kps": [
+        "kp_eng12_gra12_tense_final"
+      ],
+      "difficulty": 0.65,
+      "solution": "by the end of next month表到下个月末为止,主句应用将来完成时will have completed。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0075",
+      "item_type": "choice",
+      "stem": "下列主谓一致使用正确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_gra12_grammatical_agreement"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项主语The teacher with his students中心词为The teacher(单数),谓语用单数;A、C、D项均有误:A项主语The number of...用单数;C项each of...用单数;D项one of the students who...中定语从句谓语与students一致(复数),但题面写uses不对应;故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. The number of students are increasing.",
+        "B. The teacher with his students is preparing for the contest.",
+        "C. Each of the students have finished the homework.",
+        "D. One of the students who studies in Japan come from Beijing."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0076",
+      "item_type": "fill",
+      "stem": "填空:Not only the teacher but also the students ______ (be) interested in the topic.",
+      "answer": "are",
+      "kps": [
+        "kp_eng12_gra12_grammatical_agreement"
+      ],
+      "difficulty": 0.55,
+      "solution": "Not only...but also...连接两个主语时,谓语遵循就近原则,与最近的主语the students一致,用are。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0077",
+      "item_type": "choice",
+      "stem": "下列冠词使用正确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_gra12_article_advanced"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项play the piano(乐器前用定冠词)正确;A项the United States国名前加the;D项an honest man为元音音素开头的词用an;A项errand拼写错;故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. She plays piano very well.",
+        "B. He wants to be a teacher in the future.",
+        "C. I had an useful experience last summer.",
+        "D. He is an university student."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0078",
+      "item_type": "fill",
+      "stem": "填空:______ (The / A) United Kingdom is made up of four countries.",
+      "answer": "The",
+      "kps": [
+        "kp_eng12_gra12_article_advanced"
+      ],
+      "difficulty": 0.6,
+      "solution": "国名the United Kingdom/United States/Netherlands等含合众/联合概念的国名前加the;单独的国名(如China, France)不加冠词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0079",
+      "item_type": "choice",
+      "stem": "向教授请求推荐信时,下列表达语气最恰当的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_prg12_tone_control"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项礼貌、明确,给教授留出余地;A项过于强硬;C项过于卑微;D项拖沓冗长。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Write me a recommendation letter right now.",
+        "B. Would you be so kind as to write a recommendation letter for me? I would be most grateful.",
+        "C. I beg you to write the letter, sir.",
+        "D. Hello professor, I am writing to ask you about something that I think might interest you and that..."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0081",
+      "item_type": "choice",
+      "stem": "听力材料(原文转述):Good morning. Today I'll discuss three key factors that influence adolescent sleep — biological rhythms, academic pressure, and screen exposure. I'll first present data from a 2022 longitudinal study of 1,200 students, then discuss each factor in turn. 该讲座的主旨(Main Idea)是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_lis12_lecture_advanced"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项探讨影响青少年睡眠的三大因素贴合讲座主旨;A、C、D项均为细节目录,非主旨。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2022年某项睡眠研究的实验方法。",
+        "B. 探讨影响青少年睡眠的三大因素(生物节律、学业压力、屏幕使用)。",
+        "C. 呼吁学生减少屏幕使用时间。",
+        "D. 介绍青少年失眠的治疗方法。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0082",
+      "item_type": "choice",
+      "stem": "承接上一节听力讲座。下列细节(Detail)信息中,最有可能在讲座中被重点展开的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_lis12_lecture_advanced"
+      ],
+      "difficulty": 0.7,
+      "solution": "C项屏幕暴露的具体影响与数据对应讲座中第三因素,最可能被详述;A、B、D项均为引入背景,非重点展开。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 演讲者本人的教学经历。",
+        "B. 听众的背景与兴趣。",
+        "C. 屏幕暴露对褪黑素分泌及入睡时间影响的具体数据。",
+        "D. 学校图书馆的开放时间。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0083",
+      "item_type": "choice",
+      "stem": "听力材料(原文转述):Affirmative: We should ban smartphones in schools because they distract students. Negative: But banning them is unrealistic; better to teach responsible use. 两方立场的核心分歧是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_lis12_debate"
+      ],
+      "difficulty": 0.65,
+      "solution": "A项全面禁止 vs 教育自律准确概括两方核心分歧;B项错把焦点归为价格;C项将辩论窄化为课堂使用;D项混淆技术与教师。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 正方主张校园全面禁用手机;反方主张通过教育培养自律使用。",
+        "B. 正方关注手机价格;反方关注手机品牌。",
+        "C. 两方一致认为应在课堂上禁用手机。",
+        "D. 正方支持使用手机教学;反方反对所有教学技术。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0084",
+      "item_type": "choice",
+      "stem": "承接上一节辩论。如果正方随后反驳:Research shows banning phones reduces off-task behaviour by 35%. 这一反驳最直接针对的反方观点是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_lis12_debate"
+      ],
+      "difficulty": 0.72,
+      "solution": "B项反对全面禁用 + 反方认为不可行;正方用数据证明禁令有效,直接驳斥可行性论点;A、C、D项与可行性论据无关。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反方主张手机有教育价值。",
+        "B. 反方认为全面禁用在现实中不可行。",
+        "C. 反方认为手机对学生视力有害。",
+        "D. 反方主张学生应拥有选择权。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0085",
+      "item_type": "choice",
+      "stem": "听力材料(原文转述):At Thanksgiving, families gather around the table to give thanks. They share stories, eat turkey, and watch the Macy's parade. 下列对thanksgiving的理解最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_lis12_culture_listen"
+      ],
+      "difficulty": 0.58,
+      "solution": "B项家人团聚、表达感恩、共享火鸡贴合美国感恩节文化内涵;A项误读为圣诞节;C、D项混淆文化内涵。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 类似中国春节,主张燃放烟火。",
+        "B. 美国传统节日,家人团聚、表达感恩、共食火鸡。",
+        "C. 仅是商业促销节日,无家庭元素。",
+        "D. 仅是宗教节日,与家庭无关。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0088",
+      "item_type": "choice",
+      "stem": "听力速记中,下列符号最适合替代 increase / rise 的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_lis12_note_advanced"
+      ],
+      "difficulty": 0.5,
+      "solution": "C项↑表示上升/增加;A项↓下降;B项=等于;D项×错误。故选C。",
+      "source": "llm_generated",
+      "options": [
+        "A. ↓",
+        "B. =",
+        "C. ↑",
+        "D. ×"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0089",
+      "item_type": "choice",
+      "stem": "阅读学术摘要:Aim: To investigate the effect of sleep on memory consolidation. Method: 60 participants were divided into sleep and no-sleep conditions. Result: Sleep group recalled 27% more items. Conclusion: Sleep significantly enhances memory consolidation. 该研究最可能的局限(Limitation)是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_red12_academic_read"
+      ],
+      "difficulty": 0.7,
+      "solution": "A项样本量小且未提及随机分组是最明显的局限;B、C、D项均为正向结果。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 样本量较小(仅60人)且未提及随机分组与控制变量。",
+        "B. 实验结论清晰肯定。",
+        "C. 实验方法简洁。",
+        "D. 实验结果支持假设。"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0091",
+      "item_type": "choice",
+      "stem": "段落:Online education has expanded rapidly. Many students now learn through apps. However, prolonged screen time can cause eye strain. Schools should therefore limit daily screen hours. 该段落的逻辑结构属于：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_red12_structure_deep"
+      ],
+      "difficulty": 0.65,
+      "solution": "B项现象—原因—建议贴合现象(在线教育扩张)→ 原因(屏幕时间导致眼疲劳)→ 建议的递进;A、C项顺序不符;D项对比无对比对象。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 总分总",
+        "B. 现象—原因—建议",
+        "C. 时间顺序",
+        "D. 对比论证"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0094",
+      "item_type": "choice",
+      "stem": "在英语对话中,遇到听不懂对方时,最得体的修复策略是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_spk12_repair_advanced"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项请求对方用更简单的词重述,是得体且不冒犯的修复策略;B项假装听懂不礼貌;C项直接放弃不恰当;D项改用母语不解决沟通问题。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Sorry, could you rephrase that in simpler words? I want to make sure I understand.",
+        "B. Smile and pretend to understand.",
+        "C. Stay silent and change the topic.",
+        "D. Switch to your mother tongue immediately."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0098",
+      "item_type": "choice",
+      "stem": "下列短文改错中,错误数量最多的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_wri12_wri_edit_advanced"
+      ],
+      "difficulty": 0.62,
+      "solution": "B项多处错误:Although...but...不能同时使用;It makes me应用makes it;so I will保留。A项无误;C项went错为has gone;B项含错误最多。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. There are many advantages for students to take part in volunteer activities.",
+        "B. Although I am only a student, but I still want to help others. It makes me feel happy, so I will keep doing it in the future.",
+        "C. He has went abroad last year.",
+        "D. She is a teacher who is kind and is patient."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0099",
+      "item_type": "solve",
+      "stem": "改正下列句中错误(每词最多改一处):He suggested to go hiking on Sunday.",
+      "answer": "He suggested going hiking on Sunday.",
+      "kps": [
+        "kp_eng12_wri12_wri_edit_advanced"
+      ],
+      "difficulty": 0.68,
+      "solution": "suggest后接动名词,不能接不定式。suggest to do是常见错误。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0101",
+      "item_type": "choice",
+      "stem": "在描述丝绸之路的历史意义时,下列英文表述最准确的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_thm12_history_culture"
+      ],
+      "difficulty": 0.55,
+      "solution": "B项an ancient trade route...facilitated cultural and economic exchanges between East and West概括了丝绸之路的历史与文化意义;A项错指现代交通;C项仅说商品;D项否定性表述不当。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. The Silk Road is a modern transportation network connecting China and Europe.",
+        "B. The Silk Road, an ancient trade route, facilitated cultural and economic exchanges between East and West.",
+        "C. The Silk Road only carried silk from China to Rome.",
+        "D. The Silk Road had no impact on world history."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0103",
+      "item_type": "choice",
+      "stem": "下列关于可持续发展(sustainable development)的表述最准确的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_thm12_nature"
+      ],
+      "difficulty": 0.55,
+      "solution": "A项既满足当代人需求又不损害后代满足其需求的能力贴合1987 Brundtland报告定义;B、C项过窄;D项完全无影响错误。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Sustainable development meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+        "B. Sustainable development means developing the economy at all costs.",
+        "C. Sustainable development only concerns environmental protection.",
+        "D. Sustainable development means human activity should leave no impact on nature at all."
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0106",
+      "item_type": "choice",
+      "stem": "听力材料(原文转述):Man: I'm thinking of buying a laptop. Woman: Anything... actually I just saw the new model. 提问者选 ...(主旨题)。主旨是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_exa12_listen_main"
+      ],
+      "difficulty": 0.65,
+      "solution": "B项讨论电脑购买贴合两方谈论内容;A、C、D项均非主旨。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 男士打算买电脑。",
+        "B. 男士与女士讨论购买笔记本电脑。",
+        "C. 女士想买电脑。",
+        "D. 男士想买手机。"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0108",
+      "item_type": "choice",
+      "stem": "完形填空:When I was a child, I ______ (1) afraid of the dark. My grandmother would sit beside my bed and tell me stories until I fell asleep. 第 (1) 空最佳选项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_exa12_cloze"
+      ],
+      "difficulty": 0.7,
+      "solution": "B项was表过去时态,与When I was a child一致;A项am现在时;C项used不接afraid;D项becoming语法不当。故选B。",
+      "source": "llm_generated",
+      "options": [
+        "A. am",
+        "B. was",
+        "C. used",
+        "D. becoming"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0109",
+      "item_type": "choice",
+      "stem": "承接上文。第 (2) 空 Her voice was so gentle ______ it calmed my nerves. 最佳选项是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_exa12_cloze"
+      ],
+      "difficulty": 0.75,
+      "solution": "A项that引导结果状语从句;B项which非限定性定语;C项what不能引导状语;D项because表原因与句意不符。故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. that",
+        "B. which",
+        "C. what",
+        "D. because"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    }
+  ]
+}

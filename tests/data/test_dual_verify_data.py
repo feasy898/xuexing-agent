@@ -32,6 +32,11 @@
   step5-indep-wave3-20261002，合并台账 ledger_m3_gen_wave3.json /
   ledger_step5_indep_wave3.json；题内 verification 记录即为覆盖凭证，
   由 WAVE3_AGENTS 圈定并在并集检查与代理登记中强制。
+- 2026-10-03 run（K12 英语题库批，G1-12 全学段 12 个年级文件，生成自答 ×
+  盲解双代理复验，agree 425 题合并入库；252 题分歧入 arbitration_queue_en.json
+  未回填）：代理对 eng-gen-w1-20261003 × eng-indep-w1-20261003，题内
+  verification 记录即为覆盖凭证，由 ENG_AGENTS 圈定（前缀 eng_）并在并集
+  检查与代理登记中强制。
 
 三次 ledger 运行各自验证：ledger 逐题覆盖其子库且与标答判等；manifest 与
 现场重跑裁决逐位一致；回填记录 agents 与 manifest 代理身份一致、
@@ -92,6 +97,18 @@ HS_MATH_PREFIX = "h_"
 
 def _is_hs_math(it):
     return it.get("verification", {}).get("agents") == HS_MATH_AGENTS
+
+
+# 2026-10-03 K12 英语题库批（G1-12 全学段 12 个年级文件；候选生成 × 盲解
+# agree 合并 425 题入库，分歧 252 条入 arbitration_queue_en.json 未回填）：
+# eng-gen-w1-20261003(生成自答) × eng-indep-w1-20261003(盲解)，代理对落库
+# 原序一致；题内 verification 记录即为覆盖凭证。
+ENG_AGENTS = ["eng-gen-w1-20261003", "eng-indep-w1-20261003"]
+ENG_PREFIX = "eng_"
+
+
+def _is_english(it):
+    return it.get("verification", {}).get("agents") == ENG_AGENTS
 
 
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
@@ -472,8 +489,19 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
         "K12 高中批规模变化（现 377）：新增批次须先登记 HS_MATH_AGENTS 并在本闭式同步")
     assert all(i.startswith(HS_MATH_PREFIX) for i in hs_ids), "高中批题 id 前缀须为 h_"
     assert not (hs_ids & (night_ids | p34_ids | p12_ids | wave3_ids)), "高中批与既有批次重叠"
+    # 2026-10-03 K12 英语批闭式：生成 × 盲解 agree 合并恰 425 题入库、
+    # 分歧 252 条未回填（arbitration_queue_en.json）
+    eng_ids = {it["id"] for it in all_items if _is_english(it)}
+    assert len(eng_ids) == 425, (
+        "英语批规模变化（现 425）：新增批次须先登记 ENG_AGENTS 并在本闭式同步")
+    assert all(i.startswith(ENG_PREFIX) for i in eng_ids), "英语批题 id 前缀须为 eng_"
+    assert not (eng_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids)), (
+        "英语批与既有批次重叠")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
-    assert night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids == all_ids
+    assert (
+        night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
+        | eng_ids
+    ) == all_ids
 
 
 def test_verification_agents_match_owning_run(all_items, ledger):
@@ -486,6 +514,8 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             assert rec["agents"] == NIGHT_AGENTS, iid
         elif rec["agents"] == HS_MATH_AGENTS:
             assert iid.startswith(HS_MATH_PREFIX), iid
+        elif rec["agents"] == ENG_AGENTS:
+            assert iid.startswith(ENG_PREFIX), iid
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
         elif iid.startswith(("p3_", "p4_")):
