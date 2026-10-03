@@ -338,3 +338,25 @@ NaN 语义说明：`json.load` 默认接受 `NaN`/`Infinity` 字面量，因此 
   `sys.modules["xuexing.itembank"]`）。
 - 本规格所有【参考-探针】结论均在定稿会话（2026-09-29）以探针脚本对参考实现运行核实，
   探针输出已摘录于正文对应条款。
+
+## 附录 C：修订 R10 —— 多选子题型 `mcq_multi`（2026-10-03 增补，K12 物理批触发）
+
+**修订条款**（在 R1–R9c 之后追加，不改动既有条款的触发条件与累加顺序）：
+
+- **R10a `answer_mode` 枚举门**：对**所有**题型（不限 choice），
+  `item.answer_mode not in ("exact", "subset")` → `{id}: bad answer_mode {value!r}`。
+  该门在 R9 组**之后**独立累加。`Item.answer_mode` 缺省 `"exact"`。
+- **R9b-m 多选支**（仅 choice、选项数 ≥2、`item.form == "mcq_multi"`）：
+  R9b 的单标签判定**不执行**，改为——按分隔符 `[,，、;；]|和` 拆 `answer.strip()`
+  （不含空白：选项全文形如「A. 甲正确」自带空格，按空白切会劈开标签与正文），
+  逐段 `strip` 后丢弃空段：
+  - 段数 0 → `{id}: mcq_multi answer has no option label`（等价于"项数 >=1"门）
+  - 存在重复段 → `{id}: mcq_multi answer repeats a label`
+  - 存在段不在 `labels` 集内 → `{id}: answer not among options`（与 R9b 同消息）
+  其余情况零错误。`form` 缺省 `"choice"`，故既有题行为逐字不变。
+- 新增公开接口 `split_multi_answer(answer) -> list[str]`、`MCQ_MULTI`、`ANSWER_MODES`。
+- `itembank_from_dict` 新读 `form`（缺省 `"choice"`）与 `answer_mode`（缺省 `"exact"`）；
+  缺键不报，与其余可选字段同纪律。
+
+**验证**：`python -m pytest tests/contract/test_mcq_multi_contract.py -q` → 9 passed
+（CPython 3.12.10 x64 / Windows，2026-10-03 实测）。

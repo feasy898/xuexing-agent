@@ -553,3 +553,23 @@ tests/contract/test_dual_verify_contract.py:148-174）：
 
 另注：参考实现 `src/xuexing/dual_verify.py` 的 docstring 引用「行为契约：
 specs/drafts/dual_verify.spec.md」，该文档在本仓库中不存在——本冻结契约即其继任者。
+
+## 附录：修订 Q11 —— `answers_match` 多选集合等值（2026-10-03 增补，K12 物理批触发）
+
+**修订条款**（签名不变；P1–P34 探针结论逐字不变）：
+
+- `item_type == "choice"` 分支的单选判定**先行且短路**：
+  `correct = _resolve_option(key)`、`given = _resolve_option(proposed)`，
+  两者解析到同一下标即 `True`（原语义逐字保留）。
+- 未短路时进入**多选支**：key 与 proposed 各自按分隔符 `[,，、;；]|和` 拆段
+  （**不含空白**——选项全文形如「A. 甲正确」自带空格），逐段过 `normalize_answer`
+  后丢弃空段；**少于 2 段返回 None**（单选形态因此自动落到 `False`，不误吞）。
+  每段各走一次 `_resolve_option`，任一段解析不到、或解析出的标签键集合有重复
+  → 该侧为 `None`。
+- 返回值 = 两侧集合**都非 None 且相等**。故 `"A,D" == "A,D"` 与 `"D,A" == "A,D"`
+  均为 `True`，`"A,D" vs "A"`、`"A,D" vs "A,B,D"`、`"A,D" vs "A,E"` 均为 `False`。
+- 形态**从答案自身推断**，不新增参数——`answers_match` 的公开签名与全部既有
+  调用点零改动。
+
+**验证**：`python -m pytest tests/contract/test_mcq_multi_contract.py -q` → 9 passed
+（CPython 3.12.10 x64 / Windows，2026-10-03 实测）。
