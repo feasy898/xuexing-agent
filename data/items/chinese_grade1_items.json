@@ -2563,6 +2563,1593 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chi_dens02_0001",
+      "item_type": "choice",
+      "stem": "写字时要保持正确姿势。下面哪个说法是正确的写字姿势口诀？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_write_habit"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确口诀是“一尺、一拳、一寸”：眼睛离书本约一尺，胸口离桌沿约一拳，手指握笔处离笔尖约一寸，保护眼睛和脊柱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 眼离书本一尺，胸离桌子一拳，指离笔尖一寸",
+        "B. 眼离书本一寸，胸离桌子一尺，指离笔尖一拳",
+        "C. 眼贴着书本看，胸口压着桌子，手指捏紧笔尖",
+        "D. 想怎么坐就怎么坐，只要把字写完就行"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0002",
+      "item_type": "solve",
+      "stem": "同桌小宇写字时弯着腰、眼睛快贴到本子上了。请你用学过的“三个一”提醒他，把要说的两句话写下来。",
+      "answer": "示例：小宇，写字时眼睛要离书本一尺远；胸口离桌子一拳，背挺直，这样眼睛才不会累。（意思对即可）",
+      "kps": [
+        "kp_chi1_write_habit"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查提笔即练字的习惯：能用“一尺、一拳、一寸”的口诀提醒同学保持正确写字姿势。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0003",
+      "item_type": "fill",
+      "stem": "默写写字姿势口诀并填空：眼离书本（　　），胸离桌子（　　），指离笔尖（　　）。（写出三个长度词）",
+      "answer": "一尺；一拳；一寸",
+      "kps": [
+        "kp_chi1_write_habit"
+      ],
+      "difficulty": 0.28,
+      "solution": "口诀顺序不能混：一尺（眼）、一拳（胸）、一寸（指），书写规范、端正、整洁从正确姿势开始。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0004",
+      "item_type": "choice",
+      "stem": "第一学年结束时，我们应该累计认识常用汉字多少个左右？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_char_count"
+      ],
+      "difficulty": 0.3,
+      "solution": "课标要求第一学年认识常用汉字 1600 个左右，其中 800 个左右会写：会认的字读准字音、大致理解意思，会写的字要能正确书写并组词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1600 个左右，其中 800 个左右会写",
+        "B. 300 个左右，全部会写",
+        "C. 2500 个左右，全部会写",
+        "D. 100 个左右，其中 50 个会写"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0005",
+      "item_type": "solve",
+      "stem": "“会认的字”和“会写的字”要求有什么不同？各写一句话说明。",
+      "answer": "示例：会认的字——看到它能读准字音、大致知道意思；会写的字——能一笔一画正确写出来，还能用它组词、写话。",
+      "kps": [
+        "kp_chi1_char_count"
+      ],
+      "difficulty": 0.32,
+      "solution": "会认只要求音义，会写还要求书写和运用，两类字的要求不同，识字时要分清。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0006",
+      "item_type": "fill",
+      "stem": "照样子给会写的字组词再写一句话：例：妈（妈妈）——妈妈爱我。　　请用“们”组词并写一句话：们（　　）——（　　）。",
+      "answer": "示例：们（我们）——我们一起做游戏。",
+      "kps": [
+        "kp_chi1_char_count"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查会写的 800 字能在组词和写话中运用，识字最终要落到运用上。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0007",
+      "item_type": "choice",
+      "stem": "读句子，猜猜加点词的意思：“下课了，同学们像出巢的小鸟，飞快地跑到操场上。”“飞快地”在句中是什么意思？",
+      "answer": "B",
+      "kps": [
+        "kp_chi1_context_meaning"
+      ],
+      "difficulty": 0.32,
+      "solution": "联系“像出巢的小鸟”“跑到操场”可知同学们跑得非常快，“飞快地”就是非常快地，不需要查生词解释生词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 慢吞吞地",
+        "B. 非常快地",
+        "C. 一起地",
+        "D. 高兴地唱歌"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0008",
+      "item_type": "solve",
+      "stem": "读句子：“春天来了，花坛里的花五颜六色，美丽极了。”想一想“五颜六色”是什么意思？你是用什么办法弄明白的？写一写。",
+      "answer": "示例：五颜六色是指颜色很多、很好看。我是看前面的“花坛里的花”和图画，联系生活里见过的花猜出来的。",
+      "kps": [
+        "kp_chi1_context_meaning"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查借助图画和生活实际了解词句意思：能说出词义并说清猜测的方法（看图、联系生活）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0009",
+      "item_type": "solve",
+      "stem": "读小短文回答：“小蚂蚁搬不动豆子，它叫来伙伴们，大家一起用力，豆子终于动起来了。”　“终于”说明豆子怎么样？用一句话回答。",
+      "answer": "示例：豆子很难搬，搬了很久才动起来（经过努力才成功）。",
+      "kps": [
+        "kp_chi1_context_meaning"
+      ],
+      "difficulty": 0.36,
+      "solution": "结合上下文体会“终于”含有“不容易、经过一段时间才实现”的意思。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0010",
+      "item_type": "choice",
+      "stem": "用音序查字法查“亮”字，应先在“汉语拼音音节索引”中找哪个大写字母？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_alphabetic_dict"
+      ],
+      "difficulty": 0.28,
+      "solution": "音序查字法先确定音节的首字母并大写，“亮”的音节是 liàng，首字母是 L，先在音节索引里找 L。",
+      "source": "llm_generated",
+      "options": [
+        "A. L",
+        "B. LIANG",
+        "C. liàng",
+        "D. 亮"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0011",
+      "item_type": "solve",
+      "stem": "把音序查字法的步骤按先后顺序排一排（写序号）：①翻到正文页码找到字　②想清楚这个字的音节　③在《汉语拼音音节索引》里找到音节和页码　④确定音节第一个字母的大写形式。",
+      "answer": "④②③①（或②④③①，即先想音节、确定大写首字母，再查索引找页码，最后翻正文）",
+      "kps": [
+        "kp_chi1_alphabetic_dict"
+      ],
+      "difficulty": 0.35,
+      "solution": "步骤：想音节→取首字母大写→查音节索引得页码→翻正文选义项；两种起始写法都对，核心是索引在前、正文在后。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0012",
+      "item_type": "fill",
+      "stem": "写出下面字音节的第一个大写字母（音序）：妈（　）　春（　）　亮（　）　花（　）",
+      "answer": "M；C；L；H",
+      "kps": [
+        "kp_chi1_alphabetic_dict"
+      ],
+      "difficulty": 0.3,
+      "solution": "音序是音节首字母的大写形式：mā→M，chūn→C，liàng→L，huā→H。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0013",
+      "item_type": "choice",
+      "stem": "下面哪种做法是在生活中主动识字的好习惯？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_live_literacy"
+      ],
+      "difficulty": 0.25,
+      "solution": "生活是识字的大课堂：路牌、招牌、商品包装、广告、图书上都能主动识字；遇到不认识的字应查字典或请教他人，而不是跳过去。",
+      "source": "llm_generated",
+      "options": [
+        "A. 逛超市时认一认商品包装上的字",
+        "B. 遇到不认识的字就跳过去不管它",
+        "C. 把路牌上的字都遮住不看了",
+        "D. 只认课本上的字，别的一律不认"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0014",
+      "item_type": "solve",
+      "stem": "这个星期你在生活里认识了哪些新字？写出 2 个，并说明各是在哪里认识的。",
+      "answer": "示例：认识了“超”，在超市招牌上看到的；认识了“药”，在药店门口牌子上看到的。（写字真实即可）",
+      "kps": [
+        "kp_chi1_live_literacy"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查做生活有心人：能举出真实的识字例子和识字场所。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0015",
+      "item_type": "solve",
+      "stem": "小练笔：你从街上的招牌或商品包装上认识了一个新字，请把它介绍给家人。用两三句话写下来（写出这个字和你在哪里认识它的）。",
+      "answer": "示例：我认识了“银行”的“行”。妈妈带我去街上，我看到银行门口的大牌子上有这个字。我把它教给了妹妹。",
+      "kps": [
+        "kp_chi1_live_literacy"
+      ],
+      "difficulty": 0.32,
+      "solution": "把主动识字的经历说清楚、写通顺，体现“把认识的字教给家人和同学”。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0016",
+      "item_type": "choice",
+      "stem": "读绘本时遇到不认识的字，最好的办法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_picture_reading"
+      ],
+      "difficulty": 0.3,
+      "solution": "借助读物中的图画阅读是重要方法：图文对照能猜出生字词义和情节发展，但图和字要互相配合着看。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看看旁边的图画猜一猜它是什么意思",
+        "B. 把书合上不读了",
+        "C. 随便乱读一个音",
+        "D. 只看图，字一律不看"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0017",
+      "item_type": "solve",
+      "stem": "看图读故事：图上画着一只小兔子打着蘑菇伞，把淋雨的小蚂蚁遮在下面。结合图画说一说：这个故事讲了一件什么事？写一两句话。",
+      "answer": "示例：下雨了，小兔子用蘑菇伞帮小蚂蚁挡雨，小蚂蚁不淋雨了，它们成了好朋友。",
+      "kps": [
+        "kp_chi1_picture_reading"
+      ],
+      "difficulty": 0.34,
+      "solution": "借助图画理解故事内容：能说清图上有谁、发生了什么，图文对照讲出故事大意。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0018",
+      "item_type": "solve",
+      "stem": "读完一本绘本，要向同桌说说“图上画了什么”。说的时候要按顺序先说什么、再说什么？把你的说话提纲写下来（两条即可）。",
+      "answer": "示例：①先说图上有谁（人物/动物）；②再按顺序说他在哪里、做了什么事，结果怎样。",
+      "kps": [
+        "kp_chi1_picture_reading"
+      ],
+      "difficulty": 0.3,
+      "solution": "读完能说说图画内容，要按顺序说清楚人物和事情，让人听明白。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0019",
+      "item_type": "choice",
+      "stem": "下面哪种朗读的做法是正确的？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_aloud_reading"
+      ],
+      "difficulty": 0.26,
+      "solution": "正确流利朗读要求：用普通话读准字音、吐字清楚，不丢字、不添字、不改字，按标点停顿；不唱读、不指读。",
+      "source": "llm_generated",
+      "options": [
+        "A. 读准字音，按标点停顿，不丢字、不添字、不改字",
+        "B. 一口气飞快读完，不管标点",
+        "C. 唱读，拖着长长的调子",
+        "D. 用手指着字，一个字一个字地拖长音读"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0020",
+      "item_type": "solve",
+      "stem": "朗读“春天来了，小花开了。”这句话时，应该在哪里停顿？用“/”标出来，再说一说为什么这样停顿。",
+      "answer": "春天来了/，小花开了/。逗号处短停，句号处长停；因为逗号表示一句话中间的停顿，句号表示一句话说完了。",
+      "kps": [
+        "kp_chi1_aloud_reading"
+      ],
+      "difficulty": 0.32,
+      "solution": "按标点符号停顿是流利朗读的基本要求：逗号停顿短、句号停顿长。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0021",
+      "item_type": "solve",
+      "stem": "小方朗读时总是把“小鸟”读成“了鸟”。请你给他提一条朗读练习的好建议，并写出你要对他说的那句话。",
+      "answer": "示例：建议他读之前先拼一拼音节、看清声母再读。我会说：“小方，读之前先看清‘小’的声母是 x，跟着我读两遍——小鸟。”",
+      "kps": [
+        "kp_chi1_aloud_reading"
+      ],
+      "difficulty": 0.34,
+      "solution": "读准字音要借助拼音先正音，再反复读正确；考查边读边想的朗读习惯。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0022",
+      "item_type": "choice",
+      "stem": "“下雪啦！下雪啦！”这句话末尾用的是感叹号，朗读时应该读出怎样的语气？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_tone_reading"
+      ],
+      "difficulty": 0.28,
+      "solution": "感叹号表示强烈感情，“下雪啦”表达孩子们看到下雪的惊喜，要读出惊喜、高兴的语气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 惊喜、高兴的语气",
+        "B. 伤心的语气",
+        "C. 平平淡淡没有起伏的语气",
+        "D. 生气的语气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0023",
+      "item_type": "fill",
+      "stem": "照样子给句子加上标点再读一读：例：你去过北京吗（？）　①小鸟会飞（　）　②多么美丽的花呀（　）　③你吃饭了吗（　）",
+      "answer": "①。（句号）　②！（感叹号）　③？（问号）",
+      "kps": [
+        "kp_chi1_tone_reading"
+      ],
+      "difficulty": 0.3,
+      "solution": "陈述句末尾用句号，感叹句用感叹号，疑问句用问号；标点不同，语气就不同。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0024",
+      "item_type": "solve",
+      "stem": "读对话，括号里应填什么语气：“妈妈说：‘我还要吃一个苹果。’”如果妈妈是商量着说的，句末该用（　）号，读的时候声音要（　　）；请你再把这个句子有礼貌地读给家人听。",
+      "answer": "问（商量时用商量的疑问语气，如“我还能再吃一个苹果吗？”）；读时声音轻柔、缓慢一些。或答：句号，语气平和、亲切。",
+      "kps": [
+        "kp_chi1_tone_reading"
+      ],
+      "difficulty": 0.33,
+      "solution": "读好人物对话要借助提示语和标点体会人物心情，请求的语气读得轻一些、慢一些。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0025",
+      "item_type": "choice",
+      "stem": "听故事时，下面哪种做法能帮你记住故事内容？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_listen_retell"
+      ],
+      "difficulty": 0.3,
+      "solution": "听故事要集中注意听，努力记住大意和自己感兴趣的情节，才能复述出来。",
+      "source": "llm_generated",
+      "options": [
+        "A. 集中注意认真听，记住故事里的人物和事情的经过",
+        "B. 一边听一边玩橡皮",
+        "C. 别人讲故事时想着别的事",
+        "D. 只记住最后一句话，前面的都不管"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0026",
+      "item_type": "solve",
+      "stem": "听短故事后回答：“小猴子下山，先掰了玉米，又摘了桃子，最后看见兔子就去追，结果什么也没拿到。”小猴子最后为什么什么也没拿到？用一两句话说说。",
+      "answer": "示例：因为小猴子看见什么喜欢什么，扔了手里的东西去追新的，三心二意，最后什么也没拿到。",
+      "kps": [
+        "kp_chi1_listen_retell"
+      ],
+      "difficulty": 0.35,
+      "solution": "听故事后能复述大意和关键情节：抓住“扔了—去追—落空”的线索说清原因。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0027",
+      "item_type": "solve",
+      "stem": "把你这周听过的最喜欢的一个故事讲给家人听。讲故事前先列出你要讲的三个内容（谁、做了什么、结果怎样），写在下面。",
+      "answer": "示例（以《小猴子下山》为例）：①谁：小猴子；②做了什么：掰玉米、摘桃子、追兔子；③结果：什么也没拿到。",
+      "kps": [
+        "kp_chi1_listen_retell"
+      ],
+      "difficulty": 0.34,
+      "solution": "复述要按顺序讲清人物和经过，先列提纲再讲，故事就完整了。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0028",
+      "item_type": "choice",
+      "stem": "下面哪种做法是爱护图书的好习惯？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_love_books"
+      ],
+      "difficulty": 0.24,
+      "solution": "喜爱图书要爱护图书：轻拿轻放、不撕不折不乱画，看完放回原处；乐于和大人一起读。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看完书轻轻放回书架，不撕书、不在书上乱画",
+        "B. 把书页折起来当记号，想折就折",
+        "C. 看完随手扔在地上",
+        "D. 把喜欢的页撕下来贴在墙上"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0029",
+      "item_type": "solve",
+      "stem": "和爸爸妈妈一起读完一本书后，你可以做一件什么事，把这本书分享给大家？写出一件事并说明怎么做。",
+      "answer": "示例：把读到的故事讲给家人或同学听；讲的时候按顺序说清故事里的人物和事情，声音响亮让大家听清。",
+      "kps": [
+        "kp_chi1_love_books"
+      ],
+      "difficulty": 0.3,
+      "solution": "乐于把自己读到的故事讲给家人、同伴听，是亲子共读的延伸，也是分享阅读的快乐。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0030",
+      "item_type": "solve",
+      "stem": "每天课外阅读一点点，积少成多。请你给自己定一个小小的阅读计划：写出你打算每天什么时间读、读多久。",
+      "answer": "示例：我打算每天睡觉前读 15 分钟课外书，读童话故事和古诗，一个星期读完一本。",
+      "kps": [
+        "kp_chi1_love_books"
+      ],
+      "difficulty": 0.32,
+      "solution": "逐步养成每天课外阅读的习惯，第一学段课外阅读总量不少于 5 万字，从每天固定时间读起。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0031",
+      "item_type": "choice",
+      "stem": "在班级里发言、和同学交流时，我们应该：",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_mandarin"
+      ],
+      "difficulty": 0.22,
+      "solution": "学说普通话，逐步养成说普通话的习惯；在集体面前敢说话、乐于表达，积极参加口语交际活动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说普通话，声音清楚，大大方方",
+        "B. 只说家乡话，别人听不懂也没关系",
+        "C. 害羞不说，低着头不吭声",
+        "D. 想说就说，随便插嘴打断别人"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0032",
+      "item_type": "solve",
+      "stem": "你的同桌上课回答问题时声音很小，他很害怕说错。请你写一两句话鼓励他大胆说普通话。",
+      "answer": "示例：说错了也没关系，我们都爱听你发言！你大声用普通话说，会越说越棒的。",
+      "kps": [
+        "kp_chi1_mandarin"
+      ],
+      "difficulty": 0.3,
+      "solution": "有自信心地说话：鼓励别人敢说、乐于说，交际时态度自然大方。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0033",
+      "item_type": "solve",
+      "stem": "口头练习后写下来：用普通话向老师问好并介绍你自己（名字、班级、喜欢做的事），写两三句话。",
+      "answer": "示例：老师好！我叫小明，是一年级二班的学生。我最喜欢看图画书，还会跳绳。",
+      "kps": [
+        "kp_chi1_mandarin"
+      ],
+      "difficulty": 0.3,
+      "solution": "学说普通话并在集体面前介绍自己：句子完整、有礼貌，能说清基本信息。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0034",
+      "item_type": "choice",
+      "stem": "玩“我说你做”游戏，老师喊：“请你举起左手，再摸摸鼻子。”下面谁做对了？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_listen_obey"
+      ],
+      "difficulty": 0.25,
+      "solution": "听指令要听准动作（举左手、摸鼻子）、顺序（先……再……），一步一步照着做才不出错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 小云先举起左手，再用右手摸鼻子",
+        "B. 小云举起右手",
+        "C. 小云只举左手，别的没做",
+        "D. 小云闭上眼睛什么也不做"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0035",
+      "item_type": "solve",
+      "stem": "把听到的指令做给同桌看，并写出这条指令里有几个动作：“先起立，再向老师鞠躬，最后坐下。”这句话里一共有（　）个动作，按顺序是：",
+      "answer": "3 个；起立→鞠躬（向老师）→坐下。",
+      "kps": [
+        "kp_chi1_listen_obey"
+      ],
+      "difficulty": 0.32,
+      "solution": "听准指令中的动作、次数和顺序：先数清动作个数，再按先后顺序执行。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0036",
+      "item_type": "solve",
+      "stem": "别人正在说话时，我们应该怎么做？请你写一条听的要求，并写写自己在课堂上打算怎么做到。",
+      "answer": "示例：别人说话时不随便插嘴，眼睛看着对方认真听。我上课要把小手放好，听完再举手发言。",
+      "kps": [
+        "kp_chi1_listen_obey"
+      ],
+      "difficulty": 0.3,
+      "solution": "认真听他人讲话、不随便插嘴，是听懂指令、了解讲话内容的前提。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0037",
+      "item_type": "choice",
+      "stem": "想和新同学交朋友，下面哪句话最有礼貌？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_self_intro"
+      ],
+      "difficulty": 0.24,
+      "solution": "交朋友要主动问好、态度自然大方有礼貌，用上“你好”“我们做朋友好吗”这样友好的话。",
+      "source": "llm_generated",
+      "options": [
+        "A. 你好！我叫乐乐，我们做朋友好吗？",
+        "B. 喂，你叫什么？快说！",
+        "C. 你别理我，我不想认识你。",
+        "D. 我才不跟你们玩呢。"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0038",
+      "item_type": "solve",
+      "stem": "向新同学介绍自己时，至少要说清哪两件事？再想一想，介绍爱好时可以怎么说？把你要说的话写在下面。",
+      "answer": "示例：要说清自己的名字和爱好。我可以说：“我叫甜甜，我喜欢画画和跳皮筋，你呢？”",
+      "kps": [
+        "kp_chi1_self_intro"
+      ],
+      "difficulty": 0.3,
+      "solution": "自我介绍要大大方方说清名字和爱好，说完还可以友好地问问对方。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0039",
+      "item_type": "solve",
+      "stem": "不小心踩了同学的脚，应该怎么说？收到别人帮助时又该说什么？把两句话写下来。",
+      "answer": "示例：踩了同学说“对不起，我不是故意的”；得到帮助说“谢谢你”。",
+      "kps": [
+        "kp_chi1_self_intro"
+      ],
+      "difficulty": 0.3,
+      "solution": "礼貌交谈要会用“你好”“谢谢”“对不起”等礼貌用语，态度诚恳。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0040",
+      "item_type": "choice",
+      "stem": "在图书馆里看书时，说话应该：",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_voice_control"
+      ],
+      "difficulty": 0.25,
+      "solution": "能根据场合调节音量：图书馆、医院等需要安静的场合要轻声说话。",
+      "source": "llm_generated",
+      "options": [
+        "A. 轻轻地说，不打扰别人",
+        "B. 大声喊叫让大家都听见",
+        "C. 想多大声就多大声",
+        "D. 尖叫着跑来跑去"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0041",
+      "item_type": "choice",
+      "stem": "课堂上是体育委员喊口令“向右看齐”，这时候应该：",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_voice_control"
+      ],
+      "difficulty": 0.28,
+      "solution": "课堂发言、喊口令需要声音响亮；轻声还是响亮要按场合需要来定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 声音响亮，让全班都听得清",
+        "B. 用只有自己听得见的声音",
+        "C. 不出声，只做口型",
+        "D. 小声嘟囔"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0042",
+      "item_type": "solve",
+      "stem": "连一连（写成对应关系）：在教室发言、在医院、在图书馆各应该用多大的声音？把场所和音量配对写出来。",
+      "answer": "教室发言——声音响亮；医院——轻声说话；图书馆——轻声说话（安静）。",
+      "kps": [
+        "kp_chi1_voice_control"
+      ],
+      "difficulty": 0.3,
+      "solution": "按场合控制音量：需要安静的场合轻声，需要全班听清的场合响亮。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0043",
+      "item_type": "choice",
+      "stem": "讲小故事的时候，怎样讲别人才听得清楚？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_tell_story"
+      ],
+      "difficulty": 0.28,
+      "solution": "讲小故事要较完整：按顺序讲清人物和事情的经过，别人才听得明白。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按顺序讲清故事里有什么人、做了什么事",
+        "B. 想到哪儿说到哪儿，跳来跳去",
+        "C. 声音小得只有自己听见",
+        "D. 只讲最后一句结果"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0044",
+      "item_type": "solve",
+      "stem": "你今天在上学路上或校园里看到了什么新鲜事？按“什么时候—在哪儿—看到什么”的顺序写两三句话。",
+      "answer": "示例：今天早上我在校门口看到一只小猫趴在花坛边晒太阳，尾巴一摇一摇的，可爱极了。",
+      "kps": [
+        "kp_chi1_tell_story"
+      ],
+      "difficulty": 0.33,
+      "solution": "简要讲述自己感兴趣的见闻：说清时间、地点和看到的事，句子通顺。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0045",
+      "item_type": "solve",
+      "stem": "小练笔：把你最喜欢的一个小故事的开头讲给大家听。写出故事里的主要人物和故事发生的一件事（两三句话）。",
+      "answer": "示例（以《乌鸦喝水》为例）：一只乌鸦口渴了，到处找水喝。它看见一个瓶子，里面有水，可是瓶口太小，喝不着。",
+      "kps": [
+        "kp_chi1_tell_story"
+      ],
+      "difficulty": 0.34,
+      "solution": "讲故事先交代人物和事情的开头，按顺序往下讲，故事就完整、通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0046",
+      "item_type": "choice",
+      "stem": "想请同学帮忙捡一下掉在地上的橡皮，下面哪句话说得好？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_polite_request"
+      ],
+      "difficulty": 0.25,
+      "solution": "请人帮忙要说清楚需要什么帮助，并用“请……好吗”“谢谢”这样商量的、有礼貌的语气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 请你帮我捡一下橡皮，好吗？谢谢！",
+        "B. 快把橡皮捡给我！",
+        "C. 橡皮掉了，你看着办吧。",
+        "D. 你怎么不帮我捡橡皮？"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0047",
+      "item_type": "solve",
+      "stem": "向别人请教问题时，要说清哪两件事？假如你想请教老师“这个字怎么读”，把你要说的话写下来。",
+      "answer": "示例：要说清请谁帮忙、需要什么帮助（为什么）。我会说：“老师，请问这个字怎么读？请您教教我，谢谢您！”",
+      "kps": [
+        "kp_chi1_polite_request"
+      ],
+      "difficulty": 0.32,
+      "solution": "请教要说清对象和问题，用“请问”“谢谢”等礼貌用语。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0048",
+      "item_type": "solve",
+      "stem": "你请同学帮忙，同学说“我现在正写作业，等一下行吗？”你应该怎么回答才得体？写出来。",
+      "answer": "示例：好的，没关系，你先写作业，写完再帮我，谢谢你。",
+      "kps": [
+        "kp_chi1_polite_request"
+      ],
+      "difficulty": 0.34,
+      "solution": "被拒绝时要得体回应，体谅别人，不能发脾气或强求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0049",
+      "item_type": "choice",
+      "stem": "打电话给同学，接通后第一句话应该说什么？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_phone"
+      ],
+      "difficulty": 0.27,
+      "solution": "打电话接通后先问好并报身份，再说清楚找谁、有什么事。",
+      "source": "llm_generated",
+      "options": [
+        "A. 你好，我是小明，请问乐乐在家吗？",
+        "B. 喂！快出来玩！",
+        "C. （什么都不说等着）",
+        "D. 你是谁？快报姓名！"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0050",
+      "item_type": "solve",
+      "stem": "打电话请假：你要给老师打电话说明天生病不能到校。请写出通话时你要说的三句话（问好报身份—说事情—礼貌结束）。",
+      "answer": "示例：老师您好，我是小明。我今天发烧了，明天不能到校上课，想跟您请假。谢谢老师，老师再见！",
+      "kps": [
+        "kp_chi1_phone"
+      ],
+      "difficulty": 0.33,
+      "solution": "通话要简明：问好报身份→说清事情→用“谢谢”“再见”礼貌结束，不说无关的话。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0051",
+      "item_type": "solve",
+      "stem": "判断下面做法对不对，并写理由：“小红打电话时说了十分钟动画片，才想起来要问作业。”",
+      "answer": "示例：不对。打电话要说清楚有什么事，先说正事，不纠缠无关话题，说完礼貌结束。",
+      "kps": [
+        "kp_chi1_phone"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查通话简明、围绕正题说的交际要求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0052",
+      "item_type": "choice",
+      "stem": "向同学介绍“丢手绢”怎么玩时，最好的说法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_game_rule"
+      ],
+      "difficulty": 0.26,
+      "solution": "讲游戏规则要分几步说完整、说清楚，还可以边说边做动作示范。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分几步说：先围圈坐好，再一人绕圈丢手绢，然后放手绢的同学跑，大家拍手唱歌",
+        "B. 就说“反正很好玩，你玩就会了”",
+        "C. 只说一句“用手绢”",
+        "D. 不说规则，直接开始玩"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0053",
+      "item_type": "solve",
+      "stem": "把“老鹰捉小鸡”的游戏规则按步骤写下来（至少三步，用“先……再……最后……”）。",
+      "answer": "示例：先选一人当老鹰、一人当鸡妈妈，其余当小鸡排在鸡妈妈身后。再由老鹰设法捉队尾的小鸡，鸡妈妈张开双臂拦住老鹰。最后被捉到的小鹰换当老鹰，游戏重新开始。",
+      "kps": [
+        "kp_chi1_game_rule"
+      ],
+      "difficulty": 0.33,
+      "solution": "用顺序词分步说清规则，规则完整别人才会玩；游戏中商量着玩、守规则。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0054",
+      "item_type": "solve",
+      "stem": "你想邀请同桌一起玩跳皮筋，写一两句邀请的话，要说清玩什么、什么时候玩。",
+      "answer": "示例：小红，下课我们一起跳皮筋好吗？就我们两个人先练，好吗？",
+      "kps": [
+        "kp_chi1_game_rule"
+      ],
+      "difficulty": 0.3,
+      "solution": "邀请伙伴要礼貌、说清游戏和时间，用商量的语气。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0055",
+      "item_type": "choice",
+      "stem": "“你去过动物园吗”这句话末尾应该用哪个标点？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_writing_marks"
+      ],
+      "difficulty": 0.25,
+      "solution": "提出问题的句子用问号；一句话说完用句号；表示强烈感情用感叹号；句子中间的停顿用逗号。",
+      "source": "llm_generated",
+      "options": [
+        "A. ？",
+        "B. 。",
+        "C. ！",
+        "D. 、"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0056",
+      "item_type": "fill",
+      "stem": "把标点符号送回家（默写填空）：①天空瓦蓝瓦蓝的（　）②花儿真美呀（　）③你叫什么名字（　）④小明是小红的哥哥（　）",
+      "answer": "①。②！③？④。",
+      "kps": [
+        "kp_chi1_writing_marks"
+      ],
+      "difficulty": 0.3,
+      "solution": "陈述句用句号、感叹句用感叹号、疑问句用问号，写话开头还要空两格。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0057",
+      "item_type": "solve",
+      "stem": "下面的句子标点用对了吗？错的请改正并写出理由：“多美的彩虹呀。”",
+      "answer": "示例：用错了，句末的句号应改成感叹号。因为“多美的……呀”表达赞美的强烈感情，要用感叹号。",
+      "kps": [
+        "kp_chi1_writing_marks"
+      ],
+      "difficulty": 0.3,
+      "solution": "根据句子表达的意思选标点：强烈感情用“！”，不能一律用句号。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0058",
+      "item_type": "fill",
+      "stem": "照样子把句子写具体：例：公园里有花，有草，还有小桥。　动物园里有（　　），有（　　），还有（　　）。",
+      "answer": "示例：动物园里有猴子，有大象，还有孔雀。（用上“有……有……还有……”即可）",
+      "kps": [
+        "kp_chi1_word_use"
+      ],
+      "difficulty": 0.3,
+      "solution": "学用“有…有…还有…”句式把句子写具体，这是把积累的句式用到写话里。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0059",
+      "item_type": "fill",
+      "stem": "从“雪白、弯弯、闪闪”中选一个词，默写出一句话用它写具体的句子。",
+      "answer": "示例：弯弯——弯弯的月亮挂在天空中。（任选其一，用对即可）",
+      "kps": [
+        "kp_chi1_word_use"
+      ],
+      "difficulty": 0.32,
+      "solution": "把日积月累的词语用到自己的句子里，句子就具体生动了。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0060",
+      "item_type": "solve",
+      "stem": "小练笔：用上“绿绿的”和“高兴”写两句话，写写你在草地上的事。",
+      "answer": "示例：绿绿的草地软软的，像地毯。我和小伙伴在草地上打滚，玩得真高兴。",
+      "kps": [
+        "kp_chi1_word_use"
+      ],
+      "difficulty": 0.34,
+      "solution": "乐于运用阅读和生活中学到的词语写话，学过的词用起来，写话更生动。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0061",
+      "item_type": "choice",
+      "stem": "“日”字加一笔可以变成下面哪个字？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_char_shape_change"
+      ],
+      "difficulty": 0.27,
+      "solution": "“日”加一笔可变成白、目、田、旧等；明是日+月（两个部件），晶是三个日，都不是“加一笔”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 白",
+        "B. 明",
+        "C. 晶",
+        "D. 旧旧"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0062",
+      "item_type": "fill",
+      "stem": "加减一笔变新字，默写出来：“大”加一笔是（　）；“田”减一笔是（　）；“木”加一笔是（　）。",
+      "answer": "犬（或太、天）；日（或曰的形状变体，答“日”）；本（或禾、术）",
+      "kps": [
+        "kp_chi1_char_shape_change"
+      ],
+      "difficulty": 0.3,
+      "solution": "一个字加一笔、减一笔能变成另一个字：大→太/天/犬，田→日，木→本/禾/术，在比较中感受构字规律。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0063",
+      "item_type": "solve",
+      "stem": "换部件变新字：“请”把言字旁换成竖心旁是什么字？再把“晴”的日字旁换成目字旁又是什么字？写出这两个新字并各组一个词。",
+      "answer": "示例：请→情（事情）；晴→睛（眼睛）。",
+      "kps": [
+        "kp_chi1_char_shape_change"
+      ],
+      "difficulty": 0.33,
+      "solution": "换部件可以变成意思不同的新字：形旁变了，字义就变了，这是汉字部件之间的关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0064",
+      "item_type": "choice",
+      "stem": "对周围事物有好奇心，下面哪个问题提得好，适合和同学一起讨论？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_ask_question"
+      ],
+      "difficulty": 0.26,
+      "solution": "能就感兴趣的内容提出学习和生活中的问题（如蚂蚁搬家与天气），并有目的地搜集资料、与同学交流讨论。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蚂蚁搬家是不是要下雨了？我们查查资料吧。",
+        "B. 今天中午吃什么？",
+        "C. 我为什么要睡觉？",
+        "D. 别人都别说话！"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0065",
+      "item_type": "solve",
+      "stem": "你想知道“月亮为什么会变化”，可以想哪两个办法弄明白？写出来。",
+      "answer": "示例：①请爸爸妈妈帮忙找关于月亮的图画书看；②把每晚看到的月亮形状画下来做观察记录，再和同学讨论。",
+      "kps": [
+        "kp_chi1_ask_question"
+      ],
+      "difficulty": 0.32,
+      "solution": "解决问题可以搜集图片资料、做观察记录、请教他人，再共同讨论交流。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0066",
+      "item_type": "solve",
+      "stem": "围绕“我的校园”提出一个你想知道的问题，再写出你打算怎样找到答案。",
+      "answer": "示例：问题——校园里的桂花树几月开花？办法——每月去看一看做记录，再问老师或查植物书。",
+      "kps": [
+        "kp_chi1_ask_question"
+      ],
+      "difficulty": 0.3,
+      "solution": "提出问题后要有目的地搜集资料、观察验证，培养好奇心和探究习惯。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0067",
+      "item_type": "choice",
+      "stem": "观察秋天的大自然，下面哪句话是按顺序说观察所得的？",
+      "answer": "A",
+      "kps": [
+        "kp_chi1_observe_express"
+      ],
+      "difficulty": 0.27,
+      "solution": "把观察到的按顺序说清楚：先看什么、再看什么、最后看到什么，加上“先、再、最后”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我先看到树叶变黄了，再看到树叶一片片飘下来，最后看到地上铺了厚厚的叶子",
+        "B. 树叶、黄了、地上",
+        "C. 秋天真好玩哈哈",
+        "D. 我什么也没看见"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0068",
+      "item_type": "solve",
+      "stem": "观察一种小动物，把它的样子按顺序说一说（先整体再局部），写出你要说的两三句话。",
+      "answer": "示例：小白兔全身雪白，像个小雪球。它长着长长的耳朵、红红的眼睛，还有一条短短的尾巴。",
+      "kps": [
+        "kp_chi1_observe_express"
+      ],
+      "difficulty": 0.32,
+      "solution": "观察动植物变化后用口头表达：按顺序（先整体后局部）说清特点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0069",
+      "item_type": "solve",
+      "stem": "图文表达：画一画今天天气的样子，再用一两句话写下来（写出天空中有什么、像什么）。",
+      "answer": "示例：今天天上飘着朵朵白云，白云像棉花糖。太阳照在身上暖洋洋的。（配合一幅天气图画）",
+      "kps": [
+        "kp_chi1_observe_express"
+      ],
+      "difficulty": 0.36,
+      "solution": "用图文结合的方式表达观察所得，画面和文字要一致，句子写通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

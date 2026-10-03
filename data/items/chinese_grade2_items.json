@@ -3217,6 +3217,1731 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chi_dens02_0070",
+      "item_type": "choice",
+      "stem": "遇到不认识的字，下面的做法哪个不对？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_char_count"
+      ],
+      "difficulty": 0.3,
+      "solution": "自主识字可以综合运用拼音、部首查字法、形旁表义规律和生活经验，但不能不看不猜地乱读。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看也不看直接乱猜一个音",
+        "B. 用部首查字法查一查",
+        "C. 想想形旁表义的规律猜猜意思再验证",
+        "D. 联系上下文和生活经验想一想"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0071",
+      "item_type": "solve",
+      "stem": "第一学段（一二年级）结束时，识字量要达到什么要求？写出来，再说一条你自主识字的好办法。",
+      "answer": "示例：累计认识常用汉字 1600 个左右，其中 800 个左右会写。办法：遇到不认识的字先用部首查字法查字典，再把它的意思连着句子读一读。",
+      "kps": [
+        "kp_chi2_char_count"
+      ],
+      "difficulty": 0.33,
+      "solution": "课标要求认识 1600 个左右、会写 800 个左右；自主识字要主动运用查字典等方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0072",
+      "item_type": "fill",
+      "stem": "按形旁猜意思再填空：“抱、打、拍”都带（　）旁，多和手的动作有关；“请、说、话”都带（　）旁，多和说话有关。",
+      "answer": "提手旁（扌）；言字旁（讠）",
+      "kps": [
+        "kp_chi2_char_count"
+      ],
+      "difficulty": 0.32,
+      "solution": "形旁表义规律是自主识字的重要方法：扌多与手动作有关，讠多与言语有关。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0073",
+      "item_type": "choice",
+      "stem": "“小河里有鸭子（　）鸭子在游水（　）”句中括号里应依次填入：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_comma_use"
+      ],
+      "difficulty": 0.28,
+      "solution": "一句话中间的停顿用逗号，一句话说完用句号；两个分句间用逗号，末尾用句号。",
+      "source": "llm_generated",
+      "options": [
+        "A. ，。",
+        "B. . ,",
+        "C. ！？",
+        "D. 、，"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0074",
+      "item_type": "fill",
+      "stem": "给下面的话补上标点并抄写一句：①你喜欢看童话书吗（　）②蓝蓝的天上飘着白云（　）③多么可爱的小猫呀（　）",
+      "answer": "①？　②。　③！",
+      "kps": [
+        "kp_chi2_comma_use"
+      ],
+      "difficulty": 0.33,
+      "solution": "疑问句用问号，陈述句用句号，感叹句用感叹号；标点要占一格，写在左下角。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0075",
+      "item_type": "solve",
+      "stem": "写话时开头应该怎么写？标点符号在格子里怎么摆？写出两条书写规矩。",
+      "answer": "示例：①开头空两格再写；②标点占一格，逗号句号写在格子左下角，一句话说完用句号。",
+      "kps": [
+        "kp_chi2_comma_use"
+      ],
+      "difficulty": 0.3,
+      "solution": "写话格式：开头空两格、标点占格规范，这是二年级写话的基本要求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0076",
+      "item_type": "choice",
+      "stem": "下面哪一句是感叹句？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_exclaim"
+      ],
+      "difficulty": 0.27,
+      "solution": "“多么……啊！”句式末尾加感叹号，表达强烈感情，是感叹句。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这是多么感人的画面啊！",
+        "B. 这是一幅画。",
+        "C. 这是一幅画吗？",
+        "D. 这幅画是谁画的？"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0077",
+      "item_type": "fill",
+      "stem": "照样子仿写感叹句：例：这是多么感人的画面啊！　仿写：这是多么（　　）的（　　）啊！",
+      "answer": "示例：这是多么美丽的花园啊！（“多么＋形容词＋的＋名词＋啊”即可）",
+      "kps": [
+        "kp_chi2_exclaim"
+      ],
+      "difficulty": 0.32,
+      "solution": "仿写感叹句用“多么……啊！”或“真……啊！”的句式，把赞美的感情写出来。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0078",
+      "item_type": "solve",
+      "stem": "小练笔：用“真……啊！”写一句你看到秋天景色时的感叹，并写出你感叹的原因（共两句话）。",
+      "answer": "示例：秋天的田野真美啊！金黄的稻子像铺了一地的金子。",
+      "kps": [
+        "kp_chi2_exclaim"
+      ],
+      "difficulty": 0.34,
+      "solution": "结合生活用感叹句表达强烈感情，并写出感叹的理由。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0079",
+      "item_type": "choice",
+      "stem": "分角色朗读《狐假虎威》，读狐狸的话应该用怎样的语气？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_role_reading"
+      ],
+      "difficulty": 0.3,
+      "solution": "分角色朗读要读出不同角色的语气：狐狸狡猾，要读出它神气活现、骗老虎的腔调。",
+      "source": "llm_generated",
+      "options": [
+        "A. 狡猾神气、装腔作势的语气",
+        "B. 害怕发抖的语气",
+        "C. 伤心哭泣的语气",
+        "D. 平淡没有变化的语气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0080",
+      "item_type": "solve",
+      "stem": "读句子选语气：“小马连蹦带跳地说：‘怎么不能？我很愿意帮您做事。’”小马的话应该读出怎样的心情？为什么？",
+      "answer": "示例：应该读出小马天真、高兴、乐意帮忙的心情。因为“连蹦带跳”和“很愿意”说明小马很快乐、很乐意。",
+      "kps": [
+        "kp_chi2_role_reading"
+      ],
+      "difficulty": 0.33,
+      "solution": "借助提示语（连蹦带跳地说）和标点揣摩人物心情，读出感情。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0081",
+      "item_type": "solve",
+      "stem": "和同桌分角色朗读《小马过河》时，老牛的话和松鼠的话各应怎么读？各写一条朗读建议。",
+      "answer": "示例：老牛——声音低沉、慢悠悠，显出老成；松鼠——急切、大声拦住小马，显出着急担心。",
+      "kps": [
+        "kp_chi2_role_reading"
+      ],
+      "difficulty": 0.32,
+      "solution": "不同角色身份不同、语气不同：老牛沉稳、松鼠急切，读前先揣摩角色特点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0082",
+      "item_type": "choice",
+      "stem": "下面哪种做法符合默读的要求？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_silent_read"
+      ],
+      "difficulty": 0.26,
+      "solution": "默读要求不出声、不动唇、不指读，边读边思考，读完能说出课文主要内容。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不出声、不动唇、不指读，边读边思考",
+        "B. 小声嘟囔着读",
+        "C. 手指着一个字一个字地读",
+        "D. 嘴唇动着念出声"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0083",
+      "item_type": "solve",
+      "stem": "默读短文后回答：“寒号鸟在崖缝里冻得直打哆嗦，它想：明天就垒窝！可天一亮，太阳暖烘烘的，它又睡了大觉。”寒号鸟最后冻死是因为它只怎么做？",
+      "answer": "示例：它只在嘴上说“明天垒窝”，天一亮又只顾睡觉，始终没有动手垒窝（光说不做）。",
+      "kps": [
+        "kp_chi2_silent_read"
+      ],
+      "difficulty": 0.35,
+      "solution": "默读不出声、边读边想：读后能抓住主要内容，说清寒号鸟败在光说不做。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0084",
+      "item_type": "solve",
+      "stem": "默读时遇到没读懂的地方怎么办？写出两条办法。",
+      "answer": "示例：①回过去再把那一段默读一遍（回视）；②联系上下文想想，或做个记号问老师同学。",
+      "kps": [
+        "kp_chi2_silent_read"
+      ],
+      "difficulty": 0.32,
+      "solution": "养成带回视的默读习惯能加快阅读速度、提高理解质量。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0085",
+      "item_type": "choice",
+      "stem": "读《曹冲称象》，想知道“曹冲用什么办法称出大象的重量”，最好的办法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_q_and_a"
+      ],
+      "difficulty": 0.32,
+      "solution": "就课文提问后，要联系上下文再读课文来解答，也可以请教别人、查资料。",
+      "source": "llm_generated",
+      "options": [
+        "A. 带着问题回到课文里找相关段落读一读",
+        "B. 问也不问就放弃",
+        "C. 随便编一个答案",
+        "D. 把书合上不看"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0086",
+      "item_type": "solve",
+      "stem": "读句子回答问题：“大象上船后，船身往下沉，曹冲在船舷上画了一条线。”曹冲为什么要画这条线？",
+      "answer": "示例：记下船装大象时水面到船舷的位置，再把大象换成一堆石头装到同一条线，石头就能分批称，石头的总重就是大象的重量。",
+      "kps": [
+        "kp_chi2_q_and_a"
+      ],
+      "difficulty": 0.35,
+      "solution": "带着问题读课文、抓住关键句（画线）理解称象办法的原理。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0087",
+      "item_type": "solve",
+      "stem": "读《雪孩子》时提一个问题：“雪孩子救了小白兔后为什么不见了？”请先回答，再写出你是用什么办法弄明白的。",
+      "answer": "示例：因为雪孩子遇到火烤变成水汽飞到空中成了云。我是联系上下文（它冲进火里救小白兔）和课文结尾的描写弄明白的。",
+      "kps": [
+        "kp_chi2_q_and_a"
+      ],
+      "difficulty": 0.3,
+      "solution": "提问—读文—验证：能就感兴趣的内容提问并联系上下文解答。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0088",
+      "item_type": "choice",
+      "stem": "续编故事时，下面哪种做法能把故事编得通顺完整？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_fairy_continue"
+      ],
+      "difficulty": 0.3,
+      "solution": "续编要顺着原故事的人物和情节往下想，展开想象，把故事讲完整、说通顺。",
+      "source": "llm_generated",
+      "options": [
+        "A. 接着原来故事的情节想下去，讲清后来发生了什么、结果怎样",
+        "B. 把前面的故事原样再讲一遍",
+        "C. 随便讲个不相干的新故事",
+        "D. 只说一句话“后来没有了”"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0089",
+      "item_type": "solve",
+      "stem": "借助词语讲故事：用“云朵、飘、雪孩子”三个词，按顺序讲讲雪孩子去哪儿了，写出两三句话。",
+      "answer": "示例：雪孩子化成水汽，飘呀飘，飘到天上变成一朵美丽的云。白云飘在山顶上，好像还在看着小白兔的家。",
+      "kps": [
+        "kp_chi2_fairy_continue"
+      ],
+      "difficulty": 0.35,
+      "solution": "借助词语提示按顺序讲完整：用上提示词，把“去哪儿了、变成什么”讲清楚。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0090",
+      "item_type": "solve",
+      "stem": "续编童话：风娃娃又来到了校园，它会做些什么？展开想象写三四句话，把故事编完整。",
+      "answer": "示例：风娃娃来到校园，轻轻吹动五星红旗，红旗迎风飘扬。它又帮小朋友们吹干了汗湿的衣裳，大家高兴地说：“谢谢你，风娃娃！”风娃娃开心地笑了。",
+      "kps": [
+        "kp_chi2_fairy_continue"
+      ],
+      "difficulty": 0.38,
+      "solution": "续编童话要展开想象、情节合理，故事有开头有结果，句子通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0091",
+      "item_type": "choice",
+      "stem": "《葡萄沟》介绍葡萄沟时，先说它在什么地方，再说葡萄种在山坡的梯田里，然后说葡萄的样子和颜色。这是按什么顺序写的？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_place_feature"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍景物要按一定顺序（位置顺序、时间顺序）抓住景物特点写清楚，《葡萄沟》就是这样写的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按位置和事物特点的顺序",
+        "B. 按从晚到早的时间顺序",
+        "C. 想到什么写什么",
+        "D. 按颜色从深到浅"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0092",
+      "item_type": "solve",
+      "stem": "读句子回答：“葡萄种在山坡的梯田里。茂密的枝叶向四面展开，就像搭起了一个个绿色的凉棚。”这句话抓住葡萄沟的什么特点来写？用了什么方法？",
+      "answer": "示例：抓住枝叶茂密的特点，用比喻把枝叶比作绿色的凉棚，写出了葡萄沟的景象。",
+      "kps": [
+        "kp_chi2_place_feature"
+      ],
+      "difficulty": 0.34,
+      "solution": "抓住景物特点、学习课文比喻的写法，是介绍景物的钥匙。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0093",
+      "item_type": "solve",
+      "stem": "仿照《葡萄沟》的写法，按顺序介绍家乡的一处景物（先说在哪儿，再说它的特点），写三四句话。",
+      "answer": "示例：我的家乡有一条小河，它在村子东边。河水清清的，能看见小鱼游来游去。河边种着一排柳树，长长的柳枝像小姑娘的辫子。",
+      "kps": [
+        "kp_chi2_place_feature"
+      ],
+      "difficulty": 0.36,
+      "solution": "按位置顺序、抓住特点介绍景物：先说位置，再用比喻等把特点写具体。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0094",
+      "item_type": "choice",
+      "stem": "《大禹治水》里“三过家门而不入”说的是大禹怎样的品质？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_hero_story"
+      ],
+      "difficulty": 0.3,
+      "solution": "大禹三次经过家门都不进去，是为了抓紧治水、让百姓早日安居，体现一心为公、无私奉献的品质。",
+      "source": "llm_generated",
+      "options": [
+        "A. 治水心切、一心为公，舍小家为大家",
+        "B. 不爱自己的家人",
+        "C. 迷路找不到家",
+        "D. 胆子小不敢回家"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0095",
+      "item_type": "solve",
+      "stem": "读《朱德的扁担》：战士们为什么把朱德的扁担藏起来？朱德又为什么又找来一根并写上名字？说说你的理解。",
+      "answer": "示例：战士们心疼朱德，怕他挑粮太累，就把扁担藏起来。朱德却又找来一根并写上“朱德的扁担”，表示要和大家一起挑粮、同甘共苦，谁也不许再藏。",
+      "kps": [
+        "kp_chi2_hero_story"
+      ],
+      "difficulty": 0.34,
+      "solution": "从藏扁担、写名字的细节体会朱德与战士们同甘共苦的精神。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0096",
+      "item_type": "solve",
+      "stem": "读了《难忘的泼水节》，周总理和傣族人民一起过泼水节，你有什么感受？用两三句话写下来。",
+      "answer": "示例：周总理穿上傣族服装和人们一起泼水，我感到他很亲切、尊重少数民族。各族人民像一家人一样幸福，我很感动。",
+      "kps": [
+        "kp_chi2_hero_story"
+      ],
+      "difficulty": 0.33,
+      "solution": "读伟人故事要联系内容谈感受，学习优秀品质，感受写得真实即可。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0097",
+      "item_type": "choice",
+      "stem": "《纸船和风筝》中，小熊和小松鼠吵架后都很难过，最后是怎样和好的？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_friendship_read"
+      ],
+      "difficulty": 0.3,
+      "solution": "吵架后两人都难过，小松鼠主动放出纸船并写上“祝你快乐”，友谊又回来了——主动友好能让友谊恢复。",
+      "source": "llm_generated",
+      "options": [
+        "A. 小松鼠主动折纸船写上祝福话，两人和好了",
+        "B. 他们再也不来往了",
+        "C. 他们大吵一架谁也不理谁",
+        "D. 别的动物命令他们和好"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0098",
+      "item_type": "solve",
+      "stem": "读句子体会心情：“小松鼠难过地哭了。他折了一只只纸船放进小溪。”从“难过地哭了”和“折了一只只纸船”能看出小松鼠心里怎样？",
+      "answer": "示例：能看出小松鼠很后悔、很想和小熊和好，所以不停地折纸船，希望纸船带去他的心意。",
+      "kps": [
+        "kp_chi2_friendship_read"
+      ],
+      "difficulty": 0.33,
+      "solution": "抓住动作和神态体会人物心情，感受友谊的珍贵。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0099",
+      "item_type": "solve",
+      "stem": "联系自己写一写：你和好朋友闹过别扭吗？后来是怎么和好的？用三四句话写出事情的经过和你的感受。",
+      "answer": "示例：我和小红因为一支铅笔闹了别扭，谁也不理谁。后来我主动向她说对不起，她也说那天她不该凶我，我们又成了好朋友。我明白了朋友之间要互相体谅。",
+      "kps": [
+        "kp_chi2_friendship_read"
+      ],
+      "difficulty": 0.34,
+      "solution": "把课文中体会到的友谊联系自己的生活写通顺，写出经过和感受。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0100",
+      "item_type": "choice",
+      "stem": "《画杨桃》里“我”把杨桃画成了五角星的样子，是因为：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_observe_angle"
+      ],
+      "difficulty": 0.32,
+      "solution": "站在不同角度观察，看到的形状会不一样；“我”从自己座位的角度看杨桃就像五角星，是实事求是地画。",
+      "source": "llm_generated",
+      "options": [
+        "A. “我”坐的角度看杨桃就像五角星，是如实画出来的",
+        "B. “我”不会画画",
+        "C. “我”故意画错气同学",
+        "D. 杨桃本来就是五角星"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0101",
+      "item_type": "solve",
+      "stem": "同学们嘲笑“我”画的杨桃像五角星，老师却让嘲笑别人的同学坐到“我”的座位上看。他们看到杨桃是什么样子？这说明什么道理？",
+      "answer": "示例：他们也看到了像五角星的杨桃。说明观察角度不同，看到的样子就不同，要先看清事实再下判断，不能随便嘲笑别人。",
+      "kps": [
+        "kp_chi2_observe_angle"
+      ],
+      "difficulty": 0.35,
+      "solution": "通过换座位验证，懂得实事求是、相信自己的眼睛，不随便嘲笑别人。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0102",
+      "item_type": "solve",
+      "stem": "写话：生活中你有没有站在不同位置看到同一事物不一样的事（如看讲台、看房子）？写两三句话，说清在哪儿看、看到什么。",
+      "answer": "示例：我在教室后面看黑板报，只能看到一小块；走到讲台前看，才能看到全部。原来站的地方不同，看到的样子就不同。",
+      "kps": [
+        "kp_chi2_observe_angle"
+      ],
+      "difficulty": 0.34,
+      "solution": "联系生活体会观察角度不同结果不同，把观察所得写清楚。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0103",
+      "item_type": "choice",
+      "stem": "《小马过河》中，老牛说水很浅，松鼠说水很深，他们说的都不假。小马应该怎么做才对？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_think_self"
+      ],
+      "difficulty": 0.3,
+      "solution": "别人的话是从他们自己的情况说的，适不适合自己要动脑筋思考、亲自去试一试。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自己去试一试，再判断河水深浅",
+        "B. 只听老牛的，直接过河",
+        "C. 只听松鼠的，回家不去了",
+        "D. 谁的话也不听，闭着眼冲过去"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0104",
+      "item_type": "solve",
+      "stem": "老牛和松鼠对河水的说法为什么不一样？写出原因。",
+      "answer": "示例：因为老牛个子高，河水刚没过小腿，他觉得浅；松鼠个子小，河水能淹到他，他觉得深。他们都是从自己的身高说的。",
+      "kps": [
+        "kp_chi2_think_self"
+      ],
+      "difficulty": 0.34,
+      "solution": "同一件事不同的人感受不同，要想想别人的话是在什么情况下说的。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0105",
+      "item_type": "solve",
+      "stem": "写话：生活中你遇到过“别人说的和你的体验不一样”的事吗？比如学游泳、骑车。用三四句话写出来，说说你试过之后的发现。",
+      "answer": "示例：姐姐说学骑自行车很难，我差点不敢学。我自己试了试，摔了两次就学会了。原来难不难，要自己试了才知道。",
+      "kps": [
+        "kp_chi2_think_self"
+      ],
+      "difficulty": 0.36,
+      "solution": "联系生活懂得不能只听别人的意见，也不能不试就放弃，要独立思考亲自尝试。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0106",
+      "item_type": "choice",
+      "stem": "第一学段（1—2 年级）课外阅读总量不少于多少万字？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_read_amount"
+      ],
+      "difficulty": 0.28,
+      "solution": "课标规定第一学段课外阅读总量不少于 5 万字，读童话、儿童故事和浅近古诗。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5 万字",
+        "B. 50 万字",
+        "C. 100 万字",
+        "D. 1 万字"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0107",
+      "item_type": "solve",
+      "stem": "读书时遇到好词好句怎么办？写一条你的做法，并摘抄一个你喜欢的词语或句子。",
+      "answer": "示例：把好词好句抄在本子上（做摘抄）。摘抄：弯弯的月儿小小的船，小小的船儿两头尖。",
+      "kps": [
+        "kp_chi2_read_amount"
+      ],
+      "difficulty": 0.3,
+      "solution": "做简单的摘抄是课外阅读的好习惯，日积月累用到写话里。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0108",
+      "item_type": "solve",
+      "stem": "和同学交流课外书：写出你这学期读过的一本书的名字，再向同学推荐一句话（这本书讲了什么、好在哪里）。",
+      "answer": "示例：我读了《七色花》。这本书讲小姑娘珍妮用七色花实现愿望的故事，很有趣，请大家也读一读。",
+      "kps": [
+        "kp_chi2_read_amount"
+      ],
+      "difficulty": 0.3,
+      "solution": "乐于与同学交流读过的书，能说清书名和内容大意。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0109",
+      "item_type": "choice",
+      "stem": "读整本书时想知道《神笔马良》在第几页，最方便的办法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_kids_story_books"
+      ],
+      "difficulty": 0.3,
+      "solution": "整本书阅读要学会借助目录选择感兴趣的故事读，目录告诉我们每个故事在第几页。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看目录，找到故事名和页码",
+        "B. 一页一页翻着找",
+        "C. 把书倒过来抖一抖",
+        "D. 猜一个页码"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0110",
+      "item_type": "solve",
+      "stem": "《七色花》里，珍妮用最后一片花瓣许了什么愿？这个愿望和前面的愿望有什么不同？",
+      "answer": "示例：最后一片花瓣她用来让生病的小男孩恢复健康、站起来。前面的愿望多是为自己的玩和乐趣，这个愿望是为了帮助别人，最有意义。",
+      "kps": [
+        "kp_chi2_kids_story_books"
+      ],
+      "difficulty": 0.34,
+      "solution": "考查整本书阅读后能记住主要情节，并比较出愿望的不同（为自己→帮别人）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0111",
+      "item_type": "solve",
+      "stem": "做一张简单的读书卡：写出你读过的一本儿童故事的书名、主要人物和你的感想（各一条）。",
+      "answer": "示例：书名《一起长大的玩具》；主要人物——我和我的玩具们（或书中孩子）；感想——玩具陪伴我们长大，要爱护玩具、珍惜童年。",
+      "kps": [
+        "kp_chi2_kids_story_books"
+      ],
+      "difficulty": 0.32,
+      "solution": "读书卡记录书名、人物和感想，是整本书阅读的成果整理方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0112",
+      "item_type": "choice",
+      "stem": "向同学介绍小猫，下面哪种介绍能让人听得更明白？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_animal_feature"
+      ],
+      "difficulty": 0.28,
+      "solution": "介绍动物要按顺序说清外形特点和生活习性，用具体例子把特点说生动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先说整体样子，再按顺序说耳朵、眼睛、尾巴和它爱吃什么、怎么玩",
+        "B. 只说“它很可爱”三个字",
+        "C. 从尾巴说到头又跳回耳朵，来回乱说",
+        "D. 说一大堆和猫无关的话"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0113",
+      "item_type": "solve",
+      "stem": "听同学介绍大熊猫后提问：介绍里说了大熊猫哪两方面的特点？各举一个例子。",
+      "answer": "示例：外形——黑白相间、圆圆的身体有黑眼圈；习性——爱吃竹子、爱睡觉（爬树）。",
+      "kps": [
+        "kp_chi2_animal_feature"
+      ],
+      "difficulty": 0.33,
+      "solution": "听人介绍时记住主要信息并适时提问：外形和生活习性两大方面。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0114",
+      "item_type": "solve",
+      "stem": "写话：选一种你喜欢的小动物，按顺序写它的外形和生活习性，用上“长长的、雪白的”这样的词，写三四句话。",
+      "answer": "示例：小白兔长着长长的耳朵、红红的眼睛，全身雪白，像个小雪球。它爱吃萝卜和青菜，走起路来一蹦一跳的，真可爱。",
+      "kps": [
+        "kp_chi2_animal_feature"
+      ],
+      "difficulty": 0.36,
+      "solution": "按顺序（整体—局部—习性）把动物特点写具体，用上积累的词语。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0115",
+      "item_type": "choice",
+      "stem": "介绍手工作品时，把过程说清楚的窍门是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_process_describe"
+      ],
+      "difficulty": 0.28,
+      "solution": "按顺序介绍制作过程要用“先……再……然后……最后……”连接步骤，说清材料和注意事项。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用上“先……再……然后……最后……”说清步骤",
+        "B. 说“反正就是做出来了”",
+        "C. 只把作品举起来不说话",
+        "D. 从最后一步开始倒着乱说"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0116",
+      "item_type": "solve",
+      "stem": "写出手工作品的制作步骤：做一张贺卡需要哪几步？至少写三步，用上顺序词。",
+      "answer": "示例：先准备好卡纸、彩笔和剪刀；再把卡纸对折，在封面画上画；然后在里面写上祝福的话；最后把贺卡送给妈妈。",
+      "kps": [
+        "kp_chi2_process_describe"
+      ],
+      "difficulty": 0.33,
+      "solution": "用顺序词分步说清制作过程，材料、步骤、用途都交代清楚。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0117",
+      "item_type": "solve",
+      "stem": "小练笔：把你做过的一个手工作品（折纸、黏土等）写下来，写清用了什么材料、分几步做的，写三四句话。",
+      "answer": "示例：我用彩纸折了一只小船。先把正方形的纸对折，再折出船身和船头，然后把小船翻过来压平，最后画上小旗。看着小船我真开心。",
+      "kps": [
+        "kp_chi2_process_describe"
+      ],
+      "difficulty": 0.34,
+      "solution": "写清材料和步骤（边做边回忆顺序），书面表达制作过程。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0118",
+      "item_type": "choice",
+      "stem": "看多幅图讲故事，应该怎样看图？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_picture_story"
+      ],
+      "difficulty": 0.27,
+      "solution": "按顺序观察多幅图，弄清每幅图画的是什么时候、谁在干什么，图与图之间有联系，故事才连得起来。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按顺序一幅一幅看，注意图与图之间的联系",
+        "B. 随便抽一张看",
+        "C. 只看最后一幅",
+        "D. 倒着从后往前看"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0119",
+      "item_type": "solve",
+      "stem": "四幅图分别画着：①小明踢球 ②球飞向花坛 ③花盆打翻了 ④小明把花盆扶好并向奶奶道歉。按顺序说清这组图讲了一件什么事（两三句话）。",
+      "answer": "示例：小明在楼下踢足球，一不小心把球踢进了花坛，打翻了王奶奶家的花盆。他赶紧把花盆扶好，向王奶奶道歉，奶奶夸他是知错就改的好孩子。",
+      "kps": [
+        "kp_chi2_picture_story"
+      ],
+      "difficulty": 0.33,
+      "solution": "看图要抓住时间、地点、人物、事情，注意图与图的因果联系，配上合理想象讲完整。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0120",
+      "item_type": "solve",
+      "stem": "看图写话：上面这组“踢球打翻花盆”的图，用上“有一天、接着、最后”写四五句话，把故事写完整，正确使用标点。",
+      "answer": "示例：有一天，小明在楼下开心地踢足球。接着，球飞进了花坛，“砰”的一声打翻了花盆。小明赶紧跑过去把花盆扶好，向王奶奶道歉。最后，王奶奶笑着说：“知错就改就是好孩子。”",
+      "kps": [
+        "kp_chi2_picture_story"
+      ],
+      "difficulty": 0.36,
+      "solution": "多幅图写话：用顺序词连起图与图，加上合理想象和对话，写后读一读改一改。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0121",
+      "item_type": "choice",
+      "stem": "写自己喜欢的玩具时，要写清哪些内容？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_write_toy"
+      ],
+      "difficulty": 0.27,
+      "solution": "写玩具要按一定顺序写清样子（形状、颜色、材料）和好玩在哪里，用上学过的词语表达喜爱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 玩具的样子（形状、颜色、材料）和好玩在哪里",
+        "B. 只写“我特别喜欢它”一句",
+        "C. 写别人的玩具",
+        "D. 写一大堆买玩具的过程"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0122",
+      "item_type": "fill",
+      "stem": "把句子写具体：我的玩具熊是（　　）色的，摸起来（　　）的，我天天抱着它睡觉。",
+      "answer": "示例：棕（黄/白）；软软（毛茸茸）",
+      "kps": [
+        "kp_chi2_write_toy"
+      ],
+      "difficulty": 0.3,
+      "solution": "从颜色、材料（摸起来的感觉）把玩具的样子写具体，表达喜爱之情。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0123",
+      "item_type": "solve",
+      "stem": "写话：写写你自己最喜欢的玩具。写清它的样子和好玩在哪里，用上一两个好词，写三四句话。",
+      "answer": "示例：我最喜欢的玩具是遥控小汽车。它是红色的，车头有两盏亮亮的小灯。我一按按钮，它就“嗖”地冲出去，还能原地转弯呢，真好玩！",
+      "kps": [
+        "kp_chi2_write_toy"
+      ],
+      "difficulty": 0.35,
+      "solution": "按顺序写样子+好玩之处，用词具体、句子通顺，表达喜爱。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0124",
+      "item_type": "choice",
+      "stem": "写好朋友时，下面哪种写法最好？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_write_friend"
+      ],
+      "difficulty": 0.26,
+      "solution": "写好朋友要写长相、性格特点，并用一件具体事例写出你们的友谊。",
+      "source": "llm_generated",
+      "options": [
+        "A. 写清长相、性格特点，再用一件具体的事写出友谊",
+        "B. 只写“他是我的好朋友”",
+        "C. 写他所有的缺点",
+        "D. 抄一段和好朋友没关系的话"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0125",
+      "item_type": "solve",
+      "stem": "写一件能体现友谊的事要写清哪些要素？以“同桌借我橡皮”为例列出要素。",
+      "answer": "示例：时间（上课时）、地点（教室）、谁和谁（我和同桌）、事情经过（我发现没带橡皮很着急，他主动把橡皮切一半借我）、结果（我顺利完成了作业，很感谢他）。",
+      "kps": [
+        "kp_chi2_write_friend"
+      ],
+      "difficulty": 0.32,
+      "solution": "一件具体的事要有时间、地点、人物、经过、结果，友谊就在事里体现。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0126",
+      "item_type": "solve",
+      "stem": "写话：写你的好朋友。先写他（她）的长相和性格，再用一件事写出你们的友谊，写四五句话，写完读一读。",
+      "answer": "示例：我的好朋友是丽丽。她扎着两条小辫子，笑起来有酒窝，性格很开朗。有一次我摔倒了，她马上把我扶起来，还陪我去医务室。有这样的好朋友，我真开心。",
+      "kps": [
+        "kp_chi2_write_friend"
+      ],
+      "difficulty": 0.36,
+      "solution": "长相—性格—具体事例，顺序清楚、事例真实，写完自己修改不通顺的句子。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0127",
+      "item_type": "choice",
+      "stem": "写“长大以后做什么”，下面哪种写法把愿望写明白了？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_write_dream"
+      ],
+      "difficulty": 0.27,
+      "solution": "写愿望要写清是什么、为什么、打算怎么做，把理由写明白，表达真情实感。",
+      "source": "llm_generated",
+      "options": [
+        "A. 写清愿望是什么、为什么有这个愿望、打算怎样做",
+        "B. 只写“我长大想当老师”六个字",
+        "C. 写别人让我做什么",
+        "D. 不写愿望，只写今天天气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0128",
+      "item_type": "solve",
+      "stem": "你的愿望是什么？为什么会有这个愿望？各写一句话。",
+      "answer": "示例：我长大想当医生。因为医生能治好生病的人，让大家都健健康康。",
+      "kps": [
+        "kp_chi2_write_dream"
+      ],
+      "difficulty": 0.32,
+      "solution": "愿望+理由：为什么有这个愿望是重点，理由要真实。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0129",
+      "item_type": "solve",
+      "stem": "写话：以“长大以后做什么”为题写几句话：写清你的愿望、原因和你现在打算怎么做。",
+      "answer": "示例：我长大想当一名宇航员。因为我想飞上太空，看看星星和地球是什么样子。从现在起，我要好好学本领，多读书、锻炼身体，为实现愿望努力。",
+      "kps": [
+        "kp_chi2_write_dream"
+      ],
+      "difficulty": 0.35,
+      "solution": "愿望—原因—打算，三段意思写明白，表达真情实感。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0130",
+      "item_type": "choice",
+      "stem": "写“我想养的小动物”，下面哪句把理由写清楚了？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_write_pet"
+      ],
+      "difficulty": 0.26,
+      "solution": "写想养的小动物要写清想养什么、外形特点和习性，用一两件事写出想养的理由。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我想养小狗，因为它能看家、陪我去散步，还会摇尾巴欢迎我",
+        "B. 我想养小狗，因为它好",
+        "C. 我想养，因为妈妈说可以",
+        "D. 不写理由，只画一只动物"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0131",
+      "item_type": "fill",
+      "stem": "照样子写理由：例：我想养小猫，因为它会捉老鼠。　我想养（　　），因为它（　　）。",
+      "answer": "示例：我想养小狗，因为它会看家护院（陪我玩）。",
+      "kps": [
+        "kp_chi2_write_pet"
+      ],
+      "difficulty": 0.3,
+      "solution": "用“因为”把想养的理由说清楚，理由要和动物的本领、习性有关。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0132",
+      "item_type": "solve",
+      "stem": "写话：写你想养的小动物。写清它长什么样、有什么习性，你为什么想养它，写出喜爱之情，写四五句话。",
+      "answer": "示例：我最想养一只小白兔。它有长长的耳朵、红宝石一样的眼睛，浑身雪白。它爱吃萝卜和青菜，走路一蹦一跳。它能陪我做伴，我一定会好好照顾它。",
+      "kps": [
+        "kp_chi2_write_pet"
+      ],
+      "difficulty": 0.35,
+      "solution": "外形—习性—理由，把喜爱之情写出来，句子通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0133",
+      "item_type": "choice",
+      "stem": "多幅图看图写话时，图与图之间的联系怎么写出来？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_picture_composition2"
+      ],
+      "difficulty": 0.28,
+      "solution": "看懂每幅图后，用表示顺序的词语把图与图之间的联系写出来，故事才连贯。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用上“首先、接着、然后、最后”等表示顺序的词语",
+        "B. 每幅图只写“他在玩”三个字",
+        "C. 只写第一幅图",
+        "D. 把几幅图的内容抄乱顺序"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0134",
+      "item_type": "fill",
+      "stem": "默写三个表示先后顺序的词语，并用其中一个写一句话。",
+      "answer": "示例：首先、接着、然后、最后（写出三个即可）。句子：放学后，我首先写作业，然后帮妈妈扫地。",
+      "kps": [
+        "kp_chi2_picture_composition2"
+      ],
+      "difficulty": 0.3,
+      "solution": "顺序词是连接多幅图的“桥”，写话时开头空两格、正确使用标点。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0135",
+      "item_type": "solve",
+      "stem": "看图写话：三幅图画着①下雨了 ②小蚂蚁们用树叶当伞 ③它们抬着粮食回了家。用顺序词把三幅图写成一段通顺的话（四五句），写完修改不通顺的句子。",
+      "answer": "示例：忽然，乌云密布，下起了大雨。小蚂蚁们想办法，摘下一片大树叶顶在头上当雨伞。然后，它们抬着粮食，排着队高高兴兴地回家了。它们真是聪明又团结的小蚂蚁！",
+      "kps": [
+        "kp_chi2_picture_composition2"
+      ],
+      "difficulty": 0.38,
+      "solution": "按图顺序写话，加合理想象，用顺序词连接，写后自己读一读、改一改。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0136",
+      "item_type": "choice",
+      "stem": "写人物对话时，“笑着说”“大声喊”这样放在“说”前后的词叫什么？它们的作用是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_dialogue_write"
+      ],
+      "difficulty": 0.3,
+      "solution": "给“说”加上表示神态、动作的提示语（笑着说、大声喊），能体现人物心情，让对话更生动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提示语；写出人物说话时的神态、动作，体现心情",
+        "B. 修饰语；让字数变多",
+        "C. 没有用的词，可以删掉",
+        "D. 新的标点符号"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0137",
+      "item_type": "fill",
+      "stem": "把对话的标点补完整并抄写：小明笑着说（　）我们一起去打球吧（　）",
+      "answer": "小明笑着说：“我们一起去打球吧。”（冒号、引号各占一格）",
+      "kps": [
+        "kp_chi2_dialogue_write"
+      ],
+      "difficulty": 0.32,
+      "solution": "写对话要用冒号和引号：“说”后面加冒号加引号，引号里是说的话。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0138",
+      "item_type": "solve",
+      "stem": "写话：写一段你和家人的对话（三四句），给“说”加上不同的提示语（如笑着说、着急地问），用对冒号和引号。",
+      "answer": "示例：我笑着说：“妈妈，我考了一百分！”妈妈惊喜地问：“真的吗？你真棒！”我点点头说：“真的，我下次还要努力。”",
+      "kps": [
+        "kp_chi2_dialogue_write"
+      ],
+      "difficulty": 0.36,
+      "solution": "对话描写三要素：谁说、提示语、说的话；标点正确、提示语体现心情。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0139",
+      "item_type": "choice",
+      "stem": "讨论《图书借阅公约》时，下面哪个建议提得好？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_library_rule"
+      ],
+      "difficulty": 0.28,
+      "solution": "公约的建议要围绕借阅时间、数量、爱护图书、归还要求提，汇总整理成条目清楚的约定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每人每次最多借 2 本，看完按时归还",
+        "B. 想借几本借几本，不还也没关系",
+        "C. 把图书角的书都搬回自己家",
+        "D. 谁也不用管，随他去"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0140",
+      "item_type": "solve",
+      "stem": "把同学们提的公约建议整理成三条：借书数量、爱护图书、按时归还各一条，用简练的话写出来。",
+      "answer": "示例：①每人每次借书不超过 2 本；②看书时保持干净，不撕不折不乱画；③借书一星期内归还，放回原处。",
+      "kps": [
+        "kp_chi2_library_rule"
+      ],
+      "difficulty": 0.32,
+      "solution": "公约条目要分项清楚、语句简练、可执行，大家共同遵守。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0141",
+      "item_type": "solve",
+      "stem": "讨论时别人和你的想法不一样怎么办？写出一条做法。",
+      "answer": "示例：认真听他说理由，想一想哪种对班级更好，再商量出大家都同意的办法。",
+      "kps": [
+        "kp_chi2_library_rule"
+      ],
+      "difficulty": 0.3,
+      "solution": "讨论公约要敢于发表意见，也要倾听别人，商量着达成一致。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0142",
+      "item_type": "choice",
+      "stem": "看到“下雨前燕子飞得很低”，想知道为什么，下面哪种探究方法合适？",
+      "answer": "A",
+      "kps": [
+        "kp_chi2_natural_curiosity"
+      ],
+      "difficulty": 0.3,
+      "solution": "对自然现象有好奇心，可以有目的地搜集资料、请教他人或做观察记录来探究原因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 查一查科普书或问问老师，再做观察记录",
+        "B. 猜个答案就算了，不验证",
+        "C. 把燕子抓住问它",
+        "D. 不管它，永远不提这个问题"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0143",
+      "item_type": "solve",
+      "stem": "为什么下雨前燕子要低飞？把你知道的原因写下来，并写出你是用什么办法知道的。",
+      "answer": "示例：因为下雨前空气潮湿，小虫子翅膀沾了水汽飞不高，燕子要捉虫就跟着低飞。我是查科普书（问老师）知道的。",
+      "kps": [
+        "kp_chi2_natural_curiosity"
+      ],
+      "difficulty": 0.34,
+      "solution": "探究自然现象的原因：知道答案，还能说清获取答案的途径。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0144",
+      "item_type": "solve",
+      "stem": "观察记录：选一种天气现象（如雾、霜、彩虹），用两三句话写出你观察到的样子和你想知道的问题。",
+      "answer": "示例：早上的雾白茫茫的，走到近处也看不清对面的楼。我想知道：雾是从哪里来的？太阳出来后它到哪里去了？",
+      "kps": [
+        "kp_chi2_natural_curiosity"
+      ],
+      "difficulty": 0.36,
+      "solution": "有目的地做观察记录并提出问题，用几句话写出发现，带着问题去探究。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
