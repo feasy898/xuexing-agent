@@ -1,0 +1,4100 @@
+{
+  "items": [
+    {
+      "id": "che_hs2_0001",
+      "item_type": "choice",
+      "stem": "下列关于多电子原子能层与能级的说法中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_energy_levels"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 错：同能层 2s<2p；C 错：构造原理中 4s<3d（能级交错）；A 正确：第 n 能层含 n 个能级（s、p、d…）；D 错：N 能层最多容纳 2n²=32 个电子。",
+      "source": "llm_generated",
+      "options": [
+        "A. 同一能层中所含能级的数目与该能层序数 n 相同",
+        "B. 同一原子中 2s 能级的能量高于 2p 能级",
+        "C. 3d 能级的能量一定高于 4s 能级",
+        "D. N 能层最多只能容纳 8 个电子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0002",
+      "item_type": "choice",
+      "stem": "下列能级中，按能量由低到高排列正确的是（　　）",
+      "answer": "A,C",
+      "kps": [
+        "kp_chem12_energy_levels"
+      ],
+      "difficulty": 0.55,
+      "solution": "按构造原理顺序：2p<3s<3p<4s<3d<4p。题中比较：2p<3p；4s<3d。能量由低到高：A(2p)<C(4s)<D(3d)<B(3p)。正确选项为 A、C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2p",
+        "B. 3p",
+        "C. 4s",
+        "D. 3d"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0003",
+      "item_type": "choice",
+      "stem": "下列关于电子云与原子轨道的描述，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_electron_cloud"
+      ],
+      "difficulty": 0.45,
+      "solution": "p 轨道沿 x、y、z 三个互相垂直方向伸展，三个 p 轨道互相 90°，不是 120°；A、B、D 描述均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电子云图中小黑点的疏密表示电子在核外该处出现概率密度的大小",
+        "B. s 轨道的电子云形状为球形对称",
+        "C. p 轨道电子云沿 x、y、z 三个方向伸展，互成 120°",
+        "D. 电子云不是电子运动的轨迹"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0004",
+      "item_type": "choice",
+      "stem": "下列说法中，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_electron_cloud"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错：电子云不是轨迹；C 错：氢原子 1s 电子云不是固定轨道；D 描述较接近但措辞模糊；B 正确符合泡利原理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电子云密度大的地方表示电子在该处出现机会多，所以电子运动轨迹可用电子云描述",
+        "B. 一个原子轨道最多容纳 2 个电子且自旋方向相反",
+        "C. 氢原子 1s 轨道电子云形状是圆球形，对应核外电子的固定轨道",
+        "D. 2p 亚层共有 3 个原子轨道，每个轨道形状相同且电子云密度分布完全相同"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0006",
+      "item_type": "choice",
+      "stem": "下列关于构造原理的叙述，正确的是（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_construct_principle"
+      ],
+      "difficulty": 0.55,
+      "solution": "C 错：氢原子能级只与 n 有关，多电子原子因屏蔽、钻穿发生能级交错；A、B、D 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 构造原理反映了基态原子核外电子按能级能量由低到高依次填入的顺序",
+        "B. 4s 能级能量低于 3d 是能级交错的结果",
+        "C. 多电子原子的能级顺序与氢原子完全一致",
+        "D. 按构造原理，第 30 号 Zn 原子 3d 已填满，4s² 排布是稳定的"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0007",
+      "item_type": "choice",
+      "stem": "基态 Mn 原子(原子序数 25)的电子排布式，下列书写正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_electron_config"
+      ],
+      "difficulty": 0.45,
+      "solution": "Mn 价电子排布为 3d⁵4s²（半充满稳定）。A 把 3d、4s 顺序写错；B 缺 4s²；D 缺 4s²。C 正确：按能级顺序 4s 在 3d 前书写。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s²",
+        "B. 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁷",
+        "C. 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁵",
+        "D. [Ar] 3d⁷"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0008",
+      "item_type": "choice",
+      "stem": "下列原子或离子中，核外电子排布式为 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s¹ 的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_electron_config"
+      ],
+      "difficulty": 0.5,
+      "solution": "Cu 为 3d¹⁰4s¹（29 号）；Zn 为 3d¹⁰4s²；Cu²⁺ 失去 4s² 后为 3d⁹；Zn²⁺ 失去 4s² 后为 3d¹⁰。",
+      "source": "llm_generated",
+      "options": [
+        "A. Cu 原子",
+        "B. Zn 原子",
+        "C. Cu²⁺ 离子",
+        "D. Zn²⁺ 离子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0009",
+      "item_type": "choice",
+      "stem": "基态 Cr 原子(原子序数 24)的电子排布式为 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_hund_pauli"
+      ],
+      "difficulty": 0.55,
+      "solution": "Cr 的 3d⁵4s¹ 是半充满特例，仍符合构造原理和泡利原理；A 错；B 错；C 正确：3d⁵ 半充满稳定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 该排布违反构造原理",
+        "B. 该排布满足泡利原理但违反洪特规则",
+        "C. Cr 的 3d⁵ 是半充满稳定状态",
+        "D. Cr 的 4s¹ 表明 4s 比 3d 先填入电子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0010",
+      "item_type": "choice",
+      "stem": "下列电子排布中，符合泡利原理和洪特规则的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_hund_pauli"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 正确：等能轨道上电子优先单独占据、自旋平行，符合洪特规则；B 违反洪特规则；C 同轨道两电子自旋相同违反泡利原理；D 描述无意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2p 轨道上 3 个电子均自旋向上分别占据 2px、2py、2pz",
+        "B. 2p 轨道上 2 个电子同占 2px 且自旋相反",
+        "C. 1s² 2s² 2p⁵ 中两个电子同占 2px 且自旋相同",
+        "D. 同一原子中 2s² 与 2p⁶ 的电子自旋方向完全一致"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0011",
+      "item_type": "choice",
+      "stem": "下列元素中，原子半径最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_atomic_radii"
+      ],
+      "difficulty": 0.4,
+      "solution": "同周期从左到右原子半径减小（核电荷增大、吸引增强），Na>Mg>Si>Cl。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na",
+        "B. Mg",
+        "C. Si",
+        "D. Cl"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0012",
+      "item_type": "choice",
+      "stem": "下列比较中，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_atomic_radii"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错：同主族从上到下半径增大 Li<Na<K；B 错：F<Cl<Br；C 正确：同周期从左到右半径减小；D 错：Mg<Ca<Sr。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原子半径：Li > Na > K",
+        "B. 原子半径：F > Cl > Br",
+        "C. 原子半径：Si > P > S > Cl",
+        "D. 原子半径：Mg > Ca > Sr"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0013",
+      "item_type": "choice",
+      "stem": "下列各组元素第一电离能大小比较中，正确的是（　　）",
+      "answer": "A,D",
+      "kps": [
+        "kp_chem12_ionization_energy"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 正确：同主族从上到下第一电离能减小；B 错：Be 2s² 全充满稳定，Be>B；C 错：N 2p³ 半充满稳定，N>O；D 正确：Mg 3s² 全充满 Mg>Al。",
+      "source": "llm_generated",
+      "options": [
+        "A. Li > Na > K",
+        "B. Be < B",
+        "C. N < O",
+        "D. Mg > Al"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0014",
+      "item_type": "choice",
+      "stem": "下列元素中，第一电离能最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_ionization_energy"
+      ],
+      "difficulty": 0.45,
+      "solution": "同周期稀有气体的第一电离能最大，Ne>Ar>Na,Mg 需注意同周期从左到右递增，到稀有气体达峰。",
+      "source": "llm_generated",
+      "options": [
+        "A. Ne",
+        "B. Na",
+        "C. Mg",
+        "D. Ar"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0016",
+      "item_type": "choice",
+      "stem": "已知电负性：H=2.1、C=2.5、N=3.0、O=3.5、S=2.5、Cl=3.0、Na=0.9。下列化学键中电负性差值最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_electronegativity"
+      ],
+      "difficulty": 0.55,
+      "solution": "计算差值：A 0.9-3.0=2.1（最大，离子键）；B 0.9；C 1.0；D 1.4。A 最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na-Cl 键",
+        "B. H-Cl 键",
+        "C. C-O 键",
+        "D. H-O 键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0017",
+      "item_type": "choice",
+      "stem": "短周期元素 X、Y、Z 的原子序数依次增大，X 原子的最外层电子数是其内层电子数的 2 倍；Y 原子的最外层电子数等于其周期数；Z 的最高价氧化物对应水化物是强酸。下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_structure_property_view"
+      ],
+      "difficulty": 0.75,
+      "solution": "X 内层 2、最外层 4 → C；Y 第三周期最外层 3 → Al；Z 最高价氧化物对应水化物为强酸，原子序数最大且短周期 → Cl。B 错（Al³⁺ 半径较小）；D 错（CCl₄ 共价化合物）；C 中需考虑 HCl>CH₄，但 H₂O>HCl，C 错。A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. X 是 C，Y 是 Al，Z 是 Cl",
+        "B. 简单离子半径：Z > Y > X",
+        "C. 简单氢化物的热稳定性：Z > Y > X",
+        "D. X 与 Z 形成的化合物为离子化合物"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0018",
+      "item_type": "solve",
+      "stem": "已知元素 R 的电离能数据（kJ/mol）：I₁=738，I₂=1451，I₃=7733，I₄=10540，I₅=13630。试推断 R 元素最可能是哪一族金属？其在周期表中位于第几周期？最高化合价是多少？",
+      "answer": "ⅡA 族；第三周期；+2 价",
+      "kps": [
+        "kp_chem12_structure_property_view"
+      ],
+      "difficulty": 0.75,
+      "solution": "由 I₁→I₂ 增加较少（约 1 倍），I₂→I₃ 突跃（>4 倍），表明 R 容易失去 2 个电子后再失去 1 个电子难——R 为 ⅡA 族金属。I₁=738 与 Mg 第一电离能（738 kJ/mol）吻合，故 R 为 Mg，位于第三周期 ⅡA 族，最高化合价 +2。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0019",
+      "item_type": "choice",
+      "stem": "下列关于共价键的叙述中，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_covalent_nature"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错：共价键强度由键能、键长及轨道重叠程度共同决定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 共价键的本质是原子间通过共用电子对形成的强烈相互作用",
+        "B. 共价键具有饱和性是因为每个原子能提供的未成对电子数有限",
+        "C. 共价键具有方向性是因为原子轨道重叠需沿电子云密度最大方向",
+        "D. 共价键的强度只由键长决定，与原子轨道重叠程度无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0020",
+      "item_type": "choice",
+      "stem": "下列分子中，共价键数目最多的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_covalent_nature"
+      ],
+      "difficulty": 0.4,
+      "solution": "CH₄ 含 4 个 C-H 共价键；H₂O 含 2 个 O-H 键；NH₃ 含 3 个 N-H 键；HF 含 1 个 H-F 键。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₄",
+        "B. H₂O",
+        "C. NH₃",
+        "D. HF"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0021",
+      "item_type": "choice",
+      "stem": "下列分子中，含 2 个 π 键的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_sigma_pi"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 乙烯含 1 个 π；B 1,3-丁二烯含 2 个双键共 2 个 π；C、D 无 π 键。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₂=CH₂",
+        "B. CH₂=CH-CH=CH₂（1,3-丁二烯）",
+        "C. CH₃CH₃",
+        "D. CH₃Cl"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0023",
+      "item_type": "choice",
+      "stem": "已知键能：H-F=565 kJ/mol、H-Cl=431 kJ/mol、H-Br=366 kJ/mol、H-I=298 kJ/mol。下列比较中，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_bond_parameters"
+      ],
+      "difficulty": 0.5,
+      "solution": "键能大→键短→分子稳定。HF>HCl>HBr>HI，稳定性 HF 最强，A 错；B 键长同序减小，B 错；C 错（HF 无还原性）；D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 稳定性 HF<HCl<HBr<HI",
+        "B. 键长 H-F>H-Cl>H-Br>H-I",
+        "C. 还原性 HF>HBr>HI",
+        "D. 键能 H-F>H-Cl>H-Br>H-I，键长 H-F<H-Cl<H-Br<H-I"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0024",
+      "item_type": "choice",
+      "stem": "下列分子中，键角最小的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_bond_parameters"
+      ],
+      "difficulty": 0.5,
+      "solution": "CH₄ 为 109°28′（sp³ 无孤对），NH₃ 为 107°（1 孤对），H₂O 为 104.5°（2 孤对），CO₂ 为 180°。H₂O 键角最小。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₄",
+        "B. NH₃",
+        "C. H₂O",
+        "D. CO₂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0025",
+      "item_type": "choice",
+      "stem": "下列化学键中，属于非极性共价键的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_bond_polarity"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 极性键（O-H）；B 极性键（C-H 电负性差较小，但仍为极性键）；C 同种原子间共价键为非极性键（O-O）；D 极性键（H-Cl）。",
+      "source": "llm_generated",
+      "options": [
+        "A. H₂O 中的 O-H 键",
+        "B. CH₄ 中的 C-H 键",
+        "C. Na₂O₂ 中的 O-O 键",
+        "D. HCl 中的 H-Cl 键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0026",
+      "item_type": "choice",
+      "stem": "下列分子中，含有非极性共价键的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_bond_polarity"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 乙醇含 C-C 单键（非极性键）；B、C、D 中无非极性键。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₃CH₂OH",
+        "B. CH₃Cl",
+        "C. H₂O",
+        "D. NH₃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0027",
+      "item_type": "choice",
+      "stem": "下列分子或离子的 VSEPR 模型为平面三角形的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_vsepr"
+      ],
+      "difficulty": 0.45,
+      "solution": "BF₃ 中心原子 B 有 3 对价层电子（无孤对），VSEPR 模型与分子构型均为平面三角形；NH₃ 为三角锥形；H₂O 为 V 形；CH₄ 为四面体形。",
+      "source": "llm_generated",
+      "options": [
+        "A. NH₃",
+        "B. H₂O",
+        "C. BF₃",
+        "D. CH₄"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0028",
+      "item_type": "choice",
+      "stem": "下列分子中，中心原子价层电子对数为 4 的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_vsepr"
+      ],
+      "difficulty": 0.5,
+      "solution": "CH₄: C 价层 4 对（4 σ 键、0 孤对）；NH₃: N 4 对（3 σ 键 + 1 孤对）；H₂O: O 4 对（2 σ + 2 孤对）；CO₂: C 2 对（直线形）。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₄",
+        "B. NH₃",
+        "C. H₂O",
+        "D. CO₂"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0029",
+      "item_type": "choice",
+      "stem": "下列分子中，中心原子采用 sp² 杂化的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_hybridization"
+      ],
+      "difficulty": 0.45,
+      "solution": "BF₃ 中 B 为 sp² 杂化（平面三角形）；CH₄、NH₃ 为 sp³；BeCl₂ 为 sp。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₄",
+        "B. BF₃",
+        "C. BeCl₂",
+        "D. NH₃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0030",
+      "item_type": "choice",
+      "stem": "乙烯分子中碳原子的杂化方式及 σ、π 键数目，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_hybridization"
+      ],
+      "difficulty": 0.5,
+      "solution": "乙烯 H₂C=CH₂ 含 4 个 C-H σ + 1 个 C-C σ + 1 个 C-C π，共 5 σ 1 π；两个 C 均 sp² 杂化。",
+      "source": "llm_generated",
+      "options": [
+        "A. sp³ 杂化，5 个 σ 键 1 个 π 键",
+        "B. sp² 杂化，5 个 σ 键 1 个 π 键",
+        "C. sp² 杂化，6 个 σ 键 1 个 π 键",
+        "D. sp 杂化，5 个 σ 键 2 个 π 键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0031",
+      "item_type": "choice",
+      "stem": "下列分子中，属于非极性分子的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_molecule_polarity"
+      ],
+      "difficulty": 0.5,
+      "solution": "CCl₄ 为正四面体对称结构，正负电荷中心重合，是非极性分子；CH₃Cl、CHCl₃、CH₂Cl₂ 结构不对称，是极性分子。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₃Cl",
+        "B. CHCl₃",
+        "C. CCl₄",
+        "D. CH₂Cl₂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0032",
+      "item_type": "choice",
+      "stem": "下列分子中，由极性键构成但属于非极性分子的是（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_molecule_polarity"
+      ],
+      "difficulty": 0.5,
+      "solution": "CO₂ 直线形对称、CH₄ 正四面体对称、BF₃ 平面三角形对称——均由极性键构成但为非极性分子；NH₃ 三角锥形不对称，是极性分子。",
+      "source": "llm_generated",
+      "options": [
+        "A. CO₂",
+        "B. CH₄",
+        "C. NH₃",
+        "D. BF₃"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0033",
+      "item_type": "choice",
+      "stem": "下列含氧酸中，酸性最强的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_structure_activity"
+      ],
+      "difficulty": 0.5,
+      "solution": "同种元素不同价态含氧酸，非羟基氧数越多酸性越强：HClO(1) < HClO₂(2) < HClO₃(3) < HClO₄(4)，HClO₄ 为最强。",
+      "source": "llm_generated",
+      "options": [
+        "A. HClO",
+        "B. HClO₂",
+        "C. HClO₃",
+        "D. HClO₄"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0034",
+      "item_type": "choice",
+      "stem": "下列事实中，不能用「相似相溶」原理解释的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_structure_activity"
+      ],
+      "difficulty": 0.55,
+      "solution": "NaCl 易溶于水是因为 NaCl 是离子化合物、水是极性溶剂，能电离并被水合——属于「相似相溶」的扩展（含离子键-极性溶剂也能溶）；但更直接原因是电离-水合过程。A、B 是典型相似相溶（非极性+非极性）；D 主要因氢键。严格按狭义相似相溶，C 最不典型。答案为 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碘易溶于 CCl₄ 而难溶于水",
+        "B. 油脂易溶于汽油",
+        "C. NaCl 易溶于水",
+        "D. 氨气易溶于水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0035",
+      "item_type": "choice",
+      "stem": "下列物质沸点高低比较中，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_vdw"
+      ],
+      "difficulty": 0.5,
+      "solution": "组成和结构相似的分子晶体，相对分子质量越大范德华力越大，沸点越高：F₂<Cl₂<Br₂<I₂；HF 因氢键沸点反常（H₂O、NH₃ 类似），故 C 中 HCl<HBr<HI 仍正确（无氢键）；D 中 CH₄<SiH₄<GeH₄，D 错。答案为 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. F₂ < Cl₂ < Br₂ < I₂",
+        "B. F₂ > Cl₂ > Br₂ > I₂",
+        "C. HCl > HBr > HI",
+        "D. CH₄ > SiH₄ > GeH₄"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0036",
+      "item_type": "choice",
+      "stem": "下列叙述中，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_vdw"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错：范德华力不是化学键；B 错：极性分子的范德华力较大；C 正确；D 错：范德华力越大熔沸点越高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 范德华力是存在于分子间的作用力，属于化学键",
+        "B. 范德华力的大小与分子的极性无关",
+        "C. 分子结构相似时，相对分子质量越大范德华力越大",
+        "D. 范德华力越大，物质的熔沸点越低"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0037",
+      "item_type": "choice",
+      "stem": "下列事实中，与氢键无关的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_hbond"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 冰中氢键形成空旷结构，密度小；B HF 氢键使沸点反常高；C 水分子间氢键致沸点高；D 干冰升华只与分子间力大小有关，与氢键无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冰的密度小于液态水",
+        "B. HF 的沸点反常高于 HCl",
+        "C. 水具有较高的沸点",
+        "D. 干冰易升华"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0038",
+      "item_type": "choice",
+      "stem": "下列关于氢键的说法，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_hbond"
+      ],
+      "difficulty": 0.55,
+      "solution": "D 错：分子内氢键使熔沸点降低；A、B、C 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 氢键的强度介于范德华力与化学键之间",
+        "B. HF、H₂O、NH₃ 中都存在氢键",
+        "C. 氢键有方向性和饱和性",
+        "D. 分子内氢键使物质的熔沸点升高"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0039",
+      "item_type": "choice",
+      "stem": "下列关于配位键的说法中，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_coordination"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错：配位键也是共价键；B 错：NH₄⁺ 中只有 1 个 N-H 是配位键（N 提供孤对电子给 H⁺）；C 错：Cu²⁺ 提供空轨道，NH₃ 提供孤对电子；D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 配位键形成后不再属于共价键",
+        "B. NH₄⁺ 中 N-H 键全部是配位键",
+        "C. [Cu(NH₃)₄]²⁺ 中 Cu²⁺ 提供孤对电子",
+        "D. 配位键形成时一方提供孤对电子、另一方提供空轨道"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0040",
+      "item_type": "choice",
+      "stem": "向 CuSO₄ 溶液中滴加氨水，先生成蓝色沉淀，后沉淀溶解生成深蓝色溶液。该深蓝色溶液中含量最多的离子是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_coordination"
+      ],
+      "difficulty": 0.55,
+      "solution": "CuSO₄ + 4NH₃·H₂O → [Cu(NH₃)₄]²⁺ + SO₄²⁻ + 4H₂O，深蓝色由 [Cu(NH₃)₄]²⁺ 产生。",
+      "source": "llm_generated",
+      "options": [
+        "A. Cu²⁺",
+        "B. [Cu(NH₃)₄]²⁺",
+        "C. NH₄⁺",
+        "D. SO₄²⁻"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0041",
+      "item_type": "choice",
+      "stem": "下列关于 CuSO₄ 溶液中滴加氨水的现象描述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_complex_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "向 CuSO₄ 滴氨水：先 Cu²⁺+2NH₃·H₂O→Cu(OH)₂↓(蓝色)+2NH₄⁺；继续滴加：Cu(OH)₂+4NH₃→[Cu(NH₃)₄]²⁺+2OH⁻，沉淀溶解为深蓝色溶液。",
+      "source": "llm_generated",
+      "options": [
+        "A. 开始即生成深蓝色溶液",
+        "B. 先有蓝色沉淀生成，氨水过量后沉淀溶解生成深蓝色溶液",
+        "C. 整个过程无沉淀生成",
+        "D. 先生成白色沉淀，后溶解"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0042",
+      "item_type": "solve",
+      "stem": "简述向 2 mL 0.1 mol/L CuSO₄ 溶液中逐滴加入浓氨水的全过程现象，并写出所涉及的化学方程式。",
+      "answer": "先生成蓝色 Cu(OH)₂ 沉淀，后沉淀溶解为深蓝色 [Cu(NH₃)₄]²⁺ 溶液；方程式：① CuSO₄ + 2NH₃·H₂O = Cu(OH)₂↓ + (NH₄)₂SO₄；② Cu(OH)₂ + 4NH₃·H₂O = [Cu(NH₃)₄](OH)₂ + 4H₂O；总：CuSO₄ + 4NH₃·H₂O = [Cu(NH₃)₄]SO₄ + 4H₂O。",
+      "kps": [
+        "kp_chem12_complex_lab"
+      ],
+      "difficulty": 0.55,
+      "solution": "现象：先有蓝色 Cu(OH)₂ 沉淀生成；继续滴加氨水，蓝色沉淀逐渐溶解，得到深蓝色透明溶液。化学方程式：① CuSO₄ + 2NH₃·H₂O = Cu(OH)₂↓ + (NH₄)₂SO₄；② Cu(OH)₂ + 4NH₃·H₂O = [Cu(NH₃)₄](OH)₂ + 4H₂O；总：CuSO₄ + 4NH₃·H₂O = [Cu(NH₃)₄]SO₄ + 4H₂O。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0043",
+      "item_type": "choice",
+      "stem": "下列关于晶体与非晶体的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_crystal_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错：晶体需在适当条件下才能呈现规则外形；B 错：多晶体各向同性；C 正确；D 错：玻璃和橡胶是非晶体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 晶体都具有规则的几何外形",
+        "B. 晶体的物理性质一定是各向异性的",
+        "C. 非晶体没有固定的熔点",
+        "D. 玻璃和橡胶都是晶体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0044",
+      "item_type": "choice",
+      "stem": "下列物质中，属于晶体的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_crystal_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "蔗糖是晶体（有固定熔点、各向异性）；玻璃、沥青、橡胶为非晶体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 玻璃",
+        "B. 沥青",
+        "C. 蔗糖",
+        "D. 橡胶"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0045",
+      "item_type": "choice",
+      "stem": "下列关于液晶的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_amorphous_liquid"
+      ],
+      "difficulty": 0.45,
+      "solution": "液晶是介于液体和晶体之间的过渡状态，不是典型晶体，D 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 液晶具有液体的流动性",
+        "B. 液晶具有晶体的光学各向异性",
+        "C. 液晶显示器利用液晶的光学特性工作",
+        "D. 液晶是典型的晶体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0046",
+      "item_type": "choice",
+      "stem": "下列关于物质聚集状态的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_amorphous_liquid"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错：还有等离子体等；B 错；C 正确；D 错：改变聚集状态可获得特殊材料。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质只有固、液、气三种聚集状态",
+        "B. 等离子体不属于物质聚集状态",
+        "C. 混合型晶体普遍存在",
+        "D. 改变聚集状态不可能获得特殊材料"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0047",
+      "item_type": "choice",
+      "stem": "下列属于分子晶体的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_molecular_crystal"
+      ],
+      "difficulty": 0.4,
+      "solution": "干冰由 CO₂ 分子以分子间作用力结合形成分子晶体；金刚石是共价晶体；NaCl 是离子晶体；铜是金属晶体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干冰(CO₂)",
+        "B. 金刚石",
+        "C. 食盐 NaCl",
+        "D. 铜"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0048",
+      "item_type": "choice",
+      "stem": "下列物质中，属于分子晶体的有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_molecular_crystal"
+      ],
+      "difficulty": 0.45,
+      "solution": "冰（H₂O 分子以氢键结合）、干冰、碘均为分子晶体；NaCl 为离子晶体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冰",
+        "B. 干冰",
+        "C. 碘",
+        "D. 食盐"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0049",
+      "item_type": "choice",
+      "stem": "下列关于金刚石晶体结构的说法，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_covalent_crystal"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错：金刚石中共价键结合，无自由电子，故不导电；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每个碳原子与相邻 4 个碳原子以共价键结合",
+        "B. 金刚石中共价键的键角为 109°28′",
+        "C. 金刚石是空间网状结构",
+        "D. 金刚石中碳原子间存在自由电子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0050",
+      "item_type": "choice",
+      "stem": "下列物质熔点最高的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_covalent_crystal"
+      ],
+      "difficulty": 0.4,
+      "solution": "金刚石为共价晶体，熔点极高；干冰、冰为分子晶体，熔点低；钠为金属晶体，熔点不高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干冰",
+        "B. 冰",
+        "C. 金刚石",
+        "D. 钠"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0051",
+      "item_type": "choice",
+      "stem": "下列关于 NaCl 晶体的叙述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_ionic_crystal"
+      ],
+      "difficulty": 0.5,
+      "solution": "NaCl 晶胞中 Na⁺ 与 Cl⁻ 配位数均为 6；熔融时可导电；NaCl 中只含离子键不是共价键。C、D 错。B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每个 Na⁺ 周围紧邻 4 个 Cl⁻，每个 Cl⁻ 周围紧邻 4 个 Na⁺",
+        "B. 每个 Na⁺ 周围紧邻 6 个 Cl⁻，每个 Cl⁻ 周围紧邻 6 个 Na⁺",
+        "C. NaCl 晶体熔融时不导电",
+        "D. NaCl 中只含共价键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0052",
+      "item_type": "choice",
+      "stem": "下列关于离子晶体的叙述，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_ionic_crystal"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错：晶格能越大，熔沸点越高；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 离子晶体由阴、阳离子通过离子键结合",
+        "B. 离子晶体熔沸点较高",
+        "C. 离子晶体固态时不导电，熔融或溶于水时可导电",
+        "D. 一般晶格能越大，离子晶体熔沸点越低"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0053",
+      "item_type": "choice",
+      "stem": "下列关于金属键的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_metallic_crystal"
+      ],
+      "difficulty": 0.4,
+      "solution": "金属键不是离子键，是金属阳离子与自由电子间的相互作用；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 金属键是金属阳离子与自由电子之间的相互作用",
+        "B. 自由电子的存在使金属具有良好导电、导热性",
+        "C. 金属具有延展性是因为金属键没有方向性",
+        "D. 金属键属于离子键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0054",
+      "item_type": "choice",
+      "stem": "下列金属晶体堆积模型中，空间利用率最高的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_metallic_crystal"
+      ],
+      "difficulty": 0.55,
+      "solution": "面心立方最密堆积空间利用率约 74%，为最高；体心立方约 68%；简单立方仅约 52%；六方最密堆积也为 74%。所以铜型与镁型均为最密堆积。本题 B 与 C 都对，但面心立方与六方最密利用率相同。选 B 较为典型。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体心立方堆积（钾型）",
+        "B. 面心立方最密堆积（铜型）",
+        "C. 六方最密堆积（镁型）",
+        "D. 简单立方堆积"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0056",
+      "item_type": "choice",
+      "stem": "下列比较中，熔点高低顺序正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_crystal_compare"
+      ],
+      "difficulty": 0.55,
+      "solution": "金刚石（原子晶体）>食盐（离子晶体）>钠（金属）>干冰（分子晶体）。A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 金刚石 > 食盐 > 钠 > 干冰",
+        "B. 干冰 > 钠 > 食盐 > 金刚石",
+        "C. 钠 > 金刚石 > 食盐 > 干冰",
+        "D. 金刚石 > 钠 > 食盐 > 干冰"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0057",
+      "item_type": "solve",
+      "stem": "金属钠为体心立方堆积，晶胞参数 a = 4.29 × 10⁻⁸ cm。已知 Na 的摩尔质量 M = 23 g/mol，阿伏伽德罗常数 Nₐ = 6.02 × 10²³ mol⁻¹。计算金属钠的晶体密度（g/cm³，保留两位小数）。",
+      "answer": "0.97 g/cm³",
+      "kps": [
+        "kp_chem12_crystal_calc"
+      ],
+      "difficulty": 0.8,
+      "solution": "体心立方晶胞含 Na 原子数 = 8 × 1/8 + 1 = 2 个；a = 4.29 × 10⁻⁸ cm，体积 V = a³ = (4.29)³ × 10⁻²⁴ cm³ ≈ 78.94 × 10⁻²⁴ cm³；ρ = ZM/(Nₐ · V) = 2 × 23 / (6.02 × 10²³ × 78.94 × 10⁻²⁴) ≈ 46 / 47.5 ≈ 0.97 g/cm³。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0058",
+      "item_type": "solve",
+      "stem": "NaCl 晶胞为面心立方结构，每个晶胞含 4 个 NaCl。已知 NaCl 晶胞参数 a = 5.64 × 10⁻⁸ cm，NaCl 摩尔质量 M = 58.5 g/mol。计算 NaCl 晶体的密度（g/cm³，保留两位小数）。",
+      "answer": "2.17 g/cm³",
+      "kps": [
+        "kp_chem12_crystal_calc"
+      ],
+      "difficulty": 0.8,
+      "solution": "每个晶胞含 NaCl 数 Z=4；a=5.64 × 10⁻⁸ cm；V=a³=1.79 × 10⁻²² cm³；ρ=ZM/(Nₐ · V)=4×58.5/(6.02 × 10²³ × 1.79 × 10⁻²²)=234/107.76≈2.17 g/cm³。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0059",
+      "item_type": "choice",
+      "stem": "下列关于超分子的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_supermolecular"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错：超分子是分子通过分子间作用力结合；B 正确；D 错：超分子靠分子间作用力维系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 超分子是原子通过共价键结合形成的复杂分子",
+        "B. 冠醚能选择性地识别碱金属离子是分子识别",
+        "C. 超分子不属于分子",
+        "D. 超分子内不存在分子间作用力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0060",
+      "item_type": "choice",
+      "stem": "下列应用与超分子化学无关的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_supermolecular"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C 均与超分子（分子间作用力）有关；D 是化学反应，与超分子无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冠醚识别碱金属离子",
+        "B. 环糊精包合药物分子",
+        "C. 氢键使 DNA 形成双螺旋",
+        "D. 钠与水反应生成 NaOH 和 2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0061",
+      "item_type": "choice",
+      "stem": "下列关于测定晶体结构的方法，说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_xray"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 正确；B 错：红外光谱用于识别化学键与官能团；C 错：¹H NMR 测氢原子种类和数目；D 错：质谱测相对分子质量。",
+      "source": "llm_generated",
+      "options": [
+        "A. X 射线衍射是测定晶体结构最常用的方法",
+        "B. 红外光谱主要用于测定元素的种类",
+        "C. 核磁共振氢谱主要用于测定碳原子数",
+        "D. 质谱法主要用于测定晶体结构"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0062",
+      "item_type": "choice",
+      "stem": "下列方法中，可以直接确定有机物相对分子质量的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_xray"
+      ],
+      "difficulty": 0.4,
+      "solution": "质谱通过最大质荷比峰得相对分子质量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 红外光谱",
+        "B. 紫外光谱",
+        "C. 质谱",
+        "D. 核磁共振氢谱"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0063",
+      "item_type": "choice",
+      "stem": "下列关于研究物质结构意义的说法，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_structure_value"
+      ],
+      "difficulty": 0.4,
+      "solution": "C 错：物质结构的探索是无止境的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质结构决定物质性质",
+        "B. 研究物质结构可预测与制备新材料",
+        "C. 物质结构的探索已经完成",
+        "D. 结构测定是化学家认识物质的重要途径"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0064",
+      "item_type": "choice",
+      "stem": "下列对结构决定性质的理解，最准确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_structure_value"
+      ],
+      "difficulty": 0.5,
+      "solution": "结构是决定物质性质的主要因素，但性质还受外界条件（温度、压力等）影响，故表述「结构是决定性质的主要因素之一」最准确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 结构与性质无关",
+        "B. 结构完全决定性质",
+        "C. 结构是决定性质的主要因素之一",
+        "D. 结构决定所有宏观"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0065",
+      "item_type": "solve",
+      "stem": "计算 SO₂ 中心原子 S 的价层电子对数，并推断 SO₂ 的 VSEPR 模型与分子构型。",
+      "answer": "价层电子对数=3；VSEPR 模型平面三角形；分子构型 V 形",
+      "kps": [
+        "kp_chem12_vsepr_calc"
+      ],
+      "difficulty": 0.65,
+      "solution": "S 价电子数 6；与 2 个 O 形成 2 个 σ 键（每个 O 提供 0 电子）；孤对电子数=(6-2×2)/2=1 对；价层电子对数=2+1=3 对；VSEPR 模型为平面三角形；扣除 1 对孤对电子后，分子构型为 V 形（角形）。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0066",
+      "item_type": "solve",
+      "stem": "推断 H₃O⁺ 中 O 的杂化方式与空间构型。",
+      "answer": "sp³ 杂化，三角锥形",
+      "kps": [
+        "kp_chem12_vsepr_calc"
+      ],
+      "difficulty": 0.65,
+      "solution": "O 价电子 6；带 +1 电荷减 1；与 3 个 H 形成 3 σ 键；孤对电子数=(6-1-3)/2=1 对；价层电子对数=3+1=4；VSEPR 模型为四面体形；扣除 1 孤对后分子构型为三角锥形；杂化方式为 sp³。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0067",
+      "item_type": "choice",
+      "stem": "下列分子或离子中，中心原子杂化方式与其他三者不同的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_hybrid_judge"
+      ],
+      "difficulty": 0.55,
+      "solution": "CH₄、NH₄⁺、H₃O⁺ 中中心原子均为 sp³ 杂化；BF₃ 中 B 为 sp² 杂化。故 D 不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₄",
+        "B. NH₄⁺",
+        "C. H₃O⁺",
+        "D. BF₃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0068",
+      "item_type": "choice",
+      "stem": "下列分子中，中心原子采取 sp² 杂化的有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_hybrid_judge"
+      ],
+      "difficulty": 0.55,
+      "solution": "乙烯 (sp²)、苯 (sp²)、SO₃ (sp²) 均为 sp²；CO₂ 中 C 是 sp 杂化（直线形）。",
+      "source": "llm_generated",
+      "options": [
+        "A. C₂H₄",
+        "B. C₆H₆",
+        "C. CO₂",
+        "D. SO₃"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0069",
+      "item_type": "choice",
+      "stem": "下列关于碳原子成键特点的说法中，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_carbon_skeleton"
+      ],
+      "difficulty": 0.4,
+      "solution": "D 错：碳碳之间可形成单键、双键、叁键。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碳原子总是形成 4 个共价键",
+        "B. 碳原子可通过 sp³、sp²、sp 杂化形成单键、双键或叁键",
+        "C. 碳链可有链状和环状",
+        "D. 碳原子之间只能形成单键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0070",
+      "item_type": "choice",
+      "stem": "CH₂=CH-CH=CH₂ 中碳原子采用的杂化方式为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_carbon_skeleton"
+      ],
+      "difficulty": 0.45,
+      "solution": "1,3-丁二烯中 4 个 C 均为 sp² 杂化（共轭双键）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全部 sp³",
+        "B. 全部 sp²",
+        "C. 全部 sp",
+        "D. 既有 sp² 又有 sp³"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0071",
+      "item_type": "choice",
+      "stem": "下列化学用语中，属于结构简式的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_organic_repr"
+      ],
+      "difficulty": 0.4,
+      "solution": "C₂H₆O 是分子式；展开式是结构式；键线式用折线表示；CH₃COOH 是结构简式。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₃CH₂OH 的展开结构式",
+        "B. 乙醇的键线式（一横折线连接端点）",
+        "C. C₂H₆O",
+        "D. CH₃COOH（乙酸）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0072",
+      "item_type": "choice",
+      "stem": "下列有机物键线式中，对应的结构简式正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_organic_repr"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 是丙烷；B 是乙烯；C 应是苯（C₆H₆）；D 不规范。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一条直线（端点+2 交点）：CH₃CH₂CH₃",
+        "B. 含一个 C=C 双键的两端折线：CH₂=CH₂",
+        "C. 一个苯环：CH₃CH₂CH₃",
+        "D. 一根带叉的线：HCOOH"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0073",
+      "item_type": "choice",
+      "stem": "分子式为 C₄H₁₀ 的同分异构体共有（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_isomer_writing"
+      ],
+      "difficulty": 0.45,
+      "solution": "C₄H₁₀ 为丁烷，碳链异构：正丁烷 CH₃CH₂CH₂CH₃ 和异丁烷 (CH₃)₃CH，共 2 种。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 种",
+        "B. 2 种",
+        "C. 3 种",
+        "D. 4 种"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0074",
+      "item_type": "choice",
+      "stem": "C₃H₆O 的同分异构体中，属于醛类的有（　　）种",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_isomer_writing"
+      ],
+      "difficulty": 0.55,
+      "solution": "C₃H₆O 含醛基 (-CHO 的只有丙醛 CH₃CH₂CHO；CH₂=CH-OH 等属烯醇或醇醚；故醛类 1 种。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 种",
+        "B. 2 种",
+        "C. 3 种",
+        "D. 4 种"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0075",
+      "item_type": "solve",
+      "stem": "写出分子式为 C₅H₁₂O 的所有醇类同分异构体的结构简式，并按系统命名法命名。",
+      "answer": "6 种醇类异构（见 solution）",
+      "kps": [
+        "kp_chem12_isomer_writing"
+      ],
+      "difficulty": 0.75,
+      "solution": "C₅H₁₂O 醇类（-OH 连饱和碳）：① CH₃CH₂CH₂CH₂CH₂OH（1-戊醇）；② CH₃CH₂CH₂CH(OH)CH₃（2-戊醇）；③ (CH₃)₂CHCH₂CH₂OH（3-甲基-1-丁醇）；④ (CH₃)₂CHCH(OH)CH₃（3-甲基-2-丁醇）；⑤ (CH₃)₃CCH₂OH（2,2-二甲基-1-丙醇）；⑥ (CH₃)₂C(OH)CH₂CH₃（2-甲基-2-丁醇）。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0076",
+      "item_type": "choice",
+      "stem": "苯的一元取代物只有 1 种，说明苯分子中 6 个氢原子的关系是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_isomer_counting"
+      ],
+      "difficulty": 0.45,
+      "solution": "苯分子高度对称，6 个 H 等效，一元取代产物只有 1 种。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全部等效",
+        "B. 两两等效",
+        "C. 分成 3 种",
+        "D. 分成 6 种"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0077",
+      "item_type": "choice",
+      "stem": "甲苯 (C₆H₅CH₃) 苯环上二元硝基取代物的同分异构体有（　　）种",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_isomer_counting"
+      ],
+      "difficulty": 0.55,
+      "solution": "甲苯苯环上邻、间、对位 3 种。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2 种",
+        "B. 3 种",
+        "C. 4 种",
+        "D. 6 种"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0078",
+      "item_type": "choice",
+      "stem": "下列分离提纯方法中，适用于分离互溶但沸点不同的液体混合物的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_organic_methods"
+      ],
+      "difficulty": 0.4,
+      "solution": "蒸馏利用沸点差异分离互溶液体；过滤分离固液；萃取利用溶解度；重结晶提纯固体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过滤",
+        "B. 蒸馏",
+        "C. 萃取",
+        "D. 重结晶"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0079",
+      "item_type": "choice",
+      "stem": "下列方法中，可用于确定有机物结构式的有（　　）",
+      "answer": "A,C",
+      "kps": [
+        "kp_chem12_organic_methods"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 红外光谱识别官能团、C NMR 氢谱确定 H 种类与数目比是确定结构的核心；D 质谱测相对分子质量（结合元素分析得分子式）；B 紫外光谱信息较少。本题 A、C 最直接。",
+      "source": "llm_generated",
+      "options": [
+        "A. 红外光谱",
+        "B. 紫外光谱",
+        "C. 核磁共振氢谱",
+        "D. 质谱"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0080",
+      "item_type": "choice",
+      "stem": "用重结晶法提纯苯甲酸的操作顺序，下列正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_recrystallization"
+      ],
+      "difficulty": 0.45,
+      "solution": "重结晶标准顺序：溶解（加热）→趁热过滤（除去不溶性杂质）→冷却结晶→过滤（收集晶体）→干燥。",
+      "source": "llm_generated",
+      "options": [
+        "A. 溶解→冷却结晶→过滤→趁热过滤",
+        "B. 溶解→趁热过滤→冷却结晶→过滤",
+        "C. 趁热过滤→溶解→冷却结晶→过滤",
+        "D. 冷却结晶→溶解→过滤→趁热过滤"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0081",
+      "item_type": "choice",
+      "stem": "用重结晶法提纯苯甲酸时，趁热过滤的目的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_recrystallization"
+      ],
+      "difficulty": 0.45,
+      "solution": "趁热过滤的目的是趁热除去不溶性杂质（杂质不溶于热溶剂而被滤去），可溶性杂质留在溶液中，冷却后苯甲酸结晶析出。",
+      "source": "llm_generated",
+      "options": [
+        "A. 除去不溶性杂质",
+        "B. 除去可溶性杂质",
+        "C. 加速结晶",
+        "D. 提高产率"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0082",
+      "item_type": "choice",
+      "stem": "下列官能团中，属于醛基的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_functional_groups"
+      ],
+      "difficulty": 0.4,
+      "solution": "-CHO 是醛基；-OH 是羟基；-COOH 是羧基；-COO- 是酯基。",
+      "source": "llm_generated",
+      "options": [
+        "A. -OH",
+        "B. -CHO",
+        "C. -COOH",
+        "D. -COO-"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0083",
+      "item_type": "choice",
+      "stem": "下列有机物中，官能团为羟基的有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_functional_groups"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 醇羟基、B 酚羟基、D 醇羟基均含 -OH；C 乙酸官能团是 -COOH 不是 -OH。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙醇 CH₃CH₂OH",
+        "B. 苯酚 C₆H₅OH",
+        "C. 乙酸 CH₃COOH",
+        "D. 葡萄糖 (含多个 -OH"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0084",
+      "item_type": "choice",
+      "stem": "下列烷烃命名中，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_alkane"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错（主链选错）；C 错（应选最长链为主链，命名 2-甲基丁烷）；D 错（主链为 5 个碳时 2-甲基戊烷正确，若侧链不当则错）；B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2-乙基丁烷",
+        "B. 2,2-二甲基丙烷",
+        "C. 3-甲基丁烷",
+        "D. 2-甲基戊烷"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0085",
+      "item_type": "choice",
+      "stem": "下列关于烷烃的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_alkane"
+      ],
+      "difficulty": 0.4,
+      "solution": "D 错：烷烃不与酸性 KMnO₄ 反应（饱和键稳定）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 烷烃分子中碳碳单键可自由旋转",
+        "B. 烷烃可与氯气发生取代反应",
+        "C. 烷烃在空气中点燃可完全燃烧生成 CO₂ 和 H₂O",
+        "D. 烷烃能使酸性高锰酸钾溶液褪色"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0086",
+      "item_type": "choice",
+      "stem": "下列反应中，属于乙烯加成反应的是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem12_alkene_alkyne"
+      ],
+      "difficulty": 0.5,
+      "solution": "A、B 为加成反应（双键打开加 H₂O 或 Br₂）；C 为氧化；D 为加聚。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₂=CH₂ + H₂O → CH₃CH₂OH",
+        "B. CH₂=CH₂ + Br₂ → CH₂BrCH₂Br",
+        "C. CH₂=CH₂ 燃烧",
+        "D. CH₂=CH₂ → 聚乙烯"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0087",
+      "item_type": "choice",
+      "stem": "实验室制取乙炔气体，下列说法错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_alkene_alkyne"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 错：乙炔含碳量高，燃烧时火焰明亮并伴有浓烟。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用电石（CaC₂）与水反应",
+        "B. 反应较剧烈，通常用饱和食盐水代替水减缓反应",
+        "C. 乙炔含 C 键，可用溴的四氯化碳溶液检验",
+        "D. 乙炔燃烧时火焰明亮，无黑烟"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0088",
+      "item_type": "choice",
+      "stem": "下列关于苯和甲苯的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_aromatics"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错：苯不能使酸性 KMnO₄ 褪色，但甲苯能（B 项较准确）；C 正确：甲苯硝化以邻、对位产物为主，对硝基甲苯为主产物之一；D 正确但与题意\"苯环与侧链的相互影响\"关联度低。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苯能使酸性 KMnO₄ 溶液褪色，甲苯不能",
+        "B. 苯的同系物均能使酸性 KMnO₄ 溶液褪色",
+        "C. 甲苯硝化生成对硝基甲苯为主产物",
+        "D. 苯和甲苯都能与 H₂ 加成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0089",
+      "item_type": "choice",
+      "stem": "下列化合物中，属于苯的同系物的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_aromatics"
+      ],
+      "difficulty": 0.4,
+      "solution": "苯的同系物通式 CₙH₂ₙ₋₆（n≥6），含 1 个苯环、其余为烷基侧链；B 符合；A 是苯本身；C、D 含官能团不属于烃类同系物。",
+      "source": "llm_generated",
+      "options": [
+        "A. C₆H₆（苯）",
+        "B. C₆H₅-CH₃（甲苯）",
+        "C. C₆H₅-OH（苯酚）",
+        "D. C₆H₅-NO₂（硝基苯）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0090",
+      "item_type": "choice",
+      "stem": "溴乙烷 (CH₃CH₂Br) 在 NaOH 乙醇溶液中加热主要发生的反应是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_halohydrocarbon"
+      ],
+      "difficulty": 0.5,
+      "solution": "NaOH 乙醇溶液、加热——消去反应生成乙烯；水溶液条件才会发生取代（水解）生成乙醇。",
+      "source": "llm_generated",
+      "options": [
+        "A. 取代反应（生成乙醇）",
+        "B. 消去反应（生成乙烯）",
+        "C. 加成反应",
+        "D. 加聚反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0091",
+      "item_type": "choice",
+      "stem": "下列卤代烃中，能发生消去反应生成烯烃的是（　　）",
+      "answer": "B,C,D",
+      "kps": [
+        "kp_chem12_halohydrocarbon"
+      ],
+      "difficulty": 0.55,
+      "solution": "A CH₃Br 邻位无 C-H 不能消去；B、C、D 邻位碳有 H 均可消去。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₃Br",
+        "B. (CH₃)₃CBr",
+        "C. CH₃CH₂CH₂Br",
+        "D. (CH₃)₂CHBr"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0093",
+      "item_type": "choice",
+      "stem": "下列有机物中，能与金属钠反应放出氢气的有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_alcohols"
+      ],
+      "difficulty": 0.5,
+      "solution": "含 -OH（醇或酸）的有机物与钠反应放出 H₂；乙醛无 -OH 不反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙醇",
+        "B. 乙酸",
+        "C. 乙醛",
+        "D. 甘油（丙三醇）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0094",
+      "item_type": "choice",
+      "stem": "下列关于苯酚的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_phenols"
+      ],
+      "difficulty": 0.55,
+      "solution": "B 错：苯酚酸性弱于碳酸；C 错：苯酚遇 FeCl₃ 显紫色；D 错：与浓溴水生成 2,4,6-三溴苯酚白色沉淀；A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苯酚与 NaOH 反应生成苯酚钠和水",
+        "B. 苯酚的酸性比碳酸强",
+        "C. 苯酚遇 FeCl₃ 溶液不显色",
+        "D. 苯酚与浓溴水不反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0095",
+      "item_type": "solve",
+      "stem": "写出苯酚与下列物质反应的化学方程式：① NaOH 溶液；② 浓溴水；③ Na₂CO₃ 溶液。",
+      "answer": "① C₆H₅OH + NaOH → C₆H₅ONa + H₂O；② C₆H₅OH + 3Br₂ → C₆H₂Br₃OH↓ + 3HBr；③ C₆H₅OH + Na₂CO₃ → C₆H₅ONa + NaHCO₃",
+      "kps": [
+        "kp_chem12_phenols"
+      ],
+      "difficulty": 0.65,
+      "solution": "① C₆H₅OH + NaOH → C₆H₅ONa + H₂O；② C₆H₅OH + 3Br₂ → C₆H₂Br₃OH↓(白色) + 3HBr；③ C₆H₅OH + Na₂CO₃ → C₆H₅ONa + NaHCO₃（苯酚酸性弱于 H₂CO₃ 第一步电离、强于 HCO₃⁻）。",
+      "source": "llm_generated",
+      "form": "equation_writing",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0096",
+      "item_type": "choice",
+      "stem": "下列反应中，常用来检验醛基的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_aldehydes"
+      ],
+      "difficulty": 0.4,
+      "solution": "银镜反应（与银氨溶液水浴加热）生成银镜，检验 -CHO；新制 Cu(OH)₂ 共热生成砖红色 Cu₂O 也可检验。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加氢反应",
+        "B. 银镜反应",
+        "C. 酯化反应",
+        "D. 消去反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0097",
+      "item_type": "choice",
+      "stem": "甲醛 (HCHO) 与足量新制 Cu(OH)₂ 悬浊液共热，反应中 1 mol HCHO 可生成 Cu₂O 的物质的量为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_aldehydes"
+      ],
+      "difficulty": 0.65,
+      "solution": "HCHO 含 2 个 -CHO（可视为 H-CHO-CHO-H 结构氧化为 2 分子 HCOOH）；每个 -CHO 消耗 2 Cu(OH)₂ 生成 1 Cu₂O，故 1 mol HCHO 对应 2 mol Cu₂O。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 mol",
+        "B. 2 mol",
+        "C. 4 mol",
+        "D. 0.5 mol"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0098",
+      "item_type": "choice",
+      "stem": "下列关于乙酸的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_carboxylic"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 正确；B 错：乙酸与 Na₂CO₃ 反应放出 CO₂；C 错：乙酸酸性强于碳酸；D 错：乙酸可与醇发生酯化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙酸是无色、有刺激性气味的液体",
+        "B. 乙酸不能与 Na₂CO₃ 反应",
+        "C. 乙酸的酸性比碳酸弱",
+        "D. 乙酸不能发生酯化反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0099",
+      "item_type": "choice",
+      "stem": "下列有机物中，既能与 NaOH 反应，又能与新制 Cu(OH)₂ 反应的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_carboxylic"
+      ],
+      "difficulty": 0.55,
+      "solution": "乙酸既含 -COOH（与 NaOH 中和），又能在碱性条件下与新制 Cu(OH)₂ 反应。乙醛只与新制 Cu(OH)₂ 反应（与 NaOH 不反应）；苯酚与 NaOH 反应但不与 Cu(OH)₂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙醇",
+        "B. 乙酸",
+        "C. 乙醛",
+        "D. 苯酚"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0100",
+      "item_type": "choice",
+      "stem": "下列关于乙酸乙酯水解反应的说法，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_ester"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 错：皂化反应专指油脂（高级脂肪酸甘油酯）在 NaOH 溶液中的水解；乙酸乙酯碱性水解不属于皂化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在稀硫酸催化下可发生水解",
+        "B. 在 NaOH 溶液中水解更完全",
+        "C. 水解产物是乙酸和乙醇",
+        "D. 碱性水解也称皂化反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0101",
+      "item_type": "choice",
+      "stem": "油脂氢化（硬化油）的目的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_ester"
+      ],
+      "difficulty": 0.45,
+      "solution": "油脂氢化使 C=C 加成为饱和键，提高熔点变为硬化油（固态），便于储存和制人造黄油。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使液态油变为固态，提高稳定性",
+        "B. 降低油脂熔点",
+        "C. 增强油脂的不饱和度",
+        "D. 提高油脂的挥发性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0102",
+      "item_type": "choice",
+      "stem": "下列反应中，属于加成反应的有（　　）",
+      "answer": "A,C",
+      "kps": [
+        "kp_chem12_reaction_types"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 加成（双键打开加水）；B 取代（FeBr₃ 催化溴代）；D 取代。A、C 属加成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙烯与水的反应",
+        "B. 苯与液溴（FeBr₃催化）",
+        "C. 油脂氢化",
+        "D. 乙酸与乙醇的酯化"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0104",
+      "item_type": "choice",
+      "stem": "实验室制备乙酸乙酯时，下列操作错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_ester_lab"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 错：导管口应在液面上方约 0.5 cm 处，防止倒吸。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用浓硫酸作催化剂",
+        "B. 反应液中加入碎瓷片防暴沸",
+        "C. 导管口伸入饱和 Na₂CO₃ 溶液液面以下",
+        "D. 加热开始先用小火再大火"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0105",
+      "item_type": "solve",
+      "stem": "简述实验室制备乙酸乙酯的实验操作，并写出反应方程式。饱和 Na₂CO₃ 溶液的作用是什么？",
+      "answer": "操作+方程式见 solution",
+      "kps": [
+        "kp_chem12_ester_lab"
+      ],
+      "difficulty": 0.65,
+      "solution": "操作：在大试管中加入乙醇 3 mL，再缓慢加入浓硫酸 2 mL，冷却后加入碎瓷片和冰醋酸 3 mL，加热（先小火后大火）产生蒸气，通入盛饱和 Na₂CO₃ 溶液的接收器液面上方。方程式：CH₃COOH + CH₃CH₂OH ⇌(浓硫酸催化, Δ) CH₃COOCH₂CH₃ + H₂O。Na₂CO₃ 溶液作用：① 吸收乙醇；② 中和乙酸；③ 降低乙酸乙酯溶解度便于分层。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0106",
+      "item_type": "choice",
+      "stem": "下列检验方法中，能用于检验碳碳双键的是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem12_functional_test"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 加成使溴褪色、B 氧化使 KMnO₄ 褪色——均可检验 C=C；C 检验 -CHO；D 检验 -CHO 或 -COOH。",
+      "source": "llm_generated",
+      "options": [
+        "A. 溴的四氯化碳溶液褪色",
+        "B. 酸性 KMnO₄ 溶液褪色",
+        "C. 银镜反应",
+        "D. 与新制 Cu(OH)₂ 反应"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0107",
+      "item_type": "choice",
+      "stem": "检验有机物中卤素原子的正确操作顺序是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_functional_test"
+      ],
+      "difficulty": 0.5,
+      "solution": "卤代烃中卤素检验：先加 NaOH 水溶液加热使卤素以 X⁻ 形式游离，再加稀硝酸酸化（中和过量 NaOH，否则 AgNO₃ 会与 OH⁻ 生成 Ag₂O 沉淀干扰），最后加 AgNO₃ 观察沉淀颜色。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加 NaOH 溶液→加 AgNO₃→加稀硝酸",
+        "B. 加 NaOH 溶液加热→加稀硝酸酸化→加 AgNO₃ 溶液",
+        "C. 加 AgNO₃ 溶液→加 NaOH 溶液→加稀硝酸",
+        "D. 加稀硝酸→加 NaOH 溶液→加 AgNO₃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0108",
+      "item_type": "solve",
+      "stem": "由乙烯为原料（无机试剂任选）合成乙酸乙酯，写出合成路线（注明反应条件）。",
+      "answer": "乙烯→乙醇→乙醛→乙酸→乙酸乙酯（4 步）",
+      "kps": [
+        "kp_chem12_synthesis_route"
+      ],
+      "difficulty": 0.75,
+      "solution": "合成路线：① CH₂=CH₂ + H₂O →(催化剂) CH₃CH₂OH；② 2CH₂=CH₂ + O₂ →(催化剂) 2CH₃CHO；③ 2CH₃CHO + O₂ →(催化剂) 2CH₃COOH；④ CH₃COOH + CH₃CH₂OH ⇌(浓硫酸, Δ) CH₃COOCH₂CH₃ + H₂O。",
+      "source": "llm_generated",
+      "form": "open_design",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0109",
+      "item_type": "solve",
+      "stem": "由乙醇为原料合成乙二醇 (HOCH₂CH₂OH)，写出合理的合成路线。",
+      "answer": "乙醇→乙烯→1,2-二溴乙烷→乙二醇（3 步）",
+      "kps": [
+        "kp_chem12_synthesis_route"
+      ],
+      "difficulty": 0.7,
+      "solution": "① CH₃CH₂OH →(浓硫酸, 170℃) CH₂=CH₂（消去反应）；② CH₂=CH₂ + Br₂ → CH₂BrCH₂Br（加成）；③ CH₂BrCH₂Br + 2NaOH →(水溶液) HOCH₂CH₂OH + 2NaBr（水解）。",
+      "source": "llm_generated",
+      "form": "open_design",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0110",
+      "item_type": "choice",
+      "stem": "评价有机合成路线时，下列哪一项不属于绿色化学的主要考察因素（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_synthesis_eval"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 与绿色化学无直接关系；A、B、C 均属绿色化学的考察因素。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应原料的毒性",
+        "B. 原子经济性（原子利用率）",
+        "C. 反应中间步骤的总数",
+        "D. 产物的颜色"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0111",
+      "item_type": "choice",
+      "stem": "下列合成路线设计中，原子利用率最高的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_synthesis_eval"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 一步酯化，原子利用率最高；A、B 多步反应有副产物（水、氧损失等）；D 不直接反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙烯 → 乙醇 → 乙酸 → 乙酸乙酯",
+        "B. 乙烯 → 乙醛 → 乙酸 → 乙酸乙酯",
+        "C. 乙酸 + 乙醇 → 乙酸乙酯（一步）",
+        "D. 乙烯 + 乙酸 → 乙酸乙酯"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0112",
+      "item_type": "solve",
+      "stem": "有机物 A 分子式为 C₃H₆O，能发生银镜反应；在催化剂 Ni 作用下 A 与 H₂ 加成得到 B；B 在 Cu 催化下被 O₂ 氧化为 C；C 能与 Na₂CO₃ 反应放出 CO₂。试推断 A、B、C 的结构简式并写出各步反应方程式。",
+      "answer": "A=CH₃CH₂CHO；B=CH₃CH₂CH₂OH；C=CH₃CH₂COOH",
+      "kps": [
+        "kp_chem12_organic_deduction"
+      ],
+      "difficulty": 0.8,
+      "solution": "A 能银镜反应 → 含 -CHO，C₃H₆O 中只有丙醛 CH₃CH₂CHO。A=CH₃CH₂CHO；A+H₂→CH₃CH₂CH₂OH=B；B 催化氧化→CH₃CH₂CHO=A（题目说生成 C 与 Na₂CO₃ 反应——需 C 为酸）。重新审：A 丙醛 → B 丙醇 → C 丙酸（强氧化剂氧化）。完整：A=CH₃CH₂CHO；B=CH₃CH₂CH₂OH；C=CH₃CH₂COOH；方程式：① CH₃CH₂CHO + H₂ →(Ni) CH₃CH₂CH₂OH；② 2CH₃CH₂CHO + O₂ →(催化剂) 2CH₃CH₂COOH（C 由 A 直接催化氧化得）。",
+      "source": "llm_generated",
+      "form": "proof",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0113",
+      "item_type": "solve",
+      "stem": "某有机物 A 是烃的衍生物，相对分子质量为 46。A 与金属钠反应放出 H₂；A 在 Cu 催化下被氧化为 B；B 能发生银镜反应。写出 A、B 的结构简式及反应方程式。",
+      "answer": "A=CH₃CH₂OH；B=CH₃CHO",
+      "kps": [
+        "kp_chem12_organic_deduction"
+      ],
+      "difficulty": 0.75,
+      "solution": "A 相对分子质量 46，分子式 C₂H₆O（乙醇）。A=CH₃CH₂OH；B=CH₃CHO；方程式：① 2CH₃CH₂OH + 2Na → 2CH₃CH₂ONa + H₂↑；② 2CH₃CH₂OH + O₂ →(Cu, Δ) 2CH₃CHO + 2H₂O；③ CH₃CHO + 2Ag(NH₃)₂OH →(水浴) CH₃COONH₄ + 2Ag↓ + 3NH₃ + H₂O。",
+      "source": "llm_generated",
+      "form": "proof",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0114",
+      "item_type": "choice",
+      "stem": "下列聚合反应中，属于加聚反应的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_polymer_method"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 加聚（双键打开聚合，无小分子副产物）；B、C、D 为缩聚（脱小分子）。",
+      "source": "llm_generated",
+      "options": [
+        "A. nCH₂=CH₂ → 聚乙烯",
+        "B. nHOCH₂CH₂OH + nHOOC-C₆H₄-COOH → 涤纶",
+        "C. nHCHO → 酚醛树脂",
+        "D. nH₂N(CH₂)₆NH₂ + nHOOC(CH₂)₄COOH → 锦纶-66"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0115",
+      "item_type": "choice",
+      "stem": "下列高分子化合物的合成反应中，属于缩聚反应的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_polymer_method"
+      ],
+      "difficulty": 0.45,
+      "solution": "涤纶由对苯二甲酸与乙二醇缩聚（含 -COOH 与 -OH 脱水）生成；其余均为加聚。",
+      "source": "llm_generated",
+      "options": [
+        "A. 聚乙烯的合成",
+        "B. 聚氯乙烯的合成",
+        "C. 涤纶的合成",
+        "D. 聚苯乙烯的合成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0116",
+      "item_type": "choice",
+      "stem": "聚丙烯 (CH₂-CH(CH₃))ₙ 的单体是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_find_monomer"
+      ],
+      "difficulty": 0.45,
+      "solution": "加聚产物主链还原为双键：-(CH₂-CH(CH₃))- 还原为 CH₂=CH-CH₃（丙烯）。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH₃CH=CH₂",
+        "B. CH₂=CH₂",
+        "C. CH₃CH₃",
+        "D. CH₃CH₂CH₃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0117",
+      "item_type": "choice",
+      "stem": "下列高聚物的单体判断中，正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem12_find_monomer"
+      ],
+      "difficulty": 0.55,
+      "solution": "全部正确。A 加聚；B 缩聚（对苯二甲酸 + 乙二醇）；C 缩聚（己二胺 + 己二酸）；D 加聚。",
+      "source": "llm_generated",
+      "options": [
+        "A. 聚乙烯 (CH₂-CH₂)ₙ：单体为乙烯",
+        "B. 涤纶 (-O-CH₂CH₂-OOC-C₆H₄-CO-)ₙ：单体为对苯二甲酸与乙二醇",
+        "C. 锦纶-66 (-NH(CH₂)₆NH-CO(CH₂)₄CO-)ₙ：单体为己二胺与己二酸",
+        "D. 聚氯乙烯 (CH₂-CHCl)ₙ：单体为氯乙烯 CH₂=CHCl"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0118",
+      "item_type": "choice",
+      "stem": "下列材料中，属于合成纤维的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_polymer_materials"
+      ],
+      "difficulty": 0.4,
+      "solution": "涤纶是合成纤维；棉花、羊毛、蚕丝为天然纤维。",
+      "source": "llm_generated",
+      "options": [
+        "A. 棉花",
+        "B. 涤纶",
+        "C. 羊毛",
+        "D. 蚕丝"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0119",
+      "item_type": "choice",
+      "stem": "下列高分子材料中，属于塑料的有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem12_polymer_materials"
+      ],
+      "difficulty": 0.45,
+      "solution": "聚乙烯、聚氯乙烯、酚醛塑料均为塑料；涤纶为合成纤维。",
+      "source": "llm_generated",
+      "options": [
+        "A. 聚乙烯",
+        "B. 聚氯乙烯",
+        "C. 涤纶",
+        "D. 酚醛塑料"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0120",
+      "item_type": "choice",
+      "stem": "下列关于白色污染的治理，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_degradable"
+      ],
+      "difficulty": 0.4,
+      "solution": "D 错：焚烧塑料会产生有毒气体（如 HCl、二噁英），污染空气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减少使用一次性塑料制品",
+        "B. 分类回收再利用",
+        "C. 推广可降解塑料",
+        "D. 直接焚烧处理"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0121",
+      "item_type": "choice",
+      "stem": "聚乳酸 (PLA) 属于下列哪类材料（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_degradable"
+      ],
+      "difficulty": 0.4,
+      "solution": "聚乳酸是可降解塑料的代表，来源于玉米淀粉等可再生资源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通用塑料",
+        "B. 可降解塑料",
+        "C. 合成纤维",
+        "D. 合成橡胶"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0122",
+      "item_type": "choice",
+      "stem": "下列糖类中，属于还原性糖的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_sugars_deep"
+      ],
+      "difficulty": 0.4,
+      "solution": "葡萄糖（单糖）和麦芽糖是还原性糖；蔗糖、纤维素、淀粉都是非还原性糖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蔗糖",
+        "B. 葡萄糖",
+        "C. 淀粉",
+        "D. 纤维素"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0123",
+      "item_type": "choice",
+      "stem": "下列关于淀粉和纤维素的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_sugars_deep"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 正确；A 错：n 不同；B 错：均非还原糖；D 错：只有淀粉遇碘变蓝。",
+      "source": "llm_generated",
+      "options": [
+        "A. 互为同分异构体",
+        "B. 都属于还原性糖",
+        "C. 水解最终产物都是葡萄糖",
+        "D. 遇碘水都变蓝"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0124",
+      "item_type": "choice",
+      "stem": "蔗糖水解实验的操作顺序，下列正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_sugar_lab"
+      ],
+      "difficulty": 0.5,
+      "solution": "蔗糖水解在稀硫酸催化下进行，水解后须加 NaOH 中和（中和硫酸并调至碱性）再检验葡萄糖（银镜反应需碱性）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 稀硫酸加热→加 NaOH 中和→加银氨溶液水浴加热",
+        "B. 稀硫酸加热→加银氨溶液水浴加热→加 NaOH 中和",
+        "C. 加银氨溶液水浴加热→稀硫酸加热→加 NaOH 中和",
+        "D. 加 NaOH 中和→稀硫酸加热→加银氨溶液水浴加热"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0125",
+      "item_type": "solve",
+      "stem": "蔗糖、麦芽糖的水解产物分别是什么？请设计实验证明麦芽糖是还原糖而蔗糖不是。",
+      "answer": "蔗糖→葡萄糖+果糖；麦芽糖→2 葡萄糖",
+      "kps": [
+        "kp_chem12_sugar_lab"
+      ],
+      "difficulty": 0.7,
+      "solution": "蔗糖水解产物：葡萄糖 + 果糖；麦芽糖水解产物：2 葡萄糖。实验设计：① 直接取两糖溶液分别加银氨溶液水浴加热，麦芽糖出现银镜（还原糖），蔗糖无；② 另一份两糖溶液加稀硫酸加热后用 NaOH 中和至碱性，再加银氨溶液水浴加热，两糖都出现银镜（说明水解后产生还原性葡萄糖）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0127",
+      "item_type": "choice",
+      "stem": "下列变化中，属于蛋白质变性的有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem12_proteins"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、D 均属使蛋白质变性的因素（不可逆）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加热",
+        "B. 重金属盐（如 CuSO₄）",
+        "C. 强酸强碱",
+        "D. 紫外线照射"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0128",
+      "item_type": "choice",
+      "stem": "下列关于核酸的叙述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_nucleic_acids"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 错：核酸含 P；C 错：核酸水解最终产物是核苷酸（含磷酸、五碳糖、含氮碱基）；D 错：DNA 双螺旋含氢键；B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 核酸只含 C、H、O、N 四种元素",
+        "B. 核酸分为 DNA 和 RNA",
+        "C. 核酸水解最终产物是氨基酸",
+        "D. DNA 不含氢键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0129",
+      "item_type": "choice",
+      "stem": "下列关于 DNA 双螺旋结构的描述，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_nucleic_acids"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 错：磷酸-脱氧核糖骨架通过磷酸二酯键连接（这是链内），链间碱基通过氢键配对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两条链反向平行",
+        "B. 碱基配对遵循 A-T、G-C 规律",
+        "C. 链间通过磷酸二酯键连接",
+        "D. 碱基间通过氢键配对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0130",
+      "item_type": "choice",
+      "stem": "油脂皂化反应的产物是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_soap_inquiry"
+      ],
+      "difficulty": 0.45,
+      "solution": "油脂在 NaOH 溶液中皂化生成高级脂肪酸钠（肥皂）和甘油。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高级脂肪酸和甘油",
+        "B. 高级脂肪酸钠和甘油",
+        "C. 高级脂肪酸钾和甘油",
+        "D. 高级脂肪酸钠和葡萄糖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0131",
+      "item_type": "choice",
+      "stem": "皂化反应后加入饱和食盐水的作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_soap_inquiry"
+      ],
+      "difficulty": 0.5,
+      "solution": "饱和食盐水使高级脂肪酸钠盐析（溶解度降低）析出。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加快皂化反应速率",
+        "B. 降低肥皂的溶解度，使其盐析析出",
+        "C. 中和 NaOH",
+        "D. 分解高级脂肪酸钠"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0132",
+      "item_type": "choice",
+      "stem": "下列关于苯、甲醇、甲醛等有机物使用安全的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_organic_safety"
+      ],
+      "difficulty": 0.4,
+      "solution": "D 错：有机废液须按规定分类收集处理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苯有致癌性，应避免直接接触",
+        "B. 甲醇饮用会导致失明甚至死亡",
+        "C. 甲醛（福尔马林）有防腐作用但有毒",
+        "D. 实验室可任意倾倒有机废液"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0133",
+      "item_type": "choice",
+      "stem": "下列关于乙醇作为燃料的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_organic_safety"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错：燃烧不完全时可生成 CO；B 正确：乙醇可由生物质发酵制得，为可再生能源；C 错：热值低于汽油；D 错：乙醇含碳氢氧，不含硫。",
+      "source": "llm_generated",
+      "options": [
+        "A. 燃烧只生成 CO₂ 和 H₂O",
+        "B. 是可再生能源",
+        "C. 燃烧热值高于汽油",
+        "D. 含硫，污染空气"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0134",
+      "item_type": "choice",
+      "stem": "下列金属的冶炼方法中，采用电解法的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_metal_extraction"
+      ],
+      "difficulty": 0.45,
+      "solution": "电解法适用于活泼金属 Na、Mg、Al。Fe 用热还原（CO）、Cu 用热还原或湿法、Hg 用热分解法。",
+      "source": "llm_generated",
+      "options": [
+        "A. Fe",
+        "B. Cu",
+        "C. Al",
+        "D. Hg"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0135",
+      "item_type": "choice",
+      "stem": "下列关于金属冶炼方法的叙述，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_metal_extraction"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 银热分解：2Ag₂O → 4Ag + O₂↑；B 高炉炼铁；C 电解熔融 Al₂O₃；D 错：Na 用电解熔融 NaCl 或 NaOH。",
+      "source": "llm_generated",
+      "options": [
+        "A. Ag 用热分解法",
+        "B. Fe 用 CO 还原",
+        "C. Al 用电解熔融 Al₂O₃（冰晶石助熔）",
+        "D. Na 用热还原法"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0136",
+      "item_type": "solve",
+      "stem": "工业上电解熔融 Al₂O₃ 制取金属铝，若电流通电 1 小时、电流强度 10000 A，理论上可制得多少吨铝？（法拉第常数 F = 96500 C/mol，Al 摩尔质量 27 g/mol）",
+      "answer": "约 3.35 kg 铝",
+      "kps": [
+        "kp_chem12_metal_extraction"
+      ],
+      "difficulty": 0.75,
+      "solution": "电解反应：2Al₂O₃ →(电解) 4Al + 3O₂↑；每 4 mol Al 需 12 mol e⁻，1 mol Al 需 3 mol e⁻；Q = I·t = 10000 × 3600 = 3.6 × 10⁷ C；n(e⁻) = 3.6 × 10⁷ / 96500 ≈ 373 mol；n(Al) = 373/3 ≈ 124 mol；m(Al) = 124 × 27 = 3348 g ≈ 3.35 kg = 0.00335 t。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0137",
+      "item_type": "choice",
+      "stem": "下列符合绿色化学思想的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_green_chem"
+      ],
+      "difficulty": 0.4,
+      "solution": "A、B、C 均属绿色化学的核心原则（原料绿色化、原子经济性、产品可降解）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用无毒无害原料代替有毒原料",
+        "B. 选择原子利用率高的反应路线",
+        "C. 选用可降解的环境友好产品",
+        "D. 以上都对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0138",
+      "item_type": "choice",
+      "stem": "酸雨形成的主要原因是大气中（　　）含量过高",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_green_chem"
+      ],
+      "difficulty": 0.4,
+      "solution": "酸雨主要由 SO₂、NOₓ 在大气中氧化形成 H₂SO₄、HNO₃ 导致。",
+      "source": "llm_generated",
+      "options": [
+        "A. CO₂",
+        "B. SO₂ 和 NOₓ",
+        "C. CH₄",
+        "D. O₂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0139",
+      "item_type": "choice",
+      "stem": "下列化学品的合理使用，错误的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_chem_use"
+      ],
+      "difficulty": 0.4,
+      "solution": "B 错：长期大量使用农药会污染环境、危害健康；应合理使用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 食品防腐剂苯甲酸钠按规定剂量使用",
+        "B. 长期大量使用农药以提高产量",
+        "C. 抗酸药如 Al(OH)₃ 用于缓解胃酸过多",
+        "D. 阿司匹林按医嘱服用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0140",
+      "item_type": "choice",
+      "stem": "下列食品添加剂中，属于防腐剂的有（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem12_chem_use"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 苯甲酸钠、B 山梨酸钾是常用防腐剂；C 是抗氧化剂；D 是增味剂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苯甲酸钠",
+        "B. 山梨酸钾",
+        "C. 维生素 C",
+        "D. 味精（谷氨酸钠）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0141",
+      "item_type": "choice",
+      "stem": "下列材料中，属于新型无机非金属材料的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_materials"
+      ],
+      "difficulty": 0.45,
+      "solution": "氧化铝陶瓷属高温结构陶瓷（新型无机非金属材料）；玻璃、水泥属传统无机非金属材料；聚乙烯是高分子。",
+      "source": "llm_generated",
+      "options": [
+        "A. 玻璃",
+        "B. 水泥",
+        "C. 氧化铝陶瓷",
+        "D. 聚乙烯"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0142",
+      "item_type": "choice",
+      "stem": "下列金属材料中，具有储氢功能的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_materials"
+      ],
+      "difficulty": 0.5,
+      "solution": "储氢合金（如 LaNi₅）能可逆吸放氢气，用于氢能源储存。",
+      "source": "llm_generated",
+      "options": [
+        "A. 钛合金",
+        "B. 储氢合金（如 LaNi₅）",
+        "C. 不锈钢",
+        "D. 硬铝"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0144",
+      "item_type": "choice",
+      "stem": "下列关于氢能的说法，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_energy"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 错：氢气与空气混合在点燃或加热条件下才爆炸，并非一定爆炸；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 氢气燃烧只生成水，是清洁能源",
+        "B. 氢气可由电解水制取，原料来源丰富",
+        "C. 氢气储存困难，需特殊容器或储氢材料",
+        "D. 氢气与空气混合点燃一定爆炸"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0145",
+      "item_type": "choice",
+      "stem": "汽车尾气催化转化装置可将尾气中的 CO、NO 转化为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_env_role"
+      ],
+      "difficulty": 0.45,
+      "solution": "催化转化器反应：2CO + 2NO →(催化剂) 2CO₂ + N₂，将有毒 CO、NO 转为无害 CO₂、N₂。",
+      "source": "llm_generated",
+      "options": [
+        "A. CO₂ 和 N₂",
+        "B. CO₂ 和 NO₂",
+        "C. CO 和 N₂",
+        "D. H₂O 和 N₂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0146",
+      "item_type": "choice",
+      "stem": "下列污水处理方法中，属于化学方法的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem12_env_role"
+      ],
+      "difficulty": 0.45,
+      "solution": "混凝沉淀投加混凝剂（如聚合氯化铝）使胶体凝聚沉降，属化学方法；过滤、静置、格栅拦截为物理方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过滤",
+        "B. 混凝沉淀",
+        "C. 静置沉降",
+        "D. 格栅拦截"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0147",
+      "item_type": "choice",
+      "stem": "下列做法符合可持续发展理念的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_sustainability"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 符合可持续发展；B、C、D 均违背。",
+      "source": "llm_generated",
+      "options": [
+        "A. 推广清洁能源和绿色化学",
+        "B. 大规模砍伐森林",
+        "C. 任意排放工业废水",
+        "D. 一次性塑料制品大量使用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0148",
+      "item_type": "choice",
+      "stem": "化学科学促进可持续发展，最主要的体现是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_sustainability"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 符合化学促进可持续发展；B、C、D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提供清洁能源与绿色化工技术",
+        "B. 仅发展化石能源",
+        "C. 任意使用农药化肥",
+        "D. 不发展新材料"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0149",
+      "item_type": "choice",
+      "stem": "危险化学品的安全标识中，易燃液体的标识特征是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_safety_rules"
+      ],
+      "difficulty": 0.4,
+      "solution": "易燃液体：黑色火焰图案；B 剧毒品；C 腐蚀品；D 放射性物质。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黑色火焰图案（黄色背景）",
+        "B. 骷髅与交叉骨头图案",
+        "C. 腐蚀性液体滴落图案",
+        "D. 放射性三角符号"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0150",
+      "item_type": "choice",
+      "stem": "下列化学品使用与储存的安全措施中，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_safety_rules"
+      ],
+      "difficulty": 0.45,
+      "solution": "C 错：强氧化剂与还原剂混合会发生反应，应分类存放。",
+      "source": "llm_generated",
+      "options": [
+        "A. 易燃易爆品远离火源",
+        "B. 剧毒品双人双锁保管",
+        "C. 强氧化剂与还原剂混合存放",
+        "D. 实验室配备必要消防器材"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0151",
+      "item_type": "choice",
+      "stem": "下列措施中，能减少大气中 CO₂ 含量的有（　　）",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_chem12_carbon_neutral"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 光合作用吸收 CO₂；C 化学转化利用 CO₂；D 矿化固定 CO₂；B 化石燃料燃烧释放 CO₂，加剧温室效应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 植树造林",
+        "B. 使用化石燃料",
+        "C. CO₂ 加氢合成甲醇",
+        "D. CO₂ 矿化固定"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0152",
+      "item_type": "choice",
+      "stem": "下列关于 CO₂ 资源化利用的说法，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_carbon_neutral"
+      ],
+      "difficulty": 0.4,
+      "solution": "C 错：过量 CO₂ 加剧温室效应，需资源化利用或减排。",
+      "source": "llm_generated",
+      "options": [
+        "A. CO₂ 可用于合成甲醇",
+        "B. CO₂ 可用于制取尿素",
+        "C. CO₂ 排放到大气中可自然净化，不需处理",
+        "D. CO₂ 可用于制冷（干冰）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0153",
+      "item_type": "choice",
+      "stem": "自来水生产中常用氯气消毒，其消毒原理是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_water_treatment"
+      ],
+      "difficulty": 0.45,
+      "solution": "Cl₂ + H₂O ⇌ HCl + HClO；HClO 具有强氧化性，能消毒杀菌。",
+      "source": "llm_generated",
+      "options": [
+        "A. Cl₂ 与水反应生成 HClO 起消毒作用",
+        "B. Cl₂ 直接氧化细菌",
+        "C. Cl₂ 中和水中杂质",
+        "D. Cl₂ 与水反应生成的盐酸杀菌"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0154",
+      "item_type": "choice",
+      "stem": "下列水处理方法中，能软化硬水的有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem12_water_treatment"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 加热使 Ca(HCO₃)₂ 分解生成 CaCO₃ 沉淀；B 离子交换树脂吸附 Ca²⁺/Mg²⁺；C 加 Na₂CO₃ 生成 CaCO₃/MgCO₃；过滤只去除不溶性固体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加热煮沸",
+        "B. 离子交换法",
+        "C. 加 Na₂CO₃ 沉淀 Ca²⁺/Mg²⁺",
+        "D. 过滤"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0155",
+      "item_type": "choice",
+      "stem": "下列资源回收利用的方式中，符合循环经济理念的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem12_recycle"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 资源回收；B、C、D 均违背循环经济理念。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电子废弃物中的金、铜回收",
+        "B. 一次性塑料制品随意丢弃",
+        "C. 锂离子电池填埋处理",
+        "D. 化石燃料一次性燃烧"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0156",
+      "item_type": "choice",
+      "stem": "废旧锂离子电池回收的主要目的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_recycle"
+      ],
+      "difficulty": 0.4,
+      "solution": "锂离子电池回收兼具资源回收、减少污染、循环利用三重价值。",
+      "source": "llm_generated",
+      "options": [
+        "A. 回收锂、钴、镍等有价金属",
+        "B. 减少电池污染",
+        "C. 实现资源循环利用",
+        "D. 以上都对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0157",
+      "item_type": "solve",
+      "stem": "海水提镁的工业流程主要包括：①海边贝壳煅烧生成 CaO；② CaO 兑水制石灰乳；③将石灰乳加入海水沉淀 Mg(OH)₂；④过滤、洗涤 Mg(OH)₂；⑤ Mg(OH)₂ 与盐酸反应生成 MgCl₂；⑥电解熔融 MgCl₂ 制金属 Mg。回答下列问题：（1）步骤①的反应方程式；（2）步骤③中沉淀 Mg(OH)₂ 的离子方程式；（3）步骤⑤中盐酸的作用；（4）能否用 NaOH 代替石灰乳？简要说明理由。",
+      "answer": "（1）CaCO₃ →(高温) CaO + CO₂↑；（2）Mg²⁺+2OH⁻→Mg(OH)₂↓；（3）溶解 Mg(OH)₂ 生成 MgCl₂；（4）能用但成本高，更经济用石灰乳",
+      "kps": [
+        "kp_chem12_process_flow"
+      ],
+      "difficulty": 0.85,
+      "solution": "（1）CaCO₃ →(高温) CaO + CO₂↑；（2）Mg²⁺ + Ca(OH)₂ → Mg(OH)₂↓ + Ca²⁺（实际离子方程式：Mg²⁺ + 2OH⁻ → Mg(OH)₂↓）；（3）盐酸溶解 Mg(OH)₂，生成可电解的 MgCl₂；（4）能用 NaOH 代替，但 NaOH 成本高且易引入 Na⁺ 杂质，石灰乳由贝壳制得（来源丰富），更经济。",
+      "source": "llm_generated",
+      "form": "process_flow",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0158",
+      "item_type": "solve",
+      "stem": "工业上以黄铁矿 (FeS₂) 为原料制硫酸，主要工序为：①沸腾炉中 4FeS₂ + 11O₂ →(高温) 2Fe₂O₃ + 8SO₂；②接触室中 2SO₂ + O₂ ⇌(催化剂, Δ) 2SO₃；③吸收塔中 SO₃ + H₂O → H₂SO₄。回答：（1）反应①的氧化剂；（2）反应②的催化剂；（3）为何 98% 浓硫酸吸收 SO₃ 而不用水；（4）反应②中通入过量 O₂ 的目的。",
+      "answer": "（1）O₂；（2）V₂O₅；（3）水形成酸雾效率低；（4）增大 O₂ 浓度提高 SO₂ 转化率",
+      "kps": [
+        "kp_chem12_process_flow"
+      ],
+      "difficulty": 0.85,
+      "solution": "（1）O₂（化合价降低、被还原）；（2）V₂O₅（五氧化二钒）；（3）水吸收 SO₃ 会形成酸雾，吸收效率低；98% 浓硫酸可高效吸收 SO₃；（4）增大 O₂ 浓度，使 SO₂ 转化率提高（平衡正向移动）。",
+      "source": "llm_generated",
+      "form": "process_flow",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0159",
+      "item_type": "solve",
+      "stem": "阅读下面科普材料，回答问题。锂离子电池因能量密度高、无记忆效应等特点被广泛用于新能源汽车。电池正极材料常用 LiCoO₂、LiFePO₂ 等含锂化合物；负极多为石墨；电解液含 LiPF₆ 等锂盐的有机溶液。在使用过程中，电池老化、损坏会造成电解液泄漏，含氟化合物污染环境。（1）锂离子电池属于哪类电池（一次/二次）；（2）电解液泄漏会造成哪些环境污染；（3）从绿色化学角度评价锂离子电池的应用。",
+      "answer": "（1）二次电池；（2）含氟有机物、重金属、电解液污染；（3）正面：减少 CO₂；负面：污染、回收压力",
+      "kps": [
+        "kp_chem12_sts_comprehension"
+      ],
+      "difficulty": 0.75,
+      "solution": "(1）二次电池（可充放电循环使用）；（2）含氟有机物污染土壤、水源；重金属（Co）污染；电解液易燃；（3）正面：减少化石燃料依赖、降低 CO₂ 排放；负面：重金属与电解液污染、回收处理压力大；应加强绿色工艺和回收体系建设。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0160",
+      "item_type": "choice",
+      "stem": "下列关于碳中和的化学理解，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem12_sts_comprehension"
+      ],
+      "difficulty": 0.45,
+      "solution": "C 错：碳中和与化学过程密切相关（CO₂ 捕集、转化、资源化利用均为化学手段）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碳中和指排放的 CO₂ 与吸收的 CO₂ 总量相等",
+        "B. 实现碳中和主要依靠减少 CO₂ 排放和增加 CO₂ 吸收",
+        "C. 碳中和与化学过程无关",
+        "D. CO₂ 资源化利用是实现碳中和的重要途径"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0161",
+      "item_type": "choice",
+      "stem": "下列关于药物作用的化学原理，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem12_health_chem"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 抗酸药中和胃酸；B 错：阿司匹林是解热镇痛药不是抗生素；C 正确：维生素 C（抗坏血酸）治疗坏血病。D 综合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 抗酸药如 Al(OH)₃ 中和胃酸（盐酸），缓解胃酸过多",
+        "B. 阿司匹林属于抗生素",
+        "C. 维生素 C 可用于治疗坏血病",
+        "D. A 和 C 都对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0162",
+      "item_type": "choice",
+      "stem": "下列营养物质中，属于人体必需的六类营养素的有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem12_health_chem"
+      ],
+      "difficulty": 0.45,
+      "solution": "人体六大营养素：蛋白质、糖类、油脂、维生素、无机盐、水。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蛋白质",
+        "B. 糖类",
+        "C. 油脂",
+        "D. 维生素"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs2_0163",
+      "item_type": "solve",
+      "stem": "胃液中含有盐酸。当胃酸分泌过多时，常服用含 Al(OH)₃ 的抗酸药缓解。已知盐酸浓度约 0.1 mol/L，回答：（1）写出 Al(OH)₃ 中和盐酸的方程式；（2）若服用 0.78 g Al(OH)₃（摩尔质量 78 g/mol），最多可中和多少毫升上述盐酸？",
+      "answer": "（1）Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O；（2）300 mL",
+      "kps": [
+        "kp_chem12_health_chem"
+      ],
+      "difficulty": 0.65,
+      "solution": "（1）Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O；（2）n(Al(OH)₃) = 0.78/78 = 0.01 mol；n(HCl) = 3 × 0.01 = 0.03 mol；V(HCl) = n/c = 0.03/0.1 = 0.3 L = 300 mL。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    }
+  ]
+}

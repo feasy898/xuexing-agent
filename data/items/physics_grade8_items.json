@@ -1,0 +1,5587 @@
+{
+  "items": [
+    {
+      "id": "phy_phyjr_0001",
+      "item_type": "choice",
+      "stem": "下列长度单位中，属于国际单位制（SI）基本单位的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_length_measure"
+      ],
+      "difficulty": 0.3,
+      "solution": "在国际单位制中，长度的基本单位是米（m），符号 m。其他选项都是常用单位但不是 SI 基本单位。",
+      "source": "llm_generated",
+      "options": [
+        "A. 千米（km）",
+        "B. 米（m）",
+        "C. 厘米（cm）",
+        "D. 毫米（mm）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0002",
+      "item_type": "fill",
+      "stem": "使用刻度尺测量物体长度时，读数应估读到分度值的______位。",
+      "answer": "下一",
+      "kps": [
+        "kp_phy8_length_measure"
+      ],
+      "difficulty": 0.35,
+      "solution": "刻度尺读数时，应在分度值的下一位进行估读，这样可以减小读数误差，提高测量精度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0003",
+      "item_type": "choice",
+      "stem": "下列时间单位换算中，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_time_measure"
+      ],
+      "difficulty": 0.3,
+      "solution": "时间的基本单位换算：1 h = 60 min = 3600 s，A、B、D 均错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 h = 100 min",
+        "B. 1 min = 100 s",
+        "C. 1 h = 60 min = 3600 s",
+        "D. 1 h = 24 min"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0004",
+      "item_type": "fill",
+      "stem": "在国际单位制中，时间的单位是______，符号是______。",
+      "answer": "秒;s",
+      "kps": [
+        "kp_phy8_time_measure"
+      ],
+      "difficulty": 0.35,
+      "solution": "时间在国际单位制中的基本单位是秒，符号是 s，常用单位还有小时（h）、分钟（min）等。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0005",
+      "item_type": "choice",
+      "stem": "关于测量误差，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_error_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "误差是测量值与真实值之间的差异，由测量工具和方法的限制造成，不可避免但可以减小。错误（mistake）是操作不当造成，可以避免。多次测量求平均值、改进方法可以减小但不能消除误差。",
+      "source": "llm_generated",
+      "options": [
+        "A. 误差是测量中的错误，可以避免",
+        "B. 误差可以通过多次测量求平均值完全消除",
+        "C. 误差是测量值与真实值之间的差异，不可避免",
+        "D. 选用更精密的测量工具可以消除误差"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0006",
+      "item_type": "fill",
+      "stem": "减小测量误差的常用方法有：选用______的测量工具、对同一物理量进行______次测量求平均值、改进______。",
+      "answer": "更精密;多;测量方法",
+      "kps": [
+        "kp_phy8_error_concept"
+      ],
+      "difficulty": 0.5,
+      "solution": "减小误差的常用方法：①选用更精密的测量工具；②对同一物理量进行多次测量取平均值；③改进测量方法。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0007",
+      "item_type": "choice",
+      "stem": "下列现象中，不属于机械运动的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_mech_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "机械运动是指物体位置随时间的变化。流星、河水、钟表指针的位置都发生了变化，属于机械运动；铁块生锈是化学变化，不是机械运动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 流星划过夜空",
+        "B. 河水流动",
+        "C. 钟表指针转动",
+        "D. 铁块生锈"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0008",
+      "item_type": "fill",
+      "stem": "判断一个物体是运动还是静止，要看它相对于______的位置是否发生变化。",
+      "answer": "参照物",
+      "kps": [
+        "kp_phy8_mech_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "判断物体的运动情况，必须选定一个参照物，看被研究物体相对于参照物的位置是否变化。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0009",
+      "item_type": "choice",
+      "stem": "两列火车并排行驶，坐在甲车上的乘客看到乙车没有动，这可能是因为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_motion_relativity"
+      ],
+      "difficulty": 0.4,
+      "solution": "运动的相对性：以甲车为参照物，看到乙车静止，说明乙车相对甲车的位置不变，即两车速度大小和方向相同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两车都在加速",
+        "B. 两车速度大小相同、方向相同",
+        "C. 乙车静止",
+        "D. 甲车静止"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0010",
+      "item_type": "fill",
+      "stem": "我们说某物体是静止的或运动的，是相对于所选定的______而言的，这就是运动和静止的______。",
+      "answer": "参照物;相对性",
+      "kps": [
+        "kp_phy8_motion_relativity"
+      ],
+      "difficulty": 0.35,
+      "solution": "运动和静止的相对性：同一物体相对于不同的参照物，运动状态可能不同；描述物体运动必须选定参照物。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0011",
+      "item_type": "choice",
+      "stem": "下列例子中，主要体现分子热运动的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_motion_forms"
+      ],
+      "difficulty": 0.35,
+      "solution": "分子热运动是无规则运动，花香扩散是分子无规则运动的宏观表现，是扩散现象。汽车、飞机、河水运动是宏观物体的机械运动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽车行驶",
+        "B. 花香在空气中扩散",
+        "C. 飞机飞行",
+        "D. 河水流动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0012",
+      "item_type": "fill",
+      "stem": "自然界中存在的运动形式包括机械运动、______运动、______运动等多种形式，它们相互联系，在一定条件下可以相互转化。",
+      "answer": "热;电磁",
+      "kps": [
+        "kp_phy8_motion_forms"
+      ],
+      "difficulty": 0.4,
+      "solution": "自然界中运动形式多种多样，主要有机械运动、热运动（分子运动）、电磁运动等，各种运动形式之间可以相互联系、相互转化。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0013",
+      "item_type": "choice",
+      "stem": "匀速直线运动的物体，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_uniform_motion"
+      ],
+      "difficulty": 0.35,
+      "solution": "匀速直线运动的定义：物体沿直线运动且速度大小不变，即在任意相等时间内通过的路程相等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 速度越来越大",
+        "B. 速度越来越小",
+        "C. 在任意相等时间内通过的路程相等",
+        "D. 运动方向不断变化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0014",
+      "item_type": "fill",
+      "stem": "物体沿直线运动，速度大小保持不变的运动叫______。",
+      "answer": "匀速直线运动",
+      "kps": [
+        "kp_phy8_uniform_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "匀速直线运动：物体沿直线运动，且速度大小保持不变。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0015",
+      "item_type": "choice",
+      "stem": "速度是用来描述物体______的物理量。",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_speed_concept"
+      ],
+      "difficulty": 0.3,
+      "solution": "速度是描述物体运动快慢的物理量，用 v 表示，国际单位是 m/s。",
+      "source": "llm_generated",
+      "options": [
+        "A. 运动方向",
+        "B. 运动快慢",
+        "C. 运动轨迹",
+        "D. 惯性大小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0016",
+      "item_type": "fill",
+      "stem": "速度的计算公式是 v=______，其国际单位是______，符号是______。",
+      "answer": "s/t;m/s;m·s⁻¹",
+      "kps": [
+        "kp_phy8_speed_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "速度等于路程与时间之比 v=s/t，国际单位是米每秒（m/s），符号 m·s⁻¹。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0017",
+      "item_type": "choice",
+      "stem": "下列速度换算中，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_speed_conversion"
+      ],
+      "difficulty": 0.4,
+      "solution": "1 m/s = 1×(1/1000 km)/(1/3600 h) = 3600/1000 km/h = 3.6 km/h。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 m/s = 36 km/h",
+        "B. 1 m/s = 3.6 km/h",
+        "C. 1 m/s = 0.36 km/h",
+        "D. 1 m/s = 360 km/h"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0018",
+      "item_type": "fill",
+      "stem": "一辆小汽车在高速公路上以 90 km/h 的速度行驶，合______m/s。（保留整数）",
+      "answer": "25",
+      "kps": [
+        "kp_phy8_speed_conversion"
+      ],
+      "difficulty": 0.4,
+      "solution": "90 km/h = 90×1000/3600 m/s = 25 m/s。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0019",
+      "item_type": "choice",
+      "stem": "小明骑自行车上学，前 10 min 骑了 1500 m，后 10 min 骑了 2500 m。则小明全程的平均速度是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_speed_calculation"
+      ],
+      "difficulty": 0.45,
+      "solution": "全程总路程 = 1500 + 2500 = 4000 m，总时间 = 20 min，平均速度 = 4000/20 = 200 m/min。",
+      "source": "llm_generated",
+      "options": [
+        "A. 100 m/min",
+        "B. 200 m/min",
+        "C. 150 m/min",
+        "D. 250 m/min"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0020",
+      "item_type": "fill",
+      "stem": "一列火车长 200 m，以 20 m/s 的速度匀速通过一座长 800 m 的大桥，从车头上桥到车尾离桥需要的时间是______s。",
+      "answer": "50",
+      "kps": [
+        "kp_phy8_speed_calculation"
+      ],
+      "difficulty": 0.5,
+      "solution": "火车完全通过大桥行驶的总路程 = 桥长 + 车长 = 800 + 200 = 1000 m，时间 = s/v = 1000/20 = 50 s。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0021",
+      "item_type": "choice",
+      "stem": "在 s-t 图像中，过原点的倾斜直线表示物体做（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_speed_image"
+      ],
+      "difficulty": 0.4,
+      "solution": "s-t 图像中过原点的倾斜直线表示路程与时间成正比，即匀速直线运动，斜率即为速度大小。水平线表示静止，曲线表示变速运动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 匀速直线运动",
+        "B. 变速直线运动",
+        "C. 静止",
+        "D. 曲线运动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0022",
+      "item_type": "fill",
+      "stem": "在 v-t 图像中，与横轴平行的直线表示物体做______运动。",
+      "answer": "匀速直线",
+      "kps": [
+        "kp_phy8_speed_image"
+      ],
+      "difficulty": 0.4,
+      "solution": "v-t 图像中，水平直线表示速度不变，即匀速直线运动；倾斜直线表示速度随时间均匀变化（匀变速）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0023",
+      "item_type": "choice",
+      "stem": "一物体在前一半路程的速度是 6 m/s，在后一半路程的速度是 4 m/s，则物体在全路程的平均速度是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_avg_speed"
+      ],
+      "difficulty": 0.5,
+      "solution": "设总路程 2s，前段用时 s/6，后段用时 s/4，总时间 = s/6 + s/4 = 5s/12，平均速度 = 2s/(5s/12) = 24/5 = 4.8 m/s。注意平均速度不等于速度的算术平均 (6+4)/2 = 5 m/s。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5 m/s",
+        "B. 4.8 m/s",
+        "C. 5.2 m/s",
+        "D. 10 m/s"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0024",
+      "item_type": "fill",
+      "stem": "在变速运动中，平均速度等于______与______之比。",
+      "answer": "总路程;总时间",
+      "kps": [
+        "kp_phy8_avg_speed"
+      ],
+      "difficulty": 0.35,
+      "solution": "平均速度的定义：v平均 = s总/t总，描述变速运动物体的平均快慢程度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0025",
+      "item_type": "choice",
+      "stem": "使用刻度尺测量长度时，下列操作正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_exp_length_time"
+      ],
+      "difficulty": 0.5,
+      "solution": "使用刻度尺正确操作：①零刻度磨损可重新选取整数刻度作为起点；②刻度线紧贴被测物体；③读数时视线与刻度线垂直；④必须估读到分度值的下一位；⑤多次测量取平均值。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可使用磨损零刻度线的刻度尺，重新选定清晰的刻度作为零",
+        "B. 读数时视线可以与刻度线成 45° 角",
+        "C. 测量时不需要估读到分度值的下一位",
+        "D. 将刻度尺歪斜放置也能准确测量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0026",
+      "item_type": "fill",
+      "stem": "使用刻度尺测量长度时，被测物体应放在刻度尺上，刻度线要紧贴______，视线要与______垂直。",
+      "answer": "被测物;刻度线",
+      "kps": [
+        "kp_phy8_exp_length_time"
+      ],
+      "difficulty": 0.4,
+      "solution": "刻度尺使用方法：刻度线紧贴被测物体，读数时视线与刻度线垂直，估读到分度值的下一位。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0027",
+      "item_type": "choice",
+      "stem": "在\"测量小车沿斜面下滑的平均速度\"实验中，斜面的坡度应（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_avg_speed"
+      ],
+      "difficulty": 0.45,
+      "solution": "斜面坡度不宜过大，否则小车下滑过快，时间测量误差大；坡度也不能太小，否则小车下滑太慢。实验中应选合适坡度（较小一些）便于准确计时。",
+      "source": "llm_generated",
+      "options": [
+        "A. 越大越好，可使小车加速更明显",
+        "B. 越小越好，便于准确计时",
+        "C. 任意选取都可以",
+        "D. 必须保持水平"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0028",
+      "item_type": "fill",
+      "stem": "测量小车在斜面下半段平均速度时，下半段路程越______，小车做加速运动会使下半段的平均速度比全程的______。",
+      "answer": "小;大",
+      "kps": [
+        "kp_phy8_exp_avg_speed"
+      ],
+      "difficulty": 0.5,
+      "solution": "小车沿斜面下滑做加速运动，下半段速度比上半段大；虽然下半段路程变小，但平均速度仍大于全程平均速度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0029",
+      "item_type": "choice",
+      "stem": "下列关于声音产生的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_sound_production"
+      ],
+      "difficulty": 0.35,
+      "solution": "声音是由物体振动产生的，振动停止发声也停止。但物体振动发出的声音不一定能被人耳听到（频率超出听觉范围或没有介质传播）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体不振动也能发声",
+        "B. 声音是由物体振动产生的",
+        "C. 只要有声源就一定能听到声音",
+        "D. 振动停止后声音还能持续一会儿"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0030",
+      "item_type": "fill",
+      "stem": "正在发声的物体叫做______，声音是由物体的______产生的。",
+      "answer": "声源;振动",
+      "kps": [
+        "kp_phy8_sound_production"
+      ],
+      "difficulty": 0.3,
+      "solution": "正在发声的物体称为声源。一切声音都是由物体振动产生的。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0031",
+      "item_type": "choice",
+      "stem": "下列关于声音传播的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_sound_propagation"
+      ],
+      "difficulty": 0.35,
+      "solution": "声音的传播需要介质，真空不能传声。一般情况下，声音在固体中传播最快，液体次之，气体最慢。",
+      "source": "llm_generated",
+      "options": [
+        "A. 声音可以在真空中传播",
+        "B. 声音在固体中比在气体中传播得快",
+        "C. 声音在空气中传播得最快",
+        "D. 声音在液体中不能传播"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0032",
+      "item_type": "fill",
+      "stem": "15 ℃ 时，声音在空气中的传播速度约为______m/s。",
+      "answer": "340",
+      "kps": [
+        "kp_phy8_sound_propagation"
+      ],
+      "difficulty": 0.35,
+      "solution": "15 ℃ 时空气中的声速约为 340 m/s，温度升高声速略有增大。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0033",
+      "item_type": "choice",
+      "stem": "人耳能区分原声和回声的时间间隔至少为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_echo"
+      ],
+      "difficulty": 0.4,
+      "solution": "人耳区分原声和回声的最短时间间隔约为 0.1 s，对应障碍物到人的距离至少约 17 m（声速 340 m/s）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.01 s",
+        "B. 0.1 s",
+        "C. 1 s",
+        "D. 0.001 s"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0034",
+      "item_type": "fill",
+      "stem": "声音遇到障碍物会被反射回来形成______。利用回声测距的公式是 s=______（中线），其中 v 是声速，t 是______。",
+      "answer": "回声;vt/2;回声往返时间",
+      "kps": [
+        "kp_phy8_echo"
+      ],
+      "difficulty": 0.5,
+      "solution": "声波遇到障碍物反射回来形成回声。回声测距：声音从发出到返回的时间 t，则单程距离 s = vt/2（声呐测海深原理）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0035",
+      "item_type": "choice",
+      "stem": "钢琴和笛子演奏同一首乐曲时，听众仍能区分出是两种乐器，这主要是因为它们的（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_pitch_loudness_timbre"
+      ],
+      "difficulty": 0.4,
+      "solution": "不同的发声体由于材料和结构不同，发出声音的音色不同。不同乐器演奏同一音符时，音色是区分它们的依据。",
+      "source": "llm_generated",
+      "options": [
+        "A. 音调不同",
+        "B. 响度不同",
+        "C. 音色不同",
+        "D. 频率不同"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0036",
+      "item_type": "fill",
+      "stem": "音调由发声体振动的______决定，响度与发声体的______和距发声体的远近有关。",
+      "answer": "频率;振幅",
+      "kps": [
+        "kp_phy8_pitch_loudness_timbre"
+      ],
+      "difficulty": 0.45,
+      "solution": "音调由频率决定（频率越高，音调越高）；响度由振幅和距发声体远近决定（振幅越大、距离越近，响度越大）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0037",
+      "item_type": "choice",
+      "stem": "人耳的听觉频率范围大约是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_ultrasonic_infrasonic"
+      ],
+      "difficulty": 0.4,
+      "solution": "人耳的听觉频率范围约为 20 Hz～20000 Hz，频率高于 20000 Hz 的声波叫超声波，低于 20 Hz 的声波叫次声波。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0～20 Hz",
+        "B. 20 Hz～20000 Hz",
+        "C. 20000 Hz～50000 Hz",
+        "D. 200 Hz～20000 Hz"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0038",
+      "item_type": "fill",
+      "stem": "频率高于 20000 Hz 的声波叫______，低于 20 Hz 的声波叫______。",
+      "answer": "超声波;次声波",
+      "kps": [
+        "kp_phy8_ultrasonic_infrasonic"
+      ],
+      "difficulty": 0.4,
+      "solution": "超声波：频率 > 20000 Hz（如 B 超、声呐）；次声波：频率 < 20 Hz（如地震、海啸、台风伴随产生）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0039",
+      "item_type": "choice",
+      "stem": "下列应用中，主要利用声传递能量的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_sound_utilization"
+      ],
+      "difficulty": 0.4,
+      "solution": "超声波清洗眼镜是利用声波传递能量，使污物从镜片上脱落；A、B、D 都是利用声波传递信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 利用 B 超诊断疾病",
+        "B. 利用声呐探测海底深度",
+        "C. 利用超声波清洗眼镜",
+        "D. 利用回声测定距离"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0040",
+      "item_type": "fill",
+      "stem": "声音既可以传递______（如 B 超、回声定位），也可以传递______（如超声清洗、超声碎石）。",
+      "answer": "信息;能量",
+      "kps": [
+        "kp_phy8_sound_utilization"
+      ],
+      "difficulty": 0.35,
+      "solution": "声音的两个作用：①传递信息（如 B 超、回声定位、声呐）；②传递能量（如超声清洗、超声碎石、清洗眼镜）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0041",
+      "item_type": "choice",
+      "stem": "下列控制噪声的措施中，属于在传播过程中减弱噪声的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_noise_control"
+      ],
+      "difficulty": 0.4,
+      "solution": "控制噪声三种途径：①在声源处减弱（如消声器、禁止喧哗）；②在传播过程中减弱（如隔声板、植树）；③在人耳处减弱（如戴耳塞）。A 是声源处，C 是人耳处，D 是防止噪声产生。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摩托车安装消声器",
+        "B. 城市道路旁安装隔声板",
+        "C. 工人佩戴耳塞",
+        "D. 学校禁止大声喧哗"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0042",
+      "item_type": "fill",
+      "stem": "声音强弱的等级用______表示，符号是______。人们刚刚能听到的最弱声音约为______dB。",
+      "answer": "分贝;dB;0",
+      "kps": [
+        "kp_phy8_noise_control"
+      ],
+      "difficulty": 0.45,
+      "solution": "声音强弱等级用分贝（dB）表示。0 dB 是人耳刚刚能听到的最弱声音，30～40 dB 是较理想的环境，超过 70 dB 会干扰正常生活。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0043",
+      "item_type": "choice",
+      "stem": "在标准大气压下，冰水混合物的温度是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_temperature_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "摄氏温度规定：在标准大气压下，冰水混合物的温度为 0 ℃，沸水温度为 100 ℃，之间均分为 100 等份，每份 1 ℃。",
+      "source": "llm_generated",
+      "options": [
+        "A. -1 ℃",
+        "B. 0 ℃",
+        "C. 1 ℃",
+        "D. 100 ℃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0044",
+      "item_type": "fill",
+      "stem": "温度是表示物体______的物理量，摄氏温度的单位是______，用符号______表示。",
+      "answer": "冷热程度;摄氏度;℃",
+      "kps": [
+        "kp_phy8_temperature_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "温度表示物体的冷热程度。摄氏温度的单位是摄氏度，符号 ℃。在国际单位制中还有热力学温度（K）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0045",
+      "item_type": "choice",
+      "stem": "使用温度计测量液体温度时，下列操作正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_thermometer_use"
+      ],
+      "difficulty": 0.4,
+      "solution": "使用温度计：正确操作是玻璃泡全部浸入被测液体，不碰容器底和壁；待示数稳定后再读数；读数时玻璃泡仍留在液体中，视线与液柱上表面相平。",
+      "source": "llm_generated",
+      "options": [
+        "A. 玻璃泡碰容器底",
+        "B. 玻璃泡碰容器壁",
+        "C. 玻璃泡完全浸入被测液体中且不碰底、壁",
+        "D. 读数时把温度计从液体中取出"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0046",
+      "item_type": "fill",
+      "stem": "使用温度计前应先观察它的______和______，以保证测量准确并避免损坏温度计。",
+      "answer": "量程;分度值",
+      "kps": [
+        "kp_phy8_thermometer_use"
+      ],
+      "difficulty": 0.4,
+      "solution": "使用温度计前要观察量程（能测的最高/最低温度）和分度值（最小刻度代表的温度），所测温度不能超过量程。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0047",
+      "item_type": "choice",
+      "stem": "体温计与普通温度计相比，特殊的结构是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_thermometer_types"
+      ],
+      "difficulty": 0.4,
+      "solution": "体温计的特点：①量程 35～42 ℃；②分度值 0.1 ℃；③玻璃泡与毛细管之间有缩口，可使水银柱只升不降（离开人体读数）；④使用前用力甩回。",
+      "source": "llm_generated",
+      "options": [
+        "A. 量程更大",
+        "B. 玻璃泡与毛细管之间有一段细缩口",
+        "C. 分度值更小到 0.1 ℃",
+        "D. 用透明玻璃制成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0048",
+      "item_type": "fill",
+      "stem": "体温计的量程是______℃，分度值是______℃。使用前如果没有甩几下，则读数可能比实际体温______（填\"偏高\"或\"偏低\"）。",
+      "answer": "35～42;0.1;偏高",
+      "kps": [
+        "kp_phy8_thermometer_types"
+      ],
+      "difficulty": 0.55,
+      "solution": "体温计量程 35～42 ℃，分度值 0.1 ℃。由于缩口作用，使用后水银柱不下降，不甩直接测量可能导致读数比实际体温偏高。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0049",
+      "item_type": "choice",
+      "stem": "下列关于物质三态特征的描述，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_states_of_matter"
+      ],
+      "difficulty": 0.4,
+      "solution": "物质三态特征：①固体有固定形状和体积；②液体有固定体积但无固定形状（具有流动性）；③气体既无固定形状也无固定体积。",
+      "source": "llm_generated",
+      "options": [
+        "A. 固体没有固定的形状和体积",
+        "B. 液体没有固定的形状也没有固定的体积",
+        "C. 气体没有固定的形状但有固定的体积",
+        "D. 固体有固定的形状和体积"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0050",
+      "item_type": "fill",
+      "stem": "物质通常有______态、______态和______态三种存在形式。",
+      "answer": "固;液;气",
+      "kps": [
+        "kp_phy8_states_of_matter"
+      ],
+      "difficulty": 0.3,
+      "solution": "物质三态：固态、液态、气态。它们在一定条件下可以相互转化。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0052",
+      "item_type": "fill",
+      "stem": "物质由固态变为液态叫做______，由液态变为固态叫做______，这两个过程都要伴随______（填\"吸热\"或\"放热\"）。",
+      "answer": "熔化;凝固;吸热（熔化）放热（凝固）",
+      "kps": [
+        "kp_phy8_melting_freezing"
+      ],
+      "difficulty": 0.45,
+      "solution": "熔化：固→液（吸热）；凝固：液→固（放热）。同种晶体的熔点和凝固点相同。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0053",
+      "item_type": "choice",
+      "stem": "下列物质中，属于非晶体的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_crystal_amorphous"
+      ],
+      "difficulty": 0.4,
+      "solution": "常见晶体：冰、食盐、海波（明矾）、金属、各种宝石；常见非晶体：松香、玻璃、蜡、沥青、塑料、橡胶。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冰",
+        "B. 海波",
+        "C. 松香",
+        "D. 金属"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0054",
+      "item_type": "fill",
+      "stem": "晶体有固定的______（熔化时温度不变），非晶体______固定的熔点（熔化时温度持续上升）。",
+      "answer": "熔点;没有",
+      "kps": [
+        "kp_phy8_crystal_amorphous"
+      ],
+      "difficulty": 0.45,
+      "solution": "晶体熔化时吸收热量但温度保持不变（有固定熔点）；非晶体没有固定熔点，熔化时温度持续上升。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0055",
+      "item_type": "choice",
+      "stem": "下列措施中，可以减慢液体蒸发的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_evaporation"
+      ],
+      "difficulty": 0.4,
+      "solution": "影响蒸发快慢的因素：①液体温度（温度越高蒸发越快）；②液体表面积（表面积越大蒸发越快）；③液体表面空气流动（流动越快蒸发越快）。给液体加盖隔绝空气流动，可以减慢蒸发。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提高液体温度",
+        "B. 增大液体表面积",
+        "C. 加快液体表面空气流动",
+        "D. 给液体表面加盖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0056",
+      "item_type": "fill",
+      "stem": "蒸发是液体在任何______下都可以发生的、只在______的汽化现象，蒸发______（填\"吸热\"或\"放热\"）具有致冷作用。",
+      "answer": "温度;液体表面;吸热",
+      "kps": [
+        "kp_phy8_evaporation"
+      ],
+      "difficulty": 0.45,
+      "solution": "蒸发：液体在任何温度下，只在液体表面发生的汽化现象；蒸发吸热，有致冷作用（如用酒精擦皮肤感觉凉）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0057",
+      "item_type": "choice",
+      "stem": "关于沸腾，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_boiling"
+      ],
+      "difficulty": 0.45,
+      "solution": "沸腾的特点：①在一定温度（沸点）下液体内部和表面同时发生的剧烈汽化现象；②沸腾过程吸热但温度保持不变；③液体沸点与气压有关，气压增大沸点升高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水在任何温度下都能沸腾",
+        "B. 水沸腾时吸热但温度保持不变",
+        "C. 水沸腾时放热且温度升高",
+        "D. 水沸腾只发生在液体内部"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0058",
+      "item_type": "fill",
+      "stem": "液体沸点与气压有关，气压增大时沸点______，气压减小时沸点______。在标准大气压下，水的沸点是______℃。",
+      "answer": "升高;降低;100",
+      "kps": [
+        "kp_phy8_boiling"
+      ],
+      "difficulty": 0.5,
+      "solution": "气压增大时液体沸点升高；高山上气压低，水的沸点低于 100 ℃，煮饭不容易熟。标准大气压下水的沸点是 100 ℃。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0059",
+      "item_type": "choice",
+      "stem": "使气体液化的两种方法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_liquefaction"
+      ],
+      "difficulty": 0.4,
+      "solution": "气体液化的两种方法：①降低温度（如水蒸气遇冷液化成水）；②压缩体积（如液化石油气、气体打火机、丁烷气体等加压液化）。两种方法可同时使用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 升高温度和减小体积",
+        "B. 降低温度和压缩体积",
+        "C. 升高温度和压缩体积",
+        "D. 降低温度和减小体积"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0060",
+      "item_type": "fill",
+      "stem": "物质由气态变为液态叫做______，它在液化过程中要______（填\"吸热\"或\"放热\"）。",
+      "answer": "液化;放热",
+      "kps": [
+        "kp_phy8_liquefaction"
+      ],
+      "difficulty": 0.4,
+      "solution": "液化：气态→液态，液化过程放热。汽化与液化是相反过程。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0061",
+      "item_type": "choice",
+      "stem": "下列现象中，属于凝华的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_sublimation_deposition"
+      ],
+      "difficulty": 0.4,
+      "solution": "凝华是气态直接变为固态的现象。霜是空气中的水蒸气遇冷直接凝华成的固体小冰晶。A 是升华，C 是熔化，D 是汽化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 樟脑丸变小",
+        "B. 霜的形成",
+        "C. 冰化成水",
+        "D. 湿衣服变干"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0062",
+      "item_type": "fill",
+      "stem": "冬天，挂在室外的湿衣服结了冰，过几天冰冻的衣服也变干了，此过程发生的物态变化是＿＿＿＿（填\"升华\"或\"凝华\"），它要＿＿＿（填\"吸热\"或\"放热\"）。",
+      "answer": "升华;吸热",
+      "kps": [
+        "kp_phy8_sublimation_deposition"
+      ],
+      "difficulty": 0.45,
+      "solution": "固态直接变为气态是升华，升华吸热。冰冻衣服变干是冰直接变成水蒸气，是升华现象。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0063",
+      "item_type": "choice",
+      "stem": "清晨草地上出现的露珠是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_phase_change_judgment"
+      ],
+      "difficulty": 0.4,
+      "solution": "露珠是空气中的水蒸气遇冷凝结成的小水珠（液态），是液化现象。雾的形成也是液化；霜、雪、雾凇是凝华。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽化形成的",
+        "B. 液化形成的",
+        "C. 凝华形成的",
+        "D. 熔化形成的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0064",
+      "item_type": "fill",
+      "stem": "北方冬天常见的雾凇是空气中的水蒸气遇冷直接凝华成的小冰晶附着在树枝上形成的，发生的是＿＿＿（填物态变化名称），要＿＿＿（填\"吸热\"或\"放热\"）。",
+      "answer": "凝华;放热",
+      "kps": [
+        "kp_phy8_phase_change_judgment"
+      ],
+      "difficulty": 0.5,
+      "solution": "雾凇是水蒸气直接变成固态冰晶，是凝华现象，凝华过程放热。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0065",
+      "item_type": "choice",
+      "stem": "下列水循环环节中，属于液化过程的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_water_cycle"
+      ],
+      "difficulty": 0.5,
+      "solution": "水蒸气在高空遇冷液化成小水滴（云），是液化过程；A 是汽化，C 是熔化，D 是凝华。",
+      "source": "llm_generated",
+      "options": [
+        "A. 海水蒸发",
+        "B. 水蒸气在高空遇冷形成小水滴",
+        "C. 冰雪熔化",
+        "D. 雪的形成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0066",
+      "item_type": "fill",
+      "stem": "自然界水循环中，水的______（填\"三态\"或\"两态\"）变化都伴随着能量的转移和转化。",
+      "answer": "三态",
+      "kps": [
+        "kp_phy8_water_cycle"
+      ],
+      "difficulty": 0.35,
+      "solution": "水循环中水经历固、液、气三态变化（蒸发、液化、凝华、熔化等），各环节均伴随吸热或放热过程。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0067",
+      "item_type": "choice",
+      "stem": "使用温度计测量热水的温度时，下列操作正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_exp_thermometer"
+      ],
+      "difficulty": 0.45,
+      "solution": "使用温度计正确操作：①玻璃泡全部浸入被测液体；②不碰容器底和壁；③待示数稳定后读数；④读数时玻璃泡继续留在液体中；⑤视线与液柱上表面相平。",
+      "source": "llm_generated",
+      "options": [
+        "A. 将温度计玻璃泡放在热水上方空气中读数",
+        "B. 玻璃泡刚放入立刻读数",
+        "C. 玻璃泡全部浸入热水且不碰容器底和壁，待示数稳定后读数",
+        "D. 读数时可将温度计从热水中取出"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0068",
+      "item_type": "fill",
+      "stem": "用温度计测量液体温度时，读数时视线应与温度计内液柱上表面＿＿＿（填\"相平\"或\"垂直\"）。",
+      "answer": "相平",
+      "kps": [
+        "kp_phy8_exp_thermometer"
+      ],
+      "difficulty": 0.4,
+      "solution": "读数时视线应与液柱上表面相平；俯视会使读数偏高，仰视会使读数偏低。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0069",
+      "item_type": "choice",
+      "stem": "在\"探究水沸腾时温度变化的特点\"实验中，下列观察现象正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_exp_boiling"
+      ],
+      "difficulty": 0.5,
+      "solution": "水沸腾特点：①沸腾前，气泡上升过程中越来越小（遇冷液化）；②沸腾时，气泡上升过程中越来越大（产生大量蒸汽）；③沸腾过程中吸热但温度保持不变；④继续加热则水继续沸腾，若停止加热则沸腾停止。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水沸腾前气泡上升过程中越来越大",
+        "B. 水沸腾时气泡上升过程中越来越小",
+        "C. 水沸腾时吸热但温度保持不变",
+        "D. 水沸腾前温度保持不变"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0070",
+      "item_type": "fill",
+      "stem": "在\"探究水沸腾\"的实验中，水沸腾时虽然继续吸热，但温度＿＿＿（填\"升高\"或\"保持不变\"）。",
+      "answer": "当水温达到沸点且继续吸热时温度保持不变",
+      "kps": [
+        "kp_phy8_exp_boiling"
+      ],
+      "difficulty": 0.5,
+      "solution": "液体沸腾的两个必要条件：①达到沸点；②继续吸热。这两个条件缺一不可。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0071",
+      "item_type": "choice",
+      "stem": "下列物体中，不属于光源的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_light_source_propagation"
+      ],
+      "difficulty": 0.35,
+      "solution": "光源是能够自行发光的物体。太阳、点燃的蜡烛、发光的萤火虫都能自行发光，是光源；月亮本身不发光，靠反射太阳光发光，不是光源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 太阳",
+        "B. 点燃的蜡烛",
+        "C. 月亮",
+        "D. 发光的萤火虫"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0072",
+      "item_type": "fill",
+      "stem": "光在______（填\"同种均匀\"或\"任何\"）介质中是沿直线传播的。",
+      "answer": "同种均匀",
+      "kps": [
+        "kp_phy8_light_source_propagation"
+      ],
+      "difficulty": 0.4,
+      "solution": "光在同种、均匀介质中沿直线传播；在不同介质或不均匀介质中传播方向可能改变（折射）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0073",
+      "item_type": "choice",
+      "stem": "光在真空中的传播速度约为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_light_speed"
+      ],
+      "difficulty": 0.35,
+      "solution": "光在真空中的传播速度 c ≈ 3×10⁸ m/s，是自然界中最快的速度。光在水中的速度约为 3c/4，在玻璃中约为 2c/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3×10⁵ m/s",
+        "B. 3×10⁶ m/s",
+        "C. 3×10⁸ m/s",
+        "D. 3×10¹⁰ m/s"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0074",
+      "item_type": "fill",
+      "stem": "光在真空中的速度约为______m/s，是自然界中______的速度。",
+      "answer": "3×10⁸;最快",
+      "kps": [
+        "kp_phy8_light_speed"
+      ],
+      "difficulty": 0.4,
+      "solution": "光在真空中的速度 c ≈ 3×10⁸ m/s，是自然界中最快的速度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0075",
+      "item_type": "choice",
+      "stem": "下列现象中，与光的直线传播无关的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_shadow_eclipse"
+      ],
+      "difficulty": 0.45,
+      "solution": "手影、小孔成像、日食、月食都是光沿直线传播形成的现象；彩虹是光的色散（折射）形成的现象。",
+      "source": "llm_generated",
+      "options": [
+        "A. 手影游戏",
+        "B. 小孔成像",
+        "C. 日食的形成",
+        "D. 彩虹的形成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0076",
+      "item_type": "fill",
+      "stem": "小孔成像成______（填\"正立\"或\"倒立\"）的______（填\"实像\"或\"虚像\"），像的形状与小孔的形状______（填\"有关\"或\"无关\"）。",
+      "answer": "倒立;实像;无关",
+      "kps": [
+        "kp_phy8_shadow_eclipse"
+      ],
+      "difficulty": 0.5,
+      "solution": "小孔成像原理是光的直线传播，成倒立的实像，像的形状只与物体形状有关，与小孔形状无关。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0077",
+      "item_type": "choice",
+      "stem": "关于光的反射，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_reflection_law"
+      ],
+      "difficulty": 0.4,
+      "solution": "光的反射定律：①反射光线、入射光线和法线在同一平面内；②反射光线和入射光线分居法线两侧；③反射角等于入射角；④在反射现象中光路是可逆的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反射角可能大于入射角",
+        "B. 反射光线和入射光线在法线的同侧",
+        "C. 反射光线、入射光线和法线在同一平面内，反射角等于入射角",
+        "D. 在反射现象中光路不可逆"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0078",
+      "item_type": "fill",
+      "stem": "在反射现象中，反射光线、入射光线和法线在同一______内，反射光线和入射光线分居法线______侧，反射角______入射角。",
+      "answer": "平面;两;等于",
+      "kps": [
+        "kp_phy8_reflection_law"
+      ],
+      "difficulty": 0.4,
+      "solution": "光的反射定律（简记三线共面、两线分居、两角相等）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0079",
+      "item_type": "choice",
+      "stem": "黑板某一小块区域反光使学生看不清上面的字，是因为发生了（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_mirror_diffuse_reflection"
+      ],
+      "difficulty": 0.45,
+      "solution": "黑板反光区域表面光滑，发生镜面反射，反射光线沿同一方向射出，射入该方向眼睛的光强比从其他角度强，反而看不清楚字。粗糙表面发生漫反射，使人能从各个方向看到物体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 镜面反射",
+        "B. 漫反射",
+        "C. 光的折射",
+        "D. 光的直线传播"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0080",
+      "item_type": "fill",
+      "stem": "我们能从不同方向看到本身不发光的物体，是因为光在物体表面发生了______。",
+      "answer": "漫反射",
+      "kps": [
+        "kp_phy8_mirror_diffuse_reflection"
+      ],
+      "difficulty": 0.4,
+      "solution": "漫反射的光反射射向各个方向，使人能从前、后、左、右各个方向看到物体。无论镜面反射还是漫反射，都遵守光的反射定律。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0081",
+      "item_type": "choice",
+      "stem": "下列关于实像和虚像的说法，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_real_virtual_image"
+      ],
+      "difficulty": 0.45,
+      "solution": "实像：由实际光线会聚形成，能用光屏承接（如小孔成像、照相机的像）；虚像：由光线的反向延长线相交形成，不能用光屏承接（如平面镜成像）。注意：实像不一定都是倒立的（小孔成像成倒立的实像；放大镜成正立的虚像，但有些虚像如投影仪成的像——投影仪实际成的是倒立放大的实像）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 虚像可以用光屏承接",
+        "B. 实像是由光线的反向延长线相交形成的",
+        "C. 平面镜成的像是虚像，小孔成的像是实像",
+        "D. 实像总是倒立的，虚像总是正立的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0082",
+      "item_type": "fill",
+      "stem": "由实际光线会聚形成的、可以用光屏承接的像是______像；由光线的反向延长线相交形成的、不能用光屏承接的像是______像。",
+      "answer": "实;虚",
+      "kps": [
+        "kp_phy8_real_virtual_image"
+      ],
+      "difficulty": 0.4,
+      "solution": "实像：实际光线会聚形成，可用光屏承接；虚像：反向延长线相交形成，不能用光屏承接。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0083",
+      "item_type": "choice",
+      "stem": "某同学身高 1.6 m，站在竖直平面镜前 2 m 处，他在镜中所成的像高是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_plane_mirror"
+      ],
+      "difficulty": 0.4,
+      "solution": "平面镜成像特点：像与物大小相等。所以像高仍是 1.6 m（与距离无关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.8 m",
+        "B. 1.6 m",
+        "C. 3.2 m",
+        "D. 无法确定"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0084",
+      "item_type": "fill",
+      "stem": "平面镜所成的像是______立的______（填\"实\"或\"虚\"）像，像与物体到镜面的距离______，它们的连线与镜面______。",
+      "answer": "正;虚;相等;垂直",
+      "kps": [
+        "kp_phy8_plane_mirror"
+      ],
+      "difficulty": 0.45,
+      "solution": "平面镜成像特点：像与物大小相等、像与物到镜面距离相等、连线与镜面垂直、所成像是正立虚像（像与物关于镜面对称）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0085",
+      "item_type": "choice",
+      "stem": "光从空气斜射入水中时，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_refraction_intro"
+      ],
+      "difficulty": 0.4,
+      "solution": "折射规律：①折射光线、入射光线、法线在同一平面内；②折射光线和入射光线分居法线两侧；③光从空气斜射入水（或玻璃）时折射角小于入射角；④垂直入射时折射光线方向不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 折射光线、入射光线在法线的同侧",
+        "B. 折射角大于入射角",
+        "C. 折射光线与入射光线、法线在同一平面内，折射角小于入射角",
+        "D. 垂直入射时折射光线方向改变"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0086",
+      "item_type": "fill",
+      "stem": "光从空气斜射入玻璃时，折射角______（填\"大于\"或\"小于\"）入射角；光从玻璃斜射入空气时，折射角______入射角。",
+      "answer": "小于;大于",
+      "kps": [
+        "kp_phy8_refraction_intro"
+      ],
+      "difficulty": 0.45,
+      "solution": "光从光疏介质（空气）斜射入光密介质（水、玻璃）时，折射角小于入射角；反之折射角大于入射角。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0087",
+      "item_type": "choice",
+      "stem": "清澈的池水看起来比实际深度要浅，这是光的（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_refraction_phenomena"
+      ],
+      "difficulty": 0.45,
+      "solution": "池底反射的光从水中斜射入空气时发生折射，折射角大于入射角，眼睛逆着折射光线看去，看到的池底比实际位置浅，是折射现象。",
+      "source": "llm_generated",
+      "options": [
+        "A. 直线传播",
+        "B. 反射",
+        "C. 折射",
+        "D. 色散"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0088",
+      "item_type": "fill",
+      "stem": "插在水中的筷子看起来在水面处好像折断了，这是光的______现象；所看到的是筷子的______（填\"实\"或\"虚\"）像。",
+      "answer": "折射;虚",
+      "kps": [
+        "kp_phy8_refraction_phenomena"
+      ],
+      "difficulty": 0.45,
+      "solution": "水中的筷子反射的光从水中斜射入空气时发生折射，折射光线远离法线，眼睛逆着光线看去看到的是筷子的虚像，像的位置比实际偏上，所以看起来\"折断\"了。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0089",
+      "item_type": "choice",
+      "stem": "太阳光经过三棱镜后被分解为七种色光，这说明（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_dispersion"
+      ],
+      "difficulty": 0.45,
+      "solution": "牛顿色散实验表明白光不是单色光，而是由红、橙、黄、绿、蓝、靛、紫七种色光组成的复色光。单色光不能再分解。",
+      "source": "llm_generated",
+      "options": [
+        "A. 白光是单色光",
+        "B. 白光是由七种色光混合而成的复色光",
+        "C. 不能再分解的色光有七种",
+        "D. 只有白光能分解"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0090",
+      "item_type": "fill",
+      "stem": "色光的三原色是______、______和______，它们按不同比例混合可以得到各种色光。",
+      "answer": "红;绿;蓝",
+      "kps": [
+        "kp_phy8_dispersion"
+      ],
+      "difficulty": 0.5,
+      "solution": "色光三原色：红、绿、蓝。颜料三原色：红、黄、蓝（与色光三原色不同）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0091",
+      "item_type": "choice",
+      "stem": "下列应用中，利用紫外线的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_infrared_uv"
+      ],
+      "difficulty": 0.45,
+      "solution": "验钞机利用紫外线的荧光效应检验钞票的真伪；A、B、D 都是利用红外线的应用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电视遥控器",
+        "B. 红外线测温仪",
+        "C. 验钞机检验钞票",
+        "D. 红外夜视仪"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0092",
+      "item_type": "fill",
+      "stem": "紫外线能使荧光物质发光，可以用来______；太阳光中过量的紫外线照射对人体有害。",
+      "answer": "验钞",
+      "kps": [
+        "kp_phy8_infrared_uv"
+      ],
+      "difficulty": 0.4,
+      "solution": "紫外线应用：验钞机（使荧光物质发光）、杀菌、防伪、促进维生素 D 合成等。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0093",
+      "item_type": "choice",
+      "stem": "在\"探究光的反射定律\"的实验中，下列操作正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_exp_reflection"
+      ],
+      "difficulty": 0.45,
+      "solution": "探究反射定律实验中：①多次改变入射角，记录入射角和反射角；②探究反射光线、入射光线和法线是否共面（将光屏向后折转观察不到反射光线）；③寻找普遍规律。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只做一次实验就得出普遍规律",
+        "B. 将光屏向后折转一定角度后仍能看到反射光线",
+        "C. 改变入射角多次实验寻找普遍规律",
+        "D. 不需要记录入射角和反射角的大小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0094",
+      "item_type": "fill",
+      "stem": "在\"探究光的反射定律\"实验中，把光屏向后折转后看不到反射光线，这说明反射光线、入射光线和法线在同一______内。",
+      "answer": "平面",
+      "kps": [
+        "kp_phy8_exp_reflection"
+      ],
+      "difficulty": 0.45,
+      "solution": "反射光线、入射光线、法线在同一平面内，是反射定律之一（实验验证：将光屏向后折转，光屏上看不到反射光线）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0095",
+      "item_type": "choice",
+      "stem": "在\"探究平面镜成像特点\"的实验中，使用透明玻璃板代替平面镜的主要目的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_plane_mirror"
+      ],
+      "difficulty": 0.45,
+      "solution": "用透明玻璃板代替平面镜：①玻璃既能反射光（成像）又能透光，便于找到像的位置；②可比较像与物的大小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使像更清晰",
+        "B. 便于确定像的位置（透过玻璃板可看到像后方物体）",
+        "C. 玻璃板比平面镜便宜",
+        "D. 玻璃板反射光更强"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0096",
+      "item_type": "fill",
+      "stem": "在\"探究平面镜成像特点\"实验中，使用两支完全相同的蜡烛是为了比较像与物的______关系。",
+      "answer": "大小",
+      "kps": [
+        "kp_phy8_exp_plane_mirror"
+      ],
+      "difficulty": 0.4,
+      "solution": "用两支完全相同的蜡烛比较像与物的大小关系，从而得到\"像与物大小相等\"的结论。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0097",
+      "item_type": "choice",
+      "stem": "下列关于凸透镜和凹透镜的说法，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_lens_concepts"
+      ],
+      "difficulty": 0.4,
+      "solution": "凸透镜中间厚边缘薄，对光线有会聚作用；凹透镜中间薄边缘厚，对光线有发散作用。凸透镜的会聚作用是指使光线偏向主光轴，不一定相交于焦点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 凸透镜对光有发散作用，凹透镜对光有会聚作用",
+        "B. 凸透镜中间薄边缘厚，凹透镜中间厚边缘薄",
+        "C. 凸透镜对光有会聚作用，凹透镜对光有发散作用",
+        "D. 平行光通过凸透镜一定相交于焦点"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0098",
+      "item_type": "fill",
+      "stem": "凸透镜对光有______作用，凹透镜对光有______作用。",
+      "answer": "会聚;发散",
+      "kps": [
+        "kp_phy8_lens_concepts"
+      ],
+      "difficulty": 0.35,
+      "solution": "凸透镜会聚光线，凹透镜发散光线。这是两种透镜的基本光学特性。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0099",
+      "item_type": "choice",
+      "stem": "下列关于透镜三条特殊光线的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_lens_rays"
+      ],
+      "difficulty": 0.4,
+      "solution": "凸透镜三条特殊光线：①通过光心的光线方向不变；②平行于主光轴的光线折射后过焦点；③通过焦点的光线折射后平行于主光轴射出。凹透镜：通过光心的光线方向不变；平行于主光轴的光线折射后反向延长线过虚焦点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通过光心的光线经透镜后方向一定改变",
+        "B. 平行于主光轴的光线经凸透镜折射后过焦点",
+        "C. 通过焦点的光线经凸透镜折射后仍过焦点",
+        "D. 经过凹透镜的光线都不改变方向"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0100",
+      "item_type": "fill",
+      "stem": "过凸透镜光心的光线，传播方向______（填\"改变\"或\"不变\"）。",
+      "answer": "不变",
+      "kps": [
+        "kp_phy8_lens_rays"
+      ],
+      "difficulty": 0.4,
+      "solution": "光心是透镜的特殊点，过光心的光线传播方向不变。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0101",
+      "item_type": "choice",
+      "stem": "凸透镜焦距为 10 cm，物体放在距透镜 25 cm 处，此时所成的像是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_convex_imaging"
+      ],
+      "difficulty": 0.5,
+      "solution": "物距 u = 25 cm > 2f = 20 cm，根据凸透镜成像规律，此时成倒立、缩小的实像（应用：照相机）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 倒立、缩小的实像",
+        "B. 倒立、放大的实像",
+        "C. 正立、放大的虚像",
+        "D. 倒立、等大的实像"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0102",
+      "item_type": "fill",
+      "stem": "凸透镜成像规律口诀：\"一倍焦距分______，二倍焦距分______\"。",
+      "answer": "虚实;大小",
+      "kps": [
+        "kp_phy8_convex_imaging"
+      ],
+      "difficulty": 0.45,
+      "solution": "一倍焦距是实像与虚像的分界点（u=f 时不成像）；二倍焦距是实像放大与缩小的分界点（u=2f 时成等大实像）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0103",
+      "item_type": "choice",
+      "stem": "投影仪投影片到屏幕上成清晰的像，此时物距 u 与焦距 f 的关系是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_convex_applications"
+      ],
+      "difficulty": 0.45,
+      "solution": "投影仪工作时，物体（投影片）位于凸透镜一倍焦距和二倍焦距之间（f < u < 2f），成倒立、放大的实像。",
+      "source": "llm_generated",
+      "options": [
+        "A. u > 2f",
+        "B. u = 2f",
+        "C. f < u < 2f",
+        "D. u < f"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0104",
+      "item_type": "fill",
+      "stem": "照相机利用 u > 2f 时成______（填\"倒立\"或\"正立\"）______（填\"放大\"或\"缩小\"）的实像；放大镜利用 u < f 时成______立的、放大的______像。",
+      "answer": "倒立;缩小;正;虚",
+      "kps": [
+        "kp_phy8_convex_applications"
+      ],
+      "difficulty": 0.5,
+      "solution": "照相机：u>2f 成倒立缩小实像；投影仪：f<u<2f 成倒立放大实像；放大镜：u<f 成正立放大虚像。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0105",
+      "item_type": "choice",
+      "stem": "近视眼的成因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_eye_glasses"
+      ],
+      "difficulty": 0.4,
+      "solution": "近视眼成因：晶状体太厚（折光能力太强）或眼球前后径太长，来自远处物体的光会聚在视网膜前方，到达视网膜时已经发散，所以看不清远处物体。近视眼应配戴凹透镜矫正。",
+      "source": "llm_generated",
+      "options": [
+        "A. 晶状体太薄、眼球前后径太短，像成在视网膜后方",
+        "B. 晶状体太厚、眼球前后径太长，像成在视网膜前方",
+        "C. 晶状体太厚、眼球前后径太长，像成在视网膜后方",
+        "D. 晶状体太薄、眼球前后径太短，像成在视网膜前方"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0106",
+      "item_type": "fill",
+      "stem": "矫正近视眼应配戴______透镜，矫正远视眼（老花眼）应配戴______透镜。",
+      "answer": "凹;凸",
+      "kps": [
+        "kp_phy8_eye_glasses"
+      ],
+      "difficulty": 0.4,
+      "solution": "近视眼：像成在视网膜前方，配戴凹透镜使光线发散；远视眼：像成在视网膜后方，配戴凸透镜使光线会聚。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0107",
+      "item_type": "choice",
+      "stem": "显微镜的物镜所成的像是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_microscope_telescope"
+      ],
+      "difficulty": 0.5,
+      "solution": "显微镜的物镜相当于投影仪，物体在物镜的一倍焦距与二倍焦距之间，成倒立、放大的实像；目镜相当于放大镜，把这个实像再放大成虚像（两次放大）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 倒立、放大的虚像",
+        "B. 正立、放大的虚像",
+        "C. 倒立、放大的实像",
+        "D. 正立、缩小的实像"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0108",
+      "item_type": "fill",
+      "stem": "望远镜的物镜相当于______镜，成______（填\"倒立\"或\"正立\"）______（填\"放大\"或\"缩小\"）的实像，目镜把这个实像再放大成虚像。",
+      "answer": "照相;倒立;缩小",
+      "kps": [
+        "kp_phy8_microscope_telescope"
+      ],
+      "difficulty": 0.5,
+      "solution": "望远镜的物镜相当于照相机（u>2f 成倒立缩小实像）；目镜相当于放大镜，把这个实像放大成虚像。视角越大，看到的物体越清楚。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0109",
+      "item_type": "choice",
+      "stem": "在\"探究凸透镜成像规律\"的实验中，烛焰、凸透镜、光屏应（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_exp_convex_lens"
+      ],
+      "difficulty": 0.45,
+      "solution": "实验中应将烛焰、凸透镜、光屏调到同一高度，使烛焰的像成在光屏中央，便于比较像的正倒、左右。",
+      "source": "llm_generated",
+      "options": [
+        "A. 调节到同一高度",
+        "B. 烛焰位置最高，光屏最低",
+        "C. 凸透镜位置最高，烛焰最低",
+        "D. 高度不要求，调节光屏到最清晰即可"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0110",
+      "item_type": "fill",
+      "stem": "在\"探究凸透镜成像规律\"实验中，先用平行光聚焦法估测凸透镜的______，然后按 u>2f、u=2f、f<u<2f、u<f 分段进行实验。",
+      "answer": "焦距",
+      "kps": [
+        "kp_phy8_exp_convex_lens"
+      ],
+      "difficulty": 0.4,
+      "solution": "凸透镜焦距估测方法：用平行光（如太阳光）照射透镜，在另一侧移动光屏找到最小最亮的光斑，光斑到透镜的距离即为焦距。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0111",
+      "item_type": "choice",
+      "stem": "下列关于质量的说法，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_mass_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "质量是物体本身的一种属性，物体所含物质的多少不随形状、状态、温度、位置的变化而变化。水结冰、铁压片、月球到地球，质量都不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一杯水结冰后质量变小",
+        "B. 一块铁被压成铁片后质量变小",
+        "C. 一块矿石由月球带到地球质量变小",
+        "D. 物体质量不随位置、形状、状态、温度的改变而改变"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0112",
+      "item_type": "fill",
+      "stem": "物体所含物质的多少叫______，符号是______，国际单位是______（填中文）。",
+      "answer": "质量;m;千克",
+      "kps": [
+        "kp_phy8_mass_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "质量定义：物体所含物质的多少。符号 m，国际单位是千克（kg）。质量是物体本身的一种属性。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0113",
+      "item_type": "choice",
+      "stem": "下列质量单位换算中，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_mass_units_estimate"
+      ],
+      "difficulty": 0.35,
+      "solution": "质量单位换算：1 t = 1000 kg；1 kg = 1000 g；1 g = 1000 mg；1 mg = 10⁻³ g。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 t = 100 kg",
+        "B. 1 kg = 1000 g",
+        "C. 1 g = 100 mg",
+        "D. 1 mg = 1000 g"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0114",
+      "item_type": "fill",
+      "stem": "一头成年大象的质量大约是 4______（填\"t\"或\"kg\"）。一枚大头针的质量约为 80______（填单位）。",
+      "answer": "t;mg",
+      "kps": [
+        "kp_phy8_mass_units_estimate"
+      ],
+      "difficulty": 0.4,
+      "solution": "常见质量估测：大象约 4 t（一头大象可达数吨）；大头针约 80 mg；一个苹果约 150～200 g；中学生约 50 kg。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0115",
+      "item_type": "choice",
+      "stem": "使用托盘天平称量物体质量前，发现指针偏右，应（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_balance_use"
+      ],
+      "difficulty": 0.45,
+      "solution": "天平使用前要先将游码归零再调平衡。指针偏右说明右边重，应向左调节平衡螺母（\"指针偏向哪边，平衡螺母向相反方向调节\"）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 将平衡螺母向右调节",
+        "B. 将平衡螺母向左调节",
+        "C. 在右盘中加砝码",
+        "D. 移动游码到右侧"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0116",
+      "item_type": "fill",
+      "stem": "用托盘天平称量物体质量时，被测物放在______盘，砝码放在______盘。",
+      "answer": "左;右",
+      "kps": [
+        "kp_phy8_balance_use"
+      ],
+      "difficulty": 0.35,
+      "solution": "托盘天平使用：\"左物右码\"。被测物体放在左盘，砝码放在右盘（先大后小），游码移到合适位置。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0117",
+      "item_type": "choice",
+      "stem": "关于密度，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_density_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "密度是物质本身的特性，由物质种类决定，与质量、体积无关。ρ = m/V 反映的是三者关系，不是正比/反比关系。水的密度是 1.0×10³ kg/m³ = 1.0 g/cm³（在 4 ℃ 时）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质密度与质量成正比，与体积成反比",
+        "B. 物质密度与质量、体积无关，是物质本身的特性",
+        "C. 体积大的物体密度一定小",
+        "D. 水的密度一定是 1.0 g/cm³"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0118",
+      "item_type": "fill",
+      "stem": "密度的计算公式是 ρ=______，国际单位是______，常用单位还有______（与 SI 单位相差 1000）。",
+      "answer": "m/V;kg/m³;g/cm³",
+      "kps": [
+        "kp_phy8_density_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "密度公式 ρ = m/V。国际单位：kg/m³；常用单位：g/cm³（1 g/cm³ = 1×10³ kg/m³）。水的密度为 1.0×10³ kg/m³。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0119",
+      "item_type": "choice",
+      "stem": "一块质量为 7.8 kg 的金属块，体积为 1×10⁻³ m³，则此金属块的密度是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_density_calculation"
+      ],
+      "difficulty": 0.45,
+      "solution": "ρ = m/V = 7.8 kg / (1×10⁻³ m³) = 7.8×10³ kg/m³ = 7.8 g/cm³，是钢（铁）的密度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 7.8×10³ g/cm³",
+        "B. 7.8×10³ kg/m³",
+        "C. 7.8 g/cm³",
+        "D. 78 kg/m³"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0120",
+      "item_type": "fill",
+      "stem": "一个瓶子最多能装 0.5 kg 水，则该瓶子最多能装______kg 的水银（密度：13.6×10³ kg/m³）。",
+      "answer": "6.8",
+      "kps": [
+        "kp_phy8_density_calculation"
+      ],
+      "difficulty": 0.5,
+      "solution": "瓶子的容积 V = m水/ρ水 = 0.5/(1×10³) = 5×10⁻⁴ m³；装水银质量 = ρ水银×V = 13.6×10³ × 5×10⁻⁴ = 6.8 kg。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0121",
+      "item_type": "choice",
+      "stem": "农业生产中配制盐水选种，要求盐水的密度为 1.1×10³ kg/m³。现有 1000 mL 的盐水，质量为 1.05 kg，则此盐水（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_density_applications"
+      ],
+      "difficulty": 0.5,
+      "solution": "盐水密度 = 1.05 kg / 0.001 m³ = 1.05×10³ kg/m³ < 1.1×10³ kg/m³，密度偏小，应加盐（加盐后密度增大）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 符合要求",
+        "B. 密度偏小，应加盐",
+        "C. 密度偏大，应加水",
+        "D. 无法判断"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0122",
+      "item_type": "fill",
+      "stem": "体积为 100 cm³ 的实心铁球质量为 790 g，则其密度为______kg/m³，与铁的密度相同；这说明该铁球______（填\"实心\"或\"空心\"）。",
+      "answer": "7.9×10³;实心",
+      "kps": [
+        "kp_phy8_density_applications"
+      ],
+      "difficulty": 0.5,
+      "solution": "ρ = 0.79 kg / 1×10⁻⁴ m³ = 7.9×10³ kg/m³ = 铁的密度，说明是实心球。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0123",
+      "item_type": "choice",
+      "stem": "下列物体的应用，主要利用其导热性的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_material_properties"
+      ],
+      "difficulty": 0.45,
+      "solution": "铁或铝是热的良导体做锅体，塑料是热的不良导体做把手（防止烫手），利用导热性差异。A 利用导电性，B 利用绝缘性，D 利用熔点高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用铜丝做导线",
+        "B. 用橡胶做电线外皮",
+        "C. 锅用铁（或铝）制成，锅把手用塑料制成",
+        "D. 用钨丝做白炽灯灯丝"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0124",
+      "item_type": "fill",
+      "stem": "物质有许多物理属性，如磁性、______性、______性、硬度、透明度、弹性等。",
+      "answer": "导电;导热",
+      "kps": [
+        "kp_phy8_material_properties"
+      ],
+      "difficulty": 0.4,
+      "solution": "物质常见属性：磁性、导电性、导热性、硬度、透明度、弹性、密度、状态等。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0125",
+      "item_type": "choice",
+      "stem": "下列技术应用中，主要利用半导体材料的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_material_property_development"
+      ],
+      "difficulty": 0.45,
+      "solution": "二极管、集成电路、太阳能电池等是利用半导体材料制成的。A 是磁性应用，C 是金属导体的应用，D 是熔点低的合金应用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电磁铁",
+        "B. 二极管",
+        "C. 普通导线",
+        "D. 保险丝"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0126",
+      "item_type": "fill",
+      "stem": "人类对物质属性的研究推动了______（如二极管、集成电路）和______（超导磁悬浮列车）技术的发展。",
+      "answer": "半导体;超导体",
+      "kps": [
+        "kp_phy8_material_property_development"
+      ],
+      "difficulty": 0.5,
+      "solution": "半导体和超导体是新型材料的代表：半导体用于二极管、集成电路、太阳能电池等；超导体用于磁悬浮列车、输电等。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0127",
+      "item_type": "choice",
+      "stem": "用托盘天平测量液体质量时，下列步骤合理的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_balance"
+      ],
+      "difficulty": 0.45,
+      "solution": "测量液体质量一般用烧杯盛装：①先测空烧杯质量 m₁；②再测烧杯加液体总质量 m₂；液体质量 = m₂ - m₁。",
+      "source": "llm_generated",
+      "options": [
+        "A. 直接把液体放在天平左盘称量",
+        "B. 先测空烧杯质量，再将液体倒入烧杯测总质量，相减得液体质量",
+        "C. 不用烧杯直接称量液体",
+        "D. 只能测量一种液体，不能重复使用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0128",
+      "item_type": "fill",
+      "stem": "用托盘天平称量物体质量时，加减砝码的顺序应先加______（填\"大\"或\"小\"）的砝码，再加______的砝码。",
+      "answer": "大;小",
+      "kps": [
+        "kp_phy8_exp_balance"
+      ],
+      "difficulty": 0.4,
+      "solution": "加减砝码顺序——先大后小，可使称量更快到达平衡，减小操作误差。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0129",
+      "item_type": "choice",
+      "stem": "在\"测量固体密度\"的实验中，测量顺序一般应为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_density"
+      ],
+      "difficulty": 0.45,
+      "solution": "测量固体密度时，若先测体积（特别是浸湿的物体需要用天平再测质量），会使质量偏大；先测质量再测体积可以减小误差。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先用量筒测体积，再用天平测质量",
+        "B. 先用天平测质量，再用量筒测体积",
+        "C. 顺序无所谓",
+        "D. 只测质量就行"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0130",
+      "item_type": "fill",
+      "stem": "用量筒测量不规则固体体积时，应先在量筒中倒入适量水，记下体积 V₁；再将物体浸没水中，记下体积 V₂，则物体体积 V=______。",
+      "answer": "V₂ - V₁",
+      "kps": [
+        "kp_phy8_exp_density"
+      ],
+      "difficulty": 0.45,
+      "solution": "排水法测体积：V = V₂ - V₁。量筒读数时视线应与凹液面底部相平。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0132",
+      "item_type": "fill",
+      "stem": "力的国际单位是______，简称______，符号是______。",
+      "answer": "牛顿;牛;N",
+      "kps": [
+        "kp_phy8_force_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "力的单位：牛顿，简称牛，符号 N。两个鸡蛋所受重力约为 1 N。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0133",
+      "item_type": "choice",
+      "stem": "下列现象中，力的作用效果是改变物体形状的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_force_effects"
+      ],
+      "difficulty": 0.45,
+      "solution": "力的两种作用效果：①改变物体的形状（使物体发生形变，如弹簧被拉长）；②改变物体的运动状态（速度大小或方向变化）。A、C 是改变速度大小，D 是改变运动方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 足球在空中沿抛物线运动",
+        "B. 弹簧被拉长",
+        "C. 列车进站后减速",
+        "D. 足球被踢出后做曲线运动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0134",
+      "item_type": "fill",
+      "stem": "力的三要素是______、______和______。",
+      "answer": "大小;方向;作用点",
+      "kps": [
+        "kp_phy8_force_effects"
+      ],
+      "difficulty": 0.4,
+      "solution": "力的三要素：大小、方向、作用点。力的三要素都影响力的作用效果。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0135",
+      "item_type": "choice",
+      "stem": "用桨划船时，使船前进的力是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_force_interaction"
+      ],
+      "difficulty": 0.45,
+      "solution": "物体间力的作用是相互的。用桨向后划水时，桨对水施加向后的力，水同时对桨施加向前的反作用力，正是水对桨的推力使船前进。",
+      "source": "llm_generated",
+      "options": [
+        "A. 桨对水的推力",
+        "B. 水对桨的推力",
+        "C. 船桨对船体的推力",
+        "D. 人对船的推力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0136",
+      "item_type": "fill",
+      "stem": "游泳时人向后划水，人却向前游动，这表明物体间力的作用是______的。",
+      "answer": "相互",
+      "kps": [
+        "kp_phy8_force_interaction"
+      ],
+      "difficulty": 0.4,
+      "solution": "力的作用是相互的：A 对 B 施力，B 必定同时对 A 施力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0137",
+      "item_type": "choice",
+      "stem": "画力的示意图时，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_force_diagram"
+      ],
+      "difficulty": 0.4,
+      "solution": "力的示意图：从力的作用点起沿力的方向画线段、画箭头表示力的方向、标出力的符号和大小。线段长度表示力的大小（示意图中不必严格按比例）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不需要标出力的作用点",
+        "B. 不需要标出力的方向",
+        "C. 用带箭头的线段表示力，箭头方向表示力的方向",
+        "D. 不用标出力的符号和量值"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0138",
+      "item_type": "fill",
+      "stem": "力的示意图是用一根带______的线段来表示力，线段的长短表示力的______，箭头表示力的______，起点（或终点）表示力的______。",
+      "answer": "箭头;大小;方向;作用点",
+      "kps": [
+        "kp_phy8_force_diagram"
+      ],
+      "difficulty": 0.45,
+      "solution": "力的示意图画法：用带箭头的线段表示力，箭头方向表示力的方向，线段起点表示作用点。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0139",
+      "item_type": "choice",
+      "stem": "关于弹力，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_elastic_force"
+      ],
+      "difficulty": 0.45,
+      "solution": "弹力是物体发生弹性形变时产生的力。①任何发生弹性形变的物体都会对与之接触的物体产生弹力；②弹力与重力无确定关系；③在弹性限度内，弹簧的伸长量与所受拉力成正比（弹簧测力计原理）；④压力、支持力、拉力都属于弹力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体只要发生形变就一定会产生弹力",
+        "B. 弹力的大小一定等于物体的重力",
+        "C. 在弹性限度内，弹簧的伸长量与所受拉力成正比",
+        "D. 压力和支持力不是弹力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0140",
+      "item_type": "fill",
+      "stem": "弹簧测力计是根据弹簧的______与所受拉力成______的原理制成的。",
+      "answer": "伸长量;正比",
+      "kps": [
+        "kp_phy8_elastic_force"
+      ],
+      "difficulty": 0.45,
+      "solution": "弹簧测力计原理：在弹性限度内，弹簧的伸长量与所受拉力成正比。使用前要调零，并观察量程与分度值。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0141",
+      "item_type": "choice",
+      "stem": "关于重力，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_gravity"
+      ],
+      "difficulty": 0.45,
+      "solution": "重力：①由于地球的吸引而受到的力，方向竖直向下（不是垂直向下，垂直是对水平面而言，竖直是相对水平面）；②G = mg；③g = 9.8 N/kg 表示质量 1 kg 的物体受到的重力为 9.8 N；④宇航员在太空中也受重力（提供绕地球运动的向心力）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 重力的方向总是垂直向下",
+        "B. 物体的质量越大，所受重力越大",
+        "C. g = 9.8 N/kg 表示 1 kg 物体所受重力为 9.8 N",
+        "D. 在太空中飞行的宇航员不受重力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0142",
+      "item_type": "fill",
+      "stem": "重力的大小与物体的______成正比，其方向总是______。",
+      "answer": "质量;竖直向下",
+      "kps": [
+        "kp_phy8_gravity"
+      ],
+      "difficulty": 0.4,
+      "solution": "重力公式 G = mg，重力方向竖直向下（应用：重垂线检查墙面是否竖直）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0143",
+      "item_type": "choice",
+      "stem": "使用弹簧测力计测量力时，下列操作错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_exp_dynamometer"
+      ],
+      "difficulty": 0.4,
+      "solution": "使用弹簧测力计：①检查指针是否指零；②观察量程和分度值；③所测力不能超过量程（否则损坏弹簧）；④读数时视线与刻度盘面垂直；⑤待指针稳定后读数。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使用前检查指针是否指零",
+        "B. 观察量程和分度值",
+        "C. 测量时拉力超过量程",
+        "D. 待指针稳定后读数"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0144",
+      "item_type": "fill",
+      "stem": "弹簧测力计的量程是指它能测量的______范围，分度值是指每一小格所表示的______。",
+      "answer": "最大;力的大小",
+      "kps": [
+        "kp_phy8_exp_dynamometer"
+      ],
+      "difficulty": 0.4,
+      "solution": "量程：测力计允许测量的最大力；分度值：相邻两刻度线间的力值大小（最小刻度）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0145",
+      "item_type": "choice",
+      "stem": "牛顿第一定律的内容是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_newton_first"
+      ],
+      "difficulty": 0.4,
+      "solution": "牛顿第一定律：一切物体在没有受到力的作用时，总保持静止状态或匀速直线运动状态。定律说明了力不是维持运动的原因，而是改变运动状态的原因（这是亚里士多德错误观点的纠正）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体受力越大速度越大",
+        "B. 一切物体在没有受到力的作用时，总保持静止状态或匀速直线运动状态",
+        "C. 力是维持物体运动的原因",
+        "D. 物体运动状态改变时一定受平衡力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0146",
+      "item_type": "fill",
+      "stem": "牛顿第一定律是在大量______事实的基础上，通过进一步的______概括出来的。",
+      "answer": "实验;推理",
+      "kps": [
+        "kp_phy8_newton_first"
+      ],
+      "difficulty": 0.45,
+      "solution": "牛顿第一定律不是直接由实验得出（理想实验法），是在伽利略斜面实验等大量实验事实基础上推理概括出来的（阻力为零时小车将永远运动下去）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0147",
+      "item_type": "choice",
+      "stem": "关于惯性，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_inertia"
+      ],
+      "difficulty": 0.45,
+      "solution": "惯性是物体保持原来运动状态不变的性质。①一切物体在任何情况下都具有惯性；②惯性大小只与质量有关，与速度、受力等无关；③惯性不是力，不能说\"受到惯性作用\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 静止的物体有惯性，运动的物体没有惯性",
+        "B. 物体受力越大惯性越大",
+        "C. 一切物体在任何时候都具有惯性，惯性大小只与质量有关",
+        "D. 惯性是使物体保持运动状态的力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0148",
+      "item_type": "fill",
+      "stem": "惯性大小只与物体的______有关，与物体是否运动、受力情况无关。",
+      "answer": "质量",
+      "kps": [
+        "kp_phy8_inertia"
+      ],
+      "difficulty": 0.4,
+      "solution": "惯性是物体的属性，质量越大惯性越大。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0149",
+      "item_type": "choice",
+      "stem": "下列事例中，属于利用惯性的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_inertia_safety"
+      ],
+      "difficulty": 0.45,
+      "solution": "跳远助跑利用惯性使身体在起跳后继续保持向前运动；A、B、D 都是防范惯性危害的事例。",
+      "source": "llm_generated",
+      "options": [
+        "A. 司机开车必须系安全带",
+        "B. 汽车在公路上行驶要保持车距",
+        "C. 跳远运动员起跳前要助跑",
+        "D. 雨天路滑车辆要减速"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0150",
+      "item_type": "fill",
+      "stem": "汽车突然刹车时，乘客身体会向______倾倒，这是因为乘客具有______。",
+      "answer": "前;惯性",
+      "kps": [
+        "kp_phy8_inertia_safety"
+      ],
+      "difficulty": 0.4,
+      "solution": "汽车突然刹车时，车减速但乘客由于惯性要保持原来的运动状态继续向前运动，所以向前倾倒。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0151",
+      "item_type": "choice",
+      "stem": "关于二力平衡，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_two_force_balance"
+      ],
+      "difficulty": 0.45,
+      "solution": "二力平衡条件：①作用在同一物体上；②大小相等；③方向相反；④作用在同一直线上。这四个条件缺一不可。物体在平衡力作用下保持静止或匀速直线运动状态（运动状态不变）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大小相等、方向相反的两个力一定是一对平衡力",
+        "B. 二力平衡时，两个力可以作用在两个物体上",
+        "C. 二力平衡的四个条件：大小相等、方向相反、作用在同一直线上、作用在同一物体上",
+        "D. 物体受到平衡力作用时一定保持静止"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0152",
+      "item_type": "fill",
+      "stem": "物体受到平衡力作用时，保持______或______运动状态不变。",
+      "answer": "静止;匀速直线",
+      "kps": [
+        "kp_phy8_two_force_balance"
+      ],
+      "difficulty": 0.4,
+      "solution": "平衡状态：静止或匀速直线运动。物体受平衡力（或不受力）时处于平衡状态。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0153",
+      "item_type": "choice",
+      "stem": "下列各组力中，属于相互作用力的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_balance_interaction_distinguish"
+      ],
+      "difficulty": 0.45,
+      "solution": "相互作用力（作用力与反作用力）：作用在两个物体上，性质相同，同时产生同时消失。A 是平衡力（同物）；B 的两个力虽接触但不在同一物上——实际也是相互作用力（脚对板、板对脚）；C 显然是对的；D 是两个力作用在同一物体（绳）上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 静止在桌面上的书受到的重力和支持力",
+        "B. 跳水运动员起跳时脚对跳板的压力和跳板对脚的支持力",
+        "C. 推墙时手对墙的推力和墙对手的推力",
+        "D. 拔河比赛时两边对绳子的拉力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0154",
+      "item_type": "fill",
+      "stem": "平衡力作用在______个物体上，相互作用力作用在______个物体上。",
+      "answer": "同一;两",
+      "kps": [
+        "kp_phy8_balance_interaction_distinguish"
+      ],
+      "difficulty": 0.4,
+      "solution": "平衡力：作用在同一物体上；相互作用力：作用在两个物体上。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0155",
+      "item_type": "choice",
+      "stem": "一物体在水平方向上受到一对平衡力的作用，则此物体（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_force_motion_relation"
+      ],
+      "difficulty": 0.45,
+      "solution": "物体在平衡力作用下保持匀速直线运动或静止状态，即运动状态保持不变。题中未说明初态，所以是\"保持原运动状态不变\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一定保持静止",
+        "B. 一定做匀速直线运动",
+        "C. 运动状态保持不变",
+        "D. 一定做加速运动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0156",
+      "item_type": "fill",
+      "stem": "物体不受力或受______力时，运动状态不变；物体受力不平衡时，运动状态______。",
+      "answer": "平衡;一定改变",
+      "kps": [
+        "kp_phy8_force_motion_relation"
+      ],
+      "difficulty": 0.4,
+      "solution": "力是改变物体运动状态的原因：物体受平衡力时运动状态不变；受不平衡力时运动状态一定改变。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0157",
+      "item_type": "choice",
+      "stem": "下列关于摩擦力的说法，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_friction_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "摩擦力：①发生在两个相互接触、有压力、接触面粗糙、有相对运动或相对运动趋势的物体之间；②方向与相对运动（或相对运动趋势）方向相反；③静止物体也可以受静摩擦力（如手握瓶子不下滑）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摩擦力的方向总是与物体运动方向相同",
+        "B. 静止的物体不可能受到摩擦力",
+        "C. 两个物体之间有压力就一定有摩擦力",
+        "D. 摩擦力的方向总是阻碍物体的相对运动（或相对运动趋势）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0158",
+      "item_type": "fill",
+      "stem": "摩擦力分为______摩擦、______摩擦和______摩擦三种。",
+      "answer": "滑动;滚动;静",
+      "kps": [
+        "kp_phy8_friction_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "三种摩擦：滑动摩擦、滚动摩擦、静摩擦。在相同条件下，滚动摩擦比滑动摩擦小得多。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0159",
+      "item_type": "choice",
+      "stem": "下列做法中，属于通过增大压力来增大摩擦的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_friction_factors"
+      ],
+      "difficulty": 0.45,
+      "solution": "影响滑动摩擦力大小的因素：压力大小和接触面的粗糙程度。A、D 都是改变接触面粗糙程度（花纹增大、加润滑油减小），C 是变滑动为滚动减小摩擦，B 是增大压力来增大摩擦。",
+      "source": "llm_generated",
+      "options": [
+        "A. 鞋底刻有凹凸不平的花纹",
+        "B. 自行车刹车时用力捏闸",
+        "C. 机器的转动部分加装滚珠轴承",
+        "D. 给自行车轴加润滑油"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0160",
+      "item_type": "fill",
+      "stem": "滑动摩擦力的大小与______大小和接触面的______有关，与接触面积大小和相对运动速度大小______（填\"有关\"或\"无关\"）。",
+      "answer": "压力;粗糙程度;无关",
+      "kps": [
+        "kp_phy8_friction_factors"
+      ],
+      "difficulty": 0.4,
+      "solution": "滑动摩擦力 f = μN（μ 为动摩擦因数），与压力 N 成正比，与接触面粗糙程度（μ）有关，与接触面积、运动速度无关。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0161",
+      "item_type": "choice",
+      "stem": "下列做法中，属于减小摩擦的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_friction_utilization"
+      ],
+      "difficulty": 0.45,
+      "solution": "减小摩擦的方法：①减小压力；②减小接触面粗糙程度（加润滑油）；③变滑动为滚动（轴承）；④使接触面分离（气垫、磁悬浮）。A、B、D 都是增大摩擦。",
+      "source": "llm_generated",
+      "options": [
+        "A. 鞋底和轮胎刻有花纹",
+        "B. 体操运动员比赛前在手上擦镁粉",
+        "C. 在机器转动部分加装滚珠轴承",
+        "D. 自行车刹车时用力捏闸"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0162",
+      "item_type": "fill",
+      "stem": "常用的减小摩擦的方法有：减小______、减小接触面的______、变滑动为滚动、加______等。",
+      "answer": "压力;粗糙程度;润滑油",
+      "kps": [
+        "kp_phy8_friction_utilization"
+      ],
+      "difficulty": 0.4,
+      "solution": "减小摩擦的四种途径：减小压力、减小接触面粗糙程度、变滑动为滚动、加润滑油（或气垫、磁悬浮使接触面分离）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0163",
+      "item_type": "choice",
+      "stem": "在\"探究滑动摩擦力大小与哪些因素有关\"的实验中，用弹簧测力计沿水平方向匀速直线拉动木块，此时摩擦力大小______（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_friction"
+      ],
+      "difficulty": 0.45,
+      "solution": "用弹簧测力计水平匀速拉动木块，木块处于平衡状态，水平方向上只有弹簧拉力和摩擦力两个力，根据二力平衡，摩擦力等于弹簧测力计示数（转换法测摩擦力）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大于弹簧测力计示数",
+        "B. 等于弹簧测力计示数",
+        "C. 小于弹簧测力计示数",
+        "D. 与弹簧测力计示数无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0164",
+      "item_type": "fill",
+      "stem": "在\"探究滑动摩擦力\"的实验中，要研究摩擦力与压力大小的关系，应保持接触面______不变，改变______大小。",
+      "answer": "粗糙程度;压力",
+      "kps": [
+        "kp_phy8_exp_friction"
+      ],
+      "difficulty": 0.45,
+      "solution": "控制变量法：探究 f 与 N 的关系时，保持接触面粗糙程度（材料）不变，只改变压力大小。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0165",
+      "item_type": "choice",
+      "stem": "下列关于压力和重力的说法，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_pressure_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "压力与重力是两种不同的力：①压力是垂直作用在物体表面上的力，方向不一定竖直向下（与接触面垂直）；②只有当物体自由水平放置时 F = 物重 G；③压力不是重力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 压力的方向总是竖直向下",
+        "B. 压力的大小一定等于重力",
+        "C. 压力是垂直作用在物体表面上的力，重力是地球对物体的吸引",
+        "D. 压力和重力是同一个力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0166",
+      "item_type": "fill",
+      "stem": "压强是表示______作用效果的物理量，其计算公式为 p=______，单位是______。",
+      "answer": "压力;F/S;帕斯卡(Pa)",
+      "kps": [
+        "kp_phy8_pressure_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "压强定义：单位面积上受到的压力，p = F/S。国际单位：帕斯卡（Pa），1 Pa = 1 N/m²。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0167",
+      "item_type": "choice",
+      "stem": "一块长方体砖平放在水平地面上，对地面压强为 p。若沿竖直方向切去一半，则剩余部分对地面的压强是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_pressure_calculation"
+      ],
+      "difficulty": 0.5,
+      "solution": "竖直切去一半后，质量减半、重力减半、压力减半，受力面积也减半，p = (G/2)/(S/2) = G/S = p，压强不变（柱体切割：竖直切压强不变，水平切压强变）。",
+      "source": "llm_generated",
+      "options": [
+        "A. p/2",
+        "B. p",
+        "C. 2p",
+        "D. p/4"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0168",
+      "item_type": "fill",
+      "stem": "水平地面上放一块质量为 5 kg 的砖，砖与地面的接触面积为 0.02 m²，则砖对地面的压强为______Pa。（g = 10 N/kg）",
+      "answer": "2500",
+      "kps": [
+        "kp_phy8_pressure_calculation"
+      ],
+      "difficulty": 0.5,
+      "solution": "F = G = mg = 5 × 10 = 50 N；p = F/S = 50 / 0.02 = 2500 Pa。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0169",
+      "item_type": "choice",
+      "stem": "下列事例中，属于减小压强的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_pressure_change"
+      ],
+      "difficulty": 0.5,
+      "solution": "减小压强方法：减小压力或增大受力面积。书包背带宽（增大受力面积）减小压强；A、B 减小受力面积增大压强；D 增大压力增大压强。",
+      "source": "llm_generated",
+      "options": [
+        "A. 针和锥子的尖端做得很尖",
+        "B. 啄木鸟的喙很尖",
+        "C. 书包背带做得很宽",
+        "D. 压路机的碾子很重"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0170",
+      "item_type": "fill",
+      "stem": "增大压强的方法有：______压力或______受力面积。",
+      "answer": "增大;减小",
+      "kps": [
+        "kp_phy8_pressure_change"
+      ],
+      "difficulty": 0.4,
+      "solution": "由 p = F/S 知：增大压强可增大压力或减小受力面积；减小压强则相反。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0171",
+      "item_type": "choice",
+      "stem": "关于液体内部压强，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_liquid_pressure"
+      ],
+      "difficulty": 0.45,
+      "solution": "液体压强特点：①液体对容器底和侧壁都有压强，液体内部向各个方向都有压强；②同一深度向各个方向的压强相等；③深度越深压强越大；④液体密度越大压强越大；⑤压强公式 p = ρgh。",
+      "source": "llm_generated",
+      "options": [
+        "A. 液体内部只对容器底有压强",
+        "B. 同一深度处液体压强处处相等",
+        "C. 液体压强随深度增加而减小",
+        "D. 液体压强与液体密度无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0172",
+      "item_type": "fill",
+      "stem": "液体内部压强公式 p=______，只与液体的______和______有关。",
+      "answer": "ρgh;密度;深度",
+      "kps": [
+        "kp_phy8_liquid_pressure"
+      ],
+      "difficulty": 0.45,
+      "solution": "液体压强公式 p = ρgh，ρ 为液体密度，h 为深度（从液面竖直向下到该点的距离）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0173",
+      "item_type": "choice",
+      "stem": "下列器具中，不属于连通器的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_connected_vessels"
+      ],
+      "difficulty": 0.45,
+      "solution": "连通器：上端开口、下部相连通的容器。注射器不是连通器（结构不符）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 茶壶",
+        "B. 锅炉水位计",
+        "C. 船闸",
+        "D. 注射器"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0174",
+      "item_type": "fill",
+      "stem": "连通器的特点是：静止在连通器中的同种液体，各容器中的液面总保持______。",
+      "answer": "相平",
+      "kps": [
+        "kp_phy8_connected_vessels"
+      ],
+      "difficulty": 0.4,
+      "solution": "连通器原理：连通器内装入同种液体、液体不流动时，各容器中液面总保持相平。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0175",
+      "item_type": "choice",
+      "stem": "最早证明大气压强存在的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_atmos_pressure"
+      ],
+      "difficulty": 0.4,
+      "solution": "1654 年格里克（奥托·冯·格里克）做了马德堡半球实验，有力证明大气压强的存在；托里拆利实验测定了大气压的值。",
+      "source": "llm_generated",
+      "options": [
+        "A. 牛顿",
+        "B. 托里拆利",
+        "C. 马德堡半球实验",
+        "D. 伽利略"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0176",
+      "item_type": "fill",
+      "stem": "1 标准大气压 =______mm 高水银柱产生的压强 ≈______Pa。",
+      "answer": "760;1.013×10⁵",
+      "kps": [
+        "kp_phy8_atmos_pressure"
+      ],
+      "difficulty": 0.4,
+      "solution": "托里拆利实验：1 标准大气压 = 760 mm 水银柱 ≈ 1.013×10⁵ Pa。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0177",
+      "item_type": "choice",
+      "stem": "下列事例中，不是利用大气压工作的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_atmos_pressure_applications"
+      ],
+      "difficulty": 0.45,
+      "solution": "用吸管、吸盘、活塞式抽水机都是利用大气压工作；划船前进是物体间力的作用（桨对水、水对桨的相互作用力），与大气压无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用吸管吸饮料",
+        "B. 用吸盘挂衣钩",
+        "C. 用活塞式抽水机抽水",
+        "D. 用船桨划船前进"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0178",
+      "item_type": "fill",
+      "stem": "大气压随海拔高度的增加而______，因此高山上水的沸点比平原地区的______（填\"高\"或\"低\"）。",
+      "answer": "减小;低",
+      "kps": [
+        "kp_phy8_atmos_pressure_applications"
+      ],
+      "difficulty": 0.4,
+      "solution": "海拔越高，大气压越小，水的沸点越低（高山上水烧不到 100 ℃ 就沸腾）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0179",
+      "item_type": "choice",
+      "stem": "火车站台上都设有安全线，原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_fluid_pressure"
+      ],
+      "difficulty": 0.45,
+      "solution": "流体（气体和液体）压强与流速有关：流速越大的位置压强越小。列车进站时带动周围空气流动速度加快、压强减小，人后侧空气压强大，易将人推向列车，造成危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 防止乘客掉下站台",
+        "B. 列车进站时带动周围空气流动速度加快、压强减小，易将人推向列车",
+        "C. 视觉提示",
+        "D. 安全规定"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0180",
+      "item_type": "fill",
+      "stem": "在气体和液体中，流速越大的位置压强越______，流速越小的位置压强越______。",
+      "answer": "小;大",
+      "kps": [
+        "kp_phy8_fluid_pressure"
+      ],
+      "difficulty": 0.4,
+      "solution": "流体压强与流速的关系：流速大处压强小，流速小处压强大。机翼升力来源于上下面空气流速不同造成的压强差。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0181",
+      "item_type": "choice",
+      "stem": "在\"探究液体压强与哪些因素有关\"的实验中，使用微小压强计，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_exp_liquid_pressure"
+      ],
+      "difficulty": 0.5,
+      "solution": "微小压强计的原理：通过薄膜把压强变化转化为 U 形管两边液面的高度差，高度差越大表明所测压强越大。",
+      "source": "llm_generated",
+      "options": [
+        "A. U 形管两边液面高度差越大表示压强越大",
+        "B. U 形管两边液面高度差与压强无关",
+        "C. 压强计浸入液体越深液面差越小",
+        "D. U 形管两边液面差反映液体密度的变化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0182",
+      "item_type": "fill",
+      "stem": "在\"探究液体压强\"实验中，改变探头在液体中的______，观察压强计液面差，可探究压强与______的关系。",
+      "answer": "深度;深度",
+      "kps": [
+        "kp_phy8_exp_liquid_pressure"
+      ],
+      "difficulty": 0.45,
+      "solution": "探究液体压强与深度的关系时，保持液体密度不变，改变探头深度（U 形管液面差随深度增大而增大）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0183",
+      "item_type": "choice",
+      "stem": "关于浮力，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_buoyancy_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "浮力：浸在液体（或气体）中的物体受到竖直向上的托力，方向竖直向上。物体所受浮力大小由阿基米德原理决定（F浮 = ρ液gV排），与浸没深度无关（浸没后 V排 不变）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 浮力的方向总是竖直向下",
+        "B. 浮力是液体对物体向上的压力",
+        "C. 物体在液体中所受浮力的方向竖直向上",
+        "D. 物体浸在液体中越深，所受浮力越大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0184",
+      "item_type": "fill",
+      "stem": "用弹簧测力计称重法测浮力时，先测出物体在空气中的重力 G，再用弹簧测力计测出物体浸在液体中的示数 F示，则物体所受浮力 F浮 =______。",
+      "answer": "G - F示",
+      "kps": [
+        "kp_phy8_buoyancy_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "称重法测浮力：F浮 = G - F示（物体浸在液体中时弹簧测力计示数变小）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0185",
+      "item_type": "choice",
+      "stem": "关于浮力产生的原因，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_buoyancy_cause"
+      ],
+      "difficulty": 0.45,
+      "solution": "浮力产生的原因：浸在液体中的物体上下表面受到的压力不同，下表面受到的向上的压力大于上表面受到的向下的压力，这个压力差就是浮力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 浮力是物体受到的液体向上的压力",
+        "B. 浮力是液体对物体向上、向下的压力差",
+        "C. 浮力是物体受到的液体的支持力",
+        "D. 浮力与压力无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0186",
+      "item_type": "fill",
+      "stem": "物体浸没在液体中时，上表面所受液体向______的压力小于下表面所受液体向______的压力，压力差就是浮力。",
+      "answer": "下;上",
+      "kps": [
+        "kp_phy8_buoyancy_cause"
+      ],
+      "difficulty": 0.45,
+      "solution": "浮力产生原因：液体对物体上表面的压力（向下）小于对下表面的压力（向上），上下压力差即为浮力 F浮 = F向上 - F向下。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0187",
+      "item_type": "choice",
+      "stem": "阿基米德原理的内容是：浸在液体中的物体受到的浮力大小（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_archimedes_principle"
+      ],
+      "difficulty": 0.45,
+      "solution": "阿基米德原理：F浮 = G排 = ρ液gV排。浮力大小只与液体密度和物体排开液体的体积有关，与物体本身的密度、形状、浸没深度无关（在物体浸没时）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 与物体密度有关",
+        "B. 与液体的密度和排开液体的体积有关",
+        "C. 与物体浸没深度有关",
+        "D. 与物体形状有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0188",
+      "item_type": "fill",
+      "stem": "阿基米德原理的公式 F浮=______，其中 ρ液 表示______，V排 表示______。",
+      "answer": "ρ液gV排;液体的密度;物体排开液体的体积",
+      "kps": [
+        "kp_phy8_archimedes_principle"
+      ],
+      "difficulty": 0.45,
+      "solution": "阿基米德原理公式 F浮 = ρ液gV排：浮力等于物体排开液体所受的重力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0189",
+      "item_type": "choice",
+      "stem": "某实心物体浸没在液体中，下沉的条件是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_float_sink"
+      ],
+      "difficulty": 0.45,
+      "solution": "浸没在液体中物体的浮沉条件：①F浮 > G 时上浮（最终漂浮）；②F浮 = G 时悬浮；③F浮 < G 时下沉（到底部并静止）。",
+      "source": "llm_generated",
+      "options": [
+        "A. F浮 > G",
+        "B. F浮 = G",
+        "C. F浮 < G",
+        "D. 与 F浮 和 G 无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0190",
+      "item_type": "fill",
+      "stem": "实心物体在液体中漂浮的条件是 ρ物 ______ ρ液，下沉的条件是 ρ物 ______ ρ液。",
+      "answer": "<;>",
+      "kps": [
+        "kp_phy8_float_sink"
+      ],
+      "difficulty": 0.45,
+      "solution": "对于实心物体：ρ物 < ρ液 时上浮（最终漂浮）；ρ物 = ρ液 时悬浮；ρ物 > ρ液 时下沉。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0191",
+      "item_type": "choice",
+      "stem": "关于轮船，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_buoyancy_applications"
+      ],
+      "difficulty": 0.45,
+      "solution": "轮船漂浮在水面上，F浮 = G总（船与货物总重），处于平衡状态。轮船做成空心是为了增大排开水的体积，从而增大浮力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 轮船所受浮力等于船和货物的总重",
+        "B. 轮船所受浮力大于船和货物的总重",
+        "C. 轮船所受浮力小于船和货物的总重",
+        "D. 轮船靠改变自身重力实现上浮和下沉"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0192",
+      "item_type": "fill",
+      "stem": "潜水艇是靠改变______实现上浮和下沉的；气球和飞艇是靠充入密度______空气的气体实现上升的。",
+      "answer": "自身重力(进水);小于",
+      "kps": [
+        "kp_phy8_buoyancy_applications"
+      ],
+      "difficulty": 0.5,
+      "solution": "潜水艇：水舱进水或排水改变自身重力；热气球/氢气球：充入密度小于空气的气体（如热空气、氦气）使其上浮。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0193",
+      "item_type": "choice",
+      "stem": "一个体积为 1×10⁻³ m³ 的物体浸没在水中，受到的浮力是（　　）（g = 10 N/kg）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_buoyancy_calculation"
+      ],
+      "difficulty": 0.45,
+      "solution": "F浮 = ρ水gV排 = 1000 × 10 × 1×10⁻³ = 10 N。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 N",
+        "B. 10 N",
+        "C. 100 N",
+        "D. 1000 N"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0194",
+      "item_type": "fill",
+      "stem": "一物体挂在弹簧测力计下，在空气中示数为 5 N，浸没在水中时示数为 3 N，则物体受到的浮力为______N，物体的体积为______×10⁻⁴ m³。（g = 10 N/kg，ρ水 = 1.0×10³ kg/m³）",
+      "answer": "2;2",
+      "kps": [
+        "kp_phy8_buoyancy_calculation"
+      ],
+      "difficulty": 0.6,
+      "solution": "F浮 = G - F示 = 5 - 3 = 2 N；V = V排 = F浮/(ρ水g) = 2/(1000×10) = 2×10⁻⁴ m³。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0195",
+      "item_type": "choice",
+      "stem": "在\"探究浮力大小与哪些因素有关\"的实验中，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_exp_buoyancy"
+      ],
+      "difficulty": 0.45,
+      "solution": "阿基米德原理：F浮 = ρ液gV排。浮力大小与液体的密度和物体排开液体的体积有关，与物体浸没的深度（浸没后）、物体重力无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 浮力大小与物体浸没的深度有关",
+        "B. 浮力大小与物体排开液体的体积有关",
+        "C. 浮力大小与液体密度无关",
+        "D. 浮力大小与物体自身重力有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0196",
+      "item_type": "fill",
+      "stem": "在\"探究浮力大小\"实验中，用溢水杯和小桶验证阿基米德原理时，浮力 F浮 等于______所受的重力。",
+      "answer": "排开液体（小桶收集到的水）",
+      "kps": [
+        "kp_phy8_exp_buoyancy"
+      ],
+      "difficulty": 0.5,
+      "solution": "阿基米德原理实验验证：物体浸入溢水杯后排开的水流入小桶，浮力 F浮 = 小桶中水的重力 G排。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0197",
+      "item_type": "choice",
+      "stem": "下列物体中，具有动能的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_energy_forms"
+      ],
+      "difficulty": 0.45,
+      "solution": "动能是物体由于运动而具有的能量。流动的河水具有动能；停在路边的汽车（不动）、举高的重物（重力势能）、未形变的弹簧（无弹性势能）都不具有动能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 停在路边的汽车",
+        "B. 流动的河水",
+        "C. 举高的重物",
+        "D. 弹簧（未形变）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0198",
+      "item_type": "fill",
+      "stem": "能量具有多种形式：______、______能、化学能、光能、核能、内能、电能等。",
+      "answer": "动能;势",
+      "kps": [
+        "kp_phy8_energy_forms"
+      ],
+      "difficulty": 0.4,
+      "solution": "能量的形式：动能、势能（机械能）、内能、电能、化学能、光能、核能等。物体能够对外做功就具有能量。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0199",
+      "item_type": "choice",
+      "stem": "下列现象中，属于能量的转移的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_energy_transfer_convert"
+      ],
+      "difficulty": 0.45,
+      "solution": "热水袋把内能传给路人，能量形式不变（仍是内能），只是从一个物体转移到另一个物体，属于能量转移。A、B、D 都是能量由一种形式转化为另一种形式（能量的转化）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电灯发光",
+        "B. 燃料燃烧",
+        "C. 热水袋把热传给路人",
+        "D. 摩擦生热"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0200",
+      "item_type": "fill",
+      "stem": "能量可以从一种形式______为另一种形式，也可以从一个物体______到另一个物体。",
+      "answer": "转化;转移",
+      "kps": [
+        "kp_phy8_energy_transfer_convert"
+      ],
+      "difficulty": 0.4,
+      "solution": "能量的两种变化：转化（形式改变）和转移（形式不变，物体改变）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0201",
+      "item_type": "choice",
+      "stem": "下列情况中，力对物体做了功的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_work_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "做功的两个必要因素：①作用在物体上的力；②物体在力的方向上通过一段距离。A 中提力方向竖直，水平前进无距离不做功；C 中\"停留\"无距离不做功；B 中无距离不做功；D 中重力使苹果下落做了功。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提着水桶水平前进 10 m",
+        "B. 用力搬石头但没有搬动",
+        "C. 举重运动员把杠铃举高 2 m 并停留 3 s",
+        "D. 苹果从树上自由落下"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0202",
+      "item_type": "fill",
+      "stem": "功的计算公式是 W=______，单位是______，符号是______。1 J =______N·m。",
+      "answer": "Fs;焦耳;J;1",
+      "kps": [
+        "kp_phy8_work_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "功 W = Fs，国际单位焦耳（J），1 J = 1 N·m。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0203",
+      "item_type": "choice",
+      "stem": "下列情况中，人对物体没有做功的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_work_judgment"
+      ],
+      "difficulty": 0.45,
+      "solution": "C 中举力作用但物体在力的方向上没有移动距离，不做功。A 是水平力做功（推力），B 是举力做功（重力方向），D 是惯性运动但推力已在位移方向做了功。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把重 100 N 的物体沿水平地面匀速推动 5 m",
+        "B. 把重 100 N 的物体从地面搬到桌子上",
+        "C. 举着重 100 N 的物体不动",
+        "D. 把物体沿光滑水平面推出 5 m（物体由于惯性运动）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0204",
+      "item_type": "fill",
+      "stem": "三种不做功的情形是：有力无______、有距离无______、力的方向与移动方向______。",
+      "answer": "距离;力;垂直",
+      "kps": [
+        "kp_phy8_work_judgment"
+      ],
+      "difficulty": 0.4,
+      "solution": "三种不做功情形：①有力无距离（推而未动）；②有距离无力（惯性滑行）；③力的方向与移动方向垂直（如提水桶水平行走）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0205",
+      "item_type": "choice",
+      "stem": "重 500 N 的物体被人匀速举高 2 m，则人对物体所做的功是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_work_calculation"
+      ],
+      "difficulty": 0.45,
+      "solution": "W = Fs = 500 × 2 = 1000 J（举力等于重力）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0 J",
+        "B. 250 J",
+        "C. 1000 J",
+        "D. 500 J"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0206",
+      "item_type": "fill",
+      "stem": "一个质量为 50 kg 的物体从 3 m 高处自由落到地面，重力所做的功为______J。（g = 10 N/kg）",
+      "answer": "1500",
+      "kps": [
+        "kp_phy8_work_calculation"
+      ],
+      "difficulty": 0.4,
+      "solution": "W = mgh = 50 × 10 × 3 = 1500 J。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0207",
+      "item_type": "choice",
+      "stem": "关于功率，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_power_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "功率定义：功与做功所用时间之比，P = W/t，表示做功的快慢。功率大不一定做功多（还要看时间）；做功时间短不一定功率大（还要看功的多少）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 功率越大，做功越多",
+        "B. 做功时间越短，功率越大",
+        "C. 功率是表示做功快慢的物理量",
+        "D. 功率的国际单位是 J"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0208",
+      "item_type": "fill",
+      "stem": "功率的计算公式 P=______，国际单位是______，符号是______。1 kW = ______W。",
+      "answer": "W/t;瓦特;W;1000",
+      "kps": [
+        "kp_phy8_power_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "功率 P = W/t，国际单位瓦特（W），1 kW = 1000 W。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0209",
+      "item_type": "choice",
+      "stem": "一同学质量 50 kg，从一楼爬到三楼用了 10 s，每层楼高 3 m，则此同学爬楼的功率约为（　　）（g = 10 N/kg）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_power_estimation"
+      ],
+      "difficulty": 0.5,
+      "solution": "W = mgh = 50 × 10 × (3 × 2) = 3000 J；P = W/t = 3000/10 = 300 W。",
+      "source": "llm_generated",
+      "options": [
+        "A. 50 W",
+        "B. 150 W",
+        "C. 300 W",
+        "D. 500 W"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0210",
+      "item_type": "fill",
+      "stem": "汽车以 90 km/h 的速度在水平路面上匀速行驶，受到的阻力为车重的 0.05 倍，则汽车发动机的功率为______W。（车重 20000 N，g = 10 N/kg）",
+      "answer": "25000",
+      "kps": [
+        "kp_phy8_power_estimation"
+      ],
+      "difficulty": 0.6,
+      "solution": "F = 0.05 × 20000 = 1000 N；v = 90 km/h = 25 m/s；P = Fv = 1000 × 25 = 25000 W = 25 kW。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0211",
+      "item_type": "choice",
+      "stem": "关于动能，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_kinetic_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "动能是物体由于运动而具有的能量。静止的物体没有动能；动能与质量和速度都有关（质量大、速度大动能大）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 运动的物体才具有动能",
+        "B. 静止的物体也具有动能",
+        "C. 物体质量越大，动能一定越大",
+        "D. 物体速度越大，动能一定越大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0212",
+      "item_type": "fill",
+      "stem": "动能的大小与物体的______和______有关。",
+      "answer": "质量;速度",
+      "kps": [
+        "kp_phy8_kinetic_energy"
+      ],
+      "difficulty": 0.35,
+      "solution": "动能影响因素：质量和速度。探究实验中用小车撞击木块，通过木块被推动的距离反映动能大小（转换法）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0214",
+      "item_type": "fill",
+      "stem": "重力势能与物体的______和______有关；弹性势能与物体______的程度有关。",
+      "answer": "质量;高度;弹性形变",
+      "kps": [
+        "kp_phy8_potential_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "重力势能 Ep = mgh；弹性势能与材料的弹性形变程度有关（弹簧拉伸或压缩程度越大，弹性势能越大）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0215",
+      "item_type": "choice",
+      "stem": "滚摆下降过程中（不计空气阻力），下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_mechanical_energy_transfer"
+      ],
+      "difficulty": 0.45,
+      "solution": "不计阻力时，滚摆下降过程中重力势能转化为动能，重力势能减小、动能增大，机械能总量保持不变（机械能守恒）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 重力势能减小，动能不变",
+        "B. 重力势能减小，动能增大，机械能总量不变",
+        "C. 重力势能不变，动能增大",
+        "D. 重力势能减小，动能增大，机械能减小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0216",
+      "item_type": "fill",
+      "stem": "在只有动能和势能相互转化的情况下（不计阻力），机械能的总量保持______，这就是机械能______定律。",
+      "answer": "不变;守恒",
+      "kps": [
+        "kp_phy8_mechanical_energy_transfer"
+      ],
+      "difficulty": 0.45,
+      "solution": "机械能守恒定律：只有动能与势能相互转化（不计摩擦、空气阻力等）时，机械能的总量保持不变。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0217",
+      "item_type": "choice",
+      "stem": "做功的过程本质上是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_work_energy_change"
+      ],
+      "difficulty": 0.45,
+      "solution": "做功的过程本质上是能量转化（或转移）的过程，做了多少功就有多少能量发生了转化（功是能量转化的量度）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 力的传递过程",
+        "B. 能量转化或转移的过程",
+        "C. 物体的位移过程",
+        "D. 能量消耗的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0218",
+      "item_type": "fill",
+      "stem": "功是______转化的量度，即做功的过程伴随能量的______或转移。",
+      "answer": "能量;转化",
+      "kps": [
+        "kp_phy8_work_energy_change"
+      ],
+      "difficulty": 0.4,
+      "solution": "做功伴随能量变化：做多少功就有多少能量发生转化（或转移）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0219",
+      "item_type": "choice",
+      "stem": "下列关于杠杆五要素的说法，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy8_lever_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "杠杆五要素：①支点（杠杆绕着转动的固定点）；②动力和阻力（使杠杆转动和阻碍杠杆转动的力）；③动力臂和阻力臂（支点到力的作用线的垂直距离）。注意力臂不是到作用点的距离，而是到作用线（沿力方向延长的直线）的垂直距离。",
+      "source": "llm_generated",
+      "options": [
+        "A. 杠杆一定是直的",
+        "B. 支点可以在杠杆上的任何位置",
+        "C. 力臂是支点到力的作用点的距离",
+        "D. 力臂是支点到力的作用线的垂直距离"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0220",
+      "item_type": "fill",
+      "stem": "杠杆五要素是：支点、动力、阻力、______、______。",
+      "answer": "动力臂;阻力臂",
+      "kps": [
+        "kp_phy8_lever_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "杠杆的五要素：支点 O、动力 F₁、阻力 F₂、动力臂 L₁、阻力臂 L₂。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0221",
+      "item_type": "choice",
+      "stem": "杠杆的平衡条件是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_lever_balance"
+      ],
+      "difficulty": 0.45,
+      "solution": "杠杆平衡条件（杠杆原理）：动力 × 动力臂 = 阻力 × 阻力臂，即 F₁L₁ = F₂L₂。",
+      "source": "llm_generated",
+      "options": [
+        "A. F₁ = F₂",
+        "B. F₁ × L₁ = F₂ × L₂",
+        "C. F₁ × L₂ = F₂ × L₁",
+        "D. F₁ + L₁ = F₂ + L₂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0222",
+      "item_type": "fill",
+      "stem": "杠杆的平衡条件是______×______=______×______。",
+      "answer": "动力;动力臂;阻力;阻力臂",
+      "kps": [
+        "kp_phy8_lever_balance"
+      ],
+      "difficulty": 0.45,
+      "solution": "杠杆平衡条件：动力 × 动力臂 = 阻力 × 阻力臂。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0223",
+      "item_type": "choice",
+      "stem": "下列工具中，属于省力杠杆的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_lever_types"
+      ],
+      "difficulty": 0.45,
+      "solution": "省力杠杆：动力臂大于阻力臂，省力但费距离（如撬棒、瓶起子、老虎钳）。钓鱼竿、镊子、筷子都是费力杠杆（动力臂小于阻力臂）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 钓鱼竿",
+        "B. 镊子",
+        "C. 撬棒",
+        "D. 筷子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0224",
+      "item_type": "fill",
+      "stem": "省力杠杆的特点是 L₁______L₂，费力杠杆的特点是 L₁______L₂，等臂杠杆的特点是 L₁______L₂。",
+      "answer": ">; <; =",
+      "kps": [
+        "kp_phy8_lever_types"
+      ],
+      "difficulty": 0.45,
+      "solution": "杠杆分类：L₁ > L₂ 时省力费距离；L₁ < L₂ 时费力省距离；L₁ = L₂ 时既不省力也不费力（等臂杠杆，如天平）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0225",
+      "item_type": "choice",
+      "stem": "关于定滑轮和动滑轮，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_pulley"
+      ],
+      "difficulty": 0.45,
+      "solution": "定滑轮：实质等臂杠杆，不省力但可以改变力的方向。动滑轮：实质动力臂为阻力臂 2 倍的杠杆，省一半力但费距离，不能改变力的方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 定滑轮实质是动力臂为阻力臂二倍的杠杆",
+        "B. 定滑轮不省力但可以改变力的方向",
+        "C. 动滑轮可以改变力的方向",
+        "D. 动滑轮不省力也不省距离"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0226",
+      "item_type": "fill",
+      "stem": "定滑轮实质是______杠杆，使用定滑轮______（填\"省\"或\"不省\"）力，但可以改变力的______；动滑轮实质是动力臂为阻力臂______倍的杠杆，使用动滑轮可以省______力但费距离。",
+      "answer": "等臂;不省;方向;2;一半",
+      "kps": [
+        "kp_phy8_pulley"
+      ],
+      "difficulty": 0.55,
+      "solution": "定滑轮 = 等臂杠杆 = 不省力但改变力的方向；动滑轮 = 动力臂为阻力臂 2 倍的杠杆 = 省一半力但费距离。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0227",
+      "item_type": "choice",
+      "stem": "用滑轮组提起 1000 N 的重物，若有 4 段绳子承担重物（不计摩擦和动滑轮重），则拉力至少为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_pulley_system"
+      ],
+      "difficulty": 0.45,
+      "solution": "F = G/n = 1000/4 = 250 N。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1000 N",
+        "B. 500 N",
+        "C. 250 N",
+        "D. 125 N"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0228",
+      "item_type": "fill",
+      "stem": "用滑轮组提起重物，若有 n 段绳子承担重物，不计摩擦和动滑轮重时 F=______；绳端移动距离 s 与物体上升高度 h 的关系是 s=______。",
+      "answer": "G/n;nh",
+      "kps": [
+        "kp_phy8_pulley_system"
+      ],
+      "difficulty": 0.45,
+      "solution": "滑轮组：F = G总/n = (G物 + G动)/n（不计摩擦、绳重）；s = nh。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0229",
+      "item_type": "choice",
+      "stem": "关于有用功、额外功和总功，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_work_useful_total"
+      ],
+      "difficulty": 0.45,
+      "solution": "总功 = 有用功 + 额外功（W总 = W有 + W额）。有用功是指对完成工作目的有用的功（必小于总功）；额外功是并非我们需要但又不得不做的功（克服摩擦、自重等）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有用功一定大于额外功",
+        "B. 有用功一定大于总功",
+        "C. 总功等于有用功加上额外功",
+        "D. 额外功是指对完成工作目的有用但又不属于我们的功"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0230",
+      "item_type": "fill",
+      "stem": "用滑轮组把重 100 N 的物体提升 2 m，绳端拉力 30 N，绳端移动 8 m，则 W有=______J，W总=______J，W额=______J。",
+      "answer": "200;240;40",
+      "kps": [
+        "kp_phy8_work_useful_total"
+      ],
+      "difficulty": 0.6,
+      "solution": "W有 = Gh = 100 × 2 = 200 J；W总 = Fs = 30 × 8 = 240 J；W额 = W总 - W有 = 240 - 200 = 40 J。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0231",
+      "item_type": "choice",
+      "stem": "关于机械效率，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy8_mechanical_efficiency"
+      ],
+      "difficulty": 0.45,
+      "solution": "机械效率 η = W有/W总，由于额外功不可避免，所以 W有 < W总，η < 1（永远小于 1，不可能等于或大于 1）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 机械效率可能大于 1",
+        "B. 机械效率可能等于 1",
+        "C. 机械效率总小于 1",
+        "D. 机械效率越大，做的有用功越少"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0232",
+      "item_type": "fill",
+      "stem": "机械效率 η=______，它总是______（填\"大于\"或\"小于\"）1。提高机械效率的方法有：减小______、减轻动滑轮______、增大被提升物重。",
+      "answer": "W有/W总;小于;摩擦;自重",
+      "kps": [
+        "kp_phy8_mechanical_efficiency"
+      ],
+      "difficulty": 0.5,
+      "solution": "机械效率 η = W有/W总 < 1。提高方法：减小摩擦、减轻机械自重、增大有用功（被提升物重）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0233",
+      "item_type": "choice",
+      "stem": "在\"测量滑轮组的机械效率\"实验中，下列做法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy8_efficiency_measurement"
+      ],
+      "difficulty": 0.5,
+      "solution": "在动滑轮自重不变的情况下，被提升物（钩码）越重，有用功占总功的比例越大，机械效率越高（额外功相对不变）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 钩码越轻，测得的效率越高",
+        "B. 钩码越重，测得的效率越高",
+        "C. 钩码重力大小不影响机械效率",
+        "D. 实验中只需要测一次"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0234",
+      "item_type": "fill",
+      "stem": "在\"测量滑轮组机械效率\"实验中，需要测量的物理量有钩码的重力 G、钩码上升的高度 h、绳端的拉力 F 和绳端移动的距离 s。其中 η=______。",
+      "answer": "Gh/Fs",
+      "kps": [
+        "kp_phy8_efficiency_measurement"
+      ],
+      "difficulty": 0.45,
+      "solution": "η = W有/W总 = Gh/Fs。验证 s = nh 是检查实验方法是否正确。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0235",
+      "item_type": "choice",
+      "stem": "在\"探究杠杆平衡条件\"的实验中，把支点放在铁架台上，先调节杠杆两端的平衡螺母使杠杆在______位置平衡。这样做的目的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy8_exp_lever"
+      ],
+      "difficulty": 0.45,
+      "solution": "实验中调节杠杆在水平位置平衡的目的：便于直接从杠杆上读出力臂（杠杆上标有刻度，水平时力臂 = 力作用点到支点的距离）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 便于直接从杠杆上读出力臂",
+        "B. 减小摩擦的影响",
+        "C. 保护杠杆不变形",
+        "D. 美观"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_phyjr_0236",
+      "item_type": "fill",
+      "stem": "在\"探究杠杆平衡条件\"实验中，多次改变力和力臂进行测量的目的是______。",
+      "answer": "寻找普遍规律，避免偶然性",
+      "kps": [
+        "kp_phy8_exp_lever"
+      ],
+      "difficulty": 0.4,
+      "solution": "多次测量的目的是寻找普遍规律，避免偶然性。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,3097 @@
+{
+  "items": [
+    {
+      "id": "phy_hs1_0001",
+      "item_type": "choice",
+      "stem": "下列关于质点的说法中，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_reference_frame"
+      ],
+      "difficulty": 0.45,
+      "solution": "质点是理想化模型，能否看作质点看问题的性质。A、B 错误（与质量体积无关）；C 错误（'一定'过于绝对）；D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体积很小的物体一定能看作质点",
+        "B. 质量很小的物体一定能看作质点",
+        "C. 火车通过一座桥梁时一定不能看作质点",
+        "D. 物体能否看作质点取决于所研究的问题"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0002",
+      "item_type": "fill",
+      "stem": "我们说太阳升起落下是以______为参照系；地球同步卫星相对地面是______的（选填'静止'或'运动'）。",
+      "answer": "地球；静止",
+      "kps": [
+        "kp_phy10_reference_frame"
+      ],
+      "difficulty": 0.4,
+      "solution": "太阳东升西落以地球为参照系；地球同步卫星与地球自转同步，相对地面静止。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0003",
+      "item_type": "choice",
+      "stem": "一物体沿半径 R 的圆周运动半周又回到出发点，则物体的位移和路程分别为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_displacement"
+      ],
+      "difficulty": 0.45,
+      "solution": "回到出发点则位移为 0；走过半圆周长 πR 即为路程。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0，πR",
+        "B. 2R，πR",
+        "C. 2R，2πR",
+        "D. 0，2πR"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0004",
+      "item_type": "fill",
+      "stem": "一质点从 A 出发，先向东运动 3 m，再向北运动 4 m 停下。则该质点通过的路程为______m，位移大小为______m。",
+      "answer": "7；5",
+      "kps": [
+        "kp_phy10_displacement"
+      ],
+      "difficulty": 0.4,
+      "solution": "路程=轨迹总长 3+4=7 m；位移大小按勾股定理 √(3²+4²)=5 m。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0005",
+      "item_type": "choice",
+      "stem": "下列物理量中，属于矢量的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_scalar_vector"
+      ],
+      "difficulty": 0.4,
+      "solution": "加速度既有大小又有方向，是矢量；路程、质量、时间都是标量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 路程",
+        "B. 质量",
+        "C. 加速度",
+        "D. 时间"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0006",
+      "item_type": "fill",
+      "stem": "两个矢量大小分别为 8 和 6，互相垂直，则合矢量大小为______（整数）。",
+      "answer": "10",
+      "kps": [
+        "kp_phy10_scalar_vector"
+      ],
+      "difficulty": 0.45,
+      "solution": "两矢量垂直时合矢量大小 √(8²+6²)=10。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0007",
+      "item_type": "choice",
+      "stem": "关于平均速度和瞬时速度，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_velocity"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（是位移与时间比）；B 正确；C 错误（方向相同）；D 错误（变速时一般不等）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平均速度是速度的平均值",
+        "B. 瞬时速度的大小叫瞬时速率",
+        "C. 平均速度方向与位移方向相反",
+        "D. 任意一段时间内平均速度都等于这段时间内任一时刻的瞬时速度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0008",
+      "item_type": "solve",
+      "stem": "一物体做直线运动，前一半位移速度 6 m/s，后一半位移速度 10 m/s。求全程平均速度。",
+      "answer": "7.5 m/s",
+      "kps": [
+        "kp_phy10_velocity"
+      ],
+      "difficulty": 0.55,
+      "solution": "设前段位移 x，所用时间 x/6；后段位移 x，时间 x/10。总位移 2x、总时间 x/6+x/10=8x/30=4x/15；v平=2x/(4x/15)=7.5 m/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0009",
+      "item_type": "choice",
+      "stem": "一质点做直线运动的 x-t 图像如图（直线 OA 与水平线 AB 组成），下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_xt_graph"
+      ],
+      "difficulty": 0.5,
+      "solution": "x-t 图像为倾斜直线即作匀速运动；OA 段斜率大，速度大于 AB 段；B 错误；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 质点做匀加速直线运动",
+        "B. OA 段速度小于 AB 段速度",
+        "C. OA 段做匀速直线运动",
+        "D. 质点处于静止状态"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0010",
+      "item_type": "fill",
+      "stem": "x-t 图像是一条倾斜直线段，斜率为 5 m/s，则质点做______直线运动，1 s 内位移为______m。",
+      "answer": "匀速；5",
+      "kps": [
+        "kp_phy10_xt_graph"
+      ],
+      "difficulty": 0.45,
+      "solution": "x-t 图斜率即速度，斜率恒定为匀速；1 s 位移 5 m。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0011",
+      "item_type": "choice",
+      "stem": "关于加速度的方向，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_acceleration"
+      ],
+      "difficulty": 0.45,
+      "solution": "加速度 a=Δv/Δt，方向与 Δv 相同。A、B 错误（与方向关系不定）；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加速度方向一定与速度方向相同",
+        "B. 加速度方向一定与速度变化量方向相反",
+        "C. 加速度方向一定与速度变化量方向相同",
+        "D. 加速度方向与初末速度方向有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0012",
+      "item_type": "solve",
+      "stem": "一物体以 10 m/s 初速度做匀减速直线运动，加速度大小 2 m/s² 与速度反向。求减速到 0 的时间和位移。",
+      "answer": "5 s；25 m",
+      "kps": [
+        "kp_phy10_acceleration"
+      ],
+      "difficulty": 0.5,
+      "solution": "取初速度方向为正：a=-2 m/s²。减速到 0：v=v₀+at=10-2t=0，得 t=5 s。x=v₀t+½at²=50-25=25 m；或 x=v₀²/(2|a|)=100/4=25 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0013",
+      "item_type": "choice",
+      "stem": "关于打点计时器，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_dot_timer"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错误（电磁用 4~6V 低压交流）；B 错误（电火花用 220V）；C 正确；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电磁打点计时器使用 220V 交流电",
+        "B. 电火花计时器使用 4~6V 低压交流电",
+        "C. 两者都每隔 0.02s 打一个点",
+        "D. 电火花计时器打点时会产生电磁干扰"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0014",
+      "item_type": "fill",
+      "stem": "电磁打点计时器使用______（选填'交流'或'直流'）电源，相邻两点时间间隔为______s。",
+      "answer": "交流；0.02",
+      "kps": [
+        "kp_phy10_dot_timer"
+      ],
+      "difficulty": 0.4,
+      "solution": "电磁打点计时器用 4~6V 交流电，频率 50 Hz，时间间隔 0.02 s。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0015",
+      "item_type": "choice",
+      "stem": "'探究小车速度随时间变化的规律'实验中，下列做法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_exp_vt_paper"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误（应先通电后释放）；B 错误（小车从远处释放）；C 正确；D 错误（应用平均速度近似中间时刻瞬时速度）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先释放小车后接通电源",
+        "B. 小车应从靠近打点计时器位置开始释放",
+        "C. 舍去纸带开头过密的点后选择清晰点测量",
+        "D. 直接用打点前后两点距离除以两点时间间隔求瞬时速度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0016",
+      "item_type": "fill",
+      "stem": "'探究小车速度随时间变化'实验中，作出的 v-t 图像是过原点的倾斜直线。这表明小车做______运动。",
+      "answer": "匀变速直线",
+      "kps": [
+        "kp_phy10_exp_vt_paper"
+      ],
+      "difficulty": 0.45,
+      "solution": "v-t 图像是倾斜直线表明小车做匀变速直线运动，斜率为加速度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0017",
+      "item_type": "choice",
+      "stem": "v-t 图像中，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_vt_graph"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（v-t 倾斜直线表示匀变速）；B 正确；C 错误（是位移）；D 错误（v 本身有方向，但 v-t 图线与 t 轴正交，斜率正负表示加速度方向）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 倾斜直线表示匀速运动",
+        "B. 斜率表示加速度",
+        "C. 图像与时间轴所围面积表示路程",
+        "D. 斜率正负表示速度方向"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0018",
+      "item_type": "solve",
+      "stem": "一物体 v-t 图像是过 (0,2) 与 (4,10) 的直线（单位 m/s、s）。求 0~4s 位移。",
+      "answer": "24 m",
+      "kps": [
+        "kp_phy10_vt_graph"
+      ],
+      "difficulty": 0.5,
+      "solution": "图线与 t 轴围成梯形，位移 = (1/2)(v₀+v)t = (1/2)(2+10)×4 = 24 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0019",
+      "item_type": "choice",
+      "stem": "一物体做匀加速直线运动，初速度 0，加速度 2 m/s²，3s 末速度为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_uniform_accel_formulas"
+      ],
+      "difficulty": 0.4,
+      "solution": "v=v₀+at=0+2×3=6 m/s。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3 m/s",
+        "B. 4 m/s",
+        "C. 6 m/s",
+        "D. 9 m/s"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0020",
+      "item_type": "solve",
+      "stem": "汽车以 36 km/h 行驶，遇红灯立即刹车，加速度大小 5 m/s²。求刹车后 1s 末的速度和位移。",
+      "answer": "v=5 m/s；x=7.5 m",
+      "kps": [
+        "kp_phy10_uniform_accel_formulas"
+      ],
+      "difficulty": 0.55,
+      "solution": "36 km/h = 10 m/s。v=v₀+at=10-5×1=5 m/s；x=v₀t-½at²=10-2.5=7.5 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0021",
+      "item_type": "choice",
+      "stem": "匀变速直线运动中，某段位移的中点位置瞬时速度与中间时刻瞬时速度的关系是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_uniform_accel_derived"
+      ],
+      "difficulty": 0.6,
+      "solution": "匀变速直线运动中，中点位置速度 v_{x/2}=√[(v₀²+v²)/2]，中间时刻速度 v_{t/2}=(v₀+v)/2，由均值不等式前者大于后者。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两者相等",
+        "B. 中点位置速度大于中间时刻速度",
+        "C. 中点位置速度小于中间时刻速度",
+        "D. 无法确定"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0022",
+      "item_type": "fill",
+      "stem": "打点计时器纸带相邻计数点时间间隔 T=0.02s 时，某匀加速运动相邻两计数点位移差 Δx=0.4 cm，则加速度 a=______m/s²。",
+      "answer": "10",
+      "kps": [
+        "kp_phy10_uniform_accel_derived"
+      ],
+      "difficulty": 0.55,
+      "solution": "由 Δx=aT² 得 a=Δx/T²=0.004/0.0004=10 m/s²。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0023",
+      "item_type": "choice",
+      "stem": "关于逐差法求加速度，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_paper_tape_analysis"
+      ],
+      "difficulty": 0.55,
+      "solution": "逐差法把数据分为前后两组相减能充分利用所有数据并减小偶然误差。",
+      "source": "llm_generated",
+      "options": [
+        "A. 逐差法充分利用所有测量数据",
+        "B. 逐差法只减小系统误差",
+        "C. 逐差法只用于奇数组测量数据",
+        "D. 逐差法求加速度与逐差组数有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0024",
+      "item_type": "solve",
+      "stem": "打点计时器纸带 6 个计数点相邻间距 x₁=3.0 cm、x₂=4.0 cm、x₃=5.0 cm、x₄=6.0 cm、x₅=7.0 cm、x₆=8.0 cm，时间间隔 T=0.1s。求加速度。",
+      "answer": "1.0 m/s²",
+      "kps": [
+        "kp_phy10_paper_tape_analysis"
+      ],
+      "difficulty": 0.6,
+      "solution": "逐差法 a=[(x₄+x₅+x₆)-(x₁+x₂+x₃)]/(9T²)=(21-12)×10⁻²/(9×0.01)=9×10⁻²/9×10⁻²=1.0 m/s²。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0025",
+      "item_type": "choice",
+      "stem": "两物体做匀变速直线运动，追上的本质条件是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_chase_meet"
+      ],
+      "difficulty": 0.5,
+      "solution": "追上即位置相同，位移相同是本质条件。速度相等常对应临界极值，但不是必要条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 速度相等",
+        "B. 位移相同",
+        "C. 加速度相同",
+        "D. 时间相同"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0026",
+      "item_type": "solve",
+      "stem": "A 车以 10 m/s 匀速行驶，B 车在 A 前 100 m 处以 5 m/s 匀速同向行驶。B 车加速度 1 m/s² 匀加速。问 B 能否追上 A？何时追上？",
+      "answer": "能；20 s",
+      "kps": [
+        "kp_phy10_chase_meet"
+      ],
+      "difficulty": 0.6,
+      "solution": "设 B 出发 t 秒后追上。B 位移 5t+0.5t²，A 位移 10t+100。位移相同 5t+0.5t²=10t+100，t²-10t-200=0，t=(10+√900)/2=20 s（D>0，能追上）。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0027",
+      "item_type": "choice",
+      "stem": "关于自由落体运动，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_free_fall"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 错误；B 错误（是匀加速）；C 正确；D 错误（向下）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体越重下落越快",
+        "B. 自由落体是匀速直线运动",
+        "C. 自由落体初速度为零，加速度为 g",
+        "D. 自由落体加速度方向竖直向上"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0028",
+      "item_type": "solve",
+      "stem": "一物体从高楼自由下落，落地前最后 1s 内下落高度 25 m（g=10 m/s²）。求楼高和总时间。",
+      "answer": "45 m；3 s",
+      "kps": [
+        "kp_phy10_free_fall"
+      ],
+      "difficulty": 0.55,
+      "solution": "总高度 h=½gt²=5t²；最后 1s 位移 = h-½g(t-1)² = 5t²-5(t²-2t+1)=10t-5=25，t=3 s；h=5×9=45 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0029",
+      "item_type": "choice",
+      "stem": "伽利略研究自由落体没有直接做自由落体实验的原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_galileo_free_fall"
+      ],
+      "difficulty": 0.5,
+      "solution": "伽利略时代没有精确计时仪器，无法直接测自由落体时间，故用斜面'冲淡重力'实验再外推。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有高精度计时器",
+        "B. 当时自由落体理论已经成熟",
+        "C. 他不相信自由落体规律",
+        "D. 自由落体不需要实验"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0030",
+      "item_type": "fill",
+      "stem": "伽利略用逻辑推理（归谬法）否定了亚里士多德关于______的观点。",
+      "answer": "重物比轻物下落快",
+      "kps": [
+        "kp_phy10_galileo_free_fall"
+      ],
+      "difficulty": 0.45,
+      "solution": "亚里士多德认为重的物体下落得快，伽利略用归谬法反驳。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0031",
+      "item_type": "choice",
+      "stem": "用打点计时器测重力加速度，分析正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_free_fall_experiment"
+      ],
+      "difficulty": 0.55,
+      "solution": "重物下落受空气阻力、纸带摩擦，加速度小于 g，故测得 g 偏小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 测得的 g 值偏大",
+        "B. 测得的 g 值偏小",
+        "C. 实验中重物加速度即为 g",
+        "D. 必须先算 g 再求瞬时速度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0032",
+      "item_type": "solve",
+      "stem": "打点计时器测自由落体，连续两段相邻时间 T=0.02s 内位移分别为 4.0 cm 和 4.4 cm。求重力加速度 g。",
+      "answer": "10 m/s²",
+      "kps": [
+        "kp_phy10_free_fall_experiment"
+      ],
+      "difficulty": 0.55,
+      "solution": "由 Δx=gT²：g=Δx/T²=(4.4-4.0)×10⁻²/(0.02)²=0.4×10⁻²/4×10⁻⁴=10 m/s²。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0033",
+      "item_type": "choice",
+      "stem": "下列关于力的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_forces_basic"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 错误；B 正确；C 错误；D 错误（大小、方向、作用点共同决定）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一个物体可以对其自身施加力的作用",
+        "B. 力是物体间的相互作用",
+        "C. 物体没形变时没有力",
+        "D. 力的作用效果只与力的大小有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0034",
+      "item_type": "fill",
+      "stem": "质量 5 kg 的物体静止在水平面上，受到的重力大小为______N（g=10 m/s²）。",
+      "answer": "50",
+      "kps": [
+        "kp_phy10_forces_basic"
+      ],
+      "difficulty": 0.4,
+      "solution": "G=mg=5×10=50 N。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0035",
+      "item_type": "choice",
+      "stem": "四种基本相互作用中，重力本质上属于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_four_interactions"
+      ],
+      "difficulty": 0.45,
+      "solution": "重力源于地球的万有引力，属于引力相互作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 强相互作用",
+        "B. 电磁相互作用",
+        "C. 引力相互作用",
+        "D. 弱相互作用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0036",
+      "item_type": "fill",
+      "stem": "弹力和摩擦力的本质都属于______相互作用。",
+      "answer": "电磁",
+      "kps": [
+        "kp_phy10_four_interactions"
+      ],
+      "difficulty": 0.4,
+      "solution": "弹力与摩擦力本质是分子间相互作用，属电磁相互作用。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0038",
+      "item_type": "solve",
+      "stem": "轻质弹簧原长 10 cm，挂 2 N 钩码时长 12 cm；挂 4 N 时长 14 cm。求劲度系数 k。",
+      "answer": "100 N/m",
+      "kps": [
+        "kp_phy10_elastic_force_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "由 F=kx：第一次 2=k×0.02 得 k=100 N/m；第二次 4=k×0.04 也得 k=100 N/m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0039",
+      "item_type": "choice",
+      "stem": "'探究弹簧弹力与形变量的关系'实验中，下列做法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_exp_hooke"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（先测原长）；B 正确；C 错误（k 由弹簧本身决定）；D 错误（应是钩码重力）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 直接从挂重物时开始测量形变量",
+        "B. 弹簧下端挂不同数量钩码逐次测量",
+        "C. 钩码越多弹簧劲度系数越大",
+        "D. 弹力大小直接用钩码质量表示"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0040",
+      "item_type": "fill",
+      "stem": "'探究弹簧弹力与形变量关系'实验中，作 F-x 图像是过原点的______线，斜率为______。",
+      "answer": "直线；劲度系数 k",
+      "kps": [
+        "kp_phy10_exp_hooke"
+      ],
+      "difficulty": 0.45,
+      "solution": "胡克定律 F=kx，F-x 图为过原点直线，斜率即 k。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0041",
+      "item_type": "choice",
+      "stem": "关于滑动摩擦力，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_friction_sliding"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误；B 错误（与相对运动方向相反）；C 正确（f=μF_N）；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 滑动摩擦力总与重力成正比",
+        "B. 滑动摩擦力方向总与物体运动方向相反",
+        "C. 滑动摩擦力大小与正压力成正比",
+        "D. 滑动摩擦力大小与接触面积有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0042",
+      "item_type": "solve",
+      "stem": "质量 2 kg 物体在水平面上受 10 N 水平拉力做匀速运动（μ=0.3，g=10）。求滑动摩擦力和地面支持力。",
+      "answer": "f=10 N；F_N=20 N",
+      "kps": [
+        "kp_phy10_friction_sliding"
+      ],
+      "difficulty": 0.5,
+      "solution": "匀速：水平 F=f=10 N；竖直 F_N=G=mg=20 N。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0043",
+      "item_type": "choice",
+      "stem": "下列关于静摩擦力，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_friction_static"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误；B 错误（与相对运动趋势相反）；C 错误... 应为正确；D 错误（可由平衡求）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 静摩擦力大小总等于滑动摩擦力",
+        "B. 静摩擦力方向总与运动方向相反",
+        "C. 静止物体可以受静摩擦力",
+        "D. 静摩擦力大小不能用公式计算"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0044",
+      "item_type": "fill",
+      "stem": "用 20 N 水平力推静止在水平面上重 50 N 的物体未推动，则静摩擦力大小为______N，方向______。",
+      "answer": "20；水平向后（与推力反向）",
+      "kps": [
+        "kp_phy10_friction_static"
+      ],
+      "difficulty": 0.5,
+      "solution": "静止物体受推力 20 N，由二力平衡知静摩擦力 20 N，与推力反向。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0045",
+      "item_type": "choice",
+      "stem": "两个力合力的大小（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_force_composition"
+      ],
+      "difficulty": 0.5,
+      "solution": "由平行四边形定则 |F₁-F₂|≤F合≤F₁+F₂，夹角增大合力减小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一定大于两分力任一个",
+        "B. 一定小于两分力任一个",
+        "C. 一定大于两分力之差，小于两分力之和",
+        "D. 随夹角增大而增大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0046",
+      "item_type": "fill",
+      "stem": "两共点力大小 6 N、8 N，夹角 90°，则合力大小为______N。",
+      "answer": "10",
+      "kps": [
+        "kp_phy10_force_composition"
+      ],
+      "difficulty": 0.4,
+      "solution": "垂直时按勾股定理 √(6²+8²)=10 N。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0047",
+      "item_type": "choice",
+      "stem": "'验证力的平行四边形定则'实验中，下列做法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_exp_parallelogram"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 正确（等效替代）；B 错误；C 错误；D 错误（必须与板平行）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两次拉橡皮条时结点必须拉到同一位置",
+        "B. 两次拉橡皮条时结点位置可以不同",
+        "C. 两个弹簧测力计的拉力方向可以相同",
+        "D. 弹簧测力计不必与木板平行"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0048",
+      "item_type": "fill",
+      "stem": "'验证力的平行四边形定则'实验使用的方法叫______（选填'控制变量'或'等效替代'）。",
+      "answer": "等效替代",
+      "kps": [
+        "kp_phy10_exp_parallelogram"
+      ],
+      "difficulty": 0.4,
+      "solution": "等效替代法：一个力与两个力的共同作用效果相同。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0049",
+      "item_type": "choice",
+      "stem": "把一个力分解为两个分力，下列情形分解唯一的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_force_decomposition"
+      ],
+      "difficulty": 0.6,
+      "solution": "已知两分力方向（即确定平行四边形两邻边方向），分解唯一。",
+      "source": "llm_generated",
+      "options": [
+        "A. 已知两个分力的大小",
+        "B. 已知两个分力的方向",
+        "C. 已知一个分力大小和另一个分力方向",
+        "D. 已知一个分力大小，另一个分力与合力夹角"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0050",
+      "item_type": "solve",
+      "stem": "重 100 N 物体静止在倾角 30° 光滑斜面上。求支持力和下滑力大小。",
+      "answer": "F_N≈86.6 N；F滑=50 N",
+      "kps": [
+        "kp_phy10_force_decomposition"
+      ],
+      "difficulty": 0.55,
+      "solution": "重力分解：沿斜面 G sin30°=50 N（下滑力）；垂直斜面 G cos30°=50√3≈86.6 N（支持力平衡此力）。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0051",
+      "item_type": "choice",
+      "stem": "对物体受力分析时，下列做法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_force_analysis"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 正确；B 错误（只画所受力）；C 错误；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体受几个力就画出几个力",
+        "B. 受力分析时必须画出物体对其他物体的作用力",
+        "C. 受力分析时不必标出施力物体",
+        "D. 受力分析时只考虑主动力不考虑约束力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0052",
+      "item_type": "fill",
+      "stem": "整体法和隔离法解决连接体问题：整体法优先求______，隔离法用于求______。",
+      "answer": "系统整体加速度（或合外力）；系统内物体间相互作用力",
+      "kps": [
+        "kp_phy10_force_analysis"
+      ],
+      "difficulty": 0.6,
+      "solution": "整体法求外力与加速度，隔离法求内力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0053",
+      "item_type": "choice",
+      "stem": "物体在三个共点力作用下处于平衡状态，则三个力的合力为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_equilibrium"
+      ],
+      "difficulty": 0.4,
+      "solution": "平衡状态下合外力为零。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 不为零，与最大分力反向",
+        "C. 不为零，沿三力矢量和方向",
+        "D. 方向垂直于最大分力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0054",
+      "item_type": "solve",
+      "stem": "物体受三个共点力：F₁=10 N 水平向右，F₂=15 N 与水平成 60°斜向上，F₃=10 N 水平向左。求合力大小。",
+      "answer": "15 N（沿 F₂ 方向）",
+      "kps": [
+        "kp_phy10_equilibrium"
+      ],
+      "difficulty": 0.55,
+      "solution": "F₁ 与 F₃ 抵消为零；F₂ 即为合力 15 N。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0055",
+      "item_type": "choice",
+      "stem": "关于牛顿第一定律，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_newton_first"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误；B 错误（理想定律不能直接验证）；C 正确；D 错误（瞬时说不绝对）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体在任何情况下都保持匀速或静止状态",
+        "B. 牛顿第一定律可用实验直接验证",
+        "C. 牛顿第一定律说明力是改变物体运动状态的原因",
+        "D. 物体运动状态改变一定受力作用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0056",
+      "item_type": "fill",
+      "stem": "惯性大小由______唯一量度。",
+      "answer": "质量",
+      "kps": [
+        "kp_phy10_newton_first"
+      ],
+      "difficulty": 0.4,
+      "solution": "质量是惯性大小的唯一量度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0057",
+      "item_type": "choice",
+      "stem": "关于 F=ma，下列说法错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_newton_second"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错误：F 与 a 成正比、方向相同。",
+      "source": "llm_generated",
+      "options": [
+        "A. F 是合外力",
+        "B. m 是物体质量",
+        "C. a 与 F 同方向",
+        "D. F 与 a 成正比，方向相反"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0058",
+      "item_type": "solve",
+      "stem": "质量 2 kg 物体在水平面受拉力 F=10 N，摩擦力 f=4 N。求加速度大小和方向。",
+      "answer": "a=3 m/s²，方向与 F 相同",
+      "kps": [
+        "kp_phy10_newton_second"
+      ],
+      "difficulty": 0.5,
+      "solution": "F合=10-4=6 N；a=F合/m=6/2=3 m/s²，方向与 F 相同。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0059",
+      "item_type": "choice",
+      "stem": "'探究加速度与力、质量关系'实验中，下列做法正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_exp_newton2"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误（应远小于小车）；B 错误（必须平衡）；C 错误（应先通电）；D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 砂桶质量越大越好",
+        "B. 不必平衡摩擦力",
+        "C. 应先放开小车后接通电源",
+        "D. 用砂和砂桶的总重力近似代替小车所受拉力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0060",
+      "item_type": "fill",
+      "stem": "'探究加速度与力、质量关系'实验中保持 m 不变，作 a-F 图像是过原点______线。",
+      "answer": "直线",
+      "kps": [
+        "kp_phy10_exp_newton2"
+      ],
+      "difficulty": 0.45,
+      "solution": "m 不变时 a∝F，图像为过原点直线。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0061",
+      "item_type": "choice",
+      "stem": "关于作用力与反作用力和平衡力的区别，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_newton_third"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误（也可能是平衡力）；B 正确；C 错误（作用在两个物体上）；D 错误（同性质）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大小相等、方向相反、同一直线的两个力一定是作用反作用力",
+        "B. 平衡力作用在同一物体上",
+        "C. 作用反作用力作用在同一物体上",
+        "D. 平衡力可以是不同性质的力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0062",
+      "item_type": "fill",
+      "stem": "人推墙时人对墙的推力和墙对人的推力是一对______力。",
+      "answer": "作用反作用",
+      "kps": [
+        "kp_phy10_newton_third"
+      ],
+      "difficulty": 0.45,
+      "solution": "两力作用在两个物体上、同性质、等值反向共线，是作用力与反作用力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0063",
+      "item_type": "choice",
+      "stem": "国际单位制中力学的基本物理量是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_unit_system"
+      ],
+      "difficulty": 0.4,
+      "solution": "力学三基本量：长度（m）、质量（kg）、时间（s）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长度、质量、时间",
+        "B. 力、质量、加速度",
+        "C. 长度、力、时间",
+        "D. 速度、质量、时间"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0064",
+      "item_type": "fill",
+      "stem": "1 N=______kg·m/s²。",
+      "answer": "1",
+      "kps": [
+        "kp_phy10_unit_system"
+      ],
+      "difficulty": 0.4,
+      "solution": "F=ma，1 N=1 kg·m/s²。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0065",
+      "item_type": "choice",
+      "stem": "已知物体质量 m 及所受合外力 F合，可求（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_dynamics_two_types"
+      ],
+      "difficulty": 0.4,
+      "solution": "由 F合=ma 可求 a；位移、动能、动量还需其他条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 位移",
+        "B. 加速度",
+        "C. 动能",
+        "D. 动量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0066",
+      "item_type": "solve",
+      "stem": "质量 2 kg 物体在水平拉力 F=12 N 作用下从静止开始运动 4s 后撤力。所受摩擦 f=4 N。求 4s 末速度及撤力后滑行距离。",
+      "answer": "v=16 m/s；s=32 m",
+      "kps": [
+        "kp_phy10_dynamics_two_types"
+      ],
+      "difficulty": 0.6,
+      "solution": "前 4s：F合=12-4=8 N，a=4 m/s²，v=at=16 m/s。撤力后 a=-2 m/s²，s=v²/(2|a|)=256/4=32 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0067",
+      "item_type": "choice",
+      "stem": "下列现象中属于完全失重的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_weightless"
+      ],
+      "difficulty": 0.5,
+      "solution": "完全失重时物体加速度为 g 方向向下，只受重力。自由下落时 a=g 完全失重。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体自由下落",
+        "B. 物体加速向上抛",
+        "C. 物体匀速上升",
+        "D. 物体减速下降"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0068",
+      "item_type": "fill",
+      "stem": "电梯以加速度 a（a<g）加速下降时，电梯内人对地板的压力______（选填'大于'、'小于'或'等于'）人的重力。",
+      "answer": "小于",
+      "kps": [
+        "kp_phy10_weightless"
+      ],
+      "difficulty": 0.5,
+      "solution": "加速度向下，物体失重，压力小于重力。视重 = m(g-a) < mg。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0069",
+      "item_type": "choice",
+      "stem": "A、B 两物体叠放在光滑水平面上并用轻绳通过定滑轮连接 A 与固定墙。下列说法正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_connection_models"
+      ],
+      "difficulty": 0.65,
+      "solution": "若 A 拉力大于 B 的最大静摩擦力，B 被带动加速；若小于则 B 不动。D 最合适。",
+      "source": "llm_generated",
+      "options": [
+        "A. A 加速向右运动时 B 也一定向右加速",
+        "B. A、B 一起做匀速运动",
+        "C. A 加速时 B 因摩擦力被带动加速",
+        "D. A 加速时 B 受到的摩擦力方向取决于 A 拉力的相对大小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0070",
+      "item_type": "solve",
+      "stem": "A（m=1 kg）和 B（m=2 kg）用轻绳相连放在光滑水平面，给 A 加 6 N 水平拉力。求绳的张力和加速度。",
+      "answer": "T=4 N；a=2 m/s²",
+      "kps": [
+        "kp_phy10_connection_models"
+      ],
+      "difficulty": 0.55,
+      "solution": "整体法：F=(mA+mB)a=6=3 a，a=2 m/s²。隔离 A：F-T=mA a，T=6-1×2=4 N。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0071",
+      "item_type": "choice",
+      "stem": "下列关于曲线运动的说法，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_curve_motion"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 正确，曲线运动速度方向变化必有加速度；B 错误；C 错误（共线则直线运动）；D 错误（如平抛是匀变速曲线运动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 曲线运动一定是变速运动",
+        "B. 曲线运动一定是匀速运动",
+        "C. 物体做曲线运动时加速度方向与速度方向共线",
+        "D. 曲线运动不可能是匀变速运动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0072",
+      "item_type": "fill",
+      "stem": "物体做曲线运动时，速度方向沿轨迹的______方向，加速度方向指向轨迹弯曲的______侧。",
+      "answer": "切线；内",
+      "kps": [
+        "kp_phy10_curve_motion"
+      ],
+      "difficulty": 0.45,
+      "solution": "曲线运动速度沿轨迹切线方向；加速度指向轨迹弯曲的内侧。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0073",
+      "item_type": "choice",
+      "stem": "关于运动的合成与分解，下列说法正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_motion_synthesis"
+      ],
+      "difficulty": 0.5,
+      "solution": "运动的合成与分解遵循等效性、等时性、独立性原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 合运动与分运动具有等效性",
+        "B. 合运动与分运动具有同时性",
+        "C. 合运动与分运动具有独立性",
+        "D. 以上都对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0074",
+      "item_type": "solve",
+      "stem": "船以 4 m/s 垂直河岸渡河，河宽 100 m，水流速度 3 m/s。求渡河时间和到达对岸的位置（相对出发点）。",
+      "answer": "t=25 s；下游 75 m",
+      "kps": [
+        "kp_phy10_motion_synthesis"
+      ],
+      "difficulty": 0.55,
+      "solution": "垂直河岸方向时间 t=100/4=25 s；水流方向位移 3×25=75 m。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0075",
+      "item_type": "choice",
+      "stem": "平抛运动可分解为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_projectile_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "平抛运动水平方向初速度不变做匀速，竖直方向初速度为零做自由落体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水平匀速和竖直自由落体",
+        "B. 水平匀加速和竖直自由落体",
+        "C. 水平匀速和竖直匀速",
+        "D. 水平匀加速和竖直匀速"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0076",
+      "item_type": "solve",
+      "stem": "以 20 m/s 水平抛出一物体，2s 后落地（g=10）。求落地时水平位移、竖直速度。",
+      "answer": "x=40 m；vy=20 m/s",
+      "kps": [
+        "kp_phy10_projectile_law"
+      ],
+      "difficulty": 0.55,
+      "solution": "x=v₀t=20×2=40 m；vy=gt=10×2=20 m/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0077",
+      "item_type": "choice",
+      "stem": "关于平抛运动，下列推论正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_projectile_derived"
+      ],
+      "difficulty": 0.6,
+      "solution": "tanθ=gt/v₀，tanα=½gt²/(v₀t)=gt/(2v₀)，故 tanθ=2tanα，速度角大于位移角。A 正确（推论）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 任意时刻速度方向的反向延长线过水平位移中点",
+        "B. 速度角和位移角相等",
+        "C. 速度角小于位移角",
+        "D. 速度角与位移角无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0078",
+      "item_type": "fill",
+      "stem": "平抛运动中某时刻速度方向与水平方向夹角为 θ，位移方向与水平方向夹角为 α，则 tan θ 与 tan α 的关系是______。",
+      "answer": "tan θ=2tan α",
+      "kps": [
+        "kp_phy10_projectile_derived"
+      ],
+      "difficulty": 0.6,
+      "solution": "由速度角 tan θ=v_y/v₀=gt/v₀；位移角 tan α=y/x=½gt²/(v₀t)=gt/(2v₀)；故 tan θ=2tan α。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0079",
+      "item_type": "choice",
+      "stem": "'探究平抛运动特点'实验，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_exp_projectile"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 正确；B 错误（轨迹是抛物线但实验中是描点近似）；C 错误（可用频闪或点迹）；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用斜槽时小球每次必须从同一位置静止释放",
+        "B. 描迹时小球的运动轨迹是抛物线",
+        "C. 实验中只能使用频闪照片",
+        "D. 实验只需测一组数据"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0080",
+      "item_type": "fill",
+      "stem": "在'探究平抛运动特点'实验中，应检验小球竖直方向为______运动，水平方向为______运动。",
+      "answer": "匀变速；匀速",
+      "kps": [
+        "kp_phy10_exp_projectile"
+      ],
+      "difficulty": 0.5,
+      "solution": "竖直方向加速度恒定是匀变速；水平方向速度不变是匀速。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0081",
+      "item_type": "choice",
+      "stem": "关于线速度和角速度的关系，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_circular_kinematics"
+      ],
+      "difficulty": 0.4,
+      "solution": "v=ωr 是线速度与角速度关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. v=ωr",
+        "B. v 与 ω 无关",
+        "C. v 与 r 无关",
+        "D. ω 与 r 成正比"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0082",
+      "item_type": "solve",
+      "stem": "一物体做匀速圆周运动，半径 0.5 m，周期 2 s。求线速度、角速度。",
+      "answer": "v≈1.57 m/s；ω=π rad/s≈3.14 rad/s",
+      "kps": [
+        "kp_phy10_circular_kinematics"
+      ],
+      "difficulty": 0.5,
+      "solution": "ω=2π/T=2π/2=π rad/s；v=ωr=π×0.5≈1.57 m/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0083",
+      "item_type": "choice",
+      "stem": "匀速圆周运动的向心加速度大小为（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_centripetal_acceleration"
+      ],
+      "difficulty": 0.5,
+      "solution": "向心加速度 a=v²/r=ω²r=4π²r/T²。",
+      "source": "llm_generated",
+      "options": [
+        "A. v²/r",
+        "B. ω²r",
+        "C. 4π²r/T²",
+        "D. 以上都对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0084",
+      "item_type": "fill",
+      "stem": "物体做匀速圆周运动，半径 0.5 m，线速度 2 m/s，则向心加速度为______m/s²。",
+      "answer": "8",
+      "kps": [
+        "kp_phy10_centripetal_acceleration"
+      ],
+      "difficulty": 0.5,
+      "solution": "a=v²/r=4/0.5=8 m/s²。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0085",
+      "item_type": "choice",
+      "stem": "关于向心力，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_centripetal_force"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（向心力是效果力，由重力、弹力、摩擦力等提供）；B 正确；C 错误（匀速圆周才恒定）；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 向心力是特殊的力",
+        "B. 向心力方向沿半径指向圆心",
+        "C. 向心力大小恒定",
+        "D. 向心力一定由绳子提供"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0086",
+      "item_type": "solve",
+      "stem": "质量 0.5 kg 物体做半径 0.5 m 匀速圆周运动，周期 2 s。求所需向心力。",
+      "answer": "F≈2.47 N",
+      "kps": [
+        "kp_phy10_centripetal_force"
+      ],
+      "difficulty": 0.6,
+      "solution": "ω=2π/T=π rad/s；F=mω²r=0.5×π²×0.5=0.25π²≈2.47 N。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0087",
+      "item_type": "choice",
+      "stem": "'探究向心力大小'实验中，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_exp_circular"
+      ],
+      "difficulty": 0.55,
+      "solution": "F=mω²r 即 F∝m、F∝ω²、F∝r。",
+      "source": "llm_generated",
+      "options": [
+        "A. F 与 m、ω²、r 都成正比",
+        "B. F 与 ω 成正比",
+        "C. F 与 r 成反比",
+        "D. F 与 m² 成正比"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0088",
+      "item_type": "fill",
+      "stem": "向心力演示器探究 F 与 m、ω、r 关系，控制变量法中保持其他变量不变时，F 与 ω 的关系是 F∝______",
+      "answer": "ω²",
+      "kps": [
+        "kp_phy10_exp_circular"
+      ],
+      "difficulty": 0.5,
+      "solution": "F=mω²r 中 F∝ω²。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0089",
+      "item_type": "choice",
+      "stem": "轻绳系一小球在竖直面内做圆周运动（绳模型），最高点的最小速度为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_circular_vertical"
+      ],
+      "difficulty": 0.55,
+      "solution": "绳模型最高点重力全部提供向心力：mg=mv²/R，v_min=√(gR)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. √(gR)",
+        "C. √(2gR)",
+        "D. √(gR/2)"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0090",
+      "item_type": "solve",
+      "stem": "轻杆长 0.5 m 一端固定小球在竖直面内做圆周运动。最高点速度为 0 时杆对小球的作用力。",
+      "answer": "F=mg（向上支持力）",
+      "kps": [
+        "kp_phy10_circular_vertical"
+      ],
+      "difficulty": 0.6,
+      "solution": "杆模型 v=0 时，由 mg-F=0（向上为杆支持力）：F=mg 方向竖直向上（支持力）。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0091",
+      "item_type": "choice",
+      "stem": "汽车过拱桥顶时，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_circular_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "拱桥顶：mg-F_N=mv²/R，故 F_N<mg，由牛顿第三定律压力<重力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽车对桥的压力大于重力",
+        "B. 汽车对桥的压力小于重力",
+        "C. 汽车对桥的压力等于重力",
+        "D. 汽车不受支持力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0092",
+      "item_type": "fill",
+      "stem": "火车转弯时，外轨略高于内轨，使______和______的合力提供向心力。",
+      "answer": "重力；支持力",
+      "kps": [
+        "kp_phy10_circular_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "火车转弯：重力与支持力合力水平指向圆心提供向心力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0093",
+      "item_type": "choice",
+      "stem": "开普勒第三定律 a³/T²=k 中，k 的大小取决于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_kepler_laws"
+      ],
+      "difficulty": 0.55,
+      "solution": "k=Gm太阳/(4π²)，只与太阳质量有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 行星质量",
+        "B. 太阳质量",
+        "C. 行星与太阳距离",
+        "D. 行星公转周期"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0094",
+      "item_type": "fill",
+      "stem": "开普勒第二定律指出：行星与太阳连线在相等时间内扫过相等______。",
+      "answer": "面积",
+      "kps": [
+        "kp_phy10_kepler_laws"
+      ],
+      "difficulty": 0.45,
+      "solution": "开普勒第二定律即面积定律。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0095",
+      "item_type": "choice",
+      "stem": "关于万有引力定律 F=GMm/r²，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_universal_gravitation"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（也适用于均匀球体）；B 正确（扭秤实验）；C 错误（F 与 r² 成反比）；D 错误（与 M、m 乘积成正比）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 公式只适用于质点",
+        "B. 引力常量 G 是卡文迪什测得的",
+        "C. F 与 r² 成正比",
+        "D. F 与 M、m 的乘积成反比"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0096",
+      "item_type": "solve",
+      "stem": "已知地球质量 M=6×10²⁴ kg，半径 R=6.4×10⁶ m。求近地面卫星的环绕速度（g 取 10 m/s²，结果保留到整数）。",
+      "answer": "v≈8 km/s",
+      "kps": [
+        "kp_phy10_universal_gravitation"
+      ],
+      "difficulty": 0.6,
+      "solution": "由 mg=mv²/R，v=√(gR)=√(10×6.4×10⁶)=√(6.4×10⁷)=8×10³ m/s=8 km/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0097",
+      "item_type": "choice",
+      "stem": "地表重力近似等于万有引力，则 GM=gR²。这一关系称为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_gravity_g"
+      ],
+      "difficulty": 0.5,
+      "solution": "GM=gR² 称为黄金代换。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黄金替换",
+        "B. 黄金代换",
+        "C. 重心公式",
+        "D. 几何代换"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0098",
+      "item_type": "fill",
+      "stem": "某星球半径 R 是地球的一半，质量是地球的 1/4。则该星球表面重力加速度约为地球的______倍。",
+      "answer": "1",
+      "kps": [
+        "kp_phy10_gravity_g"
+      ],
+      "difficulty": 0.55,
+      "solution": "g=GM/R²，g'/g=(M'/M)/(R'/R)²=(1/4)/(1/4)=1。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0099",
+      "item_type": "choice",
+      "stem": "下列关于三个宇宙速度，说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_satellite_launch"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 正确；B 错误；C 错误（第一宇宙速度 7.9 km/s）；D 错误（第二宇宙速度 11.2 km/s）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一宇宙速度是卫星的最小发射速度",
+        "B. 第二宇宙速度是卫星的最小发射速度",
+        "C. 第三宇宙速度约 7.9 km/s",
+        "D. 第一宇宙速度约 11.2 km/s"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0100",
+      "item_type": "solve",
+      "stem": "已知地球半径 R=6.4×10⁶ m，地表 g=10 m/s²。求第一宇宙速度。",
+      "answer": "v≈8 km/s",
+      "kps": [
+        "kp_phy10_satellite_launch"
+      ],
+      "difficulty": 0.55,
+      "solution": "v=√(gR)=√(10×6.4×10⁶)=8×10³ m/s=8 km/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0101",
+      "item_type": "choice",
+      "stem": "地球同步卫星的特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_satellite_orbit"
+      ],
+      "difficulty": 0.55,
+      "solution": "同步卫星周期等于 24h；轨道平面必须在赤道平面内；高度固定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 周期为 12 小时",
+        "B. 轨道平面必须与赤道平面重合",
+        "C. 轨道高度可以不同",
+        "D. 环绕方向自西向东"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0102",
+      "item_type": "fill",
+      "stem": "卫星轨道越高，线速度越______，周期越______。",
+      "answer": "小；大",
+      "kps": [
+        "kp_phy10_satellite_orbit"
+      ],
+      "difficulty": 0.5,
+      "solution": "由 GMm/r²=mv²/r，v=√(GM/r)，r 越大 v 越小；T=2π√(r³/GM)，r 越大 T 越大。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0103",
+      "item_type": "choice",
+      "stem": "已知某卫星绕地球做半径 r、周期 T 的匀速圆周运动，则地球质量为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_heavenly_body_calc"
+      ],
+      "difficulty": 0.6,
+      "solution": "由 GMm/r²=m(2π/T)²r 得 M=4π²r³/(GT²)。",
+      "source": "llm_generated",
+      "options": [
+        "A. M=4π²r/T²",
+        "B. M=4π²r³/(GT²)",
+        "C. M=2πr/GT",
+        "D. M=2πr²/GT"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0104",
+      "item_type": "solve",
+      "stem": "月球绕地球周期约 27.3 天，轨道半径约 3.84×10⁸ m。求地球质量（G=6.67×10⁻¹¹）。",
+      "answer": "M≈6×10²⁴ kg",
+      "kps": [
+        "kp_phy10_heavenly_body_calc"
+      ],
+      "difficulty": 0.7,
+      "solution": "T=27.3×86400≈2.36×10⁶ s；M=4π²r³/(GT²)=4π²×(3.84×10⁸)³/(6.67×10⁻¹¹×(2.36×10⁶)²)≈6×10²⁴ kg。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0105",
+      "item_type": "choice",
+      "stem": "牛顿力学适用于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_newton_limits"
+      ],
+      "difficulty": 0.5,
+      "solution": "牛顿力学适用于宏观、低速物体；高速需相对论，微观需量子力学。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高速微观领域",
+        "B. 宏观低速领域",
+        "C. 宇观高速领域",
+        "D. 任意领域"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0106",
+      "item_type": "fill",
+      "stem": "在______领域牛顿力学被相对论取代；在______领域被量子力学取代。",
+      "answer": "高速；微观",
+      "kps": [
+        "kp_phy10_newton_limits"
+      ],
+      "difficulty": 0.5,
+      "solution": "牛顿力学局限性：高速→相对论，微观→量子力学。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0107",
+      "item_type": "choice",
+      "stem": "狭义相对论的两条基本假设是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_special_relativity"
+      ],
+      "difficulty": 0.5,
+      "solution": "爱因斯坦相对性原理与光速不变原理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相对性原理与光速不变原理",
+        "B. 万有引力与电磁相互作用",
+        "C. 同时的绝对性与光速可变",
+        "D. 时间绝对性与空间绝对性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0108",
+      "item_type": "fill",
+      "stem": "狭义相对论的质能关系是______。",
+      "answer": "E=mc²",
+      "kps": [
+        "kp_phy10_special_relativity"
+      ],
+      "difficulty": 0.4,
+      "solution": "爱因斯坦质能方程。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0109",
+      "item_type": "choice",
+      "stem": "广义相对论的核心原理是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_general_relativity"
+      ],
+      "difficulty": 0.55,
+      "solution": "广义相对性原理与等效原理是核心。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相对性原理",
+        "B. 光速不变原理",
+        "C. 等效原理",
+        "D. 牛顿第二定律"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0110",
+      "item_type": "fill",
+      "stem": "广义相对论预言光经过太阳附近时会发生______。",
+      "answer": "水面/水面",
+      "kps": [
+        "kp_phy10_general_relativity"
+      ],
+      "difficulty": 0.5,
+      "solution": "广义相对论预言引力场中光线弯曲（已被爱丁顿实验验证）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0111",
+      "item_type": "choice",
+      "stem": "关于功，下列说法正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy10_work_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误（与位移夹角有关）；B 错误（标量没错）；C 错误（垂直时不做功）；D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 力越大做功越多",
+        "B. 功是标量",
+        "C. 力与位移垂直时力做正功",
+        "D. 阻力做负功可以说成物体克服阻力做正功"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0112",
+      "item_type": "fill",
+      "stem": "力 F=10 N 与位移方向夹角 60°，位移 s=2 m，则此力做的功为______J。",
+      "answer": "10",
+      "kps": [
+        "kp_phy10_work_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "W=Fs cos60°=10×2×0.5=10 J。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0113",
+      "item_type": "choice",
+      "stem": "汽车以恒定功率 P 行驶时，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_power_high"
+      ],
+      "difficulty": 0.55,
+      "solution": "P=Fv 恒定，v 越大 F 越小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 速度越大牵引力越大",
+        "B. 速度越大牵引力越小",
+        "C. 牵引力与速度无关",
+        "D. 加速度保持不变"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0114",
+      "item_type": "solve",
+      "stem": "汽车以额定功率 60 kW 行驶，最大速度 30 m/s。求最大速度时的牵引力和所受阻力。",
+      "answer": "F=2000 N；f=2000 N",
+      "kps": [
+        "kp_phy10_power_high"
+      ],
+      "difficulty": 0.55,
+      "solution": "F=P/v_max=60000/30=2000 N；最大速度时 F=f=2000 N。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0115",
+      "item_type": "choice",
+      "stem": "汽车以恒定加速度启动，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_vehicle_start"
+      ],
+      "difficulty": 0.6,
+      "solution": "恒定加速度启动：F 恒定、a 恒定；P=Fv 随 v 增大而增大到额定功率为止。",
+      "source": "llm_generated",
+      "options": [
+        "A. 牵引力保持恒定",
+        "B. 速度保持恒定",
+        "C. 功率随速度增大而增大",
+        "D. 加速度越来越大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0116",
+      "item_type": "fill",
+      "stem": "汽车以恒定功率启动时，加速度______（选填'逐渐增大'、'逐渐减小'或'保持不变'）。",
+      "answer": "逐渐减小",
+      "kps": [
+        "kp_phy10_vehicle_start"
+      ],
+      "difficulty": 0.5,
+      "solution": "恒定功率启动：v 增大 F=P/v 减小，a=(F-f)/m 减小。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0117",
+      "item_type": "choice",
+      "stem": "关于动能定理，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_kinetic_theorem"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 正确；B 错误；C 错误（适用于恒力和变力）；D 错误（等于动能变化量）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 合外力做的功等于动能变化量",
+        "B. 只适用于匀速运动",
+        "C. 动能定理只适用于恒力",
+        "D. 合外力做的功等于初动能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0118",
+      "item_type": "solve",
+      "stem": "质量 2 kg 物体在水平拉力 F=10 N 作用下从静止开始运动 5 m。摩擦力 f=4 N。求末速度。",
+      "answer": "v≈5.39 m/s",
+      "kps": [
+        "kp_phy10_kinetic_theorem"
+      ],
+      "difficulty": 0.6,
+      "solution": "由动能定理 (F-f)s=½mv²-0：v=√[2(F-f)s/m]=√[2×6×5/2]=√30≈5.48 m/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0119",
+      "item_type": "choice",
+      "stem": "关于重力势能，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy10_potential_energy_high"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误（标量）；B 错误（正功势能减少）；C 正确；D 错误（改变量与参考平面无关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 重力势能是矢量",
+        "B. 重力做正功时重力势能增加",
+        "C. 重力势能的大小与参考平面选择有关",
+        "D. 重力势能改变量与参考平面有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0120",
+      "item_type": "fill",
+      "stem": "质量 2 kg 物体从高 5 m 处自由下落至 0。取地面为参考平面，重力势能变化量为______J（g=10）。",
+      "answer": "-100",
+      "kps": [
+        "kp_phy10_potential_energy_high"
+      ],
+      "difficulty": 0.55,
+      "solution": "ΔE_p=mgh₂-mgh₁=0-2×10×5=-100 J。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0121",
+      "item_type": "choice",
+      "stem": "关于功能关系，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_function_relation"
+      ],
+      "difficulty": 0.55,
+      "solution": "B 正确：W_G=-ΔE_p。A 错误（仅克服摩擦力做功等于摩擦生热）；C 错误（动能定理）；D 错误（弹力做正功，弹性势能减少）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摩擦力做的功等于产生的热量",
+        "B. 重力做的功等于重力势能的减少量",
+        "C. 合外力做的功等于动能的变化量",
+        "D. 弹力做的功等于弹性势能的减少量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0122",
+      "item_type": "fill",
+      "stem": "一对滑动摩擦力做的总功等于摩擦生热：Q=f·s_rel 中的 s_rel 是______位移。",
+      "answer": "相对",
+      "kps": [
+        "kp_phy10_function_relation"
+      ],
+      "difficulty": 0.55,
+      "solution": "Q=f·s_rel 中的 s_rel 是两接触面间的相对速度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0123",
+      "item_type": "choice",
+      "stem": "机械能守恒的条件是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_mechanical_conserve"
+      ],
+      "difficulty": 0.55,
+      "solution": "机械能守恒条件：只有重力或弹力做功。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只受重力作用",
+        "B. 只有重力或弹力做功，其他力不做功或做功代数和为零",
+        "C. 合外力为零",
+        "D. 没有摩擦力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0124",
+      "item_type": "solve",
+      "stem": "质量 1 kg 物体从距地面 5 m 高处自由下落。求落地时速度大小（忽略空气阻力，g=10）。",
+      "answer": "v=10 m/s",
+      "kps": [
+        "kp_phy10_mechanical_conserve"
+      ],
+      "difficulty": 0.5,
+      "solution": "由机械能守恒 mgh=½mv²：v=√(2gh)=√100=10 m/s。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0125",
+      "item_type": "choice",
+      "stem": "一物体从光滑斜面顶端滑到底端，下列说法中正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_mechanical_conserve_app"
+      ],
+      "difficulty": 0.55,
+      "solution": "光滑斜面只有重力做功机械能守恒；B 错误（部分转化为动能，另一部分储存势能参考）；C 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体下滑过程中机械能守恒",
+        "B. 物体到达底端动能等于下滑高度对应的势能减少",
+        "C. 物体到达底端时机械能为零",
+        "D. 物体下滑过程中机械能不断增加"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0126",
+      "item_type": "fill",
+      "stem": "系统机械能守恒：E_k₁+E_p₁=E_k₂+E_p₂。这表明系统机械能的总量______。",
+      "answer": "保持不变",
+      "kps": [
+        "kp_phy10_mechanical_conserve_app"
+      ],
+      "difficulty": 0.4,
+      "solution": "机械能守恒定律即机械能总量保持不变。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0127",
+      "item_type": "choice",
+      "stem": "'验证机械能守恒定律'实验中，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy10_exp_mechanical"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错误（先用 v=gt 是循环论证）；B 正确；C 错误（摩擦使 ½mv²<mgh）；D 错误（不需要测 m 但需说明）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以先用 v=gt 求速度",
+        "B. 必须验证 ½mv² 与 mgh 的关系",
+        "C. 实验测得 ½mv² 略大于 mgh",
+        "D. 实验中不必测量物体质量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0128",
+      "item_type": "fill",
+      "stem": "'验证机械能守恒'实验中求速度应用______法（即用平均速度代替中间时刻瞬时速度）。",
+      "answer": "中间时刻速度",
+      "kps": [
+        "kp_phy10_exp_mechanical"
+      ],
+      "difficulty": 0.5,
+      "solution": "求纸带上某点速度应用中间时刻速度法。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0129",
+      "item_type": "choice",
+      "stem": "关于变力做功，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy10_variable_work"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 正确（F-x 图面积即功）；B 错误（也可求变力功）；C 错误（也可用平均力、动能定理）；D 错误（初末态）。",
+      "source": "llm_generated",
+      "options": [
+        "A. F-x 图像面积表示功",
+        "B. F-x 图像只能用于求恒力做功",
+        "C. 变力做功只能用积分法求",
+        "D. 弹簧弹力做功 W=½kx² 适用于任意过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "phy_hs1_0130",
+      "item_type": "solve",
+      "stem": "弹簧劲度系数 k=200 N/m，从自然长度压缩 0.10 m。求弹力做的功。",
+      "answer": "W=-1 J",
+      "kps": [
+        "kp_phy10_variable_work"
+      ],
+      "difficulty": 0.55,
+      "solution": "弹簧压缩做负功：W=-½kx²=-½×200×0.01=-1 J。",
+      "source": "llm_generated",
+      "form": "calculation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    }
+  ]
+}

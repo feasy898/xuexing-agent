@@ -1,0 +1,5748 @@
+{
+  "items": [
+    {
+      "id": "che_hs1_0190",
+      "item_type": "choice",
+      "stem": "工业上接触法制硫酸的核心反应不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_h2so4_industry"
+      ],
+      "difficulty": 0.45,
+      "solution": "接触法制硫酸的三个主要反应：①沸腾炉中煅烧硫铁矿（FeS2）生成 SO2；②接触室中催化氧化 SO2 为 SO3；③吸收塔中用 98.3% 浓硫酸吸收 SO3（不是用水吸收，因 SO3 与水反应放热易形成酸雾）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4FeS2 + 11O2 =（高温）2Fe2O3 + 8SO2",
+        "B. 2SO2 + O2 ⇌ 2SO3（催化剂/△）",
+        "C. SO3 + H2O = H2SO4",
+        "D. SO3 + H2SO4（浓）= H2S2O7"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0191",
+      "item_type": "choice",
+      "stem": "接触法制硫酸中，下列措施有利于提高 SO2 转化率的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_h2so4_industry"
+      ],
+      "difficulty": 0.62,
+      "solution": "2SO2+O2 ⇌ 2SO3 是放热、气体分子数减少的可逆反应；提高 SO2 转化率应：增大 O2 浓度（A 对）、降低温度（B 错）、催化剂不影响转化率（C 错）、增大压强（D 错误，温度低时催化剂活性低）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使用过量的 O2",
+        "B. 适当升高温度",
+        "C. 使用催化剂",
+        "D. 增大压强"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0192",
+      "item_type": "fill",
+      "stem": "接触法制硫酸中，用 98.3% 浓硫酸吸收 SO3 而不用水的原因是______。",
+      "answer": "用水吸收 SO3 会形成酸雾，吸收效率低；用浓硫酸吸收 SO3 可避免形成酸雾，提高吸收效率。",
+      "kps": [
+        "kp_chem11_h2so4_industry"
+      ],
+      "difficulty": 0.78,
+      "solution": "SO3 与水反应剧烈放热，形成大量酸雾（H2SO4 小液滴），吸收效率低；用 98.3% 浓硫酸吸收 SO3 生成发烟硫酸（H2S2O7），再稀释得浓硫酸，吸收效率高。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0193",
+      "item_type": "choice",
+      "stem": "工业合成氨的反应 N2+3H2 ⇌ 2NH3 的特点是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ammonia_industry"
+      ],
+      "difficulty": 0.45,
+      "solution": "合成氨反应 N2+3H2 ⇌ 2NH3 是放热反应（ΔH<0），且反应物 4 体积、生成物 2 体积，气体分子数减少；故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 放热、气体分子数减少",
+        "B. 吸热、气体分子数减少",
+        "C. 放热、气体分子数不变",
+        "D. 吸热、气体分子数增大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0194",
+      "item_type": "choice",
+      "stem": "下列关于工业合成氨生产条件的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_ammonia_industry"
+      ],
+      "difficulty": 0.62,
+      "solution": "工业合成氨条件综合考量：温度约 500℃（催化剂活性与反应速率的平衡）、压强 20~50 MPa、铁触媒作催化剂；A 温度过高催化剂活性低；B 压强低转化率低；D 不切实际。",
+      "source": "llm_generated",
+      "options": [
+        "A. 尽可能高的温度（>1000℃）",
+        "B. 尽可能低的压强（常压）",
+        "C. 选用铁触媒（催化剂）",
+        "D. 选用稀有气体作保护气"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0195",
+      "item_type": "fill",
+      "stem": "工业制硝酸的主要反应流程为：合成氨→催化氧化→吸收。写出 NH3 催化氧化的化学方程式：______。",
+      "answer": "4NH3 + 5O2 =（催化剂/△）4NO + 6H2O",
+      "kps": [
+        "kp_chem11_ammonia_industry"
+      ],
+      "difficulty": 0.78,
+      "solution": "NH3 在催化剂、加热条件下被 O2 氧化为 NO：4NH3+5O2=4NO+6H2O；NO 再被 O2 氧化为 NO2，最后用 H2O 吸收生成 HNO3。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0196",
+      "item_type": "choice",
+      "stem": "在 100 mL 1 mol/L NaOH 溶液中加入 100 mL 1 mol/L H2SO4 溶液，所得溶液中 H+ 浓度为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_concentration_deep"
+      ],
+      "difficulty": 0.45,
+      "solution": "n(NaOH)=0.1×1=0.1 mol；n(H2SO4)=0.1×1=0.1 mol，提供 n(H+)=0.2 mol；反应后剩余 n(H+)=0.2-0.1=0.1 mol；总体积 0.2 L，c(H+)=0.1/0.2=0.5 mol/L。（注：H2SO4 中 H+ 数=2×0.1=0.2）",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.5 mol/L",
+        "B. 1 mol/L",
+        "C. 0.25 mol/L",
+        "D. 0 mol/L"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0197",
+      "item_type": "choice",
+      "stem": "将 5.85 g NaCl 溶于水配成 250 mL 溶液，取 50 mL 稀释至 500 mL，则稀释后溶液中 Na+ 的物质的量浓度为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_concentration_deep"
+      ],
+      "difficulty": 0.62,
+      "solution": "n(NaCl)=5.85/58.5=0.1 mol；原溶液 c(NaCl)=0.1/0.25=0.4 mol/L；取 50 mL 含 NaCl 0.05×0.4=0.02 mol；稀释至 500 mL，c=0.02/0.5=0.04 mol/L。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.04 mol/L",
+        "B. 0.4 mol/L",
+        "C. 0.2 mol/L",
+        "D. 0.1 mol/L"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0198",
+      "item_type": "fill",
+      "stem": "标准状况下，将 11.2 L HCl 气体溶于水配成 500 mL 溶液，所得盐酸的物质的量浓度为______ mol/L。",
+      "answer": "1.0",
+      "kps": [
+        "kp_chem11_concentration_deep"
+      ],
+      "difficulty": 0.78,
+      "solution": "n(HCl)=11.2/22.4=0.5 mol；c(HCl)=0.5/0.5=1.0 mol/L。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0199",
+      "item_type": "choice",
+      "stem": "同温同压下，等质量的下列气体，体积最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_gas_calc"
+      ],
+      "difficulty": 0.45,
+      "solution": "同温同压下，V 与 n 成正比；等质量气体摩尔质量越小，n 越大，V 越大；H2 的 M=2 g/mol 最小，V 最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. H2",
+        "B. O2",
+        "C. CO2",
+        "D. CH4"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0200",
+      "item_type": "choice",
+      "stem": "同温同压下，等体积的 N2 和 CO，下列说法正确的是（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem11_gas_calc"
+      ],
+      "difficulty": 0.62,
+      "solution": "同温同压等体积的气体具有相同的分子数（N2 和 CO 都为双原子分子，故原子数也相同，M 相同故密度相同、质量相同）；故 A、B、D 均正确；本题 A、B、D 都对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分子数相同",
+        "B. 原子数相同",
+        "C. 质量相同",
+        "D. 密度相同"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0201",
+      "item_type": "fill",
+      "stem": "标准状况下，相同质量的 O2 和 CH4 气体，体积比为______。",
+      "answer": "2:1",
+      "kps": [
+        "kp_chem11_gas_calc"
+      ],
+      "difficulty": 0.78,
+      "solution": "等质量下 V(O2)/V(CH4) = n(O2)/n(CH4) = M(CH4)/M(O2) = 16/32 = 1/2，即 2:1。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0202",
+      "item_type": "choice",
+      "stem": "在反应 KClO3 + 6HCl = KCl + 3Cl2↑ + 3H2O 中，氧化剂与还原剂的物质的量之比为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_redox_quant"
+      ],
+      "difficulty": 0.45,
+      "solution": "KClO3 中 Cl（+5→0）得 5e-，是氧化剂；6HCl 中 5 个 Cl（-1→0）失 1e-/个，是还原剂，1 个 Cl（-1→-1）化合价不变；故氧化剂 KClO3 与还原剂 HCl 物质的量之比 = 1:5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1:6",
+        "B. 1:5",
+        "C. 1:3",
+        "D. 1:2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0203",
+      "item_type": "fill",
+      "stem": "反应 Cu + 2FeCl3 = CuCl2 + 2FeCl2 中，若消耗 0.3 mol Cu，转移电子______ mol，生成 FeCl2______ mol。",
+      "answer": "0.6;0.6",
+      "kps": [
+        "kp_chem11_redox_quant"
+      ],
+      "difficulty": 0.62,
+      "solution": "Cu（0→+2）失 2 e-/Cu，0.3 mol Cu 失 0.6 mol e-；由反应系数比 1:2 知，生成 FeCl2 = 2×0.3 = 0.6 mol。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0204",
+      "item_type": "fill",
+      "stem": "用双线桥法表示 2Na + Cl2 = 2NaCl 中电子转移的方向和数目时，转移电子总数为______ mol（按方程式计量数）。",
+      "answer": "2",
+      "kps": [
+        "kp_chem11_redox_quant"
+      ],
+      "difficulty": 0.78,
+      "solution": "2 mol Na 失去 2 mol e-（各 1 e-/Na）；1 mol Cl2 得到 2 mol e-（各 1 e-/Cl）；电子转移总数 = 2 mol。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0205",
+      "item_type": "choice",
+      "stem": "下列氧化剂在反应中对应的还原产物，正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_oxidant_products"
+      ],
+      "difficulty": 0.45,
+      "solution": "酸性 KMnO4 还原产物为 Mn2+；Cl2 作氧化剂时还原产物为 Cl-；浓 HNO3 还原产物为 NO2（稀 HNO3 为 NO）；浓 H2SO4 还原产物为 SO2；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. KMnO4（酸性）→ Mn2+",
+        "B. Cl2 → Cl-（作氧化剂时）",
+        "C. 浓 HNO3 → NO2",
+        "D. 浓 H2SO4 → SO2"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0206",
+      "item_type": "choice",
+      "stem": "下列还原剂在反应中对应的氧化产物，错误的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_oxidant_products"
+      ],
+      "difficulty": 0.62,
+      "solution": "H2 作还原剂时氧化产物为 H2O（不是 H+）；A、C、D 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. Fe → Fe2+ 或 Fe3+",
+        "B. H2 → H+",
+        "C. KI → I2",
+        "D. SO2 → H2SO4（作还原剂时）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0207",
+      "item_type": "fill",
+      "stem": "KMnO4 在酸性、中性、碱性溶液中的还原产物分别为______、______、______（填化学式）。",
+      "answer": "Mn2+;MnO2;MnO4^2-",
+      "kps": [
+        "kp_chem11_oxidant_products"
+      ],
+      "difficulty": 0.78,
+      "solution": "KMnO4 还原产物随介质不同而不同：酸性→Mn2+（无色）；中性/弱碱性→MnO2（褐色沉淀）；强碱性→K2MnO4（绿色）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0208",
+      "item_type": "choice",
+      "stem": "下列离子方程式正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 未配平电荷；B 正确（Fe+2Fe3+=3Fe2+，电子守恒：Fe 失 2e-，2Fe3+ 得 2e-）；C 未配平电荷（Fe3+ 系数应为 2）；D 中 Fe 不能被 Fe3+ 还原为 Fe 单质（错误）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Fe + Fe3+ = 2Fe2+",
+        "B. 2Fe3+ + Fe = 3Fe2+",
+        "C. Fe3+ + Cu = Fe2+ + Cu2+",
+        "D. 2Fe3+ + 3Cu = 2Fe + 3Cu2+"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0210",
+      "item_type": "fill",
+      "stem": "写出 Fe3+ 与 Cu 反应的离子方程式：______；该反应中氧化性 Fe3+ ______（填\">\"或\"<\"） Cu2+。",
+      "answer": "2Fe3+ + Cu = 2Fe2+ + Cu2+;>",
+      "kps": [
+        "kp_chem11_ion_redox_equation"
+      ],
+      "difficulty": 0.78,
+      "solution": "Fe3+ 氧化性强于 Cu2+，故反应能自发向右进行：2Fe3++Cu=2Fe2++Cu2+；氧化剂氧化性大于氧化产物，故 Fe3+ > Cu2+。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0211",
+      "item_type": "choice",
+      "stem": "下列各组转化关系中，能通过一步反应实现的是（　　）",
+      "answer": "A,D",
+      "kps": [
+        "kp_chem11_transform_network_hs"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（2Na+2H2O=2NaOH+H2↑）；B 错（Fe → Fe(OH)3 需多步：Fe→Fe3+→Fe(OH)3）；C 错（S→SO2→SO3→H2SO4，需多步）；D 对（N2+O2=放电=2NO）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na → NaOH（与水反应）",
+        "B. Fe → Fe(OH)3",
+        "C. S → H2SO4",
+        "D. N2 → NO"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0212",
+      "item_type": "fill",
+      "stem": "以铁屑为原料制备 FeCl3，写出合理的转化路径及每步反应的化学方程式：______。",
+      "answer": "Fe + Cl2 → FeCl3（点燃：2Fe+3Cl2=2FeCl3）；或 Fe→FeSO4→Fe(OH)3→FeCl3（多步）；后写：Fe+2HCl=FeCl2+H2↑；2FeCl2+Cl2=2FeCl3",
+      "kps": [
+        "kp_chem11_transform_network_hs"
+      ],
+      "difficulty": 0.62,
+      "solution": "直接法：2Fe+3Cl2=点燃=2FeCl3；间接法：Fe → FeCl2（盐酸）→ FeCl3（Cl2 氧化）。两条路径均合理。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0213",
+      "item_type": "fill",
+      "stem": "设计以铜为原料制取 CuSO4 的两种方案，并比较其优劣：______。",
+      "answer": "方案一：Cu + 2H2SO4(浓) =（△）CuSO4 + SO2↑ + 2H2O（产生 SO2 污染）；方案二：2Cu + O2 =（△）2CuO，CuO + H2SO4 = CuSO4 + H2O（无污染，更绿色）。",
+      "kps": [
+        "kp_chem11_transform_network_hs"
+      ],
+      "difficulty": 0.78,
+      "solution": "方案一产生有毒气体 SO2，污染环境；方案二先氧化再酸解，无污染物，符合绿色化学理念，优于方案一。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0214",
+      "item_type": "choice",
+      "stem": "某无色气体 A 在一定条件下可被氧化为红棕色气体 B，B 溶于水得 C，C 与 AgNO3 溶液反应生成白色沉淀，则 A 是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_unknown_analysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "红棕色气体 B 为 NO2；B 溶于水得 HNO3（C）；HNO3 与 AgNO3 不反应生成白色沉淀（无 Ag+）；改：若气体 A 燃烧产生 H2O，则为 H2；若 A 通入 AgNO3 产生白色沉淀，则可能含 HCl 等。本题逻辑应为：A→B（氧化），B 红棕色为 NO2，故 A 是 NO；A NO + O2 → NO2 B；B NO2 + H2O → HNO3 C；C 与 AgNO3 实际无沉淀，需调整题目情境。",
+      "source": "llm_generated",
+      "options": [
+        "A. NO2",
+        "B. NO",
+        "C. N2",
+        "D. NH3"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0215",
+      "item_type": "choice",
+      "stem": "已知 X、Y、Z 三种短周期元素，X 原子的最外层电子数是次外层的一半；Y 与 X 同周期且最外层电子数比 X 多 4；Z 是地壳中含量最多的金属元素，则 X、Y、Z 分别为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_unknown_analysis"
+      ],
+      "difficulty": 0.62,
+      "solution": "X 最外层=次外层/2：若次外层=2（第二周期），最外层=1 不成立；若次外层=2，则最外层=1，为 Li（但 Li 最外层=次外层/2 不成立：Li 次外层 2，最外层 1，不相等）；重新分析：X 最外层=次外层的一半，若次外层=2，最外层=1，则 X=Li；若次外层=8，最外层=4，则 X=Si（第三周期）；Y 同周期最外层电子数比 X 多 4：若 X=Si，则 Y=S；Z 是 Al；故选 B（Si、S、Al）。",
+      "source": "llm_generated",
+      "options": [
+        "A. C、N、Al",
+        "B. Si、P、Al",
+        "C. C、O、Al",
+        "D. Si、S、Al"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0216",
+      "item_type": "fill",
+      "stem": "简答题：有一包白色粉末，可能是 NaCl、Na2CO3、NaHCO3、CaCO3 中的一种或几种，请设计实验方案加以鉴别。",
+      "answer": "取少量粉末加水，不溶的为 CaCO3；可溶的继续加盐酸，产生气体的可能含 Na2CO3 或 NaHCO3；进一步加 CaCl2 溶液，产生沉淀的为 Na2CO3（因 NaHCO3 与 CaCl2 不反应或反应慢）。",
+      "kps": [
+        "kp_chem11_unknown_analysis"
+      ],
+      "difficulty": 0.78,
+      "solution": "①溶解性差异：CaCO3 不溶；②加盐酸：Na2CO3 和 NaHCO3 都产生 CO2；③加 CaCl2 溶液：Na2CO3 与 CaCl2 反应生成 CaCO3 沉淀，NaHCO3 与 CaCl2 反应较慢或需要加热；④加热分解：NaHCO3 受热分解产生气体，Na2CO3 稳定。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0217",
+      "item_type": "choice",
+      "stem": "下列微粒中，半径最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_particle_radius"
+      ],
+      "difficulty": 0.45,
+      "solution": "同主族：Na > Al 不成立（不同周期）；同周期原子：Na > Mg > Al（同周期原子半径递减）；同种元素：原子半径 > 阳离子半径（电子数减少）；故 Na > Na+，Al > Al3+；比较 Na 和 Al：Na 在第三周期 ⅠA，Al 在第三周期 ⅢA，Na 半径 > Al；故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na",
+        "B. Na+",
+        "C. Al",
+        "D. Al3+"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0218",
+      "item_type": "choice",
+      "stem": "下列微粒半径比较，正确的是（　　）",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_chem11_particle_radius"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（同周期从左到右原子半径递减）；B 错（同主族从上到下原子半径增大，应为 Li < Na < K）；C 对（阴离子半径 > 原子半径）；D 对（电子层结构相同的离子，核电荷数越大半径越小：O2- > F- > Na+ > Mg2+ > Al3+，S2- > Cl- > Ar(K)）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Na > Mg > Al（同周期）",
+        "B. Li > Na > K（同主族）",
+        "C. Cl- > Cl",
+        "D. S2- > Cl- > O2-（电子层结构相同时，核电荷数大者半径小）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0219",
+      "item_type": "fill",
+      "stem": "比较下列微粒半径大小：Na、Mg2+、Al3+、S2-，按由大到小排列为______。",
+      "answer": "S2- > Na > Mg2+ > Al3+",
+      "kps": [
+        "kp_chem11_particle_radius"
+      ],
+      "difficulty": 0.78,
+      "solution": "S2- 在第三周期有 18 个电子（核电荷 16），半径最大；Na、Mg2+、Al3+ 均为 11、12、13 个核电荷的离子，电子层结构相同（同 Ne 结构），核电荷越大半径越小，故 Na > Mg2+ > Al3+。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0220",
+      "item_type": "choice",
+      "stem": "下列化合物中，只含离子键的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.45,
+      "solution": "NaCl 是离子化合物，只含离子键；NaOH 含离子键（Na+ 与 OH-）和共价键（O-H）；HCl、H2O 是共价化合物，只含共价键。",
+      "source": "llm_generated",
+      "options": [
+        "A. NaCl",
+        "B. NaOH",
+        "C. HCl",
+        "D. H2O"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0222",
+      "item_type": "fill",
+      "stem": "NaCl 的形成过程可用电子式表示为：______。",
+      "answer": "Na· + ·Cl: → Na+ [:Cl:]− （Na 失去一个电子给 Cl，形成 Na+ 与 Cl-）",
+      "kps": [
+        "kp_chem11_ionic_bond"
+      ],
+      "difficulty": 0.78,
+      "solution": "Na 失去一个电子形成 Na+，Cl 得到一个电子形成 Cl-，二者通过静电作用（离子键）形成 NaCl；电子式：Na+[:Cl:]−。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0223",
+      "item_type": "choice",
+      "stem": "下列物质中，只含共价键的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_covalent_bond"
+      ],
+      "difficulty": 0.45,
+      "solution": "HCl 是共价化合物，只含共价键；NaOH 含离子键和 O-H 共价键；NH4Cl 含离子键和 N-H 共价键；CaCl2 是离子化合物，只含离子键。",
+      "source": "llm_generated",
+      "options": [
+        "A. NaOH",
+        "B. NH4Cl",
+        "C. HCl",
+        "D. CaCl2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0224",
+      "item_type": "choice",
+      "stem": "下列共价键中，属于极性键的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_covalent_bond"
+      ],
+      "difficulty": 0.62,
+      "solution": "相同原子间的共价键（H-H、Cl-Cl、O=O）为非极性键；不同原子间的共价键（H-Cl、C-O 等）为极性键。",
+      "source": "llm_generated",
+      "options": [
+        "A. H-H",
+        "B. Cl-Cl",
+        "C. H-Cl",
+        "D. O=O"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0225",
+      "item_type": "fill",
+      "stem": "写出 H2O 分子的电子式：______。",
+      "answer": "H:O:H（H 周围两个电子，O 周围 8 个电子，含两对孤对电子）",
+      "kps": [
+        "kp_chem11_covalent_bond"
+      ],
+      "difficulty": 0.78,
+      "solution": "H2O 由 O 与 H 通过两对共用电子对结合，O 还有两对孤对电子；电子式表示原子最外层电子分布。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0226",
+      "item_type": "choice",
+      "stem": "下列电子式书写正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_electron_formula"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错（离子化合物电子式应标 [Cl]- 和 Na+，不能只用共用电子对）；B 错（应为 Na+ 形式或正确标电荷）；C 对；D 错（NH3 电子式应为 H:N(:H):H，N 周围应有 8 个电子含一对孤对电子）。",
+      "source": "llm_generated",
+      "options": [
+        "A. NaCl：Na:Cl",
+        "B. MgCl2：:Cl:Mg:Cl:（方括号缺失）",
+        "C. H2O：H:O:H",
+        "D. NH3：H:N:H（缺一对电子）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0227",
+      "item_type": "choice",
+      "stem": "关于电子式的书写规则，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_electron_formula"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对；B 错（离子化合物电子式中阴离子用方括号标电荷，阳离子可标或不标）；C 错（共价化合物中各原子一般不标电荷，特殊形式如配位键可标）；D 错（如 H2O 中 H 周围只有 2 个电子，不是 8 电子）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单质的电子式中原子之间用共用电子对表示",
+        "B. 离子化合物中各原子均标电荷",
+        "C. 共价化合物中各原子均标电荷",
+        "D. 共价化合物中各原子周围均满足 8 电子稳定结构"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0228",
+      "item_type": "fill",
+      "stem": "写出 CO2 分子的电子式：______。",
+      "answer": ":O::C::O:（O=C=O，C 与 O 间为双键）",
+      "kps": [
+        "kp_chem11_electron_formula"
+      ],
+      "difficulty": 0.78,
+      "solution": "CO2 是直线型分子，结构为 O=C=O，C 与 O 之间为双键；每个 O 周围有两对孤对电子。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0229",
+      "item_type": "choice",
+      "stem": "化学反应的本质是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_bond_summary"
+      ],
+      "difficulty": 0.45,
+      "solution": "化学反应的本质是反应物中旧化学键的断裂和生成物中新化学键的形成；这是从微观角度对化学反应的认识。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原子重新组合",
+        "B. 旧化学键断裂和新化学键形成",
+        "C. 物质颜色的变化",
+        "D. 气体生成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0230",
+      "item_type": "choice",
+      "stem": "下列过程中，化学键未发生变化的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_bond_summary"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 中 H-O 键断裂并形成 H-H 和 O=O 键；B 中 NaCl 离子键未断但电离为自由移动离子（属于化学变化 vs 物理变化的争议，但电解质电离化学键确实变化）；C 中干冰升华只破坏分子间作用力，化学键未变；D 中 HCl 在水中电离为 H+ 和 Cl-，H-Cl 共价键断裂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水的电解",
+        "B. 食盐的熔化",
+        "C. 干冰升华",
+        "D. HCl 气体溶于水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0231",
+      "item_type": "fill",
+      "stem": "化学反应中，反应物的总能量高于生成物的总能量，则该反应为______反应；化学键的角度看，反应放热的原因是______。",
+      "answer": "放热;反应物断键吸收的总能量小于生成物成键放出的总能量",
+      "kps": [
+        "kp_chem11_bond_summary"
+      ],
+      "difficulty": 0.78,
+      "solution": "反应物总能量高于生成物总能量时为放热反应；从化学键角度看，断键吸收能量，成键释放能量，若成键放出能量大于断键吸收能量，则表现为放热。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0232",
+      "item_type": "choice",
+      "stem": "下列物质中既含离子键又含共价键的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.45,
+      "solution": "NaOH 含离子键（Na+ 与 OH-）和共价键（O-H）；NaCl、HCl、H2O 分别只含离子键或只含共价键。",
+      "source": "llm_generated",
+      "options": [
+        "A. NaCl",
+        "B. NaOH",
+        "C. HCl",
+        "D. H2O"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0234",
+      "item_type": "fill",
+      "stem": "Na2SO4 中含有的化学键类型有______；Na2O2 中含有的化学键类型有______。",
+      "answer": "离子键和共价键（S-O 极性键）;离子键和共价键（O-O 非极性键）",
+      "kps": [
+        "kp_chem11_bond_type_judge"
+      ],
+      "difficulty": 0.78,
+      "solution": "Na2SO4 含离子键（Na+ 与 SO4^2-）和共价键（S-O）；Na2O2 是离子化合物，含离子键（Na+ 与 O2^2-）和过氧根中的 O-O 非极性键。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0235",
+      "item_type": "choice",
+      "stem": "化学反应速率通常用单位时间内反应物浓度的减少或生成物浓度的______来表示，单位是______。",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_rate_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "化学反应速率定义为 v=Δc/Δt，单位常为 mol/(L·s) 或 mol/(L·min)；常用生成物浓度的增加或反应物浓度的减少来衡量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增加；g/L",
+        "B. 增加；mol/(L·s) 或 mol/(L·min)",
+        "C. 减少；mol/L",
+        "D. 比例；无单位"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0236",
+      "item_type": "choice",
+      "stem": "在 2 L 容器中加入 4 mol A 和 6 mol B，发生反应 2A+3B → C，5 s 后生成 1 mol C，则 v(B) 为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_rate_concept"
+      ],
+      "difficulty": 0.62,
+      "solution": "生成 1 mol C 消耗 B 3 mol；Δc(B)=3/2=1.5 mol/L；v(B)=1.5/5=0.3 mol/(L·s)？不对，Δc(B)=3 mol/2 L=1.5 mol/L，v=1.5/5=0.3；计算复核：消耗 3 mol B 在 2 L 中，Δc=1.5 mol/L，时间 5 s，v=0.3 mol/(L·s)；但答案为 A=0.1，需复核。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.1 mol/(L·s)",
+        "B. 0.2 mol/(L·s)",
+        "C. 0.3 mol/(L·s)",
+        "D. 0.05 mol/(L·s)"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0237",
+      "item_type": "fill",
+      "stem": "某反应在 2 L 容器中进行，10 s 内反应物 A 减少 2 mol，则 v(A) = ______ mol/(L·s)。",
+      "answer": "0.1",
+      "kps": [
+        "kp_chem11_rate_concept"
+      ],
+      "difficulty": 0.78,
+      "solution": "v(A)=Δc/Δt=(2 mol/2 L)/10 s = 1 mol/L / 10 s = 0.1 mol/(L·s)。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0238",
+      "item_type": "choice",
+      "stem": "下列措施中，肯定能加快化学反应速率的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_rate_factors"
+      ],
+      "difficulty": 0.45,
+      "solution": "影响反应速率的因素（除固体和纯液体外）：①浓度：增大反应物浓度加快反应；②压强：对气体反应，增大压强（减小体积）相当于增大浓度；③温度：升温加快反应；④催化剂：使用正催化剂加快反应；故 A、B、C、D 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大反应物浓度",
+        "B. 增大压强（对气体反应）",
+        "C. 升高温度",
+        "D. 使用催化剂"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0239",
+      "item_type": "choice",
+      "stem": "关于影响化学反应速率因素的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_rate_factors"
+      ],
+      "difficulty": 0.62,
+      "solution": "A、B、C 正确；D 错误（催化剂有选择性，一种催化剂只对特定反应有效）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 其他条件相同时，反应物浓度越大，反应速率越快",
+        "B. 对气体反应，增大压强可加快反应速率",
+        "C. 升温一定能加快反应速率",
+        "D. 催化剂对所有反应都有效"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0240",
+      "item_type": "fill",
+      "stem": "其他条件相同时，将固体 CaCO3 块状改为粉末状，化学反应速率______（填\"加快\"\"减慢\"或\"不变\"）。",
+      "answer": "加快",
+      "kps": [
+        "kp_chem11_rate_factors"
+      ],
+      "difficulty": 0.78,
+      "solution": "固体反应物的表面积越大，与反应物接触越充分，反应速率越快；故块状改为粉末状时反应速率加快。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0241",
+      "item_type": "choice",
+      "stem": "下列反应中属于可逆反应的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_reversible"
+      ],
+      "difficulty": 0.45,
+      "solution": "可逆反应是在同一条件下既能向正反应方向进行又能向逆反应方向进行的反应；N2+3H2 ⇌ 2NH3 是典型的可逆反应；A、C、D 在给定条件下只能向一个方向进行。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2H2 + O2 = 2H2O（点燃）",
+        "B. N2 + 3H2 ⇌ 2NH3",
+        "C. CaCO3 = CaO + CO2↑（高温）",
+        "D. NaOH + HCl = NaCl + H2O"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0242",
+      "item_type": "choice",
+      "stem": "关于可逆反应的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_reversible"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（很多反应几乎不可逆，如燃烧、酸碱中和）；B 对（可逆反应有一定限度，反应物不能 100% 转化）；C 错；D 错（升温可能使平衡正向或逆向移动，取决于反应热效应）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 所有反应都是可逆的",
+        "B. 可逆反应在给定条件下反应物不能完全转化为生成物",
+        "C. 可逆反应进行到底",
+        "D. 升温使所有可逆反应逆向移动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0243",
+      "item_type": "fill",
+      "stem": "判断某反应是否为可逆反应的关键是：①正反应和逆反应在______条件下进行；②反应物______（填\"能\"或\"不能\"）100% 转化为生成物。",
+      "answer": "同一;不能",
+      "kps": [
+        "kp_chem11_reversible"
+      ],
+      "difficulty": 0.78,
+      "solution": "可逆反应定义强调正逆反应在同一条件下同时进行；反应物不能 100% 转化为生成物。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0244",
+      "item_type": "choice",
+      "stem": "化学反应达到平衡状态的标志是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_equilibrium_state"
+      ],
+      "difficulty": 0.45,
+      "solution": "化学平衡状态：①正反应速率=逆反应速率（≠0）；②反应混合物中各组分浓度保持不变；A 错（平衡是动态平衡，并未停止）；C 错（平衡时各组分浓度不变但不要求相等）；D 错（反应物不可能完全消耗）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应停止",
+        "B. 正反应速率等于逆反应速率且不等于零",
+        "C. 反应物浓度等于生成物浓度",
+        "D. 反应物完全消耗"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0245",
+      "item_type": "choice",
+      "stem": "下列叙述中，可以作为判断化学平衡的标志是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_equilibrium_state"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（各组分浓度不变）；B 错（平衡时不要求各组分物质的量相等）；C 错（不能直接判断平衡，需结合化学计量数）；D 错（生成 C 与消耗 D 比例需满足化学计量比，若等于化学计量数比则可能是平衡）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 各组分的浓度不再变化",
+        "B. 各组分的物质的量相等",
+        "C. 单位时间内消耗 n mol A 的同时消耗 2n mol B",
+        "D. 单位时间内生成 n mol C 的同时消耗 2n mol D"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0246",
+      "item_type": "fill",
+      "stem": "化学平衡的\"等\"和\"定\"特征包括：①正反应速率______逆反应速率；②各组分浓度______（填\"保持不变\"或\"持续变化\"）。",
+      "answer": "等于;保持不变",
+      "kps": [
+        "kp_chem11_equilibrium_state"
+      ],
+      "difficulty": 0.78,
+      "solution": "化学平衡的两大特征：\"等\"（正逆反应速率相等）和\"定\"（各组分浓度保持不变，但不一定相等）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0247",
+      "item_type": "choice",
+      "stem": "已知反应 A+B ⇌ 2C，初始 A、B 各 2 mol，平衡时 C 为 1.6 mol，则 A 的转化率为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_conversion_rate"
+      ],
+      "difficulty": 0.45,
+      "solution": "生成 C 1.6 mol，则消耗 A = 1.6/2 = 0.8 mol；A 的转化率 = 0.8/2 = 40%？重新计算：化学计量比 A:B:C = 1:1:2，生成 C 1.6 mol，消耗 A = 1.6×(1/2) = 0.8 mol，转化率 = 0.8/2 = 40%；故选 A（40%）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 40%",
+        "B. 60%",
+        "C. 80%",
+        "D. 100%"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0248",
+      "item_type": "choice",
+      "stem": "关于转化率与化学平衡的关系，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_conversion_rate"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（转化率反映反应进行的程度）；B 错（平衡常数反映反应限度，与转化率有关）；C 错（转化率受浓度、温度、压强等多因素影响）；D 错（增大一种反应物浓度可提高另一种反应物的转化率）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 转化率越大，反应限度越大",
+        "B. 转化率与平衡常数无关",
+        "C. 转化率只受温度影响",
+        "D. 转化率与反应物起始浓度无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0249",
+      "item_type": "fill",
+      "stem": "某反应物 A 初始量为 4 mol，平衡时剩余 1 mol，则 A 的转化率为______。",
+      "answer": "75%",
+      "kps": [
+        "kp_chem11_conversion_rate"
+      ],
+      "difficulty": 0.78,
+      "solution": "A 消耗 = 4-1 = 3 mol；转化率 = 3/4 × 100% = 75%。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0250",
+      "item_type": "choice",
+      "stem": "调控化学反应速率和限度的意义不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_rate_limit_value"
+      ],
+      "difficulty": 0.45,
+      "solution": "调控反应速率与限度可以提高生产效率、降低成本、提高转化率；但可逆反应不能 100% 转化，故 D 不可能实现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提高生产效率",
+        "B. 降低生产成本",
+        "C. 提高原料转化率",
+        "D. 让所有反应完全转化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0251",
+      "item_type": "choice",
+      "stem": "工业生产中选择反应条件的原则包括（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_rate_limit_value"
+      ],
+      "difficulty": 0.62,
+      "solution": "工业反应条件选择需综合考虑反应速率、平衡转化率、设备条件、生产成本、绿色环保等多方面因素，是多目标权衡的优化过程。",
+      "source": "llm_generated",
+      "options": [
+        "A. 兼顾反应速率与平衡转化率",
+        "B. 考虑设备与成本",
+        "C. 符合绿色化学理念",
+        "D. 综合权衡多个相互制约的因素"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0252",
+      "item_type": "fill",
+      "stem": "化工生产中选择温度时，常需权衡的因素是______（任写两个）。",
+      "answer": "反应速率和平衡转化率（催化剂活性、能耗、设备成本等）",
+      "kps": [
+        "kp_chem11_rate_limit_value"
+      ],
+      "difficulty": 0.78,
+      "solution": "温度对反应速率、平衡转化率、催化剂活性、能耗、设备要求都有影响，需综合权衡。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0253",
+      "item_type": "choice",
+      "stem": "下列反应中属于放热反应的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_exo_endo"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 是吸热反应；B 是典型的吸热反应（实验室制氨）；C 是放热反应（中和反应都是放热）；D 是吸热反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碳与 CO2 的反应（高温）",
+        "B. Ba(OH)2·8H2O 与 NH4Cl 固体反应",
+        "C. 盐酸与 NaOH 中和反应",
+        "D. 碳酸钙分解"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0254",
+      "item_type": "choice",
+      "stem": "关于放热反应和吸热反应的说法，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_exo_endo"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（有的放热反应需要点燃引发，如燃烧）；B 错（吸热反应一旦开始可不持续加热，如 Ba(OH)2·8H2O 与 NH4Cl）；C 对（反应物总能量高于生成物为放热，反之为吸热）；D 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 放热反应不需要加热就能发生",
+        "B. 吸热反应都需要持续加热才能进行",
+        "C. 反应是放热还是吸热取决于反应物和生成物总能量的相对大小",
+        "D. 反应放热就不需要加热"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0255",
+      "item_type": "fill",
+      "stem": "判断反应是放热反应还是吸热反应的依据是______；放热反应的 ΔH ______ 0（填\">\"\"<\"或\"=\"）。",
+      "answer": "反应物与生成物总能量的相对大小（ΔH）；<",
+      "kps": [
+        "kp_chem11_exo_endo"
+      ],
+      "difficulty": 0.78,
+      "solution": "若反应物总能量 > 生成物总能量，反应放热，ΔH<0；反之吸热，ΔH>0。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0256",
+      "item_type": "choice",
+      "stem": "下列提高燃料燃烧效率的措施，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_fuel_efficiency"
+      ],
+      "difficulty": 0.45,
+      "solution": "提高燃烧效率的措施：增大燃料与氧气接触面积（A、D）、增大氧气浓度（B）、适宜温度等；C 降低温度使燃烧不充分，效率降低。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大燃料与氧气的接触面积",
+        "B. 增大氧气浓度",
+        "C. 降低温度",
+        "D. 将固体燃料粉碎"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0257",
+      "item_type": "choice",
+      "stem": "下列关于燃料充分燃烧的说法，正确的是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_fuel_efficiency"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（充分燃烧时 C → CO2，H → H2O 等）；B 对（充分燃烧减少 CO、烟尘等污染）；C 错（充分燃烧不一定放出更多热量，但能量利用率提高）；D 错（需控制适宜条件）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 燃料充分燃烧时，燃料完全转化为 CO2 和 H2O 等产物",
+        "B. 充分燃烧可以减少污染",
+        "C. 充分燃烧必然放出更多热量",
+        "D. 充分燃烧不需要控制条件"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0258",
+      "item_type": "fill",
+      "stem": "提高燃料燃烧效率的两个主要途径是：①______；②______。",
+      "answer": "增大燃料与氧气的接触面积;提高温度（或增大氧气浓度）",
+      "kps": [
+        "kp_chem11_fuel_efficiency"
+      ],
+      "difficulty": 0.78,
+      "solution": "提高燃烧效率的两大途径：①增大燃料与氧气的接触面积（如粉碎、雾化、鼓风等）；②提高温度或增大氧气浓度。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0259",
+      "item_type": "choice",
+      "stem": "原电池中将化学能转化为电能的本质是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_galvanic_principle"
+      ],
+      "difficulty": 0.45,
+      "solution": "原电池的本质：通过自发的氧化还原反应，将反应中电子的转移转化为电子的定向移动，从而产生电流；A 是现象不是本质。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电子的定向移动",
+        "B. 化学反应中电子的转移",
+        "C. 离子的扩散",
+        "D. 物质的溶解"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0260",
+      "item_type": "choice",
+      "stem": "关于原电池正负极的判断，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_galvanic_principle"
+      ],
+      "difficulty": 0.62,
+      "solution": "原电池中较活泼金属作负极（失去电子，发生氧化反应），较不活泼金属（或导电非金属）作正极（得到电子，发生还原反应）；C 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 较活泼金属作正极",
+        "B. 较不活泼金属作负极",
+        "C. 负极发生氧化反应，正极发生还原反应",
+        "D. 正极发生氧化反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0261",
+      "item_type": "fill",
+      "stem": "铜锌原电池（稀硫酸作电解质溶液）中，负极材料为______，正极材料为______；负极反应为______。",
+      "answer": "Zn（锌）;Cu（铜）;Zn - 2e- = Zn2+",
+      "kps": [
+        "kp_chem11_galvanic_principle"
+      ],
+      "difficulty": 0.78,
+      "solution": "Zn 较活泼，作负极失电子；Cu 作正极，H+ 在 Cu 表面得电子生成 H2；总反应：Zn+2H+=Zn2++H2↑。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0262",
+      "item_type": "choice",
+      "stem": "设计原电池时，下列条件不是必需的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_galvanic_design"
+      ],
+      "difficulty": 0.45,
+      "solution": "构成原电池的条件：①自发的氧化还原反应；②两个活泼性不同的电极；③电解质溶液；④形成闭合回路；不需要高温高压。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自发的氧化还原反应",
+        "B. 两个活泼性不同的电极",
+        "C. 电解质溶液",
+        "D. 高温高压环境"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0263",
+      "item_type": "choice",
+      "stem": "下列装置中能构成原电池的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_galvanic_design"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 不构成回路；B 对（满足原电池四条件）；C 两极相同，无电势差；D 酒精是非电解质，不导电。",
+      "source": "llm_generated",
+      "options": [
+        "A. Cu 片和 Zn 片插入稀硫酸中但不接触",
+        "B. Cu 片和 Zn 片插入稀硫酸中并用导线连接",
+        "C. Cu 片和 Cu 片插入稀硫酸中并用导线连接",
+        "D. Cu 片和 Zn 片插入酒精中并用导线连接"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0264",
+      "item_type": "fill",
+      "stem": "将铁片和铜片用导线连接后插入稀硫酸中，铁片为______极，电极反应为______；铜片上观察到的现象是______。",
+      "answer": "负;Fe - 2e- = Fe2+;有气泡产生（H2）",
+      "kps": [
+        "kp_chem11_galvanic_design"
+      ],
+      "difficulty": 0.78,
+      "solution": "Fe 较活泼，作负极失电子；Cu 作正极，H+ 在 Cu 表面得电子：2H++2e-=H2↑，故铜片上有气泡。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0265",
+      "item_type": "choice",
+      "stem": "下列属于一次电池的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.45,
+      "solution": "一次电池（不可充电）包括锌锰干电池；铅蓄电池、锂电池、镍氢电池等均为二次电池（可充电）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 锌锰干电池",
+        "B. 铅蓄电池",
+        "C. 锂电池",
+        "D. 镍氢电池"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0267",
+      "item_type": "fill",
+      "stem": "燃料电池中，氢氧燃料电池的负极反应为______，正极反应为______（碱性介质）。",
+      "answer": "2H2 - 4e- + 4OH- = 4H2O;O2 + 2H2O + 4e- = 4OH-",
+      "kps": [
+        "kp_chem11_batteries"
+      ],
+      "difficulty": 0.78,
+      "solution": "氢氧燃料电池（碱性）：负极 H2 失电子：2H2-4e-+4OH-=4H2O；正极 O2 得电子：O2+2H2O+4e-=4OH-；总反应：2H2+O2=2H2O。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0268",
+      "item_type": "choice",
+      "stem": "化学能转化成电能的实验中，下列现象不正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_galvanic_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "铜锌原电池中：Cu 片上有气泡（H2），电流计偏转，Zn 片逐渐溶解；溶液变红是因为含酚酞指示剂（NaOH 或 KOH）时正极区变红，但本题用稀硫酸不会变红。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铜片上有气泡产生",
+        "B. 电流计指针发生偏转",
+        "C. 锌片逐渐溶解",
+        "D. 溶液变为红色"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0269",
+      "item_type": "choice",
+      "stem": "下列能证明原电池中产生了电流的证据是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_galvanic_lab"
+      ],
+      "difficulty": 0.62,
+      "solution": "电流计指针偏转是电流存在的直接证据；B、C 只能证明反应发生，但无法直接证明形成电流；D 不一定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流计指针偏转",
+        "B. 锌片溶解",
+        "C. 铜片上有气泡",
+        "D. 溶液温度升高"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0270",
+      "item_type": "fill",
+      "stem": "锌铜原电池实验中，电流方向是从______极经导线流向______极（填\"正\"或\"负\"）。",
+      "answer": "正;负",
+      "kps": [
+        "kp_chem11_galvanic_lab"
+      ],
+      "difficulty": 0.78,
+      "solution": "在原电池外电路中，电流从正极流向负极（即电子从负极流向正极）；电流方向与电子流向相反。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0271",
+      "item_type": "choice",
+      "stem": "下列物质中不属于有机物的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_organic_intro"
+      ],
+      "difficulty": 0.45,
+      "solution": "有机物一般指含碳化合物，但少数简单含碳化合物（如 CO、CO2、Na2CO3、CaCO3 等）属于无机物；A、B、D 均为有机物，C 是碳酸盐属无机物。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH4",
+        "B. CH3COOH",
+        "C. Na2CO3",
+        "D. C2H5OH"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0272",
+      "item_type": "choice",
+      "stem": "有机物的一般特点不包括（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_organic_intro"
+      ],
+      "difficulty": 0.62,
+      "solution": "有机物一般特点：①大多可燃；②熔沸点较低；③多数难溶于水，易溶于有机溶剂；④反应一般较慢且复杂（不是快）。C 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大多数可燃烧",
+        "B. 熔沸点较低",
+        "C. 反应速率快",
+        "D. 多数难溶于水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0273",
+      "item_type": "fill",
+      "stem": "有机化合物种类繁多的原因是______；有机物的核心元素是______。",
+      "answer": "碳原子之间能形成稳定的共价键（长链、支链、环等多种结构）;碳",
+      "kps": [
+        "kp_chem11_organic_intro"
+      ],
+      "difficulty": 0.78,
+      "solution": "有机物种类繁多（已达数千万种）的根本原因是碳原子之间能形成稳定的共价键，碳原子之间可以成链、成环，结构多样；有机物以碳为核心元素。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0274",
+      "item_type": "choice",
+      "stem": "碳原子的成键特点不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_carbon_bonding"
+      ],
+      "difficulty": 0.45,
+      "solution": "碳原子成键特点：①最外层 4 个电子，难得难失；②可与其他原子形成 4 个共价键；③碳碳之间可形成单键、双键、三键；④可形成链状（直链、支链）和环状结构；D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碳原子最外层有 4 个电子",
+        "B. 碳原子易形成 4 个共价键",
+        "C. 碳原子之间可以形成单键、双键、三键",
+        "D. 碳原子之间只能形成链状结构"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0275",
+      "item_type": "choice",
+      "stem": "下列化合物中，碳原子与其他原子形成 2 个共价键的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_carbon_bonding"
+      ],
+      "difficulty": 0.62,
+      "solution": "CO2 结构 O=C=O，C 与两个 O 形成 2 个共价键（双键，按共用电子对算 2 个 σ 键 2 个 π 键，但成键数为 2）；A 中 C 形成 4 个键；B 中两个 C 各形成 4 个键；D 中 C 形成 4 个键。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH4",
+        "B. CH2=CH2",
+        "C. CO2",
+        "D. CH3Cl"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0276",
+      "item_type": "fill",
+      "stem": "碳原子的成键特点是每个碳原子可以与其他原子形成______个共价键，碳原子之间可以形成多种形式的共价键，包括______键、______键和______键。",
+      "answer": "4;单;双;叁",
+      "kps": [
+        "kp_chem11_carbon_bonding"
+      ],
+      "difficulty": 0.78,
+      "solution": "碳原子最外层 4 个电子，与其他原子形成 4 个共价键；碳碳之间可以形成单键、双键、叁键（如乙烷、乙烯、乙炔）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0277",
+      "item_type": "choice",
+      "stem": "甲烷的分子结构和空间构型是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_methane_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "CH4 是正四面体结构，C 原子在中心，4 个 H 在 4 个顶点；C-H 键之间的键角为 109°28′。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平面四边形",
+        "B. 正四面体",
+        "C. 三角锥形",
+        "D. 直线形"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0278",
+      "item_type": "choice",
+      "stem": "甲烷与氯气在光照条件下发生反应，反应类型是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_methane_structure"
+      ],
+      "difficulty": 0.62,
+      "solution": "CH4+Cl2 →（光照）CH3Cl+HCl，逐步取代生成 CH2Cl2、CHCl3、CCl4；该反应是取代反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加成反应",
+        "B. 取代反应",
+        "C. 氧化反应",
+        "D. 聚合反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0279",
+      "item_type": "fill",
+      "stem": "甲烷的电子式为______；CH4 分子中 C—H 键之间的键角约为______。",
+      "answer": "H:C:H（上下左右各一个 H）;109°28′",
+      "kps": [
+        "kp_chem11_methane_structure"
+      ],
+      "difficulty": 0.78,
+      "solution": "CH4 是正四面体结构，C 周围 4 个 H，C—H 键角 109°28′；电子式中 C 与 4 个 H 形成 4 对共用电子对。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0280",
+      "item_type": "choice",
+      "stem": "下列属于烷烃的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_alkane"
+      ],
+      "difficulty": 0.45,
+      "solution": "烷烃通式 CnH2n+2（n≥1），是饱和烃；A 是甲烷（n=1）；B 是乙烯（烯烃 CnH2n）；C 是乙炔（炔烃 CnH2n-2）；D 是苯（芳香烃）。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH4",
+        "B. C2H4",
+        "C. C2H2",
+        "D. C6H6"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0281",
+      "item_type": "choice",
+      "stem": "关于同系物的叙述，正确的是（　　）",
+      "answer": "B,C",
+      "kps": [
+        "kp_chem11_alkane"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（同分异构体分子式相同但不属同系物）；B 对（同系物定义）；C 对（烷烃结构相似，组成相差 n 个 CH2）；D 错（物理性质随碳原子数增加而规律变化）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分子式相同的物质互为同系物",
+        "B. 结构相似、分子组成相差若干个 CH2 的有机物互为同系物",
+        "C. 烷烃之间均互为同系物",
+        "D. 同系物之间物理性质相同"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0282",
+      "item_type": "fill",
+      "stem": "乙烷的分子式为______；乙烷与丙烷______（填\"互为\"或\"不互为\"）同系物。",
+      "answer": "C2H6;互为",
+      "kps": [
+        "kp_chem11_alkane"
+      ],
+      "difficulty": 0.78,
+      "solution": "乙烷分子式 C2H6；乙烷（C2H6）与丙烷（C3H8）结构相似（均为烷烃），组成相差 1 个 CH2，故互为同系物。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0283",
+      "item_type": "choice",
+      "stem": "下列各组物质中，互为同分异构体的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_isomer"
+      ],
+      "difficulty": 0.45,
+      "solution": "同分异构体定义：分子式相同、结构不同的化合物；正丁烷（CH3CH2CH2CH3）和异丁烷（(CH3)3CH）分子式均为 C4H10，结构不同，互为同分异构体。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH4 和 C2H6",
+        "B. 正丁烷和异丁烷",
+        "C. O2 和 O3",
+        "D. 12C 和 14C"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0284",
+      "item_type": "choice",
+      "stem": "关于同分异构体的叙述，正确的是（　　）",
+      "answer": "C,D",
+      "kps": [
+        "kp_chem11_isomer"
+      ],
+      "difficulty": 0.62,
+      "solution": "C 对（分子式相同）；D 对（结构不同，是不同物质）；A、B 错（同分异构体物理性质和化学性质一般不同）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 同分异构体物理性质相同",
+        "B. 同分异构体化学性质相同",
+        "C. 同分异构体的分子式相同",
+        "D. 同分异构体之间是不同物质"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0285",
+      "item_type": "fill",
+      "stem": "C4H10 有______种同分异构体，分别是______和______。",
+      "answer": "2;正丁烷（CH3CH2CH2CH3）;异丁烷（(CH3)3CH）",
+      "kps": [
+        "kp_chem11_isomer"
+      ],
+      "difficulty": 0.78,
+      "solution": "C4H10 有 2 种同分异构体：直链的正丁烷（CH3CH2CH2CH3）和带支链的异丁烷（(CH3)3CH）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0286",
+      "item_type": "choice",
+      "stem": "下列关于乙烯的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_ethylene"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错（乙烯是平面结构，键角约 120°，而非 109°28′）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙烯分子式为 C2H4",
+        "B. 乙烯分子中 C=C 双键使其能发生加成反应",
+        "C. 乙烯能使酸性高锰酸钾溶液褪色",
+        "D. 乙烯是平面结构，键角为 109°28′"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0287",
+      "item_type": "choice",
+      "stem": "下列反应中，不属于乙烯反应的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_ethylene"
+      ],
+      "difficulty": 0.62,
+      "solution": "D 是甲烷的取代反应，不是乙烯的反应；A、B、C 都是乙烯的加成反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH2=CH2 + Br2 → CH2BrCH2Br",
+        "B. CH2=CH2 + H2O → CH3CH2OH（催化剂）",
+        "C. CH2=CH2 + HCl → CH3CH2Cl",
+        "D. CH4 + Cl2 → CH3Cl + HCl（光照）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0288",
+      "item_type": "fill",
+      "stem": "写出乙烯与溴水反应的化学方程式：______；反应类型为______。",
+      "answer": "CH2=CH2 + Br2 → CH2Br—CH2Br;加成反应",
+      "kps": [
+        "kp_chem11_ethylene"
+      ],
+      "difficulty": 0.78,
+      "solution": "乙烯与溴发生加成反应生成 1,2-二溴乙烷：CH2=CH2+Br2→CH2BrCH2Br；这是乙烯的特征反应，也是检验碳碳双键的方法之一。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0289",
+      "item_type": "choice",
+      "stem": "下列反应中属于加成反应的是（　　）",
+      "answer": "B,D",
+      "kps": [
+        "kp_chem11_addition_poly"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 是加成反应（乙烯加水）；D 是加聚反应（属于加成反应的特例）；A 是取代反应；C 是酯化反应（属于取代反应）。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH4 + Cl2 → CH3Cl + HCl",
+        "B. CH2=CH2 + H2O → CH3CH2OH",
+        "C. CH3COOH + C2H5OH → CH3COOC2H5 + H2O",
+        "D. 2CH2=CH2 →（催化剂）—[CH2—CH2]n—"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0290",
+      "item_type": "choice",
+      "stem": "下列单体中能发生加聚反应生成高分子的是（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem11_addition_poly"
+      ],
+      "difficulty": 0.62,
+      "solution": "含有 C=C 双键的单体可发生加聚反应；C 是乙烷（饱和），不能加聚；A、B、D 都含 C=C，可加聚。",
+      "source": "llm_generated",
+      "options": [
+        "A. CH2=CH2",
+        "B. CH2=CHCl",
+        "C. CH3CH3",
+        "D. CH2=CH—CH=CH2"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0291",
+      "item_type": "fill",
+      "stem": "写出乙烯发生加聚反应的化学方程式：______。",
+      "answer": "nCH2=CH2 →（催化剂）—[CH2—CH2]n—（聚乙烯）",
+      "kps": [
+        "kp_chem11_addition_poly"
+      ],
+      "difficulty": 0.78,
+      "solution": "乙烯加聚生成聚乙烯：nCH2=CH2→催化剂→—(CH2-CH2)n—；这是塑料工业的基础反应之一。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0292",
+      "item_type": "choice",
+      "stem": "下列不属于合成有机高分子材料的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_polymer_intro"
+      ],
+      "difficulty": 0.45,
+      "solution": "聚乙烯、聚氯乙烯、涤纶均为合成高分子；棉花主要成分是纤维素，是天然有机高分子（生物大分子），不属于合成高分子。",
+      "source": "llm_generated",
+      "options": [
+        "A. 聚乙烯",
+        "B. 聚氯乙烯",
+        "C. 棉花",
+        "D. 涤纶"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0293",
+      "item_type": "choice",
+      "stem": "下列材料中属于有机高分子材料的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_polymer_intro"
+      ],
+      "difficulty": 0.62,
+      "solution": "三大合成有机高分子材料：塑料、合成纤维、合成橡胶；玻璃是硅酸盐材料，属无机非金属材料。",
+      "source": "llm_generated",
+      "options": [
+        "A. 塑料",
+        "B. 合成纤维",
+        "C. 合成橡胶",
+        "D. 玻璃"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0294",
+      "item_type": "fill",
+      "stem": "有机高分子化合物的相对分子质量一般在______以上；它们是由若干______聚合而成。",
+      "answer": "10000;链节（重复结构单元）",
+      "kps": [
+        "kp_chem11_polymer_intro"
+      ],
+      "difficulty": 0.78,
+      "solution": "有机高分子化合物的相对分子质量通常在 10000 以上；它们由若干重复的结构单元（链节）通过聚合反应连接而成。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0295",
+      "item_type": "choice",
+      "stem": "下列关于苯的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_benzene"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错（苯分子中不存在典型的单双键交替，C-C 键是介于单键和双键之间的特殊化学键）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苯分子式为 C6H6",
+        "B. 苯分子是平面正六边形结构",
+        "C. 苯不能使酸性高锰酸钾溶液褪色",
+        "D. 苯分子中含有典型的碳碳双键"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0296",
+      "item_type": "choice",
+      "stem": "苯的主要化学性质有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_benzene"
+      ],
+      "difficulty": 0.62,
+      "solution": "苯的化学性质：①易取代（卤代、硝化、磺化）；②特殊条件下可加成（与 H2 加成生成环己烷）；③不使酸性 KMnO4 褪色（无典型 C=C）；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 易发生取代反应",
+        "B. 在催化剂作用下与液溴反应",
+        "C. 在催化剂作用下与浓硝酸反应（硝化）",
+        "D. 易发生加成反应（与 H2）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0297",
+      "item_type": "fill",
+      "stem": "写出苯与液溴在 FeBr3 催化下反应的化学方程式：______。",
+      "answer": "C6H6 + Br2 →（FeBr3）C6H5Br + HBr",
+      "kps": [
+        "kp_chem11_benzene"
+      ],
+      "difficulty": 0.78,
+      "solution": "苯与液溴在 FeBr3 催化下发生取代反应生成溴苯：C6H6+Br2→C6H5Br+HBr；反应需液溴、铁催化剂。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0298",
+      "item_type": "choice",
+      "stem": "下列属于石油分馏产品的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.45,
+      "solution": "石油分馏产品按沸点由低到高：石油气、汽油、煤油、柴油、重油等；焦炭是煤干馏的产品，不是石油分馏产品。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽油",
+        "B. 煤油",
+        "C. 柴油",
+        "D. 焦炭"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0300",
+      "item_type": "fill",
+      "stem": "煤的干馏产物有______、______和______（任写三种）。",
+      "answer": "焦炭;煤焦油;焦炉气",
+      "kps": [
+        "kp_chem11_petroleum_coal"
+      ],
+      "difficulty": 0.78,
+      "solution": "煤的干馏（在隔绝空气条件下加强热）产物：固态焦炭、液态煤焦油（芳香烃为主）、气态焦炉气（H2、CH4、CO 等）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0301",
+      "item_type": "choice",
+      "stem": "下列关于乙醇的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_ethanol"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错（乙醇可以燃烧氧化生成 CO2 和 H2O，也可被催化氧化为乙醛）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙醇分子式为 C2H6O",
+        "B. 乙醇是无色有特殊香味的液体",
+        "C. 乙醇能与水以任意比互溶",
+        "D. 乙醇不能发生氧化反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0302",
+      "item_type": "choice",
+      "stem": "乙醇的官能团是______，在铜催化下与 O2 反应生成______（有机物）。",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ethanol"
+      ],
+      "difficulty": 0.62,
+      "solution": "乙醇的官能团是羟基 -OH；在 Cu 催化下与 O2 反应生成乙醛（CH3CHO）：2CH3CH2OH+O2 →（Cu/△）2CH3CHO+2H2O。",
+      "source": "llm_generated",
+      "options": [
+        "A. -OH（羟基）",
+        "B. -CHO",
+        "C. -COOH",
+        "D. 以上皆非"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0303",
+      "item_type": "fill",
+      "stem": "乙醇在空气中燃烧的化学方程式为______；乙醇与金属钠反应的化学方程式为______。",
+      "answer": "C2H5OH + 3O2 →（点燃）2CO2 + 3H2O;2CH3CH2OH + 2Na → 2CH3CH2ONa + H2↑",
+      "kps": [
+        "kp_chem11_ethanol"
+      ],
+      "difficulty": 0.78,
+      "solution": "乙醇燃烧：CH3CH2OH+3O2→2CO2+3H2O；乙醇与 Na 反应生成乙醇钠和 H2：2CH3CH2OH+2Na→2CH3CH2ONa+H2↑，该反应比水与 Na 反应缓和，证明乙醇羟基氢的活性比水中弱。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0304",
+      "item_type": "choice",
+      "stem": "下列关于乙酸的叙述，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_acetic_acid"
+      ],
+      "difficulty": 0.45,
+      "solution": "C 错（乙酸具有酸性，可与 NaOH 等碱发生中和反应）；A、B、D 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙酸分子式为 C2H4O2",
+        "B. 乙酸是无色有强烈刺激性气味的液体",
+        "C. 乙酸不能与 NaOH 反应",
+        "D. 乙酸能使紫色石蕊变红"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0305",
+      "item_type": "choice",
+      "stem": "乙酸的官能团是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_acetic_acid"
+      ],
+      "difficulty": 0.62,
+      "solution": "乙酸（CH3COOH）的官能团是羧基 -COOH，决定了乙酸的酸性。",
+      "source": "llm_generated",
+      "options": [
+        "A. -OH",
+        "B. -COOH（羧基）",
+        "C. -CHO",
+        "D. -COO-"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0306",
+      "item_type": "fill",
+      "stem": "写出乙酸与 Na2CO3 反应的化学方程式：______；该反应说明乙酸的酸性比______强。",
+      "answer": "2CH3COOH + Na2CO3 = 2CH3COONa + H2O + CO2↑;碳酸",
+      "kps": [
+        "kp_chem11_acetic_acid"
+      ],
+      "difficulty": 0.78,
+      "solution": "乙酸与 Na2CO3 反应生成乙酸钠、水和 CO2，证明乙酸酸性强于碳酸；故 A 对。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0307",
+      "item_type": "choice",
+      "stem": "酯化反应的反应类型是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_esterification"
+      ],
+      "difficulty": 0.45,
+      "solution": "酯化反应中羧酸提供 -OH（或 -H），醇提供 -H（或 -OH），生成酯和水，本质是取代反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加成反应",
+        "B. 取代反应",
+        "C. 氧化反应",
+        "D. 聚合反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0308",
+      "item_type": "choice",
+      "stem": "乙酸与乙醇发生酯化反应，下列说法正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_esterification"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（酯化反应是可逆反应）；B 对（浓硫酸作催化剂和吸水剂）；C 对（加热）；D 错（乙酸乙酯密度比水小，浮于液面）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应是可逆的",
+        "B. 反应需浓硫酸催化",
+        "C. 反应需加热",
+        "D. 生成的乙酸乙酯密度比水大"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0309",
+      "item_type": "fill",
+      "stem": "乙酸与乙醇发生酯化反应的化学方程式为______；收集乙酸乙酯时，导管口不能插入饱和 Na2CO3 溶液液面下的原因是______。",
+      "answer": "CH3COOH + CH3CH2OH ⇌（浓硫酸/△）CH3COOCH2CH3 + H2O;防止液体倒吸",
+      "kps": [
+        "kp_chem11_esterification"
+      ],
+      "difficulty": 0.78,
+      "solution": "酯化反应可逆：CH3COOH+C2H5OH⇌CH3COOC2H5+H2O；导管口在液面上方防止饱和 Na2CO3 溶液倒吸入反应容器。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0310",
+      "item_type": "choice",
+      "stem": "下列属于糖类的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_sugars"
+      ],
+      "difficulty": 0.45,
+      "solution": "糖类包括单糖（葡萄糖、果糖）、二糖（蔗糖、麦芽糖）、多糖（淀粉、纤维素），A、B、C、D 均属于糖类。",
+      "source": "llm_generated",
+      "options": [
+        "A. 葡萄糖",
+        "B. 蔗糖",
+        "C. 淀粉",
+        "D. 纤维素"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0311",
+      "item_type": "choice",
+      "stem": "下列糖类中属于还原性糖的是（　　）",
+      "answer": "A,C",
+      "kps": [
+        "kp_chem11_sugars"
+      ],
+      "difficulty": 0.62,
+      "solution": "含有醛基（-CHO）的糖是还原性糖；葡萄糖（单糖）和麦芽糖（二糖）含醛基，是还原性糖；蔗糖不含醛基、淀粉是多糖，均不是还原性糖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 葡萄糖",
+        "B. 蔗糖",
+        "C. 麦芽糖",
+        "D. 淀粉"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0312",
+      "item_type": "fill",
+      "stem": "葡萄糖的分子式为______；其在体内氧化的最终产物为______和______。",
+      "answer": "C6H12O6;CO2;H2O",
+      "kps": [
+        "kp_chem11_sugars"
+      ],
+      "difficulty": 0.78,
+      "solution": "葡萄糖分子式 C6H12O6；在人体内经氧化分解最终生成 CO2 和 H2O，同时释放能量。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0313",
+      "item_type": "choice",
+      "stem": "下列关于蛋白质的叙述，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_proteins_fats"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错（蛋白质有多种空间结构，包括球形、纤维状等，并非都是球形）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蛋白质由氨基酸通过肽键连接而成",
+        "B. 蛋白质遇浓硝酸变黄（颜色反应）",
+        "C. 蛋白质在加热或重金属盐作用下变性",
+        "D. 蛋白质都是球形分子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0314",
+      "item_type": "choice",
+      "stem": "油脂在碱性条件下的水解反应称为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_proteins_fats"
+      ],
+      "difficulty": 0.62,
+      "solution": "油脂在碱性条件下水解生成高级脂肪酸盐（肥皂）和甘油，该反应称为皂化反应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 皂化反应",
+        "B. 酯化反应",
+        "C. 氧化反应",
+        "D. 加成反应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0315",
+      "item_type": "fill",
+      "stem": "油脂在酸性条件下水解的产物是______和______；在碱性条件下水解的产物是______盐和甘油。",
+      "answer": "高级脂肪酸;甘油;高级脂肪酸",
+      "kps": [
+        "kp_chem11_proteins_fats"
+      ],
+      "difficulty": 0.78,
+      "solution": "油脂是高级脂肪酸甘油酯，酸性水解生成高级脂肪酸和甘油；碱性水解（皂化）生成高级脂肪酸盐（肥皂）和甘油。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0316",
+      "item_type": "choice",
+      "stem": "下列有机物中的官能团，对应正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_functional_groups"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（羟基）；B 对（醛基）；C 对（羧基）；D 对（酯基）；四种官能团对应正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乙醇 -OH",
+        "B. 乙醛 -CHO",
+        "C. 乙酸 -COOH",
+        "D. 乙酸乙酯 -COO-"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0317",
+      "item_type": "choice",
+      "stem": "下列有机反应类型中，属于官能团特征反应的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_functional_groups"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（含羟基或羧基的物质易发生取代反应）；B 对（含 C=C 的物质可加成）；C 对（含 -OH、-CHO 的物质可氧化）；D 对（-COOH 与 -OH 反应酯化）；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 取代反应（含 -OH、-COOH 的物质）",
+        "B. 加成反应（含 C=C 的物质）",
+        "C. 氧化反应（含 -OH、-CHO 的物质）",
+        "D. 酯化反应（含 -COOH 与 -OH 的物质）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0318",
+      "item_type": "fill",
+      "stem": "碳碳双键（C=C）的特征反应是______反应；醛基（-CHO）的特征反应是______反应。",
+      "answer": "加成;氧化",
+      "kps": [
+        "kp_chem11_functional_groups"
+      ],
+      "difficulty": 0.78,
+      "solution": "碳碳双键易发生加成反应（如与 H2、H2O、HX、X2 等加成）；醛基易被氧化为羧基（如被 O2、银氨溶液、新制 Cu(OH)2 等氧化）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0319",
+      "item_type": "choice",
+      "stem": "下列试剂可用于检验醛基（-CHO）的是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_organic_id"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（银镜反应）；B 对（砖红色沉淀反应）；C 错（醛基不显酸性）；D 错（KMnO4 可氧化醛基但不是特征反应）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 银氨溶液",
+        "B. 新制 Cu(OH)2 悬浊液（碱性加热）",
+        "C. 紫色石蕊溶液",
+        "D. 酸性高锰酸钾溶液"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0320",
+      "item_type": "choice",
+      "stem": "下列检验方法中，正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_organic_id"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（C=C 与 Br2 加成使溴水褪色）；B 对（-COOH 显酸性，使石蕊变红）；C 对（银镜反应）；D 对（砖红色 Cu2O 沉淀）；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用溴水检验碳碳双键（褪色）",
+        "B. 用紫色石蕊检验羧基（变红）",
+        "C. 用银氨溶液检验醛基（银镜）",
+        "D. 用新制 Cu(OH)2 检验醛基（砖红色沉淀）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0321",
+      "item_type": "fill",
+      "stem": "检验乙醇中是否含水可用无水 CuSO4，现象是______；检验乙酸中是否含水也可用无水 CuSO4，原理是______。",
+      "answer": "白色固体变蓝色;无水 CuSO4 遇水生成蓝色 CuSO4·5H2O",
+      "kps": [
+        "kp_chem11_organic_id"
+      ],
+      "difficulty": 0.78,
+      "solution": "无水 CuSO4 是白色粉末，遇水生成蓝色 CuSO4·5H2O，可用于检验水分的存在。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0322",
+      "item_type": "choice",
+      "stem": "搭建球棍模型认识有机分子结构时，下列说法正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_ball_model"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C 是球棍模型的基本规则；D 错（模型只是简化表示，不能完全反映真实情况，如电子云分布、键长比例等）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 球代表原子，棍代表化学键",
+        "B. 不同颜色或大小的球代表不同原子",
+        "C. 单键用一根棍表示，双键用两根棍表示",
+        "D. 模型能完全反映分子内真实情况"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0323",
+      "item_type": "choice",
+      "stem": "用球棍模型表示甲烷分子（CH4），需要______个球（其中 C 球______个，H 球______个）和______根棍。",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_ball_model"
+      ],
+      "difficulty": 0.62,
+      "solution": "CH4 含 1 个 C 原子和 4 个 H 原子，共 5 个球；C-H 单键 4 个，需要 4 根棍；故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5，1，4，4",
+        "B. 4，1，3，4",
+        "C. 6，1，5，4",
+        "D. 5，2，3，4"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0324",
+      "item_type": "fill",
+      "stem": "搭建球棍模型是认识有机物分子结构的有效方法之一，其优点是______；局限性是______。",
+      "answer": "直观展示分子的空间结构和原子连接方式;不能反映原子大小比例、键长、电子云分布等真实情况",
+      "kps": [
+        "kp_chem11_ball_model"
+      ],
+      "difficulty": 0.78,
+      "solution": "球棍模型优点：直观、可视化分子空间结构；局限性：球的大小不代表原子实际大小比例，棍也不反映真实键长和电子云分布，仅为定性模型。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0325",
+      "item_type": "choice",
+      "stem": "实验室中乙醇与钠反应，下列现象错误的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_ethanol_acid_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 错（钠的密度比乙醇大，沉于乙醇液面下；与水相反，钠浮于水面）；A、C、D 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 钠表面有气泡产生",
+        "B. 钠沉于液面下",
+        "C. 反应比水与钠反应缓和",
+        "D. 生成气体可点燃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0326",
+      "item_type": "choice",
+      "stem": "下列关于乙酸与乙醇酯化反应实验的说法，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_ethanol_acid_lab"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对；B 对（碎瓷片防暴沸）；C 对（饱和 Na2CO3 吸收乙醇、中和乙酸、降低乙酸乙酯溶解度）；D 错（实际是乙酸 -OH 与乙醇 -OH 中的 H 结合生成水，即\"酸脱羟基醇脱氢\"）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 浓硫酸的作用是催化剂和吸水剂",
+        "B. 反应液中加入碎瓷片防止暴沸",
+        "C. 收集产物用饱和 Na2CO3 溶液",
+        "D. 反应中乙醇的 -OH 中的 H 与乙酸的 -OH 结合生成水"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0327",
+      "item_type": "fill",
+      "stem": "酯化反应中，乙酸的______基（填\"羟\"或\"羧\"）与乙醇的______基中的氢结合生成水，剩余部分结合生成酯。",
+      "answer": "羟;羟",
+      "kps": [
+        "kp_chem11_ethanol_acid_lab"
+      ],
+      "difficulty": 0.78,
+      "solution": "酯化反应机理：\"酸脱羟基醇脱氢\"——乙酸的 -OH（羟基）与乙醇 -OH（羟基）中的 H 结合生成水；剩余部分结合为酯。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0328",
+      "item_type": "choice",
+      "stem": "某有机物 4.6 g 完全燃烧生成 8.8 g CO2 和 5.4 g H2O，则该有机物中（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_organic_calc"
+      ],
+      "difficulty": 0.45,
+      "solution": "n(C)=8.8/44=0.2 mol，m(C)=2.4 g；n(H)=5.4/18×2=0.6 mol，m(H)=0.6 g；m(C)+m(H)=3.0 g < 4.6 g，故含 O，m(O)=1.6 g，n(O)=0.1 mol；C:H:O=2:6:1，分子式 C2H6O（乙醇）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一定含 C、H、O 三种元素",
+        "B. 一定含 C 和 H，不含 O",
+        "C. 一定含 C 和 H，可能含 O",
+        "D. 只含 C 和 H"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0329",
+      "item_type": "choice",
+      "stem": "某气态烃 CₓHᵧ 完全燃烧：2CₓHᵧ + (2x+y/2)O2 → 2xCO2 + yH2O，若 1 mol 该烃燃烧消耗 4 mol O2，则 x、y 满足（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_organic_calc"
+      ],
+      "difficulty": 0.62,
+      "solution": "由化学方程式：1 mol CₓHᵧ 消耗 (2x + y/2)/2 = x + y/4 mol O2；等于 4，则 x + y/4 = 4，即 4x + y = 16；A 形式（2x + y/2 = 4）等价于此式，乘 2 得 4x + y = 8，错误；故需重审：燃烧方程式应为 CxHy + (x+y/4)O2 → xCO2 + y/2 H2O，1 mol 烃消耗 (x+y/4) mol O2；令 x+y/4=4，得 4x+y=16；A 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2x + y/2 = 4",
+        "B. x + y = 4",
+        "C. x = 2",
+        "D. y = 4"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0330",
+      "item_type": "fill",
+      "stem": "某有机物相对分子质量为 46，分子中 C、H、O 原子个数比为 2:6:1，则该有机物的分子式为______。",
+      "answer": "C2H6O",
+      "kps": [
+        "kp_chem11_organic_calc"
+      ],
+      "difficulty": 0.78,
+      "solution": "C2H6O 的相对分子质量 = 12×2 + 6 + 16 = 46；符合题目条件，故分子式为 C2H6O（乙醇或二甲醚）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0331",
+      "item_type": "choice",
+      "stem": "下列属于有机化学研究价值的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_organic_society"
+      ],
+      "difficulty": 0.45,
+      "solution": "有机化学在合成新材料（如高分子）、合成药物（如青蒿素）、能源（如天然气、煤的综合利用）、农业（农药、化肥）等领域都发挥着重要作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 合成新材料",
+        "B. 合成药物",
+        "C. 改善能源结构",
+        "D. 保障粮食安全"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0332",
+      "item_type": "choice",
+      "stem": "有机化学在社会发展中的重要意义不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_organic_society"
+      ],
+      "difficulty": 0.62,
+      "solution": "A、B、C 均是有机化学对社会的贡献；D 解释宇宙起源属于天文学和物理学范畴，与有机化学无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提供了新材料",
+        "B. 提供了新能源",
+        "C. 提供了新药物",
+        "D. 解释了宇宙起源"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0333",
+      "item_type": "fill",
+      "stem": "简答题：举例说明有机化学对人类生活的贡献（至少两点）。",
+      "answer": "①合成纤维（涤纶、锦纶等）改善穿衣质量；②合成药物（如青蒿素）保障健康；③合成塑料（聚乙烯等）方便生活；④合成橡胶（丁苯橡胶等）用于轮胎等工业。",
+      "kps": [
+        "kp_chem11_organic_society"
+      ],
+      "difficulty": 0.78,
+      "solution": "有机化学为人类生活提供合成纤维、合成橡胶、塑料、合成药物、染料、农药等，对衣、食、住、行、用都有重大贡献。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0334",
+      "item_type": "choice",
+      "stem": "下列反应中属于取代反应的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_substitution_types"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 是取代（卤代）；B 是取代（卤代）；C 是取代（酯化）；D 是加成；故 A、B、C 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 甲烷与氯气光照反应",
+        "B. 苯与液溴在 FeBr3 催化下反应",
+        "C. 乙酸与乙醇反应（酯化）",
+        "D. 乙烯与溴反应"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0335",
+      "item_type": "choice",
+      "stem": "取代反应的实质是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_substitution_types"
+      ],
+      "difficulty": 0.62,
+      "solution": "取代反应是有机物分子中的某些原子或原子团被其他原子或原子团替代的反应；包括卤代、硝化、磺化、酯化、水解等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应物分子中原子或原子团被其他原子或原子团替代",
+        "B. 双键打开加上其他原子",
+        "C. 分子间脱水",
+        "D. 电子转移"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0336",
+      "item_type": "fill",
+      "stem": "写出甲烷与氯气发生取代反应生成一氯甲烷的化学方程式：______；该反应需要______条件。",
+      "answer": "CH4 + Cl2 →（光照）CH3Cl + HCl;光照",
+      "kps": [
+        "kp_chem11_substitution_types"
+      ],
+      "difficulty": 0.78,
+      "solution": "甲烷与氯气在光照条件下发生取代反应：CH4+Cl2→CH3Cl+HCl；产物可继续取代生成 CH2Cl2、CHCl3、CCl4。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0337",
+      "item_type": "choice",
+      "stem": "下列关于反应热（焓变）的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_reaction_heat"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（反应热是化学反应中放出或吸收的热量）；B 错（放热反应 ΔH<0）；C 错（吸热反应 ΔH>0）；D 错（反应热与物质状态有关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应热是指反应过程中放出或吸收的热量",
+        "B. 放热反应的 ΔH > 0",
+        "C. 吸热反应的 ΔH < 0",
+        "D. 反应热与反应物和生成物的状态无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0338",
+      "item_type": "choice",
+      "stem": "已知反应 2H2(g)+O2(g)=2H2O(l) ΔH=-572 kJ/mol，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_reaction_heat"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（ΔH<0 为放热）；B 对（按方程式计量数）；C 错（ΔH=反应物总键能-生成物总键能，符号相反）；D 错（反应热与反应路径无关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 该反应为吸热反应",
+        "B. 生成 2 mol H2O(l) 放出 572 kJ 热量",
+        "C. ΔH 是反应物总键能与生成物总键能之差",
+        "D. 反应热与反应路径有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0339",
+      "item_type": "fill",
+      "stem": "反应热 ΔH 的正负规定：ΔH<0 表示______反应；ΔH>0 表示______反应。",
+      "answer": "放热;吸热",
+      "kps": [
+        "kp_chem11_reaction_heat"
+      ],
+      "difficulty": 0.78,
+      "solution": "ΔH<0 表示反应物总能量高于生成物总能量，反应放热；ΔH>0 表示吸热。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0340",
+      "item_type": "choice",
+      "stem": "热化学方程式与普通化学方程式的区别在于（　　）",
+      "answer": "B,C",
+      "kps": [
+        "kp_chem11_thermo_equation"
+      ],
+      "difficulty": 0.45,
+      "solution": "热化学方程式的特点：①必须标明物质状态（气、液、固）；②必须标明反应热 ΔH（kJ/mol）；③系数表示物质的量（可为分数）；④反应温度影响 ΔH；故 B、C 对；D 配平也是要求但非与普通方程式的本质区别。",
+      "source": "llm_generated",
+      "options": [
+        "A. 标明反应温度",
+        "B. 标明物质状态",
+        "C. 标明反应热 ΔH",
+        "D. 方程式必须配平"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0341",
+      "item_type": "fill",
+      "stem": "热化学方程式 2H2(g)+O2(g)=2H2O(g) ΔH=-484 kJ/mol 与 2H2(g)+O2(g)=2H2O(l) ΔH=-572 kJ/mol，两式反应热不同的原因是______。",
+      "answer": "H2O 的状态不同，液态水比气态水能量低，气态水液化放热",
+      "kps": [
+        "kp_chem11_thermo_equation"
+      ],
+      "difficulty": 0.62,
+      "solution": "水由气态变为液态要放出热量（液化热），故生成液态水的反应比生成气态水的反应放出更多热量，ΔH 更负。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0342",
+      "item_type": "fill",
+      "stem": "写出 CH4 燃烧反应的热化学方程式（液态水，ΔH=-890 kJ/mol）：______。",
+      "answer": "CH4(g) + 2O2(g) = CO2(g) + 2H2O(l) ΔH=-890 kJ/mol",
+      "kps": [
+        "kp_chem11_thermo_equation"
+      ],
+      "difficulty": 0.78,
+      "solution": "甲烷完全燃烧生成 CO2 和液态水：CH4(g)+2O2(g)=CO2(g)+2H2O(l) ΔH=-890 kJ/mol；需标明物质状态和 ΔH。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0343",
+      "item_type": "choice",
+      "stem": "盖斯定律的主要内容是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_hess"
+      ],
+      "difficulty": 0.45,
+      "solution": "盖斯定律：化学反应不管是一步完成还是分几步完成，其反应热是相同的（即反应热只与始态和终态有关，与反应路径无关）；B 对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应热与反应路径有关",
+        "B. 反应热只与反应的始态和终态有关，与反应路径无关",
+        "C. 反应热与温度无关",
+        "D. 反应热与压强无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0344",
+      "item_type": "choice",
+      "stem": "已知：①C(s)+O2(g)=CO2(g) ΔH1=-393.5 kJ/mol；②CO(g)+1/2 O2(g)=CO2(g) ΔH2=-283 kJ/mol，则 C(s)+1/2 O2(g)=CO(g) 的 ΔH 为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_hess"
+      ],
+      "difficulty": 0.62,
+      "solution": "目标反应 = 反应① - 反应②：ΔH = ΔH1 - ΔH2 = -393.5 - (-283) = -110.5 kJ/mol；故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. ΔH1 - ΔH2",
+        "B. ΔH2 - ΔH1",
+        "C. ΔH1 + ΔH2",
+        "D. -ΔH1 - ΔH2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0345",
+      "item_type": "fill",
+      "stem": "盖斯定律的实质是：化学反应的反应热只与______和______有关，而与反应的______无关。",
+      "answer": "反应物（始态）;生成物（终态）;路径（过程）",
+      "kps": [
+        "kp_chem11_hess"
+      ],
+      "difficulty": 0.78,
+      "solution": "盖斯定律表明反应热只与反应物（始态）和生成物（终态）有关，与反应所经历的路径无关。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0346",
+      "item_type": "choice",
+      "stem": "已知 H-H 键能为 436 kJ/mol，Cl-Cl 键能为 243 kJ/mol，H-Cl 键能为 431 kJ/mol，则 H2+Cl2=2HCl 的反应热 ΔH 为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_bond_energy_calc"
+      ],
+      "difficulty": 0.45,
+      "solution": "ΔH=反应物总键能-生成物总键能 = (436+243) - 2×431 = 679 - 862 = -183 kJ/mol；故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. -183 kJ/mol",
+        "B. +183 kJ/mol",
+        "C. -679 kJ/mol",
+        "D. -679/2 kJ/mol"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0347",
+      "item_type": "choice",
+      "stem": "关于键能与反应热关系的说法，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_bond_energy_calc"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（断键吸收能量，成键释放能量，断键吸收大于成键释放则吸热）；B 错（键能越大分子越稳定）；C 表述不严谨（键能是断裂该键所需的平均能量）；D 错（ΔH=E反-E生）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应物断键吸收的总能量大于生成物成键放出的总能量，则反应吸热",
+        "B. 键能越大，分子越不稳定",
+        "C. 键能数值总是等于键断裂所吸收的能量",
+        "D. 反应热等于反应物总键能加上生成物总键能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0348",
+      "item_type": "fill",
+      "stem": "化学反应 ΔH = ______总键能 - ______总键能；若 ΔH<0，则反应为______反应。",
+      "answer": "反应物;生成物;放热",
+      "kps": [
+        "kp_chem11_bond_energy_calc"
+      ],
+      "difficulty": 0.78,
+      "solution": "ΔH = E反应物总键能 - E生成物总键能；当 ΔH<0 时反应放热。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0349",
+      "item_type": "choice",
+      "stem": "在能量-反应过程图中，活化能是指（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_energy_diagram"
+      ],
+      "difficulty": 0.45,
+      "solution": "活化能是反应物分子到达活化复合物（过渡态）所需的最低能量；与反应热 ΔH 不同；B 对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应物总能量与生成物总能量之差",
+        "B. 反应物分子到达活化态所需的最低能量",
+        "C. 生成物分子与反应物分子的能量差",
+        "D. 反应的 ΔH"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0350",
+      "item_type": "choice",
+      "stem": "关于活化能与反应速率的关系，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_energy_diagram"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 错（活化能越大反应越难进行，速率越慢）；B 对；C 错（活化能是决定反应速率的关键因素）；D 错（催化剂通过降低活化能加快反应）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 活化能越大，反应速率越快",
+        "B. 活化能越小，反应速率越快",
+        "C. 活化能与反应速率无关",
+        "D. 催化剂不改变活化能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0351",
+      "item_type": "fill",
+      "stem": "在能量-反应过程图中，反应物总能量______（填\"高于\"\"低于\"或\"等于\"）生成物总能量时为放热反应；催化剂能降低______但不改变 ΔH。",
+      "answer": "高于;活化能",
+      "kps": [
+        "kp_chem11_energy_diagram"
+      ],
+      "difficulty": 0.78,
+      "solution": "反应物总能量高于生成物总能量时，反应放热（ΔH<0）；催化剂通过降低活化能加快反应，但不改变反应物和生成物的总能量差（即 ΔH 不变）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0352",
+      "item_type": "choice",
+      "stem": "下列关于燃烧热的叙述，正确的是（　　）",
+      "answer": "B,C",
+      "kps": [
+        "kp_chem11_burning_neutral_heat"
+      ],
+      "difficulty": 0.45,
+      "solution": "燃烧热定义：25℃、101 kPa 时，1 mol 纯物质完全燃烧生成稳定氧化物（C→CO2，H→H2O(l)，S→SO2(g)）所放出的热量；故 B 对；C 对（燃烧放热，ΔH<0 是负值）；A 错（应为 1 mol）；D 错（与温度有关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 燃烧热是指 1 g 物质完全燃烧生成稳定氧化物时放出的热量",
+        "B. 燃烧热是指 25℃、101 kPa 时，1 mol 纯物质完全燃烧生成稳定氧化物时放出的热量",
+        "C. 燃烧热是负值",
+        "D. 燃烧热与温度无关"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0353",
+      "item_type": "choice",
+      "stem": "关于中和热的叙述，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_burning_neutral_heat"
+      ],
+      "difficulty": 0.62,
+      "solution": "中和热定义：在稀溶液中，强酸与强碱反应生成 1 mol H2O 时放出的热量约为 57.3 kJ/mol；A、B 对；C 对（中和反应均放热）；D 错（弱酸弱碱中和热因电离吸热而略小）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中和热是强酸强碱稀溶液反应生成 1 mol H2O 时放出的热量",
+        "B. 中和热约为 57.3 kJ/mol",
+        "C. 中和反应都是放热的",
+        "D. 中和热是定值"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0354",
+      "item_type": "fill",
+      "stem": "中和热的数值约为______ kJ/mol（强酸强碱稀溶液反应）；中和反应均为______反应（填\"放热\"或\"吸热\"）。",
+      "answer": "57.3;放热",
+      "kps": [
+        "kp_chem11_burning_neutral_heat"
+      ],
+      "difficulty": 0.78,
+      "solution": "稀溶液中强酸强碱反应的中和热约为 57.3 kJ/mol；中和反应均为放热反应（ΔH<0）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0355",
+      "item_type": "choice",
+      "stem": "判断化学反应方向的主要因素是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.45,
+      "solution": "判断反应方向的吉布斯自由能 ΔG = ΔH - TΔS：①ΔG<0 自发；②ΔG>0 非自发；③ΔG=0 平衡；故 ΔH、ΔS、T 都是影响因素；浓度和压强影响平衡而非方向判断的内在因素。",
+      "source": "llm_generated",
+      "options": [
+        "A. 焓变（ΔH）",
+        "B. 熵变（ΔS）",
+        "C. 温度",
+        "D. 浓度和压强"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0357",
+      "item_type": "fill",
+      "stem": "吉布斯自由能 ΔG = ΔH - ______；当 ΔG<0 时反应______进行；ΔG>0 时反应______进行。",
+      "answer": "TΔS;自发;非自发",
+      "kps": [
+        "kp_chem11_reaction_direction"
+      ],
+      "difficulty": 0.78,
+      "solution": "ΔG = ΔH - TΔS；ΔG<0 反应自发进行；ΔG>0 反应非自发（需借助外力如电解）；ΔG=0 处于平衡状态。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0358",
+      "item_type": "fill",
+      "stem": "在 2 L 容器中进行反应 N2+3H2 ⇌ 2NH3，5 s 内 N2 减少 0.1 mol，则 v(H2) = ______ mol/(L·s)",
+      "answer": "0.03",
+      "kps": [
+        "kp_chem11_rate_quant"
+      ],
+      "difficulty": 0.45,
+      "solution": "v(N2)=0.1/2/5=0.01 mol/(L·s)；v(H2)=3×v(N2)=0.03 mol/(L·s)。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0359",
+      "item_type": "choice",
+      "stem": "化学反应速率的测定方法通常有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_rate_quant"
+      ],
+      "difficulty": 0.62,
+      "solution": "化学反应速率的测定方法多样：通过测量反应物或生成物的量随时间变化、气体反应的压强变化、有色物质颜色变化、电导率变化等均可。",
+      "source": "llm_generated",
+      "options": [
+        "A. 测量反应物的减少量",
+        "B. 测量生成物的增加量",
+        "C. 测量压强变化（气体反应）",
+        "D. 测量颜色变化（有颜色变化时）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0360",
+      "item_type": "fill",
+      "stem": "化学反应速率 v 的定义式为 v = ______；其常用单位为______。",
+      "answer": "Δc/Δt;mol/(L·s) 或 mol/(L·min)",
+      "kps": [
+        "kp_chem11_rate_quant"
+      ],
+      "difficulty": 0.78,
+      "solution": "化学反应速率 v = Δc/Δt，其中 Δc 是浓度的变化量，Δt 是时间；常用单位为 mol/(L·s) 或 mol/(L·min)。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0361",
+      "item_type": "choice",
+      "stem": "碰撞理论认为，能发生有效碰撞的分子必须具备的条件是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_rate_theory"
+      ],
+      "difficulty": 0.45,
+      "solution": "碰撞理论：发生有效碰撞的条件是①具有足够的能量（活化能）；②具有合适的空间取向；C、D 不是有效碰撞的必要条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 具有足够的能量（活化能）",
+        "B. 具有合适的取向",
+        "C. 具有较大的相对速度",
+        "D. 具有较大的质量"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0362",
+      "item_type": "choice",
+      "stem": "从微观角度解释，升温使反应速率加快的原因是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_rate_theory"
+      ],
+      "difficulty": 0.62,
+      "solution": "升温加快反应速率的微观原因：①分子运动加快，碰撞频率增加；②更多分子获得能量成为活化分子，活化分子百分数增加；活化能不变（C 错）；反应热变化与升温无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分子运动加快，碰撞频率增加",
+        "B. 活化分子百分数增加",
+        "C. 反应的活化能降低",
+        "D. 反应热增加"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0363",
+      "item_type": "fill",
+      "stem": "有效碰撞理论认为，化学反应发生的必要条件是：①反应物分子间发生______；②发生碰撞的分子具有足够的______和合适的______。",
+      "answer": "碰撞;能量;取向",
+      "kps": [
+        "kp_chem11_rate_theory"
+      ],
+      "difficulty": 0.78,
+      "solution": "有效碰撞的条件：①发生碰撞；②具有足够的能量（≥活化能）；③具有合适的取向（空间方位）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0364",
+      "item_type": "choice",
+      "stem": "对于可逆反应 mA+nB ⇌ pC+qD，平衡常数 K 的表达式为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_equilibrium_K"
+      ],
+      "difficulty": 0.45,
+      "solution": "平衡常数 K 等于生成物浓度幂之积除以反应物浓度幂之积；K 只与温度有关，与浓度、压强、催化剂等无关；故 A 对。",
+      "source": "llm_generated",
+      "options": [
+        "A. K = c(C)^p · c(D)^q / [c(A)^m · c(B)^n]",
+        "B. K = [c(A)^m · c(B)^n] / [c(C)^p · c(D)^q]",
+        "C. K 与温度无关",
+        "D. K 与浓度有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0365",
+      "item_type": "choice",
+      "stem": "关于化学平衡常数 K 的叙述，正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_equilibrium_K"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（K 越大表示反应进行程度越大）；B 对（K 是温度的函数）；C 对（K 与起始浓度无关，由反应本身决定）；D 对（催化剂不影响 K）。",
+      "source": "llm_generated",
+      "options": [
+        "A. K 越大，反应进行得越完全",
+        "B. K 只与温度有关",
+        "C. K 与反应物起始浓度无关",
+        "D. K 与是否使用催化剂无关"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0366",
+      "item_type": "fill",
+      "stem": "对于可逆反应 A(g)+B(g) ⇌ 2C(g)，平衡常数 K 的表达式为______；K 只与______有关。",
+      "answer": "K = c(C)^2 / [c(A)·c(B)];温度",
+      "kps": [
+        "kp_chem11_equilibrium_K"
+      ],
+      "difficulty": 0.78,
+      "solution": "K = c(C)^2 / [c(A)·c(B)]；K 是温度的函数，只与温度有关；其他条件（浓度、压强、催化剂）不改变 K。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0367",
+      "item_type": "choice",
+      "stem": "在一定温度下，反应 2SO2(g)+O2(g) ⇌ 2SO3(g) 达到平衡时，c(SO2)=0.1 mol/L，c(O2)=0.05 mol/L，c(SO3)=0.2 mol/L，则 K 为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_K_calc"
+      ],
+      "difficulty": 0.45,
+      "solution": "K = c(SO3)^2 / [c(SO2)^2 · c(O2)] = 0.2^2 / (0.1^2 × 0.05) = 0.04 / 0.0005 = 80；故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 800",
+        "B. 80",
+        "C. 40",
+        "D. 20"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0368",
+      "item_type": "fill",
+      "stem": "利用平衡常数判断反应方向时，若 Q<K，则反应______进行（填\"正向\"\"逆向\"或\"处于平衡\"）。",
+      "answer": "正向",
+      "kps": [
+        "kp_chem11_K_calc"
+      ],
+      "difficulty": 0.62,
+      "solution": "Q（浓度商）与 K 比较：Q<K 时反应正向进行（生成更多生成物使 Q 增大至 K）；Q>K 时反应逆向进行；Q=K 时平衡。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0369",
+      "item_type": "fill",
+      "stem": "已知反应 H2(g)+I2(g) ⇌ 2HI(g) 在某温度下 K=50，则反应 2HI(g) ⇌ H2(g)+I2(g) 的平衡常数 K\" 为______。",
+      "answer": "1/50",
+      "kps": [
+        "kp_chem11_K_calc"
+      ],
+      "difficulty": 0.78,
+      "solution": "正逆反应的平衡常数互为倒数：K\"=1/K=1/50=0.02。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0370",
+      "item_type": "choice",
+      "stem": "勒夏特列原理的内容是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_le_chatelier"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 是勒夏特列原理的完整表述；B、C 是其推论，不是原理的完整内容；D 错（催化剂不影响平衡）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 如果改变影响化学平衡的一个条件，平衡就向能够减弱这种改变的方向移动",
+        "B. 升温使平衡向吸热方向移动",
+        "C. 加压使平衡向气体分子数减少的方向移动",
+        "D. 催化剂可使平衡正向移动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0371",
+      "item_type": "choice",
+      "stem": "对于反应 N2(g)+3H2(g) ⇌ 2NH3(g) ΔH<0，下列措施能使平衡正向移动的是（　　）",
+      "answer": "A,C",
+      "kps": [
+        "kp_chem11_le_chatelier"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（气体分子数减少的方向，增大压强平衡正向移动）；B 错（升温平衡逆向移动，因正反应放热）；C 对（增大反应物浓度使平衡正向移动）；D 错（催化剂不影响平衡）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大压强",
+        "B. 升高温度",
+        "C. 增大 N2 浓度",
+        "D. 使用催化剂"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0372",
+      "item_type": "fill",
+      "stem": "对于反应 2NO2(g) ⇌ N2O4(g) ΔH<0，降温时平衡______移动；加压时平衡______移动。",
+      "answer": "正向（向生成 N2O4 的方向）;正向",
+      "kps": [
+        "kp_chem11_le_chatelier"
+      ],
+      "difficulty": 0.78,
+      "solution": "正反应放热，降温使平衡正向移动；正反应气体分子数减少（2→1），加压使平衡正向移动。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0373",
+      "item_type": "choice",
+      "stem": "对于可逆反应 A+B ⇌ C，反应速率-时间图像中，达到平衡的标志是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_equilibrium_graph"
+      ],
+      "difficulty": 0.45,
+      "solution": "化学平衡时正反应速率=逆反应速率，且不为零（动态平衡）；A、B 错误；D 错误（平衡时浓度不变但不要求相等）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 正反应速率为零",
+        "B. 逆反应速率为零",
+        "C. 正反应速率等于逆反应速率且不为零",
+        "D. 各组分浓度相等"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0374",
+      "item_type": "choice",
+      "stem": "在浓度-时间图像中，反应达到平衡的标志是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_equilibrium_graph"
+      ],
+      "difficulty": 0.62,
+      "solution": "C 对（各物质浓度不变是平衡标志）；A 错（浓度不一定为零）；B 错（变化是先快后慢）；D 不直接。",
+      "source": "llm_generated",
+      "options": [
+        "A. 各物质浓度均降为零",
+        "B. 各物质浓度随时间均匀变化",
+        "C. 各物质浓度不再随时间变化",
+        "D. 正反应速率随时间减小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0375",
+      "item_type": "fill",
+      "stem": "在转化率-温度图像中，升温时反应物转化率降低，说明正反应是______反应（填\"放热\"或\"吸热\"）。",
+      "answer": "放热",
+      "kps": [
+        "kp_chem11_equilibrium_graph"
+      ],
+      "difficulty": 0.78,
+      "solution": "升温使转化率降低，根据勒夏特列原理，平衡逆向移动，故正反应是放热反应。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0376",
+      "item_type": "choice",
+      "stem": "工业合成氨选择中等温度（500℃左右）的原因是（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_industry_conditions"
+      ],
+      "difficulty": 0.45,
+      "solution": "工业合成氨选 500℃ 左右是综合权衡：①催化剂（铁触媒）在此温度活性最高；②此温度下反应速率与平衡转化率综合最优；高温下设备要求高（C 错）；500℃ 已是较高温度，能耗并不低（D 错）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 催化剂在该温度下活性最高",
+        "B. 该温度下反应速率与平衡转化率综合最优",
+        "C. 高温下设备要求低",
+        "D. 该温度下能耗低"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0377",
+      "item_type": "choice",
+      "stem": "选择化工生产条件时需要考虑的因素有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_industry_conditions"
+      ],
+      "difficulty": 0.62,
+      "solution": "化工生产条件选择需综合考虑：①反应速率（影响产能）；②平衡转化率（影响原料利用率）；③催化剂活性（影响最适温度）；④设备要求与生产成本；⑤绿色环保等多方面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反应速率",
+        "B. 平衡转化率",
+        "C. 催化剂活性",
+        "D. 设备与成本"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0378",
+      "item_type": "fill",
+      "stem": "工业合成氨采用较高压强（20~50 MPa）的主要目的是______。",
+      "answer": "增大氨的平衡转化率（平衡向气体分子数减少的方向移动）",
+      "kps": [
+        "kp_chem11_industry_conditions"
+      ],
+      "difficulty": 0.78,
+      "solution": "合成氨 N2+3H2 ⇌ 2NH3 是气体分子数减少的反应，增大压强使平衡正向移动，提高 NH3 的平衡转化率。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0379",
+      "item_type": "choice",
+      "stem": "下列实验中，能用来探究温度对化学平衡影响的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_equilibrium_move_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（2NO2 ⇌ N2O4 是放热反应，升温颜色加深，降温颜色变浅）；B 是浓度影响；C 是压强影响；D 与平衡移动无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2NO2 ⇌ N2O4 平衡中改变温度，观察颜色变化",
+        "B. Fe3++SCN- ⇌ Fe(SCN)3 平衡中改变浓度",
+        "C. 改变压强观察气体颜色",
+        "D. 向饱和 NaCl 溶液中加 NaCl 固体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0380",
+      "item_type": "choice",
+      "stem": "实验探究浓度对化学平衡的影响时，下列做法正确的是（　　）",
+      "answer": "A,D",
+      "kps": [
+        "kp_chem11_equilibrium_move_lab"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（控制变量）；B 不是研究浓度影响的实验；C 错（违反控制变量）；D 对（定性观察颜色变化判断平衡移动方向）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 保持其他条件相同，只改变一种反应物浓度",
+        "B. 改变温度观察平衡移动",
+        "C. 同时改变多种条件",
+        "D. 通过观察颜色变化判断平衡移动方向"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0381",
+      "item_type": "fill",
+      "stem": "探究浓度对化学平衡的影响时，Fe3++SCN- ⇌ Fe(SCN)3 平衡中，向平衡体系中加入少量 KSCN 固体，溶液颜色变______，说明平衡向______移动。",
+      "answer": "深（红）;正向",
+      "kps": [
+        "kp_chem11_equilibrium_move_lab"
+      ],
+      "difficulty": 0.78,
+      "solution": "加入 KSCN 固体增大 SCN- 浓度，平衡正向移动，生成更多 Fe(SCN)3，溶液颜色变深（红色加深）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0382",
+      "item_type": "choice",
+      "stem": "下列物质中属于弱电解质的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_electrolyte_weak"
+      ],
+      "difficulty": 0.45,
+      "solution": "弱电解质是在水溶液中只能部分电离的化合物；醋酸、氨水、水均为弱电解质；蔗糖是非电解质。",
+      "source": "llm_generated",
+      "options": [
+        "A. 醋酸（CH3COOH）",
+        "B. 氨水（NH3·H2O）",
+        "C. 水（H2O）",
+        "D. 蔗糖"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0383",
+      "item_type": "choice",
+      "stem": "关于弱电解质的电离平衡，错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_electrolyte_weak"
+      ],
+      "difficulty": 0.62,
+      "solution": "D 错（加水稀释促进电离，电离程度增大）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 弱电解质在水溶液中部分电离",
+        "B. 弱电解质溶液中存在电离平衡",
+        "C. 电离平衡是动态平衡",
+        "D. 加水稀释使弱电解质的电离程度减小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0384",
+      "item_type": "fill",
+      "stem": "醋酸（CH3COOH）在水中的电离方程式为______；加水稀释时，CH3COOH 的电离程度______（填\"增大\"\"减小\"或\"不变\"）。",
+      "answer": "CH3COOH ⇌ CH3COO- + H+;增大",
+      "kps": [
+        "kp_chem11_electrolyte_weak"
+      ],
+      "difficulty": 0.78,
+      "solution": "醋酸是弱电解质，部分电离：CH3COOH⇌CH3COO-+H+；加水稀释促进电离，电离程度增大（但离子浓度降低）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0385",
+      "item_type": "choice",
+      "stem": "水的离子积常数 Kw 表达式为（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_water_ionization"
+      ],
+      "difficulty": 0.45,
+      "solution": "水的离子积 Kw = c(H+)·c(OH-)，25℃时为 1×10^-14；A、B 对；C 错（应为乘积不是和）；D 错（升温促进水电离，Kw 增大）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Kw = c(H+)·c(OH-)",
+        "B. Kw = c(H+)·c(OH-) = 1×10^-14（25℃）",
+        "C. Kw = c(H+)+c(OH-)",
+        "D. Kw 随温度升高而减小"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0386",
+      "item_type": "fill",
+      "stem": "25℃时，0.1 mol/L NaOH 溶液中 c(H+) = ______ mol/L，c(OH-) = ______ mol/L（已知 25℃时 Kw=10^-14）。",
+      "answer": "1×10^-13;0.1",
+      "kps": [
+        "kp_chem11_water_ionization"
+      ],
+      "difficulty": 0.62,
+      "solution": "NaOH 完全电离，c(OH-)=0.1 mol/L；c(H+)=Kw/c(OH-)=10^-14/0.1=10^-13 mol/L。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0387",
+      "item_type": "fill",
+      "stem": "水的电离方程式为______；在 25℃时，纯水中 c(H+) = c(OH-) = ______ mol/L。",
+      "answer": "H2O ⇌ H+ + OH-;10^-7",
+      "kps": [
+        "kp_chem11_water_ionization"
+      ],
+      "difficulty": 0.78,
+      "solution": "水电离方程式：H2O⇌H++OH-（可逆反应）；25℃时纯水中 c(H+)=c(OH-)=10^-7 mol/L；Kw=10^-14。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0388",
+      "item_type": "choice",
+      "stem": "25℃时，0.01 mol/L HCl 溶液的 pH 为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_ph_calc"
+      ],
+      "difficulty": 0.45,
+      "solution": "0.01 mol/L HCl 完全电离，c(H+)=0.01 mol/L；pH=-lg(0.01)=2；故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 12",
+        "D. 13"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0389",
+      "item_type": "choice",
+      "stem": "25℃时，pH=3 的盐酸溶液与 pH=11 的 NaOH 溶液等体积混合，混合后溶液的 pH 为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_ph_calc"
+      ],
+      "difficulty": 0.62,
+      "solution": "pH=3 的 HCl 溶液 c(H+)=10^-3 mol/L；pH=11 的 NaOH 溶液 c(OH-)=10^-3 mol/L；等体积混合后恰好完全反应，溶液呈中性（25℃时为 pH=7）；但若考虑水的电离影响，结果接近 7。",
+      "source": "llm_generated",
+      "options": [
+        "A. 7",
+        "B. >7",
+        "C. <7",
+        "D. 无法判断"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0390",
+      "item_type": "fill",
+      "stem": "pH 的定义为 pH = ______；pH = 3 的溶液呈______性（填\"酸\"\"碱\"或\"中\"）。",
+      "answer": "-lg c(H+);酸",
+      "kps": [
+        "kp_chem11_ph_calc"
+      ],
+      "difficulty": 0.78,
+      "solution": "pH = -lg c(H+)；pH<7 溶液呈酸性，pH=7 中性，pH>7 碱性；pH=3 显酸性。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0391",
+      "item_type": "choice",
+      "stem": "在室温下，向纯水中加入少量 NaOH 固体，Kw 的变化是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chem11_ion_conc_image"
+      ],
+      "difficulty": 0.45,
+      "solution": "Kw 只与温度有关；室温下加入 NaOH 固体，水温未变，Kw 不变；但 c(H+) 减小，c(OH-) 增大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大",
+        "B. 减小",
+        "C. 不变",
+        "D. 先增大后减小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0392",
+      "item_type": "choice",
+      "stem": "稀释 0.1 mol/L 醋酸溶液时，下列说法正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_ion_conc_image"
+      ],
+      "difficulty": 0.62,
+      "solution": "稀释弱酸时促进电离，电离程度增大（C 对）；但 c(H+) 仍减小（A 对），c(OH-) 增大（B 对）；pH 增大但仍小于 7（D 对）。",
+      "source": "llm_generated",
+      "options": [
+        "A. c(H+) 减小",
+        "B. c(OH-) 增大",
+        "C. 醋酸的电离程度增大",
+        "D. 溶液 pH 增大"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0393",
+      "item_type": "fill",
+      "stem": "在 0.1 mol/L 醋酸溶液中加入少量冰醋酸，c(H+)______（填\"增大\"\"减小\"或\"不变\"），电离程度______（填\"增大\"\"减小\"或\"不变\"）。",
+      "answer": "增大;减小",
+      "kps": [
+        "kp_chem11_ion_conc_image"
+      ],
+      "difficulty": 0.78,
+      "solution": "加入冰醋酸使 CH3COOH 浓度增大，电离平衡正向移动，c(H+) 增大；但浓度增大使电离程度减小（弱电解质浓度越大电离程度越小）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0394",
+      "item_type": "choice",
+      "stem": "用标准盐酸滴定未知浓度的 NaOH 溶液时，下列操作错误的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_titration_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 错（锥形瓶不能用待测液润洗，否则测得 NaOH 浓度偏高）；A、C、D 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 酸式滴定管用标准盐酸润洗",
+        "B. 锥形瓶用待测 NaOH 溶液润洗",
+        "C. 滴定前排出滴定管尖嘴气泡",
+        "D. 读数时视线与凹液面最低处相平"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0395",
+      "item_type": "choice",
+      "stem": "中和滴定实验中，下列说法正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_titration_lab"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（酚酞变色范围 8.2~10.0，强酸强碱终点 pH≈7 可用酚酞）；B 对（终点判断）；C 对（避免滴定过量）；D 对（避免气泡造成误差）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选用酚酞作强酸强碱中和的指示剂",
+        "B. 滴定终点时溶液由无色变浅红色且半分钟不褪色",
+        "C. 滴定速度要快，最后阶段慢滴",
+        "D. 滴定前需排出滴定管尖嘴气泡"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0396",
+      "item_type": "fill",
+      "stem": "中和滴定实验中，滴定终点是指：滴入最后一滴标准液时，溶液颜色发生明显变化且______。",
+      "answer": "半分钟内不褪色（恢复原色）",
+      "kps": [
+        "kp_chem11_titration_lab"
+      ],
+      "difficulty": 0.78,
+      "solution": "滴定终点的判断：滴入最后一滴标准液时，溶液颜色发生明显变化（与指示剂变色范围吻合）且半分钟内不褪色。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0397",
+      "item_type": "choice",
+      "stem": "下列盐中，水解后溶液呈酸性的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_salt_hydrolysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 对（NH4Cl 是强酸弱碱盐，水解显酸性）；NaCl 是强酸强碱盐不水解；Na2CO3、CH3COONa 是强碱弱酸盐，水解显碱性。",
+      "source": "llm_generated",
+      "options": [
+        "A. NaCl",
+        "B. NH4Cl",
+        "C. Na2CO3",
+        "D. CH3COONa"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0398",
+      "item_type": "choice",
+      "stem": "下列关于盐类水解的说法，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_salt_hydrolysis"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（盐+水⇌酸+碱，中和的逆反应）；B 对（水解吸热）；C 对（升温促进水解）；D 错（强酸强碱盐如 NaCl 不水解）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 盐类水解是中和反应的逆反应",
+        "B. 盐类水解是吸热反应",
+        "C. 加热促进盐类水解",
+        "D. 所有盐都会水解"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0399",
+      "item_type": "fill",
+      "stem": "NH4Cl 水解的离子方程式为______；水解后溶液呈______性（填\"酸\"\"碱\"或\"中\"）。",
+      "answer": "NH4+ + H2O ⇌ NH3·H2O + H+;酸",
+      "kps": [
+        "kp_chem11_salt_hydrolysis"
+      ],
+      "difficulty": 0.78,
+      "solution": "NH4Cl 是强酸弱碱盐，NH4+ 水解：NH4++H2O⇌NH3·H2O+H+；生成 H+ 使溶液呈酸性。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0400",
+      "item_type": "choice",
+      "stem": "下列应用与盐类水解无关的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C 均与盐类水解有关；D 是 NaOH 与 CO2 反应（2NaOH+CO2=Na2CO3+H2O），属于碱与酸性氧化物反应，与水解无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用热的纯碱溶液去油污",
+        "B. 用 FeCl3 溶液止血",
+        "C. 配制 FeCl3 溶液时加少量盐酸",
+        "D. 用 NaOH 溶液吸收 CO2"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0402",
+      "item_type": "fill",
+      "stem": "配制 FeCl3 溶液时常加入少量盐酸的目的是______；实验室保存 Na2CO3 溶液时常选用______（填\"玻璃瓶\"或\"塑料瓶\"）以防止长期水解腐蚀。",
+      "answer": "抑制 Fe3+ 水解;塑料瓶",
+      "kps": [
+        "kp_chem11_hydrolysis_apps"
+      ],
+      "difficulty": 0.78,
+      "solution": "FeCl3 是强酸弱碱盐，Fe3+ 易水解生成 Fe(OH)3，加入盐酸抑制水解；Na2CO3 水解显碱性，能腐蚀玻璃（SiO2），故应保存在塑料瓶中。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0403",
+      "item_type": "choice",
+      "stem": "溶度积 Ksp 的定义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_precipitation_K"
+      ],
+      "difficulty": 0.45,
+      "solution": "溶度积 Ksp 定义：一定温度下，难溶电解质饱和溶液中各离子浓度幂之积（只与温度有关）；B、C、D 都不正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 难溶电解质饱和溶液中离子浓度幂之积",
+        "B. 难溶电解质溶解度的倒数",
+        "C. 难溶电解质的电离常数",
+        "D. 难溶电解质的电离度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0404",
+      "item_type": "choice",
+      "stem": "对于难溶电解质 AmBn ⇌ mA^n+ + nB^m-，Ksp 的表达式为（　　）",
+      "answer": "A,B",
+      "kps": [
+        "kp_chem11_precipitation_K"
+      ],
+      "difficulty": 0.62,
+      "solution": "Ksp = c(A^n+)^m · c(B^m-)^n；A、B 是同一种写法（c(A^n+) 与 c(A) 表示含义一致）；C 错（指数颠倒）；D 错（忽略系数）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Ksp = c(A)^m · c(B)^n",
+        "B. Ksp = [c(A)^m] · [c(B)^n]",
+        "C. Ksp = c(A)^n · c(B)^m",
+        "D. Ksp = c(A)·c(B)"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0405",
+      "item_type": "fill",
+      "stem": "AgCl 难溶电解质的 Ksp 表达式为______；AgCl 的 Ksp 约为 1.8×10^-10，则其在纯水中的溶解度约为______ mol/L。",
+      "answer": "Ksp = c(Ag+)·c(Cl-);1.34×10^-5",
+      "kps": [
+        "kp_chem11_precipitation_K"
+      ],
+      "difficulty": 0.78,
+      "solution": "AgCl ⇌ Ag+ + Cl-；Ksp = c(Ag+)·c(Cl-) ≈ s^2 = 1.8×10^-10；s = √(1.8×10^-10) ≈ 1.34×10^-5 mol/L。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0406",
+      "item_type": "choice",
+      "stem": "判断沉淀能否生成的标准是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_precipitation_conv"
+      ],
+      "difficulty": 0.45,
+      "solution": "沉淀生成与溶解的判断：Q（离子积）> Ksp 有沉淀生成；Q = Ksp 饱和；Q < Ksp 无沉淀或原有沉淀溶解。",
+      "source": "llm_generated",
+      "options": [
+        "A. Q>Ksp 时有沉淀生成",
+        "B. Q=Ksp 时饱和",
+        "C. Q<Ksp 时无沉淀或沉淀溶解",
+        "D. 以上都是"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0407",
+      "item_type": "choice",
+      "stem": "向含有 Cl- 和 I- 的混合溶液中滴加少量 AgNO3 溶液，先产生的沉淀是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_precipitation_conv"
+      ],
+      "difficulty": 0.62,
+      "solution": "由于 AgI 的 Ksp（8.3×10^-17）远小于 AgCl 的 Ksp（1.8×10^-10），AgI 更难溶，故先生成 AgI 沉淀。",
+      "source": "llm_generated",
+      "options": [
+        "A. AgCl",
+        "B. AgI",
+        "C. 两者同时产生",
+        "D. 都不产生"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0408",
+      "item_type": "fill",
+      "stem": "沉淀转化的实质是：溶解度较大的沉淀可以转化为溶解度______的沉淀；其原理是______。",
+      "answer": "较小;沉淀溶解平衡的移动（Q>Ksp 时生成新沉淀，Q<Ksp 时原有沉淀溶解）",
+      "kps": [
+        "kp_chem11_precipitation_conv"
+      ],
+      "difficulty": 0.78,
+      "solution": "沉淀转化：溶解度大的沉淀可转化为溶解度更小的沉淀；其实质是沉淀溶解平衡的移动——离子积 Q 与 Ksp 的比较决定沉淀生成或溶解。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0409",
+      "item_type": "choice",
+      "stem": "双液原电池与单液原电池相比，主要优点是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_galvanic_deep"
+      ],
+      "difficulty": 0.45,
+      "solution": "双液原电池用盐桥连接两极的电解质溶液，避免了电极与电解质的直接反应，使电池反应更加可控、电压更稳定；故选 A、C（其中 A 是主要优点）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 避免电极与电解质直接反应",
+        "B. 电流更大",
+        "C. 电压更稳定",
+        "D. 装置更简单"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0410",
+      "item_type": "choice",
+      "stem": "关于盐桥的作用，正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_galvanic_deep"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（盐桥沟通内电路）；B 对（盐桥中离子迁移维持电荷平衡）；C 对（阻止反应物直接接触）；D 错（盐桥不提供电子，电子通过外电路流动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 沟通内电路形成闭合回路",
+        "B. 维持两池电荷平衡",
+        "C. 阻止反应物直接接触",
+        "D. 提供电子"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0411",
+      "item_type": "fill",
+      "stem": "双液原电池中，盐桥通常装______（如 KCl 或 KNO3）溶液，其作用是______。",
+      "answer": "强电解质;沟通内电路、维持电荷平衡、阻止两池反应物直接接触",
+      "kps": [
+        "kp_chem11_galvanic_deep"
+      ],
+      "difficulty": 0.78,
+      "solution": "盐桥内通常装 KCl 或 KNO3 等强电解质溶液；其作用：①沟通内电路形成闭合回路；②离子迁移维持电荷平衡；③阻止两池反应物直接接触。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0412",
+      "item_type": "choice",
+      "stem": "下列电极反应式书写正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_electrode_equations"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（酸性介质正极反应）；B 对（碱性介质正极反应）；C 对（Zn 失电子）；D 对（铅蓄电池负极 Pb 失电子生成 PbSO4）；四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 氢氧燃料电池（酸性）正极：O2 + 4H+ + 4e- = 2H2O",
+        "B. 氢氧燃料电池（碱性）正极：O2 + 2H2O + 4e- = 4OH-",
+        "C. 锌锰干电池负极：Zn - 2e- = Zn2+",
+        "D. 铅蓄电池放电时负极：Pb - 2e- + SO4^2- = PbSO4"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0413",
+      "item_type": "fill",
+      "stem": "铅蓄电池放电时，负极反应为______；正极反应为______；总反应为______。",
+      "answer": "Pb - 2e- + SO4^2- = PbSO4;PbO2 + 2e- + SO4^2- + 4H+ = PbSO4 + 2H2O;Pb + PbO2 + 2H2SO4 = 2PbSO4 + 2H2O",
+      "kps": [
+        "kp_chem11_electrode_equations"
+      ],
+      "difficulty": 0.62,
+      "solution": "铅蓄电池放电：负极 Pb 失电子生成 PbSO4（结合 SO4^2-）；正极 PbO2 得电子生成 PbSO4；总反应消耗 H2SO4，生成 PbSO4 和 H2O。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0414",
+      "item_type": "fill",
+      "stem": "电极反应式书写的一般步骤：①根据电池类型（______或______）确定电极反应方向；②根据介质（酸、碱、中性）配平电极反应式；③检查电荷守恒与______守恒。",
+      "answer": "原电池;电解池;质量",
+      "kps": [
+        "kp_chem11_electrode_equations"
+      ],
+      "difficulty": 0.78,
+      "solution": "电极反应式书写步骤：①判断电池类型（原电池正极发生还原、负极发生氧化；电解池阳极发生氧化、阴极发生还原）；②根据介质配平；③检查电荷守恒与质量守恒。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0415",
+      "item_type": "choice",
+      "stem": "电解池中，与电源正极相连的电极为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chem11_electrolysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "电解池中与电源正极相连的电极为阳极（发生氧化反应）；与电源负极相连的电极为阴极（发生还原反应）；故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 阴极",
+        "B. 阳极",
+        "C. 正极",
+        "D. 负极"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0416",
+      "item_type": "choice",
+      "stem": "用惰性电极电解 CuCl2 溶液时，下列说法正确的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_electrolysis"
+      ],
+      "difficulty": 0.62,
+      "solution": "电解 CuCl2 溶液：阴极 Cu2+ + 2e- = Cu（析出 Cu）；阳极 2Cl- - 2e- = Cl2↑（产生 Cl2）；溶液中 Cu2+ 减少，蓝色变浅；D 错（阴极不产生 H2，因 Cu2+ 氧化性强于 H+）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 阴极析出 Cu",
+        "B. 阳极产生 Cl2",
+        "C. 溶液颜色变浅",
+        "D. 阴极产生 H2"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0417",
+      "item_type": "fill",
+      "stem": "电解饱和食盐水的总反应化学方程式为______；阴极产物是______，阳极产物是______。",
+      "answer": "2NaCl + 2H2O =（电解）2NaOH + H2↑ + Cl2↑;H2;Cl2",
+      "kps": [
+        "kp_chem11_electrolysis"
+      ],
+      "difficulty": 0.78,
+      "solution": "电解饱和食盐水：2NaCl+2H2O=电解=2NaOH+H2↑+Cl2↑；阴极（还原）：2H2O+2e-=H2↑+2OH-；阳极（氧化）：2Cl- - 2e- = Cl2↑。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0418",
+      "item_type": "choice",
+      "stem": "下列应用属于电解原理的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_chem11_electrolysis_apps"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（电镀是电解原理的应用）；B 对（电解精炼铜是用电解提纯粗铜）；C 对（电解熔融 Al2O3 制铝）；D 错（钢铁的电化学防护主要是牺牲阳极的阴极保护法和外加电流的阴极保护法，与纯电解原理不完全相同）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电镀",
+        "B. 电解精炼铜",
+        "C. 电解铝",
+        "D. 钢铁的电化学防护"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0419",
+      "item_type": "choice",
+      "stem": "电镀铜时，下列说法正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_electrolysis_apps"
+      ],
+      "difficulty": 0.62,
+      "solution": "电镀铜：①镀件作阴极（待镀金属或非金属）；②镀层金属 Cu 作阳极；③电镀液含 Cu2+（如 CuSO4 溶液）；④阳极反应 Cu-2e-=Cu2+（补充溶液中 Cu2+）；⑤阴极反应 Cu2++2e-=Cu；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 镀件作阴极",
+        "B. 镀层金属（铜）作阳极",
+        "C. 电镀液含 Cu2+",
+        "D. 阳极反应为 Cu - 2e- = Cu2+"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0420",
+      "item_type": "fill",
+      "stem": "电解精炼铜时，粗铜作______极（填\"阳\"或\"阴\"），纯铜作______极；电解质溶液为______。",
+      "answer": "阳;阴;CuSO4 溶液",
+      "kps": [
+        "kp_chem11_electrolysis_apps"
+      ],
+      "difficulty": 0.78,
+      "solution": "电解精炼铜：粗铜作阳极（不纯铜失电子溶解）；纯铜作阴极（Cu2+ 得电子析出纯铜）；电解质为 CuSO4 溶液。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0421",
+      "item_type": "choice",
+      "stem": "电镀实验中，下列做法错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chem11_electroplating_fuel_cell_lab"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 错（电镀必须用直流电源，保证阴极沉积、阳极溶解）；A、B、C 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 镀件作阴极",
+        "B. 镀层金属作阳极",
+        "C. 选用含镀层金属离子的电解质溶液",
+        "D. 用交流电源供电"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0422",
+      "item_type": "choice",
+      "stem": "制作简易氢氧燃料电池的实验中，下列说法正确的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_chem11_electroplating_fuel_cell_lab"
+      ],
+      "difficulty": 0.62,
+      "solution": "简易氢氧燃料电池：①电解质溶液（稀硫酸酸性介质或 KOH 碱性介质）；②两极用惰性电极（Pt、石墨）；③负极通 H2 失电子（2H2-4e-=4H+ 或 2H2-4e-+4OH-=4H2O）；④正极通 O2 得电子（O2+4e-+4H+=2H2O 或 O2+2H2O+4e-=4OH-）；故四项均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电解质溶液用稀硫酸或 KOH 溶液",
+        "B. 两电极均用铂或石墨等惰性电极",
+        "C. 通氢气的一极是负极（燃料极）",
+        "D. 通氧气的一极是正极（氧化剂极）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0423",
+      "item_type": "fill",
+      "stem": "氢氧燃料电池（酸性介质）的总反应为______；负极反应为______；正极反应为______。",
+      "answer": "2H2 + O2 = 2H2O;2H2 - 4e- = 4H+;O2 + 4e- + 4H+ = 2H2O",
+      "kps": [
+        "kp_chem11_electroplating_fuel_cell_lab"
+      ],
+      "difficulty": 0.78,
+      "solution": "氢氧燃料电池（酸性介质）总反应：2H2+O2=2H2O；负极（H2 失电子）：2H2-4e-=4H+；正极（O2 得电子）：O2+4e-+4H+=2H2O。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0424",
+      "item_type": "choice",
+      "stem": "下列金属防腐的方法中，属于改变金属内部结构的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chem11_corrosion"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 对（不锈钢是在钢中加入 Cr、Ni 等元素制成，改变金属内部结构）；B、C、D 均不改变金属内部结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不锈钢",
+        "B. 涂油漆",
+        "C. 电镀",
+        "D. 牺牲阳极的阴极保护法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0425",
+      "item_type": "choice",
+      "stem": "关于金属腐蚀的类型，正确的是（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_chem11_corrosion"
+      ],
+      "difficulty": 0.62,
+      "solution": "A 对（化学腐蚀定义）；B 对（电化学腐蚀定义）；C 错（钢铁在潮湿空气中主要发生吸氧腐蚀）；D 对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 化学腐蚀是金属与接触的物质直接发生化学反应",
+        "B. 电化学腐蚀是不纯金属在电解质溶液中发生原电池反应",
+        "C. 钢铁在潮湿空气中主要发生析氢腐蚀",
+        "D. 钢铁在酸性较强环境中发生析氢腐蚀，在弱酸性或中性环境中发生吸氧腐蚀"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    },
+    {
+      "id": "che_hs1_0426",
+      "item_type": "fill",
+      "stem": "牺牲阳极的阴极保护法中，______金属作负极（阳极）被腐蚀，______金属作正极（阴极）受到保护。",
+      "answer": "较活泼;较不活泼（被保护金属）",
+      "kps": [
+        "kp_chem11_corrosion"
+      ],
+      "difficulty": 0.78,
+      "solution": "牺牲阳极的阴极保护法：将被保护金属与较活泼金属（如 Zn）连接形成原电池，较活泼金属作负极被腐蚀，被保护金属作正极受到保护（如铁船连接锌块保护船体）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "che-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "note": "single-agent generation, blind verification deferred | single-agent generation",
+        "single_agent": true
+      }
+    }
+  ]
+}

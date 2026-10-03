@@ -175,11 +175,17 @@ def merged_graph(grade_kps):
 
 @pytest.fixture(scope="session")
 def merged_bank(root):
-    """合并 data/items/*.json 的题库；先在原始 dict 层查重复 id / 重复题干
-    （bank.add 按 id 覆盖，重复必须在入构前拦截）。"""
+    """合并 data/items/*.json 的题库；先在原始 dict 层查重复 id / 重复整题
+    （bank.add 按 id 覆盖，重复必须在入构前拦截）。
+
+    重复判定 = 全题（题干+选项+答案+题型）逐项相同。只比对题干会误伤选择题
+    里的通用题干（如「下列说法正确的是（　　）」）：2026-10-03 物理/化学/语文
+    扩科批落库后实测 31 对同题干题目全部选项/答案各异，均为合法独立题；
+    真重复（同 id 同内容，如 chi_hs_0198 曾同文件落两条）仍会被此处拦下。
+    """
     paths = sorted(glob.glob(f"{root}/data/items/*.json"))
     assert paths, "no item files found under data/items/"
-    seen_id, seen_stem = {}, {}
+    seen_id, seen_question = {}, {}
     items = []
     for path in paths:
         with open(path, encoding="utf-8") as f:
@@ -187,11 +193,16 @@ def merged_bank(root):
         for it in data["items"]:
             assert it["id"] not in seen_id, f"duplicate item id: {it['id']}"
             seen_id[it["id"]] = os.path.basename(path)
-            stem = str(it.get("stem", "")).strip()
-            assert stem not in seen_stem, (
-                f"duplicate stem: {it['id']} == {seen_stem.get(stem)}"
+            question = (
+                str(it.get("stem", "")).strip(),
+                json.dumps(it.get("options"), ensure_ascii=False, sort_keys=True),
+                str(it.get("answer", "")).strip(),
+                str(it.get("item_type", "")).strip(),
             )
-            seen_stem[stem] = it["id"]
+            assert question not in seen_question, (
+                f"duplicate question: {it['id']} == {seen_question.get(question)}"
+            )
+            seen_question[question] = it["id"]
             items.append(it)
     return itembank_from_dict({"items": items})
 

@@ -194,6 +194,38 @@ def _resolve_choice(t: str, labels: list[str], texts: list[str]) -> int | None:
     return None
 
 
+# ---------- §3.8b 多选（form == "mcq_multi"） ----------
+
+# 分隔符不含空白：选项全文形如「A. 甲正确」自带空格，按空白切会劈开标签与正文。
+_MULTI_SEP_RE = re.compile(r"[,，、;；]+|和")
+
+
+def _split_multi(text: str) -> list[str]:
+    """按分隔符拆多选答案，逐段归一化后丢弃空段。无分隔符 → 单元素。"""
+    parts = []
+    for raw in _MULTI_SEP_RE.split(text):
+        norm = normalize_answer(raw)
+        if norm:
+            parts.append(norm)
+    return parts
+
+
+def _resolve_multi(text: str, labels: list[str], texts: list[str]) -> frozenset[str] | None:
+    """多选答案 → 标签集合；任一段解析不到（或集合为空/重复）→ None。"""
+    parts = _split_multi(text)
+    if not parts:
+        return None
+    keys = []
+    for part in parts:
+        index = _resolve_choice(part, labels, texts)
+        if index is None:
+            return None
+        keys.append(_answer_key(labels[index]))
+    if len(set(keys)) != len(keys):
+        return None
+    return frozenset(keys)
+
+
 def grade_choice(item, learner_answer) -> bool:
     # 步骤 1：learner 类型检查与未作答短路优先于题目校验
     if learner_answer is not None and not isinstance(learner_answer, str):
@@ -209,6 +241,15 @@ def grade_choice(item, learner_answer) -> bool:
     la = normalize_answer(learner_answer)
     if la == "":
         return False
+    # 步骤 3b：多选形态（form == "mcq_multi"）走标签集合等值语义
+    if getattr(item, "form", "choice") == "mcq_multi":
+        correct_multi = _resolve_multi(item.answer, labels, texts)
+        if correct_multi is None:
+            raise GradingError(f"item {item.id!r}: answer matches no option")
+        given_multi = _resolve_multi(learner_answer, labels, texts)
+        if given_multi is None:
+            return False
+        return given_multi == correct_multi
     # 步骤 4：解析正确项；题目非法（含 options 空）→ GradingError
     correct = _resolve_choice(normalize_answer(item.answer), labels, texts)
     if correct is None:

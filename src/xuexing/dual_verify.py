@@ -278,6 +278,30 @@ def _resolve_option(target, labels, texts):
     return None
 
 
+# 多选答案分隔符（与 itembank.split_multi_answer 同口径）：逗号/顿号/分号/「和」。
+# 不含空白：选项全文形如「A. 甲正确」自带空格，按空白切会劈开标签与正文。
+_MULTI_SEP_RE = re.compile(r"[,，、;；]+|和")
+
+
+def _resolve_option_set(target, labels, texts):
+    """多选解析：按分隔符拆段，**每段都**能落到选项才返回标签键集合，否则 None。
+
+    少于 2 段返回 None——单选答案不走本函数，形态从答案自身推断，不改签名。
+    """
+    parts = [p for p in (normalize_answer(seg) for seg in _MULTI_SEP_RE.split(target)) if p]
+    if len(parts) < 2:
+        return None
+    keys = []
+    for part in parts:
+        index = _resolve_option(part, labels, texts)
+        if index is None:
+            return None
+        keys.append(_key(labels[index]))
+    if len(set(keys)) != len(keys):
+        return None
+    return frozenset(keys)
+
+
 # --------------------------------------------------------------------------
 # 比对（契约 §3.3）
 # --------------------------------------------------------------------------
@@ -299,8 +323,13 @@ def answers_match(key_answer, proposed, item_type="fill", options=None):
         labels = [text.split(".", 1)[0].strip() for text in texts]
         correct = _resolve_option(normalize_answer(key_answer), labels, texts)
         given = _resolve_option(normalize_answer(proposed), labels, texts)
-        # 标答解析不到不抛错，判 False。
-        return correct is not None and correct == given
+        # 单选命中即 True；标答解析不到不抛错，判 False。
+        if correct is not None and correct == given:
+            return True
+        # 多选（mcq_multi）：两边拆成 >=2 个可解析标签时按集合等值判；单选形态自动落到 False。
+        key_set = _resolve_option_set(normalize_answer(key_answer), labels, texts)
+        given_set = _resolve_option_set(normalize_answer(proposed), labels, texts)
+        return key_set is not None and key_set == given_set
 
     key_normalized = normalize_answer(key_answer)
     proposed_normalized = normalize_answer(proposed)

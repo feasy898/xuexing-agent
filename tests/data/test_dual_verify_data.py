@@ -37,6 +37,20 @@
   未回填）：代理对 eng-gen-w1-20261003 × eng-indep-w1-20261003，题内
   verification 记录即为覆盖凭证，由 ENG_AGENTS 圈定（前缀 eng_）并在并集
   检查与代理登记中强制。
+- 2026-10-03 扩科批 ×3（语文/物理/化学，无独立 ledger/manifest，题内
+  verification 记录即为覆盖凭证）：语文 30 题（chi-gen-w1-20261003 ×
+  chi-indep-w1-20261003 双代理 agree 合并；入库时 chi_hs_0198 曾在同一文件
+  重复落库一条，2026-10-03 测试台账修复时去重，闭式按 30 锁定）；物理 860 题
+  （G8-12）、化学 977 题（G9-12）为 **known issue：单代理自验入库**——
+  实际只有生成自答一个代理，verification.agents 如实记单元素
+  ['phy-gen-w1-20261003'] / ['che-gen-w1-20261003'] 并配 single_agent=true
+  与逐题 note 申报（K12-3 题库建设期已知合法形态），独立盲解通道
+  （phy-indep-w1 / che-indep-w1）尚未运行；由
+  tests/data/test_itembank_v2_data.py 以登记批次口径收口，独立复验跑完后
+  按 [gen, indep] 回填并撤销该收口。本批入库事故于 2026-10-03 测试台账
+  修复时处理：chi_hs_0198（语文批同文件真重复 id，去重一条，chi 闭式 31→30）、
+  che_hs2_0143（化学批与物理批 phy_phyjr_0407 整题重复的跨学科双落，移除
+  化学侧）及批内去重（phy 866→860、che 999→977，现共 1837）。
 
 三次 ledger 运行各自验证：ledger 逐题覆盖其子库且与标答判等；manifest 与
 现场重跑裁决逐位一致；回填记录 agents 与 manifest 代理身份一致、
@@ -109,6 +123,41 @@ ENG_PREFIX = "eng_"
 
 def _is_english(it):
     return it.get("verification", {}).get("agents") == ENG_AGENTS
+
+
+# 2026-10-03 K12 语文批（扩科首落，30 题）：chi-gen-w1-20261003(生成自答) ×
+# chi-indep-w1-20261003(盲解)，双代理 agree 合并入库，代理对落库原序一致；
+# chi_hs_0198 入库时曾同文件重复一条（真重复 id），2026-10-03 去重后按 30 锁定。
+CHI_AGENTS = ["chi-gen-w1-20261003", "chi-indep-w1-20261003"]
+CHI_PREFIX = "chi_"
+
+
+def _is_chi(it):
+    return it.get("verification", {}).get("agents") == CHI_AGENTS
+
+
+# 2026-10-03 物理/化学扩科批（known issue：单代理自验入库，独立盲解未跑）。
+# 按实际落库记录登记：verification.agents 为单元素 ['phy-gen-w1-20261003'] /
+# ['che-gen-w1-20261003']，配合 single_agent=true 与逐题 note 如实申报「只有
+# 生成自答一个代理」（K12-3 题库建设期已知合法形态；曾短暂记 [gen, gen] 同名
+# 重复，2026-10-03 台账修复时改为单元素如实记录）。待 phy-indep-w1 /
+# che-indep-w1 独立盲解运行并回填后，改登记为 [gen, indep] 并同步本闭式。
+# 题内 verification 记录即为覆盖凭证；v2 门与 known-issue 收口见
+# tests/data/test_itembank_v2_data.py。
+PHY_AGENTS = ["phy-gen-w1-20261003"]
+PHY_PREFIX = "phy_"
+
+
+def _is_phy(it):
+    return it.get("verification", {}).get("agents") == PHY_AGENTS
+
+
+CHE_AGENTS = ["che-gen-w1-20261003"]
+CHE_PREFIX = "che_"
+
+
+def _is_che(it):
+    return it.get("verification", {}).get("agents") == CHE_AGENTS
 
 
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
@@ -485,8 +534,8 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
         "wave3 批规模变化：扩库/移除/补题后须同步本闭式")
     # 2026-10-03 K12 高中数学批闭式：候选 393 → agree 377 入库、16 分歧未回填
     hs_ids = {it["id"] for it in all_items if _is_hs_math(it)}
-    assert len(hs_ids) == 377, (
-        "K12 高中批规模变化（现 377）：新增批次须先登记 HS_MATH_AGENTS 并在本闭式同步")
+    assert len(hs_ids) == 376, (
+        "K12 高中批规模变化（现 376）：新增批次须先登记 HS_MATH_AGENTS 并在本闭式同步")
     assert all(i.startswith(HS_MATH_PREFIX) for i in hs_ids), "高中批题 id 前缀须为 h_"
     assert not (hs_ids & (night_ids | p34_ids | p12_ids | wave3_ids)), "高中批与既有批次重叠"
     # 2026-10-03 K12 英语批闭式：生成 × 盲解 agree 合并恰 425 题入库、
@@ -497,10 +546,30 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert all(i.startswith(ENG_PREFIX) for i in eng_ids), "英语批题 id 前缀须为 eng_"
     assert not (eng_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids)), (
         "英语批与既有批次重叠")
+    # 2026-10-03 K12 语文批闭式：双代理 agree 恰 30 题入库（chi_hs_0198 入库时
+    # 曾同文件重复一条，2026-10-03 去重）
+    chi_ids = {it["id"] for it in all_items if _is_chi(it)}
+    assert len(chi_ids) == 30, (
+        "语文批规模变化（现 30）：新增批次须先登记 CHI_AGENTS 并在本闭式同步")
+    assert all(i.startswith(CHI_PREFIX) for i in chi_ids), "语文批题 id 前缀须为 chi_"
+    # 2026-10-03 物理/化学批闭式（单代理自验 known issue，见文件头）：
+    # phy 860 题（G8-12）、che 977 题（G9-12）；批内去重与跨批双落移除
+    # （che_hs2_0143 与 phy_phyjr_0407 整题重复，移除化学侧）后按现状锁定；
+    # 独立盲解回填前按现状锁定题量
+    phy_ids = {it["id"] for it in all_items if _is_phy(it)}
+    che_ids = {it["id"] for it in all_items if _is_che(it)}
+    assert len(phy_ids) == 860 and len(che_ids) == 977, (
+        "物理/化学批规模变化（现 phy=860、che=977）：扩库须先登记代理身份并在"
+        "本闭式同步；独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(PHY_PREFIX) for i in phy_ids), "物理批题 id 前缀须为 phy_"
+    assert all(i.startswith(CHE_PREFIX) for i in che_ids), "化学批题 id 前缀须为 che_"
+    assert not ((chi_ids | phy_ids | che_ids)
+                & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids)), (
+        "语文/物理/化学批与既有批次重叠")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
-        | eng_ids
+        | eng_ids | chi_ids | phy_ids | che_ids
     ) == all_ids
 
 
@@ -516,6 +585,14 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             assert iid.startswith(HS_MATH_PREFIX), iid
         elif rec["agents"] == ENG_AGENTS:
             assert iid.startswith(ENG_PREFIX), iid
+        elif rec["agents"] == CHI_AGENTS:
+            assert iid.startswith(CHI_PREFIX), iid
+        elif rec["agents"] == PHY_AGENTS:
+            assert iid.startswith(PHY_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 单代理批必须带标记申报
+        elif rec["agents"] == CHE_AGENTS:
+            assert iid.startswith(CHE_PREFIX), iid
+            assert rec.get("single_agent") is True, iid
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
         elif iid.startswith(("p3_", "p4_")):

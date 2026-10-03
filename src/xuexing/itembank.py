@@ -6,10 +6,25 @@
 from __future__ import annotations
 
 import json
+import re
 
 from xuexing.types import Item
 
-__all__ = ["ItemBankError", "ItemBank", "load_itembank", "itembank_from_dict"]
+__all__ = ["ItemBankError", "ItemBank", "load_itembank", "itembank_from_dict",
+           "MCQ_MULTI", "ANSWER_MODES", "split_multi_answer"]
+
+# 多选形态标签：只有该值走「answer 是标签集合」语义，其余 form 一律按单选判定。
+MCQ_MULTI = "mcq_multi"
+# answer_mode 取值域（冻结枚举）。
+ANSWER_MODES = ("exact", "subset")
+# 多选答案分隔符：ASCII/全角逗号、顿号、分号、中文「和」（历史写法）。
+# 刻意不含空白——选项全文形如「A. 甲正确」自带空格，按空白切会把标签与正文劈开。
+_MULTI_SEP_RE = re.compile(r"[,，、;；]+|和")
+
+
+def split_multi_answer(answer: str) -> list[str]:
+    """把多选答案拆成标签列表；无分隔符时原样单元素返回。不 strip 大小写以外的形态。"""
+    return [p for p in (part.strip() for part in _MULTI_SEP_RE.split(answer)) if p]
 
 
 class ItemBankError(ValueError):
@@ -78,11 +93,22 @@ class ItemBank:
                 ans = item.answer.strip()
                 labels = [o.strip().split(".")[0].strip() for o in opts]
                 texts = [o.strip() for o in opts]
-                if ans not in labels and ans not in texts:
+                if item.form == MCQ_MULTI:
+                    # R9b-m：多选按「拆分后每一项都在 labels 集内」判定。
+                    parts = split_multi_answer(ans)
+                    if not parts:
+                        errs.append(f"{p}mcq_multi answer has no option label")
+                    elif len(set(parts)) != len(parts):
+                        errs.append(f"{p}mcq_multi answer repeats a label")
+                    elif any(part not in labels for part in parts):
+                        errs.append(f"{p}answer not among options")
+                elif ans not in labels and ans not in texts:
                     errs.append(f"{p}answer not among options")
             stripped = [o.strip() for o in opts]
             if len(set(stripped)) != len(stripped):
                 errs.append(f"{p}duplicate options")
+        if item.answer_mode not in ANSWER_MODES:
+            errs.append(f"{p}bad answer_mode {item.answer_mode!r}")
         return errs
 
     def validate_all(self, valid_kp_ids: set[str] | None = None) -> list[str]:
@@ -124,5 +150,7 @@ def itembank_from_dict(data: dict) -> ItemBank:
             discrimination=float(it["discrimination"]) if "discrimination" in it else 0.6,
             guess=it.get("guess"),
             misconceptions=list(it["misconceptions"]) if "misconceptions" in it else [],
+            form=it.get("form", "choice"),
+            answer_mode=it.get("answer_mode", "exact"),
         ))
     return bank
