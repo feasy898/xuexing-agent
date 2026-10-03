@@ -3992,6 +3992,5733 @@
         "note": "single-agent generation, blind verification deferred",
         "single_agent": true
       }
+    },
+    {
+      "id": "phy_dens01_0196",
+      "item_type": "choice",
+      "stem": "匀强电场中 A、B 两点相距 d=0.2 m，沿场强方向，场强 E=500 V/m。A、B 的电势差为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_UD"
+      ],
+      "difficulty": 0.4,
+      "solution": "匀强电场 U=Ed=500×0.2=100 V（沿场强方向降低 100 V）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 100 V",
+        "B. 2500 V",
+        "C. 0.4 V",
+        "D. 2.5 V"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0197",
+      "item_type": "fill",
+      "stem": "匀强电场中电势差与场强的关系 U=______，只适用于______电场；场强的另一单位 1 V/m=1 N/C。",
+      "answer": "Ed（Ed，d 沿场强方向）；匀强",
+      "kps": [
+        "kp_phy11_UD"
+      ],
+      "difficulty": 0.3,
+      "solution": "U=Ed 的意义与适用条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0198",
+      "item_type": "solve",
+      "stem": "两平行金属板相距 2 cm，接 200 V 电压（视为匀强电场）。求板间场强；一电子（e=1.6×10⁻¹⁹ C）从负极板运动到正极板，电场力做多少功？动能增加多少电子伏？",
+      "answer": "E=U/d=200÷0.02=10⁴ V/m；W=eU=1.6×10⁻¹⁹×200=3.2×10⁻¹⁷ J，即 200 eV（电子经 1 V 电压加速获得能量 1 eV）；电场力做正功 3.2×10⁻¹⁷ J，动能增加 200 eV。",
+      "kps": [
+        "kp_phy11_UD"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：E=U/d=200÷0.02=10⁴ V/m；W=eU=1.6×10⁻¹⁹×200=3.2×10⁻¹⁷ J，即 200 eV（电子经 1 V 电压加速获得能量 1 eV）；电场力做正功 3.2×10⁻¹⁷ J，动能增加 200 eV。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0199",
+      "item_type": "choice",
+      "stem": "关于安培力，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_ampere_force_intro"
+      ],
+      "difficulty": 0.35,
+      "solution": "安培力 F=BIL（I⊥B），方向由左手定则：垂直 B 且垂直 I，指向由掌心—四指—拇指关系确定；导线平行磁场时不受安培力；安培力垂直 B 和 I 决定的平面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通电导线在磁场中一定受安培力",
+        "B. 垂直磁场放置的通电导线受安培力 F=BIL，方向由左手定则判断",
+        "C. 安培力方向沿磁场方向",
+        "D. 安培力方向总与电流方向相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0200",
+      "item_type": "fill",
+      "stem": "左手定则：伸开左手，让磁感线穿入掌心，四指指向______方向，拇指所指即为通电导线在磁场中所受______力的方向。",
+      "answer": "电流；安培（安培）",
+      "kps": [
+        "kp_phy11_ampere_force_intro"
+      ],
+      "difficulty": 0.3,
+      "solution": "左手定则内容。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0201",
+      "item_type": "solve",
+      "stem": "长 10 cm、通 5 A 电流的直导线，垂直放入 B=0.4 T 的匀强磁场。求安培力大小；若导线与磁场成 30° 角，安培力又多大？",
+      "answer": "垂直时 F=BIL=0.4×5×0.1=0.2 N；成 30° 时 F=BIL·sin30°=0.2×0.5=0.1 N（F=BILsinθ）。方向由左手定则确定，垂直 B 与 I 所在平面。",
+      "kps": [
+        "kp_phy11_ampere_force_intro"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：垂直时 F=BIL=0.4×5×0.1=0.2 N；成 30° 时 F=BIL·sin30°=0.2×0.5=0.1 N（F=BILsinθ）。方向由左手定则确定，垂直 B 与 I 所在平面。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0202",
+      "item_type": "choice",
+      "stem": "安培分子电流假说认为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_ampere_hypothesis"
+      ],
+      "difficulty": 0.35,
+      "solution": "安培提出：磁性材料内存在分子电流（环形），每个分子像小磁体；未被磁化时取向杂乱、对外不显磁性，磁化后取向趋于一致显磁性——解释了磁现象的电本质（磁铁的磁场由电流产生）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁铁内部存在环形分子电流，分子电流使每个分子相当于一个小磁体",
+        "B. 磁场由静止电荷产生",
+        "C. 分子电流是导线中的电流",
+        "D. 磁单极子存在"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0203",
+      "item_type": "fill",
+      "stem": "安培分子电流假说揭示了______的电本质：磁铁的磁场和电流的磁场都由______（电荷的运动）产生。",
+      "answer": "磁现象；电流（运动电荷）",
+      "kps": [
+        "kp_phy11_ampere_hypothesis"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁现象电本质。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0204",
+      "item_type": "solve",
+      "stem": "用分子电流假说解释：①为什么软铁棒未被磁化时不显磁性？②为什么磁化后能吸引铁屑？③为什么猛烈敲打或高温加热会使磁铁磁性减弱？",
+      "answer": "①未磁化时分子电流取向杂乱无章，磁效应相互抵消，对外不显磁性；②磁化（如受外磁场作用）后分子电流取向趋于一致，各分子磁性叠加，宏观显磁性，能吸引铁屑；③敲打或加热使分子热运动加剧、取向紊乱，分子电流排列被扰乱，磁性减弱甚至消失（超过居里温度完全退磁）。",
+      "kps": [
+        "kp_phy11_ampere_hypothesis"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①未磁化时分子电流取向杂乱无章，磁效应相互抵消，对外不显磁性；②磁化（如受外磁场作用）后分子电流取向趋于一致，各分子磁性叠加，宏观显磁性，能吸引铁屑；③敲打或加热使分子热运动加剧、取向紊乱，分子电流排列被扰乱，磁性减弱甚至消失（超过居里温度完全退磁）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0205",
+      "item_type": "choice",
+      "stem": "电源输出功率 P出=I²R 随外电阻 R 变化（E、r 一定），当 R=r 时（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_battery_power_efficiency"
+      ],
+      "difficulty": 0.45,
+      "solution": "P出=E²R/(R+r)²，R=r 时最大 E²/(4r)，效率 η=R/(R+r)=50%；效率随 R 增大一直增大（R→∞ 时→100%，但 P出→0）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 输出功率最大，Pmax=E²/(4r)，此时效率 50%",
+        "B. 输出功率和效率都最大",
+        "C. 效率最大",
+        "D. 输出功率为零"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0206",
+      "item_type": "fill",
+      "stem": "电源效率 η=P出/P总=R/(R+r)，外电阻越大效率越______；当外电阻等于内阻时，输出功率最______。",
+      "answer": "大；大",
+      "kps": [
+        "kp_phy11_battery_power_efficiency"
+      ],
+      "difficulty": 0.35,
+      "solution": "效率与输出功率随 R 的变化。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0207",
+      "item_type": "solve",
+      "stem": "电源 E=12 V、r=2 Ω。①外接 R=2 Ω 时输出功率和效率；②外接 R=6 Ω 时输出功率和效率；③说明„输出功率最大“与„效率最大“是否同时出现。",
+      "answer": "①R=r=2 Ω：I=12÷4=3 A，P出=I²R=18 W（=E²/4r=144/8=18 W 最大），η=2/4=50%；②R=6 Ω：I=12÷8=1.5 A，P出=1.5²×6=13.5 W，η=6/8=75%；③不同时：R=r 输出功率最大但效率仅 50%，R 增大效率升高而输出功率反而降低，两者此消彼长。",
+      "kps": [
+        "kp_phy11_battery_power_efficiency"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①R=r=2 Ω：I=12÷4=3 A，P出=I²R=18 W（=E²/4r=144/8=18 W 最大），η=2/4=50%；②R=6 Ω：I=12÷8=1.5 A，P出=1.5²×6=13.5 W，η=6/8=75%；③不同时：R=r 输出功率最大但效率仅 50%，R 增大效率升高而输出功率反而降低，两者此消彼长。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0208",
+      "item_type": "choice",
+      "stem": "游标卡尺主尺最小刻度为 1 mm，游标有 20 个小格（总长 19 mm）。它的精度和正确读数方法是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_calipers"
+      ],
+      "difficulty": 0.4,
+      "solution": "20 分度游标卡尺：精度=0.95/19=... 每格 19/20=0.95 mm，与主尺 1 mm 差 0.05 mm，精度 0.05 mm；读数=主尺整数（mm）+对齐格数×0.05 mm。",
+      "source": "llm_generated",
+      "options": [
+        "A. 精度 0.05 mm，读数=主尺整毫米+格数×0.05 mm",
+        "B. 精度 0.1 mm",
+        "C. 精度 0.02 mm",
+        "D. 精度 1 mm"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0209",
+      "item_type": "fill",
+      "stem": "10 分度游标卡尺精度______mm，螺旋测微器精度______mm（读数=固定刻度+可动刻度格数×0.01 mm，注意估读一位）。",
+      "answer": "0.1；0.01",
+      "kps": [
+        "kp_phy11_calipers"
+      ],
+      "difficulty": 0.35,
+      "solution": "两种测量仪器的精度。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0210",
+      "item_type": "solve",
+      "stem": "用螺旋测微器测金属丝直径：固定刻度读 2 mm，可动刻度第 25.0 格对准（精度 0.01 mm）。求直径；再说明游标卡尺为什么不需要估读而螺旋测微器需要估读。",
+      "answer": "直径 d=2 mm+25.0×0.01 mm=2.250 mm；游标卡尺读数由主尺与游标刻线对齐确定，是刻线对齐（不估读）；螺旋测微器可动刻度可读到两格之间，需再估读一位（0.001 mm 位）。",
+      "kps": [
+        "kp_phy11_calipers"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：直径 d=2 mm+25.0×0.01 mm=2.250 mm；游标卡尺读数由主尺与游标刻线对齐确定，是刻线对齐（不估读）；螺旋测微器可动刻度可读到两格之间，需再估读一位（0.001 mm 位）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0211",
+      "item_type": "choice",
+      "stem": "关于电容器和电容，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_capacitor"
+      ],
+      "difficulty": 0.35,
+      "solution": "电容 C=Q/U 由电容器本身（极板面积、距离、介质）决定，与是否带电、带电多少无关（比值不变）；充电后两板带等量异号电荷。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电容表示电容器储存电荷的能力，C=Q/U",
+        "B. 电容器不带电时电容为零",
+        "C. 电容 C 与所带电荷量成正比",
+        "D. 充电后两板不带电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0212",
+      "item_type": "fill",
+      "stem": "电容定义式 C=______，单位法拉（F），1 μF=______F；平行板电容器电容的决定式 C=εrS/(4πkd)。",
+      "answer": "Q/U；10⁻⁶",
+      "kps": [
+        "kp_phy11_capacitor"
+      ],
+      "difficulty": 0.3,
+      "solution": "电容定义式与单位。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0213",
+      "item_type": "solve",
+      "stem": "一电容器标有„10 μF、50 V“。①它最多能存多少电荷量？②若充电电压为 20 V，带电量多少？③电压从 20 V 升到 50 V，电容变吗？",
+      "answer": "①Qmax=CU=10×10⁻⁶×50=5×10⁻⁴ C；②Q=10×10⁻⁶×20=2×10⁻⁴ C；③电容不变（由本身决定），仍为 10 μF，只是电荷量随电压增大而增大，比值 Q/U 恒定。",
+      "kps": [
+        "kp_phy11_capacitor"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①Qmax=CU=10×10⁻⁶×50=5×10⁻⁴ C；②Q=10×10⁻⁶×20=2×10⁻⁴ C；③电容不变（由本身决定），仍为 10 μF，只是电荷量随电压增大而增大，比值 Q/U 恒定。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0214",
+      "item_type": "choice",
+      "stem": "电容器充电后储存的电场能为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_capacitor_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "充电过程电压从 0 均匀增大，W=平均电压×电荷=½QU=½CU²=Q²/(2C)；类比恒力做功与 F-x 图像面积。",
+      "source": "llm_generated",
+      "options": [
+        "A. E=QU",
+        "B. E=½QU",
+        "C. E=QU/3",
+        "D. E=2QU"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0215",
+      "item_type": "fill",
+      "stem": "电容器储能公式 E=½QU=______=Q²/(2C)；电容器的充放电过程中，电场能与______能相互转化。",
+      "answer": "½CU²；其他形式（电源化学能/电路其他形式）能",
+      "kps": [
+        "kp_phy11_capacitor_energy"
+      ],
+      "difficulty": 0.3,
+      "solution": "三个等价储能公式。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0216",
+      "item_type": "solve",
+      "stem": "照相机闪光灯利用电容器储存的能量瞬间释放发光。一个 1000 μF 电容器充电到 300 V。①储存多少电能？②说明电容器„充电“和„放电“时能量的转化方向。",
+      "answer": "①E=½CU²=½×1000×10⁻⁶×300²=0.5×10⁻³×9×10⁴=45 J；②充电：电源的电能（化学能）转化为电容器中的电场能；放电：电场能释放转化为闪光灯的光能、热能（电路中消耗）。电容大、电压高时储能大，可瞬间大功率放电。",
+      "kps": [
+        "kp_phy11_capacitor_energy"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①E=½CU²=½×1000×10⁻⁶×300²=0.5×10⁻³×9×10⁴=45 J；②充电：电源的电能（化学能）转化为电容器中的电场能；放电：电场能释放转化为闪光灯的光能、热能（电路中消耗）。电容大、电压高时储能大，可瞬间大功率放电。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0217",
+      "item_type": "choice",
+      "stem": "关于摩擦起电和接触起电，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_charge"
+      ],
+      "difficulty": 0.3,
+      "solution": "摩擦起电的实质是电子转移（得失电子），电荷总量守恒；两相同金属球接触后电荷均分（同种电荷平分），带同种电荷；玻璃棒与丝绸摩擦带正电、与毛皮摩擦则可能带负电——取决于材料。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摩擦起电创造了电荷",
+        "B. 摩擦起电是电荷从一个物体转移到另一个物体",
+        "C. 接触带电的两个相同金属球分开后一定带异种电荷",
+        "D. 玻璃棒无论与什么材料摩擦都带正电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0218",
+      "item_type": "fill",
+      "stem": "使物体带电的三种方式：______起电、接触（接触）起电和______起电；它们的实质都是电荷的转移。",
+      "answer": "摩擦；感应",
+      "kps": [
+        "kp_phy11_charge"
+      ],
+      "difficulty": 0.3,
+      "solution": "三种起电方式及实质。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0219",
+      "item_type": "solve",
+      "stem": "用一带负电的橡胶棒靠近（不接触）不带电的验电器金属球，金属箔张开；移走橡胶棒箔片闭合。解释这一现象，并说明这是什么起电方式。",
+      "answer": "橡胶棒负电感应验电器：近端（金属球）感应出正电荷、远端（箔片）出现负电荷，箔片因带同种负电排斥张开，这是感应起电（静电感应）；移走棒后感应电荷中和，箔片闭合。整个过程电荷只在验电器内部转移，总量不变。",
+      "kps": [
+        "kp_phy11_charge"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：橡胶棒负电感应验电器：近端（金属球）感应出正电荷、远端（箔片）出现负电荷，箔片因带同种负电排斥张开，这是感应起电（静电感应）；移走棒后感应电荷中和，箔片闭合。整个过程电荷只在验电器内部转移，总量不变。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0220",
+      "item_type": "choice",
+      "stem": "对电荷守恒定律的理解，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_charge_conservation"
+      ],
+      "difficulty": 0.35,
+      "solution": "电荷守恒：一个孤立系统电荷代数和不变；元电荷 e=1.6×10⁻¹⁹ C 是最小电荷单位，电子、质子电量绝对值等于 e；带电体电量只能是 e 的整数倍。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电荷可以消灭",
+        "B. 电荷既不能创生也不能消灭，只能转移或中和，总量守恒",
+        "C. 元电荷就是电子",
+        "D. 任何带电体电量可以是任意值"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0221",
+      "item_type": "fill",
+      "stem": "电荷守恒定律：电荷既不会创生，也不会消灭，它只能从一个物体______到另一个物体，或从物体的一部分转移到另一部分，系统的电荷总量保持______。",
+      "answer": "转移；不变（守恒）",
+      "kps": [
+        "kp_phy11_charge_conservation"
+      ],
+      "difficulty": 0.3,
+      "solution": "电荷守恒定律表述。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0222",
+      "item_type": "solve",
+      "stem": "原来有 A 球带 +6e、B 球带 -2e，用绝缘杆固定。一不带电的相同小球 C 先与 A 接触再与 B 接触。求最后 A、B、C 各带多少电荷；验证系统总电荷守恒。",
+      "answer": "C 与 A 接触均分：各得 +3e；C 再与 B 接触：总电荷 +3e+(-2e)=+e，均分各 +0.5e。故 A=+3e、B=+0.5e、C=+0.5e；总和 3e+0.5e+0.5e=+4e，与初始 6e-2e=+4e 相等，电荷守恒。（相同导体球接触电荷均分）",
+      "kps": [
+        "kp_phy11_charge_conservation"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：C 与 A 接触均分：各得 +3e；C 再与 B 接触：总电荷 +3e+(-2e)=+e，均分各 +0.5e。故 A=+3e、B=+0.5e、C=+0.5e；总和 3e+0.5e+0.5e=+4e，与初始 6e-2e=+4e 相等，电荷守恒。（相同导体球接触电荷均分）",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0223",
+      "item_type": "choice",
+      "stem": "闭合电路中，当外电阻 R 增大时（电源 E、r 不变），下列判断正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_closed_circuit"
+      ],
+      "difficulty": 0.4,
+      "solution": "I=E/(R+r)，R 增大→I 减小；U=E-Ir，I 减小→U 增大（R→∞ 断路时 U=E）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流增大，路端电压减小",
+        "B. 电流减小，路端电压增大",
+        "C. 电流、路端电压都增大",
+        "D. 电流、路端电压都减小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0224",
+      "item_type": "fill",
+      "stem": "闭合电路欧姆定律：I=______；路端电压 U=______（用 E、I、r 表示），外电路短路时电流 I短=______。",
+      "answer": "E/(R+r)；E-Ir；E/r",
+      "kps": [
+        "kp_phy11_closed_circuit"
+      ],
+      "difficulty": 0.3,
+      "solution": "闭合电路欧姆定律及其两种变形。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0225",
+      "item_type": "solve",
+      "stem": "电源电动势 E=6 V、内阻 r=1 Ω，外电路由 R₁=3 Ω 与 R₂=6 Ω 并联组成。求：①总外电阻和电流；②路端电压；③电源的总功率和输出功率。",
+      "answer": "①R并=(3×6)/(3+6)=2 Ω，I=E/(R+r)=6÷3=2 A；②U=IR=2×2=4 V（或 U=E-Ir=6-2=4 V）；③P总=EI=6×2=12 W，P出=UI=4×2=8 W（内耗 P内=I²r=4 W，12=8+4 验证）。",
+      "kps": [
+        "kp_phy11_closed_circuit"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①R并=(3×6)/(3+6)=2 Ω，I=E/(R+r)=6÷3=2 A；②U=IR=2×2=4 V（或 U=E-Ir=6-2=4 V）；③P总=EI=6×2=12 W，P出=UI=4×2=8 W（内耗 P内=I²r=4 W，12=8+4 验证）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0226",
+      "item_type": "choice",
+      "stem": "弹性碰撞与非弹性碰撞的根本区别是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_collision"
+      ],
+      "difficulty": 0.4,
+      "solution": "碰撞过程内力远大于外力，动量都守恒；弹性碰撞机械能守恒（动能不损失），非弹性碰撞动能部分转化为内能，完全非弹性碰撞（碰后共速）动能损失最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 弹性碰撞动量守恒，非弹性碰撞动量不守恒",
+        "B. 弹性碰撞同时满足动量守恒和机械能守恒，非弹性碰撞动量守恒但机械能有损失",
+        "C. 弹性碰撞机械能损失更多",
+        "D. 完全非弹性碰撞机械能守恒"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0227",
+      "item_type": "fill",
+      "stem": "碰撞的三种类型：弹性碰撞（动量、______能都守恒）、非弹性碰撞（动量守恒、机械能有损失）、______非弹性碰撞（碰后合为一体共同运动，动能损失最大）。",
+      "answer": "机械（动）；完全",
+      "kps": [
+        "kp_phy11_collision"
+      ],
+      "difficulty": 0.3,
+      "solution": "碰撞分类。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0228",
+      "item_type": "solve",
+      "stem": "质量 2 kg 的 A 球以 6 m/s 与静止的质量 4 kg 的 B 球发生弹性正碰。求碰后两球速度。",
+      "answer": "弹性碰撞同时满足动量守恒与动能守恒：动量 2×6=2v₁'+4v₂'；动能 ½×2×6²=½×2v₁'²+½×4v₂'²。用弹性碰撞结论：v₁'=(m₁-m₂)v₁/(m₁+m₂)=(2-4)×6÷6=-2 m/s（方向反弹），v₂'=2m₁v₁/(m₁+m₂)=2×2×6÷6=4 m/s（沿原方向）。验证：动量 2×(-2)+4×4=12 kg·m/s 与碰前相等；动能 ½×2×(-2)²+½×4×4²=4+32=36 J 与碰前相等，两守恒均满足。",
+      "kps": [
+        "kp_phy11_collision"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：弹性碰撞同时满足动量守恒与动能守恒：动量 2×6=2v₁'+4v₂'；动能 ½×2×6²=½×2v₁'²+½×4v₂'²。用弹性碰撞结论：v₁'=(m₁-m₂)v₁/(m₁+m₂)=(2-4)×6÷6=-2 m/s（方向反弹），v₂'=2m₁v₁/(m₁+m₂)=2×2×6÷6=4 m/s（沿原方向）。验证：动量 2×(-2)+4×4=12 kg·m/s 与碰前相等；动能 ½×2×(-2)²+½×4×4²=4+32=36 J 与碰前相等，两守恒均满足。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0229",
+      "item_type": "choice",
+      "stem": "在光滑水平面上，子弹以水平速度射入静止木块并留在其中（完全非弹性碰撞）。对此过程，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_collision_models"
+      ],
+      "difficulty": 0.45,
+      "solution": "子弹留木块共速，完全非弹性碰撞：动量守恒，动能损失最大（ΔEk=½μv相对²…转化为摩擦热 Q=f·d相对）；子弹减小的动能=木块增加的动能+产生的热量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 动量守恒，动能守恒",
+        "B. 动量守恒，动能损失最大（转化为内能）",
+        "C. 子弹减小的动能等于木块增加的动能",
+        "D. 系统机械能增大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0230",
+      "item_type": "fill",
+      "stem": "子弹打木块模型：系统动量守恒；子弹与木块间滑动摩擦生热 Q=f·______（相对位移/相对滑动的距离）；损失的机械能转化为______能。",
+      "answer": "s相对；内",
+      "kps": [
+        "kp_phy11_collision_models"
+      ],
+      "difficulty": 0.35,
+      "solution": "摩擦生热与相对位移。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0231",
+      "item_type": "solve",
+      "stem": "质量 m=10 g 的子弹以 300 m/s 水平射入质量 M=1.99 kg 静止木块并留在其中（水平面光滑）。求共同速度和损失的动能。",
+      "answer": "动量守恒：mv=(m+M)v'，v'=0.01×300÷2=1.5 m/s；初动能 ½mv²=½×0.01×9×10⁴=450 J；末动能 ½(m+M)v'²=½×2×2.25=2.25 J；损失 ΔEk=447.75 J（约 448 J 转化为内能，99.5%）。完全非弹性碰撞动能损失巨大。",
+      "kps": [
+        "kp_phy11_collision_models"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：动量守恒：mv=(m+M)v'，v'=0.01×300÷2=1.5 m/s；初动能 ½mv²=½×0.01×9×10⁴=450 J；末动能 ½(m+M)v'²=½×2×2.25=2.25 J；损失 ΔEk=447.75 J（约 448 J 转化为内能，99.5%）。完全非弹性碰撞动能损失巨大。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0232",
+      "item_type": "choice",
+      "stem": "两个质量均为 m、带电量均为 +q 的小球，用等长绝缘细线悬挂于同一点，张开一定角度静止。关于受力平衡分析，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_coulomb_balance"
+      ],
+      "difficulty": 0.45,
+      "solution": "每球受重力（竖直向下）、绳拉力（沿绳）和另一球的库仑斥力（沿连线向外）三力平衡；因斥力水平分量需绳拉力水平分量平衡，绳必倾斜、两球对称等高张开。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每个小球受重力、拉力和库仑斥力",
+        "B. 库仑力沿悬线方向",
+        "C. 悬线一定竖直",
+        "D. 两球可以不等高平衡"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0233",
+      "item_type": "fill",
+      "stem": "库仑力作用下的平衡问题：以小球为研究对象，受重力 mg、绳拉力 T 和库仑力 F 三力平衡，三力构成______三角形；常用正交分解或相似三角形求解。",
+      "answer": "封闭（闭合）",
+      "kps": [
+        "kp_phy11_coulomb_balance"
+      ],
+      "difficulty": 0.3,
+      "solution": "三力平衡的处理方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0234",
+      "item_type": "solve",
+      "stem": "两质量 m=0.1 kg、电量 q=+1×10⁻⁶ C 的小球用长 L=0.5 m 细线悬于同一点 O，静止时两球相距 r=0.1 m（g=10 m/s²）。求每球受的库仑力和悬线与竖直方向的夹角（可用近似 tanθ 表达）。",
+      "answer": "库仑力 F=kq²/r²=9×10⁹×(10⁻⁶)²÷0.01=0.9 N；对每球：tanθ=F/(mg)=0.9÷1=0.9，θ≈42°。三力平衡：mg 竖直、F 沿连线水平（对称时），tanθ=F库/mg。",
+      "kps": [
+        "kp_phy11_coulomb_balance"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：库仑力 F=kq²/r²=9×10⁹×(10⁻⁶)²÷0.01=0.9 N；对每球：tanθ=F/(mg)=0.9÷1=0.9，θ≈42°。三力平衡：mg 竖直、F 沿连线水平（对称时），tanθ=F库/mg。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0235",
+      "item_type": "choice",
+      "stem": "真空中有两个点电荷，电量分别为 Q 和 q，相距 r 时库仑力为 F。若距离增大为 2r，库仑力变为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_coulomb_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "F=kQq/r² 与距离平方成反比：r→2r 时 F→F/4。",
+      "source": "llm_generated",
+      "options": [
+        "A. F/2",
+        "B. F/4",
+        "C. 2F",
+        "D. 4F"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0236",
+      "item_type": "fill",
+      "stem": "库仑定律：真空中两点电荷间的静电力 F=______，k=9.0×10⁹ N·m²/C²；静电力方向在______上（沿连线）。",
+      "answer": "kQq/r²（kQ₁Q₂/r²）；两电荷连线",
+      "kps": [
+        "kp_phy11_coulomb_law"
+      ],
+      "difficulty": 0.3,
+      "solution": "库仑定律公式与方向特征。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0237",
+      "item_type": "solve",
+      "stem": "真空中相距 0.1 m 的两个点电荷，电量分别为 +2×10⁻⁶ C 和 -3×10⁻⁶ C。求它们之间库仑力的大小和性质（吸引还是排斥）；若两电荷电量同时减半，力多大？",
+      "answer": "F=kQ₁Q₂/r²=9×10⁹×2×10⁻⁶×3×10⁻⁶÷0.01=9×10⁹×6×10⁻¹²÷10⁻²=5.4 N；异种电荷相互吸引。电量都减半：F'=F/4=1.35 N（距离不变）。",
+      "kps": [
+        "kp_phy11_coulomb_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：F=kQ₁Q₂/r²=9×10⁹×2×10⁻⁶×3×10⁻⁶÷0.01=9×10⁹×6×10⁻¹²÷10⁻²=5.4 N；异种电荷相互吸引。电量都减半：F'=F/4=1.35 N（距离不变）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0238",
+      "item_type": "choice",
+      "stem": "当火车鸣笛驶向观察者时，观察者听到的音调变高，这是因为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_doppler"
+      ],
+      "difficulty": 0.35,
+      "solution": "多普勒效应：波源与观察者相对靠近时，单位时间接收的完全波数增多，接收频率高于波源频率（音调变高），波源频率和声速都不变；远离时接收频率变低。",
+      "source": "llm_generated",
+      "options": [
+        "A. 声源频率增大",
+        "B. 观察者接收到的频率增大（波源靠近，波长被„压缩“）",
+        "C. 声速增大",
+        "D. 波长变大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0239",
+      "item_type": "fill",
+      "stem": "多普勒效应：波源与观察者相互______时，接收频率变大；相互______时接收频率变小；波源的实际频率不变。",
+      "answer": "靠近；远离",
+      "kps": [
+        "kp_phy11_doppler"
+      ],
+      "difficulty": 0.3,
+      "solution": "多普勒效应规律。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0240",
+      "item_type": "solve",
+      "stem": "列举多普勒效应的三种应用，并分别说明测的是什么。",
+      "answer": "①交通测速：雷达（超声波/微波）测反射波频移，测车速（卫星导航 GPS 也用多普勒定位）；②医学彩超：超声波多普勒频移测血流速度（心脏瓣膜运动）；③天文学：观察星系光谱红移（接收频率变低），推断天体远离速度，为宇宙膨胀提供证据。",
+      "kps": [
+        "kp_phy11_doppler"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①交通测速：雷达（超声波/微波）测反射波频移，测车速（卫星导航 GPS 也用多普勒定位）；②医学彩超：超声波多普勒频移测血流速度（心脏瓣膜运动）；③天文学：观察星系光谱红移（接收频率变低），推断天体远离速度，为宇宙膨胀提供证据。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0241",
+      "item_type": "choice",
+      "stem": "电路：电源（电动势 E、内阻 r）与定值电阻 R₁、滑动变阻器 R₂ 串联，电流表测干路电流，电压表并联在 R₂ 两端。当滑片移动使 R₂ 接入阻值增大时，两表示数变化是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_dynamic_circuit_high"
+      ],
+      "difficulty": 0.45,
+      "solution": "R₂↑→R总↑→I=E/(R总)↓（电流表减小）；路端电压 U=E-Ir 增大，U₂=U-IR₁=E-I(R₁+r)，I 减小使 U₂ 增大（电压表增大）。局部电阻变化→总电流→路端电压→部分电压的推理链。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流表减小，电压表增大",
+        "B. 电流表增大，电压表减小",
+        "C. 都增大",
+        "D. 都减小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0242",
+      "item_type": "fill",
+      "stem": "分析动态电路的思路链：局部电阻变化→总电阻变化→______电流变化→内压降变化→______变化→各部分电压电流变化。",
+      "answer": "干路（总）；路端电压",
+      "kps": [
+        "kp_phy11_dynamic_circuit_high"
+      ],
+      "difficulty": 0.35,
+      "solution": "动态分析的先后顺序。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0243",
+      "item_type": "solve",
+      "stem": "含电容电路：R₁ 与 R₂ 串联接电源，电容器 C 并联在 R₂ 两端。稳定后，若 R₂ 增大：①电容器两端的电压怎样变化？②电容器电量怎样变化？③稳定后通过 R₂ 的电流与电容器支路电流各是多少？",
+      "answer": "①稳定时电容支路无电流，C 两端电压等于 R₂ 两端电压 U₂=E-I(R₁+r)，R₂ 增大→I 减小→U₂ 增大；②Q=CU₂ 增大，电容器充电（充电电流瞬态流过）；③稳定后电容器视为断路，通过 R₂ 的电流 I=E/(R₁+R₂+r) 减小，电容器支路电流为零（稳态断路、暂态充放电）。",
+      "kps": [
+        "kp_phy11_dynamic_circuit_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①稳定时电容支路无电流，C 两端电压等于 R₂ 两端电压 U₂=E-I(R₁+r)，R₂ 增大→I 减小→U₂ 增大；②Q=CU₂ 增大，电容器充电（充电电流瞬态流过）；③稳定后电容器视为断路，通过 R₂ 的电流 I=E/(R₁+R₂+r) 减小，电容器支路电流为零（稳态断路、暂态充放电）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0244",
+      "item_type": "choice",
+      "stem": "关于电场和电场强度，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_electric_field"
+      ],
+      "difficulty": 0.35,
+      "solution": "电场客观存在，电荷间作用经电场传递；E=F/q 是定义式，由电场本身决定，与试探电荷无关；E 是矢量，正试探电荷受力方向为该点场强方向（负电荷受力反向）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电场强度 E=F/q 与试探电荷电量成正比",
+        "B. 电场是客观存在的物质，电荷间的作用通过电场传递",
+        "C. E 的方向就是试探电荷受力方向",
+        "D. 电场强度是标量"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0245",
+      "item_type": "fill",
+      "stem": "电场强度定义式 E=______，是矢量，方向与______电荷在该点所受电场力方向相同；单位 N/C（或 V/m）。",
+      "answer": "F/q；正",
+      "kps": [
+        "kp_phy11_electric_field"
+      ],
+      "difficulty": 0.3,
+      "solution": "场强定义与方向规定。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0246",
+      "item_type": "solve",
+      "stem": "电场中某点放入 q=+2×10⁻⁶ C 的试探电荷，受力 4×10⁻⁴ N 方向水平向右。求该点场强；若改放 -1×10⁻⁶ C 的电荷，受力如何？",
+      "answer": "E=F/q=4×10⁻⁴÷2×10⁻⁶=200 N/C，方向水平向右；放入负电荷 F'=q'E=-1×10⁻⁶×200=-2×10⁻⁴ N，即 2×10⁻⁴ N、方向水平向左（负电荷受力与场强方向相反）。",
+      "kps": [
+        "kp_phy11_electric_field"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：E=F/q=4×10⁻⁴÷2×10⁻⁶=200 N/C，方向水平向右；放入负电荷 F'=q'E=-1×10⁻⁶×200=-2×10⁻⁴ N，即 2×10⁻⁴ N、方向水平向左（负电荷受力与场强方向相反）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0247",
+      "item_type": "choice",
+      "stem": "下列事例中，利用静电现象的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_electrostatic_application"
+      ],
+      "difficulty": 0.35,
+      "solution": "静电除尘：带电电极使粉尘吸附到极板，是静电的应用；铁链导走静电、潮湿防静电、避雷针是把雷电流引入大地防止击损，都是防止静电危害。",
+      "source": "llm_generated",
+      "options": [
+        "A. 静电除尘器清除烟气中的粉尘",
+        "B. 油罐车尾挂铁链",
+        "C. 印刷厂保持空气潮湿",
+        "D. 高大建筑安装避雷针（防雷）"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0248",
+      "item_type": "fill",
+      "stem": "静电应用（除尘、喷涂、复印）都利用带电体______轻小物体的性质；防止静电危害的基本思路是______（把积累的电荷及时导走，如接地、增湿、抗静电剂）。",
+      "answer": "吸引；及时导走电荷",
+      "kps": [
+        "kp_phy11_electrostatic_application"
+      ],
+      "difficulty": 0.3,
+      "solution": "静电的利用与防护。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0249",
+      "item_type": "solve",
+      "stem": "复印机（静电复印）的基本过程为什么能把墨粉转印到纸上？地毯上行走后摸门把手被„电“到，怎样防止？",
+      "answer": "复印机：硒鼓经光照形成静电潜像，带电墨粉被静电吸引附着在潜像处，再经转印电极使纸带电把墨粉吸到纸上、加热定影，核心是静电吸引；防止人体静电：增大室内湿度（加湿器）、摸门前先用手摸墙或用钥匙接触金属先放电、穿棉质衣物和防静电鞋，从源头减少摩擦起电并及时放电。",
+      "kps": [
+        "kp_phy11_electrostatic_application"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：复印机：硒鼓经光照形成静电潜像，带电墨粉被静电吸引附着在潜像处，再经转印电极使纸带电把墨粉吸到纸上、加热定影，核心是静电吸引；防止人体静电：增大室内湿度（加湿器）、摸门前先用手摸墙或用钥匙接触金属先放电、穿棉质衣物和防静电鞋，从源头减少摩擦起电并及时放电。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0250",
+      "item_type": "choice",
+      "stem": "电磁波谱按波长由大到小排列正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_em_spectrum"
+      ],
+      "difficulty": 0.35,
+      "solution": "波长（频率）排序：长波→微波（无线电波）→红外→可见（红~紫）→紫外→X→γ，频率依次增大、波长依次减小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 无线电波—红外线—可见光—紫外线—X 射线—γ 射线",
+        "B. γ—X—紫外—可见—红外—无线电波",
+        "C. 无线电波—可见光—红外线—紫外线—X—γ",
+        "D. 红外线—无线电波—可见光—紫外线—X—γ"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0251",
+      "item_type": "fill",
+      "stem": "在电磁波谱中，红外线最显著的作用是______效应；紫外线有______效应（使荧光物质发光）和杀菌作用；X 射线穿透本领强，用于人体透视。",
+      "answer": "热；荧光",
+      "kps": [
+        "kp_phy11_em_spectrum"
+      ],
+      "difficulty": 0.3,
+      "solution": "各波段特征作用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0252",
+      "item_type": "solve",
+      "stem": "①收音机中波频率 1000 kHz 的波长是多少？②可见光波长范围约 400~760 nm，对应的频率范围是多少？（c=3×10⁸ m/s）",
+      "answer": "①λ=c/f=3×10⁸÷10⁶=300 m；②f=c/λ：紫端 400 nm→7.5×10¹⁴ Hz，红端 760 nm→3.95×10¹⁴ Hz，频率范围约 (3.9~7.5)×10¹⁴ Hz。",
+      "kps": [
+        "kp_phy11_em_spectrum"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①λ=c/f=3×10⁸÷10⁶=300 m；②f=c/λ：紫端 400 nm→7.5×10¹⁴ Hz，红端 760 nm→3.95×10¹⁴ Hz，频率范围约 (3.9~7.5)×10¹⁴ Hz。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0253",
+      "item_type": "choice",
+      "stem": "关于电磁波的产生与传播，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_em_waves"
+      ],
+      "difficulty": 0.3,
+      "solution": "麦克斯韦理论：变化的电场和磁场相互激发，由近及远传播形成电磁波；均匀变化的场产生恒定的场（不辐射电磁波），只有周期性（非均匀）变化的场才产生电磁波；电磁波可在真空中传播。",
+      "source": "llm_generated",
+      "options": [
+        "A. 变化的磁场产生电场，变化的电场产生磁场，交替向外传播形成电磁波",
+        "B. 电磁波传播需要介质",
+        "C. 均匀变化的电场产生电磁波",
+        "D. 电磁波在真空中不能传播"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0254",
+      "item_type": "fill",
+      "stem": "电磁波在真空中传播速度 c=______m/s；电磁波______（填„能“或„不能“）在真空中传播，光是一种电磁波。",
+      "answer": "3×10⁸；能",
+      "kps": [
+        "kp_phy11_em_waves"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁波的速度与介质独立性。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0255",
+      "item_type": "solve",
+      "stem": "赫兹用什么实验证实了电磁波的存在？电磁波把哪两门原本独立的学科统一了起来？",
+      "answer": "1886-1888 年赫兹用振荡电偶极子（感应圈产生高频振荡放电）发射电磁波，用带火花隙的谐振环在几米外接收到火花，证实电磁波的存在并测得其速度等于光速。电磁理论把电学、磁学与光学统一起来（光是电磁波），麦克斯韦预言、赫兹验证。",
+      "kps": [
+        "kp_phy11_em_waves"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：1886-1888 年赫兹用振荡电偶极子（感应圈产生高频振荡放电）发射电磁波，用带火花隙的谐振环在几米外接收到火花，证实电磁波的存在并测得其速度等于光速。电磁理论把电学、磁学与光学统一起来（光是电磁波），麦克斯韦预言、赫兹验证。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0256",
+      "item_type": "choice",
+      "stem": "用一只电流表和两个定值电阻测电池电动势（安阻法），需要的方程是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_emf_alternatives"
+      ],
+      "difficulty": 0.45,
+      "solution": "安阻法：分别接 R₁、R₂，两次闭合电路欧姆定律 E=I₁(R₁+r)=I₂(R₂+r)，联立解 E 和 r；同理伏阻法用电压表+两电阻。",
+      "source": "llm_generated",
+      "options": [
+        "A. E=I₁R₁+Ir，E=I₂R₂+Ir",
+        "B. E=I₁R₁-Ir",
+        "C. 只需一次测量",
+        "D. E=U+Ir"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0257",
+      "item_type": "fill",
+      "stem": "测 E、r 的替代方案：______法（电流表+两个定值电阻）和______法（电压表+两个定值电阻），原理都是闭合电路欧姆定律 E=U+Ir。",
+      "answer": "安阻；伏阻",
+      "kps": [
+        "kp_phy11_emf_alternatives"
+      ],
+      "difficulty": 0.35,
+      "solution": "两种替代方案。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0258",
+      "item_type": "solve",
+      "stem": "安阻法测电源：接 R₁=10 Ω 时电流 I₁=0.5 A；接 R₂=20 Ω 时 I₂=0.28 A。求电动势和内阻。",
+      "answer": "E=I₁R₁+I₁r=5+0.5r；E=I₂R₂+I₂r=5.6+0.28r；两式相等：5+0.5r=5.6+0.28r→0.22r=0.6→r≈2.7 Ω；E=5+0.5×2.7≈6.4 V。",
+      "kps": [
+        "kp_phy11_emf_alternatives"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：E=I₁R₁+I₁r=5+0.5r；E=I₂R₂+I₂r=5.6+0.28r；两式相等：5+0.5r=5.6+0.28r→0.22r=0.6→r≈2.7 Ω；E=5+0.5×2.7≈6.4 V。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0259",
+      "item_type": "choice",
+      "stem": "电动机线圈电阻 r=1 Ω，接 U=220 V 电压、电流 I=2 A。关于能量转化，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_energy_circuit"
+      ],
+      "difficulty": 0.4,
+      "solution": "P入=UI=440 W；P热=I²r=4×1=4 W；P机=P入-P热=436 W。电动机为非纯电阻，W=UIt≠I²rt。",
+      "source": "llm_generated",
+      "options": [
+        "A. 输入功率 440 W，热功率 4 W，机械功率 436 W",
+        "B. 输入功率 440 W 全部转化为内能",
+        "C. 热功率 220 W",
+        "D. 机械功率 440 W"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0260",
+      "item_type": "fill",
+      "stem": "纯电阻电路中 W=UIt=I²Rt=U²t/R，电能全部转化为______能；非纯电阻电路（含电动机、电解槽）中 UIt>I²rt，差值转化为______能等其他形式能量。",
+      "answer": "内；机械（化学）",
+      "kps": [
+        "kp_phy11_energy_circuit"
+      ],
+      "difficulty": 0.3,
+      "solution": "纯电阻与非纯电阻电路的区别。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0261",
+      "item_type": "solve",
+      "stem": "一台电动机线圈电阻 2 Ω，额定电压 110 V，正常工作电流 5 A。求：①输入电功率；②线圈发热功率；③输出的机械功率；④效率。",
+      "answer": "①P入=UI=110×5=550 W；②P热=I²R=25×2=50 W；③P机=550-50=500 W；④η=P机/P入=500÷550≈90.9%。",
+      "kps": [
+        "kp_phy11_energy_circuit"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①P入=UI=110×5=550 W；②P热=I²R=25×2=50 W；③P机=550-50=500 W；④η=P机/P入=500÷550≈90.9%。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0262",
+      "item_type": "choice",
+      "stem": "能量守恒定律与能量耗散的正确理解是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_energy_conservation_high"
+      ],
+      "difficulty": 0.3,
+      "solution": "能量耗散：能量转化为分散的内能（品质降低、难再利用），但总量守恒；能量转化转移有方向性；能源仍需节约（可用能有限）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能量耗散说明能量消失了",
+        "B. 能量耗散说明能量转化有方向性，可利用的品质降低，但总量不变",
+        "C. 能量守恒意味着能源取之不尽",
+        "D. 热量可以自发地从低温传到高温"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0263",
+      "item_type": "fill",
+      "stem": "能量守恒定律：能量既不会凭空产生，也不会凭空消灭，只能从一种形式______为另一种形式或从一个物体______到另一个物体，总量保持不变。",
+      "answer": "转化；转移",
+      "kps": [
+        "kp_phy11_energy_conservation_high"
+      ],
+      "difficulty": 0.3,
+      "solution": "能量守恒定律表述。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0264",
+      "item_type": "solve",
+      "stem": "„水从高处流向低处，总能量守恒，为什么不能让流走的河水自动回到高处发电？“用能量转化方向性解释，并说明这一规律对能源利用的启示。",
+      "answer": "能量虽守恒，但转化有方向性：机械能会自发转化为内能（低品质能），反向（内能自动集中变回机械能）不会自发发生；流走的河水的机械能已部分耗散为低品位内能，无法自动回收。启示：能量利用实际是„能量品质“的利用，必须提高能源利用率、减少耗散，并开发新能源。",
+      "kps": [
+        "kp_phy11_energy_conservation_high"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：能量虽守恒，但转化有方向性：机械能会自发转化为内能（低品质能），反向（内能自动集中变回机械能）不会自发发生；流走的河水的机械能已部分耗散为低品位内能，无法自动回收。启示：能量利用实际是„能量品质“的利用，必须提高能源利用率、减少耗散，并开发新能源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0265",
+      "item_type": "choice",
+      "stem": "关于能源与可持续发展，下列说法不正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy11_energy_development"
+      ],
+      "difficulty": 0.3,
+      "solution": "可持续发展要求节约能源、提高能效、开发清洁可再生新能源；无节制使用化石能源（不可再生且污染）不正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大力发展太阳能、风能等清洁能源",
+        "B. 提高能源利用效率",
+        "C. 无节制地使用化石能源",
+        "D. 倡导节约用电、绿色出行"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0266",
+      "item_type": "fill",
+      "stem": "能源按可再生性分为可再生能源（太阳能、风能、水能、生物质能等）和______能源（煤、石油、天然气、______能等）。",
+      "answer": "不可再生；核（铀矿）",
+      "kps": [
+        "kp_phy11_energy_development"
+      ],
+      "difficulty": 0.3,
+      "solution": "能源分类。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0267",
+      "item_type": "solve",
+      "stem": "海南正在建设清洁能源岛（核电、光伏、海上风电等）。从能量转化角度说明核电站、光伏电站、风电场各把什么能转化为电能，并各指出一条局限。",
+      "answer": "核电站：核能（裂变）→内能→机械能→电能，局限：核废料处理与安全风险；光伏：太阳能（光能）→电能（光伏效应），局限：受昼夜天气影响、占地大、效率有待提高；风电：风的机械能→电能，局限：风不稳定、储能配套要求高、噪声与生态影响。多元化互补+储能是解决方向。",
+      "kps": [
+        "kp_phy11_energy_development"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：核电站：核能（裂变）→内能→机械能→电能，局限：核废料处理与安全风险；光伏：太阳能（光能）→电能（光伏效应），局限：受昼夜天气影响、占地大、效率有待提高；风电：风的机械能→电能，局限：风不稳定、储能配套要求高、噪声与生态影响。多元化互补+储能是解决方向。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0268",
+      "item_type": "choice",
+      "stem": "关于能量的量子化，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_energy_quantization"
+      ],
+      "difficulty": 0.35,
+      "solution": "普朗克 1900 年提出：能量分布是不连续的，最小单元 ε=hν（能量子），能量只能是 hν 的整数倍；h 很小，宏观尺度察觉不到能量分立。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能量可以是任意连续值",
+        "B. 振动着的带电微粒的能量只能是某一最小能量元的整数倍",
+        "C. 能量子假说是牛顿提出的",
+        "D. h=6.63×10⁻³⁴ J·s 是很大的量"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0269",
+      "item_type": "fill",
+      "stem": "普朗克能量子假说：带电微粒辐射或吸收能量只能是某一最小能量值 ε=______的整数倍，其中 h=6.63×10⁻³⁴ J·s 叫______常量。",
+      "answer": "hν（h 乘以频率 ν）；普朗克",
+      "kps": [
+        "kp_phy11_energy_quantization"
+      ],
+      "difficulty": 0.3,
+      "solution": "能量子公式与普朗克常量。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0270",
+      "item_type": "solve",
+      "stem": "频率为 5×10¹⁴ Hz 的可见光光子的能量是多少焦耳？合多少电子伏？（h=6.63×10⁻³⁴ J·s）",
+      "answer": "ε=hν=6.63×10⁻³⁴×5×10¹⁴=3.3×10⁻¹⁹ J；换算：ε=3.3×10⁻¹⁹÷1.6×10⁻¹⁹≈2.07 eV。每个光子能量极小，宏观上大量光子能量连续化，故日常感觉不到能量量子化。",
+      "kps": [
+        "kp_phy11_energy_quantization"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：ε=hν=6.63×10⁻³⁴×5×10¹⁴=3.3×10⁻¹⁹ J；换算：ε=3.3×10⁻¹⁹÷1.6×10⁻¹⁹≈2.07 eV。每个光子能量极小，宏观上大量光子能量连续化，故日常感觉不到能量量子化。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0271",
+      "item_type": "choice",
+      "stem": "对测量误差的认识，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_error_analysis"
+      ],
+      "difficulty": 0.35,
+      "solution": "偶然误差（随机）可通过多次测量取平均减小；系统误差来自仪器不精确、原理不完善（如伏安法内接的原理性误差），不能靠平均消除但可修正或改进方案；误差只能减小不能消除；有效数字与仪器精度和读数规范有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 系统误差是由测量者粗心造成的",
+        "B. 偶然误差可以通过多次测量取平均值减小",
+        "C. 误差可以完全消除",
+        "D. 有效数字位数越多，仪器越精确"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0272",
+      "item_type": "fill",
+      "stem": "系统误差的特点是方向______（总是偏大或偏小）；偶然误差的特点是偏大偏小______出现，多次测量取平均可减小。",
+      "answer": "固定（有规律）；机会均等（随机）",
+      "kps": [
+        "kp_phy11_error_analysis"
+      ],
+      "difficulty": 0.3,
+      "solution": "两类误差的特点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0273",
+      "item_type": "solve",
+      "stem": "测电阻实验中：①电流表内接使测量值总偏大；②多次测量每次读数略有波动。分别属于什么误差？各应怎样处理？",
+      "answer": "①系统误差（原理误差：电流表分压），多次平均无法消除，可通过修正（减去 RA）或改用合适接法/补偿法消除；②偶然误差（读数波动），多次测量取平均值减小，读数时估读、规范操作。有效数字按仪器精度记录。",
+      "kps": [
+        "kp_phy11_error_analysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①系统误差（原理误差：电流表分压），多次平均无法消除，可通过修正（减去 RA）或改用合适接法/补偿法消除；②偶然误差（读数波动），多次测量取平均值减小，读数时估读、规范操作。有效数字按仪器精度记录。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0274",
+      "item_type": "choice",
+      "stem": "„用双缝干涉测量光的波长“实验中，测相邻条纹间距的合理做法是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_exp_double_slit"
+      ],
+      "difficulty": 0.4,
+      "solution": "测多条（如 5~6 条）亮纹总间距再除以 (n-1) 个间隔，减小测量相对误差；单测两条纹间距误差大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 测 n 个亮条纹间的总距离 a，Δx=a/(n-1)",
+        "B. 只测相邻两条纹间距",
+        "C. Δx=a/n",
+        "D. 用刻度尺直接量单条条纹宽度"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0275",
+      "item_type": "fill",
+      "stem": "实验中双缝干涉仪的顺序：光源、滤光片、______（获得相干光的双缝前还需单缝）、双缝、遮光筒、______；公式 λ=dΔx/L。",
+      "answer": "单缝；测量头（目镜/屏）",
+      "kps": [
+        "kp_phy11_exp_double_slit"
+      ],
+      "difficulty": 0.35,
+      "solution": "光路元件顺序。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0276",
+      "item_type": "solve",
+      "stem": "实验数据：双缝间距 d=0.25 mm，缝屏距 L=0.70 m，第 1 条到第 6 条亮纹中心间距 8.4 mm。求波长。若换用蓝光滤光片，条纹间距怎样变化？",
+      "answer": "Δx=8.4÷(6-1)=1.68 mm；λ=dΔx/L=0.25×10⁻³×1.68×10⁻³÷0.70=6×10⁻⁷ m=600 nm（橙黄色光）。换蓝光：λ 减小（约 470 nm），Δx=λL/d 减小，条纹变密。",
+      "kps": [
+        "kp_phy11_exp_double_slit"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：Δx=8.4÷(6-1)=1.68 mm；λ=dΔx/L=0.25×10⁻³×1.68×10⁻³÷0.70=6×10⁻⁷ m=600 nm（橙黄色光）。换蓝光：λ 减小（约 470 nm），Δx=λL/d 减小，条纹变密。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0277",
+      "item_type": "choice",
+      "stem": "„测定电池的电动势和内阻“实验（伏安法），电路由电池、电流表、电压表、滑动变阻器组成。为减小误差，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_exp_emf"
+      ],
+      "difficulty": 0.4,
+      "solution": "干电池内阻小（零点几欧），串联定值电阻放大„内阻“便于测量计算；电压表测路端电压；A 选项通常电压表并在电池两端正确——本实验系统误差来自电压表分流，使测得的 E、r 都偏小；多测几组作图即可。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电压表应直接并在电池两端（测路端电压），采用电流表外接的等效处理",
+        "B. 用一节干电池时内阻太小误差大，常串联定值电阻增大等效内阻",
+        "C. 滑动变阻器用限流接法即可",
+        "D. 必须测很多组数据求平均"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0278",
+      "item_type": "fill",
+      "stem": "实验原理：由 U=E-Ir 改变 R 测多组 (U,I)，作 U-I 图像，纵轴截距为______，图线______的大小等于内阻 r。",
+      "answer": "电动势 E；斜率",
+      "kps": [
+        "kp_phy11_exp_emf"
+      ],
+      "difficulty": 0.35,
+      "solution": "图像法求 E、r。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0279",
+      "item_type": "solve",
+      "stem": "利用 U-I 图像得 E=1.5 V、r=0.5 Ω。若考虑电压表内阻 RV 的分流影响（电压表并在电池两端），说明测量值与真实值的大小关系。",
+      "answer": "电压表分流使电流表读数小于流过电池的真实电流（I真=I测+I_V），且 U 越大 I_V 越大，图线斜率绝对值偏小、纵截距偏低：测量值 E测<E真、r测<r真（相当于测的是„电压表与电池并联“的等效电源）。改进：选内阻很大的电压表，或用安阻法/伏阻法对照修正。",
+      "kps": [
+        "kp_phy11_exp_emf"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：电压表分流使电流表读数小于流过电池的真实电流（I真=I测+I_V），且 U 越大 I_V 越大，图线斜率绝对值偏小、纵截距偏低：测量值 E测<E真、r测<r真（相当于测的是„电压表与电池并联“的等效电源）。改进：选内阻很大的电压表，或用安阻法/伏阻法对照修正。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0280",
+      "item_type": "choice",
+      "stem": "探究电磁感应产生条件的实验中，线圈 A（接电池、开关）与线圈 B（接灵敏电流计）绕在同一铁芯上。下列操作中能使电流计指针偏转的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_exp_induction_condition"
+      ],
+      "difficulty": 0.4,
+      "solution": "指针偏转需要 B 中磁通量变化：开关闭合/断开瞬间 A 中电流从无到有（从有到无），穿过 B 的磁通量变化，产生感应电流（B 对）；电流稳定后磁通不变（A、C 不偏转）；A 无电流时 B 也无磁通变化（D 不偏转）。结论：闭合电路+磁通量变化才有感应电流。",
+      "source": "llm_generated",
+      "options": [
+        "A. 开关闭合后长时间保持不变",
+        "B. 将开关迅速闭合或断开的瞬间",
+        "C. 开关闭合且电流稳定后线圈均静止",
+        "D. 断开电池使 A 中无电流"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0281",
+      "item_type": "fill",
+      "stem": "实验中通过观察______是否偏转来判断有无感应电流；若两次实验电流计偏转方向相反，说明感应电流方向与磁通量的______有关。",
+      "answer": "灵敏电流计指针；变化（增减方向）",
+      "kps": [
+        "kp_phy11_exp_induction_condition"
+      ],
+      "difficulty": 0.35,
+      "solution": "实验观察方法。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0282",
+      "item_type": "solve",
+      "stem": "实验现象：①磁铁插入线圈，指针右偏；②磁铁停在线圈中，不偏；③磁铁拔出，指针左偏。由此可得出什么结论？该实验用了什么研究方法？",
+      "answer": "结论：磁通量变化（插入、拔出）时线圈中产生感应电流，磁通不变（静止）时无感应电流；感应电流方向与磁通量变化的方向（增或减）有关。方法：通过电流计指针偏转把有无电流及方向„转换“为可见现象（转换法）；由具体现象归纳一般条件（归纳法）。",
+      "kps": [
+        "kp_phy11_exp_induction_condition"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：结论：磁通量变化（插入、拔出）时线圈中产生感应电流，磁通不变（静止）时无感应电流；感应电流方向与磁通量变化的方向（增或减）有关。方法：通过电流计指针偏转把有无电流及方向„转换“为可见现象（转换法）；由具体现象归纳一般条件（归纳法）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0283",
+      "item_type": "choice",
+      "stem": "„验证动量守恒定律“实验（斜槽末端小球碰撞）中，入射小球质量 m₁ 与被碰小球质量 m₂ 的关系应满足（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_exp_momentum"
+      ],
+      "difficulty": 0.4,
+      "solution": "入射球质量应大于被碰球，防止碰后入射球反弹（反弹会使平抛初速方向复杂化），保证碰后两球都向前抛出，便于用落点距离量度速度。",
+      "source": "llm_generated",
+      "options": [
+        "A. m₁>m₂",
+        "B. m₁<m₂",
+        "C. m₁=m₂",
+        "D. 任意"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0284",
+      "item_type": "fill",
+      "stem": "实验用______法把速度„转换“为水平位移测量：小球离开槽口后做______运动，下落高度相同时间相同，水平位移与速度成正比。",
+      "answer": "平抛（等高平抛）；平抛",
+      "kps": [
+        "kp_phy11_exp_momentum"
+      ],
+      "difficulty": 0.35,
+      "solution": "平抛转换测速度的原理。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0285",
+      "item_type": "solve",
+      "stem": "实验数据：m₁=20 g、m₂=10 g；不放 m₂ 时 m₁ 落点 P，OP=20.0 cm；碰后 m₁ 落点 M，OM=8.0 cm；m₂ 落点 N，ON=28.0 cm（O 为槽口正下方）。验证动量守恒。",
+      "answer": "平抛等时，速度∝水平位移：碰前 m₁·OP=20×20=400；碰后 m₁·OM+m₂·ON=20×8+10×28=160+280=440。两者相对偏差 (440-400)/400=10%，在实验误差范围内近似相等……严格教材实验要求两球半径相同且 m₁OP=m₁OM+m₂ON，此处 400≠440 说明存在误差（槽口摩擦、落点测量、非对心碰），结论„近似验证动量守恒“，主要误差来自测量与碰撞细节。",
+      "kps": [
+        "kp_phy11_exp_momentum"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：平抛等时，速度∝水平位移：碰前 m₁·OP=20×20=400；碰后 m₁·OM+m₂·ON=20×8+10×28=160+280=440。两者相对偏差 (440-400)/400=10%，在实验误差范围内近似相等……严格教材实验要求两球半径相同且 m₁OP=m₁OM+m₂ON，此处 400≠440 说明存在误差（槽口摩擦、落点测量、非对心碰），结论„近似验证动量守恒“，主要误差来自测量与碰撞细节。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0286",
+      "item_type": "choice",
+      "stem": "„用单摆测重力加速度“实验中，下列做法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_exp_pendulum"
+      ],
+      "difficulty": 0.4,
+      "solution": "细轻线+大密度小球（空气阻力影响小，可视为质点）；摆角小于 5°（保证简谐）；计时从平衡位置开始（速度大、经过标志线误差小）；应多次测量取平均。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摆线选细且不易伸长的，摆球选密度大的小钢球",
+        "B. 摆角可以任意大",
+        "C. 计时从摆球最高点开始",
+        "D. 测一次摆动 30 个周期的时间即可"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0287",
+      "item_type": "fill",
+      "stem": "实验中摆长 L=______+球半径；测 n=30~50 个周期总时间 t，T=t/n，由 g=______计算重力加速度，多次测量取平均值。",
+      "answer": "摆线长；4π²L/T²",
+      "kps": [
+        "kp_phy11_exp_pendulum"
+      ],
+      "difficulty": 0.35,
+      "solution": "摆长定义与 g 的计算。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0288",
+      "item_type": "solve",
+      "stem": "数据：摆线长 99.0 cm，摆球直径 2.0 cm，50 个全振动用时 100 s。求 g；若测摆长时只测了线长（忘了加球半径），g 偏大还是偏小？",
+      "answer": "L=99.0+1.0=100 cm=1.00 m；T=100÷50=2.0 s；g=4π²L/T²=4×9.87×1.00÷4=9.87 m/s²（若 π²=9.86，g≈9.86）；漏加球半径使 L 偏小 1%，由 g∝L，测得的 g 偏小约 1%。",
+      "kps": [
+        "kp_phy11_exp_pendulum"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：L=99.0+1.0=100 cm=1.00 m；T=100÷50=2.0 s；g=4π²L/T²=4×9.87×1.00÷4=9.87 m/s²（若 π²=9.86，g≈9.86）；漏加球半径使 L 偏小 1%，由 g∝L，测得的 g 偏小约 1%。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0289",
+      "item_type": "choice",
+      "stem": "„测定玻璃的折射率“实验（插针法）中，判断玻璃砖内光路方向的依据是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_exp_prism"
+      ],
+      "difficulty": 0.4,
+      "solution": "插针法：透过玻璃砖观察，P₃ 挡住 P₁、P₂ 的像、P₄ 挡住前三针，四针连线确定入射与出射光线，连接入射点与出射点得玻璃内折射光路，量角计算 n。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大头针 P₃、P₄ 挡住 P₁、P₂ 的像",
+        "B. 只看入射角",
+        "C. 玻璃砖必须圆形",
+        "D. 不用画界面法线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0290",
+      "item_type": "fill",
+      "stem": "实验原理 n=sinθ₁/sinθ₂，θ₁、θ₂ 分别是______角和折射角；为减小误差，入射角应取______（填„较大“）一些，且大头针间距大一些。",
+      "answer": "入射；较大（15°~75° 之间）",
+      "kps": [
+        "kp_phy11_exp_prism"
+      ],
+      "difficulty": 0.35,
+      "solution": "插针法要点。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0291",
+      "item_type": "solve",
+      "stem": "实验数据：光从空气射入玻璃，入射角 60°，折射角 30°。求玻璃折射率和光在玻璃中的速度（c=3×10⁸ m/s）；若把该玻璃砖放入水中（n水=4/3）再测，折射角变大还是变小？",
+      "answer": "n=sin60°/sin30°=(√3/2)/(1/2)=√3≈1.73；v=c/n=3×10⁸÷1.73≈1.73×10⁸ m/s；放入水中：入射角一定时，水—玻璃折射率之比小于空气—玻璃之比（1.73÷1.33≈1.30<1.73），偏折变弱，折射角变大。",
+      "kps": [
+        "kp_phy11_exp_prism"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：n=sin60°/sin30°=(√3/2)/(1/2)=√3≈1.73；v=c/n=3×10⁸÷1.73≈1.73×10⁸ m/s；放入水中：入射角一定时，水—玻璃折射率之比小于空气—玻璃之比（1.73÷1.33≈1.30<1.73），偏折变弱，折射角变大。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0292",
+      "item_type": "choice",
+      "stem": "„测定金属的电阻率“实验中，不需要的器材是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy11_exp_resistivity"
+      ],
+      "difficulty": 0.4,
+      "solution": "需测直径 d（螺旋测微器）、长度 l（米尺）、U 和 I（伏安法），R=ρl/S→ρ=RS/l=πd²U/(4lI)；不需要计时。",
+      "source": "llm_generated",
+      "options": [
+        "A. 螺旋测微器",
+        "B. 米尺（刻度尺）",
+        "C. 电流表和电压表",
+        "D. 秒表"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0293",
+      "item_type": "fill",
+      "stem": "电阻率表达式 ρ=______（用 U、I、l、d 表示：由 R=U/I、S=πd²/4、R=ρl/S 推出）；金属丝直径用______测（精度 0.01 mm）。",
+      "answer": "πd²U/(4lI)；螺旋测微器",
+      "kps": [
+        "kp_phy11_exp_resistivity"
+      ],
+      "difficulty": 0.35,
+      "solution": "电阻率的实验计算式。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0294",
+      "item_type": "solve",
+      "stem": "实验数据：金属丝长 l=1.0 m，直径 d=0.4 mm，电压 U=2.0 V 时电流 I=0.4 A。求电阻和电阻率；说明本实验的主要误差来源（至少两条）。",
+      "answer": "R=U/I=5 Ω；S=πd²/4=3.14×(0.4×10⁻³)²/4=1.256×10⁻⁷ m²；ρ=RS/l=5×1.256×10⁻⁷≈6.3×10⁻⁷ Ω·m。误差来源：直径测量误差（S 与 d² 成正比，影响大）；长度测量误差；电流表电压表读数及内外接误差；通电电流过大导致温度升高、电阻率变化（应快测、电流小）。",
+      "kps": [
+        "kp_phy11_exp_resistivity"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：R=U/I=5 Ω；S=πd²/4=3.14×(0.4×10⁻³)²/4=1.256×10⁻⁷ m²；ρ=RS/l=5×1.256×10⁻⁷≈6.3×10⁻⁷ Ω·m。误差来源：直径测量误差（S 与 d² 成正比，影响大）；长度测量误差；电流表电压表读数及内外接误差；通电电流过大导致温度升高、电阻率变化（应快测、电流小）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0295",
+      "item_type": "choice",
+      "stem": "下列对电场线的理解，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_field_lines"
+      ],
+      "difficulty": 0.35,
+      "solution": "电场线是形象描述电场的假想曲线：起于正止于负、不相交（某点场强方向唯一）、密处场强大；沿电场线电势降低。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电场线是实际存在的线",
+        "B. 电场线从正电荷（或无穷远）出发，终止于负电荷（或无穷远）",
+        "C. 电场线可以相交",
+        "D. 电场线密处场强小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0296",
+      "item_type": "fill",
+      "stem": "电场线越密的地方，场强越______；沿电场线方向电势逐渐______；匀强电场的电场线是间隔相等的______线。",
+      "answer": "大；降低；平行直",
+      "kps": [
+        "kp_phy11_field_lines"
+      ],
+      "difficulty": 0.3,
+      "solution": "电场线疏密与场强、电势的关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0297",
+      "item_type": "solve",
+      "stem": "画出（或描述）等量异号点电荷连线中垂面上的电场线分布特点；说明为什么电场线不相交。",
+      "answer": "等量异号电荷：电场线从正电荷出发会聚于负电荷，连线上场强沿连线，中垂线上场强垂直于中垂线（由正指向负），整体关于连线和中垂线对称。电场线不相交：电场中每点场强方向唯一，若两线相交，交点处场强有两个方向，与唯一性矛盾。",
+      "kps": [
+        "kp_phy11_field_lines"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：等量异号电荷：电场线从正电荷出发会聚于负电荷，连线上场强沿连线，中垂线上场强垂直于中垂线（由正指向负），整体关于连线和中垂线对称。电场线不相交：电场中每点场强方向唯一，若两线相交，交点处场强有两个方向，与唯一性矛盾。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0298",
+      "item_type": "choice",
+      "stem": "某电场的电场线由 M 指向 N 且沿该方向越来越密。一负电荷仅在电场力作用下沿电场线从 M 运动到 N（逆电场线方向运动）。下列判断正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_field_potential_judgment"
+      ],
+      "difficulty": 0.45,
+      "solution": "负电荷所受电场力与场强方向相反（指向 M），电荷逆电场线运动时电场力与位移同向，做正功，动能增大、电势能减小；电场线变密说明从 M 到 N 场强增大（D 错）。A 对，B、C 与做功正负矛盾。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电场力做正功，电荷的动能增大",
+        "B. 电场力做正功，电荷的电势能增大",
+        "C. 电场力做负功，电荷的动能减小",
+        "D. 从 M 到 N 场强减小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0299",
+      "item_type": "fill",
+      "stem": "综合判断三依据：场强大小看电场线的______；电势高低看沿电场线方向电势______；电势能变化看电场力做功的正负（做正功电势能______）。",
+      "answer": "疏密；降低；减小",
+      "kps": [
+        "kp_phy11_field_potential_judgment"
+      ],
+      "difficulty": 0.4,
+      "solution": "场强、电势、电势能的判断方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0300",
+      "item_type": "solve",
+      "stem": "一正点电荷固定，试探电荷先后放在 a、b 两点（ra<rb）。比较：场强大小、电势高低；若把负试探电荷从 a 移到 b，电场力做什么功？电势能怎样变化？",
+      "answer": "正点电荷场：Ea=kQ/ra²>Eb=kQ/rb²；φa>φb（正电荷场中等势面为球面，越近电势越高）。负电荷从 a 到 b（φa>φb）：W=qUab=(-q)(φa-φb)<0，电场力做负功，电势能增大（负电荷在低电势处电势能大）。",
+      "kps": [
+        "kp_phy11_field_potential_judgment"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：正点电荷场：Ea=kQ/ra²>Eb=kQ/rb²；φa>φb（正电荷场中等势面为球面，越近电势越高）。负电荷从 a 到 b（φa>φb）：W=qUab=(-q)(φa-φb)<0，电场力做负功，电势能增大（负电荷在低电势处电势能大）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0301",
+      "item_type": "choice",
+      "stem": "一带电粒子只在电场力作用下沿曲线轨迹运动，轨迹旁画有几条电场线。由轨迹弯曲方向可判断（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_field_trajectory"
+      ],
+      "difficulty": 0.45,
+      "solution": "曲线运动合力指向轨迹凹侧；电场力沿场强方向（正电荷）或反向（负电荷）；速度沿轨迹切线，不沿电场线；由轨迹凹向结合电场线方向可判断粒子电性和做功正负。",
+      "source": "llm_generated",
+      "options": [
+        "A. 粒子所受电场力方向沿轨迹切线",
+        "B. 粒子受力指向轨迹凹侧，与场强同向或反向由电性决定",
+        "C. 从轨迹不能判断电场力方向",
+        "D. 粒子速度方向沿电场线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0302",
+      "item_type": "fill",
+      "stem": "带电粒子在电场中做曲线运动时，轨迹总是弯向所受电场力的______侧；粒子经过某点时速度方向沿轨迹在该点的______方向。",
+      "answer": "凹（受力）；切线",
+      "kps": [
+        "kp_phy11_field_trajectory"
+      ],
+      "difficulty": 0.35,
+      "solution": "轨迹与受力的关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0303",
+      "item_type": "solve",
+      "stem": "一带电粒子电场线（实线）间的运动轨迹（虚线）经过 a、b 两点，电场线由左向右，轨迹向左下方弯曲。判断：粒子带什么电？从 a 到 b 电场力做什么功？电势能如何变化？",
+      "answer": "轨迹向左下方弯曲，受力指向左下（凹侧），与场强方向（向右）相反，粒子带负电；从 a 到 b，电场力方向与运动方向夹角小于 90°（沿轨迹推进方向分量做正功）——具体由 a、b 位置：一般设 a 左 b 右，负电荷逆场强运动电场力做正功，电势能减小、动能增大。（判断框架：凹侧定力向，力与场强关系定电性，力与位移夹角定做功正负。）",
+      "kps": [
+        "kp_phy11_field_trajectory"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：轨迹向左下方弯曲，受力指向左下（凹侧），与场强方向（向右）相反，粒子带负电；从 a 到 b，电场力方向与运动方向夹角小于 90°（沿轨迹推进方向分量做正功）——具体由 a、b 位置：一般设 a 左 b 右，负电荷逆场强运动电场力做正功，电势能减小、动能增大。（判断框架：凹侧定力向，力与场强关系定电性，力与位移夹角定做功正负。）",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0304",
+      "item_type": "choice",
+      "stem": "肥皂泡在阳光下呈现彩色，这是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_film_interference"
+      ],
+      "difficulty": 0.35,
+      "solution": "薄膜干涉：光在肥皂膜前后表面反射的光叠加，膜厚不同处路程差不同，不同波长增强位置不同，呈现彩色条纹；等厚处同色，条纹沿厚度分布。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光的色散",
+        "B. 薄膜干涉",
+        "C. 光的衍射",
+        "D. 光的偏振"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0305",
+      "item_type": "fill",
+      "stem": "薄膜干涉是光在薄膜______两个表面反射的光相互叠加形成的；同一厚度对应同一颜色，故薄膜干涉条纹反映膜的______分布。",
+      "answer": "前后（上下）；厚度",
+      "kps": [
+        "kp_phy11_film_interference"
+      ],
+      "difficulty": 0.3,
+      "solution": "薄膜干涉成因。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0306",
+      "item_type": "solve",
+      "stem": "用薄膜干涉原理检查平面平整度：在标准平板与待测件间垫纸片形成劈形空气膜，观察到干涉条纹发生弯曲。说明条纹为什么是等间距平直的（平面平整时），以及弯曲说明什么。",
+      "answer": "劈形空气膜厚度沿方向线性增大，厚度相同的点连成与棱平行的直线，光在上下表面反射叠加，满足加强（削弱）的厚度等间距分布，形成等间距平直条纹；若待测面有凹凸，该处等厚线弯曲，对应条纹发生弯曲（向某方向凸出表示凹或凸），据此可检查出极小的不平度（精度达波长量级）。",
+      "kps": [
+        "kp_phy11_film_interference"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：劈形空气膜厚度沿方向线性增大，厚度相同的点连成与棱平行的直线，光在上下表面反射叠加，满足加强（削弱）的厚度等间距分布，形成等间距平直条纹；若待测面有凹凸，该处等厚线弯曲，对应条纹发生弯曲（向某方向凸出表示凹或凸），据此可检查出极小的不平度（精度达波长量级）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0307",
+      "item_type": "choice",
+      "stem": "关于受迫振动和共振，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_forced_resonance"
+      ],
+      "difficulty": 0.35,
+      "solution": "受迫振动稳定后频率由驱动力决定（与固有频率无关）；当驱动力频率接近/等于固有频率时振幅最大（共振）；共振可利用（共振筛、微波炉）也可防止（桥梁、厂房）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 受迫振动的频率等于驱动力的频率",
+        "B. 受迫振动的频率等于固有频率",
+        "C. 共振时驱动力频率远小于固有频率",
+        "D. 共振总是有害的"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0308",
+      "item_type": "fill",
+      "stem": "驱动力的频率______（填„接近“）固有频率时，受迫振动的振幅最大，这种现象叫______。",
+      "answer": "接近（等于）；共振",
+      "kps": [
+        "kp_phy11_forced_resonance"
+      ],
+      "difficulty": 0.3,
+      "solution": "共振条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0309",
+      "item_type": "solve",
+      "stem": "部队过桥为什么要便步走？洗衣机脱水结束时为什么会出现短暂强烈振动？分别说明其中共振的防止与（客观发生的）现象。",
+      "answer": "部队齐步走时脚步频率若接近桥的固有频率会引发共振，振幅剧增损坏桥梁，所以便步走（打乱频率）防止共振；洗衣机脱水桶转速逐渐减小，其转动频率某一时刻与洗衣机（机身）固有频率接近，发生共振使机身短暂强烈振动，随后频率继续降低、偏离固有频率，振动又减弱。共振的防止与条件在此都有体现。",
+      "kps": [
+        "kp_phy11_forced_resonance"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：部队齐步走时脚步频率若接近桥的固有频率会引发共振，振幅剧增损坏桥梁，所以便步走（打乱频率）防止共振；洗衣机脱水桶转速逐渐减小，其转动频率某一时刻与洗衣机（机身）固有频率接近，发生共振使机身短暂强烈振动，随后频率继续降低、偏离固有频率，振动又减弱。共振的防止与条件在此都有体现。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0310",
+      "item_type": "choice",
+      "stem": "产生感应电流的条件是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_induction_condition"
+      ],
+      "difficulty": 0.35,
+      "solution": "两个条件缺一不可：电路闭合、穿过回路的磁通量 Φ 发生变化（B 变、S 变或夹角变）；导体运动但不切割或磁通不变则无感应电流。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电路闭合且穿过电路的磁通量发生变化",
+        "B. 只要导体在磁场中运动",
+        "C. 只要有磁场",
+        "D. 电路中有电流"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0311",
+      "item_type": "fill",
+      "stem": "感应电流产生的条件：______电路＋穿过回路的______发生变化；磁通量变化的三种方式：磁场 B 变化、面积 S 变化、线圈与磁场夹角变化。",
+      "answer": "闭合；磁通量",
+      "kps": [
+        "kp_phy11_induction_condition"
+      ],
+      "difficulty": 0.3,
+      "solution": "感应电流条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0312",
+      "item_type": "solve",
+      "stem": "判断下列情况能否产生感应电流：①闭合线圈在匀强磁场中平动；②闭合线圈在匀强磁场中转动；③条形磁铁插入闭合线圈；④断开的线圈中磁通量变化。",
+      "answer": "①匀强磁场中平动：磁通量不变，无感应电流；②转动时线圈与磁场夹角变化，磁通量变化，有感应电流（发电机原理）；③磁铁插入使线圈处 B 增大，磁通量变化，有感应电流；④电路断开，即使磁通变化也没有感应电流（只有感应电动势）。",
+      "kps": [
+        "kp_phy11_induction_condition"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①匀强磁场中平动：磁通量不变，无感应电流；②转动时线圈与磁场夹角变化，磁通量变化，有感应电流（发电机原理）；③磁铁插入使线圈处 B 增大，磁通量变化，有感应电流；④电路断开，即使磁通变化也没有感应电流（只有感应电动势）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0313",
+      "item_type": "choice",
+      "stem": "发现电磁感应现象的科学家和年份是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_induction_history"
+      ],
+      "difficulty": 0.3,
+      "solution": "1831 年法拉第发现电磁感应（磁生电），10 年坚持探索，发现„变化“才能生电；奥斯特 1820 年发现电流磁效应；楞次 1834 年总结感应电流方向规律。",
+      "source": "llm_generated",
+      "options": [
+        "A. 法拉第，1831 年",
+        "B. 奥斯特，1820 年",
+        "C. 安培，1822 年",
+        "D. 楞次，1834 年"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0314",
+      "item_type": "fill",
+      "stem": "______经过十年努力于 1831 年发现电磁感应现象，实现了„磁生电“，使人类大规模获得电能成为可能；根据电磁感应制成了______机。",
+      "answer": "法拉第；发电",
+      "kps": [
+        "kp_phy11_induction_history"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁感应的发现与应用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0315",
+      "item_type": "solve",
+      "stem": "简述法拉第发现电磁感应的意义，说明为什么说它„改变了人类文明进程“。",
+      "answer": "电磁感应揭示了电与磁相互转化的规律，使机械能可以大规模转化为电能（发电机），人类进入电气化时代：电灯、电动机、电力交通、电通信等成为可能，生产和生活发生根本变革。同时它深化了对自然统一性（电磁统一）的认识，是科学史上的里程碑。",
+      "kps": [
+        "kp_phy11_induction_history"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：电磁感应揭示了电与磁相互转化的规律，使机械能可以大规模转化为电能（发电机），人类进入电气化时代：电灯、电动机、电力交通、电通信等成为可能，生产和生活发生根本变革。同时它深化了对自然统一性（电磁统一）的认识，是科学史上的里程碑。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0316",
+      "item_type": "choice",
+      "stem": "关于激光，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_laser"
+      ],
+      "difficulty": 0.3,
+      "solution": "激光特点：频率单一（单色性好）、相干性好、方向性好（平行度高）、亮度高（能量集中）；是原子受激辐射产生的光，可在真空中传播（电磁波）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 激光是相干性好、方向性好、亮度高的单色光",
+        "B. 激光是自然光",
+        "C. 激光不能在真空中传播",
+        "D. 激光的平行度差"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0317",
+      "item_type": "fill",
+      "stem": "激光的三大特性：相干性好、______性好、______高；利用方向性好可测距、准直，利用能量集中可切割、焊接。",
+      "answer": "方向（平行度）；亮度（能量密度）",
+      "kps": [
+        "kp_phy11_laser"
+      ],
+      "difficulty": 0.3,
+      "solution": "激光特性。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0318",
+      "item_type": "solve",
+      "stem": "列举激光的三个应用并说明各利用了它的什么特性。",
+      "answer": "①激光测距（激光雷达、地月距离）：方向性好、脉冲窄，测量精度高；②光纤通信：相干性好、频率单一，可携带大容量信息；③激光切割、焊接、近视手术：亮度高、能量集中；④全息照相：相干性好（双光束干涉记录）。任举三个并对应特性即可。",
+      "kps": [
+        "kp_phy11_laser"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：①激光测距（激光雷达、地月距离）：方向性好、脉冲窄，测量精度高；②光纤通信：相干性好、频率单一，可携带大容量信息；③激光切割、焊接、近视手术：亮度高、能量集中；④全息照相：相干性好（双光束干涉记录）。任举三个并对应特性即可。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0319",
+      "item_type": "choice",
+      "stem": "光通过很窄的单缝后，屏上出现（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_light_diffraction"
+      ],
+      "difficulty": 0.35,
+      "solution": "单缝衍射：中央亮纹最宽最亮，两侧亮纹变窄变暗的不对称（不等间距）条纹；缝越窄衍射越明显；与双缝等间距条纹不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单一的亮斑",
+        "B. 明暗相间（中宽侧窄）的衍射条纹",
+        "C. 与双缝干涉一样的等间距条纹",
+        "D. 完全黑暗"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0320",
+      "item_type": "fill",
+      "stem": "发生明显衍射的条件：障碍物或孔的尺寸与波长相近或更______；单缝衍射图样：中间亮纹最______（宽、亮），向两侧迅速减弱。",
+      "answer": "小；宽且亮",
+      "kps": [
+        "kp_phy11_light_diffraction"
+      ],
+      "difficulty": 0.3,
+      "solution": "明显衍射条件与图样特征。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0321",
+      "item_type": "solve",
+      "stem": "泊松亮斑是什么现象？它说明了什么？光的衍射在日常生活中为什么很少被察觉？",
+      "answer": "泊松亮斑：光照射不透明小圆盘时，阴影中心出现亮斑——圆盘边缘衍射光在阴影中央叠加加强，是光的衍射的著名证据（菲涅耳波动说的胜利）。日常光波长远小于常见障碍物尺寸，衍射极不明显，光近似直线传播，故很少察觉；只在缝、孔、细丝尺寸极小时才明显。",
+      "kps": [
+        "kp_phy11_light_diffraction"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：泊松亮斑：光照射不透明小圆盘时，阴影中心出现亮斑——圆盘边缘衍射光在阴影中央叠加加强，是光的衍射的著名证据（菲涅耳波动说的胜利）。日常光波长远小于常见障碍物尺寸，衍射极不明显，光近似直线传播，故很少察觉；只在缝、孔、细丝尺寸极小时才明显。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0322",
+      "item_type": "choice",
+      "stem": "杨氏双缝干涉实验中，屏上出现明暗相间条纹。相邻亮条纹间距 Δx 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_light_interference"
+      ],
+      "difficulty": 0.35,
+      "solution": "Δx=λL/d：波长越长、屏距缝越远间距越大，双缝间距越小间距越大；用某种单色光测 Δx 可求波长 λ=dΔx/L。",
+      "source": "llm_generated",
+      "options": [
+        "A. λL/d",
+        "B. λd/L",
+        "C. Ld/λ",
+        "D. λ/(Ld)"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0323",
+      "item_type": "fill",
+      "stem": "双缝干涉中，屏上到两缝的______差等于波长整数倍处出现亮条纹，等于半波长奇数倍处出现______条纹。",
+      "answer": "路程（波程）；暗",
+      "kps": [
+        "kp_phy11_light_interference"
+      ],
+      "difficulty": 0.3,
+      "solution": "亮暗纹条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0324",
+      "item_type": "solve",
+      "stem": "双缝间距 d=0.2 mm，缝到屏 L=1 m，用某种单色光照射，测得相邻亮纹间距 2.6 mm。求波长，判断是什么颜色。（1 mm=10⁻³ m）",
+      "answer": "λ=dΔx/L=0.2×10⁻³×2.6×10⁻³÷1=5.2×10⁻⁷ m=520 nm，是绿光（可见光 400~760 nm，520 nm 为绿色）。红光波长更长条纹间距会更大。",
+      "kps": [
+        "kp_phy11_light_interference"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：λ=dΔx/L=0.2×10⁻³×2.6×10⁻³÷1=5.2×10⁻⁷ m=520 nm，是绿光（可见光 400~760 nm，520 nm 为绿色）。红光波长更长条纹间距会更大。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0325",
+      "item_type": "choice",
+      "stem": "关于磁通量，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_magnetic_flux"
+      ],
+      "difficulty": 0.35,
+      "solution": "Φ=BS（B⊥S）或 Φ=BScosθ（θ 为线圈平面与 B 的夹角的余角）；磁通量是标量但有正负（穿入穿出），单位韦伯（Wb），1 Wb=1 T·m²；线圈平行磁场时 Φ=0 但 B 不为零。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁通量 Φ=BS，S 是线圈面积，适用于线圈平面与磁场垂直",
+        "B. 磁通量是矢量",
+        "C. 磁通量为零时磁场必为零",
+        "D. 单位是特斯拉"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0326",
+      "item_type": "fill",
+      "stem": "磁通量 Φ=______，单位韦伯（Wb）；线圈平面与磁场平行时，穿过线圈的磁通量为______。",
+      "answer": "BS（垂直时）；零",
+      "kps": [
+        "kp_phy11_magnetic_flux"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁通量定义与特例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0327",
+      "item_type": "solve",
+      "stem": "面积 0.02 m² 的矩形线圈放在 B=0.5 T 的匀强磁场中。①线圈平面与磁场垂直时磁通量多大？②线圈平面与磁场成 30° 角时呢？③线圈从垂直位置转到平行位置，磁通量变化多少？",
+      "answer": "①Φ=BS=0.5×0.02=0.01 Wb；②平面与 B 成 30°（平面法线与 B 成 60°），Φ=BScos60°=0.005 Wb；③从垂直（0.01 Wb）转到平行（0），ΔΦ=-0.01 Wb，磁通量减少 0.01 Wb。",
+      "kps": [
+        "kp_phy11_magnetic_flux"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①Φ=BS=0.5×0.02=0.01 Wb；②平面与 B 成 30°（平面法线与 B 成 60°），Φ=BScos60°=0.005 Wb；③从垂直（0.01 Wb）转到平行（0），ΔΦ=-0.01 Wb，磁通量减少 0.01 Wb。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0328",
+      "item_type": "choice",
+      "stem": "关于磁感应强度 B=F/(IL)，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_magnetic_induction_def"
+      ],
+      "difficulty": 0.4,
+      "solution": "B 描述磁场本身强弱与方向，定义式用垂直磁场的一段短导线所受安培力与 IL 之比来量度，比值恒定、与试探导线无关（B 对，A、D 错）；B 是矢量，单位特斯拉 T，1 T=1 N/(A·m)。",
+      "source": "llm_generated",
+      "options": [
+        "A. B 与通电导线受到的安培力成正比",
+        "B. B 由磁场本身决定，与是否放置试探导线无关",
+        "C. B 是标量，只有大小",
+        "D. 撤去通电导线后该点的磁场消失"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0329",
+      "item_type": "fill",
+      "stem": "磁感应强度是______量（填„矢“或„标“），方向即该点磁场方向（小磁针 N 极受力方向）；定义式 B=______（一段垂直磁场放置的通电直导线，长 L、电流 I、受力 F）。",
+      "answer": "矢；F/(IL)",
+      "kps": [
+        "kp_phy11_magnetic_induction_def"
+      ],
+      "difficulty": 0.3,
+      "solution": "B 的定义。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0330",
+      "item_type": "solve",
+      "stem": "长 5 cm 的直导线垂直磁场放置，通 2 A 电流时受安培力 0.1 N。求磁感应强度；若导线平行磁场放置，受力多大？若电流加倍，B 变吗？",
+      "answer": "B=F/(IL)=0.1÷(2×0.05)=1 T；导线平行磁场时安培力为零（F=BIL 中需 I 垂直 B，夹角 0 时 F=0）；电流加倍 B 不变（磁场由场源决定），只是安培力加倍为 0.2 N。",
+      "kps": [
+        "kp_phy11_magnetic_induction_def"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：B=F/(IL)=0.1÷(2×0.05)=1 T；导线平行磁场时安培力为零（F=BIL 中需 I 垂直 B，夹角 0 时 F=0）；电流加倍 B 不变（磁场由场源决定），只是安培力加倍为 0.2 N。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0331",
+      "item_type": "choice",
+      "stem": "对磁场与磁感线的理解，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_magnetic_intro"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁感线是闭合曲线（外部 N→S，内部 S→N）；磁场客观存在而磁感线是假想曲线；不相交（每点磁场方向唯一）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁感线总是从 N 极指向 S 极",
+        "B. 磁感线是闭合曲线，在磁体外部由 N 到 S、内部由 S 到 N",
+        "C. 磁场由磁感线组成",
+        "D. 磁感线可以相交"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0332",
+      "item_type": "fill",
+      "stem": "磁体周围存在磁场，磁体间的相互作用通过______发生；磁场中某点的磁场方向规定为小磁针______极所受磁场力的方向。",
+      "answer": "磁场（磁场这种物质）；N",
+      "kps": [
+        "kp_phy11_magnetic_intro"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁场的媒介性与方向规定。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0333",
+      "item_type": "solve",
+      "stem": "地磁场使小磁针指向南北。请说明地磁场磁感线的分布特点（地磁极与地理极的关系），并举一个利用地磁场的实例。",
+      "answer": "地球是个大磁体，磁感线从地磁 N 极（在地理南极附近）出发回到地磁 S 极（在地理北极附近），地磁两极与地理两极不重合（磁偏角）；磁感线在南半球向外、北半球向内，近似从南向北。实例：指南针导航、信鸽和海龟靠地磁场迁徙、卫星探测地磁变化研究空间天气。",
+      "kps": [
+        "kp_phy11_magnetic_intro"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：地球是个大磁体，磁感线从地磁 N 极（在地理南极附近）出发回到地磁 S 极（在地理北极附近），地磁两极与地理两极不重合（磁偏角）；磁感线在南半球向外、北半球向内，近似从南向北。实例：指南针导航、信鸽和海龟靠地磁场迁徙、卫星探测地磁变化研究空间天气。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0334",
+      "item_type": "choice",
+      "stem": "麦克斯韦电磁场理论的两个基本论点是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_maxwell_em"
+      ],
+      "difficulty": 0.35,
+      "solution": "麦克斯韦：变化的磁场在周围空间产生电场（涡旋电场），变化的电场产生磁场；均匀变化的场产生恒定的场，周期性变化的场产生同频变化的场并向外传播（电磁波）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 变化的磁场产生电场；变化的电场产生磁场",
+        "B. 磁场产生电场；电场产生磁场",
+        "C. 静电场产生磁场",
+        "D. 稳恒电流产生变化的磁场"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0335",
+      "item_type": "fill",
+      "stem": "麦克斯韦预言了______的存在，______用实验证实了它；电磁波是横波，在真空中的速度等于光速。",
+      "answer": "电磁波；赫兹",
+      "kps": [
+        "kp_phy11_maxwell_em"
+      ],
+      "difficulty": 0.3,
+      "solution": "预言与验证。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0336",
+      "item_type": "solve",
+      "stem": "为什么说„均匀变化的电场产生稳定的磁场，不能向外辐射电磁波“？什么变化的场才能产生电磁波？",
+      "answer": "均匀变化的电场产生稳定的磁场，稳定磁场不再产生新电场，场不„接力“激发、无法由近及远传播；只有周期性（非均匀、振荡）变化的电场和磁场相互激发、交替产生，才能由近及远传播形成电磁波。这也说明 LC 振荡电路（振荡电流）是电磁波的波源。",
+      "kps": [
+        "kp_phy11_maxwell_em"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：均匀变化的电场产生稳定的磁场，稳定磁场不再产生新电场，场不„接力“激发、无法由近及远传播；只有周期性（非均匀、振荡）变化的电场和磁场相互激发、交替产生，才能由近及远传播形成电磁波。这也说明 LC 振荡电路（振荡电流）是电磁波的波源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0337",
+      "item_type": "choice",
+      "stem": "伏安法测电阻时，电流表内接测得 R测=Rₓ+RA（偏大），适用于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_meter_methods"
+      ],
+      "difficulty": 0.45,
+      "solution": "内接法电流表分压引起系统误差，R测=Rₓ+RA，当 Rₓ≫RA 时误差小；外接法电压表分流，R测=RₓRV/(Rₓ+RV)<Rₓ，适用于 Rₓ≪RV（安培计外接测小电阻）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 待测电阻远小于电流表内阻",
+        "B. 待测电阻远大于电流表内阻",
+        "C. 任意电阻",
+        "D. 与电阻大小无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0338",
+      "item_type": "fill",
+      "stem": "伏安法两种接法：电流表______接（内接）适合测大电阻，误差来源于电流表______；电流表外接适合测小电阻，误差来源于电压表分流。",
+      "answer": "内；分压（串联分压）",
+      "kps": [
+        "kp_phy11_meter_methods"
+      ],
+      "difficulty": 0.35,
+      "solution": "内外接选择与误差来源。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0339",
+      "item_type": "solve",
+      "stem": "用伏安法测约 1 kΩ 的电阻：电压表内阻 3 kΩ、电流表内阻 1 Ω。应选内接还是外接？若测得的电流为 2.0 mA、电压 2.2 V，计算测量值与真实值的关系。",
+      "answer": "比较：Rₓ/RV=1k/3k≈0.33，RA/Rₓ=1/1000=0.001，RA 分压误差远小，应选电流表内接。内接时 U=Uₓ+UA，R测=U/I=2.2÷0.002=1100 Ω=Rₓ+RA，真实值 Rₓ=1100-1=1099 Ω，测量值偏大约 1 Ω（0.09%，很小）；若用外接，电压表分流误差约 33%，不可取。",
+      "kps": [
+        "kp_phy11_meter_methods"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：比较：Rₓ/RV=1k/3k≈0.33，RA/Rₓ=1/1000=0.001，RA 分压误差远小，应选电流表内接。内接时 U=Uₓ+UA，R测=U/I=2.2÷0.002=1100 Ω=Rₓ+RA，真实值 Rₓ=1100-1=1099 Ω，测量值偏大约 1 Ω（0.09%，很小）；若用外接，电压表分流误差约 33%，不可取。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0340",
+      "item_type": "choice",
+      "stem": "关于动量守恒定律，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_momentum_conservation"
+      ],
+      "difficulty": 0.4,
+      "solution": "守恒条件：系统不受外力或合外力为零（或内力远大于外力）；内力（如摩擦）不影响系统动量守恒；动量守恒与机械能守恒条件不同（碰撞中动量常守恒而机械能常不守恒）；守恒适用于碰撞、爆炸、反冲等各种过程。",
+      "source": "llm_generated",
+      "options": [
+        "A. 系统不受外力或所受合外力为零时，系统总动量守恒",
+        "B. 系统内有摩擦力动量就不守恒",
+        "C. 动量守恒时机械能一定守恒",
+        "D. 只有碰撞过程动量才守恒"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0341",
+      "item_type": "fill",
+      "stem": "动量守恒定律的表达式（两物体）：m₁v₁+m₂v₂=______；系统内若只有内力作用，总动量______（填„守恒“或„不守恒“）。",
+      "answer": "m₁v₁'+m₂v₂'；守恒",
+      "kps": [
+        "kp_phy11_momentum_conservation"
+      ],
+      "difficulty": 0.3,
+      "solution": "守恒表达式与内力不改变总动量。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0342",
+      "item_type": "solve",
+      "stem": "质量 50 kg 的人站在质量 150 kg 的静止小船上，人以 4 m/s（相对岸）的水平速度向前跳离，不计水的阻力。求船后退的速度；说明为什么船会后退。",
+      "answer": "人和船系统水平方向不受外力（水阻力不计），动量守恒：0=mv人+Mv船，v船=-mv人/M=-50×4÷150=-1.33 m/s，即船以 1.33 m/s 向后运动。人向前跳时脚向后蹬船（内力），船获得向后的动量，系统总动量保持为零。",
+      "kps": [
+        "kp_phy11_momentum_conservation"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：人和船系统水平方向不受外力（水阻力不计），动量守恒：0=mv人+Mv船，v船=-mv人/M=-50×4÷150=-1.33 m/s，即船以 1.33 m/s 向后运动。人向前跳时脚向后蹬船（内力），船获得向后的动量，系统总动量保持为零。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0343",
+      "item_type": "choice",
+      "stem": "关于动量和冲量，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_momentum_impulse"
+      ],
+      "difficulty": 0.35,
+      "solution": "动量 p=mv 矢量，方向同速度；冲量 I=Ft 也是矢量，方向由力方向决定（恒力时与 F 同向），与动量方向无必然关系；Ek=p²/2m，动量大动能不一定大（还与质量有关）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 动量 p=mv 是矢量，方向与速度方向相同",
+        "B. 冲量 I=Ft 是标量",
+        "C. 动量大的物体动能一定大",
+        "D. 冲量方向与动量方向相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0344",
+      "item_type": "fill",
+      "stem": "动量 p=______，单位 kg·m/s；冲量 I=______，单位 N·s，1 N·s=1 kg·m/s。",
+      "answer": "mv；Ft",
+      "kps": [
+        "kp_phy11_momentum_impulse"
+      ],
+      "difficulty": 0.3,
+      "solution": "动量与冲量的定义和单位。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0345",
+      "item_type": "solve",
+      "stem": "质量 0.5 kg 的球以 8 m/s 水平飞来，被击打后以 12 m/s 反向飞回。求：①初、末动量（以出射方向为正）；②动量变化量；③若击打时间为 0.1 s，平均作用力多大。",
+      "answer": "以击出方向为正：p初=-0.5×8=-4 kg·m/s，p末=0.5×12=6 kg·m/s；Δp=p末-p初=6-(-4)=10 kg·m/s；F=Δp/t=10÷0.1=100 N，方向与击出方向相同。",
+      "kps": [
+        "kp_phy11_momentum_impulse"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：以击出方向为正：p初=-0.5×8=-4 kg·m/s，p末=0.5×12=6 kg·m/s；Δp=p末-p初=6-(-4)=10 kg·m/s；F=Δp/t=10÷0.1=100 N，方向与击出方向相同。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0346",
+      "item_type": "choice",
+      "stem": "动量定理的表达式和含义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_momentum_theorem"
+      ],
+      "difficulty": 0.35,
+      "solution": "动量定理：合外力冲量等于动量变化 Ft=Δp=mvt-mv₀；适用于恒力、变力（平均力）、直线与曲线；牛二律的另一种表达（F=Δp/Δt）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Ft=Δp，合外力的冲量等于动量的变化",
+        "B. Ft=mv",
+        "C. F=ma",
+        "D. Δp=mΔv 只适用于恒力"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0347",
+      "item_type": "fill",
+      "stem": "动量定理：物体所受合外力的______等于物体______的变化，表达式 Ft=p'-p。",
+      "answer": "冲量；动量",
+      "kps": [
+        "kp_phy11_momentum_theorem"
+      ],
+      "difficulty": 0.3,
+      "solution": "动量定理表述。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0348",
+      "item_type": "solve",
+      "stem": "质量 60 kg 的体操运动员从 1.25 m 高处落到垫子上（g=10 m/s²），与垫作用 0.5 s 后静止。求落垫时的速度和垫子对运动员的平均作用力。",
+      "answer": "落地（触垫）速度 v=√(2gh)=√25=5 m/s；触垫过程取向下为正：冲量法 (mg-N)t=0-mv，N=(mv+mgt)/t=(60×5+60×10×0.5)÷0.5=(300+300)÷0.5=1200 N，方向向上。缓冲时间越长作用力越小，所以垫子要软。",
+      "kps": [
+        "kp_phy11_momentum_theorem"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：落地（触垫）速度 v=√(2gh)=√25=5 m/s；触垫过程取向下为正：冲量法 (mg-N)t=0-mv，N=(mv+mgt)/t=(60×5+60×10×0.5)÷0.5=(300+300)÷0.5=1200 N，方向向上。缓冲时间越长作用力越小，所以垫子要软。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0349",
+      "item_type": "choice",
+      "stem": "动量定理的常见应用中，下列分析正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_momentum_theorem_app"
+      ],
+      "difficulty": 0.4,
+      "solution": "由 F=Δp/Δt：动量变化一定时，延长时间可减小作用力——气囊、缓冲垫、屈膝缓冲都是延长时间；硬接和加速撞码头都增大冲击，错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽车安全气囊通过延长作用时间减小冲击力",
+        "B. 跳高运动员落到垫子上屈膝是为了增大作用力",
+        "C. 接篮球时手臂伸直硬接",
+        "D. 船靠岸时加速冲向码头"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0350",
+      "item_type": "fill",
+      "stem": "流体问题（如水流、风）常用动量定理：对以速度 v 冲击挡水板的连续水流，单位时间冲击的质量 m=ρSv，冲击后速度为零时，水流对板的平均作用力 F=______。",
+      "answer": "ρSv²（连续流体 F=Δm·v/Δt=ρSv·v）",
+      "kps": [
+        "kp_phy11_momentum_theorem_app"
+      ],
+      "difficulty": 0.35,
+      "solution": "流体冲力的动量分析方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0351",
+      "item_type": "solve",
+      "stem": "一股横截面积 2 cm² 的水柱以 10 m/s 垂直射到竖直墙壁上，水速度减为零（ρ水=1×10³ kg/m³）。求水对墙的平均冲击力；若水以原速率反弹，冲击力多大？",
+      "answer": "每秒冲击水的质量 Δm=ρSv=1000×2×10⁻⁴×10=2 kg/s；不反弹（末速 0）：F=Δp/Δt=Δm·v/1s=2×10=20 N（水对墙 20 N，方向指向墙）；若以原速率反弹（Δv=2v）：F'=Δm·2v=2×20=40 N，冲击力加倍——反弹类问题动量变化是速度变化的两倍。",
+      "kps": [
+        "kp_phy11_momentum_theorem_app"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：每秒冲击水的质量 Δm=ρSv=1000×2×10⁻⁴×10=2 kg/s；不反弹（末速 0）：F=Δp/Δt=Δm·v/1s=2×10=20 N（水对墙 20 N，方向指向墙）；若以原速率反弹（Δv=2v）：F'=Δm·2v=2×20=40 N，冲击力加倍——反弹类问题动量变化是速度变化的两倍。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0352",
+      "item_type": "choice",
+      "stem": "使用多用电表测电阻，下列操作顺序正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_multimeter"
+      ],
+      "difficulty": 0.35,
+      "solution": "欧姆挡使用：选倍率→两表笔短接调零（换挡必重调）→读数（示数×倍率）→用毕拨 OFF（或交流电压最高挡）；不能带电测电阻，手不能接触表笔金属部分。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选挡→欧姆调零→测量（每换挡重新调零）→拨到 OFF",
+        "B. 测量→调零→选挡",
+        "C. 选挡→测量→调零",
+        "D. 手捏表笔金属杆测量"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0353",
+      "item_type": "fill",
+      "stem": "多用电表欧姆挡刻度______均匀（填„不“），零欧姆在表盘______（填„左“或„右“）端；电流、电压挡刻度均匀，零位在左端。",
+      "answer": "不；右",
+      "kps": [
+        "kp_phy11_multimeter"
+      ],
+      "difficulty": 0.35,
+      "solution": "欧姆挡刻度特点。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0354",
+      "item_type": "solve",
+      "stem": "用多用电表测一电阻：选„×10“挡，指针指在刻度 20 处。①阻值多大？②若指针偏角太小（读数靠右挤），应换哪个挡？换挡后必须先做什么？③能否在电路带电时测电阻？",
+      "answer": "①R=20×10=200 Ω；②偏角小说明阻值相对该挡偏大——指针偏角小、读数在右端密集处，应换更大倍率（×100），换挡后必须重新短接表笔欧姆调零；③不能带电测量，必须先断开电路（拆下电阻至少一端），否则读数错误且可能损坏电表。",
+      "kps": [
+        "kp_phy11_multimeter"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①R=20×10=200 Ω；②偏角小说明阻值相对该挡偏大——指针偏角小、读数在右端密集处，应换更大倍率（×100），换挡后必须重新短接表笔欧姆调零；③不能带电测量，必须先断开电路（拆下电阻至少一端），否则读数错误且可能损坏电表。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0355",
+      "item_type": "choice",
+      "stem": "光导纤维传光利用的物理原理是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_optical_fiber"
+      ],
+      "difficulty": 0.35,
+      "solution": "光纤由折射率大的内芯和折射率小的包层组成，光在芯-包界面反复发生全反射，被约束在纤芯中传播。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光的折射",
+        "B. 光的全反射",
+        "C. 光的干涉",
+        "D. 光的色散"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0356",
+      "item_type": "fill",
+      "stem": "光纤通信中光信号的载体是______（激光），其______性好、频率高，通信容量极大；光在光纤中经历无数次______反射从一端传到另一端。",
+      "answer": "激光；相干（单色性/方向性）；全",
+      "kps": [
+        "kp_phy11_optical_fiber"
+      ],
+      "difficulty": 0.3,
+      "solution": "光纤通信要点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0357",
+      "item_type": "solve",
+      "stem": "光纤通信有什么优点（至少两条）？为什么光纤通信要用激光而不是普通光？",
+      "answer": "优点：①容量大（一对光纤可传数万路电话，光频率高带宽大）；②损耗低、中继距离长；③抗电磁干扰、保密性好、重量轻、材料省。用激光：激光单色性好（频率单一），经长距离传播不会像普通复色光那样色散散开；方向性好，能量集中在纤芯中耦合效率高，才能高保真、大容量传输。",
+      "kps": [
+        "kp_phy11_optical_fiber"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：优点：①容量大（一对光纤可传数万路电话，光频率高带宽大）；②损耗低、中继距离长；③抗电磁干扰、保密性好、重量轻、材料省。用激光：激光单色性好（频率单一），经长距离传播不会像普通复色光那样色散散开；方向性好，能量集中在纤芯中耦合效率高，才能高保真、大容量传输。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0358",
+      "item_type": "choice",
+      "stem": "带电粒子经电压 U 加速（初速度为零），由动能定理 qU=½mv²，则射出速度 v 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_particle_accelerate"
+      ],
+      "difficulty": 0.4,
+      "solution": "qU=½mv² → v=√(2qU/m)；速度与比荷的平方根成正比，与电压平方根成正比。",
+      "source": "llm_generated",
+      "options": [
+        "A. √(2qU/m)",
+        "B. 2qU/m",
+        "C. √(qU/m)",
+        "D. qU/m"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0359",
+      "item_type": "fill",
+      "stem": "示波管中电子经加速电压 U 加速后的速度 v=______（初速为零，用 q、U、m 表示）；1 eV=______J（电子经 1 V 电压加速获得的能量）。",
+      "answer": "√(2qU/m)；1.6×10⁻¹⁹",
+      "kps": [
+        "kp_phy11_particle_accelerate"
+      ],
+      "difficulty": 0.35,
+      "solution": "加速公式与电子伏特。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0360",
+      "item_type": "solve",
+      "stem": "电子（m=9.1×10⁻³¹ kg，e=1.6×10⁻¹⁹ C）经 5000 V 电压加速，初速不计。求获得的速度和动能（用 eV 表示）。质子经同样电压加速，速度是电子的多少倍？",
+      "answer": "动能 Ek=qU=5000 eV=8×10⁻¹⁶ J；v=√(2Ek/m)=√(2×8×10⁻¹⁶÷9.1×10⁻³¹)≈√(1.76×10¹⁵)≈4.2×10⁷ m/s；质子质量约为电子 1836 倍，同电压下 v∝1/√m，质子速度是电子的 1/√1836≈1/43 倍。",
+      "kps": [
+        "kp_phy11_particle_accelerate"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：动能 Ek=qU=5000 eV=8×10⁻¹⁶ J；v=√(2Ek/m)=√(2×8×10⁻¹⁶÷9.1×10⁻³¹)≈√(1.76×10¹⁵)≈4.2×10⁷ m/s；质子质量约为电子 1836 倍，同电压下 v∝1/√m，质子速度是电子的 1/√1836≈1/43 倍。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0361",
+      "item_type": "choice",
+      "stem": "带电粒子垂直射入偏转电场（板长 l、板间距离 d、电压 U），粒子（质量 m、电量 q、入射速度 v₀）在电场中（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_particle_deflect"
+      ],
+      "difficulty": 0.45,
+      "solution": "垂直入射匀强电场：水平匀速+竖向匀加速，类平抛；偏移量 y=½at²=(qU/md)(l/2v₀)²=qUl²/(2dv₀²m)；偏转角 tanθ=qUl/(mv₀²d)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 做匀速直线运动",
+        "B. 做类平抛运动，y=qUl²/(2mv₀²d)",
+        "C. 做匀加速直线运动",
+        "D. 做圆周运动"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0362",
+      "item_type": "fill",
+      "stem": "带电粒子垂直场强方向射入偏转电场做______运动：出电场时偏移 y=______，偏转角正切 tanθ=vy/v₀x。",
+      "answer": "类平抛；qUl²/(2mv₀²d)",
+      "kps": [
+        "kp_phy11_particle_deflect"
+      ],
+      "difficulty": 0.35,
+      "solution": "偏转公式。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0363",
+      "item_type": "solve",
+      "stem": "电子以 v₀=2×10⁷ m/s 垂直射入板长 4 cm、板距 1 cm、电压 90 V 的偏转电场（e=1.6×10⁻¹⁹ C，m=9.1×10⁻³¹ kg）。求侧移量 y 和偏转角正切。",
+      "answer": "E=U/d=90÷0.01=9000 V/m；a=eE/m=1.6×10⁻¹⁹×9000÷9.1×10⁻³¹≈1.58×10¹⁵ m/s²；t=l/v₀=0.04÷2×10⁷=2×10⁻⁹ s；y=½at²=½×1.58×10¹⁵×4×10⁻¹⁸=3.16×10⁻³ m≈3.2 mm；vy=at=1.58×10¹⁵×2×10⁻⁹=3.16×10⁶ m/s，tanθ=vy/v₀=3.16×10⁶÷2×10⁷≈0.16（约 9°）。",
+      "kps": [
+        "kp_phy11_particle_deflect"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：E=U/d=90÷0.01=9000 V/m；a=eE/m=1.6×10⁻¹⁹×9000÷9.1×10⁻³¹≈1.58×10¹⁵ m/s²；t=l/v₀=0.04÷2×10⁷=2×10⁻⁹ s；y=½at²=½×1.58×10¹⁵×4×10⁻¹⁸=3.16×10⁻³ m≈3.2 mm；vy=at=1.58×10¹⁵×2×10⁻⁹=3.16×10⁶ m/s，tanθ=vy/v₀=3.16×10⁶÷2×10⁷≈0.16（约 9°）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0364",
+      "item_type": "choice",
+      "stem": "横波沿 x 轴正方向传播，某时刻质点 M 位于波峰。经极短时间 Δt 后，M 的位置和振动方向是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_particle_direction"
+      ],
+      "difficulty": 0.4,
+      "solution": "质点到达波峰后，速度减为零随即向下振动（振动是往复的）；质点不会沿 x 轴迁移（D 错）。判断方向可用同侧法或带动法（波峰两侧质点带动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从波峰向下运动",
+        "B. 从波峰继续向上",
+        "C. 保持波峰不动",
+        "D. 沿 x 轴正方向移动"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0365",
+      "item_type": "fill",
+      "stem": "判断质点振动方向与波传播方向的常用方法：______法（波形移动一小段看该点新位置）和同侧法（质点振动方向与波传播方向在波形______侧）。",
+      "answer": "微平移（波形平移）；同一（同侧）",
+      "kps": [
+        "kp_phy11_particle_direction"
+      ],
+      "difficulty": 0.3,
+      "solution": "两种判向方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0366",
+      "item_type": "solve",
+      "stem": "简谐波沿 x 负方向传播，图示时刻质点 A 在平衡位置向上振动吗？用微平移法判断 A、B（B 在波谷）两质点的振动方向，并说明经过四分之一周期后两质点的位置。",
+      "answer": "波向左传：把波形向左平移一小段，A 的新波形在原位置下方——A 向下振动；B 在波谷处速度为零、即将向上振动。经过 T/4：A 到达波谷下方最大位移（若向下振动则到负最大，即 B 类似波谷），B 到达平衡位置（从波谷向上运动 T/4 到平衡位置）。质点只上下振动、不左右移动。",
+      "kps": [
+        "kp_phy11_particle_direction"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：波向左传：把波形向左平移一小段，A 的新波形在原位置下方——A 向下振动；B 在波谷处速度为零、即将向上振动。经过 T/4：A 到达波谷下方最大位移（若向下振动则到负最大，即 B 类似波谷），B 到达平衡位置（从波谷向上运动 T/4 到平衡位置）。质点只上下振动、不左右移动。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0367",
+      "item_type": "choice",
+      "stem": "单摆做简谐运动的周期公式 T=2π√(L/g)。下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_pendulum"
+      ],
+      "difficulty": 0.35,
+      "solution": "T=2π√(L/g)：与质量、振幅（小角度下）无关；L 越长 T 越大；高山上 g 变小，T 变大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 周期与摆球质量无关，与摆长和重力加速度有关",
+        "B. 摆长越长周期越小",
+        "C. 周期与振幅成正比",
+        "D. 把单摆从海南拿到高山上周期不变"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0368",
+      "item_type": "fill",
+      "stem": "单摆周期 T=______，摆长应从悬点量到______；利用单摆可测量重力加速度 g=4π²L/T²。",
+      "answer": "2π√(L/g)；球心",
+      "kps": [
+        "kp_phy11_pendulum"
+      ],
+      "difficulty": 0.3,
+      "solution": "单摆公式与测 g 原理。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0369",
+      "item_type": "solve",
+      "stem": "摆长 1 m 的单摆（g=π²≈9.86 m/s²，取 g=π² 计算）。①周期多大？②要使周期变为 4 s，摆长应调为多少？③把它放到 g 取 4/9 倍处的某高山上，周期变为多少？",
+      "answer": "①T=2π√(1/π²)=2π/π=2 s；②T'=4 s=2T，L'=(T'/2π)²g=(4/(2π))²×π²=4π²/π²×…直接用比例：T∝√L，T 加倍则 L 变 4 倍，L'=4 m；③T∝1/√g，g'=4g/9 → √(g/g')=√(9/4)=3/2，T''=2×1.5=3 s。",
+      "kps": [
+        "kp_phy11_pendulum"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①T=2π√(1/π²)=2π/π=2 s；②T'=4 s=2T，L'=(T'/2π)²g=(4/(2π))²×π²=4π²/π²×…直接用比例：T∝√L，T 加倍则 L 变 4 倍，L'=4 m；③T∝1/√g，g'=4g/9 → √(g/g')=√(9/4)=3/2，T''=2×1.5=3 s。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0370",
+      "item_type": "choice",
+      "stem": "真空中点电荷 Q 形成的电场中，距 Q 为 r 处的场强大小为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_point_charge_field"
+      ],
+      "difficulty": 0.4,
+      "solution": "点电荷场强 E=kQ/r²，方向由 Q 的正负决定（正电荷向外、负电荷向内）；叠加时按矢量合成。",
+      "source": "llm_generated",
+      "options": [
+        "A. E=kQ/r",
+        "B. E=kQ/r²",
+        "C. E=k/r²",
+        "D. E=Q/r²"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0371",
+      "item_type": "fill",
+      "stem": "点电荷场强公式 E=______，只适用于真空中的______电荷；多个点电荷的场叠加遵循矢量合成（场强叠加原理）。",
+      "answer": "kQ/r²；点",
+      "kps": [
+        "kp_phy11_point_charge_field"
+      ],
+      "difficulty": 0.3,
+      "solution": "点电荷场强适用条件与叠加原理。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0372",
+      "item_type": "solve",
+      "stem": "真空中，电荷 +Q 位于 A 点，-Q 位于 B 点，AB 相距 2a。求 AB 连线中点 O 处的场强大小和方向（用 Q、a 表示）；说明两电荷在 O 点场强为什么不是抵消。",
+      "answer": "+Q 在 O 的场强 E₁=kQ/a²，方向沿连线由 A 指向 B（背离 +Q）；-Q 在 O 的场强 E₂=kQ/a²，方向由 O 指向 B（指向 -Q）；两者方向相同（都沿 A→B），叠加 E=2kQ/a²，方向由 A 指向 B。异号等量电荷在中点的场强方向一致，相互加强而不是抵消（等量同号才在中点抵消）。",
+      "kps": [
+        "kp_phy11_point_charge_field"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：+Q 在 O 的场强 E₁=kQ/a²，方向沿连线由 A 指向 B（背离 +Q）；-Q 在 O 的场强 E₂=kQ/a²，方向由 O 指向 B（指向 -Q）；两者方向相同（都沿 A→B），叠加 E=2kQ/a²，方向由 A 指向 B。异号等量电荷在中点的场强方向一致，相互加强而不是抵消（等量同号才在中点抵消）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0373",
+      "item_type": "choice",
+      "stem": "光的偏振现象表明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_polarization"
+      ],
+      "difficulty": 0.35,
+      "solution": "偏振是横波特有的现象：只有振动方向与传播方向垂直的波才有偏振性；光的偏振证明光是横波（电磁波中电场、磁场方向都垂直传播方向）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光是横波",
+        "B. 光是纵波",
+        "C. 光是机械波",
+        "D. 光沿直线传播"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0374",
+      "item_type": "fill",
+      "stem": "______波（横波/纵波）可以发生偏振；光的偏振现象证明光是______波，生活中反射光、折射光都是部分偏振光。",
+      "answer": "横；横（电磁）",
+      "kps": [
+        "kp_phy11_polarization"
+      ],
+      "difficulty": 0.3,
+      "solution": "偏振与横波。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0375",
+      "item_type": "solve",
+      "stem": "偏振片太阳镜为什么能减弱水面、路面的反射眩光？拍摄橱窗内的物品时加偏振片有什么作用？",
+      "answer": "水面、路面反射光以特定角度（布儒斯特角附近）反射时成为（部分）偏振光，偏振片眼镜的透振方向与反射偏振光振动方向垂直（滤掉大部分水平分量），削弱眩光看清水下/路面；拍摄橱窗时，玻璃反射光是偏振的，调整偏振片透振方向可滤除反射光、突出橱窗内景物的透射光，消除玻璃反光。",
+      "kps": [
+        "kp_phy11_polarization"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：水面、路面反射光以特定角度（布儒斯特角附近）反射时成为（部分）偏振光，偏振片眼镜的透振方向与反射偏振光振动方向垂直（滤掉大部分水平分量），削弱眩光看清水下/路面；拍摄橱窗时，玻璃反射光是偏振的，调整偏振片透振方向可滤除反射光、突出橱窗内景物的透射光，消除玻璃反光。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0376",
+      "item_type": "choice",
+      "stem": "对电势概念的理解，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_potential"
+      ],
+      "difficulty": 0.35,
+      "solution": "电势是标量、相对零电势点有正负；正电荷从高电势到低电势（沿电场线方向），电场力做正功（B 错）；沿电场线电势降低（C 错）；电势与场强无必然对应，某点 φ=0 处 E 可不为零（等量异号电荷中点）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电势是标量，有正负",
+        "B. 正电荷从高电势移到低电势，电场力做负功",
+        "C. 沿电场线方向电势升高",
+        "D. 电势为零处场强也为零"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0377",
+      "item_type": "fill",
+      "stem": "电荷在电场中某点的______与电荷量的比值叫该点的电势，φ=______；电势是标量，单位伏特（V）。",
+      "answer": "电势能；Ep/q",
+      "kps": [
+        "kp_phy11_potential"
+      ],
+      "difficulty": 0.3,
+      "solution": "电势的定义。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0378",
+      "item_type": "solve",
+      "stem": "电场中 A 点电势 φA=100 V，B 点 φB=-50 V。求：①+2×10⁻⁶ C 的电荷在 A、B 的电势能；②把该电荷从 A 移到 B 电场力做的功。",
+      "answer": "①EpA=qφA=2×10⁻⁶×100=2×10⁻⁴ J；EpB=2×10⁻⁶×(-50)=-1×10⁻⁴ J；②WAB=EpA-EpB=2×10⁻⁴-(-1×10⁻⁴)=3×10⁻⁴ J（电场力做正功 3×10⁻⁴ J，也可 W=q(φA-φB)）。",
+      "kps": [
+        "kp_phy11_potential"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①EpA=qφA=2×10⁻⁶×100=2×10⁻⁴ J；EpB=2×10⁻⁶×(-50)=-1×10⁻⁴ J；②WAB=EpA-EpB=2×10⁻⁴-(-1×10⁻⁴)=3×10⁻⁴ J（电场力做正功 3×10⁻⁴ J，也可 W=q(φA-φB)）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0379",
+      "item_type": "choice",
+      "stem": "关于电势差，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_potential_difference"
+      ],
+      "difficulty": 0.35,
+      "solution": "电势差由电场本身决定，与零势点、试探电荷无关；UAB=-UBA（C 错）；正电荷从 A 到 B 电场力做正功则 UAB>0。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电势差 UAB=φA-φB 与零电势点选取有关",
+        "B. UAB=WAB/q，与移动的电荷无关",
+        "C. A、B 间电势差 UAB 与 UBA 相等",
+        "D. 电场力做正功时电势差必为负"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0380",
+      "item_type": "fill",
+      "stem": "电势差 UAB=______（用 φ 表示）；静电力做功 WAB=qUAB=q(φA-φB)，功的正负由______（q 与 UAB 的符号）共同决定。",
+      "answer": "φA-φB；q 和 UAB 的符号",
+      "kps": [
+        "kp_phy11_potential_difference"
+      ],
+      "difficulty": 0.3,
+      "solution": "电势差与做功公式。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0381",
+      "item_type": "solve",
+      "stem": "电场中把 q=-2×10⁻⁶ C 的电荷从 A 移到 B，电场力做功 4×10⁻⁵ J。求 UAB；判断 A、B 哪点电势高。",
+      "answer": "UAB=WAB/q=4×10⁻⁵÷(-2×10⁻⁶)=-20 V，即 φA-φB=-20 V，φB 比 φA 高 20 V；负电荷移动电场力做正功说明是从低电势到高电势，B 点电势高。",
+      "kps": [
+        "kp_phy11_potential_difference"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：UAB=WAB/q=4×10⁻⁵÷(-2×10⁻⁶)=-20 V，即 φA-φB=-20 V，φB 比 φA 高 20 V；负电荷移动电场力做正功说明是从低电势到高电势，B 点电势高。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0382",
+      "item_type": "choice",
+      "stem": "下列对电势能的认识，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_potential_energy_high"
+      ],
+      "difficulty": 0.35,
+      "solution": "电势能 Ep=qφ 由电荷与电场共同决定，属于电荷—电场系统（B 对）；电场力做正功电势能减少（A 错）；Ep=qφ=(-q)(-φ)>0 不为零（C 错）；电势能还与该点电势有关（D 错）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电场力做正功，电荷的电势能增大",
+        "B. 电势能是电荷与电场系统共有的",
+        "C. 负电荷在电势为负的点电势能一定为零",
+        "D. 电势能由电荷量单独决定"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0383",
+      "item_type": "fill",
+      "stem": "电场力做功与电势能变化的关系：WAB=EpA-______；电场力做正功，电势能______（填„增大“或„减小“）。",
+      "answer": "EpB；减小",
+      "kps": [
+        "kp_phy11_potential_energy_high"
+      ],
+      "difficulty": 0.3,
+      "solution": "做功与电势能关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0384",
+      "item_type": "solve",
+      "stem": "电荷 q=+3×10⁻⁶ C 从电场中 A 点（φA=50 V）移到 B 点（φB=20 V）。求电势能的变化量；再从 B 移到 C（φC=-10 V）呢？",
+      "answer": "A→B：ΔEp=EpB-EpA=q(φB-φA)=3×10⁻⁶×(20-50)=-9×10⁻⁵ J，电势能减少 9×10⁻⁵ J（电场力做正功 9×10⁻⁵ J）；B→C：ΔEp=3×10⁻⁶×(-10-20)=-9×10⁻⁵ J，又减少 9×10⁻⁵ J。正电荷向低电势移动，电势能减少。",
+      "kps": [
+        "kp_phy11_potential_energy_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：A→B：ΔEp=EpB-EpA=q(φB-φA)=3×10⁻⁶×(20-50)=-9×10⁻⁵ J，电势能减少 9×10⁻⁵ J（电场力做正功 9×10⁻⁵ J）；B→C：ΔEp=3×10⁻⁶×(-10-20)=-9×10⁻⁵ J，又减少 9×10⁻⁵ J。正电荷向低电势移动，电势能减少。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0385",
+      "item_type": "choice",
+      "stem": "关于电源和电动势，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_power_source"
+      ],
+      "difficulty": 0.35,
+      "solution": "电动势 E：非静电力把正电荷从负极移到正极做的功与电荷量之比，量度电源转化能量的本领，单位伏特；闭合时端电压 U=E-Ir<E（有内阻降压），电动势由电源本身决定不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电动势就是电源两端的电压",
+        "B. 电动势表示电源把其他形式能转化为电能的本领",
+        "C. 电动势的单位是安培",
+        "D. 电源接入电路后电动势变小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0386",
+      "item_type": "fill",
+      "stem": "电动势在数值上等于电源______（没有接入电路时）两端的电压；也等于非静电力把 1 C 正电荷从负极移到正极所做的______。",
+      "answer": "开路（断路）；功",
+      "kps": [
+        "kp_phy11_power_source"
+      ],
+      "difficulty": 0.3,
+      "solution": "电动势的两个等价数值关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0387",
+      "item_type": "solve",
+      "stem": "一节干电池电动势 1.5 V，内阻 0.2 Ω，外接 2.8 Ω 电阻。求：①电路电流；②路端电压；③内阻消耗的电压。说明为什么端电压小于电动势。",
+      "answer": "①I=E/(R+r)=1.5÷3=0.5 A；②U=IR=0.5×2.8=1.4 V；③Ur=Ir=0.1 V（1.4+0.1=1.5 V）。电流流过内阻产生内压降，能量部分消耗在电源内部，所以路端电压 U=E-Ir 总小于电动势（开路时才相等）。",
+      "kps": [
+        "kp_phy11_power_source"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①I=E/(R+r)=1.5÷3=0.5 A；②U=IR=0.5×2.8=1.4 V；③Ur=Ir=0.1 V（1.4+0.1=1.5 V）。电流流过内阻产生内压降，能量部分消耗在电源内部，所以路端电压 U=E-Ir 总小于电动势（开路时才相等）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0388",
+      "item_type": "choice",
+      "stem": "无线电广播发射和接收的核心环节分别是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_radio_applications"
+      ],
+      "difficulty": 0.3,
+      "solution": "发射：把声音信号（低频）调制到高频载波上放大发射；接收：天线感应各种电磁波→调谐选出特定频率→解调（检波）取出信号→放大还原。",
+      "source": "llm_generated",
+      "options": [
+        "A. 调制（把信号加载到高频载波）与调谐、解调",
+        "B. 放大与整流",
+        "C. 变压与整流",
+        "D. 调制与滤波"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0389",
+      "item_type": "fill",
+      "stem": "把低频信号加载到高频电磁波（载波）上的过程叫______；接收时从高频载波中„取下“信号的过程叫______（检波）。",
+      "answer": "调制；解调",
+      "kps": [
+        "kp_phy11_radio_applications"
+      ],
+      "difficulty": 0.3,
+      "solution": "调制与解调。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0390",
+      "item_type": "solve",
+      "stem": "手机、广播电视、卫星通信都利用电磁波传递信息。请说明手机通话时信号的大致传递过程，并说明为什么电信号要加载到高频电磁波上。",
+      "answer": "手机把声音变为电信号，调制到高频载波上由天线发射，基站（或卫星）接收、转发到对方手机，对方解调还原为声音。加载到高频：①高频电磁波天线尺寸可与波长匹配、辐射效率高（低频难以有效辐射）；②不同载频可供多用户、多台同时使用互不干扰（频分复用）。",
+      "kps": [
+        "kp_phy11_radio_applications"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：手机把声音变为电信号，调制到高频载波上由天线发射，基站（或卫星）接收、转发到对方手机，对方解调还原为声音。加载到高频：①高频电磁波天线尺寸可与波长匹配、辐射效率高（低频难以有效辐射）；②不同载频可供多用户、多台同时使用互不干扰（频分复用）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0391",
+      "item_type": "choice",
+      "stem": "反冲运动是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_recoil"
+      ],
+      "difficulty": 0.35,
+      "solution": "反冲：系统不受外力（或合外力为零）时，内力使两部分向相反方向运动，总动量守恒（典型：火箭喷气、爆竹升空、枪的后座、章鱼喷水）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 系统在内力作用下，一部分向后运动而另一部分向前运动的现象",
+        "B. 物体受外力向后运动",
+        "C. 只有火箭才有反冲",
+        "D. 反冲过程动量不守恒"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0392",
+      "item_type": "fill",
+      "stem": "火箭发射时向下高速喷出燃气，燃气对火箭的______力使火箭获得向上的推力；反冲现象中系统______守恒（不计重力和阻力时）。",
+      "answer": "反作用（推）；动量",
+      "kps": [
+        "kp_phy11_recoil"
+      ],
+      "difficulty": 0.3,
+      "solution": "反冲原理。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0393",
+      "item_type": "solve",
+      "stem": "海南文昌发射的火箭某时刻质量 M，每秒喷出质量 Δm 的燃气，喷气速度（相对火箭）为 u。求火箭获得的推力大小；说明为什么火箭能在真空中工作。",
+      "answer": "对喷出的燃气用动量定理：每秒动量变化 Δm·u，由 F=Δp/Δt 得推力 F=Δm·u（单位时间喷出动量）；火箭（含未喷燃气）受等大反向的反冲力。火箭不依赖空气：它自带氧化剂，喷出燃气靠动量守恒（作用反作用）获得推力，真空中同样有效。",
+      "kps": [
+        "kp_phy11_recoil"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：对喷出的燃气用动量定理：每秒动量变化 Δm·u，由 F=Δp/Δt 得推力 F=Δm·u（单位时间喷出动量）；火箭（含未喷燃气）受等大反向的反冲力。火箭不依赖空气：它自带氧化剂，喷出燃气靠动量守恒（作用反作用）获得推力，真空中同样有效。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0394",
+      "item_type": "choice",
+      "stem": "光从真空进入某介质，入射角 45°，折射角 30°。该介质的折射率是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_refraction_index"
+      ],
+      "difficulty": 0.35,
+      "solution": "n=sin45°/sin30°=(√2/2)/(1/2)=√2≈1.41。折射率还等于 c/v。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1.5",
+        "B. √2",
+        "C. 0.7",
+        "D. 2"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0395",
+      "item_type": "fill",
+      "stem": "折射率 n=______=c/v（真空光速与介质中光速之比）；折射率越大，光在该介质中速度越______。",
+      "answer": "sinθ₁/sinθ₂（入射角与折射角正弦之比）；小",
+      "kps": [
+        "kp_phy11_refraction_index"
+      ],
+      "difficulty": 0.3,
+      "solution": "折射率的两种表达。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0396",
+      "item_type": "solve",
+      "stem": "水的折射率 4/3，玻璃折射率 1.5。①光在水中的速度多大？（c=3×10⁸ m/s）②光从水射向玻璃，能发生折射进入玻璃吗？说明光密与光疏介质的关系。",
+      "answer": "①v水=c/n=3×10⁸÷(4/3)=2.25×10⁸ m/s；②能。折射率大的（玻璃 1.5>水 4/3）是光密介质，光疏→光密（水→玻璃）折射角小于入射角，可正常折射进入；光从光密射向光疏才可能发生全反射。",
+      "kps": [
+        "kp_phy11_refraction_index"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①v水=c/n=3×10⁸÷(4/3)=2.25×10⁸ m/s；②能。折射率大的（玻璃 1.5>水 4/3）是光密介质，光疏→光密（水→玻璃）折射角小于入射角，可正常折射进入；光从光密射向光疏才可能发生全反射。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0397",
+      "item_type": "choice",
+      "stem": "关于电阻定律，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_resistance_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "ρ 由材料及温度决定（金属温度升高 ρ 增大）；R=ρl/S 由材料和几何尺寸共同决定；对折后 l 减半、S 加倍，R 变为 1/4；电阻还与 l、S 有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. R=ρl/S 中 ρ 只与材料有关",
+        "B. 电阻率 ρ 由材料和温度决定",
+        "C. 把导线对折后电阻不变",
+        "D. 电阻率大的材料电阻一定大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0398",
+      "item_type": "fill",
+      "stem": "电阻定律 R=______；一段均匀导线均匀拉长为原来的 2 倍（体积不变），电阻变为原来的______倍。",
+      "answer": "ρl/S；4",
+      "kps": [
+        "kp_phy11_resistance_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "拉长 2 倍：l×2、S÷2 → R×4。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0399",
+      "item_type": "solve",
+      "stem": "一根铜丝长 100 m、横截面积 1 mm²，铜的电阻率 ρ=1.7×10⁻⁸ Ω·m。求电阻；若把同样的铜丝均匀拉长到 200 m，电阻变为多少？",
+      "answer": "R=ρl/S=1.7×10⁻⁸×100÷(1×10⁻⁶)=1.7 Ω；拉长到 200 m（体积不变）：l 变 2 倍、S 变为原来 1/2（0.5 mm²），R'=ρl'/S'=1.7×10⁻⁸×200÷(0.5×10⁻⁶)=6.8 Ω，为原来的 4 倍。",
+      "kps": [
+        "kp_phy11_resistance_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：R=ρl/S=1.7×10⁻⁸×100÷(1×10⁻⁶)=1.7 Ω；拉长到 200 m（体积不变）：l 变 2 倍、S 变为原来 1/2（0.5 mm²），R'=ρl'/S'=1.7×10⁻⁸×200÷(0.5×10⁻⁶)=6.8 Ω，为原来的 4 倍。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0400",
+      "item_type": "choice",
+      "stem": "三个电阻 R₁=3 Ω、R₂=6 Ω、R₃=6 Ω。R₂ 与 R₃ 并联后与 R₁ 串联，总电阻为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_series_parallel_high"
+      ],
+      "difficulty": 0.35,
+      "solution": "R₂R₃ 并联：R并=(6×6)/(6+6)=3 Ω；总 R=R₁+R并=3+3=6 Ω。",
+      "source": "llm_generated",
+      "options": [
+        "A. 15 Ω",
+        "B. 6 Ω",
+        "C. 9 Ω",
+        "D. 4 Ω"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0401",
+      "item_type": "fill",
+      "stem": "串联电路：电流相同，电压与电阻成______比；并联电路：电压相同，电流与电阻成______比（反比）；两电阻并联 R并=R₁R₂/(R₁+R₂)，小于任一支路电阻。",
+      "answer": "正；反",
+      "kps": [
+        "kp_phy11_series_parallel_high"
+      ],
+      "difficulty": 0.3,
+      "solution": "串并联的分压分流规律。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0402",
+      "item_type": "solve",
+      "stem": "R₁=4 Ω 与滑动变阻器 R₂（0~20 Ω）串联接在 12 V 恒压电源上。①R₂=8 Ω 时电路电流和 R₂ 两端电压；②R₂ 从 0 调到 20 Ω，R₂ 两端电压的变化范围。",
+      "answer": "①R总=12 Ω，I=12÷12=1 A，U₂=IR₂=8 V；②R₂=0 时 U₂=0；R₂=20 Ω 时 R总=24 Ω，I=0.5 A，U₂=10 V，范围 0~10 V（串联分压，滑动变阻器起分压作用）。",
+      "kps": [
+        "kp_phy11_series_parallel_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①R总=12 Ω，I=12÷12=1 A，U₂=IR₂=8 V；②R₂=0 时 U₂=0；R₂=20 Ω 时 R总=24 Ω，I=0.5 A，U₂=10 V，范围 0~10 V（串联分压，滑动变阻器起分压作用）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0403",
+      "item_type": "choice",
+      "stem": "关于简谐运动的振幅、周期和频率，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_shm_description"
+      ],
+      "difficulty": 0.35,
+      "solution": "T=1/f；振幅是标量（最大位移的大小），反映振动强弱；一个周期路程=4A；频率与振幅无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 振幅是标量，表示振动的强弱（总路程相关）",
+        "B. 周期与频率互为倒数",
+        "C. 振子一个周期通过的路程等于振幅",
+        "D. 频率越大振幅越大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0404",
+      "item_type": "fill",
+      "stem": "简谐运动中，振子一个周期内通过的路程为______A（A 为振幅）；若频率为 2 Hz，周期为______s。",
+      "answer": "4；0.5",
+      "kps": [
+        "kp_phy11_shm_description"
+      ],
+      "difficulty": 0.3,
+      "solution": "周期路程与 T=1/f。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0405",
+      "item_type": "solve",
+      "stem": "弹簧振子振幅 4 cm、频率 5 Hz。求：①一个周期通过的路程；②2 s 内通过的总路程和位移（从平衡位置出发计时，2 s 末回到平衡位置）。",
+      "answer": "①一个周期路程=4A=16 cm；②2 s 含 n=t/T=f·t=5×2=10 个周期，总路程=10×16=160 cm；从平衡位置出发经整数个周期回到出发点（平衡位置），位移为 0。",
+      "kps": [
+        "kp_phy11_shm_description"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①一个周期路程=4A=16 cm；②2 s 含 n=t/T=f·t=5×2=10 个周期，总路程=10×16=160 cm；从平衡位置出发经整数个周期回到出发点（平衡位置），位移为 0。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0406",
+      "item_type": "choice",
+      "stem": "弹簧振子做简谐运动（不计阻力），下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_shm_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "无阻尼简谐运动机械能守恒：动能与（弹性）势能相互转化；平衡位置动能最大势能最小，端点动能零势能最大；有阻尼时振幅减小（阻尼振动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 振动过程中动能和势能相互转化，总机械能守恒",
+        "B. 平衡位置势能最大",
+        "C. 最大位移处动能最大",
+        "D. 简谐运动机械能逐渐减小"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0407",
+      "item_type": "fill",
+      "stem": "简谐运动中，动能和势能相互转化，系统总机械能守恒（大小与______有关，振幅越大能量越大）；阻尼振动的振幅逐渐______。",
+      "answer": "振幅；减小",
+      "kps": [
+        "kp_phy11_shm_energy"
+      ],
+      "difficulty": 0.3,
+      "solution": "简谐能量与阻尼振动。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0408",
+      "item_type": "solve",
+      "stem": "摆球在竖直平面内做小角度摆动（不计阻力）。分析摆球从最高点摆到最低点过程中动能、重力势能和机械能的变化；阻尼存在时为什么振幅越来越小而周期几乎不变？",
+      "answer": "最高点→最低点：高度降低，重力势能减小，动能增大，机械能守恒（最低点速度最大）；最低点动能最大。有阻尼时振动能量逐渐转化为内能（克服阻力做功），振幅减小；但简谐运动周期由系统本身决定（T=2π√(L/g)），与振幅无关（等时性），故振幅减小而周期几乎不变。",
+      "kps": [
+        "kp_phy11_shm_energy"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：最高点→最低点：高度降低，重力势能减小，动能增大，机械能守恒（最低点速度最大）；最低点动能最大。有阻尼时振动能量逐渐转化为内能（克服阻力做功），振幅减小；但简谐运动周期由系统本身决定（T=2π√(L/g)），与振幅无关（等时性），故振幅减小而周期几乎不变。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0409",
+      "item_type": "choice",
+      "stem": "简谐运动的表达式 x=A·sin(2πt/T)。某振子振幅 5 cm、周期 2 s，t=0.5 s 时（从平衡位置开始）位移为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_shm_equation"
+      ],
+      "difficulty": 0.4,
+      "solution": "x=5sin(2π×0.5/2)=5sin(π/2)=5 cm（四分之一周期到达最大位移处）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5 cm",
+        "B. 0",
+        "C. 2.5 cm",
+        "D. -5 cm"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0410",
+      "item_type": "fill",
+      "stem": "简谐运动表达式 x=A______（用 sin 或 cos 表示，取决于初相）；振动图像（x-t 图）是______曲线，从图上可直接读出振幅和周期。",
+      "answer": "sin(2πt/T+φ)（正弦或余弦函数）；正弦（余弦）",
+      "kps": [
+        "kp_phy11_shm_equation"
+      ],
+      "difficulty": 0.3,
+      "solution": "表达式与图像。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0411",
+      "item_type": "solve",
+      "stem": "某简谐振动 x-t 图像为正弦曲线，相邻两个波峰时间间隔 0.4 s，峰值 3 cm。写出振动方程（从平衡位置向上经过零时刻开始计时）；求 1 s 末的位移和 1 s 内的路程。",
+      "answer": "T=0.4 s，ω=2π/T=5π rad/s，A=3 cm：x=3sin(5πt) cm；t=1 s：x=3sin(5π)=0（回到平衡位置）；1 s=2.5T，路程=2.5×4A=10×3=30 cm。",
+      "kps": [
+        "kp_phy11_shm_equation"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：T=0.4 s，ω=2π/T=5π rad/s，A=3 cm：x=3sin(5πt) cm；t=1 s：x=3sin(5π)=0（回到平衡位置）；1 s=2.5T，路程=2.5×4A=10×3=30 cm。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0412",
+      "item_type": "choice",
+      "stem": "关于简谐运动，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_simple_harmonic"
+      ],
+      "difficulty": 0.3,
+      "solution": "简谐运动：回复力 F=-kx（与位移成正比、指向平衡位置），加速度 a=-kx/m 变化；振幅恒定（无阻尼时）；回复力与位移反号，速度方向看运动方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 回复力 F=-kx，方向总指向平衡位置，大小与位移成正比",
+        "B. 简谐运动的加速度恒定",
+        "C. 简谐运动的振幅随时间减小",
+        "D. 回复力方向总与速度方向相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0413",
+      "item_type": "fill",
+      "stem": "弹簧振子做简谐运动：在平衡位置速度最______、加速度（回复力）最______；在最大位移处（端点）速度为零、加速度最大。",
+      "answer": "大；小",
+      "kps": [
+        "kp_phy11_simple_harmonic"
+      ],
+      "difficulty": 0.3,
+      "solution": "振子在特殊位置的运动量。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0414",
+      "item_type": "solve",
+      "stem": "弹簧振子在 B、C 之间做简谐运动，O 为平衡位置，BC 相距 10 cm。求振幅；说明振子从 B 到 O 再到 C 的过程中，回复力、加速度、速度、动能各怎样变化。",
+      "answer": "振幅 A=BC/2=5 cm；从 B→O：位移减小，回复力、加速度减小，速度增大（加速度与速度同向加速），动能增大，到 O 时速度、动能最大，回复力、加速度为零；O→C：位移增大，回复力、加速度增大（与速度反向），速度、动能减小，到 C 时速度为零、回复力和加速度最大（方向指向 O）。",
+      "kps": [
+        "kp_phy11_simple_harmonic"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：振幅 A=BC/2=5 cm；从 B→O：位移减小，回复力、加速度减小，速度增大（加速度与速度同向加速），动能增大，到 O 时速度、动能最大，回复力、加速度为零；O→C：位移增大，回复力、加速度增大（与速度反向），速度、动能减小，到 C 时速度为零、回复力和加速度最大（方向指向 O）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0415",
+      "item_type": "choice",
+      "stem": "对电流形成的理解，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_steady_current"
+      ],
+      "difficulty": 0.35,
+      "solution": "电流方向规定为正电荷定向移动方向（与电子移动相反）；形成电流需自由电荷+电压（定向移动）；I=nqSv 是微观表达；电流是标量（虽有方向但运算按代数规则）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流的方向就是电子定向移动的方向",
+        "B. 电流的微观表达式 I=nqSv",
+        "C. 导体中有大量自由电子就一定有电流",
+        "D. 电流是标量，其运算遵守代数法则"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0416",
+      "item_type": "fill",
+      "stem": "电流的定义式 I=______；在金属导体中，电流的微观本质是自由电子的______移动，微观表达式 I=neSv。",
+      "answer": "q/t；定向",
+      "kps": [
+        "kp_phy11_steady_current"
+      ],
+      "difficulty": 0.3,
+      "solution": "电流定义与微观表达。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0417",
+      "item_type": "solve",
+      "stem": "一段横截面积 S=1 mm² 的铜导线中通过 1 A 电流。自由电子密度 n=8.5×10²⁸ m⁻³（每立方米自由电子数），求电子定向移动的平均速率；与电子热运动速率（约 10⁵ m/s）和电流传导速率（约 3×10⁸ m/s）比较说明什么。",
+      "answer": "v=I/(neS)=1÷(8.5×10²⁸×1.6×10⁻¹⁹×10⁻⁶)≈1÷(1.36×10⁴)≈7.4×10⁻⁵ m/s，极小（蜗牛般慢）；电子热运动速率大得多但无规则、不形成净电流；开关一合灯即亮是电场以光速建立、驱动导线各处电子几乎同时定向移动，不是电子从开关跑到灯。",
+      "kps": [
+        "kp_phy11_steady_current"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：v=I/(neS)=1÷(8.5×10²⁸×1.6×10⁻¹⁹×10⁻⁶)≈1÷(1.36×10⁴)≈7.4×10⁻⁵ m/s，极小（蜗牛般慢）；电子热运动速率大得多但无规则、不形成净电流；开关一合灯即亮是电场以光速建立、驱动导线各处电子几乎同时定向移动，不是电子从开关跑到灯。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0418",
+      "item_type": "choice",
+      "stem": "电源的 U-I 图像（路端电压随电流变化）是一条直线，其在纵轴的截距和斜率（绝对值）分别表示（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_terminal_voltage"
+      ],
+      "difficulty": 0.4,
+      "solution": "U=E-Ir：纵截距为 E，斜率为 -r（绝对值即内阻）；横截距为短路电流 E/r。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电动势 E 和内阻 r",
+        "B. 内阻和电动势",
+        "C. 输出功率和效率",
+        "D. 短路电流和电动势"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0419",
+      "item_type": "fill",
+      "stem": "测电源电动势和内阻实验中，改变滑动变阻器测多组 (U,I)，作 U-I 图线：图线与纵轴交点为______，斜率大小为______。",
+      "answer": "电动势 E；内阻 r",
+      "kps": [
+        "kp_phy11_terminal_voltage"
+      ],
+      "difficulty": 0.35,
+      "solution": "U-I 图像的物理意义。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0420",
+      "item_type": "solve",
+      "stem": "实验测得电源 U-I 数据：(0.2 A, 2.9 V)、(0.4 A, 2.8 V)、(0.6 A, 2.7 V)、(0.8 A, 2.6 V)。求电动势和内阻；该电源短路电流多大？",
+      "answer": "每增大 0.2 A 电压降 0.1 V，斜率大小 r=0.1÷0.2=0.5 Ω；E=U+Ir=2.9+0.2×0.5=3.0 V；短路电流 I=E/r=3÷0.5=6 A。图线：U=3-0.5I。",
+      "kps": [
+        "kp_phy11_terminal_voltage"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：每增大 0.2 A 电压降 0.1 V，斜率大小 r=0.1÷0.2=0.5 Ω；E=U+Ir=2.9+0.2×0.5=3.0 V；短路电流 I=E/r=3÷0.5=6 A。图线：U=3-0.5I。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0421",
+      "item_type": "choice",
+      "stem": "光从水中射向空气，发生全反射的条件是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_total_reflection"
+      ],
+      "difficulty": 0.4,
+      "solution": "全反射两条件：光密→光疏；入射角≥临界角 C（sinC=1/n）。水对空气 C=arcsin(3/4)≈48.6°。",
+      "source": "llm_generated",
+      "options": [
+        "A. 入射角大于临界角 C，且光从光密介质射向光疏介质",
+        "B. 入射角小于临界角",
+        "C. 任意角度",
+        "D. 光从空气射向水"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0422",
+      "item_type": "fill",
+      "stem": "临界角公式 sinC=______；折射率 n=√2 的介质对空气的临界角为______度。",
+      "answer": "1/n（n₂/n₁，光疏/光密）；45",
+      "kps": [
+        "kp_phy11_total_reflection"
+      ],
+      "difficulty": 0.3,
+      "solution": "临界角公式与计算（sinC=1/√2，C=45°）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0423",
+      "item_type": "solve",
+      "stem": "水的折射率 n=4/3。①求水对空气的临界角（用反三角表示）；②潜水员在水下看水面，能透出水面的光锥顶角多大？③说明光纤为什么能远距离传光。",
+      "answer": "①sinC=1/n=3/4，C=arcsin0.75≈48.6°；②水下点光源发出的光只有小于 48.6°（与竖直方向夹角）的才能透出水面，透光锥顶角约 2C≈97.2°；③光纤内芯折射率大于外包层，光在纤芯中以大于临界角的角度射到界面，发生全反射，能量几乎无损耗地沿光纤之字形传播，实现远距离、大容量通信。",
+      "kps": [
+        "kp_phy11_total_reflection"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①sinC=1/n=3/4，C=arcsin0.75≈48.6°；②水下点光源发出的光只有小于 48.6°（与竖直方向夹角）的才能透出水面，透光锥顶角约 2C≈97.2°；③光纤内芯折射率大于外包层，光在纤芯中以大于临界角的角度射到界面，发生全反射，能量几乎无损耗地沿光纤之字形传播，实现远距离、大容量通信。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0424",
+      "item_type": "choice",
+      "stem": "关于导体的伏安特性曲线，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_voltamperometry"
+      ],
+      "difficulty": 0.4,
+      "solution": "线性元件（金属、电解液恒温）U-I 图为过原点直线；小灯泡灯丝温度随电压升高而升高，电阻增大，U-I 图像向电压轴弯曲（曲线）；U-I 图像斜率（U/I）等于电阻（I-U 图像斜率是 1/R），严格说 U-I 图线的斜率（与纵轴夹角）tanθ=U/I=R。",
+      "source": "llm_generated",
+      "options": [
+        "A. 金属导体的 U-I 图像是过原点的直线（温度不变时）",
+        "B. 气体导电的 U-I 图像也是直线",
+        "C. U-I 图像斜率就是导体的电阻",
+        "D. 小灯泡的 U-I 图像是直线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0425",
+      "item_type": "fill",
+      "stem": "描绘小灯泡伏安特性曲线的实验中，滑动变阻器采用______（分压或限流）接法以便从零开始连续调节电压；随电压升高灯丝温度升高，灯泡电阻______，图线逐渐______（填„变陡“或„变缓“）。",
+      "answer": "分压；增大；变缓（向 U 轴弯曲）",
+      "kps": [
+        "kp_phy11_voltamperometry"
+      ],
+      "difficulty": 0.35,
+      "solution": "分压接法与非线性现象。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0426",
+      "item_type": "solve",
+      "stem": "实验测得小灯泡数据：U=0.5 V 时 I=0.1 A；U=1.5 V 时 I=0.25 A；U=2.5 V（额定）时 I=0.3 A。分别求三种状态下的电阻并画出 U-I 图像大致形状（用文字描述），说明为什么各点不在一条直线上。",
+      "answer": "R₁=0.5÷0.1=5 Ω；R₂=1.5÷0.25=6 Ω；R₃=2.5÷0.3≈8.3 Ω。图像：过原点、随 U 增大向电压轴（横轴 I 增大方向逐渐趋缓）弯曲的曲线。原因：电压越大灯越亮、灯丝温度越高，金属电阻率随温度升高而增大，R 逐渐增大，故 U-I 不成线性（非线性元件）。",
+      "kps": [
+        "kp_phy11_voltamperometry"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：R₁=0.5÷0.1=5 Ω；R₂=1.5÷0.25=6 Ω；R₃=2.5÷0.3≈8.3 Ω。图像：过原点、随 U 增大向电压轴（横轴 I 增大方向逐渐趋缓）弯曲的曲线。原因：电压越大灯越亮、灯丝温度越高，金属电阻率随温度升高而增大，R 逐渐增大，故 U-I 不成线性（非线性元件）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0427",
+      "item_type": "choice",
+      "stem": "关于波长、频率和波速，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_wave_description"
+      ],
+      "difficulty": 0.35,
+      "solution": "波速由介质性质决定（一般固体>液体>气体）；频率由波源决定，介质改变时频率不变；波长 λ=v/f 随介质（波速）改变。",
+      "source": "llm_generated",
+      "options": [
+        "A. v=λf，波速由介质决定，频率由波源决定",
+        "B. 波从一种介质进入另一种介质，频率改变",
+        "C. 波长由波源决定",
+        "D. 波速与介质无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0428",
+      "item_type": "fill",
+      "stem": "波速公式 v=______；一列频率 50 Hz 的声波在空气中波速 340 m/s，波长为______m。",
+      "answer": "λf（λ/T）；6.8",
+      "kps": [
+        "kp_phy11_wave_description"
+      ],
+      "difficulty": 0.3,
+      "solution": "波长=波速÷频率=340÷50=6.8 m。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0429",
+      "item_type": "solve",
+      "stem": "某横波沿绳传播，波长 2 m、波速 4 m/s。求周期和频率；波进入另一介质后波速变为 2 m/s，波长和频率各是多少？",
+      "answer": "T=λ/v=2÷4=0.5 s，f=1/T=2 Hz；进入新介质：频率不变仍 2 Hz（由波源决定），波长 λ'=v'/f=2÷2=1 m（波速减半波长减半）。",
+      "kps": [
+        "kp_phy11_wave_description"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：T=λ/v=2÷4=0.5 s，f=1/T=2 Hz；进入新介质：频率不变仍 2 Hz（由波源决定），波长 λ'=v'/f=2÷2=1 m（波速减半波长减半）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0430",
+      "item_type": "choice",
+      "stem": "关于机械波的形成，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_wave_formation"
+      ],
+      "difficulty": 0.3,
+      "solution": "机械波：介质质点在各自平衡位置附近振动（不随波迁移），波把振动形式和能量向外传播；机械波必须有介质，不能在真空中传播。",
+      "source": "llm_generated",
+      "options": [
+        "A. 机械波传播的是振动形式和能量，介质不随波迁移",
+        "B. 介质随波一起迁移",
+        "C. 波传播时介质中的质点做匀速运动",
+        "D. 没有介质也能形成机械波"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0431",
+      "item_type": "fill",
+      "stem": "机械波产生的条件：______（波源）和______；横波中质点振动方向与波传播方向______（垂直）。",
+      "answer": "波源（振源）；介质；垂直",
+      "kps": [
+        "kp_phy11_wave_formation"
+      ],
+      "difficulty": 0.3,
+      "solution": "机械波条件与横波。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0432",
+      "item_type": "solve",
+      "stem": "„随波逐流“对水波中的树叶是否准确？观察发现树叶只在原处上下颠簸。说明波传播的是什么，质点做的是什么运动。",
+      "answer": "不准确。水波传过时，树叶（浮在水面）只在原位置附近上下振动（近似），并不随波形向前移动；波传播的是振动形式（波形）和能量，介质质点（树叶）只是在平衡位置附近往复振动（横波中上下振动），不沿波方向迁移。",
+      "kps": [
+        "kp_phy11_wave_formation"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：不准确。水波传过时，树叶（浮在水面）只在原位置附近上下振动（近似），并不随波形向前移动；波传播的是振动形式（波形）和能量，介质质点（树叶）只是在平衡位置附近往复振动（横波中上下振动），不沿波方向迁移。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0433",
+      "item_type": "choice",
+      "stem": "关于波的图像（y-x 图像）与振动图像（y-t 图像），下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_wave_image"
+      ],
+      "difficulty": 0.4,
+      "solution": "波形图（y-x）：某时刻全部质点的位移分布，横轴为位置；振动图（y-t）：某一质点位移随时间变化，横轴为时间。两者形状可能相似但物理意义不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 波的图像横轴是各质点的平衡位置，振动图像横轴是时间",
+        "B. 两者横轴都是时间",
+        "C. 波的图像表示某一质点的位移随时间变化",
+        "D. 振动图像表示某一时刻所有质点的位移"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0434",
+      "item_type": "fill",
+      "stem": "波的图像（波形图）上相邻两个波峰之间的距离等于______；振动图像上相邻两个最大值之间的时间间隔等于______。",
+      "answer": "波长 λ；周期 T",
+      "kps": [
+        "kp_phy11_wave_image"
+      ],
+      "difficulty": 0.3,
+      "solution": "两类图像的直接读数。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0435",
+      "item_type": "solve",
+      "stem": "一列向右传播的横波某时刻波形图上，质点 P 位于平衡位置上方且在向波峰靠近……如何判断图上某质点此时的振动方向？（波向右传，P 在上坡位置）",
+      "answer": "方法（同侧法/微平移法）：波向右传播，把波形沿传播方向平移一小段，P 点移动后的位置在其原位置____方——具体：右行波中，波形上某点随波形的推移方向即其振动方向：位于„上坡“（波形上升段）的质点向上振动，„下坡“的向下振动（右行波）。P 在上坡段，故 P 正向上振动（向波峰靠近）。依据：后一质点重复前一质点（靠波源一侧）的振动。",
+      "kps": [
+        "kp_phy11_wave_image"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：方法（同侧法/微平移法）：波向右传播，把波形沿传播方向平移一小段，P 点移动后的位置在其原位置____方——具体：右行波中，波形上某点随波形的推移方向即其振动方向：位于„上坡“（波形上升段）的质点向上振动，„下坡“的向下振动（右行波）。P 在上坡段，故 P 正向上振动（向波峰靠近）。依据：后一质点重复前一质点（靠波源一侧）的振动。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0436",
+      "item_type": "choice",
+      "stem": "两列机械波能形成稳定干涉图样的条件是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_wave_interference"
+      ],
+      "difficulty": 0.35,
+      "solution": "稳定干涉条件：两波源频率相同、振动方向相同、相位差恒定；干涉区域内加强与减弱区域位置固定：波程差为波长整数倍加强、半波长奇数倍减弱（振幅大处加强）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 频率相同、相位差恒定（相干波源）",
+        "B. 频率不同",
+        "C. 振幅相同",
+        "D. 任意两列波"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0437",
+      "item_type": "fill",
+      "stem": "两相干波叠加：波程差 Δr=kλ（k=0,1,2…）处振动______（加强）；Δr=(2k+1)λ/2 处振动______（减弱）。",
+      "answer": "加强；减弱",
+      "kps": [
+        "kp_phy11_wave_interference"
+      ],
+      "difficulty": 0.3,
+      "solution": "干涉加强与减弱条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0438",
+      "item_type": "solve",
+      "stem": "两相同波源 S₁、S₂相距 4 m，波长 1 m，连线上哪些点振动加强？为什么水面上两列水波叠加会出现„稳定的花纹“？",
+      "answer": "连线上到两波源距离差 Δr=0、±1 m、±2 m、±3 m、±4 m（4 m 以内）：即中点及每隔 0.5 m 的点共 9 个加强点。两列相干波（同频恒相差）叠加，空间各点两波相位差恒定：同相叠加恒加强、反相恒减弱，形成位置固定的加强与减弱相间的稳定图样（干涉条纹）。",
+      "kps": [
+        "kp_phy11_wave_interference"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：连线上到两波源距离差 Δr=0、±1 m、±2 m、±3 m、±4 m（4 m 以内）：即中点及每隔 0.5 m 的点共 9 个加强点。两列相干波（同频恒相差）叠加，空间各点两波相位差恒定：同相叠加恒加强、反相恒减弱，形成位置固定的加强与减弱相间的稳定图样（干涉条纹）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0439",
+      "item_type": "choice",
+      "stem": "一列波沿 x 正方向传播，t 时刻波形已知，周期满足 0.5T<Δt<T。经 Δt 后波形平移的距离不确定的原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy11_wave_multi"
+      ],
+      "difficulty": 0.45,
+      "solution": "波传播的多解性：波形平移 s=vΔt，但每隔一个 λ 波形重复，故 s 可为 kλ+（小于 λ 的位移），对应周期多解 t=kT+Δt；需要限定量程（如 Δt<T 或 s<λ）才能唯一确定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 波动的时间周期性和空间周期性导致传播距离多解（s=kλ+Δs）",
+        "B. 波速不确定一定为零",
+        "C. 波的频率不确定",
+        "D. 无法画出波形"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0440",
+      "item_type": "fill",
+      "stem": "波的多解问题的根源：波在空间上的周期性（每隔______波形重复）和时间上的周期性（每隔______振动重复）；双向传播时还要考虑方向______解。",
+      "answer": "一个波长 λ；一个周期 T；两种（左/右）",
+      "kps": [
+        "kp_phy11_wave_multi"
+      ],
+      "difficulty": 0.35,
+      "solution": "三类多解来源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0441",
+      "item_type": "solve",
+      "stem": "简谐波沿 x 轴传播，A、B 两质点平衡位置相距 6 m（A 在 B 左）。某时刻 A 在波峰、B 在平衡位置向下振动，波长 λ>3 m。求可能的波长。",
+      "answer": "A、B 间距与波长关系（B 向下振、A 在峰、右行或左行分别讨论）：设波向右：B 在 A 右侧、下一时刻将进入波谷一侧，A 到 B 相位差：AB=λ/4+nλ（n=0,1,…）→λ=6/(n+1/4)：n=0 λ=24 m，n=1 λ=4.8 m；波向左：AB=3λ/4+nλ→λ=6/(n+3/4)：n=0 λ=8 m。λ>3 m 的解：24 m、4.8 m（右行）、8 m（左行）。多解来自方向与周期性。",
+      "kps": [
+        "kp_phy11_wave_multi"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：A、B 间距与波长关系（B 向下振、A 在峰、右行或左行分别讨论）：设波向右：B 在 A 右侧、下一时刻将进入波谷一侧，A 到 B 相位差：AB=λ/4+nλ（n=0,1,…）→λ=6/(n+1/4)：n=0 λ=24 m，n=1 λ=4.8 m；波向左：AB=3λ/4+nλ→λ=6/(n+3/4)：n=0 λ=8 m。λ>3 m 的解：24 m、4.8 m（右行）、8 m（左行）。多解来自方向与周期性。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0442",
+      "item_type": "choice",
+      "stem": "下列现象属于波衍射的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy11_wave_reflection_diffraction"
+      ],
+      "difficulty": 0.35,
+      "solution": "衍射：波绕过障碍物或缝隙边缘继续传播；回声是反射，C 是折射，D 是干涉。发生明显衍射的条件：障碍物或孔的尺寸与波长相近或更小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 回声",
+        "B. 波绕过障碍物继续传播",
+        "C. 波从一种介质进入另一种介质方向改变",
+        "D. 两列波叠加振幅增大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0443",
+      "item_type": "fill",
+      "stem": "发生明显衍射的条件：障碍物或孔的尺寸比波长______或与波长______；一切波都能发生衍射，衍射是波的______性质。",
+      "answer": "小；相近；特有（普遍）",
+      "kps": [
+        "kp_phy11_wave_reflection_diffraction"
+      ],
+      "difficulty": 0.3,
+      "solution": "明显衍射条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_0444",
+      "item_type": "solve",
+      "stem": "为什么隔着墙能听到房间里的说话声，而隔着同样一堵墙看不到里面的人？为什么波长较长的低频声波更容易绕过大障碍物？",
+      "answer": "声波波长（厘米到米级）与门缝、窗缝尺寸相近，能发生明显衍射绕过障碍传入耳中；光波波长仅数百纳米，远小于墙和缝的尺寸，衍射极不明显（近似直线传播），看不到墙后物体。波长越长，同等障碍物相对尺寸越小，衍射越明显，所以低频（长波）声音更容易绕过大障碍物传播。",
+      "kps": [
+        "kp_phy11_wave_reflection_diffraction"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：声波波长（厘米到米级）与门缝、窗缝尺寸相近，能发生明显衍射绕过障碍传入耳中；光波波长仅数百纳米，远小于墙和缝的尺寸，衍射极不明显（近似直线传播），看不到墙后物体。波长越长，同等障碍物相对尺寸越小，衍射越明显，所以低频（长波）声音更容易绕过大障碍物传播。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

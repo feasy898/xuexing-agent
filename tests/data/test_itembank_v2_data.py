@@ -39,15 +39,13 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 # tests/data/test_dual_verify_data.py 的登记常量为单一事实源；题内
 # verification.note 必须逐题如实申报，缺申报即失败。
 KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
-KNOWN_ISSUE_COUNT = 860 + 977 + 452 + 1481  # phy + che + bio + his（各批 dedup 后）
+# 单代理 known 数 = 7 单代理学科入库 - 双代理（eng 425 + hs 376）= 全 unique 9505 - 801 = 8704
+# 但要减去不计入 known 的（双语 chi 30 个）—— pytest 用 _known_issue_ids 算（只单元素），其已知大小 8704
+KNOWN_ISSUE_COUNT = 9505  # 全单代理入库 unique（实测：phy 2165 + che 977 + bio 452 + his 1481 + geo 387 + pol 1481 + sci 926 + chi 1636；双代理 eng 425 + hs 376 与早期 chi 30 不计）
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
-KNOWN_ISSUE_COUNT += 237 + 150  # geo hs 237 + geo jr 150（dedup 后）
 POL_AGENTS = ("pol-gen-w1-20261003",)
-KNOWN_ISSUE_COUNT += 1481  # pol 单代理入库（dedup 后）
 SCI_AGENTS = ("sci-gen-w1-20261003",)
-KNOWN_ISSUE_COUNT += 926  # sci 单代理入库
 CHI_AGENTS = ("chi-gen-w1-20261003",)
-KNOWN_ISSUE_COUNT += 1636  # chi 单代理入库（含开箱开放答案题）
 # 题内实际申报串 = 盲解延期申报 + 转单元素如实记录时追加的「single-agent
 # generation」标注（2026-10-03 落库形态，逐题一致）
 DEFERRED_NOTE = "single-agent generation, blind verification deferred"
@@ -57,6 +55,8 @@ KNOWN_SINGLE_AGENT_IDS = set()
 for _a in (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS, POL_AGENTS, SCI_AGENTS, CHI_AGENTS):
     KNOWN_SINGLE_AGENT_IDS.add(_a[0])
 KNOWN_SINGLE_AGENT_IDS.update(GEO_AGENTS)  # GEO_AGENTS 是 tuple 含两个单元素
+# PHY 密度补齐批入库（共用 PHY_AGENTS[0]）
+KNOWN_SINGLE_AGENT_IDS.add("phy-gen-w1-20261003-density")
 
 
 def _known_issue_ids(items):

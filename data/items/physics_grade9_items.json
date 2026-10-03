@@ -4319,6 +4319,6216 @@
         "note": "single-agent generation, blind verification deferred",
         "single_agent": true
       }
+    },
+    {
+      "id": "phy_dens01_1030",
+      "item_type": "choice",
+      "stem": "关于交流电和直流电，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_ac_dc"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国家庭用电是频率 50 Hz 的交流电（方向周期性变化，每秒变化 100 次）；电池（干电池、蓄电池）提供直流电，方向不随时间变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我国家庭电路使用的是直流电",
+        "B. 交流电的电流方向周期性变化",
+        "C. 电池提供交流电",
+        "D. 直流电的方向不断改变"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1031",
+      "item_type": "fill",
+      "stem": "方向不随时间改变的电流叫______电流（DC）；方向随时间周期性变化的电流叫交变电流（AC）。我国家庭电路的交流电频率是______Hz，电压 220 V。",
+      "answer": "直流（直流电）；50",
+      "kps": [
+        "kp_phy9_ac_dc"
+      ],
+      "difficulty": 0.3,
+      "solution": "交直流概念与我国电网参数。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1032",
+      "item_type": "solve",
+      "stem": "发电机输出的是什么电流？为什么手摇发电机的小灯泡会闪烁？",
+      "answer": "发电机基于电磁感应，线圈在磁场中周期性转动，产生的感应电流大小和方向随时间周期性变化，是交流电；手摇发电机转速低，交变电流周期较长，灯泡亮度随电流大小变化明显，看起来闪烁；市电频率 50 Hz、变化快，眼睛感觉不到闪烁。",
+      "kps": [
+        "kp_phy9_ac_dc"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：发电机基于电磁感应，线圈在磁场中周期性转动，产生的感应电流大小和方向随时间周期性变化，是交流电；手摇发电机转速低，交变电流周期较长，灯泡亮度随电流大小变化明显，看起来闪烁；市电频率 50 Hz、变化快，眼睛感觉不到闪烁。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1033",
+      "item_type": "choice",
+      "stem": "原子的核式结构模型指出（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_atom_structure"
+      ],
+      "difficulty": 0.35,
+      "solution": "卢瑟福由 α 粒子散射实验提出核式结构：原子由居于中心的原子核（带正电、几乎全部质量）和绕核运动的电子（负电）组成，原子内部大部分是空的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原子是坚实的小球",
+        "B. 原子中心有原子核，电子绕核运动",
+        "C. 电子均匀分布在原子内",
+        "D. 原子核带负电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1034",
+      "item_type": "fill",
+      "stem": "原子由位于中心的______和核外绕核运动的______组成；原子核由质子和中子组成，整个原子对外不显电性。",
+      "answer": "原子核；电子",
+      "kps": [
+        "kp_phy9_atom_structure"
+      ],
+      "difficulty": 0.3,
+      "solution": "原子的核式结构。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1035",
+      "item_type": "solve",
+      "stem": "按空间尺度由小到大排列：夸克、质子、原子核、原子、分子，并说明原子不显电性的原因。",
+      "answer": "夸克（组成质子中子）<质子/中子<原子核<原子<分子。原子中原子核所带正电荷与核外电子所带负电荷数量相等，电性相反，整体对外不显电性。",
+      "kps": [
+        "kp_phy9_atom_structure"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：夸克（组成质子中子）<质子/中子<原子核<原子<分子。原子中原子核所带正电荷与核外电子所带负电荷数量相等，电性相反，整体对外不显电性。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1036",
+      "item_type": "choice",
+      "stem": "„220 V 60 W“和„220 V 15 W“两只白炽灯串联接在 220 V 电路中（设灯丝电阻不变），则（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_brightness_comparison"
+      ],
+      "difficulty": 0.45,
+      "solution": "R₁₅W>R₆₀W，串联电流相等，P=I²R，电阻大的 15 W 灯实际功率大、更亮；串联分压 15 W 灯分得电压也多。",
+      "source": "llm_generated",
+      "options": [
+        "A. 60 W 灯更亮",
+        "B. 15 W 灯更亮",
+        "C. 一样亮",
+        "D. 都正常发光"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1037",
+      "item_type": "fill",
+      "stem": "灯泡的亮度由______功率决定；两灯并联时______额定功率大的灯更亮（电阻小的实际功率大）。",
+      "answer": "实际；额定（电阻小）",
+      "kps": [
+        "kp_phy9_brightness_comparison"
+      ],
+      "difficulty": 0.35,
+      "solution": "并联时电压相同 P=U²/R，电阻小功率大。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1038",
+      "item_type": "solve",
+      "stem": "L₁„6 V 3 W“与 L₂„6 V 6 W“串联接在 9 V 电源上（设电阻不变）。求两灯的实际功率并判断哪个更亮。",
+      "answer": "R₁=6²÷3=12 Ω，R₂=6²÷6=6 Ω，串联 R总=18 Ω，I=9÷18=0.5 A；P₁实=I²R₁=0.25×12=3 W（恰好正常），P₂实=0.25×6=1.5 W；L₁ 实际功率大，L₁ 更亮（L₂ 偏暗）。",
+      "kps": [
+        "kp_phy9_brightness_comparison"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：R₁=6²÷3=12 Ω，R₂=6²÷6=6 Ω，串联 R总=18 Ω，I=9÷18=0.5 A；P₁实=I²R₁=0.25×12=3 W（恰好正常），P₂实=0.25×6=1.5 W；L₁ 实际功率大，L₁ 更亮（L₂ 偏暗）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1039",
+      "item_type": "choice",
+      "stem": "甲、乙两个轻质泡沫小球相互排斥，丙球与甲球相互吸引。则丙球的带电情况是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_charge_interaction"
+      ],
+      "difficulty": 0.35,
+      "solution": "甲乙排斥说明同带一种电；丙与甲吸引：若丙带电则带异种电荷，若丙是不带电的轻小物体也会被吸引，两种可能都存在。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一定与甲球带同种电荷",
+        "B. 一定与甲球带异种电荷",
+        "C. 可能带异种电荷，也可能不带电",
+        "D. 一定不带电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1040",
+      "item_type": "fill",
+      "stem": "电荷间相互作用的规律：同种电荷相互______，异种电荷相互______；验电器的工作原理是同种电荷相互排斥。",
+      "answer": "排斥；吸引",
+      "kps": [
+        "kp_phy9_charge_interaction"
+      ],
+      "difficulty": 0.3,
+      "solution": "电荷作用规律与验电器原理。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1041",
+      "item_type": "solve",
+      "stem": "验电器为什么能检验物体是否带电？金属箔张角变大说明什么？能直接判断带哪种电荷吗？",
+      "answer": "带电体接触金属球后，电荷通过金属杆传到两片金属箔，两箔带同种电荷相互排斥而张开，说明物体带电；张角越大说明电荷量越多；但验电器只能显示是否带电和电荷多少，不能直接判断正负，需用已知电性的带电体进一步检验（观察张角增大或减小）。",
+      "kps": [
+        "kp_phy9_charge_interaction"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：带电体接触金属球后，电荷通过金属杆传到两片金属箔，两箔带同种电荷相互排斥而张开，说明物体带电；张角越大说明电荷量越多；但验电器只能显示是否带电和电荷多少，不能直接判断正负，需用已知电性的带电体进一步检验（观察张角增大或减小）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1042",
+      "item_type": "choice",
+      "stem": "关于电荷量，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_charge_quantity"
+      ],
+      "difficulty": 0.35,
+      "solution": "电荷量单位是库仑（C）；任何带电体所带电荷量都是 e 的整数倍（量子化）；元电荷是最小电荷量，不是电子本身。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电荷量的单位是安培",
+        "B. 电子所带的最小电荷叫元电荷，e=1.6×10⁻¹⁹ C",
+        "C. 带电体所带电荷量可以是任意值",
+        "D. 元电荷就是电子"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1043",
+      "item_type": "fill",
+      "stem": "电荷的______叫电荷量，符号 Q，国际单位是库仑（C）；电子带有最小负电荷，其电荷量为 e=______C。",
+      "answer": "多少；1.6×10⁻¹⁹",
+      "kps": [
+        "kp_phy9_charge_quantity"
+      ],
+      "difficulty": 0.3,
+      "solution": "元电荷 e=1.6×10⁻¹⁹ C。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1044",
+      "item_type": "solve",
+      "stem": "某带电体带有 3.2×10⁻¹⁰ C 的负电荷，它多余还是缺少电子？多（缺）多少个电子？",
+      "answer": "带负电说明多余电子；n=Q/e=3.2×10⁻¹⁰÷(1.6×10⁻¹⁹)=2×10⁹ 个电子，即多余 20 亿个电子。",
+      "kps": [
+        "kp_phy9_charge_quantity"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：带负电说明多余电子；n=Q/e=3.2×10⁻¹⁰÷(1.6×10⁻¹⁹)=2×10⁹ 个电子，即多余 20 亿个电子。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1045",
+      "item_type": "choice",
+      "stem": "电路由哪几部分组成（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_circuit_composition"
+      ],
+      "difficulty": 0.3,
+      "solution": "电路四部分：电源（提供电能）、用电器（消耗电能）、开关（控制通断）、导线（输送电能），缺一不可构成基本电路。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电源、用电器",
+        "B. 电源、用电器、开关、导线",
+        "C. 开关、导线、灯泡",
+        "D. 电源、导线、开关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1046",
+      "item_type": "fill",
+      "stem": "电路的三种状态：______（接通，电路中有电流）、______（断开，电路中无电流）和短路（电流不经过用电器直接构成回路，容易烧坏电源甚至引起火灾）。",
+      "answer": "通路；断路（开路）",
+      "kps": [
+        "kp_phy9_circuit_composition"
+      ],
+      "difficulty": 0.3,
+      "solution": "通路、断路、短路三种电路状态。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1047",
+      "item_type": "solve",
+      "stem": "„用一节干电池、一个小灯泡、一个开关和导线连成电路，使开关闭合灯亮、断开灯灭。“这体现了开关在电路中的什么作用？如果直接把电池两极用导线相连会出现什么后果？",
+      "answer": "开关控制电路的通断，进而控制用电器工作；直接用导线连接电池两极是电源短路，电流过大，会烧坏电池和导线（发热甚至起火），绝对不允许。",
+      "kps": [
+        "kp_phy9_circuit_composition"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：开关控制电路的通断，进而控制用电器工作；直接用导线连接电池两极是电源短路，电流过大，会烧坏电池和导线（发热甚至起火），绝对不允许。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1048",
+      "item_type": "choice",
+      "stem": "医院病房呼叫电路要求：按下任一床头的开关，护士站相应指示灯亮、电铃同时发声。下列电路设计正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_circuit_design"
+      ],
+      "difficulty": 0.45,
+      "solution": "各支路（开关+灯）并联可分别呼叫互不影响；电铃在干路中，任何一处呼叫铃都响；B 中一处断开全部失效，C、D 无法区分床位且控制混乱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每个开关与对应指示灯串联成一条支路，各支路并联，电铃串联在干路中",
+        "B. 所有开关和灯串联成一条回路",
+        "C. 各开关先并联再与一个灯串联",
+        "D. 各灯并联后与各开关串联接在干路"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1049",
+      "item_type": "fill",
+      "stem": "设计电路时，若多个用电器需要独立控制、互不影响，应把它们______联；开关与它控制的用电器应______联；家庭电路中开关应接在______线上。",
+      "answer": "并；串；火",
+      "kps": [
+        "kp_phy9_circuit_design"
+      ],
+      "difficulty": 0.4,
+      "solution": "电路设计基本原则：并联独立、开关串联、控制火线。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1050",
+      "item_type": "solve",
+      "stem": "请设计„楼道声光控灯“的电路逻辑：白天灯不亮、夜晚有声音才亮。说明用什么开关、怎样连接，为什么这样连接。",
+      "answer": "用声控开关和光控开关串联后与灯串联接入电路：光控开关夜晚闭合、白天断开，声控开关有声音时闭合；两开关都闭合（夜晚且有声音）电路才通、灯才亮，白天光控断开，无论多大声灯都不亮。串联实现„与“逻辑（同时满足条件），若并联则成„或“逻辑（任一满足就亮），不符合要求。",
+      "kps": [
+        "kp_phy9_circuit_design"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：用声控开关和光控开关串联后与灯串联接入电路：光控开关夜晚闭合、白天断开，声控开关有声音时闭合；两开关都闭合（夜晚且有声音）电路才通、灯才亮，白天光控断开，无论多大声灯都不亮。串联实现„与“逻辑（同时满足条件），若并联则成„或“逻辑（任一满足就亮），不符合要求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1051",
+      "item_type": "choice",
+      "stem": "关于电路图，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_circuit_diagram"
+      ],
+      "difficulty": 0.35,
+      "solution": "电路图用国家统一规定的符号表示电路元件及连接情况；交叉相连处必须打点；要与实物连接一一对应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电路图就是实物连接图",
+        "B. 电路图用统一规定的符号表示电路连接情况",
+        "C. 电路图中导线可以随意交叉不连接",
+        "D. 画电路图不必与实物图对应"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1052",
+      "item_type": "fill",
+      "stem": "画电路图时，元件符号要使用______规定的符号；连接导线用______线表示，交叉且相连处要打点。",
+      "answer": "国家标准（统一）；直（折）",
+      "kps": [
+        "kp_phy9_circuit_diagram"
+      ],
+      "difficulty": 0.3,
+      "solution": "规范：横平竖直、元件不画在拐角、相连处打点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1053",
+      "item_type": "solve",
+      "stem": "根据„两灯串联、开关控制整个电路“的要求画出电路图，再连成实物图。说明串联电路实物连接的要点。",
+      "answer": "电路图：电池—开关—灯 L₁—灯 L₂ 依次首尾相连成闭合回路。实物连接要点：从电池正极出发依次串联各元件（导线接接线柱），路径只有一条，开关 anywhere 都控制全电路；连接时开关应断开，检查无误后再闭合。",
+      "kps": [
+        "kp_phy9_circuit_diagram"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：电路图：电池—开关—灯 L₁—灯 L₂ 依次首尾相连成闭合回路。实物连接要点：从电池正极出发依次串联各元件（导线接接线柱），路径只有一条，开关 anywhere 都控制全电路；连接时开关应断开，检查无误后再闭合。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1054",
+      "item_type": "choice",
+      "stem": "两灯串联，闭合开关后两灯都不亮；用电压表测 L₁ 两端电压示数接近电源电压，测 L₂ 两端电压为 0。故障可能是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_circuit_fault"
+      ],
+      "difficulty": 0.45,
+      "solution": "两灯不亮说明电路断路；电压表接在 L₁ 两端有接近电源电压的示数，说明电压表经 L₂ 与电源构成通路、L₁ 两端断开（L₁ 断路）；若 L₂ 断路则 L₁ 两端电压为 0。",
+      "source": "llm_generated",
+      "options": [
+        "A. L₁ 断路",
+        "B. L₂ 断路",
+        "C. L₁ 短路",
+        "D. L₂ 短路"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1055",
+      "item_type": "fill",
+      "stem": "串联电路故障分析：某灯短路时，该灯两端电压为______，其他灯______（填„仍能“或„不能“）发光；某灯断路时，整个电路______电流。",
+      "answer": "0；仍能；没有",
+      "kps": [
+        "kp_phy9_circuit_fault"
+      ],
+      "difficulty": 0.35,
+      "solution": "短路„分走“电压，断路切断电流。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1056",
+      "item_type": "solve",
+      "stem": "家庭中一盏灯突然熄灭而其他用电器正常。请分析可能的故障部位，并说明判断依据；为什么不能盲目换大额定电流的保险丝？",
+      "answer": "其他电器正常说明家庭电路总路完好，故障在该支路：灯丝断了（断路）、灯座接触不良或该支路导线断开，也可能是该支路保险丝熔断；不能换大保险丝——保险丝额定电流过大时，电路过载（电流过大）时保险丝不熔断，失去保护作用，会烧坏线路甚至引发火灾。",
+      "kps": [
+        "kp_phy9_circuit_fault"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：其他电器正常说明家庭电路总路完好，故障在该支路：灯丝断了（断路）、灯座接触不良或该支路导线断开，也可能是该支路保险丝熔断；不能换大保险丝——保险丝额定电流过大时，电路过载（电流过大）时保险丝不熔断，失去保护作用，会烧坏线路甚至引发火灾。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1057",
+      "item_type": "choice",
+      "stem": "下列材料中，通常情况下都属于导体的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_conductor_insulator"
+      ],
+      "difficulty": 0.3,
+      "solution": "铜、大地、盐水容易导电是导体；铅笔芯（石墨）是导体但橡胶不是；塑料、玻璃、纯水、陶瓷通常都是绝缘体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铅笔芯、橡胶",
+        "B. 铜、大地、盐水",
+        "C. 塑料、玻璃",
+        "D. 纯水、陶瓷"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1058",
+      "item_type": "fill",
+      "stem": "______导电的物体叫导体，金属、人体、大地、酸碱盐溶液都是导体；______导电的物体叫绝缘体，如橡胶、玻璃、塑料。",
+      "answer": "容易；不容易",
+      "kps": [
+        "kp_phy9_conductor_insulator"
+      ],
+      "difficulty": 0.3,
+      "solution": "导体与绝缘体由材料导电性能划分，没有绝对界限（如玻璃加热可变导体）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1059",
+      "item_type": "solve",
+      "stem": "为什么电线芯用金属丝、电线外皮用塑料或橡胶？为什么高压线不包绝缘皮而裸露架设？",
+      "answer": "电线芯用铜铝等导体保证导电，外皮用绝缘材料防止漏电和触电；高压线离地很高、靠空气绝缘（空气是绝缘体），电压太高时一般绝缘皮也难以可靠绝缘，反而增加重量成本，所以采用裸线并保持安全距离和绝缘子支撑。",
+      "kps": [
+        "kp_phy9_conductor_insulator"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：电线芯用铜铝等导体保证导电，外皮用绝缘材料防止漏电和触电；高压线离地很高、靠空气绝缘（空气是绝缘体），电压太高时一般绝缘皮也难以可靠绝缘，反而增加重量成本，所以采用裸线并保持安全距离和绝缘子支撑。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1060",
+      "item_type": "choice",
+      "stem": "对电流概念的理解，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_current_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "正负电荷定向移动都能形成电流；规定正电荷定向移动的方向为电流方向，金属中自由电子（负电荷）移动方向与电流方向相反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电荷定向移动形成电流",
+        "B. 只有正电荷移动才能形成电流",
+        "C. 电流的方向与电子定向移动方向相同",
+        "D. 金属导体中电流方向与自由电子定向移动方向相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1061",
+      "item_type": "fill",
+      "stem": "电荷的______移动形成电流；物理学中规定______电荷定向移动的方向为电流方向。在电源外部，电流从电源正极经用电器流向负极。",
+      "answer": "定向；正",
+      "kps": [
+        "kp_phy9_current_concept"
+      ],
+      "difficulty": 0.3,
+      "solution": "电流形成条件与方向规定。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1062",
+      "item_type": "solve",
+      "stem": "金属导体中自由电子定向移动的方向与电流方向有什么关系？电源外部电路中电流沿什么方向流动？",
+      "answer": "金属靠自由电子（负电荷）导电，自由电子定向移动方向与电流方向相反；在电源外部，电流从电源正极出发，经导线和用电器回到负极，在电源内部由负极流向正极（靠非静电力做功）。",
+      "kps": [
+        "kp_phy9_current_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：金属靠自由电子（负电荷）导电，自由电子定向移动方向与电流方向相反；在电源外部，电流从电源正极出发，经导线和用电器回到负极，在电源内部由负极流向正极（靠非静电力做功）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1063",
+      "item_type": "choice",
+      "stem": "定值电阻 R 与滑动变阻器 R' 串联，电压表测 R 两端电压。当滑片向右移动使 R' 接入阻值变大时（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_dynamic_circuit"
+      ],
+      "difficulty": 0.45,
+      "solution": "R' 增大→总电阻增大→I=U/R总 减小（电流表变小）；R 两端电压 U_R=IR 减小，电压表变小；R' 两端电压反而增大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流表示数变大，电压表示数变大",
+        "B. 电流表示数变小，电压表示数变小",
+        "C. 电流表示数变大，电压表示数变小",
+        "D. 电流表示数变小，电压表示数变大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1064",
+      "item_type": "fill",
+      "stem": "分析动态电路的顺序：先看电路结构（串/并联）和各表测量对象，再从______的变化入手，判断总电阻、干路电流的变化，最后由欧姆定律确定各部分______的变化。",
+      "answer": "电阻（滑动变阻器滑片移动或开关通断）；电压和电流",
+      "kps": [
+        "kp_phy9_dynamic_circuit"
+      ],
+      "difficulty": 0.35,
+      "solution": "动态电路分析：局部→整体→局部的推理链。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1065",
+      "item_type": "solve",
+      "stem": "电源电压 6 V，R₁=10 Ω 与滑动变阻器 R₂ 串联，R₂ 最大 20 Ω。①滑片从阻值为 0 移到 20 Ω 过程中，电流表的示数范围是多少？②R₁ 两端电压的变化范围是多少？",
+      "answer": "①R₂=0 时 I=6÷10=0.6 A（最大）；R₂=20 Ω 时 I=6÷30=0.2 A（最小），电流表从 0.6 A 变化到 0.2 A；②U₁=IR₁：最大 6 V，最小 0.2×10=2 V，U₁ 在 2~6 V 之间变化。",
+      "kps": [
+        "kp_phy9_dynamic_circuit"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①R₂=0 时 I=6÷10=0.6 A（最大）；R₂=20 Ω 时 I=6÷30=0.2 A（最小），电流表从 0.6 A 变化到 0.2 A；②U₁=IR₁：最大 6 V，最小 0.2×10=2 V，U₁ 在 2~6 V 之间变化。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1066",
+      "item_type": "choice",
+      "stem": "关于地磁场，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_earth_field"
+      ],
+      "difficulty": 0.35,
+      "solution": "地磁 N 极在地理南极附近、地磁 S 极在地理北极附近，地磁两极与地理两极并不重合（存在磁偏角，沈括发现），所以指南针并非严格正南北。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地磁场的 N 极在地理北极附近",
+        "B. 地磁场的 N 极在地理南极附近",
+        "C. 指南针静止时总指向正南正北",
+        "D. 地球周围没有磁场"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1067",
+      "item_type": "fill",
+      "stem": "地球本身是一个巨大的磁体，周围存在______；地磁的 N 极在地理______极附近，我国宋代学者______最早记载了磁偏角。",
+      "answer": "地磁场；南；沈括",
+      "kps": [
+        "kp_phy9_earth_field"
+      ],
+      "difficulty": 0.3,
+      "solution": "地磁场分布与磁偏角的发现。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1068",
+      "item_type": "solve",
+      "stem": "鸽子、海龟能利用地磁场导航。指南针为什么能指示南北方向？为什么它指向的不是正南北？",
+      "answer": "地球周围存在地磁场，指南针（小磁针）在地磁场中受磁场力作用，静止时 N 极指向地磁场的方向（大致向北）；由于地磁两极与地理两极不重合（磁偏角），加上局部磁异常，指南针指向与真正的南北方向有偏差。",
+      "kps": [
+        "kp_phy9_earth_field"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：地球周围存在地磁场，指南针（小磁针）在地磁场中受磁场力作用，静止时 N 极指向地磁场的方向（大致向北）；由于地磁两极与地理两极不重合（磁偏角），加上局部磁异常，指南针指向与真正的南北方向有偏差。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1069",
+      "item_type": "choice",
+      "stem": "家庭电路中电能表的作用及参数„3000 r/kW·h“的含义，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electric_energy"
+      ],
+      "difficulty": 0.35,
+      "solution": "电能表（电度表）测量消耗的电能；转盘常数 3000 r/kW·h 表示每用 1 度电转盘转 3000 转，据此可由转数计算电能或测用电器功率。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电能表测量电流大小；3000 r/kW·h 表示转盘每分钟转 3000 圈",
+        "B. 电能表测量家庭消耗的电能；3000 r/kW·h 表示每消耗 1 kW·h 电能转盘转 3000 圈",
+        "C. 电能表测量电功率；3000 r/kW·h 表示电功率为 3000 W",
+        "D. 电能表测量电压；3000 r/kW·h 表示额定电压 3000 V"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1070",
+      "item_type": "fill",
+      "stem": "电能表标有„3000 r/kW·h“。电路中只让一台用电器工作，转盘 6 min 转 150 转，消耗电能______kW·h，该用电器的电功率为______W。",
+      "answer": "0.05；500",
+      "kps": [
+        "kp_phy9_electric_energy"
+      ],
+      "difficulty": 0.35,
+      "solution": "W=150÷3000=0.05 kW·h；t=0.1 h，P=W/t=0.05÷0.1=0.5 kW=500 W。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1071",
+      "item_type": "solve",
+      "stem": "小明家电能表月初读数 3256.8 kW·h、月末读数 3380.4 kW·h。①本月用电多少千瓦时？②按 0.6 元/(kW·h) 计，应付电费多少？③某晚只开一台空调 2 h，转盘转 3600 转（3000 r/kW·h），空调功率多大？",
+      "answer": "①W=3380.4-3256.8=123.6 kW·h；②电费 123.6×0.6=74.16 元；③W'=3600÷3000=1.2 kW·h，P=1.2÷2=0.6 kW=600 W。",
+      "kps": [
+        "kp_phy9_electric_energy"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①W=3380.4-3256.8=123.6 kW·h；②电费 123.6×0.6=74.16 元；③W'=3600÷3000=1.2 kW·h，P=1.2÷2=0.6 kW=600 W。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1072",
+      "item_type": "choice",
+      "stem": "下列家用电器中，利用电流热效应工作的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_electric_heating"
+      ],
+      "difficulty": 0.35,
+      "solution": "电饭锅把电能转化为内能（热效应）；风扇、电动机主要把电能转化为机械能，电视机转化为光能声能等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电风扇",
+        "B. 电动机",
+        "C. 电饭锅",
+        "D. 电视机"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1073",
+      "item_type": "fill",
+      "stem": "电流通过导体时发热的现象叫电流的______；电热器的优点是清洁、无污染、______方便（可利用和控制），但有时也要防止电热造成危害。",
+      "answer": "热效应；控制（调节）",
+      "kps": [
+        "kp_phy9_electric_heating"
+      ],
+      "difficulty": 0.3,
+      "solution": "电热的利用与防止。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1074",
+      "item_type": "solve",
+      "stem": "电脑、电视机都装有散热窗（风扇），而电饭锅、电水壶则„怕不发热“。请分别说明其中的电热利用或防止的道理，并各再举一例。",
+      "answer": "电脑工作时电流热效应使元件发热，过热会损坏元件，所以要散热窗、风扇散热（防止电热危害，又如电动机外壳散热片）；电饭锅利用电热煮熟食物，发热体电阻大（Q=I²Rt）集中发热（利用电热，又如电熨斗、电热毯）。",
+      "kps": [
+        "kp_phy9_electric_heating"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：电脑工作时电流热效应使元件发热，过热会损坏元件，所以要散热窗、风扇散热（防止电热危害，又如电动机外壳散热片）；电饭锅利用电热煮熟食物，发热体电阻大（Q=I²Rt）集中发热（利用电热，又如电熨斗、电热毯）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1075",
+      "item_type": "choice",
+      "stem": "„220 V 40 W“的白炽灯正常发光时，通过灯丝的电流约为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electric_power"
+      ],
+      "difficulty": 0.4,
+      "solution": "I=P/U=40÷220≈0.18 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5.5 A",
+        "B. 0.18 A",
+        "C. 0.55 A",
+        "D. 1.8 A"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1076",
+      "item_type": "fill",
+      "stem": "电功率表示电流做功的______，定义式 P=______，纯电阻电路 P=I²R=U²/R；单位瓦特（W），1 kW=1000 W。",
+      "answer": "快慢；W/t",
+      "kps": [
+        "kp_phy9_electric_power"
+      ],
+      "difficulty": 0.3,
+      "solution": "电功率的物理意义与公式。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1077",
+      "item_type": "solve",
+      "stem": "一电阻为 44 Ω 的电热水器的额定电压 220 V。求：①额定功率；②正常工作 30 min 消耗的电能；③若实际电压只有 200 V（电阻不变），实际功率多大？",
+      "answer": "①P=U²/R=220²÷44=1100 W；②W=Pt=1100×1800=1.98×10⁶ J=0.55 kW·h；③P实=U实²/R=200²÷44≈909 W，实际功率小于额定功率。",
+      "kps": [
+        "kp_phy9_electric_power"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①P=U²/R=220²÷44=1100 W；②W=Pt=1100×1800=1.98×10⁶ J=0.55 kW·h；③P实=U实²/R=200²÷44≈909 W，实际功率小于额定功率。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1078",
+      "item_type": "choice",
+      "stem": "„220 V 1100 W“的电热水壶接在 220 V 电路中，将 1 kg、20 ℃ 的水烧开（1 标准大气压）至少需要（　　）（c水=4.2×10³ J/(kg·℃)，不计热损失）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electric_thermal_comprehensive"
+      ],
+      "difficulty": 0.5,
+      "solution": "Q吸=4.2×10³×1×80=3.36×10⁵ J；t=W/P=3.36×10⁵÷1100≈305 s，选 B（302 s 与计算值因舍入不同，最接近）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 800 s",
+        "B. 302 s",
+        "C. 480 s",
+        "D. 100 s"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1079",
+      "item_type": "fill",
+      "stem": "电热水壶功率 1000 W，把 2 kg 水从 25 ℃ 加热到 75 ℃ 需吸热______J；若效率为 84%，需通电______s。",
+      "answer": "4.2×10⁵；500",
+      "kps": [
+        "kp_phy9_electric_thermal_comprehensive"
+      ],
+      "difficulty": 0.4,
+      "solution": "Q吸=4.2×10³×2×50=4.2×10⁵ J；W=Q/η=5×10⁵ J，t=W/P=500 s。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1080",
+      "item_type": "solve",
+      "stem": "„220 V 2000 W“即热式热水器正常工作，冷水流量 0.05 kg/s 流经加热器被加热升温 20 ℃（c水=4.2×10³）。求加热效率；若效率为 100%，该热水器理论上每秒最多能使多少千克水升温 20 ℃？",
+      "answer": "每秒流经水的吸热 P水=cmΔt/t=4.2×10³×0.05×20=4200 W；η=4200÷2000×100%=210%>100%，说明 0.05 kg/s 的流量在 20 ℃ 温升下需要的功率超过 2000 W，实际达不到（该流量下温升只能约 9.5 ℃）；η=100% 时流量 m=Pt/(cΔt)=2000÷(4.2×10³×20)≈0.024 kg/s，即每秒约 24 g 水。",
+      "kps": [
+        "kp_phy9_electric_thermal_comprehensive"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：每秒流经水的吸热 P水=cmΔt/t=4.2×10³×0.05×20=4200 W；η=4200÷2000×100%=210%>100%，说明 0.05 kg/s 的流量在 20 ℃ 温升下需要的功率超过 2000 W，实际达不到（该流量下温升只能约 9.5 ℃）；η=100% 时流量 m=Pt/(cΔt)=2000÷(4.2×10³×20)≈0.024 kg/s，即每秒约 24 g 水。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1081",
+      "item_type": "choice",
+      "stem": "一电熨斗接在 220 V 电路中正常工作，通过的电流为 2 A，工作 10 min 电流做功为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electric_work"
+      ],
+      "difficulty": 0.4,
+      "solution": "W=UIt=220×2×600=2.64×10⁵ J。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4400 J",
+        "B. 2.64×10⁵ J",
+        "C. 4.4×10³ kW·h",
+        "D. 2200 J"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1082",
+      "item_type": "fill",
+      "stem": "电流做功的过程就是电能转化为其他形式能的过程；电功公式 W=______，纯电阻电路还有 W=I²Rt=U²t/R；电功的单位还有千瓦时，1 kW·h=______J。",
+      "answer": "UIt；3.6×10⁶",
+      "kps": [
+        "kp_phy9_electric_work"
+      ],
+      "difficulty": 0.3,
+      "solution": "电功公式与单位换算。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1083",
+      "item_type": "solve",
+      "stem": "一只电热水壶接 220 V 电路，正常工作电流 4 A。求：①工作 15 min 消耗的电能（焦耳和千瓦时）；②若每度电 0.6 元，烧一壶水的电费是多少？",
+      "answer": "①W=UIt=220×4×900=7.92×10⁵ J=0.22 kW·h；②电费=0.22×0.6≈0.13 元。",
+      "kps": [
+        "kp_phy9_electric_work"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①W=UIt=220×4×900=7.92×10⁵ J=0.22 kW·h；②电费=0.22×0.6≈0.13 元。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1084",
+      "item_type": "choice",
+      "stem": "与永磁体相比，电磁铁的主要优点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electromagnet"
+      ],
+      "difficulty": 0.35,
+      "solution": "电磁铁（带铁芯的通电螺线管）：通断电控制磁性有无、电流大小和匝数控制强弱、电流方向控制磁极；不足是需要电源、断电即失磁。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁性永久保持",
+        "B. 磁性有无、强弱和磁极方向都可通过电流方便控制",
+        "C. 不需要电源",
+        "D. 制造更简单"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1085",
+      "item_type": "fill",
+      "stem": "电磁铁是带有______的通电螺线管；影响其磁性强弱的因素：电流大小、线圈匝数和有无______。",
+      "answer": "铁芯；铁芯",
+      "kps": [
+        "kp_phy9_electromagnet"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁铁结构与影响因素。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1086",
+      "item_type": "solve",
+      "stem": "探究电磁铁磁性强弱与哪些因素有关：①怎样显示磁性强弱（转换法）？②要研究磁性强弱与匝数的关系应控制什么？③实验发现电流越大、匝数越多，吸引大头针越多，结论是什么？",
+      "answer": "①用吸引大头针（曲别针）的数量多少显示磁性强弱（转换法）；②控制电流相同（串联滑动变阻器并保持读数不变），匝数不同的两个电磁铁对比；③结论：电流越大、线圈匝数越多，电磁铁磁性越强（插入铁芯更强）。",
+      "kps": [
+        "kp_phy9_electromagnet"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①用吸引大头针（曲别针）的数量多少显示磁性强弱（转换法）；②控制电流相同（串联滑动变阻器并保持读数不变），匝数不同的两个电磁铁对比；③结论：电流越大、线圈匝数越多，电磁铁磁性越强（插入铁芯更强）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1087",
+      "item_type": "choice",
+      "stem": "发现电磁感应现象的科学家是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electromagnetic_induction"
+      ],
+      "difficulty": 0.35,
+      "solution": "1831 年法拉第发现磁生电（电磁感应），导致发电机诞生，实现机械能大规模转化为电能；奥斯特发现电流磁效应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 奥斯特",
+        "B. 法拉第",
+        "C. 牛顿",
+        "D. 欧姆"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1088",
+      "item_type": "fill",
+      "stem": "______现象的一部分导体在磁场中做______磁感线运动时，导体中就产生电流，这种现象叫电磁感应，产生的电流叫感应电流；发电机是根据它制成的。",
+      "answer": "闭合电路；切割",
+      "kps": [
+        "kp_phy9_electromagnetic_induction"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁感应产生条件：电路闭合+部分导体切割磁感线。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1089",
+      "item_type": "solve",
+      "stem": "„探究磁生电“实验：蹄形磁铁磁场中悬挂一根与灵敏电流计串联的导体。①怎样操作才能使指针偏转？②只改变导体运动方向（反向切割），指针偏转方向怎样？③该实验的能量转化是什么？应用是什么？",
+      "answer": "①让导体做切割磁感线运动（如左右/上下沿垂直磁感线方向移动）时指针偏转，沿磁感线方向运动不偏转；②感应电流方向与导体切割方向有关，反向切割时指针反向偏转；③机械能转化为电能，应用是发电机（动圈式话筒也利用电磁感应）。",
+      "kps": [
+        "kp_phy9_electromagnetic_induction"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①让导体做切割磁感线运动（如左右/上下沿垂直磁感线方向移动）时指针偏转，沿磁感线方向运动不偏转；②感应电流方向与导体切割方向有关，反向切割时指针反向偏转；③机械能转化为电能，应用是发电机（动圈式话筒也利用电磁感应）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1090",
+      "item_type": "choice",
+      "stem": "下列设备中，同时体现„电生磁“和„磁生电“的电磁相互作用的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_electromagnetic_interaction"
+      ],
+      "difficulty": 0.35,
+      "solution": "变压器利用电磁感应（互感）改变交流电压，原副线圈通过磁场传递能量，体现了电与磁的相互作用（磁生电）；电磁铁只是电生磁，发电机只是磁生电；电灯是电流热效应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电磁铁",
+        "B. 发电机",
+        "C. 变压器（互感）",
+        "D. 电灯"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1091",
+      "item_type": "fill",
+      "stem": "„电生磁“指电流的磁效应（______实验发现），„磁生电“指电磁感应现象（______发现），两者共同说明电与磁密不可分。",
+      "answer": "奥斯特；法拉第",
+      "kps": [
+        "kp_phy9_electromagnetic_interaction"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁相互作用两大发现的科学家。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1092",
+      "item_type": "solve",
+      "stem": "从能量转化角度比较电动机和发电机：两者的原理、能量转化方向有什么区别与联系？",
+      "answer": "电动机：通电线圈在磁场中受力转动（磁场对电流的作用），电能→机械能；发电机：闭合线圈在磁场中转动产生感应电流（电磁感应），机械能→电能。两者原理相反、能量转化方向相反，是电磁相互作用的两面，实际设备（如电动车）可兼有两种工作状态（制动时电机变发电机回收能量）。",
+      "kps": [
+        "kp_phy9_electromagnetic_interaction"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：电动机：通电线圈在磁场中受力转动（磁场对电流的作用），电能→机械能；发电机：闭合线圈在磁场中转动产生感应电流（电磁感应），机械能→电能。两者原理相反、能量转化方向相反，是电磁相互作用的两面，实际设备（如电动车）可兼有两种工作状态（制动时电机变发电机回收能量）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1093",
+      "item_type": "choice",
+      "stem": "对电磁波的认识，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_electromagnetic_wave"
+      ],
+      "difficulty": 0.35,
+      "solution": "电磁波可以在真空中传播（不需要介质），真空中速度 c=3×10⁸ m/s 远大于声速；光是一种电磁波。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电磁波传播需要介质",
+        "B. 光是一种电磁波",
+        "C. 电磁波在真空中不能传播",
+        "D. 电磁波的传播速度远小于声速"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1094",
+      "item_type": "fill",
+      "stem": "电磁波在真空中的传播速度 c=______m/s；波速 c=波长 λ×频率 f，即 c=______。",
+      "answer": "3×10⁸；λf",
+      "kps": [
+        "kp_phy9_electromagnetic_wave"
+      ],
+      "difficulty": 0.3,
+      "solution": "电磁波速度与波长频率关系。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1095",
+      "item_type": "solve",
+      "stem": "海南某广播电台的频率是 900 kHz（9×10⁵ Hz）。求其电磁波波长；该波属于长波、中波还是短波？手机通信用的 900 MHz 电磁波波长又是多少？",
+      "answer": "λ=c/f=3×10⁸÷9×10⁵≈333 m，属于中波；900 MHz 波长 λ=3×10⁸÷9×10⁸≈0.33 m（分米波）。",
+      "kps": [
+        "kp_phy9_electromagnetic_wave"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：λ=c/f=3×10⁸÷9×10⁵≈333 m，属于中波；900 MHz 波长 λ=3×10⁸÷9×10⁸≈0.33 m（分米波）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1096",
+      "item_type": "choice",
+      "stem": "下列属于防止静电危害的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_electrostatic_application"
+      ],
+      "difficulty": 0.35,
+      "solution": "油罐车铁链把静电及时导入大地，防止静电积累放电引燃油气；A、B、D 都是静电的应用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 静电复印",
+        "B. 静电喷漆",
+        "C. 油罐车尾部拖地铁链",
+        "D. 静电除尘"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1097",
+      "item_type": "fill",
+      "stem": "静电应用：静电复印、静电除尘、静电喷漆等利用带电体______轻小物体的性质；防止静电危害的基本方法是______（把静电导走）。",
+      "answer": "吸引；接地（把电荷导入大地）",
+      "kps": [
+        "kp_phy9_electrostatic_application"
+      ],
+      "difficulty": 0.3,
+      "solution": "应用与防护两类思路。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1098",
+      "item_type": "solve",
+      "stem": "海南干燥天气脱毛衣时常听到噼啪声并看到小火花，摸金属门把手有时被„电“一下。请解释成因并说出两条防护措施。",
+      "answer": "摩擦起电：脱衣时衣物摩擦带电，电荷积累到一定程度发生放电（火花放电）发出噼啪声；人体带电后接触金属，电荷经手放电有刺痛感。防护：增大室内湿度（用加湿器，潮湿空气让电荷随时散失）、触摸门前先摸墙壁或用钥匙先接触金属放掉电荷、穿棉质衣物减少摩擦起电。",
+      "kps": [
+        "kp_phy9_electrostatic_application"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：摩擦起电：脱衣时衣物摩擦带电，电荷积累到一定程度发生放电（火花放电）发出噼啪声；人体带电后接触金属，电荷经手放电有刺痛感。防护：增大室内湿度（用加湿器，潮湿空气让电荷随时散失）、触摸门前先摸墙壁或用钥匙先接触金属放掉电荷、穿棉质衣物减少摩擦起电。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1099",
+      "item_type": "choice",
+      "stem": "下列几种能源中，属于可再生能源的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_energy_classification"
+      ],
+      "difficulty": 0.35,
+      "solution": "太阳能、水能、风能、生物质能等可在短期内再生，是可再生能源；煤、石油、天然气是千百万年前形成的化石能源，不可再生。",
+      "source": "llm_generated",
+      "options": [
+        "A. 煤",
+        "B. 石油",
+        "C. 太阳能",
+        "D. 天然气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1100",
+      "item_type": "fill",
+      "stem": "像太阳能、风能、水能、生物质能那样可以长期提供或再生的能源属于______能源；像煤、石油、天然气、核能那样一旦消耗很难再生的属于______能源。",
+      "answer": "可再生；不可再生",
+      "kps": [
+        "kp_phy9_energy_classification"
+      ],
+      "difficulty": 0.3,
+      "solution": "能源按可再生性分类。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1101",
+      "item_type": "solve",
+      "stem": "海南光照充足、四面环海、风资源丰富。请列举适合海南发展的三种可再生能源，并各说明其能量来源或利用方式。",
+      "answer": "①太阳能（光伏发电、太阳能热水器）：利用太阳辐射能；②风能（沿海及海上风电场）：空气流动的机械能推动风轮机发电；③海洋能（潮汐能、波浪能、温差能）与生物质能（甘蔗渣、沼气发电）：利用海水运动机械能或生物固定的太阳能。都是清洁、可再生的能源。",
+      "kps": [
+        "kp_phy9_energy_classification"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①太阳能（光伏发电、太阳能热水器）：利用太阳辐射能；②风能（沿海及海上风电场）：空气流动的机械能推动风轮机发电；③海洋能（潮汐能、波浪能、温差能）与生物质能（甘蔗渣、沼气发电）：利用海水运动机械能或生物固定的太阳能。都是清洁、可再生的能源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1102",
+      "item_type": "choice",
+      "stem": "关于能量守恒定律，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_energy_conservation"
+      ],
+      "difficulty": 0.35,
+      "solution": "能量守恒定律是自然界最普遍的规律之一，能量总量不变但形式可转化转移；能量守恒不等于能源不枯竭（可用能源的品质会降低）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能量会不断消失，也会不断产生",
+        "B. 能量总量保持不变，所以能源不会枯竭",
+        "C. 能量既不会凭空消灭，也不会凭空产生，只会转化或转移，总量保持不变",
+        "D. 能量守恒定律只适用于机械能和内能"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1103",
+      "item_type": "fill",
+      "stem": "能量守恒定律：能量既不会凭空消灭，也不会凭空产生，它只会从一种形式______为其他形式，或者从一个物体______到其他物体，而在转化和转移过程中，能量的总量保持不变。",
+      "answer": "转化；转移",
+      "kps": [
+        "kp_phy9_energy_conservation"
+      ],
+      "difficulty": 0.3,
+      "solution": "能量守恒定律的表述。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1104",
+      "item_type": "solve",
+      "stem": "„既然能量守恒，为什么还要节约能源？“请用能量转化和转移的方向性回答。",
+      "answer": "能量虽然总量守恒，但能量的转化和转移有方向性：高品质能源（电能、化学能）使用后变为分散的内能（如废热）散失到环境中，很难甚至无法再自动收集利用。可方便利用的能源是有限的，所以要节约能源、提高能源利用率、开发新能源。",
+      "kps": [
+        "kp_phy9_energy_conservation"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：能量虽然总量守恒，但能量的转化和转移有方向性：高品质能源（电能、化学能）使用后变为分散的内能（如废热）散失到环境中，很难甚至无法再自动收集利用。可方便利用的能源是有限的，所以要节约能源、提高能源利用率、开发新能源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1105",
+      "item_type": "choice",
+      "stem": "水力发电站中能量的转化过程是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_energy_conversion_electric"
+      ],
+      "difficulty": 0.35,
+      "solution": "水轮机带动发电机：水的机械能转化为电能；火电是化学能→内能→机械能→电能；电池是化学能→电能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水的机械能→电能",
+        "B. 电能→机械能",
+        "C. 化学能→电能",
+        "D. 内能→电能"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1106",
+      "item_type": "fill",
+      "stem": "发电机是把______能转化为电能的装置（火力发电中燃料的化学能先转化为内能再转化为机械能）；电动机把电能转化为______能。",
+      "answer": "机械；机械",
+      "kps": [
+        "kp_phy9_energy_conversion_electric"
+      ],
+      "difficulty": 0.3,
+      "solution": "发电机与电动机的能量转化互为相反。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1107",
+      "item_type": "solve",
+      "stem": "说明下列过程中电能的来源（什么能转化为电能）：①海南昌江核电站发电；②太阳能电池板供电；③风力发电机；④蓄电池给手机充电后放电。",
+      "answer": "①核能（核裂变释放的核能→内能→机械能→电能）；②太阳能（光能）→电能（光伏效应）；③风的机械能→电能；④充电时电能→化学能储存，放电时化学能→电能。",
+      "kps": [
+        "kp_phy9_energy_conversion_electric"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①核能（核裂变释放的核能→内能→机械能→电能）；②太阳能（光能）→电能（光伏效应）；③风的机械能→电能；④充电时电能→化学能储存，放电时化学能→电能。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1108",
+      "item_type": "choice",
+      "stem": "下列过程具有方向性、不可自动逆转的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_energy_direction"
+      ],
+      "difficulty": 0.35,
+      "solution": "热量自发传递只能从高温到低温；机械能可以全部转化为内能，内能却不能自动全部变回机械能；能量转化转移都有方向性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热量自发从高温物体传到低温物体",
+        "B. 机械能和内能的相互转化",
+        "C. 电流做功",
+        "D. 水自动从高处流向低处"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1109",
+      "item_type": "fill",
+      "stem": "能量的转化和转移都是有______的；例如热量只能自发地从______温物体传向______温物体。",
+      "answer": "方向；高；低",
+      "kps": [
+        "kp_phy9_energy_direction"
+      ],
+      "difficulty": 0.3,
+      "solution": "方向性是能量转化转移的普遍特征。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1110",
+      "item_type": "solve",
+      "stem": "„水总是从高处流向低处，热量总是从高温传向低温。“这两个例子说明什么物理规律？它对能源利用有什么启示？",
+      "answer": "说明能量的转化和转移具有方向性：过程自发进行有确定方向，逆向不会自动发生。启示：能量虽守恒，但便于利用的能源会不断„贬值“（变为分散的、不可再利用的内能），因此必须节约能源、提高利用率并开发新能源。",
+      "kps": [
+        "kp_phy9_energy_direction"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：说明能量的转化和转移具有方向性：过程自发进行有确定方向，逆向不会自动发生。启示：能量虽守恒，但便于利用的能源会不断„贬值“（变为分散的、不可再利用的内能），因此必须节约能源、提高利用率并开发新能源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1111",
+      "item_type": "choice",
+      "stem": "关于能源与可持续发展，下列做法合理的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_energy_sustainable"
+      ],
+      "difficulty": 0.35,
+      "solution": "可持续发展要求节约能源、提高利用率、开发利用清洁可再生的新能源（风、光、核、海洋能），减少污染排放。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大量燃烧煤炭满足用电需求",
+        "B. 节约能源、提高能源利用率、开发新能源",
+        "C. 鼓励浪费能源刺激生产",
+        "D. 优先发展高能耗产业"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1112",
+      "item_type": "fill",
+      "stem": "未来的理想能源必须满足：足够丰富（不会枯竭）、足够便宜、相关技术成熟，并且足够______、清洁，不会严重影响环境。",
+      "answer": "安全",
+      "kps": [
+        "kp_phy9_energy_sustainable"
+      ],
+      "difficulty": 0.3,
+      "solution": "理想能源的条件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1113",
+      "item_type": "solve",
+      "stem": "作为国际旅游岛和自由贸易港，海南提出率先建设清洁能源岛。请从物理（能源）角度提出两条可行措施并说明理由。",
+      "answer": "①大力发展光伏、风电、核电等清洁电源（海南日照长、沿海风大、已有昌江核电），优化能源结构，减少化石能源燃烧排放；②推广新能源汽车与节能建筑、智能电网（提高能源利用率、削峰填谷），从使用侧节能降耗，实现能源可持续利用。",
+      "kps": [
+        "kp_phy9_energy_sustainable"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①大力发展光伏、风电、核电等清洁电源（海南日照长、沿海风大、已有昌江核电），优化能源结构，减少化石能源燃烧排放；②推广新能源汽车与节能建筑、智能电网（提高能源利用率、削峰填谷），从使用侧节能降耗，实现能源可持续利用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1114",
+      "item_type": "choice",
+      "stem": "使用电流表的说法中正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_exp_ammeter"
+      ],
+      "difficulty": 0.35,
+      "solution": "电流表串联接入、电流从„+“入„-“出、选合适量程（可先用大量程试触）；电流表内阻极小，绝不能直接接电源两端。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电流表可以直接接在电源两极上",
+        "B. 电流表必须串联在被测电路中",
+        "C. 电流从„-“接线柱流入电流表",
+        "D. 选用量程越小越好"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1115",
+      "item_type": "fill",
+      "stem": "实验室常用双量程电流表量程为 0~0.6 A 和 0~3 A，分度值分别为 0.02 A 和______A；测量时若无法估计被测电流大小，应先选用______量程试触。",
+      "answer": "0.1；大",
+      "kps": [
+        "kp_phy9_exp_ammeter"
+      ],
+      "difficulty": 0.3,
+      "solution": "先大后小、试触选择合适量程。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1116",
+      "item_type": "solve",
+      "stem": "某同学把电流表„+“„-“接线柱接反了，会出现什么现象？若所选量程太小，可能出现什么后果？分别应怎样纠正？",
+      "answer": "接线柱接反：指针反向偏转（左偏），可能打弯指针——应立即断开电源，对调两接线柱；量程太小：指针偏转超满刻度，可能损坏电流表——应断电改用较大量程，重新试触选择。正确做法是连接时先断开开关，检查无误再通电。",
+      "kps": [
+        "kp_phy9_exp_ammeter"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：接线柱接反：指针反向偏转（左偏），可能打弯指针——应立即断开电源，对调两接线柱；量程太小：指针偏转超满刻度，可能损坏电流表——应断电改用较大量程，重新试触选择。正确做法是连接时先断开开关，检查无误再通电。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1117",
+      "item_type": "choice",
+      "stem": "„探究电流与电压、电阻的关系“实验中，更换阻值更大的定值电阻后，要保持电阻两端电压不变，应将滑动变阻器滑片（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_exp_current_voltage_resistance"
+      ],
+      "difficulty": 0.4,
+      "solution": "换大电阻后分压增大，为保持定值电阻两端电压不变，应增大变阻器接入阻值分去更多电压（滑片向阻值增大方向移动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 向阻值减小的方向移动",
+        "B. 向阻值增大的方向移动",
+        "C. 保持不动",
+        "D. 无法确定"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1118",
+      "item_type": "fill",
+      "stem": "实验采用______法：探究电流与电压关系时控制______不变，改变电压；探究电流与电阻关系时控制______不变，改变电阻。",
+      "answer": "控制变量；电阻；电压",
+      "kps": [
+        "kp_phy9_exp_current_voltage_resistance"
+      ],
+      "difficulty": 0.35,
+      "solution": "两分实验各自的控制量与变量。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1119",
+      "item_type": "solve",
+      "stem": "实验数据：R=10 Ω 时，U=1 V 对应 I=0.1 A，U=2 V 对应 I=0.2 A，U=3 V 对应 I=0.3 A。①可得出什么结论？②若换用 20 Ω 的电阻且保持电压 2 V，电流应为多少？③滑动变阻器在本实验中的作用是什么？",
+      "answer": "①电阻一定时，电流与电压成正比；②I=U/R=2÷20=0.1 A；③作用：保护电路；改变（调节）定值电阻两端的电压，实现多次测量（在探究电流与电阻关系时起保持电阻两端电压不变的作用）。",
+      "kps": [
+        "kp_phy9_exp_current_voltage_resistance"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①电阻一定时，电流与电压成正比；②I=U/R=2÷20=0.1 A；③作用：保护电路；改变（调节）定值电阻两端的电压，实现多次测量（在探究电流与电阻关系时起保持电阻两端电压不变的作用）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1120",
+      "item_type": "choice",
+      "stem": "实验：探究导体在磁场中运动产生感应电流的条件。下列情况能产生感应电流的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_exp_induction"
+      ],
+      "difficulty": 0.45,
+      "solution": "产生感应电流必须同时满足：电路闭合、部分导体做切割磁感线运动；沿磁感线运动不切割，电路断开只有感应电压无电流。",
+      "source": "llm_generated",
+      "options": [
+        "A. 导体静止在磁场中",
+        "B. 导体沿磁感线方向运动",
+        "C. 闭合电路的一部分导体做切割磁感线运动",
+        "D. 电路断开时导体切割磁感线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1121",
+      "item_type": "fill",
+      "stem": "实验中通过观察______的指针偏转来判断是否产生感应电流（转换法）；感应电流的方向与导体______方向和磁场方向有关。",
+      "answer": "灵敏电流计（电流表）；运动（切割）",
+      "kps": [
+        "kp_phy9_exp_induction"
+      ],
+      "difficulty": 0.35,
+      "solution": "判断方法与影响方向的因素。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1122",
+      "item_type": "solve",
+      "stem": "„导体在磁场中运动产生电流的条件“实验结论应用：①只把导体 AB 沿竖直方向（平行磁感线）移动，指针不偏转，说明什么？②使磁铁运动（导体不动）而穿过闭合回路的磁感线变化，指针偏转吗？③综合结论是什么？",
+      "answer": "①说明沿（平行）磁感线方向运动不切割磁感线，不产生感应电流；②磁铁运动时导体相对磁场做切割磁感线运动（回路磁通量变化），指针偏转；③结论：闭合电路的一部分导体在磁场中做切割磁感线运动时，电路中产生感应电流（电磁感应），这是发电机的原理。",
+      "kps": [
+        "kp_phy9_exp_induction"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①说明沿（平行）磁感线方向运动不切割磁感线，不产生感应电流；②磁铁运动时导体相对磁场做切割磁感线运动（回路磁通量变化），指针偏转；③结论：闭合电路的一部分导体在磁场中做切割磁感线运动时，电路中产生感应电流（电磁感应），这是发电机的原理。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1123",
+      "item_type": "choice",
+      "stem": "测小灯泡额定功率的实验中，小灯泡标有„2.5 V“字样。测量额定功率时，应调节滑动变阻器使（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_exp_power"
+      ],
+      "difficulty": 0.4,
+      "solution": "额定功率须在额定电压下测量：调滑片使灯两端电压为 2.5 V，读电流表示数，用 P=UI 计算。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电压表示数为 2.5 V，读出此时电流",
+        "B. 电流表示数最大",
+        "C. 电压表示数为 3 V",
+        "D. 任意调节"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1124",
+      "item_type": "fill",
+      "stem": "实验原理 P=______；需要测量的物理量是灯两端的______和通过灯的______；多次测量的目的是测不同电压下的实际功率并观察亮度（不求平均）。",
+      "answer": "UI；电压；电流",
+      "kps": [
+        "kp_phy9_exp_power"
+      ],
+      "difficulty": 0.35,
+      "solution": "伏安法测功率原理与多次测量的目的（区别于测电阻）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1125",
+      "item_type": "solve",
+      "stem": "测„2.5 V“小灯泡电功率：调节滑片使电压表示数为 2.5 V 时电流表读数 0.4 A。①求额定功率；②当电压表示数为 1.5 V 时电流 0.3 A，此时实际功率多大？灯更亮还是更暗？③为什么不能把几次功率取平均值当作额定功率？",
+      "answer": "①P额=UI=2.5×0.4=1 W；②P实=1.5×0.3=0.45 W<1 W，灯更暗；③不同电压下的实际功率是不同工作状态的功率，额定功率唯一（额定电压下），取平均无物理意义。",
+      "kps": [
+        "kp_phy9_exp_power"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①P额=UI=2.5×0.4=1 W；②P实=1.5×0.3=0.45 W<1 W，灯更暗；③不同电压下的实际功率是不同工作状态的功率，额定功率唯一（额定电压下），取平均无物理意义。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1126",
+      "item_type": "choice",
+      "stem": "伏安法测电阻的实验中，滑动变阻器的主要作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_exp_resistance"
+      ],
+      "difficulty": 0.4,
+      "solution": "滑片移动改变电压和电流，多测几组数据求平均减小误差（同时保护电路）；被测电阻阻值本身不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只为保护电路",
+        "B. 改变被测电阻两端的电压，实现多次测量",
+        "C. 增大电源电压",
+        "D. 减小被测电阻的阻值"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1127",
+      "item_type": "fill",
+      "stem": "伏安法测电阻的原理是 R=______，用______表测电压、______表测电流；为减小误差应多次测量取平均值。",
+      "answer": "U/I；电压；电流",
+      "kps": [
+        "kp_phy9_exp_resistance"
+      ],
+      "difficulty": 0.35,
+      "solution": "原理 R=U/I，多次测量求平均。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1128",
+      "item_type": "solve",
+      "stem": "伏安法测定值电阻：电压表示数 2.6 V，电流表示数 0.26 A。①求这次测量的电阻值；②再测两组数据得 10.1 Ω、9.7 Ω，最终结果是多少？③为什么不能像测小灯泡那样„取平均“处理灯泡电阻？",
+      "answer": "①R=2.6÷0.26=10 Ω；②R平均=(10+10.1+9.7)÷3=9.93 Ω（约 9.9 Ω）；③定值电阻阻值恒定，取平均可减小偶然误差；而灯泡灯丝电阻随温度变化，每次测量值是不同温度下的真实电阻，取平均没有物理意义。",
+      "kps": [
+        "kp_phy9_exp_resistance"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①R=2.6÷0.26=10 Ω；②R平均=(10+10.1+9.7)÷3=9.93 Ω（约 9.9 Ω）；③定值电阻阻值恒定，取平均可减小偶然误差；而灯泡灯丝电阻随温度变化，每次测量值是不同温度下的真实电阻，取平均没有物理意义。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1129",
+      "item_type": "choice",
+      "stem": "探究串并联电流规律的实验中，测量时电流表必须（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_exp_series_parallel_current"
+      ],
+      "difficulty": 0.4,
+      "solution": "电流表要串联在被测电路中，电流从正接线柱流入、负接线柱流出，选合适量程，绝不能直接接电源两端。",
+      "source": "llm_generated",
+      "options": [
+        "A. 串联接入被测电路，电流从„+“接线柱流入",
+        "B. 并联接入被测电路",
+        "C. 任意接在电路中",
+        "D. 直接接在电源两端"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1130",
+      "item_type": "fill",
+      "stem": "实验中，两灯并联，干路电流 0.5 A，通过 L₁ 的电流 0.3 A，则通过 L₂ 的电流为______A；若取下 L₁，L₂ 将______（填„仍亮“或„熄灭“）。",
+      "answer": "0.2；仍亮",
+      "kps": [
+        "kp_phy9_exp_series_parallel_current"
+      ],
+      "difficulty": 0.35,
+      "solution": "并联干路电流等于支路电流之和：0.5-0.3=0.2 A；并联各支路独立，取下 L₁ 不影响 L₂。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1131",
+      "item_type": "solve",
+      "stem": "用电流表探究„并联电路干路电流与支路电流关系“，测得数据：干路 0.6 A，L₁ 支路 0.24 A，L₂ 支路 0.36 A。①结论是什么？②若两灯换成规格相同的两灯，支路电流有什么关系？为什么？③为什么不能用电流表直接测电源短路电流？",
+      "answer": "①并联电路干路电流等于各支路电流之和：0.6=0.24+0.36；②相同规格两灯并联，电压相同、电阻相同，支路电流相等，各为干路一半；③电源短路电流极大，远超电流表量程，会烧毁电流表和电源。",
+      "kps": [
+        "kp_phy9_exp_series_parallel_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①并联电路干路电流等于各支路电流之和：0.6=0.24+0.36；②相同规格两灯并联，电压相同、电阻相同，支路电流相等，各为干路一半；③电源短路电流极大，远超电流表量程，会烧毁电流表和电源。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1132",
+      "item_type": "choice",
+      "stem": "用电压表测 L₁ 两端电压（两灯串联），正确的接法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_exp_series_parallel_voltage"
+      ],
+      "difficulty": 0.4,
+      "solution": "电压表并联在被测用电器两端（„+“接线柱靠近电源正极一侧），不能串联接入电路。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电压表串联在电路中",
+        "B. 电压表并联在 L₁ 两端",
+        "C. 电压表并联在电源两端",
+        "D. 电压表并联在 L₂ 两端"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1133",
+      "item_type": "fill",
+      "stem": "电压表要______联在被测电路两端，电流从„+“接线柱流入；实验测得两灯并联时各支路电压都等于______电压，从而得到并联电路电压规律。",
+      "answer": "并；电源（总）",
+      "kps": [
+        "kp_phy9_exp_series_parallel_voltage"
+      ],
+      "difficulty": 0.35,
+      "solution": "电压表使用规范与并联电压规律。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1134",
+      "item_type": "solve",
+      "stem": "„探究串联电路电压规律“：电压表测 AB（L₁ 两端）为 1.4 V、BC（L₂ 两端）为 1.6 V、AC（总）为 3.0 V。①得出什么结论？②为什么 AB+BC 恰好接近 AC？③为使结论可靠应怎样做？",
+      "answer": "①串联电路总电压等于各部分电压之和：1.4+1.6=3.0 V；②能量守恒的体现：电压是电能转移的量度，各段消耗的电压之和等于总电压（微小差异来自测量误差）；③换用不同规格灯泡、改变电源电压多次测量，避免偶然性。",
+      "kps": [
+        "kp_phy9_exp_series_parallel_voltage"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①串联电路总电压等于各部分电压之和：1.4+1.6=3.0 V；②能量守恒的体现：电压是电能转移的量度，各段消耗的电压之和等于总电压（微小差异来自测量误差）；③换用不同规格灯泡、改变电源电压多次测量，避免偶然性。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1135",
+      "item_type": "choice",
+      "stem": "探究通电螺线管外部磁场方向的实验中，在螺线管周围撒铁屑并放小磁针。下列说法不正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy9_exp_solenoid"
+      ],
+      "difficulty": 0.4,
+      "solution": "磁体外部磁感线从 N 极出发回到 S 极，D 表述错误（A、B、C 正确）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铁屑排列显示磁感线的形状",
+        "B. 小磁针 N 极指向表示该点磁场方向",
+        "C. 改变电流方向，磁场方向随之改变",
+        "D. 螺线管外部磁感线从 S 极指向 N 极"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1136",
+      "item_type": "fill",
+      "stem": "实验发现：通电螺线管外部磁场分布与______磁体相似；调换电源正负极（改变______方向），小磁针指向随之改变，说明磁场方向与电流方向有关。",
+      "answer": "条形；电流",
+      "kps": [
+        "kp_phy9_exp_solenoid"
+      ],
+      "difficulty": 0.35,
+      "solution": "实验现象与结论。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1137",
+      "item_type": "solve",
+      "stem": "„探究通电螺线管磁场特点“：①怎样判断螺线管两端极性？②如果增加螺线管匝数或插入铁芯，磁性会怎样变化？③这些现象有什么应用？",
+      "answer": "①用小磁针：管端吸引小磁针 N 极的是 S 极、吸引 S 极（排斥 N 极）的是 N 极，也可由安培定则判断；②匝数增加、插入铁芯（被磁化）都能使磁性显著增强；③应用：电磁铁、电磁继电器、电磁起重机等，可通过电流通断和大小控制磁性的有无与强弱。",
+      "kps": [
+        "kp_phy9_exp_solenoid"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①用小磁针：管端吸引小磁针 N 极的是 S 极、吸引 S 极（排斥 N 极）的是 N 极，也可由安培定则判断；②匝数增加、插入铁芯（被磁化）都能使磁性显著增强；③应用：电磁铁、电磁继电器、电磁起重机等，可通过电流通断和大小控制磁性的有无与强弱。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1138",
+      "item_type": "choice",
+      "stem": "使用电压表的规则，下列说法错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy9_exp_voltmeter"
+      ],
+      "difficulty": 0.35,
+      "solution": "电压表内阻很大，应并联在被测电路两端，也可以直接接在电源两极测电源电压；若串联接入，电路相当于断开，用电器无法工作，所以 D 的说法错误，A、B、C 均为正确规则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电压表并联在被测电路两端",
+        "B. 电流从„+“接线柱流进电压表",
+        "C. 被测电压不能超过电压表的量程",
+        "D. 电压表必须串联在被测电路中"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1139",
+      "item_type": "fill",
+      "stem": "实验室常用双量程电压表的量程为 0~3 V 和 0~15 V，分度值分别为 0.1 V 和______V；读数时先确认______再读数。",
+      "answer": "0.5；量程",
+      "kps": [
+        "kp_phy9_exp_voltmeter"
+      ],
+      "difficulty": 0.3,
+      "solution": "电压表两个量程 5 倍关系（3 V/15 V、0.1 V/0.5 V），读数先看量程。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1140",
+      "item_type": "solve",
+      "stem": "测量一节干电池电压：应选电压表哪个量程？把两节干电池串联后测量，量程又该怎样选？为什么先选大量程„试触“？",
+      "answer": "一节干电池约 1.5 V，选 0~3 V 量程（分度值小、读数精确）；两节串联约 3 V，接近 3 V 量程上限，应先用 0~15 V 量程试触，若示数小于 3 V 再改用小量程提高精度；试触是为防止被测电压超过量程打弯指针（或损坏表）。",
+      "kps": [
+        "kp_phy9_exp_voltmeter"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：一节干电池约 1.5 V，选 0~3 V 量程（分度值小、读数精确）；两节串联约 3 V，接近 3 V 量程上限，应先用 0~15 V 量程试触，若示数小于 3 V 再改用小量程提高精度；试触是为防止被测电压超过量程打弯指针（或损坏表）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1141",
+      "item_type": "choice",
+      "stem": "关于家庭电路，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_family_circuit"
+      ],
+      "difficulty": 0.35,
+      "solution": "家庭电路各用电器并联（互不影响，都获得 220 V）；开关要与被控用电器串联且接在火线上，保证断开时用电器不带电。",
+      "source": "llm_generated",
+      "options": [
+        "A. 家庭电路中各用电器串联连接",
+        "B. 开关接在火线和零线上都可以",
+        "C. 各用电器并联，开关与被控用电器串联",
+        "D. 电灯接零线，开关接火线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1142",
+      "item_type": "fill",
+      "stem": "家庭电路的电压是______V；进户线有两根：______线和零线，它们之间的电压为 220 V；测电笔接触火线时氖管______。",
+      "answer": "220；火；发光",
+      "kps": [
+        "kp_phy9_family_circuit"
+      ],
+      "difficulty": 0.3,
+      "solution": "家庭电路组成与测电笔现象。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1143",
+      "item_type": "solve",
+      "stem": "家庭电路中，各用电器为什么采用并联？开关为什么要接在火线上？",
+      "answer": "并联使各用电器都直接获得 220 V 额定电压、互不影响，可独立控制；开关接火线，断开后用电器与火线脱离、不带电，检修或更换灯泡更安全；若接零线，开关断开灯不亮但灯座仍与火线相连，接触会触电。",
+      "kps": [
+        "kp_phy9_family_circuit"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：并联使各用电器都直接获得 220 V 额定电压、互不影响，可独立控制；开关接火线，断开后用电器与火线脱离、不带电，检修或更换灯泡更安全；若接零线，开关断开灯不亮但灯座仍与火线相连，接触会触电。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1144",
+      "item_type": "choice",
+      "stem": "家庭电路中电流过大的原因，下列说法完整的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_family_overcurrent"
+      ],
+      "difficulty": 0.4,
+      "solution": "两条原因：短路（电阻极小、电流极大）和过载（并联用电器过多、总功率过大，I=P/U）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只因发生短路",
+        "B. 只因用电器总功率过大",
+        "C. 发生短路或用电器总功率过大",
+        "D. 电压太低"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1145",
+      "item_type": "fill",
+      "stem": "家庭电路电流过大的两个原因：一是发生______，二是用电器的总______过大；保险丝应______联在电路中起保护作用。",
+      "answer": "短路；功率；串",
+      "kps": [
+        "kp_phy9_family_overcurrent"
+      ],
+      "difficulty": 0.3,
+      "solution": "保险丝串联、额定电流合适，过大不熔断、过小常熔断。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1146",
+      "item_type": "solve",
+      "stem": "海南某家庭同时使用：空调 1500 W、电水壶 1000 W、电磁炉 2000 W、电灯 100 W（电源 220 V）。①干路总电流多大？②若保险丝额定电流 20 A，是否安全？③你能给出一条安全用电建议吗？",
+      "answer": "①P总=4600 W，I=P/U=4600÷220≈20.9 A；②20.9 A>20 A，保险丝会熔断，不安全（大功率电器不能同时使用）；③建议错峰使用大功率电器（如烧水时不开空调），或申请增容、更换匹配的断路器并由电工操作。",
+      "kps": [
+        "kp_phy9_family_overcurrent"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①P总=4600 W，I=P/U=4600÷220≈20.9 A；②20.9 A>20 A，保险丝会熔断，不安全（大功率电器不能同时使用）；③建议错峰使用大功率电器（如烧水时不开空调），或申请增容、更换匹配的断路器并由电工操作。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1147",
+      "item_type": "choice",
+      "stem": "关于燃料的热值，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_fuel_value"
+      ],
+      "difficulty": 0.4,
+      "solution": "热值是燃料本身的特性（单位质量完全燃烧放出的热量），只与燃料种类有关；燃烧不充分时放出热量少，但热值不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 燃料燃烧越充分，热值越大",
+        "B. 热值是燃料的特性，与是否完全燃烧无关",
+        "C. 质量大的燃料热值大",
+        "D. 1 kg 某燃料燃烧放出的热量就是它的热值"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1148",
+      "item_type": "fill",
+      "stem": "燃料燃烧放热公式 Q=______；干木柴的热值约 1.2×10⁷ J/kg，完全燃烧 3 kg 干木柴放出热量______J。",
+      "answer": "mq；3.6×10⁷",
+      "kps": [
+        "kp_phy9_fuel_value"
+      ],
+      "difficulty": 0.35,
+      "solution": "Q放=mq=3×1.2×10⁷=3.6×10⁷ J。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1149",
+      "item_type": "solve",
+      "stem": "海南某茶厂用液化石油气烧水制茶，热值 5×10⁷ J/kg。要把 50 kg 水从 25 ℃ 加热到 100 ℃，至少需要完全燃烧多少千克液化石油气？（c水=4.2×10³ J/(kg·℃)，不计热损失）实际用量为什么更多？",
+      "answer": "Q吸=4.2×10³×50×75=1.575×10⁷ J；m=Q吸/q=1.575×10⁷÷(5×10⁷)=0.315 kg。实际存在热损失（废气带走、散热等），能量不能全部被水吸收，燃气实际消耗更多。",
+      "kps": [
+        "kp_phy9_fuel_value"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：Q吸=4.2×10³×50×75=1.575×10⁷ J；m=Q吸/q=1.575×10⁷÷(5×10⁷)=0.315 kg。实际存在热损失（废气带走、散热等），能量不能全部被水吸收，燃气实际消耗更多。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1150",
+      "item_type": "choice",
+      "stem": "关于保险装置与保护接地，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_fuse_ground"
+      ],
+      "difficulty": 0.4,
+      "solution": "保险丝额定电流要与电路匹配，过大失去保护；铜丝电阻率小、熔点高不易熔断，严禁代替保险丝；跳闸可能是短路也可能是过载。三脚插头接地脚连接金属外壳与大地，漏电时电流入地、外壳不带危险电压。",
+      "source": "llm_generated",
+      "options": [
+        "A. 保险丝应选用额定电流越大越好的",
+        "B. 三脚插头的接地脚把用电器金属外壳与大地相连，防止外壳带电伤人",
+        "C. 保险丝熔断后可用铜丝代替",
+        "D. 空气开关跳闸一定是短路"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1151",
+      "item_type": "fill",
+      "stem": "保险丝由电阻率较______、熔点较______的铅锑合金制成，电流过大时发热熔断切断电路；洗衣机、冰箱等用电器金属外壳必须______。",
+      "answer": "大；低；接地",
+      "kps": [
+        "kp_phy9_fuse_ground"
+      ],
+      "difficulty": 0.3,
+      "solution": "保险丝选材道理与金属外壳接地。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1152",
+      "item_type": "solve",
+      "stem": "为什么„用铜丝、铁丝代替保险丝“非常危险？为什么电冰箱、洗衣机要用三孔插座？",
+      "answer": "铜丝铁丝电阻率小、熔点高，电流过大时不易熔断，无法及时切断电路，会烧毁线路甚至引起火灾；三孔插座除火线零线外有接地孔，把用电器金属外壳与大地相连，万一绝缘损坏漏电，电流经地线入地，外壳对地电压很低，人体接触不会触电。",
+      "kps": [
+        "kp_phy9_fuse_ground"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：铜丝铁丝电阻率小、熔点高，电流过大时不易熔断，无法及时切断电路，会烧毁线路甚至引起火灾；三孔插座除火线零线外有接地孔，把用电器金属外壳与大地相连，万一绝缘损坏漏电，电流经地线入地，外壳对地电压很低，人体接触不会触电。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1153",
+      "item_type": "choice",
+      "stem": "用一电热器把 2 kg 的水从 20 ℃ 加热到 70 ℃，水吸收的热量为（　　）[c水=4.2×10³ J/(kg·℃)]",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_heat_calculation"
+      ],
+      "difficulty": 0.4,
+      "solution": "Q吸=cmΔt=4.2×10³×2×(70-20)=4.2×10⁵ J。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4.2×10⁵ J",
+        "B. 4.2×10⁴ J",
+        "C. 1.68×10⁵ J",
+        "D. 5.88×10⁵ J"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1154",
+      "item_type": "fill",
+      "stem": "热平衡时 Q吸=Q放。质量 0.5 kg、温度 90 ℃ 的热水与冷水混合后末温 40 ℃，热水放出的热量是______J（不计热损失，c水=4.2×10³）。",
+      "answer": "1.05×10⁵",
+      "kps": [
+        "kp_phy9_heat_calculation"
+      ],
+      "difficulty": 0.35,
+      "solution": "Q放=cmΔt=4.2×10³×0.5×(90-40)=1.05×10⁵ J。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1155",
+      "item_type": "solve",
+      "stem": "把 500 g 的铁块加热到 200 ℃ 后迅速投入 2 kg、20 ℃ 的水中，不计热损失，求混合后的共同温度。[c铁=0.46×10³ J/(kg·℃)，c水=4.2×10³ J/(kg·℃)]",
+      "answer": "设末温 t：Q放=Q吸，0.46×10³×0.5×(200-t)=4.2×10³×2×(t-20)；230(200-t)=8400(t-20)；46000-230t=8400t-168000；214000=8630t；t≈24.8 ℃。铁块放热使水温升高约 4.8 ℃。",
+      "kps": [
+        "kp_phy9_heat_calculation"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：设末温 t：Q放=Q吸，0.46×10³×0.5×(200-t)=4.2×10³×2×(t-20)；230(200-t)=8400(t-20)；46000-230t=8400t-168000；214000=8630t；t≈24.8 ℃。铁块放热使水温升高约 4.8 ℃。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1156",
+      "item_type": "choice",
+      "stem": "四冲程内燃机中，把内能转化为机械能的冲程是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_heat_machine"
+      ],
+      "difficulty": 0.35,
+      "solution": "做功冲程中燃气推动活塞做功，内能转化为机械能；压缩冲程是机械能转化为内能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 吸气冲程",
+        "B. 压缩冲程",
+        "C. 做功冲程",
+        "D. 排气冲程"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1157",
+      "item_type": "fill",
+      "stem": "热机是把______能转化为______能的机器；四冲程汽油机的一个工作循环中，曲轴转______圈，对外做功 1 次。",
+      "answer": "内；机械；2",
+      "kps": [
+        "kp_phy9_heat_machine"
+      ],
+      "difficulty": 0.3,
+      "solution": "一个循环含 4 个冲程、活塞往复 2 次、曲轴转 2 圈、做功 1 次。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1158",
+      "item_type": "solve",
+      "stem": "压缩冲程和做功冲程中能量各怎样转化？为什么柴油机的效率通常高于汽油机？",
+      "answer": "压缩冲程：机械能转化为内能（气体内能增大、温度升高）；做功冲程：燃气内能转化为机械能（推动活塞做功）。柴油机采用压燃式，压缩比大，缸内温度更高，燃料燃烧更充分，排气带走能量相对少，效率通常比汽油机高。",
+      "kps": [
+        "kp_phy9_heat_machine"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：压缩冲程：机械能转化为内能（气体内能增大、温度升高）；做功冲程：燃气内能转化为机械能（推动活塞做功）。柴油机采用压燃式，压缩比大，缸内温度更高，燃料燃烧更充分，排气带走能量相对少，效率通常比汽油机高。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1159",
+      "item_type": "choice",
+      "stem": "对热机效率的认识，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_heat_machine_efficiency"
+      ],
+      "difficulty": 0.35,
+      "solution": "热机效率=有用机械功/燃料完全燃烧放出的能量，总小于 100%；减少废气、散热、摩擦等损失可提高效率；效率与功率、耗油多少无直接关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热机效率可以等于 100%",
+        "B. 减少各种能量损失可以提高热机效率",
+        "C. 热机做功越快，效率越高",
+        "D. 使用的燃料越多，效率越高"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1160",
+      "item_type": "fill",
+      "stem": "热机效率是指用来做______的那部分能量与燃料完全燃烧放出的能量之比；现代热机效率通常______（填„高于“或„低于“）50%。",
+      "answer": "有用功；低于",
+      "kps": [
+        "kp_phy9_heat_machine_efficiency"
+      ],
+      "difficulty": 0.3,
+      "solution": "能量损失不可避免，效率总低于 100%，多数热机效率在 30%~45%。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1161",
+      "item_type": "solve",
+      "stem": "某汽油机工作一段时间内消耗汽油 1 kg，做的有用功为 1.15×10⁷ J。（q汽油=4.6×10⁷ J/kg）求：①汽油完全燃烧放出的能量；②该热机的效率；③提高热机效率的一条可行途径。",
+      "answer": "①Q放=mq=1×4.6×10⁷=4.6×10⁷ J；②η=W有用/Q放=1.15×10⁷÷4.6×10⁷=25%；③途径：减少废气带走的热量（如利用尾气余热）、减小摩擦、保证良好润滑、改进结构使燃烧更充分等。",
+      "kps": [
+        "kp_phy9_heat_machine_efficiency"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①Q放=mq=1×4.6×10⁷=4.6×10⁷ J；②η=W有用/Q放=1.15×10⁷÷4.6×10⁷=25%；③途径：减少废气带走的热量（如利用尾气余热）、减小摩擦、保证良好润滑、改进结构使燃烧更充分等。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1162",
+      "item_type": "choice",
+      "stem": "关于温度、内能、热量，下列说法正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_heat_transfer"
+      ],
+      "difficulty": 0.35,
+      "solution": "热量是热传递过程中转移内能的多少，不能说物体„含有“热量；热传递方向由温度差决定（高温→低温），与内能大小无直接关系；晶体熔化吸热温度不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体温度越高，含有的热量越多",
+        "B. 热量总是从内能大的物体传向内能小的物体",
+        "C. 热传递的条件是存在温度差",
+        "D. 吸收热量，物体的温度一定升高"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1163",
+      "item_type": "fill",
+      "stem": "在热传递过程中，传递______的多少叫做热量；热传递的条件是物体之间存在______。",
+      "answer": "能量（内能）；温度差",
+      "kps": [
+        "kp_phy9_heat_transfer"
+      ],
+      "difficulty": 0.3,
+      "solution": "热量是过程量，发生在有温度差的热传递过程中。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1164",
+      "item_type": "solve",
+      "stem": "„夏天把冰镇椰子水放在桌上，一会儿杯壁出现水珠，椰子水温度升高。“请指出其中的热传递方向，并说明内能怎样改变。",
+      "answer": "冰镇椰子水温度低于室温空气和桌面，热量从空气（高温）传向椰子水（低温），椰子水吸收热量、内能增大、温度升高；同时空气放热、内能减小。杯壁水珠是空气中水蒸气遇冷液化形成的。",
+      "kps": [
+        "kp_phy9_heat_transfer"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：冰镇椰子水温度低于室温空气和桌面，热量从空气（高温）传向椰子水（低温），椰子水吸收热量、内能增大、温度升高；同时空气放热、内能减小。杯壁水珠是空气中水蒸气遇冷液化形成的。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1165",
+      "item_type": "choice",
+      "stem": "海南中午沙滩烫脚而海水凉爽，晚上沙滩很快变凉。下列分析正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_heat_transfer_ways"
+      ],
+      "difficulty": 0.35,
+      "solution": "水的比热容大，同样吸热升温慢、放热降温也慢，所以白天海水凉、夜里海水降温慢；沙子比热容小，温度变化剧烈。",
+      "source": "llm_generated",
+      "options": [
+        "A. 沙子比热容大，升温快",
+        "B. 水比热容大，升温慢降温也慢",
+        "C. 沙和水比热容相同",
+        "D. 与比热容无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1166",
+      "item_type": "fill",
+      "stem": "热传递的三种方式：______、______和辐射；烧开水时水循环流动属于其中的对流。",
+      "answer": "传导（热传导）；对流",
+      "kps": [
+        "kp_phy9_heat_transfer_ways"
+      ],
+      "difficulty": 0.3,
+      "solution": "三种方式：传导、对流、辐射。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1167",
+      "item_type": "solve",
+      "stem": "太阳能热水器的集热板涂成黑色并正对太阳，保温层把水箱包围起来。请分别说明这两个设计利用了热传递的什么知识。",
+      "answer": "黑色表面吸收（热）辐射的本领强，集热板正对太阳可更多吸收太阳辐射能；保温层（填充隔热材料、双层结构）减小热传导和对流造成的热量散失，防止内能流失，起保温作用。",
+      "kps": [
+        "kp_phy9_heat_transfer_ways"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：黑色表面吸收（热）辐射的本领强，集热板正对太阳可更多吸收太阳辐射能；保温层（填充隔热材料、双层结构）减小热传导和对流造成的热量散失，防止内能流失，起保温作用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1168",
+      "item_type": "choice",
+      "stem": "某电热器有高、低两档，由两根电阻丝 R₁、R₂ 组成。高温档的做法通常是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_heating_levels"
+      ],
+      "difficulty": 0.45,
+      "solution": "电压相同时 P=U²/R，总电阻越小功率越大：两电阻并联（或只接小电阻）是高温档，串联是低温档。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两电阻丝串联",
+        "B. 两电阻丝并联（或只接入较小电阻）",
+        "C. 断开一根电阻丝的开关",
+        "D. 增大电源电压"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1169",
+      "item_type": "fill",
+      "stem": "电热器档位由电路总电阻决定：电源电压一定时，总电阻越小，发热功率越______；两根电阻丝______联时总电阻最大，为低温档。",
+      "answer": "大；串",
+      "kps": [
+        "kp_phy9_heating_levels"
+      ],
+      "difficulty": 0.35,
+      "solution": "串并联组合实现档位切换。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1170",
+      "item_type": "solve",
+      "stem": "电热毯内电阻丝 R₁=800 Ω，与变阻器式开关 R₂ 串联接 220 V 电源。①R₂ 接入 0 时功率多大（高温档）？②R₂ 接入 800 Ω 时功率多大（低温档）？③说明低温档为什么„更省电“。",
+      "answer": "①P高=220²÷800=60.5 W；②R总=1600 Ω，P低=220²÷1600≈30.25 W；③P=U²/R，电阻增大一倍功率减半，单位时间消耗电能少，发热少，故省电。",
+      "kps": [
+        "kp_phy9_heating_levels"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①P高=220²÷800=60.5 W；②R总=1600 Ω，P低=220²÷1600≈30.25 W；③P=U²/R，电阻增大一倍功率减半，单位时间消耗电能少，发热少，故省电。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1171",
+      "item_type": "choice",
+      "stem": "现代信息传递中，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_info_applications"
+      ],
+      "difficulty": 0.3,
+      "solution": "光纤通信用激光全反射传输信息容量大、损耗小；移动通信、广播电视都靠无线电波（电磁波）传递；卫星通信可全球覆盖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光纤通信利用激光在光导纤维中传递信息",
+        "B. 移动通信靠超声波传递信息",
+        "C. 广播电视靠导线传递信号",
+        "D. 卫星通信不能跨洋传递"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1172",
+      "item_type": "fill",
+      "stem": "光纤通信是利用______在光导纤维中传输信息的；移动通信（手机）通过______波（电磁波）与基站联系传递信息。",
+      "answer": "激光；电磁（无线电）",
+      "kps": [
+        "kp_phy9_info_applications"
+      ],
+      "difficulty": 0.3,
+      "solution": "现代通信方式载体。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1173",
+      "item_type": "solve",
+      "stem": "比较光纤通信与普通电缆（无线电）通信的优点（至少两条）；说明为什么卫星通信需要同步卫星。",
+      "answer": "光纤通信优点：①容量大（一根光纤可传大量信息）；②损耗小、抗干扰、保密性好（光信号在纤内全反射，不向外泄漏）；③原料石英丰富、轻细耐腐蚀。同步卫星绕地球周期与地球自转周期相同（24 h），相对地面静止，可持续对准地面天线，稳定转发信号，实现远距离、跨洋通信（如海南接收的电视节目）。",
+      "kps": [
+        "kp_phy9_info_applications"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：光纤通信优点：①容量大（一根光纤可传大量信息）；②损耗小、抗干扰、保密性好（光信号在纤内全反射，不向外泄漏）；③原料石英丰富、轻细耐腐蚀。同步卫星绕地球周期与地球自转周期相同（24 h），相对地面静止，可持续对准地面天线，稳定转发信号，实现远距离、跨洋通信（如海南接收的电视节目）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1174",
+      "item_type": "choice",
+      "stem": "两个铅柱削平压紧后能吊起重物，说明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_intermolecular_force"
+      ],
+      "difficulty": 0.35,
+      "solution": "压紧的铅柱下吊重物不分开，是铅分子间引力的作用；同时固体难以压缩又说明分子间存在斥力，引力和斥力同时存在。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分子间存在引力",
+        "B. 分子间存在斥力",
+        "C. 铅分子没有间隙",
+        "D. 大气压压住了铅柱"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1175",
+      "item_type": "fill",
+      "stem": "固体和液体很难被压缩，说明分子间存在______；固体很难被拉断，说明分子间存在______。",
+      "answer": "斥力；引力",
+      "kps": [
+        "kp_phy9_intermolecular_force"
+      ],
+      "difficulty": 0.3,
+      "solution": "分子间同时存在引力和斥力，压缩时斥力起主要作用，拉伸时引力起主要作用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1176",
+      "item_type": "solve",
+      "stem": "用分子动理论解释：为什么破镜不能重圆，而两块铅块压紧后却能结合？",
+      "answer": "分子间引力只在距离很小时（约 10⁻¹⁰ m 数量级）才显著。两块铅块表面平整压紧后，大量分子达到引力作用范围，能结合；镜子破碎面凹凸不平，压紧时真正接近到分子引力作用距离的分子极少，总的引力远小于外界作用，所以不能重圆。",
+      "kps": [
+        "kp_phy9_intermolecular_force"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：分子间引力只在距离很小时（约 10⁻¹⁰ m 数量级）才显著。两块铅块表面平整压紧后，大量分子达到引力作用范围，能结合；镜子破碎面凹凸不平，压紧时真正接近到分子引力作用距离的分子极少，总的引力远小于外界作用，所以不能重圆。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1177",
+      "item_type": "choice",
+      "stem": "下列对内能的理解，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_internal_energy"
+      ],
+      "difficulty": 0.35,
+      "solution": "内能是物体内部所有分子无规则运动的动能与分子势能的总和，一切物体都有内能；内能与温度、质量、状态等有关，与机械能无直接关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0 ℃ 的物体没有内能",
+        "B. 内能是物体内所有分子动能与分子势能的总和",
+        "C. 机械能大的物体内能一定大",
+        "D. 同一物体内能与温度无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1178",
+      "item_type": "fill",
+      "stem": "物体内部所有分子无规则运动的______与分子______的总和，叫做物体的内能；一切物体______（填„都有“或„都没有“）内能。",
+      "answer": "动能；势能；都有",
+      "kps": [
+        "kp_phy9_internal_energy"
+      ],
+      "difficulty": 0.3,
+      "solution": "内能是微观分子层面的能量，任何温度下都存在。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1179",
+      "item_type": "solve",
+      "stem": "内能与机械能有什么区别？一杯冷水与一杯热水，哪杯内能大？一杯热水与一大桶温水呢？",
+      "answer": "内能是物体内部分子动能与势能的总和，与温度、质量、状态等有关；机械能是宏观物体整体运动和形变、高度决定的能量（动能+势能），两者本质不同。热水温度高，分子平均动能大，同质量（一杯）时热水内能大；一大桶温水质量远大于一杯热水，分子总数多，总内能可能大于热水，不能只看温度。",
+      "kps": [
+        "kp_phy9_internal_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：内能是物体内部分子动能与势能的总和，与温度、质量、状态等有关；机械能是宏观物体整体运动和形变、高度决定的能量（动能+势能），两者本质不同。热水温度高，分子平均动能大，同质量（一杯）时热水内能大；一大桶温水质量远大于一杯热水，分子总数多，总内能可能大于热水，不能只看温度。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1180",
+      "item_type": "choice",
+      "stem": "下列事例中，通过做功改变物体内能的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_internal_energy_change"
+      ],
+      "difficulty": 0.35,
+      "solution": "搓手是摩擦做功使内能增大（机械能转化为内能）；A、C、D 都是热传递（吸热）改变内能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 晒太阳身体变暖",
+        "B. 冬天搓手取暖",
+        "C. 喝热水全身暖和",
+        "D. 用热水袋取暖"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1181",
+      "item_type": "fill",
+      "stem": "改变物体内能的两种方式：______和______，两者在改变内能上等效。",
+      "answer": "做功；热传递",
+      "kps": [
+        "kp_phy9_internal_energy_change"
+      ],
+      "difficulty": 0.3,
+      "solution": "做功是能量的转化，热传递是内能的转移，效果等效。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1182",
+      "item_type": "solve",
+      "stem": "冬天手冷时可以搓手，也可以把手放入口袋„哈气“取暖。两种方式改变内能的途径有何不同？请各指出能量转化或转移的方向。",
+      "answer": "搓手：克服摩擦做功，机械能转化为内能（做功改变内能）；哈气：呼出的热气与手之间发生热传递，内能从热气转移到手（热传递改变内能）。两种方式在改变手内能的效果上等效。",
+      "kps": [
+        "kp_phy9_internal_energy_change"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：搓手：克服摩擦做功，机械能转化为内能（做功改变内能）；哈气：呼出的热气与手之间发生热传递，内能从热气转移到手（热传递改变内能）。两种方式在改变手内能的效果上等效。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1183",
+      "item_type": "choice",
+      "stem": "一电炉丝电阻为 44 Ω，通过 5 A 电流，通电 60 s 产生的热量为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_joule_law"
+      ],
+      "difficulty": 0.4,
+      "solution": "Q=I²Rt=25×44×60=6.6×10⁴ J。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6.6×10⁴ J",
+        "B. 1.32×10⁴ J",
+        "C. 2.2×10⁴ J",
+        "D. 220 J"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1184",
+      "item_type": "fill",
+      "stem": "焦耳定律：电流通过导体产生的热量跟电流的平方成______，跟导体的电阻成______，跟通电时间成正比；公式 Q=______。",
+      "answer": "正比；正比；I²Rt",
+      "kps": [
+        "kp_phy9_joule_law"
+      ],
+      "difficulty": 0.3,
+      "solution": "焦耳定律内容与公式（纯电阻电路 W=Q）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1185",
+      "item_type": "solve",
+      "stem": "一台电动机线圈电阻 2 Ω，接在 220 V 电路中正常工作时电流 5 A。求：①电流做功（输入电能）功率；②线圈发热功率；③机械功率约是多少？这说明什么？",
+      "answer": "①P入=UI=220×5=1100 W；②P热=I²R=25×2=50 W；③P机=P入-P热=1050 W。说明电动机不是纯电阻电路，电能大部分转化为机械能，只有一小部分（I²R）转化为内能，W≠Q。",
+      "kps": [
+        "kp_phy9_joule_law"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①P入=UI=220×5=1100 W；②P热=I²R=25×2=50 W；③P机=P入-P热=1050 W。说明电动机不是纯电阻电路，电能大部分转化为机械能，只有一小部分（I²R）转化为内能，W≠Q。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1186",
+      "item_type": "choice",
+      "stem": "下列对磁场和磁感线的理解，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_magnetic_field"
+      ],
+      "difficulty": 0.35,
+      "solution": "磁场客观存在，磁感线是描述磁场的假想曲线；磁感线在磁体外部从 N 极到 S 极；磁体内部也有磁场。小磁针 N 极受力方向（静止指向）规定为该点磁场方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁感线是真实存在的曲线",
+        "B. 磁场中某点小磁针静止时 N 极的指向就是该点磁场方向",
+        "C. 磁感线从 S 极出发回到 N 极",
+        "D. 磁场只存在于磁体外部"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1187",
+      "item_type": "fill",
+      "stem": "磁体周围存在______；物理学中把小磁针在磁场中静止时______极所指的方向规定为该点磁场的方向。",
+      "answer": "磁场；N",
+      "kps": [
+        "kp_phy9_magnetic_field"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁场方向的规定。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1188",
+      "item_type": "solve",
+      "stem": "怎样形象地描述磁场？磁感线有什么特点（至少两条）？",
+      "answer": "用磁感线描述：在磁场中撒铁屑，铁屑规则排列显示磁感线形状；特点：磁体外部磁感线从 N 极出发回到 S 极（内部从 S 到 N 成闭合曲线）、任何两条磁感线不相交、疏密表示磁场强弱（密处磁场强）。",
+      "kps": [
+        "kp_phy9_magnetic_field"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：用磁感线描述：在磁场中撒铁屑，铁屑规则排列显示磁感线形状；特点：磁体外部磁感线从 N 极出发回到 S 极（内部从 S 到 N 成闭合曲线）、任何两条磁感线不相交、疏密表示磁场强弱（密处磁场强）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1189",
+      "item_type": "choice",
+      "stem": "对磁体与磁极的认识，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_magnetic_phenomena"
+      ],
+      "difficulty": 0.3,
+      "solution": "任何磁体都有 N、S 两极且不可分割（磁单极不存在）；同名磁极相互排斥、异名相互吸引；天然磁体（磁铁矿）存在；磁体间作用相互。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磁体有两个磁极，同名磁极相互排斥",
+        "B. 磁极可以单独存在",
+        "C. 所有磁体都是人造的",
+        "D. 磁体吸引磁体的力不是相互的"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1190",
+      "item_type": "fill",
+      "stem": "磁体上磁性最强的部分叫______；使原来没有磁性的物体获得磁性的过程叫______；磁体总有 N、S 两个磁极。",
+      "answer": "磁极；磁化",
+      "kps": [
+        "kp_phy9_magnetic_phenomena"
+      ],
+      "difficulty": 0.3,
+      "solution": "磁极、磁化的概念。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1191",
+      "item_type": "solve",
+      "stem": "把条形磁铁从中间断开，能得到单独的 N 极和 S 极吗？请设计简单实验检验，并说明理由。",
+      "answer": "不能。检验：断开后的每一段两端分别吸引铁屑一端多一端少，再与已知磁极作用，发现每段仍各有 N、S 两极。理由：磁体由无数小磁体（磁畴）组成，分割后每个小磁体仍有两极，磁极总是成对出现。",
+      "kps": [
+        "kp_phy9_magnetic_phenomena"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：不能。检验：断开后的每一段两端分别吸引铁屑一端多一端少，再与已知磁极作用，发现每段仍各有 N、S 两极。理由：磁体由无数小磁体（磁畴）组成，分割后每个小磁体仍有两极，磁极总是成对出现。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1192",
+      "item_type": "choice",
+      "stem": "关于物质的构成，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_matter_composition"
+      ],
+      "difficulty": 0.3,
+      "solution": "物质由分子、原子构成；分子由原子构成，原子还可再分为原子核与电子，分子原子都极小，肉眼不可见。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质由分子或原子构成",
+        "B. 分子是构成物质的最小微粒，不可再分",
+        "C. 原子肉眼可以直接看到",
+        "D. 所有物质都由原子构成"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1193",
+      "item_type": "fill",
+      "stem": "常见物质是由大量______、______构成的；分子很小，一般分子直径的数量级为 10⁻¹⁰______（填单位）。",
+      "answer": "分子；原子；m",
+      "kps": [
+        "kp_phy9_matter_composition"
+      ],
+      "difficulty": 0.3,
+      "solution": "分子原子是构成物质的微粒，分子直径数量级 10⁻¹⁰ m。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1194",
+      "item_type": "solve",
+      "stem": "„把一块糖分成两半，再分……一直分下去，糖还是甜的吗？“请用分子原子观点解释。",
+      "answer": "一直分下去，只要分到还保持糖化学性质的最小微粒（糖分子），它仍然是甜的；若把糖分子再分开（原子层面），就不再是有甜味的„糖“这种物质了。说明分子是保持物质化学性质的最小微粒。",
+      "kps": [
+        "kp_phy9_matter_composition"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：一直分下去，只要分到还保持糖化学性质的最小微粒（糖分子），它仍然是甜的；若把糖分子再分开（原子层面），就不再是有甜味的„糖“这种物质了。说明分子是保持物质化学性质的最小微粒。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1195",
+      "item_type": "choice",
+      "stem": "下列尺度按由小到大排列正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy9_micro_cosmos_scale"
+      ],
+      "difficulty": 0.3,
+      "solution": "原子核比原子小，原子组成分子，分子构成地球等宏观物体，地球又是太阳系成员：质子<原子核<原子<分子<地球。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原子核—原子—分子—地球—太阳系",
+        "B. 分子—原子—原子核—地球—银河系",
+        "C. 原子核—原子—分子—太阳—地球",
+        "D. 质子—原子核—原子—分子—地球"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1196",
+      "item_type": "fill",
+      "stem": "物质世界从微观到宏观的尺度：分子/原子约 10⁻¹⁰ m，人约 1~2 m，地球直径约 10⁷ m，太阳系尺度约 10¹³ m，银河系约 10²¹______（填单位，用长度单位 m 计量即可）。",
+      "answer": "m",
+      "kps": [
+        "kp_phy9_micro_cosmos_scale"
+      ],
+      "difficulty": 0.3,
+      "solution": "物质世界跨越从 10⁻¹⁰ m 到 10²¹ m 以上约 30 多个数量级。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1197",
+      "item_type": "solve",
+      "stem": "把下列对象按尺度从小到大排序：电子、原子、分子、病毒、细菌、地球、太阳、银河系。",
+      "answer": "电子（<10⁻¹⁵ m 量级）<原子（10⁻¹⁰ m）<分子（10⁻¹⁰~10⁻⁹ m）<病毒（约 10⁻⁷ m）<细菌（约 10⁻⁶ m）<地球（1.3×10⁷ m）<太阳（1.4×10⁹ m）<银河系（约 10²¹ m）。",
+      "kps": [
+        "kp_phy9_micro_cosmos_scale"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：电子（<10⁻¹⁵ m 量级）<原子（10⁻¹⁰ m）<分子（10⁻¹⁰~10⁻⁹ m）<病毒（约 10⁻⁷ m）<细菌（约 10⁻⁶ m）<地球（1.3×10⁷ m）<太阳（1.4×10⁹ m）<银河系（约 10²¹ m）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1198",
+      "item_type": "choice",
+      "stem": "首先发现电子的科学家是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_micro_explore_history"
+      ],
+      "difficulty": 0.35,
+      "solution": "1897 年汤姆孙通过阴极射线实验发现电子，揭示原子可再分；卢瑟福发现质子、提出核式结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汤姆孙",
+        "B. 卢瑟福",
+        "C. 居里夫人",
+        "D. 爱因斯坦"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1199",
+      "item_type": "fill",
+      "stem": "1897 年______发现了电子，说明原子是可以再分的；后来卢瑟福通过______散射实验建立了原子的核式结构模型。",
+      "answer": "汤姆孙；α粒子（α 粒子）",
+      "kps": [
+        "kp_phy9_micro_explore_history"
+      ],
+      "difficulty": 0.3,
+      "solution": "微观探索的重要里程碑。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1200",
+      "item_type": "solve",
+      "stem": "简述人类认识原子结构的过程（从„不可分“到核式结构），说明科学模型是怎样发展的。",
+      "answer": "19 世纪初道尔顿认为原子是不可分的最小微粒；1897 年汤姆孙发现电子，提出„枣糕“（西瓜）模型；1911 年卢瑟福 α 粒子散射实验发现大部分 α 粒子直穿、少数大角度偏转，提出核式结构模型；后来玻尔引入量子化轨道。说明科学模型随实验证据不断修正完善，是逼近真理的认识过程。",
+      "kps": [
+        "kp_phy9_micro_explore_history"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：19 世纪初道尔顿认为原子是不可分的最小微粒；1897 年汤姆孙发现电子，提出„枣糕“（西瓜）模型；1911 年卢瑟福 α 粒子散射实验发现大部分 α 粒子直穿、少数大角度偏转，提出核式结构模型；后来玻尔引入量子化轨道。说明科学模型随实验证据不断修正完善，是逼近真理的认识过程。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1201",
+      "item_type": "choice",
+      "stem": "海南街头卖椰子糕的小摊香气四溢，这现象说明（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_molecular_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "香味扩散是香味分子无规则运动进入空气的结果（扩散现象），温度越高扩散越快。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分子体积很大",
+        "B. 分子在不停地做无规则运动",
+        "C. 分子之间存在斥力",
+        "D. 气体分子之间没有间隙"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1202",
+      "item_type": "fill",
+      "stem": "不同物质相互接触时彼此进入对方的现象叫做______；温度越高，分子的无规则运动越______。",
+      "answer": "扩散；剧烈",
+      "kps": [
+        "kp_phy9_molecular_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "扩散现象证明分子永不停息地无规则运动，温度越高越剧烈。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1203",
+      "item_type": "solve",
+      "stem": "在量筒中先注入清水再缓慢注入染色的硫酸铜溶液，静置几天后界面逐渐模糊。该实验说明什么？为什么刚开始时界面清晰？",
+      "answer": "说明分子在不停地做无规则运动，液体分子彼此进入对方（液体扩散）；刚开始液体密度不同分层清晰，且液体分子运动较慢，扩散需要较长时间才明显，几天后界面模糊是扩散的结果。",
+      "kps": [
+        "kp_phy9_molecular_motion"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：说明分子在不停地做无规则运动，液体分子彼此进入对方（液体扩散）；刚开始液体密度不同分层清晰，且液体分子运动较慢，扩散需要较长时间才明显，几天后界面模糊是扩散的结果。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1204",
+      "item_type": "choice",
+      "stem": "换向器是直流电动机的关键部件，它的作用是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_motor"
+      ],
+      "difficulty": 0.35,
+      "solution": "换向器在线圈每次经过平衡位置时自动改变线圈中电流方向，使线圈两侧受力方向相应改变（总与转动方向一致），线圈得以持续转动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 改变线圈中的电流方向，使线圈持续转动",
+        "B. 增大电流",
+        "C. 减小摩擦",
+        "D. 产生磁场"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1205",
+      "item_type": "fill",
+      "stem": "电动机是把______能转化为______能的装置；要改变直流电动机的转速，可改变电流大小；要改变转动方向，可改变______方向或磁场方向。",
+      "answer": "电；机械；电流",
+      "kps": [
+        "kp_phy9_motor"
+      ],
+      "difficulty": 0.3,
+      "solution": "电动机能量转化与控制。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1206",
+      "item_type": "solve",
+      "stem": "安装直流电动机模型实验中：①通电后线圈不转，可能有哪些原因？②怎样使线圈转得更快？③电动机与热机相比有哪些优点？",
+      "answer": "①可能原因：线圈处于平衡位置（惯性不足）、电刷与换向器接触不良、电路断路、摩擦太大、磁铁磁性太弱；②增大电流（提高电压）、增强磁场，转速加快；③优点：启动方便、结构简单、效率高、无燃烧污染、噪声小，便于直接驱动各种设备（如电风扇、电动车）。",
+      "kps": [
+        "kp_phy9_motor"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①可能原因：线圈处于平衡位置（惯性不足）、电刷与换向器接触不良、电路断路、摩擦太大、磁铁磁性太弱；②增大电流（提高电压）、增强磁场，转速加快；③优点：启动方便、结构简单、效率高、无燃烧污染、噪声小，便于直接驱动各种设备（如电风扇、电动车）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1207",
+      "item_type": "choice",
+      "stem": "电动机的工作原理是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_motor_principle"
+      ],
+      "difficulty": 0.35,
+      "solution": "磁场对通电导体有力的作用（安培力），通电线圈在磁场中受力转动制成电动机，把电能转化为机械能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电磁感应现象",
+        "B. 通电导线（线圈）在磁场中受力转动",
+        "C. 电流的热效应",
+        "D. 摩擦起电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1208",
+      "item_type": "fill",
+      "stem": "通电导线在磁场中受力的方向与______方向和______方向都有关（左手定则）；通电线圈在磁场中受力转动，是______机的工作原理。",
+      "answer": "电流；磁场（磁感线）；电动",
+      "kps": [
+        "kp_phy9_motor_principle"
+      ],
+      "difficulty": 0.3,
+      "solution": "受力方向由电流和磁场方向共同决定。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1209",
+      "item_type": "solve",
+      "stem": "„磁场对通电导线的作用“实验：直导线挂在蹄形磁铁磁场中，通电后导线摆动。①改变电流方向，导线摆动方向怎样变化？②对调磁极呢？③该现象中能量如何转化？",
+      "answer": "①导线受磁场力方向改变，向反方向摆动；②对调磁极（磁场方向反向），受力方向也反向；③电能转化为机械能（导线动能）。受力方向与电流方向、磁场方向都有关，这是电动机的原理。",
+      "kps": [
+        "kp_phy9_motor_principle"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①导线受磁场力方向改变，向反方向摆动；②对调磁极（磁场方向反向），受力方向也反向；③电能转化为机械能（导线动能）。受力方向与电流方向、磁场方向都有关，这是电动机的原理。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1210",
+      "item_type": "choice",
+      "stem": "核电站发电的能量来源于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_nuclear_fission"
+      ],
+      "difficulty": 0.35,
+      "solution": "当前核电站（包括海南昌江核电站）利用铀核裂变释放的核能：裂变→内能→机械能→电能。可控核聚变尚在研究中。",
+      "source": "llm_generated",
+      "options": [
+        "A. 核聚变",
+        "B. 核裂变释放的核能",
+        "C. 化学能",
+        "D. 太阳能"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1211",
+      "item_type": "fill",
+      "stem": "用中子轰击铀 235，铀核分裂成两个中等质量的核并释放巨大能量，同时放出 2~3 个中子，这些中子又引发其他铀核裂变，这种连锁反应叫______反应；核电站利用可控的裂变链式反应。",
+      "answer": "链式（链式裂变）",
+      "kps": [
+        "kp_phy9_nuclear_fission"
+      ],
+      "difficulty": 0.3,
+      "solution": "链式反应概念。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1212",
+      "item_type": "solve",
+      "stem": "海南昌江核电站发电要经过哪些能量转化环节？核电站与火电站相比有什么优点，需要注意什么问题？",
+      "answer": "能量转化：核能（裂变）→内能（加热水产生蒸汽）→机械能（汽轮机）→电能（发电机）。优点：消耗燃料少、不排放温室气体和烟尘、发电成本低；注意问题：核废料具有放射性需妥善处理深埋、必须严格防范放射性泄漏事故（如安全壳、多重防护），核燃料运输储存要求高。",
+      "kps": [
+        "kp_phy9_nuclear_fission"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：能量转化：核能（裂变）→内能（加热水产生蒸汽）→机械能（汽轮机）→电能（发电机）。优点：消耗燃料少、不排放温室气体和烟尘、发电成本低；注意问题：核废料具有放射性需妥善处理深埋、必须严格防范放射性泄漏事故（如安全壳、多重防护），核燃料运输储存要求高。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1213",
+      "item_type": "choice",
+      "stem": "太阳内部持续进行的核反应是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_nuclear_fusion"
+      ],
+      "difficulty": 0.35,
+      "solution": "太阳内部在高温高压下氢核聚变成氦核，释放巨大能量；氢弹也利用聚变，原子弹和核电站用裂变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 核裂变",
+        "B. 核聚变",
+        "C. 化学燃烧",
+        "D. 链式反应"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1214",
+      "item_type": "fill",
+      "stem": "质量较小的核在超高温下聚合成较重的核并释放能量，这种反应叫______反应，也称热核反应；目前它还不能被人类______（填„完全控制“或„任意控制“）用于发电。",
+      "answer": "核聚变（聚变）；完全控制",
+      "kps": [
+        "kp_phy9_nuclear_fusion"
+      ],
+      "difficulty": 0.3,
+      "solution": "聚变能巨大但可控聚变仍在攻关（„人造太阳“托卡马克）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1215",
+      "item_type": "solve",
+      "stem": "为什么说可控核聚变是未来理想的能源？实现它需要突破什么难题？",
+      "answer": "聚变原料（氘）在海水中储量巨大、几乎取之不尽；单位质量释放能量比裂变更大；反应产物放射性相对少、不产生长寿命核废料，也不排放温室气体，所以是理想能源。难题：聚变需要上亿摄氏度的超高温条件（原子核克服静电斥力），没有任何容器能承受，需用磁约束（托卡马克）或惯性约束实现，且要实现长时间稳定可控输出，目前仍在研究（如 EAST、ITER）。",
+      "kps": [
+        "kp_phy9_nuclear_fusion"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：聚变原料（氘）在海水中储量巨大、几乎取之不尽；单位质量释放能量比裂变更大；反应产物放射性相对少、不产生长寿命核废料，也不排放温室气体，所以是理想能源。难题：聚变需要上亿摄氏度的超高温条件（原子核克服静电斥力），没有任何容器能承受，需用磁约束（托卡马克）或惯性约束实现，且要实现长时间稳定可控输出，目前仍在研究（如 EAST、ITER）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1216",
+      "item_type": "choice",
+      "stem": "奥斯特实验揭示的物理事实是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_oersted"
+      ],
+      "difficulty": 0.35,
+      "solution": "1820 年奥斯特发现通电导线使小磁针偏转，说明电流周围存在磁场（电流的磁效应），揭示了电与磁的联系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通电导线周围存在磁场",
+        "B. 磁铁周围存在磁场",
+        "C. 电流产生了电压",
+        "D. 导线有磁性"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1217",
+      "item_type": "fill",
+      "stem": "奥斯特实验表明：通电导线周围存在______，即电流的______效应，首次揭示了电与磁的联系。",
+      "answer": "磁场（电流的磁场）；磁",
+      "kps": [
+        "kp_phy9_oersted"
+      ],
+      "difficulty": 0.3,
+      "solution": "电流磁效应的发现史。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1218",
+      "item_type": "solve",
+      "stem": "在静止的小磁针上方平行架一根直导线。①通电后小磁针偏转说明了什么？②改变电流方向，小磁针偏转方向也改变，又说明什么？③此实验为什么要让导线与小磁针平行放置？",
+      "answer": "①说明通电导线周围存在磁场（电流的磁效应）；②说明电流磁场的方向与电流方向有关；③导线与小磁针平行（沿南北方向）时，电流磁场沿东西方向对小磁针作用力最大，偏转最明显；若垂直放置，磁场方向与小磁针方向一致，几乎不偏转，现象不明显。",
+      "kps": [
+        "kp_phy9_oersted"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①说明通电导线周围存在磁场（电流的磁效应）；②说明电流磁场的方向与电流方向有关；③导线与小磁针平行（沿南北方向）时，电流磁场沿东西方向对小磁针作用力最大，偏转最明显；若垂直放置，磁场方向与小磁针方向一致，几乎不偏转，现象不明显。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1219",
+      "item_type": "choice",
+      "stem": "两定值电阻的 U-I 图像都是过原点的直线，Ra 的斜率大于 Rb 的斜率，则（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_ohm_image"
+      ],
+      "difficulty": 0.4,
+      "solution": "U-I 图像斜率（U/I）等于电阻，斜率大的电阻大：Ra>Rb。",
+      "source": "llm_generated",
+      "options": [
+        "A. Ra>Rb",
+        "B. Ra<Rb",
+        "C. Ra=Rb",
+        "D. 无法比较"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1220",
+      "item_type": "fill",
+      "stem": "定值电阻的 U-I 图像是过原点的______线（直线），说明电流与电压成______比；小灯泡（非线性元件）的 U-I 图像是曲线，因为灯丝电阻随温度变化。",
+      "answer": "直线；正",
+      "kps": [
+        "kp_phy9_ohm_image"
+      ],
+      "difficulty": 0.3,
+      "solution": "U-I 图像的物理意义。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1221",
+      "item_type": "solve",
+      "stem": "从某导体的 U-I 图像上取两点：(0.5 A, 1.0 V) 和 (1.5 A, 3.0 V)。求该导体的电阻，并说明它是不是定值电阻；若把它接在 4.5 V 电源上电流多大？",
+      "answer": "两组数据 U/I 均为 2 Ω，比值恒定，是定值电阻 R=2 Ω；I=4.5÷2=2.25 A。",
+      "kps": [
+        "kp_phy9_ohm_image"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：两组数据 U/I 均为 2 Ω，比值恒定，是定值电阻 R=2 Ω；I=4.5÷2=2.25 A。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1222",
+      "item_type": "choice",
+      "stem": "一段导体两端电压为 6 V 时，通过它的电流为 0.6 A；若电压增大到 9 V，通过它的电流为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_ohm_law"
+      ],
+      "difficulty": 0.4,
+      "solution": "R=U/I=6÷0.6=10 Ω 不变，I'=9÷10=0.9 A；导体电阻一定时电流与电压成正比。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.6 A",
+        "B. 0.9 A",
+        "C. 1.5 A",
+        "D. 0.3 A"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1223",
+      "item_type": "fill",
+      "stem": "欧姆定律：导体中的电流跟导体两端的电压成______，跟导体的电阻成______；公式 I=______。",
+      "answer": "正比；反比；U/R",
+      "kps": [
+        "kp_phy9_ohm_law"
+      ],
+      "difficulty": 0.3,
+      "solution": "欧姆定律内容与公式。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1224",
+      "item_type": "solve",
+      "stem": "一电阻为 20 Ω 的用电器正常工作时通过的电流是 0.5 A。求：①它两端的电压；②若把它接在 6 V 电源上，通过的电流多大？③它正常工作 10 min 电流做的功。",
+      "answer": "①U=IR=0.5×20=10 V；②I'=6÷20=0.3 A；③W=UIt=10×0.5×600=3000 J。",
+      "kps": [
+        "kp_phy9_ohm_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①U=IR=0.5×20=10 V；②I'=6÷20=0.3 A；③W=UIt=10×0.5×600=3000 J。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1225",
+      "item_type": "choice",
+      "stem": "电阻 10 Ω 与 30 Ω 并联后的总电阻为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_ohm_parallel"
+      ],
+      "difficulty": 0.4,
+      "solution": "1/R=1/10+1/30=4/30，R=7.5 Ω；并联总电阻小于任一分电阻。",
+      "source": "llm_generated",
+      "options": [
+        "A. 40 Ω",
+        "B. 7.5 Ω",
+        "C. 20 Ω",
+        "D. 300 Ω"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1226",
+      "item_type": "fill",
+      "stem": "并联电路总电阻的倒数等于各支路电阻______之和（1/R=1/R₁+1/R₂）；并联总电阻比任何一个支路电阻都______。",
+      "answer": "倒数；小",
+      "kps": [
+        "kp_phy9_ohm_parallel"
+      ],
+      "difficulty": 0.3,
+      "solution": "并联分流、总电阻变小。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1227",
+      "item_type": "solve",
+      "stem": "R₁=12 Ω 与 R₂=6 Ω 并联接在 6 V 电源上。求：①总电阻；②干路电流；③通过各电阻的电流。",
+      "answer": "①1/R=1/12+1/6=3/12=1/4，R=4 Ω；②I=U/R=6÷4=1.5 A；③I₁=6÷12=0.5 A，I₂=6÷6=1 A（0.5+1=1.5 A 验证）。",
+      "kps": [
+        "kp_phy9_ohm_parallel"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①1/R=1/12+1/6=3/12=1/4，R=4 Ω；②I=U/R=6÷4=1.5 A；③I₁=6÷12=0.5 A，I₂=6÷6=1 A（0.5+1=1.5 A 验证）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1228",
+      "item_type": "choice",
+      "stem": "电阻 R₁=10 Ω 与 R₂=20 Ω 串联接在 6 V 电源上，电路中的电流为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_ohm_series"
+      ],
+      "difficulty": 0.4,
+      "solution": "串联总电阻 R=R₁+R₂=30 Ω，I=U/R=6÷30=0.2 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.6 A",
+        "B. 0.3 A",
+        "C. 0.2 A",
+        "D. 0.06 A"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1229",
+      "item_type": "fill",
+      "stem": "串联电路总电阻等于各电阻之和 R=R₁+R₂，总电阻比任何一个分电阻都______；串联电路电流______，各部分电压之和等于总电压。",
+      "answer": "大；处处相等",
+      "kps": [
+        "kp_phy9_ohm_series"
+      ],
+      "difficulty": 0.3,
+      "solution": "串联分压，总电阻增大。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1230",
+      "item_type": "solve",
+      "stem": "R₁=10 Ω 和 R₂=20 Ω 串联接在 9 V 电源上。求：①总电阻与电流；②各电阻两端的电压；③若再串联一个 30 Ω 的 R₃，电流变为多少？",
+      "answer": "①R=30 Ω，I=9÷30=0.3 A；②U₁=IR₁=0.3×10=3 V，U₂=0.3×20=6 V（3+6=9 V 验证）；③R'=30+30=60 Ω，I'=9÷60=0.15 A。",
+      "kps": [
+        "kp_phy9_ohm_series"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①R=30 Ω，I=9÷30=0.3 A；②U₁=IR₁=0.3×10=3 V，U₂=0.3×20=6 V（3+6=9 V 验证）；③R'=30+30=60 Ω，I'=9÷60=0.15 A。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1231",
+      "item_type": "choice",
+      "stem": "历史上有人设计„不消耗能量却能对外做功“的永动机，这些设计都失败了，因为它违反了（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_perpetual_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "永动机不消耗能量却持续对外做功，意味着能量凭空产生，违反能量守恒定律，因此不可能实现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能量守恒定律",
+        "B. 牛顿第一定律",
+        "C. 欧姆定律",
+        "D. 阿基米德原理"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1232",
+      "item_type": "fill",
+      "stem": "不消耗能量却能够对外做功的机器叫做______，它不可能制成，因为它违反了______定律。",
+      "answer": "永动机；能量守恒",
+      "kps": [
+        "kp_phy9_perpetual_motion"
+      ],
+      "difficulty": 0.3,
+      "solution": "第一类永动机违反能量守恒定律。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1233",
+      "item_type": "solve",
+      "stem": "某广告宣称„自充电电动车：车轮转动带动发电机给电池充电，电池再驱动车轮，无需外部充电永远行驶“。请指出其中的错误并说明理由。",
+      "answer": "错误：该设想是不消耗外部能量却持续行驶的永动机。理由：能量转化过程中（机械能→电能→机械能）存在摩擦、电阻发热等损耗，一部分机械能变为内能耗散，能量总量虽守恒但可用于驱动的能量越来越少，不补充能量车必停下来，违反能量守恒定律的设计不可能实现。",
+      "kps": [
+        "kp_phy9_perpetual_motion"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：错误：该设想是不消耗外部能量却持续行驶的永动机。理由：能量转化过程中（机械能→电能→机械能）存在摩擦、电阻发热等损耗，一部分机械能变为内能耗散，能量总量虽守恒但可用于驱动的能量越来越少，不补充能量车必停下来，违反能量守恒定律的设计不可能实现。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1234",
+      "item_type": "choice",
+      "stem": "标有„220 V 100 W“的灯泡，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_rated_power"
+      ],
+      "difficulty": 0.4,
+      "solution": "额定电压 220 V 下工作才是额定功率 100 W；接 110 V 时 P=U²/R=(110²)/484=25 W（若按灯丝电阻不变计）；灯丝电阻随温度变化；消耗电能还与时间有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 灯泡电阻在任何情况下都是 484 Ω",
+        "B. 只有接在 220 V 电路上才正常发光，功率为 100 W",
+        "C. 接在 110 V 电路上实际功率为 50 W",
+        "D. 额定功率越大，消耗电能一定越多"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1235",
+      "item_type": "fill",
+      "stem": "用电器正常工作时的电压叫______电压，此时的功率叫______功率；实际电压偏低时实际功率______额定功率（填„小于“等）。",
+      "answer": "额定；额定；小于",
+      "kps": [
+        "kp_phy9_rated_power"
+      ],
+      "difficulty": 0.3,
+      "solution": "额定与实际的区别。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1236",
+      "item_type": "solve",
+      "stem": "„220 V 800 W“的电饭锅接在 220 V 电路中。求：①正常工作电流和电阻；②煮饭 30 min 消耗的电能；③若电压降为 200 V，实际功率约多少？（设电阻不变）",
+      "answer": "①I=P/U=800÷220≈3.64 A，R=U²/P=220²÷800=60.5 Ω；②W=Pt=0.8 kW×0.5 h=0.4 kW·h=1.44×10⁶ J；③P实=200²÷60.5≈661 W。",
+      "kps": [
+        "kp_phy9_rated_power"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：①I=P/U=800÷220≈3.64 A，R=U²/P=220²÷800=60.5 Ω；②W=Pt=0.8 kW×0.5 h=0.4 kW·h=1.44×10⁶ J；③P实=200²÷60.5≈661 W。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1237",
+      "item_type": "choice",
+      "stem": "电磁继电器在电路中的主要作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_relay"
+      ],
+      "difficulty": 0.4,
+      "solution": "电磁继电器利用电磁铁吸合衔铁，用低电压、弱电流的控制回路控制高电压、强电流的工作回路，实现自动控制（温控、光控、声控）和远距离操作，保障安全。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大电流",
+        "B. 用低压控制电路控制高压工作电路，实现自动控制和安全操作",
+        "C. 储存电能",
+        "D. 升高电压"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1238",
+      "item_type": "fill",
+      "stem": "电磁继电器由电磁铁、衔铁、弹簧、触点组成：控制电路接通时电磁铁______衔铁，动触点与静触点接通或断开，从而控制______电路的通断。",
+      "answer": "吸合（吸引）；工作",
+      "kps": [
+        "kp_phy9_relay"
+      ],
+      "difficulty": 0.3,
+      "solution": "继电器的结构与工作过程。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1239",
+      "item_type": "solve",
+      "stem": "海南养殖场用电磁继电器设计„水位自动报警器“：水位上升到金属块 A 时红灯亮、电铃响。请说明工作原理（控制电路—电磁铁—衔铁—触点—工作电路）。",
+      "answer": "水位到达 A 时，水（导体）把控制电路接通，电磁铁有电流通过产生磁性，吸下衔铁，动触点与下面静触点接通，红灯和电铃所在工作电路闭合而报警；水位低于 A 时控制电路断开，电磁铁失磁，衔铁被弹簧拉回，绿灯（上触点）电路接通指示正常。实现了自动、远距离、低电压控制高电压电路。",
+      "kps": [
+        "kp_phy9_relay"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：水位到达 A 时，水（导体）把控制电路接通，电磁铁有电流通过产生磁性，吸下衔铁，动触点与下面静触点接通，红灯和电铃所在工作电路闭合而报警；水位低于 A 时控制电路断开，电磁铁失磁，衔铁被弹簧拉回，绿灯（上触点）电路接通指示正常。实现了自动、远距离、低电压控制高电压电路。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1240",
+      "item_type": "choice",
+      "stem": "下列对电阻的理解，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_resistance_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "电阻表示导体对电流阻碍作用的大小，由导体材料、长度、横截面积（和温度）决定，与是否通电、电流大小无关（U/I 比值不变）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电阻是导体对电流的阻碍作用，是导体本身的性质",
+        "B. 通过导体的电流越大，导体的电阻越大",
+        "C. 导体没有接入电路时电阻为零",
+        "D. 电阻的单位是伏特"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1241",
+      "item_type": "fill",
+      "stem": "电阻是导体对电流的______作用，符号 R，国际单位是______（Ω）；电阻是导体本身的一种性质。",
+      "answer": "阻碍；欧姆",
+      "kps": [
+        "kp_phy9_resistance_concept"
+      ],
+      "difficulty": 0.3,
+      "solution": "电阻概念与单位。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1242",
+      "item_type": "solve",
+      "stem": "„由 R=U/I 可知，导体电阻与电压成正比、与电流成反比。“这种说法对吗？请说明理由。",
+      "answer": "不对。R=U/I 只是电阻的测量（计算）式：对同一导体，U 增大几倍 I 也增大几倍，比值 U/I 不变；电阻由导体的材料、长度、横截面积和温度决定，是导体本身的性质，与 U、I 无关。",
+      "kps": [
+        "kp_phy9_resistance_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：不对。R=U/I 只是电阻的测量（计算）式：对同一导体，U 增大几倍 I 也增大几倍，比值 U/I 不变；电阻由导体的材料、长度、横截面积和温度决定，是导体本身的性质，与 U、I 无关。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1243",
+      "item_type": "choice",
+      "stem": "用„探究电阻大小影响因素“的实验装置，把长短粗细相同的锰铜丝和镍铬合金丝分别接入电路，灯泡亮度不同。这研究的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_resistance_factors"
+      ],
+      "difficulty": 0.35,
+      "solution": "长度、横截面积相同而材料不同，控制变量下比较的是电阻与材料的关系；灯越暗说明电阻越大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电阻与长度的关系",
+        "B. 电阻与材料的关系",
+        "C. 电阻与横截面积的关系",
+        "D. 电阻与温度的关系"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1244",
+      "item_type": "fill",
+      "stem": "导体的电阻由材料、______和横截面积决定，还受______影响；同种材料，导体越长电阻越大，横截面积越大电阻越______。",
+      "answer": "长度；温度；小",
+      "kps": [
+        "kp_phy9_resistance_factors"
+      ],
+      "difficulty": 0.3,
+      "solution": "决定电阻的四个因素：材料、长度、横截面积、温度。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1245",
+      "item_type": "solve",
+      "stem": "探究电阻与长度关系：把镍铬合金丝全长的 1/2、全长分别接入同一电路，观察到接入全长时灯更暗。①结论是什么？②实验用了什么方法？③为什么换用不同导体（或不同长度）时要控制其他条件相同？",
+      "answer": "①同种材料、同粗细的导体，长度越长电阻越大；②控制变量法（转换法：灯的亮度反映电流大小间接反映电阻）；③电阻受多个因素影响，只有控制材料、粗细、温度相同，改变长度，才能确定电阻差异由长度引起。",
+      "kps": [
+        "kp_phy9_resistance_factors"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①同种材料、同粗细的导体，长度越长电阻越大；②控制变量法（转换法：灯的亮度反映电流大小间接反映电阻）；③电阻受多个因素影响，只有控制材料、粗细、温度相同，改变长度，才能确定电阻差异由长度引起。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1246",
+      "item_type": "choice",
+      "stem": "家庭用的白炽灯泡，正常发光时灯丝温度高达 2000 ℃ 以上。关于灯丝电阻，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_resistance_temperature"
+      ],
+      "difficulty": 0.4,
+      "solution": "金属导体电阻随温度升高而增大；„220V 100W“灯泡常温测电阻约 30~40 Ω，正常发光时按 R=U²/P=484 Ω，差别很大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 灯丝发热后电阻变小",
+        "B. 金属灯丝的电阻随温度升高而增大",
+        "C. 灯丝电阻与温度无关",
+        "D. 常温下和发光时灯丝电阻一样大"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1247",
+      "item_type": "fill",
+      "stem": "大多数金属导体温度升高时电阻______；用伏安法测小灯泡电阻时，多次测量的阻值随电压增大而增大，原因是灯丝______升高、电阻变大。",
+      "answer": "增大；温度",
+      "kps": [
+        "kp_phy9_resistance_temperature"
+      ],
+      "difficulty": 0.35,
+      "solution": "金属电阻随温度升高而增大（少数材料相反）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1248",
+      "item_type": "solve",
+      "stem": "用电流表和电压表测小灯泡的电阻，测得多组数据：U=1.0 V 时 I=0.20 A；U=2.0 V 时 I=0.30 A；U=2.5 V（正常发光）时 I=0.32 A。分别求三种情况下的电阻并说明为什么不相等。",
+      "answer": "R₁=1.0÷0.20=5 Ω；R₂=2.0÷0.30≈6.7 Ω；R₃=2.5÷0.32≈7.8 Ω。电压越大灯越亮、灯丝温度越高，金属灯丝电阻随温度升高而增大，所以电阻不相等（测小灯泡电阻不能求平均值的原因）。",
+      "kps": [
+        "kp_phy9_resistance_temperature"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：R₁=1.0÷0.20=5 Ω；R₂=2.0÷0.30≈6.7 Ω；R₃=2.5÷0.32≈7.8 Ω。电压越大灯越亮、灯丝温度越高，金属灯丝电阻随温度升高而增大，所以电阻不相等（测小灯泡电阻不能求平均值的原因）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1249",
+      "item_type": "choice",
+      "stem": "滑动变阻器是通过改变下列哪个因素来改变电阻的（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_rheostat"
+      ],
+      "difficulty": 0.35,
+      "solution": "滑动变阻器靠滑片移动改变接入电路的电阻线长度来改变电阻，从而改变电流、调节电压。",
+      "source": "llm_generated",
+      "options": [
+        "A. 材料",
+        "B. 温度",
+        "C. 接入电路中电阻线的长度",
+        "D. 电阻线的横截面积"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1250",
+      "item_type": "fill",
+      "stem": "滑动变阻器要______联在电路中，接线应„一上一下“；闭合开关前应将滑片移到阻值______处，保护电路。",
+      "answer": "串；最大",
+      "kps": [
+        "kp_phy9_rheostat"
+      ],
+      "difficulty": 0.3,
+      "solution": "接法一上一下；初始阻值最大保护电路。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1251",
+      "item_type": "solve",
+      "stem": "„用滑动变阻器改变小灯泡亮度“的实验：把变阻器与灯串联，移动滑片灯变亮。①变阻器连入电路的电阻怎样变化？②若只把 A、B（下下）两接线柱接入电路，移动滑片灯亮度是否变化？③变阻器在这里的作用还有什么？",
+      "answer": "①灯变亮说明电流变大，连入电阻变小（接入电阻线变短）；②只接下面两个接线柱时，全部电阻线接入且阻值固定，移动滑片不改变接入长度，灯亮度不变；③除调光外，串联变阻器还可分压、保护电路（限制电流）。",
+      "kps": [
+        "kp_phy9_rheostat"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①灯变亮说明电流变大，连入电阻变小（接入电阻线变短）；②只接下面两个接线柱时，全部电阻线接入且阻值固定，移动滑片不改变接入长度，灯亮度不变；③除调光外，串联变阻器还可分压、保护电路（限制电流）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1252",
+      "item_type": "choice",
+      "stem": "下列做法符合安全用电要求的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_safety_electricity"
+      ],
+      "difficulty": 0.3,
+      "solution": "安全用电：不用湿手接触开关插座、不在电线上挂物、换灯先断电、不乱拉电线；铜丝代保险丝、湿手操作都危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用湿手拨动开关",
+        "B. 在电线上晾晒衣服",
+        "C. 检修灯泡前先断开电源开关",
+        "D. 用铜丝代替保险丝"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1253",
+      "item_type": "fill",
+      "stem": "经验证明，只有不高于______V 的电压才是安全电压；安全用电原则：不接触______带电体，不靠近高压带电体。",
+      "answer": "36；低压（裸露的）",
+      "kps": [
+        "kp_phy9_safety_electricity"
+      ],
+      "difficulty": 0.3,
+      "solution": "安全电压界限与两不原则。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1254",
+      "item_type": "solve",
+      "stem": "海南多雨潮湿，家庭用电更要注意安全。请写出三条安全用电常识并简述理由。",
+      "answer": "①不用湿手触摸开关、插座、用电器：潮湿皮肤电阻小，通过人体电流可能超过安全值；②大功率电器不同时集中使用一个插座：防止过载发热引发火灾；③电器长期不用或雷雨天拔下插头：防雷击浪涌和绝缘老化漏电；此外检修电器先断电源、安装漏电保护开关。",
+      "kps": [
+        "kp_phy9_safety_electricity"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：①不用湿手触摸开关、插座、用电器：潮湿皮肤电阻小，通过人体电流可能超过安全值；②大功率电器不同时集中使用一个插座：防止过载发热引发火灾；③电器长期不用或雷雨天拔下插头：防雷击浪涌和绝缘老化漏电；此外检修电器先断电源、安装漏电保护开关。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1255",
+      "item_type": "choice",
+      "stem": "关于半导体和超导体，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_semiconductor_superconductor"
+      ],
+      "difficulty": 0.35,
+      "solution": "半导体导电能力介于导体与绝缘体之间，导电性能受温度、光照、掺杂质等控制；超导体只在温度降到临界（转变）温度以下电阻才为零；超导体若做发热体则不发热（Q=I²Rt=0），失去电热作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 半导体的导电性能介于导体和绝缘体之间",
+        "B. 超导体在任何温度下电阻都为零",
+        "C. 超导体适合做电热器的发热体",
+        "D. 半导体的导电能力比金属强"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1256",
+      "item_type": "fill",
+      "stem": "导电性能介于导体和绝缘体之间的材料叫______，如硅、锗，可用于制作二极管、集成电路；某些材料在温度降到足够低时电阻变为零，这种性质叫______。",
+      "answer": "半导体；超导（超导现象）",
+      "kps": [
+        "kp_phy9_semiconductor_superconductor"
+      ],
+      "difficulty": 0.3,
+      "solution": "半导体与超导体的基本概念。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1257",
+      "item_type": "solve",
+      "stem": "超导体输电有什么好处？为什么超导体不适合做电热丝却适合做输电线？",
+      "answer": "超导输电线电阻为零，输电时 Q=I²Rt=0，没有线路发热损耗（我国电网损耗约几个百分点），能大幅提高输电效率；电热丝需要利用电流热效应发热，超导体电阻为零无法产生焦耳热，所以不能做发热体，而做输电线正是为了消除热损耗。",
+      "kps": [
+        "kp_phy9_semiconductor_superconductor"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：超导输电线电阻为零，输电时 Q=I²Rt=0，没有线路发热损耗（我国电网损耗约几个百分点），能大幅提高输电效率；电热丝需要利用电流热效应发热，超导体电阻为零无法产生焦耳热，所以不能做发热体，而做输电线正是为了消除热损耗。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1258",
+      "item_type": "choice",
+      "stem": "两个灯泡串联接入电路，A 处（靠近电源正极）电流 0.3 A，B 处（两灯之间）、C 处（靠近负极）的电流分别为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_series_current"
+      ],
+      "difficulty": 0.35,
+      "solution": "串联电路中电流处处相等：IA=IB=IC=0.3 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.3 A、0.3 A",
+        "B. 0.15 A、0.15 A",
+        "C. 0.3 A、0.15 A",
+        "D. 无法确定"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1259",
+      "item_type": "fill",
+      "stem": "串联电路中电流的规律：电流______相等，表达式 I=I₁=I₂；并联电路干路电流等于各支路电流______，I=I₁+I₂。",
+      "answer": "处处；之和",
+      "kps": [
+        "kp_phy9_series_current"
+      ],
+      "difficulty": 0.3,
+      "solution": "串并联电流规律。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1260",
+      "item_type": "solve",
+      "stem": "„探究串联电路电流规律“：把电流表分别接在 a、b、c 三点测得 0.28 A、0.28 A、0.28 A。①得出什么结论？②为什么要在不同电路（或不同规格灯泡）中再测几次？③电流表使用错误„接在并联电路中与用电器并联“会导致什么？",
+      "answer": "①串联电路中电流处处相等；②一次实验有偶然性，换用不同规格灯泡或改变电池节数多次实验，结论才具普遍性；③电流表内阻很小，与用电器并联会造成该支路短路（电流几乎全走电流表），电流表可能超量程损坏，且被并联的用电器不工作。",
+      "kps": [
+        "kp_phy9_series_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：①串联电路中电流处处相等；②一次实验有偶然性，换用不同规格灯泡或改变电池节数多次实验，结论才具普遍性；③电流表内阻很小，与用电器并联会造成该支路短路（电流几乎全走电流表），电流表可能超量程损坏，且被并联的用电器不工作。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1261",
+      "item_type": "choice",
+      "stem": "海南节日彩灯常由多盏小灯串联；家庭里各盏电灯互不影响，是并联。判断„串联“的依据是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_series_parallel_identify"
+      ],
+      "difficulty": 0.35,
+      "solution": "串联电路特征：电流路径只有一条，各用电器逐个顺次连接，一个断开全部停止工作；并联电路电流路径有多条，各支路互不影响。",
+      "source": "llm_generated",
+      "options": [
+        "A. 各用电器工作电压相同",
+        "B. 电流只有一条路径，各用电器依次相连",
+        "C. 各用电器都能工作",
+        "D. 各用电器功率相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1262",
+      "item_type": "fill",
+      "stem": "串联电路中，取下其中一盏灯其余灯______（填„亮“或„不亮“）；并联电路中，一条支路断开，其余支路______（填„受“或„不受“）影响。",
+      "answer": "不亮；不受",
+      "kps": [
+        "kp_phy9_series_parallel_identify"
+      ],
+      "difficulty": 0.3,
+      "solution": "用互不影响来识别并联，用一断全断识别串联。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1263",
+      "item_type": "solve",
+      "stem": "马路上的路灯同时亮、同时灭，有人据此说是串联，对吗？怎样设计一个简单检验方法？",
+      "answer": "不对。同时亮灭可用总开关统一控制（并联+总开关）。检验：看一盏路灯损坏（熄灭）时其余灯是否仍亮——若其余仍亮则为并联；或从亮度判断：串联时各灯分压，亮度随灯数变化，路灯亮度稳定不因个别损坏变化，说明是并联。",
+      "kps": [
+        "kp_phy9_series_parallel_identify"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：不对。同时亮灭可用总开关统一控制（并联+总开关）。检验：看一盏路灯损坏（熄灭）时其余灯是否仍亮——若其余仍亮则为并联；或从亮度判断：串联时各灯分压，亮度随灯数变化，路灯亮度稳定不因个别损坏变化，说明是并联。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1264",
+      "item_type": "choice",
+      "stem": "两灯串联接在 6 V 电源上，L₁ 两端电压 2.4 V，则 L₂ 两端电压为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_series_voltage"
+      ],
+      "difficulty": 0.4,
+      "solution": "串联电路总电压等于各部分电压之和：U₂=U-U₁=6-2.4=3.6 V。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6 V",
+        "B. 2.4 V",
+        "C. 3.6 V",
+        "D. 8.4 V"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1265",
+      "item_type": "fill",
+      "stem": "串联电路电压规律：总电压等于各部分电路电压______，U=U₁+U₂；并联电路各支路两端电压______，U=U₁=U₂。",
+      "answer": "之和；相等",
+      "kps": [
+        "kp_phy9_series_voltage"
+      ],
+      "difficulty": 0.3,
+      "solution": "串并联电压规律。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1266",
+      "item_type": "solve",
+      "stem": "三只灯 L₁、L₂、L₃ 串联接在 9 V 电源上，测得 L₁、L₂ 两端电压分别为 3 V 和 2 V。求 L₃ 两端电压；若把三灯改为并联接在同一电源上（设灯不损坏），每灯两端电压是多少？",
+      "answer": "串联：U₃=U-U₁-U₂=9-3-2=4 V；并联时各支路电压都等于电源电压 9 V（若超过灯的额定电压灯会烧坏，题设不损坏则均为 9 V）。",
+      "kps": [
+        "kp_phy9_series_voltage"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：串联：U₃=U-U₁-U₂=9-3-2=4 V；并联时各支路电压都等于电源电压 9 V（若超过灯的额定电压灯会烧坏，题设不损坏则均为 9 V）。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1267",
+      "item_type": "choice",
+      "stem": "海南推广太阳能热水器、光伏路灯。太阳能的直接利用方式主要是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_solar_energy"
+      ],
+      "difficulty": 0.35,
+      "solution": "太阳能利用两大途径：光热转换（集热器加热水）和光电转换（太阳电池发电）；间接利用如生物质能、风能、水能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光热转换和光电转换",
+        "B. 核能转换",
+        "C. 化学转换",
+        "D. 机械能转换"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1268",
+      "item_type": "fill",
+      "stem": "太阳内部不断发生______反应（聚变），向外辐射巨大能量；地球上大多数能量都直接或间接来自太阳，例外的如______能和潮汐能（地热能等）。",
+      "answer": "核聚变；地热（核能/地热能、潮汐能）",
+      "kps": [
+        "kp_phy9_solar_energy"
+      ],
+      "difficulty": 0.3,
+      "solution": "太阳是地球能源的主要来源。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1269",
+      "item_type": "solve",
+      "stem": "海南某学校屋顶光伏电站装机容量 50 kW，平均每天有效发电 5 h。①每天发电多少千瓦时？②若每千克标准煤发电约 3 kW·h，一年（365 天）相当于节约标准煤多少吨？",
+      "answer": "①W=Pt=50×5=250 kW·h/天；②全年 W=250×365=91250 kW·h，折合标准煤 91250÷3≈30417 kg≈30.4 t。",
+      "kps": [
+        "kp_phy9_solar_energy"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①W=Pt=50×5=250 kW·h/天；②全年 W=250×365=91250 kW·h，折合标准煤 91250÷3≈30417 kg≈30.4 t。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1270",
+      "item_type": "choice",
+      "stem": "通电螺线管外部的磁场与下列哪种磁体的磁场相似（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_solenoid"
+      ],
+      "difficulty": 0.35,
+      "solution": "通电螺线管外部磁场与条形磁体相似，两端相当于 N、S 两极；内部磁场近似匀强。",
+      "source": "llm_generated",
+      "options": [
+        "A. 条形磁体",
+        "B. 蹄形磁体",
+        "C. 小磁针",
+        "D. 磁片"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1271",
+      "item_type": "fill",
+      "stem": "用______手握住螺线管，让四指弯向电流方向，大拇指所指的一端就是通电螺线管的______极，这是安培定则（右手螺旋定则）。",
+      "answer": "右；N",
+      "kps": [
+        "kp_phy9_solenoid"
+      ],
+      "difficulty": 0.3,
+      "solution": "安培定则内容。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1272",
+      "item_type": "solve",
+      "stem": "已知通电螺线管两端放有小磁针：左端小磁针静止时 N 极指向螺线管左端，右端小磁针静止时 N 极远离螺线管右端。判断螺线管左、右两端的极性，并说明如何用安培定则确定绕线中的电流方向。",
+      "answer": "左端小磁针 N 极被吸向螺线管左端，异名磁极相互吸引，说明螺线管左端是 S 极；右端小磁针 N 极被推离右端，同名磁极相互排斥，说明螺线管右端是 N 极（与管外磁感线从 N 极出发回到 S 极一致）。由安培定则：右手拇指指向右端 N 极，四指弯曲的方向就是线圈中电流的环绕方向，据此即可标出绕线上的电流方向。",
+      "kps": [
+        "kp_phy9_solenoid"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：左端小磁针 N 极被吸向螺线管左端，异名磁极相互吸引，说明螺线管左端是 S 极；右端小磁针 N 极被推离右端，同名磁极相互排斥，说明螺线管右端是 N 极（与管外磁感线从 N 极出发回到 S 极一致）。由安培定则：右手拇指指向右端 N 极，四指弯曲的方向就是线圈中电流的环绕方向，据此即可标出绕线上的电流方向。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1273",
+      "item_type": "choice",
+      "stem": "只有一只电流表、一个已知阻值为 R₀ 的定值电阻、一个开关和电压不变的电源，下列能测出未知电阻 Rₓ 的可行方案是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_special_resistance"
+      ],
+      "difficulty": 0.45,
+      "solution": "并联电路电压相等：U=I₀R₀；通过 Rₓ 的电流 Iₓ=I-I₀，故 Rₓ=U/Iₓ=I₀R₀/(I-I₀)。B 缺少电压条件无法求值；C 会造成电源短路、损坏电流表；D 错误，缺电压表时可用已知电阻配合电流表（安阻法）求解。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把 R₀ 与 Rₓ 并联，先用电流表测干路电流 I，再测通过 R₀ 的电流 I₀，由 Rₓ=I₀R₀/(I-I₀) 求出 Rₓ",
+        "B. 只把电流表与 Rₓ 串联测出电流，即可直接得到 Rₓ 的阻值",
+        "C. 把电流表直接接在电源两极上读取示数",
+        "D. 无论怎样连接都无法测出"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1274",
+      "item_type": "fill",
+      "stem": "特殊法测电阻：缺电压表时可用„安阻法“（电流表+已知电阻）；缺电流表时可用„伏阻法“（电压表+已知电阻），后者利用并联电路各支路______相等的关系列式求解。",
+      "answer": "电压",
+      "kps": [
+        "kp_phy9_special_resistance"
+      ],
+      "difficulty": 0.35,
+      "solution": "伏阻法利用并联等压。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1275",
+      "item_type": "solve",
+      "stem": "电源电压恒定但不已知，只给一只电压表、一个已知电阻 R₀ 和一个开关，如何测未知电阻 Rₓ？写出步骤和表达式。",
+      "answer": "步骤：①只把 R₀ 接在电源两端，用电压表测其电压 U（即电源电压）；②把 Rₓ 与 R₀ 串联接在电源两端，电压表测 R₀ 两端电压 U₀；③求电流 I=U₀/R₀，Rₓ 两端电压 Uₓ=U-U₀，Rₓ=(U-U₀)R₀/U₀。利用串联电流相等和总电压等于分电压之和求解。",
+      "kps": [
+        "kp_phy9_special_resistance"
+      ],
+      "difficulty": 0.55,
+      "solution": "参考解答：步骤：①只把 R₀ 接在电源两端，用电压表测其电压 U（即电源电压）；②把 Rₓ 与 R₀ 串联接在电源两端，电压表测 R₀ 两端电压 U₀；③求电流 I=U₀/R₀，Rₓ 两端电压 Uₓ=U-U₀，Rₓ=(U-U₀)R₀/U₀。利用串联电流相等和总电压等于分电压之和求解。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1276",
+      "item_type": "choice",
+      "stem": "下列事例中，不是利用水的比热容大这一特性的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy9_specific_heat_apply"
+      ],
+      "difficulty": 0.35,
+      "solution": "煮蛋利用水的沸点高且能持续供热使蛋熟，与比热容大无直接关系；A、B、C 都是利用水比热容大的特性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汽车发动机用水做冷却剂",
+        "B. 暖气管道用热水供暖",
+        "C. 海边昼夜温差小",
+        "D. 用水煮鸡蛋熟得快"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1277",
+      "item_type": "fill",
+      "stem": "质量 2 kg 的水温度从 20 ℃ 升高到 70 ℃，吸收的热量是______J；这些热量若用来加热同质量的沙子（c沙=0.92×10³），沙子升温将______（填„更多“或„更少“）。",
+      "answer": "4.2×10⁵；更多",
+      "kps": [
+        "kp_phy9_specific_heat_apply"
+      ],
+      "difficulty": 0.35,
+      "solution": "Q=cmΔt=4.2×10³×2×50=4.2×10⁵ J；沙子比热容小，同样吸热升温更多。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1278",
+      "item_type": "solve",
+      "stem": "一铝壶装 1.5 kg 水，从 25 ℃ 烧到 100 ℃ 需要吸收多少热量？如果这些热量由效率为 25% 的燃气灶提供，燃气完全燃烧需放出多少热量？（c水=4.2×10³ J/(kg·℃)）",
+      "answer": "Q吸=cmΔt=4.2×10³×1.5×75=4.725×10⁵ J；由 η=Q吸/Q放，Q放=Q吸/η=4.725×10⁵÷25%=1.89×10⁶ J。",
+      "kps": [
+        "kp_phy9_specific_heat_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：Q吸=cmΔt=4.2×10³×1.5×75=4.725×10⁵ J；由 η=Q吸/Q放，Q放=Q吸/η=4.725×10⁵÷25%=1.89×10⁶ J。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1279",
+      "item_type": "choice",
+      "stem": "关于比热容，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_specific_heat_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "比热容是物质特性，由物质种类和状态决定（水变成冰比热容改变），与质量、吸放热多少无关；水的比热容大才适合做冷却剂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 比热容是物质的一种特性，与质量、吸放热无关",
+        "B. 水的比热容小，适合做冷却剂",
+        "C. 同种物质状态改变，比热容不变",
+        "D. 比热容大的物体吸热一定多"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1280",
+      "item_type": "fill",
+      "stem": "单位质量的某种物质，温度升高 1 ℃ 所______的热量叫做这种物质的比热容；水的比热容为 4.2×10³ ______（填单位）。",
+      "answer": "吸收；J/(kg·℃)",
+      "kps": [
+        "kp_phy9_specific_heat_concept"
+      ],
+      "difficulty": 0.3,
+      "solution": "比热容定义与水的比热容数值。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1281",
+      "item_type": "solve",
+      "stem": "为什么沿海地区（如海南）昼夜温差比内陆沙漠地区小？请用比热容知识解释。",
+      "answer": "海水比热容远大于沙石泥土：白天同样吸热，海面升温少；夜晚同样放热，海面降温少。海洋像„温度调节器“，使沿海地区昼夜温差小、气候温和；内陆沙石比热容小，昼夜温度变化剧烈。",
+      "kps": [
+        "kp_phy9_specific_heat_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：海水比热容远大于沙石泥土：白天同样吸热，海面升温少；夜晚同样放热，海面降温少。海洋像„温度调节器“，使沿海地区昼夜温差小、气候温和；内陆沙石比热容小，昼夜温度变化剧烈。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1282",
+      "item_type": "choice",
+      "stem": "下列说法中正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_phy9_temperature_internal_heat"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 错：做功也能使温度升高（如反复弯折铁丝发热）；B 错：晶体熔化、水沸腾时吸热但温度不变；C 错：一切物体在任何温度下都有内能；D 对：热传递的方向只由温度差决定，热量自发从高温物体传向低温物体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体温度升高，一定是吸收了热量",
+        "B. 物体吸收热量，温度一定升高",
+        "C. 0 ℃ 的物体没有内能",
+        "D. 热量总是自发地从温度高的物体传向温度低的物体"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1283",
+      "item_type": "fill",
+      "stem": "温度表示物体的______程度，是状态量；内能是状态量；热量是______量，只能说„吸收“或„放出“，不能说„含有“。",
+      "answer": "冷热；过程",
+      "kps": [
+        "kp_phy9_temperature_internal_heat"
+      ],
+      "difficulty": 0.35,
+      "solution": "三者的物理含义与表述规范不同。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1284",
+      "item_type": "solve",
+      "stem": "举例说明：①温度升高但不是靠吸热；②吸收热量但温度不变。各说明什么道理？",
+      "answer": "①用手反复弯折铁丝，弯折处发热——做功也可以改变内能使温度升高，温度升高不一定是吸热；②冰熔化成水、水沸腾时持续吸热但温度保持在熔点/沸点不变——吸收的热量用于改变物态（分子势能），温度不变。可见温度、内能、热量的变化不总是一一对应。",
+      "kps": [
+        "kp_phy9_temperature_internal_heat"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①用手反复弯折铁丝，弯折处发热——做功也可以改变内能使温度升高，温度升高不一定是吸热；②冰熔化成水、水沸腾时持续吸热但温度保持在熔点/沸点不变——吸收的热量用于改变物态（分子势能），温度不变。可见温度、内能、热量的变化不总是一一对应。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1285",
+      "item_type": "choice",
+      "stem": "使用测电笔辨别火线零线时，正确的做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_test_pen"
+      ],
+      "difficulty": 0.35,
+      "solution": "正确用法：手触笔尾金属体（让微弱电流经人体入地形成回路），笔尖接触被测导线；氖管发光为火线，不发光为零线。手绝不能碰笔尖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 手按住笔尖金属体，笔尾接触待测导线",
+        "B. 手接触笔尾金属体，笔尖接触待测导线，观察氖管是否发光",
+        "C. 手不能接触笔的任何金属部分，笔尖触线",
+        "D. 戴厚手套握笔杆，笔尖接触零线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1286",
+      "item_type": "fill",
+      "stem": "测电笔是用来辨别______线和零线的工具；使用时手要接触笔尾的______，笔尖接触待测导线，氖管发光说明是火线。",
+      "answer": "火；金属体",
+      "kps": [
+        "kp_phy9_test_pen"
+      ],
+      "difficulty": 0.3,
+      "solution": "测电笔的正确使用方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1287",
+      "item_type": "solve",
+      "stem": "用测电笔插入插座两孔：一孔氖管发光、另一孔不发光。分别说明两孔接的是什么线；若两孔都发光，可能是什么故障？",
+      "answer": "发光孔接火线，不发光孔接零线；若两孔都发光，说明零线断路（零线在进户或某处断开），断点之后的零线经用电器（回路）与火线相连而带电，使氖管发光，需检修零线。",
+      "kps": [
+        "kp_phy9_test_pen"
+      ],
+      "difficulty": 0.4,
+      "solution": "参考解答：发光孔接火线，不发光孔接零线；若两孔都发光，说明零线断路（零线在进户或某处断开），断点之后的零线经用电器（回路）与火线相连而带电，使氖管发光，需检修零线。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1288",
+      "item_type": "choice",
+      "stem": "用毛皮摩擦过的橡胶棒去靠近轻小纸屑，纸屑被吸引；再用与丝绸摩擦过的玻璃棒靠近这纸屑，纸屑也被吸引。这说明（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_phy9_two_charges"
+      ],
+      "difficulty": 0.3,
+      "solution": "带电体能吸引轻小物体（不论纸屑是否带电）；若纸屑带电，异种电荷相互吸引。题目现象只能说明吸引，不能唯一确定纸屑电性，选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 纸屑一定带负电",
+        "B. 纸屑一定不带电",
+        "C. 纸屑可能不带电或带电性质与棒相异",
+        "D. 纸屑带正电"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1289",
+      "item_type": "fill",
+      "stem": "自然界只有______种电荷：用丝绸摩擦过的玻璃棒带______电，用毛皮摩擦过的橡胶棒带负电。",
+      "answer": "两；正",
+      "kps": [
+        "kp_phy9_two_charges"
+      ],
+      "difficulty": 0.3,
+      "solution": "规定：玻璃棒所带为正电荷，橡胶棒所带为负电荷；同种相斥、异种相吸。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1290",
+      "item_type": "solve",
+      "stem": "怎样检验物体是否带电？请写出两种方法及原理。",
+      "answer": "①用验电器：接触后金属箔张开则带电（同种电荷相互排斥）；②用带电棒（如毛皮摩擦过的橡胶棒）靠近被测物体：相互排斥则物体带与棒同种电荷（只有带电才可能排斥，相互吸引不能确定——还可能是不带电的轻小物体被吸引）。",
+      "kps": [
+        "kp_phy9_two_charges"
+      ],
+      "difficulty": 0.45,
+      "solution": "参考解答：①用验电器：接触后金属箔张开则带电（同种电荷相互排斥）；②用带电棒（如毛皮摩擦过的橡胶棒）靠近被测物体：相互排斥则物体带与棒同种电荷（只有带电才可能排斥，相互吸引不能确定——还可能是不带电的轻小物体被吸引）。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1291",
+      "item_type": "choice",
+      "stem": "下列天体系统按由大到小排列正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_phy9_universe_explore"
+      ],
+      "difficulty": 0.3,
+      "solution": "层次：宇宙>银河系（河外星系并列）>太阳系>地月系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 太阳系—银河系—地月系",
+        "B. 银河系—太阳系—地月系",
+        "C. 地月系—太阳系—银河系",
+        "D. 银河系—地月系—太阳系"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1292",
+      "item_type": "fill",
+      "stem": "太阳是银河系中的一颗______星（恒星）；地球是太阳系的一颗______星，月球是地球的卫星；海南文昌是我国重要的航天发射场。",
+      "answer": "恒；行",
+      "kps": [
+        "kp_phy9_universe_explore"
+      ],
+      "difficulty": 0.3,
+      "solution": "天体层次与我国航天。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1293",
+      "item_type": "solve",
+      "stem": "为什么我国在海南文昌建设航天发射场？请从纬度与地球自转的角度说明。",
+      "answer": "文昌纬度低（约 19°N），地球自转线速度在低纬更大，火箭发射可借助自转获得更大的初速度（„顺水推舟“），节省燃料、提高运载能力；同时射向面向大海，火箭残骸落区安全，运输大型火箭可通过海运到达。这体现了物理规律在航天工程中的应用。",
+      "kps": [
+        "kp_phy9_universe_explore"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：文昌纬度低（约 19°N），地球自转线速度在低纬更大，火箭发射可借助自转获得更大的初速度（„顺水推舟“），节省燃料、提高运载能力；同时射向面向大海，火箭残骸落区安全，运输大型火箭可通过海运到达。这体现了物理规律在航天工程中的应用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1294",
+      "item_type": "choice",
+      "stem": "关于电压，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_voltage_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "电压是使电路中形成电流的原因；有电压还要电路闭合才有电流；电源把其他形式能转化为电能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电压使电路中形成电流",
+        "B. 电路两端有电压，电路中一定有电流",
+        "C. 电源是提供电压的装置，是把电能转化为化学能的装置",
+        "D. 电压的单位是安培"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1295",
+      "item_type": "fill",
+      "stem": "______是使电路中形成电流的原因；电源是提供______的装置。一节新干电池的电压为______V，我国家庭电路电压为 220 V。",
+      "answer": "电压；电压；1.5",
+      "kps": [
+        "kp_phy9_voltage_concept"
+      ],
+      "difficulty": 0.3,
+      "solution": "常见电压值：干电池 1.5 V，铅蓄电池 2 V，家庭电路 220 V，对人体安全电压不高于 36 V。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1296",
+      "item_type": "solve",
+      "stem": "„电路中有电流，电路两端必有电压；有电压不一定有电流。“请举例说明后半句。",
+      "answer": "有电压只说明电源具备推动电荷定向移动的„动力“，但若电路断开（开关未闭合、导线断开），没有电荷定向移动的通路，就没有电流。例如：开关断开时，开关两端（电源两端）有电压，但电路中无电流。",
+      "kps": [
+        "kp_phy9_voltage_concept"
+      ],
+      "difficulty": 0.35,
+      "solution": "参考解答：有电压只说明电源具备推动电荷定向移动的„动力“，但若电路断开（开关未闭合、导线断开），没有电荷定向移动的通路，就没有电流。例如：开关断开时，开关两端（电源两端）有电压，但电路中无电流。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1297",
+      "item_type": "choice",
+      "stem": "关于波长的概念，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_phy9_wave_parameters"
+      ],
+      "difficulty": 0.35,
+      "solution": "波长是相邻两个波峰（或波谷）之间的距离；同一介质中波速一定，波长与频率成反比（c=λf）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 波长是相邻两个波峰之间的距离",
+        "B. 波长是波传播的距离",
+        "C. 波长与频率成正比",
+        "D. 波速与波长成正比"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1298",
+      "item_type": "fill",
+      "stem": "频率的单位是赫兹（Hz），1 MHz=______Hz；某电磁波频率 1.5×10⁶ Hz，波长是______m。",
+      "answer": "10⁶；200",
+      "kps": [
+        "kp_phy9_wave_parameters"
+      ],
+      "difficulty": 0.35,
+      "solution": "λ=c/f=3×10⁸÷1.5×10⁶=200 m。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "phy_dens01_1299",
+      "item_type": "solve",
+      "stem": "激光从地球到月球往返用时 2.56 s。求地月距离（激光速度 3×10⁸ m/s）；这束激光波长 632.8 nm，频率是多少？",
+      "answer": "距离 d=ct/2=3×10⁸×2.56÷2=3.84×10⁸ m；f=c/λ=3×10⁸÷(632.8×10⁻⁹)≈4.74×10¹⁴ Hz。",
+      "kps": [
+        "kp_phy9_wave_parameters"
+      ],
+      "difficulty": 0.5,
+      "solution": "参考解答：距离 d=ct/2=3×10⁸×2.56÷2=3.84×10⁸ m；f=c/λ=3×10⁸÷(632.8×10⁻⁹)≈4.74×10¹⁴ Hz。",
+      "source": "llm_generated",
+      "form": "computation",
+      "verification": {
+        "agents": [
+          "phy-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
