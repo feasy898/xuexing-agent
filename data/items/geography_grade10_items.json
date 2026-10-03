@@ -3257,6 +3257,3801 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geo_dens04_0001",
+      "item_type": "choice",
+      "stem": "在“精准农业”应用中，先由无人机和卫星获取农田影像判断作物长势，再用计算机系统分析施肥方案，农机按卫星定位精准作业。这三步依次主要运用的技术是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_3s_integration"
+      ],
+      "difficulty": 0.45,
+      "solution": "获取影像属遥感（RS）功能，分析处理属地理信息系统（GIS），农机定位作业依靠全球导航卫星系统（GNSS），顺序为RS—GIS—GNSS。",
+      "source": "llm_generated",
+      "options": [
+        "A. GIS—RS—GNSS",
+        "B. RS—GIS—GNSS",
+        "C. GNSS—RS—GIS",
+        "D. RS—GNSS—GIS"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0002",
+      "item_type": "solve",
+      "stem": "阅读图文材料，回答问题。\n材料：台风监测业务中，气象卫星持续获取台风云图（RS），地面计算中心分析台风路径和强度变化并预报（GIS），科考飞机和浮标借助卫星定位把观测数据精确标定在台风环流中（GNSS）。海南气象部门每年台风季都依托“3S”集成开展监测预警。\n(1) 分别说明RS、GIS、GNSS在台风监测预警中的功能。\n(2) 除台风监测外，再举一例“3S”集成应用，并简述各技术分工。",
+      "answer": "(1) RS：远距离获取台风云系影像，监测台风位置、云系结构与强度变化；GIS：对多源数据集成分析，模拟预报移动路径与风雨影响范围，制作预警图；GNSS：为观测平台（飞机、浮标、船舶）精确定位，使观测数据精准对应台风部位。(2) 示例：精准农业——RS监测作物长势与灾害，GIS制定分区施肥灌溉方案，GNSS引导农机精准作业（或智慧城市、灾害应急评估等，分工合理即可）。",
+      "kps": [
+        "kp_geo10_3s_integration"
+      ],
+      "difficulty": 0.65,
+      "solution": "3S各司其职（获取—分析—定位）是判断关键；拓展举例体现集成应用理解。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0003",
+      "item_type": "solve",
+      "stem": "下表是某市“内涝应急管理”系统三个模块的功能清单：\n| 模块 | 功能 |\n| 甲 | 调取雷达回波图与卫星云图，实时监测雨区范围和强度 |\n| 乙 | 叠加地形、排水管网、易涝点图层，模拟积水范围并生成调度方案 |\n| 丙 | 为抢险车辆和巡检人员提供实时定位与最优路线导航 |\n读表回答：(1) 判断甲、乙、丙模块分别对应的地理信息技术；(2) 说明三种技术在这次内涝应急处置中如何配合。",
+      "answer": "(1) 甲—RS（遥感监测），乙—GIS（空间叠加分析与方案生成），丙—GNSS（定位导航）。 (2) RS实时获取雨情并输入GIS；GIS叠加分析预测积水点并生成调度方案；GNSS引导抢险力量按最优路线快速抵达现场，三者构成“监测—分析—调度”闭环。",
+      "kps": [
+        "kp_geo10_3s_integration"
+      ],
+      "difficulty": 0.65,
+      "solution": "以功能清单考查3S辨识与业务流程配合。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0004",
+      "item_type": "choice",
+      "stem": "海南文昌冬季向内地大量供应瓜菜，主要得益于当地（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_agriculture_location"
+      ],
+      "difficulty": 0.45,
+      "solution": "海南纬度低、冬季光热充足（热带季风气候），瓜菜可在冬季生长，成为全国冬季“菜篮子”；这是气候（自然）区位优势。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冬季光热充足（天然温室），瓜菜可冬季生长",
+        "B. 土壤肥沃全是黑土",
+        "C. 劳动力成本极低",
+        "D. 靠近消费市场"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0005",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：农业区位因素包括自然因素（气候热量、降水、光照、昼夜温差、地形、土壤、水源）和社会经济因素（市场、交通、劳动力、政策、科技等）。农业地域类型有季风水田农业、商品谷物农业、大牧场放牧业、乳畜业、混合农业、热带种植园农业等。\n(1) 分析海南发展热带种植园农业（天然橡胶、椰子、热带水果）的区位条件（自然与社会各两条）。\n(2) 近年来海南部分胶园改种热带水果和槟榔，分析其区位因素的变化。",
+      "answer": "(1) 自然：地处热带，热量充足、降水丰富，适宜橡胶、椰子等热带作物生长；光照充足。社会：国内外市场需求增长；政策支持（自贸港建设、热带特色高效农业）；交通便利便于外运。 (2) 变化：市场需求变化（水果、槟榔价格走高，橡胶收益下降）驱动作物结构调整；政策引导与农业科技进步（新品种、新技术）提高替代作物收益，市场因素成为决定性因素。",
+      "kps": [
+        "kp_geo10_agriculture_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "区位分析分自然/社会两类作答；作物调整体现市场区位因素的变化。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0006",
+      "item_type": "solve",
+      "stem": "下表是甲、乙两农业生产基地对比资料：\n| 项目 | 甲基地（海南三亚） | 乙基地（黑龙江北部） |\n| 纬度与气候 | 约18°N，热带季风气候 | 约50°N，温带季风气候 |\n| 主要产品 | 冬季瓜菜、热带水果 | 春小麦、大豆、乳制品 |\n| 熟制 | 一年三熟 | 一年一熟 |\n读表回答：(1) 造成两基地农产品差异的主导自然区位因素是什么？说明理由。\n(2) 分析甲基地冬季瓜菜能大量供应全国市场的社会经济条件。",
+      "answer": "(1) 主导因素：气候（热量/纬度）。三亚地处热带，冬季光热充足可种瓜菜、一年三熟；黑龙江纬度高、热量不足，只能一年一熟，以耐寒的春小麦、大豆为主。 (2) 社会经济：全国冬季瓜菜市场需求大（北方冬季无法露地生产）；交通与冷链物流发展使瓜菜快速北运；政策支持南菜北运基地建设。",
+      "kps": [
+        "kp_geo10_agriculture_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "以两地对比考查主导区位因素判断与市场、交通条件分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0007",
+      "item_type": "choice",
+      "stem": "关于季风水田农业特点的叙述，错误的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo10_agriculture_regions"
+      ],
+      "difficulty": 0.45,
+      "solution": "季风水田农业（东亚、东南亚、南亚）的特点：小农经营、单产高商品率低、机械化和科技水平较低、水利工程量大；C与事实相反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 小农经营，经营规模小",
+        "B. 单产高、商品率低",
+        "C. 机械化水平高、科技水平高",
+        "D. 水利工程量大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0008",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：主要农业地域类型：季风水田农业（东亚、东南亚、南亚；小农经营、单产高商品率低、机械化水平低、水利工程量大）；商品谷物农业（美国中部平原、我国东北；生产规模大、机械化程度高、商品率高）；大牧场放牧业（阿根廷潘帕斯草原等；规模大、专业化程度高）；乳畜业（市场导向，多分布于城市周边）。\n(1) 比较季风水田农业与商品谷物农业在生产目的与经营特点上的差异。\n(2) 分析乳畜业多布局在城市周边的原因。",
+      "answer": "(1) 差异：季风水田农业以满足自身消费为主（商品率低），小农经营、精耕细作、机械化水平低；商品谷物农业面向市场销售（商品率高），农场规模大、机械化程度高、专业化生产。 (2) 乳畜业布局在城市周边：牛奶及其制品不耐储存、易变质，需接近消费市场缩短运输时间；城市人口密集、需求量大且稳定；经济发达，居民有饮用乳品习惯。",
+      "kps": [
+        "kp_geo10_agriculture_regions"
+      ],
+      "difficulty": 0.65,
+      "solution": "两类农业地域类型从目的与特点对比；乳畜业区位紧扣市场。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0009",
+      "item_type": "solve",
+      "stem": "下图是“美国农业带与我国东北商品粮基地”对比示意（文字描述）：左图为美国本土，中部平原自北向南依次为乳畜带（五大湖以南）、玉米带、小麦带（中部和北部），西部为畜牧和灌溉农业区；右图为我国东北平原，标注大型国有农场、机械化收割场景，主要种植玉米、大豆、春小麦，地广人稀。\n读图回答：(1) 指出两图所示农业地域类型，并归纳其共同特点；(2) 分析美国玉米带分布于乳畜带以南、紧邻乳畜带的区位好处。",
+      "answer": "(1) 类型：商品谷物农业（我国东北亦含大规模玉米、水稻种植的商品粮生产）。共同特点：生产规模大、机械化程度高、商品率高、专业化生产。 (2) 好处：玉米是重要饲料，紧邻乳畜带就近供应饲料，降低运输成本；两大带协作形成“种植—养殖”产业链。",
+      "kps": [
+        "kp_geo10_agriculture_regions"
+      ],
+      "difficulty": 0.65,
+      "solution": "以两图对比考查类型判断与产业邻近布局效益。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0010",
+      "item_type": "choice",
+      "stem": "晴朗的夜晚比多云的夜晚气温低，容易形成霜冻，原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_atmosphere_heating"
+      ],
+      "difficulty": 0.45,
+      "solution": "多云夜间大气逆辐射强，保温作用明显；晴夜大气中水汽云量少，大气逆辐射弱，地面热量散失快、降温幅度大，易出现霜冻。",
+      "source": "llm_generated",
+      "options": [
+        "A. 云层削弱了太阳辐射",
+        "B. 晴夜大气逆辐射弱，地面散热快",
+        "C. 晴夜地面辐射增强",
+        "D. 多云夜晚大气削弱作用强"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0011",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：大气受热过程可概括为“太阳暖大地、大地暖大气、大气还大地”：太阳短波辐射透过大气被地面吸收增温；地面长波辐射被大气中的水汽和二氧化碳吸收；大气逆辐射把热量返还地面起保温作用。大气对太阳辐射有吸收、反射、散射等削弱作用。温室效应增强的人为原因是燃烧化石燃料排放CO₂和毁林。\n(1) 说明温室大棚能使棚内增温的原理。\n(2) 青藏高原太阳辐射强但气温低，解释原因。",
+      "answer": "(1) 原理：大棚薄膜（玻璃）允许太阳短波辐射进入棚内使地面增温，却阻挡（吸收）地面长波辐射逸出，棚内大气（空气）增温后热量不易散失，相当于增强“大气逆辐射”的保温效应，故棚内温度高于棚外。 (2) 青藏高原海拔高、空气稀薄，大气对太阳辐射削弱少，故太阳辐射强；但空气稀薄、水汽和CO₂少，吸收地面长波辐射少、大气逆辐射弱，保温作用差，热量散失快，加之海拔高气温低，因此“太阳辐射强而气温低”。",
+      "kps": [
+        "kp_geo10_atmosphere_heating"
+      ],
+      "difficulty": 0.65,
+      "solution": "大棚增温对应大气保温作用原理；青藏高原“强辐射低温”用削弱少、保温弱解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0012",
+      "item_type": "solve",
+      "stem": "下表是某地连续三天有关辐射与天气的观测记录（摘要）：\n| 日期 | 天气 | 白天最高气温 | 夜间最低气温 | 昼夜温差 |\n| 周一 | 晴 | 28℃ | 12℃ | 16℃ |\n| 周二 | 多云 | 26℃ | 18℃ | 8℃ |\n| 周三 | 阴雨 | 22℃ | 17℃ | 5℃ |\n读表回答：(1) 比较三天昼夜温差的大小，并用大气受热过程解释晴天温差最大的原因；(2) 周三白天气温明显偏低的主要原因是什么？",
+      "answer": "(1) 温差：周一16℃＞周二8℃＞周三5℃。晴天天空中云量少：白天大气削弱作用弱，到达地面太阳辐射多，升温高；夜间大气逆辐射弱，保温差，降温低，故昼夜温差最大。多云和阴天昼夜温差小（白天云削弱强、夜间逆辐射强）。 (2) 周三阴雨：白天云层对太阳辐射的反射（削弱）作用强，到达地面的太阳辐射显著减少，故白天气温明显偏低。",
+      "kps": [
+        "kp_geo10_atmosphere_heating"
+      ],
+      "difficulty": 0.65,
+      "solution": "以观测数据考查削弱与保温作用对昼夜温差的影响。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0013",
+      "item_type": "choice",
+      "stem": "关于中心地理论的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_central_place"
+      ],
+      "difficulty": 0.5,
+      "solution": "城市等级体系规律：高等级城市数量少、服务范围大、服务种类多、彼此距离远；低等级城市相反。理论中服务范围呈六边形网格嵌套。",
+      "source": "llm_generated",
+      "options": [
+        "A. 城市等级越高，数量越多、服务范围越小",
+        "B. 城市等级越高，数量越少、服务范围越大、彼此距离越远",
+        "C. 低等级城市提供的服务种类更齐全",
+        "D. 各级城市的服务范围都呈正方形嵌套"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0014",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：中心地理论认为，中心地向周围地区提供商品和服务；服务范围是中心地的辐射范围；门槛人口是维持某项服务经营所需的最低人口数。高级中心地数量少、服务范围大，低级中心地数量多、服务范围小，形成六边形服务网格的嵌套体系。\n(1) 解释“门槛人口”的含义，并说明加油站与大型商场门槛人口的差异。\n(2) 为什么小城镇很难开设高端百货店？",
+      "answer": "(1) 门槛人口：维持一项服务（商店、服务设施）正常经营所需的最低服务人口。加油站服务面广、需求频繁，门槛人口较低；大型高端商场商品单价高、顾客购买频率低，需要很大的服务人口支撑，门槛人口高。 (2) 原因：小城镇人口少、服务范围（腹地）小，达不到高端百货所需的门槛人口（高消费人群不足），经营难以维持，故难以开设。",
+      "kps": [
+        "kp_geo10_central_place"
+      ],
+      "difficulty": 0.65,
+      "solution": "门槛人口概念与实例对应；用门槛人口解释商业分布。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0015",
+      "item_type": "solve",
+      "stem": "下图是某区域城镇体系与服务网格示意（文字描述）：图中一个高级中心地（甲市，服务范围大）居中，其六边形服务范围内部嵌套多个低级中心地（乙、丙、丁等乡镇，六边形范围小且彼此相邻）；甲市设有三级医院和大型商场，乡镇只有卫生院、日用品商店。\n读图回答：(1) 比较甲市与乡镇两级中心地在数量、服务范围、服务种类上的差异；(2) 某村距甲市40千米、距乙镇5千米，村民购买日常用品和看大病分别会怎么选择？为什么？",
+      "answer": "(1) 甲市（高级中心地）：数量少（图中1个）、服务范围大、服务种类多（三级医院、大型商场）；乡镇（低级中心地）：数量多、服务范围小、服务种类少。 (2) 日常用品到乙镇（近、低级服务即可满足）；大病到甲市（高级医疗服务只有高级中心地提供，虽远也必须前往）。体现“低级服务就近、高级服务集中”的选择规律。",
+      "kps": [
+        "kp_geo10_central_place"
+      ],
+      "difficulty": 0.65,
+      "solution": "以服务网格图考查等级体系差异与居民行为选择。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0016",
+      "item_type": "choice",
+      "stem": "城市中占地面积最大（最广泛）的功能区是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_city_functional_zones"
+      ],
+      "difficulty": 0.45,
+      "solution": "住宅区是城市最广泛的土地利用方式，占地面积最大；商业区多位于市中心和交通干线两侧，工业区向城市外缘迁移。",
+      "source": "llm_generated",
+      "options": [
+        "A. 商业区",
+        "B. 住宅区",
+        "C. 工业区",
+        "D. 行政区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0017",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：城市主要功能分区：商业区（市场最优——市中心，交通最优——干道两侧）、住宅区（最广泛，分化出高级与低级住宅区）、工业区（向市区外缘、沿交通干线分布）。城市空间结构模式有同心圆模式、扇形模式、多核心模式；影响因素包括历史、经济、社会、行政等。\n(1) 说明商业区区位选择的“市场最优”与“交通最优”原则。\n(2) 分析工业区向城市外缘和沿交通干线迁移的原因。",
+      "answer": "(1) 市场最优：位于市中心（几何中心），接近最大消费人群，商业服务辐射全市；交通最优：位于城市主干道两侧、街角路口或市际交通干线沿线，人流物流汇集，通达性高。 (2) 工业外迁原因：市区地价高、环境污染（大气、噪声）与居住区矛盾；外缘地价低、有铁路公路港口等交通干线便于原料产品运输；政策引导（退二进三、环保要求）。",
+      "kps": [
+        "kp_geo10_city_functional_zones"
+      ],
+      "difficulty": 0.65,
+      "solution": "商业两原则区分；工业外迁从地价、环境、交通、政策四方面作答。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0018",
+      "item_type": "solve",
+      "stem": "下图是某城市内部功能分区简图（文字描述）：城市中心为商业区（CBD），四周环绕大片住宅区（西部沿湖为高级住宅区，东部铁路附近为传统/低级住宅区）；工业区分布在城市边缘，沿穿过城区的铁路线和环城公路分布；河流自北向南流经城市东侧。\n读图回答：(1) 归纳该城市功能分区的一般规律（商业、住宅、工业的位置关系）；(2) 分析高级住宅区分布于西部沿湖地带的原因。",
+      "answer": "(1) 规律：商业区位于市中心；住宅区围绕商业区分布（占面积最大）；工业区分布于城市外缘、沿主要交通干线（铁路、公路）分布。 (2) 原因：沿湖环境优美、空气清新；位于城市上风向（若该地盛行风使西部免受工业污染），远离铁路和工业区的噪声污染；地势较好、视野开阔，适宜建设高档住区（地价也较高）。",
+      "kps": [
+        "kp_geo10_city_functional_zones"
+      ],
+      "difficulty": 0.65,
+      "solution": "以分区简图考查结构规律识读与高级住区区位分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0019",
+      "item_type": "choice",
+      "stem": "海绵城市建设的核心思路“渗、滞、蓄、净、用、排”主要针对的问题是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_city_planning"
+      ],
+      "difficulty": 0.45,
+      "solution": "海绵城市通过透水铺装、下沉绿地、雨水花园等让雨水渗滞蓄净用排，缓解城市内涝并促进雨洪资源利用；海口是国家海绵城市试点城市。",
+      "source": "llm_generated",
+      "options": [
+        "A. 城市内涝与水资源利用",
+        "B. 城市交通拥堵",
+        "C. 城市房价过高",
+        "D. 城市人口老龄化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0020",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：城市规划的基本内容包括功能分区与空间结构布局、交通网络规划、公共服务设施配置和生态环境保护；城市规划具有公共政策属性（资源配置、空间治理）。智慧城市运用物联网、大数据、人工智能辅助城市管理；海绵城市按“渗、滞、蓄、净、用、排”理念建设；还有紧凑城市、低碳城市等理念。\n(1) 说明“海绵城市”对水循环环节的影响及其效益。\n(2) 城市规划为什么属于公共政策？",
+      "answer": "(1) 影响：增加下渗（透水铺装、绿地）、滞蓄径流（雨水花园、蓄水池）、净化并回用雨水，最后有序排放——把“快排”变为“渗滞蓄净用排”。效益：减轻暴雨内涝、补充地下水、缓解水资源短缺、改善生态环境。 (2) 因为规划决定城市空间资源（土地用途、设施布局）的配置与各方利益分配，由政府依法制定并强制实施，服务公共利益、协调社会关系，具有公共性、权威性与法定性。",
+      "kps": [
+        "kp_geo10_city_planning"
+      ],
+      "difficulty": 0.7,
+      "solution": "海绵城市对应水循环环节改变；规划公共属性从资源配置与法定性作答。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0021",
+      "item_type": "solve",
+      "stem": "下表是海口市“海绵城市”建设两项工程资料：\n| 工程 | 措施 | 作用 |\n| 美舍河生态治理 | 沿河建湿地公园、驳岸生态化、清淤截污 | 滞蓄雨洪、净化水体、修复生态 |\n| 老城区小区改造 | 透水铺装、下沉式绿地、雨水收集罐 | 增加下渗、削减径流、雨水回用 |\n读表回答：(1) 两项工程分别主要影响水循环的哪些环节？(2) 说明这类建设对海口城市内涝和水环境的好处。",
+      "answer": "(1) 美舍河治理：主要影响地表径流（滞蓄、调节）并改善下渗与净化环节；小区改造：主要增加下渗、拦蓄地表径流（及地下径流补给）。 (2) 好处：暴雨时下渗滞蓄能力增强，减轻排水压力与内涝；雨水净化回用补充水源；河湖生态修复改善水质与人居环境。",
+      "kps": [
+        "kp_geo10_city_planning"
+      ],
+      "difficulty": 0.65,
+      "solution": "以海绵工程表考查环节对应与内涝治理效益。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0022",
+      "item_type": "choice",
+      "stem": "理想大陆上，热带雨林气候（各月均温25℃左右、年降水量2000毫米以上且分配均匀）的分布规律是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_climate_distribution"
+      ],
+      "difficulty": 0.45,
+      "solution": "热带雨林气候大致分布于赤道及其两侧（南北纬10°之间），全年受赤道低气压带控制，终年高温多雨。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赤道及其两侧",
+        "B. 南北回归线附近大陆内部",
+        "C. 温带沿海",
+        "D. 副热带大陆东岸"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0023",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：气候类型在“理想大陆”上呈以赤道为中心、南北大致对称的分布模式。气候类型的判读以气温曲线和降水量柱状图为工具（以温定带、以水定型）；气候成因包括气压带风带控制、季风环流、地形和洋流因素。\n(1) 描述理想大陆气候类型从赤道向两极的更替规律，并说明其主导成因。\n(2) 为什么东岸的季风气候分布纬度比西岸的地中海气候更高？",
+      "answer": "(1) 规律：以赤道为界南北对称，由赤道向两极依次为热带雨林气候—热带草原气候—热带沙漠气候（回归线附近）—地中海气候（副热带大陆西岸）—温带海洋性气候（温带西岸）—（东岸为季风气候）—亚寒带针叶林气候—极地气候。主导成因：太阳辐射随纬度递减（热量带状差异）与气压带风带的东西差异。 (2) 东岸受季风环流影响，海陆热力性质差异使夏季风（来自低纬洋面）把副热带的湿润影响扩展到较高纬度；西岸属地中海气候区，夏季受副热带高压控制干燥，雨热不同期，分布纬度较低。",
+      "kps": [
+        "kp_geo10_climate_distribution"
+      ],
+      "difficulty": 0.65,
+      "solution": "理想大陆对称模式与成因；东岸西岸差异用季风与西风带解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0024",
+      "item_type": "solve",
+      "stem": "下图是理想大陆气候分布模式简图（文字描述）：大陆轮廓东西对称，中部最宽处在回归线附近；赤道穿过的区域标注热带雨林气候，向两侧依次标注热带草原气候、回归线附近的热带沙漠气候、副热带西岸的地中海气候、温带西岸的温带海洋性气候；大陆东岸回归线以北标注亚热带季风气候、更北为温带季风气候；高纬标注亚寒带与极地气候。\n读图回答：(1) 写出图中大陆西岸从低纬到高纬依次分布的气候类型；(2) 判断海口（约20°N，大陆东南岸）的气候类型，并说明判读依据。",
+      "answer": "(1) 西岸由低纬到高纬：热带沙漠气候—地中海气候—温带海洋性气候（低纬近赤道西岸为热带雨林与热带草原过渡）。 (2) 海口属热带季风气候：位于20°N的大陆东岸（东南沿海），全年高温、最冷月均温大于15℃，降水集中于夏季风盛行期、分旱雨两季，符合东岸低纬季风气候特征。",
+      "kps": [
+        "kp_geo10_climate_distribution"
+      ],
+      "difficulty": 0.65,
+      "solution": "以模式图考查西岸序列记忆与海口气候判读迁移。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0025",
+      "item_type": "choice",
+      "stem": "赤道地区降水多、副热带地区多沙漠，造成这种差异的主导因素是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_climate_factors"
+      ],
+      "difficulty": 0.45,
+      "solution": "赤道地区受赤道低压带控制盛行上升气流多雨；副热带受副热带高压控制盛行下沉气流干燥少雨，属大气环流因素。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大气环流（气压带风带）",
+        "B. 海陆位置",
+        "C. 地形",
+        "D. 洋流"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0026",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：影响气候形成的因素有：太阳辐射（纬度因素，决定温度带）、大气环流（气压带风带与季风，决定降水多少与季节分配）、下垫面（海陆位置、地形、洋流、植被）、人类活动（温室气体排放、土地利用变化）。\n(1) 以海南岛为例，综合分析其气候的成因（至少三个因素）。\n(2) 同纬度的北非为沙漠，海南却终年湿润，主要原因是什么？",
+      "answer": "(1) 因素：纬度低（约18°N—20°N），太阳高度大，热量充足（热带）；地处东亚季风区，夏季东南/西南季风从海洋带来大量水汽，雨季降水丰沛；四周环海，受海洋调节显著（海洋性特征明显）；中部山地抬升气流使迎风坡多雨。 (2) 主要原因：海陆位置（下垫面）与环流差异——海南四面环海，水汽来源充沛且受季风环流控制；北非地处副热带高压控制的撒哈拉内陆，且西岸有加那利寒流降温减湿，故干旱。",
+      "kps": [
+        "kp_geo10_climate_factors"
+      ],
+      "difficulty": 0.65,
+      "solution": "海南气候多因素综合分析；与北非对比突出海陆与环流差异。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0027",
+      "item_type": "solve",
+      "stem": "下表是三地气候资料（摘要）：\n| 地点 | 纬度 | 1月均温 | 7月均温 | 年降水量 |\n| 甲（内陆盆地） | 40°N | -8℃ | 26℃ | 150mm |\n| 乙（大陆东岸） | 40°N | -5℃ | 26℃ | 650mm |\n| 丙（大陆西岸） | 40°N | 5℃ | 19℃ | 800mm |\n读表回答：(1) 三地纬度相同而气候差异显著，判断各自所属气候类型；(2) 从大气环流与海陆位置分析三地降水与气温差异的原因。",
+      "answer": "(1) 甲：温带大陆性气候；乙：温带季风气候；丙：温带海洋性气候。 (2) 甲深居内陆，水汽难以到达，干旱少雨、年较差大；乙位于大陆东岸，季风环流控制（夏雨冬干），冬冷夏热；丙位于大陆西岸，终年受西风带控制，多气旋雨，降水均匀，且受海洋调节冬暖夏凉。",
+      "kps": [
+        "kp_geo10_climate_factors"
+      ],
+      "difficulty": 0.65,
+      "solution": "以同纬度三地数据考查类型判断与环流、海陆归因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0028",
+      "item_type": "choice",
+      "stem": "要直观反映某市近十年常住人口的增减变化趋势，最合适的统计图是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_data_analysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "折线图最适合表现数据随时间的连续变化趋势；饼状图表示构成比例，等高线表示地形。",
+      "source": "llm_generated",
+      "options": [
+        "A. 折线图",
+        "B. 饼状图",
+        "C. 散点密度图",
+        "D. 等高线图"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0029",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：地理数据分定性数据与定量数据、空间数据与属性数据；收集方法包括查阅文献、实地调查、遥感影像解译和统计资料整理；统计分析常用平均值、标准差、相关分析；可视化有表格、柱状图、折线图、饼图、等值线图和专题地图等。\n(1) 某小组研究“海南旅游人数与旅游收入的关系”，应怎样收集和整理数据？说明选择柱状图或折线图分别适合表达什么。\n(2) 某县要展示各类土地利用的面积比重，宜用什么图？",
+      "answer": "(1) 收集整理：从统计年鉴、文旅部门公报获取历年游客量与旅游收入数据（定量数据），统一口径后列表，计算增长率与相关系数；可视化对比：折线图适合表达游客量、收入随时间（逐年）的变化趋势，柱状图适合比较不同年份（或不同市县）数值大小；两幅图可配合使用。 (2) 展示各类用地面积比重（构成比例）宜用饼状图（百分比构成）。",
+      "kps": [
+        "kp_geo10_data_analysis"
+      ],
+      "difficulty": 0.6,
+      "solution": "数据收集整理流程与图形选择规范对应。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0030",
+      "item_type": "solve",
+      "stem": "下表是某市2015—2020年常住人口与GDP数据：\n| 年份 | 常住人口（万人） | GDP（亿元） |\n| 2015 | 220 | 1500 |\n| 2016 | 228 | 1650 |\n| 2017 | 239 | 1820 |\n| 2018 | 252 | 2050 |\n| 2019 | 266 | 2260 |\n| 2020 | 280 | 2500 |\n读表回答：(1) 描述该市人口与GDP的变化趋势，并计算2020年人均GDP（保留一位小数）；(2) 判断人口增长与经济增长的相关关系，并分析人口持续流入的可能原因。",
+      "answer": "(1) 趋势：常住人口由220万持续增至280万（年均增约12万），GDP由1500亿元增至2500亿元，均持续增长；2020年人均GDP=2500亿÷280万≈8.9万元/人（89285.7元）。 (2) 关系：两者呈明显正相关（经济扩张吸引人口，人口增长支撑经济）。可能原因：产业发展提供就业岗位多、收入水平高；公共服务与生活条件较好，吸引外来人口迁入。",
+      "kps": [
+        "kp_geo10_data_analysis"
+      ],
+      "difficulty": 0.6,
+      "solution": "以数据表考查趋势描述、计算与相关分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0031",
+      "item_type": "choice",
+      "stem": "下列岩石与其类型对应正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_earth_surface_morphology"
+      ],
+      "difficulty": 0.45,
+      "solution": "玄武岩是岩浆喷出地表冷却形成的喷出岩；花岗岩为侵入岩；大理岩是石灰岩变质的变质岩；石灰岩属沉积岩。",
+      "source": "llm_generated",
+      "options": [
+        "A. 花岗岩——沉积岩",
+        "B. 玄武岩——岩浆岩（喷出岩）",
+        "C. 大理岩——岩浆岩",
+        "D. 石灰岩——变质岩"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0032",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：岩石圈包括地壳和上地幔顶部（软流层以上）。三大类岩石：岩浆岩（侵入岩如花岗岩、喷出岩如玄武岩）、沉积岩（层理构造、含化石）、变质岩（如片麻岩、大理岩），三者通过岩石圈物质循环相互转化。地质作用分内力作用（地壳运动、岩浆活动、变质作用、地震）与外力作用（风化、侵蚀、搬运、沉积、固结成岩），共同塑造地表形态。\n(1) 简述岩石圈物质循环中三大类岩石的转化过程。\n(2) 以内力作用为主和以外力作用为主的地貌各举一例。",
+      "answer": "(1) 转化：岩浆上升冷凝形成岩浆岩；岩浆岩出露地表经风化侵蚀、搬运沉积、固结成岩形成沉积岩；已生成的岩石在高温高压条件下变质形成变质岩；各类岩石深埋重熔再生成岩浆，循环往复。 (2) 内力地貌例：褶皱山（喜马拉雅山）、断层山（华山地垒）、火山（富士山）；外力地貌例：河口三角洲（流水沉积）、风蚀蘑菇（风力侵蚀）、U型谷（冰川侵蚀）（各一例）。",
+      "kps": [
+        "kp_geo10_earth_surface_morphology"
+      ],
+      "difficulty": 0.65,
+      "solution": "物质循环路径完整；内外力地貌举例典型。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0033",
+      "item_type": "solve",
+      "stem": "下图是岩石圈物质循环示意图（文字描述）：图中方框分别标注岩浆、岩浆岩、沉积岩、变质岩；箭头①由岩浆指向岩浆岩（上升冷凝），箭头②③④表示三类岩石之间的转化，箭头⑤由各类岩石指回岩浆（重熔再生）；沉积岩框旁标注“风化、侵蚀、搬运、沉积、固结成岩”，变质岩框旁标注“高温高压变质”。\n读图回答：(1) 写出箭头①和⑤代表的地质作用名称；(2) 判断从岩浆岩到沉积岩依次经历的外力作用环节，并说出沉积岩的两个典型特征。",
+      "answer": "(1) ①为岩浆活动（岩浆上升冷凝成岩——冷却凝固作用）；⑤为重熔再生作用（各类岩石被高温重熔为岩浆）。 (2) 环节：风化→侵蚀→搬运→沉积→固结成岩；沉积岩特征：具有层理构造（一层层沉积）、常含有化石（保存古生物遗迹）。",
+      "kps": [
+        "kp_geo10_earth_surface_morphology"
+      ],
+      "difficulty": 0.65,
+      "solution": "以循环示意图考查作用辨识与沉积岩特征。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0034",
+      "item_type": "choice",
+      "stem": "厄尔尼诺现象发生年份，最可能出现的情形是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_el_nino_effect"
+      ],
+      "difficulty": 0.5,
+      "solution": "厄尔尼诺年赤道中东太平洋海温异常升高，秘鲁、厄瓜多尔沿岸暴雨洪涝、上升流减弱使渔场减产；西岸澳大利亚、印尼干旱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 秘鲁沿岸暴雨洪涝、渔获锐减",
+        "B. 澳大利亚东部暴雨成灾",
+        "C. 秘鲁沿岸异常干旱",
+        "D. 赤道太平洋水温普遍下降"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0035",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：厄尔尼诺是赤道中东太平洋海温异常偏高的现象，导致沃克环流减弱，南美西岸暴雨洪涝、澳大利亚和印尼干旱；拉尼娜与之相反。厄尔尼诺年对我国气候常有“南方多雨、北方干旱、暖冬”等影响；ENSO是热带太平洋海—气相互作用的准周期现象。\n(1) 比较厄尔尼诺与拉尼娜的海温异象及对太平洋两岸降水的相反影响。\n(2) 分析厄尔尼诺年秘鲁渔场减产的原因。",
+      "answer": "(1) 厄尔尼诺：赤道中东太平洋海温异常升高，沃克环流减弱——东岸（南美西岸）降水异常增多致洪涝，西岸（澳、印尼）干旱；拉尼娜：海温异常降低，环流增强——影响大致相反（东岸更旱、西岸多雨）。 (2) 原因：厄尔尼诺年东南信风减弱，秘鲁沿岸上升流（补偿流）减弱，深层营养物质上泛减少，浮游生物减少，饵料匮乏，鱼类减少或迁移，渔获锐减。",
+      "kps": [
+        "kp_geo10_el_nino_effect"
+      ],
+      "difficulty": 0.7,
+      "solution": "两现象对称影响表述；渔场机制紧扣上升流减弱。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0036",
+      "item_type": "solve",
+      "stem": "下表是厄尔尼诺监测年（甲年）与正常年（乙年）部分对比：\n| 项目 | 乙年（正常） | 甲年（厄尔尼诺） |\n| 赤道中东太平洋海温 | 正常 | 偏高约2℃ |\n| 秘鲁沿岸天气 | 干燥 | 暴雨频繁 |\n| 印尼、澳东部 | 降水正常 | 严重干旱 |\n| 秘鲁渔获 | 丰富 | 大幅下降 |\n读表回答：(1) 判断甲年的海—气异常事件并说明依据；(2) 用沃克环流变化解释表中“秘鲁暴雨、印尼干旱”的现象。",
+      "answer": "(1) 甲年为厄尔尼诺事件；依据：赤道中东太平洋海温异常偏高（约+2℃），配合东岸多雨、西岸干旱与渔获下降的配套特征。 (2) 正常年份沃克环流使暖水堆积西太平洋、东太平洋冷水上泛；厄尔尼诺年信风减弱，暖水东移，东太平洋海温升高、对流增强故暴雨；西太平洋海温相对降低、对流减弱，降水显著减少故干旱。",
+      "kps": [
+        "kp_geo10_el_nino_effect"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对比表考查事件判定与沃克环流机制解释。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0037",
+      "item_type": "choice",
+      "stem": "我国提出“碳达峰、碳中和”的“双碳”目标是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_environmental_problems"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国承诺2030年前二氧化碳排放达到峰值、2060年前实现碳中和（即“3060目标”），是生态文明建设的核心指标。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2030年前碳达峰、2060年前碳中和",
+        "B. 2025年前碳达峰、2035年前碳中和",
+        "C. 2035年前碳达峰、2050年前碳中和",
+        "D. 2030年前碳中和、2060年前碳达峰"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0038",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国走可持续发展道路的必然性在于人口压力大、资源短缺、环境污染与生态破坏。《中国21世纪议程》是全球首部国家级可持续发展纲领。生态文明建设纳入“五位一体”总体布局，深入打好污染防治攻坚战，提出碳达峰碳中和（3060）目标，发展循环经济（清洁生产、生态工业园区）。\n(1) 说明“碳中和”的含义及我国实现双碳目标的两条主要路径。\n(2) 循环经济中的“清洁生产”与传统“末端治理”有何区别？",
+      "answer": "(1) 含义：一定时期内人为排放的CO₂与通过植树造林、碳捕集等吸收的CO₂相抵消，实现“净零排放”。路径：优化能源结构（大力发展风、光等非化石能源，降低煤炭比重）；产业结构升级与节能提效；增加碳汇（植树造林、保护湿地）；推广新能源汽车与绿色技术（答两条）。 (2) 区别：清洁生产贯穿生产全过程，从源头和工艺上减少污染产生（原料选择、工艺改造、循环利用），实现废物减量化资源化；末端治理是污染产生后再集中处理，成本高、治标不治本。",
+      "kps": [
+        "kp_geo10_environmental_problems"
+      ],
+      "difficulty": 0.65,
+      "solution": "碳中和概念与双碳路径；清洁生产强调源头与全过程。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0039",
+      "item_type": "solve",
+      "stem": "下表是我国“双碳”目标行动清单（节选）：\n| 领域 | 主要措施 |\n| 能源 | 大型风电光伏基地建设、控制煤炭消费 |\n| 交通 | 新能源汽车推广、公交电动化 |\n| 工业 | 钢铁、水泥产能置换与节能改造 |\n| 生态 | 国土绿化、湿地保护修复 |\n读表回答：(1) 表中“生态”领域的措施对实现碳中和的直接作用是什么？(2) 结合表格说明能源领域措施对碳达峰时间的影响路径。",
+      "answer": "(1) 作用：增加森林、湿地等碳汇，吸收固定大气中的CO₂，抵消部分排放，助力碳中和。 (2) 路径：建设风光基地、提高非化石能源占比→替代化石能源消费→单位GDP碳排放下降（能源结构优化）→在经济发展同时控制排放增速，使CO₂排放更早达到峰值（碳达峰提前、峰值更低）。",
+      "kps": [
+        "kp_geo10_environmental_problems"
+      ],
+      "difficulty": 0.65,
+      "solution": "以行动清单考查碳汇作用与能源转型的减碳路径。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0040",
+      "item_type": "choice",
+      "stem": "野外考察路线设计的基本原则不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo10_fieldwork_method"
+      ],
+      "difficulty": 0.45,
+      "solution": "考察路线设计原则：代表性（覆盖不同地貌类型）、安全可行性、有效性（穿越多种要素）；故意选择危险路线违背安全原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 覆盖主要地貌类型、具有代表性",
+        "B. 安全可行",
+        "C. 沿途可观察多种自然要素",
+        "D. 专挑最陡峭危险的路线挑战极限"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0041",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：野外考察的准备工作包括确定考察目的、选定考察区域、查阅资料、准备仪器装备；路线设计遵循覆盖不同地貌类型、有代表性、安全可行的原则；观察记录采用文字记录、素描、照片、采集标本、GPS定点等方式；采样包括土壤剖面、水质、植被样方等；考察报告按规范撰写。\n(1) 拟定一次“河流地貌考察”的目的与观察要点。\n(2) 土壤剖面采样观察一般包括哪些项目？",
+      "answer": "(1) 目的示例：观察某河上、中、下游河谷形态与堆积地貌差异，认识流水作用。观察要点：上游V形谷（下蚀）、中游河曲与侧蚀、下游河漫滩与三角洲（堆积）；观察砾石磨圆度、分选性、河谷横剖面形态并GPS定点、拍照记录。 (2) 土壤剖面项目：分层结构（腐殖质层、淋溶层、淀积层、母质层）、颜色、质地（砂黏）、松紧度、湿度、根系分布、pH（酸碱度）等。",
+      "kps": [
+        "kp_geo10_fieldwork_method"
+      ],
+      "difficulty": 0.6,
+      "solution": "考察设计紧扣地貌类型；土壤剖面观察项目分层规范。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0042",
+      "item_type": "solve",
+      "stem": "下表是某考察队“五指山垂直带谱考察”记录简表：\n| 海拔 | 观察内容 |\n| 山麓（<500米） | 热带雨林季雨林，砖红壤，村寨与农田 |\n| 700—1000米 | 常绿阔叶林，土壤红壤，坡度变陡 |\n| 1300米附近 | 山地雨林与云雾，苔藓密布，湿度大 |\n| 1867米（顶峰区） | 山地矮林与灌丛草甸，风大、温低 |\n读表回答：(1) 归纳随海拔升高植被与土壤的变化规律；(2) 考察队在1300米附近观测到“云雾多、苔藓密布”，推测其形成原因。",
+      "answer": "(1) 规律：随海拔升高，植被由热带雨林/季雨林→常绿阔叶林→山地雨林（云雾林）→山地矮林、灌丛草甸，呈垂直分异；土壤由砖红壤向山地红壤（黄壤）更替，气温降低、湿度先增后受山顶强风影响。 (2) 原因：该海拔位于山地云雾带（凝结高度），暖湿气流沿坡抬升冷却易成云雾，空气湿度大、温度较低，适于苔藓附生繁茂。",
+      "kps": [
+        "kp_geo10_fieldwork_method"
+      ],
+      "difficulty": 0.65,
+      "solution": "以考察记录表考查垂直带谱归纳与云雾带成因推理。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0043",
+      "item_type": "choice",
+      "stem": "河流出山口处常形成的堆积地貌是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_fluvial_landform"
+      ],
+      "difficulty": 0.45,
+      "solution": "河流流出山口，地势突然趋缓、水流分散，搬运的泥沙大量堆积形成冲积扇（山麓地带）；河漫滩平原发育于中下游，三角洲在河口。",
+      "source": "llm_generated",
+      "options": [
+        "A. V形谷",
+        "B. 冲积扇（洪积扇）",
+        "C. 河漫滩平原",
+        "D. 三角洲"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0044",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：河流侵蚀地貌：上游以向下侵蚀为主形成V形谷（峡谷），中游侧蚀增强形成河曲；堆积地貌：出山口形成冲积扇，中下游形成河漫滩平原，河口形成三角洲。河流阶地由地壳抬升与河流下切交替形成。河流地貌影响聚落分布：上游聚落少，中下游沿河、分布于平原和三角洲。\n(1) 说明河口三角洲的形成过程。\n(2) 河流阶地是怎样形成的？",
+      "answer": "(1) 三角洲形成：河流携带大量泥沙至河口，受海水（湖水）顶托，流速减慢，泥沙在河口前方堆积，不断向海推进、向两侧扩展，形成三角洲（需泥沙丰富、浅海、海浪潮流搬运弱等条件）。 (2) 阶地形成：河流侧蚀和堆积形成宽广河漫滩；地壳（间歇性）抬升使河流落差增大、下切侵蚀增强，原河漫滩高出洪水位成为阶地；抬升—下切多次交替，形成多级阶地。",
+      "kps": [
+        "kp_geo10_fluvial_landform"
+      ],
+      "difficulty": 0.7,
+      "solution": "三角洲堆积过程与阶地的“抬升—下切”交替机制是重点。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0045",
+      "item_type": "solve",
+      "stem": "下图示意某河流地貌（文字描述）：图中河流自山地流向平原，上游段河谷深窄呈V形；出山口处为半圆形扇状堆积体（标注冲积扇，扇顶指向山口、扇缘向平原展开）；中游河湾凹岸标注“侵蚀”，凸岸标注“堆积（河漫滩）”；入海口处为三角形堆积体（三角洲）。\n读图回答：(1) 写出图中A（出山口）、B（入海口）两处地貌名称并说明成因；(2) 比较上游V形谷与下游河谷形态的差异及成因。",
+      "answer": "(1) A为冲积扇：河流出山口坡度骤缓、水流分散，泥沙堆积成扇状；B为三角洲：河口受海水顶托、流速减慢，泥沙堆积并向海推进。 (2) 差异与成因：上游以流向下蚀为主，谷深坡陡呈V形；下游以侧蚀和堆积为主，河谷宽浅，河曲发育并形成宽谷河漫滩平原。",
+      "kps": [
+        "kp_geo10_fluvial_landform"
+      ],
+      "difficulty": 0.65,
+      "solution": "以河流地貌图考查地貌识别与侵蚀堆积差异。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0046",
+      "item_type": "choice",
+      "stem": "地理信息系统（GIS）与普通地图最本质的区别是GIS能（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_gis_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "GIS是采集、存储、管理、分析、显示地理数据的计算机系统，核心优势在于空间查询与空间分析（叠加、缓冲、网络分析），远超静态地图的表达功能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 存储和显示地理数据",
+        "B. 对空间数据进行查询与空间分析",
+        "C. 打印彩色地图",
+        "D. 表示地形起伏"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0047",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：GIS由硬件、软件、数据、人员、方法组成，基本功能包括数据输入与编辑、数据管理、空间查询与空间分析、可视化输出；广泛应用于城市管理、环境监测、灾害评估等领域；GIS与地图的区别在于其可对数据进行分析、更新与多图层管理。\n(1) 列举GIS的五个组成部分。举例说明GIS在城市管理中的一个应用。\n(2) 某市用GIS分析“新建医院选址”，大致可按什么步骤进行？",
+      "answer": "(1) 组成：硬件、软件、数据、人员、方法（应用模型）。应用示例：城市管理——市政管网（地下管线）信息化管理，快速定位爆管点并分析受影响范围。 (2) 医院选址步骤：确定选址因子（人口密度、交通可达性、服务盲区、地价、避开灾害点）；建立各因子图层并数字化；多图层空间叠加分析（缓冲区分析交通与服务范围）；综合评价得出候选方案，输出专题图辅助决策。",
+      "kps": [
+        "kp_geo10_gis_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "五组成识记；应用举例与选址分析流程体现GIS空间分析思想。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0048",
+      "item_type": "solve",
+      "stem": "下表是GIS在某次滑坡灾害评估中的图层与功能：\n| 图层/功能 | 内容 |\n| 坡度图层（DEM生成） | 圈定坡度大于25°的区域 |\n| 降雨图层 | 叠加当日降雨量等值线 |\n| 居民点图层 | 定位灾区村庄与人口 |\n| 缓冲区分析 | 沿滑坡体划定500米危险范围 |\n读表回答：(1) 说出本次评估用到的GIS功能（至少两项）；(2) 说明多个图层叠加分析对灾害评估的作用。",
+      "answer": "(1) 功能：DEM地形分析（生成坡度）、空间叠加分析（多图层叠加）、缓冲区分析（划定危险范围）、空间查询与统计（居民点定位）。 (2) 作用：把坡度、降雨、居民点等多要素综合到统一空间框架，快速识别“高坡度＋强降雨＋有人居住”的高风险区，精确划定危险范围与受影响人口，为应急救援和转移安置提供依据。",
+      "kps": [
+        "kp_geo10_gis_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "以图层功能表考查GIS功能辨识与叠加分析价值。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0049",
+      "item_type": "choice",
+      "stem": "臭氧层空洞的主要人为原因是人类大量使用（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_global_issues"
+      ],
+      "difficulty": 0.45,
+      "solution": "氟氯烃（制冷剂氟利昂、发泡剂等）排放进入平流层消耗臭氧，形成臭氧层空洞；CO₂致变暖，SO₂致酸雨。",
+      "source": "llm_generated",
+      "options": [
+        "A. 二氧化碳",
+        "B. 氟氯烃化合物（氟利昂等）",
+        "C. 二氧化硫",
+        "D. 可吸入颗粒物"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0050",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：全球性环境问题包括全球变暖、臭氧层空洞、酸雨（SO₂和NOx排放）、土地荒漠化、海洋污染、生物多样性减少等。国际治理合作有《联合国气候变化框架公约》《巴黎协定》等，遵循“共同但有区别的责任”原则；我国提出双碳目标，积极参与全球环境治理。\n(1) 分别写出酸雨和全球变暖的主要成因。\n(2) 如何理解全球环境治理中的“共同但有区别的责任”原则？",
+      "answer": "(1) 酸雨：燃烧煤、石油等化石燃料排放二氧化硫和氮氧化物，形成酸雨（pH小于5.6）；全球变暖：化石燃料燃烧与毁林使大气中CO₂等温室气体增多，温室效应增强。 (2) 理解：地球气候环境是全人类共同遗产，各国都有保护义务（共同责任）；但发达国家工业化早、历史排放多、能力强，应承担更大减排责任并提供资金技术支持，发展中国家发展权应受尊重、结合国情逐步减排（有区别的责任）。",
+      "kps": [
+        "kp_geo10_global_issues"
+      ],
+      "difficulty": 0.65,
+      "solution": "两大问题成因明确；原则从共同责任与区别责任两层阐释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0051",
+      "item_type": "solve",
+      "stem": "下表是主要全球性环境问题对照表：\n| 问题 | 主要原因 | 主要危害 |\n| 全球变暖 | 温室气体排放增多 | 海平面上升、极端天气增多 |\n| 臭氧层空洞 | 氟氯烃化合物排放 | 紫外线增强、危害生物与健康 |\n| 酸雨 | SO₂、NOx排放 | 毁林、酸化土壤水体、腐蚀建筑 |\n| 生物多样性减少 | 毁林开荒、污染、过度捕猎 | 物种灭绝、生态系统退化 |\n读表回答：(1) 表中哪两个问题的成因同源于化石燃料燃烧？说明其中的联系。(2) 针对全球变暖，指出国际社会合作治理的一条成果与一项基本原则。",
+      "answer": "(1) 全球变暖与酸雨：燃烧化石燃料既排放CO₂（加剧温室效应导致变暖），又排放SO₂、NOx（形成酸雨），两者同源于化石能源的大量使用。 (2) 成果：《巴黎协定》（或《联合国气候变化框架公约》），确立温控目标与国家自主贡献机制；基本原则：共同但有区别的责任原则。",
+      "kps": [
+        "kp_geo10_global_issues"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对照表考查成因关联与治理机制识记。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0052",
+      "item_type": "choice",
+      "stem": "GNSS用户接收机要实现三维定位（经度、纬度、高程）并消除钟差，理论上至少需要接收几颗卫星的信号（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo10_gnss_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "GPS/GNSS定位采用三球交会原理：3颗卫星确定空间位置，第4颗用于消除接收机时钟误差，故至少需要4颗卫星完成三维定位。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2颗",
+        "B. 3颗",
+        "C. 4颗",
+        "D. 6颗"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0053",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：GNSS由空间星座、地面监控站和用户设备三部分组成；主要功能是定位、测速、授时；广泛应用于交通导航、野外考察、灾害监测、精准农业等领域；定位误差来源包括卫星钟差、大气（电离层、对流层）延迟、多路径效应等，可通过差分技术提高精度。\n(1) 说明GNSS三大组成部分的作用。\n(2) 在野外地质考察中，GNSS能帮助完成哪些工作？",
+      "answer": "(1) 空间星座（卫星）：连续发射导航定位信号；地面监控站：监测卫星轨道与钟差、注入导航电文（保证系统运行精度）；用户设备（接收机）：接收卫星信号，解算出位置、速度和时间。 (2) 野外考察用途：样点/剖面精确定位（记录坐标）、考察路线跟踪记录、返回原点导航、地层界线与构造点的坐标测定、与GIS结合制图。",
+      "kps": [
+        "kp_geo10_gnss_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "三部分职能区分；野外应用举例结合考察流程。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0054",
+      "item_type": "solve",
+      "stem": "下表是三种定位方式对比：\n| 方式 | 精度 | 特点 |\n| 手机地图定位（单点） | 约5—10米 | 便捷，依赖网络增强 |\n| 手持GNSS接收机 | 约3—5米 | 独立作业，适合野外 |\n| RTK实时差分定位 | 厘米级 | 需基准站支持，用于工程测量 |\n读表回答：(1) 比较三种方式的定位精度；(2) 地质队测绘断层位置宜选哪种方式？说明理由。",
+      "answer": "(1) 精度：RTK（厘米级）＞手持GNSS（3—5米）＞手机单点定位（5—10米）。 (2) 选RTK：断层位置测绘要求高精度坐标，厘米级定位可将断层线准确落到地形图上；手机和普通手持机误差达数米，难以满足构造定位要求。",
+      "kps": [
+        "kp_geo10_gnss_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "以对比表考查精度比较与按需求选型。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0055",
+      "item_type": "choice",
+      "stem": "我国台风预警信号由低到高分为蓝、黄、橙、红四色。发布台风红色预警时，下列做法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_hazard_prevention"
+      ],
+      "difficulty": 0.45,
+      "solution": "台风红色预警表示风力最强、危害最大，应停止户外集会、渔船回港、人员转移到安全地带；观浪、出海均极危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 组织渔船回港避风、危险区人员转移",
+        "B. 到海边观浪拍照",
+        "C. 户外大型活动照常进行",
+        "D. 出海作业体验风浪"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0056",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：防灾减灾措施包括：灾害监测（气象卫星、地震台网、水文监测）、灾害预警（预警信号发布、地震预警系统）、工程性措施（水库、堤防、护坡、抗震建筑）、非工程性措施（应急预案、宣传教育、灾害保险、避难场所建设）以及灾后恢复重建；RS、GNSS、GIS广泛应用于防灾减灾。\n(1) 以海南防台风为例，分别说明工程性措施与非工程性措施（各两例）。\n(2) 地理信息技术在灾害防御的哪个环节作用最突出？",
+      "answer": "(1) 工程性措施：加固海堤、修建避风港（渔港）、水库预泄腾库、建筑抗风设计；非工程性措施：发布台风预警并启动应急响应、组织渔船回港与人员转移、防灾宣传教育与演练、灾害保险（各两例）。 (2) 监测预警环节最突出：气象卫星（RS）实时监测台风，GIS分析路径与影响范围，GNSS定位救援力量，为预警发布和应急部署争取时间。",
+      "kps": [
+        "kp_geo10_hazard_prevention"
+      ],
+      "difficulty": 0.65,
+      "solution": "两类措施区分举例；3S在监测预警环节的作用。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0057",
+      "item_type": "solve",
+      "stem": "下表是某市防灾体系分工：\n| 环节 | 主要措施 |\n| 灾前 | 卫星监测、预警信号发布、应急演练、物资储备 |\n| 灾中 | 应急响应、人员转移、抢险救援、生命线保障 |\n| 灾后 | 恢复供水供电、防疫消毒、保险理赔、重建评估 |\n读表回答：(1) 表中“灾前”环节体现了防灾减灾的什么指导思想？(2) 说明“应急演练和物资储备”在减灾中的作用。",
+      "answer": "(1) 体现“以防为主、防抗救相结合”的思想（监测预警先行，重在预防）。 (2) 作用：演练使公众熟悉预警信号、转移路线和避险方法，灾害来临时有序高效撤离、减少伤亡；物资储备保证灾时食品、饮用水、药品、帐篷等及时供应，保障基本生活、争取救援时间。",
+      "kps": [
+        "kp_geo10_hazard_prevention"
+      ],
+      "difficulty": 0.6,
+      "solution": "以防灾分工表考查防减灾思想与备灾措施价值。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0058",
+      "item_type": "choice",
+      "stem": "“牵一发而动全身”形象地说明了自然地理环境的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_holism"
+      ],
+      "difficulty": 0.5,
+      "solution": "整体性指各自然地理要素相互联系、相互制约、相互渗透，某一要素变化会引起其他要素甚至整个环境状态的改变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 整体性",
+        "B. 差异性",
+        "C. 开放性",
+        "D. 层次性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0059",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：自然地理环境由气候、地形、水文、生物、土壤等要素组成，各要素通过水循环、生物循环、岩石圈物质循环进行物质迁移与能量交换，构成有机整体；整体性表现为生产功能、平衡功能；某一要素的变化会导致其他要素甚至整体环境的变化，如毁林导致水土流失、气候变干、生物减少。\n(1) 用整体性原理解释“上游毁林开荒，下游河床抬高、洪涝加剧”的过程。\n(2) 自然环境的“生产功能”指什么？",
+      "answer": "(1) 过程（整体性链条）：上游毁林开荒→植被覆盖率下降→截留雨水与固土能力减弱→水土流失加剧→河流含沙量增大→泥沙在下游河床淤积→河床抬高、湖泊萎缩（调蓄能力下降）→同流量洪水位上升→排洪不畅、洪涝加剧。 (2) 生产功能：自然环境具有合成有机物质的能力——绿色植物通过光合作用提供有机物，是自然界物质和能量的生产者（为其他生物提供食物），这一功能是各要素共同作用的结果。",
+      "kps": [
+        "kp_geo10_holism"
+      ],
+      "difficulty": 0.7,
+      "solution": "因果链完整衔接要素变化；生产功能定义为光合合成有机物。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0060",
+      "item_type": "solve",
+      "stem": "下图是“湖泊围垦影响”关联示意（文字描述）：初始箭头链为“围湖造田→湖泊面积缩小→调蓄洪水能力下降→洪涝灾害加剧”；旁支箭头：湖泊缩小→水生生物栖息地减少→渔业资源衰退；湖泊缩小→局部气候变干、调节能力减弱。\n读图回答：(1) 补全“围湖造田”到“洪涝加剧”的因果链；(2) 说明该图体现的地理学原理，并提出两条恢复性措施。",
+      "answer": "(1) 因果链：围湖造田→湖泊面积（容积）缩小→汛期调蓄洪水能力下降→洪水位抬高、泄洪不畅→洪涝灾害加剧。 (2) 原理：自然地理环境整体性（各要素相互联系、牵一发而动全身）。措施：退田还湖、疏浚湖泊恢复库容；上游植树造林保持水土、减少泥沙淤积；划定湖泊保护红线（答两条）。",
+      "kps": [
+        "kp_geo10_holism"
+      ],
+      "difficulty": 0.65,
+      "solution": "以关联图考查因果链补全与整体性原理及修复措施。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0061",
+      "item_type": "choice",
+      "stem": "从沿海向内陆的地域分异规律（经度地带性）在中纬度大陆最典型，其变化的基础是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_horiz_divergence"
+      ],
+      "difficulty": 0.5,
+      "solution": "从沿海向内陆分异以水分为基础：随距海渐远降水减少，自然带由森林→草原→荒漠依次更替（南北延伸、东西更替），中纬度表现最典型。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热量",
+        "B. 水分",
+        "C. 光照",
+        "D. 土壤"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0062",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：经度地带性（从沿海向内陆的地域分异）以水分为基础，自然带南北延伸、东西更替；中纬度大陆最典型，如亚欧大陆由沿海森林带向内陆渐变为草原、荒漠。非地带性因素（海陆分布、地形起伏、洋流）可使自然带偏离地带性规律，如南半球缺失亚寒带针叶林带、马达加斯加岛东部形成热带雨林带。\n(1) 描述亚欧大陆中纬度地区自然带的东西向变化并说明成因。\n(2) 解释马达加斯加岛东部热带雨林带的成因。",
+      "answer": "(1) 变化：中纬度由沿海向内陆依次为温带落叶阔叶林带（或针阔混交林带）→温带草原带→温带荒漠带（大陆西部因地中海气候等为常绿硬叶林带一侧对应）。成因：距海渐远，海洋水汽输入递减，降水量递减，植被随水分条件由森林过渡为草原、荒漠。 (2) 成因：马达加斯加岛东部地处东南信风迎风坡，多地形雨；沿岸有马达加斯加暖流增温增湿，叠加纬度较低，水热充足，形成偏离（纬度地带性的）热带雨林带——属非地带性（地形+洋流）因素。",
+      "kps": [
+        "kp_geo10_horiz_divergence"
+      ],
+      "difficulty": 0.7,
+      "solution": "东西更替序列与水分成因；非地带性案例用信风地形雨加暖流解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0063",
+      "item_type": "solve",
+      "stem": "下图是北半球中纬度某大陆沿45°N的自然带剖面（自西向东，文字描述）：西海岸为温带海洋性气候下的温带落叶阔叶林带；向内陆渐变为温带草原带（草被为主）；大陆中部为温带荒漠带（稀疏旱生植物）；东海岸又出现温带落叶阔叶林带（温带季风气候）；两侧沿海降水标注约600—1000mm，中部内陆标注不足200mm。\n读表回答：(1) 写出图示自然带的更替规律并指出其主导因素；(2) 说明东西两岸同为森林带而成因不同的差异。",
+      "answer": "(1) 规律：从沿海向内陆（东西更替）森林→草原→荒漠→（草原）→森林，自然带大致南北延伸、东西更替，属经度地带性（从沿海向内陆的地域分异）；主导因素是水分（距海远近）。 (2) 西岸为温带海洋性气候（终年西风、多雨均匀）；东岸为温带季风气候（夏雨集中、雨热同期），水热组合不同但都支持森林生长，故两岸同为落叶阔叶林而气候成因不同。",
+      "kps": [
+        "kp_geo10_horiz_divergence"
+      ],
+      "difficulty": 0.65,
+      "solution": "以剖面图考查更替规律判读与两岸气候成因差异。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0064",
+      "item_type": "choice",
+      "stem": "山区公路多建成“之”字形迂回线路，主要目的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_human_environment"
+      ],
+      "difficulty": 0.45,
+      "solution": "山区地形起伏大，公路沿等高线呈“之”字形迂回可减小坡度（以里程换坡度），保障行车安全；高差很大的路段则修隧道穿山。",
+      "source": "llm_generated",
+      "options": [
+        "A. 缩短线路里程",
+        "B. 减小线路坡度，保证行车安全",
+        "C. 增加沿途景点",
+        "D. 避开所有村庄"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0065",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：不同历史阶段自然对人类活动的影响不同：采猎文明时期依赖自然、被动适应；农业文明时期改造自然、因地制宜；工业文明时期大规模改造自然，环境问题突出。地形对交通选线影响显著；人类活动也改变着自然环境（填海造陆、修梯田、南水北调等）。\n(1) 分析地形对交通线走向、密度的影响。\n(2) 修建梯田是怎样改变自然条件的？反映了人类与自然关系的什么变化？",
+      "answer": "(1) 影响：平原地形平坦，交通线多平直、密度大、造价低；山区地形起伏，线路需绕行或呈“之”形、开隧道、跨谷架桥，工程造价高、密度低，多沿河谷、缓坡延伸。 (2) 梯田把倾斜坡面整修为层层水平田面，改变微地形（减小坡度）、减缓径流，配套灌溉改变水分条件——是农业文明时期主动改造自然、因地制宜利用自然的体现，反映了由被动适应走向主动改造（进而要求协调人地关系）。",
+      "kps": [
+        "kp_geo10_human_environment"
+      ],
+      "difficulty": 0.65,
+      "solution": "地形—交通关系双向分析；梯田改变地形与水文条件并上升到人地关系演变。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0066",
+      "item_type": "solve",
+      "stem": "下表是三个历史时期人地关系对照：\n| 时期 | 对自然的态度 | 典型活动 |\n| 采猎文明 | 依赖、崇拜自然 | 采集渔猎、迁徙而居 |\n| 农业文明 | 改造、利用自然 | 开垦土地、修渠灌溉、建梯田 |\n| 工业文明 | 征服自然 | 大规模采矿、填海造陆、高速路网 |\n读表回答：(1) 归纳人地关系思想的演变轨迹；(2) 工业文明阶段环境问题突出的根源是什么？应倡导怎样的观念？",
+      "answer": "(1) 轨迹：依赖崇拜自然（被动适应）→改造利用自然（因地制宜）→征服自然（大规模开发）→（走向）人地协调、可持续发展。 (2) 根源：人口与经济快速增长下，长期片面追求经济增长，向自然索取和排放超过环境承载力（资源过度开发、废弃物超标排放）。应倡导：尊重自然、顺应自然、保护自然，走人地协调的可持续发展道路（绿水青山就是金山银山）。",
+      "kps": [
+        "kp_geo10_human_environment"
+      ],
+      "difficulty": 0.65,
+      "solution": "以时期对照表考查思想演变与工业文明问题根源及协调观。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0067",
+      "item_type": "choice",
+      "stem": "下列工业部门与其主导区位因素的对应，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_industry_location"
+      ],
+      "difficulty": 0.45,
+      "solution": "炼铝耗电巨大，主导因素是动力（能源）；制糖、水果罐头属原料导向（原料不便长途运输）；啤酒、瓶装水属市场导向；高档时装属技术（设计师）导向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水果罐头厂——市场",
+        "B. 炼铝厂——动力（能源）",
+        "C. 高档时装厂——原料",
+        "D. 啤酒厂——劳动力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0068",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：工业区位因素有原料、动力、劳动力、市场、交通等，形成原料导向（制糖、水果罐头）、动力导向（炼铝）、劳动力导向（纺织、电子装配）、市场导向（啤酒、石化）等类型。传统工业区如德国鲁尔区（丰富煤炭、近铁矿、水源充足、交通便利、市场广阔）；新工业区如意大利新兴工业区（中小企业、轻工业、生产分散）。\n(1) 分析德国鲁尔区传统工业发展的区位优势。\n(2) 工业集聚与工业分散各有什么优势？",
+      "answer": "(1) 鲁尔区优势：煤炭资源丰富（发展煤化学、钢铁、电力）；离法国洛林铁矿近，可进口；莱茵河等水源充足；地处欧洲交通十字路口、水陆运输便利；欧洲发达的消费市场近在咫尺。 (2) 集聚优势：共享基础设施和公共服务、节约运输成本、加强信息交流与技术协作、产生规模效益；分散优势（跨国、跨区域布局）：在全球寻找最优区位（接近市场、廉价劳力、技术产地），降低成本、规避贸易壁垒。",
+      "kps": [
+        "kp_geo10_industry_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "鲁尔五优势完整；集聚与分散利弊对照清晰。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0069",
+      "item_type": "solve",
+      "stem": "下表是四种典型工业导向类型：\n| 类型 | 代表部门 | 布局倾向 |\n| 原料导向 | 制糖厂、水果罐头厂 | 接近原料产地 |\n| 市场导向 | 啤酒厂、石化基地 | 接近消费市场 |\n| 动力导向 | 电解铝厂 | 接近能源基地 |\n| 劳动力导向 | 服装厂、电子装配厂 | 接近廉价劳动力丰富地区 |\n读表回答：(1) 水产品加工厂应属于哪种导向？说明理由。(2) 海南利用自贸港政策吸引某新能源汽车企业布局研发与装配环节，主要看重哪些区位因素？（答两条）",
+      "answer": "(1) 属原料导向：水产品易腐败变质、不适宜长途运输，应在渔港附近就地加工（保鲜、减损、降低运费）。 (2) 因素：自贸港政策优惠（零关税、低税率、加工增值免关税政策）；面向东南亚及国内市场的区位与运输条件；海南清洁能源（电力）充足与生态环境；人才引进政策（答两条）。",
+      "kps": [
+        "kp_geo10_industry_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "导向类型判断依据运输特性；海南情境结合自贸港政策区位。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0070",
+      "item_type": "choice",
+      "stem": "工业集聚形成工业地域的重要意义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_industry_restructure"
+      ],
+      "difficulty": 0.45,
+      "solution": "工业集聚可共享基础设施和公共服务、节约运输成本、加强信息交流与技术协作，形成集聚效益（规模效益）；规划不当时才出现拥堵污染问题。",
+      "source": "llm_generated",
+      "options": [
+        "A. 共享基础设施、加强信息交流与技术协作",
+        "B. 必然加重交通拥堵与污染",
+        "C. 使各企业独立封闭发展",
+        "D. 完全消除市场竞争"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0071",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：工业集聚的意义包括共享基础设施、节约运输成本、加强信息交流与技术协作；集聚形成工业地域（如钢铁工业区）。工业分散是为了在全球寻找最优区位（如汽车工业全球采购）；工业联系包括生产工序联系、空间利用联系和信息联系。传统工业区整治措施：调整产业结构与工业布局、发展第三产业、治理优化环境。\n(1) 传统工业区（如鲁尔区）综合整治可采取哪些措施？(2) 为什么跨国汽车公司在全球布局零部件生产（工业分散）？",
+      "answer": "(1) 措施：调整产业结构（改造煤炭钢铁等传统产业、发展新兴工业和第三产业）；调整工业布局（企业合并、搬迁改造）；发展科技教育与交通；治理环境污染、优化环境生态；完善基础设施。 (2) 原因：零部件生产在全球寻找最优区位——接近原料/零部件产地、廉价劳动力、技术与市场，降低生产成本；避免零部件单一供应风险，利用各地比较优势与当地化生产（规避关税与贸易壁垒）。",
+      "kps": [
+        "kp_geo10_industry_restructure"
+      ],
+      "difficulty": 0.65,
+      "solution": "整治五措施与全球分散布局动因对照作答。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0072",
+      "item_type": "solve",
+      "stem": "下表是某传统工业区转型前后对比：\n| 项目 | 转型前 | 转型后 |\n| 主导产业 | 煤炭、钢铁、电力 | 高端装备、新材料、文创旅游、物流 |\n| 环境状况 | 烟尘蔽日、河流污染 | 森林化、工业遗产公园 |\n| 就业结构 | 产业工人为主 | 技术与服务人员为主 |\n读表回答：(1) 概括该工业区产业结构调整的方向；(2) 分析“文创旅游（工业遗产公园）”在转型中的作用。",
+      "answer": "(1) 方向：由单一重工业（资源型、高耗能）转向多元结构——高新技术产业、生产性服务业（物流）与文旅产业并重，第三产业比重上升，产业升级、结构优化。 (2) 作用：利用旧厂房等工业遗产开发旅游，盘活闲置资产；创造服务业就业岗位，吸纳转岗工人；提升城市形象、带动相关消费；改善环境实现“锈带”复兴，是绿色转型的重要路径。",
+      "kps": [
+        "kp_geo10_industry_restructure"
+      ],
+      "difficulty": 0.65,
+      "solution": "以转型对比表考查结构升级方向与新产业功能。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0073",
+      "item_type": "choice",
+      "stem": "“风蚀蘑菇”和“雅丹地貌”的形成主要作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_landform_types"
+      ],
+      "difficulty": 0.45,
+      "solution": "干旱地区风力侵蚀作用强，形成风蚀蘑菇、风蚀柱、雅丹地貌（垄槽相间）；V形谷为流水侵蚀，U形谷为冰川侵蚀。",
+      "source": "llm_generated",
+      "options": [
+        "A. 流水侵蚀",
+        "B. 风力侵蚀",
+        "C. 冰川侵蚀",
+        "D. 海浪侵蚀"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0074",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：主要地貌类型：流水地貌（V形谷、瀑布、冲积扇、河漫滩平原、三角洲）；喀斯特地貌（溶洞、石林、峰林，流水溶蚀）；风成地貌（风蚀蘑菇、雅丹、沙丘）；海岸地貌（海蚀崖、海蚀柱、沙滩）；冰川地貌（U形谷、角峰、冰斗）。识别地貌应从形态特征推断成因（内力/外力及具体作用方式）。\n(1) 喀斯特地貌的形成过程是怎样的？\n(2) 说明沙丘（新月形沙丘）的迎风坡与背风坡形态差异。",
+      "answer": "(1) 喀斯特形成：可溶性的石灰岩（主要成分碳酸钙）被含CO₂的水（雨水、地下水）长期溶蚀，形成溶沟、石林、峰林、溶洞与地下河；溶蚀作用继续与沉积作用（碳酸钙再沉积形成石钟乳、石笋、石柱）交替进行。 (2) 新月形沙丘：迎风坡缓（风吹扬沙粒沿缓坡向上搬运、坡度较小），背风坡陡（沙粒越过丘顶因重力滑落、风速骤减堆积，坡度较陡），两翼顺着风向延伸，形似新月。",
+      "kps": [
+        "kp_geo10_landform_types"
+      ],
+      "difficulty": 0.7,
+      "solution": "溶蚀—沉积机理与沙丘迎缓背陡形态成因。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0075",
+      "item_type": "solve",
+      "stem": "下图示意某地区的典型地貌组合（文字描述）：山地峡谷段河谷深窄呈V形、多急流瀑布；出山口发育扇状堆积体；中部河流弯曲、凸岸发育宽阔河漫滩；入海处形成三角洲；沿岸有海蚀崖、海蚀柱与沙滩。\n读图回答：(1) 分别写出图中V形谷、扇状堆积体、三角洲的形成作用；(2) 海蚀崖、沙滩分别属于海岸地貌的哪种类型（侵蚀/堆积）？",
+      "answer": "(1) V形谷：河流（流向下）侵蚀作用（下蚀为主）；扇状堆积体（冲积扇）：流水堆积作用（出山口泥沙沉积）；三角洲：流水堆积作用（河口受海水顶托泥沙沉积）。 (2) 海蚀崖、海蚀柱属海蚀（侵蚀）地貌；沙滩属海积（堆积）地貌。",
+      "kps": [
+        "kp_geo10_landform_types"
+      ],
+      "difficulty": 0.65,
+      "solution": "以地貌组合图考查作用识别与海岸地貌分类。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0076",
+      "item_type": "choice",
+      "stem": "由赤道到两极的地域分异规律（纬度地带性）的基础是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_local_divergence"
+      ],
+      "difficulty": 0.45,
+      "solution": "纬度地带性以热量为基础：太阳辐射由低纬向高纬递减，自然带东西延伸、南北更替，非洲大陆表现最典型。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热量（太阳辐射）",
+        "B. 水分",
+        "C. 地形",
+        "D. 土壤"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0077",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：纬度地带性（由赤道到两极的地域分异）以热量为基础，自然带东西延伸、南北更替，非洲大陆最典型。山地垂直地域分异：从山麓到山顶自然带更替类似从赤道到两极（基带与当地水平自然带一致）；相对高度大、纬度低的山地垂直带谱最复杂。\n(1) 非洲大陆自然带大致呈什么分布特点？成因是什么？\n(2) 乞力马扎罗山位于赤道附近却山顶积雪，说明其原因。",
+      "answer": "(1) 特点：以赤道为轴南北对称分布，自然带东西延伸、南北更替（热带雨林带—热带草原带—热带沙漠带—亚热带常绿硬叶林带等）。成因：非洲地跨南北半球、赤道横贯中部，地形起伏较小，热量（太阳辐射）由赤道向两侧高纬递减，降水随之变化，故自然带对称更替。 (2) 原因：山地垂直分异——乞力马扎罗山海拔近6000米，虽处赤道，气温随海拔升高而降低（每升高100米约降0.6℃），山顶气温常年低于0℃，故终年积雪（垂直地带性）。",
+      "kps": [
+        "kp_geo10_local_divergence"
+      ],
+      "difficulty": 0.7,
+      "solution": "对称分布与热量主导；雪山用垂直分异解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0078",
+      "item_type": "solve",
+      "stem": "下图是非洲大陆自然带分布简图（文字描述）：赤道穿过中部，刚果盆地和几内亚湾沿岸为热带雨林带，其南北两侧依次为热带草原带、热带沙漠带，南北两端（地中海沿岸和南非西南部）为亚热带常绿硬叶林带，自然带以赤道为轴南北对称。\n读图回答：(1) 写出图中自然带由赤道向南北两侧的更替序列；(2) 该序列体现了哪种地域分异规律？说明其主导因素及在非洲表现典型的原因。",
+      "answer": "(1) 序列：热带雨林带→热带草原带→热带沙漠带→亚热带常绿硬叶林带（南北对称）。 (2) 规律：纬度地带性（由赤道到两极的地域分异），自然带东西延伸、南北更替；主导因素是热量（太阳辐射随纬度变化，水分相应变化）；非洲表现典型的原因：赤道横贯中部、地形较平坦单一（高原大陆）、海岸线平直，地带性因素受非地带性干扰小。",
+      "kps": [
+        "kp_geo10_local_divergence"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对称分布图考查序列识记与规律判定及典型性成因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0079",
+      "item_type": "choice",
+      "stem": "在等值线图上，等值线向数值低的地方凸出，则凸出部位的数值比两侧（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_map_reading"
+      ],
+      "difficulty": 0.45,
+      "solution": "等值线弯曲判读“凸低为高、凸高为低”：向低值凸出处为高值区（如等温线向低纬凸为该处气温偏低，向高纬凸为偏高），凸出部位数值高于同纬两侧。等值线凸向与数值高低关系是判读基本规则，适用等温线、等压线、等降水量线等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高（凸高为脊/高值区）",
+        "B. 低",
+        "C. 相同",
+        "D. 无法判断"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0080",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：等值线图判读要点：数值变化规律（递增递减方向）、疏密含义（坡度、温差、风力大小）、闭合区域（大于大值、小于小值）、弯曲方向（凸向与高低值关系）。统计图判读：气温曲线降水柱状图、人口金字塔、产业结构饼图、折线图等。区域图判读：提取位置、地形、气候、资源等关键信息。\n(1) 等高线图上等高线越密集说明什么？\n(2) 人口金字塔图能反映人口的哪些结构特征？\n(3) 判读区域图一般按什么顺序提取信息？",
+      "answer": "(1) 等高线越密集说明坡度越陡（单位水平距离高差越大），稀疏则坡度和缓。(2) 反映年龄结构（各年龄段人口比重、少儿与老年系数、老龄化程度）和性别结构（男女比例），进而可推断人口增长模式与未来人口趋势。(3) 顺序：先根据经纬度与海陆轮廓确定区域位置（定位）→读地形（等高线、分层设色地形图）→读气候（气温、降水分布）→再读资源、交通、城市等人文要素→最后综合各要素分析问题。",
+      "kps": [
+        "kp_geo10_map_reading"
+      ],
+      "difficulty": 0.65,
+      "solution": "等值线疏密、金字塔结构信息、区域图判读顺序三要点完整。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0081",
+      "item_type": "solve",
+      "stem": "下图是某地等温线分布简图（文字描述）：图中三条等温线数值自南向北递减（30℃、28℃、26℃，位于北半球）；甲处等温线向北（低值方向）凸出；乙处等温线向南（高值方向）凸出；丙处等温线特别密集。\n读图回答：(1) 判断图示区域所处半球，说明理由；(2) 比较甲、乙两处气温与同纬度两侧地区的差异并推测可能的地形或下垫面原因；(3) 丙处等温线密集反映了什么？",
+      "answer": "(1) 北半球：气温自南（低纬30℃）向北（高纬26℃）递减。 (2) 甲处等温线凸向低值，气温高于同纬两侧（如夏季陆地/盆地/城市或地势较低处）；乙处凸向高值，气温低于同纬两侧（如山地、高原、湖泊或冬季陆地）。 (3) 丙处等温线密集，说明水平气温差异（水平气温梯度）大，可能是地形陡变（山地边缘）或冷暖性质差异大的地区。",
+      "kps": [
+        "kp_geo10_map_reading"
+      ],
+      "difficulty": 0.65,
+      "solution": "以等温线图综合考查半球判断、凸向分析、疏密含义。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0082",
+      "item_type": "choice",
+      "stem": "改革开放以来我国人口迁移的主要流向是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_migration_policy"
+      ],
+      "difficulty": 0.45,
+      "solution": "改革开放后以自发迁移为主，主要从中西部内地农村向东部沿海城市（及工矿区）流动，寻求就业与更高收入。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从东部沿海向西部内陆",
+        "B. 从内地、农村向沿海城市和工矿区",
+        "C. 从城市向农村",
+        "D. 从南方向北方"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0083",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国人口迁移的阶段特征：改革开放前以国家有组织迁移为主（三线建设、知青下乡）；改革开放后以自发迁移为主，从中西部内陆向东部沿海、从农村向城市。当前主要流向仍是从中西部向东部沿海、从小城市向大城市；户籍制度改革与新型城镇化正在推进。\n(1) 分析改革开放后我国人口大规模向东部沿海迁移的原因。\n(2) 人口迁移对流入地和流出地各有什么影响（各答两条）？",
+      "answer": "(1) 原因：东部沿海经济发展快、就业机会多、收入水平高（地区经济差异是主要拉力）；城市生活水平、公共服务与发展机会吸引农村劳动力；交通改善降低迁移成本。 (2) 流入地：利——提供廉价劳动力、促进产业发展与城市建设；弊——加剧住房交通压力、社会管理难度。流出地：利——缓解人地矛盾、增加劳务收入（汇款）、带回技术信息；弊——劳动力与人才外流（留守老人儿童问题）（各答两条，利弊兼顾）。",
+      "kps": [
+        "kp_geo10_migration_policy"
+      ],
+      "difficulty": 0.65,
+      "solution": "迁移动力机制与双向影响完整作答。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0084",
+      "item_type": "solve",
+      "stem": "下表是我国某年跨省流动人口主要通道（摘要）：\n| 流出省 | 主要流入省 | 规模等级 |\n| 安徽、河南、四川 | 广东、江苏、浙江、上海 | 特大 |\n| 湖南、江西 | 广东 | 大 |\n| 黑龙江 | 山东、北京、天津 | 中 |\n读表回答：(1) 归纳我国跨省人口流动的总体方向与主要目的地类型；(2) 分析广东成为最大流入省的拉力因素（答两条）。",
+      "answer": "(1) 方向：总体从中部、西部人口大省向东部沿海省市流动；目的地集中于珠三角、长三角、京津冀等城市群（发达省份的城市地区）。 (2) 广东拉力：外向型制造业发达，劳动密集型企业多、用工需求巨大；毗邻港澳、区位开放，工资收入与就业机会多；产业链完善、创业环境好（答两条）。",
+      "kps": [
+        "kp_geo10_migration_policy"
+      ],
+      "difficulty": 0.65,
+      "solution": "以流量表考查流向归纳与广东拉力分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0085",
+      "item_type": "choice",
+      "stem": "台风、暴雨洪涝、干旱、寒潮均属于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_natural_hazards"
+      ],
+      "difficulty": 0.45,
+      "solution": "四者均由大气环流异常或天气系统引起，属气象灾害；地震、滑坡、泥石流属地质灾害，风暴潮、海啸属水文（海洋）灾害。",
+      "source": "llm_generated",
+      "options": [
+        "A. 气象灾害",
+        "B. 地质灾害",
+        "C. 水文灾害",
+        "D. 生物灾害"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0086",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：自然灾害分为气象灾害（台风、暴雨洪涝、干旱、寒潮）、地质灾害（地震、滑坡、泥石流、火山喷发）、水文灾害（风暴潮、海啸）、生物灾害（病虫害、鼠灾、赤潮）。我国自然灾害特点是种类多、频率高、分布广、危害大，是世界上自然灾害最严重的国家之一。\n(1) 分析我国自然灾害种类多、频率高的原因（从气候、地形、板块位置等角度）。\n(2) 台风带来危害的同时有何益处？",
+      "answer": "(1) 原因：气候——季风气候不稳定，降水年际变化大，旱涝频繁；地处环太平洋与地中海—喜马拉雅地震带交汇处，地壳活跃，多地震及滑坡泥石流；地形复杂多样、山地丘陵广布，加剧地质灾害；海岸线长，台风、风暴潮影响频繁；人口稠密、经济密集使受灾损失放大。 (2) 台风益处：带来丰沛降水，缓解伏旱与旱情、补充水库水源；夏季降温消暑；搅动海水促进渔业营养交换。",
+      "kps": [
+        "kp_geo10_natural_hazards"
+      ],
+      "difficulty": 0.65,
+      "solution": "从气候、构造、地形、海岸与承灾体角度归因；台风利弊辩证。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0087",
+      "item_type": "solve",
+      "stem": "下表是我国四类自然灾害的空间分布：\n| 灾种 | 主要分布区 |\n| 台风 | 东南沿海（粤琼闽浙台） |\n| 干旱 | 华北、西北为主，长江中下游伏旱 |\n| 滑坡泥石流 | 西南山区（横断山区、云贵高原） |\n| 地震 | 青藏高原及其边缘、新疆、台湾、西南 |\n读表回答：(1) 归纳台风与滑坡泥石流分布区的差异，并说明各自成因；(2) 为什么西南地区“地震、滑坡、泥石流”常链发？",
+      "answer": "(1) 台风分布于东南沿海：生成于热带副热带洋面的热带气旋向西北移动首先在此登陆；滑坡泥石流分布于西南山区：地形起伏大、岩体破碎（邻近地震带）、夏季降水集中且多暴雨，松散物质丰富。 (2) 链发原因：西南地处板块交界（地中海—喜马拉雅带），地震多发使山体松动破碎；震后强降雨易诱发滑坡，滑坡体堵塞河道或遇水形成泥石流，形成“地震—滑坡—泥石流”灾害链。",
+      "kps": [
+        "kp_geo10_natural_hazards"
+      ],
+      "difficulty": 0.65,
+      "solution": "以分布表考查区域—成因对应与灾害链机制。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0088",
+      "item_type": "choice",
+      "stem": "在盛行风吹拂下表层海水大规模流动形成的洋流属于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_ocean_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "盛行风驱动表层海水流动形成风海流，如西风带下的北大西洋暖流、西风漂流，信风下的南北赤道暖流；密度流由温盐差异引起，补偿流补偿流失的海水。",
+      "source": "llm_generated",
+      "options": [
+        "A. 风海流",
+        "B. 密度流",
+        "C. 补偿流",
+        "D. 上升流"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0089",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：海水运动形式有波浪（风浪、海啸）、潮汐（引潮力产生的周期性涨落）和洋流（常年稳定的大规模流动）。洋流按成因分风海流、密度流、补偿流；洋流影响气候（暖流增温增湿、寒流降温减湿）、渔场（寒暖流交汇或上升流）、航海和污染。\n(1) 说出世界大洋洋流分布模式中北半球中低纬大洋环流的流动方向，并解释其成因。\n(2) 为什么北海道渔场渔业资源丰富？",
+      "answer": "(1) 北半球中低纬（副热带）环流呈顺时针方向：东北信风驱动北赤道暖流自东向西流，大陆东岸暖流北上，西风驱动西风漂流（北太平洋暖流/北大西洋暖流）自西向东，大陆西岸寒流南下补偿，构成顺时针闭合环流。 (2) 北海道渔场位于日本暖流（黑潮）与千岛寒流（亲潮）交汇处：海水搅动使底层营养盐上泛，浮游生物繁盛，饵料丰富，寒暖流交汇还使鱼类聚集（冷暖水性鱼类汇聚），形成大渔场。",
+      "kps": [
+        "kp_geo10_ocean_current"
+      ],
+      "difficulty": 0.7,
+      "solution": "环流方向与风带成因对应；渔场成因抓交汇搅动上泛营养盐。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0090",
+      "item_type": "solve",
+      "stem": "下图是世界某大洋局部洋流模式图（北半球中低纬，文字描述）：大洋西岸（大陆东岸）一条暖流自低纬流向高纬（箭头北上，标注暖流）；大洋东岸（大陆西岸）一条寒流自高纬流向低纬（箭头南下，标注寒流）；低纬海区有自东向西的北赤道暖流，中纬有自西向东的西风漂流。\n读图回答：(1) 判断图示大洋环流的旋转方向，写出东西两岸洋流性质；(2) 分析西岸暖流对沿岸气候的影响，并推断该处（大陆东岸）可能出现的渔场类型。",
+      "answer": "(1) 方向：顺时针（北半球副热带大洋环流）；西岸（大陆东岸）为暖流，东岸（大陆西岸）为寒流。 (2) 暖流增温增湿：使沿岸冬季温和、降水增多（如日本暖流使日本南部冬季温暖湿润；墨西哥湾暖流深刻影响西欧）。该处若与南下寒流交汇（如日本暖流与千岛寒流交汇）可形成寒暖流交汇型渔场（北海道渔场）。",
+      "kps": [
+        "kp_geo10_ocean_current"
+      ],
+      "difficulty": 0.65,
+      "solution": "以模式图考查环流判读、洋流性质与气候渔场影响。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0091",
+      "item_type": "choice",
+      "stem": "海洋表层盐度分布的规律是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_ocean_properties"
+      ],
+      "difficulty": 0.45,
+      "solution": "副热带海区蒸发量大于降水量，盐度最高；赤道（降水多）和两极（蒸发弱、融冰稀释）盐度偏低，故从副热带海区向低纬和高纬递减。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从赤道向两极递减",
+        "B. 从副热带海区向赤道和两极递减",
+        "C. 从两极向赤道递减",
+        "D. 各海区均匀分布"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0092",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：海水温度随纬度升高而降低，同一海区夏季高于冬季；盐度从副热带海区向高低纬递减，影响因素有降水量与蒸发量对比、径流稀释、结冰融冰；密度主要受温度影响（温度高密度小）。海洋资源包括生物资源（大陆架渔场）、矿产资源（油气、锰结核）、海洋能源（潮汐能、波浪能）与空间资源。\n(1) 分析赤道海区盐度低于副热带海区的原因。\n(2) 为什么大陆架海域渔业资源丰富？",
+      "answer": "(1) 原因：赤道地区受赤道低压控制，降水极其丰富，降水量大于蒸发量，海水被稀释；副热带受副热带高压控制，炎热少雨，蒸发量远大于降水量，盐分浓缩，故盐度高于赤道。 (2) 大陆架渔业丰富原因：水深较浅，阳光可直达海底，光合作用强，浮游生物繁盛；陆地径流带来丰富营养盐类；靠近大陆，饵料来源充足，鱼类繁殖觅食条件好，故多为优良渔场。",
+      "kps": [
+        "kp_geo10_ocean_properties"
+      ],
+      "difficulty": 0.65,
+      "solution": "降水蒸发对比解释盐度；大陆架渔场三条件（光、营养盐、饵料）。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0093",
+      "item_type": "solve",
+      "stem": "下表是三个海区表层海水性质观测数据：\n| 海区 | 纬度 | 水温 | 盐度 |\n| 甲 | 0° | 28℃ | 34.5‰ |\n| 乙 | 25°N | 24℃ | 36.8‰ |\n| 丙 | 55°N | 8℃ | 33.2‰ |\n读表回答：(1) 比较三海区水温与盐度的高低；(2) 乙海区盐度高于甲、丙，分析其原因。",
+      "answer": "(1) 水温：甲＞乙＞丙（随纬度升高递减）；盐度：乙＞甲＞丙（副热带最高）。 (2) 乙位于副热带（25°N）：受副热带高压控制，盛行下沉气流，降水稀少而蒸发旺盛，蒸发量远大于降水量，海水浓缩盐度高；甲虽温度更高但赤道多雨（降水量大于蒸发量）被稀释；丙纬度高蒸发弱且有径流与融冰稀释，盐度最低。",
+      "kps": [
+        "kp_geo10_ocean_properties"
+      ],
+      "difficulty": 0.65,
+      "solution": "以观测数据考查性质比较与副热带高盐归因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0094",
+      "item_type": "choice",
+      "stem": "城市雾霾（PM2.5超标）的主要来源不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo10_pollution_control"
+      ],
+      "difficulty": 0.45,
+      "solution": "PM2.5主要来自机动车尾气、燃煤、工业排放与扬尘等；植树造林是改善空气质量的措施而非污染源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 机动车尾气",
+        "B. 燃煤排放",
+        "C. 工业废气与建筑扬尘",
+        "D. 植树造林"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0095",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：主要环境污染及防治：大气污染（雾霾，PM2.5来自工业、尾气、燃煤、扬尘；防治靠产业结构调整、能源结构优化、尾气治理、扬尘管控）；水污染（工业废水、生活污水、农业面源污染；靠污水处理达标排放）；土壤污染（重金属、白色污染；源头管控与修复）；制度有排污许可制、环境保护税、生态保护红线。\n(1) 分析我国华北冬季雾霾多发的成因（污染源与气象条件）。\n(2) 农业面源污染是怎样产生的？如何治理？",
+      "answer": "(1) 雾霾成因：污染源——冬季燃煤供暖排放大、工业与机动车尾气叠加；气象——冬季稳定的大气（逆温、静风、高气压控制）扩散条件差，水汽与污染物聚集在低空难以稀释，形成持续性雾霾。 (2) 面源污染：农田化肥农药过量施用随地表径流与下渗进入河湖与地下水，畜禽养殖废水与秸秆腐烂扩散形成分散污染。治理：测土配方施肥、农药减量与生物防治，建设生态沟渠与缓冲带拦截，畜禽粪污资源化，推广有机农业。",
+      "kps": [
+        "kp_geo10_pollution_control"
+      ],
+      "difficulty": 0.65,
+      "solution": "污染源加不利气象两面归因；面源污染的分散性与治理措施对应。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0096",
+      "item_type": "solve",
+      "stem": "下表是某市“水质治理”三年行动清单（节选）：\n| 措施 | 针对对象 |\n| 污水处理厂提标改造 | 生活与工业污水 |\n| 河道清淤与生态补水 | 黑臭水体 |\n| 畜禽养殖搬迁与粪污资源化 | 农业面源污染 |\n| 排污口排查建档（排污许可） | 入河污染源监管 |\n读表回答：(1) 按“源头—过程—末端”给表中措施分类；(2) 说明“排污许可制度”在治污中的作用。",
+      "answer": "(1) 分类：源头控制——排污口排查建档（许可限排）、畜禽养殖搬迁与粪污资源化（源头减量）；过程控制——污水处理厂提标改造（处理削减）；末端治理与修复——河道清淤与生态补水（黑臭水体治理）。 (2) 作用：对排污单位核定许可排放浓度与总量、持证排污、依法监管，把污染治理责任落实到源头主体，实现排放可监测、可统计、可追责，倒逼企业减排与达标排放。",
+      "kps": [
+        "kp_geo10_pollution_control"
+      ],
+      "difficulty": 0.65,
+      "solution": "以治理清单考查分类思维与制度工具的作用。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0097",
+      "item_type": "choice",
+      "stem": "按照通用标准，65岁及以上人口占总人口的比例达到多少即进入老龄化社会（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_population_aging"
+      ],
+      "difficulty": 0.45,
+      "solution": "65岁及以上人口占比超过7%为老龄化社会，超过14%为深度老龄化（老龄社会），超过20%为超老龄社会。",
+      "source": "llm_generated",
+      "options": [
+        "A. 7%",
+        "B. 10%",
+        "C. 14%",
+        "D. 20%"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0098",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：人口老龄化的标准：65岁以上人口占总人口7%以上为老龄化社会、14%以上为老龄社会。我国老龄化快速发展原因是生育率下降和人均寿命延长；带来的问题有劳动力短缺、养老负担加重、医疗资源紧张、社会活力下降；应对措施包括延迟退休、发展养老产业、鼓励生育、完善社会保障。\n(1) 分析我国人口老龄化速度快的原因。\n(2) 发展“银发经济”（养老产业）对应对老龄化有什么意义？",
+      "answer": "(1) 原因：一是长期实行计划生育、生育率持续下降（少儿人口占比降低，抬升老年人口比重）；二是经济社会与医疗卫生进步使人均寿命显著延长（老年人口绝对数量大、增长快）；三是20世纪50—60年代出生高峰人口正集中步入老年。 (2) 意义：满足老年人多样化养老需求（机构养老、社区养老、康复护理、老年用品），提高生活质量；创造新产业新就业，形成经济增长点；缓解家庭与社会养老压力，促进养老服务体系完善。",
+      "kps": [
+        "kp_geo10_population_aging"
+      ],
+      "difficulty": 0.65,
+      "solution": "老龄化成因三方面；养老产业的经济与社会双重意义。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0099",
+      "item_type": "solve",
+      "stem": "下表是我国某省人口年龄结构变化：\n| 年份 | 0—14岁 | 15—64岁 | 65岁及以上 |\n| 2000年 | 22.9% | 70.2% | 6.9% |\n| 2010年 | 16.5% | 74.5% | 9.0% |\n| 2020年 | 13.4% | 71.0% | 15.6% |\n读表回答：(1) 描述该省人口年龄结构的变化特点并判断所处阶段；(2) 针对2020年的结构特点，提出两条应对措施。",
+      "answer": "(1) 特点：少儿人口比重持续下降（22.9%→13.4%），老年人口比重快速上升（6.9%→15.6%），劳动年龄人口比重先升后降（2020年已下降）；2000年接近老龄化临界（6.9%），2010年已进入老龄化社会，2020年超过14%进入深度老龄化（老龄社会），养老压力持续加大。 (2) 措施：完善养老保障与养老服务（社区养老、医养结合），发展银发经济；实施生育支持政策（三孩及配套托育补贴）提高生育水平；延迟退休、开发老年人力资源；提高劳动生产率与产业智能化（答两条）。",
+      "kps": [
+        "kp_geo10_population_aging"
+      ],
+      "difficulty": 0.65,
+      "solution": "以结构数据考查趋势判断（含拐点意识）与对策。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0100",
+      "item_type": "choice",
+      "stem": "制约一个地区环境人口容量的首要因素是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_population_capacity"
+      ],
+      "difficulty": 0.45,
+      "solution": "资源是环境承载力的基础，资源丰富程度（尤以可获得资源）是首要因素；科技、开放度、消费水平为影响因素。",
+      "source": "llm_generated",
+      "options": [
+        "A. 资源丰富程度",
+        "B. 科技发展水平",
+        "C. 地区开放程度",
+        "D. 生活消费水平"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0101",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：环境承载力（环境人口容量）指一定时期内一地域能够维持抚养的最大人口数量，影响因素有资源丰富程度（首要）、科技发展水平、生活消费水平、地区开放程度；人口合理容量是按合理生活方式、保障健康生活水平且不妨碍未来生活质量的最适宜人口数，小于环境人口容量。我国人口合理容量估算约8—9亿。\n(1) 说明环境人口容量与人口合理容量的区别。\n(2) 为什么我国实际人口已远超估算的合理容量？",
+      "answer": "(1) 区别：环境人口容量是“能养活的最大人口”（警戒值上限），强调不超载；人口合理容量是“最适宜的人口数量”，考虑合理生活方式、生活质量和可持续发展，数值远小于环境人口容量，是追求的目标值。 (2) 原因：人口基数大、历史惯性（增长快）长期延续；经济社会发展提高了资源利用与供给能力（科技、开放贸易扩大了承载力），实际承载人口得以超过合理容量估算；但这也带来资源环境压力（人均资源不足），需要控制规模、提升质量。",
+      "kps": [
+        "kp_geo10_population_capacity"
+      ],
+      "difficulty": 0.7,
+      "solution": "两概念一上限一目标；超载原因从惯性与承载力提升解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0102",
+      "item_type": "solve",
+      "stem": "下表是环境人口容量影响因素模拟（同一区域四种情形下的可承载人口，单位：百万人）：\n| 情形 | 资源利用 | 科技水平 | 对外开放 | 可承载人口 |\n| ① | 本地资源 | 低 | 封闭 | 10 |\n| ② | 本地资源 | 高 | 封闭 | 16 |\n| ③ | 本地资源 | 高 | 开放（输入粮食能源） | 25 |\n| ④ | 本地资源 | 高 | 开放 | 25（人均消费提高）→18 |\n读表回答：(1) 比较①②③说明科技与开放对环境人口容量的影响；(2) 情形④显示人均消费水平提高后可承载人口下降，说明了什么规律？",
+      "answer": "(1) ①→②（科技提高）承载力由10升到16：科技进步可提高资源利用效率、开发新资源，扩大容量；②→③（扩大开放）由16升到25：通过贸易输入区外粮食与能源，突破本地资源限制，容量显著增大。 (2) 规律：环境人口容量与人均消费水平呈负相关——在资源供给一定时，消费水平越高，可承载的人口数量越少（容量=资源总量/人均消费需求）。",
+      "kps": [
+        "kp_geo10_population_capacity"
+      ],
+      "difficulty": 0.65,
+      "solution": "以模拟表考查各因素作用方向与消费—容量反向规律。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0103",
+      "item_type": "choice",
+      "stem": "世界人口最稠密的地区不包括（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo10_population_distribution"
+      ],
+      "difficulty": 0.4,
+      "solution": "人口稠密区为亚洲东部与南部、欧洲西部、北美洲东部；亚马孙平原气候湿热、丛林密布，人口稀疏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 亚洲东部",
+        "B. 亚洲南部",
+        "C. 欧洲西部",
+        "D. 亚马孙平原"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0104",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：世界人口分布特点是亚洲东部和南部、欧洲西部、北美洲东部稠密；影响人口分布的因素有自然条件（地形、气候、水源）和社会经济条件（经济水平、交通、历史）。人口迁移分国际与国内迁移、自发与组织迁移；迁移主要原因以经济因素为主，还有政治、生态、社会文化因素。\n(1) 分析自然因素对人口分布的影响（地形、气候、水源各举例）。\n(2) 为什么经济因素是人口迁移的主要动力？",
+      "answer": "(1) 影响：地形——平原丘陵地带人口密集（如中国东部平原），高山高原稀疏（青藏高原）；气候——温带、亚热带气候适宜区人口多，极端干旱（撒哈拉）、湿热（亚马孙）、严寒（西伯利亚）区人口少；水源——干旱区人口逐水而居，绿洲、河流沿岸密集（塔里木盆地绿洲）。 (2) 原因：地区间经济发展不平衡造成收入、就业机会和生活水平差异，人们为改善生活、寻求就业与更高收入而向发达地区迁移，经济动机（拉力—推力）支配绝大多数迁移行为。",
+      "kps": [
+        "kp_geo10_population_distribution"
+      ],
+      "difficulty": 0.65,
+      "solution": "三自然要素举例规范；经济动因从区域差异与追求更好生活解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0105",
+      "item_type": "solve",
+      "stem": "下表是四大人口稠密区概况：\n| 区域 | 自然条件 | 经济特点 |\n| 东亚（东部） | 季风气候、大河平原 | 农业历史悠久、经济快速发展 |\n| 南亚 | 恒河平原、热带季风 | 农业为主、人口大国的集中区 |\n| 西欧 | 温带海洋性气候、平原 | 工业化早、经济发达 |\n| 北美东部 | 温带气候、沿海平原 | 工商业发达、城市密集 |\n读表回答：(1) 归纳四大人口稠密区自然条件的共同点；(2) 比较东亚与西欧人口稠密成因的主要差异。",
+      "answer": "(1) 共同点：位于中低纬度；地形以平原（或低缓丘陵、沿海平原）为主；气候温暖湿润（水热条件好）；临近河流或海洋，水源与交通便利。 (2) 差异：东亚以农业历史悠久、粮食生产支撑大量农业人口为主因（发展惯性）；西欧以工业化早、经济发达、城市密集吸引人口集聚为主因（经济牵引），人口增长模式已进入低增长阶段。",
+      "kps": [
+        "kp_geo10_population_distribution"
+      ],
+      "difficulty": 0.65,
+      "solution": "以稠密区对照表归纳共性并区分成因侧重点。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0106",
+      "item_type": "choice",
+      "stem": "全球气压带、风带中，由动力原因（空气堆积下沉）形成的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_pressure_wind"
+      ],
+      "difficulty": 0.5,
+      "solution": "副热带高气压带是高空空气自赤道向极地流动在30°附近堆积下沉形成（动力原因）；赤道低压与极地高压为热力原因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赤道低气压带",
+        "B. 副热带高气压带",
+        "C. 副极地低气压带",
+        "D. 极地高气压带"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0107",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：三圈环流由哈德莱环流（低纬）、费雷尔环流（中纬）与极地环流组成，形成全球七个气压带（赤道低压、副热带高压、副极地低压、极地高压〔南、北半球各成对〕）和六个风带（信风带、西风带、极地东风带）。气压带风带随太阳直射点季节移动（北半球夏季北移、冬季南移，约5—10°）；海陆分布使其断裂成区块（如冬季亚洲高压）。\n(1) 写出北半球低纬环流的形成过程。\n(2) 为什么气压带风带会季节移动？",
+      "answer": "(1) 低纬哈德莱环流：赤道地区受热空气膨胀上升，高空向极地（北）流动，受地转偏向力右偏，在30°N附近上空堆积并下沉，近地面形成副热带高压；下沉气流一部分流向赤道补充上升气流（偏转成东北信风），构成低纬环流圈。 (2) 移动原因：太阳直射点随季节南北移动（黄赤交角存在），气压带风带的位置随之移动——北半球夏季（直射点北移）气压带风带整体北移，冬季南移，移动幅度约5—10个纬度。",
+      "kps": [
+        "kp_geo10_pressure_wind"
+      ],
+      "difficulty": 0.7,
+      "solution": "哈德莱环流过程完整；移动归因于直射点移动。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0108",
+      "item_type": "solve",
+      "stem": "下图是北半球气压带风带分布模式（文字描述）：自赤道向北依次标注——赤道低气压带（0°—5°N）、东北信风带、副热带高气压带（约30°N）、西风带（西南风）、副极地低气压带（约60°N）、极地东风带、极地高气压带（极地附近）；每条风带箭头标注风向。\n读图回答：(1) 写出图中七个气压带的名称（北半球部分）；(2) 判断东北信风带和西风带的风向，并说明夏季地中海沿岸受哪个气压带或风带控制。",
+      "answer": "(1) 气压带（由南向北）：赤道低气压带、副热带高气压带、副极地低气压带、极地高气压带（南半球对称另有三个）。 (2) 东北信风带风向为东北风（由东北吹向西南），西风带为西南风（由西南吹向东北）；夏季气压带北移，地中海沿岸（约35°—40°N）受副热带高气压带控制，炎热干燥。",
+      "kps": [
+        "kp_geo10_pressure_wind"
+      ],
+      "difficulty": 0.65,
+      "solution": "以模式图考查气压带排序、风向判读与移动应用。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0109",
+      "item_type": "choice",
+      "stem": "区域比较分析中，定性比较与定量比较的区别主要在于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_region_comparison"
+      ],
+      "difficulty": 0.45,
+      "solution": "定性比较侧重性质、特征与优劣的描述判断；定量比较用具体指标数据（GDP、降水毫米数等）量化对比，二者互补。",
+      "source": "llm_generated",
+      "options": [
+        "A. 是否使用数据指标进行量化的对比",
+        "B. 比较的区域大小不同",
+        "C. 是否使用地图",
+        "D. 是否研究历史"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0110",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：区域比较的内容维度包括地理位置、自然条件、资源环境、经济发展、社会文化等；方法有定性比较（优势/劣势分析）与定量比较（指标数据对比）；区域差异成因可从自然基础、历史传承、政策导向分析；区域发展条件综合评价要兼顾优势条件与限制性因素。\n(1) 比较海南岛与台湾岛的区域差异，可从哪些维度设计比较项目（列出四个维度）？\n(2) 两岛发展条件各有何优势与限制（各答一条）？",
+      "answer": "(1) 维度：地理位置（纬度与海陆）、自然条件（地形气候水文）、资源与环境（热带资源、海洋资源）、经济发展（产业结构与水平）、社会文化（人口、开放政策）（任四个）。 (2) 海南：优势——纬度更低、光热充足，热带资源与海洋资源丰富，自贸港政策优势突出；限制——经济基础相对薄弱、科技人才不足、市场腹地较小。台湾：优势——产业体系较完整（电子信息产业发达）、科技人才多、港口条件好；限制——岛内市场小、对海外市场依赖度高、地震多发（言之有理即可）。",
+      "kps": [
+        "kp_geo10_region_comparison"
+      ],
+      "difficulty": 0.65,
+      "solution": "比较维度设计规范；两岛优劣对比结合实际。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0111",
+      "item_type": "solve",
+      "stem": "下表是海南岛与台湾岛对比资料：\n| 项目 | 海南岛 | 台湾岛 |\n| 面积 | 约3.4万km² | 约3.6万km² |\n| 纬度位置 | 约18°—20°N（热带） | 约22°—25°N（跨热带、亚热带） |\n| 地形 | 中高周低，五指山区 | 东部山地（台湾山脉）、西部平原 |\n| 经济特色 | 自贸港、热带农业与旅游 | 电子信息制造业发达 |\n读表回答：(1) 归纳两岛的共同地理特征（两条）；(2) 分析两岛经济特色差异形成的区位原因。",
+      "answer": "(1) 共同特征：都位于我国东南沿海（靠近大陆的大陆岛/岛屿），面积相近（3万多km²）；地势都为中（东）部高、沿海低平，河流短促、水能较丰；同受台风影响，降水丰富。 (2) 海南：纬度低处热带，光热充足宜热带农业；拥有自贸港政策与背靠大陆面向东南亚的区位，发展旅游与开放型经济。台湾：科技人才与产业配套集聚，依托优良港口承接全球电子信息产业分工，形成制造业出口导向型经济。",
+      "kps": [
+        "kp_geo10_region_comparison"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对比表考查共性归纳与特色成因分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0112",
+      "item_type": "choice",
+      "stem": "我国自然资源的基本国情是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_resource_shortage"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国自然资源总量丰富（多项居世界前列），但人口众多，人均占有量远低于世界平均水平，即“总量大、人均不足”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 总量大、人均少",
+        "B. 总量小、人均多",
+        "C. 总量大、人均多",
+        "D. 总量小、人均少"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0113",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国自然资源总量大但人均不足（耕地、淡水、人均能源等）；经济发展与资源供给矛盾突出。资源安全战略包括耕地红线、水资源管理、能源结构优化（煤炭为主体、油气为核心、新能源快速发展）；开源措施有勘探新资源、进口多元化、开发新能源；节流措施有节约资源、提高利用效率、发展循环经济。\n(1) 以水资源为例，说明我国资源“总量大、人均少”的表现，并各举一条开源与节流措施。\n(2) 为什么要坚守18亿亩耕地红线？",
+      "answer": "(1) 表现：我国水资源总量居世界前列（河川径流量约居第6位），但人均不足世界平均的1/4，且时空分布不均（南多北少、夏秋多冬春少），供需矛盾突出。开源：南水北调（跨流域调水）、海水淡化、修建水库蓄丰补枯；节流：发展节水农业（喷灌滴灌）、提高工业水循环利用率、阶梯水价（各一条）。 (2) 原因：耕地是不可再生的稀缺资源，我国人口众多、粮食需求巨大，耕地数量直接关系粮食安全（谷物自给、口粮绝对安全）；工业化城镇化占地压力大，必须以红线约束建设占用，保障可持续的食物供给能力。",
+      "kps": [
+        "kp_geo10_resource_shortage"
+      ],
+      "difficulty": 0.65,
+      "solution": "水资源量人均矛盾、开源节流并举；耕地红线与粮食安全逻辑。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0114",
+      "item_type": "solve",
+      "stem": "下表是我国部分资源人均量与世界平均水平对比（约）：\n| 资源 | 我国人均 | 世界人均 |\n| 耕地 | 0.08公顷 | 0.24公顷 |\n| 淡水 | 约2000m³ | 约9000m³ |\n| 森林 | 0.14公顷 | 0.6公顷 |\n读表回答：(1) 计算我国人均耕地、淡水约为世界平均水平的比例（大致）；(2) 针对表中最紧张的资源（淡水），从“开源”“节流”各提两条措施。",
+      "answer": "(1) 耕地：0.08÷0.24≈1/3；淡水：2000÷9000≈2/9（约1/4—1/5之间，答约1/4）。 (2) 开源：跨流域调水（南水北调）、海水淡化与雨洪利用、修建水库调节；节流：农业节水灌溉（滴灌喷灌）、工业提高重复利用率、生活阶梯水价与节水器具、防治水污染（开源节流各两条）。",
+      "kps": [
+        "kp_geo10_resource_shortage"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对比数据考查比例计算与淡水开源节流措施。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0115",
+      "item_type": "choice",
+      "stem": "“背斜成谷、向斜成山”的地形倒置现象，其成因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_rock_cycle"
+      ],
+      "difficulty": 0.5,
+      "solution": "褶皱岩层中背斜顶部因受张力岩石破碎，易受外力侵蚀变低成谷；向斜槽部受挤压岩石紧实，不易被侵蚀反而相对凸起成山，形成地形倒置。",
+      "source": "llm_generated",
+      "options": [
+        "A. 背斜顶部受张力易被侵蚀成谷，向斜槽部坚实抗侵蚀成山",
+        "B. 背斜被岩浆侵入抬升",
+        "C. 向斜被断层切断下陷",
+        "D. 地壳整体下降"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0116",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：岩浆岩分侵入岩（花岗岩）与喷出岩（玄武岩）；沉积岩有层理构造并含化石；变质岩如片麻岩、大理岩。地质构造：褶皱（背斜、向斜）与断层（地垒成块状山如华山，地堑成谷地如渭河谷地）。地质构造应用：背斜储油（构造圈闭）、向斜储水、隧道避开断层等。\n(1) 说明背斜、向斜在找矿、找水与工程建设中的应用。\n(2) 渭河谷地和华山分别是怎样形成的？",
+      "answer": "(1) 应用：找油——背斜是良好的储油构造（穹隆圈闭油气，上覆不透水层）；找水——向斜槽部岩层下凹汇水，宜打井取地下水；工程——隧道选线宜走背斜（岩层拱形承压稳定、避水）或坚硬岩层，必须避开断层带（破碎不稳定、易漏水坍塌）；水库大坝同样要避开断层。 (2) 渭河谷地为地堑：断层作用下岩体相对下降，下陷形成谷地（后堆积黄土与河流沉积）；华山为地垒：断层间岩体相对上升，形成块状山地（断块山），山体陡峻。",
+      "kps": [
+        "kp_geo10_rock_cycle"
+      ],
+      "difficulty": 0.7,
+      "solution": "构造应用三点齐全；地堑地垒对举形成机制。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0117",
+      "item_type": "solve",
+      "stem": "下图是某地地质剖面示意（文字描述）：岩层弯曲成波浪状——左侧岩层向上拱起（标注背斜，其顶部已被侵蚀低洼，上覆松散沉积物形成谷地），右侧岩层向下弯曲（标注向斜，槽部致密成山）；剖面中部岩层错动，一侧明显上升、一侧下降（标注断层）；背斜顶部标注油气点，向斜标注地下水汇集。\n读图回答：(1) 判断图示地貌与构造是否一致，解释“背斜成谷”的原因；(2) 图中断层附近能否修建大型水库？为什么？",
+      "answer": "(1) 不一致（地形倒置）：背斜成谷、向斜成山。背斜成谷原因：背斜顶部受张力作用岩石破碎裂隙发育，长期受外力（流水）侵蚀而变低，形成谷地；向斜槽部受挤压岩层紧实、抗侵蚀强，相对凸起成山。 (2) 不宜修建。断层带岩层破碎、不稳定，水库蓄水后巨大的水压力易诱发地震、沿断裂带渗漏，威胁坝体安全，故大型水利工程应避开断层。",
+      "kps": [
+        "kp_geo10_rock_cycle"
+      ],
+      "difficulty": 0.65,
+      "solution": "以剖面图考查倒置判读与工程避断层。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0118",
+      "item_type": "choice",
+      "stem": "遥感（RS）技术最基本的特征是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_rs_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "遥感的本质是传感器远距离（不接触目标）接收地物反射或辐射的电磁波信息成像，用于识别地物；定位属GNSS，叠加分析属GIS。",
+      "source": "llm_generated",
+      "options": [
+        "A. 获取地物的电磁波信息（不直接接触目标）",
+        "B. 精确测距定位",
+        "C. 进行空间叠加分析",
+        "D. 输出纸质地图"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0119",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：遥感是通过传感器不接触目标物体获取其电磁波信息的技术，分可见光遥感、红外遥感、微波遥感、激光雷达等；工作过程为传感器获取电磁波→地面接收站→数据处理→信息提取；应用领域包括资源调查、环境监测、灾害评估、农业估产等；卫星遥感影像可依色调、形状、纹理等判读地物。\n(1) 说明遥感在农业估产中的应用原理。\n(2) 与传统地面调查相比，遥感的突出优点是什么？",
+      "answer": "(1) 原理：不同作物及其长势在遥感影像上呈现不同的光谱（颜色、色调）特征，通过多时相影像监测作物种植面积与长势（植被指数NDVI），结合气象与模型估算单产，进而预测总产量。 (2) 优点：观测范围广（大范围同步观测）、获取信息速度快、周期短可动态更新；受地面条件限制小（可及无人区、灾区）；成本相对低、信息量大（多波段）。",
+      "kps": [
+        "kp_geo10_rs_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "估产原理扣光谱差异与多时相监测；优势突出广、快、省、动态。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0120",
+      "item_type": "solve",
+      "stem": "下表是同一地区洪灾前后两幅卫星影像的对比要点：\n| 判读要素 | 灾前影像 | 灾后影像 |\n| 色调 | 河流深色细线、农田规则浅色 | 河道两侧大片深色（水体）覆盖 |\n| 形状 | 田块边界清晰 | 部分田块边界被淹没消失 |\n| 范围 | 水体限于河道 | 淹没区连片向两岸扩展 |\n读表回答：(1) 判断灾后影像中“大片深色”的含义及影像判读依据；(2) 说明利用前后两期影像可提取哪些灾情信息。",
+      "answer": "(1) 深色区为洪水淹没区（水体在影像上色调深、镜面反射弱）；依据是色调（深）、形状（田块边界消失）与范围（沿河连片扩展）等解译标志的变化。 (2) 可提取：淹没范围与面积、受淹耕地/村庄/道路分布、洪水演进过程（多期对比）、退水进展与损失评估，为救灾与理赔提供依据。",
+      "kps": [
+        "kp_geo10_rs_basic"
+      ],
+      "difficulty": 0.65,
+      "solution": "以影像对比表考查解译标志运用与变化检测应用。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0121",
+      "item_type": "choice",
+      "stem": "我国推进城乡融合发展、实施乡村振兴战略，根本目的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_rural_development"
+      ],
+      "difficulty": 0.4,
+      "solution": "城乡统筹发展的核心是要素平等交换和合理配置（土地、劳动力、资本、技术等双向流动），目标是缩小城乡发展差距、实现共同富裕；单纯扩张城市用地、片面追求城镇化率、封闭市场均与城乡融合方向相悖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 扩大城市用地规模，单纯追求城镇化率",
+        "B. 促进城乡要素平等交换与合理配置，逐步缩小城乡发展差距",
+        "C. 减少农村人口，实现全面城市化",
+        "D. 限制农产品流通，保持地方市场封闭"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0122",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：乡村聚落形态（团状、条状、环状等）与自然条件密切相关；传统村落承载乡土文化价值；城镇化中出现“空心村”（人走屋空、土地撂荒）问题；乡村振兴战略总要求是产业兴旺、生态宜居、乡风文明、治理有效、生活富裕；要推进城乡融合统筹发展。\n(1) 分析“空心村”形成的原因及其带来的问题。\n(2) 结合乡村振兴总要求，为空心村治理提出建议（答三条）。",
+      "answer": "(1) 成因：农村青壮年劳动力大量外出务工经商，人口向城市迁移；城乡收入与公共服务差距大，村民进城定居；村庄规划管理滞后。问题：宅基地闲置浪费、土地撂荒；留守老人儿童问题突出，公共服务萎缩；乡土文化与传统村落保护困难。 (2) 建议：产业兴旺——发展特色农业、乡村旅游、农产品加工，吸引人口回流就业；治理有效——土地流转与宅基地有偿退出、复垦整治；生态宜居——人居环境整治（垃圾污水、厕所革命）；完善公共服务与养老托幼；保护传统村落文化（答三条）。",
+      "kps": [
+        "kp_geo10_rural_development"
+      ],
+      "difficulty": 0.65,
+      "solution": "空心村成因问题对应；建议紧扣二十字总要求。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0123",
+      "item_type": "solve",
+      "stem": "下表是某“空心村”整治前后的对比：\n| 项目 | 整治前 | 整治后 |\n| 常住人口 | 约300人（多为老人） | 520人（青年返乡创业） |\n| 土地利用 | 撂荒地占三成、旧宅闲置 | 撂荒地复垦，宅基地复绿/转民宿 |\n| 产业 | 传统单一种植 | 精品水果＋电商＋民宿旅游 |\n读表回答：(1) 描述整治后村庄人口与土地利用的变化；(2) 说明产业发展对人口回流的作用机制。",
+      "answer": "(1) 变化：常住人口由300人增至520人，青年返乡；撂荒地复垦恢复耕作，闲置宅基地被盘活（改民宿或复绿），土地利用效率提高。 (2) 机制：特色农业、电商与民宿创造就业岗位与创业机会→本地收入提高（接近或超过外出打工收入）→青年返乡就业创业→人口回流进一步扩大消费与人力资本，形成“产业兴—人口回—村庄活”的良性循环。",
+      "kps": [
+        "kp_geo10_rural_development"
+      ],
+      "difficulty": 0.65,
+      "solution": "以整治前后对比考查变化描述与产业—人口作用机制。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0124",
+      "item_type": "choice",
+      "stem": "大型批发市场的区位选择多遵循（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo10_service_location"
+      ],
+      "difficulty": 0.45,
+      "solution": "批发市场货物吞吐量大，依托便捷交通（高速公路出入口、环路、铁路）布局，遵循交通最优原则；零售商业多遵循市场最优。",
+      "source": "llm_generated",
+      "options": [
+        "A. 市场最优原则（市中心）",
+        "B. 交通最优原则（交通干线沿线/环路沿线）",
+        "C. 廉价劳动力原则",
+        "D. 原料产地原则"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0125",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：商业性服务业区位因素：市场（消费人群规模）、交通、劳动力、集聚（同类企业集聚形成商业街、商业区）；零售业多按市场最优布局，批发业按交通最优布局。服务业分生产性服务业（科技、信息服务）与生活性服务业（商贸、餐饮、家政）；信息技术使部分服务业对区位依赖减弱（网络零售、远程服务）。\n(1) 分析商业集聚（形成商业街/商业区）的好处。\n(2) 举例说明信息技术对服务业区位选择的影响。",
+      "answer": "(1) 集聚好处：共享客流（集聚扩大整体吸引力，消费者多目标采购）；共享基础设施与公共服务，降低经营成本；便于比较选择、竞争促进服务提升，形成品牌效应。 (2) 影响例：电子商务与网络零售兴起，网店的“区位”弱化（不依赖临街店面，向租金低的园区、郊区仓储集中）；远程办公与在线服务（在线教育、云问诊）使服务提供者与消费者空间分离；物流配送中心则向交通枢纽集聚（技术重塑区位格局，举例合理即可）。",
+      "kps": [
+        "kp_geo10_service_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "集聚效益四点；技术对区位的弱化与再集聚双向影响。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0126",
+      "item_type": "solve",
+      "stem": "下表是某市两类商业网点布局资料：\n| 网点类型 | 位置 | 服务范围 |\n| 甲：社区生鲜超市 | 各居民小区内或门口 | 步行10分钟圈（约1—2万人） |\n| 乙：大型服装批发市场 | 城北环路出入口、临近高速 | 覆盖全市及邻市客商 |\n读表回答：(1) 判断甲、乙分别遵循的区位原则；(2) 分析甲类网点密度大、乙类数量少的原因。",
+      "answer": "(1) 甲遵循市场最优原则（贴近消费人群、服务半径小）；乙遵循交通最优原则（依托环路与高速，货客集散便利）。 (2) 甲服务门槛低、范围小，需高密度布点覆盖各社区（消费频繁、就近便利）；乙门槛人口高、辐射范围大，一个市场即可服务全市及周边，故数量少而规模大。",
+      "kps": [
+        "kp_geo10_service_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "以布局对照表考查原则判断与门槛—范围—数量的关系。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0127",
+      "item_type": "choice",
+      "stem": "土壤中矿物质（颗粒部分）的主要来源是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_soil_formation"
+      ],
+      "difficulty": 0.45,
+      "solution": "成土母质（岩石风化物）提供土壤矿物质骨架与矿质养分，是土壤形成的物质基础；有机质主要来自生物（枯枝落叶、微生物）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 成土母质（风化的岩石）",
+        "B. 枯枝落叶",
+        "C. 大气降水",
+        "D. 施用化肥"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0128",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：土壤形成因素：成土母质（影响质地与矿物质）、气候（影响有机质分解与积累，冷湿环境有机质积累多）、生物（有机质来源，植物根系与微生物）、地形（水热再分配，阳坡阴坡、迎风背风）、时间（成土时间越长发育越成熟）；土壤剖面分腐殖质层、淋溶层、淀积层、母质层。\n(1) 分析东北地区黑土有机质丰富的成因。\n(2) 为什么陡坡上土层浅薄？",
+      "answer": "(1) 成因：气候冷湿（冬季漫长），微生物分解缓慢，有机质大量积累；草原草甸植被茂盛，枯枝根系归还量大；地形平坦排水适中，腐殖质得以保存，形成深厚黑土。 (2) 原因：陡坡侵蚀（重力与流水冲刷）强烈，风化物与土壤易被搬走，堆积时间短；水分条件差、植被稀疏，成土作用弱，故土层浅薄（缓坡与谷地则土层厚）。",
+      "kps": [
+        "kp_geo10_soil_formation"
+      ],
+      "difficulty": 0.65,
+      "solution": "黑土有机质归因冷湿与生物；陡坡土薄归因侵蚀强。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0129",
+      "item_type": "solve",
+      "stem": "下图是理想土壤剖面示意（文字描述）：自上而下依次为——腐殖质层（深色、富含有机质）、淋溶层（颜色较浅、矿物质被淋洗下移）、淀积层（矿物质淀积、较紧实）、母质层（风化碎屑物）；剖面旁标注植被覆盖与根系分布。\n读图回答：(1) 写出土壤剖面的分层名称及排列顺序；(2) 说明腐殖质层的形成过程与意义。",
+      "answer": "(1) 顺序（由地表向下）：腐殖质层→淋溶层→淀积层→母质层。 (2) 形成过程：植被枯枝落叶与根系残体落在地表，经微生物分解转化形成腐殖质，与矿物质结合聚集在表层，形成颜色深的腐殖质层。意义：腐殖质能改善土壤结构（团粒）、增强保水保肥能力、提供并储存养分，是土壤肥力的重要标志。",
+      "kps": [
+        "kp_geo10_soil_formation"
+      ],
+      "difficulty": 0.65,
+      "solution": "以剖面图考查层次顺序与腐殖质形成及肥力意义。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0130",
+      "item_type": "choice",
+      "stem": "京津冀协同发展战略的首要任务是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_strategy_jingjinji"
+      ],
+      "difficulty": 0.45,
+      "solution": "京津冀协同发展以疏解北京非首都功能为“牛鼻子”，解决“大城市病”，促进三地分工协作与区域协调发展。",
+      "source": "llm_generated",
+      "options": [
+        "A. 疏解北京非首都功能",
+        "B. 首都重化工业扩张",
+        "C. 三地产业同质竞争",
+        "D. 北京人口进一步集聚"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0131",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：京津冀协同发展旨在疏解北京非首都功能、解决大城市病、促进区域协调；空间格局为“一核、双城、三轴、四区、多节点”；建设北京城市副中心（通州）与雄安新区；推进交通一体化（京张高铁、京雄城际）、大气污染联防联控、产业升级转移。\n(1) 分析设立雄安新区的主要目的。\n(2) 京津冀大气污染为什么要联防联控？",
+      "answer": "(1) 目的：集中承接北京疏解出的非首都功能（行政事业单位、高校、企业总部等），减轻北京压力；打造新发展理念引领的创新之城，培育区域新增长极；带动冀中南地区发展，优化京津冀空间结构。 (2) 联防联控原因：大气污染具有跨区域传输特性（污染物随气流扩散，不受行政区界限限制）；京津冀产业结构偏重、能源以煤为主，冬季供暖叠加不利气象条件形成区域性雾霾，单靠一地治理难以见效，必须统一预警、协同减排、共同治理。",
+      "kps": [
+        "kp_geo10_strategy_jingjinji"
+      ],
+      "difficulty": 0.65,
+      "solution": "雄安定位三点；跨区污染特性决定协同治理。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0132",
+      "item_type": "solve",
+      "stem": "下表是京津冀三地功能定位（摘要）：\n| 地区 | 功能定位 |\n| 北京 | 全国政治中心、文化中心、国际交往中心、科技创新中心 |\n| 天津 | 全国先进制造研发基地、北方国际航运核心区 |\n| 河北 | 全国现代商贸物流重要基地、产业转型升级试验区 |\n读表回答：(1) 概括三地功能定位体现的分工特点；(2) 分析北京向河北转移部分产业对两地的积极影响。",
+      "answer": "(1) 特点：错位发展、优势互补——北京强化首都功能与科创（舍去一般制造），天津发挥制造与航运优势，河北承接产业转移并承担商贸物流与转型试验，形成梯度分工格局。 (2) 对北京：疏解非首都功能，缓解人口资源环境矛盾（大城市病），腾出空间发展高精尖产业；对河北：承接产业投资，扩大就业与税收，推进工业化城镇化与产业升级（去产能替代），缩小与京津差距。",
+      "kps": [
+        "kp_geo10_strategy_jingjinji"
+      ],
+      "difficulty": 0.65,
+      "solution": "以功能定位表考查分工特点与产业转移双赢。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0133",
+      "item_type": "choice",
+      "stem": "关于我国海洋国情与海洋战略的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_strategy_marine"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国海域辽阔、海洋资源丰富（油气、渔业、可再生能源），建设海洋强国包括资源开发、环境保护、权益维护与科技创新，南海诸岛是我国固有领土。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我国是海洋大国，海域辽阔、海洋资源丰富",
+        "B. 我国没有海洋权益争议",
+        "C. 海洋开发无需考虑环境保护",
+        "D. 海洋强国只指海军力量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0134",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：海洋强国战略内涵包括海洋资源开发、海洋环境保护、海洋权益维护、海洋科技创新；我国海域辽阔、海洋资源丰富；坚持开发与保护并重；南海诸岛是我国的固有领土。海南作为海洋大省，管辖海域广阔，是建设海洋强国的重要支点。\n(1) 说明建设海洋强国对我国的重要意义。\n(2) 海南在海洋强国建设中具备哪些优势条件？",
+      "answer": "(1) 意义：保障国家海洋权益与国土安全（维护领海、专属经济区和岛礁主权）；开发利用海洋资源（油气、渔业、空间、能源），缓解陆域资源约束、拓展发展空间；带动海洋经济（航运、旅游、海洋工程装备）发展；提升国际海洋事务话语权。 (2) 海南优势：管辖海域面积约200万km²，是全国海洋面积最大的省；地处南海要冲、面向东南亚，区位战略地位重要；海洋资源丰富（油气、渔业、热带海岛旅游、海洋能）；自贸港政策支持（海洋经济开放先行先试）。",
+      "kps": [
+        "kp_geo10_strategy_marine"
+      ],
+      "difficulty": 0.65,
+      "solution": "海洋强国意义从权益、资源、经济、话语权四方面；海南优势结合海域、区位、资源与政策。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0135",
+      "item_type": "solve",
+      "stem": "下表是海南海洋经济发展资料卡：\n| 领域 | 内容 |\n| 港口航运 | 洋浦港（西部陆海新通道国际枢纽港）、自贸港航运政策 |\n| 海洋旅游 | 三亚、万宁滨海旅游与邮轮游艇经济 |\n| 海洋渔业 | 深远海养殖、现代化海洋牧场 |\n| 海洋油气 | 南海油气资源勘探开发与服务基地 |\n读表回答：(1) 概括海南海洋经济的产业结构特点；(2) 从资源与区位两方面分析洋浦港建设国际枢纽港的条件。",
+      "answer": "(1) 特点：以港口航运（物流）、滨海旅游、现代渔业（深海养殖）、油气及服务为主导，海洋一二三产业并存，开放型（自贸港政策赋能）海洋经济体系初步形成。 (2) 资源条件：拥有深水良港港湾资源、临近南海油气田与东南亚航线；区位条件：地处西部陆海新通道与21世纪海上丝绸之路交汇点，背靠西南腹地、面向东盟，自贸港政策（保税燃料加注、航线开放）增强中转吸引力。",
+      "kps": [
+        "kp_geo10_strategy_marine"
+      ],
+      "difficulty": 0.65,
+      "solution": "以资料卡考查结构归纳与洋浦港区位分析。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0136",
+      "item_type": "choice",
+      "stem": "长江经济带发展坚持的基本原则是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_strategy_yangtze"
+      ],
+      "difficulty": 0.4,
+      "solution": "长江经济带坚持“生态优先、绿色发展，共抓大保护、不搞大开发”，在保护中发展；空间格局为“一轴、两翼、三极、多点”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 共抓大保护、不搞大开发（生态优先、绿色发展）",
+        "B. 全流域高强度开发水电",
+        "C. 沿岸重化工业全面扩张",
+        "D. 围湖造田扩大耕地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0137",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：长江经济带覆盖11省市，坚持生态优先、绿色发展；空间格局“一轴（长江黄金水道）、两翼、三极（长三角、长江中游、成渝三大城市群）、多点”；上中下游分工协作：上游水电与特色产业、中游先进制造、下游高端服务与金融；三峡、葛洲坝等水利枢纽发挥防洪、发电、航运、灌溉综合效益。\n(1) 说明长江“黄金水道”对长江经济带发展的作用。\n(2) 分析三峡水利枢纽的综合效益（至少四方面）。",
+      "answer": "(1) 作用：长江干支流通航里程长、运量大、成本低，沟通东中西三大地带，形成江海联运体系；依托水道布局产业与城市（沿江产业带和城市群），促进要素流动与区域分工协作，带动腹地经济发展。 (2) 三峡效益：防洪（库容调蓄，保护中下游平原安全，最核心效益）；发电（清洁水电巨大，缓解华中华东能源紧张）；航运（库区水深增加、改善航道，船闸提升通航能力）；灌溉与供水（调节径流、保障中下游用水）；旅游与水产等（答四方面）。",
+      "kps": [
+        "kp_geo10_strategy_yangtze"
+      ],
+      "difficulty": 0.7,
+      "solution": "黄金水道从通航与带动两方面；三峡四大效益齐全。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0138",
+      "item_type": "solve",
+      "stem": "下表是长江上中下游发展定位：\n| 河段 | 定位与产业 |\n| 上游 | 水电开发、生态屏障、特色产业（云贵川渝） |\n| 中游 | 先进制造业基地、平原农业（两湖地区） |\n| 下游 | 高端服务业、金融贸易、创新中心（长三角） |\n读表回答：(1) 概括长江经济带“上中下游分工协作”的格局特点；(2) 分析上游承担“生态屏障”功能的原因。",
+      "answer": "(1) 特点：梯度分工、优势互补——上游发挥水能与生态优势（基础能矿与生态产品），中游承东启西发展先进制造与农业，下游依托开放与科技发展高端服务业，依托黄金水道串联形成上下游联动、错位发展的整体格局。 (2) 原因：上游地处大江大河源头与高山峡谷区，森林与水源涵养功能直接关系全流域水资源安全；水土流失与地质灾害敏感，一旦破坏将危害中下游（泥沙淤积、洪水风险）；上游工业基础相对薄弱而生态价值突出，故定位以保护与特色发展并重。",
+      "kps": [
+        "kp_geo10_strategy_yangtze"
+      ],
+      "difficulty": 0.65,
+      "solution": "以定位表考查分工格局与上游生态屏障归因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0139",
+      "item_type": "choice",
+      "stem": "可持续发展的三个基本原则是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_sustainable_development"
+      ],
+      "difficulty": 0.4,
+      "solution": "可持续发展三原则：公平性（代际公平与代内公平）、持续性（资源环境承载力之内）、共同性（全球共同行动）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 公平性、持续性、共同性",
+        "B. 高速度、大规模、集约化",
+        "C. 先污染、后治理",
+        "D. 效率优先、兼顾公平、集中布局"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0140",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：人地关系思想演变：采集渔猎时代崇拜自然→农业文明改造自然→工业文明征服自然（人地矛盾激化）→现代谋求人地协调（可持续发展）。可持续发展内涵包括经济可持续、社会可持续、生态可持续；基本原则为公平性、持续性、共同性。\n(1) 举例说明公平性原则的两层含义。\n(2) 为什么说可持续发展需要全球共同行动（共同性原则）？",
+      "answer": "(1) 两层含义：代际公平——当代人的发展不能损害后代人满足其需求的能力（如不过度消耗不可再生资源、控制碳排放）；代内公平——国家和地区之间公平享有资源与环境（发达国家与发展中国家承担有区别的责任、资源贸易公平）。 (2) 原因：环境问题具有全球性（气候变暖、臭氧空洞、海洋污染跨越国界，任何国家无法独善其身）；解决需要各国协调一致行动（公约、协定与技术转让），故必须全球合作、共同承担与努力。",
+      "kps": [
+        "kp_geo10_sustainable_development"
+      ],
+      "difficulty": 0.65,
+      "solution": "公平性两层含义与共同性的全球化依据。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0141",
+      "item_type": "solve",
+      "stem": "下表是人地思想演变与行为对照：\n| 阶段 | 思想 | 典型行为 |\n| 采集渔猎 | 崇拜自然 | 被动依赖、少量索取 |\n| 农业文明 | 改造自然 | 开垦、灌溉、梯田 |\n| 工业文明 | 征服自然 | 大规模采矿、排污、围湖造田 |\n| 现代 | 人地协调 | 节能减排、生态修复、循环经济 |\n读表回答：(1) 归纳人地关系思想的演变趋势；(2) 用可持续发展的原则评价“先污染、后治理”模式。",
+      "answer": "(1) 趋势：由依赖崇拜→改造征服→协调共生，人地关系认识不断深化，人类活动强度增大与反思同步演进，最终走向可持续发展。 (2) 评价：违背公平性原则（污染损害他人与后代利益）；违背持续性原则（超出环境承载力，资源环境先破坏后修复代价高昂，部分损害不可逆）；虽然治理能挽回部分损失，但成本远高于预防，不是可持续模式，应坚持预防为主、保护优先。",
+      "kps": [
+        "kp_geo10_sustainable_development"
+      ],
+      "difficulty": 0.65,
+      "solution": "以演变表考查趋势归纳与原则运用评价。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0142",
+      "item_type": "choice",
+      "stem": "热力环流形成的根本原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_thermal_circulation"
+      ],
+      "difficulty": 0.45,
+      "solution": "地面冷热不均→空气垂直运动（受热上升、冷却下沉）→同一水平面气压差异→水平气流，形成热力环流；它是大气运动最基本的形式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地面冷热不均",
+        "B. 地转偏向力",
+        "C. 气压梯度力",
+        "D. 海陆分布"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0143",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：地面冷热不均形成热力环流（受热处气流上升、冷却处下沉）；海陆风、山谷风、城市热岛环流都属热力环流。水平气压梯度力是形成风的直接原因；风向受气压梯度力、地转偏向力（北右南左）与摩擦力共同影响；近地面风与等压线斜交，高空风与等压线平行。\n(1) 画出（或用文字描述）白天海陆之间的环流方向，并解释成因。\n(2) 说明城市热岛环流对城市降水和污染的影响。",
+      "answer": "(1) 白天海风环流：陆地升温快（比热容小），陆地空气受热膨胀上升，近地面陆地为低压；海洋升温慢为高压；近地面风由海洋吹向陆地（海风），高空由陆地吹向海洋，形成白天的海陆风环流（夜晚相反，风由陆地吹向海洋）。 (2) 城市热岛（市区温度高于郊区）使市区空气上升、郊区下沉，近地面风从郊区吹向市区（乡村风）：影响——上升气流使城市多云雨（雨岛效应）；郊区污染物随气流汇集市区，或市区污染物随上升气流到高空再向郊区扩散沉降，使污染在城市与郊区之间循环放大，故污染企业不宜布局在城市环流圈内的下沉区（郊区）。",
+      "kps": [
+        "kp_geo10_thermal_circulation"
+      ],
+      "difficulty": 0.65,
+      "solution": "海风成因表述完整（升温差异→气压差→气流）；热岛环流对雨岛与污染的双重影响。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0144",
+      "item_type": "solve",
+      "stem": "下图是某城市“热岛环流”示意（文字描述）：城区标注“高温中心、气流上升”，郊区标注“气流下沉”，近地面箭头由郊区四周指向城区，高空箭头由城区上空流向郊区上空；城区外围东侧有一火电厂（标注烟囱排放）。\n读图回答：(1) 描述图中环流方向并解释城区气温高的原因；(2) 判断城郊之间的近地面风向，并评价火电厂布局在郊区东侧是否合理。",
+      "answer": "(1) 环流：城区空气上升→高空流向郊区→郊区下沉→近地面由郊区流回城区，闭合环流。城区气温高原因：建筑物密集、水泥下垫面吸热储热强（绿地水体少）；工业、交通、生活人为废热排放多；建筑物阻挡通风散热，形成热岛。 (2) 近地面风由郊区吹向城区（乡村风）。不合理：郊区为热岛环流下沉区，电厂排放的污染物随下沉气流和乡村风被带入城区，加重城市污染；电厂应布局在热岛环流圈之外且位于盛行风的下风向（或最小风频上风向）。",
+      "kps": [
+        "kp_geo10_thermal_circulation"
+      ],
+      "difficulty": 0.65,
+      "solution": "以环流图考查描述、成因与工业布局评价。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0145",
+      "item_type": "choice",
+      "stem": "远距离运输大宗煤炭，最经济的运输方式是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo10_transport_location"
+      ],
+      "difficulty": 0.45,
+      "solution": "大宗、低值、远距离货物宜选运量大、运价低的水运或铁路；煤炭还可用铁路专运与坑口电站输电替代。",
+      "source": "llm_generated",
+      "options": [
+        "A. 航空",
+        "B. 公路",
+        "C. 水运（或铁路/管道组合）",
+        "D. 人力搬运"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0146",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：交通运输布局的影响：缩短时空距离、促进资源开发与区域联系、带动沿线经济发展、扩大经济腹地。运输方式选择考虑货物性质、数量、运距与时效（铁路/公路/水运/航空/管道）；交通布局变化影响聚落形态与商业网点分布。\n(1) 交通运输方式选择的一般原则是什么（分别从货物性质、时效、运距说明）？\n(2) 分析海南建成环岛高铁对海南发展的意义。",
+      "answer": "(1) 原则：大宗低值耐运货物（矿石、粮食、煤炭）选水运或铁路；鲜活易变质、时效强的货物（鲜花、海鲜、急救物资）选航空或高速公路；液体气态大宗货物（石油、天然气）选管道；短途、小批量、门到门选公路。 (2) 环岛高铁意义：形成全岛快速交通圈（海口至三亚约1.5小时），缩短时空距离、密切沿海市县联系；带动沿线旅游与房地产，促进全岛旅游经济带形成；提高通道运输能力、缓解公路压力；支撑自贸港建设的人才物流流动，优化区域空间格局。",
+      "kps": [
+        "kp_geo10_transport_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "选择原则按货物与时效分类；环岛高铁从时空、旅游、自贸港三层面。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0147",
+      "item_type": "solve",
+      "stem": "下表是五种运输方式“万吨货物运1000千米”特征对比：\n| 方式 | 速度 | 运价 | 优点 |\n| 铁路 | 较快 | 较低 | 运量大、连续性好、受天气影响小 |\n| 公路 | 较快 | 较高 | 机动灵活、门到门 |\n| 水运 | 慢 | 最低 | 运量最大、投资省 |\n| 航空 | 最快 | 最高 | 时效强、宜鲜活贵重 |\n| 管道 | 连续 | 低 | 连续稳定、宜油气 |\n读表回答：(1) 为下列货物选择最佳运输方式：①5000吨煤炭（有铁路直达）；②两箱海南荔枝急运北京；③天然气从气田到城市。(2) 说明交通条件改善对海南荔枝外运销售的意义。",
+      "answer": "(1) ①铁路（大宗低值远距）；②航空（鲜活、时效要求高）；③管道（流体大宗连续输送）。 (2) 意义：航空与冷链物流发展使荔枝“朝发夕至”抵达全国市场，扩大销售半径与市场范围；减少损耗、保证品质与价格；推动海南荔枝产业规模化、品牌化，促进农民增收。",
+      "kps": [
+        "kp_geo10_transport_location"
+      ],
+      "difficulty": 0.65,
+      "solution": "以特征对比表考查方式匹配与交通改善的产业效应。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0148",
+      "item_type": "choice",
+      "stem": "下列不属于城市化过程中“城市病”的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo10_urbanization_problems"
+      ],
+      "difficulty": 0.4,
+      "solution": "城市病包括交通拥堵、住房紧张、就业困难、环境污染（大气、水、噪声、垃圾）等；城市化扩张通常占用耕地，耕地增加不是城市病。",
+      "source": "llm_generated",
+      "options": [
+        "A. 交通拥堵",
+        "B. 住房紧张",
+        "C. 环境污染加重",
+        "D. 农村耕地面积增加"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0149",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：城市化问题：环境质量下降（大气、水、噪声、垃圾污染）、交通拥堵、住房紧张、就业困难等社会问题。解决措施：建立卫星城和开发新区、改善交通与居住条件、保护和治理城市环境、建设海绵城市与智慧城市；新型城镇化强调以人为本、四化同步、优化布局、生态文明、文化传承。\n(1) 分析大城市交通拥堵的成因并提出治理措施（各答三条）。\n(2) 为什么新型城镇化强调“以人为本”？",
+      "answer": "(1) 拥堵成因：城市人口与机动车保有量快速增长，出行需求剧增；道路等基础设施建设滞后、路网结构不合理；职住分离、潮汐通勤集中；公交分担率不高、交通管理有待优化。措施：优先发展公共交通（地铁、快速公交）；完善路网与智能交通管理（错峰、潮汐车道）；建设卫星城与多中心结构，疏解功能与人口；鼓励绿色出行（各三条）。 (2) 以人为本原因：城镇化的核心是人的城镇化——使进城人口享有均等公共服务（就业、教育、医疗、住房保障），提高生活质量；避免片面追求土地扩张与速度，实现公平共享、可持续的城镇化。",
+      "kps": [
+        "kp_geo10_urbanization_problems"
+      ],
+      "difficulty": 0.65,
+      "solution": "拥堵成因措施对应；以人为本从公共服务与可持续阐释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0150",
+      "item_type": "solve",
+      "stem": "下表是某市治理城市病的举措清单：\n| 问题 | 治理举措 |\n| 交通拥堵 | 地铁新线建设、公交优先道、错峰上下学 |\n| 住房紧张 | 保障性住房与人才公寓建设、老区改造 |\n| 内涝 | 海绵化改造、排水管网提标 |\n| 污染 | 燃气公交替代、河湖治理、垃圾分类 |\n读表回答：(1) 归纳该市治理思路的特点；(2) 说明“地铁建设”同时缓解了表中哪些问题，并解释原因。",
+      "answer": "(1) 特点：问题导向、多措并举；设施建设（硬）与管理引导（软，错峰、分类）结合；兼顾生产生活生态，体现以人为本与系统治理。 (2) 缓解：交通拥堵（大运量公交分流小汽车出行，减轻道路压力）；环境污染（电力地铁替代燃油车，减少尾气排放）；间接支持住房紧张缓解（地铁延伸扩大通勤圈，带动外围新区与保障房开发，疏解中心城区人口）。",
+      "kps": [
+        "kp_geo10_urbanization_problems"
+      ],
+      "difficulty": 0.65,
+      "solution": "以举措清单考查治理思路归纳与地铁的复合效益。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0151",
+      "item_type": "choice",
+      "stem": "衡量城市化水平的最重要指标是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_urbanization_process"
+      ],
+      "difficulty": 0.4,
+      "solution": "城市化三个标志中，城市人口占总人口比重是衡量城市化水平的最重要（核心）指标；人口与用地规模是绝对量，不能直接反映水平。",
+      "source": "llm_generated",
+      "options": [
+        "A. 城市人口占总人口的比重",
+        "B. 城市人口数量",
+        "C. 城市用地规模",
+        "D. 城市数量"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0152",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：城市化标志：城市人口增加、城市人口占总人口比重上升（最重要指标）、城市用地规模扩大。城市化进程三阶段：初期阶段（水平低、发展慢）、加速阶段（推进快、出现郊区城市化）、后期阶段（水平高、增长慢甚至停滞，出现逆城市化）。我国改革开放后城市化快速发展，2023年常住人口城镇化率约66%。\n(1) 描述城市化加速阶段的典型特征。\n(2) 解释“逆城市化”现象的成因。",
+      "answer": "(1) 加速阶段特征：城市人口比重快速提高，城市数量增加、规模迅速扩张；产业结构由第二产业带动并向第三产业延伸；出现郊区城市化（人口和产业向郊区扩散）；交通建设加快，同时开始出现交通拥堵、住房紧张、环境污染等城市问题。 (2) 逆城市化成因：城市中心区环境恶化（污染、拥挤）、地价房租高；私人汽车普及与郊区、乡村基础设施完善，使居住郊区化可行；人们对环境质量要求提高，迁往环境优美的郊区/小城镇（人口由大城市向郊区和乡村回流，中心城区衰落）。",
+      "kps": [
+        "kp_geo10_urbanization_process"
+      ],
+      "difficulty": 0.65,
+      "solution": "加速阶段从人口产业空间三面描述；逆城市化从推力拉力解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0153",
+      "item_type": "solve",
+      "stem": "下表是某国城市化进程资料：\n| 年份 | 城市人口比重 | 阶段特征 |\n| 1950年 | 30% | 城市快速扩张起步 |\n| 1980年 | 65% | 郊区化明显，新城涌现 |\n| 2010年 | 78% | 中心城区人口微降，郊区长住 |\n读表回答：(1) 判断该国所处城市化阶段的变化；(2) 2010年“中心城区人口微降”说明什么现象？分析其直接原因。",
+      "answer": "(1) 变化：1950年处于加速阶段初期（30%后快速上升）；1980年达65%接近后期阶段，郊区化发展；2010年78%进入城市化后期阶段（水平高、增长缓慢）。 (2) 说明出现逆城市化（人口向郊区和乡村回流）。直接原因：城区环境质量下降、拥挤与高地价高房价（推力）；郊区环境优美、房价较低、交通与基础设施改善及私家车普及（拉力），人口外迁使中心城区人口微降。",
+      "kps": [
+        "kp_geo10_urbanization_process"
+      ],
+      "difficulty": 0.65,
+      "solution": "以进程数据考查阶段判断与逆城市化归因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0154",
+      "item_type": "choice",
+      "stem": "海南岛山麓地带的典型自然植被（基带植被）属于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_vegetation_types"
+      ],
+      "difficulty": 0.4,
+      "solution": "海南地处热带，山麓水平基带为热带雨林（季雨林）；亚寒带针叶林在北半球高纬，温带植被与热带海岛不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热带雨林（季雨林）",
+        "B. 亚寒带针叶林",
+        "C. 温带落叶阔叶林",
+        "D. 温带草原"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0155",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：主要植被类型：森林（热带雨林、亚热带常绿阔叶林、温带落叶阔叶林、亚寒带针叶林）、草原（热带草原、温带草原）、荒漠。植被是气候的标志（植被与气候对应）；山地垂直地带性使植被从山麓到山顶更替；植被对环境有指示作用（如骆驼刺指示干旱、荷花指示水湿）。\n(1) 写出“热带雨林—亚热带常绿阔叶林—温带落叶阔叶林—亚寒带针叶林”对应的气候（或热量带）递变。\n(2) 为什么说“植被是气候的标志”？举两个植被指示环境的例子。",
+      "answer": "(1) 递变：热带（赤道多雨/热带雨林气候）→亚热带（亚热带季风或地中海气候）→温带（温带季风、温带海洋性气候）→亚寒带（副极地大陆性/亚寒带针叶林气候），即由低纬到高纬热量递减对应的森林类型更替。 (2) 因为植被的类型与形态由当地水热组合长期塑造，一定的气候必有相应的优势植被，故可由植被反推气候（如多刺硬叶指示夏干热的地中海气候、仙人掌指示干旱）。指示例子：骆驼刺（根系发达、叶小刺状）指示干旱荒漠环境；苔藓、蕨类指示阴湿环境；铁芒萁指示酸性土壤（举两例）。",
+      "kps": [
+        "kp_geo10_vegetation_types"
+      ],
+      "difficulty": 0.65,
+      "solution": "植被—气候序列对应；指示植物举例结合形态适应。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0156",
+      "item_type": "solve",
+      "stem": "下图是“理想大陆植被（自然带）分布”与海南五指山垂直带谱对照（文字描述）：左图水平方向自赤道向两极依次为热带雨林—热带草原—热带荒漠—亚热带常绿阔叶林—温带落叶阔叶林—亚寒带针叶林—苔原；右图五指山自下而上为热带雨林季雨林（基带）→山地雨林→山地常绿阔叶林→山地矮林与灌丛（山顶）。\n读图回答：(1) 指出五指山基带与其所在纬度水平自然带的关系；(2) 比较五指山垂直带谱与理想大陆水平带谱的异同点。",
+      "answer": "(1) 关系：基带（热带雨林季雨林）与当地（约18°—19°N）的水平自然带一致，基带反映山麓所在地的地带性植被。 (2) 相同点：都体现随热量（或水热组合）变化植被有序更替，垂直带谱变化方向类似从低纬到高纬的水平更替。不同点：垂直带谱受山地海拔限制，带谱数量少（缺少草原、荒漠、苔原等），变化速度更快（海拔每升高100米降温约0.6℃，相当于水平迁移上百千米）；水平带谱在大尺度上受纬度分异控制、序列完整。",
+      "kps": [
+        "kp_geo10_vegetation_types"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对照图考查基带原理与垂直/水平带谱异同。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0157",
+      "item_type": "choice",
+      "stem": "人类修建水库主要影响水循环的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_water_cycle"
+      ],
+      "difficulty": 0.4,
+      "solution": "水库拦蓄河水、调节径流的时间分配（丰水期蓄、枯水期放），直接改变地表径流环节；对蒸发有间接影响但主导是径流。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地表径流",
+        "B. 蒸发",
+        "C. 水汽输送",
+        "D. 降水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0158",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：水循环环节：蒸发、植物蒸腾、水汽输送、降水、地表径流、下渗、地下径流；类型有海陆间循环、陆地内循环、海上内循环。水量平衡原理：长期看降水量=蒸发量+径流量。人类活动影响水循环：修建水库（地表径流）、跨流域调水、城市化（硬化地面减少下渗）。\n(1) 城市化为什么容易引发内涝？\n(2) 用水平衡原理说明跨流域调水的合理性。",
+      "answer": "(1) 原因：城市化使大量地面硬化（水泥、沥青），下渗量显著减少、地下水补给下降；地表径流增大且汇流加快，暴雨时排水系统超负荷，径流短时间集中形成内涝（绿地水体减少还削弱了滞蓄能力）。 (2) 合理性：水量平衡在更大空间尺度上成立——南方（或丰水区）水量盈余（降水量>蒸发量+当地利用），北方（或缺水区）水量亏损；跨流域调水把丰水区“盈余径流”调入缺水区，相当于在区域间重新分配径流，使两地水量供需趋向平衡，提高整体水资源的利用率（前提是工程与生态影响可控）。",
+      "kps": [
+        "kp_geo10_water_cycle"
+      ],
+      "difficulty": 0.65,
+      "solution": "内涝归因硬化面减渗增流；调水用区域水平衡解释。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0159",
+      "item_type": "solve",
+      "stem": "下图是城市化前后水循环对比示意（文字描述）：左图（城市化前）：降水大量下渗（标注下渗量40%），地表径流少（10%），蒸散发占50%，地下水补给充足；右图（城市化后）：硬化地面使下渗锐减（10%），地表径流激增（45%），蒸散发减少（35%），地下水位下降箭头。\n读图回答：(1) 比较城市化前后各环节水量比例的变化；(2) 说明这种变化带来的问题及应对措施（问题两条、措施两条）。",
+      "answer": "(1) 变化：下渗由40%降至10%，地表径流由10%激增至45%，蒸散发由50%降至35%，地下水补给减少、水位下降。 (2) 问题：暴雨时地表径流集中，排水不畅引发城市内涝；地下水补给减少导致地下水位下降、地面沉降，河湖基流减少。措施：建设海绵城市（透水铺装、下沉绿地、雨水花园）增加下渗滞蓄；完善排水管网与雨水利用系统；增加城市绿地水体、恢复河湖水系（各两条）。",
+      "kps": [
+        "kp_geo10_water_cycle"
+      ],
+      "difficulty": 0.65,
+      "solution": "以对比图考查比例变化、问题与海绵措施。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0160",
+      "item_type": "choice",
+      "stem": "夏初江淮流域出现持续约一个月的连阴雨（梅雨），其天气系统是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo10_weather_systems"
+      ],
+      "difficulty": 0.5,
+      "solution": "梅雨由江淮准静止锋（冷暖气团势力相当、锋面徘徊）造成，降水持续时间长；反气旋控制多晴朗（伏旱）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冷锋",
+        "B. 暖锋",
+        "C. 准静止锋",
+        "D. 反气旋"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0161",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：锋面系统：冷锋（冷气团主动推进，阴天、下雨、刮风、降温，锋后降水）、暖锋（暖气团主动爬升，连续性降水，锋前降水）、准静止锋（势力相当，持续降水，如江淮梅雨）。气旋（低压，北半球逆时针辐合，多阴雨）、反气旋（高压，北半球顺时针辐散，多晴朗）；我国常见天气系统有寒潮（冷锋）、台风（热带气旋）、梅雨（准静止锋）、伏旱（副高反气旋）。\n(1) 比较 冷锋与暖锋过境时的天气差异。\n(2) 冬季我国爆发的寒潮属于哪种天气系统？夏季长江中下游“伏旱”的成因是什么？",
+      "answer": "(1) 差异：冷锋过境——冷气团推动锋面快速移动，常出现大风、降温，降水强度大而短促（阵雨雷雨），多锋后降水；暖锋过境——暖气团沿锋面缓慢爬升，多连续性降水，强度小、范围广，锋前降水，过境后气温上升。 (2) 寒潮属冷锋（强冷气团快速南下，带来剧烈降温、大风，有时伴雨雪）。伏旱成因：夏季副热带高压（反气旋）控制长江中下游，盛行下沉气流、晴朗少雨，加之正值三伏高温，蒸发旺盛形成伏旱。",
+      "kps": [
+        "kp_geo10_weather_systems"
+      ],
+      "difficulty": 0.7,
+      "solution": "冷暖锋天气对比；寒潮冷锋、伏旱副高反气旋归位。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0162",
+      "item_type": "solve",
+      "stem": "下图是北半球某天气系统示意（文字描述）：中心气压低（标注1000hPa），四周气压高，等压线闭合；近地面气流箭头呈逆时针向中心辐合；中心区气流上升，标注云雨区；图东侧有一条锋面（低压槽中，标注暖锋，雨区在锋前），西侧标注冷锋（雨区在锋后）。\n读图回答：(1) 判断该天气系统类型及其控制下的天气；(2) 描述图中锋面气旋的结构（气流与锋面配置）。",
+      "answer": "(1) 类型：（温带）气旋（低压系统）；控制下多阴雨天气（中心气流上升冷却凝结）。 (2) 结构：锋面气旋是温带低压槽中冷锋与暖锋的组合系统——北半球气流逆时针向中心辐合；低压槽东侧为暖锋（暖气团主动、锋前连续性降水），西侧为冷锋（冷气团主动、锋后阵性降水）；锋面均位于低压槽（等压线弯曲）处，随气旋逆时针旋转东移。",
+      "kps": [
+        "kp_geo10_weather_systems"
+      ],
+      "difficulty": 0.65,
+      "solution": "以天气图考查气旋判定与锋面气旋结构。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0163",
+      "item_type": "choice",
+      "stem": "黄土高原千沟万壑的地表形态，主要的外力作用是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo10_weathering_erosion"
+      ],
+      "difficulty": 0.45,
+      "solution": "黄土高原沟壑纵横主要是夏季暴雨对松散黄土的流水侵蚀（面蚀、沟蚀）造成；黄土本身是风力沉积物（风成说）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 流水侵蚀",
+        "B. 风力沉积",
+        "C. 冰川侵蚀",
+        "D. 海浪侵蚀"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0164",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：外力作用包括风化作用（物理、化学、生物）、侵蚀作用（流水、风力、冰川、海浪）、搬运与沉积作用。喀斯特地貌由石灰岩被含CO₂的水溶蚀形成溶洞、地下河；黄土地貌有塬、梁、峁、川；黄土风成说的证据表明黄土高原的黄土是风力沉积物。\n(1) 说明喀斯特地貌（溶洞、石林）的形成过程。\n(2) 按“风化—侵蚀—搬运—沉积”说明黄土高原“黄土的来历”与“沟壑的形成”分别对应的作用。",
+      "answer": "(1) 喀斯特形成：石灰岩（主要成分碳酸钙）分布区，雨水与地下水吸收CO₂形成弱碳酸，沿裂隙长期溶蚀岩石，形成溶沟、石林、峰林与溶洞、地下河；溶洞内含碳酸钙的水滴蒸发逸出CO₂，碳酸钙再沉积形成石钟乳、石笋、石柱。 (2) 黄土的来历——风力沉积：干旱区的粉砂颗粒被强劲西北风搬运至秦岭以北，风力减弱沉积形成厚层黄土（风成说证据：黄土颗粒自西北向东南变细、矿物成分与荒漠区一致）。沟壑的形成——流水侵蚀：黄土疏松多孔、垂直节理发育，夏季暴雨冲刷形成沟壑，塬→梁→峁逐步破碎化；川（沟道）中则为流水沉积（淤地坝拦截泥沙）。",
+      "kps": [
+        "kp_geo10_weathering_erosion"
+      ],
+      "difficulty": 0.7,
+      "solution": "喀斯特溶蚀—沉积双过程；黄土“风成沉积＋流水侵蚀”二段式。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0165",
+      "item_type": "solve",
+      "stem": "下图示意黄土高原地貌演化（文字描述）：初期为宽阔平坦的“塬”（顶面平坦、周边沟谷）；中期塬面被沟谷切割成长条状“梁”；后期梁被进一步分割成孤立的馒头状“峁”；沟谷底部为平缓的“川”（堆积平坦面，可建淤地坝）。\n读图回答：(1) 按演化顺序排列塬、梁、峁、川，并说明主导外力；(2) 说明淤地坝在川道建设的水土保持作用。",
+      "answer": "(1) 顺序：塬→梁→峁（地面破碎程度递增），主导外力是流水侵蚀（沟蚀与面蚀切割）；川为侵蚀基准附近的沟底堆积地貌（流水沉积）。 (2) 淤地坝作用：拦截沟道泥沙、削减洪峰径流，减少输入黄河的泥沙；坝地淤积形成平坦肥沃田地（坝地），变荒沟为良田，实现拦沙与增产双重效益（属工程措施，配合植树种草效果更佳）。",
+      "kps": [
+        "kp_geo10_weathering_erosion"
+      ],
+      "difficulty": 0.65,
+      "solution": "以演化序列图考查排列与外力判断及淤地坝功能。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

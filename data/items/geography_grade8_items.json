@@ -203,6 +203,420 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geo_dens04_0655",
+      "item_type": "choice",
+      "stem": "我国省级行政区的构成是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_administrative_division"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国共有34个省级行政区域：23个省、5个自治区、4个直辖市（京津沪渝）、2个特别行政区（港澳）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 23个省、5个自治区、4个直辖市、2个特别行政区",
+        "B. 22个省、6个自治区、4个直辖市、2个特别行政区",
+        "C. 23个省、4个自治区、5个直辖市、2个特别行政区",
+        "D. 24个省、5个自治区、3个直辖市、2个特别行政区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0656",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国共有34个省级行政区域，包括23个省、5个自治区、4个直辖市、2个特别行政区；三级行政区划为省（自治区、直辖市）、县（自治县、县级市）、镇（乡）。各省级行政区有简称（如京、津、沪、渝、云/滇、陕/秦）和行政中心。\n(1) 写出我国五个自治区的名称。海南建省以前隶属哪个省？车牌上的“琼”字说明什么？",
+      "answer": "(1) 五个自治区：内蒙古自治区、新疆维吾尔自治区、西藏自治区、宁夏回族自治区、广西壮族自治区。海南建省前（1988年前）隶属广东省。车牌“琼”是海南省的简称，说明我国车牌照以省级行政区简称登记管理。",
+      "kps": [
+        "kp_geo8_cn_administrative_division"
+      ],
+      "difficulty": 0.55,
+      "solution": "34个省级区划构成、简称应用与海南建省史实相结合。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0657",
+      "item_type": "solve",
+      "stem": "下表是我国部分省级行政区资料卡：\n| 简称 | 全称 | 行政中心 |\n| 琼 | 海南省 | 海口 |\n| 粤 | 广东省 | 广州 |\n| 滇（云） | 云南省 | 昆明 |\n| 秦（陕） | 陕西省 | 西安 |\n| 渝 | 重庆（直辖市） | 重庆 |\n读表回答：(1) 写出“粤”“秦”对应省的全称与行政中心；(2) 表中哪个省级行政区是直辖市？直辖市与省在行政层级上有什么相同点？",
+      "answer": "(1) 粤——广东省，行政中心广州；秦（陕）——陕西省，行政中心西安。(2) 重庆是直辖市。相同点：都是省级行政区（一级行政区），行政中心/政府直接管辖市域或省域，下辖县级行政区。",
+      "kps": [
+        "kp_geo8_cn_administrative_division"
+      ],
+      "difficulty": 0.6,
+      "solution": "以资料卡考查简称—全称—行政中心对应与省级区划层级。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0658",
+      "item_type": "choice",
+      "stem": "我国领土的最南端位于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国最南端在南海南沙群岛的曾母暗沙（约4°N）；最北端在漠河以北黑龙江主航道中心线，最东端在黑龙江与乌苏里江汇合处，最西端在帕米尔高原。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黑龙江与乌苏里江主航道中心线汇合处",
+        "B. 新疆帕米尔高原",
+        "C. 南海南沙群岛的曾母暗沙",
+        "D. 海南岛天涯海角"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0659",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：中国位于亚欧大陆东部、太平洋西岸，领土面积约960万平方千米，居世界第三位；最北端约53°N（漠河以北），最南端约4°N（曾母暗沙），南北跨纬度近50度；最东端约135°E，最西端约73°E（帕米尔高原），东西跨经度约62度。\n(1) 描述我国的半球位置与海陆位置。\n(2) 我国领土南北跨纬度广，这对气候有什么影响？",
+      "answer": "(1) 半球位置：位于东半球、北半球；海陆位置：地处亚欧大陆东部、太平洋西岸，是一个海陆兼备的国家（东临太平洋，南部临南海，西部深入亚欧大陆腹地）。 (2) 影响：南北跨近50个纬度，获得的太阳辐射差异大，自北向南分布有寒温带、中温带、暖温带、亚热带和热带，气候类型多样；冬季南北温差大（北方严寒、南方温暖），使动植物种类和农作物熟制多样。",
+      "kps": [
+        "kp_geo8_cn_location"
+      ],
+      "difficulty": 0.55,
+      "solution": "位置描述完整；纬度跨度与温度带多样性因果清楚。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0660",
+      "item_type": "solve",
+      "stem": "下图是中国疆域四至点示意（文字描述）：图上北端标注“最北端：漠河以北黑龙江主航道中心线（约53°N）”，南端标注“最南端：南沙群岛曾母暗沙（约4°N）”，东端标注“最东端：黑龙江与乌苏里江主航道中心线汇合处（约135°E）”，西端标注“最西端：新疆帕米尔高原（约73°E）”；东部沿海标注太平洋（渤海、黄海、东海、南海自北向南排列）。\n读图回答：(1) 当我国东部乌苏里江上旭日东升时，西部帕米尔高原还是星空满天，解释这一现象；(2) 写出我国自北向南濒临的四个海域名称。",
+      "answer": "(1) 我国东西跨经度约62度，东西时差约4小时；东部（135°E附近）日出时间比西部（73°E附近）早约4小时，当最东端旭日东升时，最西端还处于黎明前的黑夜（时差所致）。 (2) 自北向南依次是：渤海、黄海、东海、南海。",
+      "kps": [
+        "kp_geo8_cn_location"
+      ],
+      "difficulty": 0.6,
+      "solution": "以四至点图考查东西时差推理与四大海域识记。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0661",
+      "item_type": "choice",
+      "stem": "宁夏平原和河套平原发展灌溉农业的主要水源是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_nw_agri"
+      ],
+      "difficulty": 0.4,
+      "solution": "宁夏平原、河套平原气候干旱，依靠引黄河水灌溉，成为“塞上江南”；河西走廊与新疆绿洲则主要依靠祁连山冰雪融水和坎儿井。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高山冰雪融水",
+        "B. 黄河水（引黄灌溉）",
+        "C. 地下水",
+        "D. 雨水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0662",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：西北地区草原广阔（内蒙古草原、新疆山地牧场），是我国重要畜牧业基地（四大牧区中的内蒙古、新疆牧区）。灌溉农业依靠河水、高山冰雪融水或地下水发展：宁夏平原和河套平原引黄灌溉，河西走廊依靠祁连山冰雪融水，新疆绿洲农业的代表性水利工程是坎儿井；主要农产品有新疆长绒棉、哈密瓜和葡萄（昼夜温差大利于糖分积累）。\n(1) 分析新疆瓜果特别甜的气候原因。\n(2) 坎儿井这种取水方式有什么优点？",
+      "answer": "(1) 原因：新疆温带大陆性气候，光照充足、昼夜温差大——白天光合作用强、糖分制造多，夜晚气温低、呼吸消耗少，糖分积累多，故瓜果含糖量高、特别甜。 (2) 坎儿井优点：暗渠输水可减少强烈蒸发，节约水源；借助地势自流引水，不需提水动力；水质清净、水量较稳定（利用地下潜流）。",
+      "kps": [
+        "kp_geo8_cn_nw_agri"
+      ],
+      "difficulty": 0.55,
+      "solution": "昼夜温差与糖分积累的因果；坎儿井适应干旱环境的智慧。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0663",
+      "item_type": "solve",
+      "stem": "下图示意西北地区农业分布（文字描述）：图中自东向西依次为内蒙古草原（标注放牧牛羊）、河西走廊（标注依靠祁连山冰雪融水灌溉，种植小麦、棉花）、宁夏平原与河套平原（标注引黄灌溉，标注“塞上江南”）、天山南北绿洲（标注坎儿井、长绒棉、哈密瓜葡萄）；年等降水量线由东向西递减（400mm→200mm→50mm）。\n读图回答：(1) 描述西北地区降水量的分布规律及对农业类型的影响；(2) 比较宁夏平原与河西走廊灌溉水源的差异。",
+      "answer": "(1) 规律：年降水量自东向西递减（400毫米→50毫米），气候越来越干旱；影响：东部降水较多处以草原畜牧业为主，向西逐渐过渡为荒漠畜牧与依赖灌溉的绿洲农业（无灌溉即无农业）。 (2) 宁夏平原（河套平原）引黄河水灌溉；河西走廊远离黄河，主要依靠祁连山的冰雪融水（及山区降水形成的河水）发展灌溉农业。",
+      "kps": [
+        "kp_geo8_cn_nw_agri"
+      ],
+      "difficulty": 0.6,
+      "solution": "以农业分布图考查经向降水递减与农牧过渡、灌溉水源差异。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0664",
+      "item_type": "choice",
+      "stem": "我国人口地理分界线（黑河—腾冲线）的意义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_population"
+      ],
+      "difficulty": 0.35,
+      "solution": "黑河—腾冲线（胡焕庸线）东南部面积约占43%、人口占94%左右，人口稠密；西北部地广人稀。它不是民族或内外流区分界。",
+      "source": "llm_generated",
+      "options": [
+        "A. 线东南部人口稠密、西北部人口稀疏",
+        "B. 线西北部人口稠密、东南部稀疏",
+        "C. 是汉族与少数民族分布界线",
+        "D. 是内流区与外流区界线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0665",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：中国人口约14.1亿（2022年），是世界人口大国；人口分布极不均匀，以黑河—腾冲线为界，东南部人口稠密、西北部人口稀疏；人口增长经历了快速增长→计划生育后增速放缓→三孩政策；人口老龄化问题日益突出；基本国策中的计划生育强调控制人口数量、提高人口素质。\n(1) 分析我国东南部人口稠密的自然与社会原因。\n(2) 面对人口老龄化，我国采取了哪些应对措施？",
+      "answer": "(1) 原因：自然——东南部地形以平原丘陵为主、地势较低，气候温暖湿润（季风气候雨热同期），河网密布水源充足，耕地多、物产丰富；社会——工农业与交通发达、城市密集，就业机会多，开发历史悠久。 (2) 措施：实施三孩生育政策并配套生育支持（育儿补贴、普惠托育）；延迟退休、开发老年人力资源；完善养老保障体系和养老服务产业；提高劳动生产率、产业升级（言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_population"
+      ],
+      "difficulty": 0.55,
+      "solution": "人口分布区位从自然社会两面分析；老龄化应对紧扣政策与保障。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0666",
+      "item_type": "solve",
+      "stem": "下图是我国人口密度分布示意（文字描述）：图中黑河—腾冲一线东南侧大面积区域着深色（人口密度大于100人/平方千米，东部沿海达400人以上），西北侧着浅色（人口密度小于10人/平方千米的区域广布）；线东南标注“面积约占43%、人口约占94%”。\n读图回答：(1) 描述我国人口分布的特点；(2) 分析西北部人口稀疏的主要自然原因（答两条）。",
+      "answer": "(1) 特点：人口分布极不均匀，东多西少；以黑河—腾冲线为界，东南部人口稠密（人口约占94%），西北部人口稀疏。 (2) 原因：深居内陆、远离海洋，气候干旱少雨（荒漠广布），水源缺乏；多高原山地和盆地沙漠，地形条件差，耕地少；生态环境脆弱，交通不便，环境承载力低（答两条）。",
+      "kps": [
+        "kp_geo8_cn_population"
+      ],
+      "difficulty": 0.6,
+      "solution": "以人口密度图考查分布特点归纳与西北稀疏归因。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0667",
+      "item_type": "choice",
+      "stem": "秦岭—淮河一线是我国重要的地理分界线，下列说法错误的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_qinling_huaihe"
+      ],
+      "difficulty": 0.4,
+      "solution": "季风区与非季风区分界是大兴安岭—阴山—贺兰山—巴颜喀拉山—冈底斯山一线；秦岭—淮河是1月0℃等温线、800mm年等降水量线、水田旱地、亚热带与暖温带等的分界。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1月0℃等温线大致经过",
+        "B. 800毫米年等降水量线大致经过",
+        "C. 水田与旱地的分界线",
+        "D. 季风区与非季风区的分界线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0668",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：秦岭—淮河一线是我国最重要的地理分界线：大致与1月0℃等温线、800毫米年等降水量线吻合；是亚热带与暖温带、湿润区与半湿润区、亚热带季风气候与温带季风气候的分界；也是水田与旱地、水稻与小麦主产区、河流有无结冰期、常绿阔叶林与落叶阔叶林的分界线。\n(1) 从气温、降水两方面说明秦岭—淮河线的“界线”含义。\n(2) 海南岛位于这条线以南，推测其河流结冰期与耕地类型。",
+      "answer": "(1) 气温：线以北1月均温低于0℃（河流结冰），以南高于0℃（河流不结冰）；线是亚热带与暖温带分界。降水：线以北年降水量少于800毫米（半湿润区），以南多于800毫米（湿润区），是湿润区与半湿润区分界。 (2) 海南岛位于线以南（热带），河流终年不结冰（无结冰期）；以水田为主，种植水稻等热带作物。",
+      "kps": [
+        "kp_geo8_cn_qinling_huaihe"
+      ],
+      "difficulty": 0.55,
+      "solution": "界线两侧气温降水对比表述；迁移判断海南的河流与耕地。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0669",
+      "item_type": "solve",
+      "stem": "下表是秦岭—淮河线南北两侧四地对比资料：\n| 项目 | 西安（线以北） | 汉中（线以南附近） | 海口（远在线南） |\n| 1月均温 | 约0℃ | 约3℃ | 约18℃ |\n| 年降水量 | 约570mm | 约850mm | 约1700mm |\n| 主要耕地 | 旱地 | 水田 | 水田 |\n读表回答：(1) 归纳三地1月均温与年降水量的变化规律；(2) 说明这种变化与秦岭—淮河分界意义的关系，并判断海口最主要的粮食作物。",
+      "answer": "(1) 规律：自北向南（西安→汉中→海口）1月均温逐渐升高、年降水量逐渐增多，纬度越低水热条件越好。 (2) 关系：秦岭—淮河线正对应1月0℃等温线与800mm年等降水量线所在位置（西安以北为暖温带半湿润、汉中以南为亚热带湿润），验证了该线作为南北方分界的气温、降水指标；海口水热最充足，以水田为主，最主要粮食作物是水稻（可一年三熟）。",
+      "kps": [
+        "kp_geo8_cn_qinling_huaihe"
+      ],
+      "difficulty": 0.6,
+      "solution": "以三地数据验证分界线指标并迁移判断海口作物熟制。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0670",
+      "item_type": "choice",
+      "stem": "与我国隔海相望的国家共有6个，下列全部正确的一组是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_territory_southchinasea"
+      ],
+      "difficulty": 0.35,
+      "solution": "隔海相望的6国：韩国、日本、菲律宾、马来西亚、文莱、印度尼西亚；朝鲜、俄罗斯、越南等为陆上邻国，蒙古是陆上邻国（不隔海）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 韩国、日本、菲律宾、马来西亚、文莱、印度尼西亚",
+        "B. 朝鲜、俄罗斯、日本、菲律宾、马来西亚、文莱",
+        "C. 韩国、日本、越南、菲律宾、泰国、文莱",
+        "D. 蒙古、日本、菲律宾、马来西亚、文莱、印度尼西亚"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0671",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国陆地国界线长2.2万多千米，大陆海岸线长1.8万多千米；陆上邻国14个；隔海相望国家6个。台湾岛是我国第一大岛，海南岛是第二大岛；南海诸岛（东沙、西沙、中沙、南沙群岛）自古以来就是中国领土，钓鱼岛及其附属岛屿是中国固有领土。\n(1) 写出与我国相邻的两个邻国（任选）。\n(2) 为什么说南海诸岛自古以来就是中国领土？",
+      "answer": "(1) 邻国任选两个：朝鲜、俄罗斯、蒙古、哈萨克斯坦、印度、缅甸、老挝、越南等14个中的任意两个。 (2) 依据：中国最早发现、命名和开发利用南海诸岛，最早并持续对南海诸岛行使行政管辖（历代设治、巡海）；大量历史文献、地图和考古证据均证明；依据《联合国海洋法公约》和国内立法（三沙市设立、南海诸岛主权归属），中国对南海诸岛及其附近海域拥有主权和管辖权。",
+      "kps": [
+        "kp_geo8_cn_territory_southchinasea"
+      ],
+      "difficulty": 0.55,
+      "solution": "邻国识记；南海主权的史实与法理依据充分表述。",
+      "source": "llm_generated",
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_dens04_0672",
+      "item_type": "solve",
+      "stem": "下图示意我国东部与南部海域（文字描述）：图中自北向南标注渤海（内海，被辽东半岛与山东半岛环抱）、黄海、东海、南海；台湾岛位于东海与南海之间，东侧为太平洋；海南岛隔琼州海峡与雷州半岛相望；南海中标出东沙、西沙、中沙、南沙群岛及曾母暗沙；钓鱼岛标注在东海台湾岛东北方向。\n读图回答：(1) 写出我国第一大岛和第二大岛的名称，并说明琼州海峡属于我国哪种海域类型；(2) 归纳南海诸岛的组成，并说明其地理位置的重要性。",
+      "answer": "(1) 第一大岛台湾岛，第二大岛海南岛；琼州海峡位于大陆与海南岛之间，属于我国的内海（内水）。 (2) 组成：东沙群岛、西沙群岛、中沙群岛、南沙群岛（及黄岩岛等岛礁）。重要性：地处太平洋与印度洋之间的国际航运要道（沟通东亚—东南亚—中东—欧洲航线），扼马六甲海峡通往东亚的咽喉；海域油气、渔业等资源丰富，是我国重要的海洋权益与国土安全屏障。",
+      "kps": [
+        "kp_geo8_cn_territory_southchinasea"
+      ],
+      "difficulty": 0.6,
+      "solution": "以海域图考查岛屿海域识记、内海概念与南海战略地位。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
