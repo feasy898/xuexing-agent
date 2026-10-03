@@ -293,6 +293,681 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0196",
+      "item_type": "choice",
+      "stem": "听指令做动作。老师说：\"Touch your nose, then touch your ears.\" 你应该先摸哪里？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "听连续指令要按先后顺序做：先 touch your nose（摸鼻子），then（然后）touch your ears（摸耳朵）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先摸鼻子，再摸耳朵",
+        "B. 先摸耳朵，再摸鼻子",
+        "C. 只摸鼻子",
+        "D. 只摸耳朵"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0197",
+      "item_type": "choice",
+      "stem": "老师说：\"Stand up, open the door, and then sit down.\" 按顺序第三个动作是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.35,
+      "solution": "三个动作按顺序是：① Stand up 起立 → ② open the door 开门 → ③ sit down 坐下，第三个是坐下。",
+      "source": "llm_generated",
+      "options": [
+        "A. 坐下",
+        "B. 起立",
+        "C. 开门",
+        "D. 关门"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0198",
+      "item_type": "fill",
+      "stem": "听指令排序（用数字 1、2、3 写出顺序）：老师连续说 \"Close the window. Put on your coat. Line up.\"（关窗→穿外套→排队）——按听到的先后顺序排列这三个动作：关窗=______，穿外套=______，排队=______。",
+      "answer": "1；2；3",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "听连续指令时抓住 first、then、and then 等顺序线索，按 1 关窗、2 穿外套、3 排队依序完成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0199",
+      "item_type": "choice",
+      "stem": "听小故事（三幅图顺序被打乱）：First, the girl gets up. Then she washes her face. At last she has breakfast.\n问题：故事的第二幅图应该画什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "顺序词 First（首先）起床 → Then（然后）洗脸 → At last（最后）吃早餐，第二幅图画洗脸。",
+      "source": "llm_generated",
+      "options": [
+        "A. 女孩洗脸",
+        "B. 女孩起床",
+        "C. 女孩吃早餐",
+        "D. 女孩睡觉"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0200",
+      "item_type": "choice",
+      "stem": "听故事：A little seed falls on the ground. Then it drinks the rain. At last it grows into a tall sunflower.\n问题：最后发生了什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.35,
+      "solution": "At last（最后）提示结局：种子长成向日葵。听故事时抓 First/Then/At last 排出事件顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. 种子长成了高高的向日葵",
+        "B. 种子落在地上",
+        "C. 种子喝雨水",
+        "D. 种子被风吹走"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0201",
+      "item_type": "fill",
+      "stem": "故事复述填空（用中文作答）：故事按顺序说：小鸡先破壳而出，______跟着妈妈找虫子吃，最后晚上回家睡觉。（在横线处填写\"然后\"或\"最后\"，选一个）",
+      "answer": "然后",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "复述事件顺序用\"先……然后……最后……\"；中间环节用\"然后\"，结尾才用\"最后\"。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0202",
+      "item_type": "choice",
+      "stem": "英语课上老师请大家玩游戏、唱英文歌，积极参与的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.2,
+      "solution": "对英语学习有兴趣的表现：乐于参加英语游戏、唱歌、表演等活动，在活动中学得更快。",
+      "source": "llm_generated",
+      "options": [
+        "A. 主动举手参加，开心地唱和玩",
+        "B. 趴在桌上不参加",
+        "C. 说\"太幼稚了\"并捣乱",
+        "D. 只看别人玩"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0203",
+      "item_type": "choice",
+      "stem": "下面哪种做法能帮你保持学英语的兴趣？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.25,
+      "solution": "通过动画、儿歌等有趣的方式接触英语，能让学习保持快乐，兴趣更持久。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看喜欢的英语动画片、听好听的英文儿歌",
+        "B. 一遇到不认识的单词就大哭",
+        "C. 把英语书藏起来",
+        "D. 告诉自己\"我学不会\""
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0204",
+      "item_type": "fill",
+      "stem": "兴趣习惯填空（用中文作答）：把学英语当成有趣的______（填\"游戏\"或\"惩罚\"，选一个），会更愿意每天听一听、说一说。",
+      "answer": "游戏",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.2,
+      "solution": "兴趣是最好的老师：把英语学习融入游戏、歌曲和表演，越学越想学。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0205",
+      "item_type": "choice",
+      "stem": "学新单词 pear（梨）时，你想起了学过的 bear（熊）。这两个词的共同点是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.3,
+      "solution": "新旧联系：pear 和 bear 都含 -ear 字母组合、押同样的韵，借助旧词 bear 记新词 pear 更容易。",
+      "source": "llm_generated",
+      "options": [
+        "A. 词尾都发 /eə/ 的音（-ear 组合）",
+        "B. 都是动物",
+        "C. 都是水果",
+        "D. 都没有元音"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0206",
+      "item_type": "choice",
+      "stem": "新歌谣里有旧句子 \"How are you?\"，还加了新句子 \"I'm fine, thank you.\" 最好的学法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.35,
+      "solution": "把旧歌谣/旧句子的旋律和句式当作支架，借助熟悉内容学习新内容，学得又快又牢。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先唱会旧句子，再跟着旧句子的调子学新句子",
+        "B. 整首放弃不学",
+        "C. 只唱旧句子不理新句子",
+        "D. 把新句子抄 100 遍不唱"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0207",
+      "item_type": "fill",
+      "stem": "新旧联系填空（用中文作答）：学 cat（猫）时想起 hat（帽子）都以 -at 结尾；学 book（书）时可以联想 look（看）。这种把旧词和新词______起来的方法能帮助记忆。",
+      "answer": "联系（联想/关联）",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.3,
+      "solution": "在新旧知识间建立联系（联想押韵、词族、旧句型搭新词），降低新知识的学习难度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0208",
+      "item_type": "choice",
+      "stem": "拍手读单词：tea 只能拍一下手，说明 tea 是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.3,
+      "solution": "拍读感知音节：tea /tiː/ 一口气读完、拍一下手，是一个音节的词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一个音节的词",
+        "B. 两个音节的词",
+        "C. 三个音节的词",
+        "D. 没有音节"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0209",
+      "item_type": "choice",
+      "stem": "拍手读 tiger 时能拍两下手（ti-ger），那么读 banana 应该能拍几下？",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.35,
+      "solution": "banana 分三个音节 ba-na-na，拍三下；按音节拍读能感受英语单词的节奏起伏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一下",
+        "B. 两下",
+        "C. 三下",
+        "D. 四下"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0210",
+      "item_type": "fill",
+      "stem": "音节拍读填空（用数字作答）：把单词 apple 按音节拍读（ap-ple），能拍______下手。",
+      "answer": "2",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.3,
+      "solution": "apple 分两个音节 ap-ple，拍两下手；初步感知音节有助于拼读和记忆单词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0211",
+      "item_type": "choice",
+      "stem": "同学借给你一块橡皮，你应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "获得帮助时要致谢：Thank you（谢谢你）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Thank you!",
+        "B. Goodbye!",
+        "C. I'm sorry.",
+        "D. Good night!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0212",
+      "item_type": "choice",
+      "stem": "你对同学说 \"Thank you!\" 同学回答 \"You're welcome.\" 这句话的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.3,
+      "solution": "回应致谢：You're welcome. / That's OK. 意为\"不客气\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不客气",
+        "B. 谢谢你",
+        "C. 再见",
+        "D. 对不起"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0213",
+      "item_type": "fill",
+      "stem": "致谢回应填空（用英文作答）：A: Thank you! B: You're ______.",
+      "answer": "welcome",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "致谢与回应是固定词块：Thank you. → You're welcome. / That's OK.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0214",
+      "item_type": "choice",
+      "stem": "指着照片向同学介绍你的妈妈，应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍家庭成员句型：This is my mother.（这是我的妈妈。）指人介绍用 This is ...",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my mother.",
+        "B. I am mother.",
+        "C. This is me.",
+        "D. He is my father."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0215",
+      "item_type": "choice",
+      "stem": "介绍照片上的爸爸和爷爷两位男性，正确的一组句子是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.35,
+      "solution": "介绍男用 He（father 爸爸、grandfather 爷爷），介绍女用 She；This is ... + He/She is ... 完成家庭成员介绍。",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my father. He is my grandfather.",
+        "B. This is my mother. She is my sister.",
+        "C. I am a boy.",
+        "D. This is my cat."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0216",
+      "item_type": "fill",
+      "stem": "家庭介绍填空（用英文作答）：看全家福介绍家人：This is my father. ______ is my mother.（填人称代词）",
+      "answer": "This",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍妈妈同样用 This is my mother（这是我的妈妈），逐位介绍家庭成员。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0217",
+      "item_type": "choice",
+      "stem": "独立上台唱英文歌，最好的表现是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "独立演唱的要求：能一个人完整唱出学过的歌曲，吐字清楚、节奏稳定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 吐字清楚、节奏稳定，完整唱完全曲",
+        "B. 中途大喊大叫",
+        "C. 唱两句就不唱了",
+        "D. 全程不出声只做动作"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0218",
+      "item_type": "choice",
+      "stem": "独唱时有一个词总唱不清楚，正确的练习方法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.3,
+      "solution": "难点单独慢练、再放回整句连贯演唱，是提高吐字清晰度的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把这个词单独慢慢多唱几遍，再连回整句",
+        "B. 跳过这个词不唱",
+        "C. 含糊带过算了",
+        "D. 改歌词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0219",
+      "item_type": "fill",
+      "stem": "演唱习惯填空（用中文作答）：独立演唱时，吐字要清楚，______（填\"节奏\"或\"音量\"之一）要保持稳定，不抢拍不拖拍。",
+      "answer": "节奏",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "独立演唱的评价点：吐字清楚 + 节奏稳定 + 完整唱完全曲。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0220",
+      "item_type": "choice",
+      "stem": "冬天出门，妈妈让你穿上：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.25,
+      "solution": "衣物词块：coat 是外套（穿在身上保暖）；hat 是帽子（戴在头上），shoes 是鞋（穿在脚上），bag 是书包。",
+      "source": "llm_generated",
+      "options": [
+        "A. coat",
+        "B. hat",
+        "C. shoes",
+        "D. bag"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0221",
+      "item_type": "choice",
+      "stem": "老师说 \"Put on your hat.\" 你应该：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.3,
+      "solution": "put on（穿上/戴上）+ hat（帽子）：听到指令把帽子戴在头上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 戴上帽子",
+        "B. 穿上外套",
+        "C. 穿上鞋",
+        "D. 背上书包"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0222",
+      "item_type": "fill",
+      "stem": "看图写词（用英文作答）：图片上小脚穿着一双红色运动鞋。\"鞋\"的英文是：______",
+      "answer": "shoes",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.3,
+      "solution": "衣物与日用品词块：coat 外套、hat 帽子、shoes 鞋、bag 书包；能听指令找到并说出相应物品。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

@@ -389,6 +389,81 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0001",
+      "item_type": "choice",
+      "stem": "【阅读理解·词义猜测】\nTom was hungry, but there was no food at home. He opened the fridge and found only a bottle of water. Then he remembered the delicious noodles at the small restaurant near his school. He took his wallet and rushed out. On the way, he met his friend Lily. \"Where are you going in such a hurry?\" she asked. \"I'm starving! I'm going to grab a bite,\" Tom answered.\n问题：What does the underlined phrase \"grab a bite\" probably mean?",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.45,
+      "solution": "上下文线索链：hungry（饿）→ only a bottle of water（家里没吃的）→ 想起学校附近的面馆 → 带钱包冲出门 → \"I'm starving!\"。由饥饿与去餐馆可知 grab a bite 意为\"赶紧吃点东西\"，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Take a short rest.",
+        "B. Eat something quickly.",
+        "C. Buy a new wallet.",
+        "D. Meet an old friend."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0002",
+      "item_type": "choice",
+      "stem": "【完形填空·语境选词】\nBen did not hear the alarm clock, so he got up late. He washed his face, put on his clothes and ran out of the door without breakfast. When he reached the classroom, the lesson had already begun. He said sorry to the teacher in a low voice and sat down ___, hoping the teacher would not ask why he was late.",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.5,
+      "solution": "语境线索：迟到、小声道歉、希望老师不追问，都表明 Ben 小心谨慎，故应\"安静地\"坐下，选 A。loudly（大声）、angrily（生气）、proudly（自豪）均与语境矛盾。",
+      "source": "llm_generated",
+      "options": [
+        "A. quietly",
+        "B. loudly",
+        "C. angrily",
+        "D. proudly"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0003",
+      "item_type": "fill",
+      "stem": "根据上下文线索推断词义（用中文作答）：The maths problem looked difficult at first, but after the teacher explained it step by step, it became quite simple.\n句中 simple 的意思是：____",
+      "answer": "简单的（容易的）",
+      "kps": [
+        "kp_eng10_red10_guess_from_context"
+      ],
+      "difficulty": 0.55,
+      "solution": "关键线索是转折词 but：前文 looked difficult（看起来很难），经老师逐步讲解后发生转折，simple 应与 difficult 构成反义对照，即\"简单的、容易的\"。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

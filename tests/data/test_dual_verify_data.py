@@ -125,6 +125,17 @@ def _is_english(it):
     return it.get("verification", {}).get("agents") == ENG_AGENTS
 
 
+# 2026-10-03 K12 英语密度补齐批（GEN_ENG_DENSITY_01，known issue：单代理自验）：
+# eng_dens01_0001..0828（276 deficient KP × 3），共用生成代理 eng-gen-w1-20261003
+# 的单元素签名 + single_agent=true 逐题申报；待 eng-indep 独立盲解回填后改登记
+# 为 [gen, indep] 并同步本闭式（与 phy 密度批同形态）。
+ENG_DENSITY_AGENTS = ["eng-gen-w1-20261003"]
+
+
+def _is_english_density(it):
+    return it.get("verification", {}).get("agents") == ENG_DENSITY_AGENTS
+
+
 # 2026-10-03 K12 语文批（扩科首落，30 题）：chi-gen-w1-20261003(生成自答) ×
 # chi-indep-w1-20261003(盲解)，双代理 agree 合并入库，代理对落库原序一致；
 # chi_hs_0198 入库时曾同文件重复一条（真重复 id），2026-10-03 去重后按 30 锁定。
@@ -566,6 +577,7 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     phy_ids = {it["id"] for it in all_items if _is_phy(it)}
     che_ids = {it["id"] for it in all_items if _is_che(it)}
     eng_ids = {it["id"] for it in all_items if _is_english(it)}
+    eng_dens_ids = {it["id"] for it in all_items if _is_english_density(it)}
     # 2026-10-02 wave3 扩库批：按题内 verification 代理身份圈定（agree 合并才落库）
     wave3_ids = {it["id"] for it in all_items if _is_wave3(it)}
     assert len(all_items) == len(all_ids), "duplicate item id across files"
@@ -610,6 +622,14 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert all(i.startswith(ENG_PREFIX) for i in eng_ids), "英语批题 id 前缀须为 eng_"
     assert not (eng_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids)), (
         "英语批与既有批次重叠")
+    # 2026-10-03 K12 英语密度补齐批闭式（单代理自验 known issue，见
+    # ENG_DENSITY_AGENTS 登记）：276 deficient KP × 3 = 828 题下限式断言
+    assert len(eng_dens_ids) >= 828, (
+        "英语密度批规模异常（< 828）：扩库须先登记 ENG_DENSITY_AGENTS 并同步")
+    assert all(i.startswith(ENG_PREFIX) for i in eng_dens_ids), (
+        "英语密度批题 id 前缀须为 eng_")
+    assert not (eng_dens_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids)), (
+        "英语密度批与既有批次重叠")
     # 2026-10-03 K12 物理/化学批闭式（单代理自验 known issue，见文件头）：
     # phy 860 题（G8-12）、che 977 题（G9-12）；批内去重与跨批双落移除
     # （che_hs2_0143 与 phy_phyjr_0407 整题重复，移除化学侧）后按现状锁定；
@@ -677,7 +697,7 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
-        | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
+        | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
     ) == all_ids
 
 
@@ -693,6 +713,9 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             assert iid.startswith(HS_MATH_PREFIX), iid
         elif rec["agents"] == ENG_AGENTS:
             assert iid.startswith(ENG_PREFIX), iid
+        elif rec["agents"] == ENG_DENSITY_AGENTS:
+            assert iid.startswith(ENG_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 单代理批必须带标记申报
         elif rec["agents"] == CHI_AGENTS:
             assert iid.startswith(CHI_PREFIX), iid
         elif rec["agents"] == PHY_AGENTS:

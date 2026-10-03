@@ -103,6 +103,163 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0004",
+      "item_type": "choice",
+      "stem": "【阅读理解·英美地理】\nThe United Kingdom is made up of England, Scotland, Wales and Northern Ireland. London, the capital, lies on the River Thames. Every year millions of visitors come to see Big Ben, the Tower of London and the British Museum, where people can enjoy treasures from all over the world for free. In the north, Scotland is famous for its beautiful lakes and mountains, and Edinburgh, its capital, holds a world-famous arts festival every August.\n问题：Which of the following is TRUE according to the passage?",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.5,
+      "solution": "细节题。原文说 the British Museum 人们可以 \"enjoy treasures ... for free\"（免费），B 正确。A 错：Edinburgh 是 Scotland 的首府，UK 的首都是 London；C 错：Scotland 以北部的湖泊和山脉闻名；D 错：艺术节每年八月在 Edinburgh 举行。",
+      "source": "llm_generated",
+      "options": [
+        "A. Edinburgh is the capital of the UK.",
+        "B. People can visit the British Museum without paying.",
+        "C. Scotland is famous for its beaches in the south.",
+        "D. The arts festival is held in London every August."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0005",
+      "item_type": "choice",
+      "stem": "【完形填空·地理短文】\nThe Grand Canyon is one of the most amazing natural wonders in the United States. It ___ in the state of Arizona and was formed by the Colorado River over millions of years. The canyon is about 446 kilometres long and attracts more than five million visitors every year.",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.5,
+      "solution": "表示\"位于\"用 lie in/lies in；主语 It 指大峡谷，谓语用第三人称单数 lies。flies（飞）、dies（死）、ties（系）均与地理语境不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. lies",
+        "B. flies",
+        "C. dies",
+        "D. ties"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0006",
+      "item_type": "choice",
+      "stem": "关于英国与美国的地理和旅游资源，下列说法正确的有（多选）：",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 对：London 是英国首都；B 错：美国首都是 Washington, D.C.，New York 是最大城市之一而非首都；C 对：科罗拉多大峡谷是美国著名自然奇观；D 对：大本钟是伦敦地标。故选 A、C、D。",
+      "source": "llm_generated",
+      "options": [
+        "A. London is the capital of the UK.",
+        "B. New York is the capital of the United States.",
+        "C. The Grand Canyon is a famous natural attraction in the US.",
+        "D. Big Ben is a famous landmark in London."
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0007",
+      "item_type": "choice",
+      "stem": "The Great Wall, ___ attracts millions of tourists from all over the world every year, has become a symbol of China.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "逗号隔开的非限制性定语从句先行词 The Great Wall 指物，关系代词作主语只能用 which，不能用 that（that 不能引导非限制性定语从句）；who 指人，what 不能引导定语从句。",
+      "source": "llm_generated",
+      "options": [
+        "A. that",
+        "B. which",
+        "C. who",
+        "D. what"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0008",
+      "item_type": "fill",
+      "stem": "语法填空：My English teacher, ___ has taught English for twenty years, always makes her classes lively and interesting.\n（用适当的关系代词填空）",
+      "answer": "who",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "先行词 My English teacher 指人，两个逗号之间是非限制性定语从句，从句缺主语，故填 who（此处不可用 that，因非限制性定语从句）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0009",
+      "item_type": "choice",
+      "stem": "下列句子中非限制性定语从句使用正确的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_nonrestrictive_rel"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错：非限制性定语从句不能用 that 引导，应为 which；B 对：先行词 His father 指人，who 在从句中作主语，逗号隔开，结构正确；C 错：live 是不及物动词，应为 the house which we live in；D 错：whom 已作宾语，从句不能再出现 him。",
+      "source": "llm_generated",
+      "options": [
+        "A. Beijing, that is the capital of China, has a long history.",
+        "B. His father, who works in a hospital, is a famous doctor.",
+        "C. The house which we live is very old.",
+        "D. Mr. Smith, whom we met him yesterday, will give us a talk tomorrow."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

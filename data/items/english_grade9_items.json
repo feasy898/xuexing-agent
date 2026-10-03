@@ -775,6 +775,1734 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0760",
+      "item_type": "choice",
+      "stem": "【阅读·国家概况】\nEgypt lies in the northeast of Africa, with a small part in Asia. Most of its people live along the Nile River, the longest river in the world, because the rest of the land is desert. Cairo, the capital, is one of the biggest cities in Africa. Arabic is the official language.\n问题：Why do most Egyptians live along the Nile?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_cul9_country_profile"
+      ],
+      "difficulty": 0.45,
+      "solution": "国家概况要素：地理位置（非洲东北部）+河流与人口分布（沿尼罗河居住，因其余为沙漠）+首都+语言；综合信息解释人口分布原因。",
+      "source": "llm_generated",
+      "options": [
+        "A. Because the rest of the land is desert and the river provides water.",
+        "B. Because the Nile is the longest river.",
+        "C. Because Cairo is too small.",
+        "D. Because they don't like the sea."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0761",
+      "item_type": "choice",
+      "stem": "关于世界主要国家的基本信息，下列正确的有（多选）：",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_eng9_cul9_country_profile"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 对：澳大利亚首都是堪培拉；B 对：英国四部分；C 对：俄罗斯面积世界第一；D 错：巴西官方语言是葡萄牙语。",
+      "source": "llm_generated",
+      "options": [
+        "A. The capital of Australia is Canberra, not Sydney.",
+        "B. The UK is made up of England, Scotland, Wales and Northern Ireland.",
+        "C. Russia is the largest country in area in the world.",
+        "D. The official language of Brazil is Spanish."
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0762",
+      "item_type": "fill",
+      "stem": "国家信息填空（用英文作答）：The country in North America whose capital is Ottawa and whose national symbol is the maple leaf is ______.",
+      "answer": "Canada",
+      "kps": [
+        "kp_eng9_cul9_country_profile"
+      ],
+      "difficulty": 0.45,
+      "solution": "综合信息定位国家：首都渥太华+枫叶标志 → Canada；地理、首都、语言、气候、社会发展是了解一国的基本维度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0763",
+      "item_type": "choice",
+      "stem": "【阅读·观念比较】\nIn some Western countries, many families teach children to manage pocket money from an early age: kids get a weekly amount, save part of it in a piggy bank, and record what they spend. In China, more schools now offer courses on financial literacy, encouraging students to make saving plans and compare prices before buying.\n问题：What do the two practices both show?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_cul9_health_finance_view"
+      ],
+      "difficulty": 0.5,
+      "solution": "理财观念比较：西方家庭零花钱管理（定额+储蓄+记账）与中国学校财商课（储蓄计划+比价）殊途同归——培养理性理财。",
+      "source": "llm_generated",
+      "options": [
+        "A. Both value teaching young people how to manage money wisely.",
+        "B. Both think pocket money should be banned.",
+        "C. Both believe children should spend freely.",
+        "D. Both require banks for kids."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0764",
+      "item_type": "choice",
+      "stem": "关于不同文化的健康观念，下列理解恰当的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_cul9_health_finance_view"
+      ],
+      "difficulty": 0.5,
+      "solution": "比较视角：各国健康观念（饮食、运动、作息、医疗习惯）不同但各有智慧；比较异同、理解影响、择善而从。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有的文化重饮食调理与作息规律，有的重运动健身，各有合理之处，可以互补借鉴",
+        "B. 只有本国的健康观念科学",
+        "C. 外国的健康观念都不可信",
+        "D. 健康与观念无关"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0765",
+      "item_type": "fill",
+      "stem": "理财填空（用中文作答）：英文中\"量入为出\"可表达为 live within your ______；\"存钱备用\"是 save for a rainy ______。",
+      "answer": "means; day",
+      "kps": [
+        "kp_eng9_cul9_health_finance_view"
+      ],
+      "difficulty": 0.45,
+      "solution": "理财观念词块：live within one's means（量入为出）、save for a rainy day（未雨绸缪）；健康与理财观念是跨文化比较的常见主题。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0766",
+      "item_type": "choice",
+      "stem": "【说理文·结构】\n(1) School uniforms should not be cancelled. (2) First, uniforms reduce comparison about clothes, so students focus on study. (3) A survey in our city shows schools with uniforms report fewer quarrels about dressing. (4) Some say uniforms limit personality, but personality can be shown in words and actions, not only in clothes. (5) Therefore, keep the uniforms.\n问题：第 (4) 句在论证中的作用是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_dis9_argument_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "说理文要素：(1) 论点 →(2) 理由 →(3) 论据（调查数据）→(4) 让步反驳（Some say ... but ...）→(5) 结论；论证方法含举例、引用数据、对比、让步反驳。",
+      "source": "llm_generated",
+      "options": [
+        "A. 让步反驳（先承认对方观点，再予以回应）",
+        "B. 提出中心论点",
+        "C. 举例论证",
+        "D. 总结全文引出标题"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0767",
+      "item_type": "choice",
+      "stem": "说理类语篇与记叙类语篇的主要区别是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_dis9_argument_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "文体功能差异：说理文=观点+论证（说服）；记叙文=人物+情节（再现）；信息组织方式随之不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说理文以论点为核心，用理由和证据说服读者；记叙文按时间再现经历",
+        "B. 说理文必须编故事",
+        "C. 记叙文必须下结论",
+        "D. 两者没有区别"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0768",
+      "item_type": "fill",
+      "stem": "论证方法填空（用中文作答，用顿号分隔）：常见论证方法：举例论证、______论证（引用数据名言）、对比论证和______反驳。",
+      "answer": "引用；让步",
+      "kps": [
+        "kp_eng9_dis9_argument_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "论证方法：举例、引用、对比、让步反驳；识别论点—理由—论据—结论的结构是读说理文的关键。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0769",
+      "item_type": "choice",
+      "stem": "The Yangtze River is ___ river in China.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_comparative_superlative"
+      ],
+      "difficulty": 0.4,
+      "solution": "范围（in China）内三者以上比较用最高级 the longest。",
+      "source": "llm_generated",
+      "options": [
+        "A. the longest",
+        "B. longer",
+        "C. the longer",
+        "D. longest"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0770",
+      "item_type": "choice",
+      "stem": "Lucy runs ___ of the three girls.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_comparative_superlative"
+      ],
+      "difficulty": 0.45,
+      "solution": "of the three 提示三者比较用最高级；副词最高级 fast→(the) fastest（the 可省）。",
+      "source": "llm_generated",
+      "options": [
+        "A. (the) fastest",
+        "B. the faster",
+        "C. faster",
+        "D. fast"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0771",
+      "item_type": "fill",
+      "stem": "最高级填空（两空）：Shanghai is one of ______ ______ (big) cities in the world.（最大城市之一）",
+      "answer": "the biggest",
+      "kps": [
+        "kp_eng9_gra9_comparative_superlative"
+      ],
+      "difficulty": 0.4,
+      "solution": "one of the + 最高级 + 复数名词（one of the biggest cities）；最高级常见范围标志：in/of 短语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0772",
+      "item_type": "choice",
+      "stem": "Would you mind ___ the window? It's a bit hot here.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_gerund_object"
+      ],
+      "difficulty": 0.4,
+      "solution": "mind 后接动名词作宾语：mind opening；类例 enjoy/finish/practise/suggest doing。",
+      "source": "llm_generated",
+      "options": [
+        "A. opening",
+        "B. to open",
+        "C. open",
+        "D. opened"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0773",
+      "item_type": "choice",
+      "stem": "My brother has finished ___ his model plane and started ___ a science report.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_gerund_object"
+      ],
+      "difficulty": 0.45,
+      "solution": "finish 只接 doing（finished building）；start 接 to do 或 doing 皆可（started to write）。",
+      "source": "llm_generated",
+      "options": [
+        "A. building; to write",
+        "B. to build; writing",
+        "C. building; writing",
+        "D. to build; to write"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0774",
+      "item_type": "fill",
+      "stem": "动名词填空（两空）：We are looking forward to ______ (hear) from you. He practises ______ (speak) English every morning.",
+      "answer": "hearing; speaking",
+      "kps": [
+        "kp_eng9_gra9_gerund_object"
+      ],
+      "difficulty": 0.4,
+      "solution": "只接动名词作宾语的高频动词：enjoy, finish, mind, practise, suggest, keep, avoid, look forward to（to 是介词）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0775",
+      "item_type": "choice",
+      "stem": "Could you tell me ___? I want to post a letter.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_object_clause_master"
+      ],
+      "difficulty": 0.45,
+      "solution": "宾语从句用陈述语序（where the post office is）；现在语境不用 was。",
+      "source": "llm_generated",
+      "options": [
+        "A. where the post office is",
+        "B. where is the post office",
+        "C. the post office is where",
+        "D. where the post office was"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0776",
+      "item_type": "choice",
+      "stem": "I want to know ___ Tom will come to the party tomorrow. If he ___, I'll call you.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_object_clause_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "宾语从句用 if/whether 引导\"是否\"含义的内容（从句中可用将来时 will come）；第二空 if 引导条件状语从句，主句 I'll call you 是将来，从句用一般现在时 comes（主将从现）。综合运用需区分从句类型。",
+      "source": "llm_generated",
+      "options": [
+        "A. if; comes",
+        "B. if; will come",
+        "C. that; comes",
+        "D. whether; will come"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0777",
+      "item_type": "fill",
+      "stem": "宾语从句填空（两空）：I hear (that) they ______ (move) to Beijing next month. She asked ______ I had finished my homework.",
+      "answer": "will move; whether (if)",
+      "kps": [
+        "kp_eng9_gra9_object_clause_master"
+      ],
+      "difficulty": 0.45,
+      "solution": "宾语从句三注意：引导词（that/if/whether/疑问词）、陈述语序、时态呼应（主过去从过去；客观真理除外）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0778",
+      "item_type": "choice",
+      "stem": "A new bridge ___ across the river last year.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_passive_all"
+      ],
+      "difficulty": 0.45,
+      "solution": "last year 过去时 + 桥\"被建\" → 一般过去时被动 was built。",
+      "source": "llm_generated",
+      "options": [
+        "A. was built",
+        "B. is built",
+        "C. will be built",
+        "D. built"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0779",
+      "item_type": "choice",
+      "stem": "More trees ___ in our city next spring.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_passive_all"
+      ],
+      "difficulty": 0.45,
+      "solution": "next spring 将来 + 树\"被种\" → 一般将来时被动 will be planted。",
+      "source": "llm_generated",
+      "options": [
+        "A. will be planted",
+        "B. are planted",
+        "C. were planted",
+        "D. have planted"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0780",
+      "item_type": "fill",
+      "stem": "被动填空（三空）：Rice ______ (grow) in the south. The hospital ______ (build) in 1990. A sports meeting ______ (hold) next week.",
+      "answer": "is grown; was built; will be held",
+      "kps": [
+        "kp_eng9_gra9_passive_all"
+      ],
+      "difficulty": 0.45,
+      "solution": "三种被动：一般现在 am/is/are done、一般过去 was/were done、一般将来 will be done；客观陈述常用被动语态。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0781",
+      "item_type": "choice",
+      "stem": "【完形·时态综合】\nMy father ___ (be) a driver for ten years. Last night while he ___ dinner, an old friend called. They ___ (not see) each other since 2015, so they talked for hours. Tomorrow they ___ (meet) at the same restaurant.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_tense_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "六时态串联：for ten years→现在完成 has been；last night while→过去进行 was having；since 2015 到那时→过去完成 hadn't seen；tomorrow→将来 will meet。",
+      "source": "llm_generated",
+      "options": [
+        "A. has been; was having; hadn't seen; will meet",
+        "B. is; has; didn't see; meet",
+        "C. was; had; don't see; met",
+        "D. has been; is having; haven't seen; would meet"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0782",
+      "item_type": "fill",
+      "stem": "时态填空（两空）：Be quiet! The baby ______ (sleep). She ______ (fall) asleep just five minutes ago.",
+      "answer": "is sleeping; fell",
+      "kps": [
+        "kp_eng9_gra9_tense_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "现在进行（此刻睡着）+ 一般过去（五分钟前入睡）；六大时态：一般现在/过去/将来、现在进行、过去进行、现在完成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0783",
+      "item_type": "choice",
+      "stem": "— ___ you ___ my glasses anywhere? I can't find them.\n— Yes. I ___ them on your desk a moment ago.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_gra9_tense_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "第一空：找眼镜的结果与现在相关（现在完成 Have you seen）；第二空：a moment ago 明确过去（saw）；综合运用须依时间标志切换时态。",
+      "source": "llm_generated",
+      "options": [
+        "A. Have; seen; saw",
+        "B. Did; see; have seen",
+        "C. Do; see; see",
+        "D. Have; seen; see"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0784",
+      "item_type": "choice",
+      "stem": "【听力·意图】听对话（文字稿）：\nW: It's so hot in this room.\nM: Really? Shall I open the window?\nW: That would be great, thanks.\n问题：女士说\"It's so hot\"的意图是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lis9_intent"
+      ],
+      "difficulty": 0.5,
+      "solution": "言外之意：陈述\"热\"实为请求；男士正确领会并行动（Shall I open ...?）。推断意图要听弦外之音。",
+      "source": "llm_generated",
+      "options": [
+        "A. 委婉请求开窗透气",
+        "B. 报告天气",
+        "C. 抱怨房间太小",
+        "D. 想离开房间"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0785",
+      "item_type": "choice",
+      "stem": "【听力·意图】听对话（文字稿）：\nM: I'm thinking of joining the chess club.\nW: That sounds fun! But don't you have piano lessons every Tuesday?\nM: Oh, right... Maybe the basketball club then — it trains on Fridays.\n问题：女士提到钢琴课的意图是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lis9_intent"
+      ],
+      "difficulty": 0.5,
+      "solution": "意图推断：But + 提示冲突（周二钢琴课）→ 促使男士改选周五的篮球社；提醒而非反对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提醒时间冲突，帮助对方重新考虑选择",
+        "B. 想学钢琴",
+        "C. 反对他参加任何社团",
+        "D. 取消钢琴课"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0786",
+      "item_type": "fill",
+      "stem": "意图判断填空（用中文作答）：\"Could you help me with this box?\" 的交际意图是请求帮助；\"I'm feeling a bit cold.\" 在房间里的言外之意是委婉请求______（两字）。",
+      "answer": "关门（关窗）",
+      "kps": [
+        "kp_eng9_lis9_intent"
+      ],
+      "difficulty": 0.45,
+      "solution": "意图类型：请求、计划、建议、邀请、道歉、拒绝、询问、告知；借助语境与语气推断真实意图。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0787",
+      "item_type": "choice",
+      "stem": "【听力·选择记录】听讲座（文字稿）：\nW: Today, three tips for a green school. First, reuse paper — use both sides. Second, bring your own cup instead of paper ones. Third, sort the rubbish: plastic, paper and food waste go into different bins. Questions? OK, the bins are behind the library.\n问题：如果只记录\"三条建议\"，应该记下的关键词是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lis9_selective_note"
+      ],
+      "difficulty": 0.5,
+      "solution": "选择性记录：以任务（记建议）为导向，只记关键词（reuse/own cup/sort）；无关信息（提问环节、位置补充）不记。",
+      "source": "llm_generated",
+      "options": [
+        "A. reuse paper / own cup / sort rubbish",
+        "B. 今天天气",
+        "C. 图书馆的建筑风格",
+        "D. 演讲者的名字"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0788",
+      "item_type": "choice",
+      "stem": "边听边记要点时，最有效的记录方式是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lis9_selective_note"
+      ],
+      "difficulty": 0.45,
+      "solution": "选择性记录三原则：任务导向（要什么记什么）、关键词化（缩写符号）、结构化（分点）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用缩写、符号和数字，只记与任务相关的关键词",
+        "B. 逐字听写每个单词",
+        "C. 画满整页小花",
+        "D. 什么都不写只靠脑记"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0789",
+      "item_type": "fill",
+      "stem": "速记填空（用英文写出符号或缩写的意思）：↑ 表示______；e.g. 表示______。（用中文写出含义）",
+      "answer": "上升（增加）；例如",
+      "kps": [
+        "kp_eng9_lis9_selective_note"
+      ],
+      "difficulty": 0.4,
+      "solution": "常用速记符号：↑ 上升、↓ 下降、∵ 因为、∴ 所以、e.g. 例如；选择性地记录信息与要点。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0790",
+      "item_type": "choice",
+      "stem": "中考英语口语考试临近感到紧张，有效的降焦虑方法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_anxiety_control"
+      ],
+      "difficulty": 0.45,
+      "solution": "降焦虑组合：任务分解（可控感）+放松训练（深呼吸）+积极自我暗示；熬夜与消极暗示适得其反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把任务分解成每天 10 分钟的模拟练习，考前深呼吸并积极自我对话",
+        "B. 熬夜到凌晨反复背",
+        "C. 反复想\"我肯定过不了\"",
+        "D. 考试前回避一切练习"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0791",
+      "item_type": "choice",
+      "stem": "考试中遇到不会的题，保持自信的应考策略是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_anxiety_control"
+      ],
+      "difficulty": 0.45,
+      "solution": "考场心理调适：跳过卡壳题保住会做题，稳定节奏；难题不代表全部，自信来自策略。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先跳过做好标记，完成后面再回来思考",
+        "B. 一直卡在这题",
+        "C. 随便乱选还慌乱影响后面",
+        "D. 提前交卷"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0792",
+      "item_type": "fill",
+      "stem": "心态填空（用中文作答）：\"我已按计划复习了，尽人事听天命\"——用积极自我______代替灾难化想象，能有效降低考试焦虑。",
+      "answer": "暗示（对话）",
+      "kps": [
+        "kp_eng9_lsm9_anxiety_control"
+      ],
+      "difficulty": 0.4,
+      "solution": "焦虑管理：积极自我暗示+合理归因+任务分解+放松训练，把焦虑控制在适度水平。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0793",
+      "item_type": "choice",
+      "stem": "制订中考英语阶段复习计划时，合理的时间分配是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_plan_exam"
+      ],
+      "difficulty": 0.45,
+      "solution": "阶段复习要素：专项轮训+弱项加权+周期性综合模拟+错题复盘；计划要落实到每周并监控执行。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按听力、单选、完形、阅读、写作专项排轮训，弱项多排，每周一次综合模拟",
+        "B. 只练最喜欢的题型",
+        "C. 只做综合卷不总结",
+        "D. 计划写好就不管了"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0794",
+      "item_type": "choice",
+      "stem": "复习两个月后模拟考听力仍不理想，最符合\"监控落实\"的调整是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_plan_exam"
+      ],
+      "difficulty": 0.5,
+      "solution": "PDCA 循环：Plan（阶段计划）→Do（执行）→Check（模考检验）→Act（归因调整）；数据驱动的调整最有效。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分析错因（词汇反应慢/连读弱），增加每日 15 分钟精听与跟读，下次模考再检验",
+        "B. 认命不再练听力",
+        "C. 把听力时间全换成背单词",
+        "D. 抱怨题目太难"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0795",
+      "item_type": "fill",
+      "stem": "计划要素填空（用中文作答）：中考复习计划应包含：阶段目标、各专项的______分配、模拟检测时间和______调整机制。",
+      "answer": "时间；反馈（监控）",
+      "kps": [
+        "kp_eng9_lsm9_plan_exam"
+      ],
+      "difficulty": 0.4,
+      "solution": "阶段复习计划四要素：目标、时间分配、检测、反馈调整；结合中考要求统筹安排。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0796",
+      "item_type": "choice",
+      "stem": "围绕\"环境保护\"主题整理语言材料，最合理的组织方式是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_topic_plan"
+      ],
+      "difficulty": 0.45,
+      "solution": "主题语言包结构：词汇→词块→句式→语篇样本，四级递进；按主题打包便于成组调用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分层整理：主题词汇（pollution/recycle）→ 高频词块（cut down trees）→ 观点句式（We should ...）→ 范文段落",
+        "B. 把所有单词按字母排序",
+        "C. 只抄一篇范文",
+        "D. 主题之间随机混放"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0797",
+      "item_type": "choice",
+      "stem": "考前按主题复习英语的最大的好处是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_lsm9_topic_plan"
+      ],
+      "difficulty": 0.45,
+      "solution": "主题组织的认知优势：语义网络化，提取时\"牵一词而动一串\"，尤其利好书面表达与口头表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. 词汇、句式和范文围绕同一主题联网，写作口语时能成组提取",
+        "B. 增加背诵痛苦",
+        "C. 与考试题型无关",
+        "D. 让笔记更厚"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0798",
+      "item_type": "fill",
+      "stem": "主题包填空（用中文作答）：一个完整的主题语言包应包含主题词、词块、______和范文示例四个层次（提示：表达观点的句子模式）。",
+      "answer": "句式",
+      "kps": [
+        "kp_eng9_lsm9_topic_plan"
+      ],
+      "difficulty": 0.4,
+      "solution": "主题语言包 = 主题词 + 词块 + 句式 + 范文；围绕中考常考主题（环保、志愿、健康等）逐一建档。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0799",
+      "item_type": "choice",
+      "stem": "给外教写感谢邮件与给好友发消息相比，应更正式。下列最适合邮件的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_prg9_speech_style"
+      ],
+      "difficulty": 0.45,
+      "solution": "正式语体特征：完整句式+正式词汇（express sincere thanks）+无网络缩略语感叹号堆叠；非正式消息才用 Thx/Ur。",
+      "source": "llm_generated",
+      "options": [
+        "A. I am writing to express my sincere thanks for your guidance on my speech.",
+        "B. Thx a lot!!! Ur the best!",
+        "C. 喂，谢了",
+        "D. OK OK"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0800",
+      "item_type": "choice",
+      "stem": "【语体判断】\n① Wanna grab a bite later?\n② Would you like to have dinner with us this evening?\n问题：两句的语体差异在于：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_prg9_speech_style"
+      ],
+      "difficulty": 0.5,
+      "solution": "语体光谱：缩略（wanna/grab a bite）+省略=非正式；Would you like+完整句=正式；依交际对象与场合选择。",
+      "source": "llm_generated",
+      "options": [
+        "A. ①非正式（口语缩略 wanna），②正式（完整礼貌句式）",
+        "B. 两句完全相同",
+        "C. ①正式，②非正式",
+        "D. 都不礼貌"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0801",
+      "item_type": "fill",
+      "stem": "语体填空（用中文作答）：正式语体常用完整句式、礼貌套语和较大词；非正式语体可用缩略、______语和短句（提示：网络/朋友间的随意用语）。",
+      "answer": "口语（俚语/网络）",
+      "kps": [
+        "kp_eng9_prg9_speech_style"
+      ],
+      "difficulty": 0.45,
+      "solution": "语体选择三依据：对象（师长/朋友）、场合（典礼/日常）、渠道（邮件/短信）；正式程度决定语言形式。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0802",
+      "item_type": "choice",
+      "stem": "要完成九年级 15 万词以上的课外阅读量，最可行的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_150k"
+      ],
+      "difficulty": 0.4,
+      "solution": "日均 700 词 × 300 天 ≈ 21 万词，稳超 15 万词；阅读量靠日积月累。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每天课外阅读约 30 分钟（600-800 词），一年累计超过 20 万词",
+        "B. 考前一周突击读一本厚书",
+        "C. 只背单词不读文章",
+        "D. 每月只读一页"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0803",
+      "item_type": "choice",
+      "stem": "九年级课外阅读材料的最佳组合是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_150k"
+      ],
+      "difficulty": 0.45,
+      "solution": "备考年选材：分级读物保量、报刊拓面（时新话题）、简写名著养文学感；只刷题不读书输入不足。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分级读物 + 英文报刊（如 21st Century Teens 类）+ 名著简写本",
+        "B. 博士论文",
+        "C. 无注释古英文",
+        "D. 只读试题的阅读理解"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0804",
+      "item_type": "fill",
+      "stem": "阅读量填空（用数字作答）：九年级阶段课外英语阅读量应累计达到______万词以上。",
+      "answer": "15",
+      "kps": [
+        "kp_eng9_red9_150k"
+      ],
+      "difficulty": 0.4,
+      "solution": "课标要求九年级课外阅读 15 万词以上；持续大量输入直接支撑阅读速度与词汇广度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0805",
+      "item_type": "choice",
+      "stem": "【传记】\nBorn in a poor village, Su Bingtian trained on mud tracks as a child. Coaches once told him he was too short for sprinting, but he improved his start again and again. In 2021, at the age of 32, he became the first Chinese sprinter to run in an Olympic 100-metre final, setting an Asian record of 9.83 seconds.\n问题：Which sentence best summarizes Su Bingtian's story?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_biography_news"
+      ],
+      "difficulty": 0.5,
+      "solution": "传记概括：出身平凡+被质疑+坚持改进+历史性突破（9.83 秒亚洲纪录、首进奥运百米决赛）；D 错——进决赛非金牌，概括须准确。",
+      "source": "llm_generated",
+      "options": [
+        "A. Through persistent effort, he broke limits and made history for Asian sprinting.",
+        "B. He was born rich.",
+        "C. He gave up when coaches doubted him.",
+        "D. He won the Olympic gold medal."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0806",
+      "item_type": "choice",
+      "stem": "【报刊文章】\nCITY NEWS — The riverside old street, built over a century ago, will reopen next month as a culture block after two years of repair. Old shops will stay, and young designers will open studios in the repaired houses. The city hopes the street can tell its history while welcoming new ideas.\n问题：What is the main idea of the news?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_biography_news"
+      ],
+      "difficulty": 0.5,
+      "solution": "报刊概括：导语（reopen as culture block）+细节（老店保留+新工作室）+目的（tell history + welcome new ideas）→ 一句话概括主旨。",
+      "source": "llm_generated",
+      "options": [
+        "A. An old street will reopen as a culture block mixing history and new creativity.",
+        "B. All old shops will be closed.",
+        "C. The street will be turned into a factory.",
+        "D. The repair failed."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0807",
+      "item_type": "fill",
+      "stem": "概括填空（用中文作答）：概括传记与报刊文章，应抓住\"谁/什么+最重要的______+结果/意义\"，用自己的话压缩成一两句。",
+      "answer": "事件（事实）",
+      "kps": [
+        "kp_eng9_red9_biography_news"
+      ],
+      "difficulty": 0.45,
+      "solution": "概括公式：对象+核心事实+结果意义；整体理解后简要概括所读内容。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0808",
+      "item_type": "choice",
+      "stem": "【结构分析】\nPara 1: Sports are good, but too much exercise can hurt teenagers.\nPara 2: Doctors report more knee injuries among student players.\nPara 3: Two causes: year-round training and wrong shoes.\nPara 4: Advice: rest days, proper shoes and warming up.\n问题：下列哪项是文章的\"次要内容\"（支撑性细节）？",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "主次区分：中心论点（Para 1）为\"主\"；病例数据（Para 2）为支撑\"次\"；结构与主次分析相辅相成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 医生报告的膝伤病例增多这一事实",
+        "B. 过量运动可能伤害青少年这一中心论点",
+        "C. 文章的总话题",
+        "D. 文章标题"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0809",
+      "item_type": "choice",
+      "stem": "分析语篇结构时，判断\"段落主题句\"最可靠的位置通常是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "主题句高频位置：段首（演绎式）、段末（归纳式）；抓住主题句即可理出结构骨架、区分主次。",
+      "source": "llm_generated",
+      "options": [
+        "A. 段首或段末（部分在段中）",
+        "B. 段落第一个单词",
+        "C. 段落最长单词",
+        "D. 随机位置"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0810",
+      "item_type": "fill",
+      "stem": "结构填空（用中文作答）：常见语篇结构：总分总、时间顺序、问题—解决、现象—原因—对策、______（双方观点对举）。",
+      "answer": "对比（正反对照）",
+      "kps": [
+        "kp_eng9_red9_structure"
+      ],
+      "difficulty": 0.4,
+      "solution": "结构类型清单：总分、时序、问题—解决、因果、对比；分析结构+区分主次=读懂篇章组织。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0811",
+      "item_type": "choice",
+      "stem": "【猜词】\nThe city's new policy bans plastic bags in supermarkets. Many shoppers now bring their own reusable bags, and the law will be extended to restaurants next year.\n问题：\"reusable\" 的构词与含义是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_word_from_context_wordform"
+      ],
+      "difficulty": 0.5,
+      "solution": "构词法推断：前缀 re-（再）+ 词根 use + 后缀 -able（可……的）= 可重复使用的；上下文（自带袋子替代塑料袋）印证。",
+      "source": "llm_generated",
+      "options": [
+        "A. re（再）+ use（用）+ able（能够）→ 可重复使用的",
+        "B. re + usable → 不能用的",
+        "C. re 是名词后缀",
+        "D. 与 use 无关"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0812",
+      "item_type": "choice",
+      "stem": "【猜词】\nSnakes are cold-blooded, so they become inactive in winter, hiding in holes and hardly eating until spring returns.\n问题：\"inactive\" 在文中可推断为：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_red9_word_from_context_wordform"
+      ],
+      "difficulty": 0.5,
+      "solution": "构词（in- 否定前缀）+语境（冬眠、躲洞、几乎不吃）双线索互证：inactive=不活跃的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不活跃的（in- 否定 + active）",
+        "B. 非常活跃的",
+        "C. 饥饿的",
+        "D. 有毒的"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0813",
+      "item_type": "fill",
+      "stem": "构词猜词填空（写出两个词的中文意思）：un + fair → ______；care + less → ______",
+      "answer": "不公平的；粗心的",
+      "kps": [
+        "kp_eng9_red9_word_from_context_wordform"
+      ],
+      "difficulty": 0.45,
+      "solution": "常见前后缀：un-/in-/dis- 否定，-able 可……的，-less 缺乏……的，-ful 充满……的；上下文+构词法双轨猜词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0814",
+      "item_type": "choice",
+      "stem": "【主题·环保】\nEvery spring, the river in our town used to smell of factory waste. Two years ago, the factory moved and volunteers planted reeds along the bank. Reeds clean the water naturally and give birds a place to nest. Last month, fishermen saw white egrets here for the first time in ten years.\n问题：What does the story mainly show?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_thm9_env_protect"
+      ],
+      "difficulty": 0.5,
+      "solution": "环保主题主线：治理（工厂迁走+种芦苇）→自然恢复（白鹭回归）；用事实论证\"治理+修复→生态回归\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. Nature can recover when pollution is controlled and people help restore it.",
+        "B. Factories should never close.",
+        "C. Reeds are useless plants.",
+        "D. Egrets are dangerous birds."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0815",
+      "item_type": "fill",
+      "stem": "【应用文·主题表达】你校英语报就 \"How to Make Our School Greener\"（如何让校园更绿色）征稿。请用英语写一段 60 词左右的短文，提出至少三条具体建议（环保与自然生态主题）。",
+      "answer": "参考范文：Our school can be greener with small actions. First, we should sort the rubbish so that paper and plastic can be recycled. Second, turning off lights and taps when leaving classrooms saves energy and water. Third, why not plant more trees and flowers around the playground? They clean the air and make our school beautiful. If everyone does a little, our campus will become a greener place. (要点：三条建议+收束呼吁)",
+      "kps": [
+        "kp_eng9_thm9_env_protect"
+      ],
+      "difficulty": 0.55,
+      "solution": "环保主题写作支架：总起（small actions）→建议条列（First/Second/Third + should/why not）→呼吁收束；建议要具体可执行。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0816",
+      "item_type": "choice",
+      "stem": "在\"环境保护与自然生态\"主题语境中，下列表达恰当的有（多选）：",
+      "answer": "A,C,D",
+      "kps": [
+        "kp_eng9_thm9_env_protect"
+      ],
+      "difficulty": 0.5,
+      "solution": "环保主题语言：sort rubbish（垃圾分类）、save water/electricity（节水节电）、plant trees（植树减污）皆为恰当表达；B 滥伐树木破坏环境。",
+      "source": "llm_generated",
+      "options": [
+        "A. We should sort the rubbish before throwing it away.",
+        "B. Cutting down more trees helps the environment.",
+        "C. Saving water and electricity is everyone's duty.",
+        "D. Planting trees can reduce air pollution."
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0817",
+      "item_type": "choice",
+      "stem": "【主题·志愿服务】\nEvery Saturday morning, a group of students visits the community centre. Some read newspapers to elderly people whose eyesight is weak; others teach them to use smartphones to make video calls. \"Their smiles make me feel my Saturday is well spent,\" said Lin Tao, a ninth-grader.\n问题：What do the student volunteers do at the centre?",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_thm9_volunteer"
+      ],
+      "difficulty": 0.5,
+      "solution": "志愿服务主题细节：读报（为视力弱的老人）+教智能手机视频通话；志愿精神=用所长服务他人（well spent 的价值感）。",
+      "source": "llm_generated",
+      "options": [
+        "A. They read to the elderly and teach them to use smartphones.",
+        "B. They clean the streets.",
+        "C. They sell newspapers.",
+        "D. They play football."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0818",
+      "item_type": "fill",
+      "stem": "【应用文·主题表达】以 \"I Want to Be a Volunteer\"（我想当志愿者）为题，用英语写一段 60 词左右的短文：想参加什么志愿活动、能做什么、为什么想参加（志愿服务与社区主题）。",
+      "answer": "参考范文：I want to be a volunteer at the city library this summer. I can help put books back on the shelves and guide young readers to find stories they like. I am patient and careful, and I love reading myself. Volunteering will not only help others but also make my holiday meaningful. Helping others is the best way to grow. (要点：活动+能做的事+理由+意义)",
+      "kps": [
+        "kp_eng9_thm9_volunteer"
+      ],
+      "difficulty": 0.55,
+      "solution": "志愿主题写作支架：志愿岗位+个人能力匹配+动机（帮助他人/成长自己）+意义升华。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0819",
+      "item_type": "choice",
+      "stem": "关于\"志愿服务与公共服务\"主题的表达，恰当的有（多选）：",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_eng9_thm9_volunteer"
+      ],
+      "difficulty": 0.5,
+      "solution": "志愿主题语言：volunteer at（在……做志愿）、make our community warmer（温暖社区）、help clean the park（帮清洁公园）；C 与志愿精神相悖。",
+      "source": "llm_generated",
+      "options": [
+        "A. I'd like to volunteer at the old people's home.",
+        "B. Volunteering makes our community warmer.",
+        "C. 志愿服务只是浪费时间",
+        "D. Students can help clean the park at weekends."
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0820",
+      "item_type": "choice",
+      "stem": "【多模态·非文字资源】一页公益广告：左侧柱状图（逐年上升的碳排放柱形，红色渐深），右侧一个哭泣的地球卡通形象，下方标语 \"Small changes, big difference.\" 与一行小字 \"Ride. Reuse. Recycle.\"\n问题：图中的柱状图与红色渐深主要传达了什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_vie9_nonverbal_resource"
+      ],
+      "difficulty": 0.5,
+      "solution": "非文字资源表意：图表（数据趋势）+色彩（红色渐深=预警升级）+形象（哭泣地球=情感诉求）+文字（行动号召）多模态协同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 碳排放持续上升、形势日趋严峻的紧迫感",
+        "B. 广告想推销红色颜料",
+        "C. 地球很健康",
+        "D. 与环保无关"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0821",
+      "item_type": "choice",
+      "stem": "阅读带表格的说明文时，表格这类非文字资源的作用通常是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_vie9_nonverbal_resource"
+      ],
+      "difficulty": 0.45,
+      "solution": "表格功能：结构化呈现数据供比对；符号（★/↑）、色彩（红绿）也各有编码意义——图文互补建构意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. 压缩并列呈现数据，便于对比和快速获取信息",
+        "B. 代替文章标题",
+        "C. 纯装饰",
+        "D. 增加纸张成本"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0822",
+      "item_type": "fill",
+      "stem": "多模态填空（用中文作答）：语篇中的图像、表格、符号和______等非文字资源与文字共同传达意义，理解时要结合起来解读。",
+      "answer": "色彩（颜色）",
+      "kps": [
+        "kp_eng9_vie9_nonverbal_resource"
+      ],
+      "difficulty": 0.45,
+      "solution": "非文字资源四类：图像、表格、符号、色彩；识别其编码规则（趋势、等级、情感）是多模态素养核心。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0823",
+      "item_type": "choice",
+      "stem": "【完形·四会词汇】\nLast month our class ___ money for a village school library. We sold old books, and some parents ___ hand-made cakes at our stall. In the end we sent the school 300 new books.",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "四会核心词在语篇中的运用：raise money（筹款）、sell-sold（卖）；过去时间 Last month 决定用过去式。",
+      "source": "llm_generated",
+      "options": [
+        "A. raised; sold",
+        "B. rose; buy",
+        "C. lifted; sold",
+        "D. raise; sold"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0824",
+      "item_type": "choice",
+      "stem": "在写作中正确运用核心词汇：想表达\"这个发明对老人很有用\"，最准确的句子是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "综合掌握=会拼写（useful）、会搭配（be useful for）、会正确的词形与名词（the elderly 表老年人群）。",
+      "source": "llm_generated",
+      "options": [
+        "A. This invention is very useful for the elderly.",
+        "B. This invention very use for old mans.",
+        "C. This invent are useful to elderly.",
+        "D. This invention is usefully for the olds."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0825",
+      "item_type": "fill",
+      "stem": "四会运用填空（用所给词的适当形式）：He made a wise ______ (decide) to study abroad. The ______ (develop) of the village surprised everyone.",
+      "answer": "decision; development",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.45,
+      "solution": "1600 词综合掌握：动词变名词（decide→decision, develop→development）等派生形式也要求能听、说、读、写。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0826",
+      "item_type": "choice",
+      "stem": "\"last\" 在下面哪一句中意为\"持续\"？",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_voc9_polysemy"
+      ],
+      "difficulty": 0.45,
+      "solution": "last 多义：动词\"持续\"（A）；形容词\"最后的\"（B/C）；副词\"上周\"（D）。语境定词义。",
+      "source": "llm_generated",
+      "options": [
+        "A. The meeting will last two hours.",
+        "B. December is the last month of the year.",
+        "C. He was the last to arrive.",
+        "D. She bought a new dress last week."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0827",
+      "item_type": "choice",
+      "stem": "【语境义】读句子选择 run 的正确含义：\"The factory runs twenty-four hours a day, and a river runs past its gate.\"\n两个 run 的意思分别是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng9_voc9_polysemy"
+      ],
+      "difficulty": 0.5,
+      "solution": "一词多义：工厂\"运转\"（runs twenty-four hours）与河水\"流淌\"（runs past）；同词异义须依搭配与语境选定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 运转；流淌",
+        "B. 跑步；跑步",
+        "C. 经营；流淌",
+        "D. 运转;奔跑"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0828",
+      "item_type": "fill",
+      "stem": "语境义填空（用中文分别写出两处 light 的意思）：\"The room is light and airy. Please light the candle.\" 第一处（形容词）意为______；第二处（动词）意为______。",
+      "answer": "明亮的；点燃",
+      "kps": [
+        "kp_eng9_voc9_polysemy"
+      ],
+      "difficulty": 0.45,
+      "solution": "polysemy 处理策略：先看词性（形容词/动词），再看搭配对象（room 明亮 / candle 点燃），在语境中选定词义。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

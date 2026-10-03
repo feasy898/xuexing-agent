@@ -1061,6 +1061,2256 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0307",
+      "item_type": "choice",
+      "stem": "【阅读·学校生活】\nIn American schools, many students go to school by yellow school bus. They usually have lunch at the school cafeteria and can choose different food. After school, they often play baseball or basketball. In China, most students walk or ride to school, and they do morning exercises together before class.\n问题：What do many American students do after school according to the passage?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_school_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "细节题：原文 After school, they often play baseball or basketball；做操是中国学生的活动，其余选项与原文不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. They play baseball or basketball.",
+        "B. They do morning exercises.",
+        "C. They cook lunch at home.",
+        "D. They drive cars to school."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0308",
+      "item_type": "choice",
+      "stem": "关于中外学校生活的异同，下列说法正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_school_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "文化比较常识：中国学校普遍有课间操/早操；美国常见黄色校车。B、C、D 都以偏概全或与常识相反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中国学生常在课前集体做操，美国学生常乘黄色校车上学。",
+        "B. 全世界学生都在同一时间上学。",
+        "C. 美国学校没有体育活动。",
+        "D. 中国学生从来不在学校吃午饭。"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0309",
+      "item_type": "fill",
+      "stem": "学校生活比较填空（用中文作答）：英语国家学生常说的 \"school uniform\" 指的是学校的______（穿在身上的统一服装）。",
+      "answer": "校服",
+      "kps": [
+        "kp_eng4_cul4_school_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "school uniform（校服）是中外学校生活比较的常见话题词；了解课程、校服、上学方式、校园活动的异同能加深文化理解。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0310",
+      "item_type": "choice",
+      "stem": "篮球、足球、乒乓球都是常见的体育运动。\"乒乓球\"的英文是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_sport_game"
+      ],
+      "difficulty": 0.35,
+      "solution": "table tennis（乒乓球）是中国人特别擅长的球类运动；basketball 篮球、football 足球、swimming 游泳。",
+      "source": "llm_generated",
+      "options": [
+        "A. table tennis",
+        "B. basketball",
+        "C. football",
+        "D. swimming"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0311",
+      "item_type": "choice",
+      "stem": "【阅读·儿童游戏】\nChildren around the world love games. In China, kids enjoy kicking shuttlecocks and jumping rubber bands. In America, children like playing hopscotch: they draw boxes on the ground and jump into them one by one. Both Chinese and American children love hide-and-seek.\n问题：Which game do both Chinese and American children love?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_sport_game"
+      ],
+      "difficulty": 0.4,
+      "solution": "细节题：最后一句 Both Chinese and American children love hide-and-seek（捉迷藏是共同喜爱的游戏）；踢毽子、跳皮筋是中国孩子玩得多，跳房子是美国孩子的游戏。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hide-and-seek.",
+        "B. Kicking shuttlecocks.",
+        "C. Jumping rubber bands.",
+        "D. Hopscotch."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0312",
+      "item_type": "fill",
+      "stem": "游戏词块填空（用英文作答）：很多国家孩子都玩\"捉迷藏\"，英文是 hide-and-______。",
+      "answer": "seek",
+      "kps": [
+        "kp_eng4_cul4_sport_game"
+      ],
+      "difficulty": 0.35,
+      "solution": "hide-and-seek（捉迷藏）是中外儿童共同的经典游戏；了解中外体育运动与儿童游戏能体会文化的多样与相通。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0313",
+      "item_type": "choice",
+      "stem": "吃西餐时，摆在盘子左边的小叉子和右边的小刀子，正确的使用顺序是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_table_manner"
+      ],
+      "difficulty": 0.35,
+      "solution": "西餐礼仪：左叉右刀，左手持叉固定食物、右手持刀切割，切好后可用叉子取食。",
+      "source": "llm_generated",
+      "options": [
+        "A. 左手拿叉按住食物，右手拿刀切割",
+        "B. 右手拿叉左手拿刀",
+        "C. 两只手都拿刀",
+        "D. 用手直接抓"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0314",
+      "item_type": "choice",
+      "stem": "在西餐餐桌上，下列行为得体的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_cul4_table_manner"
+      ],
+      "difficulty": 0.4,
+      "solution": "中西餐桌礼仪都讲究咀嚼不出声、举止文雅；B、C、D 都是失礼行为。",
+      "source": "llm_generated",
+      "options": [
+        "A. 咀嚼时闭上嘴，不发出很大声音",
+        "B. 大声打嗝表示好吃",
+        "C. 把刀当玩具挥舞",
+        "D. 站到桌子上夹菜"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0315",
+      "item_type": "fill",
+      "stem": "餐具词块填空（用英文作答）：西方进餐主要用刀（knife）和______（叉子，四齿餐具）。",
+      "answer": "fork",
+      "kps": [
+        "kp_eng4_cul4_table_manner"
+      ],
+      "difficulty": 0.35,
+      "solution": "西餐主要餐具：knife 刀、fork 叉、spoon 勺、plate 盘、napkin 餐巾；与中餐以筷子（chopsticks）为主不同。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0316",
+      "item_type": "choice",
+      "stem": "【语篇要素】\nMy robot dog is small and white. It has two blue eyes and can walk and sing. When I come home, it runs to me like a real dog.\n问题：这段介绍语篇介绍的\"对象\"是什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_dis4_intro_elements"
+      ],
+      "difficulty": 0.35,
+      "solution": "介绍类语篇第一要素是\"对象\"：全文围绕 my robot dog（机器狗）展开。",
+      "source": "llm_generated",
+      "options": [
+        "A. A robot dog.",
+        "B. A real cat.",
+        "C. A toy car.",
+        "D. A boy."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0317",
+      "item_type": "choice",
+      "stem": "介绍类语篇通常包含\"对象—特征—举例\"三个要素。下列哪句属于\"举例\"？",
+      "answer": "B",
+      "kps": [
+        "kp_eng4_dis4_intro_elements"
+      ],
+      "difficulty": 0.4,
+      "solution": "For example（例如）引出图书馆藏书的具体例子，支撑\"学校大而美\"的特征；A 是特征，C 引出对象，D 是情感评价。",
+      "source": "llm_generated",
+      "options": [
+        "A. My school is big and beautiful.",
+        "B. For example, we have a library with 20,000 books.",
+        "C. This is my school.",
+        "D. I love my school."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0318",
+      "item_type": "fill",
+      "stem": "语篇要素填空（用中文作答，用顿号分隔）：介绍类语篇的基本要素包括：介绍对象、主要______和具体______。",
+      "answer": "特征；举例（例子）",
+      "kps": [
+        "kp_eng4_dis4_intro_elements"
+      ],
+      "difficulty": 0.35,
+      "solution": "介绍类语篇三要素：对象（写谁/什么）、特征（什么样）、举例（用事例说明特征）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0319",
+      "item_type": "choice",
+      "stem": "【故事结构】\n① One morning, Little Pig finds a big watermelon in the garden. ② He wants to eat it, but it is too heavy to carry. He asks his friends for help. ③ Together they roll the watermelon home and share it happily.\n问题：第②段是故事的哪一部分？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_dis4_story_structure"
+      ],
+      "difficulty": 0.35,
+      "solution": "故事三段式：①开头（发现问题），②中间（经过：搬不动→求助），③结尾（结果：分享西瓜）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中间（经过）",
+        "B. 开头",
+        "C. 结尾",
+        "D. 标题"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0320",
+      "item_type": "choice",
+      "stem": "故事的结尾部分通常回答的问题是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_dis4_story_structure"
+      ],
+      "difficulty": 0.4,
+      "solution": "开头交代人物时间地点，中间展开事件，结尾交代结果（问题是否解决、结局如何）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 最后怎么样了？问题解决了吗？",
+        "B. 故事里都有谁？",
+        "C. 故事发生在什么时间？",
+        "D. 作者叫什么名字？"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0321",
+      "item_type": "fill",
+      "stem": "故事结构填空（用中文作答，用顿号分隔）：按顺序写出故事的三部分：______、中间、______。",
+      "answer": "开头；结尾",
+      "kps": [
+        "kp_eng4_dis4_story_structure"
+      ],
+      "difficulty": 0.35,
+      "solution": "配图故事按\"开头—中间—结尾\"展开事件，读图排序时先找开头（人物+时间地点）和结尾（结果）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0322",
+      "item_type": "choice",
+      "stem": "Look! There are three ___ eating grass on the hill.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_plural"
+      ],
+      "difficulty": 0.35,
+      "solution": "sheep 单复数同形；C 应为 boxes（s/x/ch/sh 结尾加 es）；D 应为 babies（辅音字母+y 变 y 为 i 加 es）。",
+      "source": "llm_generated",
+      "options": [
+        "A. sheep",
+        "B. sheeps",
+        "C. boxs",
+        "D. babys"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0323",
+      "item_type": "choice",
+      "stem": "下列名词变复数正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_plural"
+      ],
+      "difficulty": 0.4,
+      "solution": "watch 以 ch 结尾加 es；leaf 变 f 为 ves（leaves）；tomato 加 es（tomatoes）；story 变 y 为 ies（stories）。",
+      "source": "llm_generated",
+      "options": [
+        "A. watch → watches",
+        "B. leaf → leafs",
+        "C. tomato → tomatos",
+        "D. story → storys"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0324",
+      "item_type": "fill",
+      "stem": "复数填空（写出两个词的复数形式，用分号分隔）：bus → ______；knife → ______",
+      "answer": "buses; knives",
+      "kps": [
+        "kp_eng4_gra4_plural"
+      ],
+      "difficulty": 0.35,
+      "solution": "bus 以 s 结尾加 es（buses）；knife 以 fe 结尾去 f/fe 加 ves（knives）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0325",
+      "item_type": "choice",
+      "stem": "My dad usually ___ tea after dinner, but today he ___ coffee now.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_present_vs_ing"
+      ],
+      "difficulty": 0.4,
+      "solution": "usually 表经常性动作用一般现在时（第三人称单数 drinks）；now 提示此刻正在进行用现在进行时 is drinking。",
+      "source": "llm_generated",
+      "options": [
+        "A. drinks; is drinking",
+        "B. drink; drinks",
+        "C. is drinking; drinks",
+        "D. drinks; drink"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0326",
+      "item_type": "choice",
+      "stem": "看图描述：图 1 是男孩每天放学踢球（习惯）；图 2 是此刻男孩正在跑道上跑。图 2 的句子是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_present_vs_ing"
+      ],
+      "difficulty": 0.4,
+      "solution": "此刻正在发生的动作用现在进行时（is running）；every day 的一般现在时描述习惯（图 1）。",
+      "source": "llm_generated",
+      "options": [
+        "A. The boy is running on the track now.",
+        "B. The boy runs every day.",
+        "C. The boy ran yesterday.",
+        "D. The boy will run tomorrow."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0327",
+      "item_type": "fill",
+      "stem": "时态对比填空：Tom often ______ (watch) TV in the evening. Look! He ______ (watch) a cartoon now.",
+      "answer": "watches; is watching",
+      "kps": [
+        "kp_eng4_gra4_present_vs_ing"
+      ],
+      "difficulty": 0.4,
+      "solution": "often 表习惯用一般现在时 watches；Look! + now 用现在进行时 is watching。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0328",
+      "item_type": "choice",
+      "stem": "句子 \"Birds fly.\" 的基本结构是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_svo"
+      ],
+      "difficulty": 0.35,
+      "solution": "Birds（主语）+ fly（谓语动词），没有宾语，是\"主谓\"结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 主语 + 谓语（主谓结构）",
+        "B. 主语 + 谓语 + 宾语",
+        "C. 主语 + 系动词 + 表语",
+        "D. 只有宾语"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0329",
+      "item_type": "choice",
+      "stem": "找出句子 \"The boy plays football.\" 的主语、谓语和宾语：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_svo"
+      ],
+      "difficulty": 0.4,
+      "solution": "主语是动作发出者 The boy，谓语是动词 plays，宾语是动作对象 football；把句子还原为\"主+谓(+宾)\"骨架便于理解长句。",
+      "source": "llm_generated",
+      "options": [
+        "A. 主语 The boy；谓语 plays；宾语 football",
+        "B. 主语 plays；谓语 The boy；宾语 football",
+        "C. 主语 football；谓语 plays；宾语 The boy",
+        "D. 主语 The；谓语 boy plays；宾语 football"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0330",
+      "item_type": "fill",
+      "stem": "句型分析填空（用中文作答）：句子 \"My mother cooks dinner.\" 中，cooks 是______（句子成分），dinner 是______（句子成分）。",
+      "answer": "谓语；宾语",
+      "kps": [
+        "kp_eng4_gra4_svo"
+      ],
+      "difficulty": 0.4,
+      "solution": "动词 cooks 作谓语，动作对象 dinner 作宾语；主谓宾是英语简单句最常用的骨架。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0331",
+      "item_type": "choice",
+      "stem": "We have an English lesson ___ Monday morning.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_time_prep"
+      ],
+      "difficulty": 0.35,
+      "solution": "具体某天（或某天的上午/下午）用 on：on Monday morning；in 用于年/月/季节，at 用于时刻。",
+      "source": "llm_generated",
+      "options": [
+        "A. on",
+        "B. in",
+        "C. at",
+        "D. for"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0332",
+      "item_type": "choice",
+      "stem": "My birthday is ___ August. I was born ___ 2015.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_time_prep"
+      ],
+      "difficulty": 0.4,
+      "solution": "月份（August）和年份（2015）都用 in；on 接具体日期，at 接时刻。",
+      "source": "llm_generated",
+      "options": [
+        "A. in; in",
+        "B. on; on",
+        "C. at; in",
+        "D. in; on"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0333",
+      "item_type": "fill",
+      "stem": "介词填空（两空，用 in/on/at）：School starts ___ eight o'clock ___ the morning.",
+      "answer": "at; in",
+      "kps": [
+        "kp_eng4_gra4_time_prep"
+      ],
+      "difficulty": 0.35,
+      "solution": "时刻 eight o'clock 用 at；in the morning 是固定搭配（泛指早上）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0334",
+      "item_type": "choice",
+      "stem": "把句子改为一般疑问句：She likes pandas. 正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_yesno"
+      ],
+      "difficulty": 0.35,
+      "solution": "实义动词的一般疑问句借助 does，动词恢复原形 like；C 错在保留三单 s。",
+      "source": "llm_generated",
+      "options": [
+        "A. Does she like pandas?",
+        "B. Do she like pandas?",
+        "C. Does she likes pandas?",
+        "D. Is she like pandas?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0335",
+      "item_type": "choice",
+      "stem": "— Are you from Beijing? — Yes, ___.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_gra4_yesno"
+      ],
+      "difficulty": 0.4,
+      "solution": "be 动词一般疑问句用 Yes, I am / No, I'm not 回答，主谓保持 I am。",
+      "source": "llm_generated",
+      "options": [
+        "A. I am",
+        "B. I is",
+        "C. you are",
+        "D. I are"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0336",
+      "item_type": "fill",
+      "stem": "句型转换填空（改为一般疑问句，写出完整问句）：They play football after school.\n→ ______ they ______ football after school?",
+      "answer": "Do; play",
+      "kps": [
+        "kp_eng4_gra4_yesno"
+      ],
+      "difficulty": 0.4,
+      "solution": "主语不是三单的一般疑问句借 do 提前，动词用原形：Do they play football after school?",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0337",
+      "item_type": "choice",
+      "stem": "【语音语调·态度】听两个句子（文字稿）：\n① Wow! What a beautiful picture!（语调上扬、声音上挑）\n② Oh, it's you again.（语调低平、缓慢）\n问题：句子①表达的主要态度是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_attitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "语调上扬+感叹句式 Wow! What a ...! 表达惊讶和赞美；语调低平缓慢则可能表达冷淡或无奈。",
+      "source": "llm_generated",
+      "options": [
+        "A. 惊讶与赞叹",
+        "B. 生气",
+        "C. 无所谓",
+        "D. 悲伤"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0338",
+      "item_type": "choice",
+      "stem": "【语音语调·态度】听句子（文字稿）：\"You did WHAT?!\"（重读 WHAT，语调急升）说话人的态度最可能是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_attitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "重音落在 WHAT + 急升调传达震惊与难以置信；语调高低轻重是判断态度的重要线索。",
+      "source": "llm_generated",
+      "options": [
+        "A. 震惊/难以置信",
+        "B. 平静地同意",
+        "C. 礼貌地感谢",
+        "D. 悲伤地道别"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0339",
+      "item_type": "fill",
+      "stem": "语调判断填空（用中文作答）：一般疑问句通常用______调（升/降），陈述事实的陈述句通常用______调（升/降）。",
+      "answer": "升；降",
+      "kps": [
+        "kp_eng4_lis4_attitude"
+      ],
+      "difficulty": 0.35,
+      "solution": "英语语调规律：一般疑问句句尾升调，陈述句/特殊疑问句句尾降调；语调变化还可表达惊讶、怀疑等态度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0340",
+      "item_type": "choice",
+      "stem": "【听力·定向信息】听前任务：找出\"地点\"。听对话（文字稿）：\nM: Hi, Anna. Where are you now?\nW: I'm at the bus stop near the library.\nM: OK, wait there. I'll come in ten minutes.\n问题：Where is Anna?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_specific_info"
+      ],
+      "difficulty": 0.4,
+      "solution": "听前明确要抓\"地点\"：bus stop near the library 是关键定位信息；只关注目标信息，不被其他细节干扰。",
+      "source": "llm_generated",
+      "options": [
+        "A. At the bus stop near the library.",
+        "B. At school.",
+        "C. In the library.",
+        "D. At home."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0341",
+      "item_type": "choice",
+      "stem": "【听力·定向信息】听前任务：找出\"时间\"。听独白（文字稿）：\nW: The school sports meeting will be on Friday, not on Wednesday. It starts at nine fifteen in the morning.\n问题：When does the sports meeting start?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_specific_info"
+      ],
+      "difficulty": 0.45,
+      "solution": "听数字与时间要防干扰项：not on Wednesday 排除周三，nine fifteen（9:15）是正确时间。",
+      "source": "llm_generated",
+      "options": [
+        "A. At 9:15 on Friday.",
+        "B. At 9:50 on Wednesday.",
+        "C. At 9:15 on Wednesday.",
+        "D. At 9:00 on Friday."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0342",
+      "item_type": "fill",
+      "stem": "听力策略填空（用中文作答）：听前先明确要抓的关键信息（如人名、数字、时间、地点），听中准确定位并边听边______，这是获取指定信息的有效方法。",
+      "answer": "记录（记笔记）",
+      "kps": [
+        "kp_eng4_lis4_specific_info"
+      ],
+      "difficulty": 0.35,
+      "solution": "定向听力三步：听前定目标→听中定位关键词→边听边记录，准确捕捉指定信息。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0343",
+      "item_type": "choice",
+      "stem": "把每周 30 分钟课外视听变成日常习惯，最有效的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_weekly30_g"
+      ],
+      "difficulty": 0.3,
+      "solution": "习惯养成的关键是\"固定时间+小步坚持\"：每天 5 分钟，一周即 35 分钟以上，超过 30 分钟标准。",
+      "source": "llm_generated",
+      "options": [
+        "A. 固定时间（如每晚睡前 5 分钟）听英语儿歌或看小动画",
+        "B. 想起来才听，一年听两次",
+        "C. 只在考试前一天听",
+        "D. 用中文节目代替英语视听"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0344",
+      "item_type": "choice",
+      "stem": "下列哪种材料适合作为每周课外英语视听的内容？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lis4_weekly30_g"
+      ],
+      "difficulty": 0.35,
+      "solution": "课外视听材料选择：语速较慢、画面辅助理解、语言自然地道，适合小学阶段水平。",
+      "source": "llm_generated",
+      "options": [
+        "A. 语速较慢、画面丰富的英语动画或分级读物音频",
+        "B. 语速飞快的成人新闻",
+        "C. 无声的字幕文本",
+        "D. 纯中文配音的动画"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0345",
+      "item_type": "fill",
+      "stem": "习惯指标填空（用数字作答）：课外英语视听应保持每周不少于______分钟。",
+      "answer": "30",
+      "kps": [
+        "kp_eng4_lis4_weekly30_g"
+      ],
+      "difficulty": 0.3,
+      "solution": "每周不少于 30 分钟的课外视听是小学阶段的常规要求，重在形成习惯、长期坚持。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0346",
+      "item_type": "choice",
+      "stem": "英语课上老师组织\"单词接龙\"游戏，带着兴趣参与的表现是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lsm4_joyful_participate"
+      ],
+      "difficulty": 0.25,
+      "solution": "兴趣与愉快情绪是学习动力：积极参与、互相鼓励，游戏中学到的单词记得更牢。",
+      "source": "llm_generated",
+      "options": [
+        "A. 积极思考，笑着接龙，为同伴鼓掌",
+        "B. 抱怨游戏无聊",
+        "C. 轮到自己就跳过",
+        "D. 只顾玩橡皮"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0347",
+      "item_type": "choice",
+      "stem": "下列哪种课外活动既是\"带着兴趣参与\"又能练英语？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lsm4_joyful_participate"
+      ],
+      "difficulty": 0.3,
+      "solution": "排练英语小剧把兴趣（表演）与语言练习结合，游戏、儿歌、表演中保持兴趣和愉快情绪。",
+      "source": "llm_generated",
+      "options": [
+        "A. 和同学排练英语小剧并表演",
+        "B. 独自发呆",
+        "C. 拒绝一切集体活动",
+        "D. 只看中文动画"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0348",
+      "item_type": "fill",
+      "stem": "参与态度填空（用中文作答）：英语课上唱歌、游戏、表演时，应保持______的情绪，大胆参与（填\"愉快\"或\"抗拒\"）。",
+      "answer": "愉快",
+      "kps": [
+        "kp_eng4_lsm4_joyful_participate"
+      ],
+      "difficulty": 0.25,
+      "solution": "带着兴趣、愉快参与英语活动，是保持学习动力的重要情感策略。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0349",
+      "item_type": "choice",
+      "stem": "把 apple、cat、dog、banana、tiger 分类整理，正确的分法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lsm4_word_sort"
+      ],
+      "difficulty": 0.35,
+      "solution": "按主题类别分类（水果/动物）整理单词，形成有意义的词群，便于记忆和复习。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水果类：apple, banana；动物类：cat, dog, tiger",
+        "B. 全放一类",
+        "C. 按字母多少分",
+        "D. 随便乱放"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0350",
+      "item_type": "choice",
+      "stem": "下面哪种单词整理方法便于复习？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_lsm4_word_sort"
+      ],
+      "difficulty": 0.4,
+      "solution": "分类法整理（主题/词性/首字母）让单词成组、成网，配合表格复习效率更高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按主题（食物/动物/颜色）或词性分类制成表格",
+        "B. 把所有单词抄成无序长串",
+        "C. 撕掉单词表",
+        "D. 只背自己喜欢的一个词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0351",
+      "item_type": "fill",
+      "stem": "单词分类填空（用中文作答）：把 red、run、blue、jump、green 按词性分类：red/blue/green 属于______词；run/jump 属于______词。",
+      "answer": "形容词；动词",
+      "kps": [
+        "kp_eng4_lsm4_word_sort"
+      ],
+      "difficulty": 0.35,
+      "solution": "按词性分类：颜色词 red/blue/green 是形容词，动作词 run/jump 是动词；分类整理便于成块记忆。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0352",
+      "item_type": "choice",
+      "stem": "学过 c-a-t /k/-/æ/-/t/ 的拼读后，见到生词 map，可以试着拼读为：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_pha4_decode"
+      ],
+      "difficulty": 0.35,
+      "solution": "迁移拼读规则：辅音 m + 短元音 æ + 辅音 p，直接拼出 map；a 在闭音节常发 /æ/。",
+      "source": "llm_generated",
+      "options": [
+        "A. /m/-/æ/-/p/，类似\"麦普\"",
+        "B. /m/-/eɪ/-/p/",
+        "C. /m/-/ɑː/-/p/",
+        "D. 无法拼读"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0353",
+      "item_type": "choice",
+      "stem": "用拼读规则读生词 shop，正确的音是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_pha4_decode"
+      ],
+      "difficulty": 0.4,
+      "solution": "sh 读 /ʃ/，o 在闭音节读短音 /ɒ/，p 读 /p/，拼成 /ʃɒp/；把已感知的拼读规则迁移到新词。",
+      "source": "llm_generated",
+      "options": [
+        "A. /ʃɒp/",
+        "B. /skɒp/",
+        "C. /ʃəʊp/",
+        "D. /sɒp/"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0354",
+      "item_type": "fill",
+      "stem": "拼读填空（用英文写出单词）：按音 /h/-/ɒ/-/t/ 拼出的单词是______（热的）。",
+      "answer": "hot",
+      "kps": [
+        "kp_eng4_pha4_decode"
+      ],
+      "difficulty": 0.35,
+      "solution": "音形对应：/h/-/ɒ/-/t/ → h-o-t；能独立拼读没学过的单词是自主阅读的重要能力。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0355",
+      "item_type": "choice",
+      "stem": "跟读单词 tomorrow（to-MOR-row）时，重音在第几个音节？",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_pha4_stress_copy"
+      ],
+      "difficulty": 0.35,
+      "solution": "tomorrow /təˈmɒrəʊ/ 重音在第二音节，朗读时把 MOR 读得最响。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第二个",
+        "B. 第一个",
+        "C. 第三个",
+        "D. 没有重音"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0356",
+      "item_type": "choice",
+      "stem": "下列单词与 teacher 重音位置相同（都在第一音节）的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_pha4_stress_copy"
+      ],
+      "difficulty": 0.4,
+      "solution": "teacher /ˈtiːtʃə/ 重音在第一音节；hospital /ˈhɒspɪtl/ 同样；banana、about、Japan 重音都在第二音节。",
+      "source": "llm_generated",
+      "options": [
+        "A. hospital",
+        "B. banana",
+        "C. about",
+        "D. Japan"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0357",
+      "item_type": "fill",
+      "stem": "重音标读填空（用中文作答）：朗读多音节单词时，把重音符号 ˈ 标在重读音节前，并读得______（更响/更轻）。",
+      "answer": "更响",
+      "kps": [
+        "kp_eng4_pha4_stress_copy"
+      ],
+      "difficulty": 0.35,
+      "solution": "模仿录音标注重音、朗读时重音读得响而清楚，有助于判断词类和词义、记忆单词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0358",
+      "item_type": "choice",
+      "stem": "你不小心踩了同学的脚，应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_prg4_apologise"
+      ],
+      "difficulty": 0.3,
+      "solution": "做错事/给他人添麻烦要道歉：I'm sorry（对不起）。",
+      "source": "llm_generated",
+      "options": [
+        "A. I'm sorry.",
+        "B. Thank you.",
+        "C. You're welcome.",
+        "D. Good night."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0359",
+      "item_type": "choice",
+      "stem": "上课想提问要先举手，可以说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_prg4_apologise"
+      ],
+      "difficulty": 0.35,
+      "solution": "Excuse me 用于打扰他人（插话、借过、提问）前的礼貌提示，与 I'm sorry（做错后道歉）分工不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. Excuse me, may I ask a question?",
+        "B. Stand up!",
+        "C. Sit down!",
+        "D. Go away!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0360",
+      "item_type": "fill",
+      "stem": "道歉填空（用英文作答）：A: Oh, I'm so sorry!（把你的书碰到地上了）B: That's ______.（没关系）",
+      "answer": "OK (all right)",
+      "kps": [
+        "kp_eng4_prg4_apologise"
+      ],
+      "difficulty": 0.3,
+      "solution": "道歉与回应：I'm sorry. → That's OK. / Never mind. / It doesn't matter.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0361",
+      "item_type": "choice",
+      "stem": "想借同桌的尺子，应该问：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_prg4_request_allow"
+      ],
+      "difficulty": 0.3,
+      "solution": "请求许可用 May I ...? / Can I ...?（我可以……吗），礼貌得体。",
+      "source": "llm_generated",
+      "options": [
+        "A. May I use your ruler?",
+        "B. Give me your ruler!",
+        "C. You must give me a ruler.",
+        "D. I break your ruler."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0362",
+      "item_type": "choice",
+      "stem": "— Can I go out to play now? — ___. You must finish your homework first.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_prg4_request_allow"
+      ],
+      "difficulty": 0.35,
+      "solution": "拒绝许可：Sorry, you can't（对不起，不行），后文\"先完成作业\"说明不能出去。",
+      "source": "llm_generated",
+      "options": [
+        "A. Sorry, you can't",
+        "B. Sure, you can",
+        "C. No, thanks",
+        "D. Yes, I can"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0363",
+      "item_type": "fill",
+      "stem": "请求许可填空（用英文作答）：想问老师能不能开窗，说：______ I open the window?",
+      "answer": "May (Can/Could)",
+      "kps": [
+        "kp_eng4_prg4_request_allow"
+      ],
+      "difficulty": 0.3,
+      "solution": "请求与许可：May/Can/Could I ...? 提出请求，用 Sure. / Of course. / Sorry, you can't. 回应。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0364",
+      "item_type": "choice",
+      "stem": "【阅读·细节】\nPeter has a busy Saturday. In the morning, he has a swimming class at nine. After lunch, he does his homework for two hours. At four o'clock, he plays chess with his grandpa. In the evening, he watches a cartoon with his little sister.\n问题：What does Peter do at four o'clock?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_main_detail"
+      ],
+      "difficulty": 0.35,
+      "solution": "细节定位：按时间线索 four o'clock 找到 plays chess with his grandpa；注意各活动与时间的对应。",
+      "source": "llm_generated",
+      "options": [
+        "A. He plays chess with his grandpa.",
+        "B. He has a swimming class.",
+        "C. He does his homework.",
+        "D. He watches a cartoon."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0365",
+      "item_type": "choice",
+      "stem": "【阅读·细节】\nOur new library has two floors. On the first floor, there are picture books and storybooks. On the second floor, there are science books and computers. The library is open from Tuesday to Sunday, and it is closed on Monday.\n问题：Which of the following is TRUE?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_main_detail"
+      ],
+      "difficulty": 0.4,
+      "solution": "细节比对：science books and computers 在二楼；周一只闭馆；绘本在一楼。逐项核对原文即可。",
+      "source": "llm_generated",
+      "options": [
+        "A. Science books are on the second floor.",
+        "B. The library is open on Monday.",
+        "C. Picture books are on the second floor.",
+        "D. Computers are on the first floor."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0366",
+      "item_type": "fill",
+      "stem": "阅读细节填空（用英文作答）：读句子 \"Lily goes to the park by bike with her friends on Sunday.\" 问题：How does Lily go to the park? 答：______",
+      "answer": "By bike",
+      "kps": [
+        "kp_eng4_red4_main_detail"
+      ],
+      "difficulty": 0.35,
+      "solution": "细节题定位关键词 by bike（骑自行车去），按疑问词（How）提取对应信息。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0367",
+      "item_type": "choice",
+      "stem": "【应用文·通知】\nNOTICE\nSchool Art Festival\nTime: 2:00 p.m., this Friday\nPlace: the school hall\nPlease bring your own crayons. Students who want to join the painting competition should sign up with Miss Chen before Wednesday.\n问题：If you want to join the painting competition, what must you do?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_notice_apply"
+      ],
+      "difficulty": 0.4,
+      "solution": "按通知完成任务：报名（sign up）对象 Miss Chen、截止 Wednesday；通知类应用文按\"时间—地点—要求—对象\"提取信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. Sign up with Miss Chen before Wednesday.",
+        "B. Go to the hall on Wednesday.",
+        "C. Bring a piano.",
+        "D. Tell your parents to paint."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0368",
+      "item_type": "choice",
+      "stem": "【应用文·邀请卡】\nDear Lucy,\nPlease come to my birthday party!\nTime: 3:00 p.m., Saturday\nPlace: my home (12 Garden Road)\nPlease call 8866-2211 to tell me if you can come.\n问题：What should you do after reading the invitation?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_notice_apply"
+      ],
+      "difficulty": 0.4,
+      "solution": "邀请卡的关键行动信息：打电话回复能否参加（rsvp）；时间周六 3 点、地点家中，均需核对。",
+      "source": "llm_generated",
+      "options": [
+        "A. Call 8866-2211 to reply whether I can go.",
+        "B. Go at 3:00 on Sunday.",
+        "C. Go to the park instead.",
+        "D. Do nothing."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0369",
+      "item_type": "fill",
+      "stem": "应用文任务填空（用中文作答）：读通知类应用文时，要抓住时间、地点、活动内容和______方式（怎么报名/回复）四类信息，才能按信息完成任务。",
+      "answer": "联系（报名/回复）",
+      "kps": [
+        "kp_eng4_red4_notice_apply"
+      ],
+      "difficulty": 0.35,
+      "solution": "通知、邀请卡、操作指令类应用文：提取时间、地点、要求与联系方式，据此完成报名、准备等真实任务。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0370",
+      "item_type": "choice",
+      "stem": "读到句子 \"The bird flies high in the sky.\" 但你不确定 bird 的意思。看插图上画着一只鸟。这说明插图可以帮助我们：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_pic_predict_check"
+      ],
+      "difficulty": 0.35,
+      "solution": "图文互证：读不懂时回到插图和标题求证，验证推断（bird=鸟）是否正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 验证对词义的理解是否正确",
+        "B. 完全代替朗读",
+        "C. 增加阅读难度",
+        "D. 毫无用处"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0371",
+      "item_type": "choice",
+      "stem": "【图文互证】读前预测\"文章讲海豚\"，读第一段发现反复出现 farm、cows、sheep，插图也是牧场。你应该：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_red4_pic_predict_check"
+      ],
+      "difficulty": 0.4,
+      "solution": "预测需要读中验证：文字证据（farm/cows/sheep）与插图都指向牧场，应修正预测再继续读。",
+      "source": "llm_generated",
+      "options": [
+        "A. 修正预测：文章讲的是农场生活",
+        "B. 坚持原预测不改",
+        "C. 合上书不读了",
+        "D. 把 farm 想象成海洋"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0372",
+      "item_type": "fill",
+      "stem": "校验策略填空（用中文作答）：遇到读不懂的地方，应回到______和标题求证，用图文互证来校验自己的推断。",
+      "answer": "插图（图片）",
+      "kps": [
+        "kp_eng4_red4_pic_predict_check"
+      ],
+      "difficulty": 0.35,
+      "solution": "图文互证：文字线索与插图、标题相互印证，及时修正理解偏差。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0373",
+      "item_type": "choice",
+      "stem": "描述一幅\"公园里两个孩子在放风筝\"的图片，最合适的开头是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_describe_thing"
+      ],
+      "difficulty": 0.35,
+      "solution": "看图描述句型：In this picture, ... + 现在进行时（are flying kites）描述所见。",
+      "source": "llm_generated",
+      "options": [
+        "A. In this picture, two children are flying kites in the park.",
+        "B. I don't know.",
+        "C. Two children was fly kite.",
+        "D. Look at me!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0374",
+      "item_type": "choice",
+      "stem": "描述图片时把句子说连贯，可以用的连接词是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_describe_thing"
+      ],
+      "difficulty": 0.4,
+      "solution": "用 and、then、but 等连接词把简单句连成连贯的小段描述。",
+      "source": "llm_generated",
+      "options": [
+        "A. and、then、but",
+        "B. 不断重复同一个词",
+        "C. 只说一个词就停",
+        "D. 中英文混杂乱说"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0375",
+      "item_type": "fill",
+      "stem": "图片描述填空（用英文完成句子）：看图（一只猫在椅子下睡觉）：Look! A cat ______ sleeping under the chair.",
+      "answer": "is",
+      "kps": [
+        "kp_eng4_spk4_describe_thing"
+      ],
+      "difficulty": 0.35,
+      "solution": "描述图中正在发生的动作：a cat + is sleeping（现在进行时），围绕图片用简单连贯的语句描述。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0376",
+      "item_type": "choice",
+      "stem": "作自我介绍时，不常包含的信息是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_personal_profile"
+      ],
+      "difficulty": 0.35,
+      "solution": "自我介绍围绕姓名（name）、年龄（age）、家庭（family）、爱好（hobbies）等话题；鞋码不是常规内容。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我的鞋码是 35 码，全班都必须记住",
+        "B. My name is Li Hua.",
+        "C. I am ten years old.",
+        "D. There are four people in my family."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0377",
+      "item_type": "choice",
+      "stem": "介绍家庭时说到\"我爸爸是医生，他喜欢看书\"，正确的句子是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_personal_profile"
+      ],
+      "difficulty": 0.4,
+      "solution": "介绍家庭的基本句型：My father is a doctor（职业）+ He likes reading（爱好，三单 + 动名词）。",
+      "source": "llm_generated",
+      "options": [
+        "A. My father is a doctor. He likes reading.",
+        "B. My father is doctor. He like read.",
+        "C. My father are a doctor. He likes read.",
+        "D. I father is a doctor."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0378",
+      "item_type": "fill",
+      "stem": "自我介绍填空（用英文补全）：Hello! My ______ is Wang Fang. I am nine ______ old.（第一空：名字；第二空：岁）",
+      "answer": "name; years",
+      "kps": [
+        "kp_eng4_spk4_personal_profile"
+      ],
+      "difficulty": 0.35,
+      "solution": "个人信息句块：My name is ... / I am ... years old / I like ...；连贯说出姓名、年龄、家庭成员等。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0379",
+      "item_type": "choice",
+      "stem": "朗读对话时，属于\"正确流利\"的表现是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_read_dialogue"
+      ],
+      "difficulty": 0.3,
+      "solution": "朗读要求：语音正确、语调基本到位、不添字漏字；对话朗读还要分角色、有来有往。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按角色自然对话，语音正确、不添字漏字",
+        "B. 一个词卡十遍",
+        "C. 跳过不会的句子",
+        "D. 用方言语音乱读"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0380",
+      "item_type": "choice",
+      "stem": "朗读长句子 \"The little girl with a red hat is walking in the forest.\" 断句正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_spk4_read_dialogue"
+      ],
+      "difficulty": 0.35,
+      "solution": "按意群断句（主语部分/介词短语/谓语部分）朗读更流利自然；逐词顿读或一口气冲读都不合格。",
+      "source": "llm_generated",
+      "options": [
+        "A. The little girl / with a red hat / is walking in the forest.",
+        "B. The / little / girl / with / a / red / hat / is / walking ...（一个词一顿）",
+        "C. 一口气冲到底不停顿",
+        "D. 从后往前倒着读"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0381",
+      "item_type": "fill",
+      "stem": "朗读要求填空（用中文作答）：正确流利朗读要做到不添字、不漏字、不______读（提示：说错）。",
+      "answer": "错",
+      "kps": [
+        "kp_eng4_spk4_read_dialogue"
+      ],
+      "difficulty": 0.3,
+      "solution": "朗读达标线：不错读、不添字、不漏字，语音语调基本到位；反复跟读录音是主要练习方式。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0382",
+      "item_type": "choice",
+      "stem": "我们学唱歌、听音乐的课程是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_subjects"
+      ],
+      "difficulty": 0.3,
+      "solution": "学科词块：Music 音乐；Maths 数学、Chinese 语文、PE 体育。",
+      "source": "llm_generated",
+      "options": [
+        "A. Music",
+        "B. Maths",
+        "C. Chinese",
+        "D. PE"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0383",
+      "item_type": "choice",
+      "stem": "【课程表】\nMonday: Chinese, Maths, English\nTuesday: Maths, Music, PE\nWednesday: English, Art, Chinese\n问题：How many subjects are there on Wednesday?",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_subjects"
+      ],
+      "difficulty": 0.4,
+      "solution": "读课程表数科目：Wednesday 有 English、Art、Chinese 三门；学科词块+表格信息提取。",
+      "source": "llm_generated",
+      "options": [
+        "A. Three.",
+        "B. Two.",
+        "C. Four.",
+        "D. Five."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0384",
+      "item_type": "fill",
+      "stem": "学科词块填空（用英文作答）：在美术课上我们画画，美术课是 ______ class。",
+      "answer": "Art",
+      "kps": [
+        "kp_eng4_voc4_subjects"
+      ],
+      "difficulty": 0.3,
+      "solution": "学科课程词块：Chinese 语文、Maths 数学、English 英语、Music 音乐、PE 体育、Art 美术、Science 科学；能说出自己的课程表。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0385",
+      "item_type": "choice",
+      "stem": "在天上飞、能带很多人去远方的交通工具是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_transport"
+      ],
+      "difficulty": 0.3,
+      "solution": "交通工具词块：plane 飞机（天上飞）；bike 自行车、bus 公共汽车（地上跑）、train 火车（铁轨上跑）。",
+      "source": "llm_generated",
+      "options": [
+        "A. plane",
+        "B. bike",
+        "C. bus",
+        "D. train"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0386",
+      "item_type": "choice",
+      "stem": "— How do you go to school? — ___. My home is next to the school.",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_transport"
+      ],
+      "difficulty": 0.35,
+      "solution": "家紧挨学校，步行 on foot；交通方式短语 by bike/bus/car/plane/train/ship 与 on foot。",
+      "source": "llm_generated",
+      "options": [
+        "A. On foot",
+        "B. By plane",
+        "C. By ship",
+        "D. By train"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0387",
+      "item_type": "fill",
+      "stem": "出行方式填空（用英文作答）：爷爷奶奶去北京坐火车，说：They go to Beijing ______ train.",
+      "answer": "by",
+      "kps": [
+        "kp_eng4_voc4_transport"
+      ],
+      "difficulty": 0.3,
+      "solution": "交通方式固定搭配 by + 交通工具（by bus / by car / by bike / by train / by plane），步行用 on foot。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0388",
+      "item_type": "choice",
+      "stem": "go to school 的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_verb_phrase"
+      ],
+      "difficulty": 0.35,
+      "solution": "动词短语整体记忆：go to school 去上学；go home 回家、go to bed 上床睡觉。",
+      "source": "llm_generated",
+      "options": [
+        "A. 去上学",
+        "B. 回家",
+        "C. 上床睡觉",
+        "D. 吃早饭"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0389",
+      "item_type": "choice",
+      "stem": "每天早上七点我\"吃早饭\"，正确的短语是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_voc4_verb_phrase"
+      ],
+      "difficulty": 0.4,
+      "solution": "三餐用 have：have breakfast/lunch/dinner；动词短语按整体记忆，不逐字直译。",
+      "source": "llm_generated",
+      "options": [
+        "A. have breakfast",
+        "B. eat breakfast quickly",
+        "C. do breakfast",
+        "D. make breakfast done"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0390",
+      "item_type": "fill",
+      "stem": "短语填空（用英文补全）：I ______ up at six thirty, and then I ______ my teeth.（起床；刷牙）",
+      "answer": "get; brush",
+      "kps": [
+        "kp_eng4_voc4_verb_phrase"
+      ],
+      "difficulty": 0.35,
+      "solution": "日常动词短语：get up 起床、brush one's teeth 刷牙、go to school 去上学、have breakfast 吃早饭；整体记忆、整体调用。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0391",
+      "item_type": "fill",
+      "stem": "【应用文·明信片】假如你在北京旅游，给好朋友 Amy 写一张 3-5 句的英文明信片，介绍你看到的景点和心情。要求：称呼、正文、落款齐全。",
+      "answer": "参考范文：\nDear Amy,\nGreetings from Beijing! Today I visited the Great Wall with my parents. It is long and wonderful, like a dragon on the mountains. I also ate Beijing roast duck — it was delicious! I miss you and I will tell you more when I get home.\nYours,\nLi Hua",
+      "kps": [
+        "kp_eng4_wri4_letter_simple"
+      ],
+      "difficulty": 0.45,
+      "solution": "明信片三要素：称呼（Dear Amy）→ 正文（景点+感受，用一般过去时叙述旅程）→ 落款（Yours, + 名字）；格式齐全、语句简单连贯。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0392",
+      "item_type": "choice",
+      "stem": "英文书信结尾的落款\"你的朋友\"，正确的表达是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_wri4_letter_simple"
+      ],
+      "difficulty": 0.35,
+      "solution": "书信落款常用 Yours, / Your friend, / Best wishes, + 姓名，独占一行。",
+      "source": "llm_generated",
+      "options": [
+        "A. Yours, / Your friend,",
+        "B. By friend",
+        "C. From friend of you",
+        "D. I am your friend"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0393",
+      "item_type": "choice",
+      "stem": "书信开头的称呼 \"Dear Tom,\" 后面应使用：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_wri4_letter_simple"
+      ],
+      "difficulty": 0.4,
+      "solution": "英文书信称呼后用逗号（Dear Tom,），这是书信格式的规范；正文另起一行，每段开头可空格。",
+      "source": "llm_generated",
+      "options": [
+        "A. 逗号",
+        "B. 句号",
+        "C. 感叹号",
+        "D. 不加标点"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0394",
+      "item_type": "choice",
+      "stem": "下列句子标点和大小写全部正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_wri4_punct_case"
+      ],
+      "difficulty": 0.3,
+      "solution": "问号用于疑问句句尾；句首单词首字母大写；缩写形式 what's 撇号规范。B 缺标点和撇号且未大写，C 缺问号，D name 无需大写。",
+      "source": "llm_generated",
+      "options": [
+        "A. What's your name?",
+        "B. whats your name",
+        "C. What's your name",
+        "D. What's your Name?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0395",
+      "item_type": "choice",
+      "stem": "句子 \"I have a cat its name is Mimi\" 的规范写法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng4_wri4_punct_case"
+      ],
+      "difficulty": 0.35,
+      "solution": "两个独立句之间用句号分开；I 永远大写；its（它的）是物主代词；Mimi 作为名字大写。",
+      "source": "llm_generated",
+      "options": [
+        "A. I have a cat. Its name is Mimi.",
+        "B. I have a cat Its name is Mimi",
+        "C. i have a cat. its name is Mimi.",
+        "D. I have a cat, its Name is mimi."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0396",
+      "item_type": "fill",
+      "stem": "标点填空（在横线上填入正确的标点符号名称）：感叹句 What a lovely day______ 句尾用______（句号/感叹号/问号，选一个）。",
+      "answer": "感叹号（!）",
+      "kps": [
+        "kp_eng4_wri4_punct_case"
+      ],
+      "difficulty": 0.3,
+      "solution": "陈述句用句号、疑问句用问号、感叹句用感叹号；句首与专有名词首字母大写。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

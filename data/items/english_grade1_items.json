@@ -439,6 +439,981 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens01_0157",
+      "item_type": "choice",
+      "stem": "听老师指令做动作。老师说：\"Stand up, please.\" 你应该：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.25,
+      "solution": "Stand up 意为\"起立\"，听到后应站起来。Sit down 是坐下，Open your book 是打开书，Close the door 是关门。",
+      "source": "llm_generated",
+      "options": [
+        "A. 站起来",
+        "B. 坐下",
+        "C. 打开书",
+        "D. 关上门"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0158",
+      "item_type": "choice",
+      "stem": "老师想让同学们打开书，她应该说：",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.3,
+      "solution": "Open your book（打开书）是对应指令；Close 是\"关上\"，Stand up 是起立，Sit down 是坐下。",
+      "source": "llm_generated",
+      "options": [
+        "A. Close your book.",
+        "B. Open your book.",
+        "C. Stand up.",
+        "D. Sit down."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0159",
+      "item_type": "fill",
+      "stem": "听指令写动作（用中文写出动作名称）：老师连续说 \"Point to the door.\"，你应该用手指一指______。",
+      "answer": "门",
+      "kps": [
+        "kp_eng1_lis1_class_command"
+      ],
+      "difficulty": 0.3,
+      "solution": "point to 意为\"指向\"，the door 是\"门\"，所以要用手指门。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0160",
+      "item_type": "choice",
+      "stem": "听小故事（配图片）：Little Duck says, \"I can swim!\" Little Rabbit says, \"I can jump!\" Little Bird says, \"I can fly!\"\n问题：谁会游泳？",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.25,
+      "solution": "小鸭子说 I can swim（我会游泳），借助图片和动作可以听出 Little Duck 会游泳；兔子会跳，小鸟会飞。",
+      "source": "llm_generated",
+      "options": [
+        "A. Little Duck",
+        "B. Little Rabbit",
+        "C. Little Bird",
+        "D. Nobody"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0161",
+      "item_type": "choice",
+      "stem": "听小故事：The cat is hungry. It sees a fish. It is happy now!\n问题：小猫看到鱼以后，心情怎么样？",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.3,
+      "solution": "故事结尾说 It is happy now（现在它很高兴）。听到 happy 并配合笑脸图片即可选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高兴的（happy）",
+        "B. 饥饿的（hungry）",
+        "C. 生病的",
+        "D. 生气的"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0162",
+      "item_type": "fill",
+      "stem": "听故事做反应（用中文作答）：故事里小猴子边说 \"I can climb!\" 边做爬树的动作。听完故事，请你做一个和 climb 一样的动作：______（写出动作名称）。",
+      "answer": "爬（爬树/往上爬）",
+      "kps": [
+        "kp_eng1_lis1_story"
+      ],
+      "difficulty": 0.3,
+      "solution": "climb 意为\"爬\"，配合动作提示，听懂后可用动作作出反应。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0163",
+      "item_type": "choice",
+      "stem": "课堂上老师说 \"Who can say 'apple'?\" 你不太确定发音，正确的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.2,
+      "solution": "学英语要敢开口、不怕错：说错是练习的一部分，大胆举手尝试才能越说越好。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大胆举手试一试，说错了也没关系",
+        "B. 永远不开口",
+        "C. 趴在桌上装睡",
+        "D. 大声嘲笑敢发言的同学"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0164",
+      "item_type": "choice",
+      "stem": "小明说 \"Good morning\" 时把 morning 说成了 moning，老师微笑纠正后，小明应该：",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.25,
+      "solution": "把错误当作学习的一部分：听清正确发音，再练一遍就好，保持积极情绪。",
+      "source": "llm_generated",
+      "options": [
+        "A. 觉得太丢脸，以后再也不说英语了",
+        "B. 再认真说一遍 morning，继续开心地学",
+        "C. 哭着离开教室",
+        "D. 说\"我永远学不会\""
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0165",
+      "item_type": "fill",
+      "stem": "学习态度填空（用中文作答）：在英语课上大声说英语时，说错了也______（填\"没关系\"或\"很丢脸\"，选一个）。",
+      "answer": "没关系",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.2,
+      "solution": "敢开口、不怕错：说错是练习的一部分，改正后再说一次就是进步。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0166",
+      "item_type": "choice",
+      "stem": "看图选词：图上画着一支用来写字的笔。它是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.25,
+      "solution": "把图片和单词直接联系起来：写字用的笔是 pen；bag 是书包，cat 是猫，sun 是太阳。",
+      "source": "llm_generated",
+      "options": [
+        "A. pen",
+        "B. bag",
+        "C. cat",
+        "D. sun"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0167",
+      "item_type": "choice",
+      "stem": "老师举起一个实物问 \"What's this?\" 它是用来装书的。你可以回答：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.3,
+      "solution": "实物（装书的东西）与 bag 建立联系，回答 It's a bag。",
+      "source": "llm_generated",
+      "options": [
+        "A. It's a bag.",
+        "B. It's a pen.",
+        "C. It's a dog.",
+        "D. It's an egg."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0168",
+      "item_type": "fill",
+      "stem": "看图写词（用英文作答）：图片上太阳当空照，天上有一个黄色的大太阳。请写出\"太阳\"的英文单词：______",
+      "answer": "sun",
+      "kps": [
+        "kp_eng1_lsm1_picture_word_link"
+      ],
+      "difficulty": 0.25,
+      "solution": "借助图片把\"事物\"与\"词语\"连起来：太阳 sun，形成直观记忆。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0169",
+      "item_type": "choice",
+      "stem": "唱字母歌时，排在字母 A 后面紧跟着唱的字母是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.25,
+      "solution": "字母表顺序 A、B、C……，A 后面是 B。唱字母歌帮助按顺序记住 26 个字母的名称音。",
+      "source": "llm_generated",
+      "options": [
+        "A. B",
+        "B. Z",
+        "C. M",
+        "D. Q"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0170",
+      "item_type": "choice",
+      "stem": "听录音跟读字母表，最后一个字母是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.3,
+      "solution": "26 个字母的最后一个是 Z；字母歌结尾唱到 Z 就结束了。",
+      "source": "llm_generated",
+      "options": [
+        "A. A",
+        "B. M",
+        "C. Z",
+        "D. C"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0171",
+      "item_type": "fill",
+      "stem": "按顺序默写字母表的前五个大写字母（用英文，字母间不留空格也可，写成一串）：______",
+      "answer": "ABCDE",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.3,
+      "solution": "字母表前五个字母依次是 A、B、C、D、E；能按顺序跟读并认读字母是语音启蒙的基本要求。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0172",
+      "item_type": "choice",
+      "stem": "早上见到老师，你应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.25,
+      "solution": "早上问候用 Good morning（早上好）；Good night 是晚安（告别），Goodbye 是再见。",
+      "source": "llm_generated",
+      "options": [
+        "A. Good morning!",
+        "B. Good night!",
+        "C. Goodbye!",
+        "D. Sorry!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0173",
+      "item_type": "choice",
+      "stem": "放学时和同学分开，你应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.3,
+      "solution": "分别时说 Goodbye（再见）；Hello 用于见面打招呼，Good morning 用于早晨问候。",
+      "source": "llm_generated",
+      "options": [
+        "A. Goodbye!",
+        "B. Hello!",
+        "C. Good morning!",
+        "D. Thanks!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0174",
+      "item_type": "fill",
+      "stem": "得体表达填空（用英文作答）：中午好朋友的妈妈向你问好，你可以微笑回答：Good ______!",
+      "answer": "afternoon",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.25,
+      "solution": "中午问候用 Good afternoon；问候语要按时间选：早上 morning、下午 afternoon、晚上 evening。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0175",
+      "item_type": "choice",
+      "stem": "玩\"单词问答\"游戏，老师指着香蕉图片问 \"What's this?\" 你应回答：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.25,
+      "solution": "问答交流最简句型：What's this? → It's a banana.",
+      "source": "llm_generated",
+      "options": [
+        "A. It's a banana.",
+        "B. I'm fine.",
+        "C. Good night.",
+        "D. My name is Li Ming."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0176",
+      "item_type": "choice",
+      "stem": "游戏里轮到你提问，想知道对方的年龄，你可以问：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.3,
+      "solution": "问年龄用 How old are you?；What's your name 问名字，How are you 问身体好吗，What's this 问这是什么。",
+      "source": "llm_generated",
+      "options": [
+        "A. How old are you?",
+        "B. What's your name?",
+        "C. How are you?",
+        "D. What's this?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0177",
+      "item_type": "fill",
+      "stem": "游戏对话填空（用英文作答）：A: What's your name? B: ______ name is Tom.（填一个形容词性物主代词）",
+      "answer": "My",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.25,
+      "solution": "介绍自己的名字用 My name is ...（我的名字叫……）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0178",
+      "item_type": "choice",
+      "stem": "和同伴练习见面问候，正确的对话顺序是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.25,
+      "solution": "见面问候并互相介绍名字：Hello! I'm Amy. / Hi, Amy! I'm Sam. 一问一答完成见面交往。",
+      "source": "llm_generated",
+      "options": [
+        "A. —Hello! I'm Amy. —Hi, Amy! I'm Sam.",
+        "B. —Goodbye! —Hello!",
+        "C. —Good night! —Good morning!",
+        "D. —Thank you! —How old are you?"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0179",
+      "item_type": "choice",
+      "stem": "新同学说 \"Hi! I'm Bill.\" 你想介绍自己的名字，应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍自己用 I'm + 名字（我叫……），回应对方的问候。",
+      "source": "llm_generated",
+      "options": [
+        "A. I'm Li Ming.",
+        "B. Goodbye, Bill.",
+        "C. It's a cat.",
+        "D. I'm fine, thank you."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0180",
+      "item_type": "fill",
+      "stem": "同伴问候填空（用英文作答）：A: Hello! B: ______!（回打招呼，填一个问候词）",
+      "answer": "Hi (或 Hello)",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.25,
+      "solution": "见面互致问候：Hello 对 Hi/Hello，语气自然、音量合适。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0181",
+      "item_type": "choice",
+      "stem": "看图片说单词：图片上有一只可爱的小猫。你可以说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.25,
+      "solution": "看图说词：小猫是 cat；dog 是狗，duck 是鸭子，bird 是鸟。",
+      "source": "llm_generated",
+      "options": [
+        "A. cat",
+        "B. dog",
+        "C. duck",
+        "D. bird"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0182",
+      "item_type": "choice",
+      "stem": "看图说短句：图片上小男孩正在吃一个苹果。你可以说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.3,
+      "solution": "看图说出短句：男孩吃苹果 → He is eating an apple.",
+      "source": "llm_generated",
+      "options": [
+        "A. He is eating an apple.",
+        "B. She is drinking water.",
+        "C. It is a cat.",
+        "D. I can fly."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0183",
+      "item_type": "fill",
+      "stem": "看图说词（用英文作答）：图片上有一只黄色的小鸭子在游泳。请说出\"鸭子\"的英文：______",
+      "answer": "duck",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.25,
+      "solution": "从图像意义转换到英语口语：看到鸭子说 duck。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0184",
+      "item_type": "choice",
+      "stem": "唱歌曲 Twinkle, Twinkle, Little Star 时，节奏应该：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.25,
+      "solution": "演唱学过的歌曲要求音高、节奏基本准确：不抢拍、不拖拍，完整唱完。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基本准确，不快不慢",
+        "B. 越快越好，抢着唱完",
+        "C. 想停就停，随意打乱",
+        "D. 大声喊出来，不成调"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0185",
+      "item_type": "choice",
+      "stem": "两人合作表演歌谣，最合适的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.3,
+      "solution": "合作演唱讲究互相配合：忘词时同伴轻声提示，共同完成表演。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一人忘了词，另一人小声提醒，继续合作演完",
+        "B. 忘词就责怪同伴",
+        "C. 各唱各的，互不理睬",
+        "D. 拒绝开口看别人唱"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0186",
+      "item_type": "fill",
+      "stem": "歌谣填空（用英文作答）：唱字母歌结尾：... Q, R, S, T, U, V, W, X, Y and ______.",
+      "answer": "Z",
+      "kps": [
+        "kp_eng1_spk1_song_rhyme"
+      ],
+      "difficulty": 0.25,
+      "solution": "字母歌结尾最后落在字母 Z；完整演唱学过的歌曲和歌谣，结尾字母不能丢。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0187",
+      "item_type": "choice",
+      "stem": "看英语动画片，画面里小熊一边挥手一边说 \"Goodbye!\"，它的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.25,
+      "solution": "结合画面（挥手）和简单话语 Goodbye，抓住主要信息：小熊在说\"再见\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 再见",
+        "B. 你好",
+        "C. 谢谢",
+        "D. 对不起"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0188",
+      "item_type": "choice",
+      "stem": "动画片里小兔子指着大萝卜说 \"It's big!\"，big 的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.3,
+      "solution": "看动画理解简单话语：big 意为\"大的\"，小兔子说萝卜很大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大的",
+        "B. 小的",
+        "C. 红的",
+        "D. 快的"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0189",
+      "item_type": "fill",
+      "stem": "看动画回答（用中文作答）：动画里的小鸟说 \"I can sing.\" 小鸟会做什么？______",
+      "answer": "唱歌",
+      "kps": [
+        "kp_eng1_vie1_cartoon"
+      ],
+      "difficulty": 0.25,
+      "solution": "sing 意为\"唱歌\"；观看语言简单的动画片时，借助画面抓住主要信息和简单话语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0190",
+      "item_type": "choice",
+      "stem": "和好朋友见面打招呼，可以说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.2,
+      "solution": "见面问候词块：Hello / Hi；Goodbye、Bye-bye 用于告别，Good night 用于晚上道别。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hello!",
+        "B. Goodbye!",
+        "C. Good night!",
+        "D. Bye-bye!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0191",
+      "item_type": "choice",
+      "stem": "晚上睡觉前和妈妈道晚安，应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.25,
+      "solution": "晚安用 Good night；早上问候用 Good morning，下午用 Good afternoon。",
+      "source": "llm_generated",
+      "options": [
+        "A. Good night!",
+        "B. Good morning!",
+        "C. Hello!",
+        "D. Good afternoon!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0192",
+      "item_type": "fill",
+      "stem": "词块运用填空（用英文作答）：早上到校见到老师，说：Good ______, Miss Li!",
+      "answer": "morning",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.25,
+      "solution": "问候词块按时间选用：Good morning（早上）/ Good afternoon（下午）/ Good night（晚安，告别）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0193",
+      "item_type": "choice",
+      "stem": "我们在哪里上课、读书？",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.25,
+      "solution": "学校场景词块：school 是学校（上课读书的地方）；zoo 动物园、park 公园、hospital 医院。",
+      "source": "llm_generated",
+      "options": [
+        "A. school",
+        "B. zoo",
+        "C. park",
+        "D. hospital"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0194",
+      "item_type": "choice",
+      "stem": "在学校里教我们知识的人是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.3,
+      "solution": "学校场景词块：teacher（教师）在学校教我们；doctor 是医生，driver 是司机，farmer 是农民。",
+      "source": "llm_generated",
+      "options": [
+        "A. teacher",
+        "B. doctor",
+        "C. driver",
+        "D. farmer"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0195",
+      "item_type": "fill",
+      "stem": "看学校图片说词（用英文作答）：图片上同学们坐在教室里上课。\"班级；课\"的英文是：______",
+      "answer": "class",
+      "kps": [
+        "kp_eng1_voc1_school"
+      ],
+      "difficulty": 0.25,
+      "solution": "学校生活词块：school（学校）、teacher（老师）、class（班级/课）、book（书）、pen（笔），能在学校情境图片中指认并说出。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
