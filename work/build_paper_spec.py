@@ -1,0 +1,319 @@
+"""K12-4 卷型库数据生成器。
+按"课标+教材+行业经验区间"自推，每条标可信度（高/中/低）。
+海南默认 profile：中考按省考试局口径、高考语数英按新课标 II 卷、选考六科按海南自主命题。
+"""
+import json
+import os
+
+# 已知课程卷型模板：学科×学段×用途
+SPECS = [
+    # ========= 数学 =========
+    {
+        "id": "spec_math_primary_unit",
+        "subject": "math", "stage": "primary", "usage": "unit_test",
+        "duration_min": 40, "total_points": 100,
+        "credibility": "高",
+        "source": "海南人教版小学数学12册（PEP数学教研）",
+        "sections": [
+            {"title": "一、填空", "form": "fill", "count": 10, "points_each": 4, "kp_scope": ["1-6年级各章KP"]},
+            {"title": "二、判断", "form": "truefalse", "count": 5, "points_each": 4, "kp_scope": ["1-6年级各章KP"]},
+            {"title": "三、选择", "form": "choice", "count": 5, "points_each": 4, "kp_scope": ["1-6年级各章KP"]},
+            {"title": "四、看图列式或作图", "form": "construction", "count": 2, "points_each": 5, "kp_scope": ["图与几何KP"]},
+            {"title": "五、应用题", "form": "word_problem", "count": 4, "points_each": 5, "kp_scope": ["数量关系KP"]},
+        ],
+    },
+    {
+        "id": "spec_math_jr_final",
+        "subject": "math", "stage": "junior", "usage": "final_exam",
+        "duration_min": 100, "total_points": 120,
+        "credibility": "中",
+        "source": "海南中考数学卷型转引（hainan.md §4）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 12, "points_each": 3, "kp_scope": ["7-9年级各章KP"]},
+            {"title": "二、填空题", "form": "fill", "count": 4, "points_each": 3, "kp_scope": ["7-9年级各章KP"]},
+            {"title": "三、计算解答", "form": "computation", "count": 2, "points_each": 8, "kp_scope": ["方程/不等式/函数KP"]},
+            {"title": "四、尺规作图与推理", "form": "construction", "count": 1, "points_each": 10, "kp_scope": ["几何KP"]},
+            {"title": "五、统计与概率", "form": "comprehension", "count": 1, "points_each": 10, "kp_scope": ["统计与概率KP"]},
+            {"title": "六、几何证明与计算", "form": "proof", "count": 1, "points_each": 12, "kp_scope": ["几何证明KP"]},
+            {"title": "七、二次函数综合压轴", "form": "synthesis", "count": 1, "points_each": 14, "kp_scope": ["二次函数/相似/锐角三角函数KP"]},
+        ],
+    },
+    {
+        "id": "spec_math_hs_final",
+        "subject": "math", "stage": "high", "usage": "final_exam",
+        "duration_min": 120, "total_points": 150,
+        "credibility": "中",
+        "source": "新高考 II 卷数学结构（hainan.md §4.3）",
+        "sections": [
+            {"title": "一、单选题", "form": "choice", "count": 8, "points_each": 5, "kp_scope": ["必修一集合/函数/三角/向量/复数KP"]},
+            {"title": "二、多选题", "form": "multi_select", "count": 3, "points_each": 6, "kp_scope": ["必修+选必综合KP"]},
+            {"title": "三、填空题", "form": "fill", "count": 3, "points_each": 5, "kp_scope": ["必修综合KP"]},
+            {"title": "四、解答题（基础）", "form": "computation", "count": 2, "points_each": 14, "kp_scope": ["解三角形/数列/概率统计KP"]},
+            {"title": "五、解答题（证明）", "form": "proof", "count": 1, "points_each": 15, "kp_scope": ["立体几何/数列证明KP"]},
+            {"title": "六、解答题（综合压轴）", "form": "synthesis", "count": 1, "points_each": 17, "kp_scope": ["解析几何/导数与新定义KP"]},
+        ],
+    },
+    # ========= 语文 =========
+    {
+        "id": "spec_chi_jr_final",
+        "subject": "chinese", "stage": "junior", "usage": "final_exam",
+        "duration_min": 120, "total_points": 120,
+        "credibility": "中",
+        "source": "海南中考语文卷型转引（hainan.md §4）",
+        "sections": [
+            {"title": "一、默写", "form": "fill", "count": 1, "points_each": 10, "kp_scope": ["古诗文背诵KP"]},
+            {"title": "二、文言文阅读", "form": "comprehension", "count": 1, "points_each": 18, "kp_scope": ["文言字词/句子翻译/内容理解KP"]},
+            {"title": "三、现代文阅读（说明/议论）", "form": "comprehension", "count": 1, "points_each": 15, "kp_scope": ["说明文/议论文KP"]},
+            {"title": "四、现代文阅读（记叙）", "form": "comprehension", "count": 1, "points_each": 22, "kp_scope": ["记叙文KP"]},
+            {"title": "五、名著阅读", "form": "cloze", "count": 1, "points_each": 5, "kp_scope": ["名著阅读KP"]},
+            {"title": "六、语言运用", "form": "fill", "count": 1, "points_each": 10, "kp_scope": ["标点/成语/病句KP"]},
+            {"title": "七、作文", "form": "essay", "count": 1, "points_each": 40, "kp_scope": ["写作（命题/半命题/材料）KP"]},
+        ],
+    },
+    {
+        "id": "spec_chi_hs_final",
+        "subject": "chinese", "stage": "high", "usage": "final_exam",
+        "duration_min": 150, "total_points": 150,
+        "credibility": "中",
+        "source": "新高考 II 卷语文结构（hainan.md §4.3）",
+        "sections": [
+            {"title": "一、现代文阅读 I（信息类）", "form": "comprehension", "count": 1, "points_each": 19, "kp_scope": ["论述类/实用类KP"]},
+            {"title": "二、现代文阅读 II（文学类）", "form": "comprehension", "count": 1, "points_each": 18, "kp_scope": ["小说/散文/诗歌KP"]},
+            {"title": "三、文言文阅读", "form": "comprehension", "count": 1, "points_each": 18, "kp_scope": ["文言断句/文化常识KP"]},
+            {"title": "四、古代诗歌阅读", "form": "comprehension", "count": 1, "points_each": 17, "kp_scope": ["古诗鉴赏KP"]},
+            {"title": "五、名篇名句默写", "form": "fill", "count": 1, "points_each": 6, "kp_scope": ["72篇默写KP"]},
+            {"title": "六、语言文字运用", "form": "fill", "count": 1, "points_each": 12, "kp_scope": ["病句/成语/标点KP"]},
+            {"title": "七、作文", "form": "essay", "count": 1, "points_each": 60, "kp_scope": ["写作（任务驱动/宏大主题）KP"]},
+        ],
+    },
+    # ========= 英语 =========
+    {
+        "id": "spec_eng_jr_final",
+        "subject": "english", "stage": "junior", "usage": "final_exam",
+        "duration_min": 100, "total_points": 120,
+        "credibility": "中",
+        "source": "海南中考英语卷型转引（hainan.md §4，含听力30分）",
+        "sections": [
+            {"title": "一、听力（30分）", "form": "listening", "count": 4, "points_each": 7.5, "kp_scope": ["听力理解KP"]},
+            {"title": "二、单项选择（20分）", "form": "choice", "count": 20, "points_each": 1, "kp_scope": ["语法/词汇/语篇KP"]},
+            {"title": "三、完形填空（10分）", "form": "cloze", "count": 1, "points_each": 10, "kp_scope": ["语篇理解KP"]},
+            {"title": "四、阅读理解（30分）", "form": "reading", "count": 4, "points_each": 7.5, "kp_scope": ["阅读KP"]},
+            {"title": "五、词汇运用（10分）", "form": "fill", "count": 2, "points_each": 5, "kp_scope": ["词汇KP"]},
+            {"title": "六、书面表达（20分）", "form": "writing", "count": 1, "points_each": 20, "kp_scope": ["写作KP"]},
+        ],
+    },
+    {
+        "id": "spec_eng_hs_final",
+        "subject": "english", "stage": "high", "usage": "final_exam",
+        "duration_min": 120, "total_points": 150,
+        "credibility": "中",
+        "source": "新高考 II 卷英语结构（hainan.md §4.3）",
+        "sections": [
+            {"title": "一、听力", "form": "listening", "count": 2, "points_each": 25, "kp_scope": ["听力KP"]},
+            {"title": "二、阅读理解", "form": "reading", "count": 4, "points_each": 12.5, "kp_scope": ["阅读KP"]},
+            {"title": "三、阅读七选五", "form": "seven_to_five", "count": 1, "points_each": 10, "kp_scope": ["阅读KP"]},
+            {"title": "四、完形填空", "form": "cloze", "count": 1, "points_each": 15, "kp_scope": ["词汇/语篇KP"]},
+            {"title": "五、语法填空", "form": "fill", "count": 1, "points_each": 15, "kp_scope": ["语法KP"]},
+            {"title": "六、短文改错", "form": "cloze", "count": 1, "points_each": 10, "kp_scope": ["语法KP"]},
+            {"title": "七、应用文写作", "form": "writing", "count": 1, "points_each": 15, "kp_scope": ["应用文写作KP"]},
+            {"title": "八、读后续写", "form": "summary", "count": 1, "points_each": 25, "kp_scope": ["读后续写KP"]},
+        ],
+    },
+    # ========= 物理 =========
+    {
+        "id": "spec_phy_jr_final",
+        "subject": "physics", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考物理卷型（hainan.md §4，官方不公布）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 10, "points_each": 3, "kp_scope": ["8-9年级KP"]},
+            {"title": "二、填空题", "form": "fill", "count": 5, "points_each": 4, "kp_scope": ["8-9年级KP"]},
+            {"title": "三、实验探究题", "form": "experiment", "count": 2, "points_each": 6, "kp_scope": ["实验KP"]},
+            {"title": "四、计算应用题", "form": "computation", "count": 2, "points_each": 8, "kp_scope": ["力/电/热/光KP"]},
+        ],
+    },
+    {
+        "id": "spec_phy_hs_final",
+        "subject": "physics", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "新高考 II 卷物理结构 + hainan.md §4.3",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 8, "points_each": 5, "kp_scope": ["必修+选必KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 3, "points_each": 6, "kp_scope": ["必修+选必KP"]},
+            {"title": "三、实验题", "form": "experiment", "count": 2, "points_each": 10, "kp_scope": ["实验KP"]},
+            {"title": "四、计算题", "form": "computation", "count": 2, "points_each": 12, "kp_scope": ["力/电/磁/光学综合KP"]},
+            {"title": "五、选考模块（热学/光学/近代物理）", "form": "solve", "count": 1, "points_each": 10, "kp_scope": ["选必KP"]},
+        ],
+    },
+    # ========= 化学 =========
+    {
+        "id": "spec_che_jr_final",
+        "subject": "chemistry", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考化学卷型（hainan.md §4）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 10, "points_each": 3, "kp_scope": ["9年级KP"]},
+            {"title": "二、填空题", "form": "fill", "count": 5, "points_each": 4, "kp_scope": ["9年级KP"]},
+            {"title": "三、实验探究题", "form": "experiment", "count": 2, "points_each": 7, "kp_scope": ["实验KP"]},
+            {"title": "四、计算应用题", "form": "computation", "count": 1, "points_each": 9, "kp_scope": ["化学计算/酸碱盐KP"]},
+        ],
+    },
+    {
+        "id": "spec_che_hs_final",
+        "subject": "chemistry", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "新高考 II 卷化学结构 + hainan.md §4.3",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 7, "points_each": 4, "kp_scope": ["必修+选必KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 3, "points_each": 5, "kp_scope": ["必修+选必KP"]},
+            {"title": "三、实验题", "form": "experiment", "count": 2, "points_each": 10, "kp_scope": ["实验KP"]},
+            {"title": "四、工艺流程题", "form": "process_flow", "count": 1, "points_each": 14, "kp_scope": ["元素化合物/工艺流程KP"]},
+            {"title": "五、反应原理综合", "form": "solve", "count": 1, "points_each": 12, "kp_scope": ["反应原理KP"]},
+            {"title": "六、有机化学基础", "form": "solve", "count": 1, "points_each": 12, "kp_scope": ["有机化学KP"]},
+            {"title": "七、物质结构与性质", "form": "solve", "count": 1, "points_each": 12, "kp_scope": ["物质结构与性质KP"]},
+        ],
+    },
+    # ========= 生物 =========
+    {
+        "id": "spec_bio_jr_final",
+        "subject": "biology", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考生物（合场135分钟，与地理合卷，920分总分制转引）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 25, "points_each": 2, "kp_scope": ["7-9年级KP"]},
+            {"title": "二、非选择题", "form": "cloze", "count": 4, "points_each": 12.5, "kp_scope": ["7-9年级KP"]},
+        ],
+    },
+    {
+        "id": "spec_bio_hs_final",
+        "subject": "biology", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "新高考 II 卷生物结构",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 6, "points_each": 4, "kp_scope": ["必修123+选必123KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 3, "points_each": 5, "kp_scope": ["必修+选必KP"]},
+            {"title": "三、非选择题", "form": "solve", "count": 4, "points_each": 16, "kp_scope": ["遗传/生态/实验KP"]},
+        ],
+    },
+    # ========= 历史 =========
+    {
+        "id": "spec_his_jr_final",
+        "subject": "history", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考历史（合场135分钟转引）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 25, "points_each": 2, "kp_scope": ["7-9年级KP"]},
+            {"title": "二、非选择题", "form": "solve", "count": 3, "points_each": 17, "kp_scope": ["7-9年级KP"]},
+        ],
+    },
+    {
+        "id": "spec_his_hs_final",
+        "subject": "history", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "新高考 II 卷历史结构（hainan.md §4.3）",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 12, "points_each": 3, "kp_scope": ["中外历史纲要上下KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 4, "points_each": 4, "kp_scope": ["中外历史KP"]},
+            {"title": "三、材料分析题", "form": "comprehension", "count": 3, "points_each": 16, "kp_scope": ["中外历史KP"]},
+            {"title": "四、论述题/小论文", "form": "essay", "count": 1, "points_each": 12, "kp_scope": ["中外历史KP"]},
+        ],
+    },
+    # ========= 地理 =========
+    {
+        "id": "spec_geo_jr_final",
+        "subject": "geography", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考地理（合场135分钟转引：选35×2+综合3×10）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 35, "points_each": 2, "kp_scope": ["7-9年级KP"]},
+            {"title": "二、综合题", "form": "comprehension", "count": 3, "points_each": 10, "kp_scope": ["7-9年级KP"]},
+        ],
+    },
+    {
+        "id": "spec_geo_hs_final",
+        "subject": "geography", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "海南高考地理自主命题（卷面100分/90分钟转引）",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 16, "points_each": 3, "kp_scope": ["必修+选必KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 4, "points_each": 3, "kp_scope": ["必修+选必KP"]},
+            {"title": "三、综合题", "form": "comprehension", "count": 3, "points_each": 15, "kp_scope": ["必修+选必KP"]},
+            {"title": "四、选考题（旅游地理/环境保护/自然灾害）", "form": "solve", "count": 1, "points_each": 10, "kp_scope": ["选必模块KP"]},
+        ],
+    },
+    # ========= 政治 =========
+    {
+        "id": "spec_pol_primary_unit",
+        "subject": "politics", "stage": "primary", "usage": "unit_test",
+        "duration_min": 30, "total_points": 100,
+        "credibility": "高",
+        "source": "教育部教基厅函〔2021〕34号（一二年级不纸笔考试）",
+        "sections": [
+            {"title": "一、观察与情境判断", "form": "observe", "count": 3, "points_each": 20, "kp_scope": ["1-6年级KP"]},
+            {"title": "二、连线与归类", "form": "match", "count": 2, "points_each": 20, "kp_scope": ["1-6年级KP"]},
+        ],
+    },
+    {
+        "id": "spec_pol_jr_final",
+        "subject": "politics", "stage": "junior", "usage": "final_exam",
+        "duration_min": 80, "total_points": 100,
+        "credibility": "中",
+        "source": "海南中考道法（合场135分钟转引）",
+        "sections": [
+            {"title": "一、选择题", "form": "choice", "count": 20, "points_each": 2, "kp_scope": ["7-9年级KP"]},
+            {"title": "二、非选择题", "form": "solve", "count": 4, "points_each": 15, "kp_scope": ["7-9年级KP"]},
+        ],
+    },
+    {
+        "id": "spec_pol_hs_final",
+        "subject": "politics", "stage": "high", "usage": "final_exam",
+        "duration_min": 90, "total_points": 100,
+        "credibility": "中",
+        "source": "海南高考政治自主命题",
+        "sections": [
+            {"title": "一、单项选择", "form": "choice", "count": 12, "points_each": 3, "kp_scope": ["必修1234+选必KP"]},
+            {"title": "二、多项选择", "form": "multi_select", "count": 4, "points_each": 3, "kp_scope": ["必修+选必KP"]},
+            {"title": "三、论述题/材料分析", "form": "solve", "count": 4, "points_each": 13, "kp_scope": ["必修+选必KP"]},
+        ],
+    },
+    # ========= 小学科学 =========
+    {
+        "id": "spec_sci_prim_unit",
+        "subject": "science", "stage": "primary", "usage": "unit_test",
+        "duration_min": 30, "total_points": 100,
+        "credibility": "中",
+        "source": "海南小学科学非统考（区域质量监测HL卷转引，待核实）",
+        "sections": [
+            {"title": "一、观察题（连线/归类）", "form": "observe", "count": 4, "points_each": 15, "kp_scope": ["1-6年级KP"]},
+            {"title": "二、简答题（实验探究）", "form": "experiment", "count": 2, "points_each": 20, "kp_scope": ["1-6年级KP"]},
+        ],
+    },
+]
+
+
+def main():
+    out_path = "data/curriculum/paper_specs.json"
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump({"version": "K12-4-w1", "specs": SPECS}, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    print(f"written {len(SPECS)} specs to {out_path}")
+    print("breakdown:")
+    from collections import Counter
+    c = Counter((s["subject"], s["stage"], s["usage"][:8]) for s in SPECS)
+    for (sj, st, us), n in sorted(c.items()):
+        print(f"  {sj} {st} {us}: {n}")
+
+
+if __name__ == "__main__":
+    main()

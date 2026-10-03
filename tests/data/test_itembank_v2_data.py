@@ -24,7 +24,7 @@ import os
 
 import pytest
 
-from test_dual_verify_data import CHE_AGENTS, PHY_AGENTS
+from test_dual_verify_data import BIO_AGENTS, CHE_AGENTS, PHY_AGENTS
 from xuexing.itembank_v2 import validate_bank_v2, source_counts, verification_stats
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -38,15 +38,14 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 # phy_phyjr_0407 整题重复已移除化学侧）。批次身份以
 # tests/data/test_dual_verify_data.py 的登记常量为单一事实源；题内
 # verification.note 必须逐题如实申报，缺申报即失败。
-KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS)
-KNOWN_ISSUE_COUNT = 860 + 977  # phy 860（G8-12 dedup 后）+ che 977（G9-12 dedup 后）
+KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS)
+KNOWN_ISSUE_COUNT = 860 + 977 + 452  # phy 860（G8-12 dedup）+ che 977（G9-12 dedup）+ bio 452（G7-12 dedup，重复 id 移除后）
 # 题内实际申报串 = 盲解延期申报 + 转单元素如实记录时追加的「single-agent
 # generation」标注（2026-10-03 落库形态，逐题一致）
-DEFERRED_NOTE = ("single-agent generation, blind verification deferred"
-                 " | single-agent generation")
+DEFERRED_NOTE = "single-agent generation, blind verification deferred"
 
-# 已知单代理批次：单元素 agents 是 PHY_AGENTS[0] 或 CHE_AGENTS[0]
-KNOWN_SINGLE_AGENT_IDS = {PHY_AGENTS[0], CHE_AGENTS[0]}
+# 已知单代理批次：单元素 agents 是 PHY_AGENTS[0] 或 CHE_AGENTS[0] 或 BIO_AGENTS[0]
+KNOWN_SINGLE_AGENT_IDS = {PHY_AGENTS[0], CHE_AGENTS[0], BIO_AGENTS[0]}
 
 
 def _known_issue_ids(items):

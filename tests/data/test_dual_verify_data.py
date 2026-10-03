@@ -160,6 +160,14 @@ def _is_che(it):
     return it.get("verification", {}).get("agents") == CHE_AGENTS
 
 
+BIO_AGENTS = ["bio-gen-w1-20261003"]
+BIO_PREFIX = "bio_"
+
+
+def _is_bio(it):
+    return it.get("verification", {}).get("agents") == BIO_AGENTS
+
+
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
 DEEPEN_AGENTS_BY_GRADE = {
     "m7": [["step-3.7-flash", "g7-deepen-review-20260930"]],
@@ -566,10 +574,19 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert not ((chi_ids | phy_ids | che_ids)
                 & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids)), (
         "语文/物理/化学批与既有批次重叠")
+    # 2026-10-03 K12 生物批闭式（单代理自验 known issue）：G7-12，dedup 去重后 452 题。
+    # 题号前缀含 bio_jr/bio_hs（出题员 tag）但 K12-3f 修正 id 后统一 prefix bio_
+    bio_ids = {it["id"] for it in all_items if _is_bio(it)}
+    assert len(bio_ids) == 452, (
+        "生物批规模变化（现 452）：扩库须先登记代理身份并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(BIO_PREFIX) for i in bio_ids), "生物批题 id 前缀须为 bio_"
+    assert not (bio_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids)), (
+        "生物批与既有批次重叠")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
-        | eng_ids | chi_ids | phy_ids | che_ids
+        | eng_ids | chi_ids | phy_ids | che_ids | bio_ids
     ) == all_ids
 
 
@@ -592,6 +609,9 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             assert rec.get("single_agent") is True, iid  # 单代理批必须带标记申报
         elif rec["agents"] == CHE_AGENTS:
             assert iid.startswith(CHE_PREFIX), iid
+            assert rec.get("single_agent") is True, iid
+        elif rec["agents"] == BIO_AGENTS:
+            assert iid.startswith(BIO_PREFIX), iid
             assert rec.get("single_agent") is True, iid
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
