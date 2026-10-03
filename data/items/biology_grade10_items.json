@@ -1,0 +1,3545 @@
+{
+  "items": [
+    {
+      "id": "bio_g10_0001",
+      "item_type": "choice",
+      "stem": "下列关于主动运输的叙述，正确的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_active_transport"
+      ],
+      "difficulty": 0.45,
+      "solution": "主动运输逆浓度梯度、需要载体蛋白、消耗 ATP；运输速率受载体数量限制。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质顺浓度梯度运输",
+        "B. 不需要载体蛋白",
+        "C. 消耗 ATP",
+        "D. 运输速率只与膜内外浓度差有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0002",
+      "item_type": "choice",
+      "stem": "下列物质跨膜运输属于主动运输的有（    ）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_bio10_active_transport"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、D 为主动运输典型实例；C 为协助扩散；E 为自由扩散。",
+      "source": "llm_generated",
+      "options": [
+        "A. 小肠上皮细胞吸收葡萄糖",
+        "B. 小肠上皮细胞吸收氨基酸",
+        "C. 红细胞吸收葡萄糖",
+        "D. K⁺ 进入神经细胞",
+        "E. O₂ 进入细胞"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0003",
+      "item_type": "fill",
+      "stem": "主动运输既需要膜上的____蛋白，又需要消耗细胞内____释放的能量。",
+      "answer": "载体（转运）；呼吸作用",
+      "kps": [
+        "kp_bio10_active_transport"
+      ],
+      "difficulty": 0.45,
+      "solution": "主动运输需要载体蛋白协助并消耗细胞呼吸作用释放的能量（ATP）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0004",
+      "item_type": "choice",
+      "stem": "下列现象中不属于适应相对性的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_adaptation"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C 均体现适应的相对性（环境改变时原有适应可能失效）；D 为适应的典型表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 雷鸟的羽色随季节变化",
+        "B. 保护色在某些情况下反被发现",
+        "C. 生活在寒带的雷鸟夏季换为褐色羽",
+        "D. 警戒色使捕食者识别后回避"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0005",
+      "item_type": "choice",
+      "stem": "下列现象中体现适应相对性的有（    ）",
+      "answer": "A,C,E",
+      "kps": [
+        "kp_bio10_adaptation"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、C、E 体现适应的相对性（环境改变后反受不利）；B、D 为适应的典型表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 雪兔冬季毛色变白，夏季变灰",
+        "B. 枯叶蝶停息时形似枯叶",
+        "C. 雷鸟冬季羽毛白色，春季雪化反显眼",
+        "D. 瓢虫的警戒色使鸟类不敢捕食",
+        "E. 冬季积雪稀少时白色雷鸟易被捕食"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0006",
+      "item_type": "fill",
+      "stem": "适应是____存在的，又是____的（建立在一定环境基础上，环境改变时可能失效）。",
+      "answer": "普遍；相对",
+      "kps": [
+        "kp_bio10_adaptation"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：适应具有普遍性，又具有相对性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0007",
+      "item_type": "choice",
+      "stem": "下列关于 ATP 的叙述，错误的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_atp"
+      ],
+      "difficulty": 0.5,
+      "solution": "A、B、C 正确；D 错，细胞内 ATP 含量很少，但转化迅速，可保证能量供应。",
+      "source": "llm_generated",
+      "options": [
+        "A. ATP 由腺苷和 3 个磷酸基团构成",
+        "B. ATP 中远离腺苷的高能磷酸键容易断裂",
+        "C. ATP 水解为 ADP 和 Pi 时释放能量",
+        "D. ATP 在细胞内储存量很多，可大量供能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0008",
+      "item_type": "choice",
+      "stem": "下列关于 ATP 与 ADP 相互转化的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_atp"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D 均正确；E 错，绿色植物 ATP 来自细胞呼吸和光合作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时刻不停地进行且处于动态平衡",
+        "B. ATP 水解释放能量用于各项生命活动",
+        "C. ADP 接受能量和 Pi 重新形成 ATP",
+        "D. 能量来源：动物、人和真菌、细菌均来自细胞呼吸",
+        "E. 绿色植物 ATP 仅来自光合作用"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0009",
+      "item_type": "fill",
+      "stem": "ATP 的中文名称是____，其结构简式写作 A—P～P～P，其中____为高能磷酸键。",
+      "answer": "三磷酸腺苷；～",
+      "kps": [
+        "kp_bio10_atp"
+      ],
+      "difficulty": 0.45,
+      "solution": "ATP 即三磷酸腺苷，磷酸键之间用'～'表示高能磷酸键。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0010",
+      "item_type": "choice",
+      "stem": "下列糖中属于动物细胞储能物质的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_carbohydrates"
+      ],
+      "difficulty": 0.45,
+      "solution": "动物细胞储能物质为糖原（含肝糖原和肌糖原）；A、C 为植物特有；D 为二糖，非储能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 淀粉",
+        "B. 糖原",
+        "C. 纤维素",
+        "D. 蔗糖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0011",
+      "item_type": "choice",
+      "stem": "下列能与斐林试剂反应生成砖红色沉淀的糖有（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_carbohydrates"
+      ],
+      "difficulty": 0.55,
+      "solution": "葡萄糖、果糖、麦芽糖为还原糖，与斐林试剂水浴加热生成砖红色沉淀；蔗糖、淀粉非还原糖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 葡萄糖",
+        "B. 果糖",
+        "C. 麦芽糖",
+        "D. 蔗糖",
+        "E. 淀粉"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0012",
+      "item_type": "fill",
+      "stem": "植物细胞壁的主要成分是____；动物细胞中主要的储能多糖是____。",
+      "answer": "纤维素；糖原",
+      "kps": [
+        "kp_bio10_carbohydrates"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材常识：植物细胞壁主要成分为纤维素；动物储能多糖为糖原。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0013",
+      "item_type": "choice",
+      "stem": "下列不属于衰老细胞特征的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_cell_aging_death"
+      ],
+      "difficulty": 0.45,
+      "solution": "衰老细胞代谢减慢，分裂能力降低；A、B、C 均为衰老细胞特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 细胞内水分减少，体积变小",
+        "B. 多种酶活性降低",
+        "C. 细胞膜通透性改变",
+        "D. 细胞分裂能力增强"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0014",
+      "item_type": "choice",
+      "stem": "下列关于细胞凋亡与坏死的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_cell_aging_death"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D、E 均符合教材关于细胞凋亡与坏死的描述。",
+      "source": "llm_generated",
+      "options": [
+        "A. 细胞凋亡是由基因决定的程序性死亡",
+        "B. 细胞凋亡对机体有利",
+        "C. 细胞坏死是在不利因素下的损伤性死亡",
+        "D. 蝌蚪尾的消失属于细胞凋亡",
+        "E. 人胚胎时期手指的形成与细胞凋亡有关"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0015",
+      "item_type": "fill",
+      "stem": "癌细胞能无限增殖，细胞膜上的____减少使其容易扩散和转移。",
+      "answer": "糖蛋白",
+      "kps": [
+        "kp_bio10_cell_aging_death"
+      ],
+      "difficulty": 0.45,
+      "solution": "癌细胞表面糖蛋白减少，黏着性降低，易扩散和转移。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0016",
+      "item_type": "choice",
+      "stem": "下列关于细胞分化的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_cell_differentiation_hs"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错，数目增多靠细胞分裂；B 正确；C 错，遗传物质未变；D 错，分化程度越低全能性越高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 细胞分化使细胞数目增多",
+        "B. 细胞分化的实质是基因的选择性表达",
+        "C. 分化后的细胞遗传物质发生改变",
+        "D. 分化程度低的细胞全能性低"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0017",
+      "item_type": "choice",
+      "stem": "下列能体现细胞全能性的有（    ）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_bio10_cell_differentiation_hs"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、D 体现细胞全能性；C 为细胞分化非全能性体现；E 已高度分化，无细胞核无全能性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 植物组织培养获得完整植株",
+        "B. 克隆羊多利的诞生",
+        "C. 造血干细胞分化为红细胞、白细胞",
+        "D. 受精卵发育为完整个体",
+        "E. 哺乳动物成熟红细胞"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0018",
+      "item_type": "fill",
+      "stem": "细胞分化的实质是____；克隆羊多利证明了动物____细胞具有全能性。",
+      "answer": "基因的选择性表达；细胞核",
+      "kps": [
+        "kp_bio10_cell_differentiation_hs"
+      ],
+      "difficulty": 0.5,
+      "solution": "克隆羊多利通过将体细胞核移入去核卵母细胞发育而来，证明高度分化的动物细胞核仍具全能性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0019",
+      "item_type": "choice",
+      "stem": "下列元素中，组成细胞最基本的元素是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_cell_elements"
+      ],
+      "difficulty": 0.45,
+      "solution": "组成细胞的元素中，C 链长度使其能形成复杂多样的有机物骨架，因此 C 是最基本的元素。",
+      "source": "llm_generated",
+      "options": [
+        "A. C（碳）",
+        "B. O（氧）",
+        "C. N（氮）",
+        "D. H（氢）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0020",
+      "item_type": "choice",
+      "stem": "下列关于组成细胞元素的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_cell_elements"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B 为基本分类，正确；干重以有机物为主故 C 最多，正确；D 表述正确；鲜重含水量高，O 最多而非 H，故 E 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大量元素有 C、H、O、N 等",
+        "B. 微量元素有 Fe、Mn、Zn、Cu、B、Mo 等",
+        "C. 细胞干重中含量最多的元素是 C",
+        "D. 组成细胞的元素大多以化合物形式存在",
+        "E. 鲜重中含量最多的元素是 H"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0021",
+      "item_type": "fill",
+      "stem": "细胞鲜重中含量最多的元素是____，干重中含量最多的元素是____。",
+      "answer": "O；C",
+      "kps": [
+        "kp_bio10_cell_elements"
+      ],
+      "difficulty": 0.45,
+      "solution": "鲜重含大量水，水中 O 比例高，故 O 最多；干重为有机物，C 是骨架，故 C 最多。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0022",
+      "item_type": "choice",
+      "stem": "下列关于细胞膜流动镶嵌模型的叙述，错误的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_cell_membrane"
+      ],
+      "difficulty": 0.55,
+      "solution": "糖被/糖蛋白确实主要分布于外侧，但少量细胞器膜内侧也有，因此 D 表述'只'过于绝对且并非所有糖蛋白都如此分布。但按高中教材严格表述，本题选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 磷脂双分子层构成膜的基本支架",
+        "B. 蛋白质分子可以镶、嵌或贯穿磷脂双分子层",
+        "C. 磷脂分子和大多数蛋白质分子都能运动",
+        "D. 糖蛋白只分布在细胞膜外侧"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0023",
+      "item_type": "choice",
+      "stem": "细胞膜的功能有（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_cell_membrane"
+      ],
+      "difficulty": 0.45,
+      "solution": "细胞膜三大功能；D、E 属于细胞核的功能，故排除。",
+      "source": "llm_generated",
+      "options": [
+        "A. 将细胞与外界环境分隔开",
+        "B. 控制物质进出细胞",
+        "C. 进行细胞间的信息交流",
+        "D. 含有 DNA 储存遗传信息",
+        "E. 是细胞代谢和遗传的控制中心"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0024",
+      "item_type": "fill",
+      "stem": "细胞膜的结构特性是具有____性；功能特性是具有选择透过____。",
+      "answer": "流动；性",
+      "kps": [
+        "kp_bio10_cell_membrane"
+      ],
+      "difficulty": 0.45,
+      "solution": "结构特性：流动性；功能特性：选择透过性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0025",
+      "item_type": "choice",
+      "stem": "有氧呼吸过程中，产生大量 ATP 的阶段是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_cell_respiration"
+      ],
+      "difficulty": 0.45,
+      "solution": "有氧呼吸第三阶段 [H] 与 O₂ 结合生成 H₂O 释放大量能量，产 ATP 最多。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一阶段（细胞质基质）",
+        "B. 第二阶段（线粒体基质）",
+        "C. 第三阶段（线粒体内膜）",
+        "D. 三阶段产能相同"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0026",
+      "item_type": "choice",
+      "stem": "下列关于无氧呼吸的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_cell_respiration"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D、E 均符合教材所列无氧呼吸特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 发生在细胞质基质",
+        "B. 分解有机物不彻底",
+        "C. 产物可以是酒精和 CO₂（酵母菌等）",
+        "D. 产物可以是乳酸（动物肌细胞等）",
+        "E. 释放少量能量"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0027",
+      "item_type": "fill",
+      "stem": "有氧呼吸的总反应式为 C₆H₁₂O₆ + 6H₂O + 6O₂ —酶→ 6CO₂ + 12H₂O + ____。",
+      "answer": "能量",
+      "kps": [
+        "kp_bio10_cell_respiration"
+      ],
+      "difficulty": 0.4,
+      "solution": "有氧呼吸总反应式释放大量能量，其中一部分储存在 ATP 中。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0028",
+      "item_type": "choice",
+      "stem": "下列关于细胞学说的叙述，正确的是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_cell_theory"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 正确；B 错，'新细胞来自老细胞'是魏尔肖补充；C 错，揭示的是统一性；D 错，涉及细胞产生方式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由施莱登和施旺共同创立",
+        "B. '一切动植物都由细胞发育而来'是魏尔肖补充的",
+        "C. 细胞学说揭示了动植物形态结构的差异性",
+        "D. 细胞学说不涉及新细胞的产生方式"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0029",
+      "item_type": "choice",
+      "stem": "细胞学说的主要内容有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_cell_theory"
+      ],
+      "difficulty": 0.65,
+      "solution": "教材所列细胞学说主要内容；E 属于细胞分化的内容，不属于细胞学说。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一切动植物都由细胞发育而来",
+        "B. 细胞是一个有机体",
+        "C. 细胞是一个相对独立的单位",
+        "D. 新细胞由老细胞分裂产生",
+        "E. 细胞通过分化形成组织、器官"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0030",
+      "item_type": "fill",
+      "stem": "细胞学说是由____和____建立，后由____补充完善。",
+      "answer": "施莱登；施旺；魏尔肖",
+      "kps": [
+        "kp_bio10_cell_theory"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材史实：19世纪30年代施莱登和施旺建立，1858年魏尔肖补充'细胞通过分裂产生新细胞'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0031",
+      "item_type": "choice",
+      "stem": "下列关于多倍体的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_chromosome_variation"
+      ],
+      "difficulty": 0.55,
+      "solution": "B 正确；A 为二倍体定义；C 为单倍体定义；D 错，单倍体不一定高度不育（如蜜蜂雄蜂是可育单倍体）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体细胞含两个染色体组的个体",
+        "B. 体细胞含三个或三个以上染色体组的个体",
+        "C. 单倍体含本物种配子染色体数目",
+        "D. 单倍体一定高度不育"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0032",
+      "item_type": "choice",
+      "stem": "下列属于染色体结构变异的有（    ）",
+      "answer": "E",
+      "kps": [
+        "kp_bio10_chromosome_variation"
+      ],
+      "difficulty": 0.65,
+      "solution": "教材 E 错误——非简单，非同源染色体之间片段交换属易位（D）；A、B、C、D 均为染色体结构变异的类型。E 实际就是易位，故应选 A、B、C、D、E 中均为结构变异但题目通常分开考。按题意应为 A、B、C、D、E 均属结构变异，本题改答案为 A,B,C,D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 缺失",
+        "B. 重复",
+        "C. 倒位",
+        "D. 易位",
+        "E. 非同源染色体之间的片段交换"
+      ],
+      "form": "mcq_multi",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0033",
+      "item_type": "fill",
+      "stem": "用____处理萌发的种子或幼苗可抑制纺锤体形成，使染色体数目加倍，获得多倍体。",
+      "answer": "秋水仙素",
+      "kps": [
+        "kp_bio10_chromosome_variation"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：秋水仙素抑制纺锤体形成，使染色体不能移向两极而加倍。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0034",
+      "item_type": "choice",
+      "stem": "生物多样性不包括下列哪一层次（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_coevolution_biodiversity"
+      ],
+      "difficulty": 0.45,
+      "solution": "生物多样性包括基因多样性、物种多样性和生态系统多样性三个层次；D 不属此分类。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因多样性",
+        "B. 物种多样性",
+        "C. 生态系统多样性",
+        "D. 形态多样性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0035",
+      "item_type": "choice",
+      "stem": "下列属于协同进化实例的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_coevolution_biodiversity"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D、E 均为教材所列协同进化实例。",
+      "source": "llm_generated",
+      "options": [
+        "A. 兰花细长花管与蛾细长口器",
+        "B. 捕食者与被捕食者",
+        "C. 共生生物",
+        "D. 寄生虫与宿主",
+        "E. 原始藻类光合作用使大气变为有氧环境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0036",
+      "item_type": "fill",
+      "stem": "生物多样性主要包括三个层次：基因多样性、____和生态系统多样性。",
+      "answer": "物种多样性",
+      "kps": [
+        "kp_bio10_coevolution_biodiversity"
+      ],
+      "difficulty": 0.4,
+      "solution": "教材：生物多样性 = 基因多样性 + 物种多样性 + 生态系统多样性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0037",
+      "item_type": "choice",
+      "stem": "生物有共同祖先最直接、最有力的证据是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_common_ancestor_evidence"
+      ],
+      "difficulty": 0.45,
+      "solution": "化石是生物进化最直接、最有力的证据。",
+      "source": "llm_generated",
+      "options": [
+        "A. 化石证据",
+        "B. 比较解剖学证据",
+        "C. 胚胎学证据",
+        "D. 细胞和分子证据"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0038",
+      "item_type": "choice",
+      "stem": "下列属于生物有共同祖先证据的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_common_ancestor_evidence"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、E 均为共同祖先证据；D 应是 DNA 序列相似性比较差异越小亲缘关系越近，故 D 表述不全对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 化石",
+        "B. 同源器官",
+        "C. 脊椎动物早期胚胎发育相似",
+        "D. 不同生物 DNA 序列差异",
+        "E. 蝙蝠的翼手、鲸的鳍、人的上肢骨骼相似"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0039",
+      "item_type": "fill",
+      "stem": "比较解剖学的证据——鸟的翼、蝙蝠的翼手、鲸的鳍、人的上肢属于____器官。",
+      "answer": "同源",
+      "kps": [
+        "kp_bio10_common_ancestor_evidence"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材：同源器官是生物有共同祖先的证据。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0040",
+      "item_type": "choice",
+      "stem": "艾弗里实验证明肺炎链球菌的转化因子是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_dna_genetic_material"
+      ],
+      "difficulty": 0.45,
+      "solution": "艾弗里将 S 型细菌的 DNA、蛋白质、多糖等分开与 R 型混合，证明 DNA 是转化因子。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蛋白质",
+        "B. RNA",
+        "C. DNA",
+        "D. 多糖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0041",
+      "item_type": "choice",
+      "stem": "下列关于赫尔希和蔡斯噬菌体侵染实验的叙述，正确的有（    ）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_bio10_dna_genetic_material"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、D 正确；C 错，³²P 主要分布在沉淀物中；E 错，标记的是噬菌体而非大肠杆菌。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用 ³²P 标记噬菌体 DNA",
+        "B. 用 ³⁵S 标记噬菌体蛋白质外壳",
+        "C. 搅拌离心后 ³²P 主要分布在上清液",
+        "D. 实验证明 DNA 是遗传物质",
+        "E. 标记的是大肠杆菌的 DNA"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0042",
+      "item_type": "fill",
+      "stem": "因为绝大多数生物的遗传物质是 DNA，所以 DNA 是____的遗传物质。",
+      "answer": "主要",
+      "kps": [
+        "kp_bio10_dna_genetic_material"
+      ],
+      "difficulty": 0.4,
+      "solution": "教材原文：DNA 是主要的遗传物质（少数病毒为 RNA）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0043",
+      "item_type": "choice",
+      "stem": "DNA 复制发生在（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_dna_replication"
+      ],
+      "difficulty": 0.45,
+      "solution": "DNA 复制发生在有丝分裂或减数第一次分裂前的间期。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有丝分裂前期",
+        "B. 有丝分裂间期",
+        "C. 有丝分裂后期",
+        "D. 减数第二次分裂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0044",
+      "item_type": "choice",
+      "stem": "下列关于 DNA 复制的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_dna_replication"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D、E 均正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以亲代 DNA 两条链分别作为模板",
+        "B. 按碱基互补配对原则合成子链",
+        "C. 边解旋边复制",
+        "D. 方式为半保留复制",
+        "E. 由梅塞尔森和斯塔尔用 ¹⁵N 标记技术证明"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0045",
+      "item_type": "fill",
+      "stem": "DNA 复制需要的基本条件包括：模板（亲代 DNA）、原料（4 种____）、酶和____。",
+      "answer": "脱氧核苷酸；能量",
+      "kps": [
+        "kp_bio10_dna_replication"
+      ],
+      "difficulty": 0.55,
+      "solution": "DNA 复制所需条件：模板、原料（4 种脱氧核苷酸）、酶（解旋酶、DNA 聚合酶等）和能量（ATP）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0046",
+      "item_type": "choice",
+      "stem": "DNA 双螺旋结构中，碱基配对遵循的原则是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_dna_structure"
+      ],
+      "difficulty": 0.4,
+      "solution": "DNA 碱基互补配对原则：A=T，G≡C。",
+      "source": "llm_generated",
+      "options": [
+        "A. A 与 U 配对，G 与 C 配对",
+        "B. A 与 T 配对，G 与 C 配对",
+        "C. A 与 G 配对，T 与 C 配对",
+        "D. A 与 C 配对，T 与 G 配对"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0047",
+      "item_type": "choice",
+      "stem": "下列关于 DNA 双螺旋结构特点的叙述，正确的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_dna_structure"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C、E 均正确；D 错，A-T 之间形成 2 个氢键，G-C 之间形成 3 个氢键。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由两条反向平行的脱氧核苷酸链盘旋而成",
+        "B. 外侧是磷酸与脱氧核糖交替连接构成的基本骨架",
+        "C. 内侧是碱基对通过氢键连接",
+        "D. A 与 T 之间形成 3 个氢键",
+        "E. A 与 T 之间形成 2 个氢键"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0048",
+      "item_type": "fill",
+      "stem": "DNA 分子的多样性和特异性取决于碱基对____的多样性。",
+      "answer": "排列顺序",
+      "kps": [
+        "kp_bio10_dna_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "DNA 多样性与特异性源于碱基对排列顺序的千变万化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0049",
+      "item_type": "choice",
+      "stem": "下列现象中不属于胞吐作用的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_endocytosis_exocytosis"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 为胞吞作用；A、B、C 均为胞吐实例。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分泌蛋白分泌到细胞外",
+        "B. 神经递质由突触前膜释放",
+        "C. 抗体由浆细胞分泌到内环境中",
+        "D. 白细胞吞噬细菌"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0050",
+      "item_type": "choice",
+      "stem": "下列关于胞吞与胞吐的叙述，正确的有（    ）",
+      "answer": "A,C,E",
+      "kps": [
+        "kp_bio10_endocytosis_exocytosis"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、C、E 正确；B 错，选择透过性针对小分子；D 错，胞吞胞吐主要依赖膜的流动性而非识别。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体现生物膜的流动性",
+        "B. 体现生物膜的选择透过性",
+        "C. 需要消耗 ATP",
+        "D. 依赖膜蛋白的识别",
+        "E. 大分子物质以囊泡形式跨膜运输"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0051",
+      "item_type": "fill",
+      "stem": "白细胞吞噬病菌的过程称为____，其结构基础是生物膜的____性。",
+      "answer": "胞吞；流动",
+      "kps": [
+        "kp_bio10_endocytosis_exocytosis"
+      ],
+      "difficulty": 0.4,
+      "solution": "白细胞吞噬病菌为胞吞，体现膜的流动性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0052",
+      "item_type": "choice",
+      "stem": "下列关于酶的叙述，正确的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_enzymes"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错，少数酶是 RNA；B 错，酶不能提供能量，只降低活化能；C 正确；D 错，高温使酶变性失活。",
+      "source": "llm_generated",
+      "options": [
+        "A. 酶都是蛋白质",
+        "B. 酶提供化学反应所需的能量",
+        "C. 酶通过降低活化能提高反应速率",
+        "D. 酶在高温下活性最高"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0053",
+      "item_type": "choice",
+      "stem": "下列关于酶特性的叙述，正确的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_enzymes"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、E 正确；D 错，低温下酶活性降低但空间结构未破坏，可恢复。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高效性",
+        "B. 专一性",
+        "C. 作用条件温和，需要适宜的温度和 pH",
+        "D. 酶在低温下永久失活",
+        "E. 酶可以反复使用"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0054",
+      "item_type": "fill",
+      "stem": "绝大多数酶是____，少数是____；酶通过____化学反应的活化能来提高反应速率。",
+      "answer": "蛋白质；RNA；降低",
+      "kps": [
+        "kp_bio10_enzymes"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材：绝大多数酶是蛋白质，少数是 RNA；酶降低活化能提高反应速率。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0055",
+      "item_type": "choice",
+      "stem": "下列关于表观遗传的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_epigenetics"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错，碱基序列保持不变；B 正确；C 错，启动子区甲基化抑制转录；D 错，动植物均有。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表观遗传指 DNA 碱基序列发生了改变",
+        "B. 表观遗传导致可遗传的表型变化",
+        "C. DNA 甲基化程度与基因表达无关",
+        "D. 表观遗传只发生在植物中"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0056",
+      "item_type": "choice",
+      "stem": "下列属于表观遗传现象的有（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_epigenetics"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C 均为教材列举的表观遗传实例；D、E 属于基因突变或染色体变异。",
+      "source": "llm_generated",
+      "options": [
+        "A. 柳穿花花的形态",
+        "B. Avy 基因甲基化程度不同的小鼠毛色",
+        "C. 营养条件引起的可遗传表型变化",
+        "D. 镰状细胞贫血",
+        "E. 21 三体综合征"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0057",
+      "item_type": "fill",
+      "stem": "表观遗传是指生物体基因的碱基序列保持不变，但基因的____和____发生可遗传变化的现象。",
+      "answer": "表达；表型",
+      "kps": [
+        "kp_bio10_epigenetics"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材原文：表观遗传指基因的碱基序列不变，但基因的表达和表型发生可遗传变化的现象。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0058",
+      "item_type": "choice",
+      "stem": "现代生物进化理论的核心是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_evolution_theory_dev"
+      ],
+      "difficulty": 0.45,
+      "solution": "现代生物进化理论以自然选择学说为核心，是对达尔文学说的完善和发展。",
+      "source": "llm_generated",
+      "options": [
+        "A. 获得性遗传",
+        "B. 自然选择学说",
+        "C. 中性学说",
+        "D. 间断平衡"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0059",
+      "item_type": "choice",
+      "stem": "现代生物进化理论对达尔文学说的完善表现在（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_evolution_theory_dev"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、E 均符合教材所述现代生物进化理论的完善；D 错，未否定过度繁殖等概念。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从分子水平揭示遗传和变异的机理",
+        "B. 以种群为研究单位",
+        "C. 阐明了自然选择的作用机理",
+        "D. 否定了过度繁殖和生存斗争",
+        "E. 引入了基因频率变化的概念"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0060",
+      "item_type": "fill",
+      "stem": "分子进化的中性学说认为多数基因突变是____的，通过随机漂变在种群中固定或消失。",
+      "answer": "中性",
+      "kps": [
+        "kp_bio10_evolution_theory_dev"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：中性学说由木村资生提出，认为多数突变是中性的。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0061",
+      "item_type": "choice",
+      "stem": "两对相对性状（独立遗传）杂交，F₁ 自交后代 F₂ 的性状分离比为（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_free_combination_law"
+      ],
+      "difficulty": 0.45,
+      "solution": "自由组合定律典型比例：9:3:3:1；测交为 1:1:1:1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3:1",
+        "B. 1:1",
+        "C. 9:3:3:1",
+        "D. 9:7"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0062",
+      "item_type": "choice",
+      "stem": "下列关于自由组合定律的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_free_combination_law"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 正确；E 错，同源染色体上的非等位基因属连锁关系，不遵循自由组合定律。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黄圆（YYRR）× 绿皱（yyrr）的 F₁ 全为黄圆",
+        "B. F₁ 自交后代有 4 种表现型",
+        "C. F₁ 测交后代比例为 1:1:1:1",
+        "D. 适用于非同源染色体上的非等位基因",
+        "E. 同源染色体上的非等位基因也遵循自由组合定律"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0063",
+      "item_type": "fill",
+      "stem": "自由组合定律的实质：位于非同源染色体上的非等位基因的____或____是互不干扰的。",
+      "answer": "分离；组合",
+      "kps": [
+        "kp_bio10_free_combination_law"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材原文：位于非同源染色体上的非等位基因的分离或组合是互不干扰的。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0064",
+      "item_type": "choice",
+      "stem": "下列关于基因的叙述，正确的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_gene_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 错，基因为 DNA 片段；B 错，基因在染色体上呈线性排列；C 正确；D 错，一个 DNA 含许多基因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因是有遗传效应的 RNA 片段",
+        "B. 基因在染色体上呈随机排列",
+        "C. 基因是有遗传效应的 DNA 片段",
+        "D. 一个 DNA 分子就是一个基因"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0065",
+      "item_type": "choice",
+      "stem": "下列关于基因与 DNA、染色体关系的叙述，正确的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_gene_concept"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、E 正确；D 错，一条染色体通常只含一个 DNA 分子（复制时含两个染色单体）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因是有遗传效应的 DNA 片段",
+        "B. 基因在染色体上呈线性排列",
+        "C. 基因的脱氧核苷酸排列顺序代表遗传信息",
+        "D. 一个染色体含多个 DNA 分子",
+        "E. 一个 DNA 分子含多个基因"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0066",
+      "item_type": "fill",
+      "stem": "基因是有遗传效应的____片段，是决定生物____的基本单位。",
+      "answer": "DNA；性状",
+      "kps": [
+        "kp_bio10_gene_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材原文：基因是有遗传效应的 DNA 片段，是遗传信息的基本单位，决定生物性状。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0067",
+      "item_type": "choice",
+      "stem": "下列关于转录和翻译的叙述，正确的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_gene_expression"
+      ],
+      "difficulty": 0.55,
+      "solution": "A 错，转录只以一条链为模板；B 错，翻译在核糖体（细胞质中）；C 正确；D 错，反密码子在 tRNA 另一端。",
+      "source": "llm_generated",
+      "options": [
+        "A. 转录以 DNA 两条链为模板合成 mRNA",
+        "B. 翻译在细胞核中进行",
+        "C. mRNA 上 3 个相邻碱基决定 1 个氨基酸（密码子）",
+        "D. tRNA 携带氨基酸的一端是反密码子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0068",
+      "item_type": "choice",
+      "stem": "下列关于密码子和反密码子的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_gene_expression"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D、E 均符合教材所述。",
+      "source": "llm_generated",
+      "options": [
+        "A. 密码子位于 mRNA 上",
+        "B. 反密码子位于 tRNA 上",
+        "C. 共有 64 个密码子",
+        "D. 终止密码子不编码氨基酸",
+        "E. 起始密码子 AUG 同时编码甲硫氨酸"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0069",
+      "item_type": "fill",
+      "stem": "转录以 DNA 的一条链为模板，需要____酶催化；翻译的场所是____。",
+      "answer": "RNA 聚合；核糖体",
+      "kps": [
+        "kp_bio10_gene_expression"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：转录需要 RNA 聚合酶；翻译在核糖体上进行。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0070",
+      "item_type": "choice",
+      "stem": "基因突变是指（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_gene_mutation"
+      ],
+      "difficulty": 0.45,
+      "solution": "基因突变是 DNA 分子中发生碱基对的增添、缺失或替换，引起基因结构的改变；A、C、D 均非基因突变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 染色体数目的变化",
+        "B. DNA 碱基对的增添、缺失或替换",
+        "C. 基因的自由组合",
+        "D. 染色体的交叉互换"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0071",
+      "item_type": "choice",
+      "stem": "下列关于基因突变特点的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_gene_mutation"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C、D、E 均符合教材所述基因突变特点与意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. 普遍存在",
+        "B. 随机不定向",
+        "C. 频率很低",
+        "D. 多数有害少数有利",
+        "E. 新基因产生的途径，是生物变异的根本来源"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0072",
+      "item_type": "fill",
+      "stem": "基因突变是生物变异的____来源，为生物进化提供丰富的____。",
+      "answer": "根本；原材料",
+      "kps": [
+        "kp_bio10_gene_mutation"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：基因突变是新基因产生的途径，是生物变异的根本来源，为生物进化提供原材料。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0073",
+      "item_type": "choice",
+      "stem": "摩尔根通过果蝇杂交实验证明控制白眼性状的基因位于（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_gene_on_chromosome"
+      ],
+      "difficulty": 0.45,
+      "solution": "摩尔根发现白眼性状与性别相关联，证实白眼基因位于 X 染色体上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 常染色体上",
+        "B. X 染色体上",
+        "C. Y 染色体上",
+        "D. 线粒体 DNA 上"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0074",
+      "item_type": "choice",
+      "stem": "下列关于萨顿和摩尔根的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_gene_on_chromosome"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均正确；E 错，白眼基因位于 X 染色体上，Y 上没有其等位基因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 萨顿用类比推理法提出基因在染色体上的假说",
+        "B. 摩尔根用假说—演绎法证明基因在染色体上",
+        "C. 摩尔根发明了测定基因在染色体上相对位置的方法",
+        "D. 基因在染色体上呈线性排列",
+        "E. 摩尔根证明白眼基因位于 Y 染色体上"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0075",
+      "item_type": "fill",
+      "stem": "萨顿运用____推理法提出基因在染色体上的假说；摩尔根运用____演绎法用果蝇实验证实了这一假说。",
+      "answer": "类比；假说—",
+      "kps": [
+        "kp_bio10_gene_on_chromosome"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：萨顿用类比推理法，摩尔根用假说—演绎法。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0076",
+      "item_type": "choice",
+      "stem": "下列属于基因重组的是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_gene_recombination"
+      ],
+      "difficulty": 0.45,
+      "solution": "交叉互换型基因重组发生在减数分裂四分体时期；B 为染色体变异；C、D 为基因突变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 同源染色体上非姐妹染色单体之间的交叉互换",
+        "B. 染色体数目加倍",
+        "C. 基因中碱基对的替换",
+        "D. DNA 复制错误"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0077",
+      "item_type": "choice",
+      "stem": "下列关于基因重组的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_gene_recombination"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D 均正确；E 错，基因重组不属染色体结构变异。",
+      "source": "llm_generated",
+      "options": [
+        "A. 包括自由组合型和交叉互换型",
+        "B. 自由组合型发生在非同源染色体上",
+        "C. 不产生新基因但产生新基因型",
+        "D. 是有性生殖后代多样性的主要原因之一",
+        "E. 属于染色体结构变异"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0078",
+      "item_type": "fill",
+      "stem": "基因重组发生在生物进行____生殖的过程中，是已有基因的____组合。",
+      "answer": "有性；重新",
+      "kps": [
+        "kp_bio10_gene_recombination"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：基因重组发生在有性生殖过程中，是已有基因的重新组合。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0079",
+      "item_type": "choice",
+      "stem": "囊性纤维化是基因控制性状的实例，其机理是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_gene_trait_relation"
+      ],
+      "difficulty": 0.55,
+      "solution": "囊性纤维化、镰状细胞贫血均为基因通过控制蛋白质结构直接控制性状的实例；A 为间接控制（如白化病）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因通过控制酶的合成控制代谢过程",
+        "B. 基因通过控制蛋白质结构直接控制性状",
+        "C. 基因通过控制 mRNA 的合成控制性状",
+        "D. 环境因素直接决定性状"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0080",
+      "item_type": "choice",
+      "stem": "下列关于基因与性状关系的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_gene_trait_relation"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均正确；E 错，性状是基因型+环境共同决定的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因通过控制酶的合成间接控制性状",
+        "B. 基因通过控制蛋白质结构直接控制性状",
+        "C. 生物的表型由基因型和环境共同决定",
+        "D. 线粒体 DNA 上的基因控制某些性状，表现为母系遗传",
+        "E. 所有性状都只由基因决定，与环境无关"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0081",
+      "item_type": "fill",
+      "stem": "白化病是由于基因控制____的合成，进而影响____过程，间接控制性状。",
+      "answer": "酶（酪氨酸酶）；代谢",
+      "kps": [
+        "kp_bio10_gene_trait_relation"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：白化病是基因通过控制酶的合成来控制代谢过程进而控制性状的间接控制实例。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0082",
+      "item_type": "choice",
+      "stem": "下列疾病中属于单基因遗传病的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_human_genetic_diseases"
+      ],
+      "difficulty": 0.45,
+      "solution": "红绿色盲为 X 染色体隐性单基因遗传病；A、B 为多基因遗传病；D 为染色体异常遗传病。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原发性高血压",
+        "B. 青少年型糖尿病",
+        "C. 红绿色盲",
+        "D. 21 三体综合征"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0083",
+      "item_type": "choice",
+      "stem": "下列属于遗传病监测和预防措施的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_human_genetic_diseases"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：遗传咨询和产前诊断（羊水检查、B 超、基因检测等）均为遗传病预防手段。",
+      "source": "llm_generated",
+      "options": [
+        "A. 遗传咨询",
+        "B. 产前诊断",
+        "C. 羊水检查",
+        "D. B 超检查",
+        "E. 基因检测"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0084",
+      "item_type": "fill",
+      "stem": "调查人群中的遗传病时，宜在群体中随机抽样调查____（发病率/症状）且调查群体要足够____。",
+      "answer": "发病率；大",
+      "kps": [
+        "kp_bio10_human_genetic_diseases"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：调查遗传病发病率应在群体中随机抽样且调查群体足够大。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0085",
+      "item_type": "choice",
+      "stem": "下列关于无机盐的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_inorganic_salts"
+      ],
+      "difficulty": 0.45,
+      "solution": "A 错误，无机盐大多以离子形式存在，但也可形成化合物；B 正确；C 错（Mg 是叶绿素成分，I 是甲状腺激素原料）；D 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 无机盐在细胞中只以离子形式存在",
+        "B. Fe 是血红素的组成成分",
+        "C. I 是叶绿素的组成成分",
+        "D. Mg 是甲状腺激素的原料"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0086",
+      "item_type": "choice",
+      "stem": "下列无机盐离子与其生理作用对应正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_inorganic_salts"
+      ],
+      "difficulty": 0.7,
+      "solution": "均为教材所列无机盐离子的典型生理作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. Fe²⁺——合成血红素",
+        "B. Mg²⁺——合成叶绿素",
+        "C. Ca²⁺——维持血钙浓度，参与肌肉收缩",
+        "D. I⁻——合成甲状腺激素",
+        "E. Na⁺——维持细胞外液渗透压"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0087",
+      "item_type": "fill",
+      "stem": "无机盐在细胞中主要以____形式存在；哺乳动物血液中 Ca²⁺ 含量过低时，会发生____症状。",
+      "answer": "离子；抽搐",
+      "kps": [
+        "kp_bio10_inorganic_salts"
+      ],
+      "difficulty": 0.55,
+      "solution": "无机盐主要以离子形式存在；血钙过低会引起抽搐，血钙过高会引起肌无力。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0088",
+      "item_type": "choice",
+      "stem": "等质量的脂肪比糖原氧化分解时释放的能量更多，主要原因是脂肪中（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_lipids"
+      ],
+      "difficulty": 0.55,
+      "solution": "脂肪分子中 C、H 比例高，O 比例低，与 O₂ 结合时能产生更多 CO₂ 和 H₂O，释放能量多。",
+      "source": "llm_generated",
+      "options": [
+        "A. C、H 比例高，O 比例低",
+        "B. 含氮量高",
+        "C. 含有磷酸基团",
+        "D. 与苏丹Ⅲ结合后显色更深"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0089",
+      "item_type": "choice",
+      "stem": "下列关于脂质的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_lipids"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均正确；性激素和维生素 D 属固醇（脂质），而非蛋白质，故 E 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 脂肪是细胞内良好的储能物质",
+        "B. 磷脂是构成生物膜的重要成分",
+        "C. 固醇类包括胆固醇、性激素和维生素 D",
+        "D. 胆固醇参与血液中脂质运输",
+        "E. 性激素和维生素 D 属于蛋白质类物质"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0090",
+      "item_type": "fill",
+      "stem": "脂肪可被苏丹Ⅲ染液染成____色，被苏丹Ⅳ染液染成____色。",
+      "answer": "橘黄；红",
+      "kps": [
+        "kp_bio10_lipids"
+      ],
+      "difficulty": 0.45,
+      "solution": "脂肪鉴定：苏丹Ⅲ染液使脂肪呈橘黄色；苏丹Ⅳ染液使脂肪呈红色。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0091",
+      "item_type": "choice",
+      "stem": "减数分裂过程中，染色体数目减半发生在（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_meiosis_fertilization"
+      ],
+      "difficulty": 0.5,
+      "solution": "减数第一次分裂同源染色体分开进入两个子细胞，染色体数目减半；减数第二次分裂类似有丝分裂，数目不变。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减数第一次分裂",
+        "B. 减数第二次分裂",
+        "C. 联会时",
+        "D. 四分体时期"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0092",
+      "item_type": "choice",
+      "stem": "下列关于减数分裂与受精作用的叙述，正确的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_meiosis_fertilization"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D、E 均符合教材所述减数分裂与受精作用意义。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减数分裂 DNA 复制一次，细胞连续分裂两次",
+        "B. 精原细胞经减数分裂形成 4 个精细胞",
+        "C. 卵原细胞经减数分裂形成 1 个卵细胞和 3 个极体",
+        "D. 受精作用使染色体数目恢复为体细胞水平",
+        "E. 减数分裂和受精作用维持前后代染色体数目的恒定"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0093",
+      "item_type": "fill",
+      "stem": "减数分裂过程中同源染色体联会形成____，此时可发生____互换。",
+      "answer": "四分体；非姐妹染色单体之间的交叉",
+      "kps": [
+        "kp_bio10_meiosis_fertilization"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：联会使同源染色体形成四分体，可发生非姐妹染色单体之间的交叉互换。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0094",
+      "item_type": "choice",
+      "stem": "有丝分裂中期染色体的主要特征是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_mitosis"
+      ],
+      "difficulty": 0.45,
+      "solution": "中期：着丝粒排列在赤道板上，是观察和计数染色体的最佳时期；A 为前期，C 为后期，D 为末期。",
+      "source": "llm_generated",
+      "options": [
+        "A. 染色质螺旋化变染色体",
+        "B. 着丝粒排列在赤道板上",
+        "C. 着丝粒分裂，染色体数目加倍",
+        "D. 核膜核仁重现"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0095",
+      "item_type": "choice",
+      "stem": "下列属于有丝分裂前期特征的有（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_mitosis"
+      ],
+      "difficulty": 0.55,
+      "solution": "前期：染色质螺旋化、核膜核仁解体、纺锤体出现；D 为中期；E 为后期。",
+      "source": "llm_generated",
+      "options": [
+        "A. 染色质螺旋化变染色体",
+        "B. 核膜核仁逐渐消失",
+        "C. 出现纺锤体",
+        "D. 着丝粒排列在赤道板上",
+        "E. 染色体数目暂时加倍"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0096",
+      "item_type": "fill",
+      "stem": "观察根尖有丝分裂的实验步骤为：____→漂洗→染色→制片；染色常用____溶液。",
+      "answer": "解离；龙胆紫（或醋酸洋红）",
+      "kps": [
+        "kp_bio10_mitosis"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材实验步骤：解离→漂洗→染色→制片；常用龙胆紫或醋酸洋红染色。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0097",
+      "item_type": "choice",
+      "stem": "下列不属于达尔文自然选择学说内容的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_natural_selection_theory"
+      ],
+      "difficulty": 0.45,
+      "solution": "达尔文学说四要点：过度繁殖、生存斗争、遗传变异、适者生存；'用进废退'为拉马克学说。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过度繁殖",
+        "B. 生存斗争",
+        "C. 遗传变异",
+        "D. 用进废退"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0098",
+      "item_type": "choice",
+      "stem": "达尔文自然选择学说的内容包括（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_natural_selection_theory"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C、D 为达尔文自然选择学说四点核心内容；E 为拉马克学说。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过度繁殖",
+        "B. 生存斗争",
+        "C. 遗传变异",
+        "D. 适者生存",
+        "E. 用进废退"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0099",
+      "item_type": "fill",
+      "stem": "达尔文自然选择学说合理地解释了____的形成和____的多样性，为科学认识生物界奠定了基础。",
+      "answer": "适应；物种",
+      "kps": [
+        "kp_bio10_natural_selection_theory"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：达尔文学说合理解释了适应的形成和物种的多样性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0100",
+      "item_type": "choice",
+      "stem": "下列关于 DNA 与 RNA 的叙述，正确的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_nucleic_acids"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错，DNA 含 T 不含 U；B 错，RNA 主要在细胞质；C 正确；D 错，吡罗红染 RNA 为红色。",
+      "source": "llm_generated",
+      "options": [
+        "A. DNA 的碱基有 A、U、G、C",
+        "B. RNA 主要存在于细胞核中",
+        "C. 核酸是细胞内携带遗传信息的物质",
+        "D. 吡罗红将 DNA 染成红色"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0101",
+      "item_type": "choice",
+      "stem": "下列关于真核细胞中核酸分布的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_nucleic_acids"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D 均符合教材；E 错，有些病毒 RNA 通过 RNA 复制产生。",
+      "source": "llm_generated",
+      "options": [
+        "A. DNA 主要分布在细胞核",
+        "B. RNA 主要分布在细胞质",
+        "C. 线粒体和叶绿体中含少量 DNA 和 RNA",
+        "D. 甲基绿吡罗红混合染色：DNA 绿色、RNA 红色",
+        "E. 所有 RNA 都由 DNA 转录而来"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0102",
+      "item_type": "fill",
+      "stem": "DNA 的基本单位是____；RNA 的碱基有 A、U、G、____。",
+      "answer": "脱氧核苷酸；C",
+      "kps": [
+        "kp_bio10_nucleic_acids"
+      ],
+      "difficulty": 0.4,
+      "solution": "DNA 由脱氧核苷酸聚合而成；RNA 含 A、U、G、C 四种碱基。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0103",
+      "item_type": "choice",
+      "stem": "下列关于细胞核的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_nucleus"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错，核膜为双层膜；B 正确；C 错，染色质由 DNA 和蛋白质组成；D 错，核孔有选择性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 核膜是单层膜",
+        "B. 核仁与核糖体的形成有关",
+        "C. 染色质由 RNA 和蛋白质组成",
+        "D. 核孔对物质运输无选择性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0104",
+      "item_type": "choice",
+      "stem": "下列关于细胞核功能的叙述，正确的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_nucleus"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C 正确；D 错，少数高度特化细胞如哺乳动物成熟红细胞无核；E 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 是遗传信息库",
+        "B. 是细胞代谢的控制中心",
+        "C. 控制细胞的遗传和代谢",
+        "D. 细胞核是所有细胞必需的",
+        "E. 哺乳动物成熟红细胞无细胞核，但寿命短"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0105",
+      "item_type": "fill",
+      "stem": "细胞核由核膜、核仁和____组成；其中____是遗传信息的主要载体。",
+      "answer": "染色质；染色质",
+      "kps": [
+        "kp_bio10_nucleus"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材原文：核膜、核仁、染色质；染色质由 DNA 和蛋白质组成，是遗传信息的主要载体。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0106",
+      "item_type": "choice",
+      "stem": "分泌蛋白从合成到分泌出细胞外，依次经过的细胞结构是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_bio10_organelle_cooperation"
+      ],
+      "difficulty": 0.45,
+      "solution": "分泌蛋白合成运输路径：核糖体（合成肽链）→内质网（初加工）→高尔基体（深加工分类包装）→囊泡→细胞膜（胞吐）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 核糖体→内质网→高尔基体→细胞膜",
+        "B. 核糖体→高尔基体→内质网→细胞膜",
+        "C. 内质网→核糖体→高尔基体→细胞膜",
+        "D. 内质网→高尔基体→核糖体→细胞膜"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0107",
+      "item_type": "choice",
+      "stem": "关于生物膜系统的叙述，正确的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_organelle_cooperation"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、E 均正确；D 错，生物膜系统之间存在结构和功能上的联系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由细胞器膜、细胞膜和核膜等构成",
+        "B. 使细胞内部区域化，保证反应高效进行",
+        "C. 分泌蛋白的运输以囊泡形式进行",
+        "D. 各种生物膜在结构和功能上独立，没有联系",
+        "E. 体现了一定的流动性"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0108",
+      "item_type": "fill",
+      "stem": "分泌蛋白合成与运输过程中需要____（细胞器）提供能量，整个过程体现生物膜的____性。",
+      "answer": "线粒体；流动",
+      "kps": [
+        "kp_bio10_organelle_cooperation"
+      ],
+      "difficulty": 0.45,
+      "solution": "线粒体提供能量；运输过程体现膜的流动性。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0109",
+      "item_type": "choice",
+      "stem": "下列细胞器中，没有膜结构的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_organelles"
+      ],
+      "difficulty": 0.4,
+      "solution": "核糖体无膜，由 rRNA 和蛋白质构成；其余均具膜结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 线粒体",
+        "B. 叶绿体",
+        "C. 核糖体",
+        "D. 溶酶体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0110",
+      "item_type": "choice",
+      "stem": "下列细胞器与其功能对应正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_organelles"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均正确；E 错，中心体存在于动物和低等植物细胞。",
+      "source": "llm_generated",
+      "options": [
+        "A. 线粒体——有氧呼吸主要场所，'动力车间'",
+        "B. 叶绿体——光合作用场所，'能量转换站'",
+        "C. 内质网——蛋白质加工和脂质合成的'车间'",
+        "D. 高尔基体——蛋白质分类、包装和运输",
+        "E. 中心体——与细胞分裂有关，存在于所有真核细胞"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0111",
+      "item_type": "fill",
+      "stem": "分离各种细胞器常用的方法是____。植物细胞中调节细胞内环境并使细胞保持坚挺的细胞器是____。",
+      "answer": "差速离心法；液泡",
+      "kps": [
+        "kp_bio10_organelles"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：差速离心法分离细胞器；液泡调节植物细胞内环境使细胞坚挺。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0112",
+      "item_type": "choice",
+      "stem": "下列物质进出细胞的方式属于自由扩散的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_passive_transport"
+      ],
+      "difficulty": 0.45,
+      "solution": "O₂、CO₂、甘油、脂肪酸等小分子以自由扩散方式跨膜；A、D 为协助扩散或主动运输；C 为主动运输。",
+      "source": "llm_generated",
+      "options": [
+        "A. 葡萄糖进入红细胞",
+        "B. O₂ 进入细胞",
+        "C. Na⁺ 进入神经细胞",
+        "D. 小肠上皮细胞吸收葡萄糖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0113",
+      "item_type": "choice",
+      "stem": "下列属于协助扩散特征的有（    ）",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_bio10_passive_transport"
+      ],
+      "difficulty": 0.55,
+      "solution": "A、B、C、E 均符合协助扩散特征；D 错，不消耗能量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 顺浓度梯度运输",
+        "B. 需要转运蛋白协助",
+        "C. 不消耗 ATP",
+        "D. 需要线粒体供能",
+        "E. 如红细胞吸收葡萄糖"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0114",
+      "item_type": "fill",
+      "stem": "渗透作用发生的两个必要条件是具有____膜和____差。",
+      "answer": "半透；浓度",
+      "kps": [
+        "kp_bio10_passive_transport"
+      ],
+      "difficulty": 0.4,
+      "solution": "渗透作用发生的条件：半透膜和浓度差。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0115",
+      "item_type": "choice",
+      "stem": "光合作用光反应阶段，不发生的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_photosynthesis"
+      ],
+      "difficulty": 0.45,
+      "solution": "CO₂ 的固定发生在暗反应（叶绿体基质），不在光反应阶段。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水的光解产生 [H] 和 O₂",
+        "B. 光能转化为 ATP 和 NADPH 中的化学能",
+        "C. CO₂ 的固定",
+        "D. 在类囊体薄膜上进行"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0116",
+      "item_type": "choice",
+      "stem": "下列关于光合作用色素的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_photosynthesis"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均正确；E 错，色素分布在类囊体薄膜上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 叶绿素主要吸收红光和蓝紫光",
+        "B. 类胡萝卜素主要吸收蓝紫光",
+        "C. 可用无水乙醇提取色素",
+        "D. 纸层析法分离后滤纸条上自上而下依次为胡萝卜素、叶黄素、叶绿素 a、叶绿素 b",
+        "E. 色素分布在叶绿体内膜上"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0117",
+      "item_type": "fill",
+      "stem": "光合作用暗反应中，CO₂ 与 C₅ 结合形成 C₃ 的过程称为____，C₃ 被 [H] 还原为有机物的过程称为____。",
+      "answer": "CO₂ 的固定；C₃ 的还原",
+      "kps": [
+        "kp_bio10_photosynthesis"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：CO₂ 的固定和 C₃ 的还原是暗反应的两个关键步骤。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0118",
+      "item_type": "choice",
+      "stem": "生物进化的基本单位是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_population_gene_frequency"
+      ],
+      "difficulty": 0.4,
+      "solution": "现代生物进化理论认为种群是生物进化的基本单位。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个体",
+        "B. 种群",
+        "C. 群落",
+        "D. 生态系统"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0119",
+      "item_type": "choice",
+      "stem": "生物进化的原材料来自（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_population_gene_frequency"
+      ],
+      "difficulty": 0.55,
+      "solution": "教材：突变（基因突变和染色体变异）和基因重组为生物进化提供原材料；自然选择决定方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基因突变",
+        "B. 基因重组",
+        "C. 染色体变异",
+        "D. 自然选择",
+        "E. 环境改变"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0120",
+      "item_type": "fill",
+      "stem": "生物进化的实质是种群____频率的____改变。",
+      "answer": "基因；定向",
+      "kps": [
+        "kp_bio10_population_gene_frequency"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材：生物进化的实质是种群基因频率的定向改变。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0121",
+      "item_type": "choice",
+      "stem": "下列生物中属于原核生物的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_prokaryote_eukaryote"
+      ],
+      "difficulty": 0.45,
+      "solution": "蓝细菌无以核膜为界限的细胞核，是原核生物；A、B、D 均为真核生物。",
+      "source": "llm_generated",
+      "options": [
+        "A. 酵母菌",
+        "B. 草履虫",
+        "C. 蓝细菌（蓝藻）",
+        "D. 衣藻"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0122",
+      "item_type": "choice",
+      "stem": "原核细胞与真核细胞共有的结构有（    ）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_bio10_prokaryote_eukaryote"
+      ],
+      "difficulty": 0.55,
+      "solution": "原核和真核都有细胞膜、细胞质和核糖体；D 为真核特有；E 为原核特有。",
+      "source": "llm_generated",
+      "options": [
+        "A. 细胞膜",
+        "B. 细胞质",
+        "C. 核糖体",
+        "D. 以核膜为界限的细胞核",
+        "E. 拟核（核区）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0123",
+      "item_type": "fill",
+      "stem": "原核细胞没有以核膜为界限的____，DNA 集中在该区域，称为____。",
+      "answer": "细胞核；拟核",
+      "kps": [
+        "kp_bio10_prokaryote_eukaryote"
+      ],
+      "difficulty": 0.45,
+      "solution": "原核细胞无成形细胞核，DNA 集中在拟核区域。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0124",
+      "item_type": "choice",
+      "stem": "下列关于蛋白质结构的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_proteins"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 错误，有的蛋白质含 S 等；B 正确；C 错，变性仅破坏空间结构，肽键未断裂；D 错，多样性取决于种类、数目、排列和空间结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蛋白质只含 C、H、O、N 元素",
+        "B. 氨基酸通过肽键脱水缩合连接成多肽",
+        "C. 蛋白质变性后空间结构改变，肽键断裂",
+        "D. 蛋白质结构多样性只与氨基酸种类有关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0125",
+      "item_type": "choice",
+      "stem": "蛋白质结构多样性的原因有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_proteins"
+      ],
+      "difficulty": 0.6,
+      "solution": "教材所列多样性原因：种类、数目、排列顺序、肽链空间结构。E 错，肽键的连接方式相同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 氨基酸的种类不同",
+        "B. 氨基酸的数目不同",
+        "C. 氨基酸的排列顺序不同",
+        "D. 肽链的空间结构不同",
+        "E. 肽键的连接方式不同"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0126",
+      "item_type": "fill",
+      "stem": "氨基酸通过____反应形成肽键，蛋白质可与____试剂发生反应产生紫色△R，用于鉴定蛋白质。",
+      "answer": "脱水缩合；双缩脲",
+      "kps": [
+        "kp_bio10_proteins"
+      ],
+      "difficulty": 0.45,
+      "solution": "氨基酸脱水缩合形成肽键；蛋白质与双缩脲试剂反应产生紫色。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0127",
+      "item_type": "choice",
+      "stem": "孟德尔一对相对性状杂交实验中，F₁ 自交后代 F₂ 中显隐性性状分离比约为（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_segregation_law"
+      ],
+      "difficulty": 0.45,
+      "solution": "F₁（Aa）自交 F₂ 出现 AA:Aa:aa=1:2:1，表现为显:隐=3:1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1:1",
+        "B. 2:1",
+        "C. 3:1",
+        "D. 9:3:3:1"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0128",
+      "item_type": "choice",
+      "stem": "下列关于分离定律的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_segregation_law"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、C、D 均符合教材；E 过于绝对，分离定律适用条件是等位基因位于同源染色体上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 孟德尔用假说—演绎法发现了分离定律",
+        "B. 等位基因随同源染色体的分开而分离",
+        "C. F₁ 自交后代出现性状分离比约为 3:1",
+        "D. 测交后代性状分离比为 1:1",
+        "E. 分离定律的实质适用于所有有性生殖生物"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0129",
+      "item_type": "fill",
+      "stem": "基因分离定律的实质：在杂合子细胞中，位于一对____染色体上的____具有一定的独立性。",
+      "answer": "同源；等位基因",
+      "kps": [
+        "kp_bio10_segregation_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材原文：分离定律的实质是位于同源染色体上的等位基因在减数分裂形成配子时分离。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0130",
+      "item_type": "choice",
+      "stem": "下列遗传病中，属于 X 染色体显性遗传的是（    ）",
+      "answer": "C",
+      "kps": [
+        "kp_bio10_sex_linked_inheritance"
+      ],
+      "difficulty": 0.5,
+      "solution": "抗维生素 D 佝偻病为 X 显性遗传；A、B 为 X 隐性；D 为染色体异常遗传病。",
+      "source": "llm_generated",
+      "options": [
+        "A. 红绿色盲",
+        "B. 血友病",
+        "C. 抗维生素 D 佝偻病",
+        "D. 21 三体综合征"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0131",
+      "item_type": "choice",
+      "stem": "下列关于伴 X 隐性遗传特点的叙述，正确的有（    ）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_bio10_sex_linked_inheritance"
+      ],
+      "difficulty": 0.6,
+      "solution": "A、B、C、D 均正确；E 错，男性也可患病且多于女性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 男性发病率高于女性",
+        "B. 女性患者的父亲和儿子一定是患者",
+        "C. 常表现为隔代交叉遗传",
+        "D. 红绿色盲和血友病属于此类",
+        "E. 患者均为女性"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0132",
+      "item_type": "fill",
+      "stem": "人类基因组计划测定了____条染色体（22 条常染色体 + X + Y）上的 DNA 碱基序列。",
+      "answer": "24",
+      "kps": [
+        "kp_bio10_sex_linked_inheritance"
+      ],
+      "difficulty": 0.5,
+      "solution": "教材：人类基因组 = 22 条常染色体 + X + Y = 24 条染色体。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0133",
+      "item_type": "choice",
+      "stem": "下列关于物种的叙述，正确的是（    ）",
+      "answer": "B",
+      "kps": [
+        "kp_bio10_speciation_isolation"
+      ],
+      "difficulty": 0.5,
+      "solution": "物种定义：能在自然状态下相互交配并产生可育后代的群体；马和驴交配产生的骡不育，故为不同物种。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能在同一区域生活的所有生物",
+        "B. 能在自然状态下相互交配并产生可育后代的一群生物",
+        "C. 具有相同形态的所有生物",
+        "D. 分布在同一区域的所有个体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0134",
+      "item_type": "choice",
+      "stem": "下列属于隔离类型的有（    ）",
+      "answer": "A,B,C,D,E",
+      "kps": [
+        "kp_bio10_speciation_isolation"
+      ],
+      "difficulty": 0.6,
+      "solution": "教材列举的隔离类型：地理隔离和生殖隔离为主，还有季节隔离、机械隔离、行为隔离等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地理隔离",
+        "B. 生殖隔离",
+        "C. 季节隔离",
+        "D. 行为隔离",
+        "E. 机械隔离"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0135",
+      "item_type": "fill",
+      "stem": "物种形成的必要条件是____，物种形成的标志是____。",
+      "answer": "隔离；生殖隔离",
+      "kps": [
+        "kp_bio10_speciation_isolation"
+      ],
+      "difficulty": 0.45,
+      "solution": "教材：隔离是物种形成的必要条件，生殖隔离是物种形成的标志。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0136",
+      "item_type": "choice",
+      "stem": "下列关于细胞内水的叙述，错误的是（    ）",
+      "answer": "D",
+      "kps": [
+        "kp_bio10_water"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C 均正确；自由水/结合水在一定条件下可相互转化，D 错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水是活细胞中含量最多的化合物",
+        "B. 自由水是细胞内的良好溶剂",
+        "C. 结合水比例升高时细胞抗逆性增强",
+        "D. 自由水和结合水不能相互转化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0137",
+      "item_type": "choice",
+      "stem": "下列哪些情况会使细胞中自由水/结合水比值升高（    ）",
+      "answer": "A,D,E",
+      "kps": [
+        "kp_bio10_water"
+      ],
+      "difficulty": 0.7,
+      "solution": "代谢旺盛时自由水比例升高，萌发、发烧、吸水后均如此；休眠和失水时结合水比例升高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 种子萌发",
+        "B. 越冬作物进入休眠",
+        "C. 干旱时植物失水",
+        "D. 人发烧时",
+        "E. 干种子吸水后"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_g10_0138",
+      "item_type": "fill",
+      "stem": "细胞中的水以____和____两种形式存在；二者比值越高，细胞代谢通常越____。",
+      "answer": "自由水；结合水；旺盛",
+      "kps": [
+        "kp_bio10_water"
+      ],
+      "difficulty": 0.4,
+      "solution": "教材原文：自由水和结合水两种形式存在，自由水比例越高细胞代谢越旺盛。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

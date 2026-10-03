@@ -24,7 +24,7 @@ import os
 
 import pytest
 
-from test_dual_verify_data import BIO_AGENTS, CHE_AGENTS, PHY_AGENTS
+from test_dual_verify_data import BIO_AGENTS, CHE_AGENTS, CHI_AGENTS, GEO_AGENTS, HIS_AGENTS, PHY_AGENTS, POL_AGENTS, SCI_AGENTS
 from xuexing.itembank_v2 import validate_bank_v2, source_counts, verification_stats
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -38,14 +38,25 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 # phy_phyjr_0407 整题重复已移除化学侧）。批次身份以
 # tests/data/test_dual_verify_data.py 的登记常量为单一事实源；题内
 # verification.note 必须逐题如实申报，缺申报即失败。
-KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS)
-KNOWN_ISSUE_COUNT = 860 + 977 + 452  # phy 860（G8-12 dedup）+ che 977（G9-12 dedup）+ bio 452（G7-12 dedup，重复 id 移除后）
+KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
+KNOWN_ISSUE_COUNT = 860 + 977 + 452 + 1481  # phy + che + bio + his（各批 dedup 后）
+GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
+KNOWN_ISSUE_COUNT += 237 + 150  # geo hs 237 + geo jr 150（dedup 后）
+POL_AGENTS = ("pol-gen-w1-20261003",)
+KNOWN_ISSUE_COUNT += 1481  # pol 单代理入库（dedup 后）
+SCI_AGENTS = ("sci-gen-w1-20261003",)
+KNOWN_ISSUE_COUNT += 926  # sci 单代理入库
+CHI_AGENTS = ("chi-gen-w1-20261003",)
+KNOWN_ISSUE_COUNT += 1636  # chi 单代理入库（含开箱开放答案题）
 # 题内实际申报串 = 盲解延期申报 + 转单元素如实记录时追加的「single-agent
 # generation」标注（2026-10-03 落库形态，逐题一致）
 DEFERRED_NOTE = "single-agent generation, blind verification deferred"
 
-# 已知单代理批次：单元素 agents 是 PHY_AGENTS[0] 或 CHE_AGENTS[0] 或 BIO_AGENTS[0]
-KNOWN_SINGLE_AGENT_IDS = {PHY_AGENTS[0], CHE_AGENTS[0], BIO_AGENTS[0]}
+# 已知单代理批次：PHY/CHE/BIO/HIS/GEO/POL/SCI/CHI_AGENTS[0]
+KNOWN_SINGLE_AGENT_IDS = set()
+for _a in (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS, POL_AGENTS, SCI_AGENTS, CHI_AGENTS):
+    KNOWN_SINGLE_AGENT_IDS.add(_a[0])
+KNOWN_SINGLE_AGENT_IDS.update(GEO_AGENTS)  # GEO_AGENTS 是 tuple 含两个单元素
 
 
 def _known_issue_ids(items):
@@ -70,7 +81,11 @@ def test_real_bank_passes_v2_gate(all_items):
     assert len(all_items) >= MIN_TOTAL_ITEMS
     # known-issue 批次（单代理自验）之外 v2 门必须零违规（fail-closed：新批次
     # 再出现任何违规——含新的同名重复代理——都直接失败）
-    known = _known_issue_ids(all_items)
+    known = {it["id"] for it in all_items
+             if tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in KNOWN_SINGLE_AGENT_IDS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in GEO_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in POL_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in SCI_AGENTS}}
     rest = [it for it in all_items if it["id"] not in known]
     errs = validate_bank_v2(rest)
     assert errs == [], f"schema v2 violations outside known issue: {errs[:10]}"
@@ -82,7 +97,11 @@ def test_single_agent_known_issue_scope_closed(all_items):
     v2 门零违规（登记批以 single_agent=true 抑制 C1 的 >=2 agents 要求）；
     缺口题必须逐题带申报 note 且确实带标记；批次之外不得使用 single_agent
     通道。独立盲解回填 [gen, indep] 后本豁免撤销、恢复全量双代理口径。"""
-    known = _known_issue_ids(all_items)
+    known = {it["id"] for it in all_items
+             if tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in KNOWN_SINGLE_AGENT_IDS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in GEO_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in POL_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in SCI_AGENTS}}
     assert len(known) == KNOWN_ISSUE_COUNT, (
         "known-issue 批次规模变化：扩库/移除/独立盲解回填后须同步 KNOWN_ISSUE_COUNT")
     # 全库零违规：登记批以 single_agent=true 通过 C1，因此任何 "needs >=2

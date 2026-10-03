@@ -1,0 +1,2062 @@
+{
+  "items": [
+    {
+      "id": "sci_prim_0001",
+      "item_type": "fill",
+      "stem": "我们身边的铅笔是由木材和石墨等（　　）组成的；教室里的课桌椅是由木头、铁钉等（　　）组成的。",
+      "answer": "物质；物质",
+      "kps": [
+        "kp_sci1_object_material"
+      ],
+      "difficulty": 0.22,
+      "solution": "铅笔是由木材、石墨等多种物质组成的，课桌椅由木头、铁钉等多种物质组成。凡是我们周围的物体都是由物质组成的，只是有的由一种物质组成，有的由多种物质组成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0002",
+      "item_type": "solve",
+      "stem": "小明说：“玻璃杯是玻璃做的，所以玻璃杯只由一种物质组成。”请你判断小明的话对不对，并说出理由。",
+      "answer": "不对。玻璃杯虽然主要成分是玻璃，但它本身属于单一物质；说它只由一种物质组成要看它有没有混入别的物质。比如带铁芯的保温杯杯身由玻璃和金属两种物质组成，而干净的玻璃杯可以看作只由玻璃一种物质组成。小明没有说清楚物体有没有混入其他物质，不能一概而论。",
+      "kps": [
+        "kp_sci1_object_material"
+      ],
+      "difficulty": 0.32,
+      "solution": "判断一件事要说清条件。可以拿两个杯子比较：一个是透明玻璃杯，一个是外面包了金属外壳的保温杯，请学生说出它们分别由几种物质组成，再讨论小明的说法在什么条件下成立。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0003",
+      "item_type": "fill",
+      "stem": "请你当小观察员：看一看桌上的文具，把橡皮和铅笔各画下来，并说出它们在（　　）和（　　）上有什么不同。",
+      "answer": "形状（长方形、圆柱形）和颜色",
+      "kps": [
+        "kp_sci1_object_feature"
+      ],
+      "difficulty": 0.25,
+      "solution": "橡皮常是长方形或圆柱形，颜色多为白色、粉色等；铅笔常是细长的圆柱形，外面涂着铅笔漆，颜色有黄色、红色、蓝色等。学生用形状和颜色这两个特征就能把相似的文具区分开。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0004",
+      "item_type": "fill",
+      "stem": "要区分外形很像的两支钢笔（一支黑色、一支银色），最简便的观察方法是说出它们的（　　）和（　　）。",
+      "answer": "颜色；其他特征（如笔杆形状、笔帽花纹）",
+      "kps": [
+        "kp_sci1_object_feature"
+      ],
+      "difficulty": 0.28,
+      "solution": "颜色是最容易发现的不同；还可以继续观察笔杆的粗细、笔帽上有无花纹、笔夹的形状等特征。用多个特征一起描述，才能把相似的物体区分得更准确。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0005",
+      "item_type": "fill",
+      "stem": "请你从三个位置观察同一个水壶，画出你看到的样子：从（　　）看、从（　　）看、从（　　）看，形状有什么不同？",
+      "answer": "正面；侧面；上面",
+      "kps": [
+        "kp_sci1_observe_position"
+      ],
+      "difficulty": 0.3,
+      "solution": "同一个水壶从正面看能看到壶嘴和壶身的正面，从侧面看能看到壶嘴朝着的方向和扁圆的壶身，从上面看主要看到壶盖和圆形口。位置不同，看到的形状也不同，所以观察物体要多角度进行。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0006",
+      "item_type": "solve",
+      "stem": "小明说：“从上面看同一个茶杯，看到的都是一个圆，所以我从上面看就够了。”请你说说小明的想法哪里不完整。",
+      "answer": "不完整。只从一个位置看只能看到物体的一个面，看不到全部特征；观察物体要改变位置、从多个方向看。",
+      "kps": [
+        "kp_sci1_observe_position"
+      ],
+      "difficulty": 0.33,
+      "solution": "小明的说法不完整。茶杯从上面看确实近似圆形，但从这个位置看不到杯身的高低、杯把和杯口的形状特点。从上面只能看到一个面，看不到物体的全部特征，观察物体要改变位置、从多个方向看，才能比较全面地了解它。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0007",
+      "item_type": "fill",
+      "stem": "请你比较两支长短不同的铅笔：先只用眼睛比一比，再把两支铅笔的一端对齐、重叠起来比一比，说说哪种方法更准确。",
+      "answer": "把一端对齐重叠起来比更准确",
+      "kps": [
+        "kp_sci1_compare_size"
+      ],
+      "difficulty": 0.26,
+      "solution": "只用眼睛看容易受长短、胖瘦的干扰而判断错；把两支铅笔的一端顶在一起对齐，另一端谁伸得出来谁就更长，这样比较才准确。比较物体的大小、长短、高矮时，把要比的东西对齐是关键。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0008",
+      "item_type": "fill",
+      "stem": "比较两个物体的长短时，要先把它们的一端（　　），再看另一端谁更（　　）。",
+      "answer": "对齐；长（伸出来）",
+      "kps": [
+        "kp_sci1_compare_size"
+      ],
+      "difficulty": 0.24,
+      "solution": "一端对齐后再比较，另一端伸出得更多的那个更长。这样比较才能保证比的是同一起点，不受物体粗细的影响。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0009",
+      "item_type": "solve",
+      "stem": "用直尺量课桌边的长度时，为什么要把物体的一端对准直尺的“0”刻度线？请把正确的量法说完整。",
+      "answer": "因为直尺刻度从0开始数，物体一端对准0刻度，另一端所指的刻度就是物体的长度。",
+      "kps": [
+        "kp_sci1_measure_length"
+      ],
+      "difficulty": 0.34,
+      "solution": "因为直尺上的刻度都是从0开始数的，物体的一端对准0刻度，物体另一端所指的刻度就是物体的长度，量出来的数才是准确的。正确量法是：把直尺的0刻度线紧贴物体的一端，尺子与物体靠拢贴平，眼睛正对着刻度看，另一端指在几就是几厘米。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0010",
+      "item_type": "solve",
+      "stem": "小明量橡皮，用尺子的6厘米刻度对着橡皮的一端，读出另一端指在11厘米处。他量出的橡皮长度是多少？如果换一种量法（0刻度对准一端）结果又是多少？",
+      "answer": "两种量法都是5厘米（11－6＝5；0刻度对准一端时另一端指在5厘米处）。",
+      "kps": [
+        "kp_sci1_measure_length"
+      ],
+      "difficulty": 0.36,
+      "solution": "小明这样量出的长度是11－6＝5（厘米）；换成0刻度对准一端去量，结果也是5厘米。两种量法都可以，只要两次对的是同一条刻度线，算出的长度就相同，说明小明量对了。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0011",
+      "item_type": "fill",
+      "stem": "请你当“小实验员”：准备一个透明水盆，把积木、橡皮、小勺、石子、塑料瓶盖依次放入水中，记录哪些（　　）、哪些（　　），并说说你是怎样判断的。",
+      "answer": "浮在水面；沉到水底",
+      "kps": [
+        "kp_sci1_sink_float"
+      ],
+      "difficulty": 0.27,
+      "solution": "积木、塑料瓶盖轻，会浮在水面；橡皮、小勺、石子较重，会沉到水底。判断方法是看物体静止后是在水面还是水底，并轻轻按一下看有没有浮力把它托住。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0012",
+      "item_type": "solve",
+      "stem": "积木和石子都是木制的（或石制的），为什么积木浮在水面、石子却沉到水底？",
+      "answer": "因为积木比石子轻、体积大，水能把它托住；石子又重又小，所以沉到水底。",
+      "kps": [
+        "kp_sci1_sink_float"
+      ],
+      "difficulty": 0.3,
+      "solution": "因为两块东西虽然材料相似，但轻重不一样、体积大小也不一样。石子又重又小，沉到水底；积木比较轻、体积大，水能把它托住，所以浮在水面。这说明物体在水中的沉浮与它的轻重和体积大小都有关系。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0013",
+      "item_type": "fill",
+      "stem": "请你做“水变形状”的小实验：把同样多的水分别倒进圆碗、方盒和细高瓶里，看看水的形状有什么变化，并说说水本身变了吗。",
+      "answer": "水的形状随容器改变：圆碗里水面呈圆形，方盒里呈方形，细高瓶里变高变窄；水本身没变，还是那些水",
+      "kps": [
+        "kp_sci1_water_shape"
+      ],
+      "difficulty": 0.28,
+      "solution": "水会流动，能顺着容器的形状铺开，所以同一杯水在不同容器里形状不同。水还是水，只是盛它的东西不同，水的多少没有改变。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0014",
+      "item_type": "fill",
+      "stem": "水没有固定的形状，它会顺着容器改变形状；但同一杯水不管倒进什么容器，它的（　　）都不会改变。",
+      "answer": "多少（体积）",
+      "kps": [
+        "kp_sci1_water_shape"
+      ],
+      "difficulty": 0.2,
+      "solution": "水能改变形状、不能改变多少。把100毫升的水从大碗倒进小杯，水看起来“多了”，其实还是100毫升，只是容器变小了。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0015",
+      "item_type": "solve",
+      "stem": "小明和小红分别向两个同样大的杯子里倒水，小明倒了半杯，小红倒了半杯后又加了一点。请你用“液面高低”想一想：怎样判断两个杯子里谁的水多？",
+      "answer": "看两个杯子里的液面高低，液面高的一方水多，小红的水多。",
+      "kps": [
+        "kp_sci1_water_amount"
+      ],
+      "difficulty": 0.26,
+      "solution": "看两个杯子里的液面高低，液面高的一方水多。因为两个杯子大小形状完全相同，液面越高说明装的水越多。小红的杯子液面比小明的高，所以小红的水多。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0016",
+      "item_type": "fill",
+      "stem": "请你在三个同样大的透明杯里分别倒入少量水、较多的水和满杯水，用笔画出液面高度，说说哪杯水最多、哪杯水最少，你是怎么知道的。",
+      "answer": "满杯水最多，少量水最少；用同一把尺子量液面到杯底的高度，液面最高的水最多",
+      "kps": [
+        "kp_sci1_water_amount"
+      ],
+      "difficulty": 0.22,
+      "solution": "三个杯子同样大小、同样高，液面越高表示水越多。所以量水的多少可以量液面的高低，这比凭眼睛猜更可靠。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0017",
+      "item_type": "solve",
+      "stem": "冬天在户外冻住的冰块拿到温暖的房间里，过一会儿会变成水。请你说一说：冰变成水是因为什么？水又能变回冰吗？",
+      "answer": "冰吸收热量（温度升高）由固态变成液态；水遇冷放出热量又能结成冰。",
+      "kps": [
+        "kp_sci1_ice_melt_change"
+      ],
+      "difficulty": 0.35,
+      "solution": "因为冰吸收了热量（温度升高），由固态的冰变成了液态的水；水遇冷放出热量又能结成冰。把水放到冰箱冷冻室里或气温很低的地方，水也会变成冰，所以冰和水能互相转变。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0018",
+      "item_type": "fill",
+      "stem": "请你连续观察一块冰在杯子里的变化：每隔5分钟看一次并记录冰的大小和水的多少，一共观察三次，最后说说发生了什么。",
+      "answer": "冰块越来越小，杯子里的水越来越多，最后冰全部化成水",
+      "kps": [
+        "kp_sci1_ice_melt_change"
+      ],
+      "difficulty": 0.31,
+      "solution": "冰放在温暖的房间里吸收热量，逐渐由固态变成液态，所以冰块变小、水变多。温度越高、观察时间越长，冰化得越快。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0019",
+      "item_type": "solve",
+      "stem": "一张纸有些什么性质？请各做一个小实验来说明（提示：可以滴水、折一折、撕一撕）。",
+      "answer": "纸能吸水、能折叠、也能被撕开；用水滴、折纸、撕纸三个小实验分别验证。",
+      "kps": [
+        "kp_sci1_paper_property"
+      ],
+      "difficulty": 0.24,
+      "solution": "纸能吸水（把纸放在水滴上看水被慢慢吸进去）；纸能折叠（折起来不马上断）；纸能被撕开、撕成不同形状（说明纸比较软）。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0020",
+      "item_type": "fill",
+      "stem": "请你用同一张纸做三个小实验：滴一滴水看会怎样、折成小方盒看会不会断、撕下一小条看看。把观察到的现象记下来。",
+      "answer": "水滴落在纸上会被慢慢吸走留下水渍；纸能折成盒子而不折断；纸能被撕成条状",
+      "kps": [
+        "kp_sci1_paper_property"
+      ],
+      "difficulty": 0.23,
+      "solution": "纸是柔软的材料，能吸水、能折叠、也能被撕开。同一种材料往往有好几种性质，做实验时要从不同角度去检验。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0021",
+      "item_type": "fill",
+      "stem": "请把下面物品和做它的材料连起来思考：玻璃杯——（　　）；衣服——（　　）；铅笔——（　　）；门把手——（　　）。",
+      "answer": "玻璃；布；木头；金属",
+      "kps": [
+        "kp_sci1_common_materials"
+      ],
+      "difficulty": 0.26,
+      "solution": "不同物品用不同材料做成：玻璃杯用玻璃、衣服用布、铅笔用木头和金属、门把手用金属。认识材料后，遇到不会用的东西时就能想到合适的材料。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0022",
+      "item_type": "solve",
+      "stem": "桌子为什么要用木头做，而杯子不用木头做？请从材料的不同性质说说理由。",
+      "answer": "木头结实又轻、易加工，适合做桌子；木头会吸水会变形，做杯子盛水会漏，所以杯子用玻璃或陶瓷。",
+      "kps": [
+        "kp_sci1_common_materials"
+      ],
+      "difficulty": 0.3,
+      "solution": "木头又结实又轻、又容易加工，所以适合做桌子；木头会吸水、容易变形，做杯子盛水会漏还会泡坏。杯子要能装水且不漏，就用不吸水、较坚硬的玻璃或陶瓷做。选材料要看物品的用途和材料本身的性质。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0023",
+      "item_type": "fill",
+      "stem": "请你做一做：先用力推小车，看小车怎样；再把弹簧拉长，看弹簧怎样；最后把弹簧推压缩。说说推和拉分别使物体发生了什么改变。",
+      "answer": "推使小车由静止变成运动；拉使弹簧被拉长变长；推使弹簧被压缩变短",
+      "kps": [
+        "kp_sci1_push_pull"
+      ],
+      "difficulty": 0.25,
+      "solution": "推和拉都能使物体的状态发生改变。推小车使它动起来，拉弹簧使它变长，用力推弹簧使它变短。推和拉都是人对物体施力的方式。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0024",
+      "item_type": "fill",
+      "stem": "推和拉都能（　　　）物体：（　　）使小车由静止变成运动，（　　）使弹簧变长变细。",
+      "answer": "改变；推；拉",
+      "kps": [
+        "kp_sci1_push_pull"
+      ],
+      "difficulty": 0.21,
+      "solution": "推和拉是人对物体施力的两种方式，都可以改变物体的状态或形状。推能使小车运动，拉能使弹簧伸长。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0025",
+      "item_type": "solve",
+      "stem": "用手轻轻按着喉咙说话时，手上能感到麻麻的；把手按住正在响的鼓面，声音会怎样？这说明声音是怎么产生的？",
+      "answer": "按住鼓面后鼓面不能振动，声音变小或停止；说明声音是物体振动产生的，振动停止发声也停止。",
+      "kps": [
+        "kp_sci1_sound_vibration"
+      ],
+      "difficulty": 0.33,
+      "solution": "手按住鼓面后鼓面不能振动，声音就变小了或停了；说明声音是物体振动产生的，振动停止发声也停止。摸喉咙时手感到麻麻的，是声带在振动。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0026",
+      "item_type": "fill",
+      "stem": "请你做“看得见的振动”小实验：把一根橡皮筋绷在纸盒上，用手拨动它；再轻轻按住它，比较两次有什么不同。",
+      "answer": "拨动橡皮筋时它来回振动，能听到声音；用手按住后振动停止，声音也停止了",
+      "kps": [
+        "kp_sci1_sound_vibration"
+      ],
+      "difficulty": 0.29,
+      "solution": "物体振动时会发出声音，振动停止发声也停止。把看不见的振动“变成”看得见的橡皮筋形状变化，就更容易理解了。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0027",
+      "item_type": "fill",
+      "stem": "判断是不是生物，主要看它会不会（　　）、会不会（　　）、会不会（　　）以及会不会对外界的刺激作出反应。",
+      "answer": "生长；繁殖；进行生命活动（吃、喝、呼吸）",
+      "kps": [
+        "kp_sci1_living_thing"
+      ],
+      "difficulty": 0.3,
+      "solution": "生物能生长、能繁殖、能进行吃和呼吸等生命活动，遇到触碰等刺激还会有反应；石头、桌子不会生长也不会繁殖，所以不是生物。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0028",
+      "item_type": "solve",
+      "stem": "有人认为“会动的东西就是生物”，例如说一辆会跑的玩具车是活的。请你判断这句话对不对，并说出正确的判断方法。",
+      "answer": "不对。玩具车会动但不会生长、不会繁殖。判断是否为生物要看会不会生长、繁殖、呼吸和对外界刺激作出反应。",
+      "kps": [
+        "kp_sci1_living_thing"
+      ],
+      "difficulty": 0.32,
+      "solution": "这句话不对。玩具车会动，但它是人做的、不会生长也不会繁殖，遇到刺激只是按装好的机构在动，不是生命活动。判断是否为生物主要看它会不会生长、会不会繁殖、会不会吃和呼吸等生命活动，以及会不会对外界刺激作出反应。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0029",
+      "item_type": "fill",
+      "stem": "植物的（　　）长在地下，它把植物固定在土里；植物的（　　）长在地上，它把根和叶连起来；植物的（　　）长在枝上，它能制造养分。",
+      "answer": "根；茎；叶",
+      "kps": [
+        "kp_sci1_plant_organ"
+      ],
+      "difficulty": 0.27,
+      "solution": "根扎在土里固定植物并吸水，茎把根和叶连接起来并把水往上送，叶在地面上接收阳光制造养分。三部分分工合作，植物才能长大。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0030",
+      "item_type": "solve",
+      "stem": "如果把一株植物的茎剪断，只留下根和叶，植物还能活很久吗？请说出理由。",
+      "answer": "不能。茎把根和叶连起来并运送水分和养分，剪断后水和养分都不能上下运输，植物会枯死。",
+      "kps": [
+        "kp_sci1_plant_organ"
+      ],
+      "difficulty": 0.33,
+      "solution": "不能活很久。茎把根和叶连在一起，还负责把根吸收的水和养分运送到叶、把叶制造的养分送到全身。茎被剪断后，水和养分都不能上下运输，叶得不到水、根得不到养分，植物就会枯死。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0031",
+      "item_type": "fill",
+      "stem": "请你做一名“小观察员”：捡一片掉在地上的树叶（或者摘一片自己养的绿植的叶），用眼睛和放大镜看一看，说出它的形状、颜色和叶脉的样子，并把它描下来。",
+      "answer": "叶的形状有卵形、掌形、披针形等多种；叶片多为绿色，叶脉在叶面上呈网状或羽状分布",
+      "kps": [
+        "kp_sci1_leaf_observation"
+      ],
+      "difficulty": 0.28,
+      "solution": "同一株植物上叶的形状相近，不同植物的叶形状差别很大。叶脉是叶里的“细管”，把水和无机盐送到叶的各处。叶的颜色多是绿色，因为叶能制造养分。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0032",
+      "item_type": "solve",
+      "stem": "同一个盆里的植物，有的叶子是圆圆的，有的叶子是尖尖长长的。为什么同一种植物的叶子形状不一样呢？",
+      "answer": "因为它们不是同一种植物。同一种植物的叶形状一般相似，不同种类植物的叶形差别很大。",
+      "kps": [
+        "kp_sci1_leaf_observation"
+      ],
+      "difficulty": 0.26,
+      "solution": "因为这可能是不同的植物，而不是同一种。同一种植物的叶形状一般相似，不同种类的植物叶子的形状差别很大。观察时如果发现形状差别很大，就要先想一想它们是不是同一种植物。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0033",
+      "item_type": "fill",
+      "stem": "请你做“浇水和不浇水”的对比实验：找两盆大小相近的植物，一盆每天浇水，一盆三天不浇水，观察四天后两盆植物有什么不同。",
+      "answer": "天天浇水的一盆叶片舒展、有精神；不浇水的一盆叶片下垂、发蔫，甚至枯黄",
+      "kps": [
+        "kp_sci1_plant_needs_water"
+      ],
+      "difficulty": 0.32,
+      "solution": "植物需要水才能正常生长。缺水时叶里的水分蒸发掉，叶片失去挺立的能力就发蔫了。给植物适量的水，植物才能健康生长。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0034",
+      "item_type": "solve",
+      "stem": "小明给花浇水时说“水越多植物长得越快”，并把花盆灌得满满的。你觉得他说得对吗？应该怎样浇水？",
+      "answer": "不对。水太多根部会缺氧、容易烂根。应适量浇水，看到土干了再浇，浇到土湿即可。",
+      "kps": [
+        "kp_sci1_plant_needs_water"
+      ],
+      "difficulty": 0.31,
+      "solution": "不对。水并不是越多越好，水太多会使根部泡在水里、缺氧，植物反而长不好，甚至烂根死掉。应该按植物的需要适量浇水，看到土干了再浇，浇到土湿即可，让多余的水能流出去。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0035",
+      "item_type": "fill",
+      "stem": "请你做“绿豆发芽”小实验：把几粒绿豆放在垫了湿棉花的碟子里，每天保持棉花湿润，连续观察五天，记录芽和根的长短。",
+      "answer": "第二天绿豆吸水胀大，随后长出白色的根和嫩黄的小芽；以后根越来越长，芽越长越高，并向上弯长出小叶",
+      "kps": [
+        "kp_sci1_seed_sprout"
+      ],
+      "difficulty": 0.29,
+      "solution": "种子吸水后先长根往下扎，再长芽往上长。观察时要每天记录，才能看出根和芽生长的快慢和方向。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0036",
+      "item_type": "fill",
+      "stem": "绿豆种子发芽时先长出（　　），它往（　　）扎；后长出（　　），它往（　　）长。",
+      "answer": "根；下；芽；上",
+      "kps": [
+        "kp_sci1_seed_sprout"
+      ],
+      "difficulty": 0.24,
+      "solution": "种子发芽时根总是向下伸进土里吸收水和无机盐，芽向上伸长去找阳光。根往下、芽往上，是植物生长的规律。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0037",
+      "item_type": "fill",
+      "stem": "请你观察一朵花（校园里的或图片上的），说出它的颜色、气味和形状，并数一数它有几片花瓣。",
+      "answer": "花的颜色、气味和形状各不相同，花瓣数量也不一样（有的5片，有的多得多）",
+      "kps": [
+        "kp_sci1_flower"
+      ],
+      "difficulty": 0.27,
+      "solution": "花是植物的一部分，不同的花形状、大小、颜色、气味差别很大。观察花时要按一定顺序（整体到局部）看，才能描述得完整。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0038",
+      "item_type": "solve",
+      "stem": "校园里的花有的开在春天，有的开在夏天。请你想一想：同一时间为什么有的花开、有的花还没开？",
+      "answer": "因为不同植物开花的季节和时间不一样。",
+      "kps": [
+        "kp_sci1_flower"
+      ],
+      "difficulty": 0.25,
+      "solution": "因为不同植物开花的季节和时间不一样。桃、梨在春天开，荷花在夏天开，这是各种植物长期适应环境形成的规律。观察记录时要多记一段时间，才能发现开花与季节的关系。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0039",
+      "item_type": "solve",
+      "stem": "请你掰开一个苹果或桃子，看看里面有什么，并说说种子在果实的什么地方。",
+      "answer": "苹果（或桃子）里有果肉、果核和种子，种子包在果核里面。",
+      "kps": [
+        "kp_sci1_fruit_seed"
+      ],
+      "difficulty": 0.3,
+      "solution": "苹果或桃子里面有果肉、果核和种子，种子包在果核（或果肉）里面。果实把种子包住，既能保护种子，又能帮助种子传播。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0040",
+      "item_type": "fill",
+      "stem": "请你做“果实里的种子”小实验：切开一个苹果（或橙子、西瓜），把里面的种子取出来摆好，数一数有几颗，说说它们大小形状有什么相同。",
+      "answer": "种子大小、形状相似，同一种果实的种子形状相近（如苹果种子是扁圆心形、瓜子是椭圆形）",
+      "kps": [
+        "kp_sci1_fruit_seed"
+      ],
+      "difficulty": 0.26,
+      "solution": "同一种植物的种子形状大小相似，是它区别于其他植物的特征之一。种子虽小，里面却藏着能长成新植物的幼芽。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0041",
+      "item_type": "solve",
+      "stem": "小明从播种到开花，一共观察了一盆花。请他按顺序说出植物生长的四个阶段，并用一句话概括每个阶段的特点。",
+      "answer": "发芽→长叶→开花→结果；发芽时长出根和芽，长叶时长出茎和绿叶，开花时长出花蕾并开放，结果时花谢后结出果实和种子。",
+      "kps": [
+        "kp_sci1_plant_growth_process"
+      ],
+      "difficulty": 0.34,
+      "solution": "发芽（种子吸水，长出根和芽）→长叶（长出茎和绿叶）→开花（长出花蕾并开放）→结果（花谢后结出果实和种子）。四个阶段一个接一个，植物长大后才能繁殖下一代。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0042",
+      "item_type": "fill",
+      "stem": "请你连续观察一盆植物四到六周，每周画一画它的样子，并按“发芽、长叶、开花、结果”给每周的样子标上名称。",
+      "answer": "第1周只有种子的芽；第2-3周长出茎和叶，越长越高；第4-5周长出花蕾并开花；第6周花谢后出现小果实",
+      "kps": [
+        "kp_sci1_plant_growth_process"
+      ],
+      "difficulty": 0.32,
+      "solution": "植物生长是有规律的，从种子发芽到开花结果要经历一段时间。只有连续观察、按同样方法记录，才能看出它每个阶段的变化。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0043",
+      "item_type": "fill",
+      "stem": "请把动物的移动方式填对：小狗（　　）；小鱼（　　）；蝴蝶（　　）；袋鼠（　　）；蛇（　　）。",
+      "answer": "行走（跑）；游泳；飞行；跳跃；爬行",
+      "kps": [
+        "kp_sci1_animal_movement"
+      ],
+      "difficulty": 0.25,
+      "solution": "不同动物的运动方式不同：小狗靠四条腿行走和奔跑，小鱼用鳍和尾游泳，蝴蝶靠翅膀飞行，袋鼠靠强壮的后腿跳跃，蛇没有腿，靠身体贴地爬行。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0044",
+      "item_type": "fill",
+      "stem": "请你到户外（或看动物图片视频），观察三种动物的移动方式，说说它们的身体结构是怎么帮助它们运动的。",
+      "answer": "小狗四条腿跑得快；小鱼用鳍和尾在水里游；蝴蝶靠翅膀扇动飞",
+      "kps": [
+        "kp_sci1_animal_movement"
+      ],
+      "difficulty": 0.28,
+      "solution": "不同动物的运动方式不同，用到的身体部位也不同：狗用四条腿跑、鱼用鳍和尾游泳、蝴蝶用翅膀飞。身体结构和运动方式相配合，动物才能又快又稳地移动。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0045",
+      "item_type": "solve",
+      "stem": "观察一条鱼（或鱼图片），说说鱼的身体可以分成哪几部分，它用什么来游动。",
+      "answer": "鱼的身体分成头、躯干和尾部，靠鳍和尾左右摆动来游泳。",
+      "kps": [
+        "kp_sci1_animal_body"
+      ],
+      "difficulty": 0.26,
+      "solution": "鱼的身体分成头、躯干和尾部，头上有鳃和嘴，躯干上有鳍，背鳍在背上，尾鳍在尾部。鱼靠鳍和尾左右摆动来游泳。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0046",
+      "item_type": "fill",
+      "stem": "动物的身体一般都能分成（　　）、（　　）和（　　）三部分，有的有四肢，有的有（　　），还有的有（　　）。",
+      "answer": "头；躯干；四肢；翅膀；尾巴",
+      "kps": [
+        "kp_sci1_animal_body"
+      ],
+      "difficulty": 0.24,
+      "solution": "动物身体都有头、躯干和尾部（头和躯干是主要部分），有的长着四肢如狗、马，有的有翅膀如鸟、蝴蝶，有的拖着尾巴如松鼠。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0047",
+      "item_type": "fill",
+      "stem": "鸟类身上长着（　　），长着（　　）能飞；昆虫的身体分成头、胸、腹三部分，它有（　　）条腿。",
+      "answer": "羽毛；翅膀；六",
+      "kps": [
+        "kp_sci1_bird_insect"
+      ],
+      "difficulty": 0.3,
+      "solution": "鸟类体表被羽毛、有翅膀，能在天上飞；昆虫身体分头、胸、腹三部分，胸部有六条腿，头上有触角，多数还有翅膀。腿的条数是区分昆虫的重要特征。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0048",
+      "item_type": "solve",
+      "stem": "蜘蛛也是小动物，它有八条腿。你能说说蜘蛛和昆虫有什么不同吗？",
+      "answer": "蜘蛛有八条腿、身体只分头和胸两部分；昆虫有六条腿、身体分头、胸、腹三部分。",
+      "kps": [
+        "kp_sci1_bird_insect"
+      ],
+      "difficulty": 0.28,
+      "solution": "蜘蛛有八条腿，而昆虫有六条腿；蜘蛛的身体只分头和胸两部分，昆虫的身体分头、胸、腹三部分。所以蜘蛛不是昆虫，属于另一类小动物。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0049",
+      "item_type": "fill",
+      "stem": "请你观察（或看视频）蚂蚁、麻雀、兔子吃东西的样子，说说它们的嘴在做什么动作。",
+      "answer": "蚂蚁用触角把食物搬回洞里；麻雀用尖嘴啄食；兔子用门齿啃咬食物",
+      "kps": [
+        "kp_sci1_animal_eating"
+      ],
+      "difficulty": 0.24,
+      "solution": "不同动物用不同的口器取食，蚂蚁用触角搬运食物、小鸟用尖嘴啄食、兔子用门齿啃咬。观察时要认真看它们嘴的动作。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0050",
+      "item_type": "solve",
+      "stem": "人和动物都需要吃东西，食物在动物的身体里起什么作用？",
+      "answer": "食物给动物提供维持生命活动所需的能量和营养物质。",
+      "kps": [
+        "kp_sci1_animal_eating"
+      ],
+      "difficulty": 0.22,
+      "solution": "食物给动物提供维持生命活动所需要的能量和营养物质。动物吃了食物才能有力气跑跳、才能生长发育，所以食物是动物维持生命的必需品。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0051",
+      "item_type": "fill",
+      "stem": "动物都有自己的家：小鸟住在（　　）里，蚂蚁住在（　　）里，蜘蛛住在（　　）上，兔子住在（　　）里。",
+      "answer": "鸟巢（窝）；蚁穴（洞）；蛛网；兔洞",
+      "kps": [
+        "kp_sci1_animal_house"
+      ],
+      "difficulty": 0.22,
+      "solution": "鸟在树枝上筑巢，蚂蚁在地下挖蚁穴，蜘蛛在网上等待猎物，兔子在地下挖洞。动物的家能挡风避雨、保护自己，有的还能用来养育小宝宝。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0052",
+      "item_type": "solve",
+      "stem": "请你说说小蚂蚁为什么要把食物搬回洞里，而不在外面吃掉。",
+      "answer": "为了把食物储存起来，冬天食物少时再吃；洞里也更安全，不容易被别的动物抢走。",
+      "kps": [
+        "kp_sci1_animal_house"
+      ],
+      "difficulty": 0.25,
+      "solution": "因为食物搬回洞里可以储存起来，等冬天食物少的时再吃；外面吃完就没有了，而且洞里安全，不容易被别的动物抢走。这是蚂蚁适应环境的一种办法。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0053",
+      "item_type": "solve",
+      "stem": "人体的外形可以分成哪几部分？请指着自己的身体说出它们的名称，并各举一个例子。",
+      "answer": "人体分为头、躯干和四肢。头包括脸和脖子，躯干包括胸和腹，四肢包括两条胳膊和两条腿。",
+      "kps": [
+        "kp_sci1_human_body_appearance"
+      ],
+      "difficulty": 0.24,
+      "solution": "人体分为头、躯干和四肢。头包括头（脸）和脖子，躯干包括胸和腹，四肢包括上肢（两条胳膊）和下肢（两条腿）。例如手和脚属于四肢，鼻子属于头部。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0054",
+      "item_type": "fill",
+      "stem": "人和其他许多动物的身体都能分成（　　）、（　　）和（　　）三部分，其中（　　）能拿东西、能走动。",
+      "answer": "头；躯干；四肢；四肢",
+      "kps": [
+        "kp_sci1_human_body_appearance"
+      ],
+      "difficulty": 0.2,
+      "solution": "头、躯干、四肢是许多动物和人体的基本结构。人有了四肢才能拿工具、走路，灵活的双手还可以做很多复杂的事。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0055",
+      "item_type": "solve",
+      "stem": "站在操场上抬头看看，说说天空中有什么，脚下有什么。",
+      "answer": "天空中有太阳、白云，有时能看到月亮和飞鸟；脚下是地面，有泥土、草和跑道。",
+      "kps": [
+        "kp_sci1_sky_ground"
+      ],
+      "difficulty": 0.22,
+      "solution": "天空中有太阳、白云，有时还能看到月亮和飞过的鸟；脚下是地面，有泥土、草和跑道。我们生活在地面上，头顶就是天空。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0056",
+      "item_type": "fill",
+      "stem": "抬起头看到的是（　　），它里有太阳和云；脚踩着的是（　　），它上面长着花草树木。",
+      "answer": "天空；地面",
+      "kps": [
+        "kp_sci1_sky_ground"
+      ],
+      "difficulty": 0.25,
+      "solution": "天空和地面把我们包围在中间。地面上生长着植物、栖息着动物，天空中有太阳、云和飞鸟。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0057",
+      "item_type": "fill",
+      "stem": "太阳是一个很大、很热、能自己发光的（　　），它给地球带来（　　）和（　　），是地球上的光和热的主要来源。",
+      "answer": "天体；光；热",
+      "kps": [
+        "kp_sci1_sun_light_heat"
+      ],
+      "difficulty": 0.28,
+      "solution": "太阳是一个巨大的恒星，会自己发光发热。地球上的光和热主要来自太阳。晒衣服、太阳能发电都靠太阳的能量。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0058",
+      "item_type": "solve",
+      "stem": "冬天的太阳晒在身上暖烘烘的。请你说说太阳给我们带来了什么（举两个例子）。",
+      "answer": "太阳带来了光和热。阳光照亮大地让我们能看清东西，阳光晒暖身体、能把衣服晒干。",
+      "kps": [
+        "kp_sci1_sun_light_heat"
+      ],
+      "difficulty": 0.27,
+      "solution": "太阳带来了光和热。比如阳光照亮了大地让我们能看清东西；阳光晒在身上暖暖的，太阳能把水晒干、把衣服晒干、把食物晒熟。光和热都来自太阳。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0059",
+      "item_type": "fill",
+      "stem": "一天里有（　　）和（　　）。白天适合（　　）活动，黑夜适合（　　）活动。",
+      "answer": "白天；黑夜；户外活动（如上体育课、郊游）；休息（如睡觉）",
+      "kps": [
+        "kp_sci1_day_night"
+      ],
+      "difficulty": 0.2,
+      "solution": "白天光线强，适合户外活动和干活；黑夜看不见，适合休息睡觉。一天里白天和黑夜交替出现。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0060",
+      "item_type": "solve",
+      "stem": "为什么我们白天要上学，晚上要睡觉？请说说你的想法。",
+      "answer": "白天光线强看得清，适合上课学习；晚上天黑看不清书本，也需要让身体休息。",
+      "kps": [
+        "kp_sci1_day_night"
+      ],
+      "difficulty": 0.22,
+      "solution": "白天光线明亮，人看得清楚，注意力也好，适合上课和学习；晚上天黑了，看不清书本、黑板，容易伤眼睛，也需要让身体休息。安排得合理才能有精神，所以要按时作息。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0061",
+      "item_type": "solve",
+      "stem": "早晨上学时，你看到太阳从哪边升起？傍晚放学时，太阳从哪边落下？请说说太阳在天空中的移动方向。",
+      "answer": "早晨太阳从东方升起，傍晚从西方落下，太阳在天空中的移动方向是自东向西。",
+      "kps": [
+        "kp_sci1_sunrise_sunset"
+      ],
+      "difficulty": 0.26,
+      "solution": "早晨太阳从东方升起，傍晚太阳从西方落下。太阳在天空中东升西落，看上去在天空里移动。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0062",
+      "item_type": "fill",
+      "stem": "太阳每天都是（　　）升起、（　　）落下，看上去在空中由（　　）向（　　）移动。",
+      "answer": "东；西；东；西",
+      "kps": [
+        "kp_sci1_sunrise_sunset"
+      ],
+      "difficulty": 0.21,
+      "solution": "太阳东升西落。早晨面对太阳升起的方向是东，傍晚太阳落下的方向是西。记住方向的方法：早晨面向太阳是东，下午面向太阳落下的方向是西。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0063",
+      "item_type": "fill",
+      "stem": "请你在灯下做一做：用手挡住灯光，看看手后面出现什么；再把灯关掉，看看还有什么。",
+      "answer": "开灯时手挡住了光，手后面出现手的影子；关灯后没有影子（因为没有光）",
+      "kps": [
+        "kp_sci1_shadow"
+      ],
+      "difficulty": 0.27,
+      "solution": "光是沿直线传播的，不透明的物体挡住了光，物体挡住的那一边因为照不到光就形成了影子。没有光就照不出影子，所以影子必须在有光时才会出现。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0064",
+      "item_type": "fill",
+      "stem": "光遇到不透明的物体会被（　　），物体挡住的那一面照不到光，就形成了（　　）。",
+      "answer": "挡住；影子",
+      "kps": [
+        "kp_sci1_shadow"
+      ],
+      "difficulty": 0.23,
+      "solution": "不透明物体把光挡住了，照不到光的那一侧形成影子。所以有光、有不透明物体才会出现影子。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0065",
+      "item_type": "fill",
+      "stem": "请你做“一天中的影子”小实验：在晴天选一根同样长的小棒，早上、中午、下午各在地上插一次小棒，量一量影子的方向和长短。",
+      "answer": "早上和下午影子偏得很长，中午影子最短并指向北方；太阳位置越高影子越短",
+      "kps": [
+        "kp_sci1_shadow_change"
+      ],
+      "difficulty": 0.3,
+      "solution": "太阳在天空的位置一天中不断变化，影子也跟着变。早晨和傍晚太阳斜照，影子拖得很长；中午太阳升得最高，影子最短。影子的方向也能帮助我们分清东南西北。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0066",
+      "item_type": "solve",
+      "stem": "一天中，中午的影子为什么比早晨的影子短？请说出原因。",
+      "answer": "中午太阳升得最高、照射角度大，影子最短；早晨太阳斜照、照射角度小，影子被拉得很长。",
+      "kps": [
+        "kp_sci1_shadow_change"
+      ],
+      "difficulty": 0.25,
+      "solution": "因为中午太阳升得最高，阳光几乎直射，照射角度大；早晨太阳斜着照，照射角度小，影子就被拉得很长。太阳位置越高影子越短。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0067",
+      "item_type": "fill",
+      "stem": "一年有（　　）、（　　）、（　　）、（　　）四个季节，它们是按（　　）月循环变化的。",
+      "answer": "春；夏；秋；冬；12",
+      "kps": [
+        "kp_sci1_four_seasons"
+      ],
+      "difficulty": 0.26,
+      "solution": "一年分春、夏、秋、冬四季，大致三个月一个季节，按12个月循环变化。四季一年年重复。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0068",
+      "item_type": "solve",
+      "stem": "现在是几月？属于哪个季节？请说出你判断的理由（除了看日历，还可以从生活现象说）。",
+      "answer": "要写出当时是几月、属于哪个季节，并从生活现象（如天气变凉、树叶变黄、穿上外套）说明理由。",
+      "kps": [
+        "kp_sci1_four_seasons"
+      ],
+      "difficulty": 0.23,
+      "solution": "要看当时是哪个月。例如现在是10月，属于秋季。判断理由可以从生活现象找：天气变凉、树叶变黄落叶、人们穿上了外套等。这些现象说明季节变了。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0069",
+      "item_type": "fill",
+      "stem": "不同季节人们的生活不一样：春天要（　　），夏天可以（　　），秋天要（　　），冬天要（　　）。",
+      "answer": "播种；游泳（或吃西瓜）；收获粮食；穿棉衣（或吃火锅）",
+      "kps": [
+        "kp_sci1_seasons_activity"
+      ],
+      "difficulty": 0.22,
+      "solution": "春天气温回升适合播种，夏天热可以游泳、吃西瓜，秋天是收获的季节，冬天冷要穿棉衣、吃暖身的食物。人们的生活会随季节变化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0070",
+      "item_type": "solve",
+      "stem": "为什么夏天要穿短袖、冬天要穿棉衣？请用学到的知识说明。",
+      "answer": "天气冷热不同。夏天太阳照射强、气温高，穿短袖凉快；冬天气温低，穿棉衣可以保暖、减少热量散失。",
+      "kps": [
+        "kp_sci1_seasons_activity"
+      ],
+      "difficulty": 0.25,
+      "solution": "因为天气冷热不同。夏天太阳照射强、气温高，穿短袖凉快；冬天太阳斜照、白天短、气温低，穿棉衣可以保暖，减少热量散失。所以穿衣要看季节和气温。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0071",
+      "item_type": "fill",
+      "stem": "请你当“小小气象员”：选一周的七天，每天早上看看窗外，用“晴/阴/雨/雪/风”来描述天气并记在天气记录表上。",
+      "answer": "一周内记录每天的天气状况，如晴、阴、小雨、大风等",
+      "kps": [
+        "kp_sci1_today_weather"
+      ],
+      "difficulty": 0.25,
+      "solution": "观察天气要用固定的词语来描述，连续记录才能看出规律。天气情况每天都有变化，是短时间内的大气状况。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0072",
+      "item_type": "solve",
+      "stem": "请你说一说今天的天气怎么样，出门上学要不要带伞，并说明理由。",
+      "answer": "先说出当天的天气状况（晴/阴/雨、温度、有没有风）；阴天或下雨要带伞，晴天可以不带。",
+      "kps": [
+        "kp_sci1_today_weather"
+      ],
+      "difficulty": 0.24,
+      "solution": "要说出当天的天气状况（晴/阴/雨、温度高低、有没有风）；如果天阴或正在下雨就要带伞，如果晴天就可以不带。理由要和天气情况对应上。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0073",
+      "item_type": "fill",
+      "stem": "请你做“有风还是没风”的小实验：分别观察树叶、纸片、风车和小旗子的变化，判断有没有风。",
+      "answer": "树叶晃动、纸片飘动、风车转动、旗子飘起来就说明有风；都不动就说明没有风",
+      "kps": [
+        "kp_sci1_wind"
+      ],
+      "difficulty": 0.23,
+      "solution": "风能推动物体。判断是否有风，可以看轻的、容易动的东西（树叶、纸片、灰尘）是否在动。风看不见，但能通过物体的运动表现出来。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0074",
+      "item_type": "solve",
+      "stem": "风看不见摸不着，可是我们为什么能判断有风？风有什么用处？",
+      "answer": "风是流动的空气，它能推动树叶、吹动风车和旗子，所以我们通过物体的运动判断有风。风可以降温、发电、推动风帆。",
+      "kps": [
+        "kp_sci1_wind"
+      ],
+      "difficulty": 0.21,
+      "solution": "风虽然看不见，但风是流动的空气，它能推动树叶、吹动风车和旗子，让物体动起来，所以我们通过物体的运动来判断有风。风可以用来吹风降温、发电、推动风帆等。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0075",
+      "item_type": "solve",
+      "stem": "雨是从哪里来的？雨水落到地面以后又到哪里去了？",
+      "answer": "地面水受热变成水蒸气升到空中，遇冷凝结成云，云中水滴变大落下来形成雨。雨落地后一部分渗入地下，一部分流回江河湖海，再蒸发升到空中。",
+      "kps": [
+        "kp_sci1_rain"
+      ],
+      "difficulty": 0.28,
+      "solution": "地面上的水被太阳晒热变成水蒸气升到空中，遇冷变成小水滴聚集成云，云中的小水滴越聚越大就落下来形成雨。雨落到地面后，一部分渗入地下，一部分流进江河湖海，最后又回到空中，这样周而复始。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0076",
+      "item_type": "fill",
+      "stem": "地面上的水受热变成（　　）升到空中，遇冷变成小水滴聚集成（　　），小水滴变大落下来就是（　　）。",
+      "answer": "水蒸气；云；雨",
+      "kps": [
+        "kp_sci1_rain"
+      ],
+      "difficulty": 0.22,
+      "solution": "水的循环：受热变成水蒸气上升，遇冷凝结成云，云中水滴变大落下成雨。水落到地面又蒸发，循环往复。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0077",
+      "item_type": "fill",
+      "stem": "降水有两种常见形式：气温高时降（　　），气温很低时降（　　）；天气很冷时水蒸气会直接变成（　　）小晶体。",
+      "answer": "雨；雪；冰（霜）",
+      "kps": [
+        "kp_sci1_rain_snow"
+      ],
+      "difficulty": 0.24,
+      "solution": "气温高时水汽凝结成水滴落下来是雨；气温很低时水汽直接凝华成小冰晶，落下来就是雪、雹。水在不同的温度下会变成不同的形态。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0078",
+      "item_type": "solve",
+      "stem": "同样是水，冬天下雪、夏天下雨。请你说说这是为什么。",
+      "answer": "水的形态跟温度有关。冬天气温低，水汽直接凝成小冰晶落下是雪；夏天气温高，凝成小水滴落下是雨。",
+      "kps": [
+        "kp_sci1_rain_snow"
+      ],
+      "difficulty": 0.26,
+      "solution": "因为水的形态跟温度有关。冬天气温很低，云中的水蒸气不凝成水滴，而是直接变成小冰晶落下来就是雪；夏天气温高，水汽凝成小水滴落下来就是雨。所以同一种水在不同温度下会形成不同的降水。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0079",
+      "item_type": "fill",
+      "stem": "生活中常见的工具：用来剪的是（　　），用来拧螺丝的是（　　），用来喝水的是（　　）。使用合适的工具做事（　　）。",
+      "answer": "剪刀；螺丝刀；杯子；又快又好",
+      "kps": [
+        "kp_sci1_tool_use"
+      ],
+      "difficulty": 0.2,
+      "solution": "不同的事要用不同的工具。选对工具能把事情做得又快又好，用错工具既费劲又容易弄坏东西。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0080",
+      "item_type": "solve",
+      "stem": "如果要拧开一个瓶盖，用徒手拧和用开瓶器拧有什么不同？为什么？",
+      "answer": "用开瓶器更省力、也更容易拧开。开瓶器是一段绕在瓶盖上的杠杆，加上它能把力放大。",
+      "kps": [
+        "kp_sci1_tool_use"
+      ],
+      "difficulty": 0.23,
+      "solution": "用开瓶器拧更省力、也更容易拧开。徒手拧要使很大的力，费劲还可能拧不开；开瓶器是一段绕在瓶盖上的杠杆，加上它以后能把力放大，所以省力。这就是工具的作用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0081",
+      "item_type": "solve",
+      "stem": "使用剪刀时应该注意哪些安全？请说出三条。",
+      "answer": "手要拿稳、剪刀口朝外；不能拿剪刀跑跳打闹；递剪刀时刀尖朝自己、把手朝对方。",
+      "kps": [
+        "kp_sci1_tool_safety"
+      ],
+      "difficulty": 0.26,
+      "solution": "使用剪刀手要拿稳、剪刀口朝外，用完合上剪刀放好；不能拿剪刀跑跳打闹；递剪刀给别人时刀尖朝自己、把手朝对方；不在别人身边挥动剪刀。刀具的尖端很锋利，注意安全才能不伤到自己和别人。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0082",
+      "item_type": "fill",
+      "stem": "使用剪刀、刀、针等工具时，手要拿（　　），尖端不要朝向（　　），也不要在旁边（　　）。",
+      "answer": "稳；自己；打闹",
+      "kps": [
+        "kp_sci1_tool_safety"
+      ],
+      "difficulty": 0.21,
+      "solution": "刀具、剪具的尖端锋利，容易伤到人。正确做法是手拿稳、尖端朝外不朝自己、不拿工具打闹，这样使用才安全。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0083",
+      "item_type": "solve",
+      "stem": "剪刀是由哪几部分组成的？它为什么能剪断纸和布？",
+      "answer": "剪刀由两片刀刃和两个把手组成；两片刀刃交叉，像剪刀一样错开就能把纸和布剪断。",
+      "kps": [
+        "kp_sci1_scissors"
+      ],
+      "difficulty": 0.24,
+      "solution": "剪刀由两片刀刃和两个把手组成。两片刀刃像剪刀一样交叉，靠把手把它们捏到一起，刀刃一错就能把纸和布剪断。刀刃锋利，所以用剪刀要小心。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0084",
+      "item_type": "fill",
+      "stem": "请你观察剪刀，说说它的两片刀刃在不用的时候是怎么放着的，并在老师指导下正确拿一次剪刀、试着剪一条纸。",
+      "answer": "不用时两片刀刃合拢、把手朝外；使用时大拇指插进上面的孔、食指和中指插进下面的孔",
+      "kps": [
+        "kp_sci1_scissors"
+      ],
+      "difficulty": 0.23,
+      "solution": "剪刀不用时要把刀刃合拢、把尖端朝外放好，既防伤人又不损坏刀刃。正确使用剪刀的方法是大拇指在上一孔、其余手指在下一孔，平稳地剪。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0085",
+      "item_type": "solve",
+      "stem": "锤子有什么用处？敲钉子时要注意什么？",
+      "answer": "锤子的平面用来敲、把钉子敲入木头，尖端用来起钉子。敲时要扶稳钉子、拿稳锤子，钉帽不能凸出太多。",
+      "kps": [
+        "kp_sci1_hammer_nail"
+      ],
+      "difficulty": 0.25,
+      "solution": "锤子用平的一面敲，可以把钉子敲入木头；用尖的一头可以起出钉子。敲钉子时要用另一只手扶稳钉子（不要用手指按着钉子头），手要拿稳锤子，敲的时候眼睛不要盯着钉头看，钉子敲进木头后钉帽不能凸出太多。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0086",
+      "item_type": "fill",
+      "stem": "锤子的（　　）面可以敲钉子，锤子的（　　）的一头可以起出钉子。",
+      "answer": "平（扁）；尖",
+      "kps": [
+        "kp_sci1_hammer_nail"
+      ],
+      "difficulty": 0.2,
+      "solution": "锤子的平面用来敲、钉，尖端用来撬、起钉子。锤子是生活中常用的简单工具。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0087",
+      "item_type": "solve",
+      "stem": "螺丝上为什么有一圈一圈的螺纹？请说说螺丝刀的作用。",
+      "answer": "螺纹是一圈圈的螺旋，转动时能把转动变成前进，使螺丝能拧紧或拧松，把东西固定住。",
+      "kps": [
+        "kp_sci1_screw"
+      ],
+      "difficulty": 0.26,
+      "solution": "螺丝上有螺纹，转动螺丝刀时螺纹把转动变成前进，把东西拧紧或拧松，把它们牢牢固定住。螺丝刀是拧螺丝的工具，用它旋转螺丝，就能把东西固定或松开。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0088",
+      "item_type": "fill",
+      "stem": "请你观察一枚螺丝，用手指顺着螺纹摸一摸，再看看桌上的书架或椅子是用什么固定住的。",
+      "answer": "螺丝的螺纹是一圈圈凸起的螺旋；书架或椅子上常用螺丝固定住螺钉",
+      "kps": [
+        "kp_sci1_screw"
+      ],
+      "difficulty": 0.22,
+      "solution": "螺纹像绕在圆柱上的斜坡，转动时能把转动变成直线前进，使螺丝能拧进去也能拧出来。家具常用螺丝固定，这样既牢固又方便拆装。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0089",
+      "item_type": "fill",
+      "stem": "请你用同样大的一张纸折成不同形状的小船放在水面上，看看哪种形状装硬币最多、装几枚会沉。",
+      "answer": "船底折得宽平、两边船帮高的船装的硬币多；船底窄、卷得高的船装的少，容易翻沉",
+      "kps": [
+        "kp_sci1_paper_boat"
+      ],
+      "difficulty": 0.3,
+      "solution": "同样大的纸，折法不同形状就不同，承受能力也不同。底面积大、形状扁平的船在水里更稳，装的东西更多。形状影响结构能承受的重量。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0090",
+      "item_type": "solve",
+      "stem": "小纸船沉下去了，怎样让它装更多硬币？请说出两种办法。",
+      "answer": "把船底折得宽一些、平一些；把船帮折高一些。（还可以加厚底部或换硬一点的纸）",
+      "kps": [
+        "kp_sci1_paper_boat"
+      ],
+      "difficulty": 0.24,
+      "solution": "办法一：把船底折得宽一些、平一些，增加底面积，水的浮托力更大；办法二：把船帮（两边）折高一些，能装更多硬币而不会因进水太多沉下去。还可以换用硬一点的纸或加厚底部来提高承重。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0091",
+      "item_type": "fill",
+      "stem": "请你自己用纸做三个小制作（底面一样、底面很大、底面很小），分别轻推一下，看哪个容易被推倒。",
+      "answer": "底面小的容易被推倒、底面大的不易倒，说明底面越大物体越稳定",
+      "kps": [
+        "kp_sci1_stability"
+      ],
+      "difficulty": 0.29,
+      "solution": "轻轻一推，底面大的小制作晃两下就站稳了，底面小的很快就倒下。因为底面大、与地面的接触范围大，受力更分散，稳定性更好。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0092",
+      "item_type": "solve",
+      "stem": "为什么行李箱做成下宽上窄的形状比做成方方正正的更稳？",
+      "answer": "行李箱下宽上窄，底面大、接触地面积大，重心也低，所以更稳。",
+      "kps": [
+        "kp_sci1_stability"
+      ],
+      "difficulty": 0.23,
+      "solution": "因为行李箱底面大、接触地面的面积大，稳。东西装在里面时重心也低，上窄下宽不容易倒。所以在车上放行李时，行李箱竖着放比横着放更稳。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0093",
+      "item_type": "solve",
+      "stem": "四个人一起做纸桥，为什么有时候反而比一个人做还慢？请说说合作怎样才能又快又好。",
+      "answer": "各干各的、意见不统一就会互相干扰、返工。先商量分工（谁剪、谁折、谁粘），再组合、一起商量解决，才能又快又好。",
+      "kps": [
+        "kp_sci1_work_together"
+      ],
+      "difficulty": 0.22,
+      "solution": "如果大家各干各的、意见不统一，就会互相干扰、返工，当然慢。合作要先商量好分工（谁剪、谁折、谁粘），各自做好自己的部分再组合，遇到问题一起商量解决，这样才能又快又好。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0094",
+      "item_type": "fill",
+      "stem": "请你和三位同学分成小组，用彩纸做一棵小树：先商量分工，再动手完成，最后展示作品并说说你们配合得怎么样。",
+      "answer": "先分工（有的剪叶子、有的剪树干、有的粘贴、有的设计），再一起组合，做完后能说出各自做了什么",
+      "kps": [
+        "kp_sci1_work_together"
+      ],
+      "difficulty": 0.24,
+      "solution": "小组合作要先商量、明确分工，工作中互相配合，遇到问题一起商量。分工合作能把一个人的力量变成一群人的力量。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0095",
+      "item_type": "solve",
+      "stem": "小美想用纸筒、胶水和彩纸做一个笔筒。请你帮她列一个简单的制作步骤（至少四步）。",
+      "answer": "①明确设计（做能立稳的圆筒笔筒）；②备料（纸筒、彩纸、胶水、剪刀）；③加工（剪到合适高度、用彩纸包外面）；④组装粘合；⑤测试（放几支笔看能否立稳）。",
+      "kps": [
+        "kp_sci1_make_thing"
+      ],
+      "difficulty": 0.26,
+      "solution": "技术制作要先明确目的和设计，再备料、加工、组装，最后测试是否达到目的。这样按步骤做，才不会手忙脚乱，做出来的小作品才合用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0096",
+      "item_type": "fill",
+      "stem": "请你用彩纸或泥巴做一个自己设计的小作品（如小汽车、小房子），边做边想：我想让它是做什么用的？",
+      "answer": "先想清作品用途，再按想法动手做，做出来的小作品能实现自己最初的想法",
+      "kps": [
+        "kp_sci1_make_thing"
+      ],
+      "difficulty": 0.25,
+      "solution": "技术制作先明确目的和设计，再备料、加工、组装，最后测试。带着目的做，才能做出合用的小作品；做的时候要注意安全使用剪刀等工具。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0097",
+      "item_type": "solve",
+      "stem": "小红做的小房子倒了。请她对照做之前说好的目的，想一想问题出在哪里、应该怎么改。",
+      "answer": "检查发现可能是底面太小、重心太高；改进办法是把底面做大、把房子做矮，或在底部粘一块大纸片增加支撑面。",
+      "kps": [
+        "kp_sci1_evaluate_works"
+      ],
+      "difficulty": 0.28,
+      "solution": "要先问做小房子的目的是什么（比如能立稳、能放小物品）。检查发现房子倒了，可能是底面太小、重心太高。改进办法：把底面做大一些、把房子做得矮一些，或者在底部粘一块大纸片增加支撑面，这样房子就稳了。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0098",
+      "item_type": "fill",
+      "stem": "请你把做好的小作品放在桌上轻轻推一推、看一看，完成一次简单的评价：它哪里好用，哪里还要改进。",
+      "answer": "能说出作品的优点（如站得稳、外形好看）和需要改进的地方（如底面还小、粘得不牢），并想出改进办法",
+      "kps": [
+        "kp_sci1_evaluate_works"
+      ],
+      "difficulty": 0.24,
+      "solution": "评价作品要对照做之前说定的目的来看，能用就用、站得稳就稳，不好用的地方要想办法改进。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

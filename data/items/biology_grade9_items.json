@@ -1,0 +1,379 @@
+{
+  "items": [
+    {
+      "id": "bio_bio_jr_0195",
+      "item_type": "choice",
+      "stem": "某生态系统能量流动图显示：第一营养级→第二营养级→第三营养级，能量逐级递减，每级约 10%-20% 传递，这主要反映了生态系统的（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_bio9_chart_analysis"
+      ],
+      "difficulty": 0.55,
+      "solution": "能量在相邻营养级间传递效率仅 10%-20%，导致能量单向流动、逐级递减，是生态系统能量流动的重要特点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质循环",
+        "B. 能量单向流动、逐级递减",
+        "C. 信息传递",
+        "D. 自动调节"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0196",
+      "item_type": "choice",
+      "stem": "分析下表三种食物（每 100 g）的营养成分：A 含蛋白质 8 g、脂肪 2 g、糖类 80 g；B 含蛋白质 18 g、脂肪 6 g、糖类 2 g；C 含蛋白质 2 g、脂肪 0 g、糖类 95 g。最适合减肥人群食用的食物是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_bio9_chart_analysis"
+      ],
+      "difficulty": 0.55,
+      "solution": "减肥需低能量、低脂肪、高蛋白以维持肌肉。B 蛋白质高、脂肪低（虽然糖类低但蛋白质提供饱腹），最合适。",
+      "source": "llm_generated",
+      "options": [
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. 都不能"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0197",
+      "item_type": "solve",
+      "stem": "某池塘生态系统中，长期监测数据如右图：水温上升后，浮游植物数量先增加、后下降；浮游动物数量随后亦先增后降；鱼类的产量随之减少。（1）水温升高使光合作用增强还是减弱？（2）解释后期浮游植物数量下降的原因。（3）说明为何鱼类产量会随之减少。",
+      "answer": "(1) 一定范围内增强，超过最适温度后减弱。（2）后期水温超出适宜范围，呼吸作用增强而光合作用减弱；同时浮游动物增多摄食增多；水中溶解氧减少（氧气溶解度随温度升高而下降）。（3）浮游植物减少，食物链基础能量减少；浮游动物减少，鱼的食物来源减少，故鱼类产量下降。",
+      "kps": [
+        "kp_bio9_chart_analysis"
+      ],
+      "difficulty": 0.65,
+      "solution": "结合图表信息考查生态系统中能量流动、物质循环与稳态。综合温度对光合酶活性、呼吸消耗、营养级间能量传递的影响进行解读。",
+      "source": "llm_generated",
+      "form": "diagram",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0198",
+      "item_type": "choice",
+      "stem": "观察心脏结构图（左心房、左心室、右心房、右心室），从肺静脉回到心脏的血液首先进入（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_bio9_diagram_comprehension"
+      ],
+      "difficulty": 0.55,
+      "solution": "肺静脉含氧丰富的动脉血回流进入左心房，再由左心房进入左心室泵入主动脉。",
+      "source": "llm_generated",
+      "options": [
+        "A. 左心房",
+        "B. 左心室",
+        "C. 右心房",
+        "D. 右心室"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0199",
+      "item_type": "choice",
+      "stem": "图示为某家庭的遗传系谱：父母正常，儿子为色盲。该病为 X 染色体隐性遗传，则父母的基因型最可能是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_bio9_diagram_comprehension"
+      ],
+      "difficulty": 0.65,
+      "solution": "儿子色盲基因型 XᵇY，Xᵇ 来自母亲，故母亲是携带者 XᴮXᵇ。父亲正常 XᴮY。",
+      "source": "llm_generated",
+      "options": [
+        "A. 父 XᴮY，母 XᴮXᴮ",
+        "B. 父 XᵇY，母 XᴮXᴮ",
+        "C. 父 XᴮY，母 XᴮXᵇ",
+        "D. 父 XᴮY，母 XᵇXᵇ"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0200",
+      "item_type": "solve",
+      "stem": "下图为一个简单的食物网：草→鼠→猫头鹰；草→鼠→蛇→猫头鹰；草→蝗虫→青蛙→蛇→猫头鹰。请回答：（1）该食物网中生产者是______；（2）写出最长的一条食物链______；（3）若捕蛇活动突然增加，对猫头鹰数量短期内有何影响？",
+      "answer": "(1) 草；（2）草→蝗虫→青蛙→蛇→猫头鹰；（3）短期内猫头鹰数量下降（因食物来源减少，且若蛇减少，鼠可能增多间接也影响）。",
+      "kps": [
+        "kp_bio9_diagram_comprehension"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查食物网的结构、营养级分析、捕食关系改变对生态系统的影响。要求正确区分食物链书写与营养级数目。",
+      "source": "llm_generated",
+      "form": "diagram",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0201",
+      "item_type": "choice",
+      "stem": "在研究\"光照强度对光合作用的影响\"实验中，下列可作为因变量（衡量指标）的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_bio9_inquiry_experiment"
+      ],
+      "difficulty": 0.55,
+      "solution": "因变量是随自变量变化的实验结果，O₂ 释放量（气泡数）反映光合强度；A、B、D 是无关变量或自变量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 灯光的距离",
+        "B. 叶片的大小",
+        "C. 相同时间内产生的气泡数（O₂ 量）",
+        "D. 水的温度"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0202",
+      "item_type": "choice",
+      "stem": "对照实验中，下列做法不正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_bio9_inquiry_experiment"
+      ],
+      "difficulty": 0.5,
+      "solution": "对照实验要求只改变一个变量（单一变量原则），其他条件相同。D 违反单一变量原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 设置对照组和实验组",
+        "B. 实验组与对照组只改变一个变量",
+        "C. 实验组和对照组的其他条件都相同",
+        "D. 随意改变多个变量观察结果"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0203",
+      "item_type": "solve",
+      "stem": "为探究\"二氧化碳是否是光合作用的必需原料\"，某同学设计了如下实验：取两株生长状况相同的银边天竺葵（叶片边缘无叶绿体）各 1 片叶，分别放入两个密闭玻璃罩中，A 罩内放入盛有清水的烧杯，B 罩内放入盛有等量 NaHCO₃ 溶液的烧杯，并将装置置于同一光照环境中。一段时间后检验两片叶中是否有淀粉生成。请回答：（1）该实验的自变量是______；（2）该实验的因变量是______；（3）预期实验结果是______。",
+      "answer": "(1) 二氧化碳的有无；（2）叶片中是否产生（生成）淀粉；（3）A 罩内的银边（边缘无叶绿体）部分和绿色部分均无淀粉，B 罩内叶片的绿色部分有淀粉而银边部分无淀粉。",
+      "kps": [
+        "kp_bio9_inquiry_experiment"
+      ],
+      "difficulty": 0.6,
+      "solution": "本实验自变量为 CO₂ 的有无（用 NaHCO₃ 与清水对照），因变量为叶片是否产生淀粉。银边天竺葵的银边（无叶绿体）部分不能进行光合作用，所以无论是否有 CO₂ 都不会产生淀粉；绿色部分在有 CO₂ 时（B 罩）才产生淀粉。",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0204",
+      "item_type": "choice",
+      "stem": "某新闻报道：某地因长期使用含汞农药，导致以该地水产品为食的人群中出现多例水俣病患者。该现象最能说明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_bio9_material_analysis"
+      ],
+      "difficulty": 0.55,
+      "solution": "汞等重金属不易分解，能沿食物链逐级富集，最终到达人体危害健康。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汞可通过食物链传递并富集到人体",
+        "B. 汞会自行消失",
+        "C. 农药对人体无害",
+        "D. 食物链与人类无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0205",
+      "item_type": "choice",
+      "stem": "某地医院新近收治多名腹泻儿童，化验发现与饮用水源大肠杆菌超标有关。从传染病流行角度分析，\"水大肠杆菌超标\"属于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_bio9_material_analysis"
+      ],
+      "difficulty": 0.55,
+      "solution": "传播途径是病原体离开传染源到达健康人所经过的途径，被污染的水属于此。",
+      "source": "llm_generated",
+      "options": [
+        "A. 传染源",
+        "B. 传播途径",
+        "C. 易感人群",
+        "D. 病原体"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0206",
+      "item_type": "solve",
+      "stem": "材料：2024 年某省中考体测中，部分学生剧烈运动后出现面色苍白、头晕、心率异常等症状，校医初步诊断为低血糖。建议学生运动前适当进食含糖食物。回答：（1）糖类是人体主要的供能物质，主要被消化吸收为______；（3）若需快速缓解低血糖症状，应服用______类食物。",
+      "answer": "(1) 葡萄糖；（2）糖类；（3）葡萄糖或含葡萄糖较多的食物如葡萄糖水、糖块等。",
+      "kps": [
+        "kp_bio9_material_analysis"
+      ],
+      "difficulty": 0.5,
+      "solution": "本题考查糖类消化吸收和低血糖紧急处理。淀粉等糖类经消化分解为葡萄糖后被小肠吸收，是细胞主要能源。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0207",
+      "item_type": "solve",
+      "stem": "某校学生计划开展\"校园植物多样性调查\"项目。请你设计一份简要调查方案：（1）调查方法（一种即可）______；（2）取样原则______；（3）记录内容包括______。",
+      "answer": "(1) 样方法；（2）随机取样；（3）植物种类、数量、高度、盖度、分布等。",
+      "kps": [
+        "kp_bio9_project_design"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查生物多样性调查的方案设计：常用样方法，随机取样以保证客观性，记录内容包括物种、数量、形态特征等。",
+      "source": "llm_generated",
+      "form": "project",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0208",
+      "item_type": "choice",
+      "stem": "为探究\"温度对霉菌生长的影响\"，下列实验方案设计中不合理的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_bio9_project_design"
+      ],
+      "difficulty": 0.5,
+      "solution": "重复原则要求各组都设重复，以避免偶然性；只设一组重复违反单一变量+重复原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 设置不同温度梯度（5℃、25℃、35℃）",
+        "B. 各组使用相同培养基等量接种",
+        "C. 仅在 25℃ 一组设重复，其他不设",
+        "D. 在规定时间内记录各组霉菌菌落数"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "bio_bio_jr_0209",
+      "item_type": "choice",
+      "stem": "\"设计制作生态瓶\"跨学科实践项目，评价一个生态瓶是否设计优良的核心指标是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_bio9_project_design"
+      ],
+      "difficulty": 0.5,
+      "solution": "生态瓶是否优良取决于其能否长期维持稳定，体现物质循环与能量流动是否平衡。",
+      "source": "llm_generated",
+      "options": [
+        "A. 容器是否精美",
+        "B. 动植物种类是否多样、是否长期稳定",
+        "C. 水是否清澈",
+        "D. 是否能发出声音"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "bio-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

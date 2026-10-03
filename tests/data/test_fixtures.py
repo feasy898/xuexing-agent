@@ -185,14 +185,14 @@ def merged_bank(root):
     """
     paths = sorted(glob.glob(f"{root}/data/items/*.json"))
     assert paths, "no item files found under data/items/"
-    seen_id, seen_question = {}, {}
+    seen_id, seen_question = set(), set()
     items = []
     for path in paths:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         for it in data["items"]:
             assert it["id"] not in seen_id, f"duplicate item id: {it['id']}"
-            seen_id[it["id"]] = os.path.basename(path)
+            seen_id.add(it["id"])
             question = (
                 str(it.get("stem", "")).strip(),
                 json.dumps(it.get("options"), ensure_ascii=False, sort_keys=True),
@@ -202,7 +202,7 @@ def merged_bank(root):
             assert question not in seen_question, (
                 f"duplicate question: {it['id']} == {seen_question.get(question)}"
             )
-            seen_question[question] = it["id"]
+            seen_question.add(question)
             items.append(it)
     return itembank_from_dict({"items": items})
 

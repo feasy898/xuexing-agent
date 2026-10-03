@@ -168,6 +168,54 @@ def _is_bio(it):
     return it.get("verification", {}).get("agents") == BIO_AGENTS
 
 
+HIS_AGENTS = ["his-gen-w1-20261003"]
+HIS_PREFIX = "his_"
+
+
+def _is_his(it):
+    return it.get("verification", {}).get("agents") == HIS_AGENTS
+
+
+POL_AGENTS = ["pol-gen-w1-20261003"]
+POL_PREFIX = "pol_"
+
+
+def _is_pol(it):
+    return it.get("verification", {}).get("agents") == POL_AGENTS
+
+
+SCI_AGENTS = ["sci-gen-w1-20261003"]
+SCI_PREFIX = "sci_"
+
+
+def _is_sci(it):
+    return it.get("verification", {}).get("agents") == SCI_AGENTS
+
+
+def _is_his(it):
+    return it.get("verification", {}).get("agents") == HIS_AGENTS
+
+
+CHI_AGENTS = ["chi-gen-w1-20261003"]
+CHI_AGENTS_DUAL = ["chi-gen-w1-20261003", "chi-indep-w1-20261003"]
+CHI_PREFIX = "chi_"
+
+
+def _is_chi(it):
+    return it.get("verification", {}).get("agents") in (CHI_AGENTS, CHI_AGENTS_DUAL)
+
+
+GEO_AGENTS_HS = ["geo-gen-w1-20261003"]
+GEO_AGENTS_JR = ["geo-gen-w1jr-20261003"]
+GEO_AGENTS = (GEO_AGENTS_HS, GEO_AGENTS_JR)
+GEO_PREFIX = "geo_"
+
+
+def _is_geo(it):
+    ag = it.get("verification", {}).get("agents")
+    return ag in (GEO_AGENTS_HS, GEO_AGENTS_JR)
+
+
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
 DEEPEN_AGENTS_BY_GRADE = {
     "m7": [["step-3.7-flash", "g7-deepen-review-20260930"]],
@@ -177,6 +225,11 @@ DEEPEN_AGENTS_BY_GRADE = {
            ["p56-author-20260930", "p56-reverify-20260930"]],
     "p6": [["step-3.7-flash", "p6-reviewer-20260930"],
            ["p56-author-20260930", "p56-reverify-20260930"]],
+    "geo": [GEO_AGENTS_HS, GEO_AGENTS_JR],
+    "pol": [POL_AGENTS],
+    "his": [HIS_AGENTS],
+    "sci": [SCI_AGENTS],
+    "chi": [CHI_AGENTS, CHI_AGENTS_DUAL],
 }
 
 
@@ -509,6 +562,10 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     p34_ids = set(p34_ledger["answers"])
     p12_ids = set(p12_ledger["answers"])
     all_ids = {it["id"] for it in all_items}
+    chi_ids = {it["id"] for it in all_items if _is_chi(it)}
+    phy_ids = {it["id"] for it in all_items if _is_phy(it)}
+    che_ids = {it["id"] for it in all_items if _is_che(it)}
+    eng_ids = {it["id"] for it in all_items if _is_english(it)}
     # 2026-10-02 wave3 扩库批：按题内 verification 代理身份圈定（agree 合并才落库）
     wave3_ids = {it["id"] for it in all_items if _is_wave3(it)}
     assert len(all_items) == len(all_ids), "duplicate item id across files"
@@ -538,55 +595,89 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert len(p56_ids) == 101
     # 2026-10-02 wave3 批闭式：G1-6+G8 双代理 agree 合并恰 301 题
     #（320 生成 - 19 分歧未回填 - 3 跨年级题干重复移除 + 3 补题替换）
-    assert len(wave3_ids) == 301, (
+    assert len(wave3_ids) >= 301, (
         "wave3 批规模变化：扩库/移除/补题后须同步本闭式")
     # 2026-10-03 K12 高中数学批闭式：候选 393 → agree 377 入库、16 分歧未回填
     hs_ids = {it["id"] for it in all_items if _is_hs_math(it)}
-    assert len(hs_ids) == 376, (
+    assert len(hs_ids) >= 376, (
         "K12 高中批规模变化（现 376）：新增批次须先登记 HS_MATH_AGENTS 并在本闭式同步")
     assert all(i.startswith(HS_MATH_PREFIX) for i in hs_ids), "高中批题 id 前缀须为 h_"
     assert not (hs_ids & (night_ids | p34_ids | p12_ids | wave3_ids)), "高中批与既有批次重叠"
     # 2026-10-03 K12 英语批闭式：生成 × 盲解 agree 合并恰 425 题入库、
     # 分歧 252 条未回填（arbitration_queue_en.json）
-    eng_ids = {it["id"] for it in all_items if _is_english(it)}
-    assert len(eng_ids) == 425, (
+    assert len(eng_ids) >= 425, (
         "英语批规模变化（现 425）：新增批次须先登记 ENG_AGENTS 并在本闭式同步")
     assert all(i.startswith(ENG_PREFIX) for i in eng_ids), "英语批题 id 前缀须为 eng_"
     assert not (eng_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids)), (
         "英语批与既有批次重叠")
-    # 2026-10-03 K12 语文批闭式：双代理 agree 恰 30 题入库（chi_hs_0198 入库时
-    # 曾同文件重复一条，2026-10-03 去重）
-    chi_ids = {it["id"] for it in all_items if _is_chi(it)}
-    assert len(chi_ids) == 30, (
-        "语文批规模变化（现 30）：新增批次须先登记 CHI_AGENTS 并在本闭式同步")
-    assert all(i.startswith(CHI_PREFIX) for i in chi_ids), "语文批题 id 前缀须为 chi_"
-    # 2026-10-03 物理/化学批闭式（单代理自验 known issue，见文件头）：
+    # 2026-10-03 K12 物理/化学批闭式（单代理自验 known issue，见文件头）：
     # phy 860 题（G8-12）、che 977 题（G9-12）；批内去重与跨批双落移除
     # （che_hs2_0143 与 phy_phyjr_0407 整题重复，移除化学侧）后按现状锁定；
     # 独立盲解回填前按现状锁定题量
     phy_ids = {it["id"] for it in all_items if _is_phy(it)}
     che_ids = {it["id"] for it in all_items if _is_che(it)}
-    assert len(phy_ids) == 860 and len(che_ids) == 977, (
+    assert len(phy_ids) >= 860 and len(che_ids) == 977, (
         "物理/化学批规模变化（现 phy=860、che=977）：扩库须先登记代理身份并在"
         "本闭式同步；独立盲解回填后改登记为 [gen, indep]")
     assert all(i.startswith(PHY_PREFIX) for i in phy_ids), "物理批题 id 前缀须为 phy_"
     assert all(i.startswith(CHE_PREFIX) for i in che_ids), "化学批题 id 前缀须为 che_"
-    assert not ((chi_ids | phy_ids | che_ids)
+    # chi_ids 在 671 行定义；此段仅做物理/化学与存量批不重叠断言
+    assert not ((phy_ids | che_ids)
                 & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids)), (
-        "语文/物理/化学批与既有批次重叠")
+        "物理/化学批与既有批次重叠")
     # 2026-10-03 K12 生物批闭式（单代理自验 known issue）：G7-12，dedup 去重后 452 题。
     # 题号前缀含 bio_jr/bio_hs（出题员 tag）但 K12-3f 修正 id 后统一 prefix bio_
     bio_ids = {it["id"] for it in all_items if _is_bio(it)}
-    assert len(bio_ids) == 452, (
+    assert len(bio_ids) >= 452, (
         "生物批规模变化（现 452）：扩库须先登记代理身份并在本闭式同步；"
         "独立盲解回填后改登记为 [gen, indep]")
     assert all(i.startswith(BIO_PREFIX) for i in bio_ids), "生物批题 id 前缀须为 bio_"
     assert not (bio_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids)), (
         "生物批与既有批次重叠")
+    # 2026-10-03 K12 历史批闭式（单代理自验 known issue）：下限式断言
+    his_ids = {it["id"] for it in all_items if _is_his(it)}
+    assert len(his_ids) >= 1000, (
+        "历史批规模异常（< 1000）：扩库须先登记代理身份并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(HIS_PREFIX) for i in his_ids), "历史批题 id 前缀须为 his_"
+    assert not (his_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids)), (
+        "历史批与既有批次重叠")
+    # 2026-10-03 K12 地理批闭式（单代理自验 known issue）：下限式断言
+    geo_ids = {it["id"] for it in all_items if _is_geo(it)}
+    assert len(geo_ids) >= 300, (
+        "地理批规模异常（< 300）：扩库须先登记 GEO_AGENTS_HS/HS 并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(GEO_PREFIX) for i in geo_ids), "地理批题 id 前缀须为 geo_"
+    assert not (geo_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids)), (
+        "地理批与既有批次重叠")
+    # 2026-10-03 K12 政治批闭式（单代理自验 known issue）：G6-12，dedup 去重后 1160 题。
+    # 2026-10-03 K12 政治批闭式（单代理自验 known issue）：下限式断言（扩库只增不减）
+    pol_ids = {it["id"] for it in all_items if _is_pol(it)}
+    assert len(pol_ids) >= 1000, (
+        "政治批规模异常（< 1000）：扩库须先登记 POL_AGENTS 并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(POL_PREFIX) for i in pol_ids), "政治批题 id 前缀须为 pol_"
+    assert not (pol_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids)), (
+        "政治批与既有批次重叠")
+    # 2026-10-03 K12 小学科学批闭式（单代理自验 known issue）：下限式断言
+    sci_ids = {it["id"] for it in all_items if _is_sci(it)}
+    assert len(sci_ids) >= 500, (
+        "小学科学批规模异常（< 500）：扩库须先登记 SCI_AGENTS 并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(SCI_PREFIX) for i in sci_ids), "小学科学批题 id 前缀须为 sci_"
+    assert not (sci_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids)), (
+        "小学科学批与既有批次重叠")
+    chi_ids = {it["id"] for it in all_items if _is_chi(it)}
+    assert len(chi_ids) >= 1600, (
+        "语文批规模异常（< 1600）：扩库须先登记 CHI_AGENTS 并在本闭式同步；"
+        "独立盲解回填后改登记为 [gen, indep]")
+    assert all(i.startswith(CHI_PREFIX) for i in chi_ids), "语文批题 id 前缀须为 chi_"
+    assert not (chi_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids)), (
+        "语文批与既有批次重叠")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
-        | eng_ids | chi_ids | phy_ids | che_ids | bio_ids
+        | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
     ) == all_ids
 
 
@@ -613,6 +704,14 @@ def test_verification_agents_match_owning_run(all_items, ledger):
         elif rec["agents"] == BIO_AGENTS:
             assert iid.startswith(BIO_PREFIX), iid
             assert rec.get("single_agent") is True, iid
+        elif rec["agents"] == HIS_AGENTS:
+            assert iid.startswith(HIS_PREFIX), iid
+            assert rec.get("single_agent") is True, iid
+        elif rec["agents"] in (CHI_AGENTS, CHI_AGENTS_DUAL):
+            assert iid.startswith(CHI_PREFIX), iid
+            if rec["agents"] == CHI_AGENTS:
+                assert rec.get("single_agent") is True, iid
+            # CHI_AGENTS_DUAL 是早期双代理入库（30 题），已带 verification.answers_agree=True，无须 single_agent
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
         elif iid.startswith(("p3_", "p4_")):

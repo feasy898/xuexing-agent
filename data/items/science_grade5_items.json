@@ -1,0 +1,4972 @@
+{
+  "items": [
+    {
+      "id": "sci_prim_0509",
+      "item_type": "fill",
+      "stem": "请做“观察水的热胀冷缩”实验：把带颜色的水装满细玻璃管，滴一滴红油密封，分别放入热水和冷水中，观察液面升降。",
+      "answer": "放入热水中液面上升（红油柱升高），放入冷水中液面下降（红油柱降低），说明水有热胀冷缩的性质",
+      "kps": [
+        "kp_sci5_thermal_expansion_experiment"
+      ],
+      "difficulty": 0.48,
+      "solution": "液体受热体积膨胀、遇冷收缩，水也一样。这个实验用红油柱作指示剂，把液面变化显示出来。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0510",
+      "item_type": "choice",
+      "stem": "做水的热胀冷缩实验时，在细玻璃管中滴一滴红油的主要作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_thermal_expansion_experiment"
+      ],
+      "difficulty": 0.47,
+      "solution": "红油不溶于水且不易挥发，能随水的膨胀收缩明显移动位置，用来显示液面的升降变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 好看",
+        "B. 作为指示剂显示液面升降",
+        "C. 加快水变热",
+        "D. 让水变色好看"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0511",
+      "item_type": "choice",
+      "stem": "温度计能测温度，是因为里面（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_thermal_expansion_use"
+      ],
+      "difficulty": 0.47,
+      "solution": "温度计利用液体热胀冷缩明显的性质（常用酒精或水银），液柱随温度变化而升降。",
+      "source": "llm_generated",
+      "options": [
+        "A. 玻璃会热胀冷缩",
+        "B. 液体热胀冷缩明显",
+        "C. 金属会融化",
+        "D. 水银会变多"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0512",
+      "item_type": "solve",
+      "stem": "铁轨之间要留缝隙、水箱要设膨胀管，这样做是为了什么？请解释。",
+      "answer": "大多数物体受热体积膨胀、遇冷收缩。留出缝隙和膨胀管是为了给膨胀留出空间，防止铁轨因过热膨胀而弯曲变形、水箱胀裂损坏。",
+      "kps": [
+        "kp_sci5_thermal_expansion_use"
+      ],
+      "difficulty": 0.5,
+      "solution": "利用热胀冷缩的规律，采取措施防止物体胀裂。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0513",
+      "item_type": "fill",
+      "stem": "请做“物体是否导电”的检测实验：用一节电池、小灯泡和两根导线组成检测器，逐一测试铜、铁、橡皮、盐水、塑料、干木。",
+      "answer": "铜、铁、盐水能使小灯泡发光（导体）；橡皮、塑料、干木不发光（绝缘体）",
+      "kps": [
+        "kp_sci5_electrical_conduction_test"
+      ],
+      "difficulty": 0.48,
+      "solution": "这个检测器利用“能使小灯泡发光就说明电路通了”的道理判断导电性。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0514",
+      "item_type": "choice",
+      "stem": "下列物体中属于绝缘体的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_sci5_electrical_conduction_test"
+      ],
+      "difficulty": 0.47,
+      "solution": "铜、铁、盐水容易导电是导体；干木条、橡胶、塑料不容易导电是绝缘体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铁钉",
+        "B. 铜丝",
+        "C. 干木条",
+        "D. 盐水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0515",
+      "item_type": "choice",
+      "stem": "关于电路的组成，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_circuit_components"
+      ],
+      "difficulty": 0.46,
+      "solution": "一个完整的电路由电源、用电器、开关和导线四部分组成，缺一不可才能形成回路。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电路只需电源和小灯泡",
+        "B. 电源、用电器、开关、导线缺一不可",
+        "C. 没有开关电路也能工作",
+        "D. 导线可以不要"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0516",
+      "item_type": "fill",
+      "stem": "电流从电源的（　　）极流出，经过（　　）、（　　）回到负极。",
+      "answer": "正；用电器；开关和导线",
+      "kps": [
+        "kp_sci5_circuit_components"
+      ],
+      "difficulty": 0.46,
+      "solution": "电流方向：正极→用电器（经开关、导线）→负极。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0517",
+      "item_type": "choice",
+      "stem": "下列电路连接方式属于短路的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_sci5_circuit_states"
+      ],
+      "difficulty": 0.48,
+      "solution": "导线不经过用电器直接接在电源两极就是短路，电流极大，会损坏电源、引起危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 开关闭合，灯泡正常发光",
+        "B. 开关断开，灯泡不亮",
+        "C. 导线不经过灯泡直接接在电池两极",
+        "D. 电路连接完整但开关断开"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0518",
+      "item_type": "solve",
+      "stem": "电路有哪三种状态？分别是什么情况？",
+      "answer": "①通路：开关闭合，电路接通，用电器正常工作；②断路（开路）：开关断开或导线松脱，电路断开，用电器不工作；③短路：导线不经过用电器直接接在电源两极，电流很大很危险。",
+      "kps": [
+        "kp_sci5_circuit_states"
+      ],
+      "difficulty": 0.5,
+      "solution": "要正确判断电路状态，接线时避免短路。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0519",
+      "item_type": "fill",
+      "stem": "画电路图要用统一的（　　），按电流路径依次连接，导线不能（　　），也不能造成（　　）。",
+      "answer": "符号；交叉；短路",
+      "kps": [
+        "kp_sci5_circuit_diagram"
+      ],
+      "difficulty": 0.47,
+      "solution": "电路图要能清楚表示电流通过的路径，方便设计和交流。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0520",
+      "item_type": "choice",
+      "stem": "画电路图时，下面哪一项是不允许的（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_sci5_circuit_diagram"
+      ],
+      "difficulty": 0.48,
+      "solution": "那样会造成短路，非常危险。画图应避免交叉和短路。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用统一符号表示元件",
+        "B. 按电流路径依次连接",
+        "C. 把导线不经过用电器直接连在电源两极",
+        "D. 把元件画得整齐清楚"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0521",
+      "item_type": "choice",
+      "stem": "串联电路中，电流的特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_series_current"
+      ],
+      "difficulty": 0.49,
+      "solution": "串联电路只有一条电流路径，电流在各用电器中处处相等、方向处处相同；断开任一处全部停止工作。",
+      "source": "llm_generated",
+      "options": [
+        "A. 处处不相等",
+        "B. 各用电器中电流处处相等、方向处处相同",
+        "C. 有多个方向",
+        "D. 干路电流等于各支路之和"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0522",
+      "item_type": "solve",
+      "stem": "串联电路中一个灯泡坏了，其他灯泡会怎样？为什么？",
+      "answer": "其他灯泡都不亮。因为串联电路只有一条电流路径，坏的那个灯泡灯丝断开后整条电路断开，电流无法通过，各灯都不工作。",
+      "kps": [
+        "kp_sci5_series_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "串联电路一处断开，全部停止工作。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0523",
+      "item_type": "choice",
+      "stem": "并联电路中，干路电流与各支路电流的关系是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_parallel_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "并联电路干路电流等于各支路电流之和；各支路互不影响，可以独立控制。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干路电流等于各支路电流之和",
+        "B. 干路电流等于某一条支路的电流",
+        "C. 干路电流小于每条支路电流",
+        "D. 二者无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0524",
+      "item_type": "solve",
+      "stem": "并联电路有哪些特点？请说出三条。",
+      "answer": "①有多条电流路径；②干路电流等于各支路电流之和；③各支路互不影响、可以分别控制；④各处电流方向处处相同。",
+      "kps": [
+        "kp_sci5_parallel_current"
+      ],
+      "difficulty": 0.5,
+      "solution": "并联使各支路独立，是家庭照明电路的接法。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0525",
+      "item_type": "choice",
+      "stem": "教室的照明灯和装饰灯通常采用（　　）连接（　　）控制",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_series_parallel_compare"
+      ],
+      "difficulty": 0.49,
+      "solution": "教室照明和装饰灯用并联，各支路可以独立开关、互不影响，使用方便。",
+      "source": "llm_generated",
+      "options": [
+        "A. 串联；一个开关",
+        "B. 并联；各支路独立开关",
+        "C. 串联；各灯独立开关",
+        "D. 并联；一个开关控制全部"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0526",
+      "item_type": "solve",
+      "stem": "串联和并联的主要区别是什么？请从路径、控制和互不影响三方面比较。",
+      "answer": "串联只有一条电流路径、一个开关控制全部、一处断开全部停工；并联有多条电流路径、各支路可分别控制、一条断开其它仍工作、互不影响。",
+      "kps": [
+        "kp_sci5_series_parallel_compare"
+      ],
+      "difficulty": 0.5,
+      "solution": "家庭照明电路并联，装饰彩灯常用串联。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0527",
+      "item_type": "solve",
+      "stem": "电路接通后灯不亮，可能是什么原因？你会怎样排查？",
+      "answer": "可能是断路（灯丝断、灯座接触不良、开关或导线松脱），也可能是短路。可先换一个完好灯泡试试；若仍不亮，就按电源、开关、导线、灯的顺序逐段检查接线，发现松动处重新接牢。",
+      "kps": [
+        "kp_sci5_circuit_fault"
+      ],
+      "difficulty": 0.5,
+      "solution": "故障排查要有顺序：先易后难、从电源到用电器逐段检查。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0528",
+      "item_type": "choice",
+      "stem": "排查电路故障时，合理的做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_circuit_fault"
+      ],
+      "difficulty": 0.48,
+      "solution": "有顺序地分段检查，先排除最可能的原因，能又快又准地找出故障。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一次把所有线都拆下来重接",
+        "B. 按电源、开关、导线、用电器顺序逐段检查",
+        "C. 只反复开关灯泡",
+        "D. 不检查凭感觉猜"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0529",
+      "item_type": "fill",
+      "stem": "电在生活中的应用有照明、（　　）、（　　）和通信四个方面。",
+      "answer": "加热；动力",
+      "kps": [
+        "kp_sci5_electricity_application"
+      ],
+      "difficulty": 0.46,
+      "solution": "电用于照明、加热、动力和通信；使用时要注意安全。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0530",
+      "item_type": "solve",
+      "stem": "请说出三个电在生活中应用的例子，并注意用电安全。",
+      "answer": "①照明：电灯照亮房间；②加热：电饭锅把饭煮熟；③动力：电梯升降、地铁运行；④通信：手机、电话传递信息。使用中要注意安全：不湿手碰开关、不超负荷用电器。",
+      "kps": [
+        "kp_sci5_electricity_application"
+      ],
+      "difficulty": 0.47,
+      "solution": "电的用途很广，但必须安全使用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0531",
+      "item_type": "choice",
+      "stem": "下列做法中属于节约用电的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_save_electricity"
+      ],
+      "difficulty": 0.47,
+      "solution": "随手关灯、使用节能灯、少用高耗能电器都是节约用电的做法。电能虽是常用能源，但发电要消耗资源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人走灯不关",
+        "B. 长时间开空调",
+        "C. 用大功率电热器煮水",
+        "D. 电视整天不关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0532",
+      "item_type": "solve",
+      "stem": "请提出三条节约用电的具体措施。",
+      "answer": "①离开房间随手关灯关电器；②优先使用节能灯（发光二极管灯）替代白炽灯；③合理设置空调温度、不长时间连续运行；④少用大功率电热器，用电热壶煮水比用大灶省电。",
+      "kps": [
+        "kp_sci5_save_electricity"
+      ],
+      "difficulty": 0.48,
+      "solution": "节约每一度电，减少能源消耗和污染。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0533",
+      "item_type": "choice",
+      "stem": "关于光速，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_light_straight"
+      ],
+      "difficulty": 0.47,
+      "solution": "光在真空中的速度约3×10⁸米/秒（每秒30万千米），是宇宙中最快的；光在同种均匀物质中沿直线传播。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光在真空中速度最大，约为每秒30万千米",
+        "B. 光在玻璃中速度最大",
+        "C. 光速等于声音在空气中的速度",
+        "D. 光不需要介质传播所以速度为零"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0534",
+      "item_type": "fill",
+      "stem": "光在（　　）中传播速度最大，约为每秒（　　）万千米。",
+      "answer": "真空；30",
+      "kps": [
+        "kp_sci5_light_straight"
+      ],
+      "difficulty": 0.46,
+      "solution": "真空（光不需介质）光速最大，约30万千米/秒。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0535",
+      "item_type": "choice",
+      "stem": "小孔成像所成的像是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_pinhole_camera"
+      ],
+      "difficulty": 0.5,
+      "solution": "小孔成像成倒立实像，像与物上下左右都相反；孔越小像越清晰。照相机和眼睛的成像都基于小孔成像原理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 倒立缩小的实像",
+        "B. 正立缩小的实像",
+        "C. 倒立放大的虚像",
+        "D. 正立放大的实像"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0536",
+      "item_type": "solve",
+      "stem": "照相机和人的眼睛的成像原理与小孔成像有什么关系？",
+      "answer": "照相机和眼睛的成像都基于小孔成像原理：光沿直线通过一个“小孔”（瞳孔/镜头）进入，在感光元件（视网膜/感光纸）上成倒立实像。所以照相机成的像是倒立实像。",
+      "kps": [
+        "kp_sci5_pinhole_camera"
+      ],
+      "difficulty": 0.5,
+      "solution": "孔越小像越清晰，但要求光足够强。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0537",
+      "item_type": "choice",
+      "stem": "汽车后视镜用凸面镜，主要作用是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_mirror_application"
+      ],
+      "difficulty": 0.48,
+      "solution": "凸面镜能把较大范围的光反射进眼睛，扩大视野，使驾驶员看到更广范围的物体（像会变小）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把物体放大",
+        "B. 扩大视野范围，减少盲区",
+        "C. 使物体更清晰",
+        "D. 增加车速"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0538",
+      "item_type": "solve",
+      "stem": "潜望镜和太阳能集热板分别利用了什么光学原理？",
+      "answer": "潜望镜用平面镜改变光的传播方向，使人在不暴露身体的情况下看到目标；太阳能集热板用凹面镜把平行光线会聚到一点，获得更高的温度。",
+      "kps": [
+        "kp_sci5_mirror_application"
+      ],
+      "difficulty": 0.5,
+      "solution": "平面镜改变光路，凹面镜会聚光线。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0539",
+      "item_type": "choice",
+      "stem": "判断一个透镜是凸透镜还是凹透镜，可以看（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_lens_features"
+      ],
+      "difficulty": 0.48,
+      "solution": "凸透镜中间厚边缘薄、能会聚光线；凹透镜中间薄边缘厚、能发散光线。",
+      "source": "llm_generated",
+      "options": [
+        "A. 颜色",
+        "B. 中间和边缘的厚薄、能否会聚光线",
+        "C. 重量",
+        "D. 大小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0540",
+      "item_type": "fill",
+      "stem": "凸透镜能把光（　　）到焦点；凹透镜能把光（　　）。",
+      "answer": "会聚；发散",
+      "kps": [
+        "kp_sci5_lens_features"
+      ],
+      "difficulty": 0.47,
+      "solution": "会聚和发散是两种透镜对光的基本作用。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0541",
+      "item_type": "choice",
+      "stem": "物体到凸透镜的距离大于二倍焦距时，成的像是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_lens_image_rule"
+      ],
+      "difficulty": 0.5,
+      "solution": "物距大于二倍焦距成倒立缩小实像；一倍到二倍焦距成倒立放大实像；物距小于焦距成正立放大虚像。",
+      "source": "llm_generated",
+      "options": [
+        "A. 倒立缩小的实像",
+        "B. 倒立放大的实像",
+        "C. 正立放大的虚像",
+        "D. 正立缩小的实像"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0542",
+      "item_type": "solve",
+      "stem": "请总结凸透镜成像的规律（按物距分三种情况）。",
+      "answer": "①物距大于二倍焦距：倒立缩小的实像（照相机原理）；②物距等于二倍焦距：倒立等大的实像；③一倍焦距＜物距＜二倍焦距：倒立放大的实像（投影仪原理）；④物距等于一倍焦距：不成像；⑤物距小于一倍焦距：正立放大的虚像（放大镜原理）。",
+      "kps": [
+        "kp_sci5_lens_image_rule"
+      ],
+      "difficulty": 0.52,
+      "solution": "记住“一倍焦距分虚实、二倍焦距分大小”。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0543",
+      "item_type": "choice",
+      "stem": "下列仪器中利用凸透镜成倒立放大实像的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_lens_application"
+      ],
+      "difficulty": 0.49,
+      "solution": "投影仪成倒立放大实像；照相机成倒立缩小实像；放大镜成正立放大虚像。",
+      "source": "llm_generated",
+      "options": [
+        "A. 照相机",
+        "B. 投影仪",
+        "C. 放大镜",
+        "D. 望远镜物镜"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0544",
+      "item_type": "fill",
+      "stem": "照相机成（　　）实像，投影仪成（　　）实像，放大镜成（　　）虚像。",
+      "answer": "倒立缩小；倒立放大；正立放大",
+      "kps": [
+        "kp_sci5_lens_application"
+      ],
+      "difficulty": 0.48,
+      "solution": "三种仪器对应凸透镜成像的三种典型情况。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0545",
+      "item_type": "choice",
+      "stem": "牛顿的色散实验说明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_light_dispersion"
+      ],
+      "difficulty": 0.48,
+      "solution": "1666年牛顿用三棱镜把太阳光分解成红橙黄绿蓝靛紫七色光带，说明白光是复色光。",
+      "source": "llm_generated",
+      "options": [
+        "A. 白光由七种色光混合而成",
+        "B. 白光是一种纯色光",
+        "C. 三棱镜能制造颜色",
+        "D. 彩虹是人工制造的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0546",
+      "item_type": "solve",
+      "stem": "彩虹是怎样形成的？为什么总是雨后或早晨出现？",
+      "answer": "阳光射入空气中的小水珠（棱镜作用）发生折射和反射，不同颜色的光偏折程度不同，被分散成七色光带形成彩虹。雨后空气中悬浮大量小水珠，或早晨空气湿润有雾滴，才具备形成彩虹的条件。",
+      "kps": [
+        "kp_sci5_light_dispersion"
+      ],
+      "difficulty": 0.5,
+      "solution": "彩虹是太阳光被小水珠分散（色散）的结果。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0547",
+      "item_type": "choice",
+      "stem": "白色物体在阳光下看起来是白色的，因为它（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_object_color"
+      ],
+      "difficulty": 0.49,
+      "solution": "不发光的物体呈现的颜色是它反射的光的颜色。白纸反射全部光所以白；黑色物体几乎吸收全部光所以黑。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自己会发光",
+        "B. 几乎反射全部光",
+        "C. 吸收全部光",
+        "D. 只反射白光而吸收其它光"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0548",
+      "item_type": "solve",
+      "stem": "为什么夏天穿浅色衣服比穿深色衣服凉快？请解释。",
+      "answer": "浅色物体反射大部分太阳光、吸收的热量少，温度升高慢；深色（黑色）物体几乎吸收全部太阳光，温度升高快。所以夏天穿浅色衣服更凉快。",
+      "kps": [
+        "kp_sci5_object_color"
+      ],
+      "difficulty": 0.5,
+      "solution": "物体颜色与其反射、吸收的光有关。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0549",
+      "item_type": "choice",
+      "stem": "把轻敲过的音叉放入水中，接触水面处会溅起水花，这说明（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_sound_production"
+      ],
+      "difficulty": 0.48,
+      "solution": "音叉振动挤压周围的水，溅起水花，说明发声的物体在振动。振动停止，发声也停止。",
+      "source": "llm_generated",
+      "options": [
+        "A. 音叉会溶解",
+        "B. 发声的物体在振动",
+        "C. 水会流动",
+        "D. 声音是水发出的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0550",
+      "item_type": "solve",
+      "stem": "请设计一个实验证明“声音是由物体振动产生的”。",
+      "answer": "①用手按住正在发声的音叉（或鼓面），声音立即变小或停止，说明振动停止发声也停止；②轻敲音叉后迅速放入水中，接触处溅起水花，把振动显示出来；③触摸发声的喉结能感到振动。两组现象共同证明声音由物体振动产生。",
+      "kps": [
+        "kp_sci5_sound_production"
+      ],
+      "difficulty": 0.48,
+      "solution": "可利用水花、纸屑跳动等现象把振动“显示”出来。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0551",
+      "item_type": "choice",
+      "stem": "关于声音的传播，下列说法正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_sound_propagation"
+      ],
+      "difficulty": 0.48,
+      "solution": "声音传播需要介质，固体最快、液体次之、气体最慢，真空没有介质不能传播声音。",
+      "source": "llm_generated",
+      "options": [
+        "A. 真空中能听到声音",
+        "B. 声音在固体中传播最快、真空中不能传播",
+        "C. 声音传播不需要介质",
+        "D. 声音在气体中传播最快"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0552",
+      "item_type": "solve",
+      "stem": "把一只正在响的闹钟放入玻璃罩中，抽出空气后声音会怎样？这说明什么？",
+      "answer": "抽出罩内空气后闹钟的声音会明显变小甚至听不见（“真空罩实验”）。这说明声音的传播需要介质，介质越稀薄声音传播越弱，真空中不能传播声音。",
+      "kps": [
+        "kp_sci5_sound_propagation"
+      ],
+      "difficulty": 0.49,
+      "solution": "声音传播需要介质，真空不能传声。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0553",
+      "item_type": "choice",
+      "stem": "钢尺伸出桌面的长度越短，拨动时发出的声音（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_sound_pitch"
+      ],
+      "difficulty": 0.48,
+      "solution": "钢尺伸出越短振动越快、频率越高，声音越高（音调高）。物体振动越快声音越高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 越高",
+        "B. 越低",
+        "C. 不变",
+        "D. 先高后低"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0554",
+      "item_type": "solve",
+      "stem": "为什么“看不见的音调高低”可以用钢尺来研究？请说明方法。",
+      "answer": "用钢尺伸出桌面的不同长度来改变振动快慢：伸出越短振动越快、声音越高，伸出越长振动越慢、声音越低。这样就能通过控制钢尺长度来研究音调高低（振动频率）的关系。",
+      "kps": [
+        "kp_sci5_sound_pitch"
+      ],
+      "difficulty": 0.49,
+      "solution": "改变物体振动频率的方法：长度、粗细、松紧、材料、张力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0555",
+      "item_type": "choice",
+      "stem": "鼓面振动幅度越大，发出的声音（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_sound_loudness"
+      ],
+      "difficulty": 0.48,
+      "solution": "鼓面振幅（振动幅度）越大，声音的响度（大小）越大。响度还与距声源的远近有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 越大",
+        "B. 越小",
+        "C. 越高",
+        "D. 不变"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0556",
+      "item_type": "solve",
+      "stem": "要使鼓声更响，可以怎样做？请从两个角度回答。",
+      "answer": "①加大振动幅度（用更大的力敲鼓）；②缩短距离（靠近鼓听）。这两条分别对应影响响度的两个因素：振动幅度和距声源的远近。",
+      "kps": [
+        "kp_sci5_sound_loudness"
+      ],
+      "difficulty": 0.49,
+      "solution": "响度由振幅和与声源的距离共同决定。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0557",
+      "item_type": "choice",
+      "stem": "不用看人也能分辨出是谁在说话，这是靠声音的（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_sci5_sound_timbre"
+      ],
+      "difficulty": 0.48,
+      "solution": "不同乐器的材料、结构不同发出的声音音色不同，即使音调和响度相同也能分辨，这叫音色。",
+      "source": "llm_generated",
+      "options": [
+        "A. 音调",
+        "B. 响度",
+        "C. 音色",
+        "D. 传播速度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0558",
+      "item_type": "solve",
+      "stem": "音色与声音的哪些性质不同？请说明。",
+      "answer": "音色是声音的三个特性之一，它与音调（高低）和响度（大小）不同：音色由发声体的材料和结构决定。闭着眼睛只听声音就能分辨出乐器或说话人，靠的就是音色。",
+      "kps": [
+        "kp_sci5_sound_timbre"
+      ],
+      "difficulty": 0.49,
+      "solution": "声音三特性：音调、响度、音色。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0559",
+      "item_type": "choice",
+      "stem": "防治噪声可以在下面哪个环节进行（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_noise"
+      ],
+      "difficulty": 0.49,
+      "solution": "噪声是发声体无规则振动发出的声音，危害听力。防治可在声源（减弱声源振动）、传播过程（隔音、植树）和人耳（戴耳塞）三个环节进行。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只能在人耳处",
+        "B. 可以在声源、传播过程和人耳处",
+        "C. 只能在声源处",
+        "D. 噪声无法防治"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0560",
+      "item_type": "solve",
+      "stem": "小区里夜间施工的噪声扰民，请从三个环节分别提出防治措施。",
+      "answer": "①声源处：改进施工机械、减小振动或夜间停止使用噪声大的设备；②传播过程：安装隔声屏障、栽树、关闭门窗；③人耳处：工人戴耳塞。三个环节同时治理效果最好。",
+      "kps": [
+        "kp_sci5_noise"
+      ],
+      "difficulty": 0.51,
+      "solution": "噪声防治要从声源、传播过程、人耳三处进行。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0561",
+      "item_type": "fill",
+      "stem": "请做“比较不同材料传热性能”的实验：把金属片、木片、塑料片用同样多的蜡粘住，同时放入同一杯热水中，观察哪片上的蜡先熔化。",
+      "answer": "金属片上的蜡先熔化（木片次之、塑料片最后），说明金属传热性能最好",
+      "kps": [
+        "kp_sci5_heat_transfer_experiment"
+      ],
+      "difficulty": 0.48,
+      "solution": "相同条件下金属片先升温传到另一端，蜡先熔化，说明金属传热快。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0562",
+      "item_type": "choice",
+      "stem": "做“比较材料传热性能”实验时，必须控制的条件是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_heat_transfer_experiment"
+      ],
+      "difficulty": 0.48,
+      "solution": "对照实验要只改变研究的那一个因素（材料），其它条件相同，结果才可比。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三种片的材料不同、形状和热水条件相同",
+        "B. 三种片形状不同、热水相同",
+        "C. 三种片都用不同容器装",
+        "D. 不用控制条件"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0563",
+      "item_type": "solve",
+      "stem": "要为浴室做门帘，请你从防水性、透光性和透水性三方面说明该选什么材料并如何测试。",
+      "answer": "选塑料薄膜或防水布（不吸水、防水、易清洗、透光）。测试：①滴水看是否渗入（防水）；②透光看是否发暗；③浸水看吸水量（透水性）。通过这些测试数据来决定用哪种材料。",
+      "kps": [
+        "kp_sci5_material_property_test"
+      ],
+      "difficulty": 0.5,
+      "solution": "测试性能要用统一方法、相同条件，才能为选材料提供依据。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0564",
+      "item_type": "choice",
+      "stem": "比较不同材料的承重性能，正确的方法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_material_property_test"
+      ],
+      "difficulty": 0.47,
+      "solution": "只有材料形状、大小相同并逐级加砝码，才能公平比较承重性能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用不同大小的材料互相比",
+        "B. 用同样大小的材料，逐级加砝码看能承受的最大重量",
+        "C. 凭手感判断",
+        "D. 看颜色判断"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0565",
+      "item_type": "fill",
+      "stem": "用实验证明一个观点的步骤是：提出（　　）→作（　　）→设计对照实验→收集（　　）→得出（　　）并反思。",
+      "answer": "问题；假设；证据；结论",
+      "kps": [
+        "kp_sci5_how_to_prove"
+      ],
+      "difficulty": 0.48,
+      "solution": "科学探究有固定步骤，结论要能解释现象并说明适用范围。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0566",
+      "item_type": "solve",
+      "stem": "有人说“植物长得高是因为晒得多”。请按科学探究的方法，设计一个实验来检验这个说法是否成立。",
+      "answer": "①提出问题：植物长得高是否与光照多少有关；②作假设：植物长得高与光照有关；③设计对照实验：取两盆长势相同的幼苗，一盆每天见阳光、另一盆放在暗处，其它条件（水、温度等）相同；④收集证据：连续观察记录两周的高度；⑤得出结论：如果光照的一盆明显更高，说明假设成立，否则不成立；⑥反思：实验的时间和样本数可能影响结论。",
+      "kps": [
+        "kp_sci5_how_to_prove"
+      ],
+      "difficulty": 0.52,
+      "solution": "对照实验只改变光照，其它条件相同。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0567",
+      "item_type": "choice",
+      "stem": "植物光合作用的原料和产物，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_photosynthesis"
+      ],
+      "difficulty": 0.48,
+      "solution": "绿色植物在光下把二氧化碳和水合成储存能量的有机物（如淀粉）并释放氧气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 原料是水和氧气，产物是二氧化碳和有机物",
+        "B. 原料是二氧化碳和水，产物是有机物和氧气",
+        "C. 原料是土壤，产物是根",
+        "D. 原料是氮气，产物是氢气"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0568",
+      "item_type": "solve",
+      "stem": "光合作用对生物圈有什么意义？请说出两条。",
+      "answer": "①为植物制造有机物（养料），植物才能生长繁殖；②为地球上的生物提供氧气和有机物，绝大多数食物链的起点是绿色植物；③消耗二氧化碳、释放氧气，维持大气中氧气和二氧化碳的相对平衡。",
+      "kps": [
+        "kp_sci5_photosynthesis"
+      ],
+      "difficulty": 0.51,
+      "solution": "光合作用是地球生态系统的基础。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0569",
+      "item_type": "fill",
+      "stem": "请做“水草实验”：把水草放在水中，滴一滴红墨水，在强光下照射，观察叶片附近的现象。",
+      "answer": "叶片附近冒出许多小气泡（收集起来能使带火星木条复燃），说明水草在光下放出氧气",
+      "kps": [
+        "kp_sci5_elodea_experiment"
+      ],
+      "difficulty": 0.48,
+      "solution": "水草在光下进行光合作用放出氧气，红墨水随水被吸收，气泡中混有红墨水颜色，便于观察。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0570",
+      "item_type": "choice",
+      "stem": "把“水草实验”装置从强光下移到暗处，叶片附近的气泡会（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_elodea_experiment"
+      ],
+      "difficulty": 0.48,
+      "solution": "光合作用必须在光下进行，无光时水草只进行呼吸、不再放出氧气，所以气泡减少直至停止。",
+      "source": "llm_generated",
+      "options": [
+        "A. 变多",
+        "B. 变少直至停止",
+        "C. 不变",
+        "D. 变成红色"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0571",
+      "item_type": "choice",
+      "stem": "把一片叶子的一部分用黑纸遮光几天后取下，摘去遮光部分加碘液变蓝，而遮光部分不变蓝。这说明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_photosynthesis_condition"
+      ],
+      "difficulty": 0.5,
+      "solution": "淀粉遇碘液变蓝。遮光部分没有光不能制造淀粉（不变蓝），见光部分能制造淀粉（变蓝），说明光是绿色植物制造养分的必要条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光是绿色植物制造养料的必要条件",
+        "B. 碘液本身有颜色",
+        "C. 叶片变蓝与光无关",
+        "D. 黑纸有营养"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0572",
+      "item_type": "solve",
+      "stem": "请说明“遮光实验”中加碘液变蓝的部分说明了什么？整个实验说明了什么？",
+      "answer": "变蓝的部分是见光部分，它含有淀粉，说明见光部分能制造淀粉（养料）；遮光部分不变蓝说明没有光就不能制造淀粉。整个实验说明光是绿色植物制造养料（淀粉）的必要条件。",
+      "kps": [
+        "kp_sci5_photosynthesis_condition"
+      ],
+      "difficulty": 0.52,
+      "solution": "淀粉遇碘变蓝是检测淀粉的常用方法。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0573",
+      "item_type": "choice",
+      "stem": "关于植物的呼吸作用，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_plant_respiration"
+      ],
+      "difficulty": 0.48,
+      "solution": "植物昼夜都进行呼吸作用消耗氧气、放出二氧化碳。种子萌发、开花都要呼吸，所以要适量浇水通风。",
+      "source": "llm_generated",
+      "options": [
+        "A. 植物只在白天进行呼吸作用",
+        "B. 植物昼夜都进行呼吸作用，消耗氧气放出二氧化碳",
+        "C. 植物不呼吸",
+        "D. 植物呼吸只消耗二氧化碳"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0574",
+      "item_type": "solve",
+      "stem": "为什么要给花卉适时适量浇水、保持通风？请从呼吸作用角度解释。",
+      "answer": "植物昼夜都要进行呼吸作用，需要氧气、放出二氧化碳。土壤太湿会积水导致根部缺氧、呼吸受阻；室内通风差二氧化碳浓度高、氧气不足。所以要适量浇水、保持通风，让根能正常呼吸。",
+      "kps": [
+        "kp_sci5_plant_respiration"
+      ],
+      "difficulty": 0.51,
+      "solution": "呼吸作用需要氧气、消耗有机物。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0575",
+      "item_type": "choice",
+      "stem": "根的哪个部位有大量根毛，大大增加了吸收面积（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_root_absorb"
+      ],
+      "difficulty": 0.48,
+      "solution": "根的成熟区有大量根毛，大大增加吸收面积，根从土壤中吸收水分和无机盐并向上运输。",
+      "source": "llm_generated",
+      "options": [
+        "A. 根尖",
+        "B. 成熟区（根毛区）",
+        "C. 茎基部",
+        "D. 叶柄"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0576",
+      "item_type": "fill",
+      "stem": "根主要长在土里，吸收（　　）和（　　），并把幼根固定在土中。",
+      "answer": "水分；无机盐",
+      "kps": [
+        "kp_sci5_root_absorb"
+      ],
+      "difficulty": 0.47,
+      "solution": "成熟区的根毛大大增加了吸收面积。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0577",
+      "item_type": "choice",
+      "stem": "水分从叶片的气孔散失到空气中的现象叫（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_transpiration"
+      ],
+      "difficulty": 0.48,
+      "solution": "水分经根、茎、叶的气孔散失到空气中叫蒸腾作用，能促进水和无机盐向上运输并降低叶片温度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 光合作用",
+        "B. 蒸腾作用",
+        "C. 呼吸作用",
+        "D. 凝结"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0578",
+      "item_type": "solve",
+      "stem": "植物的蒸腾作用有什么作用？请说出两条。",
+      "answer": "①是水分和无机盐通过根、茎、叶向上运输的主要动力；②能降低叶片温度，避免叶片被晒伤。所以要给植物适量浇水，蒸腾太旺盛时植物会缺水萎蔫。",
+      "kps": [
+        "kp_sci5_transpiration"
+      ],
+      "difficulty": 0.5,
+      "solution": "蒸腾作用促进水分运输并降低叶温。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0579",
+      "item_type": "choice",
+      "stem": "窗台上的花茎总是朝着窗外弯曲生长，这种现象叫（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_phototropism"
+      ],
+      "difficulty": 0.48,
+      "solution": "植物的茎向着光源生长的现象叫向光性，是生长素分布不均造成的，能让植物获得更多光照。",
+      "source": "llm_generated",
+      "options": [
+        "A. 向光性",
+        "B. 向水性",
+        "C. 向地性",
+        "D. 变异"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0580",
+      "item_type": "solve",
+      "stem": "把幼苗放在一侧有光的盒子里，几天后幼苗会怎样生长？请解释原因。",
+      "answer": "幼苗的茎会朝有光的一侧弯曲生长。原因是背光一侧生长素分布多、细胞生长快，向光一侧生长慢，使茎背光侧长得快，就朝光弯曲。这样植物能获得更多光照进行光合作用。",
+      "kps": [
+        "kp_sci5_phototropism"
+      ],
+      "difficulty": 0.5,
+      "solution": "向光性是植物对光刺激的应答反应。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0581",
+      "item_type": "fill",
+      "stem": "不同植物开花的（　　）不同，一年四季都有花依次开放，这种现象叫（　　）。",
+      "answer": "时间（季节）；花期",
+      "kps": [
+        "kp_sci5_flower_period"
+      ],
+      "difficulty": 0.46,
+      "solution": "桃李春天开、荷花夏天开、菊花秋天开，不同植物花期不同。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0582",
+      "item_type": "choice",
+      "stem": "同一朵花一般在一段时间内开放就凋谢，一年中各种植物开花的时间不同，这说明（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_flower_period"
+      ],
+      "difficulty": 0.47,
+      "solution": "不同植物开花的季节和时间各不相同，称为花期，这与各植物长期适应环境有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 植物开花有各自的花期",
+        "B. 所有植物同时开花",
+        "C. 开花是随机的",
+        "D. 温度越高开花越早且无限"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0583",
+      "item_type": "choice",
+      "stem": "用扦插、嫁接等方法繁殖植物属于（　　），其优点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_vegetative_reproduction"
+      ],
+      "difficulty": 0.5,
+      "solution": "用根、茎、叶等营养器官繁殖叫营养繁殖，不经过两性结合，繁殖速度快且后代与亲代很相似，能保持优良性状。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有性繁殖；后代差异大",
+        "B. 营养繁殖；能保持优良性状、繁殖快",
+        "C. 有性繁殖；保持优良性状",
+        "D. 营养繁殖；后代差异大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0584",
+      "item_type": "solve",
+      "stem": "果农用嫁接繁殖优良果树有什么好处？",
+      "answer": "嫁接把优良品种的芽接到砧木上，属营养繁殖，能保持优良果树的优良性状不变异，而且结果快。缺点是操作需技术、后代不易改良。",
+      "kps": [
+        "kp_sci5_vegetative_reproduction"
+      ],
+      "difficulty": 0.51,
+      "solution": "营养繁殖保持优良性状，是果树良种繁育的常用方法。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0585",
+      "item_type": "choice",
+      "stem": "蘑菇、木耳这类菌类在生态系统中的角色是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_sci5_mushroom"
+      ],
+      "difficulty": 0.49,
+      "solution": "蘑菇、木耳没有叶绿素、不能进行光合作用，靠分解现成有机物生活，是分解者，靠孢子繁殖，多在阴暗潮湿处生长。",
+      "source": "llm_generated",
+      "options": [
+        "A. 生产者",
+        "B. 消费者",
+        "C. 分解者",
+        "D. 消费者和分解者"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0586",
+      "item_type": "solve",
+      "stem": "为什么蘑菇、木耳不能进行光合作用？它们怎样获得营养？",
+      "answer": "因为它们没有叶绿素，不能进行光合作用制造养分。它们靠分解土壤、树木上的现成有机物获得营养，是生态系统中的分解者，靠孢子繁殖，多生长在阴暗潮湿、缺少阳光的地方。",
+      "kps": [
+        "kp_sci5_mushroom"
+      ],
+      "difficulty": 0.51,
+      "solution": "菌类没有叶绿素，属分解者。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0587",
+      "item_type": "choice",
+      "stem": "动物的运动是由（　　）产生的",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_animal_movement_system"
+      ],
+      "difficulty": 0.48,
+      "solution": "动物的运动由骨、骨骼肌和关节组成，肌肉收缩牵动骨骼绕关节转动产生运动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 骨、骨骼肌和关节",
+        "B. 皮肤",
+        "C. 神经（直接拉骨）",
+        "D. 血液流动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0588",
+      "item_type": "solve",
+      "stem": "人和动物的运动系统由哪几部分组成？各起什么作用？",
+      "answer": "由骨、骨骼肌和关节组成。骨构成支架；骨骼肌收缩牵动骨绕关节转动产生运动；关节是骨连接处活动的部位。肌肉只有收缩能力，要靠成对肌肉交替收缩舒张完成动作。",
+      "kps": [
+        "kp_sci5_animal_movement_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "运动系统的三个组成部分互相配合完成运动。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0589",
+      "item_type": "fill",
+      "stem": "哺乳动物体表被（　　），鸟被（　　），鱼被（　　），昆虫有（　　）。",
+      "answer": "毛；羽毛；鳞；外骨骼",
+      "kps": [
+        "kp_sci5_animal_body_cover"
+      ],
+      "difficulty": 0.47,
+      "solution": "体表覆盖与体温调节、防护和运动有关。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0590",
+      "item_type": "choice",
+      "stem": "动物体表覆盖对动物生存有什么意义？",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_animal_body_cover"
+      ],
+      "difficulty": 0.48,
+      "solution": "被毛、羽毛保暖调温，鳞和外骨骼保护身体、防水防敌，鸟的翼和昆虫的足还与运动有关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只是好看",
+        "B. 保护身体、调节体温、辅助运动",
+        "C. 使动物跑得快一倍",
+        "D. 让动物不吃饭"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0591",
+      "item_type": "choice",
+      "stem": "家蚕一生的发育顺序是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_insect_metamorphosis"
+      ],
+      "difficulty": 0.5,
+      "solution": "家蚕经过卵、幼虫、蛹、成虫四个阶段，幼虫和成虫形态结构差别很大，属完全变态发育。",
+      "source": "llm_generated",
+      "options": [
+        "A. 卵→幼虫→蛹→成虫",
+        "B. 卵→若虫→成虫",
+        "C. 卵→成虫→幼虫",
+        "D. 卵→幼虫→成虫→蛹"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0592",
+      "item_type": "solve",
+      "stem": "什么是完全变态发育？请举例说明它对昆虫生存的意义。",
+      "answer": "发育过程经过卵、幼虫、蛹、成虫四个时期，幼虫与成虫在形态结构和生活方式上差别很大，称完全变态（如家蚕、蜂、蝶、蝇）。意义：幼虫和成虫分别适应不同阶段（幼虫专吃食长大、成虫专繁殖后代），分工使昆虫充分利用资源、减少同种竞争。",
+      "kps": [
+        "kp_sci5_insect_metamorphosis"
+      ],
+      "difficulty": 0.51,
+      "solution": "完全变态与不完全变态（无蛹期）不同。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0593",
+      "item_type": "choice",
+      "stem": "青蛙的幼体和成体在呼吸方式上分别用什么（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_bird_amphibian"
+      ],
+      "difficulty": 0.49,
+      "solution": "两栖动物幼体生活在水中用鳃呼吸，成体可在陆地生活用肺和皮肤辅助呼吸，是变温动物。鸟用肺呼吸、体温恒定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 幼体用鳃、成体用肺和皮肤",
+        "B. 幼体和成体都用鳃",
+        "C. 幼体用肺、成体用鳃",
+        "D. 幼体和成体都用肺"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0594",
+      "item_type": "solve",
+      "stem": "比较鸟和青蛙在身体特征和生活方式上的主要区别。",
+      "answer": "鸟体表被羽毛、前肢变成翼、用肺呼吸有气囊、体温恒定、卵生、生活在空中和地面；青蛙幼体用鳃水中生活、成体用肺和皮肤、能在陆地生活、体温随环境变化（变温）、卵生。鸟适于飞行，青蛙适于水陆两栖。",
+      "kps": [
+        "kp_sci5_bird_amphibian"
+      ],
+      "difficulty": 0.51,
+      "solution": "不同类群动物的身体特征与生活方式相适应。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0595",
+      "item_type": "choice",
+      "stem": "判定一种动物是哺乳动物，最根本的特征是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_mammal_feature"
+      ],
+      "difficulty": 0.49,
+      "solution": "哺乳动物的共同特征是体表被毛、胎生、哺乳、牙齿分化、体温恒定，其中胎生哺乳是根本特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体表被毛",
+        "B. 胎生、哺乳",
+        "C. 牙齿分化",
+        "D. 体温恒定"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0596",
+      "item_type": "fill",
+      "stem": "哺乳动物的共同特征是体表被毛、（　　）、（　　）、牙齿分化和体温恒定。",
+      "answer": "胎生；哺乳",
+      "kps": [
+        "kp_sci5_mammal_feature"
+      ],
+      "difficulty": 0.48,
+      "solution": "胎生哺乳是哺乳动物的根本特征。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0597",
+      "item_type": "choice",
+      "stem": "动物生命活动所需的能量直接来自（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_energy_from_food"
+      ],
+      "difficulty": 0.48,
+      "solution": "动物从食物中获得能量，食物中的能量通过细胞呼吸释放出来供各项生命活动使用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 阳光直接照射",
+        "B. 食物中储存的能量经细胞呼吸释放",
+        "C. 空气",
+        "D. 岩石"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0598",
+      "item_type": "solve",
+      "stem": "请说说动物获取能量和植物获取能量的方式有什么不同。",
+      "answer": "绿色植物能自己进行光合作用制造有机物储存能量；动物不能自己制造有机物，只能直接或间接吃绿色植物获得食物，通过细胞呼吸释放其中的能量供生命活动使用。所以能量最终都来自太阳能。",
+      "kps": [
+        "kp_sci5_energy_from_food"
+      ],
+      "difficulty": 0.5,
+      "solution": "能量沿食物链从植物逐级传递。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0599",
+      "item_type": "choice",
+      "stem": "体循环的主要作用是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_blood_circulation_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "体循环把氧气和养料送到全身各器官并运走废物；肺循环把血液送到肺进行气体交换后回心，两者相连构成完整循环。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把氧气和养料送到全身并运走废物",
+        "B. 只把血送到肺",
+        "C. 产生血细胞",
+        "D. 消化食物"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0600",
+      "item_type": "solve",
+      "stem": "请解释体循环和肺循环的路径，并说明两者怎样联系起来。",
+      "answer": "体循环：心脏（左心室）→主动脉→全身各处毛细血管→上下腔静脉→右心房。肺循环：心脏（右心室）→肺动脉→肺部毛细血管（气体交换）→肺静脉→左心房。两者首尾相接、心脏居中相连，构成完整循环，把氧气送到全身、把二氧化碳送到肺。",
+      "kps": [
+        "kp_sci5_blood_circulation_system"
+      ],
+      "difficulty": 0.52,
+      "solution": "两条循环路线不同但相连，共同完成运输氧气和废物的任务。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0601",
+      "item_type": "choice",
+      "stem": "血液中具有运输氧气功能的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_blood_components"
+      ],
+      "difficulty": 0.49,
+      "solution": "血液由血浆、红细胞、白细胞、血小板组成：红细胞运氧，白细胞吞噬病菌，血小板止血凝血，血浆运送养料。",
+      "source": "llm_generated",
+      "options": [
+        "A. 红细胞",
+        "B. 白细胞",
+        "C. 血小板",
+        "D. 血浆"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0602",
+      "item_type": "fill",
+      "stem": "血液由（　　）、（　　）、（　　）和（　　）组成。红细胞运氧，白细胞（　　）病菌，血小板止血凝血。",
+      "answer": "血浆；红细胞；白细胞；血小板；吞噬",
+      "kps": [
+        "kp_sci5_blood_components"
+      ],
+      "difficulty": 0.48,
+      "solution": "四种成分分工合作完成运输和防御功能。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0603",
+      "item_type": "choice",
+      "stem": "下列属于健康生活方式的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_healthy_lifestyle"
+      ],
+      "difficulty": 0.48,
+      "solution": "合理膳食、适量运动、充足睡眠、良好情绪、拒绝烟酒是健康的生活方式，能保持身体健康。",
+      "source": "llm_generated",
+      "options": [
+        "A. 合理膳食、适量运动、充足睡眠",
+        "B. 经常熬夜、通宵打游戏",
+        "C. 吸烟喝酒提神",
+        "D. 挑食偏食"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0604",
+      "item_type": "solve",
+      "stem": "请说出三条健康的生活方式并简要说明理由。",
+      "answer": "①合理膳食、不挑食：营养均衡才能正常生长发育；②适量运动：增强心肺功能；③充足睡眠、规律作息：让身体各器官得到休息和修复；④保持良好情绪；⑤拒绝烟草和酒精，烟酒损害健康。",
+      "kps": [
+        "kp_sci5_healthy_lifestyle"
+      ],
+      "difficulty": 0.5,
+      "solution": "健康生活方式需要长期坚持。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0605",
+      "item_type": "choice",
+      "stem": "关于用药，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_medicine_safety"
+      ],
+      "difficulty": 0.49,
+      "solution": "病菌侵入会引起传染病，药物能帮助身体抵抗疾病，但必须遵医嘱使用，不能自行服药以免伤害身体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自己感冒了就吃抗生素",
+        "B. 药物能抵抗疾病但必须遵医嘱使用",
+        "C. 药品可以当零食吃",
+        "D. 两种药一起吃效果更好"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0606",
+      "item_type": "solve",
+      "stem": "为什么不能自行服药？请说说两条理由。",
+      "answer": "①不同病因要用不同的药，乱吃药（如把感冒当细菌感染吃抗生素）不但无效还可能有害；②药物都有副作用和禁忌，剂量不对可能中毒。所以用药必须遵医嘱、按说明或医生指导服用。",
+      "kps": [
+        "kp_sci5_medicine_safety"
+      ],
+      "difficulty": 0.51,
+      "solution": "正确用药是健康的重要保障。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0607",
+      "item_type": "choice",
+      "stem": "人的新生命是从（　　）开始的",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_human_reproduction"
+      ],
+      "difficulty": 0.49,
+      "solution": "父亲的精子与母亲的卵细胞结合成受精卵，在母体内发育成胚胎，约十个月后出生。",
+      "source": "llm_generated",
+      "options": [
+        "A. 受精卵",
+        "B. 婴儿出生",
+        "C. 胚胎着床前",
+        "D. 母体子宫"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0608",
+      "item_type": "fill",
+      "stem": "人的新生命从（　　）开始，它在母体内发育约（　　）个月后出生。",
+      "answer": "受精卵；十",
+      "kps": [
+        "kp_sci5_human_reproduction"
+      ],
+      "difficulty": 0.48,
+      "solution": "受精卵是人体生命的起点。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0609",
+      "item_type": "choice",
+      "stem": "“子代和亲代长得像”这种亲代与子代相似的现象叫（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_genetics_variation"
+      ],
+      "difficulty": 0.48,
+      "solution": "亲子代之间相似的现象叫遗传；同种生物个体之间以及亲子代之间的差异叫变异。",
+      "source": "llm_generated",
+      "options": [
+        "A. 遗传",
+        "B. 变异",
+        "C. 进化",
+        "D. 繁殖"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0610",
+      "item_type": "solve",
+      "stem": "请分别举一个遗传和变异的例子。",
+      "answer": "遗传的例子：子代像父母（如卷发、肤色）；变异的例子：同胞兄弟姐妹之间、或亲子代之间有差异（如一胎和二胎长相不同）。",
+      "kps": [
+        "kp_sci5_genetics_variation"
+      ],
+      "difficulty": 0.51,
+      "solution": "遗传和变异是生物界普遍存在的现象。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0611",
+      "item_type": "choice",
+      "stem": "多条食物链交织在一起形成的网络叫（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_food_web"
+      ],
+      "difficulty": 0.49,
+      "solution": "多条食物链交织成食物网，箭头由被吃者指向取食者，表示物质和能量流动的方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 食物网",
+        "B. 生态圈",
+        "C. 生物圈",
+        "D. 群落"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0612",
+      "item_type": "solve",
+      "stem": "在“草→兔→狐狸”和“草→鼠→猫头鹰”两条食物链构成的食网中，如果大量捕杀狐狸会发生什么？",
+      "answer": "兔失去天敌会大量繁殖，把草吃光；随后兔因缺食而减少，草还没恢复，草食性昆虫因缺草而减少，进而影响其它食物链，整个生态系统被破坏。所以保护生态要保护食物链各环节。",
+      "kps": [
+        "kp_sci5_food_web"
+      ],
+      "difficulty": 0.51,
+      "solution": "破坏食物链会引起连锁变化、破坏生态平衡。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0613",
+      "item_type": "choice",
+      "stem": "下列属于生态系统的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_ecosystem"
+      ],
+      "difficulty": 0.48,
+      "solution": "生态系统是一定区域内生物和非生物因素相互作用形成的整体，一片森林、一个池塘都是生态系统。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一只青蛙",
+        "B. 一片森林",
+        "C. 一棵大树",
+        "D. 一群蚂蚁"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0614",
+      "item_type": "solve",
+      "stem": "一个池塘生态系统中有哪些生物和非生物因素？请举例说明它们的关系。",
+      "answer": "生物：生产者（水草、藻类）、消费者（鱼、虾、水蚤）、分解者（细菌、真菌）。非生物：阳光、水、空气、温度。关系：阳光给水草光合作用，水草给小虾食物、小虾被鱼吃，死去后被细菌分解，物质在生物与非生物之间循环。",
+      "kps": [
+        "kp_sci5_ecosystem"
+      ],
+      "difficulty": 0.52,
+      "solution": "生态系统由生物成分和非生物成分相互作用构成。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0615",
+      "item_type": "choice",
+      "stem": "在生态系统中，鼠和猫头鹰的关系是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_ecological_balance"
+      ],
+      "difficulty": 0.49,
+      "solution": "猫头鹰捕食鼠，二者构成食物链（草→鼠→猫头鹰）。这种天敌关系能制约鼠的数量、维持生态平衡。",
+      "source": "llm_generated",
+      "options": [
+        "A. 合作关系",
+        "B. 捕食（食物链）关系",
+        "C. 寄生关系",
+        "D. 竞争关系"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0616",
+      "item_type": "solve",
+      "stem": "请解释为什么说“生态平衡会被破坏食物链而打破”。",
+      "answer": "生态系统中各成分保持相对稳定，各种生物数量处于动态平衡，捕食关系相互制约。一旦大量捕杀或破坏食物链中的某个环节，其数量会失衡并引起连锁变化（草被吃光、害虫暴发等），最终导致生态平衡被破坏。",
+      "kps": [
+        "kp_sci5_ecological_balance"
+      ],
+      "difficulty": 0.52,
+      "solution": "保护生态要保护食物链的完整和生物多样性。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0617",
+      "item_type": "choice",
+      "stem": "动物数量急剧减少甚至灭绝，最主要的原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_habitat_damage"
+      ],
+      "difficulty": 0.49,
+      "solution": "砍伐森林、开垦草地、排放污水使栖息地缩小，生物因食物和空间不足而减少甚至灭绝。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地球变暖",
+        "B. 栖息地被破坏、食物和空间不足",
+        "C. 动物互相打架",
+        "D. 夜晚太黑"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0618",
+      "item_type": "solve",
+      "stem": "请举出两个导致栖息地破坏的现象，并说出它的后果。",
+      "answer": "①滥砍森林、开垦草地：栖息地缩小、食物减少、很多物种失去家园而减少或灭绝；②向水体排放污水：水中生物因缺氧或中毒死亡、食物链被破坏。栖息地一旦被破坏很难恢复，后果严重。",
+      "kps": [
+        "kp_sci5_habitat_damage"
+      ],
+      "difficulty": 0.52,
+      "solution": "保护栖息地是保护生物的根本。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0619",
+      "item_type": "fill",
+      "stem": "保护动物的措施有建立（　　）、禁捕禁猎、签订国际公约、（　　）动物制品等。",
+      "answer": "自然保护区；减少使用",
+      "kps": [
+        "kp_sci5_protect_animals"
+      ],
+      "difficulty": 0.47,
+      "solution": "建立自然保护区是就地保护最有效的办法。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0620",
+      "item_type": "solve",
+      "stem": "请你从自己做起，提出三条保护动物的措施。",
+      "answer": "①不捕杀、不伤害野生动物，不购买野生动物制品；②积极参加保护动物、植树护林等志愿活动，宣传保护动物；③减少使用一次性用品、不破坏动物栖息地；④支持建立自然保护区。",
+      "kps": [
+        "kp_sci5_protect_animals"
+      ],
+      "difficulty": 0.5,
+      "solution": "保护动物就是保护人类自己。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0621",
+      "item_type": "choice",
+      "stem": "外来物种入侵会破坏生态平衡，主要因为它（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_alien_species"
+      ],
+      "difficulty": 0.5,
+      "solution": "人为引入的物种在本地区缺少天敌和其它制约，会大量繁殖、排挤本地物种，破坏生态平衡，是生态危机之一。",
+      "source": "llm_generated",
+      "options": [
+        "A. 缺少天敌制约会大量繁殖，排挤本地物种",
+        "B. 长得小没有威胁",
+        "C. 不能在本地繁殖",
+        "D. 只吃石头"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0622",
+      "item_type": "solve",
+      "stem": "有人把一种观赏鱼随意放进本地湖中，请说说这样做可能造成的危害。",
+      "answer": "这种鱼在本地可能缺少天敌和其它制约，会大量繁殖、排挤本地物种、捕食本地小鱼小虾，还会传播外来疾病，破坏当地生态平衡。所以外来物种不能随意引入，要经评估和审批。",
+      "kps": [
+        "kp_sci5_alien_species"
+      ],
+      "difficulty": 0.52,
+      "solution": "引进外来物种要谨慎，遵守相关法规。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0623",
+      "item_type": "choice",
+      "stem": "植物生长需要从土壤中吸收（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_plant_soil"
+      ],
+      "difficulty": 0.48,
+      "solution": "土壤中的水分和无机盐为植物提供营养；腐殖质使土壤肥沃，土壤板结或贫瘠会影响植物生长。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水分和无机盐",
+        "B. 阳光",
+        "C. 空气中的氧气",
+        "D. 土壤本身的沙粒"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0624",
+      "item_type": "solve",
+      "stem": "为什么土壤板结或贫瘠会影响植物生长？请从两个角度分析。",
+      "answer": "①板结：土壤缝隙变小、根难伸展、水和空气不易进入，影响根的呼吸和吸水吸肥；②贫瘠：腐殖质和无机盐少，养分不足。所以要常松土、施农家肥（堆肥沤肥）改良土壤。",
+      "kps": [
+        "kp_sci5_plant_soil"
+      ],
+      "difficulty": 0.51,
+      "solution": "改良土壤能使土壤疏松肥沃、有利植物生长。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0625",
+      "item_type": "choice",
+      "stem": "仙人掌的刺、骆驼的驼峰属于生物对环境的（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_adaptation"
+      ],
+      "difficulty": 0.49,
+      "solution": "生物以形态、行为、生理等方式适应环境：仙人掌的刺减少水分散失、驼峰储水，北极熊厚毛保温。环境改变会导致生物变化甚至灭绝。",
+      "source": "llm_generated",
+      "options": [
+        "A. 影响",
+        "B. 适应",
+        "C. 破坏",
+        "D. 无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0626",
+      "item_type": "solve",
+      "stem": "请举例说明生物适应环境的方式（形态、行为、生理各一例）。",
+      "answer": "形态：仙人掌茎肥厚有刺、骆驼脚掌宽厚；行为：沙漠动物夜间活动避暑、鸟南飞过冬；生理：北极熊有厚脂肪、变色龙体色随环境改变。环境改变时生物可能变化甚至灭绝。",
+      "kps": [
+        "kp_sci5_adaptation"
+      ],
+      "difficulty": 0.52,
+      "solution": "适应是生物与环境长期相互作用的结果。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0627",
+      "item_type": "choice",
+      "stem": "地球自转一周约24小时形成（　　），公转一周约365天形成（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_day_and_year"
+      ],
+      "difficulty": 0.48,
+      "solution": "自转（约24小时）形成昼夜交替，公转（约365天）形成一年，自转和公转方向都是自西向东。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一年；一天",
+        "B. 昼夜交替；一年",
+        "C. 四季；昼夜",
+        "D. 季节；月份"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0628",
+      "item_type": "fill",
+      "stem": "地球自西向东（　　）一周约24小时形成昼夜，（　　）一周约365天形成一年。",
+      "answer": "自转；公转",
+      "kps": [
+        "kp_sci5_day_and_year"
+      ],
+      "difficulty": 0.47,
+      "solution": "自转产生昼夜，公转产生一年。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0629",
+      "item_type": "choice",
+      "stem": "形成四季的根本原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_seasons_reason"
+      ],
+      "difficulty": 0.5,
+      "solution": "地球公转时太阳直射点在南北回归线之间移动，南北半球获得热量多少不同，形成春夏秋冬。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地球离太阳忽远忽近",
+        "B. 地轴倾斜且方向不变，公转时南北半球受热多少不同",
+        "C. 太阳温度变化",
+        "D. 地球自转速度变化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0630",
+      "item_type": "solve",
+      "stem": "请解释地球上有四季变化的完整原因链条。",
+      "answer": "地球在公转，同时地轴倾斜（约66.5°）且方向保持不变。公转时太阳直射点在南北回归线之间来回移动：直射北半球时北半球获得热量多为夏季、南半球为冬季；直射南半球时则相反。这样南北半球交替经历春夏秋冬。",
+      "kps": [
+        "kp_sci5_seasons_reason"
+      ],
+      "difficulty": 0.52,
+      "solution": "地轴倾斜+公转=四季；直射半球是夏季。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0631",
+      "item_type": "choice",
+      "stem": "我国是夏季时，澳大利亚是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_hemisphere_seasons"
+      ],
+      "difficulty": 0.49,
+      "solution": "太阳直射哪半球哪半球就是夏季。澳大利亚在南半球，我国夏季时南半球正是冬季。",
+      "source": "llm_generated",
+      "options": [
+        "A. 夏季",
+        "B. 冬季",
+        "C. 春季",
+        "D. 秋季"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0632",
+      "item_type": "solve",
+      "stem": "为什么南北半球的季节总是相反？请解释。",
+      "answer": "地球公转时太阳直射点南北移动，太阳直射哪个半球，哪个半球获得热量多就是夏季，另一半球获得热量少正是冬季。所以南北半球季节相反，我国过冬时澳大利亚过夏。",
+      "kps": [
+        "kp_sci5_hemisphere_seasons"
+      ],
+      "difficulty": 0.51,
+      "solution": "直射半球是夏季，另一半球是冬季。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0633",
+      "item_type": "choice",
+      "stem": "一年中正午的太阳高度（海南）大致在（　　）达到最大",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_sun_altitude"
+      ],
+      "difficulty": 0.49,
+      "solution": "海南在北回归线以北，接近夏至（太阳直射北回归线）时正午太阳高度最大、影子最短；冬至时太阳高度最小、影子最长。",
+      "source": "llm_generated",
+      "options": [
+        "A. 夏至日前后",
+        "B. 冬至日前后",
+        "C. 春分日",
+        "D. 秋分日"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0634",
+      "item_type": "solve",
+      "stem": "太阳高度指什么？它和影子长短有什么关系？",
+      "answer": "太阳光线与地面的夹角叫太阳高度。太阳高度越大，物体挡光的区域越小，影子越短；反之影子越长。所以正午影子最短，早晚最长。",
+      "kps": [
+        "kp_sci5_sun_altitude"
+      ],
+      "difficulty": 0.51,
+      "solution": "太阳高度大影子短，太阳高度小影子长。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0635",
+      "item_type": "choice",
+      "stem": "太阳能热水器和太阳能电池分别把太阳能转化为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_solar_energy_use"
+      ],
+      "difficulty": 0.5,
+      "solution": "太阳能热水器把光能转化为热能，太阳能电池（光伏电池）把光能转化为电能。太阳能清洁无污染、储量大、可再生。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电能；热能",
+        "B. 热能；电能",
+        "C. 机械能；电能",
+        "D. 化学能；热能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0636",
+      "item_type": "solve",
+      "stem": "太阳能有哪些优点？海南可以怎样利用太阳能？",
+      "answer": "优点：清洁无污染、储量大、取之不尽、可再生。海南日照充足，可以安装太阳能热水器、太阳能路灯和光伏屋顶发电，减少对化石能源的依赖。",
+      "kps": [
+        "kp_sci5_solar_energy_use"
+      ],
+      "difficulty": 0.51,
+      "solution": "太阳能是一种可再生的清洁能源。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0637",
+      "item_type": "choice",
+      "stem": "风的形成原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_wind_formation"
+      ],
+      "difficulty": 0.48,
+      "solution": "地面受热不均使空气流动形成风。地面受热快形成上升气流，沿海地区因海陆受热差异风向不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 空气受热不均而流动",
+        "B. 太阳自己吹风",
+        "C. 地球自转直接产生风",
+        "D. 云被吹散产生风"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0638",
+      "item_type": "solve",
+      "stem": "海边白天常常吹海风（从海上吹向陆地），这是为什么？",
+      "answer": "海水的比热容比陆地大，白天陆地升温快、空气上升形成低压，海上较凉形成高压，风就从海上（高压）吹向陆地（低压），形成海风。夜晚陆地降温快，风向反转成陆风。",
+      "kps": [
+        "kp_sci5_wind_formation"
+      ],
+      "difficulty": 0.51,
+      "solution": "海陆热力性质差异导致海陆风昼夜交替。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0639",
+      "item_type": "choice",
+      "stem": "风力用0～12级表示，级数越大说明风（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_wind_direction_power"
+      ],
+      "difficulty": 0.48,
+      "solution": "风级越大风速越大、破坏力越强；风向指风从哪个方向吹来。",
+      "source": "llm_generated",
+      "options": [
+        "A. 越小",
+        "B. 越大、破坏力越强",
+        "C. 越稳定",
+        "D. 越热"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0640",
+      "item_type": "fill",
+      "stem": "风向指风（　　）的方向；风力用0～12级表示，级数越大风速越（　　）。",
+      "answer": "吹来；大",
+      "kps": [
+        "kp_sci5_wind_direction_power"
+      ],
+      "difficulty": 0.47,
+      "solution": "天气预报中常见“多云转晴，东南风3～4级”。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0641",
+      "item_type": "choice",
+      "stem": "风力发电是把风的（　　）转化为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_wind_energy"
+      ],
+      "difficulty": 0.49,
+      "solution": "风力发电把风的动能转化为电能。风能是清洁可再生能源，但风速不稳定、噪声会影响居民。",
+      "source": "llm_generated",
+      "options": [
+        "A. 动能；电能",
+        "B. 电能；动能",
+        "C. 热能；电能",
+        "D. 势能；动能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0642",
+      "item_type": "solve",
+      "stem": "利用风能发电有什么优点和不足？",
+      "answer": "优点：风能清洁无污染、可再生、储量大。不足：风速不稳定（时大时小）、难以储存；风力发电机会产生噪声影响附近居民；占地较大。",
+      "kps": [
+        "kp_sci5_wind_energy"
+      ],
+      "difficulty": 0.51,
+      "solution": "风能是可再生能源，利用时也要考虑缺点。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0643",
+      "item_type": "choice",
+      "stem": "夜间靠海一侧陆地降温比海水快，此时风向是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_sea_land_breeze"
+      ],
+      "difficulty": 0.5,
+      "solution": "白天陆地升温快形成海风，夜间陆地降温快形成陆风（从陆地吹向海洋），这是海陆热力性质差异造成的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从陆地吹向海洋（陆风）",
+        "B. 从海洋吹向陆地（海风）",
+        "C. 没有风",
+        "D. 垂直向下"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0644",
+      "item_type": "solve",
+      "stem": "请解释海风和陆风的形成原理。",
+      "answer": "陆地升温降温都比海水快（海水热容量大）。白天陆地受热快、近地面空气受热上升形成低压，海上高压，风由海上吹向陆地成海风；夜间陆地降温快形成高压，海上低压，风由陆地吹向海上成陆风。",
+      "kps": [
+        "kp_sci5_sea_land_breeze"
+      ],
+      "difficulty": 0.51,
+      "solution": "海陆热力差异导致昼夜风向相反。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0645",
+      "item_type": "choice",
+      "stem": "冰雹是怎样形成的（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_precipitation_forms"
+      ],
+      "difficulty": 0.49,
+      "solution": "降水有雨、雪、露、霜、冰雹等形式，都来自云中水汽凝结；冰雹由强烈上升气流托举形成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 高空的冰晶遇强上升气流反复升降、增大后落下",
+        "B. 地面水直接结冰",
+        "C. 太阳照射地面产生",
+        "D. 云变冷直接掉落"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0646",
+      "item_type": "fill",
+      "stem": "降水的形式有雨、雪、（　　）、（　　）和（　　）等。",
+      "answer": "露；霜；冰雹",
+      "kps": [
+        "kp_sci5_precipitation_forms"
+      ],
+      "difficulty": 0.47,
+      "solution": "降水都来自云中水汽凝结成的水滴或冰晶。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0647",
+      "item_type": "choice",
+      "stem": "空气上升到露点、水汽凝结成小水滴，这一步叫（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_cloud_forming"
+      ],
+      "difficulty": 0.48,
+      "solution": "空气上升冷却到露点时水汽凝结成小水滴或小冰晶，聚集成云。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蒸发",
+        "B. 凝结",
+        "C. 熔化",
+        "D. 凝固"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0648",
+      "item_type": "solve",
+      "stem": "请解释天空中的云是怎样形成的。",
+      "answer": "地面和海洋的水受热蒸发成水蒸气上升；水蒸气上升到高空后遇冷，温度降低到露点时水汽凝结成小水滴或小冰晶；无数小水滴和小冰晶聚集在一起就形成了云。云量多少表示天空的云状。",
+      "kps": [
+        "kp_sci5_cloud_forming"
+      ],
+      "difficulty": 0.51,
+      "solution": "蒸发上升→遇冷凝结→聚集成云。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0649",
+      "item_type": "choice",
+      "stem": "天气预报图上出现“高压中心”，其附近天气一般是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_weather_map"
+      ],
+      "difficulty": 0.5,
+      "solution": "高压中心盛行下沉气流，天气晴朗；低压中心盛行上升气流，多阴雨。冷锋暖锋会带来气温和降水变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 晴朗",
+        "B. 阴雨",
+        "C. 大雪",
+        "D. 台风"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0650",
+      "item_type": "solve",
+      "stem": "怎样用天气预报图判断未来几天的天气变化？请说明看什么。",
+      "answer": "主要看：①高低压中心的分布（高压控制晴、低压控制阴雨）；②冷锋暖锋的位置和移动方向（冷锋过境降温、暖锋过境升温）；③台风符号的位置。由这些判断未来是晴还是阴雨、气温升降。",
+      "kps": [
+        "kp_sci5_weather_map"
+      ],
+      "difficulty": 0.52,
+      "solution": "天气图上的符号和锋面系统能指示天气变化。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0651",
+      "item_type": "choice",
+      "stem": "要比较某一个月每天的最高气温变化，最适合画的图是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_weather_statistics"
+      ],
+      "difficulty": 0.5,
+      "solution": "气温随时间的变化用折线图表示，降水多少用柱形图表示，通过画图能直观看出变化规律。",
+      "source": "llm_generated",
+      "options": [
+        "A. 气温折线图",
+        "B. 降水柱形图",
+        "C. 饼图",
+        "D. 照片"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0652",
+      "item_type": "solve",
+      "stem": "请把一个月的天气数据整理成图表并说明你的发现。",
+      "answer": "①把每天的最高、最低气温记录下来画成气温折线图，把每天降水量画成柱形图；②观察两条图的变化；③发现规律：海南夏季气温高、降水多，冬季气温稍低、降水少，一年中某段时间常连阴雨。",
+      "kps": [
+        "kp_sci5_weather_statistics"
+      ],
+      "difficulty": 0.52,
+      "solution": "用统计图表能发现单日观察不易发现的规律。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0653",
+      "item_type": "choice",
+      "stem": "太阳系中距太阳由近到远的八大行星顺序是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_solar_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "八大行星距太阳由近到远：水星、金星、地球、火星、木星、土星、天王星、海王星，都绕太阳公转。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水星、金星、地球、火星、木星、土星、天王星、海王星",
+        "B. 地球、金星、水星、火星",
+        "C. 木星、土星、地球、水星",
+        "D. 海王星、天王星、土星、木星"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0654",
+      "item_type": "fill",
+      "stem": "太阳系有（　　）颗行星，距太阳最近的是（　　），最大的是（　　）。",
+      "answer": "八；水星；木星",
+      "kps": [
+        "kp_sci5_solar_system"
+      ],
+      "difficulty": 0.49,
+      "solution": "八大行星都绕太阳公转。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0655",
+      "item_type": "choice",
+      "stem": "下列关于巨行星（木星、土星等）的说法，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_planet_order"
+      ],
+      "difficulty": 0.5,
+      "solution": "水金地火是类地行星、体积小、离太阳近、公转较快；木土天海是巨行星、体积大、卫星多。",
+      "source": "llm_generated",
+      "options": [
+        "A. 体积大、卫星多、离太阳较远",
+        "B. 体积小、离太阳近",
+        "C. 没有卫星",
+        "D. 不绕太阳转"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0656",
+      "item_type": "solve",
+      "stem": "请把八大行星分成两类并说明各自的特点。",
+      "answer": "①类地行星：水星、金星、地球、火星，体积小、离太阳近、公转较快；②巨行星：木星、土星、天王星、海王星，体积大、卫星多、离太阳较远、公转较慢。",
+      "kps": [
+        "kp_sci5_planet_order"
+      ],
+      "difficulty": 0.52,
+      "solution": "行星按大小和距太阳远近可分两类。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0657",
+      "item_type": "choice",
+      "stem": "太阳是（　　），它的直径约（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_sun_character"
+      ],
+      "difficulty": 0.5,
+      "solution": "太阳是离地球最近的恒星，由氢、氦等炽热气体组成，直径约139万千米、表面温度约5500摄氏度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 行星；约100千米",
+        "B. 恒星；约139万千米",
+        "C. 卫星；约50万千米",
+        "D. 恒星；约1.4万千米"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0658",
+      "item_type": "solve",
+      "stem": "为什么说太阳是“离我们最近的恒星”？",
+      "answer": "恒星是能自己发光发热的天体。太阳能自己发光发热、是恒星；太阳系其它行星、卫星都不发光，属于太阳系内，而太阳系之外的恒星距离地球要以光年计，所以太阳是离地球最近的恒星。",
+      "kps": [
+        "kp_sci5_sun_character"
+      ],
+      "difficulty": 0.52,
+      "solution": "太阳是恒星中离地球最近的一颗。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0659",
+      "item_type": "choice",
+      "stem": "月球表面昼夜温差可达三百多摄氏度，原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_moon_character"
+      ],
+      "difficulty": 0.5,
+      "solution": "月球没有大气层，白天暴晒很热、夜晚散不掉热量又极冷，所以昼夜温差极大；它本身不发光，反射太阳光。",
+      "source": "llm_generated",
+      "options": [
+        "A. 月球没有大气层的调节",
+        "B. 月球太冷了",
+        "C. 月球在慢慢转动",
+        "D. 月球离太阳太近"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0660",
+      "item_type": "solve",
+      "stem": "月球为什么昼夜温差这么大？请解释。",
+      "answer": "月球没有大气层来保温和调节温度。白天被太阳直射、温度很高；夜晚没有空气散不掉热量，降到很低温，所以昼夜温差可达三百多摄氏度。月球本身不发光，靠反射太阳光。",
+      "kps": [
+        "kp_sci5_moon_character"
+      ],
+      "difficulty": 0.52,
+      "solution": "月球是地球唯一的天然卫星，不发光、无大气层。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0661",
+      "item_type": "choice",
+      "stem": "农历二十三左右看到的月亮是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_moon_phase_law"
+      ],
+      "difficulty": 0.51,
+      "solution": "农历十五望（满月）后开始亏，二十三下弦时东半边亮，再亏到初一朔（看不见）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 东半边亮（下弦）",
+        "B. 西半边亮（上弦）",
+        "C. 圆月",
+        "D. 看不见"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0662",
+      "item_type": "solve",
+      "stem": "请按顺序写出月相从朔到望再回到朔的变化规律。",
+      "answer": "农历初一朔（看不见）→初七八上弦（西半边亮）→十五望（满月）→二十三下弦（东半边亮）→初一朔（看不见）。约28～29天为一个周期。",
+      "kps": [
+        "kp_sci5_moon_phase_law"
+      ],
+      "difficulty": 0.52,
+      "solution": "上弦亮西半、下弦亮东半是记忆口诀。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0663",
+      "item_type": "choice",
+      "stem": "日食发生在（　　），月食发生在（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_eclipse"
+      ],
+      "difficulty": 0.51,
+      "solution": "月球运行到太阳和地球之间挡住阳光形成日食，发生在朔；地球运行到太阳和月球之间形成月食，发生在望。",
+      "source": "llm_generated",
+      "options": [
+        "A. 望；朔",
+        "B. 朔；望",
+        "C. 朔；朔",
+        "D. 望；望"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0664",
+      "item_type": "solve",
+      "stem": "请解释日食和月食的形成过程，并说说为什么它们不是每个月都有。",
+      "answer": "日食：月球运行到太阳和地球之间，月球挡住射向地球的阳光。月球每个月都绕地球转，但多数时候月球从太阳和地球连线旁边经过，不正好挡在中间；只有朔且三者在一条直线上才发生日食，地球影子遮住月亮（望）时才发生月食。",
+      "kps": [
+        "kp_sci5_eclipse"
+      ],
+      "difficulty": 0.52,
+      "solution": "发生日食月食必须是朔或望且三球成一直线。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0665",
+      "item_type": "choice",
+      "stem": "夜间辨认北方，可以利用（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_big_dipper"
+      ],
+      "difficulty": 0.5,
+      "solution": "北天七颗亮星组成大熊座的北斗七星，顺着勺口两星连线延长约5倍可找到北极星，靠它夜间辨别北方。",
+      "source": "llm_generated",
+      "options": [
+        "A. 北斗七星找到北极星",
+        "B. 月亮",
+        "C. 太阳",
+        "D. 晚霞"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0666",
+      "item_type": "solve",
+      "stem": "没有指南针时，夜里怎样找到北方？请说出方法。",
+      "answer": "找到北天七颗亮星组成的北斗七星，把勺口外侧两星连成一线，沿这条线朝勺口方向延长约5倍距离，就能找到北极星；北极星所在方向就是北方。",
+      "kps": [
+        "kp_sci5_big_dipper"
+      ],
+      "difficulty": 0.51,
+      "solution": "北极星在北天几乎正北方，是夜间辨认方向的标志星。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0667",
+      "item_type": "choice",
+      "stem": "同一时刻，不同季节看到的南边星空（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_seasonal_stars"
+      ],
+      "difficulty": 0.51,
+      "solution": "由于地球公转，星空的季节性明显：冬季可见猎户座，夏季可见大三角（织女、牛郎、天津四），同一时刻不同季节星空不同。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不同",
+        "B. 完全一样",
+        "C. 看不到星星",
+        "D. 只有夏天能看到"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0668",
+      "item_type": "solve",
+      "stem": "为什么同一时刻不同季节看到的星星不同？请说明原因。",
+      "answer": "地球在绕太阳公转，一年中地球在公转轨道上不同位置，朝向宇宙的空间方向不同，因此同一时刻南方天空出现的星座随季节变化，冬季可见猎户座、夏季可见大三角。",
+      "kps": [
+        "kp_sci5_seasonal_stars"
+      ],
+      "difficulty": 0.52,
+      "solution": "星空的季节变化是地球公转造成的。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0669",
+      "item_type": "choice",
+      "stem": "把通信卫星送入太空，需要（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_satellite_launch"
+      ],
+      "difficulty": 0.5,
+      "solution": "运载火箭把卫星送入预定轨道，卫星进入轨道后可长期工作。我国已发射气象、资源、导航、通信等多种卫星。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多级火箭",
+        "B. 热气球",
+        "C. 飞机",
+        "D. 滑翔机"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0670",
+      "item_type": "solve",
+      "stem": "卫星进入轨道后为什么能长期绕地球运行而不会掉下来？",
+      "answer": "卫星进入轨道后，由于运动产生向心引力恰好与地球对它的万有引力平衡，就以一定速度持续绕地球运行而不会掉下来（也不会飞走）。但速度过快会脱离轨道变成卫星轨道更低、过慢则会掉下。",
+      "kps": [
+        "kp_sci5_satellite_launch"
+      ],
+      "difficulty": 0.52,
+      "solution": "靠速度产生的向心引力与引力平衡维持轨道。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0671",
+      "item_type": "choice",
+      "stem": "宇航员在太空中必须穿特制航天服，主要因为太空中（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_space_challenge"
+      ],
+      "difficulty": 0.5,
+      "solution": "太空中没有空气（无法呼吸）、温度变化剧烈、辐射强，且飞船要高速飞行，所以宇航员要穿特制航天服并接受严格训练。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有空气、温度变化剧烈、有强辐射",
+        "B. 太冷穿不下衣服",
+        "C. 没有重力人会飞走",
+        "D. 空气太多"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0672",
+      "item_type": "solve",
+      "stem": "请说出太空探索面临的三个主要困难。",
+      "answer": "①太空没有空气，宇航员无法呼吸、必须带氧气；②温度变化剧烈（冷热交替），需温控系统；③辐射强、飞船高速飞行有危险，需要防护和严格训练。",
+      "kps": [
+        "kp_sci5_space_challenge"
+      ],
+      "difficulty": 0.51,
+      "solution": "克服这些困难是载人航天成功的关键。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0673",
+      "item_type": "choice",
+      "stem": "天文望远镜的物镜口径越大，说明它（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_telescope"
+      ],
+      "difficulty": 0.5,
+      "solution": "口径越大聚光能力越强，能看到更暗、更小的天体。伽利略用望远镜发现了木星的卫星，开了近代天文观测先河。",
+      "source": "llm_generated",
+      "options": [
+        "A. 聚光能力越强，能看到越暗的天体",
+        "B. 只能看到近处的天体",
+        "C. 视野一定越大",
+        "D. 重量越小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0674",
+      "item_type": "solve",
+      "stem": "用望远镜观察天体和用肉眼直接看有什么区别？",
+      "answer": "望远镜能聚光，把更多的光汇聚起来并放大视角，因此能看到肉眼看不到的、暗弱的天体（远恒星、星系等）。伽利略用望远镜发现了木星的卫星，证明了地球不是宇宙中心。",
+      "kps": [
+        "kp_sci5_telescope"
+      ],
+      "difficulty": 0.52,
+      "solution": "望远镜拓展了人类观测宇宙的能力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0675",
+      "item_type": "choice",
+      "stem": "航天员在空间站睡觉时要把睡袋固定在舱壁上，原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_astronaut_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "空间站中人和物品处于近似失重状态呈漂浮，宇航员不固定会飘走撞到设备；食品需特殊包装并加热或复水后食用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 处于近似失重状态会漂浮",
+        "B. 舱壁比较暖和",
+        "C. 睡袋太轻会飞走",
+        "D. 规定必须这样"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0676",
+      "item_type": "solve",
+      "stem": "请说说宇航员在空间站的生活和地面上有哪些不同。",
+      "answer": "①近似失重，物品和人都漂浮，睡觉要绑在睡袋里、水和食物会漂浮；②要自己呼吸、食物需特殊包装并加热或复水；③要穿特制航天服；④每天做体育锻炼防止肌肉萎缩。",
+      "kps": [
+        "kp_sci5_astronaut_life"
+      ],
+      "difficulty": 0.52,
+      "solution": "失重环境对生活带来许多特殊要求。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0677",
+      "item_type": "choice",
+      "stem": "过山车从高处下滑时，重力势能（　　），动能（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_potential_kinetic"
+      ],
+      "difficulty": 0.5,
+      "solution": "下落时高度降低、速度变快，重力势能减小、动能增大（忽略摩擦时相互转化）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增大；减小",
+        "B. 减小；增大",
+        "C. 增大；增大",
+        "D. 减小；减小"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0678",
+      "item_type": "solve",
+      "stem": "请举两例说明动能和势能之间的相互转化。",
+      "answer": "①过山车从高处滑下：重力势能减小、动能增大；②荡秋千时摆到最高点：动能减小、重力势能增大（高度升高）；③压缩的弹簧释放：弹性势能减小、物体动能增大。",
+      "kps": [
+        "kp_sci5_potential_kinetic"
+      ],
+      "difficulty": 0.52,
+      "solution": "没有摩擦时动能和势能可相互转化、总量不变。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0679",
+      "item_type": "choice",
+      "stem": "荡秋千到最高点时，能量主要是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_energy_conversion"
+      ],
+      "difficulty": 0.51,
+      "solution": "摆到最高点速度最小、动能最小，但高度最大、重力势能最大。摆锤上升时动能转化为重力势能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 动能",
+        "B. 重力势能",
+        "C. 内能",
+        "D. 电能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0680",
+      "item_type": "solve",
+      "stem": "请用能量转化的观点解释为什么下坡时车速会越来越快。",
+      "answer": "下坡时高度减小，重力势能转化为动能，物体的速度增大（若有摩擦，部分机械能转化为内能）。能量在转化中总量保持不变。",
+      "kps": [
+        "kp_sci5_energy_conversion"
+      ],
+      "difficulty": 0.52,
+      "solution": "重力势能降低转化为动能增加。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0681",
+      "item_type": "choice",
+      "stem": "下列能量转化正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_electrical_energy"
+      ],
+      "difficulty": 0.51,
+      "solution": "电池把化学能转为电能，灯泡把电能转为光能和内能；电动机把电能转为机械能；太阳能电池把光能转为电能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 电池使小灯泡发光：化学能→电能→光能",
+        "B. 电动机：电能→化学能",
+        "C. 光合作用：化学能→光能",
+        "D. 太阳能电池：光能→化学能"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0682",
+      "item_type": "fill",
+      "stem": "电池把（　　）能转为电能，电动机把电能转为（　　）能，灯泡把电能转为光能和（　　）能。",
+      "answer": "化学；机械；内（热）",
+      "kps": [
+        "kp_sci5_electrical_energy"
+      ],
+      "difficulty": 0.5,
+      "solution": "电能和其它形式的能可以互相转化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0683",
+      "item_type": "choice",
+      "stem": "两个齿轮咬合转动，它们的转动方向和转速特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_gear_transmission"
+      ],
+      "difficulty": 0.51,
+      "solution": "齿轮咬合转动方向相反，转速与齿数有关（齿数少的转得快）。改变齿轮组合可改变省力程度和速度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 方向相同、转速相同",
+        "B. 方向相反、转速与齿数有关",
+        "C. 方向相反、转速一定相同",
+        "D. 方向相同、转速不同"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0684",
+      "item_type": "solve",
+      "stem": "请说明齿轮传动中“省力”和“省距离”的关系。",
+      "answer": "两个齿轮啮合时转动方向相反、转速与齿数成反比。用大齿轮带小齿轮（主动轮大）会省力但费距离（从动轮转得多）；用小齿轮带大齿轮会费力但省距离。所以省力和省距离不能同时兼得。",
+      "kps": [
+        "kp_sci5_gear_transmission"
+      ],
+      "difficulty": 0.52,
+      "solution": "省力必费距离，省距离必费力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0685",
+      "item_type": "choice",
+      "stem": "同样材料做成的梁，承重时最结实的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_beam_deformation"
+      ],
+      "difficulty": 0.52,
+      "solution": "同样材料的梁，矩形下挠大、正三角形梁最结实，说明形状影响结构能承受的重量。桥梁常做成三角形或瓦楞状。",
+      "source": "llm_generated",
+      "options": [
+        "A. 矩形梁",
+        "B. 正三角形梁",
+        "C. 圆形实心梁",
+        "D. 越细越结实"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0686",
+      "item_type": "solve",
+      "stem": "为什么桥梁常常做成三角形或拱形？请解释。",
+      "answer": "三角形具有稳定性、拱形能把压力沿弧线分散到两侧支点，都能减小梁的下挠、提高承重能力。所以在跨度较大的桥梁中常采用三角形桁架或拱形结构。",
+      "kps": [
+        "kp_sci5_beam_deformation"
+      ],
+      "difficulty": 0.53,
+      "solution": "形状和结构影响承重能力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0687",
+      "item_type": "choice",
+      "stem": "两根条形磁铁靠近时，磁性最强的部位是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_magnet_poles"
+      ],
+      "difficulty": 0.5,
+      "solution": "磁铁两端磁性最强，叫磁极。同名磁极相互排斥、异名磁极相互吸引；磁极在指南针上分别指北和指南。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中间",
+        "B. 两端的磁极",
+        "C. 表面各处一样",
+        "D. 只有一端"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0688",
+      "item_type": "solve",
+      "stem": "请说说同名磁极和异名磁极相互作用的现象。",
+      "answer": "把两根条形磁铁的N极靠近会互相推开（同名磁极相互排斥）；把N极和S极靠近会互相吸住（异名磁极相互吸引）。指南针利用这一性质：磁极分别指北和指南。",
+      "kps": [
+        "kp_sci5_magnet_poles"
+      ],
+      "difficulty": 0.51,
+      "solution": "磁极间的相互作用遵循同名相斥、异名相吸。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0689",
+      "item_type": "choice",
+      "stem": "下列物质中能被磁铁吸引的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_magnetic_material"
+      ],
+      "difficulty": 0.5,
+      "solution": "能被磁铁吸引的物质叫磁性材料（铁、钴、镍等）。铜、铝、木、塑料不能被磁铁吸引。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铜",
+        "B. 铁",
+        "C. 铝",
+        "D. 玻璃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0690",
+      "item_type": "fill",
+      "stem": "能被磁铁吸引的物质叫（　　）材料，如（　　）、钴、镍；铜、铝、木、塑料不能被吸引。",
+      "answer": "磁性；铁",
+      "kps": [
+        "kp_sci5_magnetic_material"
+      ],
+      "difficulty": 0.49,
+      "solution": "磁性材料能被磁化、吸引，生活中常用磁铁。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0691",
+      "item_type": "choice",
+      "stem": "通电螺线管和电磁铁的磁性，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_electromagnet"
+      ],
+      "difficulty": 0.51,
+      "solution": "通电的螺线管带磁性、断电后磁性消失；改变电流方向磁极方向随之改变；绕在铁芯上磁性大大增强。",
+      "source": "llm_generated",
+      "options": [
+        "A. 通电才有磁性，断电磁性消失",
+        "B. 断电后磁性仍保持",
+        "C. 磁性永远不变",
+        "D. 与电流无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0692",
+      "item_type": "solve",
+      "stem": "怎样使电磁铁的磁性更强？请说出两种方法并解释。",
+      "answer": "①增大电流（串联更多电池）；②增加线圈匝数；③在线圈中加铁芯。这些都能增强电磁铁的磁性，因为电流越大、匝数越多、磁场越强，磁力越大。",
+      "kps": [
+        "kp_sci5_electromagnet"
+      ],
+      "difficulty": 0.52,
+      "solution": "电磁铁磁性强弱可调，这是它比永磁体方便的地方。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0693",
+      "item_type": "solve",
+      "stem": "请设计一个研究“电磁铁磁性强弱与线圈匝数关系”的实验。",
+      "answer": "①提出问题：线圈匝数是否影响电磁铁磁性；②作假设：匝数越多磁性越强；③设计：取两个相同铁钉上绕相同粗细导线，匝数分别为20匝和50匝，其它条件（电流、铁钉）相同；④用控制变量法只改变匝数；⑤用吸起的图钉个数表示磁性强弱并记录；⑥比较得出结论。",
+      "kps": [
+        "kp_sci5_electromagnet_study"
+      ],
+      "difficulty": 0.53,
+      "solution": "控制变量法只改变研究的那一个因素。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0694",
+      "item_type": "choice",
+      "stem": "研究电磁铁磁性强弱时，常用“吸起图钉的个数”来表示磁性，这样做的好处是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_electromagnet_study"
+      ],
+      "difficulty": 0.51,
+      "solution": "磁性强弱不易直接观察，用吸起图钉的个数作量化指标，使结果可观察、可比较、更科学。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把不能直接观察的磁性强弱变成可观察、可比较的数量",
+        "B. 节省材料",
+        "C. 声音更好听",
+        "D. 让图钉更好看"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0695",
+      "item_type": "solve",
+      "stem": "设计起重机模型时，定滑轮、动滑轮和斜面各起什么作用？",
+      "answer": "定滑轮改变用力的方向（向下拉绳重物上升）；动滑轮能省一半力但要多拉一段距离；斜面能省力但费距离；配合支架可稳住结构。三者组合能省力又灵活。",
+      "kps": [
+        "kp_sci5_crane_design"
+      ],
+      "difficulty": 0.53,
+      "solution": "组合简单机械要综合考虑省力和距离。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0696",
+      "item_type": "choice",
+      "stem": "关于动滑轮，下列说法正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_crane_design"
+      ],
+      "difficulty": 0.52,
+      "solution": "理想动滑轮能省一半力，但要多移动一倍距离，不能省距离。",
+      "source": "llm_generated",
+      "options": [
+        "A. 能省一半力，但要费一倍距离",
+        "B. 既省力又省距离",
+        "C. 不能省力",
+        "D. 能省一半力且不改变力的方向"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0697",
+      "item_type": "fill",
+      "stem": "技术设计的一般过程是：明确（　　）→分析问题→提出方案→画（　　）→加工制作→（　　）→评价改进。",
+      "answer": "需求；设计图；测试",
+      "kps": [
+        "kp_sci5_design_process"
+      ],
+      "difficulty": 0.5,
+      "solution": "完整的流程是明确需求、分析、方案、设计图、制作、测试、评价。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0698",
+      "item_type": "solve",
+      "stem": "请完整说出技术设计的一般过程。",
+      "answer": "①明确需求；②分析问题；③提出方案（可能多个）；④画设计图；⑤加工制作；⑥测试；⑦评价与改进。这是一个循环、反复迭代的过程。",
+      "kps": [
+        "kp_sci5_design_process"
+      ],
+      "difficulty": 0.52,
+      "solution": "设计过程是发现问题—设计方案—验证改进的循环。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0699",
+      "item_type": "choice",
+      "stem": "测试数据时，为了使结果更可靠，应该（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_test_record"
+      ],
+      "difficulty": 0.51,
+      "solution": "测试要重复进行、取平均值，避免偶然误差；还要如实记录数据，不能挑结果。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只测一次",
+        "B. 重复测试几次取平均值",
+        "C. 只挑最好的结果记录",
+        "D. 改变条件多测几次挑有利的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0700",
+      "item_type": "solve",
+      "stem": "测试前要先确定什么？请举例说明。",
+      "answer": "要先确定评价标准和测试方法。例如测试纸桥承重，标准是“能承受多少硬币”，方法是逐级加砝码直到塌陷并记录最大值，重复几次取平均。有了标准和方法的测试才可靠、可比较。",
+      "kps": [
+        "kp_sci5_test_record"
+      ],
+      "difficulty": 0.52,
+      "solution": "先定标准和方法，再测试记录，才能得到可信结论。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0701",
+      "item_type": "choice",
+      "stem": "选择材料时，在满足性能要求的前提下应当（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_material_cost"
+      ],
+      "difficulty": 0.51,
+      "solution": "在满足性能要求前提下选价格低、易得、不污染环境的材料，做到物尽其用、降低成本。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选价格低、易得、不污染环境的材料",
+        "B. 选最贵最好看的",
+        "C. 选最重的",
+        "D. 只看外观"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0702",
+      "item_type": "solve",
+      "stem": "做一个纸桥时，怎样在“结实”和“用料少”之间取得平衡？",
+      "answer": "先确定承重标准，再比较不同方案的用料量和承重；在满足承重要求的前提下选用料少的方案；如果增加一点材料能显著提高承重、也值得，就增加。关键是用测试数据比较后择优并说明理由。",
+      "kps": [
+        "kp_sci5_material_cost"
+      ],
+      "difficulty": 0.52,
+      "solution": "方案优化需要在多项指标间权衡取舍。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0703",
+      "item_type": "choice",
+      "stem": "对多个设计方案进行评价时，应该（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_optimization"
+      ],
+      "difficulty": 0.52,
+      "solution": "同一任务可有多种方案，要比较承重、用料、成本、安全、美观等多项指标后择优并说明理由。",
+      "source": "llm_generated",
+      "options": [
+        "A. 综合承重、用料、成本、安全、美观等指标比较后择优",
+        "B. 只看外观",
+        "C. 选最复杂的",
+        "D. 选最先想到的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0704",
+      "item_type": "solve",
+      "stem": "有同学造了两个小车，一个跑得快但费电，一个慢但省电。你会如何选择并说明理由？",
+      "answer": "要看任务要求：如果比赛比速度选快的；如果是长途运输选省电的。我会先明确评价指标（速度、耗电、成本等），用数据比较两个方案，再按任务的主要需求择优，并说明选择理由。",
+      "kps": [
+        "kp_sci5_optimization"
+      ],
+      "difficulty": 0.53,
+      "solution": "优化方案要依据明确指标和数据权衡。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0705",
+      "item_type": "choice",
+      "stem": "保温杯的双层真空、冰箱的隔热层，利用的原理是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_heat_technology"
+      ],
+      "difficulty": 0.51,
+      "solution": "真空和隔热材料能减少热传导、对流和辐射的效率，从而减慢热传递，达到保温保冷的效果。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减少热传递",
+        "B. 增加热传递",
+        "C. 产生热量",
+        "D. 让食物变冷是因为冷气多"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0706",
+      "item_type": "solve",
+      "stem": "为什么保温杯能保温？请从减少热传递的角度解释。",
+      "answer": "保温杯杯壁是双层真空（中间几乎没有空气，减少热传导和对流），内壁镀亮层减少热辐射（热反射），能大大减少热传递速度，所以里面的热水长时间保持热度。",
+      "kps": [
+        "kp_sci5_heat_technology"
+      ],
+      "difficulty": 0.52,
+      "solution": "减少热传递的三种方式都能达到保温效果。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0707",
+      "item_type": "choice",
+      "stem": "汽车刹车、防撞气囊利用的原理是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_transport_tech"
+      ],
+      "difficulty": 0.51,
+      "solution": "刹车通过制动使车减速（有的用摩擦）；防撞气囊在碰撞时迅速充气、延长受力时间，减小对人的冲击。",
+      "source": "llm_generated",
+      "options": [
+        "A. 制动减小速度、气囊延长受力时间减小冲击",
+        "B. 增加车的重量",
+        "C. 让车变快",
+        "D. 增加摩擦力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0708",
+      "item_type": "solve",
+      "stem": "请举例说明交通工具中运用了哪些技术。",
+      "answer": "①机械和传动：车轮、齿轮、发动机；②电：电动车、启动电路；③空气动力学：汽车流线型车身、飞机机翼；④惯性原理：刹车减速、防撞气囊（延长受力时间减小冲击）。",
+      "kps": [
+        "kp_sci5_transport_tech"
+      ],
+      "difficulty": 0.52,
+      "solution": "交通工具综合运用多种技术。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0709",
+      "item_type": "solve",
+      "stem": "一个作品不能正常工作，请按什么顺序排查故障？",
+      "answer": "按电源（电池电量、装反）、开关（是否接触）、导线（有无松脱）、元件（灯泡是否完好）的顺序分段检查，先排除最可能的原因再逐项排查；必要时回到设计图检查方案本身是否有问题。",
+      "kps": [
+        "kp_sci5_fault_find"
+      ],
+      "difficulty": 0.52,
+      "solution": "有顺序地排查能又快又准地找到故障。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0710",
+      "item_type": "choice",
+      "stem": "排查电路故障最合理的做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_fault_find"
+      ],
+      "difficulty": 0.51,
+      "solution": "按顺序分段检查能快速定位故障、避免盲目拆装。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把所有元件都换新的",
+        "B. 按电源、开关、导线、用电器顺序逐段检查",
+        "C. 反复插拔",
+        "D. 不检查直接放弃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0711",
+      "item_type": "choice",
+      "stem": "用光敏元件代替开关做成光控灯，天黑时灯自动亮，这利用了（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_control_circuit"
+      ],
+      "difficulty": 0.52,
+      "solution": "用继电器或光敏、热敏元件代替开关，条件满足时电路自动接通，如光控灯、温度报警器，实现自动控制。",
+      "source": "llm_generated",
+      "options": [
+        "A. 传感器把光照变化转成电信号触发电路",
+        "B. 光自己会发电",
+        "C. 开关坏了",
+        "D. 灯泡会自己判断"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0712",
+      "item_type": "solve",
+      "stem": "请以“光控路灯”为例，说明自动控制电路是怎样工作的。",
+      "answer": "光敏元件（光敏电阻）感受光照，天黑时它的阻值（或输出信号）改变，经放大后驱动电磁继电器吸合，接通路灯电路，路灯亮；天亮时光照变化使继电器断开，路灯灭。这样无需人工开关就能自动控制。",
+      "kps": [
+        "kp_sci5_control_circuit"
+      ],
+      "difficulty": 0.53,
+      "solution": "自动控制系统由传感器、控制器和执行机构组成。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0713",
+      "item_type": "choice",
+      "stem": "下列做法中属于低碳环保的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_sci5_low_carbon"
+      ],
+      "difficulty": 0.51,
+      "solution": "节约能源、发展太阳能和风能、减少一次性制品、垃圾分类，都能减少碳排放、保护环境。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多用太阳能、少开私家车",
+        "B. 随手丢弃垃圾",
+        "C. 大量使用一次性餐具",
+        "D. 乱扔电池到水中"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0714",
+      "item_type": "solve",
+      "stem": "请提出三条低碳生活的具体做法。",
+      "answer": "①节约能源：随手关灯、空调调高一度、少用大功率电器；②多利用太阳能、风能等清洁能源，少开私家车多坐公交；③减少一次性制品（自带水杯、购物袋），做好垃圾分类。",
+      "kps": [
+        "kp_sci5_low_carbon"
+      ],
+      "difficulty": 0.52,
+      "solution": "低碳生活从小事做起。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0715",
+      "item_type": "solve",
+      "stem": "请自选一个主题（如“自动浇水花盆”），写出你的技术设计要点（需求、方案、测试、改进）。",
+      "answer": "以自动浇水花盆为例：①需求：盆土干时自动浇水、不多不少；②方案：用土壤湿度传感器（或简易湿度探针）接电磁继电器控制水泵；③制作：画设计图、连接电路、装入花盆；④测试：模拟干燥与湿润，观察是否适时浇水，记录数据；⑤评价改进：若灵敏度不够就调整阈值，若漏水就改接水管路，并写设计说明书和测试报告。",
+      "kps": [
+        "kp_sci5_tech_project"
+      ],
+      "difficulty": 0.54,
+      "solution": "综合技术实践要综合运用多学科知识并用数据说话。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0716",
+      "item_type": "choice",
+      "stem": "完成一件技术作品后，评价作品时应该（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_sci5_tech_project"
+      ],
+      "difficulty": 0.53,
+      "solution": "评价要综合功能、外观、安全、成本、环保等指标，并用测试数据说话，评价结果用于改进。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只看外表好不好看",
+        "B. 用测试数据和多项指标评价",
+        "C. 只听老师说好",
+        "D. 凭感觉随便说"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

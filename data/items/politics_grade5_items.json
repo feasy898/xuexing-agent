@@ -1,0 +1,1732 @@
+{
+  "items": [
+    {
+      "id": "pol_prim_0237",
+      "item_type": "choice",
+      "stem": "“尺有所短，寸有所长。”这句话启示我们认识自我要（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_self_know"
+      ],
+      "difficulty": 0.35,
+      "solution": "认识自我要全面、客观：从学习、能力、性格等多方面评价自己，接纳自己的优缺点，虚心接受他人评价，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只看自己的长处，回避短处",
+        "B. 拿自己的短处比别人的长处，越比越自卑",
+        "C. 全面看待自己，既肯定优点，也正视并改进不足",
+        "D. 别人怎么评价就完全怎么改"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0238",
+      "item_type": "solve",
+      "stem": "请从学习、性格、特长三个方面各写一句对自己的评价，并写出一条改进不足的办法。",
+      "answer": "示例：学习——我上课发言积极，但作业有时马虎；性格——开朗热情，有时急躁；特长——画画不错。改进办法：做完作业留五分钟逐题检查，用错题本减少马虎丢分。（三方面评价客观，办法具体即可）",
+      "kps": [
+        "kp_pol5_self_know"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查全面、客观认识自我的能力，评价真实、办法可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0239",
+      "item_type": "choice",
+      "stem": "与人沟通时，既能表达感受又不伤害对方的说法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_communicate_skill"
+      ],
+      "difficulty": 0.4,
+      "solution": "用“我信息”表达（说事实+我的感受+希望），语气礼貌，比指责对方更容易被接受，B 正确；A、C、D 都是指责、贬损的表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. 你真自私，从来不考虑别人！",
+        "B. 跟你说话真是浪费时间。",
+        "C. 反正我说什么你都不听。",
+        "D. 你把我的橡皮弄丢了，我有点着急，希望你下次先跟我说一声。"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0240",
+      "item_type": "solve",
+      "stem": "同桌不小心弄坏了你心爱的钢笔。请用“说事实、讲感受、提希望”的方式，写一句你与他沟通的话。",
+      "answer": "示例：“这支钢笔是我过生日时爸爸送的，被摔坏了我很难过。希望你帮我修一修，以后拿我东西时轻一些，好吗？”（包含事实、感受与合理希望，语气礼貌即可）",
+      "kps": [
+        "kp_pol5_communicate_skill"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查人际沟通技巧（“我信息”表达），要素齐全、语气得体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0241",
+      "item_type": "choice",
+      "stem": "被老师误会批评，心里很委屈、很生气。合理的情绪调节方法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_emotion_regulate"
+      ],
+      "difficulty": 0.45,
+      "solution": "调节消极情绪可用深呼吸、转移注意力、合理宣泄（找人倾诉、运动）、自我安慰等方法，冷静后再沟通，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先深呼吸让自己平静，课后再找老师心平气和地说明情况",
+        "B. 摔书踢凳子出气",
+        "C. 冲老师大喊大叫",
+        "D. 憋在心里，从此不理老师"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0242",
+      "item_type": "solve",
+      "stem": "情绪像天气，需要调节。请写出两种调节坏情绪的方法，并各举一个例子。",
+      "answer": "①转移注意力：心情烦躁时去打球、听音乐、画画，情绪慢慢平复；②合理宣泄：向爸爸妈妈或好朋友说一说委屈，写日记倾吐；③自我安慰与冷静：深呼吸，告诉自己“误会能说清楚，着急解决不了问题”。（两种方法与例子对应即可）",
+      "kps": [
+        "kp_pol5_emotion_regulate"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查情绪调节方法的掌握与运用，方法与例子对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0243",
+      "item_type": "choice",
+      "stem": "看到磁铁能隔着桌面吸住回形针，小科很想知道为什么。正确的做法是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_curiosity"
+      ],
+      "difficulty": 0.5,
+      "solution": "好奇心是求知的动力，要敢提问、敢实践，通过查资料、做实验、请教师长来探索，同时注意安全（不能乱拆电器），B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 想不明白就算了",
+        "B. 带着问题查资料、做小实验，向老师和同学请教",
+        "C. 把家里的电器拆开来看",
+        "D. 认为这是科学家的事与自己无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0244",
+      "item_type": "solve",
+      "stem": "好奇心是学习的老师。请写出一个你曾经好奇的问题，以及你是怎样寻找答案的。",
+      "answer": "示例：问题——为什么冬天嘴里呼出“白气”？做法：查阅少儿百科全书和科普网站，再对着镜子哈气观察，请教科学老师，明白了是水蒸气遇冷液化成小水滴。（问题真实，探究过程合理即可）",
+      "kps": [
+        "kp_pol5_curiosity"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查好奇心与求知欲的实践，问题与探究过程真实即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0245",
+      "item_type": "choice",
+      "stem": "想让父母同意自己周末参加科技馆活动。与父母沟通的正确方式是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_parent_talk"
+      ],
+      "difficulty": 0.35,
+      "solution": "与父母沟通要选合适的时机，心平气和地说明情况和理由，先听父母的想法再商量，不在气头上说伤人的话，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 挑父母正忙得焦头烂额时提要求",
+        "B. 父母不同意就摔门而去",
+        "C. 选择大家都比较轻松的时间，说明活动的安排和意义，听听父母的意见",
+        "D. 先斩后奏，直接去了再说"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0246",
+      "item_type": "solve",
+      "stem": "与父母沟通也是一门学问。请写出两条与父母平等沟通的要求。",
+      "answer": "①选择合适的时机和方式，不在父母忙碌或双方生气时谈重要的事；②先耐心听父母说完、理解他们的想法，再清楚说出自己的理由，语气平和、有礼貌；③意见不合时好好商量，寻求双方都能接受的办法，不顶撞不赌气。（答出两条即可）",
+      "kps": [
+        "kp_pol5_parent_talk"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查与父母平等沟通的方法，要求合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0247",
+      "item_type": "choice",
+      "stem": "下列倾听表现中，最恰当的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_listen_skills"
+      ],
+      "difficulty": 0.4,
+      "solution": "学会倾听要做到不随意打断、眼神关注对方、听完能概括复述对方的意思，表示尊重和理解，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 同学还没说完就抢着反驳",
+        "B. 边听边低头刷手机",
+        "C. 随意打断，把话题扯到自己身上",
+        "D. 看着对方安静听完，并概括一下对方的主要意思"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0248",
+      "item_type": "solve",
+      "stem": "好的倾听让人愿意交流。请写出两条“倾听礼仪”，并说说倾听对解决矛盾有什么帮助。",
+      "answer": "倾听礼仪：①对方说话时眼睛看着他，安静听完不插嘴；②听完后简单复述对方的意思，如“你的意思是……对吗”。帮助：认真倾听才能弄清对方的真实想法，减少误会，让对方感到被尊重，矛盾更容易化解。（礼仪两条，帮助言之有理即可）",
+      "kps": [
+        "kp_pol5_listen_skills"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查倾听技能及其价值，内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0249",
+      "item_type": "choice",
+      "stem": "与同学因值日分工发生矛盾。正确的解决方式是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_conflict_solution"
+      ],
+      "difficulty": 0.45,
+      "solution": "解决同学矛盾要冷静协商、换位思考、请老师家长调解，用文明理性的方式化解，绝不能动手或网络攻击，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 心平气和地协商，换位思考，必要时请老师或同学调解",
+        "B. 约同学“放学别走”用拳头解决",
+        "C. 从此见面谁也不理谁",
+        "D. 在网上发帖攻击同学"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0250",
+      "item_type": "solve",
+      "stem": "同学之间闹矛盾了，可以怎样化解？请按顺序写出三步做法。",
+      "answer": "①冷静下来，先想想自己有没有不对的地方（换位思考）；②找机会心平气和地与同学沟通，说清各自的想法，协商解决办法（如重新分工、互相道歉）；③自己解决不了时请老师、家长或班干部调解，和好后在今后的相处中互相体谅。（三步顺序合理、做法文明即可）",
+      "kps": [
+        "kp_pol5_conflict_solution"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查解决矛盾的方法与步骤，步骤清楚、方式文明即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0251",
+      "item_type": "choice",
+      "stem": "作为家庭一员，对承担家务劳动的正确认识是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_family_duty_share"
+      ],
+      "difficulty": 0.5,
+      "solution": "家庭责任需要每个成员分担，子女应主动承担力所能及的家务、照顾弟妹、体谅父母辛劳，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 家务是父母的事，我的任务只有学习",
+        "B. 主动承担洗碗、扫地、整理房间等力所能及的家务，是尽责的表现",
+        "C. 做家务要按小时向父母收费",
+        "D. 会做也不做，装作不会"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0252",
+      "item_type": "solve",
+      "stem": "请制定你的“家庭岗位责任表”：写出你打算承担的三项家务和各自的时间安排。",
+      "answer": "示例：①每天晚饭后洗碗、擦桌子；②每周六上午扫地、拖地、倒垃圾；③每天晚上整理自己的房间和书包，每周日照顾妹妹（弟弟）半小时。（三项家务具体，时间安排合理即可）",
+      "kps": [
+        "kp_pol5_family_duty_share"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查承担家庭责任的意识与行动，安排具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0253",
+      "item_type": "choice",
+      "stem": "想借用姐姐的平板电脑查资料。正确的做法是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_family_property"
+      ],
+      "difficulty": 0.35,
+      "solution": "爱护家庭财物，使用他人物品（包括家人的）要征得同意、爱护使用、及时归还，损坏要主动说明，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拿了就用，用完随手一放",
+        "B. 反正是一家人，不用打招呼",
+        "C. 先征得姐姐同意，用完及时归还并放回原处",
+        "D. 用的时候不小心摔了，藏起来不说"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0254",
+      "item_type": "solve",
+      "stem": "家里要制定“家庭公约”。请你贡献两条关于财物使用或家庭生活的约定。",
+      "answer": "示例：①借用他人物品（含家人的）先征得同意，用完及时归还；②爱护家里的物品，损坏了主动说明并想办法补救；③节约水电，大额消费家庭商量决定；④用完的东西放回原处，保持家中整洁。（两条约定合理即可）",
+      "kps": [
+        "kp_pol5_family_property"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查家庭财物使用规则意识，约定合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0255",
+      "item_type": "choice",
+      "stem": "孝亲敬长，重在行动。下列行为值得肯定的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_care_elder"
+      ],
+      "difficulty": 0.4,
+      "solution": "孝亲敬长要从敬爱父母、敬重师长做起，落实到陪伴、问候、照料等日常行为中，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 爷爷说话慢，不耐烦地打断他",
+        "B. 嫌姥姥做的饭不合口味，赌气不吃",
+        "C. 长辈教导时捂着耳朵不听",
+        "D. 陪奶奶聊天，帮行动不便的外婆端水递药"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0256",
+      "item_type": "solve",
+      "stem": "重阳节到了，班级开展“孝亲敬长见行动”活动。请写出你为长辈设计的两个行动，并写一句祝福语。",
+      "answer": "行动示例：①给爷爷奶奶（外公外婆）打一个问候电话或陪他们散步聊天；②为长辈做一张感恩卡、捶捶背、洗一次脚，帮他们做家务。祝福语示例：“祝您福如东海、寿比南山，天天开心、身体健康！”（两个行动具体，祝福语真挚即可）",
+      "kps": [
+        "kp_pol5_care_elder"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查孝亲敬长的践行，行动具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0257",
+      "item_type": "choice",
+      "stem": "凡是具有中华人民共和国国籍的人都是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_citizen"
+      ],
+      "difficulty": 0.45,
+      "solution": "公民的判断标准是国籍：凡具有中华人民共和国国籍的人都是中华人民共和国公民，公民既包括成年人也包括未成年人，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中华人民共和国公民",
+        "B. 人民代表",
+        "C. 国家干部",
+        "D. 共产党员"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0258",
+      "item_type": "solve",
+      "stem": "小华说：“我还是小学生，不算公民。”你同意吗？请说明理由，并写出公民身份的一种取得途径。",
+      "answer": "不同意。理由：只要具有中国国籍，即使年龄小，也是中华人民共和国公民，小学生同样享有公民的权利（如受教育权），也要履行相应义务。取得途径示例：出生取得（父母一方或双方为中国公民、本人出生在中国等情形可取得中国国籍）、申请加入（经批准取得）。（判断正确，理由与途径合理即可）",
+      "kps": [
+        "kp_pol5_citizen"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查公民概念与身份认识，判断与理由正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0259",
+      "item_type": "choice",
+      "stem": "下列关于公民权利与义务的说法，正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_right_duty_basic"
+      ],
+      "difficulty": 0.5,
+      "solution": "我国公民的权利与义务相统一：公民既享有宪法和法律赋予的权利（如受教育权），也必须履行义务（如受教育的义务、劳动的义务），B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只享受权利，不履行义务",
+        "B. 权利与义务是统一的，公民既享有权利也要履行义务",
+        "C. 未成年人只履行义务不享有权利",
+        "D. 权利可以随便行使，不受任何限制"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0260",
+      "item_type": "solve",
+      "stem": "请各写出两项未成年人在学校生活中享有的权利和应履行的义务。",
+      "answer": "权利示例：受教育权、人身安全受保护的权利、人格尊严不受侵犯（如不被辱骂起侮辱性绰号）、隐私权（日记、信件不被偷看）。义务示例：遵守法律法规和校规校纪、尊敬师长、努力学习完成规定的学习任务、爱护公共财物、参加集体活动（值日等）。（权利、义务各两项且正确即可）",
+      "kps": [
+        "kp_pol5_right_duty_basic"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查权利与义务相统一的理解，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0261",
+      "item_type": "choice",
+      "stem": "法律区别于道德、纪律的重要特征是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_rule_of_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "法律是由国家制定或认可、靠国家强制力保证实施的行为规范，对全体社会成员具有规范作用和保护作用，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 法律只管大人不管小孩",
+        "B. 法律靠人们自觉遵守，没有强制力",
+        "C. 法律由国家制定或认可，靠国家强制力保证实施",
+        "D. 法律和道德完全相同"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0262",
+      "item_type": "solve",
+      "stem": "有人说“法律只是用来惩罚坏人的”。请结合法律的作用谈谈你的看法。",
+      "answer": "这种说法是片面的。法律既有规范作用，又有保护作用：①规范作用——法律评价、指引人们的行为，规定什么必须做、什么禁止做，对违法行为加以制裁；②保护作用——法律维护我们的合法权益，如未成年人保护法保护未成年人健康成长，消费者权益保护法保护消费者的利益。所以法律不仅惩罚违法者，更是保护每个人合法权益的“保护伞”。（指出片面并说出两种作用即可）",
+      "kps": [
+        "kp_pol5_rule_of_law"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查对法律特征与作用的理解，观点正确、说理清楚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0263",
+      "item_type": "choice",
+      "stem": "违法行为与犯罪的关系，正确的理解是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_illegal_behavior"
+      ],
+      "difficulty": 0.4,
+      "solution": "违反法律法规的行为都是违法行为；其中情节严重、社会危害大、触犯刑法构成犯罪的，要承担刑事责任；一般违法行为也要承担相应法律责任（如民事责任、行政处分或处罚），B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 违法行为就是犯罪",
+        "B. 一般违法不必承担任何责任",
+        "C. 只有杀人放火才是违法",
+        "D. 犯罪是情节严重、社会危害大的违法行为，要承担刑事责任"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0264",
+      "item_type": "solve",
+      "stem": "请完成辨析：小马说“小错不断没关系，只要不犯大罪就不算违法”。这句话对吗？请说明理由。",
+      "answer": "不对。①违反法律法规的行为都是违法行为，如打架斗殴、损坏公物、扰乱公共秩序属于一般违法，同样要承担相应的法律责任（赔偿、治安处罚等）；②一般违法与犯罪之间没有不可逾越的鸿沟，小错不改、任其发展，就可能滑向犯罪；③我们要防微杜渐，从小事做起，遵纪守法。（判断正确，理由含“一般违法也违法”“可能发展为犯罪”即可）",
+      "kps": [
+        "kp_pol5_illegal_behavior"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查违法行为与犯罪的区别与联系，判断与理由正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0265",
+      "item_type": "choice",
+      "stem": "新修订的《中华人民共和国未成年人保护法》规定的保护有（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_minor_protection_law"
+      ],
+      "difficulty": 0.45,
+      "solution": "2021 年 6 月 1 日起施行的新修订未成年人保护法构建了家庭保护、学校保护、社会保护、网络保护、政府保护和司法保护“六位一体”的保护体系，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 家庭保护、学校保护、社会保护、网络保护、政府保护和司法保护",
+        "B. 家庭保护、学校保护、社会保护三种",
+        "C. 学校保护、警察保护、医院保护",
+        "D. 老师保护、家长保护、同学保护"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0266",
+      "item_type": "solve",
+      "stem": "请从未成年人保护法中任选两种保护，各写一个具体例子（保护内容）。",
+      "answer": "示例：家庭保护——父母抚养教育未成年子女，关注其身心健康，不得放任其沉迷网络；学校保护——学校保障学生安全，对欺凌行为及时处理，不体罚学生；社会保护——博物馆、图书馆等场所对未成年人免费或优惠开放，不得向未成年人售卖烟酒；网络保护——网络产品不得提供诱导沉迷的内容，实行防沉迷管理；政府保护——政府提供义务教育保障、对困境儿童给予救助；司法保护——办理未成年人案件有专门程序，对犯罪的未成年人坚持教育为主、惩罚为辅。（任选两种、内容正确即可）",
+      "kps": [
+        "kp_pol5_minor_protection_law"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查六大保护的内容，例子与保护类型对应正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0267",
+      "item_type": "choice",
+      "stem": "《预防未成年人犯罪法》对未成年人实行分级预防，其内容是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_prevent_crime_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "新修订的预防未成年人犯罪法实行分级预防：对不良行为进行干预、对严重不良行为进行矫治、对重新犯罪进行预防，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只预防已经犯罪的人",
+        "B. 对不良行为的干预、对严重不良行为的矫治、对重新犯罪的预防",
+        "C. 对所有未成年人一律按犯罪处理",
+        "D. 只靠家长管教，学校不参与"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0268",
+      "item_type": "solve",
+      "stem": "请各写出一个未成年人“不良行为”和“严重不良行为”的例子，并说说这部法律给我们的启示。",
+      "answer": "不良行为示例：吸烟、饮酒、旷课逃学、沉迷网络、打架斗殴（尚未造成严重后果）、夜不归宿等。严重不良行为示例：结伙斗殴情节严重、携带管制刀具、辱骂殴打他人、盗窃、参与赌博、传播淫秽读物等严重危害社会的行为。启示：要防微杜渐，杜绝不良行为，从小树立规则意识和法律意识，遵纪守法，远离违法犯罪。（两个例子正确，启示言之有理即可）",
+      "kps": [
+        "kp_pol5_prevent_crime_law"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查分级预防的内容与自我教育，例子分类正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0269",
+      "item_type": "choice",
+      "stem": "买的电暖器漏电伤了人，商家却拒绝负责。依法维权的正确途径是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_legal_aid"
+      ],
+      "difficulty": 0.35,
+      "solution": "权益受侵害时要依法维权：先与责任人协商，协商不成可向消协、市场监管等部门投诉反映，寻求调解，还可以向人民法院提起诉讼，B 正确；A、C 是违法行为。",
+      "source": "llm_generated",
+      "options": [
+        "A. 带人到店里砸东西出气",
+        "B. 在网上编造谣言攻击商家",
+        "C. 与商家协商，协商不成向消费者协会或有关部门投诉，必要时向人民法院起诉",
+        "D. 自认倒霉，不再追究"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0270",
+      "item_type": "solve",
+      "stem": "如果你的合法权益（如新买的文具是假冒产品）受到侵害，请按先后顺序写出三条求助途径。",
+      "answer": "①与商家（责任人）协商，要求退货、赔偿；②协商不成，向消费者协会（12315）或市场监管等部门投诉，请其调解处理；③仍不能解决时，请家长向人民法院提起诉讼，依法维护权益；此外还可向学校、居委会求助，寻求法律援助。（三条途径顺序合理即可）",
+      "kps": [
+        "kp_pol5_legal_aid"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查依法维权与求助途径，途径正确、顺序合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0271",
+      "item_type": "choice",
+      "stem": "遭遇校园欺凌（被高年级同学索要钱物并威胁“不许告诉任何人”）时，正确的做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_bully_crime"
+      ],
+      "difficulty": 0.4,
+      "solution": "面对欺凌要勇敢说“不”，及时告诉老师和家长，寻求保护和帮助，必要时报警；忍气吞声和私下报复都是错误的，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按他说的做，谁也不告诉",
+        "B. 找人报复教训他一顿",
+        "C. 从此不敢上学，躲在家里",
+        "D. 保证自己安全的前提下坚决拒绝，及时告诉老师和家长，必要时报警"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0272",
+      "item_type": "solve",
+      "stem": "预防性侵害、学会保护自己非常重要。请写出两条自我保护的要求。",
+      "answer": "①学会拒绝：不让他人随意触碰自己身体的隐私部位，遇到不当触碰或不舒服的身体接触，大声说“不”，赶快离开；②及时求助：不受坏人“不许告诉别人”的威胁，第一时间告诉父母、老师，必要时报警；不单独去偏僻场所，不单独与陌生人（包括熟人）独处密闭空间，外出告知家长。（答出两条、要点正确即可）",
+      "kps": [
+        "kp_pol5_bully_crime"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查防范欺凌与性侵害的自护能力，要点正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0273",
+      "item_type": "choice",
+      "stem": "宪法是国家的根本法。下列说法正确的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_constitution_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "宪法是国家的根本法：规定国家生活中最根本、最重要的问题（国家的根本制度和根本任务、公民的基本权利和义务等），具有最高的法律效力，是其他法律的立法基础和依据，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 宪法规定国家生活中最根本、最重要的问题，具有最高的法律效力",
+        "B. 宪法和普通法律的效力一样",
+        "C. 普通法律可以修改宪法",
+        "D. 宪法只规定公民义务不规定权利"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0274",
+      "item_type": "solve",
+      "stem": "为什么说“宪法是国家的根本法”？请写出两点理由。",
+      "answer": "①从内容上看，宪法规定的是国家生活中最根本、最重要的问题，如国家的根本制度、公民的基本权利和义务；②从效力上看，宪法具有最高的法律效力，是其他法律的立法基础和立法依据，普通法律不得与宪法相抵触；③从制定和修改程序上看，宪法的制定和修改程序比普通法律更为严格。（答出两点即可）",
+      "kps": [
+        "kp_pol5_constitution_basic"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查宪法根本法地位的理解，理由准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0275",
+      "item_type": "choice",
+      "stem": "法律实施的各个环节对应正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_law_implementation"
+      ],
+      "difficulty": 0.5,
+      "solution": "法律实施包括立法（国家权力机关制定法律）、执法（行政机关依法行政）、司法（审判机关、检察机关依法行使审判权、检察权），最终靠全体公民自觉守法，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 立法——法院制定法律",
+        "B. 立法——国家权力机关制定法律；执法——行政机关执行法律；司法——审判机关依法裁判",
+        "C. 执法——学校处分学生",
+        "D. 司法——居委会调解吵架"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0276",
+      "item_type": "solve",
+      "stem": "法律的实施离不开每个公民。请写出“法的三环节”中你最熟悉的一个环节和一个例子，再说一条中学生守法的做法。",
+      "answer": "示例：执法——市场监管部门查处售卖假冒伪劣商品的商店（交警依法查处交通违法行为）。守法做法：遵守交通规则不闯红灯，遵守校规校纪，不欺凌同学，文明上网不造谣传谣，爱护公物。（环节与例子对应正确，守法做法合理即可）",
+      "kps": [
+        "kp_pol5_law_implementation"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查法的实施环节与守法意识，对应正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0277",
+      "item_type": "choice",
+      "stem": "进入青春期，我们的身体和心理都会发生变化。正确的态度是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_puberty"
+      ],
+      "difficulty": 0.35,
+      "solution": "青春期身高体重增长、第二性征出现、心理波动都是正常的成长现象，要科学看待，有困惑及时请教师长和医生，同时尊重同学的变化，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对身体的变化感到羞耻，不愿提起",
+        "B. 嘲笑同学长痘、变声",
+        "C. 认识到这是成长的正常现象，了解青春期知识，遇到困惑请教家长、老师或医生",
+        "D. 封闭自己，谁也不理"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0278",
+      "item_type": "solve",
+      "stem": "青春期的我们心里有时会“多愁善感”。请写出两条顺利度过青春期的小建议。",
+      "answer": "①正确认识身心变化，了解青春期知识，有疑问大胆向父母、老师或医生请教，不害羞不恐慌；②学会调节情绪，多与父母朋友沟通，参加体育锻炼和集体活动；③男女同学正常交往、互相尊重，不取笑他人的身体变化；④保证睡眠、均衡营养，养成健康的生活方式。（答出两条即可）",
+      "kps": [
+        "kp_pol5_puberty"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查青春期身心变化的正确认识，建议合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0279",
+      "item_type": "choice",
+      "stem": "关于梦想，下列说法正确的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_dream"
+      ],
+      "difficulty": 0.4,
+      "solution": "梦想是前进的方向，要树立梦想并把梦想分解为近期可实现的小目标，从今天做起、脚踏实地努力，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 梦想只要想想就行，不用行动",
+        "B. 梦想必须宏大，小目标不算梦想",
+        "C. 梦想是长大后的事，与现在无关",
+        "D. 把大梦想分解成一个个近期小目标，从现在开始努力"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0280",
+      "item_type": "solve",
+      "stem": "请写下你的一个梦想，并制定实现它的两步小计划（近期的行动）。",
+      "answer": "示例：梦想——成为一名医生，救死扶伤。小计划：①近期：学好各门功课，尤其打牢科学（生物）基础，本期科学成绩争取达到优秀；②平时：阅读医学科普读物、坚持锻炼身体，了解医学知识，参加学校科学社团。（梦想积极向上，计划具体可行即可）",
+      "kps": [
+        "kp_pol5_dream"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查梦想与规划意识，梦想健康、计划可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0281",
+      "item_type": "choice",
+      "stem": "中华文明的重要特征是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_civilization_5000"
+      ],
+      "difficulty": 0.45,
+      "solution": "中华文明源远流长、博大精深，是世界上唯一绵延五千多年而未曾中断的文明，这是我们文化自信的深厚底气，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 源远流长、从未中断，绵延五千多年",
+        "B. 只有几十年历史",
+        "C. 早已中断，全部由外国传入",
+        "D. 只在博物馆里才能看到"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0282",
+      "item_type": "solve",
+      "stem": "为什么说中华文明“源远流长、从未中断”？请举出两个能证明中华文明悠久的例子。",
+      "answer": "例证：①汉字从甲骨文演变至今，一脉相承，记录了几千年的历史与文化；②浩如烟海的历史典籍（如《史记》等二十四史）连续记载了各个朝代的历史；③万里长城、大运河、都江堰等伟大工程历经千年仍存于世；④传统节日、礼仪习俗代代相传。（例子真实，能说明文明延续即可）",
+      "kps": [
+        "kp_pol5_civilization_5000"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查中华文明特点的认识，例子恰当即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0283",
+      "item_type": "choice",
+      "stem": "我国已发现的年代最早、体系较完整的文字是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_oracle_bone"
+      ],
+      "difficulty": 0.5,
+      "solution": "甲骨文是刻在龟甲和兽骨上的古文字，距今三千多年，是我国已发现年代最早、体系较完整的文字，说明汉字有悠久的历史，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 楷书",
+        "B. 甲骨文",
+        "C. 阿拉伯数字",
+        "D. 拼音字母"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0284",
+      "item_type": "solve",
+      "stem": "汉字是中华文明的重要标志。请写出汉字演变的大致顺序，并写一条正确使用汉字的倡议。",
+      "answer": "演变顺序示例：甲骨文→金文→小篆→隶书→楷书（草书、行书为其辅助书体）。倡议示例：“说好普通话，写好规范字，不写错别字、不乱造简化字，做汉字文化的传承者。”（顺序基本正确，倡议合理即可）",
+      "kps": [
+        "kp_pol5_oracle_bone"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查汉字与甲骨文知识，顺序正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0285",
+      "item_type": "choice",
+      "stem": "下列朝代按时间先后顺序排列正确的是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_dynasties"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国朝代的先后顺序为夏、商、周（西周、东周）、秦、汉、三国两晋南北朝、隋、唐、宋、元、明、清，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 汉→秦→周→商→夏",
+        "B. 秦→汉→夏→商→周",
+        "C. 夏→商→周→秦→汉",
+        "D. 周→夏→秦→商→汉"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0286",
+      "item_type": "solve",
+      "stem": "请写出从秦朝到清朝之间任意三个朝代的正确顺序，并写出一个朝代的一项成就。",
+      "answer": "顺序示例：秦→汉→隋→唐→宋→元→明→清（任取三个且先后正确即可，如“隋、唐、宋”）。成就示例：秦——统一文字（货币、度量衡）、修长城；汉——开辟丝绸之路；唐——诗歌繁荣（杜甫、李白）；宋——活字印刷术（指南针应用于航海）；明——《本草纲目》、郑和下西洋。（顺序正确，成就与朝代对应即可）",
+      "kps": [
+        "kp_pol5_dynasties"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查朝代更替的基本线索，顺序与对应正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0287",
+      "item_type": "choice",
+      "stem": "我国的四大发明是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_four_inventions"
+      ],
+      "difficulty": 0.4,
+      "solution": "造纸术、印刷术、指南针、火药是我国古代的四大发明，对世界文明的发展产生了深远影响，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 丝绸、瓷器、茶叶、长城",
+        "B. 地动仪、浑天仪、算盘、毛笔",
+        "C. 汉字、中医、武术、京剧",
+        "D. 造纸术、印刷术、指南针、火药"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0288",
+      "item_type": "solve",
+      "stem": "四大发明对世界有什么贡献？请任选两项发明，各写一句它们的用途或影响。",
+      "answer": "示例：造纸术——改变了用竹简、丝帛书写的历史，使书写材料便宜方便，文化传播更便捷（后传入世界各地）；印刷术——雕版印刷和毕昇发明的活字印刷大大提高了印书效率，促进了文化知识的传播；指南针——应用于航海，为大航海时代的远洋航行提供了条件；火药——改变了作战方式，后经阿拉伯人传入欧洲。（任选两项、表述正确即可）",
+      "kps": [
+        "kp_pol5_four_inventions"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查四大发明及其贡献，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0289",
+      "item_type": "choice",
+      "stem": "中华民族人文初祖指的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_yan_huang"
+      ],
+      "difficulty": 0.45,
+      "solution": "传说中炎帝和黄帝是远古时期部落首领，他们的部落逐渐融合形成华夏族的主干，后人尊称他们为中华民族的人文初祖，海内外中华儿女自称“炎黄子孙”，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 炎帝和黄帝",
+        "B. 大禹和后稷",
+        "C. 秦始皇和汉武帝",
+        "D. 仓颉和嫘祖"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0290",
+      "item_type": "solve",
+      "stem": "为什么中华儿女自称“炎黄子孙”？这体现了怎样的民族意识？",
+      "answer": "相传四五千年前的黄河流域，炎帝部落和黄帝部落结盟并逐渐融合，形成了华夏族的主干，后来发展成今天的中华民族，所以中华儿女都自称“炎黄子孙”。这体现了中华民族共同体意识：各民族同根同源，共同缔造了统一的多民族国家，要像石榴籽一样紧紧抱在一起，团结奋斗、共同繁荣。（传说内容正确，民族意识言之有理即可）",
+      "kps": [
+        "kp_pol5_yan_huang"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查炎黄传说与共同体意识，要点正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0291",
+      "item_type": "choice",
+      "stem": "下列全部被列入《世界遗产名录》的一组是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_world_heritage"
+      ],
+      "difficulty": 0.5,
+      "solution": "长城、故宫、敦煌莫高窟、秦始皇陵及兵马俑坑、布达拉宫历史建筑群等都是列入《世界遗产名录》的中华文明瑰宝，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 商场、游乐园、电影院",
+        "B. 长城、故宫、莫高窟",
+        "C. 高铁站、机场、立交桥",
+        "D. 体育馆、图书馆、学校"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0292",
+      "item_type": "solve",
+      "stem": "请写出两处我国的世界文化遗产，并写一条参观世界文化遗产时的文明守则。",
+      "answer": "世界文化遗产示例：长城（北京等地）、故宫（北京）、莫高窟（甘肃敦煌）、秦始皇陵及兵马俑坑（陕西西安）、布达拉宫（西藏拉萨）、苏州古典园林、丽江古城等。文明守则：不刻画、不攀爬、不触摸和损坏文物，遵守参观秩序，听从工作人员引导，做文明游客。（两处正确，守则合理即可）",
+      "kps": [
+        "kp_pol5_world_heritage"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查世界文化遗产常识与文明游览，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0293",
+      "item_type": "choice",
+      "stem": "对待文物古迹的正确做法是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_heritage_protect"
+      ],
+      "difficulty": 0.35,
+      "solution": "文物是国家和民族的历史见证，受法律保护；私自盗挖、买卖文物是违法行为，参观要爱护文物、遵守秩序，发现破坏行为及时报告，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把出土的文物据为己有",
+        "B. 在文物上刻字留念",
+        "C. 参观时遵守秩序、爱护文物，发现破坏文物的行为及时报告",
+        "D. 偷偷把小件文物带回家收藏"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0294",
+      "item_type": "solve",
+      "stem": "有人在网上倒卖“出土古董”。请说说这种行为为什么不合法，并写一条保护文物的建议。",
+      "answer": "原因：我国法律规定，地下、内水、领海中遗存的一切文物属于国家所有，私自盗掘古遗址古墓葬、买卖出土文物都是违法行为，情节严重的构成犯罪。建议示例：发现盗掘、倒卖文物的行为及时向公安机关或文物部门举报；参观博物馆、古迹时遵守规定、爱护文物，做文物保护的宣传员。（说法正确，建议合理即可）",
+      "kps": [
+        "kp_pol5_heritage_protect"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查文物保护的法治意识，说理与建议合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0295",
+      "item_type": "choice",
+      "stem": "我国处理民族关系的基本原则是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_ethnic_families"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国坚持民族平等、民族团结和各民族共同繁荣的基本原则，反对民族分裂，维护国家统一，铸牢中华民族共同体意识，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人口多的民族优先",
+        "B. 各民族互不来往",
+        "C. 汉族管理少数民族",
+        "D. 民族平等、民族团结和各民族共同繁荣"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0296",
+      "item_type": "solve",
+      "stem": "“五十六个民族五十六朵花。”请写出两条促进民族团结的做法。",
+      "answer": "①尊重各民族的风俗习惯、语言文字和宗教信仰，不说不利于民族团结的话，不做不利于民族团结的事；②与各族同学平等相处、互相帮助、交朋友，共同进步；③了解民族政策，坚决反对分裂国家的行为，自觉维护国家统一和民族团结。（答出两条即可）",
+      "kps": [
+        "kp_pol5_ethnic_families"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查民族团结意识与做法，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0297",
+      "item_type": "choice",
+      "stem": "关于我国疆域和行政区划，正确的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_national_map"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国陆地面积约 960 万平方千米，陆地行政区划有 23 个省、5 个自治区、4 个直辖市（北京、天津、上海、重庆）和 2 个特别行政区（香港、澳门），A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 陆地面积约 960 万平方千米，省级行政区包括 23 个省、5 个自治区、4 个直辖市和 2 个特别行政区",
+        "B. 陆地面积约 960 万平方千米，只有 23 个省",
+        "C. 陆地面积约 960 万平方千米，特别行政区有 4 个",
+        "D. 陆地面积约 460 万平方千米，直辖市有 5 个"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0298",
+      "item_type": "solve",
+      "stem": "请写出我国 4 个直辖市和 2 个特别行政区的名称，再写出一个自治区的名称。",
+      "answer": "直辖市：北京、天津、上海、重庆。特别行政区：香港特别行政区、澳门特别行政区。自治区示例：内蒙古自治区、新疆维吾尔自治区、广西壮族自治区、宁夏回族自治区、西藏自治区（任写一个）。（全部正确即可）",
+      "kps": [
+        "kp_pol5_national_map"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查行政区划常识，名称准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0299",
+      "item_type": "choice",
+      "stem": "对“台独”分裂行径，我们应有的态度是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_taiwan_und"
+      ],
+      "difficulty": 0.5,
+      "solution": "台湾是中国神圣领土不可分割的一部分，实现祖国完全统一是全体中华儿女的共同愿望，我们要坚决反对任何“台独”分裂活动，维护国家统一，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 支持台湾“独立”",
+        "B. 坚决反对，维护国家主权和领土完整",
+        "C. 台湾独立不独立无所谓",
+        "D. 这是大人的事，与学生无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0300",
+      "item_type": "solve",
+      "stem": "为什么说实现祖国完全统一是全体中华儿女的共同愿望？请写出两点理由。",
+      "answer": "①台湾自古以来就是中国的领土，两岸同胞同根同源、血脉相连，同属一个中国，国家统一是中华民族的根本利益所在；②统一是国家富强、民族复兴的必然要求，只有统一，中华民族才能更好地实现伟大复兴，两岸同胞才能共享发展成果；③维护国家统一和领土完整是每个公民的义务。（答出两点、立场正确即可）",
+      "kps": [
+        "kp_pol5_taiwan_und"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查国家统一意识，立场正确、说理合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0301",
+      "item_type": "choice",
+      "stem": "关于钓鱼岛、南海诸岛，正确的认识是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol5_diaoyu_southsea"
+      ],
+      "difficulty": 0.35,
+      "solution": "钓鱼岛及其附属岛屿、南海诸岛自古以来就是中国的固有领土，中国在南海的领土主权和海洋权益有充分的历史和法理依据，国家坚定捍卫领土主权和海洋权益，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 它们是无主之地，谁先占就归谁",
+        "B. 它们离大陆远，不算中国领土",
+        "C. 它们是中国的固有领土，中国坚定捍卫国家领土主权",
+        "D. 领土问题与国家主权无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0302",
+      "item_type": "solve",
+      "stem": "了解国家版图、维护国家主权，人人有责。请写出两点我们能做的爱国行动。",
+      "answer": "①认真学习国家版图知识，认识中国地图（国家版图），知道钓鱼岛、南海诸岛都是中国领土，使用标准地图，发现“问题地图”及时指出；②关心国家大事，坚决支持国家维护主权和领土完整的行动，不传播损害国家主权和领土完整的言论；③努力学习，长大后为建设祖国、保卫祖国贡献力量。（答出两点即可）",
+      "kps": [
+        "kp_pol5_diaoyu_southsea"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查领土主权意识与爱国行动，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0303",
+      "item_type": "choice",
+      "stem": "在公共场合故意焚烧、损毁国旗的行为是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol5_national_symbol"
+      ],
+      "difficulty": 0.4,
+      "solution": "国旗、国徽、国歌是国家的象征和标志，代表国家尊严；在公共场合故意以焚烧、毁损、涂划、玷污、践踏等方式侮辱国旗国徽的，依法承担法律责任，情节严重的构成犯罪，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个人自由，别人管不着",
+        "B. 爱国行为",
+        "C. 只是不礼貌而已",
+        "D. 违法行为，要承担法律责任"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0304",
+      "item_type": "solve",
+      "stem": "请写出三条在日常生活中爱护国旗、国徽、国歌的具体要求。",
+      "answer": "①升国旗、奏国歌时肃立庄重，面向国旗行注目礼（少先队员行队礼），认真唱国歌；②正确使用和保管国旗，不倒挂、不污损、不随意丢弃国旗；③尊重国徽，不在国徽上乱涂乱画；不歪曲、贬损国歌，发现侮辱国旗国徽国歌的行为及时劝阻或报告。（答出三条即可）",
+      "kps": [
+        "kp_pol5_national_symbol"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查国家象征的尊重与法律意识，要求正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0305",
+      "item_type": "choice",
+      "stem": "1935 年红军历经艰难到达陕北前，创造了人类历史上的伟大奇迹。与“红军不怕远征难”直接相关的精神是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol5_revolution_spirit"
+      ],
+      "difficulty": 0.45,
+      "solution": "红军长征铸就了伟大的长征精神：把全国人民和中华民族的根本利益看得高于一切，坚定革命的理想和信念，不怕任何艰难险阻，紧密团结、艰苦奋斗，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长征精神",
+        "B. 五四精神",
+        "C. 抗疫精神",
+        "D. 工匠精神"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0306",
+      "item_type": "solve",
+      "stem": "请从红船精神、长征精神、延安精神、西柏坡精神中任选一种，写出它的一个主要内容（或一个对应的历史故事），并说说今天我们怎样传承这种精神。",
+      "answer": "示例：长征精神——红军爬雪山、过草地，四渡赤水、飞夺泸定桥，不怕牺牲、艰苦奋斗。传承：在学习中不怕困难，遇到难题不放弃；生活中艰苦朴素、不攀比；团结同学，心中有集体，长大报效祖国。又如西柏坡精神——“两个务必”（务必保持谦虚谨慎、不骄不躁的作风，务必保持艰苦奋斗的作风）。（精神与内容对应正确，传承做法具体即可）",
+      "kps": [
+        "kp_pol5_revolution_spirit"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查革命精神的内涵与传承，史实准确、做法具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0307",
+      "item_type": "choice",
+      "stem": "“绿水青山就是金山银山”这句话告诉我们（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol5_sustainable"
+      ],
+      "difficulty": 0.5,
+      "solution": "“绿水青山就是金山银山”强调保护生态环境就是保护生产力，改善生态环境就是发展生产力，要坚持人与自然和谐共生，走可持续发展道路，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 为了赚钱可以牺牲环境",
+        "B. 生态环境保护与经济发展相统一，要走可持续发展道路",
+        "C. 只要环境不要发展",
+        "D. 先污染后治理也没关系"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0308",
+      "item_type": "solve",
+      "stem": "建设美丽中国，从我做起。请写出三条节约资源、保护环境的行动。",
+      "answer": "①节约资源：随手关灯关水，纸张双面用，不浪费粮食，少用一次性用品；②绿色出行：上学多步行、骑自行车或乘公交车；③保护环境：垃圾分类投放，不乱扔垃圾，爱护花草树木，旧物回收利用，向家人宣传环保知识。（答出三条、具体可行即可）",
+      "kps": [
+        "kp_pol5_sustainable"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查生态文明与可持续发展意识，行动具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

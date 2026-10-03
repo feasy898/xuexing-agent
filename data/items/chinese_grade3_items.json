@@ -157,6 +157,2553 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "chi_prim_0247",
+      "item_type": "choice",
+      "stem": "读句子“海底世界五彩斑斓”，理解“斑斓”最好的办法是：",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_hard_words"
+      ],
+      "difficulty": 0.35,
+      "solution": "理解难懂的词语有多把“钥匙”：查字典、找近义词、拆词、联系上下文、结合生活经验。“斑斓”联系“五彩”来想，是说色彩错杂、鲜艳丰富。",
+      "source": "llm_generated",
+      "options": [
+        "A. 猜一猜，猜不出就算了",
+        "B. 查字典或联系上下文来理解",
+        "C. 把“斑斓”两个字拆成一半来猜",
+        "D. 不用管它，接着往下读"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0248",
+      "item_type": "fill",
+      "stem": "理解词语：“凌空而起”（飞机、雄鹰腾空飞起）中“凌”的意思是______；“斑斓”的意思是______。",
+      "answer": "升高、登上（向上升起）；颜色错杂而灿烂多彩",
+      "kps": [
+        "kp_chi3_hard_words"
+      ],
+      "difficulty": 0.4,
+      "solution": "难词拆开理解：凌空＝升高到空中；斑斓＝斑＋斓，都指色彩错杂。再把意思放回句子里读一遍，看通不通。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0249",
+      "item_type": "fill",
+      "stem": "理解“鲜艳”一词：句子“鲜艳的红领巾在她的胸前飘动”中，“鲜艳”是说红领巾______。请你再用“鲜艳”写一句话。",
+      "answer": "颜色明亮而艳丽（又红又亮）；示例：公园里开满了鲜艳的花朵。",
+      "kps": [
+        "kp_chi3_hard_words"
+      ],
+      "difficulty": 0.4,
+      "solution": "理解词语先想最熟悉的意思（鲜艳：明亮艳丽），再放进句子。会理解还要会运用：用它写一句话，才算真正掌握。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0250",
+      "item_type": "choice",
+      "stem": "“不计其数”中“计”的意思，应选字典里的哪一项？",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_dict_meaning"
+      ],
+      "difficulty": 0.35,
+      "solution": "不计其数：无法计算数目，形容极多。“计”在这里是“计算”。选义项的方法：把这个意思放进词语里读一读，看讲不讲得通。",
+      "source": "llm_generated",
+      "options": [
+        "A. 计算（数目）",
+        "B. 计划、打算",
+        "C. 计谋",
+        "D. 计较"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0251",
+      "item_type": "fill",
+      "stem": "查“稀”字，字典里有几个义项：①稀疏；②出现得少；③水分多；④程度深（稀烂）。“这里人烟稀少”中的“稀”应选第（　　）项；“这张纸太稀了”中的“稀”应选第（　　）项。",
+      "answer": "①；③",
+      "kps": [
+        "kp_chi3_dict_meaning"
+      ],
+      "difficulty": 0.4,
+      "solution": "选义项三步：读句子、想词义、对义项。人烟稀少＝住家不多，选①；纸太稀＝水分多，选③。义项对不上，就换一项再试。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0252",
+      "item_type": "fill",
+      "stem": "“骄傲”有两个常见意思：①自豪；②看不起别人。“我为你骄傲”中的“骄傲”选第（　　）项；“他太骄傲，谁的话都听不进去”中的“骄傲”选第（　　）项。",
+      "answer": "①；②",
+      "kps": [
+        "kp_chi3_dict_meaning"
+      ],
+      "difficulty": 0.4,
+      "solution": "同一个词在不同句子里意思不同，这叫一词多义。读一读哪个意思放进句子里更顺，就选那一个。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0255",
+      "item_type": "fill",
+      "stem": "给多音字注音：“爱好（hào）广泛”；“这件衣服好（　　）看”——“好看”的“好”读第几声？和“爱好”的读音一样吗？填一填：______。",
+      "answer": "hǎo；不一样",
+      "kps": [
+        "kp_chi3_polyphone2"
+      ],
+      "difficulty": 0.4,
+      "solution": "好：表示优点多、友爱读 hǎo（好看、好人）；表示喜爱读 hào（爱好、好学）。多音字按意思一类一类记，就不容易混。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0257",
+      "item_type": "fill",
+      "stem": "改正句子中的错别字：“今天，我很开兴，因为妈妈要带我去图书管。”两处错别字分别是：______、______。",
+      "answer": "兴→心；管→馆",
+      "kps": [
+        "kp_chi3_similar_char2"
+      ],
+      "difficulty": 0.35,
+      "solution": "“开心”的“心”是心里高兴；“图书馆”的“馆”是食字旁（吃饭、馆舍），指场所。改错别字要连词一起想：这个词是什么意思、偏旁对不对。",
+      "source": "llm_generated",
+      "form": "correction",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0259",
+      "item_type": "fill",
+      "stem": "补全成语：（　　）山（　　）海；（　　）（　　）夺目。",
+      "answer": "人山人海；光彩",
+      "kps": [
+        "kp_chi3_word_accumulate"
+      ],
+      "difficulty": 0.35,
+      "solution": "人山人海：形容人非常多；光彩夺目：光彩鲜艳耀眼。四字词语要连意思一起记，写话、说话都用得上。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0260",
+      "item_type": "choice",
+      "stem": "“亡羊补牢”中“牢”的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_word_accumulate"
+      ],
+      "difficulty": 0.4,
+      "solution": "牢：本义是关牲畜的圈。亡羊补牢＝羊丢了修补羊圈。成语里的字义和今天常用的意思常常不同，要查词典、问老师。",
+      "source": "llm_generated",
+      "options": [
+        "A. 羊圈",
+        "B. 牢固",
+        "C. 监牢",
+        "D. 结实"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0261",
+      "item_type": "fill",
+      "stem": "把成语按感情色彩分一分（褒义/贬义）：“兴高采烈、张牙舞爪、足智多谋、诡计多端”。褒义：______；贬义：______。",
+      "answer": "兴高采烈、足智多谋；张牙舞爪、诡计多端",
+      "kps": [
+        "kp_chi3_word_accumulate"
+      ],
+      "difficulty": 0.4,
+      "solution": "褒义词夸人夸事（兴高采烈、足智多谋）；贬义词批评贬损（张牙舞爪、诡计多端）。用词要看对象和场合。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0262",
+      "item_type": "fill",
+      "stem": "照样子写词语：干干净净；再写两个 AABB 式的词语：______、______。",
+      "answer": "示例：明明白白、清清楚楚",
+      "kps": [
+        "kp_chi3_aabb"
+      ],
+      "difficulty": 0.3,
+      "solution": "AABB 式是前两个字重叠、后两个字也重叠的格式，读起来朗朗上口。类似的还有 ABB（绿油油、亮晶晶）。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0263",
+      "item_type": "fill",
+      "stem": "给词语分类：绿油油　亮晶晶　干干净净　金灿灿　整整齐齐。ABB 式：______；AABB 式：______。",
+      "answer": "绿油油、亮晶晶、金灿灿；干干净净、整整齐齐",
+      "kps": [
+        "kp_chi3_aabb"
+      ],
+      "difficulty": 0.35,
+      "solution": "构词有特点的词语要会归类：ABB（一叠二）、AABB（二叠二）、ABAB（雪白雪白）、又A又B（又高又大）。分类以后用起来才不会混。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0264",
+      "item_type": "fill",
+      "stem": "照样子写两个“ABAC”式的词语（如：自由自在）：______、______。",
+      "answer": "示例：自言自语、无边无际",
+      "kps": [
+        "kp_chi3_aabb"
+      ],
+      "difficulty": 0.4,
+      "solution": "ABAC 式：第一个字和第三个字相同，如自由自在、自言自语、无边无际、越来越好。发现构词规律，词汇量就能“成串”增长。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0265",
+      "item_type": "choice",
+      "stem": "把字写“规范、端正”是指：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_write_improve"
+      ],
+      "difficulty": 0.3,
+      "solution": "规范＝笔画笔顺正确；端正＝结构匀称、不歪不斜；整洁＝卷面干净、不加不描。写字前看结构，写字时一笔一笔写到位。",
+      "source": "llm_generated",
+      "options": [
+        "A. 笔画正确、结构匀称、卷面整洁",
+        "B. 写得越大越好",
+        "C. 只要写对就行，美不美不重要",
+        "D. 按自己的习惯随便写"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0266",
+      "item_type": "fill",
+      "stem": "两个同学比写字：一个写得很快但有的字左右分家、东倒西歪；一个写得慢但每一笔都到位、字字端正。你欣赏第______个同学，因为______。",
+      "answer": "二；写字规范端正、笔画到位，比速度更重要",
+      "kps": [
+        "kp_chi3_write_improve"
+      ],
+      "difficulty": 0.35,
+      "solution": "好字的标准：正确（笔顺笔画）、规范（结构）、端正（匀称）、整洁（卷面）。“快”不能牺牲“好”，平时写字就要养好习惯。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0267",
+      "item_type": "choice",
+      "stem": "预习课文的正确顺序大体是：",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_preview"
+      ],
+      "difficulty": 0.35,
+      "solution": "预习四步：一读（读准字音、读通句子）；二标（标自然段、圈生字词）；三想（想想课文主要写了什么）；四问（把不懂的问题记下来）。带着问题上课，听课更有效。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先抄生字，随便读一遍课文",
+        "B. 先朗读课文读准字音，再标自然段、圈生字词，想想课文写了什么，最后提出问题",
+        "C. 只看课后题就行",
+        "D. 上课前把课文背下来"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0268",
+      "item_type": "fill",
+      "stem": "预习课文“四步法”填空：一读（读准字音）、二标（标出______、圈出______）、三想（思考______）、四问（记下______）。",
+      "answer": "自然段；生字新词；课文写了什么；不懂的问题",
+      "kps": [
+        "kp_chi3_preview"
+      ],
+      "difficulty": 0.4,
+      "solution": "预习不是通读一遍就完。标段、圈词、想内容、记问题，四步下来，上课就知道该重点听什么了。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0269",
+      "item_type": "choice",
+      "stem": "“秋风吹过，银杏叶像一只只金色的蝴蝶，打着旋儿落在地上。”这句话里最有“新鲜感”的表达是：",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_fresh_words"
+      ],
+      "difficulty": 0.4,
+      "solution": "有新鲜感的句子常用比喻、拟人，把常见的事物写得像第一次看见：银杏叶比作金色的蝴蝶，“打着旋儿”写出飘落的样子。多读这样的句子，写话也会变新鲜。",
+      "source": "llm_generated",
+      "options": [
+        "A. “秋风吹过”",
+        "B. “银杏叶像金色的蝴蝶，打着旋儿”",
+        "C. “落在地上”",
+        "D. “一只只”"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0270",
+      "item_type": "fill",
+      "stem": "读一读，抄一抄，再背一背：“清晨，露珠在蜘蛛网上闪亮，像谁撒了一把碎银。”句中写露珠闪亮的词语是______，句子的新鲜感来自它把露珠比作______。",
+      "answer": "碎银；一把把碎银子（比喻）",
+      "kps": [
+        "kp_chi3_fresh_words"
+      ],
+      "difficulty": 0.4,
+      "solution": "关注有新鲜感的词句：画一画、抄一抄、背一背，再学着写一句。积累得多了，自己的语言也会“亮”起来。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0271",
+      "item_type": "choice",
+      "stem": "故事读到“夜深了，小兔子房间的灯还亮着”，最合理的预测是：",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_predict"
+      ],
+      "difficulty": 0.4,
+      "solution": "预测要顺着故事情节和人物性格想：夜深灯还亮着，人一般还没睡。多问“接下来会怎样”，读书就变有趣了。",
+      "source": "llm_generated",
+      "options": [
+        "A. 小兔子已经睡着了",
+        "B. 小兔子还在灯下做什么（看书、赶手工、等妈妈）",
+        "C. 太阳出来了",
+        "D. 窗外下起了大雪"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0272",
+      "item_type": "solve",
+      "stem": "读故事开头：“小公鸡想学本领，大清早就出了门。它看见喜鹊在树上搭窝，蹲在一边看入了迷。……”请预测后面会发生什么，并说说你根据什么这样猜。",
+      "answer": "示例：预测——小公鸡会学着喜鹊搭窝，或者遇到新的老师学不同的本领，最后明白每种本领都有自己的用处。依据：故事开头写他“想学本领”“看入了迷”，说明他会一样一样试下去。",
+      "kps": [
+        "kp_chi3_predict"
+      ],
+      "difficulty": 0.45,
+      "solution": "预测两要素：一是根据上文（题目、插图、故事线索、人物特点）推想；二是说出“我从哪里看出来”。预测对不对不要紧，会想、会说理由最重要。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0273",
+      "item_type": "fill",
+      "stem": "读段落：“公园里的花都开了。迎春花吹起金色的小喇叭，桃花露出粉红的笑脸，丁香花送来阵阵香气。”这段话是围绕哪句话写的？______",
+      "answer": "公园里的花都开了。",
+      "kps": [
+        "kp_chi3_key_sentence"
+      ],
+      "difficulty": 0.35,
+      "solution": "一段话往往有一句“总起”的话，后面的句子都是围绕它来写。找到这句关键句，整段的意思就抓在手里了。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0274",
+      "item_type": "choice",
+      "stem": "“海底的动物各有各的活动方法。”这句话在段落中的作用是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_key_sentence"
+      ],
+      "difficulty": 0.4,
+      "solution": "关键句常出现在段落的开头或结尾。这句话放在段首，后面写海参爬得慢、梭子鱼游得快、有些贝类巴在船底旅行，都是在具体说“海底动物各有各的活动方法”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 总说全段意思的关键句",
+        "B. 举例子",
+        "C. 总结全文的句子",
+        "D. 表示顺序的句子"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0275",
+      "item_type": "solve",
+      "stem": "读段落：“我的弟弟是个小书虫。下课了，同学们都跑到操场上玩，他却从书包里掏出故事书；吃饭时，他一手拿勺一手按着书；连睡觉前，也要在床头看几页才肯熄灯。”给这段话找出关键语句，并说说你从哪里看出来。",
+      "answer": "关键句是“我的弟弟是个小书虫”。从“下课看书、吃饭看书、睡前看书”三件事都围绕“爱看书”来写，可以看出第一句概括了全段的意思。",
+      "kps": [
+        "kp_chi3_key_sentence"
+      ],
+      "difficulty": 0.4,
+      "solution": "找关键句看两点：①这句话概括了全段的内容；②其他句子都在支持它。找到后用自己的话把“怎么知道的”说清楚，就是真的懂了。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0276",
+      "item_type": "fill",
+      "stem": "读段落：“春天，布谷鸟在枝头唱歌，农民弯着腰在田里插秧，燕子从南方飞回来了。”如果用一句话概括这段话的大意：______。",
+      "answer": "示例：春天来了，田野上一片生机勃勃的景象（鸟儿、燕子归来，农民春耕）。",
+      "kps": [
+        "kp_chi3_paragraph_summary"
+      ],
+      "difficulty": 0.35,
+      "solution": "概括段意：先看清这段话写的是什么地方、有谁、在做什么，再用自己的话连成一句。不要照抄原句。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0277",
+      "item_type": "fill",
+      "stem": "给段落加小标题：“动物园的猴山真热闹：有的猴子爬上假山顶，有的在荡秋千，有的抢游客扔的花生，小猴子们围着猴妈妈要抱抱。”这段话的小标题可以是《______》。",
+      "answer": "热闹的猴山（示例）",
+      "kps": [
+        "kp_chi3_paragraph_summary"
+      ],
+      "difficulty": 0.4,
+      "solution": "加小标题：先找段落的中心（猴山真热闹），再用三五个字概括。小标题要短，又要扣住内容。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0278",
+      "item_type": "solve",
+      "stem": "读下面的段落，概括它的大意：“我家的小猫叫花花。它浑身雪白，只有头顶有一块黑，像戴了一顶小帽子。它白天爱趴在阳台上晒太阳，晚上就精神了，追着皮球满地跑。有老鼠的时候，它蹲在墙角一动不动，一等就是半个小时。”",
+      "answer": "示例：这段话写我家的小猫花花：长什么样（雪白、头顶黑毛）、白天爱睡觉晒太阳、晚上活泼、捉老鼠有耐心。",
+      "kps": [
+        "kp_chi3_paragraph_summary"
+      ],
+      "difficulty": 0.4,
+      "solution": "概括段意两法：①“谁+怎么样”法（小猫花花外形可爱、作息特别）；②合并句子法（把每句的意思各缩成几个字再连起来）。人物多、层次多时，按顺序一层一层概。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0279",
+      "item_type": "solve",
+      "stem": "读短文：“学校教学楼后面有一个生物角。春天，同学们把凤仙花的种子埋进土里；夏天，凤仙花开出红的、白的花；秋天，花谢了结出纺锤形的果子，用手一碰，果子炸开，种子滚得满地都是。大家一边捡种子，一边说明年再种。生物角虽小，却装着同学们一整年的等待和欢喜。”这篇短文主要写了什么？",
+      "answer": "示例：主要写学校生物角里同学们种凤仙花、看花、收种子的经过，以及他们从劳动和观察中得到的快乐。",
+      "kps": [
+        "kp_chi3_main_idea"
+      ],
+      "difficulty": 0.4,
+      "solution": "概括主要内容：先想“谁+在哪儿+做了什么事+结果怎样”，再连成两三句话。不像段意概括那样只看一段，看全文要把几件事连起来说。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0280",
+      "item_type": "fill",
+      "stem": "读一则童话：小松鼠为冬天储备松果，把最好的一颗埋在了洞口，冬天却找不到了；春天，那里长出了一棵小松树；树渐渐长大，小松鼠每天来看它。这篇童话告诉我们的道理是：______。",
+      "answer": "示例：不经意的付出和善意，会以另一种方式开花结果（帮助别人、善待自然，都会有回报）。",
+      "kps": [
+        "kp_chi3_main_idea"
+      ],
+      "difficulty": 0.45,
+      "solution": "童话的道理常常在结尾“转弯”处：埋的松果没找到，却长成了树。读童话要抓住“没想到”的地方想一想，那就是作者想告诉我们的道理。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0281",
+      "item_type": "fill",
+      "stem": "“石榴咧开了嘴，露出整齐的红宝石牙齿。”这句话好在哪里？______",
+      "answer": "把石榴裂开的样子当作人来写，“咧开嘴”“红宝石牙齿”又生动又可爱，读着仿佛看见石榴笑着露出籽粒。",
+      "kps": [
+        "kp_chi3_vivid_language"
+      ],
+      "difficulty": 0.35,
+      "solution": "评语言妙处两步：①用了什么写法（拟人）；②写出了什么效果（形象、有趣）。也可从比喻、准确的动词来赏析。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0282",
+      "item_type": "solve",
+      "stem": "“那么多的叶子，一簇堆在另一簇上面，不留一点儿缝隙。”这句话写出了爬山虎叶子什么特点？句中哪个字用得特别好？",
+      "answer": "写出了叶子又多又密的特点；“堆”字最好，把叶子一层压一层、你挨我挤的样子写了出来，好像看得见那厚厚实实的一墙绿叶。",
+      "kps": [
+        "kp_chi3_vivid_language"
+      ],
+      "difficulty": 0.4,
+      "solution": "赏析句子要落到字词上：先想整句写了什么（叶多、密），再找最关键的字（“堆”），说说它好在哪里（有重量、有层次、有画面感）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0283",
+      "item_type": "fill",
+      "stem": "照样子写生动的句子：“小溪淙淙地流着，像在唱着歌谣。”请你用拟人的方法写一句：______。",
+      "answer": "示例：风一吹，柳条轻轻地招手，好像在对我说早安。",
+      "kps": [
+        "kp_chi3_vivid_language"
+      ],
+      "difficulty": 0.4,
+      "solution": "把事物当作人来写，给它人的动作、声音、感情（招手、唱歌、微笑、叹气）。写的时候注意事物本身的特点，比喻要相像。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0284",
+      "item_type": "solve",
+      "stem": "围绕“下课了，操场上真热闹”写一段话（三句话以上），用上“有的……有的……还有的……”，把话写清楚。",
+      "answer": "示例：下课了，操场上真热闹。同学们有的跳绳，绳子甩得呼呼响；有的踢毽子，彩色的毽子上下翻飞；还有的在跑道上比赛跑步，加油声一阵高过一阵。整个操场像一锅烧开的水，沸腾起来。",
+      "kps": [
+        "kp_chi3_around_center"
+      ],
+      "difficulty": 0.4,
+      "solution": "围绕一个意思写清楚：开头一句总说“真热闹”，中间用不同活动的例子分开写，结尾再点一句感受。每一句都要为“热闹”服务，不相干的话不写。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0285",
+      "item_type": "fill",
+      "stem": "读片断：“菜市场可热闹了。卖鱼的摊位前，鲤鱼拍得水花四溅；卖菜的奶奶一边称秤一边招呼客人；角落里的熟食摊飘出诱人的香味，馋得小狗蹲在旁边不肯走。”这段话是围绕哪一句写的？______",
+      "answer": "菜市场可热闹了。",
+      "kps": [
+        "kp_chi3_around_center"
+      ],
+      "difficulty": 0.4,
+      "solution": "围绕一个意思写的段落，中心句常放开头；下面的鱼摊、菜摊、熟食摊都是“热闹”的例子。写片断先定中心，再举例。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0286",
+      "item_type": "fill",
+      "stem": "注释说“坐”是“因为”。请说出“停车坐爱枫林晚”的意思：______。",
+      "answer": "停下车来，是因为（我）喜爱这傍晚的枫林景色。",
+      "kps": [
+        "kp_chi3_poem_explain"
+      ],
+      "difficulty": 0.4,
+      "solution": "诗句理解：先把每个词的意思连起来——“停车”＋“坐（因为）”＋“爱（喜爱）”＋“枫林晚（傍晚的枫林）”，再说得像人话：停下车是因为爱这傍晚的枫林。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0287",
+      "item_type": "fill",
+      "stem": "说出诗句的意思：“蒌蒿满地芦芽短，正是河豚欲上时。”______",
+      "answer": "满地都是蒌蒿，芦苇刚冒出短短的嫩芽，这正是河豚将要沿江而上的时候。",
+      "kps": [
+        "kp_chi3_poem_explain"
+      ],
+      "difficulty": 0.4,
+      "solution": "诗句理解抓住生词：蒌蒿（一种水草）、芦芽（芦苇嫩芽）、河豚（一种味美而有毒素的鱼），“欲”是“将要”。连词成句，不要漏掉“正是”这一层意思。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0288",
+      "item_type": "fill",
+      "stem": "默写《山行》后两句，并写出其中“坐”的意思：“______，______。”其中“坐”的意思是______。",
+      "answer": "停车坐爱枫林晚，霜叶红于二月花。“坐”的意思是因为。",
+      "kps": [
+        "kp_chi3_poem_explain"
+      ],
+      "difficulty": 0.45,
+      "solution": "《山行》（杜牧）：远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。经秋霜的枫叶比二月春花还红，写出诗人对秋天的喜爱。默写注意“斜”“霜”的写法。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0289",
+      "item_type": "fill",
+      "stem": "“独在异乡为异客，每逢佳节倍思亲”表达了诗人怎样的感情？______",
+      "answer": "身在异乡做客，每逢节日就加倍思念故乡和亲人的感情。",
+      "kps": [
+        "kp_chi3_poem_feel"
+      ],
+      "difficulty": 0.4,
+      "solution": "王维写这首诗时只有十七岁，独自在长安。抓关键词“异乡”“佳节”“倍思亲”，就能读出浓浓的思乡思亲之情。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0290",
+      "item_type": "fill",
+      "stem": "《山行》中“霜叶红于二月花”，透过这句诗能体会到诗人对秋天（　　　）的感情。",
+      "answer": "喜爱、赞美（觉得秋天的枫林比春天还美）",
+      "kps": [
+        "kp_chi3_poem_feel"
+      ],
+      "difficulty": 0.4,
+      "solution": "体会情感看诗人选什么景、怎么写。诗人爱傍晚的枫林，觉得霜叶比春花还红，字里行间是对秋天的喜爱和赞美。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0291",
+      "item_type": "solve",
+      "stem": "《九月九日忆山东兄弟》：“独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。”诗中“少一人”少的是谁？诗人为什么“遥知”而不是“看见”？这表达了怎样的情感？",
+      "answer": "少的是诗人自己。因为兄弟们登高处插茱萸时，发现少了一个亲人——“我”远在长安，不在家乡，只能凭想象（遥知）亲人想念自己，写的是双向的思念。",
+      "kps": [
+        "kp_chi3_poem_feel"
+      ],
+      "difficulty": 0.45,
+      "solution": "读诗要“换个角度想”：后两句不从自己说思念，而从远方兄弟的角度写他们发现自己不在，思念更深一层。这种方法叫“对写法”，感情更曲折动人。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0292",
+      "item_type": "fill",
+      "stem": "读文言（部编版三年级课文《司马光》）：“群儿戏于庭，一儿登瓮，足跌没水中。众皆弃去，光持石击瓮破之，水迸，儿得活。”句中“戏”的意思是______；“瓮”指的是______。",
+      "answer": "玩耍、游戏；口小肚大的陶器（盛水的大缸）",
+      "kps": [
+        "kp_chi3_classical_intro"
+      ],
+      "difficulty": 0.4,
+      "solution": "文言字词要对照注释理解：戏＝游戏；瓮＝口小肚大的陶器，类似大缸；皆＝都。“群儿戏于庭”就是“一群孩子在院子里玩耍”。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0293",
+      "item_type": "fill",
+      "stem": "《司马光》中“光持石击瓮破之”的“之”指的是什么？______。从这件事中，你看出司马光是一个怎样的孩子？______。",
+      "answer": "“之”指瓮（水缸）；沉着冷静、遇事肯动脑筋、勇敢救人的孩子。",
+      "kps": [
+        "kp_chi3_classical_intro"
+      ],
+      "difficulty": 0.4,
+      "solution": "“之”是代词，指代上文说的“瓮”。别人都吓跑了（众皆弃去），司马光却拿石头砸缸，让水流出来——危急时刻能想出办法，就是沉着、机智。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0294",
+      "item_type": "fill",
+      "stem": "把句子译成现代话：“一儿登瓮，足跌没水中。”______",
+      "answer": "一个孩子爬上了大瓮，（脚下一滑）摔倒在地，淹没在水里了。",
+      "kps": [
+        "kp_chi3_classical_intro"
+      ],
+      "difficulty": 0.45,
+      "solution": "文言翻译：先逐字对译（登—爬上，跌—摔倒，没—淹没），再补上省略的成分（脚下一滑），最后读一遍，把它说得像人话。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0295",
+      "item_type": "fill",
+      "stem": "读文言寓言（部编版三年级课文《守株待兔》）：“宋人有耕者。田中有株。兔走触株，折颈而死。因释其耒而守株，冀复得兔。”句中“释”的意思是______；“冀”的意思是______。",
+      "answer": "放下；希望",
+      "kps": [
+        "kp_chi3_classical_parable"
+      ],
+      "difficulty": 0.4,
+      "solution": "因释其耒而守株＝于是放下农具守在树桩旁；冀复得兔＝希望再得到兔子。文言字词要对照注释记，还要会组词（释＝释放，冀＝希冀）。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0296",
+      "item_type": "fill",
+      "stem": "《守株待兔》中“兔走触株，折颈而死”的“走”在文言里是______的意思；这个寓言告诉我们______。",
+      "answer": "跑（古义是跑，今义是行走）；不要存侥幸心理，不能不劳而获（想不劳动就得到收获，结果只会落空）",
+      "kps": [
+        "kp_chi3_classical_parable"
+      ],
+      "difficulty": 0.4,
+      "solution": "“走”在古汉语里常指“跑”。寓言读法：先讲故事，再说道理。兔子撞死在树桩是偶然，守着等第二只，就是错把偶然当必然。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0297",
+      "item_type": "solve",
+      "stem": "读《守株待兔》：“兔不可复得，而身为宋国笑。”想一想：耕者错在哪里？他该怎么做才对？说说这个故事的道理。",
+      "answer": "错在把偶然发生的事当成必然，丢下农活整天守着树桩；他应该继续耕田，用劳动获得收成。道理：不能寄希望于意外的运气，只有认真做事才有收获。",
+      "kps": [
+        "kp_chi3_classical_parable"
+      ],
+      "difficulty": 0.45,
+      "solution": "寓言寓意要落到自己身上：生活中有没有“坐等好运”的事？比如不复习却盼着考好。读寓言能想到生活，才算读懂。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0298",
+      "item_type": "solve",
+      "stem": "读对话：（片段）“小华，作业写完了吗？我们该去照顾蚕宝宝了。”妈妈在厨房喊。“就写完了！”小华把最后一笔写好，飞快地洗了手，“今天桑叶我摘了一大把，蚕宝宝一定爱吃！”从这段对话中，你觉得小华是个怎样的孩子？从哪里看出来？",
+      "answer": "小华是个有心、爱劳动、有责任感的孩子：他先完成作业再去照顾蚕，还主动摘了桑叶，说话之间满是高兴和惦记。",
+      "kps": [
+        "kp_chi3_dialogue_text"
+      ],
+      "difficulty": 0.4,
+      "solution": "读人物对话：先看说了什么（内容），再看怎么说的（语气词、标点），最后说人物是个怎样的人。答题时说清楚“从哪里看出来”，不能只贴标签。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0299",
+      "item_type": "fill",
+      "stem": "写人物对话时，提示语“妈妈说”后面要用______；说的话要用______引起来；提示语在后面时，前面的话要用______收尾。",
+      "answer": "冒号；引号；句号（或感叹号、问号）",
+      "kps": [
+        "kp_chi3_dialogue_text"
+      ],
+      "difficulty": 0.4,
+      "solution": "对话中提示语的三种位置：在前（××说：……）、在中（“……，”××说，“……”）、在后（“……。”××说）。标点要跟着位置变。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0300",
+      "item_type": "fill",
+      "stem": "读科普片断：“蝙蝠能在夜里高速飞行，却从不撞上障碍物。它不是靠眼睛，而是靠嘴发出超声波，超声波遇到物体就反射回来，被耳朵接收，于是它就能‘看清’黑夜里的东西。”根据这段文字填空：蝙蝠靠______探路；超声波遇到物体会______。",
+      "answer": "嘴发出超声波、耳朵接收回声；反射回来",
+      "kps": [
+        "kp_chi3_science_text"
+      ],
+      "difficulty": 0.35,
+      "solution": "科普短文读法：先标出关键句，再把“谁—用什么—怎么样”提取出来。答案尽量靠近原文的词，用自己的话连接。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0301",
+      "item_type": "solve",
+      "stem": "读科普片断：“萤火虫腹部的末端有一个发光器，里面有两种能发光的物质。它们和氧气一结合，就发出淡绿色的光。萤火虫的光是冷光，不发热，所以它飞一晚上也不会被烫到。”提取两条信息，说说你从中学到了什么。",
+      "answer": "信息一：萤火虫的光是腹部发光器里的物质和氧气结合发出来的，是淡绿色；信息二：萤火虫的光是冷光，不发热。学到：动物的身体构造藏着科学道理，观察小动物也能发现大知识。",
+      "kps": [
+        "kp_chi3_science_text"
+      ],
+      "difficulty": 0.4,
+      "solution": "科普阅读要“提取+思考”：先找出事实（发光的位置、颜色、特点），再想一想它有什么用、还想到什么（比如冷光能不能用在生活里——日光灯、爆破灯就学了这个道理）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0302",
+      "item_type": "fill",
+      "stem": "读说明片断：“在没有纸的年代，人们把字刻在龟甲、兽骨上，后来铸在青铜器上，再后来写在竹片和帛上。东汉的蔡伦吸取经验，用树皮、麻头、破布、旧渔网作原料，造出了又轻又便宜的纸。”填空：蔡伦是______朝人，他用______、______、______、______造纸。",
+      "answer": "东汉；树皮、麻头、破布、旧渔网",
+      "kps": [
+        "kp_chi3_invention_text"
+      ],
+      "difficulty": 0.35,
+      "solution": "说明文里时间、人物、材料是常考点，边读边用横线画出这些词。纸的发明是一步步改进的：甲骨—青铜—竹简、帛—纸。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0303",
+      "item_type": "solve",
+      "stem": "读上面的说明片断，说说“竹片（简）和帛”写字有哪些不方便，纸发明以后带来了什么变化。",
+      "answer": "竹简很重，一部书要用很多车来拉，翻阅也不方便；帛轻，但太贵。纸又轻又便宜，读书写字方便多了，文化也更容易传播。",
+      "kps": [
+        "kp_chi3_invention_text"
+      ],
+      "difficulty": 0.4,
+      "solution": "说明文阅读要会比较：把“以前的做法”和“新事物”摆在一起，不同点就清楚了。回答问题先写“以前怎样”，再写“后来怎样”。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0304",
+      "item_type": "choice",
+      "stem": "赵州桥的设计者是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_ancient_arch"
+      ],
+      "difficulty": 0.35,
+      "solution": "赵州桥在河北赵县的洨河上，建于隋朝，由石匠李春设计，是世界上著名的石拱桥，已经有一千四百多年历史。桥的设计既美观又牢固（大桥洞顶上左右各两个小桥洞，省石料、排水又流畅）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 隋朝石匠李春",
+        "B. 北宋画家张择端",
+        "C. 唐朝诗人杜甫",
+        "D. 明朝工匠蒯祥"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0305",
+      "item_type": "fill",
+      "stem": "《清明上河图》是______（朝代）画家______的作品，画的是当时都城______的繁华景象。",
+      "answer": "北宋；张择端；汴京（今开封）",
+      "kps": [
+        "kp_chi3_ancient_arch"
+      ],
+      "difficulty": 0.35,
+      "solution": "《清明上河图》画的是北宋都城汴京的生活景象，八百多年后仍让我们看到当年的热闹。这幅画让我们了解古代建筑、交通和市井生活。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0306",
+      "item_type": "solve",
+      "stem": "读介绍片断：“卢沟桥的桥栏柱头上雕刻着许多石狮子。这些狮子大小不一、形态各异：有的母子相抱，有的交头接耳，有的像在听水声，还有的望着远方发呆。数的人都说不清一共有多少只。”读了这个片断，说说卢沟桥的石狮子给你留下什么印象，作者是怎么写出这种印象的。",
+      "answer": "印象：石狮子多得数不清、姿态各不相同，很生动。作者先总说“大小不一、形态各异”，再用四个“有的……”具体写不同的样子，读着好像亲眼看见。",
+      "kps": [
+        "kp_chi3_ancient_arch"
+      ],
+      "difficulty": 0.4,
+      "solution": "欣赏古代建筑艺术：一是抓总起句，二是数具体例子。写法上是“总—分”，景物介绍常用这个办法。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0307",
+      "item_type": "solve",
+      "stem": "习作《猜猜他是谁》：选一位同学，用几句话写他的外貌、性格或爱好中最特别的地方，不要写名字，让同学读了猜一猜他是谁。",
+      "answer": "范文要点：①不出现姓名；②抓最突出的一两个特点（如：总爱穿一件蓝色外套、跑步特别快、笑起来有酒窝）；③写一件小事让特点立起来；④语言活泼。示例：他呀，总坐在教室最后一排。头发天生卷，像顶着一个鸟窝；数学课老师题还没写完，他的答案就报出来了。他还是我们班的“飞毛腿”，上次运动会，一百米跑完，别的同学才过弯道。同学们最爱在课间找他问难题——他是谁呢？",
+      "kps": [
+        "kp_chi3_guess_who"
+      ],
+      "difficulty": 0.4,
+      "solution": "《猜猜他是谁》评分要点：不写名字（关键）；特点抓得准（外貌或本领一处最突出即可）；用一件事把特点写具体；读起来让人“猜得到”；句子通顺、用词准确。三年级习作重“特点鲜明、有事例”。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0308",
+      "item_type": "fill",
+      "stem": "下面这段写人的话好在哪儿？“我的同桌有一双大眼睛，睫毛长得像两把小扇子。她最爱笑，一笑眼睛就弯成月牙，连嘴角那颗小痣也跟着跳。”______",
+      "answer": "外貌抓住了最特别的地方（大眼睛、长睫毛、小痣），还用“小扇子”“弯成月牙”作比，又写笑容，读起来这个人就活了。",
+      "kps": [
+        "kp_chi3_guess_who"
+      ],
+      "difficulty": 0.4,
+      "solution": "写人要“抓特点”：不从头到脚样样都写，只写最突出的一两处；再用比喻、动作把特点写生动。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0309",
+      "item_type": "fill",
+      "stem": "日记的格式：第一行写______（包括月、日、星期、天气），正文从______行开始写，可以写______。",
+      "answer": "日期和天气；第二；当天自己印象深的事或感受",
+      "kps": [
+        "kp_chi3_diary"
+      ],
+      "difficulty": 0.35,
+      "solution": "日记格式：第一行居中写几月几日、星期几、天气；正文另起一行空两格；写自己的所见所闻所感。事情不在大，“真”字最重要。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0310",
+      "item_type": "solve",
+      "stem": "写一则日记，记一件今天让你印象深的事（可以是开心的事、新鲜的事，或者你做错的事），写清时间、地点、事情经过和自己的感受，不少于五句话。",
+      "answer": "范文要点（示例）：9 月 28 日 星期五 晴。今天是我第一次当升旗手。清早，我握着旗绳，手心里全是汗。国歌响起，五星红旗慢慢往上爬，我的心怦怦直跳。看着红旗升到顶、在风里展开，我忽然觉得自己长大了。这真是一个难忘的早晨。",
+      "kps": [
+        "kp_chi3_diary"
+      ],
+      "difficulty": 0.4,
+      "solution": "日记评分要点：格式（第一行日期天气）；内容真实、有一件事写具体；写清经过和感受；语言像说话一样自然。三年级日记 100-150 字即可，坚持写是重点。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0311",
+      "item_type": "solve",
+      "stem": "编童话故事：以“一支铅笔的旅行”为题（或自拟主人公），写一个想象合理、有头有尾的童话故事，让铅笔、书包、本子这些文具说说话、做做事，说清一个道理。",
+      "answer": "范文要点：①给文具生命（会说话、会想）；②故事有起因（铅笔逃学/走丢）、经过（遇到谁、发生什么）、结果；③情节有意思（夸张、意外）；④结尾点出道理。示例（提纲）：小铅笔被主人乱扔，伤透了心，溜出书包去流浪；路上遇到老橡皮——老橡皮说“写字的人离不开我们，只是要学会相遇”；最后小铅笔回到小主人手里，也懂得了合作和珍惜。",
+      "kps": [
+        "kp_chi3_fairy_tale_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "编童话评分要点：大胆想象但故事内部“讲得通”（文具怎么说话、为什么这样做）；有完整的起因、经过、结果；人物性格清楚（如铅笔骄傲、橡皮宽容）；结尾自然带出道理，不说教。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0312",
+      "item_type": "fill",
+      "stem": "编童话时，要让“角色”活起来。读一读这句：“月亮打了个哈欠，把银辉轻轻盖在大地上。”它用了什么写法？______。",
+      "answer": "拟人（把月亮当作人来写，会打哈欠、会盖被子）",
+      "kps": [
+        "kp_chi3_fairy_tale_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "童话里“一切都有生命”：东西会说话、会哭、会想办法。拟人是最常用的办法，加上想象的情节，故事就有趣了。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0313",
+      "item_type": "solve",
+      "stem": "留心观察：观察你身边的一样事物（一盆花、一只小动物、一种天气现象），写下它两三处细节和你的感受，用上准确的动词和表示颜色或声音的词。",
+      "answer": "范文要点：①写清观察对象和观察时间；②两三处细节（形状、颜色、变化、声音）；③写自己的心情或联想。示例：早上，我家的含羞草叶片还是张开的。我用指尖轻轻一碰，两排叶子就像听到命令似的合拢、垂下，连叶柄也弯了腰，像害羞的小姑娘。过了一会儿，它又悄悄张开，仿佛什么事也没发生。真有趣！",
+      "kps": [
+        "kp_chi3_observe_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "观察习作评分要点：抓住细节（一两处别人没写过的）；动词准确（碰、合拢、垂下、张开）；有观察的时间线索；写出自己的心情，而不是只“照相”。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0314",
+      "item_type": "solve",
+      "stem": "写景习作《这儿真美》：选一处你觉得美的地方（公园、校园一角、家乡的田野……），按一定的顺序写，写出它怎么美，用上平时积累的词语。",
+      "answer": "范文要点（示例）：公园门口是一条石子路。沿路走过去，左边是一片柳林，柳条垂到水面，风一吹，波纹一圈圈荡开。右边的小山坡上栽着枫树，深秋的叶子像一簇簇火苗。山顶有一间小亭子，坐在里面能听见远处湖水拍岸的声音。无论春夏秋冬，这儿都值得停下来多看一眼。",
+      "kps": [
+        "kp_chi3_scenery_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "《这儿真美》评分要点：按顺序写（空间或时间顺序，路线清楚）；有重点（一两个地方写细）；颜色、声音、气味等感官词；“总—分”或“分—总”结构；表达真实的喜爱，不是堆形容词。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0315",
+      "item_type": "solve",
+      "stem": "习作《我有一个想法》：生活中你注意到了什么问题（如：教室里纸张浪费、有人边走路边看书、公共座位被书包占用……）？你的想法是什么？写清现象、你的想法和理由。",
+      "answer": "范文要点（示例）：最近我发现，班上有同学写错一个字就撕掉整页纸。我想：作业本也是一棵棵树换来的。我建议在班里放一个“废纸回收袋”，背面还能用的纸订成本子当草稿；再请老师估一估全班一天用多少纸，贴在墙上提醒大家。这样既省纸又环保。",
+      "kps": [
+        "kp_chi3_idea_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "《我有一个想法》评分要点：现象写具体（在哪、常见、为什么值得管）；想法写清楚（分一两条，能操作）；有理由（对谁有好处）；语气像商量，不是命令。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0316",
+      "item_type": "solve",
+      "stem": "习作《放风筝》：春天到了，你去放风筝。写清楚风筝的样子、放风筝的过程（怎么起飞、怎么控制、遇到什么小麻烦）和当时的心情。",
+      "answer": "范文要点（示例）：我的风筝是一只大蝴蝶，翅膀上涂着蓝金两色。一开始风筝总往下坠，我逆着风跑，边跑边放线，它终于摇摇晃晃地离开了地面。风大的时候它好像要挣脱线跑掉，我赶紧收线，它又乖乖地在头顶打转。看着它稳稳地飞在蓝天里，我的心也飞起来了。",
+      "kps": [
+        "kp_chi3_kite"
+      ],
+      "difficulty": 0.4,
+      "solution": "《放风筝》评分要点：把“过程”写细（拿、跑、放、收、拉，动词准确）；写风筝的样子和飞的状态；写出心情的变化（着急—得意—快乐）；用上表示顺序的词。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0317",
+      "item_type": "solve",
+      "stem": "看图写话（三年级）：图上画的是春天，三年级的同学在山上植树，有的挖坑，有的扶树苗，有的浇水，还有的在给小树挂牌；远处有新发的绿树。请把图上的内容写成一两百字的小短文。",
+      "answer": "范文要点（示例）：春天来了，山上的土松软了。我们中队在植树。小明挥着小铁锹挖坑，汗珠从额头滚下来；小红小心地把树苗放进坑里，用手扶着，生怕它歪了；小刚拎来水，给小树浇了个透。最后，大家把写有“我与小树一起长大”的小牌子挂在树上。春风一吹，嫩叶摇摆，像在向我们点头。看着满山新绿，我们心里比蜜还甜。",
+      "kps": [
+        "kp_chi3_picture_write3"
+      ],
+      "difficulty": 0.4,
+      "solution": "看图写话评分要点：图上的人、事、景都覆盖（挖坑、扶苗、浇水、挂牌）；动作写细（挥、扶、拎、挂）；有环境和感受；一两百字，语句连贯、标点正确。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0318",
+      "item_type": "solve",
+      "stem": "看图写话（三年级）：图上是一个下雨天，校门口一位同学把伞举在没带伞的同学头上，自己半边肩膀淋湿了。请写一写这件事，注意把当时的情景、人物的动作和心情写出来。",
+      "answer": "范文要点（示例）：放学铃响时，大雨倾盆。小丽没带伞，站在走廊边望着雨发愁。我撑着伞走过去，把伞举到她头顶：“一起走吧！”风把雨吹过来，我的右肩很快湿了一片。小丽看见了，把伞往我这边推：“你往我这儿靠靠。”我们一边推让一边笑，雨点打在伞上，像在打着欢快的鼓点。",
+      "kps": [
+        "kp_chi3_picture_write3"
+      ],
+      "difficulty": 0.4,
+      "solution": "看图写话评分要点：交代环境（下雨）；动作具体（举、推、靠）；有“我”的心情和感受；可以用象声词（哗哗、咚咚、嗒嗒）让画面响起来。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0319",
+      "item_type": "fill",
+      "stem": "大熊猫爱吃的食物主要是______，它被称为“国宝”，因为它是我国______。",
+      "answer": "竹子（鲜嫩的竹叶、竹笋）；特有的珍稀动物（在地球上生活了几百万年的“活化石”，数量很少）",
+      "kps": [
+        "kp_chi3_panda"
+      ],
+      "difficulty": 0.35,
+      "solution": "介绍事物要先查资料：外形（黑白相间、黑眼圈）、食物（竹子）、数量（稀少）、为什么珍贵（活化石）、保护（四川等地的自然保护区）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0320",
+      "item_type": "solve",
+      "stem": "习作《国宝大熊猫》：查一查资料，从外形、食物、习性、为什么是国宝等几方面，向大家介绍大熊猫，试着用上“总分结构”，写两段话。",
+      "answer": "范文要点（示例）：大熊猫是我国的国宝。它长得圆圆滚滚：耳朵、眼圈、四肢是黑的，脸、身子是白的，戴着一副永不摘下的“墨镜”。它最爱吃竹子，一天要吃掉十几千克，吃累了就躺在竹林里呼呼大睡。它还是生存了几百万年的“活化石”。正因为它又可爱又稀少，全国人都爱它。",
+      "kps": [
+        "kp_chi3_panda"
+      ],
+      "difficulty": 0.4,
+      "solution": "《国宝大熊猫》评分要点：资料准确、有几方面内容（外形/食物/习性/珍贵）；按“总—分”或分类别写；用自己的话组织，不照抄资料；两段话以上，层次清楚。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0321",
+      "item_type": "solve",
+      "stem": "习作《我做了一项小实验》：选一次你做过的或看过的实验（如“鸡蛋浮起来”“纸杯烧水”“种子的力量”），写清准备的材料、实验的步骤和你的发现，还可以写写你的疑问。",
+      "answer": "范文要点（示例）：我做了“鸡蛋浮起来”的实验。材料：一个玻璃杯、清水、盐、筷子、鸡蛋。我先把鸡蛋放进清水，它一下就沉了底。接着我一勺一勺往水里加盐，边加边搅。鸡蛋像睡醒了，慢慢离开杯底，最后浮在水面上。为什么盐水能让鸡蛋浮起来？查资料才知道：盐水的密度比清水大，浮力也更大。原来科学就在厨房里。",
+      "kps": [
+        "kp_chi3_experiment_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "小实验习作评分要点：材料写全；步骤有先后（先、接着、然后、最后），动词准确；写出发现（变化前后的对比）；有疑问和解释更出彩；语句通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0322",
+      "item_type": "solve",
+      "stem": "想象习作《奇妙的想象》：从“一支有魔法的铅笔”“会飞的小树”“假如我会变”中选一个开头（或自己拟题），写一个想象故事，想象要大胆，故事要有趣。",
+      "answer": "范文要点（示例提纲）：我有一支魔法铅笔，画什么都会从纸上跳下来。我画了一只小猫陪生病的奶奶，小猫真的在奶奶脚边打呼噜；我画了一片森林，窗外的沙地长出了小树。可有一次我画了一条“不写作业也能考一百分”的路，铅笔怎么也不肯动。原来它只会帮真心愿望的人。",
+      "kps": [
+        "kp_chi3_imagine_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "《奇妙的想象》评分要点：想象大胆但“有规矩”（魔法也要讲道理）；故事有起伏（从任性到懂得）；人物/主角心理变化；语言生动。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0323",
+      "item_type": "solve",
+      "stem": "习作《身边那些有特点的人》：写一个身边特点鲜明的人（“小书虫”“热心肠”“急性子”“笑话大王”……），用一两件具体的事写出他的特点。",
+      "answer": "范文要点（示例）：我们班有个“热心肠”，叫张明。谁忘带文具，他书包里像百宝箱；发新书那天，他一个人把四十本书从一楼搬到四楼，脸涨得通红也不喊累；下雨时他守着走廊，把伞一把一把借给没带伞的同学，自己最后冒雨跑回家。说他傻吧，大家都爱围着他转。",
+      "kps": [
+        "kp_chi3_person_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "写人习作评分要点：特点先用一两句话“点”出来；选一两件事写具体（动作、语言写细）；不贪多求全；能让人物“站”起来，而不是只给贴标签。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0324",
+      "item_type": "solve",
+      "stem": "口语交际：开学第一天，请向同学讲述你的暑假生活。要求：说清楚“什么时候、去哪里、做了什么、最有趣的是什么”，说得有条理。",
+      "answer": "示例：暑假里，我们一家去了海边。我最难忘的是第一次看日出：四点多天还黑着，我们打着电筒爬上礁石；天边慢慢变红，太阳像被海水托着，一跳一跳地离开海面。我和弟弟大声喊：“太阳出来了！”这声音到现在还在我耳朵里。",
+      "kps": [
+        "kp_chi3_summer_life"
+      ],
+      "difficulty": 0.35,
+      "solution": "讲述要求“四有”：有时间、有地点、有事件、有感受。讲的时候按顺序，重点讲最有趣的一两处，其他一句带过；声音响亮，看着同学。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0325",
+      "item_type": "fill",
+      "stem": "讲述暑假生活可以按“总—分”的顺序：先用一句话总说（这个暑假我过得______），再按时间顺序讲（先讲______，接着讲______，最后讲______）。",
+      "answer": "很充实/很有趣；自己补充：去外婆家、考级/比赛、去旅行",
+      "kps": [
+        "kp_chi3_summer_life"
+      ],
+      "difficulty": 0.35,
+      "solution": "讲述有条理的办法：先总说，再按时间一件一件说，每件都用一句“什么时候—做了什么—感受”的句式。结尾还可以说一句打算。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0326",
+      "item_type": "solve",
+      "stem": "评说身边的小事：小明在图书馆里边走边大声打电话，旁边看书的同学都皱起了眉头。这件事做得对不对？说说你的看法和理由。",
+      "answer": "不对。图书馆是公共场所，大家都在安静地看书，大声打电话会影响别人。正确做法是：把手机调成静音或振动，到图书馆外面再接听；有急事也要压低声音、长话短说。我们做人不能只图自己方便，还要想着不影响别人。",
+      "kps": [
+        "kp_chi3_small_thing"
+      ],
+      "difficulty": 0.4,
+      "solution": "评说小事两步：先判断（对或不对），再说理由（对谁有影响、有什么规矩/道理），最后说该怎么做。说话要有依据，不要只说“他就是不对”。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0327",
+      "item_type": "choice",
+      "stem": "对“有人在公园的长椅上睡觉，还把垃圾丢在椅子下面”这件事，下面哪种评说最合适？",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_small_thing"
+      ],
+      "difficulty": 0.35,
+      "solution": "评说要“就事论理”：指出具体问题（垃圾）、说清道理（公园是公共的）、语气平和有说服力。大喊大叫、漠不关心、跟着学，都不是正确的态度。",
+      "source": "llm_generated",
+      "options": [
+        "A. “他太过分了，我们要打市长热线骂他！”",
+        "B. “躺椅子虽然舒服，但垃圾丢在椅子下面不对，公园是大家的，需要每个人都爱护。”",
+        "C. “没什么，反正有人打扫。”",
+        "D. “下次我也去躺着试试。”"
+      ],
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0329",
+      "item_type": "fill",
+      "stem": "请教别人要注意：提问前先______；别人说话时______，没听明白要______；得到帮助后要______。",
+      "answer": "想清楚自己哪里不懂；认真听、不打断；说“对不起，我没听懂，能再说一遍吗”；道谢",
+      "kps": [
+        "kp_chi3_consult3"
+      ],
+      "difficulty": 0.4,
+      "solution": "请教是双向的：先把问题“想”清楚，对方才好回答；听的时候有回应；不明白要敢问第二遍；别忘了说谢谢。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0330",
+      "item_type": "solve",
+      "stem": "口语交际：课前问问家人，查查字典，了解自己名字的含义和来历，讲给大家听，并说说听了以后的想法和感受。",
+      "answer": "示例：我叫“雨橙”。妈妈说，我出生在秋天的雨后，家门口的橙子刚熟；爸爸希望我像橙子一样，太阳一晒就发亮。原来我的名字里藏着一个家。听了以后，我更爱自己的名字，也想做一个心里有光的人。",
+      "kps": [
+        "kp_chi3_name_story"
+      ],
+      "difficulty": 0.4,
+      "solution": "说名字里的故事：先问（问长辈），再查（查字义），再讲（名字的意思、来历、家里的期望），最后说感受。人人都有一个“名字里的故事”，讲出来特别亲切。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0331",
+      "item_type": "fill",
+      "stem": "和人交流时，如果想了解别人的名字，可以这样问：“你的名字里有个‘（星）’字，请问它是什么含义？”；听了别人的介绍，要______。",
+      "answer": "星；表示感兴趣、感谢（如：这个名字真好听，谢谢你告诉我）",
+      "kps": [
+        "kp_chi3_name_story"
+      ],
+      "difficulty": 0.4,
+      "solution": "口语交际中，向别人请教名字的故事要热情、好奇；听完要回应、称赞。你的回应决定对方愿不愿意继续讲。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0332",
+      "item_type": "solve",
+      "stem": "口语交际：班级讨论“春游去哪儿玩”。请你说一个想去的地方，说出理由（好玩在哪里、安全吗、方便吗），并回应一个同学的不同意见。",
+      "answer": "示例：我想去植物园。春天百花都开了，可以一边看一边认识植物，比走着玩更有收获。小明说动物园更好，我觉得有道理；可以问问大家更想看植物还是动物，或者这次去植物园，下次再商量去动物园。",
+      "kps": [
+        "kp_chi3_spring_trip"
+      ],
+      "difficulty": 0.4,
+      "solution": "讨论发言要点：说清想法+理由；听别人意见时用“我也觉得……不过……”回应；最后大家一起商量决定，少数服从多数也要尊重少数。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0333",
+      "item_type": "fill",
+      "stem": "讨论“春游去哪儿”，说出地点还要说出理由，比如“我推荐______，因为______（能看什么/能做什么），而且______（安全或远近）”。",
+      "answer": "示例：我推荐湿地公园，因为能观鸟、认识水生植物，而且离家近、半天就能回来",
+      "kps": [
+        "kp_chi3_spring_trip"
+      ],
+      "difficulty": 0.35,
+      "solution": "提建议的句式：“我推荐+地点，因为+理由，而且+便利”。理由越具体（看得见、摸得着），越能说服人。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0334",
+      "item_type": "solve",
+      "stem": "口语交际：班里讨论“班干部要不要轮流当”。说出你的看法和理由，也说说这个办法可能有什么问题、怎么解决。",
+      "answer": "示例：我赞成轮流当。好处是人人都能锻炼：管好自己的同学才知道管理不容易；内向的同学也能得到上台说话的机会。问题是刚上任不熟会手忙脚乱。可以让上一任“老班干部”带一周，再正式接手。",
+      "kps": [
+        "kp_chi3_class_cadre"
+      ],
+      "difficulty": 0.4,
+      "solution": "讨论有争议的话题：先表态（赞成/反对），再列两条理由（好处或问题），最好提一个改进办法。说话有条理，别人才听得进。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0335",
+      "item_type": "fill",
+      "stem": "说看法先表态，再列理由。句式：“我（赞成/反对）______，理由是______；如果担心______，我们可以______。”",
+      "answer": "示例：我赞成轮流制，理由是锻炼机会人人平等；如果担心不熟悉工作，可以让老班干部传帮带",
+      "kps": [
+        "kp_chi3_class_cadre"
+      ],
+      "difficulty": 0.35,
+      "solution": "“表态—理由—办法”三步，是讨论复杂问题时的发言套路。理由要具体，办法要能操作。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0336",
+      "item_type": "choice",
+      "stem": "劝同学不要在走廊追逐打闹，下面哪种说法最合适？",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_persuade"
+      ],
+      "difficulty": 0.4,
+      "solution": "劝说三要素：语气委婉（用“好吗、我们一起”）；讲清道理（为什么不能跑——滑倒、撞人）；给对方台阶（还有更好的办法）。命令和嘲笑只会让人更不服。",
+      "source": "llm_generated",
+      "options": [
+        "A. “你再跑，我就告老师！”",
+        "B. “走廊里跑太快容易摔倒受伤，我们慢慢走，好吗？”",
+        "C. “你太吵了，讨厌！”",
+        "D. 不理他，让他自己摔一次。"
+      ],
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0337",
+      "item_type": "solve",
+      "stem": "学会劝说：爷爷爱抽烟，家人都劝不动。请你劝劝爷爷（注意语气委婉，说清吸烟的危害，还要给爷爷想个替代办法）。",
+      "answer": "示例：爷爷，您最近总咳嗽，我心疼您。烟里的尼古丁会让肺变黑，舌头也没味道。您要是嘴里闲，我给您买了无糖薄荷糖和茶叶，想抽烟就含一颗、喝一杯。我们每天吃完饭去公园走两圈，慢慢地您就不想了，好吗？",
+      "kps": [
+        "kp_chi3_persuade"
+      ],
+      "difficulty": 0.4,
+      "solution": "劝说要点：先关心（身体健康），再说危害（具体一点），再给替代办法（不让他空下来难受），最后用商量的语气收尾。会劝说的孩子，是把“道理”裹在“关心”里说。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0338",
+      "item_type": "solve",
+      "stem": "趣味故事会：准备一个有趣的童话、寓言或民间故事，讲给大家听。要求：故事完整，情节生动，注意语气、表情和动作，最后说说你对这个故事的想法。",
+      "answer": "示例（讲《神笔马良》）：马良爱画画，穷得买不起笔，就用树枝练……贪官逼他画金山，他画了大海和金山，又画狂风巨浪把贪官卷走了。故事说明：有本事还要有智慧，善良和勇敢比什么都值钱。（讲述时，贪官出现压低声音，马良画金山时加快语速，掀起高潮时放慢，最后一句意味深长。）",
+      "kps": [
+        "kp_chi3_story_tell"
+      ],
+      "difficulty": 0.4,
+      "solution": "讲故事要领：先想好情节顺序；重要处放慢、加重音；人物对话变一变声音；结尾可以停一停，让大家回味；最后加一句自己的感受。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0339",
+      "item_type": "fill",
+      "stem": "讲故事的时候，为了吸引同学，可以在______处放慢速度，在______处变化语气，还可以加上______。",
+      "answer": "关键（高潮）；人物对话；动作表情",
+      "kps": [
+        "kp_chi3_story_tell"
+      ],
+      "difficulty": 0.4,
+      "solution": "趣味故事会的“趣味”来自：情节起伏+讲述技巧。平铺直叙最乏味；该快的地方快，该停的地方停，人物有不同声音。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0340",
+      "item_type": "fill",
+      "stem": "综合性学习“传统节日”：填表——春节（时间：______；习俗：______）；中秋节（时间：______；习俗：______）。",
+      "answer": "春节：农历正月初一；贴春联、放鞭炮、吃饺子（团圆饭）。中秋节：农历八月十五；赏月、吃月饼、家人团聚。",
+      "kps": [
+        "kp_chi3_festival_study"
+      ],
+      "difficulty": 0.35,
+      "solution": "传统节日时间多在农历：春节正月初一、元宵正月十五、端午五月初五、七夕七月初七、中秋八月十五、重阳九月初九。记住“时间+习俗+故事”。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0341",
+      "item_type": "solve",
+      "stem": "综合性学习：小组合作办一份“传统节日”小报，选出你要写的两个节日，写清名称、时间、习俗，再说说你想向别组同学介绍的一个有趣故事。",
+      "answer": "示例：我写端午节和中秋节。端午：农历五月初五，吃粽子、赛龙舟、挂艾草；讲屈原投江、人们投粽子的故事。中秋：农历八月十五，赏月、吃月饼；讲“嫦娥奔月”的故事。我想介绍屈原的故事——一个爱国诗人的节日，最值得讲。",
+      "kps": [
+        "kp_chi3_festival_study"
+      ],
+      "difficulty": 0.4,
+      "solution": "综合性学习要点：有分工（谁查时间、谁查习俗、谁画图）；成果是“内容+形式”；讲的时候有重点、有自己的选择理由，不是照单全收。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0342",
+      "item_type": "solve",
+      "stem": "小组合作：班里要办“毕业纪念册”，请说说你们小组怎么分工（谁负责什么）、用什么形式展示成果、遇到意见不一致怎么办。",
+      "answer": "示例：我们四人分工：两人采访同学写留言，一人收集照片，一人排版美工，我负责写编者的话。成果用小报加一页“我们的约定”展示。有分歧就投票，少数服从多数；或者各出一条方案，挑“最全班都能做”的那条。",
+      "kps": [
+        "kp_chi3_group_work"
+      ],
+      "difficulty": 0.4,
+      "solution": "小组合作要点：分工到人（人人有活干）；明确成果和展示方式；定好有分歧时的规则。合作不是一个人做，也不是一个人说了算。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0343",
+      "item_type": "fill",
+      "stem": "小组讨论时，下面哪种做法有利于合作？A．一个人说完，别人只管听；B.既要说出自己的意见，也要______别人的意见，意见不同时______。",
+      "answer": "B；认真听并回应；商量着定（可以说“我同意……，不过……”）",
+      "kps": [
+        "kp_chi3_group_work"
+      ],
+      "difficulty": 0.4,
+      "solution": "合作的两个关键词：倾听（听完再说）+商量（不一言堂）。你一言我一语，火花才多。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0344",
+      "item_type": "choice",
+      "stem": "第二学段（三、四年级）课外阅读总量不少于多少？",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_read_amount"
+      ],
+      "difficulty": 0.3,
+      "solution": "课标要求：第二学段课外阅读总量不少于 40 万字。养成每天读半小时、不动笔墨不读书的习惯；读整本书，做摘记、写感受。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5 万字",
+        "B. 40 万字",
+        "C. 100 万字",
+        "D. 1 万字"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0345",
+      "item_type": "fill",
+      "stem": "养成阅读习惯的做法：每天______；阅读时______（摘好词好句/写批注）；读完一本书后______。",
+      "answer": "安排固定的阅读时间；动笔墨（圈画、摘抄、写想法）；和同学交流、写几句读后感",
+      "kps": [
+        "kp_chi3_read_amount"
+      ],
+      "difficulty": 0.35,
+      "solution": "习惯的三个动作：定时（每天读）、留痕（圈画批注）、输出（说、写、交流）。有了这三步，阅读量自然上得去。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0346",
+      "item_type": "fill",
+      "stem": "读《安徒生童话》。《卖火柴的小女孩》中，小女孩几次擦燃火柴，看到了美好的幻象？______。",
+      "answer": "五次",
+      "kps": [
+        "kp_chi3_fairy_books3"
+      ],
+      "difficulty": 0.35,
+      "solution": "五次擦燃火柴分别看到：暖和的烤炉、喷香的烤鹅、美丽的圣诞树、慈祥的奶奶，最后跟着奶奶飞到光明的地方。一次次擦燃又一次次熄灭，写的是小女孩渴望温暖和幸福。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0347",
+      "item_type": "solve",
+      "stem": "整本书阅读《安徒生童话》：读完《丑小鸭》，说说丑小鸭经历了什么，你从它身上学到什么。",
+      "answer": "丑小鸭因为长得丑被鸭群和鸡群欺负、驱赶，只好逃进灌木丛，历尽冬天的寒冷；春天来了，它发现自己变成了一只美丽的白天鹅。我学到：不要因为别人的嘲笑看轻自己；忍受过困难、坚持不低头，终会绽放自己的美丽。",
+      "kps": [
+        "kp_chi3_fairy_books3"
+      ],
+      "difficulty": 0.4,
+      "solution": "整本书阅读要“读人物”：主人公经历了什么（被排挤—流浪—变美丽），它的选择（不怨恨、不放弃），再联系自己说体会。读书卡可以做“人物—事件—品质”三栏。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0349",
+      "item_type": "solve",
+      "stem": "整本书阅读寓言故事：读《伊索寓言》中《农夫与蛇》，说说故事内容，再说说它的寓意，并举一个生活中相似的例子。",
+      "answer": "故事：农夫把冻僵的蛇揣在怀里救活，蛇醒来却咬了农夫。寓意：恶人本性难改，对恶人不能滥施仁慈。例子：轻信陌生人的花言巧语，把家里的情况告诉对方，结果吃亏。",
+      "kps": [
+        "kp_chi3_fable_books3"
+      ],
+      "difficulty": 0.4,
+      "solution": "寓言阅读三步：复述故事—说出寓意—联系生活。能联系生活举例，说明你真的读懂了。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0350",
+      "item_type": "fill",
+      "stem": "加标点：老师走进教室说（　　）“上课了，请大家把书翻到第十二页（　　）”。依次填入______、______。",
+      "answer": "： ；“ ”（前引号和后引号）",
+      "kps": [
+        "kp_chi3_colon_quote"
+      ],
+      "difficulty": 0.35,
+      "solution": "“说”字后面用冒号加前引号；话说完加上后引号。直接引用人物的话，标点放在引号里面。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0351",
+      "item_type": "fill",
+      "stem": "下面句子标点用错了，请改正：“小明大声喊”：“着火了，快跑！”应改为：______。",
+      "answer": "小明大声喊：“着火了，快跑！”",
+      "kps": [
+        "kp_chi3_colon_quote"
+      ],
+      "difficulty": 0.4,
+      "solution": "提示语在后时，提示语后面用句号；提示语在前时，后面才用冒号。本句的引号内已经成了句子的一部分，冒号应随“喊”在前时使用。",
+      "source": "llm_generated",
+      "form": "correction",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0352",
+      "item_type": "fill",
+      "stem": "默写《山行》中写红叶的名句（后两句）：“______，______。”",
+      "answer": "停车坐爱枫林晚，霜叶红于二月花。",
+      "kps": [
+        "kp_chi3_dictation"
+      ],
+      "difficulty": 0.35,
+      "solution": "《山行》（杜牧）：远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。经霜的枫叶比二月春花还红艳。“坐”是“因为”。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0353",
+      "item_type": "fill",
+      "stem": "默写王维《九月九日忆山东兄弟》中表达节日思亲的名句：“______，______。”",
+      "answer": "独在异乡为异客，每逢佳节倍思亲。",
+      "kps": [
+        "kp_chi3_dictation"
+      ],
+      "difficulty": 0.35,
+      "solution": "这两句点出“身在异乡、佳节思亲”，是全诗的名句，千古传诵。默写注意“异”“逢”“倍”的写法。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0354",
+      "item_type": "fill",
+      "stem": "默写苏轼《饮湖上初晴后雨》中赞美西湖的名句：“______，______。”",
+      "answer": "欲把西湖比西子，淡妆浓抹总相宜。",
+      "kps": [
+        "kp_chi3_dictation"
+      ],
+      "difficulty": 0.4,
+      "solution": "《饮湖上初晴后雨》（苏轼）：水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。诗人把西湖比作美人西施，无论晴雨都美。默写注意“潋滟”“空蒙”“西子”“宜”等字。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0355",
+      "item_type": "solve",
+      "stem": "连续观察：把三颗黄豆泡在水里，连续四天观察并记录：第一天______；第三天______；第五天______。再写一两句你的发现。",
+      "answer": "示例：第一天：豆子胀大，皮变得皱皱的。第三天：钻出白白的小芽，豆壳裂开。第五天：抽出嫩黄的叶子，芽茎弯弯向下找水。发现：植物生长需要水和空气，每天的变化不大，但四天连起来看就很惊人。",
+      "kps": [
+        "kp_chi3_continuous_observe"
+      ],
+      "difficulty": 0.4,
+      "solution": "连续观察的要领：每天固定时间看；用尺子量、用文字画；记录要用“顺序词＋看到的变化”；最后把几天的记录连起来，写成观察小作文。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0356",
+      "item_type": "fill",
+      "stem": "连续观察月亮，记录月相变化：从______（月相）到______，再变回______，就知道月亮圆缺是在______变化的。",
+      "answer": "月牙；半个月亮（半月）；满月；有规律地",
+      "kps": [
+        "kp_chi3_continuous_observe"
+      ],
+      "difficulty": 0.4,
+      "solution": "连续观察要“定点、定时、定方法”：同一地点、同一时间、用同一张记录表。观察得多了，规律就浮出来了（月相约一个月一个循环）。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0357",
+      "item_type": "choice",
+      "stem": "读《不懂就要问》（部编版三年级课文）：孙中山小时候在私塾读书，遇到不懂的字句大胆向先生请教。这个故事最值得我们学习的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_char_quality"
+      ],
+      "difficulty": 0.35,
+      "solution": "读书不能“糊里糊涂地背”，遇到不懂的要问。勤学好问、敢质疑，是学好一切功课的起点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 勤学好问，遇事敢问敢想",
+        "B. 背得多就行",
+        "C. 每天把书抄一遍",
+        "D. 听先生的话，从不提问"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0358",
+      "item_type": "solve",
+      "stem": "读故事片断：下雨天，一位清洁工爷爷把积水里的碎玻璃一块块捡起来，怕扎破行人的鞋。他的手被划出了一道小口。说说你从中感受到人物什么样的品质，并说说自己会怎么做。",
+      "answer": "感受到他为别人着想、认真负责、不怕脏累的品质。我以后看到地上有碎玻璃、香蕉皮，也会主动清扫或提醒绕行；不乱扔垃圾，给别人减少麻烦。",
+      "kps": [
+        "kp_chi3_char_quality"
+      ],
+      "difficulty": 0.4,
+      "solution": "感受人物品质：先看他做了什么（捡玻璃），再想为什么（怕扎人），最后说品质（为别人着想）。联系自己说“我会怎么做”，把感动变成行动。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0359",
+      "item_type": "solve",
+      "stem": "修改自己的习作：你的作文里写着“春天来了，学校很美，我很开心。”请按“读一读、改一改”的方法，把这句话修改得具体一些，并说说你改了什么。",
+      "answer": "示例：改为“春天来了，校园的玉兰举起一盏盏白色的灯，紫藤架上垂下串串紫花。走在下面，我开心得想唱歌。”修改内容：把笼统的“很美”换成具体的景物（玉兰、紫藤），把“很开心”换成看得出来的动作（想唱歌）。",
+      "kps": [
+        "kp_chi3_write_feedback"
+      ],
+      "difficulty": 0.4,
+      "solution": "修改习作的方法：先大声读，读不顺就改；把概括的话换成具体的样子；“很高兴”换成神态、动作；错别字、标点、用词各查一遍。好文章是改出来的。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0360",
+      "item_type": "solve",
+      "stem": "阅读并复述民间故事（据民间传说改写的阅读材料）：从前，有个穷苦的青年，天天到田里干活。一天，他在田边水沟里捡到一只大田螺，便带回家养在水缸里。从此，每天他收工回家，锅里都有热饭热菜。他悄悄躲起来看，只见田螺壳一开，走出一位姑娘，替他做饭洗衣。青年走上前问明缘由，和姑娘成了亲。两个人勤快种地，日子越过越好。读了这个故事，请用自己的话按“捡到田螺—有人做饭—发现田螺姑娘—成亲过日子”的顺序复述一遍。",
+      "answer": "复述要点：青年在田边捡到一只大田螺带回家养；每天回家都有热饭热菜；躲起来看，发现是田螺变成的姑娘在做饭洗衣；青年问明缘由，两人成亲，勤快劳动，日子越过越好。故事赞美勤劳善良，也说明好日子靠双手去换。",
+      "kps": [
+        "kp_chi3_folk_tale"
+      ],
+      "difficulty": 0.4,
+      "solution": "民间故事复述法：①理清人物和情节（谁—遇到什么—怎么做—结果）；②按顺序用自己的话说，不背原文；③详略得当，重点部分详细说；④说完全文后点出故事想告诉人的道理。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0361",
+      "item_type": "choice",
+      "stem": "民间故事最常见的写法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi3_folk_tale"
+      ],
+      "difficulty": 0.4,
+      "solution": "民间故事口耳相传，常有神奇的情节（动物变人、宝物显灵），人物善恶分明，结尾大多是好人得好报、坏人受惩罚。",
+      "source": "llm_generated",
+      "options": [
+        "A. 情节神奇，善恶分明，好人得福、坏人受罚",
+        "B. 只写生活中的真实小事",
+        "C. 全是著名诗人的真实经历",
+        "D. 只写动物的一天"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0362",
+      "item_type": "fill",
+      "stem": "修改习作从几方面入手：改______、改______、改______、把内容改______。",
+      "answer": "错别字；标点；不通顺的句子；更具体",
+      "kps": [
+        "kp_chi3_write_feedback"
+      ],
+      "difficulty": 0.35,
+      "solution": "修改四步：字（错别字）、点（标点）、句（通顺）、内容（具体生动）。可以自己读着改，也可以两人互改：提一条意见、改一处地方。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0363",
+      "item_type": "solve",
+      "stem": "习作片段练习：用上“先、接着、然后、最后”和准确的动词，写一写“风筝起飞”的片段（风来了怎么跑、怎么放线、风筝怎么离开地面）。",
+      "answer": "示例：风来了，我托着风筝逆着风跑。先放了一段线，接着左手把风筝向上一送，右手快速放线，风筝摇摇晃晃地离开了地面。然后它又不稳，我收收放放，最后它终于稳稳地飞在了头顶。",
+      "kps": [
+        "kp_chi3_kite"
+      ],
+      "difficulty": 0.4,
+      "solution": "片段练习要点：动词准确（托、送、放、收、飞）；顺序词不遗漏；写出“起飞”由不稳到稳的过程。写清楚一件事的一个片段，比写“一整篇”更练笔。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0364",
+      "item_type": "fill",
+      "stem": "习作《我有一个想法》的写法：先写______（生活中看到的现象），再写______（自己的改进建议），最后写______（这样有什么好处）。",
+      "answer": "现象；想法；理由（好处）",
+      "kps": [
+        "kp_chi3_idea_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "这一类习作重在“发现”：从身边习以为常的事里发现问题，再动脑筋想改进办法。想法不在大，小切口（一张纸、一扇门、一支笔）最能写出人。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0365",
+      "item_type": "fill",
+      "stem": "欣赏写法：“我最爱校园后面的小竹林。竹林一年四季都是绿的：春天，竹笋一夜间钻出地面；夏天，阳光被筛成碎片洒在地上；秋天，竹叶依旧不动声色地绿着；冬天，雪压在枝头，竹子弯弯腰，从没折断。有人嫌它不如牡丹好看，可我觉得它安静又有骨气。”这段话是按______顺序写的，抓住了竹子______的特点，表达了作者______的感情。",
+      "answer": "时间（春夏秋冬）；四季常青、柔韧有骨气（雪压不弯）；喜爱和敬佩",
+      "kps": [
+        "kp_chi3_scenery_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "写景要先想“按什么顺序”（空间或时间），再抓景物最突出的特点，最后把感情藏在字里行间。这段用四季串起来，突出“绿”和“有骨气”，感情自然流露。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0366",
+      "item_type": "fill",
+      "stem": "编想象故事时，大胆和合理要两头兼顾。读句子：“面包车长出了翅膀，带着面包在送早餐。”它的大胆之处是______；但“面包车送早餐”这件事本身是______（合理/不合理）的，因为______。",
+      "answer": "面包车长翅膀飞；合理；送面包是日常真事，只是换了会飞的方式",
+      "kps": [
+        "kp_chi3_imagine_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "想象故事的窍门：有一两处“不平常”（会飞、会说话），其余都要“合逻辑”（人物的心情、事情的原因、行为的后果）。想象越合理，故事越动人。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0367",
+      "item_type": "fill",
+      "stem": "写小实验的“记录单”：实验名称______；材料______；步骤（用先、接着、然后、最后串起来）______；我的发现______；我的疑问______。",
+      "answer": "示例：鸡蛋浮起来；鸡蛋、玻璃杯、清水、盐、筷子；先放蛋入清水（沉底），接着加盐搅拌，然后继续加，最后蛋浮起；盐水浮力更大；换成糖水行不行？",
+      "kps": [
+        "kp_chi3_experiment_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "实验习作的顺序词和准确动词是“骨架”：材料写全，步骤一步步不丢，发现写前后对比。把做实验时的紧张、惊讶写出来，作文就会有现场感。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0368",
+      "item_type": "choice",
+      "stem": "下面的观察，最值得写进作文的是：",
+      "answer": "B",
+      "kps": [
+        "kp_chi3_observe_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "“看”和“观察”不同：观察要调动眼睛、鼻子，还要看变化、比早晚。B 项写了颜色、数量、气味、开放时间，是观察出来的东西；其余三项只是泛泛而谈。",
+      "source": "llm_generated",
+      "options": [
+        "A. “那朵花开着。”",
+        "B. “牵牛花是紫色的，有五片花瓣，味道淡淡的，早上开、中午就合上了。”",
+        "C. “牵牛花很常见。”",
+        "D. “牵牛花真好看。”"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_prim_0369",
+      "item_type": "fill",
+      "stem": "写人要“特点＋事例”。下面这段话写得好的原因是：“我的妹妹是个‘小问号’。散步时她指着小鸟问鸟为什么不回家吃饭；洗澡时她盯着水珠问水为什么舍得流走；睡前还抱着故事书问月亮的另一边有没有人住。”______。",
+      "answer": "先用一句话点出妹妹“小问号”的特点，再用三件小事具体写，有具体问题和场景，人物就立在纸上了。",
+      "kps": [
+        "kp_chi3_person_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "写人三步：先点特点（一句话）—再用两三件事写（有动作、有语言、有细节）—最后写出自己的感受。事例不求多，两三件写细就够。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

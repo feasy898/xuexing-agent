@@ -1,0 +1,1732 @@
+{
+  "items": [
+    {
+      "id": "pol_prim_0309",
+      "item_type": "choice",
+      "stem": "小学生也是中华人民共和国公民。较强的公民意识体现在（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_citizen_awareness"
+      ],
+      "difficulty": 0.35,
+      "solution": "公民意识意味着知道自己是国家的主人之一，在家庭、学校、社会中遵守规则、承担责任，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只关心自己的分数，其他一概不管",
+        "B. 乱扔垃圾反正有环卫工打扫",
+        "C. 遵守公共规则，主动承担力所能及的社会责任",
+        "D. 在公共场所大声喧哗图自在"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0310",
+      "item_type": "solve",
+      "stem": "请写出两件体现“公民责任”的小事，分别说说它们发生在哪个场所（家庭、学校或社会）。",
+      "answer": "示例：①家庭——主动分担家务，孝敬长辈，为家庭和睦出力；②学校——遵守校规、认真值日，为班级荣誉努力；③社会——遵守交通规则、垃圾分类投放，乘车让座，参加社区公益活动。（两件事与场所对应、体现责任即可）",
+      "kps": [
+        "kp_pol6_citizen_awareness"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查公民责任的日常践行，事例与场所对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0311",
+      "item_type": "choice",
+      "stem": "下列属于公民基本义务的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_rights_duties"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国宪法规定公民的基本义务包括遵守宪法和法律、维护国家统一和民族团结、维护国家安全荣誉和利益、依法纳税、受教育的义务、劳动的义务等，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 随意在网络上发布他人隐私",
+        "B. 只享受保护不受任何约束",
+        "C. 想上学就上学，不想上就不上",
+        "D. 维护国家统一和全国各民族团结，遵守宪法和法律"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0312",
+      "item_type": "solve",
+      "stem": "请各写出两项公民的基本权利和基本义务。",
+      "answer": "权利示例：平等权、选举权和被选举权（年满 18 周岁符合条件者）、政治自由和监督权、人身自由、人格尊严不受侵犯、受教育权、劳动权等。义务示例：遵守宪法和法律、维护国家统一和民族团结、维护国家安全荣誉和利益、受教育的义务、劳动的义务、依法纳税、父母抚养教育未成年子女与成年子女赡养扶助父母等。（各两项且归类正确即可）",
+      "kps": [
+        "kp_pol6_rights_duties"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查基本权利与义务的辨识，归类正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0313",
+      "item_type": "choice",
+      "stem": "“没有无义务的权利，也没有无权利的义务。”这句话说明（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_right_duty_unit"
+      ],
+      "difficulty": 0.45,
+      "solution": "公民的权利与义务相互依存、不可分割、相统一：每个人既是权利的享有者，也是义务的承担者，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 权利和义务相互依存、相统一",
+        "B. 先享受权利再谈义务",
+        "C. 义务比权利重要得多",
+        "D. 权利和义务互不相干"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0314",
+      "item_type": "solve",
+      "stem": "结合“受教育”这件事，说说公民的权利与义务是怎样统一的。",
+      "answer": "示例：受教育既是公民的基本权利，也是公民的基本义务。作为权利，我们可以在学校学习科学文化知识，任何人不得非法剥夺我们受教育的机会（如家长不让适龄儿童上学是违法的）；作为义务，我们必须按时入学、完成规定学业，努力学习、不辍学。可见权利与义务相互依存、不可分割。（能从两方面说明统一关系即可）",
+      "kps": [
+        "kp_pol6_right_duty_unit"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查权利义务相统一的理解，能结合实例两面分析即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0315",
+      "item_type": "choice",
+      "stem": "我国的国家宪法日是每年的（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_constitution_day"
+      ],
+      "difficulty": 0.5,
+      "solution": "我国现行宪法是 1982 年 12 月 4 日公布施行的，国家将 12 月 4 日设立为国家宪法日；国家工作人员就职时要进行宪法宣誓。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6 月 1 日",
+        "B. 12 月 4 日",
+        "C. 10 月 1 日",
+        "D. 9 月 10 日"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0316",
+      "item_type": "solve",
+      "stem": "请写出：现行宪法是哪一年颁布的？设立国家宪法日和实行宪法宣誓制度有什么意义？（各答一点）",
+      "answer": "现行宪法于 1982 年颁布（12 月 4 日公布施行）。意义示例：有利于增强全社会的宪法意识，弘扬宪法精神，树立宪法权威，推动全社会尊法学法守法用法；宪法宣誓有利于激励国家工作人员忠于宪法、依法履职。（年份正确，意义言之有理即可）",
+      "kps": [
+        "kp_pol6_constitution_day"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查宪法日常识与宪法权威意识，年份正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0317",
+      "item_type": "choice",
+      "stem": "建设社会主义法治国家，要求每个公民（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_law_based"
+      ],
+      "difficulty": 0.35,
+      "solution": "依法治国是党领导人民治理国家的基本方略，建设法治国家需要每个公民自觉尊法学法守法用法，依法办事、依法维权，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 法律是管别人的，与己无关",
+        "B. 遇事靠关系不靠法",
+        "C. 自觉学法、守法、用法",
+        "D. 不满处理结果就聚众闹事"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0318",
+      "item_type": "solve",
+      "stem": "“法律是成文的道德，道德是内心的法律。”请写出两条我们尊法学法守法用法的具体做法。",
+      "answer": "①学法：认真学习宪法和未成年人保护法等法律常识，参加法治宣传活动（如宪法晨读）；②守法：自觉遵守法律法规和公共规则，如遵守交通规则、文明上网、不欺凌同学；③用法：自身权益受侵害时不忍气吞声也不以暴制暴，及时告诉老师家长，依法维权（投诉、报警、起诉）。（答出两条即可）",
+      "kps": [
+        "kp_pol6_law_based"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查法治观念与践行，做法具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0319",
+      "item_type": "choice",
+      "stem": "中华人民共和国的国家元首是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_state_symbol"
+      ],
+      "difficulty": 0.4,
+      "solution": "中华人民共和国主席是我国的国家元首，对内对外代表中华人民共和国；国旗、国徽、国歌、首都北京都是国家象征，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 国务院总理",
+        "B. 全国人大常委会委员长",
+        "C. 国家监察委员会主任",
+        "D. 中华人民共和国主席"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0320",
+      "item_type": "solve",
+      "stem": "请写出我国的国旗、国歌、首都各是什么，并写一条爱护国家象征的要求。",
+      "answer": "国旗：五星红旗；国歌：《义勇军进行曲》；首都：北京。要求示例：升国旗、奏国歌时肃立致敬（行注目礼或队礼），不嬉笑打闹；不污损、不倒挂国旗，不歪曲贬损国歌。（三项正确，要求合理即可）",
+      "kps": [
+        "kp_pol6_state_symbol"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查国家象征与国家元首常识，内容准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0321",
+      "item_type": "choice",
+      "stem": "我国的最高国家权力机关是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_state_power"
+      ],
+      "difficulty": 0.45,
+      "solution": "全国人民代表大会是最高国家权力机关，代表人民统一行使国家权力，其他国家机关都由它产生、对它负责、受它监督，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全国人民代表大会",
+        "B. 国务院",
+        "C. 最高人民法院",
+        "D. 中国人民银行"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0322",
+      "item_type": "solve",
+      "stem": "为什么说全国人民代表大会是“最高国家权力机关”？请写出两点理由。",
+      "answer": "①地位最高：全国人民代表大会代表人民统一行使国家权力，在我国的国家机构中居于最高地位；②权责重大：其他中央国家机关（国务院、国家监察委员会、最高人民法院、最高人民检察院等）都由它产生、对它负责、受它监督；它行使修改宪法、监督宪法实施、制定法律、决定国家重大事项、选举决定国家机构领导人员等职权。（答出两点即可）",
+      "kps": [
+        "kp_pol6_state_power"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查国家权力机关的地位，理由准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0323",
+      "item_type": "choice",
+      "stem": "公民参与国家事务和公共事务管理的途径有（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_democracy_citizen"
+      ],
+      "difficulty": 0.5,
+      "solution": "我国发展全过程人民民主，公民可通过民主选举、民主协商、民主决策、民主管理、民主监督等途径依法参与国家与公共事务管理，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只有投票选举一种",
+        "B. 民主选举、民主协商、民主决策、民主管理、民主监督",
+        "C. 请客送礼拉关系",
+        "D. 在网上随意谩骂发泄"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0324",
+      "item_type": "solve",
+      "stem": "社区就“小区加装健身器材”征求意见。请你提出一条民主参与的建议，并说说公民有序参与要注意什么。",
+      "answer": "建议示例：在业主（居民）议事会上发言，建议器材选址避开一楼住户窗前、加装适合老人的器材，并附上居民联名意见；或通过意见箱、社区微信群提出方案。注意：依法有序参与，通过正当渠道表达，摆事实、讲道理，尊重多数人的意见，不扰乱公共秩序。（建议具体，注意事项合理即可）",
+      "kps": [
+        "kp_pol6_democracy_citizen"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查民主参与意识与有序参与要求，内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0325",
+      "item_type": "choice",
+      "stem": "按照法律规定，享有选举权和被选举权的公民必须是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_vote"
+      ],
+      "difficulty": 0.35,
+      "solution": "宪法规定，年满 18 周岁的中国公民，不分民族、种族、性别、职业、家庭出身等，都有选举权和被选举权（依法被剥夺政治权利的人除外），A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 年满 16 周岁的中国公民",
+        "B. 所有在中国居住的人",
+        "C. 年满 18 周岁的中国公民（依法被剥夺政治权利的人除外）",
+        "D. 只有国家干部"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0326",
+      "item_type": "solve",
+      "stem": "村委会（居委会）换届选举时，年满 18 周岁的村民认真投下一票。请说说选举权和被选举权为什么重要，以及行使这项权利应注意什么。",
+      "answer": "重要性：选举权和被选举权是公民基本的政治权利，是人民当家作主的重要体现，选出值得信任的代表（村干部）关系大家的切身利益。注意：珍惜民主权利，依法参加选举，出于公心投出庄严一票；不接受贿选，不弄虚作假，尊重选举结果。（两层内容合理即可）",
+      "kps": [
+        "kp_pol6_vote"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查选举权利的认识，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0327",
+      "item_type": "choice",
+      "stem": "“法律面前人人平等”是指（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_law_authority"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国法律面前人人平等：法律对全体社会成员具有普遍约束力，任何人不论职位高低、贫富贵贱，都不得凌驾于法律之上，违法都要依法承担相应责任，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 官员违法可以从轻处理",
+        "B. 法律只约束普通百姓",
+        "C. 有钱人可以花钱免罚",
+        "D. 法律对全体社会成员具有普遍约束力，任何人违法都要承担法律责任"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0328",
+      "item_type": "solve",
+      "stem": "个别“官二代”违法后想让家人“摆平”。请依据“法律至上、法律面前人人平等”的要求，写一段话劝诫他。",
+      "answer": "示例：“法律是最刚性的社会规则，任何人都不凌驾于法律之上。我国坚持法律面前人人平等，不论家庭背景如何，只要违法都要承担相应的法律责任，谁也不能‘摆平’、谁也保不了你。正确的做法是主动承认错误、接受处罚、吸取教训，做一个尊法守法的人。”（说理包含普遍约束力、违法必担责即可）",
+      "kps": [
+        "kp_pol6_law_authority"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查法律至上的观念，说理准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0329",
+      "item_type": "choice",
+      "stem": "班级民主管理的正确做法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_class_selfgov"
+      ],
+      "difficulty": 0.45,
+      "solution": "班级是大家的集体，班级公约应由全班同学共同讨论制定，人人遵守、人人有责，共同管理好班级事务，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 班级公约由全班同学讨论制定，人人遵守、人人尽责",
+        "B. 班规由班主任一个人说了算",
+        "C. 班干部只管别人不管自己",
+        "D. 班里的事与普通同学无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0330",
+      "item_type": "solve",
+      "stem": "班里要制定新的《班级公约》。请写出公约制定的两步程序和一条你建议写入的公约内容。",
+      "answer": "程序：①全班同学围绕学习、纪律、卫生等方面提出建议，班委会汇总形成草案；②班会逐条讨论、修改并表决通过，公示后执行（可定期评议修订）。公约内容示例：值日按时到位，认真完成任务；课间不追逐打闹；同学之间互相尊重、不讲脏话。（程序合理体现民主，内容具体即可）",
+      "kps": [
+        "kp_pol6_class_selfgov"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查班级民主管理的程序意识，程序与内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0331",
+      "item_type": "choice",
+      "stem": "班干部的正确“打开方式”是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_class_cadre"
+      ],
+      "difficulty": 0.5,
+      "solution": "班干部应通过民主选举产生，是同学的服务者和老师的小助手，要认真履职、接受监督，不利用职权谋私利，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 利用职务之便给自己和好朋友谋便利",
+        "B. 由民主选举产生，认真履职，接受同学监督",
+        "C. 当了班干部就高人一等",
+        "D. 只对班主任负责，不听同学意见"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0332",
+      "item_type": "solve",
+      "stem": "班级要民主选举新一届班委。请写出两条公平选举的要求和一条当选班委后的履职承诺。",
+      "answer": "选举要求：①候选人自愿报名或民主推荐，发表竞选演讲，介绍自己的打算；②无记名投票、公开唱票计票，得票多者当选，人人一票、机会均等。履职承诺示例：“我会认真为班级和同学服务，带头遵守班规，虚心接受大家的监督和批评，决不利用班干部身份谋私利。”（两条要求体现公平公正，承诺具体即可）",
+      "kps": [
+        "kp_pol6_class_cadre"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查民主选举班干部的规则与责任意识，内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0333",
+      "item_type": "choice",
+      "stem": "集体利益与个人利益的关系是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_collective_interest"
+      ],
+      "difficulty": 0.35,
+      "solution": "在集体中，当个人利益与集体利益发生冲突时应以集体利益为重，同时集体也要尊重和保护成员正当的个人利益，二者相互促进、相辅相成，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两者完全对立，不能兼顾",
+        "B. 个人利益永远第一",
+        "C. 坚持集体利益优先，正当的个人利益也应受到尊重，二者相辅相成",
+        "D. 加入集体就必须放弃一切个人利益"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0334",
+      "item_type": "solve",
+      "stem": "学校运动会与你的绘画比赛时间冲突了。请说说你会怎样处理，并说明理由。",
+      "answer": "示例：先了解两项活动的具体安排，如确有冲突，权衡班级任务的紧迫程度：若班级接力赛无人替补，以班级参赛为先，绘画比赛可与老师商量改期或下次再参加；若两项都能兼顾则合理安排时间。理由：个人是集体的一员，当个人利益与集体利益发生矛盾时，应以集体利益为重；同时可以通过沟通尽量兼顾自己正当的兴趣发展。（处理得当，理由包含“集体利益优先、兼顾正当个人利益”即可）",
+      "kps": [
+        "kp_pol6_collective_interest"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查集体利益与个人利益关系的处理，观点与处理合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0335",
+      "item_type": "choice",
+      "stem": "在家里是孩子、在学校是学生、在公交车上是乘客。这说明（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_social_roles"
+      ],
+      "difficulty": 0.4,
+      "solution": "人在不同场合扮演不同的社会角色，每种角色都对应着相应的责任要求（如子女孝敬父母、学生认真学习、乘客遵守秩序），应当各司其职、尽责担当，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 角色越多越麻烦",
+        "B. 只有大人才有社会角色",
+        "C. 角色可以随心所欲地扮演",
+        "D. 一个人可以同时承担多种社会角色，每种角色都有相应责任"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0336",
+      "item_type": "solve",
+      "stem": "请写出你在家庭、学校、公共场所中分别承担的一个角色和对应的一项责任。",
+      "answer": "示例：家庭——子女（孩子）：孝敬父母、做力所能及的家务；学校——学生：遵守校规、认真学习、团结同学；还可写值日生：认真完成值日任务；公共场所——乘客/观众/游客：排队上车、让座、不大声喧哗、爱护公物。（三个角色与责任对应合理即可）",
+      "kps": [
+        "kp_pol6_social_roles"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查社会角色与责任意识，对应正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0337",
+      "item_type": "choice",
+      "stem": "关于参加志愿服务和公益活动，正确的认识是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_volunteer_service"
+      ],
+      "difficulty": 0.45,
+      "solution": "志愿服务与公益活动倡导奉献、友爱、互助、进步精神，扶老助残、救孤济困，人人可参与、小学生也能力所能及地出力，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这是奉献社会、锻炼自己的好事，小学生也可力所能及地参与",
+        "B. 没有报酬的事坚决不做",
+        "C. 志愿服务是退休老人专属",
+        "D. 参加公益就是为了拿证书"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0338",
+      "item_type": "solve",
+      "stem": "请你设计一次适合小学生的志愿服务活动：写出服务对象、活动内容和一条安全要求。",
+      "answer": "示例：服务对象——社区独居老人。活动内容——在家长和社区工作人员带领下，上门陪伴聊天、表演小节目，帮老人打扫房间、读报。安全要求——集体行动、听从带队大人安排，不去偏僻场所，礼貌待人。（要素齐全、内容可行即可）",
+      "kps": [
+        "kp_pol6_volunteer_service"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查公益服务的设计能力，要素齐全即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0339",
+      "item_type": "choice",
+      "stem": "对待环卫工人、快递员、服务员等劳动者，正确的态度是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_occupy_respect"
+      ],
+      "difficulty": 0.5,
+      "solution": "劳动者没有高低贵贱之分，各行各业的劳动都创造价值，要尊重每一位劳动者及其劳动成果，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 颐指气使，随意刁难",
+        "B. 尊重他们的劳动，说“谢谢”，珍惜劳动成果",
+        "C. 认为他们的工作低人一等",
+        "D. 心情不好时就对他们发脾气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0340",
+      "item_type": "solve",
+      "stem": "请写出两个表达对劳动者尊重的具体做法，并写一句你最想对身边劳动者说的话。",
+      "answer": "做法：①对提供服务的人真诚道谢，不刁难、不催促、不盛气凌人；②不乱扔垃圾减轻环卫工负担，收快递时说声谢谢并主动确认；③不浪费粮食和物品，珍惜劳动成果。想说的话示例：“叔叔阿姨，你们辛苦了！谢谢你们的劳动让生活更美好！”（两个做法具体，话语真诚即可）",
+      "kps": [
+        "kp_pol6_occupy_respect"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查尊重劳动者的态度与行为，内容具体真诚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0341",
+      "item_type": "choice",
+      "stem": "关于理想与规划，正确的是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_dream_plan"
+      ],
+      "difficulty": 0.35,
+      "solution": "理想要与自己的兴趣、特长相结合，并分解为小学、中学等阶段的成长计划，边执行边完善，从现在做起，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 理想遥不可及，想也没用",
+        "B. 理想全听父母的安排就行",
+        "C. 结合兴趣与特长树立理想，分阶段制定计划并付诸行动",
+        "D. 计划定好后永远不能调整"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0342",
+      "item_type": "solve",
+      "stem": "请完成你的“生涯小规划”：写出你的理想职业、实现它需要的一项能力，以及本学期的一条行动计划。",
+      "answer": "示例：理想职业——航天工程师。需要的能力——扎实的数学和物理基础、动手实践与创新能力。行动计划：本学期数学成绩稳定在 90 分以上，参加学校科技（航模）社团，每月读一本科普书。（三项内容具体、衔接合理即可）",
+      "kps": [
+        "kp_pol6_dream_plan"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查理想与生涯规划意识，内容具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0343",
+      "item_type": "choice",
+      "stem": "感恩父母、师长和社会，最好的落实是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_thankfulness"
+      ],
+      "difficulty": 0.4,
+      "solution": "感恩要落实在行动上：孝敬父母、尊敬师长、帮助他人、回报社会，从小事做起、从现在做起，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只在口头上说谢谢",
+        "B. 长大后挣大钱再报答，现在什么都不用做",
+        "C. 父母的要求全部满足就是感恩",
+        "D. 孝敬父母、尊重师长，用实际行动回报关爱"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0344",
+      "item_type": "solve",
+      "stem": "请分别为父母、老师各写一条感恩行动，并写一句感恩的话。",
+      "answer": "行动示例：对父母——主动分担家务、好好学习不让他们操心、记住生日送上祝福；对老师——上课认真听讲、教师节送上亲手做的贺卡、遇到老师主动问好。感恩的话示例：“谢谢你们一路的陪伴与付出，我会努力成为让你们骄傲的人！”（两条行动具体，话语真挚即可）",
+      "kps": [
+        "kp_pol6_thankfulness"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查感恩与孝敬的践行，内容具体真诚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0345",
+      "item_type": "choice",
+      "stem": "习近平总书记强调，要树立“四个最”的劳动观。“四个最”是指劳动最光荣、劳动最崇高、劳动最伟大和（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_labor_glory"
+      ],
+      "difficulty": 0.45,
+      "solution": "要树立劳动最光荣、劳动最崇高、劳动最伟大、劳动最美丽的观念，弘扬劳动精神和奋斗精神，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 劳动最美丽",
+        "B. 劳动最轻松",
+        "C. 劳动最赚钱",
+        "D. 劳动最时尚"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0346",
+      "item_type": "solve",
+      "stem": "请写出两种你在家里或学校参加的劳动，并说说劳动带给你的收获。",
+      "answer": "劳动示例：在家洗碗、做饭（学做简单的菜）、整理房间；在校值日扫地、擦黑板、照顾班级绿植、参加校园种植。收获示例：掌握了生活本领，更能体谅父母的辛苦；收获了同学的合作与快乐，懂得了幸福生活靠劳动创造，更加尊重劳动者。（两种劳动真实，收获言之有理即可）",
+      "kps": [
+        "kp_pol6_labor_glory"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查劳动观念与劳动体验，内容真实即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0347",
+      "item_type": "choice",
+      "stem": "家乡在乡村振兴中越变越美。作为家乡的小主人，我们可以（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_hometown_build"
+      ],
+      "difficulty": 0.5,
+      "solution": "乡村振兴让农业强、农村美、农民富，小学生可以了解家乡变化、爱护家乡环境、宣传家乡特色，为家乡发展贡献小力量，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对家乡的变化漠不关心",
+        "B. 了解家乡的发展，爱护环境，为家乡建设出点子、做宣传",
+        "C. 嫌弃家乡不如大城市",
+        "D. 等长大再说，现在帮不上忙"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0348",
+      "item_type": "solve",
+      "stem": "家乡正在建设美丽乡村（振兴发展）。请写出现状的一个变化、存在的一个问题和你的一条建议。",
+      "answer": "变化示例：村里的泥路变成柏油路，装上了路灯，建起了文化广场和卫生室。问题示例：垃圾桶不够、有人随意丢弃垃圾；农药瓶乱扔污染水渠。建议示例：增设分类垃圾桶并安排定期清运；利用文化广场多举办文化活动；发展家乡特色种植（旅游），请大家爱护环境、宣传家乡。（三点内容真实合理即可）",
+      "kps": [
+        "kp_pol6_hometown_build"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查关注家乡发展并建言的能力，内容具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0349",
+      "item_type": "choice",
+      "stem": "家乡的戏曲、手工艺、传统节庆等文化财富，需要我们（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_hometown_culture"
+      ],
+      "difficulty": 0.35,
+      "solution": "家乡的非物质文化遗产和文化遗产承载着乡愁与历史，我们要了解它、学习它、宣传它，做家乡文化的传承人和“代言人”，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 认为土气过时，弃之不管",
+        "B. 只许别人保护，与自己无关",
+        "C. 了解、学习和传承，讲好家乡故事",
+        "D. 随意改动编造迎合猎奇"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0350",
+      "item_type": "solve",
+      "stem": "请写出一项家乡的文化遗产或非遗（如戏曲、小吃技艺、传统手工艺、节庆），并设计一条宣传它的办法。",
+      "answer": "示例（按家乡实际作答）：项目——海南黎锦（织锦）技艺/东北二人转/陕西皮影戏/本地龙舟赛。宣传办法：制作手抄报或短视频介绍它的历史与特色；在学校文化节上表演、展示；向游客介绍并邀请他们体验，争当“家乡文化小讲解员”。（项目真实，宣传办法可行即可）",
+      "kps": [
+        "kp_pol6_hometown_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查家乡文化传承意识，内容真实可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0351",
+      "item_type": "choice",
+      "stem": "建设生态文明，必须坚持（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_ecological"
+      ],
+      "difficulty": 0.4,
+      "solution": "生态文明强调人与自然和谐共生，坚持绿色发展、节约资源、保护环境，像保护眼睛一样保护生态环境，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先污染后治理的老路",
+        "B. 以牺牲环境换取经济增长",
+        "C. 把污染产业转移到别处",
+        "D. 人与自然和谐共生，绿色发展"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0352",
+      "item_type": "solve",
+      "stem": "绿色发展人人可为。请写出三条你家的绿色生活方式。",
+      "answer": "①节水节电：随手关灯、拧紧水龙头，空调温度适度，一水多用；②垃圾分类：按四分类投放垃圾，旧物改造再利用；③绿色出行：出行多步行、骑车或乘公共交通，少开私家车；④低碳消费：自带购物袋和水杯，少用一次性用品，按需点餐不浪费。（答出三条即可）",
+      "kps": [
+        "kp_pol6_ecological"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查绿色发展理念的生活践行，做法具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0353",
+      "item_type": "choice",
+      "stem": "中华文化的基本特征是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_chinese_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "中华文化源远流长、博大精深，积淀着中华民族最深层的精神追求，是中华民族的独特标识和共同精神家园，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 源远流长、博大精深",
+        "B. 外来文化的翻版",
+        "C. 只有饮食文化",
+        "D. 已经停滞不前"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0354",
+      "item_type": "solve",
+      "stem": "请从“文化”的角度各举一个例子，说明中华文化的源远流长和博大精深。",
+      "answer": "源远流长示例：汉字从甲骨文沿用至今三千多年；二十四史连续记载数千年历史；都江堰、大运河等古老工程至今发挥作用。博大精深示例：文学（唐诗宋词四大名著）、艺术（书法、京剧、国画）、科技（四大发明、中医中药）、哲学思想（“和而不同”等）门类繁多、内涵深厚。（各一例、对应正确即可）",
+      "kps": [
+        "kp_pol6_chinese_culture"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查中华文化特征的理解，例子与特征对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0355",
+      "item_type": "choice",
+      "stem": "中华民族精神的基本内容是伟大创造精神、伟大奋斗精神、伟大团结精神和（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_national_spirit"
+      ],
+      "difficulty": 0.5,
+      "solution": "中国人民是具有伟大创造精神、伟大奋斗精神、伟大团结精神、伟大梦想精神的人民，这是中华民族精神在新时代的集中体现，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 伟大竞争精神",
+        "B. 伟大梦想精神",
+        "C. 伟大冒险精神",
+        "D. 伟大独赢精神"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0356",
+      "item_type": "solve",
+      "stem": "请写出民族精神的一种体现（一个事例），并说说我们小学生怎样弘扬民族精神。",
+      "answer": "事例示例：抗战时期全民族团结御侮（伟大团结精神）；古代四大发明和今天航天科技的创新（伟大创造精神）；红军长征、脱贫攻坚的艰苦奋斗（伟大奋斗精神）；一代代人接力追求民族复兴（伟大梦想精神）。小学生做法：从小立志向、有梦想，爱学习、爱劳动、爱祖国，团结同学、不怕困难、勇于创新，做民族精神的传承者。（事例对应正确，做法具体即可）",
+      "kps": [
+        "kp_pol6_national_spirit"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查民族精神的内涵与弘扬，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0357",
+      "item_type": "choice",
+      "stem": "作出改革开放重大决策的会议是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_reform_open"
+      ],
+      "difficulty": 0.35,
+      "solution": "1978 年 12 月，党的十一届三中全会作出把党和国家工作中心转移到经济建设上来、实行改革开放的历史性决策，中国从此进入改革开放新时期，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1949 年中国人民政治协商会议",
+        "B. 1921 年中共一大",
+        "C. 1978 年党的十一届三中全会",
+        "D. 2001 年加入世贸组织会议"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0358",
+      "item_type": "solve",
+      "stem": "改革开放给我们的生活带来了哪些变化？请写出两方面的变化，并说说这些变化说明了什么。",
+      "answer": "变化示例：①衣食住行：从凭票购物到商品丰富、网购便捷，从黑白电视到智能家电，高铁飞机让出行更方便；②城乡面貌：土路变柏油路，高楼林立、乡村美丽，义务教育免费、医疗保障越来越好。说明：改革开放是决定当代中国命运的关键一招，极大解放和发展了社会生产力，使人民生活显著改善、综合国力大幅增强，必须坚持改革开放不动摇。（两方面变化真实，结论正确即可）",
+      "kps": [
+        "kp_pol6_reform_open"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查改革开放意义的理解，变化真实、结论正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0359",
+      "item_type": "choice",
+      "stem": "中国梦的基本内涵是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_china_dream"
+      ],
+      "difficulty": 0.4,
+      "solution": "中国梦的基本内涵是国家富强、民族振兴、人民幸福，实现中华民族伟大复兴是近代以来中华民族最伟大的梦想，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个人发财、家庭享乐",
+        "B. 称霸世界、主导全球",
+        "C. 躺平生活、安逸度日",
+        "D. 国家富强、民族振兴、人民幸福"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0360",
+      "item_type": "solve",
+      "stem": "“中国梦是我的梦。”请写出中国梦的内涵，并说说为实现中国梦你能做的两件事。",
+      "answer": "内涵：国家富强、民族振兴、人民幸福。我能做的：①树立远大理想，努力学习科学文化知识，锻炼强健体魄，练就过硬本领；②培养良好品德，爱祖国、爱劳动、爱集体，从身边小事做起（志愿服务、环保行动）；③关注国家发展，讲好中国故事，长大后到祖国需要的地方去。（内涵正确，两件事具体即可）",
+      "kps": [
+        "kp_pol6_china_dream"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查中国梦内涵与个人践行，内容正确具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0361",
+      "item_type": "choice",
+      "stem": "“两个一百年”奋斗目标中的第二个百年目标是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_two_centuries"
+      ],
+      "difficulty": 0.45,
+      "solution": "第一个百年奋斗目标是到中国共产党成立一百年时全面建成小康社会（已如期实现）；第二个百年目标是到新中国成立一百年时全面建成社会主义现代化强国，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 到本世纪中叶（新中国成立一百年时）全面建成社会主义现代化强国",
+        "B. 到建党一百年时全面建成小康社会",
+        "C. 到 2035 年基本实现现代化就结束了",
+        "D. 建成世界第一大人口国家"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0362",
+      "item_type": "solve",
+      "stem": "请分别写出“两个一百年”奋斗目标的内容，并写一条你现在能为目标实现做的准备。",
+      "answer": "第一个百年目标：到中国共产党成立一百年时，全面建成小康社会（2021 年宣告如期实现）。第二个百年目标：到新中国成立一百年时，全面建成社会主义现代化强国。现在的准备：努力学习知识本领、锻炼身体、培养品德，做德智体美劳全面发展的社会主义建设者和接班人。（两个目标正确，准备具体即可）",
+      "kps": [
+        "kp_pol6_two_centuries"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查两个一百年目标内容，表述准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0363",
+      "item_type": "choice",
+      "stem": "爱国主义要求我们把（　）放在首位。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_patriotism"
+      ],
+      "difficulty": 0.5,
+      "solution": "国家利益是广大人民最根本、最长远的利益，爱国要把国家利益放在首位，坚决维护国家主权、安全和发展利益，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个人利益",
+        "B. 国家利益",
+        "C. 小团体利益",
+        "D. 外国利益"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0364",
+      "item_type": "solve",
+      "stem": "“利于国者爱之，害于国者恶之。”请写出两条小学生爱国的具体行动。",
+      "answer": "①好好学习、掌握本领，从小立志报效祖国；②尊重国旗国徽国歌，升旗仪式庄重认真，关心国家大事，为祖国成就自豪；③自觉维护国家统一和民族团结，不信谣不传谣，不做有损国家利益和形象的事；④节约资源、爱护环境，参加公益劳动，为国家建设出力。（答出两条即可）",
+      "kps": [
+        "kp_pol6_patriotism"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查爱国主义与国家利益至上的观念，行动具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0365",
+      "item_type": "choice",
+      "stem": "“两弹一星”指的是原子弹、导弹（氢弹）和（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_two_bomb"
+      ],
+      "difficulty": 0.35,
+      "solution": "“两弹一星”指原子弹、导弹和人造地球卫星（1964 年第一颗原子弹爆炸成功、1970 年“东方红一号”卫星发射成功）；老一辈科学家铸就了热爱祖国、无私奉献，自力更生、艰苦奋斗，大力协同、勇于登攀的“两弹一星”精神，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 航空母舰",
+        "B. 高速铁路",
+        "C. 人造地球卫星",
+        "D. 载人飞船"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0366",
+      "item_type": "solve",
+      "stem": "从“两弹一星”到载人航天，一代代科技工作者为国家奋斗。请写出他们的一种精神品质和一个你知道的人物（或工程成就），并说说对你的启发。",
+      "answer": "精神品质：热爱祖国、无私奉献（自力更生、艰苦奋斗、大力协同、勇于登攀）；载人航天精神“特别能吃苦、特别能战斗、特别能攻关、特别能奉献”。人物/成就示例：钱学森冲破阻挠回国效力；邓稼先隐姓埋名戈壁滩；杨利伟乘神舟五号首次飞天，中国空间站建成。启发：学习他们热爱祖国、刻苦钻研的精神，从小爱科学、学科学，打好知识基础，将来为科技强国贡献力量。（三层内容合理即可）",
+      "kps": [
+        "kp_pol6_two_bomb"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查两弹一星与航天精神，人物成就准确、启发真诚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0367",
+      "item_type": "choice",
+      "stem": "对待世界各国文化差异，正确的态度是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_world_diverse"
+      ],
+      "difficulty": 0.4,
+      "solution": "世界因多样而精彩，各国文化各具特色，文明没有高低优劣之分，应相互尊重、平等对话、互学互鉴，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只有本国文化最好，排斥外国文化",
+        "B. 全盘照搬外国文化",
+        "C. 嘲笑与自己不同的文化习俗",
+        "D. 尊重文化多样性，不同文明平等对话、交流互鉴"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0368",
+      "item_type": "solve",
+      "stem": "请举一个中外文化（或不同国家文化）交流的例子，并说说我们应怎样对待文化差异。",
+      "answer": "交流例子：中国的春节、端午文化走进很多国家，舞龙舞狮、赛龙舟受到欢迎；外国的优秀电影、音乐、绘画也丰富着我们的生活；丝绸之路促进了东西方文化交流。态度：尊重世界文化的多样性，既不盲目崇拜、照搬外国文化，也不排斥、贬低其他文化；虚心学习其他文化的长处，同时坚定文化自信，讲好中国故事，做中外文化交流的小使者。（例子真实，态度正确即可）",
+      "kps": [
+        "kp_pol6_world_diverse"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查文化多样性与交流互鉴意识，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0369",
+      "item_type": "choice",
+      "stem": "当今时代的主题是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_peace_development"
+      ],
+      "difficulty": 0.45,
+      "solution": "和平与发展是当今时代的主题，但世界并不太平，霸权主义、强权政治依然存在，战争的威胁并未消除，需要各国共同维护和平、促进发展，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 和平与发展",
+        "B. 战争与革命",
+        "C. 争霸与对抗",
+        "D. 封锁与脱钩"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0370",
+      "item_type": "solve",
+      "stem": "“世界并不太平，和平需要守护。”请写出一条维护世界和平的做法和一条我们能做的行动。",
+      "answer": "维护和平的做法（国家层面）：坚持和平解决国际争端，反对霸权主义和强权政治；发挥联合国等国际组织的作用，开展国际合作（中国派出维和部队、参与国际救援）。我们的行动：关心国际新闻，了解世界；尊重不同国家的人民与文化，与各国小伙伴友好相处；从小热爱和平、反对战争，向同学宣传和平理念；努力学习，为人类和平与发展贡献力量。（两条内容合理即可）",
+      "kps": [
+        "kp_pol6_peace_development"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查和平发展主题的认识，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0371",
+      "item_type": "choice",
+      "stem": "关于联合国的说法，正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_un"
+      ],
+      "difficulty": 0.5,
+      "solution": "联合国于 1945 年正式成立，总部设在美国纽约，是当今世界最具普遍性、代表性和权威性的政府间国际组织，中国是联合国安理会五个常任理事国之一，也是联合国创始会员国，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 联合国是一个国家的名称",
+        "B. 联合国成立于 1945 年，总部设在美国纽约，是当今世界最具普遍性、代表性和权威性的政府间国际组织",
+        "C. 联合国成立于 1971 年，总部在日内瓦",
+        "D. 只有欧洲国家才能加入联合国"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0372",
+      "item_type": "solve",
+      "stem": "请写出联合国成立的时间、总部所在地，并写一项联合国（或中国参与联合国）的工作。",
+      "answer": "成立时间：1945 年；总部所在地：美国纽约。工作示例：联合国维护国际和平与安全（开展维和行动）、提供人道主义援助、推动可持续发展与减贫、保护环境、防治疾病（世界卫生组织）；中国积极参与联合国维和行动、按时缴纳会费、推动落实联合国 2030 年可持续发展议程。（两项内容正确即可）",
+      "kps": [
+        "kp_pol6_un"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查联合国常识，内容准确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0373",
+      "item_type": "choice",
+      "stem": "面对气候变化、传染病流行、贫困等全球性问题，正确的认识是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol6_global_problem"
+      ],
+      "difficulty": 0.35,
+      "solution": "全球性问题关系整个人类的生存与发展，超越国界，任何国家都无法单独应对，需要世界各国携手合作、共同担当，构建人类命运共同体，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这是大国的事，小国不用管",
+        "B. 各国关起门来各扫门前雪",
+        "C. 这些问题超越国界，任何国家都无法独自解决，必须加强国际合作",
+        "D. 把责任推给别人就行"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0374",
+      "item_type": "solve",
+      "stem": "请举一个全球性问题的例子，并说说为什么解决它需要国际合作、我们能做什么。",
+      "answer": "例子示例：全球气候变化（冰川消融、极端天气增多）、新冠疫情、跨国贫困与粮食短缺、海洋污染。需要国际合作的原因：这些问题影响全人类共同利益，成因和影响跨越国界，一国力量有限，只有各国携手（如达成减排协议、共享科研成果、互相援助）才能有效应对。我们能做的：践行低碳生活（节水节电、绿色出行），爱护环境，不食用（不购买）濒危野生动物制品，关注和支持国际合作（如植树、环保宣传）。（例子真实，理由与行动合理即可）",
+      "kps": [
+        "kp_pol6_global_problem"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查全球性问题与国际合作意识，内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0375",
+      "item_type": "choice",
+      "stem": "下列出行方式中，最符合“绿色低碳”要求的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol6_green_life"
+      ],
+      "difficulty": 0.4,
+      "solution": "简约适度、绿色低碳的生活方式要求绿色出行（步行、骑行、公交）、节水节电、少用一次性用品，为建设美丽中国出力，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 短途也开燃油车",
+        "B. 让爸爸绕远路开车接送",
+        "C. 出门从不关灯开空调",
+        "D. 步行、骑自行车或乘坐公共交通"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0376",
+      "item_type": "solve",
+      "stem": "请为你家设计一份“绿色生活一周行动单”，写出三项安排。",
+      "answer": "①出行：本周上学（上班）步行或骑自行车三天以上，较远路程乘公交（地铁）；②居家：随手关灯、拔插头，空调不低于 26℃，淘米水浇花，垃圾分类投放；③消费：自带购物袋和水杯，不用一次性餐具和塑料袋，按需点餐践行光盘。（三项安排具体可行即可）",
+      "kps": [
+        "kp_pol6_green_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查绿色低碳生活的践行能力，安排具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0377",
+      "item_type": "choice",
+      "stem": "继承革命传统，传承红色基因，要求我们（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol6_revolution_tradition"
+      ],
+      "difficulty": 0.45,
+      "solution": "革命传统和红色精神是宝贵的精神财富，要铭记革命先辈的奋斗足迹，学习革命历史，传承红色基因，坚定理想信念，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铭记革命先辈的奋斗足迹，坚定理想信念，做红色传人",
+        "B. 认为革命精神已经过时",
+        "C. 只在清明节想起烈士",
+        "D. 把红色故事改编成猎奇段子"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0378",
+      "item_type": "solve",
+      "stem": "班级开展“传承红色基因”主题活动。请写出你会讲的一个红色故事（故事名或人物+事件梗概）和一条活动倡议。",
+      "answer": "故事示例：王二小把敌人引进八路军的埋伏圈，壮烈牺牲，年仅 13 岁；狼牙山五壮士弹尽跳崖；董存瑞舍身炸碉堡；“半条被子”——三位女红军把仅有的一条被子剪下半条留给老乡。活动倡议：“读一本红色书籍、讲一个红色故事、访一处红色遗址（烈士陵园），从小学先锋、长大做先锋，把红色基因一代代传下去！”（故事真实，倡议具体即可）",
+      "kps": [
+        "kp_pol6_revolution_tradition"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查革命传统教育，史实准确、倡议可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0379",
+      "item_type": "choice",
+      "stem": "遭遇网络诈骗（对方冒充老师要求转账）时，正确的做法是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol6_safety_law"
+      ],
+      "difficulty": 0.5,
+      "solution": "遇到诈骗等不法侵害，要保持冷静、坚决拒绝，保存证据，及时告诉老师家长并向公安机关报案（拨打 110 或反诈专线 96110），依法求助，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赶紧按对方要求转账",
+        "B. 不轻信、不转账，第一时间告诉老师、家长并拨打 110 报警",
+        "C. 在网上与骗子对骂",
+        "D. 怕被批评，谁也不告诉"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0380",
+      "item_type": "solve",
+      "stem": "请你总结三条“自我保护、依法求助”的要点，应对可能遇到的不法侵害。",
+      "answer": "①提高警惕：不轻信陌生电话、短信和网络信息，不随意透露个人和家庭信息，不向陌生账户转账；②坚决拒绝、保护自己：遇到校园欺凌、不当触碰、敲诈勒索等，勇敢说“不”，设法脱身，记住对方特征；③及时求助、依法维权：第一时间告诉家长、老师，拨打 110 报警（反诈 96110），保存证据（聊天记录、录音），运用法律武器维护自己的合法权益。（三条要点完整即可）",
+      "kps": [
+        "kp_pol6_safety_law"
+      ],
+      "difficulty": 0.6,
+      "solution": "考查依法自护求助能力，要点完整即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

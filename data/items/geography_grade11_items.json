@@ -1,0 +1,2446 @@
+{
+  "items": [
+    {
+      "id": "geo_hs_0123",
+      "item_type": "choice",
+      "stem": "地球自转的真正周期是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_rotation_meaning"
+      ],
+      "difficulty": 0.5,
+      "solution": "地球自转的真正周期是以恒星为参照的恒星日（23 时 56 分 4 秒），而太阳日（24 小时）是昼夜更替的周期。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 太阳日",
+        "B. 1 恒星日（23 时 56 分 4 秒）",
+        "C. 1 太阴日",
+        "D. 24 时 0 分"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0124",
+      "item_type": "choice",
+      "stem": "地球自转产生的地理现象有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_rotation_meaning"
+      ],
+      "difficulty": 0.55,
+      "solution": "地球自转导致昼夜更替（A）、经度时差（B）、地转偏向力（C）。昼夜长短变化由公转和地轴倾斜导致，不是自转直接产生。",
+      "source": "llm_generated",
+      "options": [
+        "A. 昼夜更替",
+        "B. 时差",
+        "C. 地转偏向力",
+        "D. 昼夜长短变化"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0125",
+      "item_type": "choice",
+      "stem": "地球公转的周期是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_revolution_meaning"
+      ],
+      "difficulty": 0.45,
+      "solution": "地球公转的真正周期是恒星年（约 365 日 6 时 9 分 10 秒），回归年是太阳直射点回归运动的周期（约 365 日 5 时 48 分 46 秒）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1 恒星年（约 365 日 6 时 9 分）",
+        "B. 1 太阳日",
+        "C. 1 太阴月",
+        "D. 24 小时"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0126",
+      "item_type": "choice",
+      "stem": "地球公转产生的地理现象是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_revolution_meaning"
+      ],
+      "difficulty": 0.6,
+      "solution": "由于黄赤交角和地球公转，太阳直射点在南北回归线之间往返移动，引起昼夜长短变化、正午太阳高度变化和四季更替。",
+      "source": "llm_generated",
+      "options": [
+        "A. 昼夜交替",
+        "B. 昼夜长短变化和四季更替",
+        "C. 时差",
+        "D. 地转偏向力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0127",
+      "item_type": "choice",
+      "stem": "6 月 22 日前后，下列地点正午太阳高度最大的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_sun_height"
+      ],
+      "difficulty": 0.55,
+      "solution": "6 月 22 日（夏至）太阳直射北回归线（约 23.5°N）。海口纬度（约 20°N）距北回归线最近，故正午太阳高度最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 北京（约 40°N）",
+        "B. 海口（约 20°N）",
+        "C. 哈尔滨（约 45°N）",
+        "D. 漠河（约 53°N）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0128",
+      "item_type": "fill",
+      "stem": "正午太阳高度的计算公式是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_sun_height"
+      ],
+      "difficulty": 0.6,
+      "solution": "正午太阳高度 = 90° - 纬度差（纬度差为所求地纬度与太阳直射点纬度的差值）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0129",
+      "item_type": "choice",
+      "stem": "下列物质中，属于矿物的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_rock_minerals"
+      ],
+      "difficulty": 0.65,
+      "solution": "矿物是具有特定的化学成分和物理属性的单质或化合物。石英是自然界产出的矿物；花岗岩是岩石，由多种矿物组成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 花岗岩",
+        "B. 石英（SiO₂）",
+        "C. 土壤",
+        "D. 水泥"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0130",
+      "item_type": "choice",
+      "stem": "常见的造岩矿物有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_rock_minerals"
+      ],
+      "difficulty": 0.7,
+      "solution": "石英、长石、云母、方解石均为常见的造岩矿物，是组成岩石的主要矿物。",
+      "source": "llm_generated",
+      "options": [
+        "A. 石英",
+        "B. 长石",
+        "C. 云母",
+        "D. 方解石"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0131",
+      "item_type": "choice",
+      "stem": "下列地质构造中，属于良好储油构造的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_tectonic_movement"
+      ],
+      "difficulty": 0.55,
+      "solution": "背斜岩层向上拱起，是良好的储油构造（石油密度小、聚集在背斜顶部）；向斜常为储水构造。",
+      "source": "llm_generated",
+      "options": [
+        "A. 背斜",
+        "B. 向斜",
+        "C. 断层",
+        "D. 地堑"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0132",
+      "item_type": "choice",
+      "stem": "下列地质构造中，常形成谷地的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_tectonic_movement"
+      ],
+      "difficulty": 0.65,
+      "solution": "背斜顶部受张力，岩石破碎，易被外力侵蚀成谷地——「背斜成谷」是地形倒置的典型。",
+      "source": "llm_generated",
+      "options": [
+        "A. 背斜顶部因受张力易被侵蚀成谷",
+        "B. 向斜槽部因受挤压坚硬成山",
+        "C. 地垒成谷",
+        "D. 地堑成山"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0133",
+      "item_type": "choice",
+      "stem": "下列外力作用中，主要发生在河流中下游地区的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_weathering_erosion_sediment"
+      ],
+      "difficulty": 0.45,
+      "solution": "河流中下游地势趋缓、流速减慢，泥沙沉积显著，形成河漫滩、冲积平原、三角洲等堆积地貌。",
+      "source": "llm_generated",
+      "options": [
+        "A. 风力沉积",
+        "B. 流水沉积",
+        "C. 冰川刨蚀",
+        "D. 海浪侵蚀"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0134",
+      "item_type": "choice",
+      "stem": "下列地貌属于冰川侵蚀形成的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_weathering_erosion_sediment"
+      ],
+      "difficulty": 0.4,
+      "solution": "U 型谷、角峰、冰斗都是冰川刨蚀形成的典型地貌；V 型谷是河流侵蚀；冲积扇是流水堆积；沙丘是风力堆积。",
+      "source": "llm_generated",
+      "options": [
+        "A. U 型谷",
+        "B. V 型谷",
+        "C. 冲积扇",
+        "D. 沙丘"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0135",
+      "item_type": "choice",
+      "stem": "在地表形态演化过程中，内力作用和外力作用的相互关系是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo11_landform_evolution"
+      ],
+      "difficulty": 0.65,
+      "solution": "内力作用（地壳运动、岩浆活动等）奠定地表的基本格局（高山、盆地等）；外力作用（风化、侵蚀、搬运、沉积等）在此基础上进行削高填低，塑造细节。",
+      "source": "llm_generated",
+      "options": [
+        "A. 内力作用总是使地表变崎岖",
+        "B. 外力作用总是使地表变平缓",
+        "C. 内力作用奠定基本格局，外力作用塑造细节",
+        "D. 二者相互独立"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0136",
+      "item_type": "choice",
+      "stem": "下列关于「地貌发育过程」的说法，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_landform_evolution"
+      ],
+      "difficulty": 0.55,
+      "solution": "地貌的形成是内力和外力共同作用的结果。同一地区常受多种作用叠加（如流水、风力、海浪等同时或先后作用）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地貌只受单一外力作用影响",
+        "B. 同一地区往往受多种内外力共同作用",
+        "C. 内力作用只发生在地球深部",
+        "D. 外力作用没有时间累积效应"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0137",
+      "item_type": "choice",
+      "stem": "自然地理环境各要素之间物质迁移和能量交换的途径是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_element_exchange"
+      ],
+      "difficulty": 0.5,
+      "solution": "水循环、生物循环、岩石圈物质循环（地壳物质循环）是地理环境各要素相互联系的主要途径。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水循环、生物循环、岩石圈物质循环",
+        "B. 仅水循环",
+        "C. 仅岩石圈循环",
+        "D. 与生物无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0138",
+      "item_type": "choice",
+      "stem": "植物通过光合作用将二氧化碳和水合成有机物，同时将太阳能转化为化学能贮藏在有机物中。这一过程体现了（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_element_exchange"
+      ],
+      "difficulty": 0.7000000000000001,
+      "solution": "光合作用是大气圈、水圈、生物圈之间的能量与物质交换过程，体现自然地理环境的整体性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自然地理环境的差异性",
+        "B. 自然地理环境的整体性（要素间能量转换）",
+        "C. 自然环境的孤立性",
+        "D. 与地理环境无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0139",
+      "item_type": "choice",
+      "stem": "自然地理环境的反馈机制主要表现为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_environmental_feedback"
+      ],
+      "difficulty": 0.55,
+      "solution": "自然地理环境具有反馈机制：某一要素变化会引起其他要素的连锁变化，最终可能反过来影响原要素，起到放大或抑制作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 某一要素变化引起其他要素及整个环境变化",
+        "B. 各要素完全独立",
+        "C. 变化无传递性",
+        "D. 与人类活动无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0140",
+      "item_type": "choice",
+      "stem": "砍伐森林→水土流失加剧→土壤肥力下降→植被更难恢复，这一过程属于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_environmental_feedback"
+      ],
+      "difficulty": 0.6,
+      "solution": "砍伐森林后水土流失加剧、土壤变差、植被恢复更困难，原变化被持续放大，属于正反馈（恶性循环）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 正反馈",
+        "B. 负反馈",
+        "C. 平衡状态",
+        "D. 随机变化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0141",
+      "item_type": "choice",
+      "stem": "下列自然带中，属于亚热带季风气候对应的典型植被是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_latitudinal_zones"
+      ],
+      "difficulty": 0.6,
+      "solution": "亚热带季风气候（夏季高温多雨、冬季温和少雨）对应亚热带常绿阔叶林。",
+      "source": "llm_generated",
+      "options": [
+        "A. 亚热带常绿阔叶林",
+        "B. 温带落叶阔叶林",
+        "C. 亚寒带针叶林",
+        "D. 热带雨林"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0142",
+      "item_type": "choice",
+      "stem": "世界陆地自然带从赤道到两极的更替主要体现了（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_latitudinal_zones"
+      ],
+      "difficulty": 0.6,
+      "solution": "由赤道到两极的热量差异是主导因素，自然带沿纬度方向更替，体现纬度地带性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干湿度地带性",
+        "B. 纬度地带性（由赤道到两极的地域分异）",
+        "C. 垂直地带性",
+        "D. 非地带性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0143",
+      "item_type": "choice",
+      "stem": "山地垂直自然带谱的复杂度主要取决于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_vertical_zones"
+      ],
+      "difficulty": 0.75,
+      "solution": "山地垂直带谱的复杂程度主要取决于山地海拔高度和所处纬度。山越高、纬度越低，垂直带谱越复杂。",
+      "source": "llm_generated",
+      "options": [
+        "A. 山的高度和纬度位置",
+        "B. 山体颜色",
+        "C. 山区人口",
+        "D. 山区开发历史"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0144",
+      "item_type": "choice",
+      "stem": "喜马拉雅山南坡自然带比北坡丰富，主要原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_vertical_zones"
+      ],
+      "difficulty": 0.65,
+      "solution": "南坡是西南季风迎风坡，降水多；且南坡基带海拔低，相对高差大，故自然带谱更丰富完整。",
+      "source": "llm_generated",
+      "options": [
+        "A. 北坡纬度更低",
+        "B. 南坡是西南季风迎风坡、相对高差大、基带海拔低",
+        "C. 北坡降水更多",
+        "D. 北坡光照更强"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0145",
+      "item_type": "choice",
+      "stem": "我国北方夏季常见的暴雨、大风天气多由（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_frontal_systems"
+      ],
+      "difficulty": 0.6,
+      "solution": "冷锋过境时暖空气被快速抬升，常带来大风、降温、雨雪甚至雷暴、冰雹等强对流天气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 暖锋过境",
+        "B. 冷锋过境",
+        "C. 准静止锋",
+        "D. 高压控制"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0146",
+      "item_type": "choice",
+      "stem": "江淮地区的「梅雨」天气是由（　　）造成的",
+      "answer": "C",
+      "kps": [
+        "kp_geo11_frontal_systems"
+      ],
+      "difficulty": 0.55,
+      "solution": "江淮准静止锋徘徊于江淮地区，造成连续阴雨，形成「梅雨」。",
+      "source": "llm_generated",
+      "options": [
+        "A. 暖锋",
+        "B. 冷锋",
+        "C. 准静止锋",
+        "D. 高压"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0147",
+      "item_type": "choice",
+      "stem": "在北半球反气旋（高压）系统中，水平气流呈（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_cyclone_anticyclone"
+      ],
+      "difficulty": 0.75,
+      "solution": "北半球反气旋中心气压高，气流向四周辐散，受地转偏向力（向右）作用呈顺时针方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 顺时针辐散",
+        "B. 顺时针辐合",
+        "C. 逆时针辐散",
+        "D. 逆时针辐合"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0148",
+      "item_type": "choice",
+      "stem": "夏威夷高压（副热带高压）影响我国东部地区时，盛行（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_cyclone_anticyclone"
+      ],
+      "difficulty": 0.65,
+      "solution": "夏威夷高压位于北太平洋西部；其西侧的偏南气流（东南季风）影响我国东部，带来暖湿空气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 偏南风",
+        "B. 偏北风",
+        "C. 偏西风",
+        "D. 偏东风"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0149",
+      "item_type": "choice",
+      "stem": "在地面天气图上，表示冷锋的符号是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_weather_forecast"
+      ],
+      "difficulty": 0.5,
+      "solution": "在地面天气图上，冷锋用锯齿状（蓝色三角）符号表示，暖锋用半圆状（红色）符号表示。",
+      "source": "llm_generated",
+      "options": [
+        "A. 暖锋",
+        "B. 冷锋",
+        "C. 准静止锋",
+        "D. 高压脊"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0150",
+      "item_type": "choice",
+      "stem": "简易天气图判读中，低压（气旋）中心气流辐合上升，往往带来（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_weather_forecast"
+      ],
+      "difficulty": 0.65,
+      "solution": "低压中心气流辐合上升，水汽凝结形成云雨，故常为阴雨天气；高压中心气流下沉增温，多晴朗天气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 晴朗干燥天气",
+        "B. 阴雨天气",
+        "C. 大风沙尘",
+        "D. 寒冷晴朗"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0151",
+      "item_type": "choice",
+      "stem": "副热带高气压带的成因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_pressure_belt_formation"
+      ],
+      "difficulty": 0.7000000000000001,
+      "solution": "赤道上升气流到高空后向高纬流动，受地转偏向力影响在南北纬 30°附近堆积下沉，形成副热带高气压带，是动力原因形成的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 空气受热膨胀上升",
+        "B. 高空气流堆积下沉",
+        "C. 空气遇冷收缩下沉",
+        "D. 海面蒸发旺盛"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0152",
+      "item_type": "choice",
+      "stem": "下列气压带中，由热力原因形成的是（　　）",
+      "answer": "A,D",
+      "kps": [
+        "kp_geo11_pressure_belt_formation"
+      ],
+      "difficulty": 0.65,
+      "solution": "赤道低气压带因受热上升形成（热力）；极地高气压带因终年寒冷下沉形成（热力）；副热带高气压带（动力堆积下沉）和副极地低气压带（动力抬升）是动力原因形成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赤道低气压带",
+        "B. 副热带高气压带",
+        "C. 副极地低气压带",
+        "D. 极地高气压带"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0153",
+      "item_type": "choice",
+      "stem": "亚洲东部季风环流的主要成因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_monsoon"
+      ],
+      "difficulty": 0.5,
+      "solution": "亚洲东部季风主要是由海陆热力性质差异引起，夏季盛行东南季风（来自海洋），冬季盛行西北季风（来自大陆）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 海陆热力性质差异",
+        "B. 气压带风带的季节移动",
+        "C. 地形阻挡",
+        "D. 太阳活动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0154",
+      "item_type": "choice",
+      "stem": "南亚（印度）夏季风的主要成因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_monsoon"
+      ],
+      "difficulty": 0.8,
+      "solution": "南亚夏季风（西南季风）的形成主要是气压带、风带季节移动：南半球东南信风越过赤道偏转为西南季风。",
+      "source": "llm_generated",
+      "options": [
+        "A. 海陆热力性质差异",
+        "B. 气压带和风带的季节性移动（南半球东南信风越过赤道偏转为西南季风）",
+        "C. 季风完全是地形原因",
+        "D. 与气压带无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0155",
+      "item_type": "choice",
+      "stem": "分析某地气候形成因素时，最常用的判断思路是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_climate_formation"
+      ],
+      "difficulty": 0.5,
+      "solution": "气候形成因素分析应从纬度（太阳辐射）、海陆位置、大气环流、地形、洋流以及人类活动等多个角度综合分析。",
+      "source": "llm_generated",
+      "options": [
+        "A. 仅看纬度",
+        "B. 纬度位置（热量）+ 海陆位置 + 大气环流 + 地形 + 洋流 + 人类活动",
+        "C. 仅看降水",
+        "D. 仅看海拔"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0156",
+      "item_type": "choice",
+      "stem": "西欧温带海洋性气候典型特征的主要形成因素有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_climate_formation"
+      ],
+      "difficulty": 0.65,
+      "solution": "西欧温带海洋性气候的形成：常年受西风带影响（A）；北大西洋暖流增温增湿（B）；海岸线曲折、陆地深入海洋（C）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 终年受西风带控制",
+        "B. 沿岸有北大西洋暖流",
+        "C. 海陆轮廓与海岸线曲折",
+        "D. 地形平坦"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0157",
+      "item_type": "choice",
+      "stem": "全球气候变化的主要表现是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_climate_change"
+      ],
+      "difficulty": 0.4,
+      "solution": "近百年全球气候变化主要表现为全球气候变暖、冰川退缩、海平面上升、极端天气气候事件增多。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全球气温升高、海平面上升、极端天气增多",
+        "B. 全球气温降低",
+        "C. 全球气候稳定不变",
+        "D. 海洋面积扩大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0158",
+      "item_type": "choice",
+      "stem": "应对全球气候变化的措施有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_climate_change"
+      ],
+      "difficulty": 0.65,
+      "solution": "应对气候变化需要减缓（减排、增加碳汇）和适应（提升防灾能力）双轨并重；A、B、C、D 均为合理措施。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减少温室气体排放",
+        "B. 发展低碳经济",
+        "C. 植树造林",
+        "D. 提高能源利用效率"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0159",
+      "item_type": "choice",
+      "stem": "水循环最重要的地理意义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_water_cycle_analysis"
+      ],
+      "difficulty": 0.5,
+      "solution": "水循环联系大气圈、水圈、岩石圈、生物圈，使水资源不断更新，并通过侵蚀、搬运、沉积塑造地表形态。",
+      "source": "llm_generated",
+      "options": [
+        "A. 联系四大圈层、促进水资源更新、塑造地表形态",
+        "B. 只产生降水",
+        "C. 仅提供能源",
+        "D. 与人类活动无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0160",
+      "item_type": "choice",
+      "stem": "修建水库对水循环的直接影响是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_water_cycle_analysis"
+      ],
+      "difficulty": 0.75,
+      "solution": "水库可拦蓄洪水期水量、补给枯水期水量，使地表径流的季节变化趋于平缓，起到调节径流的作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增加地表径流季节变化",
+        "B. 减少地表径流季节变化，调节径流",
+        "C. 增加蒸发量级",
+        "D. 改变水循环类型"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0161",
+      "item_type": "choice",
+      "stem": "影响河流水文特征的主要因素有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_river_regime"
+      ],
+      "difficulty": 0.5,
+      "solution": "河流水文特征（流量、水位、流速、含沙量、结冰期等）受气候、地形、植被、流域面积、土壤等多因素影响。",
+      "source": "llm_generated",
+      "options": [
+        "A. 气候（降水、气温）",
+        "B. 地形（坡降）",
+        "C. 植被",
+        "D. 流域面积和土壤"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0162",
+      "item_type": "choice",
+      "stem": "我国东北地区河流（如松花江）一年有两个汛期，主要原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_river_regime"
+      ],
+      "difficulty": 0.55,
+      "solution": "东北地区纬度高、冬季积雪厚，春季气温回升融雪形成春汛；夏季降水集中形成夏汛。",
+      "source": "llm_generated",
+      "options": [
+        "A. 春汛：春季冰雪融水；夏汛：夏季降水",
+        "B. 一年只有夏季降水",
+        "C. 只受地下水补给",
+        "D. 冰川融水为主"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0163",
+      "item_type": "choice",
+      "stem": "拉尼娜现象指赤道东太平洋海温（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_enso_mechanism"
+      ],
+      "difficulty": 0.45,
+      "solution": "拉尼娜现象表现为赤道东太平洋海温异常降低，与厄尔尼诺相反，导致西太平洋上升气流更强。",
+      "source": "llm_generated",
+      "options": [
+        "A. 异常升高",
+        "B. 异常降低",
+        "C. 正常",
+        "D. 夏季升高"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0164",
+      "item_type": "choice",
+      "stem": "厄尔尼诺现象的成因主要是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_enso_mechanism"
+      ],
+      "difficulty": 0.7,
+      "solution": "正常情况下东南信风将赤道东太平洋表层暖水吹向西部；厄尔尼诺时信风减弱，西部暖水回流，东部海温异常升高。",
+      "source": "llm_generated",
+      "options": [
+        "A. 信风增强",
+        "B. 东南信风减弱导致赤道东太平洋暖水回流、海温升高",
+        "C. 全球气候变冷",
+        "D. 地壳活动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0165",
+      "item_type": "choice",
+      "stem": "厄尔尼诺现象可能引发的全球异常现象有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_enso_global_impact"
+      ],
+      "difficulty": 0.55,
+      "solution": "厄尔尼诺发生时东太平洋秘鲁沿岸多暴雨，西太平洋（印尼、澳大利亚）多干旱，并常导致全球范围内气候异常。",
+      "source": "llm_generated",
+      "options": [
+        "A. 秘鲁沿岸暴雨、洪水",
+        "B. 印度尼西亚、澳大利亚干旱",
+        "C. 我国南方夏季降水偏多、北方偏少",
+        "D. 全球气候短期内出现异常"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0166",
+      "item_type": "choice",
+      "stem": "下列划分中，符合「区域」特征的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo11_region_concept"
+      ],
+      "difficulty": 0.6000000000000001,
+      "solution": "区域是人们按一定指标和方法划分出来的空间单位，可分为自然区域、经济区域、行政区域等多种类型。",
+      "source": "llm_generated",
+      "options": [
+        "A. 行政区",
+        "B. 自然区",
+        "C. 经济区",
+        "D. 以上都是"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0167",
+      "item_type": "fill",
+      "stem": "区域的特征一般包括（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_region_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "区域具有整体性（内部相似）、差异性（彼此不同）、层次性（可分级）、开放性（与其他区域联系）等特征。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0168",
+      "item_type": "choice",
+      "stem": "区域发展一般经历的阶段是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_region_development"
+      ],
+      "difficulty": 0.5,
+      "solution": "区域发展从初期阶段（以农业为主）→成长阶段（工业化加速）→转型阶段（传统产业衰落）→再生阶段（高新技术产业兴起）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 初期阶段 → 成长阶段 → 转型阶段 → 再生阶段",
+        "B. 倒退阶段",
+        "C. 不变化",
+        "D. 一次性"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0169",
+      "item_type": "choice",
+      "stem": "区域发展水平的主要衡量指标是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_region_development"
+      ],
+      "difficulty": 0.55,
+      "solution": "区域发展水平主要由经济发展水平（人均 GDP）、产业结构、城市化水平、教育科技水平等综合指标反映。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人均 GDP、产业结构、城市化水平",
+        "B. 仅有面积",
+        "C. 仅有历史",
+        "D. 仅看人口"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0170",
+      "item_type": "choice",
+      "stem": "资源型城市在资源枯竭后实现转型的主要途径有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_region_resource"
+      ],
+      "difficulty": 0.75,
+      "solution": "资源型城市转型包括延长产业链、培育新兴产业（A、B）、治理环境（C）、吸引多元投资（D）等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 发展接续替代产业（如高新技术产业）",
+        "B. 改造提升传统产业",
+        "C. 加强环境治理与生态修复",
+        "D. 加大招商引资、发展多元经济"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0171",
+      "item_type": "choice",
+      "stem": "我国东北煤炭城市（如阜新）转型成功的关键做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_region_resource"
+      ],
+      "difficulty": 0.5,
+      "solution": "东北资源型城市转型多以发展接续替代产业（如现代农业、装备制造、新能源等）和治理环境为主要方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 继续扩大煤炭产能",
+        "B. 发展接续产业（如现代农业、新能源）",
+        "C. 放任人口外流",
+        "D. 完全放弃工业"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0172",
+      "item_type": "choice",
+      "stem": "我国西北干旱半干旱地区生态脆弱的主要表现是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_region_ecofragile"
+      ],
+      "difficulty": 0.5,
+      "solution": "西北干旱半干旱地区降水稀少、植被稀疏、生态环境脆弱，主要问题是土地荒漠化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水土流失",
+        "B. 土地荒漠化",
+        "C. 森林过度砍伐",
+        "D. 沿海台风"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0173",
+      "item_type": "choice",
+      "stem": "黄土高原水土流失的治理措施有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_region_ecofragile"
+      ],
+      "difficulty": 0.5,
+      "solution": "黄土高原水土流失治理需生物措施（A）、工程措施（B）、综合治理（C）和产业结构调整（D）等多措并举。",
+      "source": "llm_generated",
+      "options": [
+        "A. 植树种草、退耕还林还草",
+        "B. 修建梯田、打坝淤地",
+        "C. 小流域综合治理",
+        "D. 调整产业结构"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0174",
+      "item_type": "choice",
+      "stem": "我国产业转移的总体方向是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_region_indust_transfer"
+      ],
+      "difficulty": 0.7,
+      "solution": "近年来随着东部土地、劳动力成本上升和环境压力加大，劳动密集型、资源密集型产业由东部向中西部转移。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由东部沿海向中西部内陆转移",
+        "B. 由中西部向东部沿海转移",
+        "C. 只在国内",
+        "D. 没有任何规律"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0175",
+      "item_type": "choice",
+      "stem": "下列资源跨区域调配工程中，属于「西气东输」的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_region_indust_transfer"
+      ],
+      "difficulty": 0.4,
+      "solution": "西气东输将新疆塔里木等西部天然气输往上海等东部沿海地区，缓解东部能源紧张。",
+      "source": "llm_generated",
+      "options": [
+        "A. 将西部天然气输往东部沿海地区",
+        "B. 将长江水调到北方",
+        "C. 将电从南方输往北方",
+        "D. 将煤炭从北方输往南方"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0176",
+      "item_type": "choice",
+      "stem": "流域综合开发的核心是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_river_basin"
+      ],
+      "difficulty": 0.7,
+      "solution": "流域综合开发以水资源为核心，兼顾防洪、发电、灌溉、航运、养殖、生态保护等综合效益。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对水资源进行综合开发与利用",
+        "B. 仅开发水能",
+        "C. 仅修堤",
+        "D. 单一农业开发"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0177",
+      "item_type": "choice",
+      "stem": "田纳西河流域综合治理开发的核心经验有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_geo11_river_basin"
+      ],
+      "difficulty": 0.55,
+      "solution": "TVA 经验：设专门机构（A）、梯级开发水电（B）、重视环境保护与公众参与（D）。C 项忽视环境承载力，并非经验。",
+      "source": "llm_generated",
+      "options": [
+        "A. 设置专门机构加强流域统一管理",
+        "B. 因地制宜选择开发重点（梯级开发水电）",
+        "C. 不断加大开发力度",
+        "D. 重视环境保护与公众参与"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0178",
+      "item_type": "choice",
+      "stem": "下列措施中，有利于促进区域协调发展的是（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_region_coordination"
+      ],
+      "difficulty": 0.5,
+      "solution": "区域协调发展需要政策扶持（A）、对口协作（B）、公共服务均等化（C）、生态补偿（D）多管齐下。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加大对欠发达地区基础设施和教育的投入",
+        "B. 完善东西部协作和对口支援",
+        "C. 推动基本公共服务均等化",
+        "D. 健全生态补偿机制"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0179",
+      "item_type": "choice",
+      "stem": "大都市辐射功能的核心是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_case_megacity"
+      ],
+      "difficulty": 0.5,
+      "solution": "大都市凭借其雄厚的经济实力、高度集聚的科技教育、便捷的交通和发达的信息网络，对周边地区产生强大辐射带动作用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 强大的经济、科技、信息、文化、交通等辐射作用",
+        "B. 仅居住人口多",
+        "C. 仅面积大",
+        "D. 与周边无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0180",
+      "item_type": "choice",
+      "stem": "上海对长三角地区的辐射作用主要体现在（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_case_megacity"
+      ],
+      "difficulty": 0.5,
+      "solution": "上海作为长三角龙头城市，向周边地区输出资金、技术、信息、金融、贸易和高端服务等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提供资金、技术、信息和现代服务",
+        "B. 仅提供农产品",
+        "C. 仅提供土地",
+        "D. 不提供任何资源"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0181",
+      "item_type": "choice",
+      "stem": "传统工业区（如鲁尔区）衰落的主要原因有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_case_indust_change"
+      ],
+      "difficulty": 0.6,
+      "solution": "鲁尔区衰落的原因主要是煤炭地位下降（A）、钢铁过剩（B）、环境问题严重（C）等。D 错误，鲁尔区交通条件优越。",
+      "source": "llm_generated",
+      "options": [
+        "A. 煤炭能源地位下降",
+        "B. 钢铁工业受新技术冲击、世界性钢铁过剩",
+        "C. 环境污染严重、地价上涨",
+        "D. 交通条件恶化"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0182",
+      "item_type": "choice",
+      "stem": "我国东北老工业基地振兴的核心策略有（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_case_indust_change"
+      ],
+      "difficulty": 0.55,
+      "solution": "东北振兴策略：调整产业结构（A）、推动技术创新（B）、改善环境（C）。D 错误，应淘汰落后高耗能产业。",
+      "source": "llm_generated",
+      "options": [
+        "A. 调整产业结构、发展新兴产业",
+        "B. 推动技术创新和升级",
+        "C. 改善生态环境",
+        "D. 扩大高耗能产业"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0183",
+      "item_type": "choice",
+      "stem": "自然资源的共同特征有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_resource_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "自然资源具有分布不均（A）、相互联系（B）、数量有限（C）、利用潜力随技术进步不断发展（D）等特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分布的不平衡性",
+        "B. 资源间的联系性",
+        "C. 数量的有限性",
+        "D. 利用的发展性"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0184",
+      "item_type": "choice",
+      "stem": "下列能源中，属于可再生能源的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_energy_resource"
+      ],
+      "difficulty": 0.45,
+      "solution": "太阳能、风能、水能（以及生物质能、地热能、潮汐能等）属可再生能源；煤炭、石油、天然气属不可再生（化石）能源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 太阳能",
+        "B. 风能",
+        "C. 水能",
+        "D. 煤炭"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0185",
+      "item_type": "choice",
+      "stem": "我国矿产资源的特点是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_mineral_resource"
+      ],
+      "difficulty": 0.5,
+      "solution": "我国矿产资源总量丰富，但人均不足；贫矿多富矿少；伴生矿多，需综合开发利用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 总量丰富、人均不足、贫矿多富矿少",
+        "B. 总量小、人均多",
+        "C. 资源无限",
+        "D. 与人口无关"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0186",
+      "item_type": "choice",
+      "stem": "合理开发利用矿产资源的措施有（　　）",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_geo11_mineral_resource"
+      ],
+      "difficulty": 0.5,
+      "solution": "合理开发应节约资源（A、B），适度进口、储备（D），避免盲目加大开采强度（C 错误）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提高资源利用率、综合利用共伴生矿",
+        "B. 减少浪费、保护环境",
+        "C. 加大开采强度",
+        "D. 进口替代、加强储备"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0187",
+      "item_type": "choice",
+      "stem": "下列污染属于大气污染主要来源的是（　　）",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_geo11_pollution_types"
+      ],
+      "difficulty": 0.4,
+      "solution": "大气污染主要来源于工业废气（A）、机动车尾气（B）、化石燃料燃烧（C）等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 工业废气",
+        "B. 交通工具尾气",
+        "C. 化石燃料燃烧",
+        "D. 农村柴薪（局部）"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0188",
+      "item_type": "choice",
+      "stem": "水体富营养化治理的根本措施是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_pollution_governance"
+      ],
+      "difficulty": 0.6,
+      "solution": "水体富营养化主要是氮、磷等营养物质过量排入引起，根本措施是控制污染物排放。",
+      "source": "llm_generated",
+      "options": [
+        "A. 控制含氮、磷等营养物质排入水体",
+        "B. 增加水体面积",
+        "C. 加深水体",
+        "D. 改变水温"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0189",
+      "item_type": "choice",
+      "stem": "下列措施中，有利于减轻「白色污染」的有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_pollution_governance"
+      ],
+      "difficulty": 0.4,
+      "solution": "减轻白色污染需源头减量（A、D）、替代品（B）、回收处理（C）等综合措施。",
+      "source": "llm_generated",
+      "options": [
+        "A. 减少一次性塑料制品使用",
+        "B. 推广可降解材料",
+        "C. 加强垃圾分类与回收",
+        "D. 提倡重复使用购物袋"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0190",
+      "item_type": "choice",
+      "stem": "碳达峰是指一个国家或地区（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_carbon_neutrality"
+      ],
+      "difficulty": 0.45,
+      "solution": "碳达峰指 CO₂ 排放量在某年达到历史最高值后开始下降；碳中和（碳净零）指排放与吸收平衡，净排放为零。",
+      "source": "llm_generated",
+      "options": [
+        "A. 二氧化碳排放达到峰值后开始下降",
+        "B. 碳排放持续上升",
+        "C. 净零排放",
+        "D. 吸收所有碳"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0191",
+      "item_type": "choice",
+      "stem": "实现「碳达峰、碳中和」的途径主要有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_carbon_neutrality"
+      ],
+      "difficulty": 0.45,
+      "solution": "实现双碳目标需从减排（A、B、D）和增汇（C）两端发力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 调整能源结构，发展清洁能源",
+        "B. 提高能源利用效率",
+        "C. 增加碳汇（植树造林等）",
+        "D. 发展低碳技术"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0192",
+      "item_type": "fill",
+      "stem": "我国「生态保护红线」的主要功能是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_ecology_protection"
+      ],
+      "difficulty": 0.5,
+      "solution": "生态保护红线是国家和区域生态安全的底线，划定重要生态功能区、生物多样性保护区等，实行严格保护。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0193",
+      "item_type": "choice",
+      "stem": "我国正式设立的首批国家公园之一是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_ecology_protection"
+      ],
+      "difficulty": 0.65,
+      "solution": "三江源、东北虎豹、大熊猫、海南热带雨林、武夷山是我国首批设立的国家公园（2021 年正式设立）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三江源国家公园",
+        "B. 黄山国家公园",
+        "C. 庐山国家公园",
+        "D. 张家界国家公园"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0194",
+      "item_type": "choice",
+      "stem": "我国耕地保护「红线」是确保耕地面积不低于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo11_agri_security"
+      ],
+      "difficulty": 0.55,
+      "solution": "我国严守 18 亿亩耕地红线，确保粮食安全。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12 亿亩",
+        "B. 18 亿亩",
+        "C. 22 亿亩",
+        "D. 30 亿亩"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0195",
+      "item_type": "choice",
+      "stem": "保障国家粮食安全的主要措施有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_agri_security"
+      ],
+      "difficulty": 0.5,
+      "solution": "粮食安全需要耕地保护（A）、科技支撑（B）、储备流通（C）、高标准农田（D）等综合措施。",
+      "source": "llm_generated",
+      "options": [
+        "A. 保护耕地、稳定粮食播种面积",
+        "B. 加大农业科技投入、提高单产",
+        "C. 完善粮食储备和流通体系",
+        "D. 推进高标准农田建设"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0196",
+      "item_type": "choice",
+      "stem": "我国水资源空间分布特点是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_water_security"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国水资源空间分布很不均匀，南方多、北方少，东部多、西部少。",
+      "source": "llm_generated",
+      "options": [
+        "A. 南丰北缺",
+        "B. 北丰南缺",
+        "C. 全国均匀",
+        "D. 仅东部丰富"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0197",
+      "item_type": "choice",
+      "stem": "缓解我国北方水资源短缺的主要措施有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_water_security"
+      ],
+      "difficulty": 0.55,
+      "solution": "北方缺水需开源（A、C）与节流（B、D）相结合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 南水北调（跨流域调水）",
+        "B. 节约用水、防治水污染",
+        "C. 海水淡化",
+        "D. 调整产业结构、限制高耗水产业"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0198",
+      "item_type": "choice",
+      "stem": "下列能源中，目前我国消费量最大的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_energy_security"
+      ],
+      "difficulty": 0.6000000000000001,
+      "solution": "我国能源消费结构以煤炭为主，石油、天然气、水电、核能、新能源等占比逐步上升。",
+      "source": "llm_generated",
+      "options": [
+        "A. 煤炭",
+        "B. 石油",
+        "C. 天然气",
+        "D. 水电"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0199",
+      "item_type": "choice",
+      "stem": "保障我国能源安全的途径主要有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_energy_security"
+      ],
+      "difficulty": 0.6,
+      "solution": "能源安全需要多元化（A）、加强勘探（B）、优化结构（C）、节能减排（D）等综合措施。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多元进口能源，分散风险",
+        "B. 加大国内勘探开发",
+        "C. 发展新能源、可再生能源",
+        "D. 节约能源、提高能效"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0200",
+      "item_type": "choice",
+      "stem": "我国管辖海域面积约为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo11_marine_security"
+      ],
+      "difficulty": 0.55,
+      "solution": "我国管辖海域面积约 300 万 km²；主张管辖海域面积约 470 万 km²（含争议海域）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 37 万 km²",
+        "B. 100 万 km²",
+        "C. 300 万 km²",
+        "D. 470 万 km²"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0201",
+      "item_type": "choice",
+      "stem": "维护我国海洋权益的主要措施有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_marine_security"
+      ],
+      "difficulty": 0.7,
+      "solution": "海洋权益维护需立法执法（A）、宣传教育（B）、军事科技（C）、合理开发（D）多管齐下。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完善海洋法律法规、加强执法",
+        "B. 加强海洋意识宣传教育",
+        "C. 增强海洋科技与海军实力",
+        "D. 合理开发利用海洋资源"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0202",
+      "item_type": "choice",
+      "stem": "气候变化对国家安全的影响主要表现在（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_climate_security"
+      ],
+      "difficulty": 0.65,
+      "solution": "气候变化对国家安全产生多维度影响：极端天气（A）、海平面（B）、粮食与水资源（C）、资源环境冲突（D）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 加剧极端天气事件，影响生产生活",
+        "B. 海平面上升威胁沿海地区",
+        "C. 影响粮食产量、水资源安全",
+        "D. 引发资源环境争端"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0203",
+      "item_type": "choice",
+      "stem": "GIS 空间分析中常用的功能有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_gis_spatial_analysis"
+      ],
+      "difficulty": 0.5,
+      "solution": "GIS 空间分析功能包括缓冲区分析（A）、叠加分析（B）、网络分析（C）、空间插值（D）等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 缓冲区分析",
+        "B. 叠加分析",
+        "C. 网络分析",
+        "D. 空间插值"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0204",
+      "item_type": "choice",
+      "stem": "在遥感影像上，水体（河流、湖泊）通常呈现（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_rs_interpretation"
+      ],
+      "difficulty": 0.5,
+      "solution": "水体在近红外波段强烈吸收，遥感影像上多呈暗色调，便于与植被、土壤等地物区分。",
+      "source": "llm_generated",
+      "options": [
+        "A. 较深的暗色调（吸收红外）",
+        "B. 亮白色",
+        "C. 红色",
+        "D. 与植被相同色调"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0205",
+      "item_type": "choice",
+      "stem": "判读城市用地扩张最有效的遥感资料是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_rs_interpretation"
+      ],
+      "difficulty": 0.5,
+      "solution": "通过对比不同时期高分辨率遥感影像，可以准确识别城市用地扩张范围、速度与方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多时相高分辨率影像",
+        "B. 单一文字报告",
+        "C. 老地图",
+        "D. 历史照片"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0206",
+      "item_type": "choice",
+      "stem": "GNSS 高精度定位（厘米级）主要采用的测量技术是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_gnss_applications"
+      ],
+      "difficulty": 0.55,
+      "solution": "高精度 GNSS 测量采用实时动态差分技术（RTK）或精密单点定位，可达厘米级精度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 实时差分（RTK）",
+        "B. 普通单点定位",
+        "C. 手持导航",
+        "D. 手表计时"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0207",
+      "item_type": "choice",
+      "stem": "GNSS 在地理野外考察中可用于（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_gnss_applications"
+      ],
+      "difficulty": 0.4,
+      "solution": "GNSS 在野外考察中可定位（A）、轨迹记录（B）、授时（C）、导航（D）等，是重要工具。",
+      "source": "llm_generated",
+      "options": [
+        "A. 精确测定考察点坐标",
+        "B. 记录行进轨迹",
+        "C. 测量时间",
+        "D. 导航定向"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0208",
+      "item_type": "choice",
+      "stem": "高中地理野外考察报告的主要内容应包括（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_fieldwork_design"
+      ],
+      "difficulty": 0.5,
+      "solution": "完整考察报告应包含目的路线（A）、方法过程（B）、数据分析（C）、结论建议（D）四部分。",
+      "source": "llm_generated",
+      "options": [
+        "A. 考察目的与路线",
+        "B. 考察方法与过程记录",
+        "C. 数据整理与分析",
+        "D. 结论与建议"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0209",
+      "item_type": "choice",
+      "stem": "Python 在地理数据处理中的常用库有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_data_process"
+      ],
+      "difficulty": 0.5,
+      "solution": "GeoPandas 处理矢量数据、Rasterio 处理栅格、Folium 交互式地图可视化、Matplotlib 通用绘图，均为常用库。",
+      "source": "llm_generated",
+      "options": [
+        "A. GeoPandas",
+        "B. Rasterio",
+        "C. Folium（地图可视化）",
+        "D. Matplotlib"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0210",
+      "item_type": "choice",
+      "stem": "人地系统分析的核心思想是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo11_system_analysis"
+      ],
+      "difficulty": 0.45,
+      "solution": "人地系统分析强调人类社会系统与自然地理环境的相互作用与协调发展，是地理学核心思想。",
+      "source": "llm_generated",
+      "options": [
+        "A. 协调人类活动与地理环境的关系",
+        "B. 单纯开发自然",
+        "C. 完全回归自然",
+        "D. 不考虑环境"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0211",
+      "item_type": "choice",
+      "stem": "区域发展综合评价常用的指标有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_region_assessment"
+      ],
+      "difficulty": 0.6,
+      "solution": "区域综合评价涵盖经济（A）、社会（B）、生态（C）、生活水平（D）多个维度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 经济发展水平",
+        "B. 社会发展水平",
+        "C. 生态环境质量",
+        "D. 居民生活水平"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_hs_0212",
+      "item_type": "choice",
+      "stem": "对地理议题进行思辨与论证时，应坚持的基本原则有（　　）",
+      "answer": "A,B,C,D",
+      "kps": [
+        "kp_geo11_geography_debate"
+      ],
+      "difficulty": 0.7,
+      "solution": "地理议题思辨需要可靠证据（A）、客观理性（B）、多维综合（C）、人地协调观（D）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 论据充分、数据可靠",
+        "B. 尊重事实、客观理性",
+        "C. 综合考虑经济、社会、生态效益",
+        "D. 注重人地协调观"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}
