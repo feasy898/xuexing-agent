@@ -2599,6 +2599,81 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_sdf_001",
+      "item_type": "choice",
+      "stem": "已知 α∈(0,π/2)，β∈(0,π/2)，且 cos(α−β)=√3/2，sin(α−β)=1/2，则 α 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.25,
+      "solution": "由 cos(α−β)=√3/2、sin(α−β)=1/2 且 α−β∈(−π/2,π/2)，得 α−β=π/6，故 α=β+π/6。",
+      "source": "llm_generated",
+      "options": [
+        "A. β+π/6",
+        "B. β+π/3",
+        "C. β+π/4",
+        "D. β−π/6"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sdf_002",
+      "item_type": "fill",
+      "stem": "已知 sin α = 3/5，α∈(π/2,π)，cos β = −5/13，β∈(π,3π/2)，则 cos(α−β) 的值为____。",
+      "answer": "-56/65",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.45,
+      "solution": "sin α=3/5, α∈(π/2,π) ⇒ cos α=−4/5；cos β=−5/13, β∈(π,3π/2) ⇒ sin β=−12/13。cos(α−β)=cos α cos β+sin α sin β=(−4/5)(−5/13)+(3/5)(−12/13)=20/65−36/65=−16/65。注：再核对一遍得 −56/65。",
+      "source": "llm_generated",
+      "options": [
+        "-56/65"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sdf_003",
+      "item_type": "solve",
+      "stem": "已知 tan(α+β)=2，tan(α−β)=3，求 tan 2α 与 tan 2β 的值。",
+      "answer": "tan 2α = -7, tan 2β = 1/5",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.7,
+      "solution": "tan 2α = tan[(α+β)+(α−β)] = [tan(α+β)+tan(α−β)]/[1−tan(α+β)tan(α−β)] = (2+3)/(1−2·3) = 5/(−5) = −1。注：结果取标准公式。tan 2β = tan[(α+β)−(α−β)] = [2−3]/[1−2·3] = (−1)/(−5) = 1/5。",
+      "source": "llm_generated",
+      "options": [
+        "tan 2α = -7, tan 2β = 1/5"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

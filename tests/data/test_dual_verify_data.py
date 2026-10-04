@@ -51,6 +51,16 @@
   修复时处理：chi_hs_0198（语文批同文件真重复 id，去重一条，chi 闭式 31→30）、
   che_hs2_0143（化学批与物理批 phy_phyjr_0407 整题重复的跨学科双落，移除
   化学侧）及批内去重（phy 866→860、che 999→977，现共 1837）。
+- 2026-10-04 密度收尾批 ×3（单代理自验 known issue，题内 verification 记录
+  即为覆盖凭证）：数学 45 题（h_sdf 等 15 个 KP 号段 ×3，入数学 g10-12 文件，
+  签名 mat-gen-w1-20261003，h_ 新号段与高中批共段、按代理签名区分）；政治
+  61 题（45 pol_FINAL_* + 13 pol_jr_* + 3 pol_hs_*，g8-11）；历史 11 题
+  （h_duj/ajv/edu 9 题 + his_jr_0469/0489，g7/g8）。注意：政治/历史收尾批的
+  candidates 台账（GEN_POL_FINAL/GEN_HIS_FINAL_ledger_gen.json）记的生成代理
+  是 pol-density-gen-20261004 / his-gen-w1-20261004，但统一入库脚本
+  work/merge_subject_safe.py 按 {学科}-gen-w1-20261003 签名落库——题库内三批
+  实际签名均为 *-gen-w1-20261003，POL_DENSITY_AGENTS/HIS_DENSITY_AGENTS 按
+  台账口径登记（库内现匹配 0 题，独立盲解回填若改用新 id 须同步本闭式）。
 
 三次 ledger 运行各自验证：ledger 逐题覆盖其子库且与标答判等；manifest 与
 现场重跑裁决逐位一致；回填记录 agents 与 manifest 代理身份一致、
@@ -179,20 +189,53 @@ def _is_bio(it):
     return it.get("verification", {}).get("agents") == BIO_AGENTS
 
 
+# 2026-10-03 K12 历史批（单代理自验 known issue）+ 2026-10-04 密度收尾批 11 题
+#（h_duj/ajv/edu 9 题 + his_jr_0469/0489，g7/g8）：收尾批 candidates 台账记
+# his-gen-w1-20261004（GEN_HIS_FINAL_ledger_gen.json），但入库脚本
+# work/merge_subject_safe.py 统一按 his-gen-w1-20261003 落库——题库内两批共用
+# HIS_AGENTS 签名，id 前缀 his_ 或 h_（收尾批新号段 h_duj/ajv/edu 用 h_）。
 HIS_AGENTS = ["his-gen-w1-20261003"]
-HIS_PREFIX = "his_"
+HIS_PREFIXES = ("his_", "h_")
 
 
 def _is_his(it):
     return it.get("verification", {}).get("agents") == HIS_AGENTS
 
 
+# 2026-10-04 数学密度收尾批（单代理自验 known issue）：45 题入数学 g10-12
+# 文件（h_sdf 等 15 个 KP 号段 ×3），签名 mat-gen-w1-20261003；题内 verification
+# 记录即为覆盖凭证。
+MAT_AGENTS = ["mat-gen-w1-20261003"]
+MAT_PREFIX = "h_"
+
+
+def _is_mat(it):
+    return it.get("verification", {}).get("agents") == MAT_AGENTS
+
+
 POL_AGENTS = ["pol-gen-w1-20261003"]
 POL_PREFIX = "pol_"
+# 2026-10-04 政治密度收尾批 61 题（45 pol_FINAL_* + 13 pol_jr_* + 3 pol_hs_*，
+# g8-11）：candidates 台账记 pol-density-gen-20261004（GEN_POL_FINAL_ledger_
+# gen.json），但入库脚本统一按 pol-gen-w1-20261003 落库——题库内该批与政治
+# 主批共用 POL_AGENTS 签名（已并入 _is_pol 圈定）；POL_DENSITY_AGENTS 按台账
+# 口径登记（库内现匹配 0 题），独立盲解回填若改用该 id 须同步本闭式。
+POL_DENSITY_AGENTS = ["pol-density-gen-20261004"]
+# 同上：历史密度收尾批台账 id，库内实际共用 HIS_AGENTS（见 HIS_AGENTS 注释），
+# 现匹配 0 题、仅作台账口径登记。
+HIS_DENSITY_AGENTS = ["his-gen-w1-20261004"]
 
 
 def _is_pol(it):
-    return it.get("verification", {}).get("agents") == POL_AGENTS
+    return it.get("verification", {}).get("agents") in (POL_AGENTS, POL_DENSITY_AGENTS)
+
+
+def _is_pol_den(it):
+    return it.get("verification", {}).get("agents") == POL_DENSITY_AGENTS
+
+
+def _is_his_den(it):
+    return it.get("verification", {}).get("agents") == HIS_DENSITY_AGENTS
 
 
 SCI_AGENTS = ["sci-gen-w1-20261003"]
@@ -201,10 +244,6 @@ SCI_PREFIX = "sci_"
 
 def _is_sci(it):
     return it.get("verification", {}).get("agents") == SCI_AGENTS
-
-
-def _is_his(it):
-    return it.get("verification", {}).get("agents") == HIS_AGENTS
 
 
 CHI_AGENTS = ["chi-gen-w1-20261003"]
@@ -654,12 +693,13 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert all(i.startswith(BIO_PREFIX) for i in bio_ids), "生物批题 id 前缀须为 bio_"
     assert not (bio_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids)), (
         "生物批与既有批次重叠")
-    # 2026-10-03 K12 历史批闭式（单代理自验 known issue）：下限式断言
+    # 2026-10-03 K12 历史批闭式（单代理自验 known issue）：下限式断言；2026-10-04
+    # 密度收尾批 11 题共用本签名（h_duj/ajv/edu 新号段用 h_，见 HIS_PREFIXES）
     his_ids = {it["id"] for it in all_items if _is_his(it)}
     assert len(his_ids) >= 1000, (
         "历史批规模异常（< 1000）：扩库须先登记代理身份并在本闭式同步；"
         "独立盲解回填后改登记为 [gen, indep]")
-    assert all(i.startswith(HIS_PREFIX) for i in his_ids), "历史批题 id 前缀须为 his_"
+    assert all(i.startswith(HIS_PREFIXES) for i in his_ids), "历史批题 id 前缀须为 his_/h_"
     assert not (his_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids)), (
         "历史批与既有批次重叠")
     # 2026-10-03 K12 地理批闭式（单代理自验 known issue）：下限式断言
@@ -687,6 +727,27 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert all(i.startswith(SCI_PREFIX) for i in sci_ids), "小学科学批题 id 前缀须为 sci_"
     assert not (sci_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids)), (
         "小学科学批与既有批次重叠")
+    # 2026-10-04 密度收尾批 ×3 闭式（单代理自验 known issue，见文件头）：数学 45
+    # 题（mat-gen-w1-20261003，h_ 新号段）；政治 61 题与历史 11 题在题库内共用
+    # POL_AGENTS/HIS_AGENTS 签名（已计入上方 pol_ids/his_ids），台账口径的
+    # pol-density-gen-20261004 / his-gen-w1-20261004 现库内匹配 0 题、留作独立
+    # 盲解回填改号时的 fail-closed 登记。下限式断言，不锁死具体数。
+    mat_ids = {it["id"] for it in all_items if _is_mat(it)}
+    pol_den_ids = {it["id"] for it in all_items if _is_pol_den(it)}
+    his_den_ids = {it["id"] for it in all_items if _is_his_den(it)}
+    assert len(mat_ids) >= 45, (
+        "数学密度收尾批规模异常（< 45）：扩库须先登记 MAT_AGENTS 并在本闭式同步")
+    assert all(i.startswith(MAT_PREFIX) for i in mat_ids), (
+        "数学密度收尾批题 id 前缀须为 h_")
+    assert not (mat_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids)), (
+        "数学密度收尾批与既有批次重叠")
+    assert all(i.startswith(POL_PREFIX) for i in pol_den_ids), (
+        "政治密度收尾批（若以台账 id 落库）题 id 前缀须为 pol_")
+    assert all(i.startswith(HIS_PREFIXES) for i in his_den_ids), (
+        "历史密度收尾批（若以台账 id 落库）题 id 前缀须为 his_/h_")
+    assert not ((pol_den_ids | his_den_ids)
+                & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids | mat_ids)), (
+        "政治/历史密度收尾批与既有批次重叠")
     chi_ids = {it["id"] for it in all_items if _is_chi(it)}
     assert len(chi_ids) >= 1600, (
         "语文批规模异常（< 1600）：扩库须先登记 CHI_AGENTS 并在本闭式同步；"
@@ -698,6 +759,7 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
         | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
+        | mat_ids | pol_den_ids | his_den_ids
     ) == all_ids
 
 
@@ -728,8 +790,17 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             assert iid.startswith(BIO_PREFIX), iid
             assert rec.get("single_agent") is True, iid
         elif rec["agents"] == HIS_AGENTS:
-            assert iid.startswith(HIS_PREFIX), iid
+            assert iid.startswith(HIS_PREFIXES), iid
             assert rec.get("single_agent") is True, iid
+        elif rec["agents"] == MAT_AGENTS:
+            assert iid.startswith(MAT_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-04 数学密度收尾批
+        elif rec["agents"] == POL_DENSITY_AGENTS:
+            assert iid.startswith(POL_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-04 政治收尾批台账 id（现库内 0 题）
+        elif rec["agents"] == HIS_DENSITY_AGENTS:
+            assert iid.startswith(HIS_PREFIXES), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-04 历史收尾批台账 id（现库内 0 题）
         elif rec["agents"] in (CHI_AGENTS, CHI_AGENTS_DUAL):
             assert iid.startswith(CHI_PREFIX), iid
             if rec["agents"] == CHI_AGENTS:

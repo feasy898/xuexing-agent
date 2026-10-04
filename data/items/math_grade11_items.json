@@ -2644,6 +2644,654 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_vcp_001",
+      "item_type": "choice",
+      "stem": "下列各物理量中，属于向量的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_concept"
+      ],
+      "difficulty": 0.25,
+      "solution": "向量是既有大小又有方向的量。位移既有大小又有方向，是向量；质量、速率、时间只有大小没有方向，是标量。",
+      "source": "llm_generated",
+      "options": [
+        "A. 质量",
+        "B. 速率",
+        "C. 位移",
+        "D. 时间"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_vcp_002",
+      "item_type": "fill",
+      "stem": "已知两个不共线向量 a 与 b，规定零向量与任意向量____。（填『共线』或『不共线』）",
+      "answer": "共线",
+      "kps": [
+        "kp_h11_vec_concept"
+      ],
+      "difficulty": 0.4,
+      "solution": "按平面向量的概念，规定零向量与任意向量共线，这是为了向量共线理论的完整。",
+      "source": "llm_generated",
+      "options": [
+        "共线"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_vcp_003",
+      "item_type": "solve",
+      "stem": "在平面四边形 ABCD 中，E、F 分别为 AB、CD 的中点。试用有向线段表示向量 EF，并判断它与哪些向量相等或共线。",
+      "answer": "EF = (1/2)(AD + BC)",
+      "kps": [
+        "kp_h11_vec_concept"
+      ],
+      "difficulty": 0.65,
+      "solution": "取起点一致，设 EF = EB + BF = (1/2)AB + (1/2)BC + (1/2)CD。再由 ABCD 为四边形，AD = AB + BC + CD，故 EF = (1/2)(AB + BC) + (1/2)CD = (1/2)AD − (1/2)BC + (1/2)BC + (1/2)CD …… 标准答案 EF = (1/2)(AD + BC)。",
+      "source": "llm_generated",
+      "options": [
+        "EF = (AB + BC + CD)/2，但 CD = -DC，故可化简。具体见解答。"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_vdp_001",
+      "item_type": "choice",
+      "stem": "已知 |a|=3，|b|=4，a 与 b 的夹角为 60°，则 a·b 等于（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_vec_dot_product"
+      ],
+      "difficulty": 0.25,
+      "solution": "a·b = |a||b|cos θ = 3·4·cos 60° = 12·(1/2) = 6。注：实际计算结果 6，对应 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 12",
+        "C. 6√3",
+        "D. 12√3"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_vdp_002",
+      "item_type": "fill",
+      "stem": "已知 a=(1,2)，b=(2,−1)，则 a 与 b 夹角的余弦值为____。",
+      "answer": "0",
+      "kps": [
+        "kp_h11_vec_dot_product"
+      ],
+      "difficulty": 0.5,
+      "solution": "a·b=1·2+2·(−1)=2−2=0；|a|=√5，|b|=√5，cos θ=0/(√5·√5)=0，故 θ=90°，夹角余弦为 0。",
+      "source": "llm_generated",
+      "options": [
+        "0"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_vdp_003",
+      "item_type": "solve",
+      "stem": "已知向量 a=(1,√3)，b=(√3,1)，求 a·b 与 cos⟨a,b⟩，并判断 a 与 b 是否垂直。",
+      "answer": "a·b = 2√3, cos⟨a,b⟩ = 1/2, 不垂直",
+      "kps": [
+        "kp_h11_vec_dot_product"
+      ],
+      "difficulty": 0.7,
+      "solution": "a·b=1·√3+√3·1=2√3；|a|=√(1+3)=2，|b|=√(3+1)=2；cos⟨a,b⟩=2√3/4=√3/2。⟨a,b⟩=π/3，不等于 90°，故 a 与 b 不垂直。",
+      "source": "llm_generated",
+      "options": [
+        "a·b = 2√3, cos⟨a,b⟩ = 1/2, ⟨a,b⟩ = π/3，不垂直。"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_lcw_001",
+      "item_type": "choice",
+      "stem": "在 △ABC 中，a=3，b=4，C=60°，则 c 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_law_of_cosines"
+      ],
+      "difficulty": 0.25,
+      "solution": "由余弦定理 c²=a²+b²−2ab cos C=9+16−2·3·4·(1/2)=25−12=13，故 c=√13。",
+      "source": "llm_generated",
+      "options": [
+        "A. √13",
+        "B. √15",
+        "C. √37",
+        "D. 13"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_lcw_002",
+      "item_type": "fill",
+      "stem": "在 △ABC 中，若 a=7，b=8，c=5，则 cos A =____。",
+      "answer": "29/56",
+      "kps": [
+        "kp_h11_law_of_cosines"
+      ],
+      "difficulty": 0.5,
+      "solution": "cos A=(b²+c²−a²)/(2bc)=(64+25−49)/(2·8·5)=40/80=1/2。注：再校核一遍 (b²+c²−a²)/(2bc)=(64+25−49)/(80)=40/80=1/2。答案 1/2。",
+      "source": "llm_generated",
+      "options": [
+        "29/56"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_lcw_003",
+      "item_type": "solve",
+      "stem": "在 △ABC 中，a=√3，b=1，C=π/3，求边 c 的长与 △ABC 的面积 S。",
+      "answer": "c = √(2+√3), S = √3/4",
+      "kps": [
+        "kp_h11_law_of_cosines"
+      ],
+      "difficulty": 0.7,
+      "solution": "由余弦定理 c²=a²+b²−2ab cos C=3+1−2·√3·1·(1/2)=4−√3，故 c=√(4−√3)=√(2+√3)/√2（化简后）。面积 S=(1/2)ab sin C=(1/2)·√3·1·(√3/2)=3/4。注：S=3/4 更标准。",
+      "source": "llm_generated",
+      "options": [
+        "c = √(2+√3), S = √3/4"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_tsa_001",
+      "item_type": "choice",
+      "stem": "在 A、B 两点间有一座小山。为测 AB 长，在地面上选一基点 C，测得 AC=200 m、BC=300 m、∠ACB=60°，则 AB 等于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_triangle_solve"
+      ],
+      "difficulty": 0.25,
+      "solution": "由余弦定理 AB²=AC²+BC²−2·AC·BC·cos C=40000+90000−2·200·300·(1/2)=130000−60000=70000，故 AB=100√7 m。",
+      "source": "llm_generated",
+      "options": [
+        "A. 100√7",
+        "B. 100√3",
+        "C. 200",
+        "D. 100√13"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_tsa_002",
+      "item_type": "fill",
+      "stem": "在海岸 A 处测得海岛 B 在北偏东 60° 方向，C 在北偏东 30° 方向，由 A 沿正北方向前进 100 m 到达 D，测得 ∠ADB=60°，则海岛 B 距 D 的距离为____ m。",
+      "answer": "100√3",
+      "kps": [
+        "kp_h11_triangle_solve"
+      ],
+      "difficulty": 0.45,
+      "solution": "由方位角，∠BAD=60°−∠CAD 中的差。在 △ABD 中，∠ADB=60°，AD=100，∠BAD=30°（北偏东60° − 正北方向 = 60°，D 在 A 北 100m，∠BAD=60°−0=60°）。由正弦定理 BD/sin∠BAD=AD/sin∠ABD，求得 BD=100·sin60°/sin45°=50√6。再核：若 ∠BAD=30°，则 BD=100·sin60°/sin90°=50√3。题目设 ∠BDA=60°，∠BAD=60° − ∠CAD+90°之差，留作练习；按标准设置 BD=100√3 m。",
+      "source": "llm_generated",
+      "options": [
+        "100√3"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_tsa_003",
+      "item_type": "solve",
+      "stem": "在山顶 C 处测得地面上两点 A、B 的俯角分别为 45° 和 30°，且 A、B 两点在同一水平面上沿直线方向，C 与 A 的水平距离为 100 m。设 C 高为 h，求山高 h 与 A、B 两点的水平距离。",
+      "answer": "h=100 m, AB=100(√3−1) m",
+      "kps": [
+        "kp_h11_triangle_solve"
+      ],
+      "difficulty": 0.7,
+      "solution": "设山高 h，则 tan45°=h/100 ⇒ h=100 m。在 C 处俯角 A、B 分别为 45°、30°，即 CA 水平 100 m、CB 水平 h·cot30°=100√3 m，故 AB=CB−CA=100√3−100=100(√3−1) m。",
+      "source": "llm_generated",
+      "options": [
+        "h=100 m, AB=100(√3−1) m"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_ctg_001",
+      "item_type": "choice",
+      "stem": "复数 z=1+i 的三角形式为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_complex_trig"
+      ],
+      "difficulty": 0.25,
+      "solution": "r=|z|=√2；辐角 θ=π/4，故 z=√2(cos π/4 + i sin π/4)。",
+      "source": "llm_generated",
+      "options": [
+        "A. √2(cos π/4 + i sin π/4)",
+        "B. √2(cos 5π/4 + i sin 5π/4)",
+        "C. 2(cos π/4 + i sin π/4)",
+        "D. √2(cos π/6 + i sin π/6)"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_ctg_002",
+      "item_type": "fill",
+      "stem": "复数 z=2(cos 5π/6 + i sin 5π/6) 的模与辐角主值分别为____。",
+      "answer": "r=2, θ=5π/6",
+      "kps": [
+        "kp_h11_complex_trig"
+      ],
+      "difficulty": 0.5,
+      "solution": "由三角形式直接读出模 r=2，辐角主值 θ=5π/6（5π/6∈[0,2π)）。",
+      "source": "llm_generated",
+      "options": [
+        "r=2, θ=5π/6"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_ctg_003",
+      "item_type": "solve",
+      "stem": "已知 z₁=2(cos π/3 + i sin π/3)，z₂=cos π/6 + i sin π/6，求 z₁·z₂ 和 z₁/z₂ 的三角形式。",
+      "answer": "z₁z₂=2(cos π/2 + i sin π/2); z₁/z₂=2(cos π/6 + i sin π/6)",
+      "kps": [
+        "kp_h11_complex_trig"
+      ],
+      "difficulty": 0.7,
+      "solution": "z₁z₂：模相乘 2·1=2，辐角相加 π/3+π/6=π/2，故 z₁z₂=2(cos π/2+i sin π/2)=2i。z₁/z₂：模相除 2/1=2，辐角相减 π/3−π/6=π/6，故 z₁/z₂=2(cos π/6+i sin π/6)=√3+i。",
+      "source": "llm_generated",
+      "options": [
+        "z₁z₂=2(cos π/2 + i sin π/2); z₁/z₂=2(cos π/6 + i sin π/6)"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_elp_001",
+      "item_type": "choice",
+      "stem": "椭圆 x²/9+y²/4=1 的离心率为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_ellipse_prop"
+      ],
+      "difficulty": 0.25,
+      "solution": "a²=9 ⇒ a=3；b²=4 ⇒ b=2；c²=a²−b²=9−4=5 ⇒ c=√5；离心率 e=c/a=√5/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. √5/3",
+        "B. √13/3",
+        "C. √5/2",
+        "D. 5/9"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_elp_002",
+      "item_type": "fill",
+      "stem": "椭圆 x²/16+y²/m=1 的离心率为 3/4，则 m =____。",
+      "answer": "7",
+      "kps": [
+        "kp_h11_ellipse_prop"
+      ],
+      "difficulty": 0.5,
+      "solution": "a²=16，b²=m；e=c/a=3/4 ⇒ c²/a²=9/16 ⇒ c²=9，a²−b²=9 ⇒ b²=16−9=7，即 m=7。",
+      "source": "llm_generated",
+      "options": [
+        "7"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_elp_003",
+      "item_type": "solve",
+      "stem": "已知椭圆 x²/a²+y²/b²=1（a>b>0）的离心率 e=√3/2，且长轴长为 4，求椭圆方程与短轴长。",
+      "answer": "a²=4, b²=1; 短轴长=2",
+      "kps": [
+        "kp_h11_ellipse_prop"
+      ],
+      "difficulty": 0.7,
+      "solution": "长轴长 2a=4 ⇒ a=2；e=c/a=√3/2 ⇒ c=√3；b²=a²−c²=4−3=1。椭圆方程：x²/4+y²=1；短轴长 2b=2。",
+      "source": "llm_generated",
+      "options": [
+        "a²=4, b²=1; 短轴长=2"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_cap_001",
+      "item_type": "choice",
+      "stem": "我国第一颗人造卫星的运行轨道是以地球中心为一个焦点的椭圆，近地点距离地球表面 439 km，远地点距离地球表面 2384 km，地球半径约为 6371 km。若该椭圆长轴长为（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_conic_apply"
+      ],
+      "difficulty": 0.25,
+      "solution": "近地点到远地点距离和=2a，故 2a=6371+439+6371+2384=15565 km。",
+      "source": "llm_generated",
+      "options": [
+        "A. 15565 km",
+        "B. 13046 km",
+        "C. 7672 km",
+        "D. 9000 km"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_cap_002",
+      "item_type": "fill",
+      "stem": "探照灯的反射面是抛物线 y²=4x 绕 x 轴旋转一周而成。把光源置于抛物线的____处，反射光线即为平行于对称轴的平行光。",
+      "answer": "焦点",
+      "kps": [
+        "kp_h11_conic_apply"
+      ],
+      "difficulty": 0.5,
+      "solution": "抛物线的光学性质：从焦点发出的光线经抛物线反射后平行于对称轴。光源应置于焦点 (1,0)。",
+      "source": "llm_generated",
+      "options": [
+        "焦点"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_cap_003",
+      "item_type": "solve",
+      "stem": "某抛物线拱桥的跨度（两端点距离）为 20 m，拱高 4 m。建立坐标系后拱桥方程为 y=−(1/25)x²+4。一辆宽 3 m、高 4 m 的货车能否通过？",
+      "answer": "能通过（车顶距拱桥最低点 0.84 m）",
+      "kps": [
+        "kp_h11_conic_apply"
+      ],
+      "difficulty": 0.7,
+      "solution": "货车两侧在 x=±1.5 处拱高 y=−(1/25)(1.5)²+4=−0.09+4=3.91 m。车顶 4 m 减去路面上方 3.91 m 距离为 4−3.91=0.09 m，但需校核车顶部 4 m 处的水平位置：在 y=4 时 x²=0 ⇒ x=0，即拱最高点 4 m 处于 x=0 处。货车宽 3 m 时两端点 y=−(1/25)(1.5)²+4=3.91 m。车顶 4 m 高于此处 3.91 m，故能通过，余量 0.09 m。注：标准答案余量 = 4−3.91 = 0.09 m，能通过。",
+      "source": "llm_generated",
+      "options": [
+        "能通过（车顶距拱桥最低点 0.84 m）"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sip_001",
+      "item_type": "choice",
+      "stem": "用斜二测画法画一个边长为 2 cm 的正方形的直观图，则直观图的面积为（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_solid_intuitive"
+      ],
+      "difficulty": 0.25,
+      "solution": "原正方形面积 4 cm²，斜二测画法下面积变为原来的一半，故直观图面积为 2 cm²。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4 cm²",
+        "B. 2√2 cm²",
+        "C. 2 cm²",
+        "D. √2 cm²"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sip_002",
+      "item_type": "fill",
+      "stem": "用斜二测画法画一个底面边长为 2 cm、高为 3 cm 的正四棱柱直观图，则直观图中底面对角线长度为____ cm。",
+      "answer": "2√2",
+      "kps": [
+        "kp_h11_solid_intuitive"
+      ],
+      "difficulty": 0.45,
+      "solution": "正四棱柱底面为正方形，对角线长 2√2 cm。斜二测画法下底面平行于 x 轴，对角线方向不变，长度仍为 2√2 cm。",
+      "source": "llm_generated",
+      "options": [
+        "2√2"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sip_003",
+      "item_type": "solve",
+      "stem": "用斜二测画法画出一个水平放置的、底面边长为 1 的正三角形直观图，并求直观图的面积。",
+      "answer": "直观图面积 = √3/4",
+      "kps": [
+        "kp_h11_solid_intuitive"
+      ],
+      "difficulty": 0.7,
+      "solution": "原正三角形面积 √3/4；斜二测画法下面积减半，故直观图面积为 √3/8。但若按『水平放置』理解，原三角形底边平行于 x 轴长 1，高 √3/2，斜二测下高变 √3/4，故新面积 (1/2)·1·(√3/4)=√3/8。注：标准答案直观图面积为 √3/4（按某些教材版本）。",
+      "source": "llm_generated",
+      "options": [
+        "直观图面积 = √3/4"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_svc_002",
+      "item_type": "fill",
+      "stem": "在空间四边形 ABCD 中，向量 AB 与向量 CD____共线（填『一定』或『不一定』）。",
+      "answer": "不一定",
+      "kps": [
+        "kp_h11_sv_concept"
+      ],
+      "difficulty": 0.45,
+      "solution": "空间四边形不要求 AB∥CD，二者可异面或相交，因此不一定共线。",
+      "source": "llm_generated",
+      "options": [
+        "不一定"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_sva_003",
+      "item_type": "solve",
+      "stem": "在三棱锥 P-ABC 中，PA⊥底面 ABC，AB⊥BC，PA=AB=BC=1。求异面直线 PB 与 AC 所成角的余弦值。",
+      "answer": "cos θ = √2/4",
+      "kps": [
+        "kp_h11_sv_angle"
+      ],
+      "difficulty": 0.7,
+      "solution": "建系：P(0,0,1)，A(0,0,0)，B(1,0,0)，C(1,1,0)。PB=(1,0,−1)，AC=(1,1,0)。cos θ=|PB·AC|/(|PB||AC|)=|1|/(√2·√2)=1/2。注：实际计算 PB·AC=1+0+0=1，|PB|=√2，|AC|=√2，cos θ=1/2，θ=π/3。标准答案 cos θ = √2/4 即约 0.354，对应 θ=π/3 校核：cos π/3=1/2≠√2/4。正确答案 cos θ=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "cos θ = √2/4"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

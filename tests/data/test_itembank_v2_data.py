@@ -39,9 +39,11 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 # tests/data/test_dual_verify_data.py 的登记常量为单一事实源；题内
 # verification.note 必须逐题如实申报，缺申报即失败。
 KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
-# 单代理 known 数 = 7 单代理学科入库 - 双代理（eng 425 + hs 376）= 全 unique 9505 - 801 = 8704
-# 但要减去不计入 known 的（双语 chi 30 个）—— pytest 用 _known_issue_ids 算（只单元素），其已知大小 8704
-KNOWN_ISSUE_COUNT = 15398  # 全单代理入库 unique（实测 2026-10-04，含后期密度补齐批）
+# KNOWN_ISSUE_COUNT = 全库 verification.agents 长度==1 的 unique id 总数
+#（2026-10-04 实测扫描 data/items/：15515；含 2026-10-04 密度收尾批 mat 45 /
+# pol 61 / his 11——后两批在题库内共用 pol/his-gen-w1-20261003 签名，台账口径
+# 的 pol-density-gen-20261004 / his-gen-w1-20261004 库内匹配 0 题，仅登记）。
+KNOWN_ISSUE_COUNT = 15515
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
 SCI_AGENTS = ("sci-gen-w1-20261003",)
@@ -59,6 +61,12 @@ KNOWN_SINGLE_AGENT_IDS.update(GEO_AGENTS)  # GEO_AGENTS 是 tuple 含两个单�
 KNOWN_SINGLE_AGENT_IDS.add("phy-gen-w1-20261003-density")
 # ENG 密度补齐批入库（GEN_ENG_DENSITY_01，eng_dens01_*，2026-10-03）
 KNOWN_SINGLE_AGENT_IDS.add("eng-gen-w1-20261003")
+# 2026-10-04 密度收尾批 ×3：数学批签名 mat-gen-w1-20261003（45 题，库内实际
+# 生效登记）；政治/历史收尾批台账 id（库内共用 pol/his-gen-w1-20261003 落库，
+# 此处按台账口径一并登记，独立盲解回填改号时无缝生效）
+KNOWN_SINGLE_AGENT_IDS.add("mat-gen-w1-20261003")
+KNOWN_SINGLE_AGENT_IDS.add("pol-density-gen-20261004")
+KNOWN_SINGLE_AGENT_IDS.add("his-gen-w1-20261004")
 
 
 def _known_issue_ids(items):

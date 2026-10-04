@@ -8815,6 +8815,104 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "pol_FINAL_g10cs_001",
+      "item_type": "choice",
+      "stem": "在我国，人大与「一府一委两院」的关系是（    ）",
+      "answer": "A",
+      "kps": [
+        "kp_pol10_congress_system"
+      ],
+      "difficulty": 0.35,
+      "solution": "人民代表大会统一行使国家权力，「一府一委两院」由人大产生，对人大负责，受人大监督，这是人大制度的内在逻辑，故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 「一府一委两院」由人大产生，对人大负责，受人大监督",
+        "B. 「一府一委两院」平行于人大，互不统属",
+        "C. 人大受「一府一委两院」监督",
+        "D. 人大与「一府一委两院」相互独立、互不干涉"
+      ],
+      "form": "单选",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_FINAL_g10cs_002",
+      "item_type": "solve",
+      "stem": "材料：十三届全国人大常委会听取和审议了国务院关于2023年环境状况和环境保护目标完成情况的报告、最高人民法院关于知识产权审判工作情况的报告和最高人民检察院关于行政检察工作情况的报告，并对三份报告分别提出了审议意见。结合材料，分析材料是如何体现人民代表大会制度的运行机制的。",
+      "answer": "(1)人民代表大会统一行使国家权力：全国人大常委会是最高国家权力机关的常设机关，依法行使监督权。(2)听取和审议「一府两院」工作报告，是人大行使监督权的体现：确保行政机关、审判机关、检察机关依法行使职权、依法履职尽责。(3)「一府两院」由人大产生、对人大负责、受人大监督：三份报告体现「一府两院」对人大负责、受人大监督的宪法关系。(4)把坚持党的领导、人民当家作主、依法治国有机统一起来：人大依法行使监督权，体现了宪法法律至上，保障了人民当家作主。(5)这一运行机制既能保证国家机关协调高效运转，又能保证国家权力始终掌握在人民手中，是人民代表大会制度显著优势的体现。",
+      "kps": [
+        "kp_pol10_congress_system"
+      ],
+      "difficulty": 0.6,
+      "solution": "本题以全国人大常委会监督「一府两院」为情境考查人大制度运行机制。答题扣「统一行使权力、监督权、产生负责监督关系、三者统一、制度优势」五点展开。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "材料分析",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_FINAL_g10cs_003",
+      "item_type": "solve",
+      "stem": "请你围绕「如何坚持和完善人民代表大会制度」这一主题，结合所学知识，写一篇不少于三条要点的短论。",
+      "answer": "①坚持党对人大工作的全面领导：把党的领导贯穿于人大依法履职的全过程，保证党的路线方针政策在人大工作中得到全面贯彻。②支持和保证人民通过人民代表大会行使国家权力：密切人大代表同人民群众的联系，使各级人大及其常委会成为同人民群众保持密切联系的代表机关。③坚持民主集中制原则：保证国家机关按照法定权限和程序行使权力，保障人大依法行使立法权、监督权、决定权、任免权。④加强人大自身建设：优化人大常委会组成人员结构，提升人大代表的履职能力，完善人大议事规则和工作机制。⑤坚持全面依法治国：完善以宪法为核心的中国特色社会主义法律体系，确保立法工作反映人民意愿、体现时代要求。",
+      "kps": [
+        "kp_pol10_congress_system"
+      ],
+      "difficulty": 0.75,
+      "solution": "开放性论述题。评分要点：能扣「党的领导、人民当家作主、民主集中制、自身建设、依法治国」中至少三点展开，逻辑清晰、言之成理。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "论述",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_hs_0190",
+      "item_type": "choice",
+      "stem": "我国的根本政治制度是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_pol10_congress_system"
+      ],
+      "difficulty": 0.45,
+      "solution": "人民代表大会制度是我国的根本政治制度，B、C、D是我国的基本政治制度，故选A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人民代表大会制度",
+        "B. 中国共产党领导的多党合作和政治协商制度",
+        "C. 民族区域自治制度",
+        "D. 基层群众自治制度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
