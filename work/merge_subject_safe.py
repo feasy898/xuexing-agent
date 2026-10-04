@@ -64,7 +64,7 @@ def merge_subject_safe(subject: str):
             if len(kps) != 1:
                 rejected += 1
                 continue
-            m_kp = re.search(r"_(?:bio|chem|che|phy|eng|chi|geo|hist|pol|sci|math|pri|jr|hs)(\d+)_", kps[0])
+            m_kp = re.search(r"_(?:bio|chem|che|phy|eng|chi|geo|hist|pol|sci|math|pri|jr|hs|h|p)(\d+)_", kps[0])
             known_g = int(m_kp.group(1)) if m_kp else 0
             if known_g not in set(grades):
                 rejected += 1

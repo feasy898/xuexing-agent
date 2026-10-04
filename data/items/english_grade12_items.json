@@ -9079,6 +9079,930 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_hs2_0003",
+      "item_type": "solve",
+      "stem": "假设你作为研究小组的一员，要评价上题摘要所述研究的结论是否严谨。请写出3条评价角度(不超过50词)。",
+      "answer": "1)样本量与代表性:24个站点能否代表整个南海?2)相关vs因果:78%占比不能直接推断陆地是主要来源,还需考虑洋流作用。3)时空局限:仅表层、短期采样不能反映垂直分布与季节差异,需结合长期监测。",
+      "kps": [
+        "kp_eng12_dis12_academic"
+      ],
+      "difficulty": 0.78,
+      "solution": "本题考查对学术研究报告结论严谨性的评价能力。需从样本代表性、相关与因果、时空局限等维度切入,参考答案列出三个角度,每点均可从摘要中找出对应依据。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0009",
+      "item_type": "fill",
+      "stem": "用括号内所给词的适当形式填空:His ____ (argue) that the policy was unfair convinced the committee.",
+      "answer": "argument",
+      "kps": [
+        "kp_eng12_voc12_deep_word"
+      ],
+      "difficulty": 0.65,
+      "solution": "作主语须用动名词形式arguing,意为他关于政策不公平的争论说服了委员会。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0011",
+      "item_type": "fill",
+      "stem": "用恰当的习语填空:When the negotiation reached a ______ (僵局), the mediator proposed a break.",
+      "answer": "deadlock / stalemate",
+      "kps": [
+        "kp_eng12_voc12_idiomatic"
+      ],
+      "difficulty": 0.5,
+      "solution": "deadlock与stalemate均可表示僵局,常与reach / hit / end in搭配。deadlock多用于谈判、讨论;stalemate多用于博弈、棋局。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0013",
+      "item_type": "solve",
+      "stem": "请围绕英语科学主题列出5个语义场相关词块(中文+英文)。",
+      "answer": "1) hypothesis 假设;2) conduct an experiment 做实验;3) collect data 收集数据;4) draw a conclusion 得出结论;5) peer review 同行评审",
+      "kps": [
+        "kp_eng12_voc12_semantic_field"
+      ],
+      "difficulty": 0.55,
+      "solution": "本题考查科学主题语境下词块的成组调用能力。需调用假设-实验-数据-结论-评审这一完整科学流程的词块,且每条至少包含一个动作或核心名词,避免仅给孤立单词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0015",
+      "item_type": "solve",
+      "stem": "将下列口语化句子改写为正式书面语(30词以内):The kids went nuts when they saw the surprise party.",
+      "answer": "The children were utterly delighted / overjoyed upon seeing the surprise party arranged in their honour.",
+      "kps": [
+        "kp_eng12_voc12_word_choice"
+      ],
+      "difficulty": 0.62,
+      "solution": "口语went nuts改为were utterly delighted/overjoyed;kids改为children;saw改为合适依据,arranged in their honour体现书面正式语体。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0017",
+      "item_type": "solve",
+      "stem": "将中文句子他的成功一半靠努力,一半靠运气意译为地道英文(不超过25词)。",
+      "answer": "His success owes as much to his persistent effort as to sheer luck.",
+      "kps": [
+        "kp_eng12_voc12_chinese_english"
+      ],
+      "difficulty": 0.55,
+      "solution": "直译为His success half depends on effort and half on luck较生硬。owes...to句式归功于/得益于,as much to A as to B表A和B同等重要,更地道。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0026",
+      "item_type": "fill",
+      "stem": "填空:The proposal ______ (that) they put forward was finally accepted.",
+      "answer": "that",
+      "kps": [
+        "kp_eng12_gra12_appositive_clause"
+      ],
+      "difficulty": 0.65,
+      "solution": "the proposal后定语从句(put forward缺宾语),用that/which引导。此处亦可填which。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0030",
+      "item_type": "fill",
+      "stem": "填空完成省略句:— Are you coming? — I hope ______ (to).",
+      "answer": "to",
+      "kps": [
+        "kp_eng12_gra12_ellipsis"
+      ],
+      "difficulty": 0.62,
+      "solution": "hope后省略come,整句为I hope to (come)。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0036",
+      "item_type": "solve",
+      "stem": "假设你是校报编辑,需写一篇关于高中生使用手机时长的社论(80词以内)。请列出三点支持限制时长的论据。",
+      "answer": "1)影响课堂专注:数据显示上课使用手机的学生课堂参与度下降约30%。2)损害视力与睡眠:长期盯着屏幕导致近视率上升、晚间拖延影响次日精力。3)削弱深度思考:碎片化信息接收降低长时间阅读与独立思考能力。呼吁学校出台合理制度、家长以身作则。",
+      "kps": [
+        "kp_eng12_dis12_official_review"
+      ],
+      "difficulty": 0.72,
+      "solution": "本题要求运用社论分论点—论据—呼吁结构。三个论据分别从学习、健康、思维品质切入,体现逻辑推进;最后以呼吁收尾,形成完整社论骨架。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0038",
+      "item_type": "fill",
+      "stem": "用隐性衔接手段补全句子:The room was packed ______ (没有任何空位), yet no one seemed to mind standing.",
+      "answer": "with no empty seats",
+      "kps": [
+        "kp_eng12_dis12_implicit_cohesion"
+      ],
+      "difficulty": 0.6,
+      "solution": "without any empty seats / with no empty seats均可,表示没有空座位,与后句yet表对比形成隐性转折衔接。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0040",
+      "item_type": "solve",
+      "stem": "假设你要向英国交换生介绍中国春节习俗,请写一段得体的开场白(30词以内)。",
+      "answer": "Good afternoon, everyone. I'm delighted to share with you the traditions of Chinese New Year — a festival full of reunion, blessings, and rich cultural meaning.",
+      "kps": [
+        "kp_eng12_prg12_appropriate_wide"
+      ],
+      "difficulty": 0.62,
+      "solution": "得体开场白要点:礼貌称呼+自我介绍+话题预告+情感色彩。注意使用Good afternoon / I'm delighted to share等正式表达。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0042",
+      "item_type": "fill",
+      "stem": "用模糊语改写下列过绝对句:This is the best method. → ______",
+      "answer": "This seems / appears to be one of the most effective methods.",
+      "kps": [
+        "kp_eng12_prg12_hedge_language"
+      ],
+      "difficulty": 0.5,
+      "solution": "将绝对最高级the best弱化为one of the most...,加seems / appears to be表示主观判断,缓和语气。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0044",
+      "item_type": "solve",
+      "stem": "请用英文介绍英国下午茶(afternoon tea)的文化内涵(30词以内)。",
+      "answer": "Afternoon tea is a British tradition usually taken at 4 pm, featuring tea, scones and sandwiches. It reflects the British value of leisure and refined social interaction.",
+      "kps": [
+        "kp_eng12_cul12_culture_feature"
+      ],
+      "difficulty": 0.55,
+      "solution": "需点明时间(4 pm)、内容(tea, scones, sandwiches)与文化内涵(悠闲、社交仪式感)。注意避免中式直译。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0046",
+      "item_type": "solve",
+      "stem": "请用英文写出你最欣赏的一部文学作品(或名人传记)的核心精神(30词以内)。",
+      "answer": "Sample: From Charlotte's Web I learnt that sincere friendship and sacrifice can transcend species and time — love makes even the briefest life meaningful.",
+      "kps": [
+        "kp_eng12_cul12_speech_literature"
+      ],
+      "difficulty": 0.65,
+      "solution": "回答需点出作品名+核心主题+个人感悟,避免只罗列情节。注意使用learnt/realised等感悟动词。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0048",
+      "item_type": "solve",
+      "stem": "请用英文向国际交换生简要说明一带一路(Belt and Road)倡议的意义(80词以内)。",
+      "answer": "The Belt and Road Initiative, proposed by China in 2013, aims to enhance connectivity and cooperation across Asia, Europe and Africa. By investing in infrastructure and trade routes, it promotes mutual benefit, cultural exchange, and shared prosperity among partner countries.",
+      "kps": [
+        "kp_eng12_cul12_china_influence"
+      ],
+      "difficulty": 0.62,
+      "solution": "要点:倡议时间(2013)、目的(互联互通、合作)、手段(基础设施+贸易)、意义(互利、文化交流、共同繁荣)。避免政治化表述,用mutual / shared等中性词。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0050",
+      "item_type": "solve",
+      "stem": "请用30词以内阐释上段画线词childish在文中的情感态度。",
+      "answer": "“Childish” here is dismissive and contemptuous, reflecting critics' initial underestimation of her unconventional style.",
+      "kps": [
+        "kp_eng12_red12_evaluate"
+      ],
+      "difficulty": 0.6,
+      "solution": "需指出childish一词的贬义、批评者高高在上的态度及对艺术家风格的低估。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0052",
+      "item_type": "solve",
+      "stem": "请举例说明一幅公益海报中图像(visual)与文字(verbal)如何共同建构意义(30词以内)。",
+      "answer": "Example: A poster showing a parched earth cracking beneath a green seedling, captioned 'Every drop matters' — image and words together amplify the urgency of water conservation.",
+      "kps": [
+        "kp_eng12_vie12_media_construct"
+      ],
+      "difficulty": 0.6,
+      "solution": "要点:描述具体图像(干旱大地+嫩芽)+ 文字标语 + 二者协同效果。注意避免只描述图像或文字。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0054",
+      "item_type": "solve",
+      "stem": "阅读:After three months of online learning, the average grade rose from 72 to 78, while the dropout rate fell by 40%. 请用一个原因(不超过25词)合理解释这一变化。",
+      "answer": "Online learning gave flexible access to recorded lectures and personalised feedback, helping weaker students catch up and reducing their likelihood of dropping out.",
+      "kps": [
+        "kp_eng12_red12_logic_infer"
+      ],
+      "difficulty": 0.6,
+      "solution": "需提出一个能同时解释分数提高和辍学率下降的因果机制,例如个性化辅导、灵活性、回看便利等。避免仅停留在现象描述。",
+      "source": "llm_generated",
+      "form": "inference",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0056",
+      "item_type": "solve",
+      "stem": "请用英文写出2个与时间相关的隐喻句(每句不超过15词)。",
+      "answer": "1) Time is money — spend it wisely. 2) Time is a river — it never flows back.",
+      "kps": [
+        "kp_eng12_red12_metaphor"
+      ],
+      "difficulty": 0.55,
+      "solution": "需体现A is B的隐喻结构,且与时间主题契合。避免写成明喻(as ... as time)。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0058",
+      "item_type": "solve",
+      "stem": "请用50词以内写一段想象中的2070年的校园画面,含至少两个细节描写。",
+      "answer": "In 2070, holographic teachers float in the air while students explore Mars terrain via VR desks. The cafeteria grows vegetables on the walls, and the bell is replaced by a soft chime that only those inside can hear.",
+      "kps": [
+        "kp_eng12_spk12_imagine"
+      ],
+      "difficulty": 0.78,
+      "solution": "需含具体细节(全息教师、VR火星、墙壁蔬菜、柔和铃声),用感官动词描绘画面,避免抽象概括。",
+      "source": "llm_generated",
+      "form": "narrative",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0060",
+      "item_type": "solve",
+      "stem": "请以On the Importance of Reading Classics为题,写一段立场鲜明的评论(80词以内)。",
+      "answer": "Reading classics is essential, not optional. Classics condense humanity's deepest reflections on life, morality and beauty, broadening our minds beyond the limits of our own experience. Without classics, our thinking becomes shallow and our language loses depth.",
+      "kps": [
+        "kp_eng12_spk12_comment"
+      ],
+      "difficulty": 0.78,
+      "solution": "需含明确立场(essential)+ 至少两点理由(思想深度/语言积累)+ 反驳对立面(without classics...)。注意使用condense / broaden等reflect类动词。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0062",
+      "item_type": "solve",
+      "stem": "将下列直接表达改写为委婉表达:Your plan is terrible and won't work. → ______",
+      "answer": "I'm not sure this approach may work as well as we hope; perhaps we could explore some alternatives.",
+      "kps": [
+        "kp_eng12_spk12_hedge"
+      ],
+      "difficulty": 0.55,
+      "solution": "用I'm not sure / perhaps / could模糊语替代terrible / won't work,缓和批评,保留尊重。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0063",
+      "item_type": "solve",
+      "stem": "请用50词以内总结你认为最有效的英语词汇学习方法。",
+      "answer": "I learn vocabulary by topic-based chunks rather than isolated words, review them in context (听写、复述、写作), and keep a vocabulary notebook with example sentences and personal reflections.",
+      "kps": [
+        "kp_eng12_lsm12_summarise_method"
+      ],
+      "difficulty": 0.6,
+      "solution": "要点:方法(topic-based chunks)+ 复习机制(context)+ 工具(notebook with example sentences)。避免只说多背多记。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0065",
+      "item_type": "solve",
+      "stem": "假设你收集了5个关于气候变化的事实片段,请用30个词以内说明你将如何分类与重组。",
+      "answer": "I will group them by cause (emissions, deforestation) and effect (sea-level rise, extreme weather), then summarise each group under a clear sub-heading.",
+      "kps": [
+        "kp_eng12_lsm12_info_reorganise"
+      ],
+      "difficulty": 0.6,
+      "solution": "需说明分类维度(cause/effect)+ 重组方式(分组+小标题)。避免笼统说分类整理。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0067",
+      "item_type": "solve",
+      "stem": "请用30词以内说明英美人在收到礼物时为何常当场打开并表达感谢。",
+      "answer": "Opening the gift in front of the giver shows appreciation and interest; expressing thanks verbally reinforces the giver's thoughtfulness and the relationship.",
+      "kps": [
+        "kp_eng12_lsm12_polite_culture"
+      ],
+      "difficulty": 0.55,
+      "solution": "要点:当场打开(shows appreciation/in interest)+ 口头感谢(reinforces relationship)。注意英美与中式不当面打开的差异。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0068",
+      "item_type": "solve",
+      "stem": "请用30词以内谈谈如何保持持久的英语学习动力。",
+      "answer": "Set small weekly goals, track them in a learning journal, and reward myself with a favourite English movie or book after each milestone reached.",
+      "kps": [
+        "kp_eng12_lsm12_persistence"
+      ],
+      "difficulty": 0.55,
+      "solution": "需含具体可操作机制(weekly goals + journal + reward),避免空洞说教。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0072",
+      "item_type": "solve",
+      "stem": "请围绕人工智能与教育主题列出5个词块(英文+中文)。",
+      "answer": "1) adaptive learning 自适应学习;2) personalised feedback 个性化反馈;3) learning analytics 学习分析;4) virtual teaching assistant 虚拟助教;5) ethical concerns 伦理关切",
+      "kps": [
+        "kp_eng12_voc12_topic_advanced"
+      ],
+      "difficulty": 0.6,
+      "solution": "需为该主题相关词块,避免孤立单词。词块可包含形容词+名词、动词+名词、名词+名词组合。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0080",
+      "item_type": "solve",
+      "stem": "将下列句子语气由弱到强排列(数字1-4表示由弱到强):A) I think maybe we should reconsider. B) We must reconsider now. C) Could we possibly reconsider? D) I strongly suggest we reconsider.",
+      "answer": "C → A → D → B",
+      "kps": [
+        "kp_eng12_prg12_tone_control"
+      ],
+      "difficulty": 0.55,
+      "solution": "语气由弱到强:C项could we possibly...最弱;A项I think maybe...次弱;D项I strongly suggest较强;B项We must...最强。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0086",
+      "item_type": "solve",
+      "stem": "假设你在听力中听到 speaker 说:He is a real Scrooge when it comes to tipping. 请用30词以内解释Scrooge的文化含义。",
+      "answer": "Scrooge comes from Dickens' A Christmas Carol, meaning a miserly person. Here it implies he tips very poorly out of stinginess, a culturally loaded criticism.",
+      "kps": [
+        "kp_eng12_lis12_culture_listen"
+      ],
+      "difficulty": 0.55,
+      "solution": "需点明Scrooge出处(Dickens/《圣诞颂歌》)、字面义(吝啬鬼)、句中音义(给小费少)。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0087",
+      "item_type": "solve",
+      "stem": "听讲座时,对Three factors → 1) rhythm 2) pressure 3) screen这段要点,最适合的速记符号是：",
+      "answer": "3 factors: ① rhythm ② pressure ③ screen",
+      "kps": [
+        "kp_eng12_lis12_note_advanced"
+      ],
+      "difficulty": 0.55,
+      "solution": "用箭头 + 数字编号 + 缩写,是结构化速记常见方式。注意避免冗长的句子记录。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0090",
+      "item_type": "solve",
+      "stem": "用30词以内写上题摘要的内容概要(Main Idea)。",
+      "answer": "This study finds that sleep significantly boosts memory consolidation — participants who slept recalled 27% more items than those who did not.",
+      "kps": [
+        "kp_eng12_red12_academic_read"
+      ],
+      "difficulty": 0.65,
+      "solution": "需覆盖目的+结果+结论;控制在30词以内。",
+      "source": "llm_generated",
+      "form": "summary",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0092",
+      "item_type": "solve",
+      "stem": "请用30词以内概括上段落的隐性逻辑衔接逻辑链。",
+      "answer": "Online education expands → screen time rises → eye strain worsens → schools must limit hours (cause–effect chain).",
+      "kps": [
+        "kp_eng12_red12_structure_deep"
+      ],
+      "difficulty": 0.62,
+      "solution": "要点:扩张 → 屏幕增加 → 眼疲劳 → 限制时长,体现因果链。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0093",
+      "item_type": "solve",
+      "stem": "假设你被要求就My Favourite Way of Relieving Stress作60秒即兴演讲,请写出50词以内的演讲稿(含开头、要点、结尾)。",
+      "answer": "Good morning, everyone. My favourite way to relieve stress is taking a quiet walk in the park. Surrounded by trees and birdsong, my mind slows down and ideas return fresh. Try it — nature is the best medicine.",
+      "kps": [
+        "kp_eng12_spk12_speech_impromptu"
+      ],
+      "difficulty": 0.78,
+      "solution": "需含greeting + 主题句 + 1-2点理由/细节 + 呼吁/结尾。注意口语化与节奏感。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0095",
+      "item_type": "solve",
+      "stem": "用30词以内写出三种在口语中修复交际障碍的方法。",
+      "answer": "1) Rephrasing: Say it differently in simpler language. 2) Examples: Give a sample to clarify. 3) Paraphrasing: Confirm understanding by restating the speaker's idea.",
+      "kps": [
+        "kp_eng12_spk12_repair_advanced"
+      ],
+      "difficulty": 0.55,
+      "solution": "需列出三种策略并简述,避免只说换种说法。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0096",
+      "item_type": "solve",
+      "stem": "以毕业典礼发言人身份,写一段80词以内的英文致辞,含开头吸引、要点推进与结尾号召。",
+      "answer": "Dear graduates, today we celebrate not just an ending, but a beginning. Remember the friends who cheered you on, the teachers who believed in you, and the values you forged together. As you step into the world, carry that courage. The future is yours to write. Congratulations, class of 2026!",
+      "kps": [
+        "kp_eng12_wri12_wri_speech"
+      ],
+      "difficulty": 0.85,
+      "solution": "需含greeting(开场)+ 中段要点(回忆、感谢、价值观)+ 结尾号召(未来展望、祝贺)。注意演讲语言节奏与重复修辞。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0097",
+      "item_type": "solve",
+      "stem": "读后续写:根据所给段落续写两段情节,使故事合理发展、情感升华(150-200词)。所给段落:On the last day of the summer camp, Lily discovered a small injured bird at the foot of the oak tree. Its wing bent unnaturally; it trembled at her touch. Paragraph 1: 续写一段Lily救助小鸟的具体行动与心理。 Paragraph 2: 续写一段离别时的情感升华(100词左右)。",
+      "answer": "Paragraph 1: Lily knelt down, carefully cupping the trembling bird in both palms. She whispered softly, as if her voice were a warm blanket. Walking back to the cabin, she fetched a small box, lined it with soft cotton, and gently placed the bird inside. By nightfall, the bird had stopped trembling, though its wing still bent at an awkward angle. Lily stayed by its side until the camp counsellor persuaded her to rest. Paragraph 2: The next morning, Lily rose before dawn. As the bus pulled away, she looked back at the oak tree, and in the faint golden light, she thought she saw a small silhouette rise, spread its wings, and disappear into the waking sky. The summer had taught her that kindness, no matter how small, can mend a broken wing — and a heart.",
+      "kps": [
+        "kp_eng12_wri12_wri_creative"
+      ],
+      "difficulty": 0.85,
+      "solution": "对情节构建(具体行动+ 心理描写+ 转折)+ 情感升华(离别场景+ 主题呼应)进行评价。本范文使用carefully cupping / whispered softly / gently placed等细腻动词;用silhouette rise / disappear into the waking sky完成主题升华。",
+      "source": "llm_generated",
+      "form": "narrative",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0100",
+      "item_type": "solve",
+      "stem": "阅读:The Victorian era saw rapid industrialisation. Cities expanded, railways were built, and the working class moved into factories. Living conditions were poor, but reforms gradually improved them. By the end of the era, public health and education had made significant progress. 用40词以内写出读后概述。",
+      "answer": "The Victorian era witnessed rapid industrialisation and urban growth, which brought poor living conditions. Gradual reforms eventually improved public health and education, marking significant social progress.",
+      "kps": [
+        "kp_eng12_wri12_wri_summary_adv"
+      ],
+      "difficulty": 0.62,
+      "solution": "需涵盖:时代特征(工业革命)+ 影响(城市扩张、生活条件差)+ 改革成效(公共卫生/教育进步)。控制40词以内,避免原文堆砌。",
+      "source": "llm_generated",
+      "form": "summary",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0102",
+      "item_type": "solve",
+      "stem": "用50词以内说明工业革命对英国社会变迁的三大影响。",
+      "answer": "1) Urbanisation: people moved from countryside to cities. 2) New social class: industrial bourgeoisie and working class emerged. 3) Reform pressure: poor working conditions drove calls for public health and education reform.",
+      "kps": [
+        "kp_eng12_thm12_history_culture"
+      ],
+      "difficulty": 0.62,
+      "solution": "需列出三大影响(城市化、新阶级、改革诉求),每点简洁概括。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0104",
+      "item_type": "solve",
+      "stem": "请用50词以内为学校环保社团写一段宣传稿,呼吁减少一次性塑料使用。",
+      "answer": "Single-use plastics may be convenient, but they pollute oceans and harm wildlife for centuries. Replace them with reusable bottles, bags and boxes — small daily swaps create lasting change. Join our Plastic-Free Campaign today!",
+      "kps": [
+        "kp_eng12_thm12_nature"
+      ],
+      "difficulty": 0.62,
+      "solution": "需含问题(塑料污染)+ 行动建议(可重复使用)+ 呼吁(加入活动)。注意宣传语气的号召力。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0105",
+      "item_type": "solve",
+      "stem": "请用60词以内写一段关于人生意义的小短文,含一个具体事例与一句金句。",
+      "answer": "Meaning often hides in the ordinary. My grandmother, a retired teacher, spends her afternoons tutoring migrant children for free. She says, 'A life that lights another candle never fades.' Her smile, every evening, is my quietest lesson on purpose.",
+      "kps": [
+        "kp_eng12_thm12_life_meaning"
+      ],
+      "difficulty": 0.65,
+      "solution": "需含具体事例(奶奶义务辅导)+ 感悟金句(蜡烛比喻)+ 个人反思。注意避免空泛说教。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0107",
+      "item_type": "solve",
+      "stem": "听力材料(原文转述):Reporter: ...In short, today's lecture highlighted three major challenges facing urban transport... 请用25词以内概括这段报道的主旨。",
+      "answer": "The report summarises three main challenges of urban transport highlighted in today's lecture.",
+      "kps": [
+        "kp_eng12_exa12_listen_main"
+      ],
+      "difficulty": 0.6,
+      "solution": "主旨题答题要点:抓住首尾句+ 反复信息。需简洁概述。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0110",
+      "item_type": "solve",
+      "stem": "假设你是班长,需邀请外教Mr. Smith参加班级英语晚会并致辞,请写一封80-100词的英文邀请函。",
+      "answer": "Dear Mr. Smith, On behalf of Class 3, I am writing to cordially invite you to our English Evening, which will be held in the school hall at 7 p.m. on Friday, December 12. The programme includes short plays, songs and a brief speech session. We would be deeply honoured if you could attend and share a few encouraging words with our students. We look forward to your reply. Yours sincerely, Li Hua, Monitor of Class 3.",
+      "kps": [
+        "kp_eng12_exa12_application"
+      ],
+      "difficulty": 0.85,
+      "solution": "应用文要素:① 称呼(Dear...); ② 自报身份(on behalf of...); ③ 活动信息(时间地点内容); ④ 邀请与具体请求(致辞); ⑤ 期待回复; ⑥ 落款(Yours sincerely, Li Hua, Monitor)。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0111",
+      "item_type": "solve",
+      "stem": "你收到英国笔友Tom的来信,询问如何在中国过春节。请写一封80-100词的回信,介绍春节习俗并发出邀请。",
+      "answer": "Dear Tom, Thank you for your interest in Chinese New Year. During the festival, families reunite, enjoy reunion dinner on Chinese New Year's Eve, give red envelopes (hongbao) to children, and watch the Spring Festival Gala. Firecrackers and lion dances fill the streets with joy. If you ever visit China, my family would love to invite you to share these traditions with us. Hope to see you soon! Best wishes, Li Hua.",
+      "kps": [
+        "kp_eng12_exa12_application"
+      ],
+      "difficulty": 0.85,
+      "solution": "回信要点:感谢+介绍春节习俗(reunion dinner / hongbao / lion dance)+ 个人邀请+ 期待。注意应用文格式与礼貌用语。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_hs2_0112",
+      "item_type": "solve",
+      "stem": "假设高考英语卷答题时间为120分钟,请用30词以内给出大题时间分配建议。",
+      "answer": "Listening 20 min → Cloze & Reading 35 min → Grammar fill & Error correction 10 min → Writing 35 min → Review 20 min.",
+      "kps": [
+        "kp_eng12_exa12_time_control"
+      ],
+      "difficulty": 0.55,
+      "solution": "时间分配需覆盖全卷所有大题(听力、阅读、完形、语法填/改错、写作、复盘),且总和不超120分钟。避免仅给出读后续写时间。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

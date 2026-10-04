@@ -540,6 +540,4995 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_li_hs1_0004",
+      "item_type": "fill",
+      "stem": "【听力·长对话·信息记录】听辨要点：女：Good morning, Sunshine Library. How can I help you? 女：Yes, I'd like to reserve a study room for Saturday afternoon. 女：Certainly. For how many people? 女：Four. We'd like it from 2 to 4 p.m. if possible. 女：Let me check… I'm sorry, 2 to 4 is booked. How about 3 to 5? 女：That's fine. My name is Linda Green. 请按听辨要点填入：Name: ___________ ; Party size: ___________ ; Reserved time: ___________ .",
+      "answer": "Linda Green; Four; 3 to 5 p.m.",
+      "kps": [
+        "kp_eng10_lis10_note_form"
+      ],
+      "difficulty": 0.55,
+      "solution": "听填关键信息：自报姓名 Linda Green；人数 4 人；时间因 2-4 已订改为 3-5 p.m.。听填题关键是边听边记姓名/数字。",
+      "source": "llm_generated",
+      "form": "listening_form",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_cl_hs1_0020",
+      "item_type": "choice",
+      "stem": "【完形填空】\nLast weekend, our class went on a trip to a farm. We ___1___ at 7 a.m. and took a school bus there. When we arrived, the farmer gave us a warm ___2___ and showed us around the farm. In the morning, we picked apples and fed the chickens. Some of us were a bit nervous because we had never been ___3___ to farm animals before. At noon, we had a picnic lunch under a big tree. The food tasted ___4___ because we were all hungry after the hard work. In the afternoon, we ___5___ a video on how milk is produced. Although we were tired, everyone had a ___6___ time. We learned a lot and made some new friends.\n① A. set off  B. set up  C. set down  D. set on\n② A. welcome  B. welcomes  C. welcoming  D. welcomed\n③ A. close  B. closely  C. closer  D. closest\n④ A. well  B. good  C. great  D. better\n⑤ A. watched  B. look  C. read  D. noticed\n⑥ A. difficulty  B. difficult  C. wonderful  D. wonder",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.55,
+      "solution": "完形填空题：① set off 出发；② welcome 名词欢迎；③ close 亲近的；⑤ watched 观看；⑥ wonderful 美妙的；④ great 是 C 项，最贴合疲惫后吃上饭的美味感受，故完整答案为 A-A-A-C-A-C（注：用户提供的选项已整合为 A/B/C/D 整体选项，本题选 C：set off / welcome / close / great / watched / wonderful）。",
+      "source": "llm_generated",
+      "options": [
+        "A. set off / welcome / close / well / watched / difficulty",
+        "B. set up / welcomes / closely / good / look / difficult",
+        "C. set off / welcome / close / great / watched / wonderful",
+        "D. set on / welcomed / closest / better / read / wonder"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0023",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe students in our class are working hard ___1___ (prepare) for the coming English speech contest. Mr. Wang, who is one of the best judges, will ___2___ (invite) to give a short talk first. Everyone hopes that they will have ___3___ (chance) to show their talents. After the contest, the winners ___4___ (award) with prizes and certificates. Many parents will come to watch, ___5___ (making) the hall full of warmth.",
+      "answer": "to prepare; be invited; chances; will be awarded; making",
+      "kps": [
+        "kp_eng10_gra10_infinitive_attr"
+      ],
+      "difficulty": 0.55,
+      "solution": "语法填空题：① to prepare 作目的状语；② will be invited 被动语态（王老师被邀请）；③ chances 复数名词；④ will be awarded 被动语态将来时；⑤ making 现在分词作结果状语。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0024",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe scientist gave a speech about the importance ___1___ (protect) endangered animals. He showed a short film ___2___ (make) by his team last year, which moved the audience to tears. After listening to his speech, many students decided ___3___ (join) the local wildlife protection group. As a result, more and more young people ___4___ (become) interested in nature conservation. \"Our planet is our home,\" the scientist said, ___5___ (mean) that everyone should take action.",
+      "answer": "of protecting; made; to join; have become; meaning",
+      "kps": [
+        "kp_eng10_gra10_ing_attr"
+      ],
+      "difficulty": 0.55,
+      "solution": "语法填空题：① of protecting 介词+动名词（the importance of doing）；② made 过去分词作后置定语修饰 film；③ to join decide to do 不定式；④ have become 现在完成时；⑤ meaning 现在分词作伴随状语。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0025",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe book ___1___ (write) by Mo Yan has been translated into many languages. In his novels, the stories ___2___ (set) in rural China often touch readers' hearts. Mo Yan once said that he was deeply ___3___ (influence) by his grandmother's stories when he was a child. Now he is widely ___4___ (consider) as one of the greatest writers of our time. His works, which are full of love for the Chinese countryside, ___5___ (praise) by readers both at home and abroad.",
+      "answer": "written; set; influenced; considered; are praised",
+      "kps": [
+        "kp_eng10_gra10_ed_attr"
+      ],
+      "difficulty": 0.6,
+      "solution": "语法填空题：① written 过去分词作定语（被动、完成）；② set 过去分词作定语（be set in）；③ influenced 过去分词作表语；④ considered 过去分词作表语；⑤ are praised 被动语态一般现在时。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0026",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe teacher praised the students ___1___ had finished the project on time. The project, ___2___ was about the history of our school, took them two months to complete. They interviewed some teachers ___3___ had worked here for more than twenty years and collected a lot of old photos. The headmaster was so pleased ___4___ he decided to put the photos on the school website. Now the website ___5___ (visit) by thousands of alumni every year.",
+      "answer": "who; which; who/that; that; is visited",
+      "kps": [
+        "kp_eng10_gra10_rel_pron_rel"
+      ],
+      "difficulty": 0.6,
+      "solution": "语法填空题：① who/that 限制性定语从句指人；② which 非限制性定语从句指物；③ who/that 限制性定语从句指人；④ that so... he satisfied... that... 结果状语从句；⑤ is visited 被动语态一般现在时。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0027",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nYesterday my best friend told me that she ___1___ (visit) Hong Kong the next month. She said that she ___2___ (never / try) dim sum before, so she was really looking forward to it. Her parents promised that they ___4___ (buy) her a nice present on her birthday. She also said that her cousin ___5___ (meet) her at the airport when she arrived. I was excited to hear the news and decided that I ___5___ (write) her a letter before she left.",
+      "answer": "would visit; had never tried; would buy; would meet; would write",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.65,
+      "solution": "语法填空题：① would visit 过去将来时（从句时间状语为 the next month 表明从过去看未来）；② had never tried 过去完成时；③ would buy 过去将来时；④ would meet 过去将来时；⑤ would write 过去将来时。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0028",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe new bridge ___1___ (build) since last March. So far, more than 5,000 tons of steel ___2___ (use) in the construction. The workers say that the bridge ___3___ (complete) by the end of next year. When it is finished, it ___4___ (be) the longest sea bridge in this area. The local people are excited because they ___5___ (wait) for the bridge for many years.",
+      "answer": "has been built; has been used; will be completed; will be; have been waiting",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.65,
+      "solution": "语法填空题：① has been built 现在完成被动；② has been used 现在完成被动；③ will be completed 将来时被动；④ will be 一般将来时；⑤ have been waiting 现在完成进行时强调持续。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_ec_hs1_0035",
+      "item_type": "solve",
+      "stem": "【短文改错】下列各句中均有一处错误（无标点错误），请指出并改正（每行一处）。\n1. Every student in our class have a dictionary.\n2. He suggested to go hiking on Sunday.\n3. The book is worth to read.\n4. I have been to Beijing for three times.\n5. My mother told me that the sun rise in the east.",
+      "answer": "1. have → has; 2. to go → going; 3. to read → reading; 4. 去掉 for; 5. rise → rises",
+      "kps": [
+        "kp_eng10_gra10_subject_verb_agree"
+      ],
+      "difficulty": 0.55,
+      "solution": "短文改错题：① 主谓一致 Every student 单数 → has；③ suggest doing sth 后接动名词 → going；③ be worth doing 应接动名词 reading；④ three times 为副词短语不需要 for；⑤ 主谓一致从句中 the sun 单数 → rises。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_ec_hs1_0036",
+      "item_type": "solve",
+      "stem": "【短文改错】下列各句中均有一处错误（无标点错误），请指出并改正（每行一处）。\n1. He didn't went to school yesterday because of his illness.\n2. By the time he arrived, the train has already left.\n3. If I am you, I would take the advice.\n4. She is used to get up early every morning.\n5. The weather is too hot that we can't go out.",
+      "answer": "1. went → go; 2. has → had; 3. am → were; 4. get → getting; 5. too → so",
+      "kps": [
+        "kp_eng10_gra10_tense_review"
+      ],
+      "difficulty": 0.6,
+      "solution": "短文改错题：① didn't 后接动词原形 → go；② By the time... 主句用过去完成时 → had；③ 虚拟语气 If I were you；④ be used to doing 应接动名词 → getting；⑤ so... that... 句型 → so。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_ec_hs1_0037",
+      "item_type": "solve",
+      "stem": "【短文改错】下列各句中均有一处错误（无标点错误），请指出并改正（每行一处）。\n1. Neither he nor I are right about the answer.\n2. The number of students who likes English is increasing.\n3. Not only he but also his friends are fond of music.\n4. Everyone in the classroom are listening to the teacher.\n5. One of my friends are a famous singer.",
+      "answer": "1. are → am; 2. likes → like; 3. 正确; 4. are → is; 5. are → is",
+      "kps": [
+        "kp_eng10_gra10_subject_verb_agree"
+      ],
+      "difficulty": 0.65,
+      "solution": "短文改错题：① Neither... nor... 主谓就近 → am（I）；② who 指代 students 复数 → like；③ 正确无误；④ Everyone 不定代词作主语 → is；⑤ One of my friends 单数 → is。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sp_hs1_0038",
+      "item_type": "fill",
+      "stem": "【单词拼写·动词短语】根据首字母或汉语提示拼写单词（每空一词）。\n1. The teacher asked us to p__________ (复述) the story in our own words.\n2. Our class will p__________ (表演) an English play at the school art festival.\n3. She o__________ (经常) helps her classmates with their English homework.\n4. He i__________ (邀请) me to his birthday party yesterday.\n5. We should c__________ (完成) the task before Friday.",
+      "answer": "1. paraphrase/retell; 2. perform; 3. often; 4. invited; 5. complete",
+      "kps": [
+        "kp_eng10_voc10_verb_phrase"
+      ],
+      "difficulty": 0.45,
+      "solution": "单词拼写题：① paraphrase/retell 复述；② perform 表演；④ often 经常；④ invited 邀请（过去式）；⑤ complete 完成。注意拼写正确。",
+      "source": "llm_generated",
+      "form": "spelling",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sp_hs1_0039",
+      "item_type": "fill",
+      "stem": "【单词拼写·名词短语】根据首字母或汉语提示拼写单词（每空一词）。\n1. We need more i__________ (信息) about the English-speaking countries.\n2. The boy made a quick d__________ (决定) to help the old lady.\n3. Hard work is the key to s__________ (成功).\n4. Reading b__________ (广泛的) gives us a lot of knowledge.\n5. The e__________ (环境) of our school is becoming more and more beautiful.",
+      "answer": "1. information; 2. decision; 3. success; 4. broadly/widely; 5. environment",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.45,
+      "solution": "单词拼写题：① information 信息（不可数）；② decision 决定；③ success 成功（不可数）；④ broadly 或 widely 副词修饰 reading；⑤ environment 环境。",
+      "source": "llm_generated",
+      "form": "spelling",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sp_hs1_0040",
+      "item_type": "fill",
+      "stem": "【单词拼写·形容词短语】根据首字母或汉语提示拼写单词（每空一词）。\n1. The film is so i__________ (有趣的) that I want to watch it again.\n2. He is d__________ (勇敢的) enough to speak in front of the whole school.\n3. The weather today is much w__________ (更暖和) than yesterday.\n4. This kind of food is p__________ (特别的) popular among young people.\n5. Mountain climbing is a c__________ (有挑战性的) but rewarding activity.",
+      "answer": "1. interesting; 2. daring/brave; 3. warmer; 4. particularly/especially; 5. challenging",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.5,
+      "solution": "单词拼写题：① interesting 有趣的；② daring/brave 勇敢的；③ warmer 更暖和（比较级）；④ particularly/especially 特别地；⑤ challenging 有挑战性的。",
+      "source": "llm_generated",
+      "form": "spelling",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sp_hs1_0041",
+      "item_type": "fill",
+      "stem": "【单词拼写·词形变化】根据首字母或汉语提示拼写单词（每空一词）。\n1. The book is very h__________ (helpful) for English learners.\n2. Please write a short p__________ (paragraph) about your favourite hobby.\n3. He gave us a clear e__________ (explanation) of how to use the new app.\n4. We should show more c__________ (concern) for the old people in our neighbourhood.\n5. The teacher was p__________ (proud) of her students' progress.",
+      "answer": "1. helpful; 2. paragraph; 3. explanation; 4. concern; 5. proud",
+      "kps": [
+        "kp_eng10_voc10_root_affix"
+      ],
+      "difficulty": 0.55,
+      "solution": "单词拼写题：① helpful 有帮助的（help+ful）；② paragraph 段落；③ explanation 解释（explain 的名词形式）；④ concern 关心（动/名词）；⑤ proud 自豪的。注意词形变化。",
+      "source": "llm_generated",
+      "form": "spelling",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_tr_hs1_0042",
+      "item_type": "solve",
+      "stem": "【翻译·句子】根据所给汉语完成下列英语句子（每空一词）。\n1. 据说他已经去过伦敦三次了。\nIt is said that he __________ __________ London three times.\n2. 我们应该尽力保护环境。\nWe should try our best __________ __________ the environment.\n3. 这本书值得再读一遍。\nThe book __________ __________ again.\n4. 她花了两个小时做作业。\nShe __________ two hours __________ her homework.\n5. 我迫不及待地想见到他。\nI __________ __________ see him.",
+      "answer": "1. has been to; 2. to protect; 3. is worth reading; 4. spent; doing; 5. can't wait to",
+      "kps": [
+        "kp_eng10_wri10_translation"
+      ],
+      "difficulty": 0.55,
+      "solution": "翻译题：① has been to 去过（have been to 三次）；② to protect try one's best to do；③ is worth reading be worth doing；④ spent doing sth 花费时间做某事；⑤ can't wait to do 迫不及待做某事。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_tr_hs1_0043",
+      "item_type": "solve",
+      "stem": "【翻译·句子】根据所给汉语完成下列英语句子（每空一词）。\n1. 只有这样我们才能学好英语。\nOnly in this way __________ we __________ English well.\n2. 他一到教室就开始了工作。\n__________ he __________ the classroom, he began to work.\n3. 这本书对我的英语学习很有用。\nThis book is of great __________ to my English study.\n4. 如果明天下雨，我们就不去公园了。\nIf it __________ tomorrow, we __________ go to the park.\n5. 他昨天买的那本书很有趣。\nThe book __________ he __________ yesterday is very interesting.",
+      "answer": "1. can; learn; 2. As soon as; entered/got into; 3. use/value/benefit; 4. rains; won't; 5. that/which; bought",
+      "kps": [
+        "kp_eng10_wri10_translation"
+      ],
+      "difficulty": 0.65,
+      "solution": "翻译题：① can learn 倒装句 Only in this way can we...；② As soon as he entered 一...就...；③ of great use/value 介词短语 of great + 名词；④ rains 主将从现；⑤ that/which 引导定语从句指物，bought 过去式。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_wr_hs1_0044",
+      "item_type": "solve",
+      "stem": "【应用文写作·建议信】你的英国笔友 Tom 最近经常感到压力大，晚上睡不好，影响了学习。他来信向你征求建议。请你用英文给他写一封回信，提出至少三条具体可行的建议，并简要说明理由。词数 80—100。",
+      "answer": "Dear Tom,\nI am sorry to hear that you are under great pressure and can't sleep well at night. Here are some suggestions that may help you.\nFirst, you should plan your time carefully and avoid leaving tasks until the last minute. Second, doing some exercise for half an hour before bed, such as jogging or stretching, can help you relax. Third, try not to use screens an hour before sleep; reading a book instead may help you fall asleep more easily.\nI hope these suggestions will be useful to you. Best wishes!\nYours,\nLi Hua",
+      "kps": [
+        "kp_eng10_wri10_letter_formal"
+      ],
+      "difficulty": 0.6,
+      "solution": "评分要点：(1) 体裁格式正确（信函格式、称呼、结尾）；(2) 提出至少三条具体建议（时间规划、运动、睡前不看屏幕等）；(3) 每条建议附简要理由；(4) 语言地道，语法正确；(5) 词数 80-100。范文：包含计划时间、运动、睡前不看屏幕三条建议，结构完整。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_wr_hs1_0045",
+      "item_type": "solve",
+      "stem": "【应用文写作·通知】你是学生会主席李华。学校将于下周五下午举办一年一度的英语文化节活动。请你以学生会的名义用英文写一份通知，内容包括：活动时间、地点、主要活动内容（至少两项）以及参加对象。词数 80—100。",
+      "answer": "NOTICE\nThe Annual English Culture Festival will be held next Friday afternoon from 2 p.m. to 5 p.m. in the school hall. All students are warmly welcome to take part.\nThe festival will include an English speech contest, an English drama show, and a fun English quiz. There will also be an English singing corner where you can enjoy wonderful songs performed by your classmates. Prizes and wonderful souvenirs will be given to the winners.\nLet's enjoy the charm of English together! Hope to see you there!\nThe Students' Union\nOctober 20",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.55,
+      "solution": "评分要点：(1) 体裁格式正确（NOTICE 标题、时间署名）；(2) 包含活动时间、地点、活动内容（至少两项）、参加对象；(3) 语言简洁清晰；(4) 词数 80-100。范文包含演讲比赛、戏剧表演、英语猜谜三项内容，结构清晰。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_wr_hs1_0046",
+      "item_type": "solve",
+      "stem": "【应用文写作·邮件】假设你是李华，你的美国朋友 David 想了解中国传统节日——春节。请你写一封英文邮件，介绍春节的主要活动（贴春联、放鞭炮/年夜饭/收红包等），并邀请他来中国和你一起过春节。词数 80—100。",
+      "answer": "Dear David,\nI'm glad to know you are interested in the Spring Festival, the most important traditional festival in China. It falls on the first day of the lunar calendar.\n\nBefore the festival, people put up Spring Festival couplets on doors and set off fireworks to welcome the new year. On New Year's Eve, the whole family gathers together for a big dinner, which is called \"Nian Ye Fan\". Children receive red packets with lucky money inside, which bring them good wishes.\n\nI sincerely invite you to come to my hometown and spend the Spring Festival with my family. I'm sure you will have an unforgettable experience.\n\nYours,\nLi Hua",
+      "kps": [
+        "kp_eng10_wri10_letter_formal"
+      ],
+      "difficulty": 0.55,
+      "solution": "评分要点：(1) 体裁格式正确（信函格式）；(2) 介绍主要春节活动（贴春联、放鞭炮、年夜饭、收红包等）至少三项；(3) 发出邀请；(4) 语言地道、句式多样；(5) 词数 80-100。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_wr_hs1_0047",
+      "item_type": "solve",
+      "stem": "【应用文写作·发言稿】假设你是高三学生李华，学校将举行一次以\"坚持与梦想\"（Persistence and Dreams）为主题的英语演讲比赛。请你写一篇简短的英文发言稿，谈谈你对坚持与梦想的理解，并给同学们提出两到三条具体建议。词数 80—100。",
+      "answer": "Good afternoon, everyone!\nMy topic today is \"Persistence and Dreams\". I believe a clear dream gives us direction, while persistence turns the dream into reality. Without hard work, even the brightest dream will only remain an idea.\nHere are my suggestions. First, set a clear and realistic goal for yourself. Second, break the big goal into small steps and celebrate each small success. Third, never give up when you face difficulties; remember that every failure is a step closer to success.\nLet's hold on to our dreams and keep moving forward. Thank you!",
+      "kps": [
+        "kp_eng10_wri10_exposition_writing"
+      ],
+      "difficulty": 0.65,
+      "solution": "评分要点：(1) 体裁为发言稿，有称呼、开头结尾；(2) 阐明坚持与梦想关系；(3) 提出两到三条具体建议；(4) 语言有感染力、句式多样；(5) 词数 80-100。范文包含设定目标、分步前进、永不放弃三条建议，论点清晰。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_cn_hs1_0048",
+      "item_type": "solve",
+      "stem": "【读后续写】阅读下面短文，根据其内容和你对它的理解，用英文续写两段（每段约 75 词，共约 150 词）。The Gift: 12 岁的 Tom 把攒下来给妈妈买生日礼物的 5 美元给了一位在寒风中发抖的老人。Paragraph 1：老人接过钱并讲述了他的故事；Paragraph 2：Tom 回家后把事情告诉妈妈，妈妈有特别的反应。",
+      "answer": "Paragraph 1: The old man took the money with great gratitude. Tears welled up in his eyes as he held Tom's small hands in his. He told the boy that he used to be a teacher, but now he had lost his job and his home, and he had not eaten anything for two whole days. \"You are the kindest person I have ever met,\" he said in a trembling voice. Tom felt both sad and proud. The cold wind seemed less bitter, and the two shared a moment of warmth on the cold street.\n\nParagraph 2: When Tom arrived home and told his mother what he had done, she was silent for a moment. Then she hugged him tightly and said with tears in her eyes, \"My dear, the best present you can give me is to grow into a kind and generous person like this.\" That evening, Tom's mother cooked a small cake with the family, and they celebrated not only her birthday but also Tom's act of kindness together.",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.75,
+      "solution": "评分要点：(1) 与原文情节逻辑一致（老人接受钱、讲述故事、母亲理解并肯定）；(2) 续写两段约 75 词共 150 词；(3) 人物刻画细致（老人的感激、Tom 的善良、母亲的智慧）；(5) 语言地道、句式多样；(6) 主题升华（善意比物质礼物更珍贵）。",
+      "source": "llm_generated",
+      "form": "continuation",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_cn_hs1_0049",
+      "item_type": "solve",
+      "stem": "【读后续写】阅读下面短文，根据其内容和你对它的理解，用英文续写两段（每段约 75 词，共约 150 词）。The Last Race: Lin 赛前感冒，但坚持参加比赛，比赛过程中发生了意想不到的事，结果虽不理想，但他收获颇丰。",
+      "answer": "Paragraph 1: As the race began, Lin pushed himself forward, but halfway through he felt dizzy and his legs grew heavy. He almost fell, but the cheers of his schoolmates encouraged him to keep going. However, on the last lap, his cold got worse and he had to slow down. Although he tried his best, he finished only fifth, far below his usual position. He felt both disappointed and physically exhausted when he crossed the finish line.\n\nParagraph 2: When Lin returned to school with his head down, his coach walked up to him with a warm smile and said, \"Lin, you have already won the most important race of all — the race against yourself.\" At that moment, Lin realised that true courage is not about winning but about never giving up. From that day on, he became more confident in everything he did.",
+      "kps": [
+        "kp_eng10_cul10_cultural_element"
+      ],
+      "difficulty": 0.8,
+      "solution": "评分要点：(1) 与原文情节连贯（感冒加重、坚持完成、获得人生感悟）；(2) 续写两段约 75 词共 150 词；(3) 人物心理刻画（失落、坚持、领悟）；(4) 主题升华（真正的勇气是不放弃）；(5) 语言地道、过渡自然。",
+      "source": "llm_generated",
+      "form": "continuation",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_final_0001",
+      "item_type": "choice",
+      "stem": "【阅读理解·记叙类语篇】\nMy cousin Lily decided to enter the school storytelling contest. For weeks, she stayed up late, rewriting her fairy tale again and again. On the day of the contest, her hands were shaking so badly that she almost dropped her notebook. When she finally stepped onto the stage, she took a deep breath and began: \"Once upon a time, in a forest far away, there lived a brave little fox...\" Her voice grew steadier with each sentence, and the audience listened in silence. By the end, everyone stood up and clapped.\n问题：Which of the following best describes how Lily changes during the story?",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_dis10_narrative"
+      ],
+      "difficulty": 0.5,
+      "solution": "依据情节发展：开场双手颤抖、几乎掉本子 → 登台深呼吸 → 声音越来越稳 → 观众起立鼓掌。人物形象从紧张走向自信，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. She goes from being nervous to feeling confident.",
+        "B. She changes from being happy to feeling sad.",
+        "C. She turns from being shy to becoming angry.",
+        "D. She moves from being careless to becoming careless again."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0002",
+      "item_type": "choice",
+      "stem": "【阅读理解·童话】\nA clever crow was very thirsty. She saw a pot of water, but the water was too low for her to reach. She looked around and noticed many small stones. She picked them up one by one with her beak and dropped them into the pot. Slowly, the water rose until it was high enough for her to drink.\n问题：What does the story mainly want to teach us?",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_dis10_narrative"
+      ],
+      "difficulty": 0.5,
+      "solution": "寓言主旨：乌鸦通过动脑（投放石子使水面升高）解决了喝水难题，强调智慧与坚持，而不是放弃或蛮力，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Always drink water when thirsty.",
+        "B. Use your brain instead of giving up.",
+        "C. Stones are useless in daily life.",
+        "D. Birds should not drink from pots."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0003",
+      "item_type": "fill",
+      "stem": "【阅读理解·人物介绍·填空】阅读下面短文，按要求填空（每空一词）。\nMr. Brown, our new English teacher, ___ (1) ___ (teach) in this school for three years. He is kind and ___ (2) ___ (help), so everyone likes him. In his free time, he likes ___ (3) ___ (read) books about history.\n(1) ___\n(2) ___\n(3) ___",
+      "answer": "(1) has taught; (2) helpful; (3) reading",
+      "kps": [
+        "kp_eng10_dis10_narrative"
+      ],
+      "difficulty": 0.5,
+      "solution": "现在完成时 has taught 表从过去持续至今；helpful 形容词作表语；like doing 习惯用法。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0004",
+      "item_type": "choice",
+      "stem": "【听力·语调辨义】男：So you really think we should apologize to him first?（升调）女：Absolutely. After all, we made the mistake.\n问题：What does the man's rising tone show?",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_pha10_perceive_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "升调（↑）常用在疑问、请求确认或寻求对方态度的情景中，男士升调表征'我这样说对吗'，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. He is sure about the apology.",
+        "B. He is asking for confirmation.",
+        "C. He is ordering the woman.",
+        "D. He is complaining about the mistake."
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0005",
+      "item_type": "choice",
+      "stem": "【听力·重音辨义】女：I didn't say she stole the money.（重音在 she）\n问题：What does the speaker really mean?",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_pha10_perceive_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "重音落在 she 上，强调主语不是别人而是 she，意指'我没说是她偷的'，暗含偷钱者另有其人，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. She said someone else stole the money.",
+        "B. She thinks the woman stole the money.",
+        "C. She believes everyone stole the money.",
+        "D. She has no idea about the money."
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0006",
+      "item_type": "fill",
+      "stem": "【语音·节奏辨义】听下面句子，根据节奏与停顿判断说话人态度（用中文填空）。\n\"Well, that's... interesting.\"\n句中说话人的真实态度可能是：____",
+      "answer": "勉强（不以为然/敷衍/讽刺）",
+      "kps": [
+        "kp_eng10_pha10_perceive_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "停顿与拖音（that's... interesting）配合句首 Well，常表达说话人并不真觉得有趣，而是不置可否或略带嘲讽，故填'勉强/不以为然'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0007",
+      "item_type": "choice",
+      "stem": "【词汇·多音节单词发音】下列单词中，重音位置与其他三个不同的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_pha10_polyphone_dict"
+      ],
+      "difficulty": 0.5,
+      "solution": "develop 重音在前 de-VEL-op；important / family / computer 均重音在后一位（im-POR-tant / FAM-i-ly / com-PU-ter），故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. develop",
+        "B. important",
+        "C. family",
+        "D. computer"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0008",
+      "item_type": "choice",
+      "stem": "【词汇·音标判断】单词 'photograph' 的音标为 /ˈfəʊtəɡrɑːf/。请问哪个音节的拼写对应音标中的重读音节？",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_pha10_polyphone_dict"
+      ],
+      "difficulty": 0.5,
+      "solution": "/ˈfəʊtəɡrɑːf/ 的重音符号 ˈ 标在 fəʊ 前，对应拼写 pho，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. pho",
+        "B. to",
+        "C. graph",
+        "D. ph"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0009",
+      "item_type": "fill",
+      "stem": "【词汇·音标填空】根据音标写出单词（首字母已给）：/ɪmˈpɔːtnt/ adj. i____",
+      "answer": "important",
+      "kps": [
+        "kp_eng10_pha10_polyphone_dict"
+      ],
+      "difficulty": 0.5,
+      "solution": "音标 /ɪmˈpɔːtnt/ 重音在第二音节，对拼写 im-POR-tant，故填 important。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0010",
+      "item_type": "choice",
+      "stem": "【词汇·词根词缀】单词 'unhappy' 是由词根 happy 加前缀 un- 构成。下列单词中，由相同方式（happy 加词缀）构成的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_voc10_root_affix"
+      ],
+      "difficulty": 0.5,
+      "solution": "un- 是常见的否定前缀，与 happy 组合构成 unhappy。选项 D unkind（不友善）由 kind 加 un- 构成，构词方式相同；A 错（happiless 非标准词）；B、C 错（仅是 happy 自身的派生或变化）。",
+      "source": "llm_generated",
+      "options": [
+        "A. happiless",
+        "B. unhappyly",
+        "C. happiness",
+        "D. unkind"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0011",
+      "item_type": "choice",
+      "stem": "【词汇·词性变化】act (v.) → _____ (n.) 表示'行为'。下列填入最合适的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_root_affix"
+      ],
+      "difficulty": 0.5,
+      "solution": "动词 act 加 -ion 后缀构成名词 action；B active 是形容词（积极的）；C actor 表人（演员）；D actually 是副词，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. action",
+        "B. active",
+        "C. actor",
+        "D. actually"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0012",
+      "item_type": "fill",
+      "stem": "【词汇·派生填空】根据括号内的词根或提示，写出正确形式的单词。\nThe scientist made an important ____ (discover) in the lab.\n填空：____",
+      "answer": "discovery",
+      "kps": [
+        "kp_eng10_voc10_root_affix"
+      ],
+      "difficulty": 0.5,
+      "solution": "discover 是动词，'做出发现' 应使用名词形式 discovery；句中 an 限定名词单数。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0013",
+      "item_type": "choice",
+      "stem": "【词汇·主题语境】在人际关系主题下，下列哪一组词汇最适合描述'性格开朗的人'？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_voc10_theme_lexis"
+      ],
+      "difficulty": 0.5,
+      "solution": "主题'人际关系'中描述开朗性格常用 cheerful / outgoing / friendly；A 偏冷淡；C 偏负面；D 偏内向焦虑，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. strict, cold, silent",
+        "B. cheerful, outgoing, friendly",
+        "C. lazy, careless, rude",
+        "D. shy, nervous, anxious"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0014",
+      "item_type": "choice",
+      "stem": "【词汇·指称与描述】在描述环境污染主题时，下列哪一表达最准确？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_voc10_theme_lexis"
+      ],
+      "difficulty": 0.5,
+      "solution": "环境主题中描述'污染'应使用 polluted rivers（水污染）与 smoggy skies（雾霾）等词汇；A、C 偏正面；D 与环境主题不符，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. clean air and blue rivers",
+        "B. polluted rivers and smoggy skies",
+        "C. tall trees and fresh flowers",
+        "D. happy children in the park"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0015",
+      "item_type": "fill",
+      "stem": "【词汇·主题词汇填空】阅读下面句子，从主题语境角度填入一个合适的单词。\nThe doctor told him that ____ (n. 健康的生活方式) was the key to a long life.\n填空：____",
+      "answer": "health",
+      "kps": [
+        "kp_eng10_voc10_theme_lexis"
+      ],
+      "difficulty": 0.5,
+      "solution": "句中作主语且后接's 限定，填入名词 health '健康'，与主题语境'健康生活方式'契合。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0016",
+      "item_type": "choice",
+      "stem": "【词汇·词汇量评估】下列句子中，画线单词 'acquire' 的中文释义最恰当的是：\nHe tried to acquire a new language during the summer holiday.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_voc10_2000_"
+      ],
+      "difficulty": 0.5,
+      "solution": "acquire 是较常见的认知词汇（2000-2100 词范围），意为'获得、习得'。其它选项与 acquire 词义不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. 丢失",
+        "B. 获得",
+        "C. 出售",
+        "D. 改变"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0017",
+      "item_type": "choice",
+      "stem": "【词汇·词汇量】下列各组单词都属于高中必修阶段'主题相关高频词'的一组是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_voc10_2000_"
+      ],
+      "difficulty": 0.5,
+      "solution": "environment / pollution / climate 属于高中必修阶段主题（人与自然）下的高频词；A、C、D 偏初中或小学阶段词汇。",
+      "source": "llm_generated",
+      "options": [
+        "A. apple, banana, grape",
+        "B. environment, pollution, climate",
+        "C. hello, hi, hey",
+        "D. one, two, three"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0018",
+      "item_type": "fill",
+      "stem": "【词汇·词汇运用】用恰当的单词填空，使句意完整。\nThe company has ____ (v. 雇佣) 100 new workers this year to produce more products.\n填空：____",
+      "answer": "hired",
+      "kps": [
+        "kp_eng10_voc10_2000_"
+      ],
+      "difficulty": 0.5,
+      "solution": "hire 意为'雇佣'，与 has 构成现在完成时 have hired；句意为公司今年已雇佣 100 名新工人。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0019",
+      "item_type": "choice",
+      "stem": "【词汇·动词词组】下列句子中，画线部分与'give up'（放弃）含义相近的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_voc10_verb_phrase"
+      ],
+      "difficulty": 0.5,
+      "solution": "give up doing sth. 意为'放弃做某事'；give in 表'屈服'；give away 表'捐赠/泄露'；put off 表'推迟'。故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. He put off his coat.",
+        "B. She gave in to the pressure.",
+        "C. They gave away their books.",
+        "D. Tom gave up smoking last year."
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0020",
+      "item_type": "choice",
+      "stem": "【词汇·动词搭配】选择最佳选项填空：Please ____ the lights when you leave the room.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_voc10_verb_phrase"
+      ],
+      "difficulty": 0.5,
+      "solution": "turn off 关闭；turn on 打开；turn up 调大/出现；turn down 调小/拒绝。句意'离开房间时关灯'选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. turn on",
+        "B. turn off",
+        "C. turn up",
+        "D. turn down"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0021",
+      "item_type": "fill",
+      "stem": "【词汇·动词词组填空】用适当的动词词组填空（每个词组仅用一次）。\nlook after / look up / look forward to\n1. Please ____ the new word in the dictionary.\n2. I ____ seeing you again next week.\n3. She helps ____ her little brother at home.\n填空：1.____ 2.____ 3.____",
+      "answer": "1. look up; 2. look forward to; 3. look after",
+      "kps": [
+        "kp_eng10_voc10_verb_phrase"
+      ],
+      "difficulty": 0.5,
+      "solution": "look up 查阅；look forward to 期待（后接 doing）；look after 照顾。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0022",
+      "item_type": "choice",
+      "stem": "【词汇·词块】下列短语中，属于'介词词组'的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_chunks_"
+      ],
+      "difficulty": 0.5,
+      "solution": "by the way 是介词 + 名词构成的介词词组；B take part in 是动词短语；C make a decision 是动词 + 名词短语；D keep in touch 是动词短语。",
+      "source": "llm_generated",
+      "options": [
+        "A. by the way",
+        "B. take part in",
+        "C. make a decision",
+        "D. keep in touch"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0023",
+      "item_type": "choice",
+      "stem": "【词汇·词块】选择最合适的词块填空：We should ____ the importance of protecting wild animals.",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_chunks_"
+      ],
+      "difficulty": 0.5,
+      "solution": "pay attention to 注意、重视；句意'我们应当____保护野生动物的重要性'，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. pay attention to",
+        "B. make a decision",
+        "C. take part in",
+        "D. have a good time"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0024",
+      "item_type": "fill",
+      "stem": "【词汇·词块填空】根据语境填入适当的词块（每空一词）。\nIn my ____ (空闲时间), I enjoy reading books.\n填空：____",
+      "answer": "spare time",
+      "kps": [
+        "kp_eng10_voc10_chunks_"
+      ],
+      "difficulty": 0.5,
+      "solution": "spare time / free time 都可表示'空闲时间'，是常见名词词组。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0025",
+      "item_type": "choice",
+      "stem": "【词汇·学术词汇】在科技主题语篇中，下列哪一单词最常用来表示'实验'？",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_academic_word"
+      ],
+      "difficulty": 0.5,
+      "solution": "experiment 作名词或动词意为'实验'；experience 经历/经验；expert 专家；explanation 解释。学科（科技）语境应选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. experiment",
+        "B. experience",
+        "C. expert",
+        "D. explanation"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0026",
+      "item_type": "choice",
+      "stem": "【词汇·学术词汇】在经济学主题中，'economy' 一词的常见同根形容词是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_academic_word"
+      ],
+      "difficulty": 0.5,
+      "solution": "economy 的常见形容词是 economic（经济的）和 economical（节约的）；B、C 为名词或动词形式，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. economic / economical",
+        "B. economist / economize",
+        "C. economics / economise",
+        "D. all of the above"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0027",
+      "item_type": "fill",
+      "stem": "【词汇·学术词汇填空】在环境主题语篇中常出现 'sustainable development'。请用中文写出 sustainable 的词义：____",
+      "answer": "可持续的",
+      "kps": [
+        "kp_eng10_voc10_academic_word"
+      ],
+      "difficulty": 0.5,
+      "solution": "sustainable 来自 sustain（维持），意为'可持续的'；sustainable development 即'可持续发展'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0028",
+      "item_type": "choice",
+      "stem": "【词汇·语义网】围绕 happy 这一核心词，下列哪一组扩展词最合理？",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_voc10_semantic_map"
+      ],
+      "difficulty": 0.5,
+      "solution": "happy 的语义网应包含近义词 joyful / cheerful / delighted / glad；B 是反义词；C、D 与情感无关，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. joyful, cheerful, delighted, glad",
+        "B. angry, sad, bored, tired",
+        "C. tall, short, big, small",
+        "D. fast, slow, quick, rapid"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0029",
+      "item_type": "choice",
+      "stem": "【词汇·语义场】下列搭配哪一项不属于 'take' 的常见语义网络？",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_voc10_semantic_map"
+      ],
+      "difficulty": 0.5,
+      "solution": "take a photo / take a break / take a look 都是常见搭配；D 'take a photograph well' 语义上不通，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. take a photo",
+        "B. take a break",
+        "C. take a look",
+        "D. take a photograph well"
+      ],
+      "form": "vocab",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0030",
+      "item_type": "fill",
+      "stem": "【词汇·语义网填空】围绕 'succeed'（成功）写出两个常见搭配：\n1. ____ (成功做某事)\n2. ____ (成功的关键)\n填空：1.____ 2.____",
+      "answer": "1. succeed in doing sth.; 2. the key to success",
+      "kps": [
+        "kp_eng10_voc10_semantic_map"
+      ],
+      "difficulty": 0.5,
+      "solution": "succeed in doing sth. 是常见搭配；与名词 success 相关可用 the key to success 表示'成功的关键'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0031",
+      "item_type": "choice",
+      "stem": "【语法·三维语法观】学习语法时，下列做法最能体现'形式—意义—使用'三维统一的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_grammar_view"
+      ],
+      "difficulty": 0.5,
+      "solution": "三维语法观强调把形式、意义、使用结合起来学习，最有效的途径是在真实语境中观察→理解→运用，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只背诵语法规则定义",
+        "B. 在真实语境中观察形式、理解意义、学会使用",
+        "C. 只做大量语法选择题",
+        "D. 把语法翻译成中文记忆"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0032",
+      "item_type": "choice",
+      "stem": "【语法·三维语法观】句子 'It is raining outside.' 在三维语法观下，'raining' 的形式、意义、使用分别是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_grammar_view"
+      ],
+      "difficulty": 0.5,
+      "solution": "raining 是现在分词（形式），表'动作正在进行'（意义），用于描述此刻天气（使用），故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 形式：-ing 现在分词；意义：动作正在进行；使用：描述此刻天气",
+        "B. 形式：动词原形；意义：将来；使用：表计划",
+        "C. 形式：过去式；意义：过去发生；使用：讲故事",
+        "D. 形式：不定式；意义：目的；使用：表目的状语"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0033",
+      "item_type": "fill",
+      "stem": "【语法·三维语法观填空】从'形式—意义—使用'三个维度，简要说明 'She has lived here for five years.' 中 has lived 的用法。\n形式：____\n意义：____\n使用：____",
+      "answer": "形式：现在完成时 has + 过去分词；意义：动作从过去持续到现在的状态；使用：与 for+时间段连用表持续",
+      "kps": [
+        "kp_eng10_gra10_grammar_view"
+      ],
+      "difficulty": 0.5,
+      "solution": "has lived 是 have + 过去分词的现在完成时结构；表示动作从过去某一时间开始并持续到现在；与 for five years 搭配表'已持续五年'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0034",
+      "item_type": "choice",
+      "stem": "【语法·不定式作定语】下列句子中，不定式作定语使用正确的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_gra10_infinitive_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 中 chance to succeed（to succeed 作定语修饰 chance）和 C 中 the first man to arrive（to arrive 作定语修饰 man）结构均正确；A 中 to do 后不能再加 it，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. I have a lot of homework to do it.",
+        "B. She has no chance to succeed.",
+        "C. He is the first man to arrive.",
+        "D. Both B and C."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0035",
+      "item_type": "choice",
+      "stem": "【语法·不定式作定语】选择最佳答案填空：We need someone ____ the problem.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_infinitive_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "不定式作定语修饰 someone，表示'要解决这个问题的人'，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. solve",
+        "B. to solve",
+        "C. solving",
+        "D. solved"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0036",
+      "item_type": "fill",
+      "stem": "【语法·不定式作定语·填空】用所给动词的适当形式填空。\nHe gave me a piece of advice ____ (help) me with my study.\n填空：____",
+      "answer": "to help",
+      "kps": [
+        "kp_eng10_gra10_infinitive_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "advice 后接不定式 to help 作后置定语，意为'帮助我学习的一条建议'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0037",
+      "item_type": "choice",
+      "stem": "【语法·-ing 形式作定语】下列句子中，-ing 形式作定语使用正确的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_ing_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 中 running water（流水）= 现在分词前置定语；B 中 running in the river = 现在分词后置定语；两种结构均正确，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. The running water is cold.",
+        "B. The water running in the river is cold.",
+        "C. Both A and B.",
+        "D. None of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0038",
+      "item_type": "choice",
+      "stem": "【语法·-ing 形式作定语】选择最佳答案填空：The ____ (boy) over there is my brother.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_ing_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "现在分词 smiling 作定语修饰 boy，意为'正在微笑的男孩'；过去式 smiled 不能作前置定语（表主动、正在进行），故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. smile boy",
+        "B. smiling boy",
+        "C. smiled boy",
+        "D. smile"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0039",
+      "item_type": "fill",
+      "stem": "【语法·-ing 作定语·填空】用所给动词的适当形式填空。\nDo you know the girl ____ (dance) with Tom at the party?\n填空：____",
+      "answer": "dancing",
+      "kps": [
+        "kp_eng10_gra10_ing_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "现在分词 dancing 作后置定语修饰 the girl，意为'在晚会上和 Tom 跳舞的那个女孩'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0040",
+      "item_type": "choice",
+      "stem": "【语法·-ed 形式作定语】下列句子中，过去分词作定语使用正确的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_ed_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 中 broken window（前置定语）和 B 中 broken by the boy（后置定语）都正确，broken 作定语表'被打破的'，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. The broken window needs to be repaired.",
+        "B. The window broken by the boy needs to be repaired.",
+        "C. Both A and B.",
+        "D. None of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0041",
+      "item_type": "choice",
+      "stem": "【语法·-ed 形式作定语】选择最佳答案填空：The book ____ by Lu Xun is on the desk.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_ed_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "过去分词 written 作后置定语修饰 the book，表被动与完成（被鲁迅写）；A 主动；B 错；D 表将来。",
+      "source": "llm_generated",
+      "options": [
+        "A. writing",
+        "B. wrote",
+        "C. written",
+        "D. to write"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0042",
+      "item_type": "fill",
+      "stem": "【语法·-ed 作定语·填空】用所给动词的适当形式填空。\nThe ____ (freeze) water in the bottle turned into ice.\n填空：____",
+      "answer": "frozen",
+      "kps": [
+        "kp_eng10_gra10_ed_attr"
+      ],
+      "difficulty": 0.5,
+      "solution": "frozen 过去分词作前置定语修饰 water，意为'被冻住的水'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0043",
+      "item_type": "choice",
+      "stem": "【语法·关系代词引导限制性定语从句】选择最佳答案填空：The man ____ is standing by the door is my father.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_rel_pron_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "先行词 The man 指人，从句缺主语，用 who 引导限制性定语从句；A that 也可指人，但 who 在指人作主语时更常用，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. that",
+        "B. which",
+        "C. who",
+        "D. whom"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0044",
+      "item_type": "choice",
+      "stem": "【语法·限制性定语从句】下列各句中，关系代词使用错误的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_gra10_rel_pron_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 中 that 已在从句中作 gave 的宾语，句末不能再保留 it（多了重复宾语），故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. This is the book which I bought yesterday.",
+        "B. The girl who won the prize is my sister.",
+        "C. The house whose roof is red is mine.",
+        "D. The pen that you gave it to me is lost."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0045",
+      "item_type": "fill",
+      "stem": "【语法·限制性定语从句·填空】在空格处填入合适的关系代词。\nThe book ____ (1) I am reading is very interesting. The author ____ (2) wrote it is a famous scientist.\n填空：(1)____ (2)____",
+      "answer": "(1) that / which; (2) who / that",
+      "kps": [
+        "kp_eng10_gra10_rel_pron_rel"
+      ],
+      "difficulty": 0.5,
+      "solution": "先行词 The book 指物，从句缺宾语，填 that/which；The author 指人，从句缺主语，填 who/that。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0046",
+      "item_type": "choice",
+      "stem": "【语法·省略】下列各句中，存在省略现象的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_gra10_ellipsis"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 省略了 likes；B 省略了引导词 that；C 省略了主语 You，三处均为常见省略现象，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. She likes music, and he, sports.",
+        "B. I think (that) he is right.",
+        "C. (You) Open the door, please.",
+        "D. All of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0047",
+      "item_type": "choice",
+      "stem": "【语法·省略】选择最佳答案填空：—Would you like some tea? —Yes, please. I'd love ____.",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_ellipsis"
+      ],
+      "difficulty": 0.5,
+      "solution": "I'd love some.（省略了 some tea）属于省略宾语的情况；其它选项不符合该省略语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. some",
+        "B. one",
+        "C. it",
+        "D. a"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0048",
+      "item_type": "fill",
+      "stem": "【语法·省略·填空】指出下列句子省略的成分。\n—Are you a teacher? —Yes, I ____ (be).\n填空：____",
+      "answer": "答语省略表语，完整形式为 Yes, I am (a teacher)，故填 am。",
+      "kps": [
+        "kp_eng10_gra10_ellipsis"
+      ],
+      "difficulty": 0.5,
+      "source": "llm_generated",
+      "options": "am",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0049",
+      "item_type": "choice",
+      "stem": "【语法·时态】选择最佳答案填空：I ____ my homework when the phone rang.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_tense_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "主句动作（做作业）发生在过去某时（电话响）正在进行的动作，用过去进行时 was doing，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. do",
+        "B. did",
+        "C. was doing",
+        "D. have done"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0050",
+      "item_type": "choice",
+      "stem": "【语法·时态辨析】By next year, she ____ here for ten years.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_tense_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "by next year + 时间段表'到明年为止'，用将来完成时 will have worked，强调动作持续到将来某时已完成。",
+      "source": "llm_generated",
+      "options": [
+        "A. will work",
+        "B. will be working",
+        "C. will have worked",
+        "D. has worked"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0051",
+      "item_type": "fill",
+      "stem": "【语法·时态·填空】用所给动词的适当形式填空。\nHe usually ____ (get) up at 6:30, but yesterday he ____ (get) up at 7:00.\n填空：____ ; ____",
+      "answer": "gets; got",
+      "kps": [
+        "kp_eng10_gra10_tense_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "usually 表一般习惯用一般现在时 gets；yesterday 表过去用一般过去时 got。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0052",
+      "item_type": "choice",
+      "stem": "【语法·被动语态】下列被动语态使用正确的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_gra10_voice_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 过去时被动；B 现在进行时被动；C 现在完成时被动，三者结构与时态均正确，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. The book was written by Lu Xun.",
+        "B. The cake is being made by Grandma now.",
+        "C. The letter has been sent already.",
+        "D. All of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0053",
+      "item_type": "choice",
+      "stem": "【语法·被动语态】选择最佳答案填空：This bridge ____ in 1990.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_voice_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "in 1990 表过去具体时间，用一般过去时被动 was built；C 缺 was；D 缺 be 动词，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. is built",
+        "B. was built",
+        "C. has built",
+        "D. built"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0054",
+      "item_type": "fill",
+      "stem": "【语法·被动语态·填空】将下列主动句改为被动句。\n主动：They clean the classroom every day.\n被动：The classroom ____ (clean) by them every day.\n填空：____",
+      "answer": "is cleaned",
+      "kps": [
+        "kp_eng10_gra10_voice_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "every day 表一般现在时，被动结构为 is/are + 过去分词，主语 The classroom 单数，用 is cleaned。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0055",
+      "item_type": "choice",
+      "stem": "【语法·五类短语】下列短语中，属于'介词短语'的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_phrase_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "in the morning 是介词 + 名词构成的介词短语；B 副词短语；C 形容词短语；D 动词短语。",
+      "source": "llm_generated",
+      "options": [
+        "A. in the morning",
+        "B. run quickly",
+        "C. very beautiful",
+        "D. read books"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0056",
+      "item_type": "choice",
+      "stem": "【语法·短语功能】句子 'He is a man of great courage.' 中，of great courage 在句中作：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_phrase_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "of great courage 是介词短语，作后置定语修饰 a man，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 定语",
+        "B. 状语",
+        "C. 表语",
+        "D. 补语"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0057",
+      "item_type": "fill",
+      "stem": "【语法·短语填空】用适当的短语填空。\nShe works ____ (努力地) to finish the project on time.\n填空：____",
+      "answer": "hard",
+      "kps": [
+        "kp_eng10_gra10_phrase_master"
+      ],
+      "difficulty": 0.5,
+      "solution": "修饰动词 works 用副词 hard，意为'努力地'；hard 既是形容词也是副词，此处作副词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0058",
+      "item_type": "choice",
+      "stem": "【阅读·文体辨析】下列哪一段文字属于说明文（exposition）？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_dis10_narrative_expo_purpose"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 以客观介绍（熊猫属性、栖息地、食物）为主，是说明文；A、C 为记叙；D 为对话描写，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Last summer, I went to Hainan with my family. We swam in the sea every day.",
+        "B. The panda is a kind of rare animal that lives only in China. It mainly eats bamboo.",
+        "C. Once upon a time, there was a poor fisherman who caught a magic fish.",
+        "D. He shouted, \"Don't go!\" but it was too late."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0059",
+      "item_type": "choice",
+      "stem": "【阅读·写作目的】一篇介绍'如何在家种植蔬菜'的文章，最主要的写作目的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_dis10_narrative_expo_purpose"
+      ],
+      "difficulty": 0.5,
+      "solution": "介绍'如何做某事'是说明文典型目的——介绍方法与步骤；A、C、D 均与说明文写作目的不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. 娱乐读者，讲故事",
+        "B. 说明种植蔬菜的方法和步骤",
+        "C. 表达作者对蔬菜的喜爱",
+        "D. 说服读者购买某种品牌种子"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0060",
+      "item_type": "fill",
+      "stem": "【阅读·文体填空】判断下列段落属于记叙文还是说明文（填'记叙'或'说明'）。\nThe water cycle has four stages: evaporation, condensation, precipitation and collection. Each stage plays an important role in nature.\n文体：____",
+      "answer": "说明",
+      "kps": [
+        "kp_eng10_dis10_narrative_expo_purpose"
+      ],
+      "difficulty": 0.5,
+      "solution": "段落以客观陈述（水的四个阶段及作用）为主，符合说明文特征。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0061",
+      "item_type": "choice",
+      "stem": "【阅读·显性衔接】下列句子中，使用代词指代前文内容最恰当的一项是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_dis10_explicit_cohesion"
+      ],
+      "difficulty": 0.5,
+      "solution": "it 指代 a book，衔接连贯；A 重复名词；C 人称代词错配；D 复数错配，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Tom bought a book. The book is interesting.",
+        "B. Tom bought a book. It is interesting.",
+        "C. Tom bought a book. He is interesting.",
+        "D. Tom bought a book. They are interesting."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0062",
+      "item_type": "choice",
+      "stem": "【阅读·衔接手段】句子 'I was tired, ____ I still kept on working.' 中空格处填入最能体现逻辑关系的连接词是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_dis10_explicit_cohesion"
+      ],
+      "difficulty": 0.5,
+      "solution": "前句 'tired' 与后句 'still kept on working' 构成转折关系，用 but 连接；because 表因果，so 表结果，and 表顺承。",
+      "source": "llm_generated",
+      "options": [
+        "A. because",
+        "B. so",
+        "C. but",
+        "D. and"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0063",
+      "item_type": "fill",
+      "stem": "【阅读·衔接填空】在空格处填入恰当的连接词。\nHe studied very hard, ____ (因此) he passed the exam easily.\n填空：____",
+      "answer": "so",
+      "kps": [
+        "kp_eng10_dis10_explicit_cohesion"
+      ],
+      "difficulty": 0.5,
+      "solution": "前后因果关系，'努力学习'导致'轻松通过考试'，填 so。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0064",
+      "item_type": "choice",
+      "stem": "【阅读·语境作用】在餐厅点餐场景中，'May I take your order?' 一句中 take 的含义应理解为：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_dis10_context_role"
+      ],
+      "difficulty": 0.5,
+      "solution": "餐厅服务员语境下 take your order 意为'记下（您的）点单'；A、B、D 与语境不符，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拿走",
+        "B. 接受（订单）",
+        "C. 记录（订单）",
+        "D. 询问"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0065",
+      "item_type": "choice",
+      "stem": "【阅读·语境预测】根据标题 'How to Keep Fit'，文章最可能涉及的内容是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_dis10_context_role"
+      ],
+      "difficulty": 0.5,
+      "solution": "标题'如何保持健康'预示正文会讲锻炼、饮食等建议；A、C、D 与标题语境不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. A travel story about Paris.",
+        "B. Tips on exercise and healthy diet.",
+        "C. The history of the Olympics.",
+        "D. How to cook pasta."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0066",
+      "item_type": "fill",
+      "stem": "【阅读·语境填空】根据上下文，写出 'bank' 在下列语境中的含义（每空一词）。\n1. We walked along the river bank.（河____）\n2. He went to the bank to save money.（银____）\n填空：1.____ 2.____",
+      "answer": "1. 岸；2. 行",
+      "kps": [
+        "kp_eng10_dis10_context_role"
+      ],
+      "difficulty": 0.5,
+      "solution": "1 中 bank 表'河岸'；2 中 bank 表'银行'，通过语境区分同形异义词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0067",
+      "item_type": "choice",
+      "stem": "【语用·语体选择】给老师的邮件中，最合适的称呼是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_prg10_register"
+      ],
+      "difficulty": 0.5,
+      "solution": "给老师的邮件属于正式语体，应使用 Dear Mr. Smith,；其它选项均为非正式口语表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey, buddy!",
+        "B. Hi, dude!",
+        "C. Dear Mr. Smith,",
+        "D. Yo, man!"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0068",
+      "item_type": "choice",
+      "stem": "【语用·语体】下列表达中，适合在正式场合使用的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_prg10_register"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 用较正式的句式表达反对意见；A、B、D 偏口语化或带感情色彩。",
+      "source": "llm_generated",
+      "options": [
+        "A. Yeah, that's cool.",
+        "B. I totally disagree.",
+        "C. I would like to express my disagreement.",
+        "D. That's rubbish."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0069",
+      "item_type": "fill",
+      "stem": "【语用·语体填空】根据交际场合选择恰当的表达填空。\n（给陌生人指路时）Excuse me, could you ____ (告诉我) the way to the station?\n填空：____",
+      "answer": "tell me",
+      "kps": [
+        "kp_eng10_prg10_register"
+      ],
+      "difficulty": 0.5,
+      "solution": "正式礼貌用语 tell me，搭配 could you 表委婉请求。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0070",
+      "item_type": "choice",
+      "stem": "【语用·插话与结束交谈】在小组讨论中想礼貌地打断对方并提出观点，最恰当的表达是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_prg10_turn_mgmt"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 用 'Sorry to interrupt' 引出礼貌打断，符合得体插话要求；A、C、D 都不礼貌。",
+      "source": "llm_generated",
+      "options": [
+        "A. Shut up!",
+        "B. Sorry to interrupt, but I think...",
+        "C. Whatever.",
+        "D. You are wrong."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0071",
+      "item_type": "choice",
+      "stem": "【语用·结束交谈】下列结束交谈的表达中，最得体的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_prg10_turn_mgmt"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 给出理由（got to go）+ 友好告别（see you later），得体自然；A、C、D 过于生硬或不礼貌。",
+      "source": "llm_generated",
+      "options": [
+        "A. I'm done. Bye.",
+        "B. Well, I've got to go. See you later.",
+        "C. Talk to you never.",
+        "D. I'm leaving, so stop."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0072",
+      "item_type": "fill",
+      "stem": "【语用·插话填空】填入最恰当的插话语。\nA: I think we should hold the meeting tomorrow.\nB: ____ (不好意思打断一下), but wouldn't Friday be better for everyone?\n填空：____",
+      "answer": "Sorry to interrupt",
+      "kps": [
+        "kp_eng10_prg10_turn_mgmt"
+      ],
+      "difficulty": 0.5,
+      "solution": "插话礼貌用语常用 Sorry to interrupt / Excuse me for interrupting 等。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0073",
+      "item_type": "choice",
+      "stem": "【语用·理解他人态度】朋友说：\"I'm fine.\" 但语气低沉、眼神避开，这表明他：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_prg10_understand_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "语言（I'm fine）与副语言（语气、眼神）矛盾，副语言更能体现真实情绪，说明对方在掩饰，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 真的很开心",
+        "B. 可能在隐藏真实情绪",
+        "C. 同意你的观点",
+        "D. 听不懂你说的话"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0074",
+      "item_type": "choice",
+      "stem": "【语用·理解态度】同事说：\"Well, that's an idea.\" 根据语气和用词，最可能的态度是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_prg10_understand_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "Well...that's an idea 表达'那也算一种想法'，是一种中立保留的态度，没有明显赞同或反对。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热情赞同",
+        "B. 中立保留",
+        "C. 强烈反对",
+        "D. 惊讶"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0075",
+      "item_type": "fill",
+      "stem": "【语用·情绪理解填空】根据情景判断对方情感（用中文填空）。\n同学考试失利后沉默不语、低头看着桌面。\n他最可能的情绪是：____",
+      "answer": "沮丧/失落",
+      "kps": [
+        "kp_eng10_prg10_understand_attitude"
+      ],
+      "difficulty": 0.5,
+      "solution": "沉默与低头动作通常与沮丧、失落等消极情绪相关。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0076",
+      "item_type": "choice",
+      "stem": "【阅读·英美节日】\nThanksgiving Day is a national holiday in the United States. It is celebrated on the fourth Thursday of November. Families gather together to enjoy a big dinner, which usually includes turkey, mashed potatoes and pumpkin pie. People also take time to give thanks for the good things in their lives.\n问题：Which of the following is TRUE about Thanksgiving?",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_festivals"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 正确：原文明确提到'big dinner ... usually includes turkey'；A 错：日期为第四个周四，不是固定日期；C、D 与文意不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. It is celebrated on a fixed date every year.",
+        "B. Families usually eat turkey together.",
+        "C. It is a holiday only for children.",
+        "D. People eat only vegetables on that day."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0077",
+      "item_type": "choice",
+      "stem": "【阅读·节日对比】Halloween (Oct 31) 在英美国家，孩子们通常会：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_cul10_festivals"
+      ],
+      "difficulty": 0.5,
+      "solution": "trick or treat 是万圣节前夕的经典活动；B、C、D 分别与中国中元、端午、春节相关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 穿上戏服，挨家挨户要糖（trick or treat）",
+        "B. 祭拜祖先并放天灯",
+        "C. 吃粽子赛龙舟",
+        "D. 打扫屋子贴春联"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0078",
+      "item_type": "fill",
+      "stem": "【文化·节日填空】写出下列英美节日的中文名称与日期。\n1. Christmas（____，12月25日）\n2. Easter（____，春分月圆后第一个星期日）\n填空：1.____ 2.____",
+      "answer": "1. 圣诞节；2. 复活节",
+      "kps": [
+        "kp_eng10_cul10_festivals"
+      ],
+      "difficulty": 0.5,
+      "solution": "Christmas 圣诞节；Easter 复活节，均为英美主要传统节日。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0079",
+      "item_type": "choice",
+      "stem": "【阅读·英美主流体育】下列哪一项不是英美国家的主流体育运动？",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_cul10_sports"
+      ],
+      "difficulty": 0.5,
+      "solution": "Football / American football / Cricket 均是英美主流运动；乒乓球（Table tennis）在英国虽流行但并非'主流'，且非英美文化象征。",
+      "source": "llm_generated",
+      "options": [
+        "A. Football (soccer)",
+        "B. American football",
+        "C. Cricket",
+        "D. Table tennis"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0080",
+      "item_type": "choice",
+      "stem": "【阅读·体育精神】在体育比赛中，'fair play'（公平竞赛）精神的核心是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_sports"
+      ],
+      "difficulty": 0.5,
+      "solution": "fair play 强调遵守规则、尊重对手、公平竞争；A、C、D 与公平精神背道而驰。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赢得比赛不惜一切手段",
+        "B. 遵守规则、尊重对手",
+        "C. 让对手先失误再得分",
+        "D. 只重视个人荣誉"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0081",
+      "item_type": "fill",
+      "stem": "【文化·体育填空】写出下列英美主流体育项目的英文名称。\n1. 英式足球（Football/Soccer）\n2. 美式橄榄球（____）\n3. 板球（____）\n填空：2.____ 3.____",
+      "answer": "2. American football; 3. Cricket",
+      "kps": [
+        "kp_eng10_cul10_sports"
+      ],
+      "difficulty": 0.5,
+      "solution": "American football 美式橄榄球；Cricket 板球，均为英美主流运动。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0082",
+      "item_type": "choice",
+      "stem": "【阅读·英美文化名人】下列哪一位是英国剧作家，代表作包括《哈姆雷特》？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_figures"
+      ],
+      "difficulty": 0.5,
+      "solution": "莎士比亚（Shakespeare）是英国剧作家，《哈姆雷特》是其四大悲剧之一；A 狄更斯是英国小说家；C、D 都是美国作家。",
+      "source": "llm_generated",
+      "options": [
+        "A. Charles Dickens",
+        "B. William Shakespeare",
+        "C. Mark Twain",
+        "D. Ernest Hemingway"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0083",
+      "item_type": "choice",
+      "stem": "【阅读·文化人物】下列科学家中，发现万有引力定律（Law of Gravity）的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_figures"
+      ],
+      "difficulty": 0.5,
+      "solution": "牛顿（Newton）发现万有引力定律；爱因斯坦提出相对论；达尔文提出进化论；爱迪生发明电灯。",
+      "source": "llm_generated",
+      "options": [
+        "A. Albert Einstein",
+        "B. Isaac Newton",
+        "C. Charles Darwin",
+        "D. Thomas Edison"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0084",
+      "item_type": "fill",
+      "stem": "【文化·人物填空】写出下列英美著名人物的英文名。\n1. 写出《老人与海》作者：____\n2. 写出《独立宣言》主要起草人之一：____\n填空：1.____ 2.____",
+      "answer": "1. Ernest Hemingway; 2. Thomas Jefferson",
+      "kps": [
+        "kp_eng10_cul10_figures"
+      ],
+      "difficulty": 0.5,
+      "solution": "《老人与海》作者海明威（Ernest Hemingway）；《独立宣言》主要起草人之一杰斐逊（Thomas Jefferson）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0085",
+      "item_type": "choice",
+      "stem": "【阅读·英语成语】'A piece of cake' 在英语中的含义是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_idioms"
+      ],
+      "difficulty": 0.5,
+      "solution": "A piece of cake 是英语习语，意为'小菜一碟、容易的事'，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 真正的蛋糕",
+        "B. 容易的事",
+        "C. 甜的点心",
+        "D. 重要的决定"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0086",
+      "item_type": "choice",
+      "stem": "【阅读·英语俗语】'When in Rome, do as the Romans do.' 的中文意思是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_cul10_idioms"
+      ],
+      "difficulty": 0.5,
+      "solution": "'When in Rome...' 是一句著名的英语谚语，意为'入乡随俗'。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在罗马时要参观罗马斗兽场",
+        "B. 入乡随俗",
+        "C. 罗马人很热情好客",
+        "D. 旅行是最好的学习方式"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0087",
+      "item_type": "fill",
+      "stem": "【文化·成语填空】写出下列英语成语的中文含义。\n1. break the ice（____）\n2. hit the books（____）\n填空：1.____ 2.____",
+      "answer": "1. 打破僵局/活跃气氛；2. 努力用功学习",
+      "kps": [
+        "kp_eng10_cul10_idioms"
+      ],
+      "difficulty": 0.5,
+      "solution": "break the ice 意为'打破僵局'；hit the books 意为'用功读书'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0088",
+      "item_type": "choice",
+      "stem": "【听力·逻辑关系】短对话：男：It is raining hard, so we have to cancel the picnic. 女：What a pity!\n问题：What is the logical relationship between the two sentences?",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_lis10_logic"
+      ],
+      "difficulty": 0.5,
+      "solution": "'下雨'是'取消野餐'的原因，构成因果关系；'What a pity!' 是对结果的感叹。",
+      "source": "llm_generated",
+      "options": [
+        "A. 因果",
+        "B. 转折",
+        "C. 并列",
+        "D. 选择"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0089",
+      "item_type": "choice",
+      "stem": "【听力·隐性逻辑】短对话：男：I am exhausted. I have been working for ten hours. 女：No wonder you look so tired.\n问题：What can we infer from the man's words?",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lis10_logic"
+      ],
+      "difficulty": 0.5,
+      "solution": "'I have been working for ten hours' 是现在完成进行时，表示动作从过去持续到现在，故推断他已连续工作很久。",
+      "source": "llm_generated",
+      "options": [
+        "A. 他刚刚开始工作",
+        "B. 他已经连续工作了很长时间",
+        "C. 他工作轻松",
+        "D. 他没在工作"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0090",
+      "item_type": "fill",
+      "stem": "【听力·逻辑填空】根据所听短文，写出句间的逻辑关系（填'因果/转折/并列/选择'）。\nHe is rich, ____ he is not happy.\n关系：____",
+      "answer": "转折",
+      "kps": [
+        "kp_eng10_lis10_logic"
+      ],
+      "difficulty": 0.5,
+      "solution": "'rich' 与 'not happy' 构成转折关系（虽然有钱但不幸福）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0091",
+      "item_type": "choice",
+      "stem": "【阅读·关键词定位】要在文中快速找到关于'Spring Festival'日期的信息，最应搜索的关键词是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_keyword_search"
+      ],
+      "difficulty": 0.5,
+      "solution": "日期相关信息通常与日历/月份相关，'lunar calendar'（农历）最可能定位到日期。",
+      "source": "llm_generated",
+      "options": [
+        "A. dinner",
+        "B. lunar calendar",
+        "C. family",
+        "D. red envelope"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0092",
+      "item_type": "choice",
+      "stem": "【阅读·快速定位】要找关于某药物副作用（side effects）的信息，最有效的关键词是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_keyword_search"
+      ],
+      "difficulty": 0.5,
+      "solution": "side effects 即'副作用'，直接对应要找的信息，最能快速定位。",
+      "source": "llm_generated",
+      "options": [
+        "A. dosage",
+        "B. side effects",
+        "C. storage",
+        "D. brand"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0093",
+      "item_type": "fill",
+      "stem": "【阅读·关键词填空】根据文章内容，写出定位下列信息应使用的关键词（每空一词）。\n1. 航班起飞时间（____）\n2. 酒店价格信息（____）\n填空：1.____ 2.____",
+      "answer": "1. departure time / take-off; 2. price / rate",
+      "kps": [
+        "kp_eng10_red10_keyword_search"
+      ],
+      "difficulty": 0.5,
+      "solution": "定位航班起飞时间常用 departure time 或 take-off；价格信息常用 price / rate。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0094",
+      "item_type": "choice",
+      "stem": "【阅读·批判性阅读】读到一篇声称'某保健品能治愈癌症'的文章，下列做法最合适的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_red10_critical"
+      ],
+      "difficulty": 0.5,
+      "solution": "批判性阅读要求对信息真实性、逻辑性进行判断，最合适是查阅权威资料验证。",
+      "source": "llm_generated",
+      "options": [
+        "A. 立即推荐给亲友购买",
+        "B. 不加思考地相信",
+        "C. 查找权威医学资料验证其真实性",
+        "D. 完全忽视所有健康信息"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0095",
+      "item_type": "choice",
+      "stem": "【阅读·批判性判断】某网站宣称'本产品 100% 有效，无任何副作用'，下列判断中最合理的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_critical"
+      ],
+      "difficulty": 0.5,
+      "solution": "绝对化表述（100%、零风险）通常不符合科学规律，应持怀疑态度并核查其他来源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 100% 有效是事实",
+        "B. 该宣传过于绝对，应保持怀疑",
+        "C. 既然这么肯定就一定可信",
+        "D. 不必再查看其他信息"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0096",
+      "item_type": "fill",
+      "stem": "【阅读·批判性填空】对网络信息进行批判性审视时，常用的判断维度包括：真实性、____、价值取向。\n填空：____",
+      "answer": "逻辑性",
+      "kps": [
+        "kp_eng10_red10_critical"
+      ],
+      "difficulty": 0.5,
+      "solution": "批判性阅读三个维度：真实性、逻辑性、价值取向。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0097",
+      "item_type": "choice",
+      "stem": "【阅读·选择性记录】听英语讲座时，要记录'主要观点'，下列记录方式最有效的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_selective_record"
+      ],
+      "difficulty": 0.5,
+      "solution": "听讲座时用关键词、缩写下记要点既能跟上节奏，又能保留核心信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把每个单词都记下来",
+        "B. 用关键词和缩写下记录主要观点",
+        "C. 只记录日期",
+        "D. 完全不做笔记"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0098",
+      "item_type": "choice",
+      "stem": "【阅读·筛选记录】阅读一篇关于气候变化的文章时，要记录'关键证据'，下列做法最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_selective_record"
+      ],
+      "difficulty": 0.5,
+      "solution": "关键证据通常表现为数据、研究、事实等具体信息，标出并摘抄是最有效的做法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 抄写全文",
+        "B. 标出并抄写具体数据、研究和事实",
+        "C. 只记录作者姓名",
+        "D. 不做标记"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0099",
+      "item_type": "fill",
+      "stem": "【阅读·记录填空】根据任务目标，下列信息中最值得记录的是（写序号）。\n① 作者姓名；② 重要数据；③ 段落中的每个形容词；④ 关键事实\n填空：____",
+      "answer": "②④",
+      "kps": [
+        "kp_eng10_red10_selective_record"
+      ],
+      "difficulty": 0.5,
+      "solution": "重要数据与关键事实是听读看中最应记录的信息；作者姓名次要；形容词不关键。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0100",
+      "item_type": "choice",
+      "stem": "【阅读·多模态】一幅公益海报上画着一棵枯树，树上没有叶子，只有'?'符号。海报下方写着 'Save the Earth'。该海报主要想表达：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_vie10_multimodal"
+      ],
+      "difficulty": 0.5,
+      "solution": "枯树+'?'与口号'Save the Earth'结合，表达'拯救地球'的紧迫感，暗示环境破坏使地球失去生机。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地球上有很多树",
+        "B. 人类对环境的破坏使地球正在失去生机",
+        "C. 树是一种植物",
+        "D. 应该多植树"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0101",
+      "item_type": "choice",
+      "stem": "【阅读·多模态】电影《Forrest Gump》海报中，主角跑步的剪影+配文 'Life is like a box of chocolates.' 主要传达：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_vie10_multimodal"
+      ],
+      "difficulty": 0.5,
+      "solution": "'Life is like a box of chocolates' 表达'生活如巧克力般不可预知'，海报用奔跑剪影+文字传达对人生多样性的思考。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跑步对健康有益",
+        "B. 生活的不可预测性与多彩",
+        "C. 巧克力是甜食",
+        "D. 跑步会让人疲倦"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0102",
+      "item_type": "fill",
+      "stem": "【阅读·多模态填空】海报用鲜艳的红十字+救护车图案+文字 'First Aid'，主要想让受众识别：____\n填空：____",
+      "answer": "急救服务/救助站",
+      "kps": [
+        "kp_eng10_vie10_multimodal"
+      ],
+      "difficulty": 0.5,
+      "solution": "红十字+救护车+First Aid 是医疗急救的通用视觉符号，受众可识别为'急救服务'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0103",
+      "item_type": "choice",
+      "stem": "【听力·学习量】根据《普通高中英语课程标准》要求，必修阶段课外视听活动每周不少于____。",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lis10_quantity"
+      ],
+      "difficulty": 0.5,
+      "solution": "课程标准规定必修阶段课外视听活动每周不少于 30 分钟，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10 分钟",
+        "B. 30 分钟",
+        "C. 60 分钟",
+        "D. 120 分钟"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0104",
+      "item_type": "choice",
+      "stem": "【听力·阅读量】必修课程阶段阅读量平均每周不少于 1500 词，三年累计不少于____万词。",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lis10_quantity"
+      ],
+      "difficulty": 0.5,
+      "solution": "课程标准要求必修阶段阅读量累计不少于 4.5 万词，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3.0",
+        "B. 4.5",
+        "C. 6.0",
+        "D. 10.0"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0105",
+      "item_type": "fill",
+      "stem": "【听力·学习量填空】写出课标规定的两个量化要求。\n1. 课外视听活动每周不少于 ____ 分钟。\n2. 必修阶段阅读量累计不少于 ____ 万词。\n填空：1.____ 2.____",
+      "answer": "1. 30; 2. 4.5",
+      "kps": [
+        "kp_eng10_lis10_quantity"
+      ],
+      "difficulty": 0.5,
+      "solution": "课标要求：每周视听不少于 30 分钟；阅读累计不少于 4.5 万词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0106",
+      "item_type": "choice",
+      "stem": "【口语·发起交谈】在与新同学初次交谈时，最自然的开场方式是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_spk10_initiate"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 用自我介绍+提问的方式自然开启对话，符合口语交际得体原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 你好蠢。",
+        "B. Hi, I'm Tom. What's your name?",
+        "C. 给我抄作业。",
+        "D. 不想理你。"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0107",
+      "item_type": "choice",
+      "stem": "【口语·维持交谈】与外教交流时想延续话题，下列哪种方式最合适？",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_spk10_initiate"
+      ],
+      "difficulty": 0.5,
+      "solution": "复述对方观点再提问是积极倾听并推动对话的方式，符合维持交谈的策略。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全沉默",
+        "B. 不断打断对方",
+        "C. 复述对方观点并进一步提问",
+        "D. 只说 yes / no"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0108",
+      "item_type": "fill",
+      "stem": "【口语·发起填空】填入恰当的英语表达开启对话。\n（向同学借笔）____ , could I borrow your pen, please?\n填空：____",
+      "answer": "Excuse me",
+      "kps": [
+        "kp_eng10_spk10_initiate"
+      ],
+      "difficulty": 0.5,
+      "solution": "向陌生人借东西用 Excuse me 开头最礼貌。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0109",
+      "item_type": "choice",
+      "stem": "【口语·逻辑连接】口头表达中，要表达'首先...其次...'，下列连接词最合适的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_spk10_logical_link"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 用 First of all / Second 表顺序，结构清晰；B 因果；C 转折；D 条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. First of all... Second...",
+        "B. Because... So...",
+        "C. Although... but...",
+        "D. If... unless..."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0110",
+      "item_type": "choice",
+      "stem": "【口语·衔接】小组讨论中想说'另一方面...',下列哪种表达最得体？",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_spk10_logical_link"
+      ],
+      "difficulty": 0.5,
+      "solution": "On the other hand 表'另一方面'，引出对比观点；B 表递进；C 表结果；D 表总结。",
+      "source": "llm_generated",
+      "options": [
+        "A. On the other hand...",
+        "B. What's more...",
+        "C. As a result...",
+        "D. In a word..."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0111",
+      "item_type": "fill",
+      "stem": "【口语·连接填空】填入恰当的连接词。\nI enjoy reading, ____ (因为) it helps me learn new ideas.\n填空：____",
+      "answer": "because",
+      "kps": [
+        "kp_eng10_spk10_logical_link"
+      ],
+      "difficulty": 0.5,
+      "solution": "后接原因从句用 because；'it helps me learn new ideas' 即原因。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0112",
+      "item_type": "choice",
+      "stem": "【写作·版式】在书面表达中，要突出'标题'与'重要信息'，下列版式设计最有效的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_wri10_layout"
+      ],
+      "difficulty": 0.5,
+      "solution": "突出标题常用加大字号、居中、加粗等手段；其它选项都不能有效突出信息。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用最大字号 + 居中 + 加粗",
+        "B. 用与正文一样的字号和样式",
+        "C. 把标题写在最末",
+        "D. 不写标题"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0113",
+      "item_type": "choice",
+      "stem": "【写作·图标表格】要在书面表达中传达'对比信息'，下列方式最合适的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_wri10_layout"
+      ],
+      "difficulty": 0.5,
+      "solution": "表格/图表能直观呈现对比信息，最合适。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用表格或图表呈现",
+        "B. 用一段长文字堆砌",
+        "C. 完全不用任何视觉元素",
+        "D. 用大量重复句子"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0114",
+      "item_type": "fill",
+      "stem": "【写作·版式填空】写出书面表达中常用的两种传递信息的版式元素：____、____。\n填空：____",
+      "answer": "标题；图标/表格",
+      "kps": [
+        "kp_eng10_wri10_layout"
+      ],
+      "difficulty": 0.5,
+      "solution": "标题、图标、表格、版式都是常用版式元素，能帮助传递信息。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0115",
+      "item_type": "choice",
+      "stem": "【口语·正式/非正式】给校长写一封正式邮件，开头最合适的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_spk10_formality_choose"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 使用 Dear + 头衔 + 姓 的正式称呼；A、B、D 均为非正式表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey bro,",
+        "B. Yo, what's up?",
+        "C. Dear Principal Smith,",
+        "D. Hi there buddy,"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0116",
+      "item_type": "choice",
+      "stem": "【口语·语体选择】朋友之间聊天时，最自然的表达是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_spk10_formality_choose"
+      ],
+      "difficulty": 0.5,
+      "solution": "朋友间非正式场合，C 用 Hey / can you give me a hand 自然得体；A、D 太正式。",
+      "source": "llm_generated",
+      "options": [
+        "A. I would appreciate it if you could possibly...",
+        "B. Could you please...?",
+        "C. Hey, can you give me a hand?",
+        "D. I hereby request..."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0117",
+      "item_type": "fill",
+      "stem": "【口语·语体填空】根据场景选择恰当的表达填空。\n（向上司请假）I would like to ____ (请) one day off tomorrow.\n填空：____",
+      "answer": "request",
+      "kps": [
+        "kp_eng10_spk10_formality_choose"
+      ],
+      "difficulty": 0.5,
+      "solution": "正式场合 request 比 ask 更得体。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0118",
+      "item_type": "choice",
+      "stem": "【学习策略·预习复习】要有效预习新单元，下列做法最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_preview_plan"
+      ],
+      "difficulty": 0.5,
+      "solution": "有效预习应快速浏览框架、标记重点难点；A 缺准备，C 太耗时，D 缺主动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全不预习直接上课",
+        "B. 浏览单元标题、单词表与课文主旨句，标记难点",
+        "C. 把整本教材抄一遍",
+        "D. 等老师讲到再临时翻书"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0119",
+      "item_type": "choice",
+      "stem": "【学习策略·复习】要复习刚学过的语法点，下列哪种方法最有效？",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_lsm10_preview_plan"
+      ],
+      "difficulty": 0.5,
+      "solution": "间隔复习+做练习+整理错题符合有效复习原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一周后重新做相关练习并整理错题",
+        "B. 看过一遍就不再看",
+        "C. 只在考试前临时背诵",
+        "D. 不整理错题只看分数"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0120",
+      "item_type": "fill",
+      "stem": "【学习策略·计划填空】写出安排英语预习和复习的两条实用建议（每空一句中文）：\n1. ____\n2. ____\n填空：1.____ 2.____",
+      "answer": "1. 课前浏览标题与生词；2. 课后当天整理笔记并做练习",
+      "kps": [
+        "kp_eng10_lsm10_preview_plan"
+      ],
+      "difficulty": 0.5,
+      "solution": "预习强调抓框架、复习强调当天巩固，二者结合效果最佳。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0121",
+      "item_type": "choice",
+      "stem": "【学习策略·语境学习】学习单词 'run out'（耗尽）时，下列哪种方式最有效？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_context_learn"
+      ],
+      "difficulty": 0.5,
+      "solution": "通过真实语境（句子）学习词汇最有效，符合'在语境中学'的原则。",
+      "source": "llm_generated",
+      "options": [
+        "A. 死记硬背'run out = 耗尽'",
+        "B. 在句子 'Our money has run out.' 中理解 run out 的含义",
+        "C. 只记住字母 r-u-n o-u-t",
+        "D. 不看例句直接做翻译题"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0122",
+      "item_type": "choice",
+      "stem": "【学习策略·语境】要理解定语从句用法，下列哪种方法最有助于在语境中掌握？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_context_learn"
+      ],
+      "difficulty": 0.5,
+      "solution": "通过阅读真实段落观察定语从句的结构与功能，符合'语境学习'。",
+      "source": "llm_generated",
+      "options": [
+        "A. 背定义'关系代词引导从句'",
+        "B. 阅读含定语从句的段落，观察先行词与关系词搭配",
+        "C. 只做单选题",
+        "D. 完全不看文章"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0123",
+      "item_type": "fill",
+      "stem": "【学习策略·语境填空】写出在语境中学习词汇/语法的两个好处（每空一句中文）：\n1. ____\n2. ____\n填空：1.____ 2.____",
+      "answer": "1. 有助于理解意义；2. 便于掌握用法",
+      "kps": [
+        "kp_eng10_lsm10_context_learn"
+      ],
+      "difficulty": 0.5,
+      "solution": "语境学习既理解意义又掌握用法，比孤立记忆更有效。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0124",
+      "item_type": "choice",
+      "stem": "【阅读策略·略读】要快速把握篇章大意，下列做法最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_skimming"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读强调快速抓取关键位置信息（标题、首段、段首句、末段）以把握大意。",
+      "source": "llm_generated",
+      "options": [
+        "A. 逐字逐句精读全文",
+        "B. 快速浏览标题、首段、段首句与末段",
+        "C. 只看最后一句",
+        "D. 反复读同一段"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0125",
+      "item_type": "choice",
+      "stem": "【阅读策略·略读应用】略读下列段落时，最值得关注的句子是：\n'The Olympic Games, first held in ancient Greece, have become a worldwide sports event. Today, the Games include summer and winter sports, and athletes from over 200 countries take part. The Olympic spirit of friendship and fair play has inspired millions.'",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_lsm10_skimming"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读时首句通常点明主旨（奥运会的起源与发展），故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一句",
+        "B. 中间描述运动员数量的句子",
+        "C. 末句（关于奥运精神）",
+        "D. 所有句子都要细读"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0126",
+      "item_type": "fill",
+      "stem": "【阅读策略·填空】写出略读时通常关注的三个位置：____、____、____。\n填空：____",
+      "answer": "标题；首段；末段",
+      "kps": [
+        "kp_eng10_lsm10_skimming"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读时重点关注标题、首段和末段以快速获取主旨。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0127",
+      "item_type": "choice",
+      "stem": "【交际策略·克服障碍】与外教交流时遇到听不懂的情况，下列哪种做法最得体？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_overcome_barrier"
+      ],
+      "difficulty": 0.5,
+      "solution": "礼貌请求解释或重复是克服交际障碍的有效且得体的方式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 假装听懂了不回应",
+        "B. 礼貌地请求对方解释或重复：'Sorry, could you explain that again?'",
+        "C. 直接走开",
+        "D. 用中文大声回应"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0128",
+      "item_type": "choice",
+      "stem": "【交际策略·澄清】当对方说 'He is into sci-fi.' 时听者可以用____确认理解：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_lsm10_overcome_barrier"
+      ],
+      "difficulty": 0.5,
+      "solution": "通过复述对方的句子并确认（You mean..., right?）是澄清策略的典型应用。",
+      "source": "llm_generated",
+      "options": [
+        "A. You mean he loves science fiction, right?",
+        "B. Yes, OK.",
+        "C. No problem.",
+        "D. Whatever."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0129",
+      "item_type": "fill",
+      "stem": "【交际策略·填空】写出克服交际障碍的两种方法：____、____。\n填空：____",
+      "answer": "解释；澄清",
+      "kps": [
+        "kp_eng10_lsm10_overcome_barrier"
+      ],
+      "difficulty": 0.5,
+      "solution": "通过解释（explain）、澄清（clarify）或重复（repeat）克服交际障碍。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0130",
+      "item_type": "choice",
+      "stem": "【学习态度】要保持英语学习的主动与积极，下列哪种心态最可取？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_positive"
+      ],
+      "difficulty": 0.5,
+      "solution": "把错误当学习机会并坚持练习，体现主动积极的学习态度。",
+      "source": "llm_generated",
+      "options": [
+        "A. 失败就放弃",
+        "B. 把错误当作学习机会并坚持练习",
+        "C. 只在考试前突击",
+        "D. 害怕出错而不开口"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0131",
+      "item_type": "choice",
+      "stem": "【学习态度】面对英语演讲紧张时，下列哪种做法最有助增强自信？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lsm10_positive"
+      ],
+      "difficulty": 0.5,
+      "solution": "充分准备+积极自我暗示是缓解紧张、增强自信的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 彻底放弃演讲",
+        "B. 多练习、提前准备并告诉自己'我可以'",
+        "C. 默念'我不行'",
+        "D. 逃课"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0132",
+      "item_type": "fill",
+      "stem": "【学习态度填空】写出保持英语学习自信的两条建议（每空一句中文）：\n1. ____\n2. ____\n填空：1.____ 2.____",
+      "answer": "1. 设立可达的小目标；2. 积极自我暗示",
+      "kps": [
+        "kp_eng10_lsm10_positive"
+      ],
+      "difficulty": 0.5,
+      "solution": "设定可达目标与积极自我暗示有助于持续增强学习自信。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0133",
+      "item_type": "choice",
+      "stem": "【主题·人与自我】下列话题中，最属于'人与自我（生活与学习）'主题语境的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_thm10_self_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "'人与自我'主题语境包括个人生活、家庭、健康、终身学习等；A 契合，B、C、D 属其他主题。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我的家庭生活与学习习惯",
+        "B. 国际贸易",
+        "C. 极地探险",
+        "D. 太空旅行"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0134",
+      "item_type": "choice",
+      "stem": "【主题·人与自我】围绕'健康生活方式'，下列写作素材最贴切的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_thm10_self_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "健康生活方式包括饮食、运动、睡眠等，属'人与自我'主题。",
+      "source": "llm_generated",
+      "options": [
+        "A. 国家地理概况",
+        "B. 饮食、运动与睡眠习惯",
+        "C. 国际政治新闻",
+        "D. 太空探索"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0135",
+      "item_type": "fill",
+      "stem": "【主题·填空】写出'人与自我'主题语境下三个常见子话题（每空一词）：____、____、____。\n填空：____",
+      "answer": "家庭；健康；学习",
+      "kps": [
+        "kp_eng10_thm10_self_life"
+      ],
+      "difficulty": 0.5,
+      "solution": "家庭、健康、学习是'人与自我'主题的常见子话题。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0136",
+      "item_type": "choice",
+      "stem": "【主题·社会服务与人际沟通】下列素材中，最能体现'社会服务与人际沟通'主题的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_thm10_society"
+      ],
+      "difficulty": 0.5,
+      "solution": "'社会服务与人际沟通'主题包括志愿服务、人际关系、合作等；B 契合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个人饮食习惯",
+        "B. 志愿服务与人际合作的故事",
+        "C. 太阳系行星",
+        "D. 计算机硬件"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0137",
+      "item_type": "choice",
+      "stem": "【主题·社区】下列写作主题中，最适合'社区生活'方向的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_thm10_society"
+      ],
+      "difficulty": 0.5,
+      "solution": "邻里互助、社区活动属于'社区生活'，契合社会服务与人际沟通主题。",
+      "source": "llm_generated",
+      "options": [
+        "A. 火星探险",
+        "B. 邻里互助与社区活动",
+        "C. 量子物理",
+        "D. 古罗马历史"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0138",
+      "item_type": "fill",
+      "stem": "【主题·社会填空】写出'社会服务与人际沟通'主题下的三个常见情境（每空一词）：____、____、____。\n填空：____",
+      "answer": "志愿服务；社区活动；合作学习",
+      "kps": [
+        "kp_eng10_thm10_society"
+      ],
+      "difficulty": 0.5,
+      "solution": "志愿服务、社区活动、合作学习都属于社会服务与人际沟通的常见情境。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0139",
+      "item_type": "choice",
+      "stem": "【主题·人与自然】下列话题中，最契合'人与自然'主题语境的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_thm10_nature"
+      ],
+      "difficulty": 0.5,
+      "solution": "'人与自然'主题包括自然环境保护、人与动植物、自然灾害与安全常识等；B 契合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 周末家庭聚餐",
+        "B. 自然环境保护与野生动物",
+        "C. 国际金融",
+        "D. 高中选课"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0140",
+      "item_type": "choice",
+      "stem": "【主题·自然】下列文章主题中，最适合'人与自然'方向的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_thm10_nature"
+      ],
+      "difficulty": 0.5,
+      "solution": "气候变化与节能减排属'人与自然'主题，体现环境保护与人类行为的关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 朋友之间的矛盾",
+        "B. 气候变化与节能减排",
+        "C. 时尚潮流",
+        "D. 名人传记"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0141",
+      "item_type": "fill",
+      "stem": "【主题·自然填空】写出'人与自然'主题下的三个常见话题（每空一词）：____、____、____。\n填空：____",
+      "answer": "环境保护；动植物；自然灾害",
+      "kps": [
+        "kp_eng10_thm10_nature"
+      ],
+      "difficulty": 0.5,
+      "solution": "环境保护、人与动植物、自然灾害是'人与自然'的常见话题。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0142",
+      "item_type": "choice",
+      "stem": "【语法·情态动词】选择最佳答案填空：You ____ wear a seat belt when driving. It's the law.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_modal_verbs"
+      ],
+      "difficulty": 0.5,
+      "solution": "'It's the law' 表法律义务，用 must 表'必须'。",
+      "source": "llm_generated",
+      "options": [
+        "A. may",
+        "B. can",
+        "C. must",
+        "D. need"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0143",
+      "item_type": "choice",
+      "stem": "【语法·情态动词·推测】句子 'He ____ be at home now; the light is on.' 中空格处填入：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_modal_verbs"
+      ],
+      "difficulty": 0.5,
+      "solution": "灯亮着说明他可能在家，但不能完全确定，用 may 表推测。",
+      "source": "llm_generated",
+      "options": [
+        "A. must",
+        "B. may",
+        "C. can't",
+        "D. shouldn't"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0144",
+      "item_type": "fill",
+      "stem": "【语法·情态动词填空】用 must / may / can't / ought to 填空。\nYou ____ (应该) see a doctor if you feel unwell.\n填空：____",
+      "answer": "ought to",
+      "kps": [
+        "kp_eng10_gra10_modal_verbs"
+      ],
+      "difficulty": 0.5,
+      "solution": "ought to 表建议'应该'，符合语境。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0145",
+      "item_type": "choice",
+      "stem": "【语法·主谓一致】选择最佳答案填空：The list of items ____ on the table.",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_gra10_subject_verb_agree"
+      ],
+      "difficulty": 0.5,
+      "solution": "主语是 The list（单数），of items 是后置定语不影响主语数，故用 is。",
+      "source": "llm_generated",
+      "options": [
+        "A. are",
+        "B. is",
+        "C. were",
+        "D. be"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0146",
+      "item_type": "choice",
+      "stem": "【语法·主谓一致】下列句子中，主谓一致正确的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng10_gra10_subject_verb_agree"
+      ],
+      "difficulty": 0.5,
+      "solution": "D 中主语是 The teacher 单数，with two students 是后置定语，用 is；A 中 Everyone 单数应用 is；B 中 news 单复同形用 is；C 中 Mathematics 单数用 is。",
+      "source": "llm_generated",
+      "options": [
+        "A. Everyone are here.",
+        "B. The news are surprising.",
+        "C. Mathematics are my favorite subject.",
+        "D. The teacher with two students is coming."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0147",
+      "item_type": "fill",
+      "stem": "【语法·主谓一致填空】用 be 动词的正确形式填空。\nEither he or I ____ (be) going to the meeting.\n填空：____",
+      "answer": "am",
+      "kps": [
+        "kp_eng10_gra10_subject_verb_agree"
+      ],
+      "difficulty": 0.5,
+      "solution": "either...or... 谓语动词与最近的主语一致（I），故用 am。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0148",
+      "item_type": "choice",
+      "stem": "【语法·非谓语动词】下列各组中，区别'不定式/动名词/过去分词'正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_nonfinite_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "非谓语动词三种形式：to do（不定式）、doing（动名词/现在分词）、done（过去分词）。",
+      "source": "llm_generated",
+      "options": [
+        "A. to do / doing / done",
+        "B. do / did / doing",
+        "C. doing / done / do",
+        "D. None of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0149",
+      "item_type": "choice",
+      "stem": "【语法·非谓语动词辨析】选择最佳答案填空：____ (finish) the work, he went home.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_nonfinite_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "'完成工作在先，回家在后'，用现在分词完成式 Having finished 表先于谓语动作。",
+      "source": "llm_generated",
+      "options": [
+        "A. Finish",
+        "B. Finished",
+        "C. Having finished",
+        "D. To finish"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0150",
+      "item_type": "fill",
+      "stem": "【语法·非谓语动词填空】用所给词的适当形式填空。\n____ (avoid) eating too much sugar is good for your health.\n填空：____",
+      "answer": "Avoiding",
+      "kps": [
+        "kp_eng10_gra10_nonfinite_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "动名词 Avoiding 作主语；avoid doing 是固定搭配。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0151",
+      "item_type": "choice",
+      "stem": "【语法填空·解题路径】做语法填空时，按'空前语境—提示词—句子主干'三步判断空格处的____。",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_gra10_grammar_fill"
+      ],
+      "difficulty": 0.5,
+      "solution": "三步判断的核心是先定'词性'，再确定形式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 词性",
+        "B. 字母数",
+        "C. 字体",
+        "D. 页码"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0152",
+      "item_type": "choice",
+      "stem": "【语法填空】选择最佳答案填空：He is good at ____ (play) basketball.",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_gra10_grammar_fill"
+      ],
+      "difficulty": 0.5,
+      "solution": "be good at 后接动名词 playing。",
+      "source": "llm_generated",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. playing",
+        "D. played"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0153",
+      "item_type": "fill",
+      "stem": "【语法填空·填空】用所给动词的适当形式填空。\nIf it ____ (rain) tomorrow, we will stay at home.\n填空：____",
+      "answer": "rains",
+      "kps": [
+        "kp_eng10_gra10_grammar_fill"
+      ],
+      "difficulty": 0.5,
+      "solution": "主从复合句中，主句将来时，从句用一般现在时表将来，主语 It 第三人称单数用 rains。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0154",
+      "item_type": "choice",
+      "stem": "【文化·英美基本国情】下列关于美国（United States）基本国情的描述正确的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_cul10_uk_us_basic"
+      ],
+      "difficulty": 0.5,
+      "solution": "C 正确：美国首都是 Washington, D.C.，由 50 个州组成；A 错；B 错（官方语言无明确，主要为 English）；D 错（人口主要在中东部和西部沿海）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 首都是 New York",
+        "B. 官方语言是 Spanish",
+        "C. 是一个联邦制国家，由 50 个州组成",
+        "D. 人口主要分布在西部"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0155",
+      "item_type": "choice",
+      "stem": "【文化·英美基本国情】关于英国（United Kingdom），下列说法错误的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_cul10_uk_us_basic"
+      ],
+      "difficulty": 0.5,
+      "solution": "英国是君主立宪制（constitutional monarchy），不是共和国，故 C 错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由 England、Scotland、Wales 和 Northern Ireland 组成",
+        "B. 首都 London",
+        "C. 是一个共和国（republic）",
+        "D. 官方语言是 English"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0156",
+      "item_type": "fill",
+      "stem": "【文化·国情填空】写出英美两国首都的英文名。\n1. UK 首都：____\n2. US 首都：____\n填空：1.____ 2.____",
+      "answer": "1. London; 2. Washington, D.C.",
+      "kps": [
+        "kp_eng10_cul10_uk_us_basic"
+      ],
+      "difficulty": 0.5,
+      "solution": "UK 首都是 London；US 首都是 Washington, D.C.（注意带逗号和缩写）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0157",
+      "item_type": "choice",
+      "stem": "【听力·听记填表】听一段对话时，要填入表格的'姓名、时间和地点'，下列做法最有效的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_lis10_note_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "听时即时用简写记录关键信息是听记填表的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只关注背景音乐",
+        "B. 听到关键信息时立即用简写记下",
+        "C. 等对话结束再回忆全部内容",
+        "D. 不做笔记"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0158",
+      "item_type": "choice",
+      "stem": "【听力·填表】听到 'The meeting will be held in Room 302 at 3 p.m. on Friday.' 时，表格中应填入：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_lis10_note_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "听辨关键信息直接对号入座：3 p.m. / Room 302 / Friday，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时间：3 p.m.; 地点：Room 302; 日期：Friday",
+        "B. 时间：3 a.m.; 地点：Room 203; 日期：Friday",
+        "C. 时间：3 p.m.; 地点：Room 302; 日期：Monday",
+        "D. 时间：3:30 p.m.; 地点：Room 302; 日期：Friday"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0159",
+      "item_type": "fill",
+      "stem": "【听力·填空】听句子完成表格填空。\n'The English contest will start at 9 a.m. on October 12 in the school hall.'\n时间：____  地点：____",
+      "answer": "时间：9 a.m. on October 12; 地点：school hall",
+      "kps": [
+        "kp_eng10_lis10_note_form"
+      ],
+      "difficulty": 0.5,
+      "solution": "听辨关键结构：at + 时间 + in + 地点；提取时间和地点即可。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0160",
+      "item_type": "choice",
+      "stem": "【阅读·略读】以词块为单位快速浏览，要抓住段落大意，最应关注：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_skimming_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读时关注段首句、关键词、信号词能快速把握段落主旨。",
+      "source": "llm_generated",
+      "options": [
+        "A. 段落每个单词",
+        "B. 段首句、关键词、信号词",
+        "C. 段落中间的每个形容词",
+        "D. 段落中的所有数字"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0161",
+      "item_type": "choice",
+      "stem": "【阅读·略读】要判断段落大意，最有效的略读策略是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_skimming_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读以快速抓取主题句为目标，跳读段首段尾是常用策略。",
+      "source": "llm_generated",
+      "options": [
+        "A. 反复读同一段",
+        "B. 跳读段首段尾、抓住主题句",
+        "C. 把段落翻译成中文",
+        "D. 抄写段落全部内容"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0162",
+      "item_type": "fill",
+      "stem": "【阅读·填空】写出略读（skimming）常用的两条策略：____、____。\n填空：____",
+      "answer": "关注段首句；抓关键词",
+      "kps": [
+        "kp_eng10_red10_skimming_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "略读强调快速浏览，抓住段首句与关键词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0163",
+      "item_type": "choice",
+      "stem": "【阅读·结构分析】分析篇章结构时，要把握的关键信息是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_structure_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "篇章结构分析关注段落功能和信息推进方式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每段的颜色",
+        "B. 段落功能（总述/分述/举例/总结）与信息推进方式",
+        "C. 作者的年龄",
+        "D. 文章字数"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0164",
+      "item_type": "choice",
+      "stem": "【阅读·结构】一篇文章按 '总—分—总' 展开，其中第二段最可能的功能是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_structure_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "总—分—总结构中，分段主要承担展开或举例的功能。",
+      "source": "llm_generated",
+      "options": [
+        "A. 引出主题",
+        "B. 具体展开或举例说明",
+        "C. 总结全文",
+        "D. 写作者感想（无关主题）"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0165",
+      "item_type": "fill",
+      "stem": "【阅读·填空】写出分析篇章结构的三个常用观察点：____、____、____。\n填空：____",
+      "answer": "段落功能；衔接词；信息推进",
+      "kps": [
+        "kp_eng10_red10_structure_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "分析篇章结构常用三观察点：段落功能、衔接词、信息推进方式。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0166",
+      "item_type": "choice",
+      "stem": "【阅读·阅读量】根据课标，必修阶段阅读量每周不少于 1500 词，三年累计不少于 ____ 万词。",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_red10_reading_volume"
+      ],
+      "difficulty": 0.5,
+      "solution": "课标规定必修阶段阅读累计不少于 4.5 万词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2.5",
+        "B. 3.5",
+        "C. 4.5",
+        "D. 6.0"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0167",
+      "item_type": "choice",
+      "stem": "【阅读·阅读量·自评】要保证每周阅读量达标，最有效的做法是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_red10_reading_volume"
+      ],
+      "difficulty": 0.5,
+      "solution": "每天固定阅读时间并记录词数是保证达标的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 临时突击读大量书",
+        "B. 每天固定 30 分钟阅读并记录词数",
+        "C. 只读中文翻译版",
+        "D. 不记录阅读量"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0168",
+      "item_type": "fill",
+      "stem": "【阅读·填空】写出高中英语阅读量的两个量化标准：\n1. 每周不少于 ____ 词；\n2. 必修阶段累计不少于 ____ 万词。\n填空：1.____ 2.____",
+      "answer": "1. 1500; 2. 4.5",
+      "kps": [
+        "kp_eng10_red10_reading_volume"
+      ],
+      "difficulty": 0.5,
+      "solution": "课标：每周不少于 1500 词；必修累计不少于 4.5 万词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0169",
+      "item_type": "choice",
+      "stem": "【口语·小组讨论】在小组讨论中要'提出观点'，下列开场最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_spk10_discussion"
+      ],
+      "difficulty": 0.5,
+      "solution": "In my opinion 是提出个人观点的常见表达，得体自然。",
+      "source": "llm_generated",
+      "options": [
+        "A. Shut up.",
+        "B. In my opinion, ...",
+        "C. Whatever.",
+        "D. I don't care."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0170",
+      "item_type": "choice",
+      "stem": "【口语·推进讨论】在讨论中要推进话题，下列哪一表达最有效？",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_spk10_discussion"
+      ],
+      "difficulty": 0.5,
+      "solution": "What's more 用于递进，能有效推进讨论；A、C、D 都会终止讨论。",
+      "source": "llm_generated",
+      "options": [
+        "A. That's all.",
+        "B. What's more, ...",
+        "C. I quit.",
+        "D. No idea."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0171",
+      "item_type": "fill",
+      "stem": "【口语·讨论填空】填入恰当的表达推进讨论。\nA: I think we should plant more trees.\nB: ____ (更重要的是), we should protect the existing forests.\n填空：____",
+      "answer": "What's more",
+      "kps": [
+        "kp_eng10_spk10_discussion"
+      ],
+      "difficulty": 0.5,
+      "solution": "What's more 表递进，用于推进讨论。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0172",
+      "item_type": "choice",
+      "stem": "【写作·书信格式】一封正式英文书信的开头称呼最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_wri10_letter_formal"
+      ],
+      "difficulty": 0.5,
+      "solution": "正式书信常用 Dear Sir/Madam 或 Dear Mr./Ms. + 姓；A、C、D 均为非正式。",
+      "source": "llm_generated",
+      "options": [
+        "A. Hey buddy,",
+        "B. Dear Sir/Madam,",
+        "C. Yo,",
+        "D. What's up,"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0173",
+      "item_type": "choice",
+      "stem": "【写作·私人信】写给朋友的私人信件，最合适的结尾是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng10_wri10_letter_formal"
+      ],
+      "difficulty": 0.5,
+      "solution": "私人信件常用 Love / Best wishes / Take care 等结尾；A、B、D 偏正式。",
+      "source": "llm_generated",
+      "options": [
+        "A. Yours sincerely,",
+        "B. Best regards,",
+        "C. Love,",
+        "D. Respectfully yours,"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0174",
+      "item_type": "fill",
+      "stem": "【写作·填空】写出正式书信常用的两个结尾敬语：____、____。\n填空：____",
+      "answer": "Yours sincerely; Yours faithfully",
+      "kps": [
+        "kp_eng10_wri10_letter_formal"
+      ],
+      "difficulty": 0.5,
+      "solution": "正式书信结尾常用 Yours sincerely / Yours faithfully / Respectfully yours。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0175",
+      "item_type": "choice",
+      "stem": "【写作·说明文】写说明文介绍'如何泡茶'，下列组织方式最合适的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_wri10_exposition_writing"
+      ],
+      "difficulty": 0.5,
+      "solution": "说明文强调条理清晰，按步骤说明最符合说明文写作目的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 按时间顺序描写作者感受",
+        "B. 按操作步骤（Step 1, Step 2...）逐一说明",
+        "C. 大量使用比喻和夸张",
+        "D. 不分段落"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0176",
+      "item_type": "choice",
+      "stem": "【写作·说明文】说明文与记叙文最根本的区别是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_wri10_exposition_writing"
+      ],
+      "difficulty": 0.5,
+      "solution": "说明文目的是'说明事物或事理'，记叙文目的是'再现经历/故事'。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说明文介绍事物/事理，记叙文讲经历/故事",
+        "B. 说明文使用第一人称",
+        "C. 说明文使用更多形容词",
+        "D. 两者没有区别"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0177",
+      "item_type": "fill",
+      "stem": "【写作·说明文填空】写出说明文写作常用的两种组织顺序：____、____。\n填空：____",
+      "answer": "时间顺序；空间顺序",
+      "kps": [
+        "kp_eng10_wri10_exposition_writing"
+      ],
+      "difficulty": 0.5,
+      "solution": "说明文常用时间顺序、空间顺序或逻辑顺序组织内容。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0178",
+      "item_type": "choice",
+      "stem": "【写作·汉译英】把'他每天都花半小时读书'翻译成英文，最恰当的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng10_wri10_translation"
+      ],
+      "difficulty": 0.5,
+      "solution": "spend time (in) doing sth. 是固定搭配；主语 He 第三人称单数用 spends；故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. He spend half an hour to read books every day.",
+        "B. He spends half an hour reading books every day.",
+        "C. He spending half an hour reading books every day.",
+        "D. He spends half an hour read books every day."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0179",
+      "item_type": "choice",
+      "stem": "【写作·汉译英】把'据说这部电影在全世界都很受欢迎'翻译成英文，最恰当的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng10_wri10_translation"
+      ],
+      "difficulty": 0.5,
+      "solution": "It is said that... 是固定句型表'据说'，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. It is said that the movie is popular all over the world.",
+        "B. The movie is said being popular all over the world.",
+        "C. It says the movie is popular all over the world.",
+        "D. People say the movie popular."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0180",
+      "item_type": "fill",
+      "stem": "【写作·翻译填空】把下列中文句子翻译成英文。\n他不仅会弹钢琴，还会拉小提琴。\n填空：____",
+      "answer": "He can not only play the piano, but also play the violin.",
+      "kps": [
+        "kp_eng10_wri10_translation"
+      ],
+      "difficulty": 0.5,
+      "solution": "not only... but also... 表'不仅...而且...'；动词 play 表弹奏乐器。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

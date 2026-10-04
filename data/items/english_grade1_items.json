@@ -2406,6 +2406,201 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0002",
+      "item_type": "fill",
+      "stem": "字母歌跟唱题。听教师按字母表顺序读出 26 个字母名，写出第 5、第 10、第 15 个字母的名称音对应的字母（大写）：\n(1) 第 5 个：____　(2) 第 10 个：____　(3) 第 15 个：____",
+      "answer": "E, J, O",
+      "kps": [
+        "kp_eng1_pha1_song"
+      ],
+      "difficulty": 0.4,
+      "solution": "26 个字母按顺序第 5、10、15 个分别为 E、J、O。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0003",
+      "item_type": "choice",
+      "stem": "听录音，模仿跟读 \"Good morning, Miss Li!\" 一句。下列关于这句话语调的说法，正确的是（　　）\nA. \"Good morning\" 整体用降调，\"Miss Li!\" 用升调  \nB. \"Good morning\" 整体用升调，\"Miss Li!\" 用降调  \nC. 两个部分都用平调  \nD. 两个部分都用降调",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_pha1_rhythm_repeat"
+      ],
+      "difficulty": 0.25,
+      "solution": "问候语 \"Good morning\" 整体用升调表问候，被称呼的 \"Miss Li!\" 用降调称呼对方。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"Good morning\" 整体用降调，\"Miss Li!\" 用升调",
+        "B. \"Good morning\" 整体用升调，\"Miss Li!\" 用降调",
+        "C. 两个部分都用平调",
+        "D. 两个部分都用降调"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0004",
+      "item_type": "fill",
+      "stem": "听句子 \"I am a pupil.\" 一遍后跟读。请按所听到的语调在 \"am\" 与 \"pupil\" 之间用 ↑ 或 ↓ 标出语调走向：I [____] am a pupil [____].",
+      "answer": "↑, ↓",
+      "kps": [
+        "kp_eng1_pha1_rhythm_repeat"
+      ],
+      "difficulty": 0.4,
+      "solution": "陈述句中 \"I am a pupil\" 主语 \"I\" 略升调，句末 \"pupil\" 用降调。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0006",
+      "item_type": "fill",
+      "stem": "看图：图中小朋友正与朋友挥手分别。请写出 1 个合适的英语告别语：____",
+      "answer": "Goodbye.",
+      "kps": [
+        "kp_eng1_voc1_greeting"
+      ],
+      "difficulty": 0.4,
+      "solution": "图中小朋友在挥手分别，最合适的告别表达是 Goodbye. / Bye. / See you.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0016",
+      "item_type": "fill",
+      "stem": "看图：图上有一个红苹果，旁边写着 \"It's red.\"。请用一句话完整说出图中的颜色（不少于 3 个单词）：____",
+      "answer": "It's red.",
+      "kps": [
+        "kp_eng1_spk1_picture_word"
+      ],
+      "difficulty": 0.4,
+      "solution": "描述颜色可用句型 \"It's + 颜色.\"。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0017",
+      "item_type": "fill",
+      "stem": "补全对话。A: Hi, I'm Tom. B: ____ (回应问候并报出自己的名字)",
+      "answer": "Hi, I'm Lily.",
+      "kps": [
+        "kp_eng1_spk1_greet_pair"
+      ],
+      "difficulty": 0.25,
+      "solution": "回应问候并自我介绍：Hi, I'm ….",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0019",
+      "item_type": "fill",
+      "stem": "在 \"猜动物\" 游戏中，同伴说：\"It has four legs. It says 'woof'.\" 请写出答案：____",
+      "answer": "dog",
+      "kps": [
+        "kp_eng1_spk1_game_talk"
+      ],
+      "difficulty": 0.25,
+      "solution": "四条腿、叫声 woof 的动物是 dog。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0024",
+      "item_type": "fill",
+      "stem": "放学时同学对你说：\"See you tomorrow!\" 你最合适的英语回应是：____",
+      "answer": "See you!",
+      "kps": [
+        "kp_eng1_prg1_greet"
+      ],
+      "difficulty": 0.4,
+      "solution": "对 See you tomorrow 的得体回应是 See you.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0026",
+      "item_type": "fill",
+      "stem": "老师请同学上台用英语介绍自己。一位同学紧张地说：\"I… I'm… I'm Lily.\" 他的发言体现的最重要学习策略是：____",
+      "answer": "敢于开口，不怕出错",
+      "kps": [
+        "kp_eng1_lsm1_confident"
+      ],
+      "difficulty": 0.4,
+      "solution": "紧张仍坚持说英语，体现敢于开口、不怕出错的学习态度。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

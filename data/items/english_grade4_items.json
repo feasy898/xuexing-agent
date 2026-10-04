@@ -5569,6 +5569,405 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0120",
+      "item_type": "fill",
+      "stem": "在单词 \"afternoon\" 中标出重音的位置（用 ′ 标在重读音节前）：____",
+      "answer": "after′noon",
+      "kps": [
+        "kp_eng4_pha4_stress_copy"
+      ],
+      "difficulty": 0.45,
+      "solution": "afternoon 重音在第二音节 noon。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0124",
+      "item_type": "fill",
+      "stem": "写出 1 个有轮子的陆地交通工具：____",
+      "answer": "bike",
+      "kps": [
+        "kp_eng4_voc4_transport"
+      ],
+      "difficulty": 0.45,
+      "solution": "bike / bus / car / taxi 等皆可。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0126",
+      "item_type": "fill",
+      "stem": "翻译短语 \"go to school\" 为中文：____",
+      "answer": "去学校",
+      "kps": [
+        "kp_eng4_voc4_verb_phrase"
+      ],
+      "difficulty": 0.45,
+      "solution": "go to school 意为\"去学校\"。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0132",
+      "item_type": "fill",
+      "stem": "补全句子：I get up ____ 7 o'clock ____ the morning.",
+      "answer": "at, in",
+      "kps": [
+        "kp_eng4_gra4_time_prep"
+      ],
+      "difficulty": 0.45,
+      "solution": "钟点前用 at；早中晚上午前用 in。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0138",
+      "item_type": "fill",
+      "stem": "故事由 ① ____、② ____ 和 ③ ____ 三部分构成（写出 3 个关键词）：____",
+      "answer": "开头, 中间, 结尾",
+      "kps": [
+        "kp_eng4_dis4_story_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "故事由开头、中间、结尾构成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0141",
+      "item_type": "fill",
+      "stem": "补全对话：A: ____ I go now? B: Yes, you can.",
+      "answer": "May",
+      "kps": [
+        "kp_eng4_prg4_request_allow"
+      ],
+      "difficulty": 0.3,
+      "solution": "请求许可用 May I …? 句型。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0152",
+      "item_type": "fill",
+      "stem": "听对话：A: How much is the book? B: It's ____ yuan. (听写价格)",
+      "answer": "12",
+      "kps": [
+        "kp_eng4_lis4_specific_info"
+      ],
+      "difficulty": 0.45,
+      "solution": "价格数字需听写，此处取常见 12 yuan。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0154",
+      "item_type": "fill",
+      "stem": "听对话：对方用升调说 \"Really?\"，最可能是在 ____（表惊讶还是完全同意）：____",
+      "answer": "表惊讶",
+      "kps": [
+        "kp_eng4_lis4_attitude"
+      ],
+      "difficulty": 0.45,
+      "solution": "升调 Really? 通常表惊讶或不太相信。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0155",
+      "item_type": "solve",
+      "stem": "一级课标要求一至二年级视听每周不少于 20 分钟；一级开始要求每周不少于 30 分钟。请写出你每周安排英语视听的时间计划（不少于 5 个英文词）：____",
+      "answer": "I watch English for 30 minutes every week.",
+      "kps": [
+        "kp_eng4_lis4_weekly30_g"
+      ],
+      "difficulty": 0.3,
+      "solution": "计划示例：每周 30 分钟英语视听。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0164",
+      "item_type": "solve",
+      "stem": "用 2 句话介绍自己（不少于 10 个英文词），包括年龄和爱好：____",
+      "answer": "I'm ten. I like drawing.",
+      "kps": [
+        "kp_eng4_spk4_personal_profile"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍可用 I'm + 年龄 + I like ….",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0166",
+      "item_type": "solve",
+      "stem": "看图：图中是一只小黄狗。请用英语描述这只狗（不少于 4 个英文词）：____",
+      "answer": "It's a small yellow dog.",
+      "kps": [
+        "kp_eng4_spk4_describe_thing"
+      ],
+      "difficulty": 0.3,
+      "solution": "描述事物可用 It's + 形容词 + 名词。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0168",
+      "item_type": "solve",
+      "stem": "用英语写 2 句连贯的话介绍你的朋友，不少于 10 个英文词：____",
+      "answer": "This is my friend Lily. She is nine. She likes apples.",
+      "kps": [
+        "kp_eng4_wri4_paragraph_simple"
+      ],
+      "difficulty": 0.3,
+      "solution": "写几句连贯的话介绍朋友。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0169",
+      "item_type": "solve",
+      "stem": "写一张明信片给朋友，至少 2 句（不少于 10 个英文词），含称呼与署名：____",
+      "answer": "Dear Tom, I miss you. I am in Beijing now. From Lily.",
+      "kps": [
+        "kp_eng4_wri4_letter_simple"
+      ],
+      "difficulty": 0.3,
+      "solution": "明信片格式 Dear …, 内容, Love, 署名。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0172",
+      "item_type": "fill",
+      "stem": "句子末尾补标点：\"What is your name ____?\"",
+      "answer": "?",
+      "kps": [
+        "kp_eng4_wri4_punct_case"
+      ],
+      "difficulty": 0.45,
+      "solution": "疑问句末用问号。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0173",
+      "item_type": "solve",
+      "stem": "为自己制订每日英语听说读打卡计划（不少于 5 个英文词）：____",
+      "answer": "I read English for 15 minutes every day.",
+      "kps": [
+        "kp_eng4_lsm4_plan_daily"
+      ],
+      "difficulty": 0.3,
+      "solution": "计划示例：每天读英语 15 分钟。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0174",
+      "item_type": "solve",
+      "stem": "把单词 apple / cat / dog / banana 按水果与动物分成两组（每组至少 1 个，写出分类）：____",
+      "answer": "Fruit: apple, banana; Animals: cat, dog.",
+      "kps": [
+        "kp_eng4_lsm4_word_sort"
+      ],
+      "difficulty": 0.3,
+      "solution": "apple/banana 是水果，cat/dog 是动物。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0175",
+      "item_type": "solve",
+      "stem": "写出 1 个你愿意主动参加的英语活动（不少于 4 个英文词）：____",
+      "answer": "I like English story shows.",
+      "kps": [
+        "kp_eng4_lsm4_joyful_participate"
+      ],
+      "difficulty": 0.3,
+      "solution": "活动如 drama club / story time / singing group。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0177",
+      "item_type": "solve",
+      "stem": "写出 1 条你的英语听说读打卡计划（不少于 5 个英文词）：____",
+      "answer": "I read English for 10 minutes every day.",
+      "kps": [
+        "kp_eng4_lsm4_plan_daily"
+      ],
+      "difficulty": 0.45,
+      "solution": "每日打卡示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0179",
+      "item_type": "fill",
+      "stem": "写出连接句与句的常用词（至少 1 个），用于把几句写连贯：____",
+      "answer": "and",
+      "kps": [
+        "kp_eng4_wri4_paragraph_simple"
+      ],
+      "difficulty": 0.45,
+      "solution": "常用连接词 and / but / because。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

@@ -4226,6 +4226,489 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_jr_0114",
+      "item_type": "fill",
+      "stem": "由构词法推断词义：'unfriendly' 中 un- 是______，意为'不友好的'。",
+      "answer": "否定前缀",
+      "kps": [
+        "kp_eng9_red9_word_from_context_wordform"
+      ],
+      "difficulty": 0.4,
+      "solution": "un- 是常见否定前缀，加在形容词前构成反义词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0117",
+      "item_type": "solve",
+      "stem": "阅读下面这则报刊文章（节选）后概括作者主要观点：\n\n'Many cities now have bike-sharing systems. People can pick up a bike at one station and return it at another. This is good for the environment and helps people stay healthy.'",
+      "answer": "作者认为共享单车对环境和健康都有益，值得推广。",
+      "kps": [
+        "kp_eng9_red9_biography_news"
+      ],
+      "difficulty": 0.5,
+      "solution": "作者列举 bike-sharing 的两个好处（environment / health），并用 'This is good for...' 直接表达肯定态度。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0120",
+      "item_type": "solve",
+      "stem": "请口头概括并转述这段话的主旨大意：\n\n'Yesterday our class held a clean-up activity near the school river. We collected rubbish and put up signs saying \"No littering\". We hope our river will be cleaner in the future.'",
+      "answer": "我们班昨天在学校附近的河边开展了清洁活动，捡拾垃圾并张贴警示牌，希望河水未来更清澈。",
+      "kps": [
+        "kp_eng9_spk9_oral_summary"
+      ],
+      "difficulty": 0.45,
+      "solution": "概括要点：时间(yesterday)、活动(clean-up)、行动(collect rubbish + signs)、希望(cleaner future)。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0121",
+      "item_type": "solve",
+      "stem": "你如何看待'学生使用智能手机'？请用 2-3 句话表达你的观点并说明理由。",
+      "answer": "I think students can use smartphones, but only in a smart way. Smartphones help us learn and stay in touch with family. However, we should not use them too much in class.",
+      "kps": [
+        "kp_eng9_spk9_opinion_reason"
+      ],
+      "difficulty": 0.5,
+      "solution": "观点（I think...）+ 理由（help us learn...）+ 限制（not too much）。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0122",
+      "item_type": "solve",
+      "stem": "请独立起草、修改并完成下面这篇 60-80 词的作文，主题：A Trip I Will Never Forget。",
+      "answer": "I'll never forget my trip to Beijing last summer. We visited the Great Wall and the Palace Museum. I was amazed by the long history and beautiful buildings. The local food was also very delicious. I really hope to visit Beijing again with my family.",
+      "kps": [
+        "kp_eng9_wri9_draft_modify_finish"
+      ],
+      "difficulty": 0.55,
+      "solution": "独立起草要点：时间地点 → 关键活动 → 感受 → 愿望；要求结构完整、语句通顺。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0123",
+      "item_type": "solve",
+      "stem": "下面是一张你绘制的漫画（画面：一个小男孩在公交车上让座给一位老人）。请用 3-5 句话为这张漫画写出说明。",
+      "answer": "In the picture, a little boy is on a bus. He sees an old lady standing near him. He quickly stands up and gives his seat to her. The old lady smiles and says 'Thank you'. It shows us that being kind is a beautiful thing.",
+      "kps": [
+        "kp_eng9_wri9_chart_caption"
+      ],
+      "difficulty": 0.5,
+      "solution": "看图说明要点：人物+场景+动作+对话+寓意，语句连贯。",
+      "source": "llm_generated",
+      "form": "picture_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0127",
+      "item_type": "fill",
+      "stem": "填空：The Chinese poem ______ (translate) into many languages now.",
+      "answer": "is translated",
+      "kps": [
+        "kp_eng9_gra9_passive_all"
+      ],
+      "difficulty": 0.45,
+      "solution": "now 提示一般现在时被动：is translated。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0139",
+      "item_type": "fill",
+      "stem": "写出 'bank' 在 'river bank' 语境下的中文含义：______",
+      "answer": "岸",
+      "kps": [
+        "kp_eng9_voc9_polysemy"
+      ],
+      "difficulty": 0.45,
+      "solution": "bank 在'河边'语境中意为'岸'，区别于'银行'。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0141",
+      "item_type": "solve",
+      "stem": "请围绕 'Healthy Lifestyle and Smart Spending' 写一段 60-80 词的短文，谈谈健康生活方式与理性消费的关系。",
+      "answer": "A healthy lifestyle and smart spending go together. Eating well, doing exercise and sleeping enough keep us strong. At the same time, we should spend money wisely — don't buy junk food or things we don't need. Both health and money need good habits.",
+      "kps": [
+        "kp_eng9_cul9_health_finance_view"
+      ],
+      "difficulty": 0.55,
+      "solution": "短文要点：把'健康'与'理财'结合→举例说明→总结观点；体现思辨性。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0142",
+      "item_type": "solve",
+      "stem": "针对中考英语，请写出一份为期四周的复习计划（简述每周重点与复习策略）。",
+      "answer": "Week 1: review grammar tenses and do 20 exercises. Week 2: read 3 English passages a day and note new words. Week 3: practise listening and cloze tests every day. Week 4: do mock tests and check weak points.",
+      "kps": [
+        "kp_eng9_lsm9_plan_exam"
+      ],
+      "difficulty": 0.5,
+      "solution": "复习计划应分阶段、含重点与策略；四周覆盖语法、阅读、听力、模拟。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0144",
+      "item_type": "solve",
+      "stem": "考试前你感到紧张，请写出 2 种降低焦虑、保持自信的具体做法。",
+      "answer": "1. Take a few deep breaths before the exam starts. 2. Tell myself 'I have prepared well, I can do it.' These help me stay calm and confident.",
+      "kps": [
+        "kp_eng9_lsm9_anxiety_control"
+      ],
+      "difficulty": 0.4,
+      "solution": "降低焦虑：深呼吸 + 自我积极暗示；具体可行。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0145",
+      "item_type": "solve",
+      "stem": "请围绕 'Volunteer Service' 写一段 60-80 词的短文，谈谈志愿服务的重要性并举例说明。",
+      "answer": "Volunteer service is very important. It helps people in need and makes our community better. Last summer, I helped clean up the city park with other volunteers. I felt happy to make our city cleaner. I hope more students join us.",
+      "kps": [
+        "kp_eng9_thm9_volunteer"
+      ],
+      "difficulty": 0.55,
+      "solution": "主题为'志愿服务与公共服务'，要点：重要性 + 个人经历 + 呼吁参与，结构完整。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0146",
+      "item_type": "solve",
+      "stem": "请围绕 'How to Protect Our Environment' 写一段 60-80 词的短文，提出至少三条具体建议。",
+      "answer": "To protect our environment, we can do many small things. First, we should save water and turn off the lights when we leave a room. Second, we can use cloth bags instead of plastic ones. Third, planting more trees helps make the air cleaner. Let's take action now.",
+      "kps": [
+        "kp_eng9_thm9_env_protect"
+      ],
+      "difficulty": 0.55,
+      "solution": "主题为'环境保护与自然生态'，要点：开头点题 + 三条具体建议 + 呼吁行动。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0194",
+      "item_type": "solve",
+      "stem": "假设你在听一段关于学校运动会的英语广播，请用 5 个关键词做记录（如活动名称、时间、地点、项目、结果）。",
+      "answer": "Sports Day; next Friday; school playground; relay race; first prize.",
+      "kps": [
+        "kp_eng9_lis9_selective_note"
+      ],
+      "difficulty": 0.5,
+      "solution": "有选择地记录关键信息：人物/活动/时间/地点/结果。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0195",
+      "item_type": "fill",
+      "stem": "填空：分析书面语篇的基本结构时，需要先识别各段的 ______ 和 ______。",
+      "answer": "主题句/作用",
+      "kps": [
+        "kp_eng9_red9_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "通过段落主题句与段落在全文中的作用来分析结构。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0196",
+      "item_type": "fill",
+      "stem": "一段视频中老师皱眉、停顿后说 'Are you sure?'，可推断其态度或意图是 ______。",
+      "answer": "质疑/不确定",
+      "kps": [
+        "kp_eng9_vie9_nonverbal_resource"
+      ],
+      "difficulty": 0.45,
+      "solution": "皱眉+停顿+ Are you sure? 共同传达质疑、不确定的情感。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0197",
+      "item_type": "solve",
+      "stem": "请用 3-4 句话表达你对'中学生是否应该做家务'的观点并说明理由。",
+      "answer": "I think middle school students should help with housework. Doing chores teaches us to be responsible. It also helps our parents who are very busy. Housework is part of life skills, so it is good for us.",
+      "kps": [
+        "kp_eng9_spk9_opinion_reason"
+      ],
+      "difficulty": 0.55,
+      "solution": "观点句+理由 2 条+总结，体现思辨。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0198",
+      "item_type": "solve",
+      "stem": "请口头转述下面这段话的主要信息：\n\n'Mr Wang is a teacher from China. He went to the UK last year. He taught Chinese at a school there. He found the students were very interested in Chinese culture.'",
+      "answer": "王老师去年去英国在一所学校教中文，学生们对中国文化很感兴趣。",
+      "kps": [
+        "kp_eng9_spk9_oral_summary"
+      ],
+      "difficulty": 0.5,
+      "solution": "转述要点：人物(Mr Wang)、地点(UK)、活动(teach Chinese)、发现(students interested)。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0199",
+      "item_type": "solve",
+      "stem": "请独立完成下面的写作任务（不少于 60 词）：My Hobby。",
+      "answer": "My hobby is collecting stamps. I started collecting stamps when I was eight. Each stamp tells a story about a country or an event. Through collecting, I learn about history and different cultures. It brings me a lot of joy.",
+      "kps": [
+        "kp_eng9_wri9_draft_modify_finish"
+      ],
+      "difficulty": 0.6,
+      "solution": "独立起草要点：开头点明爱好→开始时间→具体内容→收获与感受，结构完整。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0200",
+      "item_type": "solve",
+      "stem": "你画了一张漫画，画面：一位小学生帮盲人过马路。请用 3-5 句话写出说明。",
+      "answer": "In the picture, a primary school student sees a blind person near the road. He walks up to him and helps him cross the road safely. The blind man smiles and says 'Thank you, little boy.' The picture shows that kindness is everywhere if we care.",
+      "kps": [
+        "kp_eng9_wri9_chart_caption"
+      ],
+      "difficulty": 0.55,
+      "solution": "看图说明要素：人物+场景+动作+对话+寓意。",
+      "source": "llm_generated",
+      "form": "picture_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0201",
+      "item_type": "fill",
+      "stem": "填空：说理类语篇通常由论点、论据和 ______ 三部分构成。",
+      "answer": "论证",
+      "kps": [
+        "kp_eng9_dis9_argument_structure"
+      ],
+      "difficulty": 0.45,
+      "solution": "论点+论据+论证是议论文的三要素。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0202",
+      "item_type": "fill",
+      "stem": "填空：正式语体通常使用较复杂的句式和 ______ 词语，而非正式语体更接近 ______ 口语。",
+      "answer": "书面/日常",
+      "kps": [
+        "kp_eng9_prg9_speech_style"
+      ],
+      "difficulty": 0.4,
+      "solution": "正式语体用书面词语；非正式语体接近日常口语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0205",
+      "item_type": "solve",
+      "stem": "请按主题列出 3 个主题，每个主题下 2 个英语词汇（主题如：School Life）。",
+      "answer": "1. School Life: classroom, textbook. 2. Food and Health: vegetable, fruit. 3. Environment: pollution, protect.",
+      "kps": [
+        "kp_eng9_lsm9_topic_plan"
+      ],
+      "difficulty": 0.5,
+      "solution": "按主题组织词汇，主题之间相对独立、每主题内词汇相关。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

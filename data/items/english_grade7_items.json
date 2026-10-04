@@ -8401,6 +8401,690 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_jr_0001",
+      "item_type": "choice",
+      "stem": "下列句子中，重音位置不同会改变句子意思的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng7_pha7_meaning"
+      ],
+      "difficulty": 0.4,
+      "solution": "重音落在不同单词上，所强调的内容不同，句意也随之改变。这是英语语音的表意功能。",
+      "source": "llm_generated",
+      "options": [
+        "A. I didn't say he stole the money. （我没说他偷了钱。）",
+        "B. I didn't say he stole the money. （我说的是，他没偷钱。）",
+        "C. I didn't say he stole the money. （我没说过偷钱这件事。）",
+        "D. I didn't say he stole the money. （我没说他偷了——他是借的。）"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0011",
+      "item_type": "fill",
+      "stem": "写出单词 classroom 的构成方式：它是______法构成的复合词（class + room）。",
+      "answer": "合成",
+      "kps": [
+        "kp_eng7_voc7_derive_compound"
+      ],
+      "difficulty": 0.4,
+      "solution": "classroom 由 class 与 room 两个独立词直接拼合而成，属于合成法。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0013",
+      "item_type": "choice",
+      "stem": "下列句子体现了语法的'使用'维度的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_eng7_gra7_form_meaning_use"
+      ],
+      "difficulty": 0.5,
+      "solution": "'使用'指语法在真实语境中的选择与得体性。A 属意义、B 属形式、C 属意义/形式，只有 D 谈使用。",
+      "source": "llm_generated",
+      "options": [
+        "A. 现在完成时表示过去发生并与现在有联系的动作。",
+        "B. 现在完成时的结构是 have/has + 过去分词。",
+        "C. 现在完成时常与 for / since 连用。",
+        "D. 现在完成时在口语中比过去时更常见。"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0015",
+      "item_type": "fill",
+      "stem": "将下列句子改成否定句：'He is a student.' → He ______ a student.",
+      "answer": "is not",
+      "kps": [
+        "kp_eng7_gra7_sent_types"
+      ],
+      "difficulty": 0.3,
+      "solution": "be 动词 is 后直接加 not 构成否定：He is not a student.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0029",
+      "item_type": "fill",
+      "stem": "填空：This is the book ______ I bought yesterday.",
+      "answer": "which",
+      "kps": [
+        "kp_eng7_gra7_relative_clause_intro"
+      ],
+      "difficulty": 0.4,
+      "solution": "先行词 the book 为物，在从句中作 bought 的宾语，用 which。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0056",
+      "item_type": "solve",
+      "stem": "假设你的朋友 Tom 想了解你最喜欢的学科，请用 2-3 句话向他介绍。",
+      "answer": "My favourite subject is English. I think it is very interesting and useful. I like my English teacher because her classes are lively and fun.",
+      "kps": [
+        "kp_eng7_spk7_topic_comm"
+      ],
+      "difficulty": 0.4,
+      "solution": "围绕主题用简短表达完成交际：先点出最喜欢学科→说明原因→进一步描述，整体 2-3 句。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0058",
+      "item_type": "solve",
+      "stem": "请围绕主题 'My Hometown' 写 3-5 个意义连贯的句子。",
+      "answer": "My hometown is a small and beautiful town. There is a clean river and many green trees around it. People here are kind and helpful. I love my hometown very much.",
+      "kps": [
+        "kp_eng7_wri7_context_sentences"
+      ],
+      "difficulty": 0.45,
+      "solution": "语句需围绕同一主题展开，注意衔接自然（There is / People here / I love）。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0059",
+      "item_type": "solve",
+      "stem": "请编写一个情节较为完整的小故事（不少于 50 词），主题：A Helpful Stranger。",
+      "answer": "Last Sunday, I lost my way on my way home. I was very worried. Just then, a kind stranger came over and asked what happened. He showed me the right way and walked with me to the bus stop. I thanked him again and again. He was really a helpful stranger.",
+      "kps": [
+        "kp_eng7_wri7_story"
+      ],
+      "difficulty": 0.55,
+      "solution": "故事要素齐全：背景(迷路)→冲突(worried)→解决(stranger 帮忙)→结尾(感谢)，情节完整。",
+      "source": "llm_generated",
+      "form": "narrative",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0060",
+      "item_type": "solve",
+      "stem": "请给你的朋友 Lily 写一张生日邀请卡，邀请她参加你的生日聚会。",
+      "answer": "Dear Lily, I'm having a birthday party at my home this Saturday at 5 p.m. I hope you can come and join us. We'll have cake, music and games. Looking forward to seeing you! Love, Anna.",
+      "kps": [
+        "kp_eng7_wri7_greeting_invite"
+      ],
+      "difficulty": 0.4,
+      "solution": "邀请卡要素：称谓、邀请事由、时间地点、表达期待、署名。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0061",
+      "item_type": "solve",
+      "stem": "请为自己制定一个为期一周的英语学习计划（含目标与具体安排）。",
+      "answer": "My goal is to improve my English listening this week. I will listen to the textbook audio for 20 minutes every day. I will also read one short English story before bed. At the weekend, I will review the new words I have learned.",
+      "kps": [
+        "kp_eng7_lsm7_goal_plan"
+      ],
+      "difficulty": 0.45,
+      "solution": "目标+具体安排+自评/反思，符合'目标—监控—反思'元认知策略。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0065",
+      "item_type": "solve",
+      "stem": "当你觉得英语单词难记、容易焦虑时，请写出两种降低焦虑、保持学习动机的具体做法。",
+      "answer": "1. Set small goals, such as learning five new words each day. 2. Listen to English songs or watch short English videos to make learning fun.",
+      "kps": [
+        "kp_eng7_lsm7_motivation"
+      ],
+      "difficulty": 0.4,
+      "solution": "降低焦虑可设小目标、用兴趣材料；要点在于具体可行。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0069",
+      "item_type": "solve",
+      "stem": "请围绕主题 'My School Life' 写一段 40-60 词的短文，介绍你的校园生活。",
+      "answer": "My school life is busy and colourful. I have six classes every day, and my favourite subject is English. After class, I often play basketball with my classmates. I enjoy talking with my teachers. I love my school life.",
+      "kps": [
+        "kp_eng7_thm7_self_life"
+      ],
+      "difficulty": 0.45,
+      "solution": "围绕'生活与学习'主题展开：日常学习 + 课余活动 +个人感受，内容完整连贯。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0147",
+      "item_type": "fill",
+      "stem": "填空：在英语国家拜访朋友前常用的礼貌表达是 '______ your visit in advance'。",
+      "answer": "Confirm",
+      "kps": [
+        "kp_eng7_cul7_etiquette"
+      ],
+      "difficulty": 0.45,
+      "solution": "拜访前确认时间/方式符合英语国家礼仪：confirm your visit in advance。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0149",
+      "item_type": "solve",
+      "stem": "请用 2-3 句话介绍一位你敬佩的中外人物，并说明原因。",
+      "answer": "I admire Dr Yuan Longping. He developed hybrid rice and helped feed people around the world. He worked very hard and never stopped trying. He is a great scientist and a kind person.",
+      "kps": [
+        "kp_eng7_cul7_role_models"
+      ],
+      "difficulty": 0.45,
+      "solution": "介绍要点：人物 + 事迹 + 优秀品格 + 敬佩原因，语句连贯。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0150",
+      "item_type": "fill",
+      "stem": "填空：日常对话通常由两方或多方 ______ 说话，而独白通常是一方连续 ______。",
+      "answer": "轮流/讲述",
+      "kps": [
+        "kp_eng7_dis7_dialogue_monologue"
+      ],
+      "difficulty": 0.4,
+      "solution": "对话(dialogue)是双方或多方交替发言，独白(monologue)是一方连续讲述。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0153",
+      "item_type": "fill",
+      "stem": "简答：语法学习中，'形式'指什么？请写出一个例句体现所学语法点的形式。",
+      "answer": "形式指语法结构本身，如现在完成时的结构是 have/has + 过去分词。例句：I have finished my homework.",
+      "kps": [
+        "kp_eng7_gra7_form_meaning_use"
+      ],
+      "difficulty": 0.5,
+      "solution": "形式指语法结构（has finished）；例句体现现在完成时 have/has + 过去分词的结构形式。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0154",
+      "item_type": "fill",
+      "stem": "听到连续指令 'Take out your book, turn to page 5 and read after me.'，请写出你的反应动作。",
+      "answer": "Take out my book, turn to page 5 and read after the teacher.",
+      "kps": [
+        "kp_eng7_lis7_continuous_cmd"
+      ],
+      "difficulty": 0.35,
+      "solution": "对连续指令作恰当反应：依次执行三个动作。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0156",
+      "item_type": "solve",
+      "stem": "看图（一张同学们在操场踢球的图片）并听 'The students are playing football on the playground.'，请写出你理解到的关键信息。",
+      "answer": "The students are playing football on the playground.",
+      "kps": [
+        "kp_eng7_lis7_visual_support"
+      ],
+      "difficulty": 0.35,
+      "solution": "结合图片（操场、踢球）与录音信息写出关键句。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0158",
+      "item_type": "fill",
+      "stem": "填空：在小组合作学习中，每个人都应该承担 ______，并主动与同伴 ______。",
+      "answer": "责任/交流",
+      "kps": [
+        "kp_eng7_lsm7_group_coop"
+      ],
+      "difficulty": 0.4,
+      "solution": "小组合作要求每个成员承担责任并积极交流。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0161",
+      "item_type": "solve",
+      "stem": "阅读时遇到生词 (如 'enormous')，请写出 2 种可行的猜词策略。",
+      "answer": "1. Look at the context to guess the meaning. 2. Look at the word parts: 'e-' means very, 'norm' relates to normal, so 'enormous' means very big.",
+      "kps": [
+        "kp_eng7_lsm7_reading_strategies"
+      ],
+      "difficulty": 0.45,
+      "solution": "常用猜词策略：上下文 + 构词法（前缀、词根）。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0163",
+      "item_type": "fill",
+      "stem": "听力听后填空：说话人说 'I'm so proud of you!' 时，表达的情感是 ______。",
+      "answer": "自豪/骄傲",
+      "kps": [
+        "kp_eng7_prg7_understand_feeling"
+      ],
+      "difficulty": 0.4,
+      "solution": "proud of you 表达自豪、欣慰。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0165",
+      "item_type": "fill",
+      "stem": "看图（一张学生在操场上跑步的图片），预测文章最可能讲的主题：______",
+      "answer": "校园运动/锻炼",
+      "kps": [
+        "kp_eng7_red7_predict"
+      ],
+      "difficulty": 0.3,
+      "solution": "图片中操场与跑步指向'校园运动'主题。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0166",
+      "item_type": "fill",
+      "stem": "填空：略读时主要关注每段的 ______ 和文章的 ______，不必逐字阅读。",
+      "answer": "首句/主旨",
+      "kps": [
+        "kp_eng7_red7_skim"
+      ],
+      "difficulty": 0.3,
+      "solution": "略读关注段落首句（主题句）与全文主旨。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0167",
+      "item_type": "fill",
+      "stem": "用一句话概括下列短文主旨：'Mr Smith lost his dog. After three days, he found it. He was very happy.'",
+      "answer": "Mr Smith lost his dog but found it after three days and felt very happy.",
+      "kps": [
+        "kp_eng7_red7_summarise_eval"
+      ],
+      "difficulty": 0.45,
+      "solution": "概括要点：人物+事件+结果，体现 who/what/how it ended。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0168",
+      "item_type": "fill",
+      "stem": "填空：阅读书面语篇时，理解'整体意义'主要靠抓 ______ 与段落的 ______。",
+      "answer": "主旨/主题句",
+      "kps": [
+        "kp_eng7_red7_written_main"
+      ],
+      "difficulty": 0.35,
+      "solution": "理解整体意义靠抓主旨和段落主题句。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0169",
+      "item_type": "fill",
+      "stem": "在朗读中，重音通常用于强调句子中的 ______。",
+      "answer": "关键词",
+      "kps": [
+        "kp_eng7_spk7_discourse"
+      ],
+      "difficulty": 0.35,
+      "solution": "重音用于强调关键词（key words）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0170",
+      "item_type": "solve",
+      "stem": "朗读下列短文并复述大意：'Last Monday, our class went on a field trip. We visited a farm and learned about planting vegetables. We had a great time.'",
+      "answer": "Last Monday, our class went on a field trip. We visited a farm and learned about planting vegetables. We had a great time.",
+      "kps": [
+        "kp_eng7_spk7_read_retell"
+      ],
+      "difficulty": 0.5,
+      "solution": "复述要点：时间(Monday) → 事件(field trip) → 地点(farm) → 学习内容(vegetables) → 感受(great)。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0171",
+      "item_type": "solve",
+      "stem": "你的英国笔友 Tom 想了解你的家庭。请用 2-3 句话向他介绍。",
+      "answer": "There are four people in my family: my father, my mother, my sister and me. We often have dinner together. I love my family very much.",
+      "kps": [
+        "kp_eng7_spk7_topic_comm"
+      ],
+      "difficulty": 0.45,
+      "solution": "介绍家庭：人数+成员+家庭活动+感受。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0172",
+      "item_type": "fill",
+      "stem": "看一张图（一位行人走在斑马线上、绿灯亮起），其主要传达的非文字信息是 ______。",
+      "answer": "安全通行",
+      "kps": [
+        "kp_eng7_vie7_multimodal_meaning"
+      ],
+      "difficulty": 0.35,
+      "solution": "斑马线+绿灯图示传达'可安全通行'的信息。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0173",
+      "item_type": "solve",
+      "stem": "请围绕主题 'My Best Friend' 写 3-5 个意义连贯的语句。",
+      "answer": "My best friend is Lily. She is kind and always helps me. We often read books together after school. I feel lucky to have such a good friend.",
+      "kps": [
+        "kp_eng7_wri7_context_sentences"
+      ],
+      "difficulty": 0.45,
+      "solution": "语句围绕同一主题展开，衔接自然，使用 We / She / I 等代词保持连贯。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0174",
+      "item_type": "solve",
+      "stem": "请写一张英文生日贺卡给你的好朋友 Jack。",
+      "answer": "Dear Jack, Happy Birthday! I hope you have a wonderful day and a great year ahead. Wishing you good health and lots of happiness. Your friend, Tom.",
+      "kps": [
+        "kp_eng7_wri7_greeting_invite"
+      ],
+      "difficulty": 0.45,
+      "solution": "生日贺卡要素：称呼+祝福+表达关心+署名。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0175",
+      "item_type": "solve",
+      "stem": "请编写一个情节较为完整的小故事（不少于 50 词），主题：A Rainy Day。",
+      "answer": "It was a rainy day last Saturday. I stayed at home and read a book. My mother made hot tea for me. In the afternoon, we watched a movie together. I enjoyed the warm and quiet day very much.",
+      "kps": [
+        "kp_eng7_wri7_story"
+      ],
+      "difficulty": 0.55,
+      "solution": "故事要素齐全：背景(雨天)→活动(读书、看电影)→感受(温暖)，情节完整。",
+      "source": "llm_generated",
+      "form": "narrative",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

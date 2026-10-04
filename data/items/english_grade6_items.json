@@ -5131,6 +5131,348 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0243",
+      "item_type": "choice",
+      "stem": "下列各组单词中，划线部分读音不同的是（　　）\nA. cat / car  \nB. bed / pen  \nC. big / pig  \nD. dog / box",
+      "answer": "A",
+      "kps": [
+        "kp_eng6_pha6_integrated_phonics"
+      ],
+      "difficulty": 0.4,
+      "solution": "dog 中 o 发 /ɒ/，box 中 o 发 /ɒ/ 也相同；但 A cat/car a 音不同：cat /æ/ vs car /ɑː/。综合常见考点取 car vs cat。",
+      "source": "llm_generated",
+      "options": [
+        "A. cat / car",
+        "B. bed / pen",
+        "C. big / pig",
+        "D. dog / box"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0246",
+      "item_type": "fill",
+      "stem": "写出 \"四会词\" 的含义（能听/说/读/写的词汇）：____",
+      "answer": "听说读写都会",
+      "kps": [
+        "kp_eng6_voc6_500_four_skills"
+      ],
+      "difficulty": 0.55,
+      "solution": "四会词指听说读写四项技能都会的词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0256",
+      "item_type": "fill",
+      "stem": "补全句子：I have ____ egg and ____ apple for breakfast.",
+      "answer": "an, an",
+      "kps": [
+        "kp_eng6_gra6_article_usage"
+      ],
+      "difficulty": 0.55,
+      "solution": "egg / apple 均以元音音素开头，用 an。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0258",
+      "item_type": "fill",
+      "stem": "写出记叙文五要素中的两个：时间、____",
+      "answer": "地点",
+      "kps": [
+        "kp_eng6_dis6_five_elements"
+      ],
+      "difficulty": 0.55,
+      "solution": "记叙文五要素：时间、地点、人物、事件、原因。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0276",
+      "item_type": "fill",
+      "stem": "听短文：\"Lily rides the bike every day.\" 短文大意是 Lily 每天 ____",
+      "answer": "骑自行车",
+      "kps": [
+        "kp_eng6_lis6_gist"
+      ],
+      "difficulty": 0.55,
+      "solution": "ride the bike 骑自行车。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0286",
+      "item_type": "solve",
+      "stem": "表演 \"The Fox and the Crow\" 时你扮演乌鸦，写出 1 句台词（不少于 4 个英文词）：____",
+      "answer": "I am a crow. I can sing well.",
+      "kps": [
+        "kp_eng6_spk6_story_drama"
+      ],
+      "difficulty": 0.4,
+      "solution": "狐狸对乌鸦的台词示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0287",
+      "item_type": "solve",
+      "stem": "做主题演讲 \"My school\" 至少 3 句（不少于 25 个英文词）：____",
+      "answer": "My school is big and beautiful. There are thirty classrooms and a big playground in it. My teachers are kind and my classmates are friendly. I love my school very much.",
+      "kps": [
+        "kp_eng6_spk6_topic_speech_plus"
+      ],
+      "difficulty": 0.4,
+      "solution": "主题演讲可介绍学校特点与感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0288",
+      "item_type": "solve",
+      "stem": "看图：图中小朋友在图书馆安静地读书。用 3~4 句连贯描述图片（不少于 25 个英文词）：____",
+      "answer": "This is a library. A girl is reading a book. It is quiet here. She enjoys reading very much.",
+      "kps": [
+        "kp_eng6_wri6_pic_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "看图描述：地点、人物动作、环境、感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0291",
+      "item_type": "solve",
+      "stem": "写日记 \"An unforgettable day\" 至少 4 句（不少于 35 个英文词），含时间、事件和感受：____",
+      "answer": "Last Friday, I went to the beach with my family. We swam in the sea and played games. We had a wonderful time. I will never forget that day.",
+      "kps": [
+        "kp_eng6_wri6_diary_feel"
+      ],
+      "difficulty": 0.4,
+      "solution": "日记含时间、事件、感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0293",
+      "item_type": "solve",
+      "stem": "用英语单词为单元主题 \"Animals\" 设计一个思维导图中的 2 个分支词：____",
+      "answer": "Mammals and Birds.",
+      "kps": [
+        "kp_eng6_lsm6_mindmap_review"
+      ],
+      "difficulty": 0.4,
+      "solution": "思维导图分支词示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0294",
+      "item_type": "solve",
+      "stem": "表达 \"我同意你\" 时可用的身势语是 ____：____",
+      "answer": "点头",
+      "kps": [
+        "kp_eng6_lsm6_nonverbal_com"
+      ],
+      "difficulty": 0.4,
+      "solution": "点头表示同意。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0296",
+      "item_type": "solve",
+      "stem": "写出 1 条课后归纳策略（不少于 5 个英文词）：____",
+      "answer": "I write down the key points after class.",
+      "kps": [
+        "kp_eng6_lsm6_preview_strategy"
+      ],
+      "difficulty": 0.55,
+      "solution": "课后归纳策略示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0297",
+      "item_type": "solve",
+      "stem": "为单元主题 \"Food\" 设计思维导图，再补充 2 个分支词（写 2 个词）：____",
+      "answer": "Fruit and Vegetables",
+      "kps": [
+        "kp_eng6_lsm6_mindmap_review"
+      ],
+      "difficulty": 0.55,
+      "solution": "思维导图分支词示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0302",
+      "item_type": "solve",
+      "stem": "再做主题演讲 \"My weekend\" 至少 3 句（不少于 25 个英文词）：____",
+      "answer": "Last weekend I was very happy. On Saturday morning I did my homework at home. In the afternoon I played football with my friends in the park. On Sunday I visited my grandma with my mum. I had a busy but happy weekend.",
+      "kps": [
+        "kp_eng6_spk6_topic_speech_plus"
+      ],
+      "difficulty": 0.55,
+      "solution": "主题演讲可谈过去活动与感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0303",
+      "item_type": "solve",
+      "stem": "再描述图片续写：图中小朋友在图书馆读书后做了什么？至少 2 句（不少于 15 个英文词）：____",
+      "answer": "After reading, the boy puts the book back on the shelf. Then he chooses another picture book and reads it quietly.",
+      "kps": [
+        "kp_eng6_wri6_pic_write"
+      ],
+      "difficulty": 0.55,
+      "solution": "看图续写可补充动作与对话。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0304",
+      "item_type": "solve",
+      "stem": "再写一段日记续写：那天早上在 X 之前我做了什么？至少 2 句（不少于 10 个英文词）：____",
+      "answer": "I had breakfast with my family. Then I went to school.",
+      "kps": [
+        "kp_eng6_wri6_diary_feel"
+      ],
+      "difficulty": 0.55,
+      "solution": "日记续写可补充动作。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

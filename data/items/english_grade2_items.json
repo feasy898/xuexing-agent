@@ -1655,6 +1655,270 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0029",
+      "item_type": "choice",
+      "stem": "下列 4 个大小写字母配对中，书写规范且匹配正确的是（　　）\nA. b—B  \nB. d—D  \nC. p—P  \nD. q—Q",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.25,
+      "solution": "PEP 字母写法中只有小写 p 与大写 P 的笔画结构最匹配，b/B、d/D、q/Q 都不一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. b—B",
+        "B. d—D",
+        "C. p—P",
+        "D. q—Q"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0030",
+      "item_type": "fill",
+      "stem": "按字母表顺序，写出 G 后面的 3 个连续字母（大写）：____",
+      "answer": "H, I, J",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.4,
+      "solution": "字母表顺序中 G 后是 H、I、J。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0032",
+      "item_type": "fill",
+      "stem": "听教师拍读单词 \"banana\"（ba-na-na），写出这个单词共有几个音节：____",
+      "answer": "3",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.4,
+      "solution": "banana 拆分为 ba-na-na 共 3 个音节。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0038",
+      "item_type": "fill",
+      "stem": "听故事：\"First, Tom is sad. Next, he looks for the cat. Finally, Mum finds it.\" 故事最后作者的心情最可能是：____",
+      "answer": "happy",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.4,
+      "solution": "猫被找到后，Tom 应感到开心，对应英文 happy。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0039",
+      "item_type": "fill",
+      "stem": "补全句子介绍家人：\"This is my ____. He is my father.\"（写出一个表示家庭身份的词）____",
+      "answer": "dad",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.25,
+      "solution": "介绍父亲可用 dad / father。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0041",
+      "item_type": "fill",
+      "stem": "学唱字母歌时，写出其中一句歌词（任写一个完整小节，不少于 4 个词）：____",
+      "answer": "A B C D E F G",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "字母歌经典歌词 A B C D E F G。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0043",
+      "item_type": "solve",
+      "stem": "在表演小故事 \"The Very Hungry Caterpillar\" 时，你扮演 caterpillar。请写一句你的台词（不少于 3 个英文单词）：____",
+      "answer": "I'm so hungry!",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.25,
+      "solution": "扮演毛毛虫可用 I'm so hungry! 等台词。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0044",
+      "item_type": "fill",
+      "stem": "表演故事时同伴说：\"Hello, I'm a little cat.\" 你扮演小狗，最合适的回应是：____",
+      "answer": "Hello, I'm a little dog.",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.4,
+      "solution": "回应介绍应保持角色一致：Hello, I'm a little dog.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0045",
+      "item_type": "choice",
+      "stem": "下列哪项安排最符合\"每周英语视听不少于 20 分钟\"的要求？（　　）\nA. 每天看 3 分钟英语动画  \nB. 每周只听一次，每次 5 分钟  \nC. 每周 4 次，每次听看 5 分钟英语  \nD. 从不看英语动画",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.25,
+      "solution": "每周 4 次 × 5 分钟 = 20 分钟，达标且分散进行更合理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每天看 3 分钟英语动画",
+        "B. 每周只听一次，每次 5 分钟",
+        "C. 每周 4 次，每次听看 5 分钟英语",
+        "D. 从不看英语动画"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0046",
+      "item_type": "fill",
+      "stem": "完成句子，描述你的英语视听计划：\"I watch English cartoon for ____ minutes every week.\"",
+      "answer": "20",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.4,
+      "solution": "预备级要求每周视听不少于 20 分钟。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0049",
+      "item_type": "fill",
+      "stem": "你学过 apple，现在学 banana。用一句新方法两个词编一句口诀（不少于 4 个英文词）：____",
+      "answer": "An apple and a banana are fruit.",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.25,
+      "solution": "把新旧词用 and 连接形成口诀，如 Apple and banana.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0052",
+      "item_type": "fill",
+      "stem": "写出 1 个你喜欢参加的英语学习活动：____",
+      "answer": "English songs",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.4,
+      "solution": "如 English songs / English games / English stories。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

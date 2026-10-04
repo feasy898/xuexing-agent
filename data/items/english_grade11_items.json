@@ -411,6 +411,1704 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_sv_hs1_0017",
+      "item_type": "solve",
+      "stem": "【七选五·段落还原】\nHow to Keep a Good Mood Every Day?\n① ___ . When you wake up in the morning, taking a few deep breaths and stretching your body can help you feel more awake and relaxed.\n② ___ . A simple smile, even when you are not happy, can trick your brain into releasing chemicals that lift your mood.\n③ ___ . Doing exercise, even just a short walk, causes your body to produce endorphins, which are natural mood lifters.\n④ ___ . Talking with friends or family about your worries can make problems seem smaller and easier to solve.\n⑤ ___ . A balanced diet with enough fruits and vegetables gives your brain the energy it needs to stay positive.\nA. Share your feelings with people you trust\nB. Choose healthy food\nC. Start the day with simple exercise\nD. Use a smile to change your mood\nE. Exercise regularly\nF. Listen to your favourite music\nG. Get enough sleep at night",
+      "answer": "C-D-E-A-B",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.6,
+      "solution": "七选五题号与五段内容对应：① 早起深呼吸 → C；② 微笑 → D；③ 运动 → E；④ 与人倾诉 → A；⑤ 健康饮食 → B。剩余 F、G 为多余干扰项。",
+      "source": "llm_generated",
+      "options": [
+        "A. Share your feelings with people you trust",
+        "B. Choose healthy food",
+        "C. Start the day with simple exercise",
+        "D. Use a smile to change your mood",
+        "E. Exercise regularly",
+        "F. Listen to your favourite music",
+        "G. Get enough sleep at night"
+      ],
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0029",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\n___1___ (learn) a foreign language well takes a lot of time and effort. For many students, ___2___ (master) the basic grammar rules is the first step. After that, they need to ___3___ (read) as much as possible in that language. Watching English movies can also help, because it improves both their listening and ___4___ (speaking) skills. The most important thing is to keep practising every day, ___5___ (making) sure that you never lose what you have learnt.",
+      "answer": "1. Learning 2. mastering 3. read 4. speaking 5. making",
+      "kps": [
+        "kp_eng11_gra11_infinitive_subject"
+      ],
+      "difficulty": 0.65,
+      "solution": "语法填空题：① Learning 动名词作主语（泛指学习）；② Mastering 动名词作主语（掌握语法规则）；③ read need 后用动词原形；④ speaking 名词性作 listening and speaking 的对应；⑤ making 现在分词作伴随状语。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0030",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nMy brother enjoys ___1___ (listening) to classical music in his free time. He avoids ___2___ (going) to noisy places because he likes quiet surroundings. ___3___ (Practising) the piano every day is something he never forgets. His teacher often encourages him ___4___ (join) music competitions. We all hope that his hard work will ___5___ (lead) to great success one day.",
+      "answer": "listening; going; Practising; to join; lead",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.6,
+      "solution": "语法填空题：① listening enjoy 后接动名词；② going avoid 后接动名词；③ Practising 动名词作主语；④ to join encourage sb to do 不定式；⑤ lead will 后接动词原形。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0031",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe news ___1___ our team had won the match reached everyone quickly. ___2___ exciting the moment was when the final whistle blew! The players looked ___3___ (exhausted) but happy. Their coach, ___4___ whose face was covered with sweat, smiled proudly at the team. \"We have ___5___ (proved) that hard work pays off,\" he said to the reporters.",
+      "answer": "that; How; exhausted; whose; proved",
+      "kps": [
+        "kp_eng11_gra11_subject_clause"
+      ],
+      "difficulty": 0.75,
+      "solution": "语法填空题：① that 同位语从句；② How 感叹句（修饰 excited）；③ exhausted 过去分词作表语；④ whose whose 引导非限制性定语从句；⑤ proved 现在完成时 have proved。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0032",
+      "item_type": "fill",
+      "stem": "【语法填空·无提示词】根据上下文填入适当的词（每空一词）。\nYesterday our geography teacher told us that the earth ___1___ around the sun. He also said that the moon ___2___ around the earth once a month. The reason ___3___ we have day and night is that the earth spins on its axis. The reason ___4___ we have seasons is more complicated. ___5___ we study hard, we will learn more about our planet.",
+      "answer": "goes; goes/moves; why; why/that; If",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.7,
+      "solution": "语法填空题：① goes/moves 一般现在时客观事实；② goes/moves 一般现在时；③ why 表语从句（the reason why...）；④ why 表语从句；⑤ If 条件状语从句。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0033",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe fact ___1___ she has won three international competitions shows that she is a talented player. The news that she ___2___ (given) a chance to study abroad made her parents very proud. She often thinks about the question ___3___ she can do to help other young players. \"As long as I keep training hard, my dream ___4___ (come) true,\" she said with a confident smile. Her story is an example to us ___5___ hard work and patience always pay off in the end.",
+      "answer": "that; is/was given; what; will come; that",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.75,
+      "solution": "语法填空题：① that 同位语从句（fact 后）；② is/was given 被动语态（被给予）；③ what 引导宾语从句；④ will come 一般将来时；⑤ that 同位语从句（an example to us that...）。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_gf_hs1_0034",
+      "item_type": "fill",
+      "stem": "【语法填空·提示词】用所给词的适当形式填空（每空一词）。\nThe old man looked ___1___ (worried) when he heard the news. His face, ___2___ (lit) by the morning sun, looked tired. The doctor asked him whether he ___3___ (slept) well recently. The old man answered that he had been ___4___ (suffering) from a bad headache for the past few days. After a careful check-up, the doctor said that the old man was ___5___ (generally) in good health, but he should rest more.",
+      "answer": "worried; lit; had slept/slept; suffering; generally",
+      "kps": [
+        "kp_eng11_cul11_geography"
+      ],
+      "difficulty": 0.65,
+      "solution": "语法填空题：① worried 形容词作表语；② lit 过去分词作后置定语（face lit by...）；③ slept/had slept 一般过去时或过去完成时（宾语从句）；④ suffering 现在完成进行时 been doing；⑤ generally 副词作状语。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sm_hs1_0050",
+      "item_type": "solve",
+      "stem": "【概要写作】阅读下面短文，写一篇 60 词左右的内容概要。短文介绍了在线学习的优缺点，并建议将在线学习与传统课堂学习相结合。",
+      "answer": "Online learning has become popular among students worldwide because it allows them to study at their own pace and choose courses they like. However, it also has disadvantages, such as making students feel lonely and requiring strong self-control. Therefore, experts suggest combining online learning with traditional classroom learning to get the best results.",
+      "kps": [
+        "kp_eng11_wri11_summary_writing"
+      ],
+      "difficulty": 0.65,
+      "solution": "评分要点：(1) 涵盖原文要点（在线学习流行+优点、缺点、建议结合传统课堂）；(2) 词数约 60（55-65 均可）；(3) 语言简洁、客观；(4) 不照抄原文整句，使用自己的话重组；(5) 逻辑顺序合理（优点→缺点→建议）。",
+      "source": "llm_generated",
+      "form": "summary",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_sm_hs1_0051",
+      "item_type": "solve",
+      "stem": "【概要写作】阅读下面短文，写一篇 60 词左右的内容概要。短文论述了志愿服务对高中学生的意义，并建议学校鼓励更多学生参加。",
+      "answer": "Volunteering helps high school students learn important life skills and understand different people and cultures. Although some worry it may affect their studies, research shows volunteering students usually do better at school because they become more confident and responsible. Therefore, schools should encourage more students to take part in volunteer activities.",
+      "kps": [
+        "kp_eng11_wri11_summary_writing"
+      ],
+      "difficulty": 0.65,
+      "solution": "评分要点：(1) 涵盖原文要点（志愿服务的价值、疑虑与反驳、学校鼓励）；(2) 词数约 60；(3) 语言简洁、客观；(4) 不照抄原文；(6) 逻辑清晰（价值→反对意见→研究反驳→建议）。",
+      "source": "llm_generated",
+      "form": "summary",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_final_0181",
+      "item_type": "choice",
+      "stem": "【阅读·论说文】\nSome people believe that students should wear school uniforms because uniforms make everyone equal and reduce social pressure. However, others argue that uniforms limit students' personal expression. In my opinion, schools should let students choose what to wear, as long as the clothes are neat and appropriate.\n问题：What is the author's main point?",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_dis11_argumentative"
+      ],
+      "difficulty": 0.5,
+      "solution": "末句 In my opinion 明确给出作者观点：让学生选择得体服装。",
+      "source": "llm_generated",
+      "options": [
+        "A. Students must wear uniforms.",
+        "B. Uniforms should be banned.",
+        "C. Students should be allowed to choose clothes that are neat and appropriate.",
+        "D. Uniforms reduce study time."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0182",
+      "item_type": "choice",
+      "stem": "【阅读·论说文·续】上文所用的论证方法是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_dis11_argumentative"
+      ],
+      "difficulty": 0.5,
+      "solution": "Some people believe ... However, others argue ... 是典型的对比论证结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 摆事实（数据）",
+        "B. 引证（引用名人名言）",
+        "C. 对比（不同观点对照）",
+        "D. 类比"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0183",
+      "item_type": "fill",
+      "stem": "【阅读·填空】论说文三要素包括：____、____、____。\n填空：____",
+      "answer": "论点；论据；论证",
+      "kps": [
+        "kp_eng11_dis11_argumentative"
+      ],
+      "difficulty": 0.5,
+      "solution": "论说文三要素：论点（claim）、论据（evidence）、论证（reasoning）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0184",
+      "item_type": "choice",
+      "stem": "【语法·英汉差异】句子 'It is important to learn English.' 在汉语中通常表达为'学英语很重要'。这反映了英汉语法的主要差异之一：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_cn_en_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "英汉差异：英语常用 it 作形式主语替代真正的主语（to learn English），汉语常直接用动宾结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 英语有形式主语 it，汉语常直接用动词不定式或主谓结构作主语",
+        "B. 英语不用动词",
+        "C. 汉语有冠词",
+        "D. 汉语主谓必须一致"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0185",
+      "item_type": "choice",
+      "stem": "【语法·英汉差异】下列哪一项是英语与汉语在'形合/意合'上的主要差异？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_cn_en_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "英语重形合（hypotaxis），靠连接词、关系词等显性手段；汉语重意合（parataxis），靠意义连接。",
+      "source": "llm_generated",
+      "options": [
+        "A. 英语重形合（依赖连接词），汉语重意合（靠语义）",
+        "B. 英语和汉语都不使用连接词",
+        "C. 汉语重形合，英语重意合",
+        "D. 两者完全相同"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0186",
+      "item_type": "fill",
+      "stem": "【语法·差异填空】写出英汉语法在词法/句法层面的两个主要差异：____、____。\n填空：____",
+      "answer": "形合与意合；动词时态与体",
+      "kps": [
+        "kp_eng11_gra11_cn_en_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "英汉差异一：英语重形合，汉语重意合；二：英语动词有时态，汉语没有严格时态变化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0187",
+      "item_type": "choice",
+      "stem": "【语法·不定式作主语】下列句子中，不定式作主语使用正确的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_gra11_infinitive_subject"
+      ],
+      "difficulty": 0.5,
+      "solution": "不定式 To learn English 可直接作主语（A），也可用 it 作形式主语（B），两种结构都正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. To learn English is important.",
+        "B. It is important to learn English.",
+        "C. Both A and B.",
+        "D. None of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0188",
+      "item_type": "choice",
+      "stem": "【语法·不定式作主语】选择最佳答案填空：____ (take) exercise every day is good for our health.",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_gra11_infinitive_subject"
+      ],
+      "difficulty": 0.5,
+      "solution": "不定式 To take 作主语；动名词 Taking 也可作主语，但空格前为句首，独立主语用 To take 更为常见。",
+      "source": "llm_generated",
+      "options": [
+        "A. Take",
+        "B. Takes",
+        "C. Taking",
+        "D. To take"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0189",
+      "item_type": "fill",
+      "stem": "【语法·不定式主语·填空】用 it 作形式主语改写句子。\n原句：To master a foreign language takes time.\n改写：____ (1) ____ (takes) time ____ (2) ____ (master) a foreign language.\n填空：(1)____ (2)____",
+      "answer": "(1) It; (2) to master",
+      "kps": [
+        "kp_eng11_gra11_infinitive_subject"
+      ],
+      "difficulty": 0.5,
+      "solution": "用 It is ... to do ... 句型：It takes time to master a foreign language.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0190",
+      "item_type": "choice",
+      "stem": "【语法·主语从句】下列句子中，主语从句使用正确的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_gra11_subject_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 用 what 引导主语从句；B 用 that 引导；C 用 whether 引导；三种引导词都正确，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. What he said is true.",
+        "B. That he passed the exam made his mother happy.",
+        "C. Whether he will come is unknown.",
+        "D. All of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0191",
+      "item_type": "choice",
+      "stem": "【语法·主语从句】选择最佳答案填空：____ will win the match is still unknown.",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_subject_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "从句 '___ will win the match' 缺主语，指人，关系词 who 引导主语从句。",
+      "source": "llm_generated",
+      "options": [
+        "A. Who",
+        "B. Whom",
+        "C. Whose",
+        "D. Which"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0192",
+      "item_type": "fill",
+      "stem": "【语法·主语从句填空】在空格处填入恰当的引导词。\n____ (1) he will come back soon is uncertain. ____ (2) he said at the meeting is important.\n填空：(1)____ (2)____",
+      "answer": "(1) Whether; (2) What",
+      "kps": [
+        "kp_eng11_gra11_subject_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "1 whether 引导表'是否'的主语从句；2 what 引导表'所说内容'的主语从句。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0193",
+      "item_type": "choice",
+      "stem": "【语法·长难句分析】分析长句时，可以借助的五类成分是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_long_sentence"
+      ],
+      "difficulty": 0.5,
+      "solution": "分析长难句常借助五类短语（短语成分）作为切分单位。",
+      "source": "llm_generated",
+      "options": [
+        "A. 名词短语、动词短语、形容词短语、副词短语、介词短语",
+        "B. 主语、谓语、宾语、定语、状语",
+        "C. 单句、复句、并列句",
+        "D. 以上都不是"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0194",
+      "item_type": "choice",
+      "stem": "【语法·长难句】句子 'The book which I bought yesterday from the bookstore near my school is very interesting.' 中介词短语 'from the bookstore near my school' 在句中作：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_long_sentence"
+      ],
+      "difficulty": 0.5,
+      "solution": "from the bookstore near my school 是介词短语作状语，修饰动词 bought。",
+      "source": "llm_generated",
+      "options": [
+        "A. 定语，修饰 The book",
+        "B. 状语，修饰 bought",
+        "C. 表语",
+        "D. 主语"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0195",
+      "item_type": "fill",
+      "stem": "【语法·长难句填空】用所给短语类型填空。\n'She is a girl ____ (介词短语) courage.'\n填空：____",
+      "answer": "of great",
+      "kps": [
+        "kp_eng11_gra11_long_sentence"
+      ],
+      "difficulty": 0.5,
+      "solution": "介词短语 of great courage 作后置定语修饰 a girl。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0196",
+      "item_type": "choice",
+      "stem": "【阅读·议论文结构】议论文常见的结构是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_dis11_argument_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "议论文既可用'引论—本论—结论'三段式，也常用'总—分—总'结构。",
+      "source": "llm_generated",
+      "options": [
+        "A. 引论—本论—结论",
+        "B. 时间—人物—事件",
+        "C. 总—分—总",
+        "D. A 与 C 都常见"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0197",
+      "item_type": "choice",
+      "stem": "【阅读·议论文】在议论文中，'本论'段落最常见的功能是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_dis11_argument_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "本论主要承担展开论证的功能，用论据支持论点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提出中心论点",
+        "B. 展开论证（摆事实、讲道理）",
+        "C. 总结全文",
+        "D. 写作者感想"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0198",
+      "item_type": "fill",
+      "stem": "【阅读·议论文填空】写出议论文的三种常见论证方法：____、____、____。\n填空：____",
+      "answer": "举例论证；道理论证；对比论证",
+      "kps": [
+        "kp_eng11_dis11_argument_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "议论文常用论证方法：举例论证、道理论证、对比论证、比喻论证等。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0199",
+      "item_type": "choice",
+      "stem": "【阅读·文学风格】下列哪一项最能体现文学语篇的语言特征？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_dis11_literary_style"
+      ],
+      "difficulty": 0.5,
+      "solution": "文学语篇常用丰富的修辞与意象，体现表现力；B、C、D 与文学风格不符。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使用丰富的修辞（比喻、拟人）",
+        "B. 仅使用简单陈述句",
+        "C. 不使用任何形容词",
+        "D. 完全口语化表达"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0200",
+      "item_type": "choice",
+      "stem": "【阅读·文学风格】小说开篇写道：'The old house groaned in the wind, as if it were telling its long-lost story.' 该句主要运用了：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_dis11_literary_style"
+      ],
+      "difficulty": 0.5,
+      "solution": "老房子'groaned'、'telling its story'赋予房子以人的特征，是拟人。",
+      "source": "llm_generated",
+      "options": [
+        "A. 比喻",
+        "B. 拟人",
+        "C. 夸张",
+        "D. 排比"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0201",
+      "item_type": "fill",
+      "stem": "【阅读·文学填空】写出三种文学语篇常用的修辞手法：____、____、____。\n填空：____",
+      "answer": "比喻；拟人；夸张",
+      "kps": [
+        "kp_eng11_dis11_literary_style"
+      ],
+      "difficulty": 0.5,
+      "solution": "文学语篇常用比喻、拟人、夸张、排比等修辞手法。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0202",
+      "item_type": "choice",
+      "stem": "【阅读·正式与非正式】下列句子中，最属于非正式口语的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_dis11_formality_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 用 Hey / wanna 等口语化表达；A、C、D 都是较正式的表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. I would appreciate it if you could...",
+        "B. Hey, wanna grab a coffee later?",
+        "C. It is hereby announced that...",
+        "D. I would like to express my gratitude..."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0203",
+      "item_type": "choice",
+      "stem": "【阅读·口头与书面】下列哪一项最属于书面语特征？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_dis11_formality_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "书面语常用完整句、连接词和复杂从句；B、C、D 是口头语特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使用完整句、连接词与较复杂的从句结构",
+        "B. 大量使用 'um, well, you know' 等口头填充词",
+        "C. 使用缩写 'wanna / gonna' 较多",
+        "D. 句子较短且不完整"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0204",
+      "item_type": "fill",
+      "stem": "【阅读·填空】写出正式语篇与口头语篇的两个主要差异：____、____。\n填空：____",
+      "answer": "用词正式 vs 口语；句式完整 vs 简短",
+      "kps": [
+        "kp_eng11_dis11_formality_diff"
+      ],
+      "difficulty": 0.5,
+      "solution": "正式语篇用词严谨、句式完整；口头语篇用词口语化、句式简短。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0205",
+      "item_type": "choice",
+      "stem": "【文化·韵律美】阅读下列诗句：'The rain in Spain stays mainly in the plain.' 这句诗主要体现的英语韵律特征是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_rhythm_beauty"
+      ],
+      "difficulty": 0.5,
+      "solution": "rain / Spain / plain 三词均以 'ain' 音节开头，属头韵（alliteration）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 头韵（alliteration，rain/Spain/plain）",
+        "B. 押尾韵（rhyme）",
+        "C. 节奏（rhythm）",
+        "D. 谐音（assonance）"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0206",
+      "item_type": "choice",
+      "stem": "【文化·韵律美】欣赏英语诗歌时，最值得关注的韵律元素是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_rhythm_beauty"
+      ],
+      "difficulty": 0.5,
+      "solution": "诗歌韵律主要体现在重音（stress）、节奏（meter）与押韵（rhyme）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 重音、节奏、押韵",
+        "B. 标点符号数量",
+        "C. 章节长度",
+        "D. 页码"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0207",
+      "item_type": "fill",
+      "stem": "【文化·填空】写出欣赏英语韵律美时常用的两个观察维度：____、____。\n填空：____",
+      "answer": "节奏；押韵",
+      "kps": [
+        "kp_eng11_cul11_rhythm_beauty"
+      ],
+      "difficulty": 0.5,
+      "solution": "欣赏英语韵律美常用节奏（rhythm）与押韵（rhyme）两个维度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0208",
+      "item_type": "choice",
+      "stem": "【文化·文学作品欣赏】阅读下列节选：\n'To be, or not to be, that is the question.'\n这段话出自：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_literature_appreciation"
+      ],
+      "difficulty": 0.5,
+      "solution": "'To be or not to be' 是莎士比亚《哈姆雷特》中的经典独白。",
+      "source": "llm_generated",
+      "options": [
+        "A. Shakespeare's Hamlet",
+        "B. Dickens's Oliver Twist",
+        "C. Mark Twain's Tom Sawyer",
+        "D. Hemingway's The Old Man and the Sea"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0209",
+      "item_type": "choice",
+      "stem": "【文化·文学欣赏】阅读英语优秀文学作品时，下列哪种收获最为根本？",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_literature_appreciation"
+      ],
+      "difficulty": 0.5,
+      "solution": "文学欣赏的核心是从作品意蕴中获得人生启示与审美体验。",
+      "source": "llm_generated",
+      "options": [
+        "A. 记住每个生词的拼写",
+        "B. 体会作品意蕴与人生启示",
+        "C. 只关注情节本身",
+        "D. 把作品全部翻译成中文"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0210",
+      "item_type": "fill",
+      "stem": "【文化·文学填空】写出两种英语优秀文学体裁（每空一词）：____、____。\n填空：____",
+      "answer": "戏剧；小说",
+      "kps": [
+        "kp_eng11_cul11_literature_appreciation"
+      ],
+      "difficulty": 0.5,
+      "solution": "英语优秀文学作品涵盖戏剧、诗歌、小说等多种体裁。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0211",
+      "item_type": "choice",
+      "stem": "【文化·价值判断】阅读一段关于西方某节日的文章，文中既有传统习俗也有商业化现象。下列做法最合适的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_cul11_value_judgement"
+      ],
+      "difficulty": 0.5,
+      "solution": "价值判断要求通过比较、分析、思考，区分值得借鉴与需批判的内容，作出理性判断。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全照搬西方做法",
+        "B. 一味批评其商业化",
+        "C. 比较分析，区分其中值得借鉴与需批判的内容",
+        "D. 完全忽视文章内容"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0212",
+      "item_type": "choice",
+      "stem": "【文化·价值判断】面对不同文化现象，下列哪种价值观最为可取？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_cul11_value_judgement"
+      ],
+      "difficulty": 0.5,
+      "solution": "尊重文化差异，作出独立理性判断，是正确的价值观。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文化相对主义（一切皆可）",
+        "B. 文化绝对主义（自己最好）",
+        "C. 在尊重差异的基础上作出独立、理性的价值判断",
+        "D. 完全排斥外来文化"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0213",
+      "item_type": "fill",
+      "stem": "【文化·价值判断填空】写出价值判断的三个基本步骤：____、____、____。\n填空：____",
+      "answer": "比较；分析；判断",
+      "kps": [
+        "kp_eng11_cul11_value_judgement"
+      ],
+      "difficulty": 0.5,
+      "solution": "价值判断三步：比较（compare）、分析（analyze）、判断（judge）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0214",
+      "item_type": "choice",
+      "stem": "【文化·大众传媒】下列哪一项属于英美国家主要大众传播媒体？",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_cul11_mass_media"
+      ],
+      "difficulty": 0.5,
+      "solution": "BBC、CNN、The New York Times 都是英美主要大众传播媒体的代表。",
+      "source": "llm_generated",
+      "options": [
+        "A. BBC（英国广播公司）",
+        "B. CNN（美国有线电视新闻网）",
+        "C. The New York Times（纽约时报）",
+        "D. All of the above."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0215",
+      "item_type": "choice",
+      "stem": "【文化·大众传媒】面对媒体信息，下列哪种态度最理性？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_cul11_mass_media"
+      ],
+      "difficulty": 0.5,
+      "solution": "对媒体信息应分析其价值取向，作出理性判断后再选择性接受。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全盘相信",
+        "B. 不加分析全盘否定",
+        "C. 辨别价值取向，理性判断后选择性接受",
+        "D. 只看标题不看内容"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0216",
+      "item_type": "fill",
+      "stem": "【文化·大众传媒填空】写出两种英美主要大众传播媒体的英文名称：____、____。\n填空：____",
+      "answer": "BBC; CNN",
+      "kps": [
+        "kp_eng11_cul11_mass_media"
+      ],
+      "difficulty": 0.5,
+      "solution": "BBC（英国广播公司）与 CNN（美国有线电视新闻网）为典型英美媒体。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0217",
+      "item_type": "choice",
+      "stem": "【文化·用英语讲中国】向外国朋友介绍中国春节，下列哪一表述最得体？",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_spread_china"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 客观介绍了春节的时间、家庭团聚、红包和春晚等代表性元素，传播中华文化得体自然。",
+      "source": "llm_generated",
+      "options": [
+        "A. It's just like Christmas but worse.",
+        "B. The Spring Festival is the most important traditional festival in China. Families gather for a big dinner, give red envelopes, and watch the CCTV New Year's Gala.",
+        "C. I don't know.",
+        "D. Chinese festivals are boring."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0218",
+      "item_type": "choice",
+      "stem": "【文化·传播中华文化】用英语介绍中国剪纸艺术，下列哪个开场最合适？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_cul11_spread_china"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 用客观介绍的方式呈现剪纸的历史与文化内涵，最有助于传播中华文化。",
+      "source": "llm_generated",
+      "options": [
+        "A. Paper-cutting is a traditional Chinese folk art with a history of over 1,500 years. People cut patterns on red paper to express good wishes.",
+        "B. Paper-cutting is useless.",
+        "C. I have no idea.",
+        "D. Foreigners don't care."
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0219",
+      "item_type": "fill",
+      "stem": "【文化·传播填空】用英语写出春节的两项代表性活动：____、____。\n填空：____",
+      "answer": "Family reunion dinner; giving red envelopes",
+      "kps": [
+        "kp_eng11_cul11_spread_china"
+      ],
+      "difficulty": 0.5,
+      "solution": "春节代表性活动：全家团圆饭、给红包（red envelopes）、看春晚、贴春联等。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0220",
+      "item_type": "choice",
+      "stem": "【语法·被动语态·五种时态】下列被动语态形式正确的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_gra11_passive_all"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 现在进行时被动；B 现在完成时被动；C 过去进行时被动，均正确，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. The book is being read now.",
+        "B. The book has been read.",
+        "C. The book was being read.",
+        "D. All of the above."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0221",
+      "item_type": "choice",
+      "stem": "【语法·被动语态】选择最佳答案填空：By the time we arrived, the cake ____.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_passive_all"
+      ],
+      "difficulty": 0.5,
+      "solution": "by the time + 过去时，主句应用过去完成时被动 had been eaten 表'到那时已经吃完'。",
+      "source": "llm_generated",
+      "options": [
+        "A. was eaten",
+        "B. had been eaten",
+        "C. has been eaten",
+        "D. is eaten"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0222",
+      "item_type": "fill",
+      "stem": "【语法·被动填空】用所给动词的被动语态填空。\nThe novel ____ (write) by him when he was twenty.\n填空：____",
+      "answer": "was written",
+      "kps": [
+        "kp_eng11_gra11_passive_all"
+      ],
+      "difficulty": 0.5,
+      "solution": "时间状语 when he was twenty 表过去，用一般过去时被动 was written。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0223",
+      "item_type": "choice",
+      "stem": "【语法·从句体系】下列句子中，含有宾语从句的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_clause_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "A 中 (that) he is honest 是 believe 的宾语从句；B 是定语从句；C 是状语从句；D 是表语从句。",
+      "source": "llm_generated",
+      "options": [
+        "A. I believe (that) he is honest.",
+        "B. He is the man who helped me.",
+        "C. When he comes, I will tell him.",
+        "D. The fact is that he is right."
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0224",
+      "item_type": "choice",
+      "stem": "【语法·从句体系】句子 'The news that he won the prize is true.' 中 that 从句是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_gra11_clause_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "that he won the prize 解释说明 The news 的具体内容，是同位语从句。",
+      "source": "llm_generated",
+      "options": [
+        "A. 宾语从句",
+        "B. 主语从句",
+        "C. 同位语从句",
+        "D. 定语从句"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0225",
+      "item_type": "fill",
+      "stem": "【语法·从句填空】判断下列从句类型（宾语/状语/定语/主语/表语）。\nThe idea ____ (1) he proposed was accepted by all. His suggestion is ____ (2) we should try again.\n填空：(1)____ (2)____",
+      "answer": "(1) 定语从句; (2) 表语从句",
+      "kps": [
+        "kp_eng11_gra11_clause_system"
+      ],
+      "difficulty": 0.5,
+      "solution": "1 he proposed 修饰 The idea 作定语；2 we should try again 作 is 的表语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0226",
+      "item_type": "choice",
+      "stem": "【语法·省略与替代】句子 'I have read this book, but Tom hasn't.' 中 hasn't 后面省略了：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_ellipsis_substitution"
+      ],
+      "difficulty": 0.5,
+      "solution": "hasn't 后省略了 read this book，用省略避免重复。",
+      "source": "llm_generated",
+      "options": [
+        "A. read this book",
+        "B. a book",
+        "C. to read",
+        "D. reading"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0227",
+      "item_type": "choice",
+      "stem": "【语法·替代】句子 'I think classical music is more relaxing than pop music, but some people think otherwise.' 中 otherwise 替代的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_ellipsis_substitution"
+      ],
+      "difficulty": 0.5,
+      "solution": "otherwise 替代相反的观点（即认为 pop music 更 relaxing）。",
+      "source": "llm_generated",
+      "options": [
+        "A. the opposite idea",
+        "B. a book",
+        "C. a teacher",
+        "D. a place"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0228",
+      "item_type": "fill",
+      "stem": "【语法·省略填空】填入恰当的替代或省略表达。\n—Have you finished your homework? —Yes, I ____ (have).\n填空：____",
+      "answer": "have",
+      "kps": [
+        "kp_eng11_gra11_ellipsis_substitution"
+      ],
+      "difficulty": 0.5,
+      "solution": "答语省略了 finished my homework，完整为 Yes, I have (finished my homework)。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0229",
+      "item_type": "choice",
+      "stem": "【语法·分词短语作状语】选择最佳答案填空：____ (walk) in the park, he met his old friend.",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_gra11_participle_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "Walking in the park 是现在分词短语作状语，其逻辑主语是 he，主动关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. Walk",
+        "B. Walked",
+        "C. Walking",
+        "D. To walk"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0230",
+      "item_type": "choice",
+      "stem": "【语法·独立主格】句子 'Weather ____, we will go on a picnic.' 中空格处应填入：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_participle_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "Weather permitting 是固定独立主格结构，等于 If weather permits。",
+      "source": "llm_generated",
+      "options": [
+        "A. permits",
+        "B. permitting",
+        "C. permitted",
+        "D. to permit"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0231",
+      "item_type": "fill",
+      "stem": "【语法·分词填空】用所给动词的分词形式填空。\n____ (hear) the news, she jumped with joy.\n填空：____",
+      "answer": "Hearing",
+      "kps": [
+        "kp_eng11_gra11_participle_clause"
+      ],
+      "difficulty": 0.5,
+      "solution": "现在分词 Hearing 表主动、与主语 she 同时发生，作时间状语。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0232",
+      "item_type": "choice",
+      "stem": "【文化·体育精神】比较中外体育文化，下列理解最恰当的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_sports_culture"
+      ],
+      "difficulty": 0.5,
+      "solution": "中外体育精神既有共同诉求（公平竞争、拼搏进取），又因文化背景不同各有特色。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中外体育精神完全相同，无任何差异",
+        "B. 中外体育精神有共同诉求（如公平、拼搏），也有各自的文化特色",
+        "C. 中国体育精神落后于西方",
+        "D. 西方体育精神毫无可取之处"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0233",
+      "item_type": "choice",
+      "stem": "【文化·体育文化】下列哪一项最能体现中外体育文化的共同诉求？",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_cul11_sports_culture"
+      ],
+      "difficulty": 0.5,
+      "solution": "公平竞争与团队合作是中外体育文化共同的核心理念。",
+      "source": "llm_generated",
+      "options": [
+        "A. 追求金牌数量第一",
+        "B. 公平竞争与团队合作",
+        "C. 个人英雄主义至上",
+        "D. 商业利益最大化"
+      ],
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0234",
+      "item_type": "fill",
+      "stem": "【文化·体育填空】写出中外体育文化共同的三个核心诉求：____、____、____。\n填空：____",
+      "answer": "公平；拼搏；团队合作",
+      "kps": [
+        "kp_eng11_cul11_sports_culture"
+      ],
+      "difficulty": 0.5,
+      "solution": "公平、拼搏、团队合作是中外体育文化共同的核心理念。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0235",
+      "item_type": "choice",
+      "stem": "【语法·虚拟语气】句子 'If I were you, I would take the job.' 中 were 属于：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_subjunctive_intro"
+      ],
+      "difficulty": 0.5,
+      "solution": "If I were you ... I would ... 是与现在事实相反的虚拟语气。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一般现在时",
+        "B. 虚拟语气（与现在事实相反）",
+        "C. 过去进行时",
+        "D. 一般过去时（真实过去）"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0236",
+      "item_type": "choice",
+      "stem": "【语法·wish 后的虚拟】句子 'I wish I ____ more time.' 中空格处应填入：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_gra11_subjunctive_intro"
+      ],
+      "difficulty": 0.5,
+      "solution": "wish 后用虚拟语气，表与现在事实相反用过去式 had。",
+      "source": "llm_generated",
+      "options": [
+        "A. have",
+        "B. had",
+        "C. will have",
+        "D. having"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0237",
+      "item_type": "fill",
+      "stem": "【语法·虚拟填空】用适当形式填空。\nIf I ____ (be) a bird, I would fly in the sky.\n填空：____",
+      "answer": "were",
+      "kps": [
+        "kp_eng11_gra11_subjunctive_intro"
+      ],
+      "difficulty": 0.5,
+      "solution": "与现在事实相反的虚拟语气在 if 从句中用 were。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0238",
+      "item_type": "choice",
+      "stem": "【语法·句式转换】将 'She is a good student.' 转换为感叹句，最恰当的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_question_transform"
+      ],
+      "difficulty": 0.5,
+      "solution": "感叹句：What + a/an + adj. + n. + 主谓 = What a good student she is!",
+      "source": "llm_generated",
+      "options": [
+        "A. What a good student she is!",
+        "B. How a good student she is!",
+        "C. How good student is she!",
+        "D. What good student she is!"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0239",
+      "item_type": "choice",
+      "stem": "【语法·句式转换】将陈述句 'He likes swimming.' 转换为一般疑问句：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_gra11_question_transform"
+      ],
+      "difficulty": 0.5,
+      "solution": "一般现在时一般疑问句借助于助动词 does，原动词还原 like，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Does he like swimming?",
+        "B. Is he like swimming?",
+        "C. Does he likes swimming?",
+        "D. Like he swimming?"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_final_0240",
+      "item_type": "fill",
+      "stem": "【语法·转换填空】将下列陈述句转换为感叹句。\n原句：This is a beautiful picture.\n感叹句：____",
+      "answer": "What a beautiful picture this is!",
+      "kps": [
+        "kp_eng11_gra11_question_transform"
+      ],
+      "difficulty": 0.5,
+      "solution": "What + a + adj. + n. + 主语 + be!",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

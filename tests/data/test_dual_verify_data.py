@@ -213,6 +213,26 @@ def _is_mat(it):
     return it.get("verification", {}).get("agents") == MAT_AGENTS
 
 
+# 2026-10-04 仲裁批 ×2（单代理=仲裁员，known issue 形态：分歧题经第三方逐题
+# 裁决后按 final_answer 入库，note 逐题申报 verdict 与答案替换情况）：英语
+# arbitration_queue_en.json 的 252 分歧（eng-arb-step5，K12-3-arb-eng）；数学
+# 高中批 arbitration_queue_hs.json 的 16 分歧中 13 题入库（math-arb-glm53-
+# 20261004，K12-3-arb-mat；h_svc_002 both_wrong 弃——正方体中 DC 与 A₁B₁ 均
+# 与 AB 相等，选择题双正确选项；h_sva_003 / h_dzi_003 与 GEN_MATH_FINAL 收尾
+# 批撞 id 跳过）。仲裁产出：candidates_english/GEN_ENG_DENSITY_01_arbitrated.json
+# 与 candidates_final/GEN_MATH_FINAL_arbitrated.json。
+ENG_ARB_AGENTS = ["eng-arb-step5-20261004"]
+MAT_ARB_AGENTS = ["math-arb-glm53-20261004"]
+
+
+def _is_eng_arb(it):
+    return it.get("verification", {}).get("agents") == ENG_ARB_AGENTS
+
+
+def _is_mat_arb(it):
+    return it.get("verification", {}).get("agents") == MAT_ARB_AGENTS
+
+
 POL_AGENTS = ["pol-gen-w1-20261003"]
 POL_PREFIX = "pol_"
 # 2026-10-04 政治密度收尾批 61 题（45 pol_FINAL_* + 13 pol_jr_* + 3 pol_hs_*，
@@ -748,6 +768,22 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert not ((pol_den_ids | his_den_ids)
                 & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids | mat_ids)), (
         "政治/历史密度收尾批与既有批次重叠")
+    # 2026-10-04 仲裁批 ×2 闭式（单代理=仲裁员，见 ENG_ARB_AGENTS/MAT_ARB_AGENTS
+    # 登记）：英语 252 题、数学 13 题（16 分歧 − 1 both_wrong − 2 撞 id）；
+    # 下限式断言，不锁死具体数。
+    eng_arb_ids = {it["id"] for it in all_items if _is_eng_arb(it)}
+    mat_arb_ids = {it["id"] for it in all_items if _is_mat_arb(it)}
+    assert len(eng_arb_ids) >= 250, (
+        "英语仲裁批规模异常（< 250）：扩库须先登记 ENG_ARB_AGENTS 并在本闭式同步")
+    assert all(i.startswith(ENG_PREFIX) for i in eng_arb_ids), (
+        "英语仲裁批题 id 前缀须为 eng_")
+    assert len(mat_arb_ids) >= 13, (
+        "数学仲裁批规模异常（< 13）：扩库须先登记 MAT_ARB_AGENTS 并在本闭式同步")
+    assert all(i.startswith(MAT_PREFIX) for i in mat_arb_ids), (
+        "数学仲裁批题 id 前缀须为 h_")
+    assert not ((eng_arb_ids | mat_arb_ids)
+                & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids | mat_ids | pol_den_ids | his_den_ids)), (
+        "仲裁批与既有批次重叠")
     chi_ids = {it["id"] for it in all_items if _is_chi(it)}
     assert len(chi_ids) >= 1600, (
         "语文批规模异常（< 1600）：扩库须先登记 CHI_AGENTS 并在本闭式同步；"
@@ -759,7 +795,7 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
         | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
-        | mat_ids | pol_den_ids | his_den_ids
+        | mat_ids | pol_den_ids | his_den_ids | eng_arb_ids | mat_arb_ids
     ) == all_ids
 
 
@@ -795,6 +831,12 @@ def test_verification_agents_match_owning_run(all_items, ledger):
         elif rec["agents"] == MAT_AGENTS:
             assert iid.startswith(MAT_PREFIX), iid
             assert rec.get("single_agent") is True, iid  # 2026-10-04 数学密度收尾批
+        elif rec["agents"] == ENG_ARB_AGENTS:
+            assert iid.startswith(ENG_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-04 英语仲裁批（仲裁员单代理）
+        elif rec["agents"] == MAT_ARB_AGENTS:
+            assert iid.startswith(MAT_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-04 数学仲裁批（仲裁员单代理）
         elif rec["agents"] == POL_DENSITY_AGENTS:
             assert iid.startswith(POL_PREFIX), iid
             assert rec.get("single_agent") is True, iid  # 2026-10-04 政治收尾批台账 id（现库内 0 题）

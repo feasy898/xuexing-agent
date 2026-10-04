@@ -40,10 +40,13 @@ EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级
 # verification.note 必须逐题如实申报，缺申报即失败。
 KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # KNOWN_ISSUE_COUNT = 全库 verification.agents 长度==1 的 unique id 总数
-#（2026-10-04 实测扫描 data/items/：15515；含 2026-10-04 密度收尾批 mat 45 /
+#（2026-10-04 实测扫描 data/items/：16002；含 2026-10-04 密度收尾批 mat 45 /
 # pol 61 / his 11——后两批在题库内共用 pol/his-gen-w1-20261003 签名，台账口径
-# 的 pol-density-gen-20261004 / his-gen-w1-20261004 库内匹配 0 题，仅登记）。
-KNOWN_ISSUE_COUNT = 15515
+# 的 pol-density-gen-20261004 / his-gen-w1-20261004 库内匹配 0 题，仅登记；
+# 含 2026-10-04 仲裁批 ×2：eng-arb-step5-20261004 252 题 + math-arb-glm53-
+# 20261004 13 题——arbitration_queue_{en,hs} 分歧经第三方逐题裁决后按裁决
+# 答案入库，单代理=仲裁员签名）。
+KNOWN_ISSUE_COUNT = 16002
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
 SCI_AGENTS = ("sci-gen-w1-20261003",)
@@ -67,6 +70,15 @@ KNOWN_SINGLE_AGENT_IDS.add("eng-gen-w1-20261003")
 KNOWN_SINGLE_AGENT_IDS.add("mat-gen-w1-20261003")
 KNOWN_SINGLE_AGENT_IDS.add("pol-density-gen-20261004")
 KNOWN_SINGLE_AGENT_IDS.add("his-gen-w1-20261004")
+# 2026-10-04 仲裁批 ×2（单代理=仲裁员；题目为生成×盲解分歧经第三方裁决后
+# 入库）：英语 arbitration_queue_en.json 252 题（K12-3-arb-eng）、数学
+# arbitration_queue_hs.json 16 题中 13 题入库（K12-3-arb-mat；1 题 both_wrong
+# 弃、2 题与收尾批撞 id 跳过）
+KNOWN_SINGLE_AGENT_IDS.add("eng-arb-step5-20261004")
+KNOWN_SINGLE_AGENT_IDS.add("math-arb-glm53-20261004")
+# 仲裁批申报 note 前缀（与盲解延期申报 DEFERRED_NOTE 并列的合法申报形态；
+# verdict 与 answer 替换情况逐题写在 note 内）
+ARB_NOTE_PREFIX = "arbitrated from arbitration_queue_"
 
 
 def _known_issue_ids(items):
@@ -119,12 +131,18 @@ def test_single_agent_known_issue_scope_closed(all_items):
     errs = validate_bank_v2(all_items)
     assert errs == [], f"schema v2 violations (unregistered single-agent or other): {errs[:10]}"
     by_id = {it["id"]: it for it in all_items}
+    # 合法申报形态两类：盲解延期（DEFERRED_NOTE）或仲裁批（ARB_NOTE_PREFIX
+    # 前缀，note 内逐题带 verdict/answer 替换申报）；两类都必须带 single_agent=true
+    def _declared_ok(rec):
+        note = rec.get("note")
+        return (note == DEFERRED_NOTE or
+                (isinstance(note, str) and note.startswith(ARB_NOTE_PREFIX)))
     undeclared = [iid for iid in known
-                  if by_id[iid].get("verification", {}).get("note") != DEFERRED_NOTE
+                  if not _declared_ok(by_id[iid].get("verification", {}))
                   or by_id[iid].get("verification", {}).get("single_agent") is not True]
     assert undeclared == [], (
-        f"单代理自验未逐题申报（note={DEFERRED_NOTE!r} + single_agent=true）: "
-        f"{undeclared[:10]}")
+        f"单代理自验未逐题申报（note={DEFERRED_NOTE!r} 或 {ARB_NOTE_PREFIX!r} 前缀"
+        f"+ single_agent=true）: {undeclared[:10]}")
     # fail-closed：single_agent 通道只属于登记批次，批次外出现标记即失败
     flagged_outside = [it["id"] for it in all_items
                        if (it.get("verification") or {}).get("single_agent")

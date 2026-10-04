@@ -4717,6 +4717,384 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_jr_0079",
+      "item_type": "fill",
+      "stem": "饼图常用于显示各部分占整体的______（百分比）。",
+      "answer": "比例",
+      "kps": [
+        "kp_eng8_red8_chart_interpret"
+      ],
+      "difficulty": 0.35,
+      "solution": "饼图用于表示各部分占总体的比例（百分比）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0081",
+      "item_type": "solve",
+      "stem": "阅读下面这则简短报刊文章（约 80 词）后回答：文章主要讲什么？\n\n'Last weekend, students from Sunshine Middle School visited the City Library. They read picture books and learned how to find books on the computer. Ms. Li, the librarian, said reading makes people think and grow.'",
+      "answer": "Students from Sunshine Middle School visited the City Library and learned about reading and library use.",
+      "kps": [
+        "kp_eng8_red8_novel_news"
+      ],
+      "difficulty": 0.45,
+      "solution": "通过5W归纳：Who (students from Sunshine Middle School), What (visited library, learned reading), When (last weekend), Where (City Library)。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0083",
+      "item_type": "solve",
+      "stem": "请正确、流利地朗读并讲述这个小故事：'Once a little rabbit wanted to cross a river. He saw a big turtle. The turtle said, \"I can help you.\" The rabbit jumped on the turtle's back. The turtle carried him across the river safely.'",
+      "answer": "Once a little rabbit wanted to cross a river. He saw a big turtle. The turtle said, 'I can help you.' The rabbit jumped on the turtle's back. The turtle carried him across the river safely.",
+      "kps": [
+        "kp_eng8_spk8_read_story"
+      ],
+      "difficulty": 0.45,
+      "solution": "朗读要点：意群停顿 (Once a little rabbit / wanted to cross a river.)；讲述要点按5W展开：who / what / where / how。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0086",
+      "item_type": "solve",
+      "stem": "请围绕 'My Favourite Hobby' 准备一段 1 分钟的英语主题演讲（含开头、要点、结尾）。",
+      "answer": "Good morning, everyone. My favourite hobby is reading. I read for about 30 minutes every day. Reading helps me learn new words and ideas. It also makes me think about the world. I hope you can find a hobby you love too. Thank you!",
+      "kps": [
+        "kp_eng8_spk8_speech"
+      ],
+      "difficulty": 0.5,
+      "solution": "演讲要素：问候开头→主题明确→要点 2-3 条→呼吁/总结→礼貌结尾。注意语音、停顿与重音。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0087",
+      "item_type": "solve",
+      "stem": "下面是一篇作文初稿，请按'主题—细节—结尾'结构在教师指导下修改并写出修改要点。\n\n初稿：'My weekend. I played. I watched TV. It was fun.'",
+      "answer": "建议：① 开头点明主题 'My weekend was full of fun.' ② 中间增加细节 (时间、地点、感受) ③ 结尾呼应主题，总结感受。\n改写：My weekend was full of fun. On Saturday morning, I played basketball with my friends in the park. In the afternoon, I watched an interesting movie at home. On Sunday, I helped my mother with housework. I really enjoyed my weekend.",
+      "kps": [
+        "kp_eng8_wri8_draft_revise"
+      ],
+      "difficulty": 0.5,
+      "solution": "起草和修改作文：检查主题是否明确、细节是否充分、结尾是否呼应；按'主题—细节—结尾'结构修改。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0100",
+      "item_type": "solve",
+      "stem": "请围绕'劳动精神与工匠精神'写一段 50-70 词的短文，谈谈你的理解。",
+      "answer": "Labour spirit means working hard and never giving up. A craftsman pays attention to every detail and tries to do his job better. We should respect every worker and learn from their spirit. As students, we should also be careful and patient with our studies.",
+      "kps": [
+        "kp_eng8_cul8_labor_values"
+      ],
+      "difficulty": 0.5,
+      "solution": "短文要点：解释劳动精神 + 工匠精神 + 结合学生身份谈做法，主题鲜明、逻辑清晰。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0104",
+      "item_type": "solve",
+      "stem": "面对英语学习中的挫折（如考试成绩不理想），请用 2-3 句话写出保持坚持的具体做法。",
+      "answer": "When I fail in English, I don't give up. I find out why I made mistakes and try to improve. I keep practising every day and believe I can do better next time.",
+      "kps": [
+        "kp_eng8_lsm8_persist_attitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "面对挫折的态度：分析原因 + 持续练习 + 自我鼓励；要点具体积极。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0105",
+      "item_type": "solve",
+      "stem": "请围绕 'Technology in Our Life' 写一段 50-70 词的短文，说明一种你熟悉的科技如何改变生活。",
+      "answer": "Smartphones have changed our life a lot. With a smartphone, we can talk with friends, read news and find directions easily. However, we should not spend too much time on it. Use technology in a smart way.",
+      "kps": [
+        "kp_eng8_thm8_science_tech"
+      ],
+      "difficulty": 0.5,
+      "solution": "主题为'科技与生活'，要点：科技带来的便利 + 适度使用的反思，体现思辨性。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0106",
+      "item_type": "solve",
+      "stem": "请围绕 'Chinese Culture I'm Proud of' 写一段 50-70 词的短文。",
+      "answer": "I am proud of Chinese culture. The Great Wall shows the wisdom of ancient people. Traditional festivals like the Spring Festival bring families together. I want to introduce our culture to the world.",
+      "kps": [
+        "kp_eng8_thm8_identity"
+      ],
+      "difficulty": 0.5,
+      "solution": "主题为'身份认同与文化自信'，要点：文化符号 + 个人感受 + 弘扬意愿，主题鲜明。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0179",
+      "item_type": "solve",
+      "stem": "请流利朗读下面这段故事并复述大意：'A clever crow was thirsty. She saw a jar with a little water. She put stones into the jar until the water rose up. Then she drank.'",
+      "answer": "A clever crow was thirsty. She saw a jar with a little water. She put stones into the jar until the water rose up. Then she drank.",
+      "kps": [
+        "kp_eng8_spk8_read_story"
+      ],
+      "difficulty": 0.55,
+      "solution": "复述要点：人物(clever crow)→问题(thirsty)→办法(stones)→结果(drank)。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0180",
+      "item_type": "solve",
+      "stem": "请准备一段约 1 分钟的英语演讲，主题：Why Reading Is Important。",
+      "answer": "Good afternoon, everyone. Reading is important for many reasons. First, reading helps us learn new ideas and words. Second, it makes us think more deeply. Third, reading brings us into different worlds. I hope everyone enjoys reading. Thank you!",
+      "kps": [
+        "kp_eng8_spk8_speech"
+      ],
+      "difficulty": 0.55,
+      "solution": "演讲要素：问候→主题→三点理由→总结→礼貌结尾。",
+      "source": "llm_generated",
+      "form": "oral_qa",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0181",
+      "item_type": "solve",
+      "stem": "下面这篇作文需要修改，请列出至少两条具体修改建议：\n\n初稿：'My hobby. I like play football. It is fun. I play it every day.'",
+      "answer": "修改建议：① 开头点明主题 'My hobby is playing football.' ② 用动名词 playing 而非 play ③ 增加细节（时间、地点、感受）。",
+      "kps": [
+        "kp_eng8_wri8_draft_revise"
+      ],
+      "difficulty": 0.55,
+      "solution": "修改要点：主题明确、语法正确、细节充分、结尾呼应。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0182",
+      "item_type": "fill",
+      "stem": "填空：横向结构指围绕同一主题从多个 ______ 展开，纵向结构指按 ______ 或逻辑层层推进。",
+      "answer": "方面/时间",
+      "kps": [
+        "kp_eng8_dis8_horiz_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "横向：同一主题的多个并列方面；纵向：时间或逻辑顺序推进。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0183",
+      "item_type": "fill",
+      "stem": "填空：在交际中照顾对方的身份与情感距离，需要注意礼貌用语、称谓与 ______。",
+      "answer": "语气",
+      "kps": [
+        "kp_eng8_prg8_relation_appropriate"
+      ],
+      "difficulty": 0.4,
+      "solution": "照顾身份与情感距离要注意称谓、礼貌用语与语气。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0185",
+      "item_type": "fill",
+      "stem": "填空：电影《阿凡达》中纳威人骑着斑溪兽飞翔的画面，其蕴含的主题之一是 ______ 与 ______。",
+      "answer": "自由/保护自然",
+      "kps": [
+        "kp_eng8_cul8_art_implication"
+      ],
+      "difficulty": 0.5,
+      "solution": "该画面蕴含自由与自然保护等主题。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0187",
+      "item_type": "fill",
+      "stem": "填空：'目标—监控—反思'中，'反思'指学习后对 ______ 和策略进行回顾总结。",
+      "answer": "过程",
+      "kps": [
+        "kp_eng8_lsm8_goal_monitoring"
+      ],
+      "difficulty": 0.4,
+      "solution": "反思指学习后对过程、策略与结果进行总结。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0188",
+      "item_type": "solve",
+      "stem": "请写出'现在完成时'的基本结构，并用一句英文举例。",
+      "answer": "Structure: have/has + past participle. Example: I have finished my homework.",
+      "kps": [
+        "kp_eng8_lsm8_grammar_pattern"
+      ],
+      "difficulty": 0.5,
+      "solution": "总结规律并在新情境中运用：现在完成时 have/has + 过去分词。",
+      "source": "llm_generated",
+      "form": "open_write",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_jr_0193",
+      "item_type": "solve",
+      "stem": "请用一句话概括下面短文的主旨大意：\n\n'Today, more and more people use shared bikes. They are cheap and good for the environment. However, some people leave them everywhere, which is a problem.'",
+      "answer": "共享单车既环保又便宜，但乱停放是亟待解决的问题。",
+      "kps": [
+        "kp_eng8_red8_main_idea_q"
+      ],
+      "difficulty": 0.5,
+      "solution": "主旨兼顾两方面：优点（环保、便宜） + 问题（乱停放），概括要平衡。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
     }
   ]
 }

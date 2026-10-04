@@ -4487,6 +4487,558 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0183",
+      "item_type": "choice",
+      "stem": "朗读 \"I love apples!\" 时，对哪个词重读最能表达喜爱？（　　）\nA. I  \nB. love  \nC. apples  \nD. 不需要重读",
+      "answer": "C",
+      "kps": [
+        "kp_eng5_pha5_stress_feeling"
+      ],
+      "difficulty": 0.35,
+      "solution": "重读 apples 表特别喜欢苹果。",
+      "source": "llm_generated",
+      "options": [
+        "A. I",
+        "B. love",
+        "C. apples",
+        "D. 不需要重读"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0184",
+      "item_type": "fill",
+      "stem": "朗读 \"I don't LIKE it.\" 时，重读 LIKE 表示 ____ 情感：____",
+      "answer": "不喜欢",
+      "kps": [
+        "kp_eng5_pha5_stress_feeling"
+      ],
+      "difficulty": 0.5,
+      "solution": "重读 LIKE 表不喜欢。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0186",
+      "item_type": "fill",
+      "stem": "在语境中猜词：\"She often helps me. She is helpful.\" helpful 的中文意思：____",
+      "answer": "有帮助的",
+      "kps": [
+        "kp_eng5_voc5_context_accumulate"
+      ],
+      "difficulty": 0.5,
+      "solution": "helpful = 有帮助的。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0188",
+      "item_type": "fill",
+      "stem": "补全固定搭配：have a look / take a ____ (拍照)",
+      "answer": "photo",
+      "kps": [
+        "kp_eng5_voc5_chunks"
+      ],
+      "difficulty": 0.5,
+      "solution": "take a photo 拍照。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0190",
+      "item_type": "fill",
+      "stem": "指出 \"There are 30 students in our class.\" 的真正主语：____",
+      "answer": "students",
+      "kps": [
+        "kp_eng5_gra5_sent_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "There be 结构中真正主语是 students。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0198",
+      "item_type": "fill",
+      "stem": "写出故事语篇结构的三个部分：开头、____、结局",
+      "answer": "经过",
+      "kps": [
+        "kp_eng5_dis5_story_frame"
+      ],
+      "difficulty": 0.5,
+      "solution": "故事结构：开头、经过、结局。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0200",
+      "item_type": "fill",
+      "stem": "说明文 \"How to make tea?\" 通常采用 ____ 顺序说明：____",
+      "answer": "时间",
+      "kps": [
+        "kp_eng5_dis5_exposition"
+      ],
+      "difficulty": 0.5,
+      "solution": "做茶步骤按时间顺序。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0210",
+      "item_type": "fill",
+      "stem": "\"The Tortoise and the ____\" 中空缺角色是 ____",
+      "answer": "Hare",
+      "kps": [
+        "kp_eng5_cul5_literature"
+      ],
+      "difficulty": 0.5,
+      "solution": "龟兔赛跑的另一位主角是 Hare（兔子）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0216",
+      "item_type": "fill",
+      "stem": "听指令并补全：\"____ your books to page ____.\"",
+      "answer": "Open, 12",
+      "kps": [
+        "kp_eng5_lis5_daily_command"
+      ],
+      "difficulty": 0.5,
+      "solution": "指令为 Open your books to page 12.。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0220",
+      "item_type": "fill",
+      "stem": "英语书封面通常包含 ____ 与作者名（写 1 个）：____",
+      "answer": "title",
+      "kps": [
+        "kp_eng5_vie5_multimodal"
+      ],
+      "difficulty": 0.5,
+      "solution": "书封面常含书名 title。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0222",
+      "item_type": "solve",
+      "stem": "听短文后复述大意（不少于 4 个英文词）：A boy helps his mum cook dinner. 然后复述：____",
+      "answer": "A boy helps his mum.",
+      "kps": [
+        "kp_eng5_spk5_retell"
+      ],
+      "difficulty": 0.35,
+      "solution": "复述可抓住人物和事件：A boy helps his mum.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0223",
+      "item_type": "solve",
+      "stem": "围绕 \"My hobby\" 主题说 2 句（不少于 8 个英文词）：____",
+      "answer": "My hobby is reading. I read every day.",
+      "kps": [
+        "kp_eng5_spk5_topic_talk"
+      ],
+      "difficulty": 0.35,
+      "solution": "围绕主题可谈喜好与频率。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0224",
+      "item_type": "solve",
+      "stem": "做简短主题演讲 \"My favourite season\" 至少 2 句（不少于 10 个英文词）：____",
+      "answer": "My favourite season is spring. It is warm and sunny. I can fly kites.",
+      "kps": [
+        "kp_eng5_spk5_speech_plus"
+      ],
+      "difficulty": 0.35,
+      "solution": "主题演讲可包含喜好与原因。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0225",
+      "item_type": "solve",
+      "stem": "看图：图中小朋友在公园里放风筝。用 2~3 句话描述图片（不少于 15 个英文词）：____",
+      "answer": "The boy is flying a kite in the park. The kite is colourful. He is very happy.",
+      "kps": [
+        "kp_eng5_wri5_pic_paragraph"
+      ],
+      "difficulty": 0.35,
+      "solution": "看图描述地点、动作、心情。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0226",
+      "item_type": "solve",
+      "stem": "写一篇日记记录今天最开心的事（不少于 3 句，不少于 15 个英文词），格式：日期 + 内容：____",
+      "answer": "Today I went to the zoo with my mum. I saw many cute animals. I had a very happy day.",
+      "kps": [
+        "kp_eng5_wri5_diary"
+      ],
+      "difficulty": 0.35,
+      "solution": "日记要素：日期、天气、事件、心情。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0227",
+      "item_type": "solve",
+      "stem": "写一段完整记叙文，主题 \"A happy day\" 至少 4 句（不少于 30 个英文词）：____",
+      "answer": "Today was Sunday. I went to the park with my family in the morning. We flew kites and had a picnic under a big tree. In the afternoon we took many photos. I was tired but very happy. It was really a happy day.",
+      "kps": [
+        "kp_eng5_wri5_narration"
+      ],
+      "difficulty": 0.35,
+      "solution": "记叙文四要素：时间、地点、人物、事件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0228",
+      "item_type": "solve",
+      "stem": "写出 1 条复习策略（不少于 5 个英文词）：____",
+      "answer": "I review English words every week.",
+      "kps": [
+        "kp_eng5_lsm5_preview_review"
+      ],
+      "difficulty": 0.35,
+      "solution": "复习策略示例：每周复习单词。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0229",
+      "item_type": "solve",
+      "stem": "你会用 \"would like\" 来表达\"想要\"，现在学新短语 \"feel like\"。请写 1 句用 \"feel like\" 表\"想要\"的句子（不少于 4 个英文词）：____",
+      "answer": "I feel like juice.",
+      "kps": [
+        "kp_eng5_lsm5_cog_old_experience"
+      ],
+      "difficulty": 0.35,
+      "solution": "feel like + 名词 表\"想要\"。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0230",
+      "item_type": "solve",
+      "stem": "听到外教一边说 \"great\" 一边竖大拇指。你应理解的非语言含义是 ____：____",
+      "answer": "赞扬",
+      "kps": [
+        "kp_eng5_lsm5_com_nonverbal"
+      ],
+      "difficulty": 0.35,
+      "solution": "竖大拇指 + great 表示赞扬。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0232",
+      "item_type": "solve",
+      "stem": "写出你的英语课后复习策略（不少于 5 个英文词）：____",
+      "answer": "I review new words every week.",
+      "kps": [
+        "kp_eng5_lsm5_preview_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "复习策略示例。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0235",
+      "item_type": "solve",
+      "stem": "面对英语学习困难，写出 1 个保持自信的方法（不少于 4 个英文词）：____",
+      "answer": "I try my best every day.",
+      "kps": [
+        "kp_eng5_lsm5_emo_positive"
+      ],
+      "difficulty": 0.5,
+      "solution": "保持自信的方法如每天都努力尝试。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0237",
+      "item_type": "solve",
+      "stem": "听短文：\"Today is Lily's birthday. Her friends come to her party. They sing a song together.\" 复述大意（不少于 4 个英文词）：____",
+      "answer": "Lily has a birthday party.",
+      "kps": [
+        "kp_eng5_spk5_retell"
+      ],
+      "difficulty": 0.5,
+      "solution": "复述抓住人物和事件。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0239",
+      "item_type": "solve",
+      "stem": "做主题演讲 \"My family\" 至少 2 句（不少于 10 个英文词）：____",
+      "answer": "There are three people in my family. They are my father, my mother and me. I love my family very much.",
+      "kps": [
+        "kp_eng5_spk5_speech_plus"
+      ],
+      "difficulty": 0.5,
+      "solution": "主题演讲可介绍家庭成员和感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0240",
+      "item_type": "solve",
+      "stem": "看图：图中小朋友在海边堆沙堡。再多写 2 句描述图中的细节（不少于 12 个英文词）：____",
+      "answer": "The children are making a big sandcastle. The sea is blue. They are playing happily together.",
+      "kps": [
+        "kp_eng5_wri5_pic_paragraph"
+      ],
+      "difficulty": 0.5,
+      "solution": "可补充景物、人物感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0241",
+      "item_type": "solve",
+      "stem": "再写一段日记续写：今天我和家人去公园做了什么？至少 2 句（不少于 10 个英文词）：____",
+      "answer": "This morning I went to the park with my family. We flew kites and took many photos there.",
+      "kps": [
+        "kp_eng5_wri5_diary"
+      ],
+      "difficulty": 0.5,
+      "solution": "日记续写可谈活动与感受。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0242",
+      "item_type": "solve",
+      "stem": "再写一段记叙文续写：A happy day 的中间发生了什么？至少 2 句（不少于 15 个英文词）：____",
+      "answer": "In the morning we went to the park by bus. We played games and had a picnic under a big tree. Everyone was very happy.",
+      "kps": [
+        "kp_eng5_wri5_narration"
+      ],
+      "difficulty": 0.5,
+      "solution": "记叙文续写可补充经过细节。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
     }
   ]
 }

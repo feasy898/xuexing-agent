@@ -5247,6 +5247,447 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_en_prim_0054",
+      "item_type": "fill",
+      "stem": "写出字母 \"b\" 的大写形式和字母 \"G\" 的小写形式：大写 b = ____；小写 G = ____",
+      "answer": "B, g",
+      "kps": [
+        "kp_eng3_pha3_26letters"
+      ],
+      "difficulty": 0.45,
+      "solution": "b 的大写是 B，G 的小写是 g。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0056",
+      "item_type": "fill",
+      "stem": "听单词 \"apple\" 的标准读音，写出这个单词有几个音节：____",
+      "answer": "2",
+      "kps": [
+        "kp_eng3_pha3_word_stress"
+      ],
+      "difficulty": 0.45,
+      "solution": "apple 拆为 ap-ple 共 2 个音节。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0074",
+      "item_type": "fill",
+      "stem": "下列语篇属于哪种类型？\"Notice: Sports Day is on Friday.\" ____",
+      "answer": "Notice",
+      "kps": [
+        "kp_eng3_dis3_types_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "该语篇为通知（Notice）。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0086",
+      "item_type": "fill",
+      "stem": "听短对话：A: Where are you from? B: I'm from ____ (Beijing/Shanghai). 请写出城市英文：____",
+      "answer": "Beijing",
+      "kps": [
+        "kp_eng3_lis3_detail"
+      ],
+      "difficulty": 0.45,
+      "solution": "句中应为 Beijing（北京）。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0087",
+      "item_type": "solve",
+      "stem": "你周一到周五每天看 6 分钟英语动画，周末不看。一周总视听时长是多少分钟？是否达到一级\"每周 30 分钟\"要求？请简要回答：____",
+      "answer": "30 分钟，刚好达标。",
+      "kps": [
+        "kp_eng3_lis3_weekly_"
+      ],
+      "difficulty": 0.3,
+      "solution": "5×6 = 30 分钟，达到一级要求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0089",
+      "item_type": "fill",
+      "stem": "阅读标题 \"My New Friend\"，预测文中会介绍 ____（写出 1 个相关词）：____",
+      "answer": "friend",
+      "kps": [
+        "kp_eng3_red3_predict"
+      ],
+      "difficulty": 0.45,
+      "solution": "文章主题是新朋友，会介绍朋友的特征。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0091",
+      "item_type": "fill",
+      "stem": "阅读短文，回答问题 \"How old is she?\"：\"She is ____.\"",
+      "answer": "nine",
+      "kps": [
+        "kp_eng3_red3_intro_text"
+      ],
+      "difficulty": 0.45,
+      "solution": "短文说 I'm nine，所以九岁。",
+      "source": "llm_generated",
+      "form": "reading",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0095",
+      "item_type": "fill",
+      "stem": "补全对话：A: Hi, I'm Tom. ____ (B 回应并问候)",
+      "answer": "Hi, I'm Lily.",
+      "kps": [
+        "kp_eng3_spk3_greet_farewell"
+      ],
+      "difficulty": 0.3,
+      "solution": "B 应回应问候并自我介绍。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0098",
+      "item_type": "fill",
+      "stem": "朗读短句 \"Hello, I'm Lily.\" 时，\"Lily\" 的语调应使用 ____ 调：____",
+      "answer": "降",
+      "kps": [
+        "kp_eng3_spk3_read_aloud"
+      ],
+      "difficulty": 0.45,
+      "solution": "句末用降调。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0099",
+      "item_type": "solve",
+      "stem": "用英语写一句话介绍自己早上起床时间，不少于 4 个词：____",
+      "answer": "I get up at seven.",
+      "kps": [
+        "kp_eng3_spk3_daily_life"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍作息可用 I get up at ….",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0100",
+      "item_type": "fill",
+      "stem": "补全句子描述三餐：I have ____ and milk for breakfast.",
+      "answer": "bread",
+      "kps": [
+        "kp_eng3_spk3_daily_life"
+      ],
+      "difficulty": 0.45,
+      "solution": "早餐常见搭配 bread and milk。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0101",
+      "item_type": "fill",
+      "stem": "改正下列单词的大小写错误：\"london\" → ____；\"CHINA\" → ____",
+      "answer": "London, China",
+      "kps": [
+        "kp_eng3_wri3_letters_words"
+      ],
+      "difficulty": 0.3,
+      "solution": "专有名词首字母大写：London / China。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0102",
+      "item_type": "fill",
+      "stem": "句末标点填空：\"How are you ____?\"",
+      "answer": "?",
+      "kps": [
+        "kp_eng3_wri3_letters_words"
+      ],
+      "difficulty": 0.45,
+      "solution": "疑问句末用问号。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0103",
+      "item_type": "solve",
+      "stem": "仿照例句 \"I like red apples.\" 写出 1 个含 like 的句子，不少于 4 个词：____",
+      "answer": "I like blue pens.",
+      "kps": [
+        "kp_eng3_wri3_imitation"
+      ],
+      "difficulty": 0.3,
+      "solution": "仿写可换主语、宾语和颜色，如 I like blue pens.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0104",
+      "item_type": "solve",
+      "stem": "写一张生日贺卡至少 2 句（不少于 10 个英文词），格式：称呼 + 祝贺 + 署名：____",
+      "answer": "Dear Tom, happy birthday to you! Best wishes from Lily.",
+      "kps": [
+        "kp_eng3_wri3_card_letter"
+      ],
+      "difficulty": 0.3,
+      "solution": "生日贺卡基本格式：Happy birthday + 称呼 + 署名。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0105",
+      "item_type": "fill",
+      "stem": "补全邀请卡：\"You are ____ to my party!\"（邀请）",
+      "answer": "welcome",
+      "kps": [
+        "kp_eng3_wri3_card_letter"
+      ],
+      "difficulty": 0.45,
+      "solution": "常用句型 You are welcome to ….",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0106",
+      "item_type": "solve",
+      "stem": "教师让你制订一个简单的英语学习计划。请写出 1 条计划内容（不少于 5 个英文词）：____",
+      "answer": "I read English for 10 minutes every day.",
+      "kps": [
+        "kp_eng3_lsm3_meta_plan"
+      ],
+      "difficulty": 0.3,
+      "solution": "计划示例：每天读英语 10 分钟。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0108",
+      "item_type": "solve",
+      "stem": "已学 apple（一种水果），新学 banana。请用英语写 1 句话把新旧词联系起来（不少于 4 个词）：____",
+      "answer": "Apple and banana are fruit.",
+      "kps": [
+        "kp_eng3_lsm3_cog_old_new"
+      ],
+      "difficulty": 0.3,
+      "solution": "把两个旧词用 and 联系起来并归类 fruit。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0110",
+      "item_type": "fill",
+      "stem": "补全对话：A: I can't follow you. B: ____ ? (请对方说慢一些)",
+      "answer": "Could you speak slowly, please?",
+      "kps": [
+        "kp_eng3_lsm3_com_slow_repeat"
+      ],
+      "difficulty": 0.3,
+      "solution": "礼貌请求放慢：Could you speak slowly, please?",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0112",
+      "item_type": "solve",
+      "stem": "你喜欢参加哪类英语活动能让你保持学习兴趣（写 1 个活动，不少于 3 个英文词）：____",
+      "answer": "English songs and games.",
+      "kps": [
+        "kp_eng3_lsm3_emo_interest"
+      ],
+      "difficulty": 0.3,
+      "solution": "保持兴趣的活动如唱歌、游戏、表演等。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0116",
+      "item_type": "solve",
+      "stem": "仿照例句 \"I can swim.\" 写出 1 个含 can 的仿写句（不少于 4 个英文词）：____",
+      "answer": "I can play basketball very well.",
+      "kps": [
+        "kp_eng3_wri3_imitation"
+      ],
+      "difficulty": 0.45,
+      "solution": "仿写 can + 动词原形 即可。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
     }
   ]
 }

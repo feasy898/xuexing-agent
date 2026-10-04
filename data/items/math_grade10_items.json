@@ -2674,6 +2674,33 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "h_10b_042",
+      "item_type": "choice",
+      "stem": "已知 sin α − cos α = 1/5，则 sin 2α = （　）",
+      "answer": "C",
+      "kps": [
+        "kp_h10_sum_diff_formulas"
+      ],
+      "difficulty": 0.7,
+      "solution": "(sin α − cos α)² = 1 − 2 sin α cos α = 1/25，所以 sin 2α = 2 sin α cos α = 1 − 1/25 = 24/25。",
+      "source": "llm_generated",
+      "options": [
+        "A. 7/25",
+        "B. 12/25",
+        "C. 24/25",
+        "D. 7/24"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "math-arb-glm53-20261004"
+        ],
+        "single_agent": true,
+        "answers_agree": true,
+        "note": "arbitrated from arbitration_queue_hs.json; verdict=key_ok"
+      }
     }
   ]
 }
