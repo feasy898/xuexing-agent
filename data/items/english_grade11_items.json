@@ -2109,6 +2109,2649 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "eng_dens03_0001",
+      "item_type": "solve",
+      "stem": "【概要写作】阅读下面短文，用约 60 词写一篇内容概要，不加入个人评论。\nWalking is one of the simplest forms of exercise, and doctors increasingly recommend it. Studies show that a thirty-minute walk five times a week strengthens the heart, helps control weight and improves sleep. Unlike gym training, walking needs no equipment and carries little risk of injury. However, experts point out that pace matters: a brisk walk brings far greater benefits than a slow stroll. Therefore, health advisers suggest building walking into daily routines, such as getting off the bus one stop early.",
+      "answer": "参考概要（约 62 词）：Doctors increasingly recommend walking as simple, safe exercise. Research shows that regular thirty-minute brisk walks improve the heart, weight control and sleep. Unlike gym training, walking costs nothing and seldom causes injury. Since pace determines the benefit, experts advise making brisk walking part of everyday life, for example by walking part of the journey to work.",
+      "kps": [
+        "kp_eng11_wri11_summary_writing"
+      ],
+      "difficulty": 0.65,
+      "solution": "概述按“对象与主张—依据与益处—条件与建议”三步压缩：保留 doctors recommend、研究结论、与健身房训练的对比、pace 条件与日常化建议，删去具体例子。",
+      "source": "llm_generated",
+      "form": "概要写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0001",
+      "item_type": "choice",
+      "stem": "【语音·表意重音】朗读句子 \"I didn't say you STOLE my wallet.\"（STOLE 重读）时，重读 STOLE 最可能表达什么言外之意？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_pha11_coherent_clear"
+      ],
+      "difficulty": 0.55,
+      "solution": "句子重音落在 STOLE 上时，说话者否定的焦点是\"偷\"这一动作定性，言外之意是\"你可能拿了，但那不算偷\"；这是用重音表达态度与言外之意的典型例子，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表示钱包肯定是被偷走的",
+        "B. 强调钱包非常贵重",
+        "C. 否认\"偷\"这一定性本身，暗示对方可能只是拿走或借用了钱包",
+        "D. 表示说话者当时非常生气"
+      ],
+      "form": "phonetics_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0002",
+      "item_type": "fill",
+      "stem": "【语音·意群断句】朗读长句时按意群适当停顿可使表达更连贯清晰。请用\"/\"标出下面句子合理的停顿位置（至少三处）：\nAlthough it was raining heavily, the football match, which had been planned for months, still went ahead as scheduled.",
+      "answer": "Although it was raining heavily, / the football match, / which had been planned for months, / still went ahead / as scheduled.",
+      "kps": [
+        "kp_eng11_pha11_coherent_clear"
+      ],
+      "difficulty": 0.5,
+      "solution": "按句子成分划分意群：让步状语从句、主语、非限制性定语从句、谓语部分、方式状语各为一个意群；在意群边界稍作停顿，既能自然换气，又能让听者跟上信息层次，表达更连贯清晰。",
+      "source": "llm_generated",
+      "form": "phonetics_fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0003",
+      "item_type": "choice",
+      "stem": "【语音·连贯表达】在课堂上用英语做口头汇报时，下列做法中最能帮助你\"比较连贯、清晰地表达意义、意图和态度\"的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_pha11_coherent_clear"
+      ],
+      "difficulty": 0.4,
+      "solution": "连贯清晰的表达依靠\"重音突出关键词＋意群断句＋平稳节奏\"三件套：快语速和逐词重读都会淹没信息焦点，音量大小与清晰度没有必然联系，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 语速越快越好，中途从不停顿",
+        "B. 在意群边界适当停顿，重读承载关键信息的词，保持平稳节奏",
+        "C. 把每个单词都用力重读",
+        "D. 声音越大越清晰"
+      ],
+      "form": "phonetics_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0004",
+      "item_type": "choice",
+      "stem": "【词汇·语境中的态度】阅读句子：\"The government's 'bold' reform left thousands of small shops struggling to survive.\" 结合语境判断，bold 在此主要传达了作者怎样的态度？",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_voc11_context_meaning"
+      ],
+      "difficulty": 0.6,
+      "solution": "bold 加引号本身暗示反讽，再加上结果 thousands of small shops struggling to survive（大量小店艰难求生）表明改革带来负面后果，bold 的本义\"大胆\"在此语境中反转为贬义\"冒进\"，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 赞赏改革果断有力",
+        "B. 中性地描述改革规模",
+        "C. 惋惜改革来得太晚",
+        "D. 带批评意味的\"冒进、激进\""
+      ],
+      "form": "vocab_context_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0005",
+      "item_type": "choice",
+      "stem": "【词汇·内涵与外延】\"Kevin is thrifty — he never wastes a penny, while his brother is simply stingy: he wouldn't even lend his mother a coin.\" 关于 thrifty 与 stingy 的辨析，下列说法正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_voc11_context_meaning"
+      ],
+      "difficulty": 0.5,
+      "solution": "两词的外延都涉及\"不舍得花钱\"，但内涵不同：thrifty 把节俭评价为美德，stingy 指责人吝啬；语境（never wastes a penny vs wouldn't even lend his mother a coin）进一步凸显了这一褒贬差异，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. thrifty 是褒义（节俭），stingy 是贬义（吝啬），感情色彩由语境进一步凸显",
+        "B. 两者都是褒义词",
+        "C. 两者都是贬义词",
+        "D. 两词语义完全相同，可以任意互换"
+      ],
+      "form": "vocab_context_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0006",
+      "item_type": "fill",
+      "stem": "【词汇·词义的感情色彩】阅读句子并回答：\"My grandfather is a stubborn old man — he refused to use a smartphone for years. Yet it is this same stubbornness that has kept our family paper-cutting craft alive for sixty years.\"\n结合上下文，写出 stubbornness 的感情色彩在语篇中发生了怎样的变化：____",
+      "answer": "由贬义（固执、不肯变通）转为褒义（坚持、坚守）；语境使这个词带上敬佩赞赏的感情色彩。",
+      "kps": [
+        "kp_eng11_voc11_context_meaning"
+      ],
+      "difficulty": 0.65,
+      "solution": "前文 stubborn 与 refused to use a smartphone 构成\"守旧\"的贬义语境；Yet 转折后，正是这种\"固执\"让家族剪纸手艺传承六十年，词义色彩升华为\"执着坚守\"。这体现了词义的内涵与态度随语境而变化。",
+      "source": "llm_generated",
+      "form": "vocab_context_fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0007",
+      "item_type": "solve",
+      "stem": "【词汇·主题梳理】围绕\"环境保护（environmental protection）\"主题，把下列词语整理到相应类别中（写序号即可）：\n① recycle  ② smog  ③ ban single-use plastics  ④ endangered species  ⑤ plant trees  ⑥ restore wetlands  ⑦ cleaner air  ⑧ pollution\n分类框架：Problems（问题）/ Solutions（解决办法）/ Results（成效）",
+      "answer": "Problems（问题）：② smog、⑧ pollution、④ endangered species；Solutions（办法）：① recycle、③ ban single-use plastics、⑤ plant trees、⑥ restore wetlands；Results（成效）：⑦ cleaner air。",
+      "kps": [
+        "kp_eng11_voc11_theme_sort"
+      ],
+      "difficulty": 0.55,
+      "solution": "按主题梳理词语时先按语义角色分类：表负面现状的归\"问题\"，表治理行动的归\"办法\"，表改善结果的归\"成效\"；三类词网一搭好，既方便记忆，也方便在环保话题写作中按\"问题—办法—成效\"的顺序调用。",
+      "source": "llm_generated",
+      "form": "theme_sorting",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0008",
+      "item_type": "choice",
+      "stem": "【词汇·主题词群】下列哪一组词属于同一主题词群（都与\"环境保护\"相关）？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_voc11_theme_sort"
+      ],
+      "difficulty": 0.4,
+      "solution": "carbon footprint（碳足迹）、sustainable（可持续的）、renewable（可再生的）同属环保主题词群；A 组属购物消费，B 组属交通出行，D 组属写作学习，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. invoice, discount, bargain",
+        "B. fare, pedestrian, subway",
+        "C. carbon footprint, sustainable, renewable",
+        "D. essay, outline, draft"
+      ],
+      "form": "theme_sorting",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0009",
+      "item_type": "fill",
+      "stem": "【词汇·主题归类】以\"campus life（校园生活）\"为主题梳理词块时，下列词中有一个不合群，请写出这个词并说明理由：\ncanteen, elective, dormitory, curriculum, invoice",
+      "answer": "invoice（发票）；其余词 canteen（食堂）、elective（选修课）、dormitory（宿舍）、curriculum（课程）均属校园生活主题，invoice 属购物消费主题，与校园生活无关。",
+      "kps": [
+        "kp_eng11_voc11_theme_sort"
+      ],
+      "difficulty": 0.45,
+      "solution": "主题归类要求词语与主题的语义一致：invoice 是购物消费场景词，混入校园主题词群即\"不合群\"；剔除后其余四词可继续按\"食—宿—课程\"细分，形成可用的主题词网。",
+      "source": "llm_generated",
+      "form": "theme_sorting",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0010",
+      "item_type": "choice",
+      "stem": "【词汇·习惯搭配】To keep fit, you should ___ a habit of running for twenty minutes every morning.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_voc11_collocations"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"make a habit of doing sth.\"（养成做某事的习惯）是动名固定搭配，do / take / hold 均不能与 a habit of 搭配，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. do",
+        "B. make",
+        "C. take",
+        "D. hold"
+      ],
+      "form": "collocation_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0011",
+      "item_type": "fill",
+      "stem": "【词汇·习惯搭配】用 make 的适当形式补全句子，使动名搭配地道自然：\n\"Volunteering at the community centre every weekend really ___ a difference to the elderly there.\"",
+      "answer": "makes",
+      "kps": [
+        "kp_eng11_voc11_collocations"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"make a difference（产生影响）\"是固定动名搭配；主语是动名词短语 Volunteering...，视为单数，一般现在时第三人称单数用 makes。",
+      "source": "llm_generated",
+      "form": "collocation_fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0012",
+      "item_type": "choice",
+      "stem": "【词汇·习惯搭配】下列选项中，动词与名词搭配全部正确的一项是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_voc11_collocations"
+      ],
+      "difficulty": 0.55,
+      "solution": "英语习惯搭配中 make progress（取得进步）、give/deliver a speech（做演讲）、do harm to（伤害）均为地道搭配；A、B、C 分别误用了 take progress、make harm、take a speech 等不合习惯的组合，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. take progress / make a speech / do harm to",
+        "B. make progress / give a speech / make harm to",
+        "C. make progress / take a speech / give harm to",
+        "D. make progress / give a speech / do harm to"
+      ],
+      "form": "collocation_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0013",
+      "item_type": "choice",
+      "stem": "【词汇·课标核心词】选择与句中划线词意义最接近的解释：\n\"Thousands of commuters were delayed because of the signal failure.\"\ncommuters 指的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_voc11_3000_"
+      ],
+      "difficulty": 0.45,
+      "solution": "commuter 意为\"通勤者\"，由 commute（经常往返于家与工作地之间）派生；结合 delayed 与 signal failure 的交通语境可确认词义，该词属选择性必修阶段应掌握的核心词汇，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. people who travel regularly between home and work",
+        "B. people who repair trains and signals",
+        "C. people who sell tickets at the station",
+        "D. people who live near the station"
+      ],
+      "form": "vocab_3000_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0014",
+      "item_type": "fill",
+      "stem": "【词汇·课标核心词】根据中文提示写出句中所缺的单词（首字母已给出）：\nThe scientist's prediction was finally c____（证实）by three independent experiments.",
+      "answer": "confirmed",
+      "kps": [
+        "kp_eng11_voc11_3000_"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"be confirmed by...\"（被……证实）是课标核心词 confirm 的典型用法；首字母 c 与中文\"证实\"共同指向 confirm，was 后用过去分词构成被动语态。",
+      "source": "llm_generated",
+      "form": "vocab_3000_fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0015",
+      "item_type": "solve",
+      "stem": "【词汇·核心词运用】写出下列句中划线单词的中文意思，并各配一个含该词的短语或例句：\n(1) The committee's decision was unanimous.\n(2) She owed her success to years of perseverance.",
+      "answer": "(1) unanimous：全体一致的、无异议的；短语：a unanimous vote（一致通过的表决）。\n(2) perseverance：毅力、坚持不懈；例句：Perseverance is the key to mastering a foreign language.",
+      "kps": [
+        "kp_eng11_voc11_3000_"
+      ],
+      "difficulty": 0.6,
+      "solution": "两词均为选择性必修阶段（累计 3000—3200 词）应掌握的核心词：先确认词义，再各积累一个典型搭配（unanimous decision/vote；show perseverance），才能在听读中认出、在说写中用出。",
+      "source": "llm_generated",
+      "form": "vocab_use",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0016",
+      "item_type": "choice",
+      "stem": "【词汇·构词法】下列各词都由加否定前缀构成，其中前缀意义为\"否定\"且拼写全部正确的一组是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_voc11_word_family"
+      ],
+      "difficulty": 0.5,
+      "solution": "否定前缀的选择与词根的词形（词首字母发音）有关：un-+happy、im-+possible（p 前用 im-）、il-+legal（l 前用 il-）均为规则构词；*unpossible、*unlegal、*inpossible、*illegular 都是不存在的错误拼合，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. unhappy, unpossible, illegal",
+        "B. unhappy, impossible, unlegal",
+        "C. unhappy, impossible, illegal",
+        "D. unhappy, inpossible, illegular"
+      ],
+      "form": "word_formation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0017",
+      "item_type": "fill",
+      "stem": "【词汇·构词法】用 astonish 的适当派生形式填空：\nTo everyone's ___, the quiet girl who never spoke in class won first prize in the debate contest.",
+      "answer": "astonishment",
+      "kps": [
+        "kp_eng11_voc11_word_family"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"to one's + 情感名词\"是固定句型，表示\"令某人……的是\"；astonish 加名词后缀 -ment 构成 astonishment，填入后句意为\"令大家惊讶的是\"。",
+      "source": "llm_generated",
+      "form": "word_formation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0018",
+      "item_type": "solve",
+      "stem": "【词汇·构词法】运用构词法知识完成词族图：以 vary 为词根，写出 (1) 名词（\"变化；种类\"）____；(2) 再由该名词加后缀构成的形容词（\"各种各样的\"）____；并各配一个短语。",
+      "answer": "(1) variety（名词）：a variety of choices（各种各样的选择）；(2) various（形容词）：for various reasons（出于种种原因）。",
+      "kps": [
+        "kp_eng11_voc11_word_family"
+      ],
+      "difficulty": 0.55,
+      "solution": "vary 去 y 变 i 加 -ety 构成名词 variety，再加 -ous 构成形容词 various；按词族成串记忆（vary—variety—various），一次扩一串词，是运用构词法扩大词汇量的典型方法。",
+      "source": "llm_generated",
+      "form": "word_family",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0019",
+      "item_type": "choice",
+      "stem": "【词汇·近义辨析】Police are ___ the cause of the accident, but it may take weeks to reach a conclusion.",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_voc11_synonym_antonym"
+      ],
+      "difficulty": 0.5,
+      "solution": "句意为\"警方正在调查事故原因\"：look into 意为\"调查、研究\"；look after（照顾）、look up（查阅；抬头看）、look out（当心）虽形近，语义均不合句意，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. looking after",
+        "B. looking into",
+        "C. looking up",
+        "D. looking out"
+      ],
+      "form": "synonym_antonym",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0020",
+      "item_type": "choice",
+      "stem": "【词汇·反义词】下列各组词中，属于反义关系的一组是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_voc11_synonym_antonym"
+      ],
+      "difficulty": 0.4,
+      "solution": "temporary（暂时的）与 permanent（永久的）语义相对，构成反义关系；A、B、C 三组词义相近或语义关联（慷慨—富有、好奇—感兴趣、古老—有历史意义的），均非反义，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. generous — wealthy",
+        "B. curious — interested",
+        "C. ancient — historic",
+        "D. temporary — permanent"
+      ],
+      "form": "synonym_antonym",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0021",
+      "item_type": "fill",
+      "stem": "【词汇·近义辨析】从 receive 和 accept 中选择适当形式完成句子：\nKate ___ an invitation to the party, but she didn't ___ it because she had an exam the next day.",
+      "answer": "received; accept",
+      "kps": [
+        "kp_eng11_voc11_synonym_antonym"
+      ],
+      "difficulty": 0.5,
+      "solution": "近义词辨析要点：receive 强调客观\"收到\"，accept 强调主观\"接受\"；\"收到邀请\"是客观事实，因考试而未\"接受\"，故分别填 received 与 accept。",
+      "source": "llm_generated",
+      "form": "synonym_antonym",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0022",
+      "item_type": "choice",
+      "stem": "【语用·正式程度】你代表班级向校长写申请信，希望成立科学社团。下列哪种表达最符合正式场合的语体要求？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_prg11_formality_degree"
+      ],
+      "difficulty": 0.45,
+      "solution": "正式申请信要求：完整句式＋正式开头（I am writing to apply for...）＋正确称呼；B 用口语缩略 wanna 与感叹语气，C 用俚语称呼和随意句式，D 用祈使句直呼其姓，均与正式场合的语体不符，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. Dear Mr Chen, I am writing to apply for permission to set up a Science Club at our school.",
+        "B. Hi! I really wanna start a science club. It'll be cool!",
+        "C. Yo Mr Chen, let me run the club, OK?",
+        "D. Chen, give us a science club, please."
+      ],
+      "form": "pragmatics_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0023",
+      "item_type": "choice",
+      "stem": "【语用·语体选择】同是请求开窗，\"Excuse me, would you mind if I opened the window?\" 与 \"Open the window, will you?\" 相比，前者更适合用在：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_prg11_formality_degree"
+      ],
+      "difficulty": 0.5,
+      "solution": "前句使用 Excuse me、would you mind 与虚拟语气，委婉正式，适合与陌生人交际；后句是熟人之间的随意祈使；对弟弟、好友、自己都无需如此正式，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对自己年幼的弟弟",
+        "B. 对同宿舍的好友",
+        "C. 对火车上不认识的乘客",
+        "D. 对着空房间自言自语"
+      ],
+      "form": "pragmatics_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0024",
+      "item_type": "solve",
+      "stem": "【语用·语言形式改写】把下面的非正式请求改写成适合正式工作场合的英语，并说明你做了哪两处调整：\n\"Get me that sales report by Friday, will you?\"",
+      "answer": "改写示例：Could you please send me the sales report by Friday?（或 I would appreciate it if you could send me the sales report by Friday.）\n调整说明：①把祈使句改为带 could/would 的委婉疑问句，消除命令口吻；②补充 please / I would appreciate it 等礼貌标记，提高语体的正式程度。",
+      "kps": [
+        "kp_eng11_prg11_formality_degree"
+      ],
+      "difficulty": 0.6,
+      "solution": "场合正式程度提高时，语言形式需从\"直接\"转向\"委婉\"：用情态动词疑问句替代祈使句、添加礼貌标记语，是英语中实现正式委婉的主要手段；will you? 附在祈使句后只用于熟人之间。",
+      "source": "llm_generated",
+      "form": "register_rewrite",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0025",
+      "item_type": "choice",
+      "stem": "【阅读·观点与事实】下列句子中，属于\"事实（fact）\"的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_red11_claim_fact"
+      ],
+      "difficulty": 0.4,
+      "solution": "区分标准是\"能否验证\"：B 是可核实的客观数据（可通过馆藏统计验证），属事实；A、C、D 分别含 better / should / more enjoyable 等主观判断词，属观点，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Electric cars are much better than petrol cars.",
+        "B. The school library holds about 60,000 books.",
+        "C. Everyone should do more exercise.",
+        "D. Paper books are more enjoyable than e-books."
+      ],
+      "form": "claim_fact",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0026",
+      "item_type": "solve",
+      "stem": "【阅读·观点与事实概括】读下面的议论片段并回答：\n\"A recent survey shows that 73% of the students in our school sleep less than eight hours a night. Therefore, the school should delay the start of morning classes by half an hour.\"\n(1) 第一句是事实还是观点？为什么？\n(2) 第二句是事实还是观点？请用一句话概括作者的主张。",
+      "answer": "(1) 第一句是事实：它报告了调查得到的具体数据（73%、八小时），可以通过核查调查核实。\n(2) 第二句是观点（建议）：should delay 表达作者的主张；概括：作者认为学校应把早晨上课时间推迟半小时。",
+      "kps": [
+        "kp_eng11_red11_claim_fact"
+      ],
+      "difficulty": 0.55,
+      "solution": "事实是可验证的客观信息（调查数据），观点是含 should / must 等情态词或评价性形容词的主张；阅读议论语篇时应把事实当论据、观点当论点，梳理论证结构。",
+      "source": "llm_generated",
+      "form": "claim_fact",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0027",
+      "item_type": "choice",
+      "stem": "【阅读·论证结构】\"Sea levels rose by about 20 cm over the past century. This proves that climate change has become an urgent crisis.\" 第二句在语篇中的功能是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_red11_claim_fact"
+      ],
+      "difficulty": 0.6,
+      "solution": "\"This proves that...\" 是作者在数据（20 cm，事实）之上作出的解释与评价；urgent crisis 含主观判断，属观点而非新事实；第一句的事实在此充当论据，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 陈述一个可验证的新事实",
+        "B. 给\"气候危机\"下定义",
+        "C. 举一个具体例子",
+        "D. 基于事实数据得出的作者观点（结论）"
+      ],
+      "form": "claim_fact",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0028",
+      "item_type": "choice",
+      "stem": "【阅读·组织顺序】\"Silkworm eggs hatch in early spring. About two weeks later, the larvae begin to spin cocoons. Eventually, moths emerge and the cycle starts again.\" 段落中的 in early spring / two weeks later / eventually 等信号词表明该段主要按什么顺序组织？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_red11_order"
+      ],
+      "difficulty": 0.4,
+      "solution": "段落以时间推移（早春孵化→两周后结茧→最终羽化）串联昆虫的生命阶段，信号词均为时间标记，属时间顺序，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时间顺序",
+        "B. 空间顺序",
+        "C. 对比顺序",
+        "D. 因果顺序"
+      ],
+      "form": "text_order",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0029",
+      "item_type": "choice",
+      "stem": "【阅读·组织顺序】\"Entering the temple gate, you see a tall pagoda directly ahead; behind the pagoda stands the main hall, and to its left hangs the old bell tower.\" 这段描写主要按什么顺序展开？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_red11_order"
+      ],
+      "difficulty": 0.45,
+      "solution": "段落借 ahead、behind、to its left 等方位词按空间位置组织画面，读者视线随叙述者移动，属空间顺序；没有时间推移或操作步骤，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时间顺序",
+        "B. 重要性顺序",
+        "C. 空间顺序（由近及远、前后左右）",
+        "D. 过程顺序"
+      ],
+      "form": "text_order",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0030",
+      "item_type": "fill",
+      "stem": "【阅读·组织顺序】读说明书片段并回答：\"To apply for a student visa, first fill in the online form; then book an interview; after that, pay the fee; finally, wait for the result.\"\n这段话主要按 ____ 顺序组织（用两三个字概括顺序类型）。",
+      "answer": "过程顺序（操作步骤/流程顺序）",
+      "kps": [
+        "kp_eng11_red11_order"
+      ],
+      "difficulty": 0.45,
+      "solution": "语篇按办理签证的操作步骤逐一展开：first / then / after that / finally 既是流程标志词，也提示时间先后；这类\"按步骤办事\"的组织方式属过程顺序，与单纯按日期叙事的时间顺序相区别。",
+      "source": "llm_generated",
+      "form": "text_order",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0031",
+      "item_type": "choice",
+      "stem": "【看·多模态语篇】一张促销海报上，\"50% OFF — TODAY ONLY\" 用超大号粗体红字印刷，并配有闹钟图案。这种非文字信息的主要作用是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_vie11_multimodal_build"
+      ],
+      "difficulty": 0.45,
+      "solution": "多模态语篇中，字号、字体、颜色与图像共同建构意义：超大粗体红字聚焦\"五折\"，闹钟图案强调\"仅限今日\"并制造紧迫感，非文字手段在此承担了传递关键信息与劝购的功能，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 装饰海报，使其更加美观",
+        "B. 突出折扣力度与限时信息，抓住读者注意并促使其立即行动",
+        "C. 说明商品的保质期与产地",
+        "D. 提供公司地址与联系方式"
+      ],
+      "form": "multimodal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0032",
+      "item_type": "solve",
+      "stem": "【看·多模态语篇】一份英文调查报告的正文写道：\"As the chart clearly shows, students' daily screen time has nearly doubled since 2015.\" 页面上方配有柱状图（2015 年与 2024 年平均屏幕时间对比）。请说明图表与文字是如何共同建构意义的（至少写出两点）。",
+      "answer": "①图表提供具体的数据证据：两根柱子的高度对比使\"翻倍\"这一结论可视化、可核实；②文字对图表进行解读与评论：clearly shows 引导读者注意趋势并给出结论；③图文互相指涉（As the chart shows 建立呼应关系），读者只有整合两种模态才能获得完整意义。",
+      "kps": [
+        "kp_eng11_vie11_multimodal_build"
+      ],
+      "difficulty": 0.6,
+      "solution": "多模态语篇的意义由文字与非文字信息互补共建：图表承担\"呈现数据\"功能，文字承担\"解释、评价、引导注意\"功能；识读时要看图文如何互相印证，而不是只读文字。",
+      "source": "llm_generated",
+      "form": "multimodal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0033",
+      "item_type": "choice",
+      "stem": "【看·多模态语篇】地铁站里有一个标志：红色圆圈内画着一支香烟，上面一道斜杠横贯。该符号在语篇建构中的主要作用是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_vie11_multimodal_build"
+      ],
+      "difficulty": 0.4,
+      "solution": "公共标志是多模态语篇：红圈加斜杠是国际通用的\"禁止\"符号，与香烟图像组合后无需任何文字即可跨语言传递禁令，视觉符号在此独立建构了\"规则\"意义，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表示此处出售香烟",
+        "B. 提示吸烟有害健康",
+        "C. 指示吸烟区的位置",
+        "D. 用超越语言的视觉符号直接传递\"禁止吸烟\"的规则信息"
+      ],
+      "form": "multimodal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0034",
+      "item_type": "choice",
+      "stem": "【阅读·隐含意义】\"When Emma asked her manager for a day off, he replied, 'We'll see,' and went back to his papers.\" 从经理的言行可以推断出：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_red11_implied"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"We'll see\" 是典型的模糊回应，配合\"随即埋头看文件\"的细节，暗示经理不想当场承诺，言外之意接近婉拒；这属于根据上下文推断言外之意，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 他并未明确答应，实际上倾向于拒绝或不愿表态",
+        "B. 他一定会批准 Emma 的假",
+        "C. 他根本没有听见 Emma 的请求",
+        "D. 他正在为文件内容生气"
+      ],
+      "form": "inference",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0035",
+      "item_type": "choice",
+      "stem": "【阅读·言外之意】游客向导游询问博物馆门票，导游微笑着说：\"Well, the museum is free on Mondays.\" 导游的言外之意最可能是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_red11_implied"
+      ],
+      "difficulty": 0.5,
+      "solution": "游客问票价，导游却答\"周一免费\"，答非所问之中隐含建议：选周一去既可参观又免费；推断依据是\"问票价—答免费日\"的语用关联，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 博物馆周一闭馆",
+        "B. 博物馆门票平时很便宜",
+        "C. 建议对方周一去参观（可以免费入场）",
+        "D. 周一游客最多，最好别去"
+      ],
+      "form": "inference",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0036",
+      "item_type": "fill",
+      "stem": "【阅读·隐含态度】\"After the meeting, Mia remarked, 'That's certainly one way to run a project.' Her flat tone and raised eyebrow suggested she ___ the plan.\"\n用中文写出空缺处表达的含义：____",
+      "answer": "并不认可（对该计划持怀疑、不赞成的态度）",
+      "kps": [
+        "kp_eng11_red11_implied"
+      ],
+      "difficulty": 0.6,
+      "solution": "\"That's certainly one way to...\" 配合平淡语气（flat tone）与挑眉（raised eyebrow），是英语中典型的反语表达：字面中性，实则否定；评价性含义要靠上下文的语气描写来推断。",
+      "source": "llm_generated",
+      "form": "inference",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0037",
+      "item_type": "choice",
+      "stem": "【听力·识别讽刺】听力对话中，弟弟刚摔碎了手机屏幕，拖着长音、重重地说：\"Great! Just great!\" 他的真实意思是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_lis11_sarcasm"
+      ],
+      "difficulty": 0.45,
+      "solution": "反语的识别依赖语音线索与语境的矛盾：闯祸之后说 Great，且拖长音、加重重音，褒义词被反用，实际表达懊恼与无奈，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 真心觉得手机摔得很漂亮",
+        "B. 用反话表达懊恼、无奈",
+        "C. 打算马上再买一部新手机",
+        "D. 夸奖手机屏幕质量好"
+      ],
+      "form": "listening_sarcasm",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0038",
+      "item_type": "choice",
+      "stem": "【听力·识别讽刺】你听到室友缓慢而清晰地说：\"Oh, you finished the whole cake. How... thoughtful of you.\"（thoughtful 前有明显停顿并重读该词）她真正想表达的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_lis11_sarcasm"
+      ],
+      "difficulty": 0.55,
+      "solution": "重读＋停顿＋拖长音是口头讽刺的典型语音标记；语境是蛋糕被独吞（the whole cake），褒义词 thoughtful 被反用，真实含义是责怪对方不顾他人，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 夸奖你考虑周到",
+        "B. 询问蛋糕好不好吃",
+        "C. 感谢你给她留了一块",
+        "D. 讽刺你不顾别人，独自吃完了蛋糕"
+      ],
+      "form": "listening_sarcasm",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0039",
+      "item_type": "solve",
+      "stem": "【听力·语音线索分析】听力材料中说话者说：\"Well, that went well...\"，语速明显放慢，第二个 well 拖长并落重音，句尾用降调。请回答：(1) 说话者的真实态度是什么？(2) 至少列出两条支撑你判断的语音线索（语气、语调、停顿、重音等）。",
+      "answer": "(1) 真实态度是讽刺/不满——事情其实进行得很糟糕。\n(2) 语音线索：①重音落在第二个 well 上并拖长读音，制造反语效果；②语速放慢、句中有明显停顿（Well, that went... well），显得皮笑肉不笑；③句尾降调收束，语气冷淡而非真心高兴。",
+      "kps": [
+        "kp_eng11_lis11_sarcasm"
+      ],
+      "difficulty": 0.65,
+      "solution": "听力中判断讽刺不能只听字面，要综合重音位置、停顿、拖音与语调走势：正向评价词（went well）＋消极语境＋异常的语音处理＝反语，意思与字面相反。",
+      "source": "llm_generated",
+      "form": "listening_sarcasm",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0040",
+      "item_type": "choice",
+      "stem": "【阅读·文化批判】一则广告语写道：\"Real beauty begins with our cream.\" 用批判性眼光审视，这则广告传递的主要价值取向是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_red11_critical_culture"
+      ],
+      "difficulty": 0.5,
+      "solution": "广告把\"真正的美\"与自家产品绑定，实质是制造容貌焦虑以促进消费；批判性读者应识别其商业动机与单一审美取向，辨析其价值导向，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 美由产品定义，购买消费才能获得美丽与自信",
+        "B. 美是多元的，人人都可以定义自己的美",
+        "C. 内在修养比外表更重要",
+        "D. 自然美胜过人工修饰"
+      ],
+      "form": "critical_culture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0041",
+      "item_type": "solve",
+      "stem": "【阅读·文化批判】阅读短评并完成任务：\"In some talent shows, contestants' sad family stories are edited into short videos before the voting round, and contestants with the most touching stories often advance regardless of their performance.\"\n(1) 这种做法隐含怎样的价值取向？(2) 从批判性角度提出一个值得追问的问题。",
+      "answer": "(1) 价值取向：把观众同情当作竞争资源，\"故事\"压过\"专业能力\"，本质是消费个人苦难以换取流量与投票。\n(2) 追问示例：节目评分究竟应以专业表现为准还是以情感故事为准？把参赛者的隐私与苦难公开剪辑播放，是否征得了他们真正的同意？",
+      "kps": [
+        "kp_eng11_red11_critical_culture"
+      ],
+      "difficulty": 0.7,
+      "solution": "批判性审视文化现象的路径：①识别语篇背后的价值取向（同情消费、流量至上）；②辨析其与主流价值（公平竞争、尊重隐私）的冲突；③提出质疑并形成自己的判断，而不是全盘接受媒体呈现。",
+      "source": "llm_generated",
+      "form": "critical_culture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0042",
+      "item_type": "choice",
+      "stem": "【阅读·文化批判】一篇游记写道：\"The village remains frozen in time, untouched by modern life — a paradise lost and found.\" 从批判性文化视角看，作者的表达最主要的问题是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_red11_critical_culture"
+      ],
+      "difficulty": 0.65,
+      "solution": "\"frozen in time\"\"paradise\" 这类措辞把村庄当作供外来者观赏的\"活化石\"，遮蔽了当地人的主体性与发展权；批判性读者应觉察这种视角偏差与文化偏见，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 描述过于简短，信息量不足",
+        "B. 没有介绍当地美食与交通",
+        "C. 以\"他者\"视角把当地生活浪漫化，忽视了村民自身对发展与现代生活的需求",
+        "D. 语法与用词有严重错误"
+      ],
+      "form": "critical_culture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0043",
+      "item_type": "solve",
+      "stem": "【口语·描述与概括】阅读下面一段经历，然后用 2—3 句英语口头概括，要求信息准确、完整（涵盖时间、地点、人物、事件、结果）：\n\"Last Saturday morning, our class visited the city nursing home for the first time. Twenty of us helped clean the windows, performed short plays, and taught several elderly people how to make video calls to their families. When we left at noon, many of them waved to us at the gate and invited us to come again next month.\"",
+      "answer": "参考概括：Last Saturday morning, our class of twenty visited the city nursing home for the first time. We cleaned the windows, put on short plays, and taught the elderly to make video calls. Before we left at noon, they invited us to return next month.\n（要点覆盖：时间 Saturday morning、地点 nursing home、人数 twenty、三项活动、结果受邀请再访）",
+      "kps": [
+        "kp_eng11_spk11_describe_summarise"
+      ],
+      "difficulty": 0.55,
+      "solution": "概括经历要保留五个 W 的关键信息（who / when / where / what / result），删去修饰性细节，统一用一般过去时叙述，并且不添加原文没有的信息。",
+      "source": "llm_generated",
+      "form": "oral_summary",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0044",
+      "item_type": "choice",
+      "stem": "【口语·概括策略】向同学口头概括一篇新闻报道时，下列哪种做法最符合\"信息准确完整\"的要求？",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_spk11_describe_summarise"
+      ],
+      "difficulty": 0.4,
+      "solution": "概括的核心是\"准\"与\"全\"：抓住主要事实要素、忠实原文；A 片面、C 低效且非概括、D 失真（混入主观内容），均不符合要求，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只讲自己最感兴趣的一个细节",
+        "B. 覆盖 who、what、when、where、result 等核心事实，不添加原文没有的信息",
+        "C. 逐字背诵原文",
+        "D. 加入大量个人猜测与评价"
+      ],
+      "form": "oral_summary",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0045",
+      "item_type": "fill",
+      "stem": "【口语·信息完整性】口头描述事件时，为保证信息完整，通常要交代五个 W：who、what、____、where、why。",
+      "answer": "when",
+      "kps": [
+        "kp_eng11_spk11_describe_summarise"
+      ],
+      "difficulty": 0.35,
+      "solution": "五 W 是描述与概括事件的基本信息框架：人物（who）、事件（what）、时间（when）、地点（where）、原因（why）；缺任何一个要素，信息就不完整。",
+      "source": "llm_generated",
+      "form": "oral_summary",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0046",
+      "item_type": "choice",
+      "stem": "【口语·衔接手段】口头陈述观点：\"Riding shared bikes to school saves money. ___, it cuts down traffic around the school gate.\" 空格处应选用：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_spk11_cohesion"
+      ],
+      "difficulty": 0.45,
+      "solution": "前后两句是并列递进的优点（省钱＋缓解校门拥堵），应用表递进的 Moreover 连接；However 表转折、Otherwise 表\"否则\"、Instead 表\"反而\"，均不合逻辑，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. However",
+        "B. Otherwise",
+        "C. Instead",
+        "D. Moreover"
+      ],
+      "form": "cohesion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0047",
+      "item_type": "fill",
+      "stem": "【口语·指代衔接】下面三句话反复使用 Li Hua，表达不连贯。请用衔接手段改写后两句（写出改写后的句子）：\n\"Li Hua tried out for the school basketball team. Li Hua trained every morning before class. Li Hua finally made the team in May.\"",
+      "answer": "He trained every morning before class and finally made the team in May.",
+      "kps": [
+        "kp_eng11_spk11_cohesion"
+      ],
+      "difficulty": 0.45,
+      "solution": "用代词 he 回指首句的 Li Hua 消除重复，并用 and 连接两个并列动作，使前后句形成\"指代＋连接\"的衔接链，口头表达因此更连贯。",
+      "source": "llm_generated",
+      "form": "cohesion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0048",
+      "item_type": "choice",
+      "stem": "【口语·衔接手段功能】口头汇报中说：\"First, let's look at the data; next, I'll explain the method; finally, we'll discuss the findings.\" 其中 first / next / finally 与短语 for example 分别属于哪类衔接功能？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_spk11_cohesion"
+      ],
+      "difficulty": 0.45,
+      "solution": "first / next / finally 构成顺序标记，标示发言的结构推进；for example 是举例标记，引入支撑性细节——两类衔接手段都让口头表达结构清晰、可跟听，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表时间（顺序）推进与举例说明",
+        "B. 表转折与让步",
+        "C. 表因果与对比",
+        "D. 表定义与分类"
+      ],
+      "form": "cohesion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0049",
+      "item_type": "choice",
+      "stem": "【写作·版式手段】在英语调查报告正文中插入一张对比柱状图，最主要的目的通常是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_wri11_visual_layout"
+      ],
+      "difficulty": 0.4,
+      "solution": "图表类版式手段的功能是可视化数据、降低读者的理解负担；图表不能完全替代文字，通常还需配 as the chart shows 之类的文字说明，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 增加文章字数以凑够要求",
+        "B. 展示作者的绘画水平",
+        "C. 使数据关系一目了然，帮助读者快速把握关键信息",
+        "D. 替代正文的所有文字说明"
+      ],
+      "form": "visual_layout",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0050",
+      "item_type": "solve",
+      "stem": "【写作·版式设计】你要为学校制作一份英文\"节水倡议书\"（A4 一页）。请提出至少两种你会使用的版式手段，并分别说明其传递信息或表达意义的作用。",
+      "answer": "参考方案：①大号加粗标题（如 SAVE EVERY DROP）置于页首——第一时间抓住注意、点明主题；②用水量对比柱状图（改造前后的食堂日用水量）——把浪费现状与改进成效直观化，增强说服力；③分条加粗的行动清单（Shorter showers / Report leaking taps）——让读者一眼抓住可执行的建议；④水滴图标分隔版块——视觉引导，避免大段文字造成阅读疲劳。",
+      "kps": [
+        "kp_eng11_wri11_visual_layout"
+      ],
+      "difficulty": 0.6,
+      "solution": "版式手段（标题、图标、图表、字体字号、分栏）不是装饰，而是有目的地引导注意、突出重点、可视化信息，服务于写作目的与读者需求。",
+      "source": "llm_generated",
+      "form": "visual_layout",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0051",
+      "item_type": "choice",
+      "stem": "【写作·版式手段】安全须知海报把 \"DANGER! High Voltage\" 印成全页最大的红色粗体字。这一版式设计的用意是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_wri11_visual_layout"
+      ],
+      "difficulty": 0.4,
+      "solution": "字号、颜色、粗体属于非文字的视觉资源：最大＋红色＋粗体的组合承担着\"危险等级\"的语义功能，是版式手段有目的地传递信息的典型例子，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 让海报更符合语法规范",
+        "B. 用字号与颜色传达\"最高等级警示\"的信息，确保远距离也能立刻注意到",
+        "C. 节约印刷成本",
+        "D. 故意隐藏真正重要的信息"
+      ],
+      "form": "visual_layout",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0052",
+      "item_type": "choice",
+      "stem": "【口语·语调】用升调说 \"You're coming to the party?\" 与用降调说同一句话相比，升调最可能表达：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_spk11_intonation_rhythm"
+      ],
+      "difficulty": 0.45,
+      "solution": "陈述句式配升调（statement question）表达惊讶、怀疑或请对方确认；降调才是中性陈述——同一句话靠语调区分功能，这正是语调传达意义的典型体现，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单纯陈述事实",
+        "B. 生气的命令",
+        "C. 对对方的警告",
+        "D. 惊讶或寻求确认（真的吗？）"
+      ],
+      "form": "intonation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0053",
+      "item_type": "fill",
+      "stem": "【口语·节奏与停顿】朗读名句 \"I have a dream — that one day this nation will rise up and live out the true meaning of its creed.\" 为增强感染力，通常应在 dream 之后作 ____，并重读 dream、rise up 等关键词。",
+      "answer": "适当（较长的）停顿",
+      "kps": [
+        "kp_eng11_spk11_intonation_rhythm"
+      ],
+      "difficulty": 0.5,
+      "solution": "演讲式朗读靠\"重音＋停顿＋节奏\"制造张力：dream 后的停顿制造期待感，重读核心词突出语义高潮，先缓后扬的节奏增强感染力，这些都是恰当运用语调语气节奏的技巧。",
+      "source": "llm_generated",
+      "form": "intonation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0054",
+      "item_type": "choice",
+      "stem": "【口语·节奏控制】英语演讲前，老师建议你在关键信息处放慢语速、稍作停顿、重读核心词。这样做的主要目的是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_spk11_intonation_rhythm"
+      ],
+      "difficulty": 0.45,
+      "solution": "恰当的语调、语气与节奏是意义传达的一部分：停顿给听者加工时间，重音标示信息焦点，节奏变化传递情感，共同提高表达的自然性与流畅性；B、C、D 与目的无关，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 让语调、语气和节奏帮助传递意义，使表达更自然流畅、重点突出",
+        "B. 拖延时间凑够演讲时长",
+        "C. 显示自己词汇量很大",
+        "D. 完全避免语法错误"
+      ],
+      "form": "intonation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0055",
+      "item_type": "choice",
+      "stem": "【策略·诊断与目标】小林英语听力的长对话题总出错。下列做法中最符合\"及时发现学习中的问题、分析成因并制订切合实际的目标\"的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_lsm11_problem_goal"
+      ],
+      "difficulty": 0.45,
+      "solution": "有效路径是\"发现问题→分析成因→针对主因设定可检验的小目标\"：A 归因错误且放弃，B 盲目刷题不分析，D 方向错位，都无法带来改进，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 认为自己没有语言天赋，放弃听力训练",
+        "B. 每天连刷十套题，做完对答案即止",
+        "C. 整理近期错题，归类失分原因（词汇不熟、走神、不会速记），再针对主因设定每周可检验的小目标",
+        "D. 只练发音，不练听力"
+      ],
+      "form": "strategy_goal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0056",
+      "item_type": "solve",
+      "stem": "【策略·目标设定】把笼统的学习愿望\"我要学好英语口语\"改写成一个切合实际的学习目标，要求体现\"具体、可测量、可实现、相关、有时限\"五个要素，并简要说明理由。",
+      "answer": "示例目标：在接下来的四周里，每周一、三、五晚跟读模仿一段 2 分钟的英语演讲并录音，每周对比一次录音；第四周末能就熟悉的话题（如校园生活）不中断地连贯讲述 2 分钟。\n说明：练什么（跟读＋录音）、练多少（每周 3 次）、何时检验（第四周）、达标标准（连贯说 2 分钟）都明确可查，符合五要素。",
+      "kps": [
+        "kp_eng11_lsm11_problem_goal"
+      ],
+      "difficulty": 0.6,
+      "solution": "切合实际的目标要把\"愿望\"转成\"行为＋量化标准＋时间节点\"，便于自我监控与调整；笼统目标因无法检验而不能有效指导学习，也容易因看不到进步而放弃。",
+      "source": "llm_generated",
+      "form": "strategy_goal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0057",
+      "item_type": "fill",
+      "stem": "【策略·目标要素】学习目标要\"切合实际\"，通常要求目标具体、可测量、____、与学习需求相关并有时间限制（填一个要素，两或三个字）。",
+      "answer": "可实现",
+      "kps": [
+        "kp_eng11_lsm11_problem_goal"
+      ],
+      "difficulty": 0.4,
+      "solution": "目标设定五要素：具体（specific）、可测量（measurable）、可实现（attainable）、相关（relevant）、有时限（time-bound）；缺\"可实现\"的目标要么过高导致挫败，要么过低失去挑战。",
+      "source": "llm_generated",
+      "form": "strategy_goal",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0058",
+      "item_type": "solve",
+      "stem": "【策略·总结规律】观察下列例句，归纳 for 与 since 在现在完成时中的用法规则：\n① I have lived in Beijing for ten years.\n② She has taught at this school since 2015.\n③ We have known each other since primary school.\n④ He has collected stamps for a long time.",
+      "answer": "规则：for 后接\"一段时间\"（ten years、a long time），说明动作或状态持续了多久；since 后接\"过去的时间点\"（2015）或\"过去的起点事件\"（primary school），表示从那一时刻延续至今。可概括为：for＋时间段，since＋时间点/起点。",
+      "kps": [
+        "kp_eng11_lsm11_generalise"
+      ],
+      "difficulty": 0.55,
+      "solution": "通过观察、比较、分类例句（for 组 vs since 组），归纳出结构（have done + for/since + …）与语义（持续时长 vs 起点）的规律，这正是\"观察—比较—分类—总结\"学习策略的直接运用。",
+      "source": "llm_generated",
+      "form": "rule_generalise",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0059",
+      "item_type": "choice",
+      "stem": "【策略·观察与归纳】观察 unhappy、unfair、impossible、impolite、irregular、illegal 六个词，可以归纳出：加否定前缀时选 un-、im- 还是 ir- / il-，主要取决于：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_lsm11_generalise"
+      ],
+      "difficulty": 0.5,
+      "solution": "un- 多接一般形容词；im- 用于以 p、m 开头的词（impossible、impolite）；ir- / il- 分别接 r-、l- 开头的词（irregular、illegal）——前缀选择与词首字母发音相关，是可观察归纳的词形规律，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 单词的长度",
+        "B. 单词首字母（发音）等词形特征",
+        "C. 说话者的情绪",
+        "D. 单词是英式还是美式拼写"
+      ],
+      "form": "rule_generalise",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0060",
+      "item_type": "solve",
+      "stem": "【策略·分类与总结】把下列短语动词分成两类，并说明你的分类标准（标准要能解释每一类为什么这样分）：\nstand up, write down, put off, turn down（拒绝）, look up（查词典）, run out of（用完）",
+      "answer": "第一类（字面义＝动词与小词语义相加，可推导）：stand up（站起来）、write down（写下）；第二类（习语义，须作为词块整体记忆）：put off（推迟）、turn down（拒绝）、look up（查词典）、run out of（用完）。\n分类标准：短语的语义能否由动词与小词的字面意思推导出来。",
+      "kps": [
+        "kp_eng11_lsm11_generalise"
+      ],
+      "difficulty": 0.6,
+      "solution": "分类学习的关键是找到有解释力的标准：\"字面可推导与否\"直接决定学习方式——可推导的按规则理解即可，习语性的必须作为整体词块记忆；这正是\"观察—分类—总结\"策略的价值。",
+      "source": "llm_generated",
+      "form": "rule_generalise",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0061",
+      "item_type": "choice",
+      "stem": "【策略·重建交流】口语交流中你没有听清对方的问题，最合适的\"修复\"策略是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_lsm11_repair"
+      ],
+      "difficulty": 0.4,
+      "solution": "沟通受阻时应主动使用请求澄清、复述确认等修复手段重建交流，既填补信息缺口又体现合作态度；假装听懂（A）会中断意义协商，沉默（B）与放弃英语（C）都不解决问题，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 点头假装听懂，继续说自己的",
+        "B. 保持沉默，等对方换话题",
+        "C. 直接改用中文说\"听不懂\"",
+        "D. 有礼貌地请求澄清或复述，如 \"Sorry, do you mean ...?\" 或 \"Could you say that again, please?\""
+      ],
+      "form": "repair_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0062",
+      "item_type": "fill",
+      "stem": "【策略·交际策略】你一时想不起 umbrella 这个单词，于是说：\"Er... the thing you carry when it rains to keep the water off you...\" 这种通过解释、描述功能来绕过词汇障碍、维持交流的策略叫 ____ 策略（两或三个字）。",
+      "answer": "迂回（解释/描述）策略",
+      "kps": [
+        "kp_eng11_lsm11_repair"
+      ],
+      "difficulty": 0.5,
+      "solution": "遇到词汇空缺时，用解释、举例、描述功能等方式绕过障碍，使交流不中断，是重要的交际修复策略；比停下来或改说中文更能保持英语交流的连贯。",
+      "source": "llm_generated",
+      "form": "repair_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0063",
+      "item_type": "choice",
+      "stem": "【策略·重建交流】你说到 photosynthesis 时，对方皱眉说 \"Sorry?\" 下列哪种回应最能帮助重建交流？",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_lsm11_repair"
+      ],
+      "difficulty": 0.45,
+      "solution": "对方未理解时，有效的修复是\"简化＋解释＋举例\"：用对方熟悉的词语重新表达关键概念，而不是重复原词（B）、改换语言（C）或放弃交流（D），故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 换用简单说法解释：\"You know, it's how plants use sunlight to make food.\" 并举一个例子",
+        "B. 提高音量把 photosynthesis 原词重复三遍",
+        "C. 立刻改说中文\"光合作用\"",
+        "D. 说 \"Forget it, never mind\" 结束话题"
+      ],
+      "form": "repair_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0064",
+      "item_type": "choice",
+      "stem": "【策略·情绪调节】英语口语考试临近，小华一想到开口说英语就心慌、脸红。下列哪种做法最有助于她调节焦虑、坚持练习？",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_lsm11_anxiety"
+      ],
+      "difficulty": 0.4,
+      "solution": "调节焦虑的要点是\"充分准备＋生理放松＋积极自我对话\"，把注意力从\"怕出错\"转到任务本身；逃避（B）会加重恐惧，疲劳战术（A）与咖啡因（D）治标不治本，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 熬夜反复刷模拟题，疲劳作战",
+        "B. 尽量逃避一切开口的机会",
+        "C. 充分准备的同时，练习前用深呼吸放松，并用积极自我暗示（\"我已练过很多遍\"）替代消极想法",
+        "D. 依赖考前喝咖啡提神压住紧张"
+      ],
+      "form": "affect_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0065",
+      "item_type": "solve",
+      "stem": "【策略·情绪分析】小雅在英语课上从不主动举手，怕发音被笑话，越紧张越不敢说，口语成绩逐渐下滑。请回答：(1) 从\"自身\"与\"环境\"两个角度各分析一条可能的焦虑成因；(2) 各给出一条针对性的调节方法。",
+      "answer": "(1) 成因：自身——担心负面评价、怕丢面子，且开口练习量不足导致信心低；环境——课堂竞争氛围强，或曾有被当众纠音、被笑的经历，形成心理阴影。\n(2) 调节方法：针对自身——从低压力场景起步（先录音自说、再两人对话），设定\"每天开口 3 分钟\"的小目标，用成功体验逐步积累信心；针对环境——与老师沟通获得支持，寻找友好同伴结对练习，把\"错误\"重新看作学习资源。",
+      "kps": [
+        "kp_eng11_lsm11_anxiety"
+      ],
+      "difficulty": 0.65,
+      "solution": "该策略要求\"分析原因＋有效方法自我调整＋坚持学习\"：先定位焦虑来源（评价恐惧、练习不足、环境压力），再匹配对应手段（渐进暴露、认知调整、寻求支持），而不是硬扛或逃避。",
+      "source": "llm_generated",
+      "form": "affect_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0066",
+      "item_type": "fill",
+      "stem": "【策略·学习坚持】学习策略要求我们：面对学习中的焦虑或急躁情绪，要分析原因、采用有效方法自我调整，并且 ____ 学习（填两个字）。",
+      "answer": "坚持",
+      "kps": [
+        "kp_eng11_lsm11_anxiety"
+      ],
+      "difficulty": 0.35,
+      "solution": "情绪调节的最终目的不是\"消除情绪\"，而是不被情绪中断学习行动——坚持学习本身也是策略的一部分；分析成因、自我调整、坚持学习三者构成完整的情感策略。",
+      "source": "llm_generated",
+      "form": "affect_strategy",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0067",
+      "item_type": "choice",
+      "stem": "【词汇·学术表达】在议论文中先承认对方观点有合理之处、再进行反驳时，最合适的衔接表达是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_voc11_academic_discourse"
+      ],
+      "difficulty": 0.5,
+      "solution": "Admittedly（诚然）用于让步，承认对方部分合理；However 引出反驳——二者构成\"让步—反驳\"的经典学术论证结构；A 表因果、C 表递进、D 表举例，均无此功能，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. As a result, ... Therefore, ...",
+        "B. Admittedly, ... However, ...",
+        "C. In addition, ... Moreover, ...",
+        "D. For example, ... For instance, ..."
+      ],
+      "form": "academic_expression",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0068",
+      "item_type": "fill",
+      "stem": "【词汇·学术表达】用表\"证据来源\"的学术表达补全句子：\n____ a recent survey conducted by a university team, 60% of teenagers do not get enough sleep.",
+      "answer": "According to",
+      "kps": [
+        "kp_eng11_voc11_academic_discourse"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"According to ＋ 数据/研究来源\"是学术语篇引出证据的固定表达，说明信息出处、增强论证可信度；类似表达还有 research indicates / data show that。",
+      "source": "llm_generated",
+      "form": "academic_expression",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0069",
+      "item_type": "solve",
+      "stem": "【词汇·学术反驳改写】把口语化的反驳改写为礼貌、规范的学术性反驳（可用让步与证据表达，写出 1—2 句）：\n原文：\"You're wrong. Money doesn't bring happiness at all.\"",
+      "answer": "参考改写：While money alone may not guarantee happiness, research suggests that financial security does affect people's sense of well-being.\n（或：Admittedly, money cannot buy happiness directly; however, studies show that income stability matters to life satisfaction.）",
+      "kps": [
+        "kp_eng11_voc11_academic_discourse"
+      ],
+      "difficulty": 0.65,
+      "solution": "学术反驳的结构：让步（While... / Admittedly...）→ 转折（however）→ 证据表达（research suggests / studies show）；应避免 You're wrong 这类直接否定对方人称的口语攻击。",
+      "source": "llm_generated",
+      "form": "academic_expression",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0070",
+      "item_type": "fill",
+      "stem": "【语法·时态】用所给动词的适当时态填空：\nBy the time we arrived at the theatre, the ceremony ___ (already, begin).",
+      "answer": "had already begun",
+      "kps": [
+        "kp_eng11_gra11_tense_all"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"by the time ＋ 一般过去时\"表示\"到过去某一时刻为止\"，主句动作在该时刻之前已完成，须用过去完成时 had begun；already 置于 had 与 begun 之间。",
+      "source": "llm_generated",
+      "form": "grammar_fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0071",
+      "item_type": "choice",
+      "stem": "【语法·时态】\"Don't phone me between 8 and 9 tomorrow evening — I ___ for the final exam then.\" 空格处最恰当的时态是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_gra11_tense_all"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"明天 8 点到 9 点之间\"（between 8 and 9 tomorrow evening）是将来的一段时间，句中 then 指\"届时正在进行\"，应用将来进行时 will be preparing；A 无\"正在进行\"含义，B、C 时态与 tomorrow 矛盾，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. will prepare",
+        "B. have prepared",
+        "C. prepared",
+        "D. will be preparing"
+      ],
+      "form": "grammar_mcq",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0072",
+      "item_type": "solve",
+      "stem": "【语法·时态综合】用所给动词的适当时态填空，并各用一句话说明理由：\n(1) Look! The children ___ (fly) kites on the playground.\n(2) They ___ (fly) kites there every Sunday afternoon.\n(3) Next Sunday they ___ (compete) in the city kite festival.\n(4) They ___ (train) hard for it since last month.",
+      "answer": "(1) are flying——Look! 表明说话时正在进行的动作，用现在进行时。\n(2) fly——every Sunday 表经常性、习惯性动作，用一般现在时（主语复数，动词用原形）。\n(3) will compete（或 are going to compete）——Next Sunday 表将来已定的安排。\n(4) have been training（或 have trained）——since last month 表从过去持续至今的训练，用现在完成进行时强调持续性。",
+      "kps": [
+        "kp_eng11_gra11_tense_all"
+      ],
+      "difficulty": 0.65,
+      "solution": "时态选择看\"时间标志＋动作状态\"：Look!/now→进行时；every Sunday→一般现在时；next Sunday→将来时；since/for＋时间段→现在完成（进行）时；by the time＋过去时→过去完成时。本题串联其中四种。",
+      "source": "llm_generated",
+      "form": "grammar_tense_series",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0073",
+      "item_type": "choice",
+      "stem": "【语用·道歉】你不小心弄坏了同学心爱的杯子。最得体的道歉是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_prg11_apology_gratitude"
+      ],
+      "difficulty": 0.4,
+      "solution": "得体的道歉三要素：明确致歉＋承认责任（It was my fault）＋提出补救（买新的）；B 推卸责任还贬低对方物品，C 责怪对方情绪，D 回避问题，均不得体，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"I'm terribly sorry I broke your cup. It was my fault — let me get you a new one.\"",
+        "B. \"Too bad! It was too old anyway.\"",
+        "C. \"Don't be so angry, it's just a cup.\"",
+        "D. （沉默地递上一张纸巾）"
+      ],
+      "form": "pragmatics_apology",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0074",
+      "item_type": "choice",
+      "stem": "【语用·回应道歉】同学说：\"I'm terribly sorry I missed your birthday party last Friday.\" 最合适的回应是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_prg11_apology_gratitude"
+      ],
+      "difficulty": 0.45,
+      "solution": "回应道歉的得体原则：表示谅解（It doesn't matter）＋给出体谅的理由（you were ill）＋维系关系（再约庆祝），既接受歉意又不使对方难堪；A、B 指责施压，D 冷漠绝交，均不得体，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"How could you! Everyone noticed you were absent.\"",
+        "B. \"You must apologize to every guest.\"",
+        "C. \"It doesn't matter at all — I know you were ill. We can celebrate together this weekend.\"",
+        "D. \"Whatever. I don't care any more.\""
+      ],
+      "form": "pragmatics_apology",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0075",
+      "item_type": "solve",
+      "stem": "【语用·感谢表达】分别写出符合下列情境的得体英语（各 1—2 句）：\n(1) 外教 Mr Smith 花了一整个午休帮你纠正口语演讲稿（正式、真诚）；\n(2) 同桌课间顺手帮你把饭卡捎了回来（轻松、自然）。",
+      "answer": "(1) Thank you so much for spending your lunch break helping me with my speech, Mr Smith. Your suggestions on the intonation were really helpful — I truly appreciate your time and patience.\n(2) Thanks a lot for getting my meal card — you saved my lunch! I owe you one.",
+      "kps": [
+        "kp_eng11_prg11_apology_gratitude"
+      ],
+      "difficulty": 0.55,
+      "solution": "感谢要\"看对象、分程度\"：对师长用完整句式＋具体说明对方帮助的内容＋表达珍视（appreciate）；对亲近同学可轻松简短，甚至用 I owe you one 等口语化表达拉近关系——时机、措辞、程度都应与关系匹配。",
+      "source": "llm_generated",
+      "form": "pragmatics_apology",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0076",
+      "item_type": "choice",
+      "stem": "【语用·情感距离】你想借一支笔：向刚认识的外教 Mr Smith 开口时，最得体的表达是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_prg11_emotion_distance"
+      ],
+      "difficulty": 0.4,
+      "solution": "与陌生、疏远的交际对象情感距离大，宜用含情态动词的委婉疑问句（Could I possibly...?）并加敬称；A、C、D 是对熟人才用的直接祈使，对刚认识的外教显得唐突无礼，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"Lend me your pen.\"",
+        "B. \"Could I possibly borrow your pen for a moment, Mr Smith?\"",
+        "C. \"Pen, please, quick!\"",
+        "D. \"Give me that pen.\""
+      ],
+      "form": "pragmatics_distance",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0077",
+      "item_type": "choice",
+      "stem": "【语用·情感距离与委婉】奶奶住院，你想向班主任请一天假。下列说法最得体的是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_prg11_emotion_distance"
+      ],
+      "difficulty": 0.45,
+      "solution": "对师长请假属\"有求于人＋情感距离较远\"的场合：先致歉（I'm very sorry, but...）说明原因，再用 Would it be possible...? 委婉提出请求；A、C 只通告结果，B 带质问语气，均不得体，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"I won't come tomorrow.\"",
+        "B. \"Do I have to come to school tomorrow?\"",
+        "C. \"Grandma is ill, so no school for me tomorrow.\"",
+        "D. \"Mr Wang, I'm very sorry, but my grandmother is in hospital. Would it be possible for me to take a day off tomorrow to see her?\""
+      ],
+      "form": "pragmatics_distance",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0078",
+      "item_type": "fill",
+      "stem": "【语用·直接与委婉】规律归纳：交际对象越陌生、场合越正式，语言形式通常应越 ____（填\"直接\"或\"委婉\"）。",
+      "answer": "委婉",
+      "kps": [
+        "kp_eng11_prg11_emotion_distance"
+      ],
+      "difficulty": 0.4,
+      "solution": "情感距离与语言直接度成反比：距离近（家人好友）可用祈使句、缩略语；距离远（师长、陌生人、正式场合）应使用情态动词、疑问句式、敬称等委婉手段，以示尊重。",
+      "source": "llm_generated",
+      "form": "pragmatics_distance",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0079",
+      "item_type": "choice",
+      "stem": "【听力·讲座信号词】讲座开头听到：\"In today's lecture, I'd like to focus on three factors that influence second language learning.\" 这句话的主要功能是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_lis11_lecture"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"focus on three factors\" 是典型的总起预告信号：既点明主题（二语学习的影响因素）又给出结构（三点），听者应据此先搭好笔记框架，再逐点填充，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 预告讲座主题与结构框架，提示听者做提纲式笔记",
+        "B. 举一个具体例子",
+        "C. 表示话题即将结束",
+        "D. 表示让步与转折"
+      ],
+      "form": "listening_lecture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0080",
+      "item_type": "choice",
+      "stem": "【听力·信号词功能】讲座中说：\"For instance, consider how young children pick up their mother tongue.\" 其中 For instance 的功能是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_lis11_lecture"
+      ],
+      "difficulty": 0.4,
+      "solution": "for instance / for example / such as 均为举例信号词，提示后面的内容是对前面观点的例证；听时应把它归入对应观点之下，作为论据记录，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 总结上文观点",
+        "B. 表示对比转折",
+        "C. 引出支撑观点的具体例子",
+        "D. 提示讲座即将结束"
+      ],
+      "form": "listening_lecture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0081",
+      "item_type": "solve",
+      "stem": "【听力·听讲座策略】一场讲座中出现：\"There are three reasons behind this trend. First... Second... Third... To sum up, ...\" 请说明你将如何利用这些信号词高效记笔记（至少写出两点做法）。",
+      "answer": "①听到 \"There are three reasons\" 时先在笔记上写下 1、2、3 的提纲框架，随后听到 First / Second / Third 时把各自的关键词（名词、数字）快速填入对应位置；②\"To sum up\" 提示进入总结，是主旨所在，应放下细节、集中记下总结句的核心信息；③各信号词之间的停顿可用来补全前面的笔记。",
+      "kps": [
+        "kp_eng11_lis11_lecture"
+      ],
+      "difficulty": 0.6,
+      "solution": "讲座类听力的关键是\"按信号词结构化记笔记\"：总起预告搭框架、序数词定位要点、总结词提示主旨；笔记记框架与关键词，而非整句，否则会顾此失彼。",
+      "source": "llm_generated",
+      "form": "listening_lecture",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0082",
+      "item_type": "choice",
+      "stem": "【听力·论点与论据】听到某发言人说：\"Homework should be cut by half. Studies show that students with lighter homework loads sleep longer and remember more.\" 其中 \"Studies show that...\" 一句承担的功能是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_lis11_argument"
+      ],
+      "difficulty": 0.5,
+      "solution": "论点是\"作业应减半\"（should be cut...），studies show 引出的研究发现是支撑该主张的证据；\"研究表明/数据显示\"是听力中辨识论据的典型信号，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提出论点（主张）",
+        "B. 提供支撑论点的论据（证据）",
+        "C. 表示礼貌的问候",
+        "D. 总结他人观点"
+      ],
+      "form": "listening_argument",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0083",
+      "item_type": "solve",
+      "stem": "【听力·论证链梳理】听材料后整理出如下发言：\"I'm against cutting down the trees behind our school. Trees clean the air and cool the campus in summer, and they provide homes for birds. Besides, once they are cut, it will take decades for new ones to grow.\"\n请梳理：论点是什么？共有几条论据？分别概括。",
+      "answer": "论点：反对砍伐学校后面的树。论据共 2 条：①树木的生态价值——净化空气、夏季为校园降温、为鸟类提供栖息地（and 连接的三个小点同属一条）；②恢复周期长——砍伐后新树需几十年才能长成（Besides 引出的补充论据）。",
+      "kps": [
+        "kp_eng11_lis11_argument"
+      ],
+      "difficulty": 0.65,
+      "solution": "梳理论证链：先找立场标记（I'm against...）确定论点，再借 and、besides 等连接词切分论据；注意 and 连接的并列细节常同属一条论据，不要误数为多条。",
+      "source": "llm_generated",
+      "form": "listening_argument",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0084",
+      "item_type": "choice",
+      "stem": "【听力·论证结构辨识】听英语讨论时，区分\"论点\"与\"论据\"最可靠的线索是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_lis11_argument"
+      ],
+      "difficulty": 0.5,
+      "solution": "立场标记（I think、I'm against、should）标示主观主张，证据标记（because、for example、研究表明）引出支撑理由；抓住这两类信号词即可在听的过程中实时分离论点与论据，A、B、C 都是错误经验，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 论点总是句子里最长的单词",
+        "B. 论据一定都以数字形式出现",
+        "C. 论点只能出现在发言的开头",
+        "D. 论点常由 I think / we should 等立场表达引出，论据常由 because / for example / studies show 等证据标记引出"
+      ],
+      "form": "listening_argument",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0085",
+      "item_type": "choice",
+      "stem": "【文学阅读·叙事视角】\"I stood on the deck and watched the ship disappear over the horizon, knowing I might never see my brother again.\" 这段文字采用的叙事视角是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_red11_literary_read"
+      ],
+      "difficulty": 0.45,
+      "solution": "叙述者以 I 出现，读者只能感知\"我\"的所见所想（knowing I might...），信息受限于\"我\"的感知范围，属第一人称限知视角；全知视角则可透视各人物内心，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 第一人称限知视角（\"我\"的所见所感）",
+        "B. 第三人称全知视角",
+        "C. 第二人称视角",
+        "D. 无叙述者视角"
+      ],
+      "form": "literary_reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0086",
+      "item_type": "choice",
+      "stem": "【文学阅读·意象】\"The old oil lamp flickered like a dying man's breath.\" 对这一意象的赏析，最恰当的是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_red11_literary_read"
+      ],
+      "difficulty": 0.55,
+      "solution": "意象把闪烁的灯火与垂死者的呼吸并置：视觉的摇曳对应生命的衰竭，传达衰败、无常的情感基调；文学阅读要读出意象背后的象征义与氛围功能，而非字面信息，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 客观说明油灯的照明原理",
+        "B. 表现叙述者精通物理知识",
+        "C. 以\"垂死者呼吸\"的比喻营造衰败、生命将尽的氛围，暗示人物或时代的落幕",
+        "D. 制造幽默效果使读者发笑"
+      ],
+      "form": "literary_reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0087",
+      "item_type": "solve",
+      "stem": "【文学阅读·语言风格】比较同一情景的两种写法：\n甲：\"The wind blew. The leaves fell.\"\n乙：\"A restless wind scattered the golden leaves along the silent lane.\"\n哪一句文学性更强？请从词语选择与节奏两方面各写一条理由。",
+      "answer": "乙句文学性更强。\n词语选择：乙句用 restless（不安的）将风拟人化，动词 scattered 比 fell 更具动感与画面感，golden、silent 等感官形容词营造出秋日黄昏的意境。\n节奏：乙句修饰语丰富、节奏舒缓悠长，与\"静巷落叶\"的意境吻合；甲句五个短词节奏急促生硬，仅传递事实信息。",
+      "kps": [
+        "kp_eng11_red11_literary_read"
+      ],
+      "difficulty": 0.65,
+      "solution": "语言风格赏析的抓手：动词与形容词的挑选（scattered / restless）、修辞（拟人）、修饰语密度与句式节奏如何共同服务于意境和情感——这些正是欣赏文学语言的入门角度。",
+      "source": "llm_generated",
+      "form": "literary_reading",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0088",
+      "item_type": "solve",
+      "stem": "【读后续写·素材提取】阅读短文：\"Rain was pouring down when Ben noticed an old man standing at the bus stop without an umbrella. Without a second thought, Ben walked over and held his umbrella over the man's head. 'You'll get soaked walking home,' the man said. 'Let me walk with you.'\"\n为续写作准备，请提取：(1) 表现 Ben 性格的一个形容词；(2) 两条可能的情节走向；(3) 原文语言风格的一个特点。",
+      "answer": "(1) 性格：kind-hearted / considerate / helpful（乐于助人、体贴）。\n(2) 情节走向示例：①同行途中两人交谈，老人原来是刚搬来的退休教师，与 Ben 的学校有渊源；②雨中出现小波折（风把伞吹翻/老人滑了一下），考验 Ben 的耐心与应变。\n(3) 语言风格：以动作与对话推进情节，多用一般过去时，句式简洁、画面感强。",
+      "kps": [
+        "kp_eng11_red11_continuation"
+      ],
+      "difficulty": 0.6,
+      "solution": "读后续写素材提取的三个抓手：人物性格（决定后续行为逻辑）、情节可能性（顺着人物关系与冲突延伸）、语言风格（时态、句式、描写手法需与原文保持一致）。",
+      "source": "llm_generated",
+      "form": "continuation_prep",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0089",
+      "item_type": "choice",
+      "stem": "【读后续写·续写策略】开始续写前最应优先做的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_red11_continuation"
+      ],
+      "difficulty": 0.45,
+      "solution": "读后续写的评分维度是\"情节合理衔接＋主题一致＋语言连贯\"：先提取原文的人物、情节与风格要素，续写才有依据；词汇的\"高级\"程度是次要的，抄原文与另起炉灶则直接失分，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 立刻堆砌尽可能多的高级词汇",
+        "B. 从原文中提取人物性格、情节线索与语言风格，确保续写情节合理、主题一致",
+        "C. 把原文完整抄写一遍",
+        "D. 换一批新人物，重新编一个故事"
+      ],
+      "form": "continuation_prep",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0090",
+      "item_type": "fill",
+      "stem": "【读后续写·悬念识别】故事结尾写道：\"Emma stared at the unopened letter, her hands trembling.\" 续写情节很可能将围绕 ____ 展开（用中文写出悬念点）。",
+      "answer": "信的内容（信里写了什么、是谁寄来的、为何令她颤抖）",
+      "kps": [
+        "kp_eng11_red11_continuation"
+      ],
+      "difficulty": 0.5,
+      "solution": "结尾未拆的信是典型的\"悬念物象\"：stared at / unopened / trembling 三个线索都把读者注意力压向信的内容及其影响；续写应顺着这一悬念揭示信息、推动情节，而不是另起线索。",
+      "source": "llm_generated",
+      "form": "continuation_prep",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0091",
+      "item_type": "choice",
+      "stem": "【口语·辩论】辩论中不同意对方观点时，下列哪种开场最得体、最有建设性？",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_spk11_oral_debate"
+      ],
+      "difficulty": 0.4,
+      "solution": "有礼貌的反驳遵循\"先认可再转折\"：I see your point 表示理解对方，but / may I 委婉引出己方观点，既维持讨论氛围又立场清晰；A、B、C 属人身攻击与打断，违反辩论礼仪，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"That's totally wrong.\"",
+        "B. \"You clearly know nothing about this topic.\"",
+        "C. \"Stop talking and listen to me.\"",
+        "D. \"I see your point, but may I offer a different perspective?\""
+      ],
+      "form": "oral_debate",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0092",
+      "item_type": "solve",
+      "stem": "【口语·辩论表达】辩题为 \"Artificial intelligence should replace teachers in classrooms.\"（人工智能应当取代课堂中的教师）。请以反方身份完成：(1) 一句话亮明立场；(2) 给出两条理由；(3) 用让步句式回应对方观点\"AI 可以 24 小时在线答疑\"。",
+      "answer": "(1) 立场：I'm strongly against replacing teachers with AI in classrooms.\n(2) 理由：①Education is more than answering questions — teachers read students' emotions, offer encouragement and adjust methods, which AI cannot truly do; ②Over-reliance on AI may weaken students' face-to-face communication skills.\n(3) 让步回应：Admittedly, AI can answer questions around the clock; however, instant answers cannot replace the guidance, care and role-modelling that a real teacher provides.",
+      "kps": [
+        "kp_eng11_spk11_oral_debate"
+      ],
+      "difficulty": 0.7,
+      "solution": "辩论表达三要素：立场鲜明（一句话亮明）、理由有序（First... Besides...）、反驳礼貌（Admittedly..., however... 让步结构）；回应对方时先承认其合理部分，再指出其局限。",
+      "source": "llm_generated",
+      "form": "oral_debate",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0093",
+      "item_type": "choice",
+      "stem": "【口语·辩论】对方辩友引用了一项你没听过的调查数据，你对其来源有疑问。最得体的现场回应是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_spk11_oral_debate"
+      ],
+      "difficulty": 0.5,
+      "solution": "对证据的质疑应指向\"来源与可靠性\"而非对方人格；礼貌请求出处（Could you tell us where... comes from?）既是有力的辩论技术，也符合辩论礼仪；B 人身攻击、C 打断无礼、D 放弃质疑，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"Could you tell us where that figure comes from? It would help us judge how reliable it is.\"",
+        "B. \"Your data must be fake!\"",
+        "C. （不等对方说完就大声打断质疑）",
+        "D. 直接忽略，绝口不提"
+      ],
+      "form": "oral_debate",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0094",
+      "item_type": "solve",
+      "stem": "【写作·读后续写】阅读开头段落：\"The power cut came just as Lin's presentation began. Her prepared slides disappeared from the screen. The room fell silent.\"\n按下列段首语续写两段（每段 2—3 句，注意情节合理衔接、语言连贯）：\nPara 1: Suddenly, she remembered something.\nPara 2: When the lights came back on, ...",
+      "answer": "参考续写：\nPara 1: Suddenly, she remembered something. In her schoolbag was a set of hand-drawn posters she had made for practice. She took a deep breath, pinned them on the blackboard, and began her talk without the slides. Her calm voice soon filled the quiet room.\nPara 2: When the lights came back on, the audience burst into warm applause. The slides returned to the screen, but nobody really needed them any more. Lin smiled, realizing that a real presenter carries the presentation in her heart, not in the machine.",
+      "kps": [
+        "kp_eng11_wri11_wri_continuation"
+      ],
+      "difficulty": 0.7,
+      "solution": "续写要点：段首语决定各段情节起点（第一段\"想起办法—脱稿救场\"，第二段\"灯亮—升华收获\"）；情节须因果合理、与原文主题（沉着应对突发状况）一致；结尾点题升华，语言风格与时态（过去时）与原文连贯。",
+      "source": "llm_generated",
+      "form": "writing_continuation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0095",
+      "item_type": "choice",
+      "stem": "【写作·读后续写标准】读后续写最核心的评分维度是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_wri11_wri_continuation"
+      ],
+      "difficulty": 0.4,
+      "solution": "读后续写考查\"读\"与\"写\"的联动：情节要顺着原文伏笔合理发展，主题与原文一致，语言风格、时态前后连贯；堆砌难词、扩段落、照抄原文都不是得分点，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 使用尽可能多的生僻词",
+        "B. 段落数量越多越好",
+        "C. 与原文情节合理衔接、主题一致、语言连贯",
+        "D. 完全照抄原文句式"
+      ],
+      "form": "writing_continuation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0096",
+      "item_type": "solve",
+      "stem": "【写作·续写自查】某同学的续写第一段段首语为 \"The next morning, Ming arrived at the hospital early.\"，但他接着写道：\"Ming changed his mind and stayed at home all day playing games.\" 请指出问题所在，并把该句修改为与段首语衔接自然的句子（可自行补充合理情节）。",
+      "answer": "问题：续写内容与段首语直接矛盾——段首语已明确 Ming 早晨到了医院，后文却写他整天在家打游戏，情节断裂、不合逻辑。\n修改示例：He nervously checked the fruit box in his hands and walked straight towards Ward 305, where Grandma Li was waiting.（改写保持\"人在医院\"这一既定情节，并顺势推进看望过程。）",
+      "kps": [
+        "kp_eng11_wri11_wri_continuation"
+      ],
+      "difficulty": 0.6,
+      "solution": "段首语是续写的硬约束：其交代的时间、地点、人物状态必须被后文承接；自查时应逐句核对续写是否与段首语及原文伏笔一致，发现矛盾即回改。",
+      "source": "llm_generated",
+      "form": "writing_continuation",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0097",
+      "item_type": "solve",
+      "stem": "【写作·建议信】你发现同学们课间几乎不活动，想建议学校每天上午安排 15 分钟课间锻炼时间。请给校长 Mr Zhang 写一封英语建议信的开头与结尾各 1—2 句（含称呼与落款格式，正文理由可只列要点）。",
+      "answer": "参考答案：\nDear Mr Zhang,\nI am Li Hua, chairman of the Students' Union. I am writing to suggest that our school set aside fifteen minutes for exercise during the morning break.\n（正文要点：多数同学久坐、用眼疲劳；15 分钟锻炼可提神、增强体质、提高下节课效率；可安排韵律操、跳绳等易组织项目。）\nI would be grateful if you could consider my suggestion. Thank you for your time.\nYours sincerely,\nLi Hua",
+      "kps": [
+        "kp_eng11_wri11_wri_letter"
+      ],
+      "difficulty": 0.6,
+      "solution": "正式建议信的规范：称呼 Dear Mr Zhang；开门见山自我介绍＋写信目的（I am writing to suggest...）；建议部分用 I suggest that... / It would be beneficial...；结尾致谢并表达期待（I would be grateful...）；落款 Yours sincerely ＋ 姓名。",
+      "source": "llm_generated",
+      "form": "writing_letter",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0098",
+      "item_type": "choice",
+      "stem": "【写作·书信语气】建议信的结尾句，最得体的一句是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_wri11_wri_letter"
+      ],
+      "difficulty": 0.4,
+      "solution": "建议信的语气要\"谦逊、可协商\"：would appreciate it / take into consideration 尊重对方的决定权；A 命令、D 威胁、C 生硬收场，都不符合正式书信语体，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"You must accept my suggestion at once.\"",
+        "B. \"I would appreciate it if you could take my suggestion into consideration.\"",
+        "C. \"That's all I want to say. Bye.\"",
+        "D. \"If you refuse, I will write to the newspaper.\""
+      ],
+      "form": "writing_letter",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0099",
+      "item_type": "fill",
+      "stem": "【写作·书信格式】正式英文书信中，结束敬语 Yours sincerely 的下一行应写 ____（用中文说明该部分内容）。",
+      "answer": "写信人姓名（署名，如 Li Hua）",
+      "kps": [
+        "kp_eng11_wri11_wri_letter"
+      ],
+      "difficulty": 0.4,
+      "solution": "英文书信的固定格式：称呼→正文→结束敬语（Yours sincerely / Yours faithfully）→另起一行署写信人姓名；考试中署名须按题目要求（常用 Li Hua），不可署真名或自行加日期。",
+      "source": "llm_generated",
+      "form": "writing_letter",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0100",
+      "item_type": "solve",
+      "stem": "【词汇·语法词汇联动】used to do 与 be used to doing 是\"语法结构＋词汇搭配\"绑定的整体词块。请各造一个符合语境的句子，并说明两者在结构（语法）与意义（词汇）上的区别。",
+      "answer": "句子示例：①My grandfather used to smoke, but he gave it up years ago.（used to ＋ 动词原形：过去常常做某事，现在已不如此。）②He is used to getting up early, even on holidays.（be used to ＋ 名词/doing：习惯于某事，to 是介词。）\n区别：结构上，前者接动词原形，后者 to 为介词、后接名词或动名词；意义上，前者谈\"过去的习惯（现已停止）\"，后者谈\"现在的适应状态\"。",
+      "kps": [
+        "kp_eng11_voc11_grammar_vocab_link"
+      ],
+      "difficulty": 0.6,
+      "solution": "把 used to do / be used to doing 当作整体词块记忆：语法（后接什么形式）与词汇（表达什么意义）一次内化，可避免 be used to get up early 这类把 to 误当不定式符号的错误。",
+      "source": "llm_generated",
+      "form": "grammar_vocab_chunk",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0101",
+      "item_type": "fill",
+      "stem": "【词汇·词块填空】作为整体词块完成句子：\nMany students have difficulty ___ (learn) English grammar because they learn rules apart from contexts.",
+      "answer": "(in) learning",
+      "kps": [
+        "kp_eng11_voc11_grammar_vocab_link"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"have difficulty (in) doing sth.\" 是语法与词汇绑定的词块：difficulty 后的介词 in 常省略，但动词必须用 -ing 形式；整体记忆该词块即可避免 have difficulty to learn 的错误。",
+      "source": "llm_generated",
+      "form": "grammar_vocab_chunk",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0102",
+      "item_type": "choice",
+      "stem": "【词汇·语法词汇联动】把 look forward to（期待）当作一个整体词块（to 后接名词/doing）来记忆，最主要的好处是：",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_voc11_grammar_vocab_link"
+      ],
+      "difficulty": 0.45,
+      "solution": "look forward to 中的 to 是介词，正确搭配是 look forward to hearing from you；把\"介词＋doing\"连同词义一起作为词块整体记忆，语法结构与词汇搭配同时内化，显著降低出错率，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有任何好处",
+        "B. 只对提高听力成绩有用",
+        "C. 可以顺便多认识几个前缀",
+        "D. 能避免把 to 误当作不定式符号而误接动词原形（如误写 look forward to hear）"
+      ],
+      "form": "grammar_vocab_chunk",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0103",
+      "item_type": "choice",
+      "stem": "【写作·同伴互评】互评同学作文时，最合理的做法是依据：",
+      "answer": "A",
+      "kps": [
+        "kp_eng11_wri11_wri_revise_peer"
+      ],
+      "difficulty": 0.4,
+      "solution": "同伴互评要有共同的\"尺子\"：按内容、结构、语言、卷面等维度逐项对照评价，反馈才具体、可操作；凭一时喜好或只看字迹会使评价随意化，比分数更偏离写作本身，故选 A。",
+      "source": "llm_generated",
+      "options": [
+        "A. 事先共同确认的评价标准（内容切题、结构清晰、语言准确、书写规范）逐项评阅",
+        "B. 自己一时的个人喜好",
+        "C. 只看谁的字迹漂亮",
+        "D. 与自己的作文比分数高低"
+      ],
+      "form": "peer_review",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0104",
+      "item_type": "solve",
+      "stem": "【写作·评价与修改】同学作文片段：\"My English study is very hard. I every day read English. But my listen is bad.\"\n请按\"语言准确性\"维度指出两处问题，各给出修改建议并说明理由。",
+      "answer": "问题①：语序错误 \"I every day read English\" → 修改为 \"I read English every day.\"；理由：时间状语 every day 通常置于句末或句首，不应插在主语和谓语之间。\n问题②：词性误用 \"my listen is bad\" → 修改为 \"my listening is poor\"；理由：listen 是动词，作主语须用其名词形式 listening。\n（加分建议：\"My English study is very hard\" 语义含混，可改为 \"Studying English is hard for me\"。）",
+      "kps": [
+        "kp_eng11_wri11_wri_revise_peer"
+      ],
+      "difficulty": 0.65,
+      "solution": "互评反馈要\"定位准确＋给出改法＋说明理由\"：先按维度分类，再逐处引用原文、指出问题类型（语序、词性、搭配），最后给出修改版本——这样才能据反馈完成有效修改。",
+      "source": "llm_generated",
+      "form": "peer_review",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0105",
+      "item_type": "choice",
+      "stem": "【写作·利用反馈】拿到同伴的互评反馈后，最恰当的处理方式是：",
+      "answer": "C",
+      "kps": [
+        "kp_eng11_wri11_wri_revise_peer"
+      ],
+      "difficulty": 0.4,
+      "solution": "反馈的价值在于\"反思—取舍—修改\"：对每条意见核对原文判断其是否成立，采纳合理的并说明修改理由；盲从（A）、抵触（B）、只听表扬（D）都使互评流于形式，故选 C。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全盘照单全收，不思考也不提问",
+        "B. 认为对方故意挑刺，拒绝修改",
+        "C. 逐条判断反馈是否合理，采纳有效建议修改作文，并能说明每处修改的理由",
+        "D. 只接受夸自己的那几条意见"
+      ],
+      "form": "peer_review",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0106",
+      "item_type": "choice",
+      "stem": "【听力·讨论】班会上讨论\"学校是否应推迟到校时间\"。甲说：\"I strongly support starting school an hour later — teenagers need more sleep.\" 乙说：\"I'm afraid I disagree. If we start later, we'll finish later, and after-school clubs and sports will suffer.\" 关于两人立场与理由，下列概括正确的是：",
+      "answer": "B",
+      "kps": [
+        "kp_eng11_lis11_discussion"
+      ],
+      "difficulty": 0.5,
+      "solution": "讨论类听力要分别抓\"立场标记＋理由\"：甲 I strongly support＋理由（need more sleep），乙 I'm afraid I disagree＋理由（after-school clubs will suffer）；把立场与理由一一配对即可，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两人都支持推迟到校时间",
+        "B. 甲支持推迟（理由：青少年需要更多睡眠），乙反对（理由：放学变晚会挤占课后活动时间）",
+        "C. 甲反对推迟（理由：影响课后活动），乙支持（理由：睡眠充足）",
+        "D. 两人都没有表明明确立场"
+      ],
+      "form": "listening_discussion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0107",
+      "item_type": "solve",
+      "stem": "【听力·多方讨论】听力材料是关于\"是否允许学生带手机进校园\"的讨论，三方发言如下：\n学生代表：\"Phones help us check new words and contact parents, so they should be allowed.\"\n班主任：\"In my view, phones do more harm than good — students play games in class.\"\n家长代表：\"I see both sides, but I'd suggest a middle way: phones are kept by the teacher and returned after school.\"\n请完成梳理：每一方的立场（支持/反对/折中）及其理由或建议。",
+      "answer": "学生代表——支持：手机便于查生词、联系家长；\n班主任——反对：学生课上玩游戏，弊大于利；\n家长代表——折中：由老师统一保管、放学后归还（既满足需要又避免课堂滥用）。",
+      "kps": [
+        "kp_eng11_lis11_discussion"
+      ],
+      "difficulty": 0.6,
+      "solution": "多方讨论需逐人记录\"立场标记词（should be allowed / do more harm than good / a middle way）＋理由\"；尤其注意第三方\"I see both sides, but...\"的让步—折中立场，不要简单归入支持或反对两派。",
+      "source": "llm_generated",
+      "form": "listening_discussion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_z_0108",
+      "item_type": "choice",
+      "stem": "【听力·讨论策略】听多人讨论时，下列哪种笔记策略最有助于听懂不同立场及其理由？",
+      "answer": "D",
+      "kps": [
+        "kp_eng11_lis11_discussion"
+      ],
+      "difficulty": 0.4,
+      "solution": "讨论类语篇的信息结构是\"人—立场—理由\"三元组：分人记录立场标记与理由标记，才能避免张冠李戴，并在此基础上比较各方分歧与共识；A、B、C 都会丢失结构信息，故选 D。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只记第一个发言人的观点",
+        "B. 试图记下听到的每一个单词",
+        "C. 凭整体印象事后回忆",
+        "D. 按发言人分别记录立场标记词（I think / I disagree / because）及对应理由，再归纳各方异同"
+      ],
+      "form": "listening_discussion",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

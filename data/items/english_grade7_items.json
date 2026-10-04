@@ -9085,6 +9085,117 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0040",
+      "item_type": "choice",
+      "stem": "语法学习要关注“形式—意义—使用”三个维度。句子 “I walked to school yesterday.” 中 walked 体现“意义”维度的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng7_gra7_form_meaning_use"
+      ],
+      "difficulty": 0.5,
+      "solution": "形式=词形变化（A 项 -ed）；意义=该结构表达的语义内容，即动作发生在过去（B 项）；使用=典型使用场合与常见搭配（C 项）；D 项说的是词类。",
+      "source": "llm_generated",
+      "options": [
+        "A. 动词 walk 加上词尾 -ed 的形式变化",
+        "B. “走路”这一动作发生在过去",
+        "C. walked 常与 yesterday 等过去时间状语连用",
+        "D. walk 是一个表示动作的动词"
+      ],
+      "form": "语法概念辨析",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0041",
+      "item_type": "solve",
+      "stem": "新同学 Peter 来自英国，他想了解你的学校生活。请用 4 句左右的英语向他介绍你的一天（不少于 25 个英文词），并邀请他提问：____",
+      "answer": "参考答案：Hi, Peter! Let me tell you about my school day. I usually get to school at 7:30 and have four classes in the morning. After lunch, I often play basketball with my friends. My favourite subject is English because it is fun. If you want to know anything else, just ask me!",
+      "kps": [
+        "kp_eng7_spk7_topic_comm"
+      ],
+      "difficulty": 0.5,
+      "solution": "话题交流=主动提供信息（时间顺序：到校—上课—课后）+条理清晰+结尾邀请提问，把话轮延续下去。",
+      "source": "llm_generated",
+      "form": "情景交际",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0042",
+      "item_type": "solve",
+      "stem": "围绕主题 “My Favourite Food” 写 4 句意义连贯的话，至少用上 and、but、because 中的一个（不少于 25 个英文词）：____",
+      "answer": "参考答案：My favourite food is dumplings. They taste delicious, and my mum makes them every weekend. I like them because we always make them together. Dumplings mean happy family time to me.",
+      "kps": [
+        "kp_eng7_wri7_context_sentences"
+      ],
+      "difficulty": 0.5,
+      "solution": "主题句群=主题句+细节句+原因句+总结句；用 and/because 等连接词实现句际衔接，句句围绕主题，不跑题。",
+      "source": "llm_generated",
+      "form": "主题句群写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0043",
+      "item_type": "solve",
+      "stem": "你的英国朋友 Amy 在你所在的城市学习。请写一张英文邀请卡，邀请她本周六上午和你一起参观博物馆，须写清时间、集合地点和活动（不少于 25 个英文词），格式：称呼+正文+署名：____",
+      "answer": "参考答案：\nDear Amy,\nWould you like to visit the City Museum with me this Saturday morning? We can meet at the school gate at 9:00 and see the new dinosaur show together. I'm sure we will have a great time!\nYours,\nLi Hua",
+      "kps": [
+        "kp_eng7_wri7_greeting_invite"
+      ],
+      "difficulty": 0.5,
+      "solution": "邀请卡要点=邀请内容（Would you like to...）+时间+集合地点+活动安排+期待回应；格式为称呼、正文、署名三部分。",
+      "source": "llm_generated",
+      "form": "邀请卡写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0044",
+      "item_type": "solve",
+      "stem": "编写一个情节完整的小故事，题目 “The Lost Schoolbag”（不少于 60 个英文词），要有起因、经过和结果：____",
+      "answer": "参考答案：Last Monday afternoon, Li Ming could not find his schoolbag after basketball practice. He looked for it everywhere on the playground, but it was nowhere to be found. Just then, his classmate Wang Fang called him: “Is this your bag? I found it near the library and handed it to the teacher's office.” Li Ming hurried there and got his bag back. Everything, including his new library book, was still in it. He thanked Wang Fang warmly and learned to look after his things more carefully.",
+      "kps": [
+        "kp_eng7_wri7_story"
+      ],
+      "difficulty": 0.6,
+      "solution": "故事按“起因（丢包）—经过（寻找+同学转告）—结果（找回+感悟）”推进；用过去时叙事，加入对话使情节生动，结尾点出启示。",
+      "source": "llm_generated",
+      "form": "故事写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

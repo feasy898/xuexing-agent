@@ -4709,6 +4709,96 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0048",
+      "item_type": "choice",
+      "stem": "英语课上老师问：“Do you think students should do sports every day?” 下列回答既清楚表达观点又给出理由的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_eng9_spk9_opinion_reason"
+      ],
+      "difficulty": 0.5,
+      "solution": "表达观点+理由的完整结构是“观点句 + because 理由从句”；A 只有观点没有理由，B 回避问题，C 反问转移话题。",
+      "source": "llm_generated",
+      "options": [
+        "A. Yes, I think so.",
+        "B. Sorry, I don't know.",
+        "C. What sports do you like?",
+        "D. I think students should do sports every day, because exercise keeps us healthy and helps us study better."
+      ],
+      "form": "情景交际",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0049",
+      "item_type": "solve",
+      "stem": "请口头概括并转述下面这段通知的主要信息（不少于 2 句英文）。通知：Attention, please. Our school library will open a new reading room on the third floor next Monday. It holds about 2,000 new books, including popular science and English novels. Students may borrow three books at a time and keep them for two weeks. Remember to return them on time. 你的转述：____",
+      "answer": "参考转述：The school library will open a new reading room on the third floor next Monday, with about 2,000 new books. Students can borrow three books at a time and keep them for two weeks, but they must return them on time.",
+      "kps": [
+        "kp_eng9_spk9_oral_summary"
+      ],
+      "difficulty": 0.55,
+      "solution": "转述通知抓“何事—何时何地—规则（数量+期限）”；数字信息要准确，把祈使句 Remember to... 转为 but they must... 的间接转述。",
+      "source": "llm_generated",
+      "form": "口头概括",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0050",
+      "item_type": "solve",
+      "stem": "你就“同学们最喜欢的运动”在班里做了调查，并画成条形图：basketball 12 人，football 8 人，swimming 6 人，running 4 人。请用 3—4 句英文为图表写一段说明文字（caption），指出最流行与最不流行的项目，并作简单评论：____",
+      "answer": "参考答案：The chart shows the favourite sports of the students in my class. Basketball is the most popular, chosen by 12 students, while running is the least popular, with only 4. Football (8) and swimming (6) come in the middle. The chart suggests that ball games attract more teenagers than individual sports.",
+      "kps": [
+        "kp_eng9_wri9_chart_caption"
+      ],
+      "difficulty": 0.55,
+      "solution": "图表说明=第一句点明图表主题→突出最大值与最小值（the most popular / the least popular）→交代中间数据→一句话评论结论；数字与比较表达要准确。",
+      "source": "llm_generated",
+      "form": "图表说明",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0051",
+      "item_type": "solve",
+      "stem": "请按“起草—修改—定稿”三步独立完成 60—80 词的作文 “An Unusual Experience”：先列提纲（2 条），再写初稿，最后检查时态、拼写与衔接，写出定稿。请把提纲与定稿都写出来：____",
+      "answer": "提纲：① what happened — saw a street artist painting a huge picture on the pavement; ② why unusual — the painting disappeared in the rain, but the artist smiled and started again.\n定稿（约 65 词）：Last summer, I saw something unusual on my way home. A street artist was painting a huge tiger with watercolours right on the pavement. Crowds stopped to watch and take photos. Suddenly it began to rain, and the tiger slowly disappeared. To my surprise, the artist smiled and started a new picture. That day I learned that art is worth creating even if it cannot last.",
+      "kps": [
+        "kp_eng9_wri9_draft_modify_finish"
+      ],
+      "difficulty": 0.6,
+      "solution": "三步写作：提纲先定内容框架（事件+不寻常之处）；初稿一气呵成；修改时重点核对过去时态一致、拼写与衔接词，最后誊写定稿。",
+      "source": "llm_generated",
+      "form": "三步写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

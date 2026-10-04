@@ -1846,6 +1846,75 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_z_0082",
+      "item_type": "choice",
+      "stem": "根据乘法算式 3×4=12，可以直接写出的除法算式是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p2_muldiv_rel"
+      ],
+      "difficulty": 0.25,
+      "solution": "因数×因数=积，乘除互逆：积÷一个因数=另一个因数，所以由 3×4=12 可得 12÷3=4 和 12÷4=3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12÷3=4 和 12÷4=3",
+        "B. 12÷6=2 和 12÷2=6",
+        "C. 3÷12=4",
+        "D. 4÷3=12"
+      ],
+      "form": "乘除互逆选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0083",
+      "item_type": "fill",
+      "stem": "每辆小车坐 4 人，8 辆这样的小车一共坐____人（写出乘法算式）。",
+      "answer": "32（算式：4×8=32）",
+      "kps": [
+        "kp_p2_muldiv_rel"
+      ],
+      "difficulty": 0.25,
+      "solution": "每份数×份数=总数量：4×8=32（人）。",
+      "source": "llm_generated",
+      "form": "乘法应用填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0084",
+      "item_type": "solve",
+      "stem": "每本笔记本 5 元。(1) 买 6 本笔记本一共要多少元？(2) 小红付给售货员 40 元，应找回多少元？",
+      "answer": "(1) 5×6=30（元）；(2) 40−30=10（元），应找回 10 元。",
+      "kps": [
+        "kp_p2_muldiv_rel"
+      ],
+      "difficulty": 0.3,
+      "solution": "先用每份数×份数求总价：5×6=30 元；再用付出的钱减去总价求找回的钱：40−30=10 元。",
+      "source": "llm_generated",
+      "form": "乘除应用解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

@@ -5968,6 +5968,48 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0027",
+      "item_type": "solve",
+      "stem": "制订你的周六英语学习小计划，包含听、说、读、写中至少三项活动，并写清时间（不少于 12 个英文词）：____",
+      "answer": "参考答案：On Saturday morning, I will read a picture book for twenty minutes. In the afternoon, I will listen to English songs and sing with them. In the evening, I will write three sentences about my day.",
+      "kps": [
+        "kp_eng4_lsm4_plan_daily"
+      ],
+      "difficulty": 0.45,
+      "solution": "计划=时间+活动；用 in the morning/afternoon/evening 排出时段，活动覆盖听、说、读、写中至少三项，词数达标。",
+      "source": "llm_generated",
+      "form": "学习计划写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0028",
+      "item_type": "solve",
+      "stem": "用英语写 3 句连贯的话介绍你最喜欢的动物，至少用一次 and 或 because（不少于 12 个英文词）：____",
+      "answer": "参考答案：My favourite animal is the panda. It is black and white, and it is very cute. I like it because it is lovely.",
+      "kps": [
+        "kp_eng4_wri4_paragraph_simple"
+      ],
+      "difficulty": 0.45,
+      "solution": "简单段落围绕一个主题：第一句点明动物，第二句写外形特征（用 and 并列），第三句用 because 说明喜欢的原因；句际用连接词才连贯。",
+      "source": "llm_generated",
+      "form": "段落写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

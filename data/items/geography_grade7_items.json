@@ -10574,6 +10574,81 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geo_z8a_0001",
+      "item_type": "choice",
+      "stem": "海洋底部最深的地形部位是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo7_seafloor_landforms"
+      ],
+      "difficulty": 0.3,
+      "solution": "海沟是海洋中最深的地方，如马里亚纳海沟；大陆架是浅海地带，洋盆是大洋底的主体，海岭是海底山脉。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大陆架",
+        "B. 海沟",
+        "C. 洋盆",
+        "D. 海岭"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0002",
+      "item_type": "choice",
+      "stem": "关于大陆架的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo7_seafloor_landforms"
+      ],
+      "difficulty": 0.45,
+      "solution": "大陆架是大陆向海洋自然延伸的浅海地带，水深一般不超过200米，属于大陆的一部分；大洋底的主体是洋盆，海洋最深处是海沟，海底山脉是海岭。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大陆架是大洋底的主体部分",
+        "B. 大陆架是海洋中最深的地形部位",
+        "C. 大陆架是陆地向海洋自然延伸的浅海地带，水深一般不超过200米",
+        "D. 大陆架是海底山脉，多火山地震"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0003",
+      "item_type": "fill",
+      "stem": "从大陆边缘向大洋方向，海底地形依次分布着大陆架、______、洋盆和海沟，此外还有作为海底山脉的______。",
+      "answer": "大陆坡；海岭",
+      "kps": [
+        "kp_geo7_seafloor_landforms"
+      ],
+      "difficulty": 0.35,
+      "solution": "大陆架向外是坡度较陡的大陆坡，再往外是广阔的洋盆，海洋最深处为海沟；海岭（大洋中脊）是海底的山脉。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

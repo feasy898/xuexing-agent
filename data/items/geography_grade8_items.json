@@ -617,6 +617,5479 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geo_z8a_0004",
+      "item_type": "choice",
+      "stem": "我国共有56个民族，其中汉族人口约占全国总人口的（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_nationalities"
+      ],
+      "difficulty": 0.3,
+      "solution": "我国共有56个民族，汉族人口最多，约占全国总人口的91%；其余55个民族人口较少，称为少数民族。",
+      "source": "llm_generated",
+      "options": [
+        "A. 55%",
+        "B. 71%",
+        "C. 85%",
+        "D. 91%"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0005",
+      "item_type": "choice",
+      "stem": "我国少数民族人口主要分布在（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_nationalities"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国少数民族主要分布在西南、西北和东北地区，整体上呈现大散居、小聚居、交错杂居的分布特点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 东南、华北和黄河下游地区",
+        "B. 西南、西北和东北地区",
+        "C. 华东、华南沿海地区",
+        "D. 长江中下游平原地区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0006",
+      "item_type": "fill",
+      "stem": "我国共有______个民族，其中人口最多的是______族；省级民族自治地方中，设有内蒙古、新疆、广西、宁夏、西藏五个少数民族______。",
+      "answer": "56；汉；自治区",
+      "kps": [
+        "kp_geo8_cn_nationalities"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国是统一的多民族国家，共56个民族，汉族人口约占91%；五个省级民族自治区为内蒙古、新疆维吾尔、广西壮族、宁夏回族、西藏自治区。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0007",
+      "item_type": "choice",
+      "stem": "关于我国地形特征的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_terrain"
+      ],
+      "difficulty": 0.35,
+      "solution": "我国地形复杂多样，五种地形类型齐全，山区（山地、丘陵和崎岖的高原）面积广大，约占全国总面积的2/3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地形复杂多样，山区面积广大",
+        "B. 地形类型单一，以平原为主",
+        "C. 地形以高原为主，平原面积最大",
+        "D. 山区面积仅占全国的三分之一"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0008",
+      "item_type": "choice",
+      "stem": "在我国五种地形类型中，面积占全国陆地总面积比重最大的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_terrain"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国山地约占33%，高原约占26%，盆地约占19%，平原约占12%，丘陵约占10%，山地所占比重最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平原",
+        "B. 盆地",
+        "C. 山地",
+        "D. 高原"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0009",
+      "item_type": "fill",
+      "stem": "写出我国四大高原的名称：青藏高原、______高原、黄土高原和______高原。",
+      "answer": "内蒙古；云贵",
+      "kps": [
+        "kp_geo8_cn_terrain"
+      ],
+      "difficulty": 0.3,
+      "solution": "我国四大高原为青藏高原、内蒙古高原、黄土高原和云贵高原，特征分别为雪山连绵、地面坦荡、千沟万壑、地面崎岖。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0010",
+      "item_type": "choice",
+      "stem": "我国地势第二、三级阶梯的分界线是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_terrain_steps"
+      ],
+      "difficulty": 0.35,
+      "solution": "第二、三级阶梯以大兴安岭—太行山—巫山—雪峰山一线为界；昆仑山—祁连山—横断山脉是第一、二级阶梯的分界线。",
+      "source": "llm_generated",
+      "options": [
+        "A. 昆仑山—祁连山—横断山脉",
+        "B. 大兴安岭—太行山—巫山—雪峰山",
+        "C. 天山—阴山—燕山",
+        "D. 秦岭—淮河一线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0011",
+      "item_type": "choice",
+      "stem": "在中国地形图上判读我国地势特征，受其影响，大多数河流的流向是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_terrain_steps"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国地势西高东低、呈三级阶梯状分布，使大多数河流自西向东流，沟通了东西方向交通，方便沿海与内陆的联系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自东向西流",
+        "B. 自南向北流",
+        "C. 自北向南流",
+        "D. 自西向东流"
+      ],
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0012",
+      "item_type": "fill",
+      "stem": "我国地势第一、二级阶梯的分界线是昆仑山—______山脉—______山脉。",
+      "answer": "祁连；横断",
+      "kps": [
+        "kp_geo8_cn_terrain_steps"
+      ],
+      "difficulty": 0.3,
+      "solution": "第一、二级阶梯以昆仑山—祁连山—横断山脉为界，界线以西为青藏高原（第一级阶梯），以东为高原和盆地（第二级阶梯）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0013",
+      "item_type": "choice",
+      "stem": "我国最大的内流河是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_rivers"
+      ],
+      "difficulty": 0.3,
+      "solution": "塔里木河位于新疆塔里木盆地，水源主要来自昆仑山、天山的冰雪融水，最终未注入海洋，是我国最大的内流河。",
+      "source": "llm_generated",
+      "options": [
+        "A. 塔里木河",
+        "B. 黑龙江",
+        "C. 淮河",
+        "D. 额尔齐斯河"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0014",
+      "item_type": "choice",
+      "stem": "关于我国湖泊的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_rivers"
+      ],
+      "difficulty": 0.4,
+      "solution": "鄱阳湖位于江西省，是我国最大的淡水湖；青海湖是我国最大的湖泊，属咸水湖（内陆湖）；洞庭湖位于湖南省。",
+      "source": "llm_generated",
+      "options": [
+        "A. 青海湖是我国最大的淡水湖",
+        "B. 我国湖泊全部是咸水湖",
+        "C. 鄱阳湖是我国最大的淡水湖",
+        "D. 洞庭湖位于青海省"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0015",
+      "item_type": "fill",
+      "stem": "最终注入海洋的河流称为______河；长江因航运价值高，中下游被誉为“______”。",
+      "answer": "外流；黄金水道",
+      "kps": [
+        "kp_geo8_cn_rivers"
+      ],
+      "difficulty": 0.35,
+      "solution": "直接或间接流入海洋的河流是外流河，我国绝大多数河流为外流河；长江江阔水深、四季通航，被称为“黄金水道”。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0016",
+      "item_type": "choice",
+      "stem": "长江被称为“水能宝库”，其水能资源最集中的河段是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_yangtze"
+      ],
+      "difficulty": 0.35,
+      "solution": "长江上游流经我国地势第一、二级和第二、三级阶梯交界处，落差大、水量大，水能资源丰富，建有三峡、葛洲坝等水利枢纽。",
+      "source": "llm_generated",
+      "options": [
+        "A. 上游河段",
+        "B. 中游河段",
+        "C. 下游河段",
+        "D. 河口三角洲河段"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0017",
+      "item_type": "choice",
+      "stem": "长江下游河段江阔水深、终年不冻，该河段最突出的开发价值是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_yangtze"
+      ],
+      "difficulty": 0.45,
+      "solution": "长江下游地势低平、江面宽阔、水深大，航运条件优越，航运价值突出，因此长江被称为“黄金水道”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水能发电",
+        "B. 航运（黄金水道）",
+        "C. 天然捕捞",
+        "D. 围湖造田"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0018",
+      "item_type": "solve",
+      "stem": "简答：长江上游河段水能资源特别丰富的主要原因是什么？",
+      "answer": "长江上游流经青藏高原和横断山区，跨我国地势第一、二级阶梯和第二、三级阶梯交界处，河道落差大；上游流域内降水较多，河流水量大。落差大、水量大，因而水能资源特别丰富，被誉为“水能宝库”，可建三峡、葛洲坝等水利枢纽进行梯级开发。",
+      "kps": [
+        "kp_geo8_cn_yangtze"
+      ],
+      "difficulty": 0.5,
+      "solution": "从落差（阶梯交界处）和水量（流域降水丰富）两方面分析水能丰富的成因。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0019",
+      "item_type": "choice",
+      "stem": "黄河的泥沙主要来自（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_yellow_river"
+      ],
+      "difficulty": 0.35,
+      "solution": "黄河中游流经黄土高原，这里土质疏松、植被稀少、夏季降水集中且多暴雨，水土流失严重，成为黄河泥沙的主要来源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 上游的峡谷河段",
+        "B. 中游的黄土高原",
+        "C. 下游的地上河段",
+        "D. 河口的三角洲"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0020",
+      "item_type": "choice",
+      "stem": "黄河下游形成“地上河”（悬河）的主要原因是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_yellow_river"
+      ],
+      "difficulty": 0.5,
+      "solution": "黄河进入下游平原地区后，河道变宽、坡度变缓、流速减慢，携带的泥沙大量沉积，使河床逐年抬高，高出两岸地面，形成“地上河”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 上游来水量大、水流湍急，冲刷强烈",
+        "B. 下游降水集中，支流众多",
+        "C. 下游进入平原，流速减慢，泥沙大量淤积，河床逐年抬高",
+        "D. 沿岸大量引水灌溉，水位下降"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0021",
+      "item_type": "fill",
+      "stem": "黄河发源于青藏高原上的______山脉，干流呈“______”字形弯曲，最终注入渤海。",
+      "answer": "巴颜喀拉；几",
+      "kps": [
+        "kp_geo8_cn_yellow_river"
+      ],
+      "difficulty": 0.3,
+      "solution": "黄河发源于巴颜喀拉山北麓，全长5464千米，是我国第二长河，干流呈“几”字形，流经9个省级行政区，注入渤海。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0022",
+      "item_type": "choice",
+      "stem": "我国年降水量的空间（地区）分布规律是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_climate"
+      ],
+      "difficulty": 0.3,
+      "solution": "受海陆位置影响，我国降水量从东南沿海向西北内陆递减；东南沿海一带年降水量多在1600毫米以上，西北内陆多数地区不足200毫米。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从东南沿海向西北内陆递减",
+        "B. 从西北内陆向东南沿海递减",
+        "C. 从北向南逐渐递减",
+        "D. 从西向东逐渐递减"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0023",
+      "item_type": "choice",
+      "stem": "我国冬季南北温差大（漠河与海口气温相差约50℃），其最主要的影响因素是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_climate"
+      ],
+      "difficulty": 0.45,
+      "solution": "冬季太阳直射南半球，我国南北跨纬度广，北方纬度高、正午太阳高度低且白昼短，获得的太阳光热少，因此越往北气温越低，南北温差大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 海陆位置",
+        "B. 纬度位置",
+        "C. 地形地势",
+        "D. 人类活动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0024",
+      "item_type": "fill",
+      "stem": "我国气候的主要特征是：气候______多样和______气候显著。",
+      "answer": "复杂；季风",
+      "kps": [
+        "kp_geo8_cn_climate"
+      ],
+      "difficulty": 0.3,
+      "solution": "我国气候两大主要特征：一是气候复杂多样（跨多个温度带和干湿区，有多种气候类型）；二是季风气候显著，东部季风区雨热同期。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0025",
+      "item_type": "choice",
+      "stem": "我国草地主要分布在（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_land_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国草地主要分布在西部内陆的干旱、半干旱区，用于发展畜牧业；耕地主要集中在东部季风区的平原和盆地。",
+      "source": "llm_generated",
+      "options": [
+        "A. 东部季风区的平原和盆地",
+        "B. 东北、西南的边远山区",
+        "C. 东南低山丘陵区",
+        "D. 西部内陆的干旱、半干旱区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0026",
+      "item_type": "choice",
+      "stem": "关于我国土地资源基本特点的叙述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_land_resources"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国土地资源总量丰富，土地利用类型齐全，但因人口众多，人均土地资源占有量小，各类土地资源人均不足。",
+      "source": "llm_generated",
+      "options": [
+        "A. 土地资源总量小，人均充足",
+        "B. 总量丰富，但人均不足",
+        "C. 耕地多、草地少，比例失调",
+        "D. 土地利用类型单一"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0027",
+      "item_type": "fill",
+      "stem": "我国必须坚守“______亿亩耕地红线”；针对水土流失、土地荒漠化等问题，我国把“十分珍惜、合理利用土地和切实______”作为基本国策。",
+      "answer": "18；保护耕地",
+      "kps": [
+        "kp_geo8_cn_land_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国实行耕地红线（18亿亩）和基本农田保护制度；土地资源基本国策是“十分珍惜、合理利用土地和切实保护耕地”。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0028",
+      "item_type": "choice",
+      "stem": "为解决我国水资源南丰北缺、空间分布不均的问题，采取的主要工程措施是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_water_resources"
+      ],
+      "difficulty": 0.35,
+      "solution": "解决水资源空间分布不均（南多北少、东多西少）主要靠跨流域调水，如南水北调工程（东线、中线、西线）；修建水库解决的是时间分配不均。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跨流域调水（如南水北调工程）",
+        "B. 修建水库",
+        "C. 人工增雨",
+        "D. 大规模海水淡化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0029",
+      "item_type": "choice",
+      "stem": "南水北调中线工程从丹江口水库引水（长江流域），该工程主要缓解的地区是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_water_resources"
+      ],
+      "difficulty": 0.5,
+      "solution": "南水北调中线从丹江口水库调水，主要向华北地区（沿线经河南、河北直达北京、天津）供水，缓解华北水资源紧张状况。",
+      "source": "llm_generated",
+      "options": [
+        "A. 东北地区",
+        "B. 西北内陆地区",
+        "C. 华北地区",
+        "D. 青藏地区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0030",
+      "item_type": "fill",
+      "stem": "解决水资源时间（季节）分配不均的主要措施是修建______；我国水资源时间分配的特点是夏秋______、冬春少。",
+      "answer": "水库；多",
+      "kps": [
+        "kp_geo8_cn_water_resources"
+      ],
+      "difficulty": 0.35,
+      "solution": "受季风气候影响，我国水资源夏秋多、冬春少，年际变化大；修建水库可以在丰水期蓄水、枯水期放水，调节径流的时间分配。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0031",
+      "item_type": "choice",
+      "stem": "我国最大的渔场是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_marine_resources"
+      ],
+      "difficulty": 0.3,
+      "solution": "舟山渔场位于东海，是我国最大的渔场；我国四大渔场为黄渤海渔场、舟山渔场、南海沿岸渔场和北部湾渔场。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黄渤海渔场",
+        "B. 舟山渔场",
+        "C. 北部湾渔场",
+        "D. 南海沿岸渔场"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0032",
+      "item_type": "choice",
+      "stem": "我国最大的盐场——长芦盐场分布在（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_marine_resources"
+      ],
+      "difficulty": 0.45,
+      "solution": "长芦盐场位于渤海西岸（河北、天津沿海），这里滩涂宽广、春季气温回升快、蒸发旺盛、晴天多，利于晒制海盐，是我国最大盐场。",
+      "source": "llm_generated",
+      "options": [
+        "A. 南海沿岸",
+        "B. 东海沿岸",
+        "C. 黄海沿岸",
+        "D. 渤海西岸（河北、天津沿海）"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0033",
+      "item_type": "fill",
+      "stem": "我国四大渔场是黄渤海渔场、舟山渔场、南海沿岸渔场和______渔场；为保护海洋渔业资源，我国实行______制度。",
+      "answer": "北部湾；伏季休渔",
+      "kps": [
+        "kp_geo8_cn_marine_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "四大渔场：黄渤海渔场、舟山渔场、南海沿岸渔场、北部湾渔场；伏季休渔制度让渔业资源在繁殖生长旺季得到恢复，是保护海洋生态的重要措施。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0034",
+      "item_type": "choice",
+      "stem": "我国的四大牧区是指（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_agri_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国四大牧区是内蒙古、新疆、青海、西藏，主要位于西部干旱、半干旱区和高寒区，以畜牧业为主。",
+      "source": "llm_generated",
+      "options": [
+        "A. 内蒙古、新疆、青海、西藏",
+        "B. 内蒙古、甘肃、青海、西藏",
+        "C. 新疆、宁夏、青海、西藏",
+        "D. 内蒙古、新疆、四川、黑龙江"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0035",
+      "item_type": "choice",
+      "stem": "秦岭—淮河一线以南地区的耕作制度和主要粮食作物一般是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_agri_industry"
+      ],
+      "difficulty": 0.45,
+      "solution": "南方地区水热条件好，耕地以水田为主，主要种植水稻，一年两熟至三熟；北方以旱地为主，种植小麦、玉米，一年一熟或两年三熟。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一年一熟，以小麦为主",
+        "B. 一年一熟，以水稻为主",
+        "C. 一年两熟至三熟，以水稻为主",
+        "D. 三年两熟，以青稞为主"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0036",
+      "item_type": "fill",
+      "stem": "我国四大工业基地是指辽中南工业基地、______工业基地、沪宁杭（长江三角洲）工业基地和______工业基地。",
+      "answer": "京津唐；珠江三角洲",
+      "kps": [
+        "kp_geo8_cn_agri_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国四大工业基地：辽中南（重工业为主）、京津唐（北方最大综合性）、沪宁杭（全国最大综合性）、珠江三角洲（以轻工业为主）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0037",
+      "item_type": "choice",
+      "stem": "将郊区水库的2吨活鱼运往城区市场销售，最合适的运输方式是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_transport"
+      ],
+      "difficulty": 0.4,
+      "solution": "公路运输机动灵活、周转快，可实现“门到门”运输，适合短途运送鲜活货物；铁路、水路不能直接到市场，管道只能运输流体货物。",
+      "source": "llm_generated",
+      "options": [
+        "A. 铁路运输",
+        "B. 公路运输",
+        "C. 海洋运输",
+        "D. 管道运输"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0038",
+      "item_type": "choice",
+      "stem": "从武汉运送10万吨大米到上海，最经济合理的运输方式是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_transport"
+      ],
+      "difficulty": 0.5,
+      "solution": "武汉与上海都位于长江干流沿岸，水路运输运量大、成本低，顺长江而下即可直达，是最经济的运输方式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 航空运输",
+        "B. 铁路运输",
+        "C. 公路运输",
+        "D. 长江水路运输"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0039",
+      "item_type": "fill",
+      "stem": "我国交通运输网分布不均，东部地区______，西部地区______。",
+      "answer": "密集；稀疏",
+      "kps": [
+        "kp_geo8_cn_transport"
+      ],
+      "difficulty": 0.35,
+      "solution": "受人口、经济分布影响，我国交通线东部稠密、西部稀疏；近年来西部交通条件明显改善，高铁网也由“四纵四横”向“八纵八横”扩展。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0040",
+      "item_type": "choice",
+      "stem": "北方地区与南方地区的分界线是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_location"
+      ],
+      "difficulty": 0.3,
+      "solution": "北方地区与南方地区以秦岭—淮河一线为界，该线大致与1月0℃等温线、800毫米年等降水量线一致，两侧自然和人文地理差异显著。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大兴安岭—太行山一线",
+        "B. 秦岭—淮河一线",
+        "C. 长城一线",
+        "D. 昆仑山—祁连山一线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0041",
+      "item_type": "choice",
+      "stem": "北方地区主要的气候类型是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_north_location"
+      ],
+      "difficulty": 0.4,
+      "solution": "北方地区以温带季风气候为主，夏季高温多雨、冬季寒冷干燥；降水集中在7、8月份，雨热同期有利于农作物生长。",
+      "source": "llm_generated",
+      "options": [
+        "A. 温带季风气候",
+        "B. 亚热带季风气候",
+        "C. 温带大陆性气候",
+        "D. 热带季风气候"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0042",
+      "item_type": "fill",
+      "stem": "北方地区大体位于______一线以北、大兴安岭—乌鞘岭以东，地形以______和高原为主。",
+      "answer": "秦岭—淮河；平原",
+      "kps": [
+        "kp_geo8_cn_north_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "北方地区位于秦岭—淮河以北、内蒙古高原以南，地形以东北平原、华北平原和黄土高原为主，面积约占全国的20%。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0043",
+      "item_type": "choice",
+      "stem": "关于东北平原的叙述，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_north_soil_agri"
+      ],
+      "difficulty": 0.35,
+      "solution": "东北平原由三江平原、松嫩平原、辽河平原组成，是我国面积最大的平原，黑土广布、土壤肥沃，是重要的商品粮产区。",
+      "source": "llm_generated",
+      "options": [
+        "A. 我国面积最小的平原，红壤广布",
+        "B. 以水田为主的集中连片种植业区",
+        "C. 我国最大的河口三角洲平原",
+        "D. 我国面积最大的平原，黑土广布、土壤肥沃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0044",
+      "item_type": "choice",
+      "stem": "长白山区的“东北三宝”是指（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_north_soil_agri"
+      ],
+      "difficulty": 0.4,
+      "solution": "东北三宝指人参、貂皮、鹿茸（角），产自长白山区，是东北林地的重要特产。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人参、貂皮、鹿茸",
+        "B. 人参、木耳、鹿茸",
+        "C. 貂皮、羊毛、鹿茸",
+        "D. 人参、貂皮、枸杞"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0045",
+      "item_type": "fill",
+      "stem": "东北平原是我国最重要的商品粮基地，主要的糖料作物是______，主要的（春播）粮食作物是______。",
+      "answer": "甜菜；春小麦",
+      "kps": [
+        "kp_geo8_cn_north_soil_agri"
+      ],
+      "difficulty": 0.4,
+      "solution": "东北平原纬度较高、热量不足，一年一熟，种植春小麦、玉米、大豆、甜菜等；三江平原、松嫩平原地广人稀、机械化程度高，粮食商品率高。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0046",
+      "item_type": "choice",
+      "stem": "下列不属于黄土高原水土流失自然原因的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_north_loess"
+      ],
+      "difficulty": 0.5,
+      "solution": "自然原因：黄土土质疏松、降水集中于夏季且多暴雨、植被稀少、地形破碎坡度大；过度放牧和陡坡开垦属于人为原因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 黄土土质疏松，垂直节理发育",
+        "B. 降水集中在夏季且多暴雨",
+        "C. 植被稀少，地表缺乏保护",
+        "D. 过度放牧和陡坡开垦"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0047",
+      "item_type": "choice",
+      "stem": "治理黄土高原水土流失采取的主要生物措施是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_north_loess"
+      ],
+      "difficulty": 0.4,
+      "solution": "治理水土流失要生物措施与工程措施相结合：生物措施主要是植树种草、退耕还林还草；工程措施包括修梯田、打坝淤地；还要合理安排生产活动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 打坝淤地",
+        "B. 修筑水平梯田",
+        "C. 植树种草、退耕还林还草",
+        "D. 加固黄河大堤"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0048",
+      "item_type": "solve",
+      "stem": "简答：黄土高原水土流失严重的主要人为原因有哪些？",
+      "answer": "人为原因主要有：①滥砍滥伐森林、毁林毁草开荒，使地表植被遭到破坏；②过度放牧，草场退化；③在陡坡上开垦耕种，破坏坡面稳定；④开矿、修路等工程建设挖掘土体、破坏植被，疏松了表土。这些不合理的生产活动使地表失去植被保护，加剧了水土流失。",
+      "kps": [
+        "kp_geo8_cn_north_loess"
+      ],
+      "difficulty": 0.5,
+      "solution": "从破坏植被的人类生产活动（滥伐、过牧、陡坡耕种、开矿修路）四方面作答，注意与自然原因区分。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0049",
+      "item_type": "choice",
+      "stem": "华北平原春季（3—5月）干旱严重的主要原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_huabei"
+      ],
+      "difficulty": 0.5,
+      "solution": "华北平原春季气温回升快、蒸发旺盛，但降水少，又正值春播春耕用水高峰，供需矛盾突出，形成严重的春旱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 春季降水集中且多暴雨，排水不畅",
+        "B. 春季气温回升快、蒸发旺盛、降水少，又正值春耕用水高峰",
+        "C. 春季河流封冻，水源中断",
+        "D. 春季台风频繁登陆，降水少"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0050",
+      "item_type": "choice",
+      "stem": "为缓解华北平原水资源紧张状况而实施的跨流域调水工程主要是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_north_huabei"
+      ],
+      "difficulty": 0.4,
+      "solution": "南水北调中线和东线工程主要向华北（京津地区）供水；此外华北还应发展节水农业（喷灌、滴灌）、防治水污染。",
+      "source": "llm_generated",
+      "options": [
+        "A. 西气东输",
+        "B. 西电东送",
+        "C. 南水北调",
+        "D. 北煤南运"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0051",
+      "item_type": "fill",
+      "stem": "华北平原由黄河、______河、海河冲积而成，又称______平原；每年春季的______对当地农业威胁很大。",
+      "answer": "淮；黄淮海；春旱",
+      "kps": [
+        "kp_geo8_cn_north_huabei"
+      ],
+      "difficulty": 0.4,
+      "solution": "华北平原由黄河、淮河、海河冲积而成，又称黄淮海平原；春旱是当地突出的气象灾害，此外还有夏涝、土壤盐碱化等问题。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0052",
+      "item_type": "choice",
+      "stem": "辽中南工业基地的主要特色是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_north_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "辽中南工业基地依托丰富的煤、铁、石油资源，以重工业为主，是我国著名的钢铁、机械、石油化工工业基地。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以重工业为主，是我国重要的钢铁、机械工业基地",
+        "B. 以轻工业为主的外向型工业基地",
+        "C. 我国北方最大的综合性工业基地",
+        "D. 以微电子工业为主导的“硅谷”型基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0053",
+      "item_type": "choice",
+      "stem": "我国北方最大的综合性工业基地是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_industry"
+      ],
+      "difficulty": 0.45,
+      "solution": "京津唐工业基地有丰富的煤、铁、石油、海盐资源，高新技术产业发达，是我国北方最大的综合性工业基地；沪宁杭是全国最大的综合性工业基地。",
+      "source": "llm_generated",
+      "options": [
+        "A. 辽中南工业基地",
+        "B. 京津唐工业基地",
+        "C. 珠江三角洲工业基地",
+        "D. 沪宁杭工业基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0054",
+      "item_type": "fill",
+      "stem": "西电东送北线通道将山西、内蒙古的火电和黄河上游的水电送往______地区；黄土高原丰富的______资源是其成为全国能源基地的优势。",
+      "answer": "京津唐；煤炭",
+      "kps": [
+        "kp_geo8_cn_north_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "西电东送北线以山西、内蒙古的坑口火电和黄河上游水电为主，送往京津唐地区；黄土高原煤炭储量巨大，山西素有“煤海”之称。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0055",
+      "item_type": "choice",
+      "stem": "南方地区分布最广的气候类型是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_south_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "南方地区以亚热带季风气候为主，夏季高温多雨、冬季温和少雨；南部沿海和滇南分布有热带季风气候。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热带季风气候",
+        "B. 温带季风气候",
+        "C. 亚热带季风气候",
+        "D. 高原山地气候"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0056",
+      "item_type": "choice",
+      "stem": "南方地区最突出的自然环境特征是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_south_location"
+      ],
+      "difficulty": 0.4,
+      "solution": "南方地区位于秦岭—淮河以南，热量充足、降水丰沛，湿热是其最主要的自然特征，地形上平原、盆地、高原、丘陵交错分布。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干旱",
+        "B. 高寒",
+        "C. 冷湿",
+        "D. 湿热"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0057",
+      "item_type": "fill",
+      "stem": "南方地区位于秦岭—淮河以南、______高原以东，耕地类型以______为主。",
+      "answer": "青藏；水田",
+      "kps": [
+        "kp_geo8_cn_south_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "南方地区位于秦岭—淮河以南、青藏高原以东，面积约占总面积25%；水热充足，耕地以水田为主，主要种植水稻。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0058",
+      "item_type": "choice",
+      "stem": "我国最大的油菜产区位于（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_agri"
+      ],
+      "difficulty": 0.4,
+      "solution": "长江流域是我国最大的油菜产区；华南地区是我国最大的甘蔗产区，南方地区还盛产茶叶、柑橘等。",
+      "source": "llm_generated",
+      "options": [
+        "A. 华南地区",
+        "B. 长江流域",
+        "C. 东北地区",
+        "D. 黄河中下游地区"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0059",
+      "item_type": "choice",
+      "stem": "珠江三角洲的“桑基鱼塘”属于（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_south_agri"
+      ],
+      "difficulty": 0.5,
+      "solution": "基塘农业在塘基上种桑（或蔗、果、花），塘内养鱼，蚕沙（蔗叶等）喂鱼、塘泥肥基，实现物质循环利用，是农、副、渔结合的生态农业模式。",
+      "source": "llm_generated",
+      "options": [
+        "A. 种桑养蚕与养鱼相结合的生态（混合）农业",
+        "B. 大规模机械化旱地农业",
+        "C. 单一的水稻种植业",
+        "D. 山地游牧畜牧业"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0060",
+      "item_type": "fill",
+      "stem": "南方地区耕地以水田为主，主要粮食作物是______，主要糖料作物是______。",
+      "answer": "水稻；甘蔗",
+      "kps": [
+        "kp_geo8_cn_south_agri"
+      ],
+      "difficulty": 0.35,
+      "solution": "南方水热条件优越，普遍种植水稻，是我国水稻的主产区；甘蔗主要分布在华南地区（广西、广东等）。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0061",
+      "item_type": "choice",
+      "stem": "长江三角洲地区是我国（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_yangtze_delta"
+      ],
+      "difficulty": 0.35,
+      "solution": "长江三角洲工业历史悠久、技术力量雄厚、市场广阔、水陆交通便利，是我国最大的综合性工业基地（沪宁杭工业基地）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 最大的重工业基地",
+        "B. 最大的综合性工业基地",
+        "C. 最大的畜牧业基地",
+        "D. 最大的煤炭能源基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0062",
+      "item_type": "choice",
+      "stem": "长江三角洲地区成为著名“鱼米之乡”的自然条件是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_south_yangtze_delta"
+      ],
+      "difficulty": 0.5,
+      "solution": "长江三角洲地势低平、河网密布、湖泊星罗，气候温暖湿润、雨热同期，水稻种植和淡水渔业发达，自古就是“鱼米之乡”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 深居内陆，光照充足，昼夜温差大",
+        "B. 以高原山地为主，草场广布",
+        "C. 地势低平、气候温暖湿润、河网密布，雨热同期",
+        "D. 纬度高，黑土广布、土壤肥沃"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0063",
+      "item_type": "fill",
+      "stem": "长江三角洲位于长江入海口，包括上海市、江苏省南部和浙江省北部；该区域的核心城市是______，城市群以上海、南京、______为代表，被称为“沪宁杭”城市群。",
+      "answer": "上海；杭州",
+      "kps": [
+        "kp_geo8_cn_south_yangtze_delta"
+      ],
+      "difficulty": 0.4,
+      "solution": "长江三角洲是我国城市最密集、经济最发达的地区，核心城市上海是全国最大的城市，与南京、杭州等构成沪宁杭城市群。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0064",
+      "item_type": "choice",
+      "stem": "云贵高原喀斯特地貌广泛发育，其发育的基础岩石是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_karst"
+      ],
+      "difficulty": 0.4,
+      "solution": "云贵高原石灰岩广布，流水长期溶蚀形成溶洞、石林、峰林、地下河等喀斯特（岩溶）地貌。",
+      "source": "llm_generated",
+      "options": [
+        "A. 花岗岩",
+        "B. 石灰岩",
+        "C. 玄武岩",
+        "D. 板岩"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0065",
+      "item_type": "choice",
+      "stem": "云贵高原喀斯特地区发展农业生产最大的限制条件是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_south_karst"
+      ],
+      "difficulty": 0.5,
+      "solution": "喀斯特地区石灰岩广布，土层浅薄，地表水容易沿溶洞、地下河渗漏，地表干旱缺水，不利于耕作和灌溉，易发生石漠化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 热量不足，无霜期短",
+        "B. 光照过强，蒸发旺盛",
+        "C. 坡度过小，排水不畅",
+        "D. 土层浅薄，地表水容易渗漏，干旱缺水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0066",
+      "item_type": "fill",
+      "stem": "云贵高原石灰岩广布，发育了独特的______地貌（溶洞、石林、峰林等）；当地突出的生态环境问题是______，即水土流失导致岩石大面积裸露。",
+      "answer": "喀斯特（岩溶）；石漠化",
+      "kps": [
+        "kp_geo8_cn_south_karst"
+      ],
+      "difficulty": 0.4,
+      "solution": "喀斯特地貌是可溶性岩石（石灰岩）被流水溶蚀形成的；石漠化是喀斯特地区水土严重流失后地表呈现的石质荒漠化现象。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0067",
+      "item_type": "choice",
+      "stem": "珠江三角洲工业基地最突出的特色是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_south_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "珠江三角洲毗邻港澳、多侨乡，引进外资和技术便利，以轻工业（电子、家电、服装等）为主，产品大量出口，是典型的外向型经济。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全国最大的综合性工业基地",
+        "B. 以重工业为主，矿产加工发达",
+        "C. 以轻工业为主的外向型经济",
+        "D. 以能源工业为主，电力输出量大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0068",
+      "item_type": "choice",
+      "stem": "珠江三角洲发展外向型经济最有利的区位条件是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_industry"
+      ],
+      "difficulty": 0.5,
+      "solution": "珠江三角洲毗邻港澳，与港澳形成“前店后厂”分工；本地多侨乡，便于引进外资、先进技术和管理经验，发展出口加工业。",
+      "source": "llm_generated",
+      "options": [
+        "A. 煤、铁资源十分丰富",
+        "B. 毗邻港澳、多侨乡，便于引进资金、技术和管理经验",
+        "C. 深居内陆，劳动力廉价",
+        "D. 地形以高原为主，水能丰富"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0069",
+      "item_type": "fill",
+      "stem": "长江干支流通航里程居世界首位，被誉为“______”；沪宁杭是我国最大的______性工业基地。",
+      "answer": "黄金水道；综合",
+      "kps": [
+        "kp_geo8_cn_south_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "长江干支流通航里程世界最长，水运价值高，被称为“黄金水道”；南方沿海还拥有上海港、宁波港、广州港、深圳港等世界级大港。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0070",
+      "item_type": "choice",
+      "stem": "西北地区最突出的自然特征是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_nw_location"
+      ],
+      "difficulty": 0.3,
+      "solution": "西北地区深居内陆、距海遥远，加上山岭阻隔，海洋水汽难以到达，降水稀少，干旱是其最显著的自然特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干旱",
+        "B. 高寒",
+        "C. 湿热",
+        "D. 炎热多雨"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0071",
+      "item_type": "choice",
+      "stem": "在中国降水分布图上判读，西北地区自然景观自东向西由草原逐步变为荒漠草原、荒漠，其主要原因是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_nw_location"
+      ],
+      "difficulty": 0.5,
+      "solution": "西北地区自东向西距海越来越远，降水逐渐减少（大部分地区年降水量不足400毫米），因而植被由草原过渡为荒漠草原、荒漠。",
+      "source": "llm_generated",
+      "options": [
+        "A. 纬度逐渐升高，热量减少",
+        "B. 地势逐渐降低，海拔下降",
+        "C. 距海越来越远，降水自东向西逐渐减少",
+        "D. 人类活动强度自东向西增大"
+      ],
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0072",
+      "item_type": "fill",
+      "stem": "西北地区深居内陆、距海遥远，是我国最干旱的地区，自然景观自东向西依次为草原→______→______。",
+      "answer": "荒漠草原；荒漠",
+      "kps": [
+        "kp_geo8_cn_nw_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "西北地区年降水量自东向西由400毫米左右降至50毫米以下，植被相应由草原→荒漠草原→荒漠更替，反映降水量对植被的影响。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0073",
+      "item_type": "choice",
+      "stem": "下列不属于西北地区土地荒漠化人为原因的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_nw_desert"
+      ],
+      "difficulty": 0.45,
+      "solution": "气候干旱、大风频繁、地表多疏松沙质沉积物属于自然原因；过度放牧、滥砍滥伐、过度开垦、水资源利用不当等才是人为原因。",
+      "source": "llm_generated",
+      "options": [
+        "A. 过度放牧，草场超载",
+        "B. 滥砍滥伐，破坏植被",
+        "C. 过度开垦草原为耕地",
+        "D. 气候干旱、大风频繁"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0074",
+      "item_type": "choice",
+      "stem": "防治西北地区土地荒漠化的合理措施是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_nw_desert"
+      ],
+      "difficulty": 0.5,
+      "solution": "防治荒漠化应合理利用土地和水资源：退耕还林还草、确定合理载畜量、建设人工草场、合理分配河流上中下游用水，并建设三北防护林。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大面积开垦草原，扩大耕地面积",
+        "B. 确定合理载畜量，退耕还林还草，合理利用水资源",
+        "C. 大规模种植高耗水农作物",
+        "D. 全面停止一切放牧活动"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0075",
+      "item_type": "fill",
+      "stem": "为防治荒漠化，我国建设了横跨西北、华北、东北的“______”防护林体系工程；牧区应确定合理的______，防止超载放牧。",
+      "answer": "三北；载畜量",
+      "kps": [
+        "kp_geo8_cn_nw_desert"
+      ],
+      "difficulty": 0.4,
+      "solution": "三北防护林被称为我国的“绿色长城”，是防治荒漠化的重大生态工程；合理确定载畜量、建设人工草场可减轻草场压力。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0076",
+      "item_type": "choice",
+      "stem": "西气东输一线工程的天然气主要来源地是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_nw_resource"
+      ],
+      "difficulty": 0.4,
+      "solution": "西气东输工程以新疆塔里木盆地的天然气为气源，经管道输往上海等东部地区，把西部资源优势转化为经济优势。",
+      "source": "llm_generated",
+      "options": [
+        "A. 新疆塔里木盆地",
+        "B. 四川盆地",
+        "C. 柴达木盆地",
+        "D. 准噶尔盆地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0077",
+      "item_type": "choice",
+      "stem": "西北地区适宜大规模建设风电场开发风能，其主要原因是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_nw_resource"
+      ],
+      "difficulty": 0.45,
+      "solution": "西北地区（内蒙古、新疆）靠近冬季风源地，风力强劲、风日多，风能资源丰富；同时晴天多、日照强，太阳能资源也丰富。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地形以平原为主，摩擦力小",
+        "B. 全年高温多雨，水汽充足",
+        "C. 植被茂密，风力通道畅通",
+        "D. 靠近冬季风源地，风力强劲，风能资源丰富"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0078",
+      "item_type": "fill",
+      "stem": "西气东输工程将新疆塔里木盆地的______资源通过管道输往上海等东部地区；西北内陆晴天多、日照强，______能资源也十分丰富。",
+      "answer": "天然气；太阳",
+      "kps": [
+        "kp_geo8_cn_nw_resource"
+      ],
+      "difficulty": 0.4,
+      "solution": "西北能源丰富多样：煤炭（陕西、内蒙古）、油气（新疆）、风能、太阳能俱全；西气东输、西电东送北线都从这里把能源送往东部。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0079",
+      "item_type": "choice",
+      "stem": "青藏地区最显著的自然特征是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_tibet_location"
+      ],
+      "difficulty": 0.3,
+      "solution": "青藏地区主体是青藏高原，平均海拔4000米以上，是世界最高的高原，形成独特的高寒气候，高寒是其最显著的自然特征。",
+      "source": "llm_generated",
+      "options": [
+        "A. 干旱",
+        "B. 高寒",
+        "C. 湿热",
+        "D. 炎热干燥"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0080",
+      "item_type": "choice",
+      "stem": "青藏高原是我国太阳辐射最强的地区，其主要原因是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_tibet_location"
+      ],
+      "difficulty": 0.45,
+      "solution": "青藏高原海拔高，空气稀薄、尘埃少，晴天多，大气对太阳辐射的削弱作用小，到达地面的太阳辐射强，日照充足，拉萨有“日光城”之称。",
+      "source": "llm_generated",
+      "options": [
+        "A. 纬度低，正午太阳高度全年最大",
+        "B. 云量多，大气逆辐射强",
+        "C. 海拔高、空气稀薄、晴天多，大气对太阳辐射的削弱作用小",
+        "D. 白昼时间全年最长"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0081",
+      "item_type": "fill",
+      "stem": "青藏高原平均海拔在4000米以上，被称为“______”；受地势影响，其夏季气温比同纬度的东部平原明显偏______。",
+      "answer": "世界屋脊；低",
+      "kps": [
+        "kp_geo8_cn_tibet_location"
+      ],
+      "difficulty": 0.35,
+      "solution": "青藏高原是世界最高的高原，被称为“世界屋脊”；因海拔高，气温低，雪山连绵、冰川广布，是我国固体淡水库。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0082",
+      "item_type": "choice",
+      "stem": "青藏地区的种植业（河谷农业）主要分布在（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_tibet_agri"
+      ],
+      "difficulty": 0.45,
+      "solution": "青藏高原高寒环境下，河谷地带（雅鲁藏布江谷地、湟水谷地）海拔较低、气温较高、地势平坦、水源较好，适宜发展种植业，称河谷农业。",
+      "source": "llm_generated",
+      "options": [
+        "A. 雅鲁藏布江谷地和湟水谷地",
+        "B. 藏北高原内陆湖区",
+        "C. 昆仑山山麓地带",
+        "D. 柴达木盆地中心"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0083",
+      "item_type": "choice",
+      "stem": "青藏地区被称为“高原之舟”的特有牲畜是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_tibet_agri"
+      ],
+      "difficulty": 0.35,
+      "solution": "牦牛毛厚、耐寒、善驮运，适应高寒环境，被称为“高原之舟”；藏绵羊、藏山羊也是青藏地区的三大牲畜。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三河马",
+        "B. 牦牛",
+        "C. 细毛羊",
+        "D. 双峰驼"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0084",
+      "item_type": "fill",
+      "stem": "青藏地区气候高寒，主要粮食作物是耐寒的______；藏族传统民居为石木结构、平顶、窗户小的______，适应高寒多风的环境。",
+      "answer": "青稞；碉房",
+      "kps": [
+        "kp_geo8_cn_tibet_agri"
+      ],
+      "difficulty": 0.4,
+      "solution": "青稞耐寒性强，是青藏地区主要粮食作物（可做糌粑、酿青稞酒）；碉房平顶厚墙、窗小，利于防寒保暖抗风。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0085",
+      "item_type": "choice",
+      "stem": "三江源地区被誉为“中华水塔”，“三江”是指（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_tibet_ecology"
+      ],
+      "difficulty": 0.35,
+      "solution": "三江源位于青海省南部，是长江、黄河、澜沧江三条大江大河的发源地，雪山冰川融水孕育了这些河流，被称为“中华水塔”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长江、黄河、雅鲁藏布江",
+        "B. 长江、珠江、澜沧江",
+        "C. 黄河、黑龙江、松花江",
+        "D. 长江、黄河、澜沧江"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0086",
+      "item_type": "choice",
+      "stem": "三江源地区被称为“中华水塔”，主要原因是该地区（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_tibet_ecology"
+      ],
+      "difficulty": 0.5,
+      "solution": "三江源地区雪山连绵、冰川广布，湖泊沼泽众多，是长江、黄河、澜沧江的总源头，源源不断地向江河补给水源，故称“中华水塔”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地处湿润区，河网密布，径流量全国最大",
+        "B. 大型湖泊数量居全国第一",
+        "C. 雪山连绵、冰川广布，是众多大江大河的发源地，固体淡水资源丰富",
+        "D. 地下水埋藏浅，可开采量极大"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0087",
+      "item_type": "fill",
+      "stem": "三江源地区位于______省南部，是长江、黄河、澜沧江的发源地；我国第一个国家公园体制试点是______国家公园。",
+      "answer": "青海；三江源",
+      "kps": [
+        "kp_geo8_cn_tibet_ecology"
+      ],
+      "difficulty": 0.4,
+      "solution": "三江源在青海省南部；三江源国家公园是我国第一个国家公园体制试点，保护措施包括退牧还草、休牧育草、防治荒漠化等。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0088",
+      "item_type": "choice",
+      "stem": "2006年全线通车、世界上海拔最高的高原铁路——青藏铁路的起讫城市是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_tibet_transport"
+      ],
+      "difficulty": 0.35,
+      "solution": "青藏铁路东起青海西宁、南至西藏拉萨，全长1956千米，2006年全线通车，是世界上海拔最高、线路最长的高原铁路。",
+      "source": "llm_generated",
+      "options": [
+        "A. 兰州—拉萨",
+        "B. 西宁—拉萨",
+        "C. 成都—拉萨",
+        "D. 格尔木—日喀则"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0089",
+      "item_type": "choice",
+      "stem": "下列不属于青藏铁路建设三大世界级工程难题的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_tibet_transport"
+      ],
+      "difficulty": 0.5,
+      "solution": "青藏铁路建设的三大工程难题是多年冻土、高寒缺氧、生态脆弱；“港阔水深”是港口特征，与高原铁路建设无关。",
+      "source": "llm_generated",
+      "options": [
+        "A. 多年冻土",
+        "B. 高寒缺氧",
+        "C. 生态脆弱",
+        "D. 沿线沼泽广布、港阔水深"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0090",
+      "item_type": "fill",
+      "stem": "青藏铁路于2006年全线通车，是世界上海拔最高、线路最长的高原铁路，建设中克服了多年冻土、高寒缺氧和______三大难题；青藏地区目前最主要的运输方式（客运货运骨干）是以______运输为主。",
+      "answer": "生态脆弱；公路",
+      "kps": [
+        "kp_geo8_cn_tibet_transport"
+      ],
+      "difficulty": 0.4,
+      "solution": "青藏高原地广人稀、地形复杂，交通运输长期以公路为主（青藏、川藏、新藏、滇藏公路），青藏铁路通车和航空发展改善了对外交通。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0091",
+      "item_type": "choice",
+      "stem": "关于香港地理位置和组成的叙述，正确的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_hk_macao"
+      ],
+      "difficulty": 0.35,
+      "solution": "香港位于珠江口东侧，北与广东省深圳市相邻，由香港岛、九龙半岛、新界及其周围200多个岛屿组成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 位于珠江口西侧，与福建省相邻",
+        "B. 位于长江口南岸，与江苏省相邻",
+        "C. 位于珠江口东侧，北与广东省深圳市相邻",
+        "D. 位于海南岛对面，隔琼州海峡相望"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0092",
+      "item_type": "choice",
+      "stem": "澳门回归祖国、成立特别行政区的时间是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_hk_macao"
+      ],
+      "difficulty": 0.4,
+      "solution": "1999年12月20日澳门回归祖国，设特别行政区，实行“一国两制”、“澳人治澳”、高度自治；香港回归时间是1997年7月1日。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1997年7月1日",
+        "B. 1999年12月20日",
+        "C. 1997年12月20日",
+        "D. 1999年7月1日"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0093",
+      "item_type": "fill",
+      "stem": "香港于______年7月1日回归祖国，实行“一国两制”、“港人治港”、高度自治；澳门由澳门半岛、______岛和路环岛组成。",
+      "answer": "1997；氹仔",
+      "kps": [
+        "kp_geo8_hk_macao"
+      ],
+      "difficulty": 0.4,
+      "solution": "香港1997年7月1日回归；澳门位于珠江口西侧，由澳门半岛、氹仔岛和路环岛组成，1999年12月20日回归祖国。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0094",
+      "item_type": "choice",
+      "stem": "关于香港经济特点的叙述，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_hk_industry"
+      ],
+      "difficulty": 0.45,
+      "solution": "香港经济以服务业（第三产业）为主，是国际金融中心、贸易中心和航运中心；传统劳动密集型制造业已大部分转移到内地。",
+      "source": "llm_generated",
+      "options": [
+        "A. 经济以服务业（第三产业）为主，是国际金融、贸易、航运中心",
+        "B. 以劳动密集型制造业为主，是世界加工厂",
+        "C. 以博彩旅游业为最主要支柱产业",
+        "D. 以种植业和渔业为主"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0095",
+      "item_type": "choice",
+      "stem": "粤港澳合作中曾流行“前店后厂”模式，其中香港主要承担的角色是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_hk_industry"
+      ],
+      "difficulty": 0.5,
+      "solution": "“前店后厂”中，香港扮演“店”的角色，利用资金、技术、管理经验和市场信息承接订单、设计营销；珠三角扮演“厂”，利用土地和劳动力进行加工制造。",
+      "source": "llm_generated",
+      "options": [
+        "A. “厂”——提供土地和劳动力进行加工制造",
+        "B. “店”——承接订单、设计研发、营销和管理",
+        "C. 原材料和能源供应基地",
+        "D. 农产品供应基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0096",
+      "item_type": "fill",
+      "stem": "香港与祖国内地经济合作优势互补：内地主要提供劳动力、资源和______，香港主要提供资金、技术、信息和______经验。",
+      "answer": "市场；管理",
+      "kps": [
+        "kp_geo8_hk_industry"
+      ],
+      "difficulty": 0.4,
+      "solution": "港澳与内地合作中，内地具有劳动力、土地、资源和市场优势；香港提供资金、技术、信息和管理经验，双方优势互补、互利共赢。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0097",
+      "item_type": "choice",
+      "stem": "澳门经济发展最主要的支柱产业是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_macao"
+      ],
+      "difficulty": 0.35,
+      "solution": "澳门博彩业历史悠久（1867年合法化），带动旅游业发展，使其成为世界旅游休闲中心，博彩旅游业是经济支柱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 钢铁冶炼与装备制造",
+        "B. 采矿业与能源工业",
+        "C. 电子信息与航空航天工业",
+        "D. 博彩旅游业"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0098",
+      "item_type": "choice",
+      "stem": "关于澳门的叙述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_macao"
+      ],
+      "difficulty": 0.45,
+      "solution": "澳门面积约32.9平方千米，是我国面积最小的省级行政区，人口密度极高；其历史城区中西文化交融，2005年列入世界文化遗产。",
+      "source": "llm_generated",
+      "options": [
+        "A. 是我国面积最大的省级行政区",
+        "B. 是我国面积最小的省级行政区，人口密度极高",
+        "C. 位于珠江口东侧，与香港隔江相望的北岸",
+        "D. 以重工业和采矿业闻名世界"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0099",
+      "item_type": "fill",
+      "stem": "澳门历史城区于______年列入《世界文化遗产名录》；澳门因博彩业兴盛而被称为“东方______”。",
+      "answer": "2005；蒙地卡罗",
+      "kps": [
+        "kp_geo8_macao"
+      ],
+      "difficulty": 0.4,
+      "solution": "澳门历史城区保存了中西合璧的建筑群，2005年被列入世界文化遗产；“东方蒙地卡罗”喻指其博彩业的地位。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0100",
+      "item_type": "choice",
+      "stem": "与台湾岛隔台湾海峡相望的省份是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_taiwan"
+      ],
+      "difficulty": 0.35,
+      "solution": "台湾岛北临东海、东临太平洋、南临南海，西隔台湾海峡与福建省相望，台湾海峡是我国重要的海上通道。",
+      "source": "llm_generated",
+      "options": [
+        "A. 广东省",
+        "B. 浙江省",
+        "C. 福建省",
+        "D. 海南省"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0101",
+      "item_type": "choice",
+      "stem": "在台湾省地形图上判读，关于台湾岛地形与人口、城市分布的叙述，正确的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_taiwan"
+      ],
+      "difficulty": 0.5,
+      "solution": "台湾岛山地约占2/3，中央山脉纵贯南北，平原主要分布在西部沿海；人口和城市（台北、台中、高雄等）也主要集中在西部平原地区。",
+      "source": "llm_generated",
+      "options": [
+        "A. 山地集中在西部，人口城市集中在东部沿海",
+        "B. 山地约占2/3，平原主要分布在西部，人口城市也主要集中在西部沿海",
+        "C. 地形以平原为主，人口均匀分布于全岛",
+        "D. 地形以高原为主，人口集中在内部高原"
+      ],
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0102",
+      "item_type": "fill",
+      "stem": "台湾岛面积约3.6万平方千米，是我国第______大岛；北回归线穿过其中南部，气候以亚热带季风气候和______季风气候为主。",
+      "answer": "一；热带",
+      "kps": [
+        "kp_geo8_taiwan"
+      ],
+      "difficulty": 0.35,
+      "solution": "台湾岛是我国第一大岛，北临东海、南临南海；跨回归线两侧，温暖湿润，山地植被垂直分异明显。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0103",
+      "item_type": "choice",
+      "stem": "台湾岛森林中最重要的树种及其产量居世界首位的林产品分别是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_taiwan_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "台湾森林资源丰富，樟树是最著名的树种，樟脑产量居世界首位；台湾岛因此有“亚洲天然植物园”之称。",
+      "source": "llm_generated",
+      "options": [
+        "A. 樟树、樟脑",
+        "B. 椰树、椰果",
+        "C. 红松、松脂",
+        "D. 桉树、桉油"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0104",
+      "item_type": "choice",
+      "stem": "台湾岛享有“亚洲天然植物园”美誉，其形成的主要自然原因是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_taiwan_resources"
+      ],
+      "difficulty": 0.5,
+      "solution": "台湾岛纬度较低、气候温暖湿润，且山地高差大，植被垂直分异显著，从热带到寒温带的树种均有分布，植物种类丰富。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全岛位于热带，全年高温多雨",
+        "B. 人工造林面积广，树种单一整齐",
+        "C. 山地为主、高差大，气候温暖湿润，植被垂直分异显著、树种丰富",
+        "D. 深居内陆，光照充足，耐旱植物广布"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0105",
+      "item_type": "fill",
+      "stem": "台湾岛森林茂密、植物种类繁多，被誉为“______”；岛上的新竹科学园区被称为“______”。",
+      "answer": "亚洲天然植物园；台湾硅谷",
+      "kps": [
+        "kp_geo8_taiwan_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "台湾森林覆盖率较高，树种丰富，有“亚洲天然植物园”之称；新竹科学园区以电子信息产业闻名，被称为“台湾硅谷”。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0106",
+      "item_type": "choice",
+      "stem": "阅读我国1月平均气温分布图，图中等温线大致呈东西方向延伸、数值自南向北递减。这反映我国冬季气温分布的特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_geography_tools_review"
+      ],
+      "difficulty": 0.45,
+      "solution": "等温线密集且大致与纬线平行、数值向南递增，说明冬季南北温差大、越往北气温越低，这主要是纬度因素影响的结果。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全国普遍高温，南北温差小",
+        "B. 南北温差大，越往北气温越低",
+        "C. 全国普遍低温，气温与纬度无关",
+        "D. 东西方向温差大，南北方向温差小"
+      ],
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0107",
+      "item_type": "choice",
+      "stem": "综合阅读中国地形图和城市分布图可以发现，我国特大城市绝大多数分布在（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_geography_tools_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "把地形图与城市分布图叠加判读可知：东部第三级阶梯地形平坦、土壤肥沃、交通便利、人口稠密，集中了我国大部分特大城市。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地势第一级阶梯的高原上",
+        "B. 地势第二级阶梯的盆地边缘",
+        "C. 西北内陆的荒漠地区",
+        "D. 地势第三级阶梯的平原和丘陵地区"
+      ],
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0108",
+      "item_type": "solve",
+      "stem": "读图分析：在我国1月平均气温分布图上，0℃等温线大致沿哪一条线分布？据此说明该线以南、以北河流冬季结冰状况的差异。",
+      "answer": "0℃等温线大致沿秦岭—淮河一线分布。该线以北地区1月平均气温低于0℃，河流冬季普遍有结冰现象（越往北结冰期越长）；该线以南地区1月平均气温高于0℃，河流冬季一般不结冰。",
+      "kps": [
+        "kp_geo8_cn_geography_tools_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "先在等温线图上找到0℃等温线的位置，再结合“气温低于0℃河流才结冰”的原理，推断界线两侧河流结冰状况的差异。",
+      "source": "llm_generated",
+      "form": "map_reading",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0109",
+      "item_type": "choice",
+      "stem": "我国北方地区与西北地区的分界线大致是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_geography_comparison"
+      ],
+      "difficulty": 0.4,
+      "solution": "西北地区与北方地区大致以400毫米年等降水量线为界，该线两侧降水量、干湿状况和农业类型（种植业与畜牧业）差异明显。",
+      "source": "llm_generated",
+      "options": [
+        "A. 秦岭—淮河一线",
+        "B. 400毫米年等降水量线",
+        "C. 昆仑山—祁连山—横断山脉一线",
+        "D. 长城—燕山一线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0110",
+      "item_type": "choice",
+      "stem": "青藏地区与其他三大地理区域（北方、南方、西北地区）的分界线大致是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_geography_comparison"
+      ],
+      "difficulty": 0.45,
+      "solution": "青藏地区与其他区域的分界线大致与地势第一、二级阶梯分界线（昆仑山—祁连山—横断山脉）一致，主导因素是地势（高寒）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 400毫米年等降水量线",
+        "B. 秦岭—淮河一线",
+        "C. 地势第一、二级阶梯分界线",
+        "D. 200毫米年等降水量线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0111",
+      "item_type": "fill",
+      "stem": "秦岭—淮河一线大致与1月______℃等温线和______毫米年等降水量线相吻合，是我国东部最重要的地理分界线。",
+      "answer": "0；800",
+      "kps": [
+        "kp_geo8_cn_geography_comparison"
+      ],
+      "difficulty": 0.4,
+      "solution": "秦岭—淮河一线是1月0℃等温线、800毫米年等降水量线经过的地方，也是亚热带与暖温带、湿润区与半湿润区、水田与旱地的分界线。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0112",
+      "item_type": "choice",
+      "stem": "北京作为我国的首都，其主要城市职能是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_beijing"
+      ],
+      "difficulty": 0.35,
+      "solution": "北京是全国的政治中心、文化中心、国际交往中心和科技创新中心；故宫、天坛、长城、周口店北京人遗址等被列入世界文化遗产。",
+      "source": "llm_generated",
+      "options": [
+        "A. 全国的政治中心、文化中心、国际交往中心和科技创新中心",
+        "B. 全国最大的综合性工业中心和港口城市",
+        "C. 全国最大的经济特区和金融中心",
+        "D. 全国最重要的商品粮基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0113",
+      "item_type": "choice",
+      "stem": "北京的气候类型属于（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_beijing"
+      ],
+      "difficulty": 0.4,
+      "solution": "北京位于华北平原北部，属温带季风气候，夏季高温多雨、冬季寒冷干燥，春秋短、冬夏长，降水集中于夏季。",
+      "source": "llm_generated",
+      "options": [
+        "A. 温带海洋性气候",
+        "B. 温带大陆性气候",
+        "C. 亚热带季风气候",
+        "D. 温带季风气候"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8a_0114",
+      "item_type": "fill",
+      "stem": "北京位于______平原的北部边缘，背靠燕山，大致位于40°N、116°E附近；北京旧城内的故宫、天坛等已被列入《世界遗产名录》，体现了它作为全国______中心和历史文化名城的地位。",
+      "answer": "华北；文化",
+      "kps": [
+        "kp_geo8_beijing"
+      ],
+      "difficulty": 0.4,
+      "solution": "北京位于华北平原北部、燕山以南，西面是黄土高原、北面是内蒙古高原；它是全国文化中心，有3000多年建城史、800多年建都史。",
+      "source": "llm_generated",
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0001",
+      "item_type": "choice",
+      "stem": "北京是我国首都，也是常住人口超过两千万的超大城市。近年来北京出现的“大城市病”主要表现为（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_beijing_urbanization"
+      ],
+      "difficulty": 0.3,
+      "solution": "北京城市化水平高，人口和产业高度集聚，交通拥堵、住房紧张、水资源短缺、环境污染等“大城市病”突出；人口稀少、用地广阔与事实相反。",
+      "source": "llm_generated",
+      "options": [
+        "A. 城市人口稀少、用地广阔",
+        "B. 交通拥堵、住房紧张、水资源短缺",
+        "C. 水资源过剩、洪涝频发",
+        "D. 工业全部消失、完全去功能化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0002",
+      "item_type": "fill",
+      "stem": "为缓解“大城市病”，国家推动京津冀协同发展，明确疏解北京的______功能；在北京东部规划建设城市______（承接市级机关搬迁），并在河北设立了______新区承接功能疏解。",
+      "answer": "非首都；副中心（通州）；雄安",
+      "kps": [
+        "kp_geo8_beijing_urbanization"
+      ],
+      "difficulty": 0.45,
+      "solution": "京津冀协同发展的核心是疏解北京非首都功能：市级机关迁入通州城市副中心，设立河北雄安新区集中承接疏解，优化首都功能布局。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0003",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：北京常住人口超过2100万，中心城区人口和功能过度集聚，曾长期面临交通拥堵、房价高企、水资源紧张、雾霾频发等问题。近年来，北京疏解非首都功能，市级机关迁入通州城市副中心，河北雄安新区承接部分功能疏解，同时大力压减燃煤、治理机动车污染，扩充城市绿地。\n(1) 指出北京城市化进程中面临的两个主要问题。\n(2) 说明疏解非首都功能对缓解上述问题的作用。\n(3) 为建设“绿色北京”提出一条具体建议。",
+      "answer": "(1) 交通拥堵、住房紧张（房价高）、水资源短缺、大气污染（雾霾）等，任答两个。(2) 疏解非首都功能可减少中心城区人口和产业过度集聚，减轻交通、住房、资源与环境压力，优化首都功能布局。(3) 示例：优先发展地铁公交、倡导绿色出行以减少尾气排放；增加城市绿地；推广清洁能源替代燃煤（答一条且合理即可）。",
+      "kps": [
+        "kp_geo8_beijing_urbanization"
+      ],
+      "difficulty": 0.65,
+      "solution": "先从材料归纳“大城市病”的表现；再按“功能疏解—人口产业扩散—压力缓解”的因果链说明作用；建议要具体、指向大气治理或绿地建设。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0004",
+      "item_type": "choice",
+      "stem": "开展“描述我的家乡”野外考察活动，最合理的步骤顺序是（　　）\n①收集整理家乡相关资料　②确定考察对象与考察路线　③实地观察、记录与访谈　④撰写报告并在班级交流",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_practice_fieldwork_hometown"
+      ],
+      "difficulty": 0.35,
+      "solution": "地理考察一般先明确考察对象和路线，再做好资料准备，实地观察记录与访谈，最后整理成报告交流，即②①③④。",
+      "source": "llm_generated",
+      "options": [
+        "A. ①②③④",
+        "B. ②①③④",
+        "C. ③①②④",
+        "D. ①③②④"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0005",
+      "item_type": "fill",
+      "stem": "从多角度描述家乡的地理环境特征：除地理位置、地形、河流、自然资源外，还应描述______（表示大气状况的要素）以及人口、______等方面；同时分析家乡存在的主要环境问题，提出绿色发展建议。",
+      "answer": "气候；产业（经济）",
+      "kps": [
+        "kp_geo8_practice_fieldwork_hometown"
+      ],
+      "difficulty": 0.4,
+      "solution": "描述区域地理特征的常用角度包括地理位置、地形、气候、河流、自然资源、人口、产业等；表示大气状况的要素是气候。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0006",
+      "item_type": "solve",
+      "stem": "学校组织“描述我的家乡”野外考察，请你完成考察方案设计。\n(1) 写出本次考察需要准备的两种工具（或资料）。\n(2) 列举考察中获取地理信息的三种方法。\n(3) 若考察中发现家乡河流水质浑浊、河岸有垃圾堆放，请提出两条治理建议。",
+      "answer": "(1) 家乡地图（政区图或地形图）、指南针、卷尺、相机、记录本等，任答两种。(2) 实地观察、测量、拍照、访谈（询问当地居民）、查阅资料等，任答三种。(3) 示例：设置垃圾收集点、禁止向河岸倾倒垃圾；植树种草护岸、防止水土流失；加强宣传和巡查监管（答两条且合理即可）。",
+      "kps": [
+        "kp_geo8_practice_fieldwork_hometown"
+      ],
+      "difficulty": 0.6,
+      "solution": "工具围绕定位、测量、记录选择；获取信息方法体现野外考察多途径取证；建议应针对垃圾堆放与水质问题，具体可行。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0007",
+      "item_type": "choice",
+      "stem": "运用区域比较方法研究两个地理区域时，下列各项中不属于自然地理要素的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_practice_region_compare"
+      ],
+      "difficulty": 0.3,
+      "solution": "自然地理要素包括位置、地形、气候、水文、植被、土壤等；工业结构与交通属于人文地理要素。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地形与气候",
+        "B. 河流水文特征",
+        "C. 工业结构与交通",
+        "D. 植被与土壤"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0008",
+      "item_type": "solve",
+      "stem": "北方地区与南方地区是我国两大地理区域。运用区域比较方法，完成下列问题。\n(1) 从气候角度比较两地区的差异（气温、降水各一点）。\n(2) 比较两地区传统交通方式的差异，并说明其自然成因。\n(3) 简述运用区域比较方法认识中国地理的价值。",
+      "answer": "(1) 气温：北方地区1月平均气温大多在0℃以下，南方地区大多在0℃以上；降水：北方降水较少且集中于夏季，南方降水丰富、雨季较长。(2) 南方地区河网密布、河流无结冰期，以船舶运输为主（“南船”）；北方地区平原广阔、河流较少且冬季结冰，以车马运输为主（“北马”）。(3) 通过比较可以识别区域差异并分析其成因，形成对中国分区面貌的整体认识，为因地制宜发展区域经济提供依据（言之有理即可）。",
+      "kps": [
+        "kp_geo8_practice_region_compare"
+      ],
+      "difficulty": 0.65,
+      "solution": "抓住1月0℃等温线与800毫米年等降水量线组织气候比较；交通差异从河流密度与结冰期解释；价值落在区域认知与综合思维素养。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0009",
+      "item_type": "fill",
+      "stem": "区域比较一般先比较位置、地形、气候、水文、植被、土壤等______地理要素，再比较人口、经济、文化、交通等______地理要素，最后归纳区域差异并分析其______。",
+      "answer": "自然；人文；成因",
+      "kps": [
+        "kp_geo8_practice_region_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "区域比较遵循“先自然、后人文、再析成因”的思路，自然要素是人文要素形成的基础。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0010",
+      "item_type": "choice",
+      "stem": "在空白中国政区底图上绘制“中国年降水量分布”专题地图，最适宜采用的表示方法是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_practice_map_china"
+      ],
+      "difficulty": 0.35,
+      "solution": "年降水量是连续分布的数值要素，宜用等值线配合分层设色表示空间分布；柱状图、饼状图、曲线图多用于统计数量的对比和变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 柱状图法",
+        "B. 饼状图法",
+        "C. 等值线加分层设色法",
+        "D. 动点轨迹法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0011",
+      "item_type": "fill",
+      "stem": "绘制中国年降水量专题地图后可以发现：我国年降水量空间分布总趋势是从______沿海向______内陆逐渐减少；地图上表示各种地理事物的颜色、符号和注记的说明称为______。",
+      "answer": "东南；西北；图例",
+      "kps": [
+        "kp_geo8_practice_map_china"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国年降水量受海陆位置影响，从东南沿海向西北内陆递减；专题地图必须设计图例，颜色分层表示不同降水量区间。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0012",
+      "item_type": "solve",
+      "stem": "以绘制“中国人口密度”专题地图为例，回答问题。\n(1) 简述绘制该专题地图的主要步骤。\n(2) 地图完成后，指出我国人口空间分布的特点。\n(3) 从自然条件角度简要分析该分布特点的成因。",
+      "answer": "(1) 选取中国政区空白底图；整理各省级行政区人口与面积数据、计算人口密度；设计图例并对人口密度分级、分层设色；着色绘制、检查核对，最后分析分布规律。(2) 东部人口稠密、西部人口稀疏，大致以黑河—腾冲一线为界。(3) 东部地形平坦、气候温暖湿润、交通便利，适宜居住和耕作；西部多高原山地、气候干旱，自然条件较差（言之有理即可）。",
+      "kps": [
+        "kp_geo8_practice_map_china"
+      ],
+      "difficulty": 0.6,
+      "solution": "步骤体现“底图—数据—图例—绘制—分析”流程；人口分布特点对应黑河—腾冲线；成因从地形、气候等自然条件归纳。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0013",
+      "item_type": "choice",
+      "stem": "校园气象观测中，关于百叶箱的使用，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_practice_weather_record"
+      ],
+      "difficulty": 0.4,
+      "solution": "百叶箱漆成白色以反射阳光，安放在空旷草坪上、箱底离地约1.5米，箱门朝北开，避免开箱观测时阳光直射仪器；观测必须定时进行，保证记录可比。",
+      "source": "llm_generated",
+      "options": [
+        "A. 百叶箱漆成黑色便于吸热保温",
+        "B. 观测时间可随观测员方便任意确定",
+        "C. 百叶箱应紧贴地面安放在水泥地上",
+        "D. 箱门朝北开，避免阳光直接照射箱内仪器"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0014",
+      "item_type": "fill",
+      "stem": "将连续观测的气象数据整理后，通常绘制成______图和降水量柱状图；一天中最高气温一般出现在______时左右，最低气温出现在日出前后。",
+      "answer": "气温曲线；14",
+      "kps": [
+        "kp_geo8_practice_weather_record"
+      ],
+      "difficulty": 0.45,
+      "solution": "气温年变化用气温曲线图、降水变化用柱状图表示；受太阳辐射和地面热量收支影响，一天中最高气温约出现在14时，最低气温出现在日出前后。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0015",
+      "item_type": "solve",
+      "stem": "请你设计一份为期一个月的校园气象观测方案。\n(1) 写出需要观测的气象要素（至少三个）。\n(2) 说明观测时间安排和数据整理的要求。\n(3) 观测结束后，如何利用观测数据验证本地气候的气温、降水特征？",
+      "answer": "(1) 每日最高气温、最低气温、降水量、风向、风力、天气状况等，任答三个。(2) 每天在固定时间（如8时、14时、20时）观测，及时如实填写记录表，按日期整理，统计日均温、月降水总量等。(3) 将数据绘成气温曲线图和降水量柱状图，与本地气候（如季风气候夏季高温多雨、冬季寒冷干燥）的特征对照，检验观测结果是否吻合，并分析差异原因。",
+      "kps": [
+        "kp_geo8_practice_weather_record"
+      ],
+      "difficulty": 0.6,
+      "solution": "方案三要点：要素齐全、定时观测、表格化整理；验证环节体现“观测—统计—与气候特征对比”的科学方法。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0016",
+      "item_type": "choice",
+      "stem": "某小组制作黄河流域模型并演示下游“地上河”的形成过程。黄河下游形成“地上河”的主要原因是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_practice_model_river"
+      ],
+      "difficulty": 0.4,
+      "solution": "黄河中游流经黄土高原，水土流失严重、河水含沙量极大；进入下游平原流速减慢，泥沙大量淤积使河床不断抬高，两岸筑堤后形成“地上河”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 下游降水丰富，河水频繁泛滥",
+        "B. 中游携带大量泥沙，在下游河道不断淤积抬高河床",
+        "C. 上游冰川融水量过大",
+        "D. 下游地区过度开采地下水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0017",
+      "item_type": "fill",
+      "stem": "制作长江流域模型可知：长江上游落差大、水能资源丰富，被誉为“______”；中游荆江河段“九曲回肠”、泄洪不畅，治理措施之一是______；下游江阔水深、航运便利，被称为“______”。",
+      "answer": "水能宝库；裁弯取直（人工裁弯）；黄金水道",
+      "kps": [
+        "kp_geo8_practice_model_river"
+      ],
+      "difficulty": 0.5,
+      "solution": "长江上游峡谷多、落差大，水能丰富称“水能宝库”；荆江河段弯曲多汊，采用裁弯取直整治；长江航运价值高，称“黄金水道”。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0018",
+      "item_type": "solve",
+      "stem": "某小组用黏土制作长江流域模型，在班级演示流域内的人类活动。回答问题。\n(1) 制作模型时应表现哪些地形与水系要素？（至少三项）\n(2) 结合模型说明上游梯级开发（修建三峡等水利枢纽）的综合效益。\n(3) 说明中上游植树种草等水土保持措施对河流水文特征的影响。",
+      "answer": "(1) 地形起伏（高原、山地、盆地、平原）、干流走向与主要支流、湖泊（如洞庭湖、鄱阳湖）、水利枢纽（三峡工程）等，任答三项。(2) 梯级开发具有防洪、发电、灌溉、航运、养殖等综合效益，能利用上游丰富的水能资源缓解电力紧张，并减轻中下游洪涝威胁。(3) 植树种草增加地表覆盖，减缓地表径流、增加下渗，使河流含沙量减小、径流趋于平稳、洪峰削减，起到保持水土、涵养水源的作用。",
+      "kps": [
+        "kp_geo8_practice_model_river"
+      ],
+      "difficulty": 0.65,
+      "solution": "模型要素对应“地形—水系—工程”；梯级开发效益按防洪、发电等归纳；水土保持从含沙量减少与径流调节说明。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0019",
+      "item_type": "choice",
+      "stem": "开展社区环境调查时，下列收集证据的做法不恰当的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_practice_survey_community"
+      ],
+      "difficulty": 0.3,
+      "solution": "调查取证应合法并征得同意，私自翻拍居民家中账本和私信侵犯个人隐私；实地观察拍照、访谈居民与物业、查阅公开规划文件都是常用调查方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在垃圾投放点实地观察并拍照记录",
+        "B. 访谈社区居民和物业管理人员",
+        "C. 私自翻拍居民家中的账本和私信",
+        "D. 查阅社区规划文件和宣传公示栏资料"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0020",
+      "item_type": "fill",
+      "stem": "社区环境调查报告一般包括：调查目的与对象、调查方法、______、环境问题的成因与危害分析，以及______等内容，并向社区或学校提交。",
+      "answer": "调查结果（发现的主要环境问题）；改进建议（治理措施）",
+      "kps": [
+        "kp_geo8_practice_survey_community"
+      ],
+      "difficulty": 0.45,
+      "solution": "调查报告的基本结构：目的与对象、方法、结果、成因与危害分析、改进建议；核心是“用证据说明问题、用分析支撑建议”。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0021",
+      "item_type": "solve",
+      "stem": "你所在社区存在生活垃圾随意堆放、分类投放不及时的问题。请设计一份调查方案。\n(1) 写出调查的主要内容（至少两项）。\n(2) 说明你将采用的调查方法。\n(3) 针对问题向社区提出两条改进建议。",
+      "answer": "(1) 垃圾投放点的数量与位置、居民分类知晓与参与情况、垃圾清运频次、乱堆放地点与规模等，任答两项。(2) 实地观察记录、拍照取证，访谈居民和保洁人员，发放调查问卷，查阅社区管理规定等。(3) 示例：增设分类垃圾桶并明确标识，安排志愿者定时指导投放；加强垃圾分类宣传，督促物业增加清运频次（答两条且合理即可）。",
+      "kps": [
+        "kp_geo8_practice_survey_community"
+      ],
+      "difficulty": 0.6,
+      "solution": "调查内容围绕“问题现状—居民行为—管理环节”展开；方法体现观察、访谈、问卷多途径；建议应对应问题、具体可操作。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0022",
+      "item_type": "choice",
+      "stem": "新疆绿洲地区发展农业，为解决干旱缺水问题，当地采用的引水工程与节水技术是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_inquiry_agri_modern"
+      ],
+      "difficulty": 0.45,
+      "solution": "新疆深居内陆、干旱少雨，先民修建坎儿井引地下水灌溉绿洲，现代推广滴灌等节水技术，提高水资源利用率；都江堰在四川，漫灌会加剧浪费。",
+      "source": "llm_generated",
+      "options": [
+        "A. 都江堰工程与喷灌技术",
+        "B. 鱼塘—台田模式与大水漫灌",
+        "C. 修筑梯田与自流漫灌",
+        "D. 坎儿井与滴灌技术"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0023",
+      "item_type": "fill",
+      "stem": "东北平原地势平坦、土壤肥沃（以______土著称），是我国重要的______基地；智慧农业中，无人机主要用于______等作业环节。",
+      "answer": "黑；商品粮（粮食生产）；植保（喷洒农药、施肥、监测作物长势）",
+      "kps": [
+        "kp_geo8_inquiry_agri_modern"
+      ],
+      "difficulty": 0.45,
+      "solution": "东北黑土肥沃、地势平坦开阔，适宜大规模机械化耕作，是我国最大的商品粮基地；无人机植保是智慧农业的典型应用。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0024",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：东北平原某农场依托卫星遥感监测作物长势，利用大型联合收割机规模化作业，并采用测土配方施肥、精准灌溉技术，粮食单产和经营效益不断提高。\n(1) 指出材料体现的我国农业现代化途径（至少两条）。\n(2) 简述东北平原成为重要商品粮基地的自然条件。\n(3) 举一例说明农业科技对粮食生产的作用。",
+      "answer": "(1) 农业科技（智慧农业）、规模化经营、精准灌溉（绿色农业）等，任答两条。(2) 地形平坦开阔，便于机械化耕作；黑土土壤肥沃；雨热同期、水源较充足；耕地集中连片。(3) 示例：测土配方施肥提高肥料利用率、减少浪费和污染；遥感监测可及时发现病虫害并精准施药；良种培育提高单产（举一例说明即可）。",
+      "kps": [
+        "kp_geo8_inquiry_agri_modern"
+      ],
+      "difficulty": 0.65,
+      "solution": "从材料提炼“科技+规模+绿色”三条途径；自然条件按地形、土壤、气候归纳；科技作用举例要与增产、节本、环保对应。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0025",
+      "item_type": "choice",
+      "stem": "下列家庭做法中，属于节约用水的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_inquiry_water_saving"
+      ],
+      "difficulty": 0.25,
+      "solution": "淘米水浇花、洗衣水拖地属于一水多用，可提高水资源利用率；长流水冲洗蔬菜、大量使用洗涤剂、向河道倾倒污水分别属于浪费或污染水资源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 洗菜时长时间开着水龙头冲洗",
+        "B. 用淘米水浇花、洗衣水拖地",
+        "C. 向附近河道倾倒生活污水",
+        "D. 餐具清洗时大量使用洗涤剂"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0026",
+      "item_type": "fill",
+      "stem": "我国水资源时间分配不均：______季降水多、______季降水少，容易造成旱涝灾害；为解决水资源南多北少、空间分布不均的问题，我国修建了______等跨流域调水工程。",
+      "answer": "夏（夏秋）；冬（冬春）；南水北调",
+      "kps": [
+        "kp_geo8_inquiry_water_saving"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国降水集中于夏秋季节、冬春少，季节和年际变化大；空间上南丰北缺，依靠跨流域调水（南水北调）缓解北方缺水。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0027",
+      "item_type": "solve",
+      "stem": "学校开展“水资源保护与可持续利用”跨学科主题学习。回答问题。\n(1) 设计“校园用水情况”调查的主要内容（至少两项）。\n(2) 运用数学统计方法，说明如何分析校园用水量的变化趋势。\n(3) 提出两条校园节水措施。",
+      "answer": "(1) 各场所（教学楼、食堂、宿舍、绿化）用水量，水龙头数量与跑冒滴漏情况，学生用水习惯等，任答两项。(2) 按月（或周）抄录水表读数，制作用水量统计表并绘制折线图（柱状图），比较不同时段、不同场所用水变化，找出用水高峰和浪费环节。(3) 示例：更换节水龙头、及时报修漏水点；绿化改用喷灌滴灌；开展节水宣传、张贴提示标语（答两条且合理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_water_saving"
+      ],
+      "difficulty": 0.6,
+      "solution": "调查内容覆盖“场所—设施—行为”；统计方法体现数据收集、制表、绘图、比较；措施兼顾设施改造与行为引导。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0028",
+      "item_type": "choice",
+      "stem": "为保护长江流域生态环境，我国自2021年起实施的重要措施是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_inquiry_yangtze_protection"
+      ],
+      "difficulty": 0.4,
+      "solution": "2021年1月1日起，长江流域重点水域实行为期十年的禁渔，以恢复水生生物资源；扩大放牧、围湖造田、无序采砂都会破坏长江生态。",
+      "source": "llm_generated",
+      "options": [
+        "A. 上游大规模扩大放牧",
+        "B. 中下游围湖造田扩大耕地",
+        "C. 干流全线无序采砂",
+        "D. 重点水域“十年禁渔”"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0029",
+      "item_type": "fill",
+      "stem": "长江干流航运价值高，被誉为“______”；长江经济带建设坚持“共抓大保护、______”的方针；其上游以水电开发和特色产业为主，中游发展先进制造业，下游发展高端服务业。",
+      "answer": "黄金水道；不搞大开发",
+      "kps": [
+        "kp_geo8_inquiry_yangtze_protection"
+      ],
+      "difficulty": 0.45,
+      "solution": "长江四季不冻、干支流通航里程长，是我国的“黄金水道”；长江经济带坚持生态优先、绿色发展，“共抓大保护、不搞大开发”。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0030",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：长江经济带横贯我国东、中、西部，覆盖11个省级行政区。近年来，沿江省份实施岸线复绿、化工企业“关改搬转”、长江十年禁渔等大保护措施，同时依托黄金水道推动上中下游产业协作。\n(1) 分别写出长江上游、下游的主要经济特点。\n(2) 列举两条长江大保护的主要措施。\n(3) 说说“在发展中保护、在保护中发展”对长江经济带的意义。",
+      "answer": "(1) 上游：水能资源丰富，以水电开发和特色产业为主；下游：经济发达、科技水平高，以高端服务业和外向型经济为主。(2) 岸线修复（复绿）、污染治理（化工企业关改搬转）、重点水域十年禁渔（退捕还渔）、水土保持等，任答两条。(3) 处理好经济发展与生态保护的关系，才能实现长江经济带的可持续发展，既守护母亲河的生态安全，又推动区域协调和高质量发展（言之有理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_yangtze_protection"
+      ],
+      "difficulty": 0.7,
+      "solution": "上中下游经济特点按“水电特色产业—先进制造业—高端服务业”分区归纳；措施从材料提取；意义落脚在可持续发展与区域协调。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0031",
+      "item_type": "choice",
+      "stem": "我国对“一方水土养不起一方人”的深度贫困地区，最适宜采取的扶贫方式是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_inquiry_poverty_alleviation"
+      ],
+      "difficulty": 0.4,
+      "solution": "深山、石山等生存条件恶劣、就地脱贫难度大的地区，实行易地扶贫搬迁，将群众迁往条件较好地区并配套产业就业，是精准扶贫的重要方式；其余选项会加剧贫困。",
+      "source": "llm_generated",
+      "options": [
+        "A. 扩大陡坡垦殖面积",
+        "B. 易地扶贫搬迁",
+        "C. 限制人口外出务工",
+        "D. 停止基础设施投入"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0032",
+      "item_type": "fill",
+      "stem": "2020年底，我国脱贫攻坚战取得全面胜利，近______亿农村贫困人口实现脱贫、832个贫困县全部摘帽；此后国家全面实施______战略，巩固拓展脱贫攻坚成果。",
+      "answer": "1；乡村振兴",
+      "kps": [
+        "kp_geo8_inquiry_poverty_alleviation"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国近1亿（9899万）农村贫困人口全部脱贫；脱贫攻坚目标任务完成后，工作重心转向全面推进乡村振兴。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0033",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：湖南湘西十八洞村地处武陵山区，曾因山高谷深、耕地少、交通不便而贫困。2013年“精准扶贫”重要论述在此首次提出。此后该村发展猕猴桃种植、苗绣、乡村旅游等产业，修通进村公路，实现整村脱贫。\n(1) 分析十八洞村过去致贫的自然原因（至少两条）。\n(2) 指出该村脱贫的主要路径。\n(3) 结合所学，说说青少年可以为乡村振兴做些什么。",
+      "answer": "(1) 山高谷深、地形崎岖，耕地少而分散；交通闭塞，与外界联系不便；山区自然灾害较多（任答两条）。(2) 产业扶贫：发展猕猴桃种植、苗绣、乡村旅游等特色产业；同时改善交通等基础设施，发展教育。(3) 学好知识与技能；宣传家乡特色产品和文化；参加力所能及的乡村调研和志愿服务，为家乡发展建言献策（言之有理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_poverty_alleviation"
+      ],
+      "difficulty": 0.65,
+      "solution": "致贫原因从地形、耕地、交通等自然条件归纳；脱贫路径对应产业、基础设施；青少年贡献从学习、宣传、参与切入。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0034",
+      "item_type": "choice",
+      "stem": "关于“碳中和”的理解，正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_inquiry_carbon_neutral"
+      ],
+      "difficulty": 0.35,
+      "solution": "碳中和指通过节能减排、植树造林、碳捕集等方式，使二氧化碳排放量与吸收量相互抵消，实现“净零排放”，并非停止使用一切能源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 二氧化碳排放量与吸收量相互抵消，实现“净零排放”",
+        "B. 完全停止使用一切能源",
+        "C. 把二氧化碳排放到高空大气中",
+        "D. 只减少水污染，不涉及温室气体"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0035",
+      "item_type": "fill",
+      "stem": "我国提出力争______年前实现碳达峰、______年前实现碳中和；导致温室效应增强、全球气候变暖的主要温室气体是______。",
+      "answer": "2030；2060；二氧化碳",
+      "kps": [
+        "kp_geo8_inquiry_carbon_neutral"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国承诺2030年前二氧化碳排放达到峰值、2060年前实现碳中和；二氧化碳等温室气体浓度升高加剧温室效应。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0036",
+      "item_type": "solve",
+      "stem": "学校开展“碳达峰与碳中和”主题探究活动。回答问题。\n(1) 说出本地碳排放的两个主要来源。\n(2) 制定两条家庭低碳生活行动计划。\n(3) 说明“绿色出行”对实现双碳目标的作用。",
+      "answer": "(1) 交通运输（机动车尾气）、火力发电与生活用电、工业生产、冬季取暖燃煤等，任答两个。(2) 示例：随手关灯、使用节能电器；出行多乘公交地铁、骑行或步行；减少一次性用品使用、做好垃圾分类回收（答两条且合理即可）。(3) 绿色出行可减少私家车燃油消耗和尾气中二氧化碳排放，降低碳排放总量，助力碳达峰、碳中和目标实现。",
+      "kps": [
+        "kp_geo8_inquiry_carbon_neutral"
+      ],
+      "difficulty": 0.6,
+      "solution": "碳排放来源从交通、用电、工业、取暖等方向列举；行动计划应具体到行为；绿色出行作用按“减少燃油—减少碳排放”说明。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0037",
+      "item_type": "choice",
+      "stem": "依据《联合国海洋法公约》，沿海国家的专属经济区范围是从领海基线向外延伸不超过（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_inquiry_marine_rights"
+      ],
+      "difficulty": 0.4,
+      "solution": "沿海国领海宽度为12海里，毗连区为24海里，专属经济区从领海基线量起不超过200海里，沿海国对其自然资源享有勘探开发等主权权利。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12海里",
+        "B. 24海里",
+        "C. 200海里",
+        "D. 500海里"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0038",
+      "item_type": "fill",
+      "stem": "我国领海宽度为______海里；南海诸岛是我国固有领土，包括东沙群岛、西沙群岛、______群岛和南沙群岛；建设______强国、维护国家海洋权益是新时代的重要战略。",
+      "answer": "12；中沙；海洋",
+      "kps": [
+        "kp_geo8_inquiry_marine_rights"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国领海宽度12海里；南海诸岛按位置分为东沙、西沙、中沙、南沙四群；实施海洋强国战略，坚决维护国家海洋权益。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0039",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国是海洋大国，拥有约1.8万千米的大陆海岸线，主张管辖海域面积约300万平方千米。近年来我国实施海洋强国战略，发展海洋经济、保护海洋生态、维护海洋权益。\n(1) 写出我国海洋权益包括的主要内容（至少两项）。\n(2) 作为中学生，我们可以通过哪些方式关心、支持维护国家海洋权益？（至少两条）",
+      "answer": "(1) 内水、领海的主权；专属经济区和大陆架自然资源的勘探开发主权权利；海岛（群岛）主权与历史性权利；海洋科学研究和海洋环境保护的管辖权等，任答两项。(2) 学习海洋权益知识并积极宣传；关注国家海洋时事、自觉维护国家立场；抵制损害国家海洋主权的言论和行为；努力学习，将来投身海洋事业（任答两条，言之有理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_marine_rights"
+      ],
+      "difficulty": 0.65,
+      "solution": "海洋权益按“主权—管辖权—开发权利”层次作答；中学生角度从学习、宣传、立场、立志四方面组织。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0040",
+      "item_type": "choice",
+      "stem": "1909年通车的京张铁路是中国人自行设计和建造的第一条铁路，其主持设计者是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_inquiry_railway"
+      ],
+      "difficulty": 0.3,
+      "solution": "京张铁路由詹天佑主持设计和修建，他针对关沟段坡度大的困难设计了“人”字形铁路，是中国铁路史上的里程碑。",
+      "source": "llm_generated",
+      "options": [
+        "A. 李四光",
+        "B. 钱学森",
+        "C. 詹天佑",
+        "D. 茅以升"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0041",
+      "item_type": "fill",
+      "stem": "2006年全线通车的青藏铁路是世界上海拔最高的高原铁路，建设中克服了多年冻土、______、生态脆弱三大世界性难题；它的建成结束了______自治区不通铁路的历史。",
+      "answer": "高寒缺氧；西藏",
+      "kps": [
+        "kp_geo8_inquiry_railway"
+      ],
+      "difficulty": 0.45,
+      "solution": "青藏铁路穿越青藏高原，克服多年冻土、高寒缺氧、生态脆弱三大难题，2006年通车，结束了西藏不通铁路的历史。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0042",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：从京张铁路到青藏铁路，再到运营里程居世界第一的高速铁路网，中国铁路走过百年历程。高铁大幅缩短了城市间的时空距离，沿线地区人员、物资、资金、信息流动明显加快。\n(1) 简述青藏铁路建设中面临的自然障碍（至少两条）。\n(2) 分析高铁建设对沿线地区经济社会发展的带动作用。\n(3) 说说高铁时代对我国区域协调发展的意义。",
+      "answer": "(1) 多年冻土、高寒缺氧、生态环境脆弱，以及地形起伏大、地质条件复杂等，任答两条。(2) 缩短时空距离，加快人员和物资流动；带动沿线旅游、商业和城市发展；增加就业，促进产业集聚。(3) 高铁加强东中西部联系，促进人才、资金、技术向中西部流动，缩小区域发展差距，推动区域协调发展。",
+      "kps": [
+        "kp_geo8_inquiry_railway"
+      ],
+      "difficulty": 0.65,
+      "solution": "自然障碍对应冻土、高寒、生态三大难题；带动作用从要素流动、产业、就业归纳；意义落脚区域协调。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0043",
+      "item_type": "choice",
+      "stem": "衡量一个国家或地区城市化水平高低的最主要指标是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_inquiry_urbanization"
+      ],
+      "difficulty": 0.3,
+      "solution": "城市化是人口向城镇集聚、乡村地区变为城镇地区的过程，其主要标志是城市人口占总人口的比重不断上升，该比重即城市化水平。",
+      "source": "llm_generated",
+      "options": [
+        "A. 城市人口占总人口的比重",
+        "B. 城市占地面积的大小",
+        "C. 城市高楼的数量",
+        "D. 城市道路的总长度"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0044",
+      "item_type": "fill",
+      "stem": "“海绵城市”指城市像海绵一样，下雨时吸水、蓄水、渗水、______，需要时将蓄存的水释放并加以利用，以缓解城市内涝；此外，建设低碳城市、______城市也是城市可持续发展规划的重要理念。",
+      "answer": "净水（净化水）；智慧",
+      "kps": [
+        "kp_geo8_inquiry_urbanization"
+      ],
+      "difficulty": 0.5,
+      "solution": "海绵城市遵循“渗、滞、蓄、净、用、排”方针，下雨时吸水蓄水渗水净水、需要时用水排水；低碳城市、智慧城市是可持续城市规划的新理念。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0045",
+      "item_type": "solve",
+      "stem": "某市近十年常住人口城镇化率由45%上升到68%，城市新区不断扩建，同时也出现交通拥堵、房价上涨等问题。回答问题。\n(1) 城镇化率由45%上升到68%说明了什么？\n(2) 结合材料指出当地城市化带来的机遇与问题（各一条）。\n(3) 为该市可持续发展提出一条建议。",
+      "answer": "(1) 说明该市城市化进程快，城市人口占总人口比重不断提高，城市化水平显著提升。(2) 机遇：经济发展、就业机会增加、公共服务改善等任答一条；问题：交通拥堵、房价上涨、环境污染等任答一条。(3) 示例：完善公共交通、疏解中心城区功能；建设海绵城市、增加绿地；科学规划新区、防止城市无序扩张（一条且合理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_urbanization"
+      ],
+      "difficulty": 0.6,
+      "solution": "城镇化率上升即城市人口比重上升；机遇与问题从材料双向提取；建议对应问题、体现可持续规划理念。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0046",
+      "item_type": "choice",
+      "stem": "2021年10月，我国正式设立第一批国家公园。下列不属于首批国家公园的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_inquiry_ecology_project"
+      ],
+      "difficulty": 0.5,
+      "solution": "首批五个国家公园为三江源、大熊猫、东北虎豹、海南热带雨林、武夷山国家公园；祁连山国家公园不属于首批正式设立的国家公园。",
+      "source": "llm_generated",
+      "options": [
+        "A. 三江源国家公园",
+        "B. 大熊猫国家公园",
+        "C. 东北虎豹国家公园",
+        "D. 祁连山国家公园"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0047",
+      "item_type": "fill",
+      "stem": "我国首批设立的五个国家公园是三江源、大熊猫、东北虎豹、海南热带雨林和______国家公园；国家公园以保护自然生态系统的原真性和______为核心目标，实行最严格的保护。",
+      "answer": "武夷山；完整性",
+      "kps": [
+        "kp_geo8_inquiry_ecology_project"
+      ],
+      "difficulty": 0.5,
+      "solution": "首批五个国家公园为三江源、大熊猫、东北虎豹、海南热带雨林、武夷山；国家公园以维护自然生态系统的原真性和完整性为首要功能。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0048",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：三江源国家公园地处青藏高原腹地，是长江、黄河、澜沧江的发源地，素有“中华水塔”之称。园区实行最严格的生态管护，同时吸纳当地牧民担任生态管护员，发展生态体验和自然教育。\n(1) 说出三江源地区被誉为“中华水塔”的原因。\n(2) 与一般自然保护区相比，国家公园有哪些特点？\n(3) 结合材料，分析国家公园建设对当地经济发展的作用。",
+      "answer": "(1) 三江源是长江、黄河、澜沧江三大江河的发源地，雪山冰川广布、湖泊沼泽众多，水源涵养能力强。(2) 保护范围更大、生态系统更完整；以国家为主导实行最严格保护；在保护前提下兼具科研、教育、游憩等公众服务功能（言之有理即可）。(3) 吸纳牧民担任生态管护员、增加就业收入；发展生态体验和自然教育，将生态优势转化为经济优势，实现保护与发展双赢。",
+      "kps": [
+        "kp_geo8_inquiry_ecology_project"
+      ],
+      "difficulty": 0.7,
+      "solution": "“中华水塔”从江河源头和冰川湖泊涵养水源解释；国家公园特点突出“国家主导、最严格、整体性、公益性”；经济作用结合管护员岗位与生态旅游。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0049",
+      "item_type": "choice",
+      "stem": "北京中轴线是我国现存最完整的传统都城中轴线，2024年被列入《世界遗产名录》。这条中轴线的起止点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_inquiry_beijing_survey"
+      ],
+      "difficulty": 0.45,
+      "solution": "北京传统中轴线南起永定门、北至钟鼓楼，全长约7.8千米，串联故宫等重要建筑，2024年7月成功列入《世界遗产名录》。",
+      "source": "llm_generated",
+      "options": [
+        "A. 南起天安门，北至奥林匹克塔",
+        "B. 南起永定门，北至钟鼓楼",
+        "C. 南起正阳门，北至景山",
+        "D. 南起前门大街，北至颐和园"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0050",
+      "item_type": "fill",
+      "stem": "北京是我国的政治中心、______中心、国际交往中心和______中心；胡同、四合院和京剧艺术等体现了北京深厚的历史文化底蕴。",
+      "answer": "文化；科技创新",
+      "kps": [
+        "kp_geo8_inquiry_beijing_survey"
+      ],
+      "difficulty": 0.4,
+      "solution": "北京的首都职能定位是全国政治中心、文化中心、国际交往中心和科技创新中心；旧城胡同四合院与京剧是京味文化的代表。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0051",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：北京老城的胡同和四合院承载着京味文化。近年来部分胡同人口过密、设施老化，一些四合院曾面临大拆大改；而南锣鼓巷等地通过修旧如旧、改善市政设施，既保留了传统风貌又焕发活力。\n(1) 指出北京作为历史文化名城在保护与发展方面面临的矛盾。\n(2) 结合南锣鼓巷的实践，说说应如何处理旧城保护与现代化建设的关系。\n(3) 为保护胡同文化提出一条具体建议。",
+      "answer": "(1) 旧城保护与城市现代化建设的矛盾：老城设施老化、人口过密，影响居民生活；大拆大建又会破坏历史风貌和文化根脉。(2) 坚持“修旧如旧”、有机更新，在保护传统格局和风貌的前提下完善市政设施、改善居住条件，把保护与合理利用统一起来。(3) 示例：将四合院、名人故居挂牌保护并纳入保护名录；发展胡同文化游、讲好京味故事；引导居民参与保护监督（一条且合理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_beijing_survey"
+      ],
+      "difficulty": 0.7,
+      "solution": "矛盾从“生活改善需求—风貌保护要求”两方面概括；关系处理体现保护优先、有机更新；建议具体可落地。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0052",
+      "item_type": "choice",
+      "stem": "关于重庆市地理特征的叙述，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_south_chongqing"
+      ],
+      "difficulty": 0.4,
+      "solution": "重庆位于长江上游、嘉陵江与长江汇合处，依山而建称“山城”，是长江上游的经济中心、交通枢纽和现代制造业基地；地形以山地丘陵为主，属成渝地区。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地处成都平原，以平原地形为主",
+        "B. 是我国的首都和直辖市",
+        "C. 位于珠江三角洲城市群",
+        "D. 位于长江上游，是长江上游的经济中心和交通枢纽"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0053",
+      "item_type": "fill",
+      "stem": "成都平原由______水利工程灌溉，土壤肥沃、农业发达，被誉为“______”；以成都、重庆为中心的成渝地区双城经济圈位于长江上游，被视为我国经济发展的“第______增长极”。",
+      "answer": "都江堰；天府之国；四",
+      "kps": [
+        "kp_geo8_cn_south_chongqing"
+      ],
+      "difficulty": 0.5,
+      "solution": "都江堰水利工程使成都平原旱涝保收，赢得“天府之国”美誉；成渝双城经济圈与京津冀、长三角、粤港澳并列，是“第四增长极”。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0054",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：成渝地区双城经济圈以成都、重庆为中心，电子信息、汽车、航空航天等产业集聚，两地高铁往来频繁，正共建具有全国影响力的重要经济中心。\n(1) 简述成渝地区发展的有利条件（至少两条）。\n(2) 分别说出成都与重庆的一个优势产业部门。\n(3) 简析成渝双城经济圈建设对西部地区发展的意义。",
+      "answer": "(1) 位于长江上游，水能、矿产等资源丰富；人口众多、劳动力充足；依托长江黄金水道和铁路交通，交通便利；国家政策支持（任答两条）。(2) 成都：电子信息、航空航天等；重庆：汽车（摩托车）、现代装备制造等（各答一个即可）。(3) 带动西部地区经济增长，承接东部产业转移，促进西部大开发，缩小东西部差距，打造新的增长极（言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_south_chongqing"
+      ],
+      "difficulty": 0.65,
+      "solution": "区位条件从资源、劳动力、交通、政策归纳；产业按双城分工作答；意义落脚西部开发与区域协调。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0055",
+      "item_type": "choice",
+      "stem": "被称为“新亚欧大陆桥”的铁路运输线，在我国境内主要由（　　）组成。",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_xibei"
+      ],
+      "difficulty": 0.45,
+      "solution": "新亚欧大陆桥东起我国连云港、西至荷兰鹿特丹，在我国境内由陇海线和兰新线构成，是连接中亚、欧洲的重要铁路大动脉。",
+      "source": "llm_generated",
+      "options": [
+        "A. 京哈线与京广线",
+        "B. 陇海线与兰新线",
+        "C. 京沪线与沪昆线",
+        "D. 宝成线与成昆线"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0056",
+      "item_type": "fill",
+      "stem": "古丝绸之路东起长安（今西安），经河西走廊，穿过______（今新疆及中亚一带），通往中亚和欧洲；在“一带一路”建设中，新疆被定位为丝绸之路经济带的______区。",
+      "answer": "西域；核心",
+      "kps": [
+        "kp_geo8_cn_north_xibei"
+      ],
+      "difficulty": 0.45,
+      "solution": "古丝绸之路从长安出发经河西走廊进入西域通往中亚欧洲；新疆地处亚欧大陆腹地，是丝绸之路经济带核心区。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0057",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：霍尔果斯、阿拉山口是新疆重要的边境口岸。中欧班列经此将电子产品、机械设备等运往欧洲，返程运回汽车、粮食等货物，口岸城市的仓储物流和加工产业迅速兴起。\n(1) 简述新疆在丝绸之路经济带中的地理位置优势。\n(2) 分析边境口岸建设对新疆经济发展的带动作用（至少两条）。",
+      "answer": "(1) 新疆地处我国西北边陲，与哈萨克斯坦等中亚多国接壤，是我国向西开放、连接中亚和欧洲的重要门户与通道，是丝绸之路经济带核心区。(2) 发展边境贸易和仓储物流，增加就业与居民收入；吸引投资，带动加工制造等相关产业发展；完善交通等基础设施，促进城市化和对外开放（任答两条）。",
+      "kps": [
+        "kp_geo8_cn_north_xibei"
+      ],
+      "difficulty": 0.65,
+      "solution": "位置优势突出“边陲、邻中亚、向西开放门户”；带动作用按“贸易—产业—基础设施”层层递进。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0058",
+      "item_type": "choice",
+      "stem": "新疆是我国面积最大的省级行政区，其地形轮廓特征为“三山夹两盆”。自北向南排列正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_nw_xinjiang"
+      ],
+      "difficulty": 0.4,
+      "solution": "新疆地形“三山夹两盆”：北部阿尔泰山、中部天山、南部昆仑山，天山以北为准噶尔盆地、以南为塔里木盆地，自北向南为阿尔泰山—准噶尔盆地—天山—塔里木盆地—昆仑山。",
+      "source": "llm_generated",
+      "options": [
+        "A. 阿尔泰山—准噶尔盆地—天山—塔里木盆地—昆仑山",
+        "B. 天山—塔里木盆地—昆仑山—准噶尔盆地—阿尔泰山",
+        "C. 昆仑山—塔里木盆地—天山—准噶尔盆地—阿尔泰山",
+        "D. 阿尔泰山—天山—昆仑山—塔里木盆地—准噶尔盆地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0059",
+      "item_type": "fill",
+      "stem": "新疆深居内陆、远离海洋，属于______气候，降水稀少、昼夜温差大；盆地边缘的绿洲农业依靠______（引水工程）和滴灌等节水技术灌溉；新疆是我国最大的棉花产区，以出产______棉著称。",
+      "answer": "温带大陆性；坎儿井；长绒",
+      "kps": [
+        "kp_geo8_cn_nw_xinjiang"
+      ],
+      "difficulty": 0.5,
+      "solution": "新疆深居内陆形成温带大陆性气候，干旱少雨；绿洲农业依托坎儿井引水和现代节水技术；新疆是我国最大棉花产区，长绒棉品质优良。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0060",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：西气东输一线工程西起新疆塔里木盆地的轮南油气田，东至上海，将新疆丰富的天然气资源源源不断输往东部地区。\n(1) 简析新疆能源丰富但经济相对滞后的原因。\n(2) 说出西气东输对新疆当地发展的意义（至少两条）。\n(3) 说明西气东输对东部地区能源结构和环境的改善作用。",
+      "answer": "(1) 新疆深居内陆、干旱缺水，生态脆弱；人口稀少、市场狭小；资金、技术相对不足，产业以资源开采为主（言之有理即可）。(2) 将资源优势转化为经济优势；带动油气开采、管道建设等相关产业发展；增加就业机会和财政收入。(3) 缓解东部能源供应紧张；天然气是清洁能源，可优化东部能源消费结构、改善大气质量。",
+      "kps": [
+        "kp_geo8_cn_nw_xinjiang"
+      ],
+      "difficulty": 0.65,
+      "solution": "滞后原因从自然条件与市场、资金技术归纳；对新疆按资源优势转化—产业带动—就业财政作答；对东部从供能与减排两方面说明。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0061",
+      "item_type": "choice",
+      "stem": "“桂林山水甲天下”。桂林山水的主要地貌类型是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_guangxi"
+      ],
+      "difficulty": 0.35,
+      "solution": "广西桂林石灰岩广布，在湿热的气候条件下流水溶蚀作用强烈，形成峰林、溶洞等喀斯特（岩溶）地貌，山奇水秀。",
+      "source": "llm_generated",
+      "options": [
+        "A. 冰川地貌",
+        "B. 喀斯特（岩溶）地貌",
+        "C. 风沙地貌",
+        "D. 海岸地貌"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0062",
+      "item_type": "fill",
+      "stem": "广西地形以丘陵、山地为主，素有“______”之称；广西南临______湾，与越南接壤；______族是我国人口最多的少数民族，主要聚居在广西。",
+      "answer": "八山一水一分田；北部；壮",
+      "kps": [
+        "kp_geo8_cn_south_guangxi"
+      ],
+      "difficulty": 0.45,
+      "solution": "广西丘陵山地占比高，称“八山一水一分田”；南临北部湾、毗邻越南；壮族是我国人口最多的少数民族，主要聚居于广西。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0063",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：广西北部湾经济区面向东南亚，毗邻粤港澳，拥有防城港、钦州港、北海港等港口集群，近年来临港工业、跨境贸易和旅游业快速发展。\n(1) 简述广西发展经济的区位优势（至少两条）。\n(2) 分析北部湾港口建设对广西经济发展的作用。",
+      "answer": "(1) 地处我国南部沿海，南临北部湾，是西南地区最便捷的出海通道；与越南接壤、邻近东南亚，便于发展边境贸易和跨境合作；毗邻粤港澳，可承接产业转移；拥有桂林山水等丰富旅游资源（任答两条）。(2) 便于货物进出口，发展临港工业和物流业；带动西南地区外向型经济发展；增加就业，促进城市化和对外开放水平提高。",
+      "kps": [
+        "kp_geo8_cn_south_guangxi"
+      ],
+      "difficulty": 0.65,
+      "solution": "区位优势按“沿海沿边、邻东南亚、近粤港澳”归纳；港口作用从物流—产业—就业—开放层次展开。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0064",
+      "item_type": "choice",
+      "stem": "东北三省是我国的老工业基地，其中辽中南工业基地的突出特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_shenyang"
+      ],
+      "difficulty": 0.35,
+      "solution": "辽中南地区煤、铁、石油等矿产资源丰富，依托鞍山钢铁、沈阳机械、大连造船等企业，是我国著名的重工业基地。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以轻工业为主的工业基地",
+        "B. 以重工业为主的工业基地",
+        "C. 以电子信息工业为主的高新技术基地",
+        "D. 以纺织、食品工业为主的基地"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0065",
+      "item_type": "fill",
+      "stem": "我国于______年启动振兴东北老工业基地战略；东北振兴面临资源枯竭、______单一、设备老化等问题，为此东北正加快发展高端装备制造业、______农业和生态旅游等新产业。",
+      "answer": "2003；产业结构；现代",
+      "kps": [
+        "kp_geo8_cn_north_shenyang"
+      ],
+      "difficulty": 0.5,
+      "solution": "振兴东北老工业基地战略于2003年启动；针对资源枯竭、产业结构单一、设备老化等问题，东北培育高端装备制造、现代农业和生态旅游等新动能。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0066",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：辽宁阜新曾因煤而兴，随着煤炭资源逐渐枯竭，经济增长乏力、就业困难。近年来阜新培育风电、农产品加工等接续产业，推进矿区生态修复，探索转型发展之路。\n(1) 分析资源型城市阜新走向衰退的主要原因。\n(2) 说出阜新转型发展采取的主要措施（至少两条）。\n(3) 简述东北老工业基地振兴对全国区域协调发展的意义。",
+      "answer": "(1) 煤炭资源逐渐枯竭，主导产业衰落；产业结构单一，长期依赖资源开采；设备老化、技术更新慢，就业压力大。(2) 培育风电、农产品加工等接续（替代）产业；推进矿区生态修复治理；完善基础设施、改善投资环境、吸引人才（任答两条）。(3) 发挥老工业基地产业基础优势，形成新的增长极，促进东西部与南北区域协调，保障国家产业安全（言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_north_shenyang"
+      ],
+      "difficulty": 0.7,
+      "solution": "衰退原因围绕“资源枯竭—结构单一—技术老化”归纳；措施对应产业培育与生态修复；意义落到区域协调和国家安全。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0067",
+      "item_type": "choice",
+      "stem": "改革开放初期，珠江三角洲与港澳形成“前店后厂”的合作模式。对该模式理解正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_south_pearl_delta"
+      ],
+      "difficulty": 0.45,
+      "solution": "“前店后厂”中，港澳利用资金、信息和市场优势承接订单、负责销售（“店”），珠三角利用土地和劳动力优势进行加工制造（“厂”），产品主要通过港澳贸易渠道出口国际市场。",
+      "source": "llm_generated",
+      "options": [
+        "A. 港澳承接订单、负责销售，珠三角进行加工制造",
+        "B. 港澳负责加工制造，珠三角负责承接订单",
+        "C. 产品只面向内地市场销售",
+        "D. 珠三角提供资金技术，港澳提供廉价劳动力"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0068",
+      "item_type": "fill",
+      "stem": "1980年，我国设立深圳、珠海、______、厦门四个经济特区，其中两个位于珠江三角洲；建设粤港澳大湾区旨在打造世界级城市群和______科技创新中心。",
+      "answer": "汕头；国际",
+      "kps": [
+        "kp_geo8_cn_south_pearl_delta"
+      ],
+      "difficulty": 0.45,
+      "solution": "1980年首批四个经济特区为深圳、珠海、汕头、厦门，其中深圳、珠海位于珠三角；粤港澳大湾区定位为世界级城市群、国际科技创新中心。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0069",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：早期珠江三角洲承接港澳订单，发展服装、玩具等劳动密集型产业；近年来土地、劳动力成本不断上升，珠三角加快发展电子信息、人工智能等产业，并与香港、澳门共建粤港澳大湾区。\n(1) 简述珠三角早期发展外向型经济的区位优势。\n(2) 分析珠三角推动产业转型升级的原因。\n(3) 说出粤港澳大湾区建设的意义（至少两条）。",
+      "answer": "(1) 毗邻港澳、位置优越；劳动力丰富且成本低；著名侨乡，便于吸引外资；改革开放政策支持；海陆交通便利（任答三点中的合理表述）。(2) 土地、劳动力成本上升，劳动密集型产业低成本优势减弱；科技进步和市场需求变化，要求向技术密集型产业升级。(3) 打造世界级城市群，提升区域整体竞争力；促进内地与港澳深度融合；建设国际科技创新中心，带动南方地区高质量发展（任答两条）。",
+      "kps": [
+        "kp_geo8_cn_south_pearl_delta"
+      ],
+      "difficulty": 0.7,
+      "solution": "早期优势围绕区位、劳力、侨乡、政策；转型原因从成本上升与需求升级两方面；湾区意义从城市群、融合、科创归纳。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0070",
+      "item_type": "choice",
+      "stem": "青藏地区的农业生产适应高寒环境。下列属于青藏地区代表性农作物和特有畜种的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_tibet_culture"
+      ],
+      "difficulty": 0.35,
+      "solution": "青藏高原气候高寒，河谷地带种植耐寒的青稞、小麦等作物，放牧耐寒的牦牛、藏绵羊，形成独特的高寒农牧业。",
+      "source": "llm_generated",
+      "options": [
+        "A. 水稻与水牛",
+        "B. 甘蔗与黄牛",
+        "C. 青稞与牦牛",
+        "D. 甜菜与三河马"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0071",
+      "item_type": "fill",
+      "stem": "藏族文化特色浓郁：______是一种独特的卷轴绘画艺术，与酥油花、藏历新年等同为藏族文化的代表；青藏高原雪山连绵、冰川广布，生态系统十分______，旅游开发必须注重环境保护。",
+      "answer": "唐卡；脆弱",
+      "kps": [
+        "kp_geo8_cn_tibet_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "唐卡是藏族独特的卷轴绘画艺术；青藏高原海拔高、气候寒冷，生态系统自我修复能力弱、十分脆弱，一旦破坏极难恢复。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0072",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：青藏铁路开通后，西藏游客数量大幅增长，旅游业成为当地重要支柱产业，但也带来垃圾增多、草场退化等环境压力。当地倡导游客遵守环保规定，并限制核心区域开发。\n(1) 简述旅游业发展对青藏地区经济的带动作用。\n(2) 分析青藏地区旅游开发中必须特别重视环境保护的原因。\n(3) 为青藏地区发展生态旅游提出一条建议。",
+      "answer": "(1) 增加财政收入和居民就业；带动交通、餐饮、住宿、民族手工艺等相关产业发展；促进民族文化交流。(2) 青藏高原海拔高、气候寒冷，生态系统十分脆弱，破坏后难以恢复；旅游垃圾和过度开发会破坏草场、污染水源、威胁珍稀物种生存。(3) 示例：控制游客数量、实行预约限流；完善垃圾收运设施；培训当地居民参与生态导览（一条且合理即可）。",
+      "kps": [
+        "kp_geo8_cn_tibet_culture"
+      ],
+      "difficulty": 0.65,
+      "solution": "带动作用从收入就业、相关产业、文化交流归纳；环保原因突出生态脆弱性与破坏后果；建议体现“限制+设施+参与”。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0073",
+      "item_type": "choice",
+      "stem": "台湾岛多火山、地震，其主要原因是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_taiwan_ecology"
+      ],
+      "difficulty": 0.4,
+      "solution": "台湾地处环太平洋地震带，位于亚欧板块与太平洋板块的碰撞交界处，地壳运动活跃，多火山、地震。",
+      "source": "llm_generated",
+      "options": [
+        "A. 位于亚欧板块与太平洋板块交界处，地壳活跃",
+        "B. 位于非洲板块与印度洋板块交界处",
+        "C. 地处板块内部，地壳极不稳定",
+        "D. 全岛由火山喷发物直接堆积而成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0074",
+      "item_type": "fill",
+      "stem": "台湾岛位于我国东南海面上，隔______海峡与福建省相望；夏秋季节常受______（气象灾害）侵袭，山区暴雨还易引发滑坡、泥石流；为保护森林等生态系统，台湾设立多处国家公园和______。",
+      "answer": "台湾；台风；自然保护区",
+      "kps": [
+        "kp_geo8_taiwan_ecology"
+      ],
+      "difficulty": 0.45,
+      "solution": "台湾隔台湾海峡与福建相望；地处西北太平洋台风路径上，夏秋多台风；通过设立国家公园和自然保护区保护生态环境。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0075",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：台湾地处环太平洋地震带，1999年集集大地震造成重大伤亡；每年夏秋台风频繁影响台湾，山区暴雨常引发滑坡、泥石流。台湾山地建立了多个国家公园以保护森林生态。\n(1) 说出台湾地区的主要自然灾害（至少三种）。\n(2) 分析台湾多地震、多台风的原因。\n(3) 针对山区滑坡、泥石流灾害提出一条防御措施。",
+      "answer": "(1) 地震、台风、暴雨洪涝、滑坡泥石流等，任答三种。(2) 地震：地处环太平洋地震带，位于亚欧板块与太平洋板块交界处，地壳运动活跃；台风：夏秋季西北太平洋台风多发，台湾位于主要移动路径上。(3) 示例：加强监测预警，及时转移危险区人员；植树种草、护坡固坡，避免不合理开挖；不在滑坡危险区建房修路（一条且合理即可）。",
+      "kps": [
+        "kp_geo8_taiwan_ecology"
+      ],
+      "difficulty": 0.65,
+      "solution": "灾害类型按地质灾害与气象灾害分类列举；成因分别对应板块构造与台风源地路径；措施体现“躲”（预警转移）与“治”（工程生物措施）。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0076",
+      "item_type": "choice",
+      "stem": "治理黄土高原的水土流失，下列属于生物措施的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_environment_problems"
+      ],
+      "difficulty": 0.35,
+      "solution": "水土流失治理坚持生物措施与工程措施相结合：植树种草属生物措施；修建梯田、打坝淤地等属工程措施。",
+      "source": "llm_generated",
+      "options": [
+        "A. 修建水平梯田",
+        "B. 打坝淤地",
+        "C. 修筑护坡挡土坝",
+        "D. 植树种草"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0077",
+      "item_type": "fill",
+      "stem": "我国面临的主要环境问题中，大气污染突出表现为雾霾和______；土壤污染主要包括重金属污染和______污染；西北干旱半干旱地区突出的生态问题是土地______。",
+      "answer": "酸雨；白色（塑料）；荒漠化",
+      "kps": [
+        "kp_geo8_cn_environment_problems"
+      ],
+      "difficulty": 0.45,
+      "solution": "我国大气污染主要表现为雾霾和酸雨；土壤污染包括重金属污染与白色污染（地膜、塑料残留）；西北地区因过度放牧、开垦导致土地荒漠化。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0078",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：某市推行垃圾分类后，街道设置了可回收物、厨余垃圾、有害垃圾和其他垃圾四类收集桶；同时关停改造燃煤小锅炉，空气质量明显改善。\n(1) 判断下列环境问题的类型：①某湖泊水体发绿、鱼类大量死亡；②西北地区草场退化、沙丘活化；③农田地膜残留超标。\n(2) 说出材料中该市改善环境质量的两条做法。\n(3) 作为中学生，我们可以为减少固体废弃物污染做些什么？（至少两条）",
+      "answer": "(1) ①水污染（水体富营养化）；②生态破坏（土地荒漠化）；③土壤污染（白色污染）。(2) 推行垃圾分类处理；关停改造燃煤小锅炉、优化能源结构。(3) 减少使用一次性用品；垃圾分类投放、变废为宝；旧书旧衣回收利用、践行“光盘行动”减少厨余垃圾（任答两条）。",
+      "kps": [
+        "kp_geo8_cn_environment_problems"
+      ],
+      "difficulty": 0.65,
+      "solution": "按“环境污染—生态破坏”两大类判断；做法直接从材料提取；中学生行动体现减量、分类、回收。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0079",
+      "item_type": "choice",
+      "stem": "黄土高原上的传统民居窑洞，反映的当地自然环境特点是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_north_culture"
+      ],
+      "difficulty": 0.4,
+      "solution": "黄土高原气候较干燥、黄土土质疏松且具有直立性，开挖窑洞坚固省料、冬暖夏凉，体现了民居对自然环境的适应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 气候湿热、降水丰沛",
+        "B. 黄土直立性好、气候较干燥，窑洞冬暖夏凉",
+        "C. 常年酷寒、冻土广布",
+        "D. 地势低洼、河网密布"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0080",
+      "item_type": "fill",
+      "stem": "北方地区居民饮食以______（面粉制品）为主；东北地区冬季寒冷漫长，传统民居多设______取暖；京剧、豫剧、秦腔、______（流行于东北的剧种）等是北方地区流传的地方戏曲。",
+      "answer": "面食；火炕；二人转",
+      "kps": [
+        "kp_geo8_cn_north_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "北方以旱作小麦为主形成面食文化；东北冬季严寒，民居设火炕御寒；北方地方戏有京剧、豫剧、秦腔和东北二人转等。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0081",
+      "item_type": "solve",
+      "stem": "回答问题。\n(1) 举出北方地区两种传统民居，并分别说明其与当地自然环境的关系。\n(2) 以饮食或传统交通为例，说明自然环境对北方地域文化形成的影响。",
+      "answer": "(1) 华北平原四合院：坐北朝南、墙体较厚，适应冬季寒冷、多风沙的气候，利于保暖防风；黄土高原窑洞：利用黄土直立性凿洞而居，冬暖夏凉，适应当地干燥的气候（或东北民居设火炕，适应冬季严寒）。(2) 饮食：北方降水较少、以旱地小麦种植为主，形成以面食为主的饮食文化；交通：北方平原广阔、河流较少且冬季结冰，历史上以车马运输为主（任选其一，言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_north_culture"
+      ],
+      "difficulty": 0.65,
+      "solution": "民居与环境的对应关系抓住气温、降水、黄土特性；饮食、交通差异的根源在于气候与地形水文条件。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0082",
+      "item_type": "choice",
+      "stem": "云南西双版纳傣族的传统民居竹楼，其主要功能是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_cn_south_culture"
+      ],
+      "difficulty": 0.35,
+      "solution": "西双版纳终年湿热多雨，竹楼分上下两层、人住上层，通风防潮、防虫避洪，是对热带湿热气候的适应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 防寒保暖、抵御风雪",
+        "B. 通风防潮、避虫避洪，适应湿热气候",
+        "C. 抵御风沙侵袭",
+        "D. 便于冰雪封山时储存食物"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0083",
+      "item_type": "fill",
+      "stem": "江南水乡传统民居以______为特色，多临水而建；福建______是客家人聚族而居的防御性民居；南方地区盛产茶叶，名茶有西湖龙井、铁观音和______茶等。",
+      "answer": "白墙黑瓦（粉墙黛瓦）；土楼；普洱",
+      "kps": [
+        "kp_geo8_cn_south_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "江南水乡民居粉墙黛瓦、依水而建；闽西南客家土楼聚族而居、防御性强；南方名茶有西湖龙井、铁观音、普洱茶等，茶文化发达。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0084",
+      "item_type": "solve",
+      "stem": "回答问题。\n(1) 比较我国南方与北方传统交通方式的差异，并说明其自然原因。\n(2) 以南方一种传统民居为例，说明其如何适应当地的自然环境。",
+      "answer": "(1) 南方地区河网密布、降水丰富、河流无结冰期，以船舶运输为主（“南船”）；北方地区降水较少、河流少且冬季结冰，平原广阔，以车马运输为主（“北马”）。(2) 示例：傣族竹楼（吊脚楼）——当地气候湿热多雨，竹楼底层架空、住上层，可通风防潮、防蛇虫，且就地取材竹木建造（或福建土楼防台风、利于宗族聚居防御，言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_south_culture"
+      ],
+      "difficulty": 0.6,
+      "solution": "交通差异从降水、河流密度与结冰期解释；民居适应用“气候特征—建筑特点—功能”对应作答。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0085",
+      "item_type": "choice",
+      "stem": "我国实施西部大开发战略，西部地区最突出的优势条件是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_region_coordination"
+      ],
+      "difficulty": 0.4,
+      "solution": "西部地区面积广大，煤、石油、天然气、水能等自然资源丰富，是西部大开发的重要物质基础；其发展的制约因素是人才、资金、技术相对不足和生态脆弱。",
+      "source": "llm_generated",
+      "options": [
+        "A. 资源丰富，水能、矿产、土地资源开发潜力大",
+        "B. 科技发达，高等教育资源密集",
+        "C. 资金雄厚，外资企业高度集中",
+        "D. 海运便利，深水良港众多"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0086",
+      "item_type": "fill",
+      "stem": "我国四大板块协调发展战略是：东部率先发展、中部______、西部______和东北振兴；此外还实施京津冀协同发展、长江经济带、粤港澳大湾区、______一体化等国家重大区域战略。",
+      "answer": "崛起；大开发；长三角",
+      "kps": [
+        "kp_geo8_cn_region_coordination"
+      ],
+      "difficulty": 0.5,
+      "solution": "四大板块战略为东部率先、中部崛起、西部大开发、东北振兴；京津冀协同发展、长江经济带、粤港澳大湾区、长三角一体化是跨区域的重大国家战略。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0087",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：中部地区包括山西、安徽、江西、河南、湖北、湖南六省，素有“承东启西、连南接北”之称，是我国重要的粮食主产区和能源原材料基地。\n(1) 说明中部地区“承东启西”的区位含义。\n(2) 简述中部地区在全国区域发展中的作用（至少两条）。",
+      "answer": "(1) 中部地处我国内陆腹地，东接沿海发达地区、西连西部资源富集区，是东部产业与西部资源双向流通的过渡地带和交通枢纽。(2) 提供商品粮，保障国家粮食安全；供应能源和原材料，支撑东部地区发展；承接东部产业转移，带动西部开发，促进区域协调发展（任答两条）。",
+      "kps": [
+        "kp_geo8_cn_region_coordination"
+      ],
+      "difficulty": 0.65,
+      "solution": "“承东启西”从东西过渡与枢纽地位解释；作用按粮食、能源原材料、承东启西带动三方面组织。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0088",
+      "item_type": "choice",
+      "stem": "撰写“我的家乡地理综合报告”时，下列内容结构最合理的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_practice_hometown_report"
+      ],
+      "difficulty": 0.35,
+      "solution": "家乡地理综合报告一般按“地理位置与范围—自然环境—自然资源—人文环境—环境问题与保护建议”的逻辑结构撰写，体现从自然到人文、从现状到对策的顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. 位置与范围→自然环境→自然资源→人文环境→环境问题与保护建议",
+        "B. 人文环境→环境问题→位置与范围→自然环境→附录",
+        "C. 自然资源→位置与范围→旅游美食→同学评价",
+        "D. 环境保护建议→人文环境→气候统计→班级合影"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0089",
+      "item_type": "fill",
+      "stem": "家乡地理综合报告中，自然环境部分应包括地形、气候、水文、______、土壤等要素；人文环境部分应包括人口、经济、文化、______等；报告最后应指出家乡存在的环境问题并提出______。",
+      "answer": "植被；交通（城镇建设）；保护（发展）建议",
+      "kps": [
+        "kp_geo8_practice_hometown_report"
+      ],
+      "difficulty": 0.4,
+      "solution": "自然环境要素为地形、气候、水文、植被、土壤；人文环境包括人口、经济、文化、交通；报告结尾应回应问题、提出建议。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0090",
+      "item_type": "solve",
+      "stem": "以你所在县（市、区）为对象撰写家乡地理综合报告。回答问题。\n(1) 写出描述家乡地理位置的两种常用方法（角度）。\n(2) 举例说明如何运用地图和数据说明家乡的自然环境特征。\n(3) 报告在班级展示交流时，可以从哪些方面评价其他同学的报告？",
+      "answer": "(1) 纬度位置（所处温度带）、海陆位置、相对位置（相邻行政区）等，任答两种。(2) 示例：运用等高线地形图判读家乡地形类型与地势起伏；运用气温曲线和降水量柱状图归纳气候特征；运用水系图说明河流流向与水文特征（举一例说明即可）。(3) 内容是否完整准确、图表数据证据是否充分、分析是否条理清晰、建议是否可行、表达是否规范（任答两点）。",
+      "kps": [
+        "kp_geo8_practice_hometown_report"
+      ],
+      "difficulty": 0.65,
+      "solution": "描述位置从纬度、海陆、相对三角度；用图举证体现地理工具运用；评价维度覆盖内容、证据、逻辑、可行性。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0091",
+      "item_type": "choice",
+      "stem": "在北半球中纬度地区野外迷路时，观察树木横断面的年轮可以判别方向。一般来说（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_geo8_practice_compass_map"
+      ],
+      "difficulty": 0.45,
+      "solution": "北半球中高纬度树木朝南一面光照强、生长快，年轮稀疏（间距大）；朝北一面光照弱、生长慢，年轮密集（间距小），据此可判别南北。",
+      "source": "llm_generated",
+      "options": [
+        "A. 年轮密集的一面朝南，稀疏的一面朝北",
+        "B. 年轮稀疏（间距大）的一面朝南，密集的一面朝北",
+        "C. 年轮只能判断树龄，不能指示方向",
+        "D. 所有树木的年轮都是均匀分布的"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0092",
+      "item_type": "fill",
+      "stem": "野外定向时，指南针的磁针静止后指向______方向；晴朗夜晚可先找北斗七星，再根据它找到______星以确定正北方向；没有测量工具时，可用______法粗略量算实地距离。",
+      "answer": "南北；北极；步测",
+      "kps": [
+        "kp_geo8_practice_compass_map"
+      ],
+      "difficulty": 0.45,
+      "solution": "指南针磁针静止时指南北（N极指北）；北斗七星勺口两星连线向外约5倍处为北极星，指示正北；步测（或绳测）可粗略量算距离。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0093",
+      "item_type": "solve",
+      "stem": "学校计划在校园内开展定向活动。回答问题。\n(1) 写出定向活动中确定方向可用的两种方法。\n(2) 说明绘制校园（野外）简易路线图的主要步骤。\n(3) 若你的步长为0.5米，从校门口到操场走了200步，计算两地实地距离；若比例尺为1:1000，该段路程在图上应画多长？",
+      "answer": "(1) 指南针定向；太阳定向（根据太阳东升西落或正午太阳位于正南）；树木年轮、北极星、指向标等（任答两种）。(2) 先确定绘图范围，画出指向标标明方向；用步测或绳测量算各段距离，按比例尺换算为图上距离；用简单符号表示教学楼、道路等地理事物，绘出行进路线并标注图例和名称。(3) 实地距离=200×0.5=100（米）；图上距离=100米÷1000=0.1米=10厘米，即图上画10厘米长的线段。",
+      "kps": [
+        "kp_geo8_practice_compass_map"
+      ],
+      "difficulty": 0.6,
+      "solution": "定向方法既可借助工具也可利用自然标志；绘图步骤体现“定范围—定方向—量距离—绘符号”；计算按步长换算再除以比例尺分母。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0094",
+      "item_type": "choice",
+      "stem": "观察土壤剖面时，土壤最上部颜色较深、腐殖质（有机质）丰富的层次是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_practice_soil_survey"
+      ],
+      "difficulty": 0.3,
+      "solution": "土壤剖面自上而下一般分为腐殖质层、淋溶层、淀积层、母质层；表层枯枝落叶分解形成腐殖质，使腐殖质层颜色深、较肥沃。",
+      "source": "llm_generated",
+      "options": [
+        "A. 母质层",
+        "B. 淀积层",
+        "C. 腐殖质层",
+        "D. 淋溶层"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0095",
+      "item_type": "fill",
+      "stem": "土壤剖面自上而下一般分为腐殖质层、______层、______层和母质层；野外测定土壤酸碱度时，可取样后用______快速检测。",
+      "answer": "淋溶；淀积；pH试纸",
+      "kps": [
+        "kp_geo8_practice_soil_survey"
+      ],
+      "difficulty": 0.5,
+      "solution": "土壤剖面构造自上而下为腐殖质层、淋溶层、淀积层、母质层；野外可用pH试纸（或土壤pH检测仪）快速测定土壤酸碱度。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0096",
+      "item_type": "solve",
+      "stem": "某小组在校园草坪和裸地各挖掘一个土壤剖面进行观察比较。回答问题。\n(1) 写出挖掘和观察土壤剖面时应记录的项目（至少三项）。\n(2) 推测草坪下土壤与裸地土壤剖面发育的差异，并说明原因。",
+      "answer": "(1) 各层次的厚度、颜色、质地（砂粒黏粒比例）、结构（团粒状等）、松紧度、根系多少、土壤pH等，任答三项。(2) 草坪下植被覆盖好、枯枝落叶多，有机质来源丰富，腐殖质层厚、颜色深，剖面层次发育完整；裸地缺乏植被保护，腐殖质层薄甚至缺失，表层易遭侵蚀，剖面发育差。原因是植被直接影响有机质来源和地表侵蚀强度。",
+      "kps": [
+        "kp_geo8_practice_soil_survey"
+      ],
+      "difficulty": 0.65,
+      "solution": "观察记录围绕“层次—性状—指标”三方面；差异比较抓住腐殖质层厚度与剖面完整程度，成因指向植被覆盖差异。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0097",
+      "item_type": "choice",
+      "stem": "“藏粮于技”是保障国家粮食安全的重要战略，其含义是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_inquiry_food_security"
+      ],
+      "difficulty": 0.35,
+      "solution": "藏粮于技指依靠良种培育、精准农业等农业科技进步提高粮食单产和品质；与“藏粮于地”（保护耕地）共同保障国家粮食安全。",
+      "source": "llm_generated",
+      "options": [
+        "A. 依靠农业科技进步提高粮食单产和品质",
+        "B. 大量进口粮食满足国内需求",
+        "C. 扩大城市建设占用耕地",
+        "D. 压缩粮食种植面积发展工业"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0098",
+      "item_type": "fill",
+      "stem": "我国坚守______亿亩耕地红线；东北的松嫩平原、______平原和长江中下游平原是重要的商品粮基地；受气候影响，北方粮食作物以小麦为主，南方以______为主。",
+      "answer": "18；三江；水稻",
+      "kps": [
+        "kp_geo8_inquiry_food_security"
+      ],
+      "difficulty": 0.4,
+      "solution": "保障粮食安全须坚守18亿亩耕地红线；商品粮基地主要有东北的松嫩平原、三江平原和长江中下游平原；南稻北麦是粮食作物分布的基本格局。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0099",
+      "item_type": "solve",
+      "stem": "学校开展“国家粮食安全”主题调研。回答问题。\n(1) 简述保障我国粮食安全的战略意义。\n(2) 列举我国保障粮食安全的主要措施（至少两条）。\n(3) 作为中学生，谈谈节约粮食的具体做法（至少两条）。",
+      "answer": "(1) 我国人口14亿多，粮食需求量大；粮食安全关系国计民生、社会稳定和国家安全，必须把饭碗牢牢端在自己手中。(2) 坚守18亿亩耕地红线（藏粮于地）；依靠科技提高单产（藏粮于技）；建设商品粮基地；完善粮食储备和调动农民种粮积极性（任答两条）。(3) 按需取餐、践行“光盘行动”；不剩饭不浪费、不挑食；宣传爱粮节粮知识（任答两条）。",
+      "kps": [
+        "kp_geo8_inquiry_food_security"
+      ],
+      "difficulty": 0.6,
+      "solution": "意义从人口规模与国家安全切入；措施对应“藏粮于地、藏粮于技”等战略；节约行动要具体到日常行为。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0100",
+      "item_type": "choice",
+      "stem": "南水北调中线工程的水源地是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_inquiry_south_north_water"
+      ],
+      "difficulty": 0.4,
+      "solution": "中线工程从汉江上游的丹江口水库引水，自流北上经郑州、石家庄到达北京、天津，水质较好。",
+      "source": "llm_generated",
+      "options": [
+        "A. 密云水库",
+        "B. 鄱阳湖",
+        "C. 丹江口水库",
+        "D. 刘家峡水库"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0101",
+      "item_type": "fill",
+      "stem": "南水北调东线工程从长江下游扬州江都抽水，沿______运河逐级______北送至山东、天津；中线工程从丹江口水库引水，因地势南高北低可实现______输水，共同缓解华北地区缺水。",
+      "answer": "京杭；提水（抽水）；自流",
+      "kps": [
+        "kp_geo8_inquiry_south_north_water"
+      ],
+      "difficulty": 0.5,
+      "solution": "东线利用京杭大运河河道输水，因沿线地势低平需逐级提水泵站北送；中线从丹江口水库自流北上，直供京津等受水区。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0102",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：南水北调东、中线一期工程通水以来累计调水数百亿立方米，北京、天津等北方城市供水紧张状况缓解，地下水位止跌回升；同时，为保障调水水质，沿线关闭整治重污染企业，汉江中下游实施了生态补水。\n(1) 南水北调工程主要解决我国水资源哪一分布不均问题？\n(2) 简述南水北调对调入区的有利影响（至少两条）。\n(3) 分析调水可能给调出区（汉江中下游）带来的影响及应对措施。",
+      "answer": "(1) 解决水资源南多北少、空间（地区）分布不均的问题。(2) 缓解华北城市生产生活用水紧张；促使地下水位回升、减缓地面沉降；增加生态用水，改善沿线水环境（任答两条）。(3) 影响：汉江中下游水量减少、水位下降，影响航运、灌溉和生态用水。措施：实施生态补水、兴建引江济汉等配套工程，加强流域水资源统一调度（言之有理即可）。",
+      "kps": [
+        "kp_geo8_inquiry_south_north_water"
+      ],
+      "difficulty": 0.7,
+      "solution": "先明确定位为解决空间分布不均；调入区影响从供水、地质、生态三方面；调出区影响与对策一一对应，体现辩证评价。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0103",
+      "item_type": "choice",
+      "stem": "乡村聚落与城市聚落差异显著。下列叙述正确的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_human_settlement"
+      ],
+      "difficulty": 0.3,
+      "solution": "乡村居民主要从事种植业等农业生产活动，景观保留较多自然要素；城市居民多从事工业、服务业等非农产业，建筑密集；城乡之间人员、物资、信息交流频繁。",
+      "source": "llm_generated",
+      "options": [
+        "A. 乡村居民以从事农业为主，城市居民多从事工业、服务业等",
+        "B. 乡村全部是自然景观，没有任何人工建筑",
+        "C. 城市居民全部从事农业生产",
+        "D. 乡村与城市之间没有人员往来"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0104",
+      "item_type": "fill",
+      "stem": "城市化是指人口向城镇集聚、乡村地区转变为城镇地区的过程，其最主要的标志是______人口占总人口的比重不断上升；针对城市化中的交通拥堵、住房紧张、环境污染等问题，我国推动城乡协调发展和______战略。",
+      "answer": "城市；乡村振兴",
+      "kps": [
+        "kp_geo8_human_settlement"
+      ],
+      "difficulty": 0.45,
+      "solution": "城市化的主要标志是城市人口占总人口比重上升（城镇化率提高）；应对城乡发展不平衡，国家实施乡村振兴战略，促进城乡协调发展。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0105",
+      "item_type": "solve",
+      "stem": "回答问题。\n(1) 从景观和居民职业构成两方面，比较乡村与城市的差异。\n(2) 城市化给人们生活带来哪些便利和问题？（各举一条）\n(3) 说说促进城乡协调发展、实施乡村振兴的意义。",
+      "answer": "(1) 景观：乡村以农田、村落为主，自然景观比重较大；城市高楼密集、道路纵横，以人工景观为主。职业构成：乡村居民以农业为主；城市居民以工业、建筑业、服务业等非农产业为主。(2) 便利：就业机会多、公共服务（教育医疗交通）完善、生活方便；问题：交通拥堵、住房紧张、环境污染等（各一条）。(3) 促进城乡要素双向流动，缩小城乡差距，实现城乡共同繁荣，推进共同富裕。",
+      "kps": [
+        "kp_geo8_human_settlement"
+      ],
+      "difficulty": 0.6,
+      "solution": "比较从景观与职业两个维度展开；便利与问题辩证列举；意义落脚缩小差距与共同富裕。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0106",
+      "item_type": "choice",
+      "stem": "下列运输任务与运输方式的搭配，最合理的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_geo8_cn_industry_transport"
+      ],
+      "difficulty": 0.4,
+      "solution": "急救药品量小、时效性强，宜用航空运输；十万吨煤炭宜用铁路或海运；市内短途鲜活货物宜用公路；天然气宜用管道运输。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两箱急救药品从北京紧急运往乌鲁木齐——航空运输",
+        "B. 十万吨煤炭从秦皇岛运往广州——航空运输",
+        "C. 一吨活鱼从郊区运往市区——海洋运输",
+        "D. 五十万立方米天然气从新疆运往上海——铁路敞车运输"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0107",
+      "item_type": "fill",
+      "stem": "我国四大工业基地是辽中南、京津唐、沪宁杭和______工业基地，其中沪宁杭是我国最大的______性工业基地；从总体看，我国交通运输网的分布特点是东部稠密、西部______。",
+      "answer": "珠江三角洲；综合；稀疏",
+      "kps": [
+        "kp_geo8_cn_industry_transport"
+      ],
+      "difficulty": 0.45,
+      "solution": "四大工业基地为辽中南、京津唐、沪宁杭、珠江三角洲，其中沪宁杭是全国最大的综合性工业基地；受人口经济分布影响，交通网东密西疏。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0108",
+      "item_type": "solve",
+      "stem": "回答问题。\n(1) 写出我国四大工业基地的名称，并指出辽中南工业基地发展的资源条件。\n(2) 为下列运输任务选择合适的运输方式并说明理由：①10万吨石油从大庆运往大连的炼油厂；②大量天然气从新疆轮南运往上海；③一批鲜花从昆明紧急运往哈尔滨。",
+      "answer": "(1) 辽中南、京津唐、沪宁杭、珠江三角洲；辽中南煤、铁、石油等矿产资源丰富，靠近原料和燃料产地，发展重工业条件优越。(2) ①石油运量大、两地间有管道和铁路相通，可选管道运输（或铁路、海运），运量大且成本低；②天然气适于管道运输，连续性强、运量大、损耗小；③鲜花保鲜期短、时效要求高，宜选航空运输（言之有理即可）。",
+      "kps": [
+        "kp_geo8_cn_industry_transport"
+      ],
+      "difficulty": 0.65,
+      "solution": "工业基地名称按由北向南记忆；资源条件对应煤铁石油；运输方式选择抓住货物性质（大宗、液体气体、鲜活急需）与运距。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0109",
+      "item_type": "choice",
+      "stem": "关于京津冀城市群核心与定位的叙述，正确的是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_geo8_cn_north_urbanization"
+      ],
+      "difficulty": 0.35,
+      "solution": "京津冀协同发展以北京为核心，疏解非首都功能、强化京津双城联动，目标是建设以首都为核心的世界级城市群。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以天津为核心，建设单一重工业基地",
+        "B. 以石家庄为核心，打造国际金融中心",
+        "C. 以唐山为核心，发展高科技产业带",
+        "D. 以北京为核心，建设以首都为核心的世界级城市群"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0110",
+      "item_type": "fill",
+      "stem": "北方地区主要城市群有京津冀城市群、山东半岛城市群、______城市群和关中平原城市群；对于资源枯竭型城市，应加快培育______产业，实现经济转型和可持续发展。",
+      "answer": "中原；接续（替代）",
+      "kps": [
+        "kp_geo8_cn_north_urbanization"
+      ],
+      "difficulty": 0.5,
+      "solution": "北方主要城市群包括京津冀、山东半岛、中原、关中平原城市群；资源枯竭型城市转型的关键是培育接续替代产业、摆脱对单一资源的依赖。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0111",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：河北曹妃甸承接北京钢铁企业转移，发展临港装备制造；天津发挥港口和制造业优势，与北京的科技创新资源对接；北京则重点发展高技术产业和现代服务业。\n(1) 说出京津冀协同发展中三地的主要分工定位。\n(2) 分析北京企业外迁对河北（曹妃甸）发展的带动作用。\n(3) 简述京津冀城市群崛起对北方地区发展的意义。",
+      "answer": "(1) 北京：全国政治、文化、国际交往和科技创新中心，重点发展高技术产业和现代服务业；天津：北方国际航运核心区和先进制造研发基地；河北：承接京津产业转移，建设产业转型升级试验区（言之有理即可）。(2) 承接产业转移，带动钢铁、装备制造等相关产业发展；增加就业和财政收入；完善港口交通等基础设施，加快城市化进程。(3) 带动北方地区经济增长，优化产业布局，缓解北京“大城市病”，形成新的区域增长极，促进南北区域协调发展。",
+      "kps": [
+        "kp_geo8_cn_north_urbanization"
+      ],
+      "difficulty": 0.7,
+      "solution": "三地分工按“北京研发服务—天津制造航运—河北承接”归纳；带动作用从产业、就业、基础设施展开；意义落脚北方经济与区域协调。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0112",
+      "item_type": "choice",
+      "stem": "在编制国土空间规划时，需要对各类资源分类施策。下列自然资源中，因形成过程极其漫长、用一点少一点而被列为非可再生资源的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_geo8_cn_natural_resources"
+      ],
+      "difficulty": 0.3,
+      "solution": "石油、煤炭、天然气等矿产资源形成过程极其漫长，用一点少一点，属非可再生资源；森林、太阳能、土地属可再生资源。",
+      "source": "llm_generated",
+      "options": [
+        "A. 森林资源",
+        "B. 太阳能",
+        "C. 石油资源",
+        "D. 土地资源"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0113",
+      "item_type": "fill",
+      "stem": "我国自然资源的基本国情特征是：总量______，人均______，分布______；因此必须合理开发利用资源，保障资源安全，走可持续发展道路。",
+      "answer": "丰富（大）；不足（少）；不均",
+      "kps": [
+        "kp_geo8_cn_natural_resources"
+      ],
+      "difficulty": 0.4,
+      "solution": "我国自然资源总量丰富但人均不足，且分布不均（如水资源南多北少、能源西多东少），这是资源基本国情，必须节约优先、合理利用。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "fill_blank",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "geo_z8b_0114",
+      "item_type": "solve",
+      "stem": "阅读材料，回答问题。\n材料：我国煤炭资源主要分布在山西、陕西、内蒙古等地，水资源南多北少；东部沿海地区经济发达、能源消费量大，但本地能源相对不足。\n(1) 针对能源产销地区分布不平衡，我国采取了哪些措施？（至少两条）\n(2) 结合我国资源国情，说说节约和保护自然资源的做法（至少两条）。",
+      "answer": "(1) 建设西气东输、西电东送、晋煤外运（北煤南运）等跨区域资源调配工程；在能源富集区建设大型能源基地；发展核电、风电、光伏等新能源；提高能源利用效率（任答两条）。(2) 节约用电用水、绿色出行，减少资源浪费；对废弃物回收利用，发展循环经济；保护耕地、森林等可再生资源，坚持开发与保护并举（任答两条）。",
+      "kps": [
+        "kp_geo8_cn_natural_resources"
+      ],
+      "difficulty": 0.65,
+      "solution": "产销矛盾按“调配工程+能源基地+新能源”作答；节约保护从生活行为、循环经济、资源保护三层次组织。",
+      "source": "llm_generated",
+      "options": [],
+      "form": "comprehensive",
+      "verification": {
+        "agents": [
+          "geo-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

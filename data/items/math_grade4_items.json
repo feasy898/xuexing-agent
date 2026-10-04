@@ -1759,6 +1759,144 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_z_0088",
+      "item_type": "choice",
+      "stem": "把 40800000 改写成用“万”作单位的数是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.3,
+      "solution": "整万数改写成“万”作单位：去掉末尾 4 个 0 再加上“万”字，40800000=4080 万。",
+      "source": "llm_generated",
+      "options": [
+        "A. 408 万",
+        "B. 4080 万",
+        "C. 40800 万",
+        "D. 408 亿"
+      ],
+      "form": "大数改写选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0089",
+      "item_type": "fill",
+      "stem": "5300000000=____亿。",
+      "answer": "53",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.25,
+      "solution": "整亿数改写成“亿”作单位：去掉末尾 8 个 0 再加上“亿”字，5300000000=53 亿。",
+      "source": "llm_generated",
+      "form": "大数改写填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0090",
+      "item_type": "solve",
+      "stem": "用四舍五入法省略万位后面的尾数，求 396500 的近似数（用“万”作单位），并写出思考过程。",
+      "answer": "396500 省略万位后面的尾数，看尾数的最高位（千位）：千位上是 6，6≥5，向前一位进一，39 万+1 万=40 万，所以 396500≈40 万。",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.4,
+      "solution": "396500=39 万+6500，尾数最高位是千位，千位上的 6≥5 舍去尾数并向万位进 1，得 396500≈40 万。",
+      "source": "llm_generated",
+      "form": "四舍五入求近似数解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0091",
+      "item_type": "choice",
+      "stem": "妈妈给客人沏茶，要做的事情及所需时间如下：洗水壶 1 分钟、烧水 8 分钟、洗茶杯 2 分钟、拿茶叶 1 分钟、沏茶 1 分钟（沏茶前必须先烧开水，其余事情顺序可以调整）。妈妈最少要（　）分钟才能让客人喝上茶。",
+      "answer": "A",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.4,
+      "solution": "先洗水壶 1 分钟，再烧水 8 分钟（烧水等待的同时洗茶杯 2 分钟、拿茶叶 1 分钟，共 3 分钟<8 分钟，可同时完成），最后沏茶 1 分钟，最少 1+8+1=10 分钟。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 11",
+        "C. 12",
+        "D. 13"
+      ],
+      "form": "沏茶优化选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0092",
+      "item_type": "fill",
+      "stem": "用一个平底锅烙饼，每次最多烙 2 张饼，两面都要烙，每面需要 3 分钟。烙 3 张饼最少需要____分钟。",
+      "answer": "9",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.45,
+      "solution": "轮换烙法：第 1 次烙饼 1 正面和饼 2 正面，第 2 次烙饼 1 反面和饼 3 正面，第 3 次烙饼 2 反面和饼 3 反面，每次锅内都有 2 张饼，3×3=9 分钟。",
+      "source": "llm_generated",
+      "form": "烙饼优化填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0093",
+      "item_type": "solve",
+      "stem": "用一个平底锅烙饼，每次最多烙 2 张饼，两面都要烙，每面需要 3 分钟。请为烙 4 张饼设计一种最省时的方案，并求出最少时间。",
+      "answer": "两张两张地烙：第 1 次烙饼 1、饼 2 的正面（3 分钟），第 2 次烙饼 1、饼 2 的反面（3 分钟），第 3 次烙饼 3、饼 4 的正面（3 分钟），第 4 次烙饼 3、饼 4 的反面（3 分钟）。共 4 次×3 分钟=12 分钟，每次锅内都有 2 张饼，没有空位，最省时，最少 12 分钟。",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.5,
+      "solution": "锅每次最多烙 2 张，最优方案是让锅内每次都满（2 张），4 张饼共 8 个面，每烙一次完成 2 个面，需 8÷2=4 次，每次 3 分钟，共 12 分钟。",
+      "source": "llm_generated",
+      "form": "烙饼方案设计解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

@@ -5473,6 +5473,90 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0036",
+      "item_type": "fill",
+      "stem": "复习单元主题 “Weather” 时，你画了一张思维导图：中心词是 Weather，分支上已有 sunny、rainy。请再补写两个属于该主题的英文分支词：____、____",
+      "answer": "windy；cloudy（或 snowy / hot / cold / warm / foggy 等任两个天气类英文单词均可）",
+      "kps": [
+        "kp_eng6_lsm6_mindmap_review"
+      ],
+      "difficulty": 0.5,
+      "solution": "思维导图复习法=以主题为中心，按语义场把同类词挂到分支上回忆；补写的分支词必须属于 weather 这一语义场。",
+      "source": "llm_generated",
+      "form": "思维导图填空",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0037",
+      "item_type": "solve",
+      "stem": "做主题演讲 “Save Water, Save Lives”，至少 4 句（不少于 30 个英文词），要有开头、两条建议和结尾号召：____",
+      "answer": "参考答案：Good morning, everyone. Today I want to talk about saving water. Water is important, but many places in the world are short of water. First, we should turn off the tap after washing hands. Second, we can reuse water to clean the floor or water flowers. Let's start now and save every drop! Thank you.",
+      "kps": [
+        "kp_eng6_spk6_topic_speech_plus"
+      ],
+      "difficulty": 0.55,
+      "solution": "演讲结构=问候—点题—问题背景—两条建议（First/Second）—号召结尾；建议要具体可做，词数达标。",
+      "source": "llm_generated",
+      "form": "主题演讲",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0038",
+      "item_type": "solve",
+      "stem": "写一篇日记 “A Busy Day”，不少于 4 句（不少于 30 个英文词），既写清做的事情，又写出你的感受（如 tired、happy、proud）：____",
+      "answer": "参考答案：\nMarch 8th, Cloudy\nI had a busy day today. In the morning, I helped Mum clean the house and cook lunch. In the afternoon, I did my homework and practised the piano for an hour. Although I was very tired, I felt happy because Mum said I was a great helper.",
+      "kps": [
+        "kp_eng6_wri6_diary_feel"
+      ],
+      "difficulty": 0.5,
+      "solution": "日记含日期天气；事情按时间顺序（morning/afternoon）写清，感受词（tired/happy）与原因（because...）点明情绪，体现“记事+感受”两条线。",
+      "source": "llm_generated",
+      "form": "日记写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0039",
+      "item_type": "solve",
+      "stem": "看图：放学后，几名学生在公园里捡垃圾，有的拿着垃圾袋，有的捡起塑料瓶，旁边立着一块写着 “Keep Our Park Clean” 的牌子。请用 4 句连贯的话描述图片（不少于 30 个英文词）：____",
+      "answer": "参考答案：After school, some students are cleaning up the park. One girl is holding a big rubbish bag, and two boys are picking up plastic bottles. There is a sign that says “Keep Our Park Clean”. They are doing a meaningful job for the environment.",
+      "kps": [
+        "kp_eng6_wri6_pic_write"
+      ],
+      "difficulty": 0.55,
+      "solution": "描述图片按“整体—人物动作—环境细节（标语牌）—评价”的顺序；用现在进行时写动作，加入 there be 句型写细节，末句给简单评价。",
+      "source": "llm_generated",
+      "form": "看图写话",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

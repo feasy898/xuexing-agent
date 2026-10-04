@@ -342,8 +342,10 @@ def night_bank(night_items, ledger):
 
 @pytest.fixture(scope="module")
 def p34_items():
-    # 2026-10-02 wave3 扩库批的 3-4 年级新题不属于本运行，按代理身份剔除
-    return [it for it in _load_items(P34_ITEM_FILES) if not _is_wave3(it)]
+    # 2026-10-02 wave3 扩库批的 3-4 年级新题不属于本运行，按代理身份剔除；
+    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p3_*/kp_p4_* 补题）同理剔除
+    return [it for it in _load_items(P34_ITEM_FILES)
+            if not _is_wave3(it) and not _is_mat(it)]
 
 
 @pytest.fixture(scope="module")
@@ -383,8 +385,10 @@ def p34_queue():
 
 @pytest.fixture(scope="module")
 def p12_items():
-    # 2026-10-02 wave3 扩库批的 1-2 年级新题不属于本运行，按代理身份剔除
-    return [it for it in _load_items(P12_ITEM_FILES) if not _is_wave3(it)]
+    # 2026-10-02 wave3 扩库批的 1-2 年级新题不属于本运行，按代理身份剔除；
+    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p1_*/kp_p2_* 补题）同理剔除
+    return [it for it in _load_items(P12_ITEM_FILES)
+            if not _is_wave3(it) and not _is_mat(it)]
 
 
 @pytest.fixture(scope="module")

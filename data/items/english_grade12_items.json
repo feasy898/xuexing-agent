@@ -10003,6 +10003,399 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0002",
+      "item_type": "solve",
+      "stem": "【应用文写作·通知】学校英语协会将举办英语演讲比赛，请你以协会名义用英语写一则通知（Notice），内容包括：比赛时间与地点、报名方式与截止日期、对观众的要求。词数 80 左右。",
+      "answer": "参考范文：\nNotice\nAn English speech contest will be held in the school lecture hall at 3:00 p.m. on Friday, 20 October. Those who wish to take part, please sign up at the office of the English Association or email us at englishclub@school.com before 15 October. The top three winners will be awarded prizes. Everyone is welcome to come and cheer for the speakers. Please arrive ten minutes early and keep quiet during the contest.\nThe English Association",
+      "kps": [
+        "kp_eng12_exa12_application"
+      ],
+      "difficulty": 0.85,
+      "solution": "应用文“通知”三要素：标题 Notice、正文（时间地点—报名方式与截止—观众要求）、落款；要点齐全、格式规范、语气得体，词数约 80。",
+      "source": "llm_generated",
+      "form": "应用文写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0003",
+      "item_type": "choice",
+      "stem": "高考英语笔试共 120 分钟。考试进行到 90 分钟时，你发现书面表达（25 分）尚未动笔，而完形填空还剩 8 个空没做完。此时按“性价比”最优的做法是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_exa12_time_control"
+      ],
+      "difficulty": 0.6,
+      "solution": "分值性价比：书面表达 25 分远高于 8 个完形空（约 1.5 分/空）。应优先保证高分值题目完整成文，并预留誊写时间；A、D 可能丢掉大分，C 直接放弃 25 分，均不合理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先花 15 分钟把完形全部做完，剩下的时间能写多少作文算多少",
+        "B. 立即转到书面表达，先花约 8 分钟列提纲、再用约 18 分钟成文誊写，剩余时间回头补完形",
+        "C. 放弃书面表达，把全部剩余时间用来检查已答题目",
+        "D. 维持原答题顺序慢慢做完形，作文写不完就算了"
+      ],
+      "form": "考试策略选择",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0004",
+      "item_type": "fill",
+      "stem": "【考试时间规划·填空】按“先易后难、留足检查”的原则补全你的 120 分钟答题计划：听力 20 分钟；阅读理解约 35 分钟；语言运用（完形填空+语法填空）约 ____ 分钟；写作约 40 分钟；考试结束前必须预留至少 ____ 分钟用于填涂答题卡并核对有无漏题。",
+      "answer": "25；5（语言运用约 25 分钟，则 20+35+25+40=120；结束前至少预留 5 分钟填涂答题卡并核对漏题。只要各部分之和为 120 分钟且预留了合理检查时间，即可视为正确）",
+      "kps": [
+        "kp_eng12_exa12_time_control"
+      ],
+      "difficulty": 0.55,
+      "solution": "总时长 120 分钟，四大部分时间之和须等于 120；涂卡与查漏是“必做动作”，须固定预留约 5 分钟，避免交卷前慌乱漏涂。",
+      "source": "llm_generated",
+      "form": "考试时间规划填空",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0005",
+      "item_type": "choice",
+      "stem": "下列做法中，最能体现“持久的英语学习动力与自主学习能力”的是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_lsm12_persistence"
+      ],
+      "difficulty": 0.5,
+      "solution": "“持久动力+自主学习”体现为长期坚持、主动创造练习机会并自我查证；A 突击、B 被动、D 回避，均与该素养相悖。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只在考试前一周突击背单词",
+        "B. 只在老师布置作业时才接触英语",
+        "C. 三年来每天用英语听一段新闻并做笔记，遇到不懂的主动查证",
+        "D. 觉得自己口语差，从此再也不开口说英语"
+      ],
+      "form": "学习策略选择",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0006",
+      "item_type": "solve",
+      "stem": "【学习计划·表达】高三学习紧张，仍要“创造和把握多种机会练习和运用英语”。请用英语写一份一周英语自主学习微计划（不少于 40 词），至少包含三种嵌入日常生活的练习机会（如通勤听、课间读、睡前写等）。",
+      "answer": "参考范文：Here is my weekly micro-plan. I will listen to English news for ten minutes on my way to school every day. During the ten-minute break, I will read one short English article. Before bed, I will write three sentences in English about my day. At weekends, I will watch an English film without subtitles and retell the story to my deskmate.",
+      "kps": [
+        "kp_eng12_lsm12_persistence"
+      ],
+      "difficulty": 0.6,
+      "solution": "微计划的关键是“小步、可坚持、嵌入日常”：三个时机（通勤/课间/睡前）+一个周末任务，任务量小而具体，才能长期坚持，体现持久学习动力。",
+      "source": "llm_generated",
+      "form": "学习计划写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0007",
+      "item_type": "choice",
+      "stem": "关于“理性自觉地总结适合自己的英语学习方法”，下列做法最恰当的是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng12_lsm12_summarise_method"
+      ],
+      "difficulty": 0.5,
+      "solution": "理性总结方法=用证据（错题分布、效果记录）检验方法，再做保留/调整的决策；B 盲从他人、C 拒绝反思、D 否定方法的作用，都不属于理性自觉的方法总结。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每次考试后分析错题分布，记录所用方法的效果，保留有效做法、调整低效做法",
+        "B. 别人用什么方法，我就照搬什么方法",
+        "C. 从初一起就一直用同一套方法，从不反思调整",
+        "D. 认为学习方法没有用，学得好坏全靠天赋"
+      ],
+      "form": "学习方法辨析",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0008",
+      "item_type": "solve",
+      "stem": "【方法总结·表达】请用英语总结你认为最有效的英语听力训练方法，说明步骤与理由（不少于 50 词），要求出现 first、next、finally 之类的步骤词。",
+      "answer": "参考范文：My most effective method for listening training is shadowing. First, I listen to a short recording without the script to get the main idea. Next, I listen again and repeat sentence by sentence, imitating the pronunciation and intonation. Finally, I check the script, mark the parts I missed and listen once more. It works because it trains my ears, my mouth and my attention at the same time.",
+      "kps": [
+        "kp_eng12_lsm12_summarise_method"
+      ],
+      "difficulty": 0.6,
+      "solution": "方法总结的结构=方法名+分步操作（first/next/finally）+理由（because...）；步骤词使表达条理清晰，体现对自身方法的理性概括。",
+      "source": "llm_generated",
+      "form": "方法总结写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0009",
+      "item_type": "solve",
+      "stem": "【即兴演讲】你抽到即兴演讲题 “The power of a smile”，准备 1 分钟，演讲约 1 分钟（80—100 词）。请先写出演讲提纲（观点+两个支撑点+结尾），再写出演讲稿。",
+      "answer": "提纲：观点—A smile costs nothing but changes everything；支撑 1—微笑拉近人与人的距离（例：向新同学微笑成为好友）；支撑 2—微笑给自己力量（例：考试失利后微笑面对、重新开始）；结尾—号召大家每天带着微笑。\n演讲稿：Good morning, everyone. Have you ever noticed how one smile can change a whole day? I believe a smile costs nothing but changes everything. First, a smile brings people closer. Last term I smiled at a new student, and we soon became best friends. Second, a smile gives us strength. When I failed a maths test, a smile helped me start again instead of giving up. So let us wear a smile every day, because it is the shortest distance between two hearts. Thank you.",
+      "kps": [
+        "kp_eng12_spk12_speech_impromptu"
+      ],
+      "difficulty": 0.78,
+      "solution": "即兴演讲结构：钩子（设问）—观点—两个支撑（各配一个亲身事例）—号召式结尾；先用提纲固定结构，再用口语化语言展开，条理清楚、语言准确。",
+      "source": "llm_generated",
+      "form": "即兴演讲",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0010",
+      "item_type": "choice",
+      "stem": "即兴演讲只给 1 分钟准备时间。下列准备策略中最有效的是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_spk12_speech_impromptu"
+      ],
+      "difficulty": 0.6,
+      "solution": "即兴演讲的评分点是结构与要点覆盖，关键词提纲最省时且保留现场感；A 逐字稿既来不及又导致照读，C 无结构，D 因小失大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用全部准备时间逐字写稿，上台照着念",
+        "B. 快速写下观点关键词、两个例子和一句结尾，上台据此口头扩展",
+        "C. 什么都不准备，上台后想到哪里说到哪里",
+        "D. 反复修改第一句话的措辞，直到完美再考虑其他内容"
+      ],
+      "form": "演讲策略选择",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0011",
+      "item_type": "solve",
+      "stem": "【主题写作·生命意义】有人认为人生的意义在于取得成就（achievements），有人认为在于奉献（contribution）。请用英语写一段 80 词左右的短文，表明你的观点，并给出至少两条理由和一个具体事例。",
+      "answer": "参考范文：In my opinion, a meaningful life lies more in contribution than in achievements. Achievements make us proud, but they only light our own lamps, while contribution lights others'. My neighbour, a retired doctor, volunteers at a community clinic every weekend. She has won no prizes for it, yet hundreds of families are healthier because of her. When she talks about her patients, her eyes shine brighter than any medal. Therefore, what makes life valuable is not what we gain, but what we give.",
+      "kps": [
+        "kp_eng12_thm12_life_meaning"
+      ],
+      "difficulty": 0.68,
+      "solution": "生命意义主题的议论段=亮明观点+对比说理（成就 vs 奉献）+具体事例（退休医生志愿服务）+回扣观点；价值判断须有事例与理由支撑。",
+      "source": "llm_generated",
+      "form": "主题写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0012",
+      "item_type": "choice",
+      "stem": "【主题阅读·生命意义与生涯规划】阅读短文，回答问题。\nAt twenty-five, Michael gave up a well-paid job in a bank and trained to be a rural teacher. His friends laughed at him, saying he was throwing his talent away. Five years later, his students' village school has produced its first university students, and Michael says he has never felt richer. “Success is not about the salary on your payslip,” he explains, “but about the lives you touch.”\n问题：Which of the following best states the value judgement the passage supports?",
+      "answer": "C",
+      "kps": [
+        "kp_eng12_thm12_life_meaning"
+      ],
+      "difficulty": 0.68,
+      "solution": "抓住人物的取舍与直接引语 “not about the salary ... but about the lives you touch”，可判断语篇支持“以对他人的贡献衡量职业价值”；A 与文意相反，B 无依据，D 过度推断。",
+      "source": "llm_generated",
+      "options": [
+        "A. A high salary is the only measure of a successful career.",
+        "B. Rural teachers always earn more than bank workers.",
+        "C. A meaningful career is judged by one's contribution to others rather than by money.",
+        "D. Young people should avoid working in banks."
+      ],
+      "form": "阅读理解",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0013",
+      "item_type": "solve",
+      "stem": "【创造性写作·五行诗】以 “Light” 为题创作一首五行小诗，要求：第 1 行一个名词；第 2 行两个形容词；第 3 行三个 -ing 形式的动词；第 4 行一个表达感受的短语；第 5 行一个与第 1 行呼应的同义词。示例（题为 Rain）：Rain / Soft, cool / Falling, drumming, whispering / A song on my roof / Shower.",
+      "answer": "参考答案：\nLight\nWarm, golden\nDancing, shining, warming\nA kiss on my face\nSunshine",
+      "kps": [
+        "kp_eng12_wri12_wri_creative"
+      ],
+      "difficulty": 0.82,
+      "solution": "五行诗借助特殊的词汇形式（名词—形容词—-ing 动词序列）与分行版式创造意象；各行词性与题主要求对应，末行以同义词回扣主题即合格。",
+      "source": "llm_generated",
+      "form": "创意写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0014",
+      "item_type": "solve",
+      "stem": "【创造性写作·海报标语】学校读书节需要一句创意英文标语（slogan）贴在海报上，并配一句说明。要求：标语不超过 8 个词，至少使用押韵、重复、双关三种手法之一；说明不超过 20 词。请写出标语与说明。",
+      "answer": "参考答案：\n标语：Open a Book, Open the World.（运用重复手法：重复 open 形成排比冲击力）\n说明：Every page you turn builds a bridge to somewhere new — come and read with us!",
+      "kps": [
+        "kp_eng12_wri12_wri_creative"
+      ],
+      "difficulty": 0.85,
+      "solution": "创造性语篇可借助修辞手法（重复/押韵/双关）与版式资源（大写、破折号、分行）增强感染力；标语短小有节奏，说明句点明活动召唤。",
+      "source": "llm_generated",
+      "form": "创意写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0015",
+      "item_type": "solve",
+      "stem": "【演讲稿写作】你将参加校英语演讲比赛，题目为 “Youth Is the Time to Dare”。请写一篇 100—120 词的演讲稿，要求：开头用设问或引用吸引听众；中间用 First/Second 推进两点论证；结尾发出号召。",
+      "answer": "参考范文：“What would you attempt if you knew you could not fail?” Someone once asked me this question, and it changed me. Ladies and gentlemen, youth is the time to dare. First, daring expands our limits. When I first signed up for the 1,500-metre race, I could hardly finish one lap, yet I ended up winning a medal for my class. Second, daring turns failure into lessons. Every bold attempt, successful or not, teaches us more than staying safe ever could. So, my dear friends, do not let fear write your story. Dare to start, dare to stumble, and dare to begin again. Thank you!",
+      "kps": [
+        "kp_eng12_wri12_wri_speech"
+      ],
+      "difficulty": 0.85,
+      "solution": "演讲稿三要素：开头钩子（设问式引语）、正文分层推进（First/Second+亲身事例）、结尾排比号召；语言口语化、有节奏感，词数 100—120。",
+      "source": "llm_generated",
+      "form": "演讲稿写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0016",
+      "item_type": "choice",
+      "stem": "演讲稿 “Never Give Up” 的开头，最能起到“吸引听众”作用的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng12_wri12_wri_speech"
+      ],
+      "difficulty": 0.7,
+      "solution": "设问+悬念式开头制造代入感，把听众卷入话题；A 平铺直叙报流程，C 空洞说教，D 口语随意，吸引力都弱于 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. Today my topic is “Never Give Up”. My speech has three parts.",
+        "B. Have you ever wanted to give up one step before success? Three years ago, I almost did.",
+        "C. Never giving up is a very important quality. Everyone should have it.",
+        "D. OK, now let me say something about never giving up."
+      ],
+      "form": "演讲稿写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0017",
+      "item_type": "solve",
+      "stem": "【读后概述】阅读短文，用约 60 词概述其主要内容与作者观点。\nRemote working, once a rare privilege, became routine for millions almost overnight. Supporters praise its flexibility: no commuting means more family time and, for many, higher productivity. Critics, however, warn of its hidden costs — weakened team spirit, blurred boundaries between work and rest, and the loneliness of days without face-to-face talk. The author concludes that remote working is neither paradise nor trap; its success depends on whether companies redesign management and individuals learn self-discipline.",
+      "answer": "参考概述（约 60 词）：The passage discusses the rise of remote working, which turned from a rare privilege into routine. While supporters value its flexibility and higher productivity, critics point to weaker team bonds, blurred work-rest boundaries and loneliness. The author concludes that remote working is neither paradise nor trap: its success depends on companies redesigning management and individuals practising self-discipline.",
+      "kps": [
+        "kp_eng12_wri12_wri_summary_adv"
+      ],
+      "difficulty": 0.68,
+      "solution": "读后概述=话题（远程办公的兴起）+双方观点（支持者/批评者）+作者结论（成败取决于管理重构与自律）；压缩细节，保留观点结构，不加个人评论。",
+      "source": "llm_generated",
+      "form": "读后概述",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0018",
+      "item_type": "fill",
+      "stem": "【读后概述·完成概述句】阅读短文，用不超过 25 词补全概述句，使概括符合语篇“现象—原因—对策”的结构。\nCity parks were once seen as decorations. Now planners treat them as infrastructure. As cities grow hotter and denser, green spaces cool streets, absorb rainwater and offer free places for exercise. Since land is limited, many cities are turning rooftops, old railway lines and riverbanks into parks. New York's High Line, a park built on a raised railway, attracts millions of visitors a year and has inspired similar projects worldwide.\n概述句：The passage shows that ______（现象）, explains why green spaces matter（原因）, and illustrates how cities ______（对策）.",
+      "answer": "现象：city green spaces are now treated as important infrastructure rather than decoration；对策：create parks out of unused spaces such as rooftops and old railway lines（两处答出核心意思即可）",
+      "kps": [
+        "kp_eng12_wri12_wri_summary_adv"
+      ],
+      "difficulty": 0.65,
+      "solution": "先判定语篇结构（现象：绿地被当作基础设施；原因：降温、吸水、锻炼；对策：利用屋顶、旧铁路等闲置空间建公园），再把两处信息压缩成概述句；例子（纽约高线公园）在概述中应省略。",
+      "source": "llm_generated",
+      "form": "读后概述",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

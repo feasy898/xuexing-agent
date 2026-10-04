@@ -5095,6 +5095,69 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0045",
+      "item_type": "solve",
+      "stem": "先正确、流利地朗读故事，再用自己的话复述大意（不少于 2 句英文）。故事：One sunny morning, a little ant found a big grain of rice by the river. The grain was too heavy for him to carry alone. So he called his friends, and hundreds of ants came. Together they pushed the rice all the way home. They were tired but happy. 你的复述：____",
+      "answer": "参考复述：A little ant found a big grain of rice but could not carry it alone. He asked his friends for help, and together they pushed it home. The story shows that teamwork makes hard things easy.",
+      "kps": [
+        "kp_eng8_spk8_read_story"
+      ],
+      "difficulty": 0.55,
+      "solution": "朗读时注意句子重音与连读；复述抓“主角—困难—办法—结果—道理”，用过去时转述，不必逐词背诵。",
+      "source": "llm_generated",
+      "form": "朗读与复述",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0046",
+      "item_type": "solve",
+      "stem": "准备一段约 1 分钟的英语演讲 “My Dream”，不少于 60 个英文词，要求有吸引人的开头、两点内容和结尾号召：____",
+      "answer": "参考答案：“When I was five, I wanted to be a superhero. Now I want to be a scientist.” Good afternoon, everyone. My dream is to become a scientist, because science can change the world. To make it come true, first, I will work hard at maths and physics. Second, I will read widely and do small experiments in my spare time. Dreams are like stars — we may never touch them, but we can sail by them. Let's chase our dreams from today on! Thank you.",
+      "kps": [
+        "kp_eng8_spk8_speech"
+      ],
+      "difficulty": 0.6,
+      "solution": "演讲=悬念式引语开头—点明梦想与理由—first/second 两点行动计划—引用+号召结尾；词数不少于 60，语言上口。",
+      "source": "llm_generated",
+      "form": "主题演讲",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0047",
+      "item_type": "solve",
+      "stem": "下面是同学的一篇作文初稿。请先指出至少 3 处语言错误并改正，再从“内容—结构—语言”三个角度各提一条修改建议。\n初稿：Last Sunday. I go to the zoo with my friend Lucy. We see many animal there. The elephants are big and I like they very much. It was a fun day.",
+      "answer": "错误改正（至少 3 处）：① go → went（与 Last Sunday 保持过去时态一致）；② see → saw（同上，时态一致）；③ animal → animals（many 后接可数名词复数）；④ like they → like them（动词后用人称代词宾格）。\n修改建议：内容—增加一个具体细节（如猴子表演）使文章更生动；结构—“Last Sunday.”不是完整句子，应与下句合并为 “Last Sunday, I went to the zoo...”；语言—增加衔接与感受表达，如 “What's more, the monkeys were so funny that we laughed a lot.”",
+      "kps": [
+        "kp_eng8_wri8_draft_revise"
+      ],
+      "difficulty": 0.6,
+      "solution": "修改初稿分两步：先做语言层纠错（时态一致、名词复数、代词格），再从内容、结构、语言三个维度提建议，使文章完整连贯。",
+      "source": "llm_generated",
+      "form": "短文改错",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

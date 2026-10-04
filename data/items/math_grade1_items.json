@@ -2012,6 +2012,144 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_z_0001",
+      "item_type": "choice",
+      "stem": "盘子里原来有2个桃子，小猴把桃子全吃完了。现在盘子里一个桃子也没有，可以用哪个数表示？",
+      "answer": "A",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.15,
+      "solution": "一个也没有用 0 表示：2 个桃子被吃光后，盘子里剩下 2−2=0 个桃子，所以用 0 表示。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "form": "情境理解选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0002",
+      "item_type": "fill",
+      "stem": "在直尺上，“0”排在“1”的前面，量长度时从 0 开始量，这说明 0 除了表示“没有”，还可以表示____。",
+      "answer": "起点",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.15,
+      "solution": "直尺上的 0 是开始计量的地方，说明 0 可以表示起点。",
+      "source": "llm_generated",
+      "form": "概念填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0003",
+      "item_type": "solve",
+      "stem": "算一算，写出得数：4+0、4−0、0+0。",
+      "answer": "4+0=4，4−0=4，0+0=0",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.2,
+      "solution": "一个数加 0 或减 0 都还得这个数本身，0 加 0 还得 0，所以 4+0=4，4−0=4，0+0=0。",
+      "source": "llm_generated",
+      "form": "口算解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0004",
+      "item_type": "choice",
+      "stem": "玩“数字接龙”游戏，同学们按 1、2、3、4……的顺序轮流报数。小丽前面的同学刚报完“7”，接下来小丽应该报（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.2,
+      "solution": "按数的顺序，7 后面的一个数是 8，所以小丽应报 8。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 8",
+        "C. 9",
+        "D. 10"
+      ],
+      "form": "游戏规则选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0005",
+      "item_type": "fill",
+      "stem": "联欢会上同学们排队做游戏，从前往后数小红排第 3，从后往前数她排第 5，这一队一共有____人。",
+      "answer": "7",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.3,
+      "solution": "小红从前往后被数了 1 次、从后往前又被数了 1 次，多数了 1 次，所以总人数=3+5−1=7（人）。",
+      "source": "llm_generated",
+      "form": "排队问题填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0006",
+      "item_type": "solve",
+      "stem": "元旦联欢会上小明玩投沙包游戏：第一次投中得 4 分，第二次投中得 3 分，第三次没有投中。小明三次一共得多少分？请写出算式。",
+      "answer": "4+3+0=7（分），三次一共得 7 分",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.25,
+      "solution": "没有投中得 0 分，把三次得分合起来：4+3+0=7（分）。",
+      "source": "llm_generated",
+      "form": "主题活动解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

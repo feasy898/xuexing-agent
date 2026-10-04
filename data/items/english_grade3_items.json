@@ -5688,6 +5688,102 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0023",
+      "item_type": "choice",
+      "stem": "同伴问你：“What do you have for breakfast?” 最合适的回答是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng3_spk3_daily_life"
+      ],
+      "difficulty": 0.35,
+      "solution": "问句问“早餐吃什么”，答语应给出食物；B 答的是吃早餐的时间，C 答的是几点钟，D 是 yes/no 回答，均与问句不匹配。",
+      "source": "llm_generated",
+      "options": [
+        "A. I have bread and milk.",
+        "B. I have breakfast at seven.",
+        "C. It's six o'clock.",
+        "D. Yes, I do."
+      ],
+      "form": "情景交际",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0024",
+      "item_type": "solve",
+      "stem": "新年到了，请给你的好朋友写一张英文新年贺卡，至少 2 句（不少于 10 个英文词），格式：称呼 + 祝福 + 署名：____",
+      "answer": "参考答案：\nDear Amy,\nHappy New Year! I miss you very much. I wish you a wonderful year.\nYours,\nLingling",
+      "kps": [
+        "kp_eng3_wri3_card_letter"
+      ],
+      "difficulty": 0.35,
+      "solution": "贺卡三要素：称呼（Dear...）、祝福语（Happy New Year! + 一句愿望）、署名（Yours, + 名字）；句子简单完整、词数达标即可。",
+      "source": "llm_generated",
+      "form": "贺卡写作",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0025",
+      "item_type": "solve",
+      "stem": "仿照例句 “There is a cat under the chair.” 写出一个含 There is 的句子，描述你的教室（不少于 5 个英文词）：____",
+      "answer": "参考答案：There is a blackboard in my classroom.（示例：There is + 单数名词 + 地点介词短语，如 “There is a picture on the wall.” 亦可）",
+      "kps": [
+        "kp_eng3_wri3_imitation"
+      ],
+      "difficulty": 0.4,
+      "solution": "仿写只替换词汇、保留句型：There is + 单数名词 + in/on/under + 地点；注意名词前可加 a/the 及形容词。",
+      "source": "llm_generated",
+      "form": "仿写句子",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0026",
+      "item_type": "choice",
+      "stem": "下列句子的书写完全正确（大小写与标点）的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng3_wri3_letters_words"
+      ],
+      "difficulty": 0.4,
+      "solution": "规范书写要求：句首字母大写、专有名词 English 的 E 大写、陈述句末加句号；A 两处大小写错误，C 缺句号且 english 未大写，D 大小写混乱且标点错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. i like english.",
+        "B. I like English.",
+        "C. I like english",
+        "D. i Like English?"
+      ],
+      "form": "书写规范",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

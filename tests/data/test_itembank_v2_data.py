@@ -46,7 +46,29 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 含 2026-10-04 仲裁批 ×2：eng-arb-step5-20261004 252 题 + math-arb-glm53-
 # 20261004 13 题——arbitration_queue_{en,hs} 分歧经第三方逐题裁决后按裁决
 # 答案入库，单代理=仲裁员签名）。
-KNOWN_ISSUE_COUNT = 16002
+# 2026-10-04 +eng_dens03 批合并入库后复测：16053 = 16002 + 51（eng_dens03_*
+# 共 51 题，签名沿用 eng-gen-w1-20261003，单代理盲解延期；增量恰为该批
+# 题数，全库 unique id 17995、无重复，未登记签名的单代理题 0）。
+# 2026-10-04 zero 收口批指令后复测：仍为 16053，无增量——eng_z_(108)/
+# geo_z8a+geo_z8b(228)/h_z_(99) 共 435 题当时仅存在于 data/verification/
+# candidates_{eng,geo,mat}_density/GEN_*_ZERO_*_full.json（候选态，无
+# verification 块；各批 ledger_gen 的 agent_id 即对应主批单代理签名），
+# 未落入 data/items/（items 最后修改 16:30 早于候选生成 16:54-17:01）。
+# 全库 unique id 17995、无重复、登记外单代理签名 0。三批实际合并落库
+# （agents=对应主批单代理签名）后预期 16053+435=16488，须再复测同步
+# 本常量与注释。
+# 2026-10-04 第 2 轮门禁（validate 112 条 coverage 缺口 = eng11×36 +
+# geo7×1 + geo8×75，重算自 tools/validate_knowledge.py 全量输出）后，
+# zero 收口批实际入库：GEN_ENG_ZERO_01（eng_z_*，108 题）拷入
+# candidates_eng、GEN_GEO_ZERO_01/02（geo_z8a_*/geo_z8b_*，228 题）拷入
+# candidates_geo 后跑 work/merge_subject_safe.py {english,geography}
+# （agreed=108/228，rejected=0），签名沿用 eng/geo-gen-w1-20261003、
+# single_agent=true + 盲解延期申报，validate 复跑 exit 0。
+# 16389 = 16053 + 336（108+228）。h_z_ 批 99 题（p1×2+h11×31 目标 KP）
+# 未入库：其 33 个目标 KP 现均由豁免集覆盖（19 题库 coverage_exemptions
+# + 14 误解库豁免），本轮门禁不要求；全库 unique id 18430、无重复，
+# 登记外单代理签名 0。
+KNOWN_ISSUE_COUNT = 16488
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
 SCI_AGENTS = ("sci-gen-w1-20261003",)

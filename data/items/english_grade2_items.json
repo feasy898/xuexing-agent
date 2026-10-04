@@ -1919,6 +1919,75 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0020",
+      "item_type": "choice",
+      "stem": "下列哪组小写字母是按字母表先后顺序排列的？（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.3,
+      "solution": "字母表顺序 a b c d e f g h i j k…；A 项 e→g→i 依次靠后，正确；B 项倒序，C、D 两项中均有字母错位。",
+      "source": "llm_generated",
+      "options": [
+        "A. e, g, i",
+        "B. h, f, d",
+        "C. j, i, k",
+        "D. b, d, c"
+      ],
+      "form": "字母顺序",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0021",
+      "item_type": "solve",
+      "stem": "表演故事《拔萝卜》（The Enormous Turnip）时，你扮演 grandpa。萝卜拔不动，你想叫老奶奶来帮忙，请写出你的台词（不少于 3 个英文单词）：____",
+      "answer": "参考台词：Come here, Grandma! Please help me pull the turnip!（含呼语+请求，不少于 3 词即可，如 “Grandma, come and help me, please!” 亦可）",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.35,
+      "solution": "角色台词要符合情节需要：先称呼对方，再发出请求；用 come、please 等词表达求助，语气自然响亮。",
+      "source": "llm_generated",
+      "form": "故事表演",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0022",
+      "item_type": "solve",
+      "stem": "班级开展“每周英语视听不少于 20 分钟”活动。请用英语写出你的视听安排（不少于 8 个英文词），写清每周几次、每次多长时间、看或听什么：____",
+      "answer": "参考答案：I watch English cartoons three times a week, and I watch for ten minutes every time.（示例：次数×每次时长不少于 20 分钟、说清视听内容即可，如 “I listen to English songs twice a week, fifteen minutes each time.”）",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.4,
+      "solution": "用频率短语（once/twice/three times a week）与时长（minutes）表达计划；核算“次数×每次时长≥20 分钟”即符合活动要求。",
+      "source": "llm_generated",
+      "form": "视听计划表达",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

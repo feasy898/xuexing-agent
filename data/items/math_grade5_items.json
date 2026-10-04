@@ -2058,6 +2058,144 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_z_0094",
+      "item_type": "choice",
+      "stem": "12 和 18 的最大公因数是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p5_common_factor_multiple"
+      ],
+      "difficulty": 0.3,
+      "solution": "12 的因数有 1、2、3、4、6、12；18 的因数有 1、2、3、6、9、18；公因数是 1、2、3、6，最大公因数是 6（也可用短除法）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 6",
+        "D. 36"
+      ],
+      "form": "最大公因数选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0095",
+      "item_type": "fill",
+      "stem": "6 和 8 的最小公倍数是____。",
+      "answer": "24",
+      "kps": [
+        "kp_p5_common_factor_multiple"
+      ],
+      "difficulty": 0.3,
+      "solution": "6=2×3，8=2×2×2，最小公倍数=两数所有质因数的最高次幂之积=2³×3=24（8 的倍数 8、16、24…中 24 也是 6 的倍数）。",
+      "source": "llm_generated",
+      "form": "最小公倍数填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0096",
+      "item_type": "solve",
+      "stem": "一张长方形纸长 24 厘米、宽 18 厘米，要把它剪成尽可能大的正方形且没有剩余，正方形的边长最长是多少厘米？一共能剪多少个？",
+      "answer": "边长最长是 24 和 18 的最大公因数，用短除法（24、18 的公有质因数为 2、3）得最大公因数为 6（厘米）；个数=(24÷6)×(18÷6)=4×3=12（个）。",
+      "kps": [
+        "kp_p5_common_factor_multiple"
+      ],
+      "difficulty": 0.5,
+      "solution": "正方形边长既是 24 的因数又是 18 的因数，最大就是最大公因数 6 厘米；长方向剪 24÷6=4 列，宽方向剪 18÷6=3 行，共 4×3=12 个。",
+      "source": "llm_generated",
+      "form": "公因数应用解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0097",
+      "item_type": "choice",
+      "stem": "联欢会演出服有 3 件上衣、2 条裙子，一件上衣配一条裙子，共有（　）种不同的搭配方法。",
+      "answer": "B",
+      "kps": [
+        "kp_p5_combination"
+      ],
+      "difficulty": 0.25,
+      "solution": "每件上衣都可与 2 条裙子分别搭配，3×2=6（种），连线列举也不重复不遗漏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5",
+        "B. 6",
+        "C. 8",
+        "D. 9"
+      ],
+      "form": "搭配计数选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0098",
+      "item_type": "fill",
+      "stem": "用数字 1、2、3 组成没有重复数字的两位数，一共能组成____个。",
+      "answer": "6",
+      "kps": [
+        "kp_p5_combination"
+      ],
+      "difficulty": 0.3,
+      "solution": "十位有 3 种选法，十位选定后个位还有 2 种选法，3×2=6（个）：12、13、21、23、31、32，有序列举不重不漏。",
+      "source": "llm_generated",
+      "form": "排列计数填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0099",
+      "item_type": "solve",
+      "stem": "甲、乙、丙、丁四名同学站成一排照相，一共有多少种不同的排法？请用有序思考的方式说明。",
+      "answer": "从左起第 1 个位置有 4 种选法，第 2 个位置有 3 种选法，第 3 个位置有 2 种选法，第 4 个位置只剩 1 种选法，4×3×2×1=24（种），所以一共有 24 种不同的排法。",
+      "kps": [
+        "kp_p5_combination"
+      ],
+      "difficulty": 0.45,
+      "solution": "按位置依次安排：4×3×2×1=24 种；也可以固定第一个位置的人再依次排列验证，做到有序思考、不重复不遗漏。",
+      "source": "llm_generated",
+      "form": "有序思考解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

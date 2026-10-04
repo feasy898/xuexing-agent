@@ -3460,6 +3460,1749 @@
         "answers_agree": true,
         "note": "arbitrated from arbitration_queue_hs.json; verdict=proposed_ok; answer replaced by independent blind solution"
       }
+    },
+    {
+      "id": "h_z_0007",
+      "item_type": "choice",
+      "stem": "已知圆锥的底面半径为 3，高为 4，则该圆锥的体积为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_solid_volume"
+      ],
+      "difficulty": 0.3,
+      "solution": "圆锥体积 V=(1/3)πr²h=(1/3)×π×3²×4=(1/3)×π×9×4=12π。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12π",
+        "B. 16π",
+        "C. 24π",
+        "D. 36π"
+      ],
+      "form": "公式应用选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0008",
+      "item_type": "fill",
+      "stem": "若一个球的半径扩大为原来的 2 倍，则它的体积扩大为原来的____倍。",
+      "answer": "8",
+      "kps": [
+        "kp_h11_solid_volume"
+      ],
+      "difficulty": 0.35,
+      "solution": "球的体积 V=(4/3)πR³ 与半径的三次方成正比，半径变为 2 倍时体积变为 2³=8 倍。",
+      "source": "llm_generated",
+      "form": "性质探究填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0009",
+      "item_type": "solve",
+      "stem": "一个几何体由同底的圆柱和圆锥组成：底面半径均为 2，圆柱的高为 3，圆锥的高为 3（圆锥底面与圆柱上底面重合），求该组合体的体积。",
+      "answer": "V柱=π×2²×3=12π，V锥=(1/3)π×2²×3=4π，组合体体积=12π+4π=16π",
+      "kps": [
+        "kp_h11_solid_volume"
+      ],
+      "difficulty": 0.45,
+      "solution": "圆柱体积 V柱=Sh=π×2²×3=12π；圆锥体积 V锥=(1/3)Sh=(1/3)×π×2²×3=4π；组合体体积=12π+4π=16π。",
+      "source": "llm_generated",
+      "form": "组合体体积解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0010",
+      "item_type": "choice",
+      "stem": "经过不在同一条直线上的三点，可以确定的平面个数为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_plane_basics"
+      ],
+      "difficulty": 0.25,
+      "solution": "基本事实2：过不在同一条直线上的三点，有且只有一个平面，故确定 1 个平面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 无数"
+      ],
+      "form": "基本事实辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0011",
+      "item_type": "fill",
+      "stem": "若直线 l 上有两个点 A、B 都在平面 α 内，则直线 l 与平面 α 的关系是____（用符号表示）。",
+      "answer": "l⊂α（直线 l 在平面 α 内）",
+      "kps": [
+        "kp_h11_plane_basics"
+      ],
+      "difficulty": 0.3,
+      "solution": "基本事实1：如果一条直线上的两点在一个平面内，那么这条直线在此平面内，故 l⊂α。",
+      "source": "llm_generated",
+      "form": "符号语言填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0012",
+      "item_type": "solve",
+      "stem": "求证：两条相交直线可以确定一个平面。",
+      "answer": "证明：设 l₁∩l₂=P，在 l₁ 上取异于 P 的点 A，在 l₂ 上取异于 P 的点 B，则 A、B、P 三点不共线。由基本事实2，过 A、B、P 有且只有一个平面 α；又 A、B 都在 α 内，由基本事实1得 l₁⊂α，l₂⊂α。所以这两条相交直线确定一个平面。",
+      "kps": [
+        "kp_h11_plane_basics"
+      ],
+      "difficulty": 0.5,
+      "solution": "在两直线上取不共线三点，用“不共线三点确定一个平面”（基本事实2）确定平面 α，再用基本事实1说明两条直线都落在 α 内。",
+      "source": "llm_generated",
+      "form": "推理证明题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0013",
+      "item_type": "choice",
+      "stem": "在空间中，“若 a∥b，b∥c，则 a∥c”，这一结论的依据是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_space_lines"
+      ],
+      "difficulty": 0.3,
+      "solution": "基本事实4：平行于同一条直线的两条直线平行，即 a∥b、b∥c 时 a∥c。",
+      "source": "llm_generated",
+      "options": [
+        "A. 基本事实4",
+        "B. 等角定理",
+        "C. 基本事实1",
+        "D. 异面直线所成角的定义"
+      ],
+      "form": "定理依据选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0014",
+      "item_type": "choice",
+      "stem": "关于空间两条直线的位置关系，下列说法正确的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_space_lines"
+      ],
+      "difficulty": 0.35,
+      "solution": "空间两条直线有相交、平行、异面三种位置关系：不相交还可能异面，A 错；两个平面内的直线也可能相交或平行，B 错；异面直线所成的角是平移到相交后所得的锐角或直角，D 错；C 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 空间中不相交的两条直线一定平行",
+        "B. 分别位于两个不同平面内的两条直线一定是异面直线",
+        "C. 异面直线所成角的范围是 (0°,90°]",
+        "D. 两条异面直线所成的角可以是 100°"
+      ],
+      "form": "概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0015",
+      "item_type": "solve",
+      "stem": "在正方体 ABCD-A₁B₁C₁D₁ 中，求异面直线 AB 与 CC₁ 所成角的大小，并说明理由。",
+      "answer": "90°。因为 BB₁∥CC₁，所以 AB 与 BB₁ 所成的角就是 AB 与 CC₁ 所成的角；在正方体中 AB⊥BB₁，故所成角为 90°。",
+      "kps": [
+        "kp_h11_space_lines"
+      ],
+      "difficulty": 0.4,
+      "solution": "平移 CC₁ 到 BB₁（正方体侧棱互相平行），把异面直线所成的角转化为 AB 与 BB₁ 所成的角；由正方体性质 AB⊥BB₁，所以所成角为 90°。",
+      "source": "llm_generated",
+      "form": "异面直线角度解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0016",
+      "item_type": "choice",
+      "stem": "直线 a 与平面 α 的位置关系不可能是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h11_line_plane_position"
+      ],
+      "difficulty": 0.25,
+      "solution": "直线与平面只有三种位置关系：平行、相交（一个公共点）、线在面内。由基本事实1，若直线与平面有两个公共点，则整条直线都在平面内，不可能“只有两个公共点”。",
+      "source": "llm_generated",
+      "options": [
+        "A. a∥α",
+        "B. a∩α=P（只有一个公共点 P）",
+        "C. a⊂α",
+        "D. a 与 α 有且只有两个公共点"
+      ],
+      "form": "位置关系辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0017",
+      "item_type": "choice",
+      "stem": "若两个不重合的平面 α、β 有一个公共点 P，则 α 与 β（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_plane_position"
+      ],
+      "difficulty": 0.3,
+      "solution": "基本事实3：两个不重合的平面有一个公共点，则有且只有一条过该点的公共直线，两平面相交于这条直线。",
+      "source": "llm_generated",
+      "options": [
+        "A. 仅有一个公共点 P",
+        "B. 有且只有一条过点 P 的公共直线",
+        "C. 重合",
+        "D. 没有其他公共点"
+      ],
+      "form": "基本事实应用选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0018",
+      "item_type": "fill",
+      "stem": "若直线 a⊄平面 α，则直线 a 与平面 α 的公共点个数至多为____个。",
+      "answer": "1",
+      "kps": [
+        "kp_h11_line_plane_position"
+      ],
+      "difficulty": 0.35,
+      "solution": "a⊄α 时，要么 a∥α（没有公共点），要么 a 与 α 相交（有且只有一个公共点），所以公共点个数至多为 1 个。",
+      "source": "llm_generated",
+      "form": "位置关系填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0019",
+      "item_type": "choice",
+      "stem": "下列条件中，能推出直线 a∥平面 α 的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_plane_parallel"
+      ],
+      "difficulty": 0.35,
+      "solution": "线面平行的判定定理：平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行。A 满足；B 中 a 在 α 内，不是线面平行；C 是相交；D 中 a 与 b 不相交不能保证 a 与 α 无公共点。",
+      "source": "llm_generated",
+      "options": [
+        "A. a⊄α，b⊂α，且 a∥b",
+        "B. a⊂α，b⊂α，且 a∥b",
+        "C. a 与 α 恰有一个公共点",
+        "D. b⊂α，且 a 与 b 不相交"
+      ],
+      "form": "判定定理辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0020",
+      "item_type": "fill",
+      "stem": "已知 a∥α，经过 a 的平面 β 与 α 相交于直线 b，则 a 与 b 的位置关系是____。",
+      "answer": "平行（a∥b）",
+      "kps": [
+        "kp_h11_line_plane_parallel"
+      ],
+      "difficulty": 0.35,
+      "solution": "线面平行的性质定理：一条直线与一个平面平行，如果过该直线的平面与此平面相交，那么该直线与交线平行，故 a∥b。",
+      "source": "llm_generated",
+      "form": "性质定理填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0021",
+      "item_type": "solve",
+      "stem": "四棱锥 P-ABCD 中，底面 ABCD 是平行四边形，E、F 分别是 PC、PD 的中点。求证：EF∥平面 PAB。",
+      "answer": "证明：在 △PCD 中，E、F 分别为 PC、PD 的中点，由中位线定理得 EF∥CD；因为 ABCD 是平行四边形，所以 AB∥CD，故 EF∥AB；又 AB⊂平面 PAB，EF⊄平面 PAB，由线面平行的判定定理，得 EF∥平面 PAB。",
+      "kps": [
+        "kp_h11_line_plane_parallel"
+      ],
+      "difficulty": 0.5,
+      "solution": "先由三角形中位线得 EF∥CD，再由平行四边形得 CD∥AB，从而 EF∥AB，最后用线面平行判定定理（平面外一条直线平行于平面内一条直线则线面平行）得证。",
+      "source": "llm_generated",
+      "form": "线面平行证明题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0022",
+      "item_type": "choice",
+      "stem": "下列条件中，能推出平面 α∥平面 β 的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_plane_plane_parallel"
+      ],
+      "difficulty": 0.35,
+      "solution": "面面平行的判定定理：一个平面内的两条相交直线都与另一个平面平行，则这两个平面平行。无数条平行直线或两条平行直线都不足以保证（如门扇绕轴转动时两边各有一组平行直线），D 说明两平面相交。",
+      "source": "llm_generated",
+      "options": [
+        "A. α 内有无数条直线与 β 平行",
+        "B. α 内有两条相交直线都与 β 平行",
+        "C. α 内有两条平行直线都与 β 平行",
+        "D. α 与 β 有一个公共点"
+      ],
+      "form": "判定定理辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0023",
+      "item_type": "fill",
+      "stem": "已知平面 α∥平面 β，直线 a⊂α，直线 b⊂β，则 a 与 b 的位置关系是____。",
+      "answer": "平行或异面",
+      "kps": [
+        "kp_h11_plane_plane_parallel"
+      ],
+      "difficulty": 0.4,
+      "solution": "两个平行平面没有公共点，所以 a 与 b 不能相交（否则交点同属两平面）；但 a 与 b 也不一定共面，故可能平行，也可能异面。",
+      "source": "llm_generated",
+      "form": "性质探究填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0024",
+      "item_type": "solve",
+      "stem": "已知平面 α∥平面 β，α∩平面 γ=a，β∩γ=b。求证：a∥b。",
+      "answer": "证明：因为 a⊂γ，b⊂γ，所以 a、b 共面；假设 a∩b=P，则 P∈a⊂α 且 P∈b⊂β，即 α 与 β 有公共点 P，与 α∥β 矛盾，故 a 与 b 不相交；共面且不相交的两条直线平行，所以 a∥b。",
+      "kps": [
+        "kp_h11_plane_plane_parallel"
+      ],
+      "difficulty": 0.5,
+      "solution": "先说明 a、b 同在平面 γ 内（共面），再用反证法：若相交，则交点既在 α 内又在 β 内，与两平面平行矛盾，故共面且不相交，即 a∥b。",
+      "source": "llm_generated",
+      "form": "面面平行性质证明题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0025",
+      "item_type": "choice",
+      "stem": "下列条件中，能判定直线 l⊥平面 α 的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_line_plane_perp"
+      ],
+      "difficulty": 0.3,
+      "solution": "线面垂直的判定定理：一条直线与一个平面内的两条相交直线都垂直，则该直线与该平面垂直，故选 C；A、B 中直线的条数或相交性不满足，D 是平行关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. l 垂直于 α 内的一条直线",
+        "B. l 垂直于 α 内的两条平行直线",
+        "C. l 垂直于 α 内的两条相交直线",
+        "D. l∥α"
+      ],
+      "form": "判定定理辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0026",
+      "item_type": "choice",
+      "stem": "已知直线 a⊥平面 α，直线 b⊥平面 α，则直线 a 与 b 的位置关系是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_plane_perp"
+      ],
+      "difficulty": 0.3,
+      "solution": "线面垂直的性质定理：垂直于同一个平面的两条直线平行，所以 a∥b。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平行",
+        "B. 相交",
+        "C. 异面",
+        "D. 垂直"
+      ],
+      "form": "性质定理应用选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0027",
+      "item_type": "solve",
+      "stem": "已知 PA⊥平面 ABC，且 ∠ABC=90°。求证：BC⊥平面 PAC。",
+      "answer": "证明：由 PA⊥平面 ABC，BC⊂平面 ABC，得 PA⊥BC；又 ∠ABC=90°，即 AB⊥BC；PA∩AB=A，且 PA、AB 都在平面 PAC 内，由线面垂直的判定定理，得 BC⊥平面 PAC。",
+      "kps": [
+        "kp_h11_line_plane_perp"
+      ],
+      "difficulty": 0.5,
+      "solution": "要证 BC⊥平面 PAC，只需证 BC 垂直于平面 PAC 内两条相交直线：由 PA⊥底面得 PA⊥BC，由 ∠ABC=90° 得 AB⊥BC，PA 与 AB 相交于 A 且都在平面 PAC 内，用判定定理即得。",
+      "source": "llm_generated",
+      "form": "线面垂直证明题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0028",
+      "item_type": "choice",
+      "stem": "下列条件中，能判定平面 α⊥平面 β 的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_plane_plane_perp"
+      ],
+      "difficulty": 0.35,
+      "solution": "面面垂直的判定定理：一个平面经过另一个平面的一条垂线（等价于 α 内有一条直线垂直于 β）时，两平面垂直；B 推不出垂直；C 不充分（同垂直于第三个平面的两个平面可以相交成任意角）；D 说明两平面相交但不一定垂直。",
+      "source": "llm_generated",
+      "options": [
+        "A. α 内有一条直线垂直于 β",
+        "B. α 内有一条直线平行于 β",
+        "C. 平面 γ⊥α 且平面 γ⊥β",
+        "D. α 与 β 有一个公共点"
+      ],
+      "form": "判定定理辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0029",
+      "item_type": "fill",
+      "stem": "二面角（及其平面角）的取值范围是____。",
+      "answer": "[0°,180°]",
+      "kps": [
+        "kp_h11_plane_plane_perp"
+      ],
+      "difficulty": 0.25,
+      "solution": "二面角的平面角在棱上取一点、在两个半平面内作棱的垂线得到，其取值范围是 [0°,180°]。",
+      "source": "llm_generated",
+      "form": "概念填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0030",
+      "item_type": "solve",
+      "stem": "已知平面 α⊥平面 β，α∩β=l，直线 a⊂α，且 a⊥l。求证：a⊥β。",
+      "answer": "证明：设 a∩l=P，在 β 内过点 P 作直线 b⊥l。因为 a⊥l，b⊥l，所以 a 与 b 所成的角就是二面角 α-l-β 的平面角；由 α⊥β 知该二面角为 90°，故 a⊥b。又 l⊂β，b⊂β，l∩b=P，且 a⊥l、a⊥b，由线面垂直的判定定理，得 a⊥β。",
+      "kps": [
+        "kp_h11_plane_plane_perp"
+      ],
+      "difficulty": 0.55,
+      "solution": "这是面面垂直性质定理的证明：在 β 内作 b⊥l，把二面角转化为 a 与 b 所成的角；由两平面垂直知该角为 90°，从而 a 同时垂直于 β 内两条相交直线 l 与 b，由线面垂直判定定理得 a⊥β。",
+      "source": "llm_generated",
+      "form": "面面垂直性质证明题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0031",
+      "item_type": "choice",
+      "stem": "关于简单随机抽样，下列说法正确的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sampling_simple"
+      ],
+      "difficulty": 0.3,
+      "solution": "简单随机抽样是逐个、不放回的抽样，且每次抽取时每个个体被抽到的概率相等，与顺序无关，可以用抽签法或随机数法实现，故只有 C 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 它是一种有放回的抽样",
+        "B. 每个个体被抽到的概率与抽取的先后顺序有关",
+        "C. 每次抽取时每个个体被抽到的概率都相等",
+        "D. 只能用随机数法实现，不能用抽签法"
+      ],
+      "form": "概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0032",
+      "item_type": "fill",
+      "stem": "某班有 50 名学生，用简单随机抽样从中抽取 5 人参加志愿服务，则每名学生被抽到的概率为____。",
+      "answer": "1/10",
+      "kps": [
+        "kp_h11_sampling_simple"
+      ],
+      "difficulty": 0.3,
+      "solution": "每个个体入样的概率=样本量÷总体容量=5/50=1/10。",
+      "source": "llm_generated",
+      "form": "抽样概率填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0033",
+      "item_type": "solve",
+      "stem": "某次测验共有编号为 1~40 的 40 份试卷，老师要从中用随机数法抽取 8 份进行抽样分析。请写出该调查中的总体、个体、样本与样本量，并简述抽样步骤。",
+      "answer": "总体是这 40 份试卷的成绩（的全体），个体是其中每一份试卷的成绩，样本是被抽取的 8 份试卷的成绩，样本量为 8。步骤：①将 40 份试卷编号 1~40；②用抽签法或随机数工具产生 1~40 范围内 8 个互不相同的随机数（逐个、不放回抽取）；③编号与随机数对应的 8 份试卷组成样本。",
+      "kps": [
+        "kp_h11_sampling_simple"
+      ],
+      "difficulty": 0.4,
+      "solution": "按总体/个体/样本/样本量的含义作答；抽样步骤体现“逐个、不放回、每个个体每次被抽到的概率相等”的简单随机抽样特征。",
+      "source": "llm_generated",
+      "form": "抽样方案解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0034",
+      "item_type": "choice",
+      "stem": "某校高一年级共有 600 名学生，其中男生 360 人、女生 240 人。采用分层随机抽样抽取 50 名学生，则应抽取男生（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sampling_stratified"
+      ],
+      "difficulty": 0.35,
+      "solution": "抽样比=50/600=1/12，男生应抽取 360×(1/12)=30 人（女生 240×(1/12)=20 人，共 50 人）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 20 人",
+        "B. 24 人",
+        "C. 30 人",
+        "D. 36 人"
+      ],
+      "form": "比例分配选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0035",
+      "item_type": "fill",
+      "stem": "分层随机抽样中，某层共有 200 个个体，抽样比为 1/20，则该层应抽取的个体数为____。",
+      "answer": "10",
+      "kps": [
+        "kp_h11_sampling_stratified"
+      ],
+      "difficulty": 0.3,
+      "solution": "某层样本量=抽样比×该层个体数=200×(1/20)=10。",
+      "source": "llm_generated",
+      "form": "比例分配填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0036",
+      "item_type": "solve",
+      "stem": "某学校高一、高二、高三分别有 500 人、400 人、300 人，按 1:10 的比例进行分层随机抽样。求样本量以及各年级应抽取的人数。",
+      "answer": "学生总数=500+400+300=1200（人），样本量=1200×(1/10)=120（人）；高一 500×(1/10)=50（人），高二 400×(1/10)=40（人），高三 300×(1/10)=30（人）。",
+      "kps": [
+        "kp_h11_sampling_stratified"
+      ],
+      "difficulty": 0.4,
+      "solution": "分层抽样按各层人数比例分配样本量：先求总数 1200，样本量=1200/10=120，再按每层人数×抽样比求各层抽取人数（50、40、30）。",
+      "source": "llm_generated",
+      "form": "分层方案解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0037",
+      "item_type": "choice",
+      "stem": "在频率分布直方图中，每个小长方形的面积表示（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_freq_histogram"
+      ],
+      "difficulty": 0.25,
+      "solution": "纵轴是频率/组距，小长方形的面积=(频率/组距)×组距=该组的频率，且所有小长方形面积之和为 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 组距",
+        "B. 该组的频数",
+        "C. 该组的频率",
+        "D. 样本容量"
+      ],
+      "form": "概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0038",
+      "item_type": "fill",
+      "stem": "某样本的频率分布直方图共分 5 组，组距为 2，第一组小长方形的高（频率/组距）为 0.05，则第一组的频率为____。",
+      "answer": "0.1",
+      "kps": [
+        "kp_h11_freq_histogram"
+      ],
+      "difficulty": 0.3,
+      "solution": "频率=高×组距=0.05×2=0.1。",
+      "source": "llm_generated",
+      "form": "频率计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0039",
+      "item_type": "solve",
+      "stem": "100 个数据的频率分布直方图中，第 3 组的频数为 30，该组的组距为 5，求第 3 组小长方形的高。",
+      "answer": "第 3 组的频率=30/100=0.3，高=频率/组距=0.3/5=0.06。",
+      "kps": [
+        "kp_h11_freq_histogram"
+      ],
+      "difficulty": 0.4,
+      "solution": "先由 频率=频数/样本容量=30/100=0.3，再由 高=频率/组距=0.3/5=0.06（纵轴单位是频率/组距）。",
+      "source": "llm_generated",
+      "form": "直方图计算解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0040",
+      "item_type": "choice",
+      "stem": "关于第 p 百分位数，下列说法正确的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_percentile"
+      ],
+      "difficulty": 0.3,
+      "solution": "第 p 百分位数使得数据中至少有 p% 的数据不大于它（且至少有 (100−p)% 的数据不小于它）；它可能是两个数据的平均数，不一定属于原数据；中位数是第 50 百分位数，故选 B。",
+      "source": "llm_generated",
+      "options": [
+        "A. 数据中恰好有 p% 个数据等于它",
+        "B. 它使得数据中至少有 p% 的数据不大于它",
+        "C. 它一定是这组数据中的某一个原始数据",
+        "D. 中位数就是第 25 百分位数"
+      ],
+      "form": "概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0041",
+      "item_type": "fill",
+      "stem": "数据 1、2、3、4、5、6 的第 50 百分位数为____。",
+      "answer": "3.5",
+      "kps": [
+        "kp_h11_percentile"
+      ],
+      "difficulty": 0.35,
+      "solution": "n=6，i=6×50%=3 是整数，取第 3 个与第 4 个数据的平均数：(3+4)/2=3.5（即中位数）。",
+      "source": "llm_generated",
+      "form": "百分位数计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0042",
+      "item_type": "solve",
+      "stem": "9 名学生的测试成绩（单位：分）为：60、65、70、75、80、85、88、90、95，求这组数据的第 80 百分位数。",
+      "answer": "i=9×80%=7.2 不是整数，取大于 7.2 的最小整数 8，即取从小到大排列后的第 8 个数据 90，所以第 80 百分位数为 90 分。",
+      "kps": [
+        "kp_h11_percentile"
+      ],
+      "difficulty": 0.45,
+      "solution": "按计算规则：i=n×p%=9×80%=7.2 不是整数时，取第大于 i 的最小整数位次的数据，即第 8 个数据 90。",
+      "source": "llm_generated",
+      "form": "百分位数计算解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0043",
+      "item_type": "choice",
+      "stem": "一组数据为 2、3、3、4、5，则这组数据的众数与中位数分别是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_center_trend"
+      ],
+      "difficulty": 0.25,
+      "solution": "3 出现 2 次，出现次数最多，众数是 3；数据从小到大排列后位于中间（第 3 个）的数据是 3，中位数是 3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3 和 3",
+        "B. 3 和 3.5",
+        "C. 4 和 3",
+        "D. 3 和 4"
+      ],
+      "form": "统计量计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0044",
+      "item_type": "fill",
+      "stem": "某射击运动员 5 次射击的环数为 8、9、10、8、10，则他的平均环数是____。",
+      "answer": "9 环",
+      "kps": [
+        "kp_h11_center_trend"
+      ],
+      "difficulty": 0.25,
+      "solution": "平均数=(8+9+10+8+10)÷5=45÷5=9（环）。",
+      "source": "llm_generated",
+      "form": "平均数计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0045",
+      "item_type": "solve",
+      "stem": "甲班 40 人数学平均分为 80 分，乙班 60 人数学平均分为 90 分，求全年级（两班合计）的数学平均分。",
+      "answer": "总分为 40×80+60×90=3200+5400=8600（分），总人数 100 人，全年级平均分=8600÷100=86（分）。",
+      "kps": [
+        "kp_h11_center_trend"
+      ],
+      "difficulty": 0.4,
+      "solution": "两班人数不同，不能直接把 80 和 90 再平均，要用加权平均：总平均分=(40×80+60×90)÷(40+60)=86（分）。",
+      "source": "llm_generated",
+      "form": "加权平均解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0046",
+      "item_type": "choice",
+      "stem": "甲、乙两名运动员各进行 5 次测试，平均成绩相同，方差分别为 s²甲=0.5、s²乙=1.2，则成绩更稳定的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_dispersion"
+      ],
+      "difficulty": 0.25,
+      "solution": "平均数相同时，方差（标准差）越小，数据波动越小、成绩越稳定；0.5<1.2，所以甲更稳定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 甲",
+        "B. 乙",
+        "C. 两人一样稳定",
+        "D. 无法比较"
+      ],
+      "form": "方差意义选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0047",
+      "item_type": "fill",
+      "stem": "数据 3、3、3、3 的方差为____。",
+      "answer": "0",
+      "kps": [
+        "kp_h11_dispersion"
+      ],
+      "difficulty": 0.25,
+      "solution": "平均数是 3，每个数据与平均数的差都是 0，偏差平方和为 0，故方差为 0（数据完全没有波动）。",
+      "source": "llm_generated",
+      "form": "方差计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0048",
+      "item_type": "solve",
+      "stem": "求数据 1、2、3、4、5 的方差与标准差。",
+      "answer": "平均数 x̄=(1+2+3+4+5)/5=3；方差 s²=[(1−3)²+(2−3)²+(3−3)²+(4−3)²+(5−3)²]/5=(4+1+0+1+4)/5=10/5=2；标准差 s=√2。",
+      "kps": [
+        "kp_h11_dispersion"
+      ],
+      "difficulty": 0.45,
+      "solution": "先求平均数 3，再求各数据与平均数差的平方的平均数得方差 2，标准差是方差的算术平方根 √2。",
+      "source": "llm_generated",
+      "form": "方差标准差解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0049",
+      "item_type": "choice",
+      "stem": "掷一枚质地均匀的骰子，事件“掷出的点数大于 6”是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_sample_space"
+      ],
+      "difficulty": 0.25,
+      "solution": "骰子的样本点只有 1~6 点，“点数大于 6”不包含任何样本点，是不可能事件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 必然事件",
+        "B. 随机事件",
+        "C. 不可能事件",
+        "D. 无法确定"
+      ],
+      "form": "事件概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0050",
+      "item_type": "fill",
+      "stem": "连续掷一枚硬币两次，用“正”“反”记录每次的结果，则该试验的样本空间 Ω=____。",
+      "answer": "Ω={正正，正反，反正，反反}",
+      "kps": [
+        "kp_h11_sample_space"
+      ],
+      "difficulty": 0.3,
+      "solution": "每次掷硬币有正、反 2 种结果，两次共 2×2=4 个样本点：正正、正反、反正、反反。",
+      "source": "llm_generated",
+      "form": "样本空间填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0051",
+      "item_type": "solve",
+      "stem": "从甲、乙、丙三名同学中随机选出 1 人参加志愿服务。写出该试验的样本空间 Ω，并用集合表示事件 A=“选出的同学不是甲”。",
+      "answer": "Ω={甲,乙,丙}；A={乙,丙}。",
+      "kps": [
+        "kp_h11_sample_space"
+      ],
+      "difficulty": 0.35,
+      "solution": "试验的所有可能结果就是三名同学各被选中一次，Ω={甲,乙,丙}；“不是甲”包含“乙”“丙”两个样本点，A={乙,丙}。",
+      "source": "llm_generated",
+      "form": "样本空间与事件解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0052",
+      "item_type": "choice",
+      "stem": "关于互斥事件与对立事件，下列说法正确的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_event_ops"
+      ],
+      "difficulty": 0.3,
+      "solution": "对立事件是互斥且并集为全集的事件，所以对立必互斥，B 对；互斥不一定对立（A 错）；互斥但不对立时 P(A)+P(B)<1（C 错）；并集为全集与两概率相等无关（D 错）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 互斥事件一定是对立事件",
+        "B. 对立事件一定是互斥事件",
+        "C. 若 A∩B=∅，则 P(A)+P(B)=1",
+        "D. 若 A∪B=Ω，则 P(A)=P(B)"
+      ],
+      "form": "概念辨析选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0053",
+      "item_type": "fill",
+      "stem": "掷一枚骰子，事件 A=“掷出的点数为偶数”，事件 B=“掷出的点数大于 4”，则 A∪B=____（用集合表示）。",
+      "answer": "{2,4,5,6}",
+      "kps": [
+        "kp_h11_event_ops"
+      ],
+      "difficulty": 0.3,
+      "solution": "A={2,4,6}，B={5,6}，并事件 A∪B={2,4,5,6}。",
+      "source": "llm_generated",
+      "form": "事件运算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0054",
+      "item_type": "solve",
+      "stem": "掷一枚骰子，A=“掷出的点数为 1、2 或 3”，B=“掷出的点数为 3 或 4”。求 A∩B，并判断 A 与 B 是否互斥，说明理由。",
+      "answer": "A={1,2,3}，B={3,4}，A∩B={3}≠∅。因为 A 与 B 有公共样本点 3，可以同时发生，所以 A 与 B 不互斥。",
+      "kps": [
+        "kp_h11_event_ops"
+      ],
+      "difficulty": 0.35,
+      "solution": "先用集合表示两事件再求交：A∩B={3}；互斥要求 A∩B=∅，这里交集非空，故不互斥。",
+      "source": "llm_generated",
+      "form": "事件关系判断解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0055",
+      "item_type": "choice",
+      "stem": "从 1~10 这 10 个整数中随机取 1 个数，取到偶数的概率为（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_classical_prob"
+      ],
+      "difficulty": 0.3,
+      "solution": "样本点总数为 10，其中偶数为 2、4、6、8、10 共 5 个，P=5/10=1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/5",
+        "B. 2/5",
+        "C. 1/2",
+        "D. 3/5"
+      ],
+      "form": "古典概型计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0056",
+      "item_type": "fill",
+      "stem": "同时掷两枚质地均匀的硬币，恰好一正一反的概率为____。",
+      "answer": "1/2",
+      "kps": [
+        "kp_h11_classical_prob"
+      ],
+      "difficulty": 0.35,
+      "solution": "样本空间含 4 个等可能样本点：正正、正反、反正、反反；恰好一正一反含“正反”“反正” 2 个，P=2/4=1/2。",
+      "source": "llm_generated",
+      "form": "古典概型计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0057",
+      "item_type": "solve",
+      "stem": "同时掷两枚质地均匀的骰子，求两枚骰子点数之和为 7 的概率。",
+      "answer": "样本点总数 6×6=36；点数之和为 7 的样本点为 (1,6)、(2,5)、(3,4)、(4,3)、(5,2)、(6,1)，共 6 个；P=6/36=1/6。",
+      "kps": [
+        "kp_h11_classical_prob"
+      ],
+      "difficulty": 0.45,
+      "solution": "用列举法：两枚骰子点数组合共 36 个等可能样本点，逐个列举和为 7 的 6 个样本点，由古典概型公式 P=6/36=1/6。",
+      "source": "llm_generated",
+      "form": "古典概型列举解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0058",
+      "item_type": "choice",
+      "stem": "已知事件 A 与 B 互斥，P(A)=0.6，P(B)=0.3，则 P(A∪B)=（　）",
+      "answer": "C",
+      "kps": [
+        "kp_h11_prob_props"
+      ],
+      "difficulty": 0.3,
+      "solution": "互斥事件的加法公式：P(A∪B)=P(A)+P(B)=0.6+0.3=0.9。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.18",
+        "B. 0.3",
+        "C. 0.9",
+        "D. 1"
+      ],
+      "form": "加法公式计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0059",
+      "item_type": "fill",
+      "stem": "已知 P(A)=0.5，P(A∩B)=0.2，P(A∪B)=0.8，则 P(B)=____。",
+      "answer": "0.5",
+      "kps": [
+        "kp_h11_prob_props"
+      ],
+      "difficulty": 0.4,
+      "solution": "由 P(A∪B)=P(A)+P(B)−P(A∩B)，得 0.8=0.5+P(B)−0.2，解得 P(B)=0.5。",
+      "source": "llm_generated",
+      "form": "概率性质计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0060",
+      "item_type": "solve",
+      "stem": "已知 P(A)=0.5，P(B)=0.7，P(A∪B)=0.9。求 P(A∩B)，并判断事件 A 与 B 是否互斥。",
+      "answer": "P(A∩B)=P(A)+P(B)−P(A∪B)=0.5+0.7−0.9=0.3；因为 P(A∩B)=0.3≠0，A 与 B 可以同时发生，所以 A 与 B 不互斥。",
+      "kps": [
+        "kp_h11_prob_props"
+      ],
+      "difficulty": 0.45,
+      "solution": "用一般加法公式求交的概率：P(A∩B)=P(A)+P(B)−P(A∪B)=0.3；互斥要求 P(A∩B)=0，这里不为 0，故不互斥。",
+      "source": "llm_generated",
+      "form": "概率性质综合解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0061",
+      "item_type": "choice",
+      "stem": "甲、乙两人独立地射击同一目标，命中率分别为 0.8 和 0.6，则两人都命中目标的概率为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_event_independence"
+      ],
+      "difficulty": 0.3,
+      "solution": "两人射击相互独立，“都命中”的概率=0.8×0.6=0.48。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.48",
+        "B. 0.92",
+        "C. 1.4",
+        "D. 0.24"
+      ],
+      "form": "独立性概率计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0062",
+      "item_type": "fill",
+      "stem": "若事件 A 与 B 相互独立，P(A)=1/2，P(B)=1/3，则 P(AB)=____。",
+      "answer": "1/6",
+      "kps": [
+        "kp_h11_event_independence"
+      ],
+      "difficulty": 0.25,
+      "solution": "相互独立事件同时发生的概率等于概率之积：P(AB)=P(A)·P(B)=(1/2)×(1/3)=1/6。",
+      "source": "llm_generated",
+      "form": "独立性计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0063",
+      "item_type": "solve",
+      "stem": "甲、乙两人各自掷一枚质地均匀的硬币（两人结果相互独立），求至少有一枚硬币正面朝上的概率。",
+      "answer": "“两枚都反面朝上”的概率=(1/2)×(1/2)=1/4；所求概率=1−1/4=3/4。",
+      "kps": [
+        "kp_h11_event_independence"
+      ],
+      "difficulty": 0.4,
+      "solution": "“至少一枚正面”的对立事件是“两枚都反面”，由独立性得 P(都反面)=1/2×1/2=1/4，再用对立事件概率公式 1−1/4=3/4。",
+      "source": "llm_generated",
+      "form": "独立性综合解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0064",
+      "item_type": "choice",
+      "stem": "经过点 (1,2) 且斜率为 3 的直线方程是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_forms"
+      ],
+      "difficulty": 0.3,
+      "solution": "由点斜式 y−y₀=k(x−x₀) 得 y−2=3(x−1)，整理得 y=3x−1。",
+      "source": "llm_generated",
+      "options": [
+        "A. y=3x−1",
+        "B. y=3x+1",
+        "C. y=x+1",
+        "D. y=3x−2"
+      ],
+      "form": "点斜式应用选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0065",
+      "item_type": "fill",
+      "stem": "直线 2x−y+3=0 的斜率为____，它在 y 轴上的截距为____。",
+      "answer": "斜率为 2，在 y 轴上的截距为 3",
+      "kps": [
+        "kp_h11_line_forms"
+      ],
+      "difficulty": 0.3,
+      "solution": "化为斜截式 y=2x+3，可见斜率 k=2，纵截距 b=3。",
+      "source": "llm_generated",
+      "form": "一般式化斜截式填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0066",
+      "item_type": "solve",
+      "stem": "求经过点 A(1,1) 和 B(3,5) 的直线方程，并把它化为一般式。",
+      "answer": "斜率 k=(5−1)/(3−1)=4/2=2，由点斜式 y−1=2(x−1)，即 y=2x−1；一般式方程为 2x−y−1=0。",
+      "kps": [
+        "kp_h11_line_forms"
+      ],
+      "difficulty": 0.45,
+      "solution": "先用两点求斜率 k=(5−1)/(3−1)=2，再代入点斜式 y−1=2(x−1) 得 y=2x−1，移项得一般式 2x−y−1=0。",
+      "source": "llm_generated",
+      "form": "两点式求方程解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0067",
+      "item_type": "choice",
+      "stem": "直线 x+y=3 与直线 x−y=1 的交点坐标为（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_line_intersect"
+      ],
+      "difficulty": 0.3,
+      "solution": "联立两方程：两式相加得 2x=4，x=2；代回 x+y=3 得 y=1，交点为 (2,1)。",
+      "source": "llm_generated",
+      "options": [
+        "A. (2,1)",
+        "B. (1,2)",
+        "C. (3,0)",
+        "D. (0,3)"
+      ],
+      "form": "交点计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0068",
+      "item_type": "fill",
+      "stem": "直线 l₁: 2x+y−3=0 与直线 l₂: 4x+2y−6=0 的位置关系是____。",
+      "answer": "重合",
+      "kps": [
+        "kp_h11_line_intersect"
+      ],
+      "difficulty": 0.35,
+      "solution": "l₂ 的方程两边同除以 2 恰为 2x+y−3=0，与 l₁ 相同，即两方程对应系数成比例（4/2=2/1=−6/−3），方程组有无穷多解，两直线重合。",
+      "source": "llm_generated",
+      "form": "位置关系判断填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0069",
+      "item_type": "solve",
+      "stem": "判断直线 l₁: x+2y−1=0 与直线 l₂: 2x+4y+3=0 的位置关系，并说明理由。",
+      "answer": "l₁∥l₂（平行）。理由：把 l₁ 两边乘 2 得 2x+4y−2=0，与 l₂ 即 2x+4y+3=0 比较，x、y 的系数对应成比例（2/1=4/2=2），但常数项之比 3/(−2)=−1.5≠2，方程组无解，两直线无公共点且不重合，所以平行。",
+      "kps": [
+        "kp_h11_line_intersect"
+      ],
+      "difficulty": 0.4,
+      "solution": "联立方程组消元：由系数成比例但常数不成比例得方程组无解 ⇔ 两直线平行；也可消去 x 得 0·y=−5 矛盾，无解。",
+      "source": "llm_generated",
+      "form": "位置关系判断解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0070",
+      "item_type": "choice",
+      "stem": "点 (1,2) 到直线 3x+4y−5=0 的距离为（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_distance"
+      ],
+      "difficulty": 0.35,
+      "solution": "d=|3×1+4×2−5|/√(3²+4²)=|3+8−5|/5=6/5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1",
+        "B. 6/5",
+        "C. 5/6",
+        "D. 6"
+      ],
+      "form": "点线距离计算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0071",
+      "item_type": "fill",
+      "stem": "两平行直线 2x+y−1=0 与 2x+y+4=0 之间的距离为____。",
+      "answer": "√5",
+      "kps": [
+        "kp_h11_line_distance"
+      ],
+      "difficulty": 0.4,
+      "solution": "d=|C₁−C₂|/√(A²+B²)=|−1−4|/√(4+1)=5/√5=√5。",
+      "source": "llm_generated",
+      "form": "平行线距离填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0072",
+      "item_type": "solve",
+      "stem": "已知点 A(1,0)、B(4,4)，求线段 AB 的长度。",
+      "answer": "|AB|=√[(4−1)²+(4−0)²]=√(9+16)=√25=5。",
+      "kps": [
+        "kp_h11_line_distance"
+      ],
+      "difficulty": 0.3,
+      "solution": "直接用两点间距离公式：|AB|=√[(x₂−x₁)²+(y₂−y₁)²]=√(3²+4²)=5。",
+      "source": "llm_generated",
+      "form": "两点距离解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0073",
+      "item_type": "choice",
+      "stem": "圆心为 (1,−2)、半径为 2 的圆的标准方程是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_h11_circle_eq"
+      ],
+      "difficulty": 0.25,
+      "solution": "圆心 (a,b)、半径 r 的标准方程为 (x−a)²+(y−b)²=r²，代入 a=1、b=−2、r=2 得 (x−1)²+(y+2)²=4。",
+      "source": "llm_generated",
+      "options": [
+        "A. (x−1)²+(y+2)²=4",
+        "B. (x+1)²+(y−2)²=4",
+        "C. (x−1)²+(y+2)²=2",
+        "D. (x−1)²+(y+2)²=16"
+      ],
+      "form": "圆的标准方程选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0074",
+      "item_type": "fill",
+      "stem": "圆 x²+y²−4x+2y+1=0 的圆心坐标为____，半径为____。",
+      "answer": "圆心 (2,−1)，半径 2",
+      "kps": [
+        "kp_h11_circle_eq"
+      ],
+      "difficulty": 0.4,
+      "solution": "配方：(x²−4x+4)+(y²+2y+1)=−1+4+1，即 (x−2)²+(y+1)²=4，圆心 (2,−1)，半径 2（也可用 D²+E²−4F=16+4−4=16>0，r=½×4=2）。",
+      "source": "llm_generated",
+      "form": "一般方程化标准填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0075",
+      "item_type": "solve",
+      "stem": "已知圆经过点 A(1,2) 和点 B(3,4)，且圆心在直线 y=x 上，求该圆的方程。",
+      "answer": "设圆心 (a,a)。由到 A、B 距离相等：(a−1)²+(a−2)²=(a−3)²+(a−4)²，展开得 2a²−6a+5=2a²−14a+25，解得 a=5/2；r²=(5/2−1)²+(5/2−2)²=9/4+1/4=5/2。所以圆的方程为 (x−5/2)²+(y−5/2)²=5/2。",
+      "kps": [
+        "kp_h11_circle_eq"
+      ],
+      "difficulty": 0.5,
+      "solution": "圆心在 y=x 上设为 (a,a)，利用“圆心到 A、B 距离都等于半径”列方程解出 a=5/2，再算半径平方 r²=5/2，写出标准方程。",
+      "source": "llm_generated",
+      "form": "待定系数法求圆解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0076",
+      "item_type": "choice",
+      "stem": "直线 x+y−2=0 与圆 x²+y²=4 的位置关系是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_h11_line_circle"
+      ],
+      "difficulty": 0.3,
+      "solution": "圆心 (0,0) 到直线 x+y−2=0 的距离 d=|0+0−2|/√2=√2<2=r，所以直线与圆相交（且不过圆心，d≠0）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 相切",
+        "B. 相交",
+        "C. 相离",
+        "D. 直线过圆心"
+      ],
+      "form": "线圆位置关系选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0077",
+      "item_type": "fill",
+      "stem": "直线 3x+4y−15=0 被圆 x²+y²=25 截得的弦长为____。",
+      "answer": "8",
+      "kps": [
+        "kp_h11_line_circle"
+      ],
+      "difficulty": 0.4,
+      "solution": "圆心到直线的距离 d=|−15|/√(9+16)=15/5=3，半弦长=√(r²−d²)=√(25−9)=4，弦长=2×4=8。",
+      "source": "llm_generated",
+      "form": "弦长计算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0078",
+      "item_type": "solve",
+      "stem": "求经过点 (1,2) 且与圆 x²+y²=5 相切的直线方程。",
+      "answer": "因为 1²+2²=5，点 (1,2) 在圆上，过圆上一点有且只有一条切线。由 xx₀+yy₀=r² 得切线方程 1·x+2·y=5，即 x+2y−5=0。验证：圆心 (0,0) 到该直线的距离=5/√5=√5=r，确为切线。",
+      "kps": [
+        "kp_h11_line_circle"
+      ],
+      "difficulty": 0.45,
+      "solution": "先判断点在圆上（1+4=5），过圆上一点的切线唯一，用切线公式 xx₀+yy₀=r² 直接写出 x+2y−5=0，再用圆心距等于半径验证。",
+      "source": "llm_generated",
+      "form": "切线方程解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0079",
+      "item_type": "choice",
+      "stem": "圆 O₁: x²+y²=1 与圆 O₂: (x−3)²+y²=1 的位置关系是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_h11_circle_circle"
+      ],
+      "difficulty": 0.3,
+      "solution": "两圆圆心 (0,0)、(3,0)，圆心距 d=3，半径和 r₁+r₂=2；d=3>r₁+r₂=2，所以两圆外离。",
+      "source": "llm_generated",
+      "options": [
+        "A. 外切",
+        "B. 相交",
+        "C. 内含",
+        "D. 外离"
+      ],
+      "form": "圆圆位置关系选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0080",
+      "item_type": "fill",
+      "stem": "圆 x²+y²=4 与圆 (x−3)²+y²=4 的位置关系是____。",
+      "answer": "相交",
+      "kps": [
+        "kp_h11_circle_circle"
+      ],
+      "difficulty": 0.35,
+      "solution": "圆心 (0,0)、(3,0)，d=3；r₁=r₂=2，|r₁−r₂|=0<3<4=r₁+r₂，所以两圆相交。",
+      "source": "llm_generated",
+      "form": "圆圆位置关系填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0081",
+      "item_type": "solve",
+      "stem": "已知圆 C₁: x²+y²=5 与圆 C₂: (x−2)²+(y−1)²=10，求两圆公共弦所在直线的方程。",
+      "answer": "把 C₂ 展开得 x²+y²−4x−2y−5=0；与 C₁ 即 x²+y²−5=0 两式相减（消去二次项）得 (−4x−2y−5)−(−5)=0，即 −4x−2y=0，所以公共弦所在直线的方程为 2x+y=0。",
+      "kps": [
+        "kp_h11_circle_circle"
+      ],
+      "difficulty": 0.5,
+      "solution": "相交两圆的公共弦所在直线方程由两圆方程相减得到：C₂ 展开后与 C₁ 相减，二次项消去得一次方程 2x+y=0（可验证两圆确实相交，如点 (1,−2) 同在两圆上）。",
+      "source": "llm_generated",
+      "form": "公共弦方程解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

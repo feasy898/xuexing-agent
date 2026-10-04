@@ -1837,6 +1837,75 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "h_z_0085",
+      "item_type": "choice",
+      "stem": "1 吨=（　）千克。",
+      "answer": "C",
+      "kps": [
+        "kp_p3_ton_measure"
+      ],
+      "difficulty": 0.2,
+      "solution": "吨与千克之间的进率是 1000，1 吨=1000 千克。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 100",
+        "C. 1000",
+        "D. 10000"
+      ],
+      "form": "单位换算选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0086",
+      "item_type": "fill",
+      "stem": "3 吨=____千克；5000 千克=____吨。",
+      "answer": "3000；5",
+      "kps": [
+        "kp_p3_ton_measure"
+      ],
+      "difficulty": 0.25,
+      "solution": "吨换千克乘进率：3×1000=3000；千克换吨除以进率：5000÷1000=5。",
+      "source": "llm_generated",
+      "form": "单位换算填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0087",
+      "item_type": "solve",
+      "stem": "一辆货车的载重量是 2 吨，现有 3 箱货物，每箱重 800 千克。这辆货车能一次运完这些货物吗？请说明理由。",
+      "answer": "货物总重：800×3=2400（千克）；2 吨=2000 千克；2400>2000，超过货车的载重量，所以不能一次运完。",
+      "kps": [
+        "kp_p3_ton_measure"
+      ],
+      "difficulty": 0.35,
+      "solution": "先统一单位（2 吨=2000 千克），再算货物总重 800×3=2400 千克，与载重量比较：2400>2000，超载，不能一次运完。",
+      "source": "llm_generated",
+      "form": "载重判断解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

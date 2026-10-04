@@ -2601,6 +2601,33 @@
         "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
         "answers_agree": true
       }
+    },
+    {
+      "id": "eng_dens03_0019",
+      "item_type": "choice",
+      "stem": "听录音并跟读告别语 “Goodbye!” 时，句末通常使用的语调是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_eng1_pha1_rhythm_repeat"
+      ],
+      "difficulty": 0.3,
+      "solution": "告别语句末一般用降调，表示话语完整、语气自然；跟读模仿时要特别注意模仿录音的语调走向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 升调 ↗",
+        "B. 降调 ↘",
+        "C. 平调 →",
+        "D. 先升后降"
+      ],
+      "form": "语音语调",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }
