@@ -35,6 +35,8 @@
 
 ## 当前状态（下一会话从这里开始）
 
+- **v0.4.0 已收口（2026-10-04，tag 已推 GitHub）**：K12 全量建设完成——10 学科 4318 KP、题库 17134 题（去重后）、母题 600+ 条十学科全覆盖、卷型库 21 实例、题型覆盖 99.5%（超 owner 98% 目标）。剩余尾巴：validate 的 173 条 coverage 进度项（bio 97/math 17/eng10 culture 等 KP <3 题）与语文 1626 道开放答案题 LLM 校准，均已登记待下一批次。
+
 - 仓库在 **v0.3.0**（tag = 545392d「C-5 第三波终版入库」；其后为 P 阶段文档收口与 K12 立项文档），契约第三波 + D 扩量 + P runbook/冒烟全部收口；远端 github.com/feasy898/xuexing-agent 已同步（59 提交 + 双 tag）。
 - 2026-10-02 实测基线：`python -m pytest` → **709 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → **VALIDATION OK: 189 kps, 1111 items, 343 misconceptions (58 exempt), 52 archetypes, 1111/1111 dual-agent-verified**；`tools/run_contract.py` → exit 0；`git ls-files` 无 `.env`。本地 tag：`v0.3.0`、`wave3-contracts-list`。
 - **当前主线（2026-10-02 owner 新使命）：K12 全量建设**——9 学科 × 小一～高三 × 课标全对齐 × 卷子生成为核心，验收四指标（KP 全入 / 题型覆盖 ≥98% / 答案三层准确性 / 加权对齐+海南默认 profile），阶段 K12-0..6 详见 TASK.md §4 与 BACKLOG「K12 全量建设」节。StepFun step_plan 凭据在 `.env`（已验证可用）。
