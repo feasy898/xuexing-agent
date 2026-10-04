@@ -289,9 +289,9 @@
 - [x] **K12-R 课标与真题研究**：11 学科/学段文档（含海南专项），每份六节齐全
 - [x] **K12-2 九学科图谱**：4318 KP（math408/语文677/英语438/物理433/化学359/生物183/历史494/地理306/政治557/小学科学463），全部门控通过；高中批台账登记 HS_MATH_AGENTS；校验规则学科化（SUBJECT_GRADE_RANGES）
 - [x] **K12-1 数学全学段**：图谱 408 KP + 误解 359 + 小学课标 100% 覆盖 + 高中题库 377 题入库
-- [x] **K12-3 九学科题库 + 母题（全量完成，2026-10-04）**：题库 **17944 题**（math 1545 / 语文 2769 / 英语 2573 / 物理 2157 / 化学 1253 / 生物 743 / 历史 1488 / 地理 1059 / 政治 2080 / 小学科学 2277），母题档案 522 个（10 学科全覆盖），形态 choice 8731 / fill 4111 / solve 5102，**0 题缺答案或缺 rubric**；验证结构 = 双代理 agree 1942 + 单代理如实标注 16002（KNOWN_ISSUE_COUNT=16002 闭式锁定，含 eng-arb-step5 / math-arb-glm53 两轮分歧仲裁回填）；owner 裁定「无真题文件」后全程按课标+教材+行业区间自推；全库 id/stem/公式级三重查重
+- [x] **K12-3 九学科题库 + 母题（全量完成，2026-10-04 零缺口收口）**：题库 **18430 题**（math 1644 / 语文 2769 / 英语 2732 / 物理 2157 / 化学 1253 / 生物 743 / 历史 1488 / 地理 1287 / 政治 2080 / 小学科学 2277），母题档案 522 个（10 学科全覆盖），形态 choice 8954 / fill 4239 / solve 5237，**0 题缺答案或缺 rubric**；验证结构 = 双代理 agree 1942 + 单代理如实标注 16488（KNOWN_ISSUE_COUNT=16488 闭式锁定，含 eng-arb / math-arb 两轮分歧仲裁与 eng03/zero 三个密度收口批）；owner 裁定「无真题文件」后全程按课标+教材+行业区间自推；全库 id/stem/公式级三重查重
 - [x] **K12-4 卷型库 paper_spec + 海南默认 profile**：`data/curriculum/paper_specs.json` 21 套卷型（学科×学段×用途），默认海南 profile；无可核真题下所有分值标可信度（中/低），对外只说「对齐课标与教材」
-- [x] **K12-5 比对审计**：`tools/audit_k12_alignment.py` + `docs/audits/k12-5_alignment_audit.json`——**密度 ≥3 题/KP 覆盖 100%（0 个 KP 缺口）**；题型形态矩阵按研究文档题型目录配额；答案质量抽检由双代理/单代理台账结构承载
+- [x] **K12-5 比对审计**：`tools/audit_k12_alignment.py` + `docs/audits/k12-5_alignment_audit.json`——**密度 ≥3 题/KP 覆盖 100%（0 个 KP 缺口，validate_knowledge 口径全库同步清零 exit 0）**；题型形态矩阵按研究文档题型目录配额；答案质量抽检由双代理/单代理台账结构承载
 - [x] **K12-6 多模态真调**：`docs/research/k12/k12-6_smoke_report.md` + audio_smoke_plan.md（stepaudio asr/tts + step-5 vision 冒烟方案与历史证据存档；本机网络受限未真调，方案与调用面就绪）
 - [x] **收口 v0.4.0**：pytest 767 passed / 0 failed、run_contract exit 0、凭据零入库（`git ls-files .env` = 0）、全量推 GitHub `feasy898/xuexing-agent` tag `v0.4.0`
 - [x] （沿承）母题 52→522（10 学科全覆盖）；数学全库密度 ≥3 题/KP 达成
