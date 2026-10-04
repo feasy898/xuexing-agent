@@ -8,7 +8,7 @@ import re
 import subprocess
 import sys
 
-ROOT = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.chdir(ROOT)
 
 
