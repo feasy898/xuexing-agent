@@ -1,0 +1,530 @@
+[
+  {
+    "id": "p4_048",
+    "item_type": "fill",
+    "stem": "将4800000改写成用“万”作单位的数是____。",
+    "answer": "480",
+    "kps": [
+      "kp_p4_bignum_read"
+    ],
+    "difficulty": 0.55,
+    "solution": "从个位起向左数4位，点上小数点：4800000=480万；万级是480，个级全是0，末尾的0不读。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_049",
+    "item_type": "choice",
+    "stem": "下面各数中，最接近100万的是（　）",
+    "answer": "C",
+    "kps": [
+      "kp_p4_bignum_read"
+    ],
+    "difficulty": 0.7,
+    "solution": "1000001与1000000只差1；D差100、A差2000、B差5000。",
+    "source": "llm_generated",
+    "options": [
+      "A. 998000",
+      "B. 1005000",
+      "C. 1000001",
+      "D. 999900"
+    ]
+  },
+  {
+    "id": "p4_050",
+    "item_type": "fill",
+    "stem": "50000平方米=____公顷。",
+    "answer": "5",
+    "kps": [
+      "kp_p4_hectare"
+    ],
+    "difficulty": 0.35,
+    "solution": "1公顷=10000平方米，50000÷10000=5公顷。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_051",
+    "item_type": "choice",
+    "stem": "一块标准足球场的面积大约是1（　）",
+    "answer": "B",
+    "kps": [
+      "kp_p4_hectare"
+    ],
+    "difficulty": 0.5,
+    "solution": "足球场面积约7000多平方米，近似1公顷；1平方千米=100公顷太大，1平方米或平方分米太小。",
+    "source": "llm_generated",
+    "options": [
+      "A. 平方米",
+      "B. 公顷",
+      "C. 平方千米",
+      "D. 平方分米"
+    ]
+  },
+  {
+    "id": "p4_052",
+    "item_type": "solve",
+    "stem": "一块长方形菜地长250米、宽120米，这块菜地的面积是多少公顷？",
+    "answer": "3公顷",
+    "kps": [
+      "kp_p4_hectare"
+    ],
+    "difficulty": 0.65,
+    "solution": "面积=250×120=30000平方米；1公顷=10000平方米，30000÷10000=3公顷。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_053",
+    "item_type": "fill",
+    "stem": "180度的角叫做____角。",
+    "answer": "平",
+    "kps": [
+      "kp_p4_angle_measure"
+    ],
+    "difficulty": 0.2,
+    "solution": "平角是180°，周角是360°；平角的两边在同一直线上但方向相反。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_054",
+    "item_type": "choice",
+    "stem": "钟面上时针和分针成直角的时刻是（　）",
+    "answer": "A",
+    "kps": [
+      "kp_p4_angle_measure"
+    ],
+    "difficulty": 0.45,
+    "solution": "钟面每个大格30°，成直角需相差3大格（90°）；3时整差3格成90°。5时=150°、6时=180°、8时=120°都不成直角。",
+    "source": "llm_generated",
+    "options": [
+      "A. 3时整",
+      "B. 5时整",
+      "C. 6时整",
+      "D. 8时整"
+    ]
+  },
+  {
+    "id": "p4_055",
+    "item_type": "fill",
+    "stem": "两条直线相交所成的四个角中，如果其中一个角是65°，那么与它相邻的角的度数是____。",
+    "answer": "115",
+    "kps": [
+      "kp_p4_angle_measure"
+    ],
+    "difficulty": 0.65,
+    "solution": "两条直线相交，相邻的两个角组成平角：180°−65°=115°；对角的度数相等（65°）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_056",
+    "item_type": "fill",
+    "stem": "204×38=____。",
+    "answer": "7752",
+    "kps": [
+      "kp_p4_mult_3x2digit"
+    ],
+    "difficulty": 0.35,
+    "solution": "204×38=204×(40−2)=8160−408=7752；或者列竖式逐位相乘再相加。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_057",
+    "item_type": "choice",
+    "stem": "估算198×51的积，下面比较合理的是（　）",
+    "answer": "B",
+    "kps": [
+      "kp_p4_mult_3x2digit"
+    ],
+    "difficulty": 0.55,
+    "solution": "198≈200，51≈50，200×50=10000；实际198×51≈10098，所以约10000。",
+    "source": "llm_generated",
+    "options": [
+      "A. 大约1000",
+      "B. 大约10000",
+      "C. 大约20000",
+      "D. 大约100000"
+    ]
+  },
+  {
+    "id": "p4_058",
+    "item_type": "solve",
+    "stem": "一辆汽车每小时行驶65千米，从甲地到乙地用了12小时。甲、乙两地相距多少千米？",
+    "answer": "780千米",
+    "kps": [
+      "kp_p4_mult_3x2digit"
+    ],
+    "difficulty": 0.7,
+    "solution": "速度×时间=路程，65×12=780（千米）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_059",
+    "item_type": "fill",
+    "stem": "576÷36=____。",
+    "answer": "16",
+    "kps": [
+      "kp_p4_div_2digit"
+    ],
+    "difficulty": 0.5,
+    "solution": "把36看作40试商偏大，调小商为16：36×16=576；用乘法验算，576÷16=36。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_060",
+    "item_type": "choice",
+    "stem": "计算720÷68时，把68看作70来试商，初商容易（　）",
+    "answer": "B",
+    "kps": [
+      "kp_p4_div_2digit"
+    ],
+    "difficulty": 0.7,
+    "solution": "把除数68看作70变大了，除数变大商容易偏小，需要把商调大1。",
+    "source": "llm_generated",
+    "options": [
+      "A. 偏大",
+      "B. 偏小",
+      "C. 正好",
+      "D. 不确定"
+    ]
+  },
+  {
+    "id": "p4_061",
+    "item_type": "fill",
+    "stem": "平行四边形容易变形，具有____性。（填“不稳定”或“稳定”）",
+    "answer": "不稳定",
+    "kps": [
+      "kp_p4_quad_shape"
+    ],
+    "difficulty": 0.3,
+    "solution": "平行四边形受外力容易变形，是“不稳定”四边形；生活中利用它做伸缩门、升降架。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_062",
+    "item_type": "choice",
+    "stem": "一个四边形两组对边分别平行，其中一组邻边相等、另一组邻边不相等，这个四边形是（　）",
+    "answer": "C",
+    "kps": [
+      "kp_p4_quad_shape"
+    ],
+    "difficulty": 0.5,
+    "solution": "两组对边分别平行是平行四边形；邻边都等是正方形，相邻边垂直等长是长方形；梯形只有一组对边平行。",
+    "source": "llm_generated",
+    "options": [
+      "A. 长方形",
+      "B. 正方形",
+      "C. 平行四边形",
+      "D. 梯形"
+    ]
+  },
+  {
+    "id": "p4_063",
+    "item_type": "fill",
+    "stem": "画一个上底3厘米、下底5厘米、高2厘米的梯形，这个梯形的面积是____平方厘米。",
+    "answer": "8",
+    "kps": [
+      "kp_p4_quad_shape"
+    ],
+    "difficulty": 0.7,
+    "solution": "梯形面积=(上底+下底)×高÷2=(3+5)×2÷2=8平方厘米。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_064",
+    "item_type": "fill",
+    "stem": "条形统计图中1格表示8人，五年级参加合唱队对应的直条有7格，参加合唱队的有____人。",
+    "answer": "56",
+    "kps": [
+      "kp_p4_barchart"
+    ],
+    "difficulty": 0.25,
+    "solution": "7格×8人/格=56人。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_065",
+    "item_type": "choice",
+    "stem": "三种图书数量分别为48本、72本、96本，画条形统计图时1格表示（　）本最合适。",
+    "answer": "C",
+    "kps": [
+      "kp_p4_barchart"
+    ],
+    "difficulty": 0.55,
+    "solution": "1格=12本：48÷12=4格、72÷12=6格、96÷12=8格，全部整格且总格数少画起来紧凑；20不能整除48。",
+    "source": "llm_generated",
+    "options": [
+      "A. 4",
+      "B. 6",
+      "C. 12",
+      "D. 20"
+    ]
+  },
+  {
+    "id": "p4_066",
+    "item_type": "solve",
+    "stem": "某小学四年级四个班读书节捐赠图书分别为15本、28本、36本、41本，平均每个班捐多少本？",
+    "answer": "30本",
+    "kps": [
+      "kp_p4_barchart"
+    ],
+    "difficulty": 0.7,
+    "solution": "总本数=15+28+36+41=120本；平均=120÷4=30本。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_067",
+    "item_type": "fill",
+    "stem": "计算(25+15)×3−12÷4时，第一步应先算____。",
+    "answer": "25+15",
+    "kps": [
+      "kp_p4_arith_order"
+    ],
+    "difficulty": 0.25,
+    "solution": "有括号先算括号里的：(25+15)×3−12÷4，第一步先算25+15=40。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_068",
+    "item_type": "choice",
+    "stem": "把24−6×2+8改成先算减法的算式，应是（　）",
+    "answer": "B",
+    "kps": [
+      "kp_p4_arith_order"
+    ],
+    "difficulty": 0.5,
+    "solution": "要让24−6先算，把它放进小括号：(24−6)×2+8=18×2+8=44；A是先算乘法，C先算加法，D括号内仍是乘法。",
+    "source": "llm_generated",
+    "options": [
+      "A. 24−(6×2)+8",
+      "B. (24−6)×2+8",
+      "C. 24−(6×2+8)",
+      "D. (24−6×2)+8"
+    ]
+  },
+  {
+    "id": "p4_069",
+    "item_type": "solve",
+    "stem": "计算(80−20)÷(6+4)×5=____。",
+    "answer": "30",
+    "kps": [
+      "kp_p4_arith_order"
+    ],
+    "difficulty": 0.7,
+    "solution": "按四则混合运算顺序：先算(80−20)=60，(6+4)=10；再算60÷10=6；最后算6×5=30。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_070",
+    "item_type": "fill",
+    "stem": "用简便方法计算125×32=____。",
+    "answer": "4000",
+    "kps": [
+      "kp_p4_operation_laws"
+    ],
+    "difficulty": 0.5,
+    "solution": "125×32=125×8×4=1000×4=4000（把32拆成8×4用125×8=1000的积）；直接算125×32=4000。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_071",
+    "item_type": "choice",
+    "stem": "下面各式中，运用了乘法分配律的是（　）",
+    "answer": "C",
+    "kps": [
+      "kp_p4_operation_laws"
+    ],
+    "difficulty": 0.75,
+    "solution": "C是(a+b)×c=a×c+b×c即乘法分配律；A和B是乘法结合律，D是乘法交换律。",
+    "source": "llm_generated",
+    "options": [
+      "A. 4×25×2=4×(25×2)",
+      "B. 25×(8×4)=25×8×4",
+      "C. (25+8)×4=25×4+8×4",
+      "D. 25×14=14×25"
+    ]
+  },
+  {
+    "id": "p4_072",
+    "item_type": "fill",
+    "stem": "2.07里面有____个0.01。",
+    "answer": "207",
+    "kps": [
+      "kp_p4_decimal_meaning"
+    ],
+    "difficulty": 0.5,
+    "solution": "2.07=2+0.07，0.07里有7个0.01；2里面有200个0.01；合计2.07=207个0.01。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_073",
+    "item_type": "choice",
+    "stem": "下面的小数中，与5.40不相等的是（　）",
+    "answer": "D",
+    "kps": [
+      "kp_p4_decimal_meaning"
+    ],
+    "difficulty": 0.7,
+    "solution": "小数末尾添0或去0大小不变：5.4=5.40=5.400；但5.04≠5.40（5.40=5.4，5.04只比5大0.04）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 5.4",
+      "B. 5.40",
+      "C. 5.400",
+      "D. 5.04"
+    ]
+  },
+  {
+    "id": "p4_074",
+    "item_type": "fill",
+    "stem": "7.5+2.86=____。",
+    "answer": "10.36",
+    "kps": [
+      "kp_p4_decimal_addsub"
+    ],
+    "difficulty": 0.3,
+    "solution": "把7.5写成7.50补足小数位数，对齐后相加：7.50+2.86=10.36。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_075",
+    "item_type": "choice",
+    "stem": "水果店原有苹果35.6千克，上午卖出12.8千克，下午又运进20.5千克，现在有苹果（　）千克。",
+    "answer": "B",
+    "kps": [
+      "kp_p4_decimal_addsub"
+    ],
+    "difficulty": 0.5,
+    "solution": "35.6−12.8=22.8千克（剩下的）；22.8+20.5=43.3千克；也可一步列式35.6−12.8+20.5=43.3。",
+    "source": "llm_generated",
+    "options": [
+      "A. 22.8",
+      "B. 43.3",
+      "C. 56.1",
+      "D. 32.7"
+    ]
+  },
+  {
+    "id": "p4_076",
+    "item_type": "solve",
+    "stem": "小明带20元买文具：一支钢笔8.5元、一本笔记本6.5元、一支铅笔1.2元。带的钱够吗？若够还剩多少元？",
+    "answer": "够，还剩3.8元",
+    "kps": [
+      "kp_p4_decimal_addsub"
+    ],
+    "difficulty": 0.75,
+    "solution": "合计花费：8.5+6.5+1.2=16.2元；20−16.2=3.8元；16.2<20，带的钱够，还剩3.8元。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_077",
+    "item_type": "fill",
+    "stem": "一个三角形的两个内角分别是65°和45°，第三个内角是____度。",
+    "answer": "70",
+    "kps": [
+      "kp_p4_triangle"
+    ],
+    "difficulty": 0.45,
+    "solution": "三角形内角和180°：180−65−45=70°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_078",
+    "item_type": "choice",
+    "stem": "一个三角形两条边的长分别是6厘米和10厘米，第三条边的长不可能是（　）",
+    "answer": "D",
+    "kps": [
+      "kp_p4_triangle"
+    ],
+    "difficulty": 0.6,
+    "solution": "三角形任意两边之和大于第三边：6+10=16>15不对，因为第三边<两长边之和且>差10−6=4；15<16不满足；12/8/5都符合。",
+    "source": "llm_generated",
+    "options": [
+      "A. 5厘米",
+      "B. 8厘米",
+      "C. 12厘米",
+      "D. 15厘米"
+    ]
+  },
+  {
+    "id": "p4_079",
+    "item_type": "fill",
+    "stem": "复式条形统计图显示四（1）班图书角故事书18本、科技书比故事书多9本，科技书有____本。",
+    "answer": "27",
+    "kps": [
+      "kp_p4_compound_bar"
+    ],
+    "difficulty": 0.4,
+    "solution": "看图例区分两组数据：科技书比故事书多9本，18+9=27本。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_080",
+    "item_type": "choice",
+    "stem": "四（1）班喜欢运动的有男生16人、女生12人；四（2）班喜欢运动的有男生14人、女生18人。两个班喜欢运动的总人数是（　）",
+    "answer": "C",
+    "kps": [
+      "kp_p4_compound_bar"
+    ],
+    "difficulty": 0.6,
+    "solution": "把两组数据相加：16+12+14+18=60人；A、B、D分别只是部分人数。",
+    "source": "llm_generated",
+    "options": [
+      "A. 30人",
+      "B. 32人",
+      "C. 60人",
+      "D. 46人"
+    ]
+  },
+  {
+    "id": "p4_081",
+    "item_type": "fill",
+    "stem": "复式条形统计图显示四（2）班参加合唱队：男生8人、女生14人；参加舞蹈队：男生6人、女生10人。参加合唱队的比舞蹈队多____人。",
+    "answer": "6",
+    "kps": [
+      "kp_p4_compound_bar"
+    ],
+    "difficulty": 0.7,
+    "solution": "合唱队8+14=22人；舞蹈队6+10=16人；22−16=6人。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_082",
+    "item_type": "fill",
+    "stem": "鸡兔同笼：一共有8个头、22条腿，兔有____只。",
+    "answer": "3",
+    "kps": [
+      "kp_p4_jituitonglong"
+    ],
+    "difficulty": 0.4,
+    "solution": "假设全是鸡：8×2=16条腿；少22−16=6条，每只兔比鸡多2条腿，兔有6÷2=3只。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "p4_083",
+    "item_type": "choice",
+    "stem": "鸡兔同笼：一共有12个头、40条腿，鸡和兔各有多少只？（　）",
+    "answer": "A",
+    "kps": [
+      "kp_p4_jituitonglong"
+    ],
+    "difficulty": 0.6,
+    "solution": "4只鸡8只兔：4+8=12个头；4×2+8×4=8+32=40条腿，符合条件。",
+    "source": "llm_generated",
+    "options": [
+      "A. 鸡4只兔8只",
+      "B. 鸡8只兔4只",
+      "C. 鸡6只兔6只",
+      "D. 鸡5只兔7只"
+    ]
+  },
+  {
+    "id": "p4_084",
+    "item_type": "solve",
+    "stem": "停车场停着小汽车和三轮车共10辆，轮子共32个。小汽车有几辆？",
+    "answer": "2辆",
+    "kps": [
+      "kp_p4_jituitonglong"
+    ],
+    "difficulty": 0.75,
+    "solution": "假设全是三轮车：10×3=30个轮，比实际少32−30=2个；每辆小汽车比三轮车多1个轮，所以小汽车有2辆。验算：2×4+8×3=8+24=32个轮。",
+    "source": "llm_generated"
+  }
+]

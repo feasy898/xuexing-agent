@@ -1,0 +1,1993 @@
+{
+  "items": [
+    {
+      "id": "eng_en_prim_0031",
+      "item_type": "choice",
+      "stem": "下列单词中音节数与其他三个不同的是（　　）\nA. cat  \nB. dog  \nC. apple  \nD. book",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.25,
+      "solution": "cat、dog、book 都是单音节，apple 是双音节。",
+      "source": "llm_generated",
+      "options": [
+        "A. cat",
+        "B. dog",
+        "C. apple",
+        "D. book"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0033",
+      "item_type": "choice",
+      "stem": "看图：图中小朋友头上戴着一件遮阳的衣物。下列哪一个单词对应图片？（　　）\nA. shoes  \nB. coat  \nC. hat  \nD. bag",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.25,
+      "solution": "戴在头上遮阳的衣物是 hat。",
+      "source": "llm_generated",
+      "options": [
+        "A. shoes",
+        "B. coat",
+        "C. hat",
+        "D. bag"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0034",
+      "item_type": "choice",
+      "stem": "看图：图中的鞋是红色的。补全句子：The ____ are red.（　　）\nA. coat  \nB. shoes  \nC. hat  \nD. bag",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.4,
+      "solution": "鞋是复数形式 shoes，与 are 保持一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. coat",
+        "B. shoes",
+        "C. hat",
+        "D. bag"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0035",
+      "item_type": "choice",
+      "stem": "听教师指令：\"Open your book. Point to the pen.\" 下列执行顺序正确的是（　　）\nA. 先指笔，再打开书  \nB. 先打开书，再指笔  \nC. 只打开书  \nD. 只指笔",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.25,
+      "solution": "指令的顺序是先 \"Open your book\" 后 \"Point to the pen\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先指笔，再打开书",
+        "B. 先打开书，再指笔",
+        "C. 只打开书",
+        "D. 只指笔"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0036",
+      "item_type": "fill",
+      "stem": "听指令：\"Stand up. Open your book.\" 补全第二个动词：Stand up. ____ your book.",
+      "answer": "Open",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.4,
+      "solution": "第二句动词为 Open（打开）。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0037",
+      "item_type": "choice",
+      "stem": "听故事 \"The Lost Cat\" 的三段顺序：① The cat is lost. ② Mum finds the cat. ③ Tom looks for the cat. 正确的事件顺序是（　　）\nA. ①②③  \nB. ③①②  \nC. ②③①  \nD. ①③②",
+      "answer": "D",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.25,
+      "solution": "事件顺序应为\"猫走丢 → Tom 去找 → Mum 找到猫\"，即①③②。",
+      "source": "llm_generated",
+      "options": [
+        "A. ①②③",
+        "B. ③①②",
+        "C. ②③①",
+        "D. ①③②"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0040",
+      "item_type": "choice",
+      "stem": "你想向同学介绍你的妈妈，下列哪句最合适？（　　）\nA. This is my mum. She is nice.  \nB. He is my mum.  \nC. She is my dad.  \nD. This is my mum. He is tall.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.4,
+      "solution": "介绍妈妈用 This is my mum，搭配代词 she 描述。",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my mum. She is nice.",
+        "B. He is my mum.",
+        "C. She is my dad.",
+        "D. This is my mum. He is tall."
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0042",
+      "item_type": "choice",
+      "stem": "下列哪一项最适合作为演唱 \"If You're Happy\" 时的动作？（　　）\nA. 拍手（clap your hands）  \nB. 坐下  \nC. 睡觉  \nD. 吃饭",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"If You're Happy\" 经典动作是 clap your hands 拍手。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拍手（clap your hands）",
+        "B. 坐下",
+        "C. 睡觉",
+        "D. 吃饭"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0047",
+      "item_type": "fill",
+      "stem": "补全对话。A: Thank you for your book.  A1: ____ (回应致谢)",
+      "answer": "You're welcome.",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "回应致谢的得体说法是 You're welcome. / That's OK.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0048",
+      "item_type": "choice",
+      "stem": "同学帮你捡起掉在地上的铅笔，你最合适的英语回应是（　　）\nA. Thank you.  \nB. Goodbye.  \nC. Good morning.  \nD. I'm sorry.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.4,
+      "solution": "获得帮助应说 Thank you. 表感谢。",
+      "source": "llm_generated",
+      "options": [
+        "A. Thank you.",
+        "B. Goodbye.",
+        "C. Good morning.",
+        "D. I'm sorry."
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0050",
+      "item_type": "choice",
+      "stem": "学习新词 \"tiger\" 时，下列哪项最能帮助你联系已学词？（　　）\nA. 只记单词表  \nB. 与已学 \"cat\" 对比：cat 小，tiger 大  \nC. 不看不读  \nD. 只抄写字母",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.4,
+      "solution": "在新旧词之间建立形象对比，能帮助理解和记忆。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只记单词表",
+        "B. 与已学 \"cat\" 对比：cat 小，tiger 大",
+        "C. 不看不读",
+        "D. 只抄写字母"
+      ],
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0051",
+      "item_type": "solve",
+      "stem": "老师要在班级开展英语活动，下列哪一项最有助于保持同学们的英语学习兴趣？（　　）\nA. 只做抄写作业  \nB. 只听写单词  \nC. 英语歌曲合唱比赛  \nD. 不安排任何活动",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.25,
+      "solution": "英语歌曲合唱比赛既能调动兴趣又能让大家开口说英语。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003",
+          "eng-indep-w1-20261003"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_dens01_0196",
+      "item_type": "choice",
+      "stem": "听指令做动作。老师说：\"Touch your nose, then touch your ears.\" 你应该先摸哪里？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "听连续指令要按先后顺序做：先 touch your nose（摸鼻子），then（然后）touch your ears（摸耳朵）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先摸鼻子，再摸耳朵",
+        "B. 先摸耳朵，再摸鼻子",
+        "C. 只摸鼻子",
+        "D. 只摸耳朵"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0197",
+      "item_type": "choice",
+      "stem": "老师说：\"Stand up, open the door, and then sit down.\" 按顺序第三个动作是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.35,
+      "solution": "三个动作按顺序是：① Stand up 起立 → ② open the door 开门 → ③ sit down 坐下，第三个是坐下。",
+      "source": "llm_generated",
+      "options": [
+        "A. 坐下",
+        "B. 起立",
+        "C. 开门",
+        "D. 关门"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0198",
+      "item_type": "fill",
+      "stem": "听指令排序（用数字 1、2、3 写出顺序）：老师连续说 \"Close the window. Put on your coat. Line up.\"（关窗→穿外套→排队）——按听到的先后顺序排列这三个动作：关窗=______，穿外套=______，排队=______。",
+      "answer": "1；2；3",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "听连续指令时抓住 first、then、and then 等顺序线索，按 1 关窗、2 穿外套、3 排队依序完成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0199",
+      "item_type": "choice",
+      "stem": "听小故事（三幅图顺序被打乱）：First, the girl gets up. Then she washes her face. At last she has breakfast.\n问题：故事的第二幅图应该画什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "顺序词 First（首先）起床 → Then（然后）洗脸 → At last（最后）吃早餐，第二幅图画洗脸。",
+      "source": "llm_generated",
+      "options": [
+        "A. 女孩洗脸",
+        "B. 女孩起床",
+        "C. 女孩吃早餐",
+        "D. 女孩睡觉"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0200",
+      "item_type": "choice",
+      "stem": "听故事：A little seed falls on the ground. Then it drinks the rain. At last it grows into a tall sunflower.\n问题：最后发生了什么？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.35,
+      "solution": "At last（最后）提示结局：种子长成向日葵。听故事时抓 First/Then/At last 排出事件顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. 种子长成了高高的向日葵",
+        "B. 种子落在地上",
+        "C. 种子喝雨水",
+        "D. 种子被风吹走"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0201",
+      "item_type": "fill",
+      "stem": "故事复述填空（用中文作答）：故事按顺序说：小鸡先破壳而出，______跟着妈妈找虫子吃，最后晚上回家睡觉。（在横线处填写\"然后\"或\"最后\"，选一个）",
+      "answer": "然后",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.3,
+      "solution": "复述事件顺序用\"先……然后……最后……\"；中间环节用\"然后\"，结尾才用\"最后\"。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0202",
+      "item_type": "choice",
+      "stem": "英语课上老师请大家玩游戏、唱英文歌，积极参与的做法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.2,
+      "solution": "对英语学习有兴趣的表现：乐于参加英语游戏、唱歌、表演等活动，在活动中学得更快。",
+      "source": "llm_generated",
+      "options": [
+        "A. 主动举手参加，开心地唱和玩",
+        "B. 趴在桌上不参加",
+        "C. 说\"太幼稚了\"并捣乱",
+        "D. 只看别人玩"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0203",
+      "item_type": "choice",
+      "stem": "下面哪种做法能帮你保持学英语的兴趣？",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.25,
+      "solution": "通过动画、儿歌等有趣的方式接触英语，能让学习保持快乐，兴趣更持久。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看喜欢的英语动画片、听好听的英文儿歌",
+        "B. 一遇到不认识的单词就大哭",
+        "C. 把英语书藏起来",
+        "D. 告诉自己\"我学不会\""
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0204",
+      "item_type": "fill",
+      "stem": "兴趣习惯填空（用中文作答）：把学英语当成有趣的______（填\"游戏\"或\"惩罚\"，选一个），会更愿意每天听一听、说一说。",
+      "answer": "游戏",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.2,
+      "solution": "兴趣是最好的老师：把英语学习融入游戏、歌曲和表演，越学越想学。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0205",
+      "item_type": "choice",
+      "stem": "学新单词 pear（梨）时，你想起了学过的 bear（熊）。这两个词的共同点是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.3,
+      "solution": "新旧联系：pear 和 bear 都含 -ear 字母组合、押同样的韵，借助旧词 bear 记新词 pear 更容易。",
+      "source": "llm_generated",
+      "options": [
+        "A. 词尾都发 /eə/ 的音（-ear 组合）",
+        "B. 都是动物",
+        "C. 都是水果",
+        "D. 都没有元音"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0206",
+      "item_type": "choice",
+      "stem": "新歌谣里有旧句子 \"How are you?\"，还加了新句子 \"I'm fine, thank you.\" 最好的学法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.35,
+      "solution": "把旧歌谣/旧句子的旋律和句式当作支架，借助熟悉内容学习新内容，学得又快又牢。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先唱会旧句子，再跟着旧句子的调子学新句子",
+        "B. 整首放弃不学",
+        "C. 只唱旧句子不理新句子",
+        "D. 把新句子抄 100 遍不唱"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0207",
+      "item_type": "fill",
+      "stem": "新旧联系填空（用中文作答）：学 cat（猫）时想起 hat（帽子）都以 -at 结尾；学 book（书）时可以联想 look（看）。这种把旧词和新词______起来的方法能帮助记忆。",
+      "answer": "联系（联想/关联）",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.3,
+      "solution": "在新旧知识间建立联系（联想押韵、词族、旧句型搭新词），降低新知识的学习难度。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0208",
+      "item_type": "choice",
+      "stem": "拍手读单词：tea 只能拍一下手，说明 tea 是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.3,
+      "solution": "拍读感知音节：tea /tiː/ 一口气读完、拍一下手，是一个音节的词。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一个音节的词",
+        "B. 两个音节的词",
+        "C. 三个音节的词",
+        "D. 没有音节"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0209",
+      "item_type": "choice",
+      "stem": "拍手读 tiger 时能拍两下手（ti-ger），那么读 banana 应该能拍几下？",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.35,
+      "solution": "banana 分三个音节 ba-na-na，拍三下；按音节拍读能感受英语单词的节奏起伏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一下",
+        "B. 两下",
+        "C. 三下",
+        "D. 四下"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0210",
+      "item_type": "fill",
+      "stem": "音节拍读填空（用数字作答）：把单词 apple 按音节拍读（ap-ple），能拍______下手。",
+      "answer": "2",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.3,
+      "solution": "apple 分两个音节 ap-ple，拍两下手；初步感知音节有助于拼读和记忆单词。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0211",
+      "item_type": "choice",
+      "stem": "同学借给你一块橡皮，你应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "获得帮助时要致谢：Thank you（谢谢你）。",
+      "source": "llm_generated",
+      "options": [
+        "A. Thank you!",
+        "B. Goodbye!",
+        "C. I'm sorry.",
+        "D. Good night!"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0212",
+      "item_type": "choice",
+      "stem": "你对同学说 \"Thank you!\" 同学回答 \"You're welcome.\" 这句话的意思是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.3,
+      "solution": "回应致谢：You're welcome. / That's OK. 意为\"不客气\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 不客气",
+        "B. 谢谢你",
+        "C. 再见",
+        "D. 对不起"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0213",
+      "item_type": "fill",
+      "stem": "致谢回应填空（用英文作答）：A: Thank you! B: You're ______.",
+      "answer": "welcome",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.25,
+      "solution": "致谢与回应是固定词块：Thank you. → You're welcome. / That's OK.",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0214",
+      "item_type": "choice",
+      "stem": "指着照片向同学介绍你的妈妈，应该说：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍家庭成员句型：This is my mother.（这是我的妈妈。）指人介绍用 This is ...",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my mother.",
+        "B. I am mother.",
+        "C. This is me.",
+        "D. He is my father."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0215",
+      "item_type": "choice",
+      "stem": "介绍照片上的爸爸和爷爷两位男性，正确的一组句子是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.35,
+      "solution": "介绍男用 He（father 爸爸、grandfather 爷爷），介绍女用 She；This is ... + He/She is ... 完成家庭成员介绍。",
+      "source": "llm_generated",
+      "options": [
+        "A. This is my father. He is my grandfather.",
+        "B. This is my mother. She is my sister.",
+        "C. I am a boy.",
+        "D. This is my cat."
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0216",
+      "item_type": "fill",
+      "stem": "家庭介绍填空（用英文作答）：看全家福介绍家人：This is my father. ______ is my mother.（填人称代词）",
+      "answer": "This",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "介绍妈妈同样用 This is my mother（这是我的妈妈），逐位介绍家庭成员。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0217",
+      "item_type": "choice",
+      "stem": "独立上台唱英文歌，最好的表现是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "独立演唱的要求：能一个人完整唱出学过的歌曲，吐字清楚、节奏稳定。",
+      "source": "llm_generated",
+      "options": [
+        "A. 吐字清楚、节奏稳定，完整唱完全曲",
+        "B. 中途大喊大叫",
+        "C. 唱两句就不唱了",
+        "D. 全程不出声只做动作"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0218",
+      "item_type": "choice",
+      "stem": "独唱时有一个词总唱不清楚，正确的练习方法是：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.3,
+      "solution": "难点单独慢练、再放回整句连贯演唱，是提高吐字清晰度的有效方法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把这个词单独慢慢多唱几遍，再连回整句",
+        "B. 跳过这个词不唱",
+        "C. 含糊带过算了",
+        "D. 改歌词"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0219",
+      "item_type": "fill",
+      "stem": "演唱习惯填空（用中文作答）：独立演唱时，吐字要清楚，______（填\"节奏\"或\"音量\"之一）要保持稳定，不抢拍不拖拍。",
+      "answer": "节奏",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "独立演唱的评价点：吐字清楚 + 节奏稳定 + 完整唱完全曲。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0220",
+      "item_type": "choice",
+      "stem": "冬天出门，妈妈让你穿上：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.25,
+      "solution": "衣物词块：coat 是外套（穿在身上保暖）；hat 是帽子（戴在头上），shoes 是鞋（穿在脚上），bag 是书包。",
+      "source": "llm_generated",
+      "options": [
+        "A. coat",
+        "B. hat",
+        "C. shoes",
+        "D. bag"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0221",
+      "item_type": "choice",
+      "stem": "老师说 \"Put on your hat.\" 你应该：",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.3,
+      "solution": "put on（穿上/戴上）+ hat（帽子）：听到指令把帽子戴在头上。",
+      "source": "llm_generated",
+      "options": [
+        "A. 戴上帽子",
+        "B. 穿上外套",
+        "C. 穿上鞋",
+        "D. 背上书包"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens01_0222",
+      "item_type": "fill",
+      "stem": "看图写词（用英文作答）：图片上小脚穿着一双红色运动鞋。\"鞋\"的英文是：______",
+      "answer": "shoes",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.3,
+      "solution": "衣物与日用品词块：coat 外套、hat 帽子、shoes 鞋、bag 书包；能听指令找到并说出相应物品。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0196",
+      "item_type": "choice",
+      "stem": "【听力（2年级）·听连续多步指令并按序完成】听力练习中要有效把握\"听连续多步指令并按序完成\"，下列做法最关键的是(    )",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.45,
+      "solution": "听力理解的关键是抓住主旨大意和关键信息，过度纠结单词反而影响理解。听懂含两个以上动作的连续指令，按先后顺序正确完成。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听懂每一个单词",
+        "B. 抓住关键信息和主旨大意",
+        "C. 把内容逐字翻译成中文",
+        "D. 记下所有内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0197",
+      "item_type": "choice",
+      "stem": "【听力（2年级）·听连续多步指令并按序完成·完形】听一段关于校园活动的对话，选择最合适的选项填空。\nA: What are we going to do after class?\nB: Let's ______ on the playground. The weather is fine.\nA: Sounds good! I'll bring my basketball.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.55,
+      "solution": "let's + 动词原形，球类前不加冠词。play basketball 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. play basketball",
+        "B. play the basketball",
+        "C. playing basketball",
+        "D. played basketball"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0198",
+      "item_type": "fill",
+      "stem": "【听力（2年级）·听连续多步指令并按序完成·填空】听一段短对话并填空（用听到的内容作答）。\n对话中说话人 A 计划周末去 ______，原因是 ______。",
+      "answer": "(依据听力内容填写，例如：the library / to prepare for the exam)",
+      "kps": [
+        "kp_eng2_lis2_command_seq"
+      ],
+      "difficulty": 0.65,
+      "solution": "听力填空题，依据所听内容提取关键信息作答。听懂含两个以上动作的连续指令，按先后顺序正确完成。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0199",
+      "item_type": "choice",
+      "stem": "【听力（2年级）·听懂小故事的事件顺序】听力练习中要有效把握\"听懂小故事的事件顺序\"，下列做法最关键的是(    )",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.45,
+      "solution": "听力理解的关键是抓住主旨大意和关键信息，过度纠结单词反而影响理解。在图片顺序提示下听懂三幅图构成的小故事，能按发生的先后顺序排图并简单复述。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听懂每一个单词",
+        "B. 抓住关键信息和主旨大意",
+        "C. 把内容逐字翻译成中文",
+        "D. 记下所有内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0200",
+      "item_type": "choice",
+      "stem": "【听力（2年级）·听懂小故事的事件顺序·完形】听一段关于校园活动的对话，选择最合适的选项填空。\nA: What are we going to do after class?\nB: Let's ______ on the playground. The weather is fine.\nA: Sounds good! I'll bring my basketball.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.55,
+      "solution": "let's + 动词原形，球类前不加冠词。play basketball 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. play basketball",
+        "B. play the basketball",
+        "C. playing basketball",
+        "D. played basketball"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0201",
+      "item_type": "fill",
+      "stem": "【听力（2年级）·听懂小故事的事件顺序·填空】听一段短对话并填空（用听到的内容作答）。\n对话中说话人 A 计划周末去 ______，原因是 ______。",
+      "answer": "(依据听力内容填写，例如：the library / to prepare for the exam)",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.65,
+      "solution": "听力填空题，依据所听内容提取关键信息作答。在图片顺序提示下听懂三幅图构成的小故事，能按发生的先后顺序排图并简单复述。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0202",
+      "item_type": "choice",
+      "stem": "【策略（2年级）·保持对英语学习的兴趣】运用\"保持对英语学习的兴趣\"这一学习策略时，最有效的做法是(    )\nA. 只用一种策略，从不调整\nB. 结合自身实际灵活选择、持续反思与调整\nC. 完全模仿他人策略\nD. 策略不重要，靠天赋即可",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.4,
+      "solution": "学习策略应结合实际、灵活选择并持续反思调整。对英语学习有兴趣，乐于参加英语游戏、唱歌、表演等学习活动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只用一种策略",
+        "B. 结合实际、灵活调整",
+        "C. 完全模仿他人",
+        "D. 靠天赋即可"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0203",
+      "item_type": "choice",
+      "stem": "【策略（2年级）·保持对英语学习的兴趣·完形填空】阅读下面关于学习策略的短文，选择最合适的词填入空格。\nWhen learning English, we should try different ______ (方法). If one doesn't work, we can ______ (尝试) another. The most important thing is to keep ______ (练习) every day.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.5,
+      "solution": "methods 与\"策略\"对应，句子结构通顺，语义完整。",
+      "source": "llm_generated",
+      "options": [
+        "A. methods",
+        "B. mistakes",
+        "C. meanings",
+        "D. meetings"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0204",
+      "item_type": "fill",
+      "stem": "【策略（2年级）·保持对英语学习的兴趣·填空】结合自身实际，写出 2 个运用\"保持对英语学习的兴趣\"策略学习英语的具体做法。\n做法1：______\n做法2：______",
+      "answer": "(学生按要求作答)",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.6,
+      "solution": "策略运用训练，考察对\"保持对英语学习的兴趣\"的可操作性理解。对英语学习有兴趣，乐于参加英语游戏、唱歌、表演等学习活动。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0205",
+      "item_type": "choice",
+      "stem": "【策略（2年级）·在新旧知识之间建立联系】运用\"在新旧知识之间建立联系\"这一学习策略时，最有效的做法是(    )\nA. 只用一种策略，从不调整\nB. 结合自身实际灵活选择、持续反思与调整\nC. 完全模仿他人策略\nD. 策略不重要，靠天赋即可",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.4,
+      "solution": "学习策略应结合实际、灵活选择并持续反思调整。把学过的旧词与新词、旧歌谣与新对话联系起来，借助熟悉内容学习新内容。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只用一种策略",
+        "B. 结合实际、灵活调整",
+        "C. 完全模仿他人",
+        "D. 靠天赋即可"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0206",
+      "item_type": "choice",
+      "stem": "【策略（2年级）·在新旧知识之间建立联系·完形填空】阅读下面关于学习策略的短文，选择最合适的词填入空格。\nWhen learning English, we should try different ______ (方法). If one doesn't work, we can ______ (尝试) another. The most important thing is to keep ______ (练习) every day.",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.5,
+      "solution": "methods 与\"策略\"对应，句子结构通顺，语义完整。",
+      "source": "llm_generated",
+      "options": [
+        "A. methods",
+        "B. mistakes",
+        "C. meanings",
+        "D. meetings"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0207",
+      "item_type": "fill",
+      "stem": "【策略（2年级）·在新旧知识之间建立联系·填空】结合自身实际，写出 2 个运用\"在新旧知识之间建立联系\"策略学习英语的具体做法。\n做法1：______\n做法2：______",
+      "answer": "(学生按要求作答)",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.6,
+      "solution": "策略运用训练，考察对\"在新旧知识之间建立联系\"的可操作性理解。把学过的旧词与新词、旧歌谣与新对话联系起来，借助熟悉内容学习新内容。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0208",
+      "item_type": "choice",
+      "stem": "【语音（2年级）·单词音节的初步感知与拍读】关于\"单词音节的初步感知与拍读\"，下列说法正确的是(    )\nA. 语音不重要，说不清没关系\nB. 语音影响表达效果，需要模仿练习\nC. 只要会用音标就行\nD. 不必在意语调",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.4,
+      "solution": "语音是表达的重要载体，语音清晰、语调自然有助于有效交流。在单词和短句中初步感知音节，能按音节拍读简单单词，感受英语的节奏起伏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说不清没关系",
+        "B. 模仿练习提升",
+        "C. 只用音标",
+        "D. 不必在意语调"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0209",
+      "item_type": "choice",
+      "stem": "【语音（2年级）·单词音节的初步感知与拍读·多选】训练英语\"单词音节的初步感知与拍读\"时，可以采用的有效方法有（多选）：",
+      "answer": "A,B,C",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.5,
+      "solution": "A、B、C 是语音训练的有效方法；D 错——语音不能仅靠拼写掌握。",
+      "source": "llm_generated",
+      "options": [
+        "A. 跟读模仿标准发音",
+        "B. 大声朗读并录音对比",
+        "C. 模仿语调、节奏",
+        "D. 完全靠书面拼写"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0210",
+      "item_type": "fill",
+      "stem": "【语音（2年级）·单词音节的初步感知与拍读·填空】听一段录音，写出听到的单词或短语（注意重音与节奏）。\n听到的内容：______",
+      "answer": "(依据听到的内容填写)",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.6,
+      "solution": "听辨训练，考察对\"单词音节的初步感知与拍读\"语音的辨识。在单词和短句中初步感知音节，能按音节拍读简单单词，感受英语的节奏起伏。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0211",
+      "item_type": "choice",
+      "stem": "【语用（2年级）·致谢与回应致谢】在\"致谢与回应致谢\"情境下，最得体的表达选择是(    )\nA. 任何场合都用同样的方式表达\nB. 根据场合、对象和情感距离选择合适表达\nC. 直接把中文翻译成英文\nD. 越简短越好，不必考虑礼貌",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.45,
+      "solution": "语用知识要求根据情境选择得体表达，体现对场合、对象、情感距离的敏感性。在获得帮助、收到礼物时说 Thank you，并以 You're welcome. / That's OK. 等作出回应。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一成不变",
+        "B. 根据场合选择",
+        "C. 直译中文",
+        "D. 越简短越好"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0212",
+      "item_type": "choice",
+      "stem": "【语用（2年级）·致谢与回应致谢·应用文填空】补全下列对话，体现\"致谢与回应致谢\"的得体表达。\n（场景：在图书馆，你想要借一本英语词典）\nA: Excuse me, ______?\nB: Sure. Please fill in this form first.",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.55,
+      "solution": "B 项使用委婉礼貌的请求结构，符合图书馆场合的得体表达。",
+      "source": "llm_generated",
+      "options": [
+        "A. Give me the dictionary",
+        "B. Could I borrow an English dictionary, please?",
+        "C. I want the dictionary",
+        "D. Dictionary, here."
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0213",
+      "item_type": "choice",
+      "stem": "【语用（2年级）·致谢与回应致谢·多选】关于\"致谢与回应致谢\"的语用原则，下列描述正确的有（多选）：",
+      "answer": "A,B,D",
+      "kps": [
+        "kp_eng2_prg2_thanks"
+      ],
+      "difficulty": 0.65,
+      "solution": "A、B、D 是语用基本原则；C 错——英语与中文在表达习惯上有差异。",
+      "source": "llm_generated",
+      "options": [
+        "A. 表达要考虑场合与对象",
+        "B. 语气应自然、得体",
+        "C. 与中文表达习惯完全一致",
+        "D. 注意文化差异，避免冒犯"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0214",
+      "item_type": "choice",
+      "stem": "【说·（2年级）·介绍自己的家庭】用英语进行\"介绍自己的家庭\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0215",
+      "item_type": "choice",
+      "stem": "【说·（2年级）·介绍自己的家庭·应用文填空】补全下列对话，使对话自然流畅地完成\"介绍自己的家庭\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0216",
+      "item_type": "fill",
+      "stem": "【说·（2年级）·介绍自己的家庭·应用文】请围绕\"介绍自己的家庭\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。用简短句子介绍自己的家庭成员，如 This is my… / He is my….",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0217",
+      "item_type": "choice",
+      "stem": "【说·（2年级）·独立演唱英语歌曲】用英语进行\"独立演唱英语歌曲\"任务时，下列做法有助于达成目标的是(    )(多选)",
+      "answer": "A,B,C,E",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.45,
+      "solution": "A、B、C、E 都是有效的口语策略；D 完全背诵稿会导致不自然，缺乏交际性。",
+      "source": "llm_generated",
+      "options": [
+        "A. 提前组织语言、打草稿",
+        "B. 注意语音语调、节奏自然",
+        "C. 大胆开口、不怕出错",
+        "D. 完全依赖背诵稿",
+        "E. 关注交流对象与情境"
+      ],
+      "form": "mcq_multi",
+      "answer_mode": "subset",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0218",
+      "item_type": "choice",
+      "stem": "【说·（2年级）·独立演唱英语歌曲·应用文填空】补全下列对话，使对话自然流畅地完成\"独立演唱英语歌曲\"任务。\nA: Hi, can you ______?\nB: Sure, I'd love to. When and where?\nA: This Saturday afternoon at the school library.",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.55,
+      "solution": "根据下文答语\"Sure, I'd love to. When and where?\"，A 句应为邀请对方参加活动。join our reading club 符合语境。",
+      "source": "llm_generated",
+      "options": [
+        "A. tell me the way to the library",
+        "B. help me with my homework",
+        "C. join our reading club",
+        "D. lend me your dictionary"
+      ],
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0219",
+      "item_type": "fill",
+      "stem": "【说·（2年级）·独立演唱英语歌曲·应用文】请围绕\"独立演唱英语歌曲\"主题，用 3-5 句英语写一段口头表达稿。\n提示：开头自我介绍 → 表达观点 → 给出理由 → 总结。",
+      "answer": "(学生按要求写一段口头表达稿)",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.65,
+      "solution": "口语任务写作训练，考察在具体情境中组织语言的能力。能独立完整唱出学过的英语歌曲，吐字清楚、节奏稳定。",
+      "source": "llm_generated",
+      "form": "writing",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0220",
+      "item_type": "choice",
+      "stem": "【词汇（2年级）·clothes】要真正掌握\"衣物与日用品词块\"这一词汇目标，关键做法是(    )\n（以衣物与日用品词块为例，结合语境反复运用该词块，听说读写并重）",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.4,
+      "solution": "词汇目标要求多维掌握——既会认读又会听说写用。听说 coat、shoes、hat、bag 等衣物和日用品词块，能说出并按指令找到相应物品。",
+      "source": "llm_generated",
+      "options": [
+        "A. 听说读写综合训练、语境运用",
+        "B. 只需背诵词典释义即可",
+        "C. 等到考试再突击记忆",
+        "D. 认得就行不必说出来"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0221",
+      "item_type": "choice",
+      "stem": "【词汇（2年级）·clothes】用英语写作时，Anna想用上\"衣物与日用品词块\"相关词块，下列句子最自然贴切的是(    )\nA. We visited the school last Sunday and saw many pictures on the wall.\nB. We visited the museum last Sunday and saw many 衣物与日用品词块 on the wall.\nC. We visited the 衣物与日用品词块 last Sunday and saw many picture on the wall.\nD. We 衣物与日用品词块 the museum last Sunday and saw many pictures on the wall.",
+      "answer": "B",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.5,
+      "solution": "B 项使用\"衣物与日用品词块\"相关词块作宾语并保持 pictures 复数形式，语义与语境一致；A 缺词块，C picture 单复数错，D 短语搭配不当。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选 A 的内容",
+        "B. 选 B 的内容",
+        "C. 选 C 的内容",
+        "D. 选 D 的内容"
+      ],
+      "form": "multiple_choice",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens02_0222",
+      "item_type": "fill",
+      "stem": "【词汇（2年级）·clothes·填空】阅读下面短文，用所给汉语提示写出正确的英语词块。\nDavid likes travelling. Last year, his family went to Los Angeles and saw many famous ______（衣物与日用品词块）.\n（用括号内提示的英语词块作答，注意拼写和单复数）",
+      "answer": "衣物与日用品词块",
+      "kps": [
+        "kp_eng2_voc2_clothes"
+      ],
+      "difficulty": 0.6,
+      "solution": "按括号提示，结合\"衣物与日用品词块\"的核心词写出正确英语词块，注意名词单复数与拼写。听说 coat、shoes、hat、bag 等衣物和日用品词块，能说出并按指令找到相应物品。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_en_prim_0029",
+      "item_type": "choice",
+      "stem": "下列 4 个大小写字母配对中，书写规范且匹配正确的是（　　）\nA. b—B  \nB. d—D  \nC. p—P  \nD. q—Q",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.25,
+      "solution": "PEP 字母写法中只有小写 p 与大写 P 的笔画结构最匹配，b/B、d/D、q/Q 都不一致。",
+      "source": "llm_generated",
+      "options": [
+        "A. b—B",
+        "B. d—D",
+        "C. p—P",
+        "D. q—Q"
+      ],
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0030",
+      "item_type": "fill",
+      "stem": "按字母表顺序，写出 G 后面的 3 个连续字母（大写）：____",
+      "answer": "H, I, J",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.4,
+      "solution": "字母表顺序中 G 后是 H、I、J。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0032",
+      "item_type": "fill",
+      "stem": "听教师拍读单词 \"banana\"（ba-na-na），写出这个单词共有几个音节：____",
+      "answer": "3",
+      "kps": [
+        "kp_eng2_pha2_syllable"
+      ],
+      "difficulty": 0.4,
+      "solution": "banana 拆分为 ba-na-na 共 3 个音节。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0038",
+      "item_type": "fill",
+      "stem": "听故事：\"First, Tom is sad. Next, he looks for the cat. Finally, Mum finds it.\" 故事最后作者的心情最可能是：____",
+      "answer": "happy",
+      "kps": [
+        "kp_eng2_lis2_story_seq"
+      ],
+      "difficulty": 0.4,
+      "solution": "猫被找到后，Tom 应感到开心，对应英文 happy。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0039",
+      "item_type": "fill",
+      "stem": "补全句子介绍家人：\"This is my ____. He is my father.\"（写出一个表示家庭身份的词）____",
+      "answer": "dad",
+      "kps": [
+        "kp_eng2_spk2_intro_family"
+      ],
+      "difficulty": 0.25,
+      "solution": "介绍父亲可用 dad / father。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0041",
+      "item_type": "fill",
+      "stem": "学唱字母歌时，写出其中一句歌词（任写一个完整小节，不少于 4 个词）：____",
+      "answer": "A B C D E F G",
+      "kps": [
+        "kp_eng2_spk2_sing_alone"
+      ],
+      "difficulty": 0.25,
+      "solution": "字母歌经典歌词 A B C D E F G。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0043",
+      "item_type": "solve",
+      "stem": "在表演小故事 \"The Very Hungry Caterpillar\" 时，你扮演 caterpillar。请写一句你的台词（不少于 3 个英文单词）：____",
+      "answer": "I'm so hungry!",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.25,
+      "solution": "扮演毛毛虫可用 I'm so hungry! 等台词。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0044",
+      "item_type": "fill",
+      "stem": "表演故事时同伴说：\"Hello, I'm a little cat.\" 你扮演小狗，最合适的回应是：____",
+      "answer": "Hello, I'm a little dog.",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.4,
+      "solution": "回应介绍应保持角色一致：Hello, I'm a little dog.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0045",
+      "item_type": "choice",
+      "stem": "下列哪项安排最符合\"每周英语视听不少于 20 分钟\"的要求？（　　）\nA. 每天看 3 分钟英语动画  \nB. 每周只听一次，每次 5 分钟  \nC. 每周 4 次，每次听看 5 分钟英语  \nD. 从不看英语动画",
+      "answer": "C",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.25,
+      "solution": "每周 4 次 × 5 分钟 = 20 分钟，达标且分散进行更合理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每天看 3 分钟英语动画",
+        "B. 每周只听一次，每次 5 分钟",
+        "C. 每周 4 次，每次听看 5 分钟英语",
+        "D. 从不看英语动画"
+      ],
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0046",
+      "item_type": "fill",
+      "stem": "完成句子，描述你的英语视听计划：\"I watch English cartoon for ____ minutes every week.\"",
+      "answer": "20",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.4,
+      "solution": "预备级要求每周视听不少于 20 分钟。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0049",
+      "item_type": "fill",
+      "stem": "你学过 apple，现在学 banana。用一句新方法两个词编一句口诀（不少于 4 个英文词）：____",
+      "answer": "An apple and a banana are fruit.",
+      "kps": [
+        "kp_eng2_lsm2_link_oldnew"
+      ],
+      "difficulty": 0.25,
+      "solution": "把新旧词用 and 连接形成口诀，如 Apple and banana.",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=proposed_ok; answer replaced by independent blind solution",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_en_prim_0052",
+      "item_type": "fill",
+      "stem": "写出 1 个你喜欢参加的英语学习活动：____",
+      "answer": "English songs",
+      "kps": [
+        "kp_eng2_lsm2_interest"
+      ],
+      "difficulty": 0.4,
+      "solution": "如 English songs / English games / English stories。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "eng-arb-step5-20261004"
+        ],
+        "single_agent": true,
+        "note": "arbitrated from arbitration_queue_en.json; verdict=key_ok",
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "eng_dens03_0020",
+      "item_type": "choice",
+      "stem": "下列哪组小写字母是按字母表先后顺序排列的？（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_eng2_pha2_order"
+      ],
+      "difficulty": 0.3,
+      "solution": "字母表顺序 a b c d e f g h i j k…；A 项 e→g→i 依次靠后，正确；B 项倒序，C、D 两项中均有字母错位。",
+      "source": "llm_generated",
+      "options": [
+        "A. e, g, i",
+        "B. h, f, d",
+        "C. j, i, k",
+        "D. b, d, c"
+      ],
+      "form": "字母顺序",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0021",
+      "item_type": "solve",
+      "stem": "表演故事《拔萝卜》（The Enormous Turnip）时，你扮演 grandpa。萝卜拔不动，你想叫老奶奶来帮忙，请写出你的台词（不少于 3 个英文单词）：____",
+      "answer": "参考台词：Come here, Grandma! Please help me pull the turnip!（含呼语+请求，不少于 3 词即可，如 “Grandma, come and help me, please!” 亦可）",
+      "kps": [
+        "kp_eng2_spk2_story_perform"
+      ],
+      "difficulty": 0.35,
+      "solution": "角色台词要符合情节需要：先称呼对方，再发出请求；用 come、please 等词表达求助，语气自然响亮。",
+      "source": "llm_generated",
+      "form": "故事表演",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "eng_dens03_0022",
+      "item_type": "solve",
+      "stem": "班级开展“每周英语视听不少于 20 分钟”活动。请用英语写出你的视听安排（不少于 8 个英文词），写清每周几次、每次多长时间、看或听什么：____",
+      "answer": "参考答案：I watch English cartoons three times a week, and I watch for ten minutes every time.（示例：次数×每次时长不少于 20 分钟、说清视听内容即可，如 “I listen to English songs twice a week, fifteen minutes each time.”）",
+      "kps": [
+        "kp_eng2_vie2_20min"
+      ],
+      "difficulty": 0.4,
+      "solution": "用频率短语（once/twice/three times a week）与时长（minutes）表达计划；核算“次数×每次时长≥20 分钟”即符合活动要求。",
+      "source": "llm_generated",
+      "form": "视听计划表达",
+      "verification": {
+        "agents": [
+          "eng-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

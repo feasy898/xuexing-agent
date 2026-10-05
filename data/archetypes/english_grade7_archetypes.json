@@ -1,0 +1,71 @@
+{
+  "subject": "english",
+  "grade_band": [7, 8, 9],
+  "note": "七年级英语母题库（三级起步）：阅读理解主旨大意题、构词法与语境猜词、现在完成时、被动语态、定语从句入门、听力对话场景推断、邀请函写作、编写小故事等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade7.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g7_reading_gist",
+      "name": "阅读理解主旨大意题（标题与中心思想）",
+      "pattern": "典型情境：读完一篇 200—300 词的记叙文或说明文，从四个选项中选出最佳标题或概括主旨。通法：三步锁定中心——①略读抓“骨架”：首段末句与各段首句多为主题句，末段常点题；②数“高频词”：反复出现的名词/动词群就是话题核心（一篇里 school、teacher、students 反复出现，话题必是校园生活）；③验“覆盖度”：正确答案能覆盖全文而非某段细节，选项若只对应首段例子或某个数据即为细节干扰项；标题题还要检查“简洁性”，过长的句子式选项多为干扰。切忌逐词精读后再概括，先看题干带着“选标题”任务略读。",
+      "example": "例：读短文选最佳标题。短文大意：Jack 每天乘公交上学，一天在车上看到一位老奶奶提着重袋上车，他立刻让座并帮老人把袋子提到下车处，老人感谢，同学们知道后都为他点赞，他说帮助别人让自己快乐。选项：A. Jack's School Life B. A Happy Bus Trip C. Helping Others Makes Me Happy D. How to Take a Bus。参考答案：C。解析：全文事件线是“让座—帮提袋—被点赞”，高频词 help、happy 在末段点题句 Helping others makes me happy 中出现，该句即中心句；A 项只覆盖首句背景（上学），是细节干扰；B 项“开心的公交之旅”只覆盖事件场景，未点出助人主旨；D 项偏离话题。用“覆盖度”检验：只有 C 能统摄全文，且符合标题简洁、点明道理的要求。",
+      "kp_ids": ["kp_eng7_red7_written_main", "kp_eng7_red7_skim", "kp_eng7_lsm7_reading_strategies"],
+      "variant_axes": ["选标题 → 概括中心思想（main idea）→ 判断写作目的", "主题句显性（首末段点题）→ 隐性（需归纳）", "文体轮换（记叙文/说明文/应用文）", "干扰项类型（细节项/过宽项/无中生有项）专项训练"]
+    },
+    {
+      "id": "arch_eng_g7_word_guess",
+      "name": "猜词题：构词法与上下文线索并用",
+      "pattern": "典型情境：阅读中划出一个生词或旧词新义，要求根据上下文和构词法猜测词义并选择。通法：两条线索链——①构词线索：拆词根词缀，un-/dis-表否定（unhappy 不快乐），-er/-or 表人（teacher），re- 表再次（rewrite 重写），合成词拆两半（class＋room＝教室），由已知零件推整词；②语境线索：看该词前后句的同位解释（or 后的换说法）、举例（such as/for example 后的内容）、因果（because 所以…）、转折（but 前后反义）、指代（this/that 指代内容）。步骤：先定位生词句→向前向后各找一句证据→用证据词替换生词回读验证→再比对选项；选项中与原文语境矛盾或只在字面上像的（如把 butterfly 拆成 butter 黄油）都是陷阱。",
+      "example": "例：猜出划线词词义。句子：Tom was not good at math, but he didn't give up. He spent his free time doing exercise again and again until he could work out the problems. Finally, he made great progress and got an A. The underlined phrase give up means ____. A. 放弃 B. 坚持 C. 担心 D. 匆忙。参考答案：A。解析：but 之后 he didn't give up 与其后 spent…again and again（反复练习）、finally got an A（取得好成绩）构成因果链：不放弃→反复练→得 A；若 give up 意为“坚持”，则 didn't give up 成了“不坚持”，与反复练习的结果矛盾，故选“放弃”。本题同时可用构词线索：up 在短语中无独立含义，只能靠 but 转折句与结果句的语境反推。",
+      "kp_ids": ["kp_eng7_voc7_derive_compound", "kp_eng7_voc7_meaning_function", "kp_eng7_lsm7_reading_strategies"],
+      "variant_axes": ["构词法型（前后缀/合成词）→ 语境型（转折/因果/举例解释）→ 旧词新义", "短语动词猜测（give up / look after）", "选项干扰升级（字面拆解陷阱、近义混淆）", "猜词后回读验证的报告式作答"]
+    },
+    {
+      "id": "arch_eng_g7_present_perfect",
+      "name": "现在完成时辨析（have been to / have gone to 与时间标志）",
+      "pattern": "典型情境：在语境中选择现在完成时或与一般过去时辨析，重点区分 have been to 与 have gone to。通法：三看定答案——①看结构：have/has＋过去分词（gone, seen, visited），过去分词不规则需单独记（go—went—gone）；②看时间标志：already、yet、just、ever、never、so far、for＋段时间、since＋点时间常配完成时；yesterday、last year、two days ago、in 2020 等明确过去时间只能用一般过去时；③看语义：have been to 表示“去过（人已回来）”，have gone to 表示“去了（人还在路上或未归）”，看主语此刻在哪判断；延续动词与 for/since 连用（have lived here for ten years），瞬间动词（buy, die）不能与 for 段时间直接连用。",
+      "example": "例：单项选择。① — Where is Mr. Wang? — He ____ Shanghai on business. A. has been to B. has gone to C. went ② My parents ____ in this city since 2010. A. lived B. have lived C. live ③ I ____ the film last night. A. have seen B. saw C. see 参考答案：① B；② B；③ B。解析：①问“王先生在哪”，答“人在上海未归”，用 has gone to（若是 has been to 则人已回来，与问地点矛盾）；②since 2010 是完成时标志，且 live 是延续动词可与 since 连用，用 have lived；③last night 是明确过去时间，排除完成时，用 saw。三题分别对应“语义辨析—标志词—时态排除”三个考点，作答时先圈时间标志，再判断动作与现在的联系。",
+      "kp_ids": ["kp_eng7_gra7_tense_present_perfect", "kp_eng7_gra7_tense_simple_present", "kp_eng7_gra7_form_meaning_use"],
+      "variant_axes": ["have been to / have gone to 语义辨析", "完成时标志词（already/yet/just/for/since）与过去时标志词对抗", "瞬间动词与 for/since 的兼容改错（buy→have had）", "句型转换（已改成 yet 问句、对划线提问 how long）"]
+    },
+    {
+      "id": "arch_eng_g7_passive_present",
+      "name": "一般现在时被动语态（am/is/are done）",
+      "pattern": "典型情境：把句子由主动改被动，或在语法选择中判断用主动还是被动。通法：三步转换——①找对象：把主动句的宾语提到句首作主语；②加 be：按新主语配 am/is/are（单数 is、复数 are），be 后动词一律用过去分词（make→made, write→written, speak→spoken）；③变否定疑问：not 加在 be 后，疑问句把 be 提前。用被动的两条件：主语是动作承受者＋需要突出对象或不知道执行者（English is spoken in many countries.）。改错常见点：漏 be（The room cleaned yesterday 错）、过去分词误用原形、被动句里再保留宾语。改完后用“主语＋is/are＋及物动词过去分词”框架回读验证。",
+      "example": "例：将下列句子改为被动语态。① People grow rice in the south. ② Many students use computers to study every day. 参考答案：① Rice is grown (by people) in the south. ② Computers are used (by many students) to study every day. 解析：①宾语 rice 升为主语，rice 不可数按单数配 is，grow 的过去分词双写 n 加 grown，执行者 people 无信息量可省去 by people；②宾语 computers 复数配 are，use 的过去分词 used，原句目的状语 to study 位置保留。检验：主语（rice/computers）都是动作承受者，谓语均符合“be＋过去分词”，且句意不变；若写成 Rice is grew 或 Computers are use 即为漏改过去分词的典型错误。",
+      "kp_ids": ["kp_eng7_gra7_voice_present", "kp_eng7_gra7_form_meaning_use", "kp_eng7_gra7_subject_verb_agree"],
+      "variant_axes": ["主动→被动句式转换与 by 短语取舍", "单数/复数主语的 be 选择（is/are）", "不规则过去分词专项（written/spoken/worn）", "主动被动语态选择题（及物动词与语境判断）"]
+    },
+    {
+      "id": "arch_eng_g7_relative_clause",
+      "name": "定语从句入门：关系代词 who/which/that 选择",
+      "pattern": "典型情境：单项选择或语篇填空中选择关系代词并判断从句位置。通法：两步定词——①找先行词：关系代词紧跟的名词是人（the boy, the teacher）用 who/that，是物（the book, the city）用 which/that；②验成分：关系代词在从句中作主语时动词要与先行词一致（The girl who lives next door… 单数 lives），作宾语可省略（the film (that) we saw yesterday）。三注意：先行词人与物并列时用 that（the people and the things that…）；that 与 which 在逗号后（非限制性）不可换；关系词后紧跟动词多为作主语不可省。读长句时用括号把从句括起来，先抓“主干＋从句修饰谁”再解题。",
+      "example": "例：单项选择。① I like the teachers ____ can make their classes interesting. A. which B. who C. what ② The story ____ he told us yesterday was really moving. A. who B. / C. what 参考答案：① B；② B（that/which 或省略均可）。解析：①先行词 teachers 是人，关系代词作从句主语（后面直接跟动词 can make），用 who；which 只指物，what 不能引导定语从句；②先行词 story 是物，he 前的关系代词作 told 的宾语，可用 that/which 也可省略，故选 /。判断路径：先找先行词（teacher 人/story 物）→ 再看关系词后是动词（作主语）还是主语（作宾语）→ 最后核对主谓一致与省略规则。",
+      "kp_ids": ["kp_eng7_gra7_relative_clause_intro", "kp_eng7_gra7_form_meaning_use", "kp_eng7_dis7_cohesion"],
+      "variant_axes": ["先行词是人/物/人物并列的 who/which/that 选择", "关系代词作主语（不可省）与作宾语（可省）", "从句谓语与先行词的主谓一致（one of the boys who…）", "长难句括号法拆解主干训练"]
+    },
+    {
+      "id": "arch_eng_g7_listen_scene",
+      "name": "听力对话场景推断题（地点·职业·关系）",
+      "pattern": "典型情境：听一段 3—5 轮的对话，推断对话发生的地点、说话人的职业或两人关系。通法：场景推断靠“关键词群”而非单点——①地点线索：menu, order（餐厅）；borrow, return, due（图书馆）；take this medicine, twice a day（医院/诊所）；fare, get off（公交）；②职业线索：teacher 对 student 说 hand in homework；waiter 问 Are you ready to order?；nurse 说 Take your temperature；③关系线索：称呼 Mr./Miss＋姓多为客户或师生，直呼名多亲友。听时先读选项圈出不同词（restaurant/library/hospital），对话中命中原词或同义词即锁定；没直接听到地点时，把选项场景代入对话“演一遍”，能自洽的即为答案；注意对话开头第一句往往是身份暴露点。",
+      "example": "例：听对话回答：Where does the conversation probably take place? A. In a restaurant. B. In a library. C. In a hospital. 录音原文：W: Good afternoon. What can I do for you? M: I'd like to borrow some books about science. W: OK. You can keep them for two weeks. Don't forget to return them on time. 参考答案：B。解析：对话中 borrow（借）、keep them for two weeks（借两周）、return them on time（按时归还）构成图书馆场景关键词群，与图书管理员（librarian）身份吻合；A 项干扰词 order、menu 未出现；C 项与内容无关。技巧：读题先圈三个地点的差异场景词，听中命中 borrow/return 即可锁定；首句 What can I do for you? 是服务场景通用开场，必须靠后续实词定位。",
+      "kp_ids": ["kp_eng7_lis7_spoken_gist", "kp_eng7_lis7_visual_support", "kp_eng7_prg7_request_offer"],
+      "variant_axes": ["推断地点 → 推断职业 → 推断人物关系", "关键词群显性 → 需代入验证的间接推断", "3 轮对话 → 5 轮长对话（多信息干扰）", "场景词群分主题积累（餐厅/图书馆/医院/商店/机场）"]
+    },
+    {
+      "id": "arch_eng_g7_invite_letter",
+      "name": "邀请函写作（书面邀请与回复）",
+      "pattern": "典型情境：给朋友/老师写一封 8—12 句的邀请函（生日聚会、班级活动、图书分享），或回复邀请（接受/婉拒）。通法：五段式支架——①称呼（Dear Lucy,）；②开头点目的：I'm writing to invite you to…；③中间三要素：时间（on Saturday, June 21st, at 3 p.m.）、地点（at my home / in the school hall）、活动安排（We will sing songs and play games. First… Then…）；④请求回复：Please let me know if you can come. / I'm looking forward to your reply.；⑤落款（Yours, Li Hua）。回复函固定走“感谢邀请—表明态度—说明理由/补建议”三步：接受则加 I'd love to come；婉拒用 I'm afraid I can't because… 并提出 it's nice of you to invite me。写完检查：要素齐全（时间地点活动三件套）、时态以将来和一般现在为主、每句首字母大写。",
+      "example": "例：假设你是李华，本周六下午在家举办生日聚会，请给外教 Mr. Smith 写一封邀请函（不少于 8 句）。参考答案：Dear Mr. Smith,  I'm Li Hua from Class 3. This Saturday afternoon, I will have a birthday party at my home, and I'm writing to invite you to it. The party will start at 3 p.m. on June 21st and last about two hours. We will sing English songs, play games and share a big cake. My friends from the English club want to talk with you, too. It's not far from our school—just take Bus No. 8 and get off at Park Road. Please let me know if you can come. I'm looking forward to your reply.  Yours,  Li Hua。解析：正文覆盖三要素（时间 at 3 p.m. on June 21st、地点 at my home、活动 sing songs and play games and share a cake），另补充交通信息与回访请求（let me know…reply），结构完整；语气礼貌得体（I'm writing to invite you / looking forward to your reply），符合对老师的正式度。",
+      "kp_ids": ["kp_eng7_wri7_greeting_invite", "kp_eng7_dis7_cohesion", "kp_eng7_cul7_festivals"],
+      "variant_axes": ["发出邀请 → 接受/婉拒回复（说明理由）", "对象变化（朋友·口语化 / 老师·较正式）的语体调整", "三要素缺失改错与补充扩写", "活动安排用 first/then/finally 排序成段"]
+    },
+    {
+      "id": "arch_eng_g7_story_writing",
+      "name": "编写情节完整的小故事（记叙文写作）",
+      "pattern": "典型情境：以图片串或开头句为提示，编写一个 10 句左右、情节较完整的小故事。通法：故事四要素支架——人物（一主一次即可，别贪多）、时间地点（开头一句交代 One sunny morning, in the forest…）、情节（设置一个小麻烦＋两次尝试：but 引出问题，so/then 推进解决）、结局与感受（At last… They were happy. / What a day!）。行文技巧：①动词驱动情节，多用具体动作词（jumped, picked, ran）；②加入一句对话或心理（“Don't worry!” said Mike.）让故事活起来；③时态统一用一般过去时，直接引语内按语境用时态；④句间用 then, after that, suddenly, at last 串链。写完自查：四要素齐全？麻烦—解决闭环？时态一致？首尾呼应？",
+      "example": "例：根据开头句续写一个不少于 8 句的小故事：One Sunday morning, Tom and his sister Mary went to the river to fly a kite. …参考答案（示例）：Suddenly, the wind blew hard and the kite flew away. It landed in a tall tree near the river. Mary began to cry. “Don't worry. Let me help you,” said Tom. He found a long stick and tried to get the kite, but the stick was too short. Then they saw a farmer passing by. They asked him for help. The farmer was tall and kind. He got the kite down easily. Tom and Mary thanked him again and again. They flew the kite happily till dinner time. What a wonderful Sunday! 解析：续写按“麻烦（kite 挂树）—尝试一（长棍太短）—求助（farmer）—解决（取下）—感受（wonderful）”闭环展开；用 suddenly/then 推进情节，插入对话 Don't worry… 增强现场感；全篇一般过去时（blew, landed, found, got），直接引语内用祈使句；结尾感叹句与开头 One Sunday morning 呼应。",
+      "kp_ids": ["kp_eng7_wri7_story", "kp_eng7_dis7_narration_purpose", "kp_eng7_red7_predict"],
+      "variant_axes": ["图片串提示 → 开头句续写 → 四词关键词自由创编", "情节复杂度（一个麻烦 → 麻烦＋错误尝试）", "加入对话与心理描写的要求", "故事讲完后口头概括寓意（What can we learn?）"]
+    }
+  ]
+}

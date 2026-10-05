@@ -1,55 +1,1945 @@
 {
   "items": [
-    {"id": "p6_001", "item_type": "fill", "stem": "计算：4/9 × 3 = ____", "answer": "4/3", "kps": ["kp_p6_fraction_mul"], "difficulty": 0.1, "misconceptions": ["mc_p6_frac_mul_denom"], "solution": "分数乘整数，分子乘整数、分母不变再约分：4×3÷9 = 4/3。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_002", "item_type": "choice", "stem": "下面算式的结果大于 7/8 的是（　）", "options": ["A. 7/8 × 1/3", "B. 7/8 × 5/4", "C. 7/8 × 0", "D. 7/8 × 1"], "answer": "B", "kps": ["kp_p6_fraction_mul"], "difficulty": 0.15, "solution": "一个不为 0 的数乘大于 1 的数，积大于原数；5/4 > 1，所以 7/8×5/4 > 7/8。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_003", "item_type": "fill", "stem": "计算：5/12 × 6/7 = ____", "answer": "5/14", "kps": ["kp_p6_fraction_mul"], "difficulty": 0.2, "misconceptions": ["mc_p6_frac_mul_add"], "solution": "分数乘分数，分子乘分子、分母乘分母再约分：30/84 = 5/14。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_004", "item_type": "choice", "stem": "下面互为倒数的是（　）", "options": ["A. 3/4 和 4/3", "B. 3/4 和 3/4", "C. 0 和 0", "D. 2/5 和 2/5"], "answer": "A", "kps": ["kp_p6_fraction_div"], "difficulty": 0.1, "solution": "乘积是 1 的两个数互为倒数：3/4×4/3 = 1；0 没有倒数。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_005", "item_type": "fill", "stem": "计算：7/9 ÷ 3 = ____", "answer": "7/27", "kps": ["kp_p6_fraction_div"], "difficulty": 0.25, "misconceptions": ["mc_p6_frac_div_int"], "solution": "分数除以整数（0 除外），等于乘这个整数的倒数：7/9×1/3 = 7/27。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_006", "item_type": "fill", "stem": "计算：4/5 ÷ 2/3 = ____", "answer": "6/5", "kps": ["kp_p6_fraction_div"], "difficulty": 0.3, "misconceptions": ["mc_p6_frac_div_flip"], "solution": "除以一个数等于乘它的倒数：4/5×3/2 = 12/10 = 6/5。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_007", "item_type": "fill", "stem": "如果向东走 50 米记作 +50 米，那么向西走 30 米记作____米。", "answer": "-30", "kps": ["kp_p6_negative_numbers"], "difficulty": 0.1, "solution": "向东和向西是相反意义的量，向东记正，向西就记负：-30 米。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_008", "item_type": "choice", "stem": "下面各数中，最小的是（　）", "options": ["A. -2", "B. -5", "C. 0", "D. 1"], "answer": "B", "kps": ["kp_p6_negative_numbers"], "difficulty": 0.2, "solution": "正数大于 0，0 大于负数；两个负数比较，绝对值大的反而小，-5 < -2，所以最小是 -5。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_009", "item_type": "fill", "stem": "____是整数，但它既不是正数，也不是负数。", "answer": "0", "kps": ["kp_p6_negative_numbers"], "difficulty": 0.1, "solution": "0 是正负数的分界，既不是正数也不是负数。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_010", "item_type": "fill", "stem": "把 75% 化成分数（填最简形式）：____", "answer": "3/4", "kps": ["kp_p6_percent"], "difficulty": 0.1, "solution": "75% = 75/100 = 3/4。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_011", "item_type": "fill", "stem": "把 0.25 化成百分数：____", "answer": "25%", "kps": ["kp_p6_percent"], "difficulty": 0.2, "misconceptions": ["mc_p6_percent_convert"], "solution": "小数化百分数，小数点向右移两位再添百分号：0.25 = 25%。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_012", "item_type": "choice", "stem": "下面关于百分率的说法正确的是（　）", "options": ["A. 出勤率的最大值可达 100%", "B. 发芽率的最大值可达 105%", "C. 出粉率的最大值可达 120%", "D. 成活率的最大值可达 110%"], "answer": "A", "kps": ["kp_p6_percent"], "difficulty": 0.4, "solution": "百分率是部分占整体的比例，最大是 100%，不可能超过 100%，所以只有 A 正确。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_013", "item_type": "fill", "stem": "一堆煤有 12 吨，用去它的 3/4，用去了____吨。", "answer": "9", "kps": ["kp_p6_fraction_problem"], "difficulty": 0.1, "solution": "求一个数的几分之几用乘法：12×3/4 = 9（吨）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_014", "item_type": "fill", "stem": "某班男生有 15 人，占全班人数的 3/5，全班共有____人。", "answer": "25", "kps": ["kp_p6_fraction_problem"], "difficulty": 0.25, "solution": "已知一个数的几分之几是多少求这个数，用除法：15÷3/5 = 25（人）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_015", "item_type": "choice", "stem": "甲数是 20，比乙数多 1/4，下面数量关系正确的是（　）", "options": ["A. 乙数×(1+1/4)=甲数", "B. 甲数×(1+1/4)=乙数", "C. 乙数×(1-1/4)=甲数", "D. 甲数×(1-1/4)=乙数"], "answer": "A", "kps": ["kp_p6_fraction_problem"], "difficulty": 0.4, "solution": "把乙数看作单位“1”，甲数比乙数多 1/4，甲数就是乙数的 (1+1/4)，所以乙数×(1+1/4)=甲数。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_016", "item_type": "fill", "stem": "求 12:18 的比值，结果写成最简分数是____。", "answer": "2/3", "kps": ["kp_p6_ratio"], "difficulty": 0.1, "misconceptions": ["mc_p6_ratio_value"], "solution": "求比值用前项除以后项：12÷18 = 2/3。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_017", "item_type": "fill", "stem": "把 0.25:0.75 化简成最简整数比是____。", "answer": "1:3", "kps": ["kp_p6_ratio"], "difficulty": 0.2, "misconceptions": ["mc_p6_ratio_simplify"], "solution": "前项后项同时乘 100 得 25:75，再同时除以 25 得 1:3。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_018", "item_type": "choice", "stem": "比的前项和后项同时乘同一个不为 0 的数，比值（　）", "options": ["A. 一定变大", "B. 一定变小", "C. 不变", "D. 无法确定"], "answer": "C", "kps": ["kp_p6_ratio"], "difficulty": 0.25, "solution": "比的基本性质：前项和后项同时乘相同的数（0 除外），比值不变。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_019", "item_type": "choice", "stem": "把一批大米按 2:3 分给甲、乙两个食堂，下面说法正确的是（　）", "options": ["A. 甲食堂一定分得 20 千克，乙食堂一定分得 30 千克", "B. 甲食堂分得的是乙食堂的 2/3", "C. 两个食堂分得的大米一定相差 1 千克", "D. 乙食堂分得总数的 2/5"], "answer": "B", "kps": ["kp_p6_ratio_distribution"], "difficulty": 0.4, "solution": "按 2:3 分配，甲占 2 份、乙占 3 份，甲是乙的 2/3；总量未知时每份是多少不确定，A、C 错；乙占总数的 3/5，D 错。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_020", "item_type": "fill", "stem": "把 50 个苹果按 2:3 分给甲、乙两人，分得较少的一份有____个。", "answer": "20", "kps": ["kp_p6_ratio_distribution"], "difficulty": 0.1, "solution": "总份数 2+3=5，每份 50÷5=10 个，较少的一份是 2 份：10×2=20（个）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_021", "item_type": "fill", "stem": "把一批零件按 1:2:3 分给甲、乙、丙三个车间，已知甲车间分得 20 个，这批零件一共有____个。", "answer": "120", "kps": ["kp_p6_ratio_distribution"], "difficulty": 0.3, "solution": "甲分得 1 份是 20 个，总份数 1+2+3=6 份，一共 20×6=120（个）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_022", "item_type": "fill", "stem": "解比例 x:4 = 3:12，x 的值是____。", "answer": "1", "kps": ["kp_p6_proportion"], "difficulty": 0.1, "solution": "外项积等于内项积：12x = 4×3 = 12，x = 1。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_023", "item_type": "choice", "stem": "下面哪组数可以组成比例？（　）", "options": ["A. 2、3、4、5", "B. 2、3、4、6", "C. 2、3、5、6", "D. 2、4、5、6"], "answer": "B", "kps": ["kp_p6_proportion"], "difficulty": 0.2, "solution": "能组成比例的四个数满足两两乘积相等：2×6 = 3×4 = 12，所以 B 组可以组成比例。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_024", "item_type": "choice", "stem": "解比例 0.4:x = 1.2:3，x 的值是（　）", "options": ["A. 0.5", "B. 1", "C. 1.5", "D. 2"], "answer": "B", "kps": ["kp_p6_proportion"], "difficulty": 0.3, "solution": "外项积等于内项积：0.4×3 = 1.2x，1.2 = 1.2x，x = 1。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_025", "item_type": "fill", "stem": "一件原价 200 元的衣服打八五折后，售价是____元。", "answer": "170", "kps": ["kp_p6_percent_application"], "difficulty": 0.2, "solution": "八五折就是按原价的 85% 出售：200×85% = 170（元）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_026", "item_type": "fill", "stem": "张阿姨把 5000 元存入银行，定期 2 年，年利率 2.75%，到期后可得利息____元。", "answer": "275", "kps": ["kp_p6_percent_application"], "difficulty": 0.3, "solution": "利息 = 本金×利率×存期：5000×2.75%×2 = 275（元）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_027", "item_type": "choice", "stem": "关于成数、折扣和利息，下列说法正确的是（　）", "options": ["A. 增产二成就是增产 20%", "B. 税率是应纳税额与各种收入（含免税收入）的比率", "C. 一双鞋打八折后是 80 元，原价是 64 元", "D. 利息 = 本金×利率×存期×100%"], "answer": "A", "kps": ["kp_p6_percent_application"], "difficulty": 0.4, "solution": "二成就是 20%，A 正确；B 的“含免税收入”说法不对；打八折后 80 元的原价是 80÷80% = 100 元，C 错；利息公式不必乘 100%，D 错。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_028", "item_type": "choice", "stem": "下列关系中，成正比例关系的是（　）", "options": ["A. 正方形的边长和周长", "B. 圆的半径和面积", "C. 小明的身高和体重", "D. 匀速行驶的汽车，已行驶路程和剩余路程"], "answer": "A", "kps": ["kp_p6_proportional"], "difficulty": 0.2, "solution": "正方形周长÷边长 = 4（一定），成正比例；圆的面积与半径的比值 πr 随半径变化；身高与体重比值不固定；已行驶+剩余 = 总路程（和一定，比值不定），不成正比例。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_029", "item_type": "fill", "stem": "一辆汽车速度一定，2 小时行驶 120 千米。照这样的速度，4 小时行驶____千米。", "answer": "240", "kps": ["kp_p6_proportional"], "difficulty": 0.25, "solution": "速度一定，路程与时间成正比例：120÷2 = 60（千米/时），60×4 = 240（千米）。", "source": "original", "verification": {"agents": ["p56-author-20260930", "p56-reverify-20260930"], "answers_agree": true}},
-    {"id": "p6_030", "item_type": "choice", "stem": "下面表格中的 x 和 y（上下对应），成正比例关系的是（　）", "options": ["A. x：2，3，4，5；y：6，9，12，15", "B. x：1，2，3，4；y：2，3，4，5", "C. x：10，20，30，40；y：50，90，150，200", "D. x：5，10，15，20；y：20，40，60，90"], "answer": "A", "kps": ["kp_p6_proportional"], "difficulty": 0.4, "solution": "A 组 y÷x 都是 3，比值一定，成正比例；B、C、D 组的比值都不固定。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_031", "item_type": "fill", "stem": "一个圆的半径是 2 厘米，它的周长是____厘米（π 取 3.14）。", "answer": "12.56", "kps": ["kp_p6_circle"], "difficulty": 0.1, "solution": "C = 2πr = 2×3.14×2 = 12.56（厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_032", "item_type": "fill", "stem": "一个圆的半径是 5 厘米，它的周长是____厘米（π 取 3.14）。", "answer": "31.4", "kps": ["kp_p6_circle"], "difficulty": 0.2, "solution": "C = 2πr = 2×3.14×5 = 31.4（厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_033", "item_type": "fill", "stem": "一个圆的直径是 10 厘米，它的面积是____平方厘米（π 取 3.14）。", "answer": "78.5", "kps": ["kp_p6_circle"], "difficulty": 0.2, "misconceptions": ["mc_p6_circum_area"], "solution": "半径 10÷2 = 5 厘米，S = πr² = 3.14×25 = 78.5（平方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_034", "item_type": "fill", "stem": "一个圆的直径是 8 厘米，它的面积是____平方厘米（π 取 3.14）。", "answer": "50.24", "kps": ["kp_p6_circle"], "difficulty": 0.3, "solution": "半径 8÷2 = 4 厘米，S = πr² = 3.14×16 = 50.24（平方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_035", "item_type": "choice", "stem": "一个半圆的直径是 10 厘米，它的周长是（　）厘米（π 取 3.14）", "options": ["A. 15.7", "B. 25.7", "C. 31.4", "D. 20.7"], "answer": "B", "kps": ["kp_p6_circle"], "difficulty": 0.3, "misconceptions": ["mc_p6_semi_perim"], "solution": "半圆周长 = 圆周长的一半 + 直径：3.14×10÷2 + 10 = 15.7 + 10 = 25.7（厘米）；A 是漏加直径的结果。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_036", "item_type": "choice", "stem": "一个半圆的直径是 8 厘米，它的周长是（　）厘米（π 取 3.14）", "options": ["A. 12.56", "B. 20.56", "C. 25.12", "D. 16.56"], "answer": "B", "kps": ["kp_p6_circle"], "difficulty": 0.4, "solution": "半圆周长 = 3.14×8÷2 + 8 = 12.56 + 8 = 20.56（厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_037", "item_type": "fill", "stem": "一个圆柱的底面周长是 12.56 厘米，高是 5 厘米，它的侧面积是____平方厘米。", "answer": "62.8", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.1, "solution": "圆柱侧面积 = 底面周长×高：12.56×5 = 62.8（平方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_038", "item_type": "fill", "stem": "一个圆柱的底面半径是 2 厘米，高是 10 厘米，它的侧面积是____平方厘米（π 取 3.14）。", "answer": "125.6", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.2, "solution": "底面周长：2×3.14×2 = 12.56 厘米，侧面积 = 12.56×10 = 125.6（平方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_039", "item_type": "fill", "stem": "一个圆柱的底面积是 20 平方厘米，高是 6 厘米，它的体积是____立方厘米。", "answer": "120", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.2, "solution": "圆柱体积 = 底面积×高：20×6 = 120（立方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_040", "item_type": "fill", "stem": "一个圆柱的底面积是 15 平方厘米，高是 8 厘米，它的体积是____立方厘米。", "answer": "120", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.3, "solution": "圆柱体积 = 底面积×高：15×8 = 120（立方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_041", "item_type": "choice", "stem": "等底等高的圆锥和圆柱，圆锥的体积是圆柱体积的（　）", "options": ["A. 1/2", "B. 1/3", "C. 2/3", "D. 3 倍"], "answer": "B", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.3, "solution": "等底等高的圆锥体积是圆柱体积的 1/3。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_042", "item_type": "choice", "stem": "一个圆柱的体积是 90 立方厘米，与它等底等高的圆锥的体积是（　）立方厘米。", "options": ["A. 30", "B. 45", "C. 270", "D. 60"], "answer": "A", "kps": ["kp_p6_cylinder_cone"], "difficulty": 0.4, "solution": "等底等高的圆锥体积是圆柱的 1/3：90×1/3 = 30（立方厘米）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_043", "item_type": "choice", "stem": "小华看小明在自己北偏东 30° 的方向上，那么小明看小华在（　）方向上。", "options": ["A. 南偏西 30°", "B. 北偏东 30°", "C. 东偏南 30°", "D. 南偏东 30°"], "answer": "A", "kps": ["kp_p6_position_direction"], "difficulty": 0.2, "solution": "观测点互换后方向正好相反：北偏东 30° 的相反方向是南偏西 30°，角度不变。", "source": "original", "verification": {"agents": ["p56-author-20260930", "p56-reverify-20260930"], "answers_agree": true}},
-    {"id": "p6_044", "item_type": "fill", "stem": "以公交站为观测点，超市在它的南偏西 45° 方向 300 米处。反过来，以超市为观测点，公交站在它的____方向。", "answer": "北偏东45°", "kps": ["kp_p6_position_direction"], "difficulty": 0.1, "solution": "观测点互换，方向相反：南偏西 45° 的相反方向是北偏东 45°。", "source": "original", "verification": {"agents": ["p56-author-20260930", "p56-reverify-20260930"], "answers_agree": true}},
-    {"id": "p6_045", "item_type": "choice", "stem": "从家到图书馆的路线是：先向北偏东 40° 方向走 250 米到超市，再向正东方向走 150 米到图书馆。下面说法正确的是（　）", "options": ["A. 从家出发，先向北偏东 40° 方向走 250 米到超市", "B. 从家出发，先向东偏北 40° 方向走 250 米到超市", "C. 从超市出发，向北走 150 米到图书馆", "D. 从超市出发，向西走 150 米到图书馆"], "answer": "A", "kps": ["kp_p6_position_direction"], "difficulty": 0.3, "solution": "第一段从家出发以北为基准向东偏 40°，A 描述正确；B 的基准方向错了；第二段是向正东走 150 米，C、D 都错。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_046", "item_type": "choice", "stem": "扇形统计图最适合表示（　）", "options": ["A. 部分与整体的关系", "B. 数量的多少", "C. 数据的增减变化趋势", "D. 各组数据的排列顺序"], "answer": "A", "kps": ["kp_p6_pie_chart"], "difficulty": 0.1, "solution": "扇形统计图用扇形面积表示各部分占总体的百分比，核心是部分与整体的关系。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_047", "item_type": "fill", "stem": "某小学共有学生 600 人，其中喜欢阅读的占 45%，喜欢阅读的学生有____人。", "answer": "270", "kps": ["kp_p6_pie_chart"], "difficulty": 0.2, "solution": "600×45% = 270（人）。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_048", "item_type": "choice", "stem": "要表示某地区 2021-2024 年每年降水量的变化情况，应选用（　）统计图。", "options": ["A. 条形统计图", "B. 折线统计图", "C. 扇形统计图", "D. 以上都可以"], "answer": "B", "kps": ["kp_p6_pie_chart"], "difficulty": 0.3, "solution": "折线统计图能清楚地反映数据的增减变化趋势，适合表示降水量的变化情况。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_049", "item_type": "fill", "stem": "计算：1+3+5+7+9 = ____", "answer": "25", "kps": ["kp_p6_number_shape"], "difficulty": 0.1, "solution": "从 1 开始的连续 n 个奇数的和等于 n²，n=5 时和为 25。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_050", "item_type": "choice", "stem": "观察数列：1，4，9，16，____。横线上的数是（　）", "options": ["A. 20", "B. 25", "C. 30", "D. 36"], "answer": "B", "kps": ["kp_p6_number_shape"], "difficulty": 0.3, "solution": "这是平方数列，第 n 项是 n²，第 5 项是 5² = 25。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}},
-    {"id": "p6_051", "item_type": "fill", "stem": "算式 1+3+5+7+9 的结果，可以用边长为____的正方形的面积来表示。", "answer": "5", "kps": ["kp_p6_number_shape"], "difficulty": 0.4, "solution": "连续 5 个奇数的和是 5² = 25，正好是边长 5 的正方形的面积。", "source": "llm_generated", "verification": {"agents": ["step-3.7-flash", "p6-reviewer-20260930"], "answers_agree": true}}
+    {
+      "id": "p6_001",
+      "item_type": "fill",
+      "stem": "计算：4/9 × 3 = ____",
+      "answer": "4/3",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.1,
+      "misconceptions": [
+        "mc_p6_frac_mul_denom"
+      ],
+      "solution": "分数乘整数，分子乘整数、分母不变再约分：4×3÷9 = 4/3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_002",
+      "item_type": "choice",
+      "stem": "下面算式的结果大于 7/8 的是（　）",
+      "options": [
+        "A. 7/8 × 1/3",
+        "B. 7/8 × 5/4",
+        "C. 7/8 × 0",
+        "D. 7/8 × 1"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.15,
+      "solution": "一个不为 0 的数乘大于 1 的数，积大于原数；5/4 > 1，所以 7/8×5/4 > 7/8。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_003",
+      "item_type": "fill",
+      "stem": "计算：5/12 × 6/7 = ____",
+      "answer": "5/14",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.2,
+      "misconceptions": [
+        "mc_p6_frac_mul_add"
+      ],
+      "solution": "分数乘分数，分子乘分子、分母乘分母再约分：30/84 = 5/14。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_004",
+      "item_type": "choice",
+      "stem": "下面互为倒数的是（　）",
+      "options": [
+        "A. 3/4 和 4/3",
+        "B. 3/4 和 3/4",
+        "C. 0 和 0",
+        "D. 2/5 和 2/5"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.1,
+      "solution": "乘积是 1 的两个数互为倒数：3/4×4/3 = 1；0 没有倒数。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_005",
+      "item_type": "fill",
+      "stem": "计算：7/9 ÷ 3 = ____",
+      "answer": "7/27",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.25,
+      "misconceptions": [
+        "mc_p6_frac_div_int"
+      ],
+      "solution": "分数除以整数（0 除外），等于乘这个整数的倒数：7/9×1/3 = 7/27。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_006",
+      "item_type": "fill",
+      "stem": "计算：4/5 ÷ 2/3 = ____",
+      "answer": "6/5",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.3,
+      "misconceptions": [
+        "mc_p6_frac_div_flip"
+      ],
+      "solution": "除以一个数等于乘它的倒数：4/5×3/2 = 12/10 = 6/5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_007",
+      "item_type": "fill",
+      "stem": "如果向东走 50 米记作 +50 米，那么向西走 30 米记作____米。",
+      "answer": "-30",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.1,
+      "solution": "向东和向西是相反意义的量，向东记正，向西就记负：-30 米。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_008",
+      "item_type": "choice",
+      "stem": "下面各数中，最小的是（　）",
+      "options": [
+        "A. -2",
+        "B. -5",
+        "C. 0",
+        "D. 1"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.2,
+      "solution": "正数大于 0，0 大于负数；两个负数比较，绝对值大的反而小，-5 < -2，所以最小是 -5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_009",
+      "item_type": "fill",
+      "stem": "____是整数，但它既不是正数，也不是负数。",
+      "answer": "0",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.1,
+      "solution": "0 是正负数的分界，既不是正数也不是负数。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_010",
+      "item_type": "fill",
+      "stem": "把 75% 化成分数（填最简形式）：____",
+      "answer": "3/4",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.1,
+      "solution": "75% = 75/100 = 3/4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_011",
+      "item_type": "fill",
+      "stem": "把 0.25 化成百分数：____",
+      "answer": "25%",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.2,
+      "misconceptions": [
+        "mc_p6_percent_convert"
+      ],
+      "solution": "小数化百分数，小数点向右移两位再添百分号：0.25 = 25%。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_012",
+      "item_type": "choice",
+      "stem": "下面关于百分率的说法正确的是（　）",
+      "options": [
+        "A. 出勤率的最大值可达 100%",
+        "B. 发芽率的最大值可达 105%",
+        "C. 出粉率的最大值可达 120%",
+        "D. 成活率的最大值可达 110%"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.4,
+      "solution": "百分率是部分占整体的比例，最大是 100%，不可能超过 100%，所以只有 A 正确。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_013",
+      "item_type": "fill",
+      "stem": "一堆煤有 12 吨，用去它的 3/4，用去了____吨。",
+      "answer": "9",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.1,
+      "solution": "求一个数的几分之几用乘法：12×3/4 = 9（吨）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_014",
+      "item_type": "fill",
+      "stem": "某班男生有 15 人，占全班人数的 3/5，全班共有____人。",
+      "answer": "25",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.25,
+      "solution": "已知一个数的几分之几是多少求这个数，用除法：15÷3/5 = 25（人）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_015",
+      "item_type": "choice",
+      "stem": "甲数是 20，比乙数多 1/4，下面数量关系正确的是（　）",
+      "options": [
+        "A. 乙数×(1+1/4)=甲数",
+        "B. 甲数×(1+1/4)=乙数",
+        "C. 乙数×(1-1/4)=甲数",
+        "D. 甲数×(1-1/4)=乙数"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.4,
+      "solution": "把乙数看作单位“1”，甲数比乙数多 1/4，甲数就是乙数的 (1+1/4)，所以乙数×(1+1/4)=甲数。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_016",
+      "item_type": "fill",
+      "stem": "求 12:18 的比值，结果写成最简分数是____。",
+      "answer": "2/3",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.1,
+      "misconceptions": [
+        "mc_p6_ratio_value"
+      ],
+      "solution": "求比值用前项除以后项：12÷18 = 2/3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_017",
+      "item_type": "fill",
+      "stem": "把 0.25:0.75 化简成最简整数比是____。",
+      "answer": "1:3",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.2,
+      "misconceptions": [
+        "mc_p6_ratio_simplify"
+      ],
+      "solution": "前项后项同时乘 100 得 25:75，再同时除以 25 得 1:3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_018",
+      "item_type": "choice",
+      "stem": "比的前项和后项同时乘同一个不为 0 的数，比值（　）",
+      "options": [
+        "A. 一定变大",
+        "B. 一定变小",
+        "C. 不变",
+        "D. 无法确定"
+      ],
+      "answer": "C",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.25,
+      "solution": "比的基本性质：前项和后项同时乘相同的数（0 除外），比值不变。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_019",
+      "item_type": "choice",
+      "stem": "把一批大米按 2:3 分给甲、乙两个食堂，下面说法正确的是（　）",
+      "options": [
+        "A. 甲食堂一定分得 20 千克，乙食堂一定分得 30 千克",
+        "B. 甲食堂分得的是乙食堂的 2/3",
+        "C. 两个食堂分得的大米一定相差 1 千克",
+        "D. 乙食堂分得总数的 2/5"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.4,
+      "solution": "按 2:3 分配，甲占 2 份、乙占 3 份，甲是乙的 2/3；总量未知时每份是多少不确定，A、C 错；乙占总数的 3/5，D 错。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_020",
+      "item_type": "fill",
+      "stem": "把 50 个苹果按 2:3 分给甲、乙两人，分得较少的一份有____个。",
+      "answer": "20",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.1,
+      "solution": "总份数 2+3=5，每份 50÷5=10 个，较少的一份是 2 份：10×2=20（个）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_021",
+      "item_type": "fill",
+      "stem": "把一批零件按 1:2:3 分给甲、乙、丙三个车间，已知甲车间分得 20 个，这批零件一共有____个。",
+      "answer": "120",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.3,
+      "solution": "甲分得 1 份是 20 个，总份数 1+2+3=6 份，一共 20×6=120（个）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_022",
+      "item_type": "fill",
+      "stem": "解比例 x:4 = 3:12，x 的值是____。",
+      "answer": "1",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.1,
+      "solution": "外项积等于内项积：12x = 4×3 = 12，x = 1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_023",
+      "item_type": "choice",
+      "stem": "下面哪组数可以组成比例？（　）",
+      "options": [
+        "A. 2、3、4、5",
+        "B. 2、3、4、6",
+        "C. 2、3、5、6",
+        "D. 2、4、5、6"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.2,
+      "solution": "能组成比例的四个数满足两两乘积相等：2×6 = 3×4 = 12，所以 B 组可以组成比例。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_024",
+      "item_type": "choice",
+      "stem": "解比例 0.4:x = 1.2:3，x 的值是（　）",
+      "options": [
+        "A. 0.5",
+        "B. 1",
+        "C. 1.5",
+        "D. 2"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.3,
+      "solution": "外项积等于内项积：0.4×3 = 1.2x，1.2 = 1.2x，x = 1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_025",
+      "item_type": "fill",
+      "stem": "一件原价 200 元的衣服打八五折后，售价是____元。",
+      "answer": "170",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.2,
+      "solution": "八五折就是按原价的 85% 出售：200×85% = 170（元）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_026",
+      "item_type": "fill",
+      "stem": "张阿姨把 5000 元存入银行，定期 2 年，年利率 2.75%，到期后可得利息____元。",
+      "answer": "275",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.3,
+      "solution": "利息 = 本金×利率×存期：5000×2.75%×2 = 275（元）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_027",
+      "item_type": "choice",
+      "stem": "关于成数、折扣和利息，下列说法正确的是（　）",
+      "options": [
+        "A. 增产二成就是增产 20%",
+        "B. 税率是应纳税额与各种收入（含免税收入）的比率",
+        "C. 一双鞋打八折后是 80 元，原价是 64 元",
+        "D. 利息 = 本金×利率×存期×100%"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.4,
+      "solution": "二成就是 20%，A 正确；B 的“含免税收入”说法不对；打八折后 80 元的原价是 80÷80% = 100 元，C 错；利息公式不必乘 100%，D 错。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_028",
+      "item_type": "choice",
+      "stem": "下列关系中，成正比例关系的是（　）",
+      "options": [
+        "A. 正方形的边长和周长",
+        "B. 圆的半径和面积",
+        "C. 小明的身高和体重",
+        "D. 匀速行驶的汽车，已行驶路程和剩余路程"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.2,
+      "solution": "正方形周长÷边长 = 4（一定），成正比例；圆的面积与半径的比值 πr 随半径变化；身高与体重比值不固定；已行驶+剩余 = 总路程（和一定，比值不定），不成正比例。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_029",
+      "item_type": "fill",
+      "stem": "一辆汽车速度一定，2 小时行驶 120 千米。照这样的速度，4 小时行驶____千米。",
+      "answer": "240",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.25,
+      "solution": "速度一定，路程与时间成正比例：120÷2 = 60（千米/时），60×4 = 240（千米）。",
+      "source": "original",
+      "verification": {
+        "agents": [
+          "p56-author-20260930",
+          "p56-reverify-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_030",
+      "item_type": "choice",
+      "stem": "下面表格中的 x 和 y（上下对应），成正比例关系的是（　）",
+      "options": [
+        "A. x：2，3，4，5；y：6，9，12，15",
+        "B. x：1，2，3，4；y：2，3，4，5",
+        "C. x：10，20，30，40；y：50，90，150，200",
+        "D. x：5，10，15，20；y：20，40，60，90"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.4,
+      "solution": "A 组 y÷x 都是 3，比值一定，成正比例；B、C、D 组的比值都不固定。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_031",
+      "item_type": "fill",
+      "stem": "一个圆的半径是 2 厘米，它的周长是____厘米（π 取 3.14）。",
+      "answer": "12.56",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.1,
+      "solution": "C = 2πr = 2×3.14×2 = 12.56（厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_032",
+      "item_type": "fill",
+      "stem": "一个圆的半径是 5 厘米，它的周长是____厘米（π 取 3.14）。",
+      "answer": "31.4",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.2,
+      "solution": "C = 2πr = 2×3.14×5 = 31.4（厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_033",
+      "item_type": "fill",
+      "stem": "一个圆的直径是 10 厘米，它的面积是____平方厘米（π 取 3.14）。",
+      "answer": "78.5",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.2,
+      "misconceptions": [
+        "mc_p6_circum_area"
+      ],
+      "solution": "半径 10÷2 = 5 厘米，S = πr² = 3.14×25 = 78.5（平方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_034",
+      "item_type": "fill",
+      "stem": "一个圆的直径是 8 厘米，它的面积是____平方厘米（π 取 3.14）。",
+      "answer": "50.24",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.3,
+      "solution": "半径 8÷2 = 4 厘米，S = πr² = 3.14×16 = 50.24（平方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_035",
+      "item_type": "choice",
+      "stem": "一个半圆的直径是 10 厘米，它的周长是（　）厘米（π 取 3.14）",
+      "options": [
+        "A. 15.7",
+        "B. 25.7",
+        "C. 31.4",
+        "D. 20.7"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.3,
+      "misconceptions": [
+        "mc_p6_semi_perim"
+      ],
+      "solution": "半圆周长 = 圆周长的一半 + 直径：3.14×10÷2 + 10 = 15.7 + 10 = 25.7（厘米）；A 是漏加直径的结果。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_036",
+      "item_type": "choice",
+      "stem": "一个半圆的直径是 8 厘米，它的周长是（　）厘米（π 取 3.14）",
+      "options": [
+        "A. 12.56",
+        "B. 20.56",
+        "C. 25.12",
+        "D. 16.56"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_circle"
+      ],
+      "difficulty": 0.4,
+      "solution": "半圆周长 = 3.14×8÷2 + 8 = 12.56 + 8 = 20.56（厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_037",
+      "item_type": "fill",
+      "stem": "一个圆柱的底面周长是 12.56 厘米，高是 5 厘米，它的侧面积是____平方厘米。",
+      "answer": "62.8",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.1,
+      "solution": "圆柱侧面积 = 底面周长×高：12.56×5 = 62.8（平方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_038",
+      "item_type": "fill",
+      "stem": "一个圆柱的底面半径是 2 厘米，高是 10 厘米，它的侧面积是____平方厘米（π 取 3.14）。",
+      "answer": "125.6",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.2,
+      "solution": "底面周长：2×3.14×2 = 12.56 厘米，侧面积 = 12.56×10 = 125.6（平方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_039",
+      "item_type": "fill",
+      "stem": "一个圆柱的底面积是 20 平方厘米，高是 6 厘米，它的体积是____立方厘米。",
+      "answer": "120",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.2,
+      "solution": "圆柱体积 = 底面积×高：20×6 = 120（立方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_040",
+      "item_type": "fill",
+      "stem": "一个圆柱的底面积是 15 平方厘米，高是 8 厘米，它的体积是____立方厘米。",
+      "answer": "120",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.3,
+      "solution": "圆柱体积 = 底面积×高：15×8 = 120（立方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_041",
+      "item_type": "choice",
+      "stem": "等底等高的圆锥和圆柱，圆锥的体积是圆柱体积的（　）",
+      "options": [
+        "A. 1/2",
+        "B. 1/3",
+        "C. 2/3",
+        "D. 3 倍"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.3,
+      "solution": "等底等高的圆锥体积是圆柱体积的 1/3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_042",
+      "item_type": "choice",
+      "stem": "一个圆柱的体积是 90 立方厘米，与它等底等高的圆锥的体积是（　）立方厘米。",
+      "options": [
+        "A. 30",
+        "B. 45",
+        "C. 270",
+        "D. 60"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_cylinder_cone"
+      ],
+      "difficulty": 0.4,
+      "solution": "等底等高的圆锥体积是圆柱的 1/3：90×1/3 = 30（立方厘米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_043",
+      "item_type": "choice",
+      "stem": "小华看小明在自己北偏东 30° 的方向上，那么小明看小华在（　）方向上。",
+      "options": [
+        "A. 南偏西 30°",
+        "B. 北偏东 30°",
+        "C. 东偏南 30°",
+        "D. 南偏东 30°"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.2,
+      "solution": "观测点互换后方向正好相反：北偏东 30° 的相反方向是南偏西 30°，角度不变。",
+      "source": "original",
+      "verification": {
+        "agents": [
+          "p56-author-20260930",
+          "p56-reverify-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_044",
+      "item_type": "fill",
+      "stem": "以公交站为观测点，超市在它的南偏西 45° 方向 300 米处。反过来，以超市为观测点，公交站在它的____方向。",
+      "answer": "北偏东45°",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.1,
+      "solution": "观测点互换，方向相反：南偏西 45° 的相反方向是北偏东 45°。",
+      "source": "original",
+      "verification": {
+        "agents": [
+          "p56-author-20260930",
+          "p56-reverify-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_045",
+      "item_type": "choice",
+      "stem": "从家到图书馆的路线是：先向北偏东 40° 方向走 250 米到超市，再向正东方向走 150 米到图书馆。下面说法正确的是（　）",
+      "options": [
+        "A. 从家出发，先向北偏东 40° 方向走 250 米到超市",
+        "B. 从家出发，先向东偏北 40° 方向走 250 米到超市",
+        "C. 从超市出发，向北走 150 米到图书馆",
+        "D. 从超市出发，向西走 150 米到图书馆"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.3,
+      "solution": "第一段从家出发以北为基准向东偏 40°，A 描述正确；B 的基准方向错了；第二段是向正东走 150 米，C、D 都错。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_046",
+      "item_type": "choice",
+      "stem": "扇形统计图最适合表示（　）",
+      "options": [
+        "A. 部分与整体的关系",
+        "B. 数量的多少",
+        "C. 数据的增减变化趋势",
+        "D. 各组数据的排列顺序"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.1,
+      "solution": "扇形统计图用扇形面积表示各部分占总体的百分比，核心是部分与整体的关系。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_047",
+      "item_type": "fill",
+      "stem": "某小学共有学生 600 人，其中喜欢阅读的占 45%，喜欢阅读的学生有____人。",
+      "answer": "270",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.2,
+      "solution": "600×45% = 270（人）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_048",
+      "item_type": "choice",
+      "stem": "要表示某地区 2021-2024 年每年降水量的变化情况，应选用（　）统计图。",
+      "options": [
+        "A. 条形统计图",
+        "B. 折线统计图",
+        "C. 扇形统计图",
+        "D. 以上都可以"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.3,
+      "solution": "折线统计图能清楚地反映数据的增减变化趋势，适合表示降水量的变化情况。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_049",
+      "item_type": "fill",
+      "stem": "计算：1+3+5+7+9 = ____",
+      "answer": "25",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.1,
+      "solution": "从 1 开始的连续 n 个奇数的和等于 n²，n=5 时和为 25。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_050",
+      "item_type": "choice",
+      "stem": "观察数列：1，4，9，16，____。横线上的数是（　）",
+      "options": [
+        "A. 20",
+        "B. 25",
+        "C. 30",
+        "D. 36"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.3,
+      "solution": "这是平方数列，第 n 项是 n²，第 5 项是 5² = 25。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_051",
+      "item_type": "fill",
+      "stem": "算式 1+3+5+7+9 的结果，可以用边长为____的正方形的面积来表示。",
+      "answer": "5",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.4,
+      "solution": "连续 5 个奇数的和是 5² = 25，正好是边长 5 的正方形的面积。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "step-3.7-flash",
+          "p6-reviewer-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_052",
+      "item_type": "fill",
+      "stem": "计算：3/8 × 4/9 = ____",
+      "answer": "1/6",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.2,
+      "solution": "分数乘分数,分子相乘分母相乘再约分：3×4/(8×9) = 12/72 = 1/6。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_053",
+      "item_type": "choice",
+      "stem": "下面各式中,结果最大的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.4,
+      "solution": "A=1/6≈0.167,B=1/3≈0.333,C=1/2=0.5,D=0;最大为 C 的 1/2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1/2 × 1/3",
+        "B. 1/2 × 2/3",
+        "C. 1/2 × 1",
+        "D. 1/2 × 0"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_054",
+      "item_type": "fill",
+      "stem": "计算：2/3 × 3/4 × 4/5 = ____",
+      "answer": "2/5",
+      "kps": [
+        "kp_p6_fraction_mul"
+      ],
+      "difficulty": 0.55,
+      "solution": "三个分数连乘,分子分母分别相乘：2×3×4/(3×4×5) = 24/60 = 2/5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_055",
+      "item_type": "fill",
+      "stem": "计算：6/7 ÷ 3 = ____",
+      "answer": "2/7",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.25,
+      "solution": "分数除以整数（0 除外）,等于乘这个整数的倒数：6/7 × 1/3 = 6/21 = 2/7。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_056",
+      "item_type": "choice",
+      "stem": "下面各组数中,互为倒数的一组是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.45,
+      "solution": "乘积为 1 的两个数互为倒数：0.4×2.5=1;A 满足；B=1.25,C=2.5,D=0.21 均不为 1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0.4 和 2.5",
+        "B. 0.5 和 2.5",
+        "C. 5 和 0.5",
+        "D. 0.7 和 0.3"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_057",
+      "item_type": "fill",
+      "stem": "计算：5/12 ÷ 5/6 = ____",
+      "answer": "1/2",
+      "kps": [
+        "kp_p6_fraction_div"
+      ],
+      "difficulty": 0.6,
+      "solution": "除以一个数等于乘它的倒数：5/12 × 6/5 = 30/60 = 1/2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_058",
+      "item_type": "fill",
+      "stem": "某地白天温度是 12℃,夜间温度比白天低 18℃,夜间温度是____℃。",
+      "answer": "-6",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.2,
+      "solution": "比白天低 18℃,即 12-18 = -6(℃),用负数表示比零低的相反意义的量。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_059",
+      "item_type": "choice",
+      "stem": "下面各数中,最接近 0 的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.4,
+      "solution": "最接近 0 即绝对值最小;|-3|=3,|-1|=1,|2|=2,|5|=5,绝对值最小的是 -1。",
+      "source": "llm_generated",
+      "options": [
+        "A. -3",
+        "B. -1",
+        "C. 2",
+        "D. 5"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_060",
+      "item_type": "fill",
+      "stem": "在数轴上,一个点从 -2 向右移动 5 个单位长度,到达的数是____。",
+      "answer": "3",
+      "kps": [
+        "kp_p6_negative_numbers"
+      ],
+      "difficulty": 0.55,
+      "solution": "数轴上向右移动表示数值变大：-2+5=3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_061",
+      "item_type": "fill",
+      "stem": "把 1/8 化成百分数是____。",
+      "answer": "12.5%",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.25,
+      "solution": "分数化百分数,先把分数化成小数再化百分数：1/8 = 0.125 = 12.5%。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_062",
+      "item_type": "choice",
+      "stem": "下面关于百分数的说法,正确的是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.5,
+      "solution": "百分数表示一个数是另一个数的百分之几,可以大于 100%,如增产二成二=125%;A 错,百分数有特定含义;B 错,分子可以≥100;C 错,百分数可表示多种关系。",
+      "source": "llm_generated",
+      "options": [
+        "A. 分母是 100 的分数都是百分数",
+        "B. 百分数的分子一定小于 100",
+        "C. 百分数只表示部分与整体的关系",
+        "D. 百分数可以大于 100%"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_063",
+      "item_type": "fill",
+      "stem": "在 0.37、37%、3/10、4/7 这四个数中,最大的一个是____。",
+      "answer": "4/7",
+      "kps": [
+        "kp_p6_percent"
+      ],
+      "difficulty": 0.65,
+      "solution": "统一化为小数比较：0.37=0.37,37%=0.37,3/10=0.3,4/7≈0.571;最大的是 4/7。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_064",
+      "item_type": "fill",
+      "stem": "一根绳子长 24 米,剪去它的 1/3,剪去了____米。",
+      "answer": "8",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.2,
+      "solution": "求一个数的几分之几用乘法：24 × 1/3 = 8(米)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_065",
+      "item_type": "choice",
+      "stem": "甲数是 30,乙数比甲数少 1/5,下面数量关系正确的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.45,
+      "solution": "把甲数看作单位\"1\",乙数比甲数少 1/5,乙数就是甲数的 (1-1/5),所以甲数 × (1-1/5) = 乙数。",
+      "source": "llm_generated",
+      "options": [
+        "A. 甲数 × (1 + 1/5) = 乙数",
+        "B. 乙数 × (1 + 1/5) = 甲数",
+        "C. 甲数 × (1 - 1/5) = 乙数",
+        "D. 乙数 × (1 - 1/5) = 甲数"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_066",
+      "item_type": "fill",
+      "stem": "商店运来一批水果,第一天卖出 2/5,第二天卖出 30 千克,刚好卖完。这批水果共有____千克。",
+      "answer": "50",
+      "kps": [
+        "kp_p6_fraction_problem"
+      ],
+      "difficulty": 0.65,
+      "solution": "设共 x 千克,第一天 2x/5,第二天 30 千克,刚好卖完：2x/5 + 30 = x,解得 3x/5 = 30,x = 50。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_067",
+      "item_type": "fill",
+      "stem": "求比值：0.8:1.2 = ____（填最简分数）。",
+      "answer": "2/3",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.2,
+      "solution": "求比值就是前项除以后项：0.8 ÷ 1.2 = 8/12 = 2/3。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_068",
+      "item_type": "choice",
+      "stem": "甲数是乙数的 3 倍,甲数与乙数的比是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.45,
+      "solution": "甲数是乙数的 3 倍,设乙数=1,则甲数=3,甲:乙 = 3:1;B 颠倒了;C 后项不能为 0,D 数值错。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3:1",
+        "B. 1:3",
+        "C. 3:0",
+        "D. 1:4"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_069",
+      "item_type": "fill",
+      "stem": "一个长方形的长是 12 厘米,宽是 8 厘米,长与宽的比是____（填最简整数比）。",
+      "answer": "3:2",
+      "kps": [
+        "kp_p6_ratio"
+      ],
+      "difficulty": 0.55,
+      "solution": "长:宽 = 12:8,前后项同除以最大公因数 4 得 3:2。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_070",
+      "item_type": "fill",
+      "stem": "把 60 本书按 2:3 分给甲、乙两个班,甲班分得____本。",
+      "answer": "24",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.2,
+      "solution": "总份数 2+3=5,每份 60÷5=12 本,甲班 2 份即 12×2=24(本)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_071",
+      "item_type": "choice",
+      "stem": "一种混凝土由水泥、沙子和石子按 1:2:3 配成,要配制 24 吨这种混凝土,需要水泥（　）吨。",
+      "answer": "A",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.45,
+      "solution": "总份数 1+2+3=6,每份 24÷6=4 吨,水泥占 1 份即 4 吨。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 8",
+        "C. 12",
+        "D. 24"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_072",
+      "item_type": "fill",
+      "stem": "学校把 360 本图书按 2:3:4 分给六年级一、二、三班,三班分得图书____本。",
+      "answer": "160",
+      "kps": [
+        "kp_p6_ratio_distribution"
+      ],
+      "difficulty": 0.6,
+      "solution": "总份数 2+3+4=9,每份 360÷9=40 本,三班 4 份即 40×4=160(本)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_073",
+      "item_type": "fill",
+      "stem": "一件商品打七折后售价是 140 元,原价是____元。",
+      "answer": "200",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.25,
+      "solution": "七折即按原价的 70% 出售,原价 × 70% = 140,原价 = 140 ÷ 70% = 200(元)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_074",
+      "item_type": "choice",
+      "stem": "爸爸把 10000 元存入银行,定期 1 年,年利率 1.5%,到期后可得利息（　）元。",
+      "answer": "B",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.45,
+      "solution": "利息 = 本金 × 利率 × 存期 = 10000 × 1.5% × 1 = 150(元)。",
+      "source": "llm_generated",
+      "options": [
+        "A. 15",
+        "B. 150",
+        "C. 1500",
+        "D. 15000"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_075",
+      "item_type": "fill",
+      "stem": "某商品先提价 10% 后,再降价 10%,现在售价是 99 元,原价是____元。",
+      "answer": "100",
+      "kps": [
+        "kp_p6_percent_application"
+      ],
+      "difficulty": 0.65,
+      "solution": "设原价 x 元,提价后 x×1.1,再降价 × 0.9 = 99,即 x×0.99 = 99,x = 100。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_076",
+      "item_type": "fill",
+      "stem": "解比例：x/6 = 2/3,x = ____。",
+      "answer": "4",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.2,
+      "solution": "依据比例的基本性质（内项积=外项积）：3x = 6×2 = 12,x = 4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_077",
+      "item_type": "choice",
+      "stem": "一幅地图的比例尺是 1:300000,图上距离 4 厘米,实际距离是（　）千米。",
+      "answer": "B",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.45,
+      "solution": "实际距离 = 图上距离 × 比例尺分母 = 4×300000 = 1200000 厘米 = 12 千米。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1.2",
+        "B. 12",
+        "C. 120",
+        "D. 1200"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_078",
+      "item_type": "fill",
+      "stem": "解比例：1.5/x = 3/8,x = ____。",
+      "answer": "4",
+      "kps": [
+        "kp_p6_proportion"
+      ],
+      "difficulty": 0.6,
+      "solution": "依据比例的基本性质：3x = 1.5×8 = 12,x = 12÷3 = 4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_079",
+      "item_type": "fill",
+      "stem": "一辆汽车每小时行驶 60 千米,行驶的路程和时间成____比例。",
+      "answer": "正",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.2,
+      "solution": "速度一定时,路程÷时间 = 速度（常量）,两个相关联的量的比值一定,成正比例。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_080",
+      "item_type": "choice",
+      "stem": "下面两个量中,成正比例关系的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.45,
+      "solution": "B 中速度一定,路程/时间=速度（常量）,成正比例;A 长×宽=常量是反比例;C 每天烧×天数=常量是反比例;D 面积÷半径=π×半径(变化),不成正比例。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方形的面积一定,它的长和宽",
+        "B. 速度一定,行驶的路程和时间",
+        "C. 一堆煤,每天烧的吨数和烧的天数",
+        "D. 圆的面积和半径"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_081",
+      "item_type": "fill",
+      "stem": "小明 3 分钟走了 240 步。照这样的速度,5 分钟能走____步。",
+      "answer": "400",
+      "kps": [
+        "kp_p6_proportional"
+      ],
+      "difficulty": 0.6,
+      "solution": "速度一定,路程与时间成正比例：每分钟 240÷3=80 步,5 分钟 80×5=400(步)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_082",
+      "item_type": "fill",
+      "stem": "以学校为观测点,图书馆在学校北偏东 30° 方向上。反过来,以图书馆为观测点,学校在图书馆的____方向上。",
+      "answer": "南偏西30°",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.25,
+      "solution": "观测点互换时方向相反：北偏东 30° 的相反方向是南偏西 30°,角度不变。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_083",
+      "item_type": "choice",
+      "stem": "小亮从家出发,先向正北走 200 米到书店,再向正东走 200 米到学校。下面关于学校相对家的方向,正确的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.45,
+      "solution": "学校相对家既偏北又偏东,落在北偏东方向（东北象限）;B 是反向,C、D 都只反映一个方向。",
+      "source": "llm_generated",
+      "options": [
+        "A. 学校在家的北偏东方向",
+        "B. 学校在家的南偏西方向",
+        "C. 学校在家的正北方向",
+        "D. 学校在家的正东方向"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_084",
+      "item_type": "fill",
+      "stem": "小华从家出发,先向正东走 200 米到超市,再向正南走 100 米到学校。从学校出发回家,先向____走 100 米到超市。",
+      "answer": "正北",
+      "kps": [
+        "kp_p6_position_direction"
+      ],
+      "difficulty": 0.65,
+      "solution": "从学校出发,要沿原来的路返回,先沿\"正南\"的反方向即\"正北\"走 100 米到超市。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_085",
+      "item_type": "fill",
+      "stem": "某校六年级同学最喜欢的运动项目情况用扇形统计图表示：跑步占 35%,球类占 25%,游泳占 20%,其他占 20%。喜欢球类的人数比喜欢跑步的少____个百分点。",
+      "answer": "10",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.25,
+      "solution": "扇形图各百分比反映各类人数占总体的比;喜欢跑步 35%、球类 25%,球类比跑步少 35%-25%=10 个百分点。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_086",
+      "item_type": "choice",
+      "stem": "下面关于扇形统计图特点的描述,正确的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.45,
+      "solution": "扇形统计图用扇形面积表示各部分占总体的百分比,核心是部分与整体的关系;A、C、D 是其他统计图的特点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 扇形统计图能清楚地表示数量的多少",
+        "B. 扇形统计图能清楚地表示各部分数量与总数的关系",
+        "C. 扇形统计图能清楚地表示数量的增减变化",
+        "D. 扇形统计图能清楚地表示数据的具体数值"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_087",
+      "item_type": "fill",
+      "stem": "某农场种植粮食作物 120 公顷,占总种植面积的 60%。这个农场总种植面积是____公顷。",
+      "answer": "200",
+      "kps": [
+        "kp_p6_pie_chart"
+      ],
+      "difficulty": 0.65,
+      "solution": "总种植面积×60% = 120,总种植面积 = 120 ÷ 60% = 200(公顷)。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_088",
+      "item_type": "fill",
+      "stem": "算式 1+3+5+7+9+11+13 = ____。",
+      "answer": "49",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.2,
+      "solution": "从 1 开始的连续 n 个奇数的和 = n²;n=7 时和为 7² = 49。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_089",
+      "item_type": "choice",
+      "stem": "观察下面由三角形组成的'三角形数'序列：1, 3, 6, 10, 15, …。第 8 个三角形数是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.45,
+      "solution": "三角形数第 n 项为 n(n+1)/2;第 8 项 = 8×9÷2 = 36。",
+      "source": "llm_generated",
+      "options": [
+        "A. 21",
+        "B. 28",
+        "C. 36",
+        "D. 45"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p6_090",
+      "item_type": "fill",
+      "stem": "观察数列：1, 9, 25, 49, ____。横线上的数是____。",
+      "answer": "81",
+      "kps": [
+        "kp_p6_number_shape"
+      ],
+      "difficulty": 0.6,
+      "solution": "数列各项为连续奇数的平方：1²=1,3²=9,5²=25,7²=49,9²=81;下一项为 9²=81。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    }
   ]
 }

@@ -1,0 +1,548 @@
+[
+  {
+    "id": "h_svc_001",
+    "item_type": "choice",
+    "stem": "下列关于空间向量的说法中，正确的是（　）",
+    "kps": ["kp_h11_sv_concept"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 空间向量的大小与方向都不确定",
+      "B. 零向量的方向是任意的",
+      "C. 两个空间向量相等当且仅当它们的方向相同",
+      "D. 单位向量的模为 0"
+    ]
+  },
+  {
+    "id": "h_svc_002",
+    "item_type": "choice",
+    "stem": "在正方体 ABCD-A₁B₁C₁D₁ 中，下列向量中与 AB 相等的是（　）",
+    "kps": ["kp_h11_sv_concept"],
+    "difficulty": 0.50,
+    "options": [
+      "A. DC",
+      "B. CD",
+      "C. BA",
+      "D. A₁B₁"
+    ]
+  },
+  {
+    "id": "h_svc_003",
+    "item_type": "choice",
+    "stem": "设 a, b 是两个空间向量，下列说法中错误的是（　）",
+    "kps": ["kp_h11_sv_concept"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 若 a = b，则 |a| = |b|",
+      "B. 若 a 与 b 方向相反，则存在 t > 0 使 a = -t b",
+      "C. 若 |a| = |b|，则 a = b",
+      "D. 零向量与任意向量平行"
+    ]
+  },
+  {
+    "id": "h_svl_001",
+    "item_type": "choice",
+    "stem": "已知 a = (1, 2, 3), b = (4, 5, 6)，则 a + b = （　）",
+    "kps": ["kp_h11_sv_linear"],
+    "difficulty": 0.20,
+    "options": [
+      "A. (5, 7, 9)",
+      "B. (5, 7, 8)",
+      "C. (4, 7, 9)",
+      "D. (5, 6, 9)"
+    ]
+  },
+  {
+    "id": "h_svl_002",
+    "item_type": "choice",
+    "stem": "设 a = (1, -2, 3), b = (-2, 4, 1)，则 2a - b = （　）",
+    "kps": ["kp_h11_sv_linear"],
+    "difficulty": 0.50,
+    "options": [
+      "A. (4, -8, 5)",
+      "B. (0, 0, 5)",
+      "C. (4, -8, 7)",
+      "D. (3, -6, 2)"
+    ]
+  },
+  {
+    "id": "h_svl_003",
+    "item_type": "choice",
+    "stem": "已知空间向量 a, b 满足 a + b = (1, 2, 3), a - b = (3, -2, 1)，则 3a = （　）",
+    "kps": ["kp_h11_sv_linear"],
+    "difficulty": 0.80,
+    "options": [
+      "A. (6, 0, 6)",
+      "B. (6, 0, 3)",
+      "C. (3, 0, 3)",
+      "D. (3, 0, 6)"
+    ]
+  },
+  {
+    "id": "h_svm_001",
+    "item_type": "choice",
+    "stem": "设 a, b 是两个不共线的向量，则与 a, b 共面的向量 p 的形式是（　）",
+    "kps": ["kp_h11_sv_coplanar"],
+    "difficulty": 0.20,
+    "options": [
+      "A. p = xa (x ∈ R)",
+      "B. p = xb (x ∈ R)",
+      "C. p = xa + yb (x, y ∈ R)",
+      "D. p = xa + b (x ∈ R)"
+    ]
+  },
+  {
+    "id": "h_svm_002",
+    "item_type": "choice",
+    "stem": "已知空间三点 A, B, M，若存在实数 t 使 AM = t·AB，则 A, M, B （　）",
+    "kps": ["kp_h11_sv_coplanar"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 三点共线",
+      "B. 三点一定不共线",
+      "C. 三点共面但不共线",
+      "D. 不能确定"
+    ]
+  },
+  {
+    "id": "h_svm_003",
+    "item_type": "choice",
+    "stem": "已知 A, B, C 是空间中不共线的三点，点 D 满足 AD = (1/3)AB + (1/3)AC，则 D 在（　）",
+    "kps": ["kp_h11_sv_coplanar"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 直线 AB 上",
+      "B. 直线 AC 上",
+      "C. 平面 ABC 内",
+      "D. 不能确定"
+    ]
+  },
+  {
+    "id": "h_svd_001",
+    "item_type": "choice",
+    "stem": "已知 |a| = 3, |b| = 4, ⟨a, b⟩ = 60°，则 a·b = （　）",
+    "kps": ["kp_h11_sv_dot"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 6",
+      "B. 6√2",
+      "C. 12",
+      "D. 12√3"
+    ]
+  },
+  {
+    "id": "h_svd_002",
+    "item_type": "choice",
+    "stem": "已知 a ⊥ b, |a| = 3, |b| = 4，则 (a + b)·(a - b) = （　）",
+    "kps": ["kp_h11_sv_dot"],
+    "difficulty": 0.50,
+    "options": [
+      "A. -7",
+      "B. -1",
+      "C. 7",
+      "D. 1"
+    ]
+  },
+  {
+    "id": "h_svd_003",
+    "item_type": "choice",
+    "stem": "已知 |a| = 3, |b| = 2, ⟨a, b⟩ = 120°，则向量 a + b 在 a 方向上的投影长度为（　）",
+    "kps": ["kp_h11_sv_dot"],
+    "difficulty": 0.80,
+    "options": [
+      "A. -2",
+      "B. 1",
+      "C. 2",
+      "D. 4"
+    ]
+  },
+  {
+    "id": "h_svb_001",
+    "item_type": "choice",
+    "stem": "若 e₁, e₂, e₃ 是空间的三个不共面向量，则它们可以构成空间的（　）",
+    "kps": ["kp_h11_sv_basis"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 一组平行向量",
+      "B. 一组共面向量",
+      "C. 一组基底",
+      "D. 一组正交向量"
+    ]
+  },
+  {
+    "id": "h_svb_002",
+    "item_type": "choice",
+    "stem": "已知 e₁, e₂, e₃ 是空间的一个基底，且 a = e₁ + 2e₂ + 3e₃, b = 2e₁ + e₂ + e₃，则 a - b 在基底下的坐标为（　）",
+    "kps": ["kp_h11_sv_basis"],
+    "difficulty": 0.50,
+    "options": [
+      "A. (-1, 1, 2)",
+      "B. (1, -1, 2)",
+      "C. (1, 1, 2)",
+      "D. (-1, 1, -2)"
+    ]
+  },
+  {
+    "id": "h_svb_003",
+    "item_type": "choice",
+    "stem": "设 e₁, e₂, e₃ 是空间的一个基底，e₁', e₂', e₃' 也构成一个基底。若 p = xe₁ + ye₂ + ze₃ = x'e₁' + y'e₂' + z'e₃'，则（　）",
+    "kps": ["kp_h11_sv_basis"],
+    "difficulty": 0.80,
+    "options": [
+      "A. x = x', y = y', z = z'",
+      "B. x, y, z 与 x', y', z' 至少一组相等",
+      "C. x, y, z 与 x', y', z' 一般不相等",
+      "D. x, y, z 与 x', y', z' 必有一个不相等"
+    ]
+  },
+  {
+    "id": "h_svr_001",
+    "item_type": "choice",
+    "stem": "已知 A(1, 2, 3), B(4, 6, 9)，则向量 AB 的坐标为（　）",
+    "kps": ["kp_h11_sv_coord"],
+    "difficulty": 0.20,
+    "options": [
+      "A. (3, 4, 6)",
+      "B. (3, 4, 7)",
+      "C. (3, 5, 6)",
+      "D. (-3, -4, -6)"
+    ]
+  },
+  {
+    "id": "h_svr_002",
+    "item_type": "choice",
+    "stem": "设 A(2, -1, 3), B(4, 2, 1)，则线段 AB 的中点坐标为（　）",
+    "kps": ["kp_h11_sv_coord"],
+    "difficulty": 0.50,
+    "options": [
+      "A. (3, 1/2, 2)",
+      "B. (3, 0, 2)",
+      "C. (6, 1, 4)",
+      "D. (1, 3, -2)"
+    ]
+  },
+  {
+    "id": "h_svr_003",
+    "item_type": "choice",
+    "stem": "已知 a = (1, 2, 3), b = (3, 2, 1), c = (-1, 0, 1)，则 a + 2b - 3c = （　）",
+    "kps": ["kp_h11_sv_coord"],
+    "difficulty": 0.80,
+    "options": [
+      "A. (10, 6, 2)",
+      "B. (10, 6, 1)",
+      "C. (10, 5, 2)",
+      "D. (8, 6, 2)"
+    ]
+  },
+  {
+    "id": "h_svk_001",
+    "item_type": "choice",
+    "stem": "已知 a = (1, 2, 3), b = (-1, 0, 1)，则 a·b = （　）",
+    "kps": ["kp_h11_sv_dot_coord"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 2",
+      "B. -2",
+      "C. 4",
+      "D. 0"
+    ]
+  },
+  {
+    "id": "h_svk_002",
+    "item_type": "choice",
+    "stem": "已知 a = (1, 0, 0), b = (1, 1, 0)，则 ⟨a, b⟩ 的余弦值为（　）",
+    "kps": ["kp_h11_sv_dot_coord"],
+    "difficulty": 0.50,
+    "options": [
+      "A. √3/2",
+      "B. √2/2",
+      "C. √2",
+      "D. 1"
+    ]
+  },
+  {
+    "id": "h_svk_003",
+    "item_type": "choice",
+    "stem": "已知 a = (1, 2, -2), b = (-2, 1, 1)，则 (a + b)·b = （　）",
+    "kps": ["kp_h11_sv_dot_coord"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 4",
+      "B. -4",
+      "C. 6",
+      "D. 0"
+    ]
+  },
+  {
+    "id": "h_svn_001",
+    "item_type": "choice",
+    "stem": "下列说法中正确的是（　）",
+    "kps": ["kp_h11_sv_normal"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 零向量是任何直线的方向向量",
+      "B. 零向量是任何平面的法向量",
+      "C. 平面的法向量不唯一",
+      "D. 直线的方向向量只有一个"
+    ]
+  },
+  {
+    "id": "h_svn_002",
+    "item_type": "choice",
+    "stem": "已知平面 α 内的两个不共线向量 u = (1, 1, 0), v = (1, 0, 1)，则 α 的一个法向量为（　）",
+    "kps": ["kp_h11_sv_normal"],
+    "difficulty": 0.50,
+    "options": [
+      "A. (1, 1, 1)",
+      "B. (1, -1, -1)",
+      "C. (0, 1, 1)",
+      "D. (1, 1, -1)"
+    ]
+  },
+  {
+    "id": "h_svn_003",
+    "item_type": "choice",
+    "stem": "已知平面 α 的一个法向量 n = (1, 2, -2)，则与 α 垂直的直线的一个方向向量为（　）",
+    "kps": ["kp_h11_sv_normal"],
+    "difficulty": 0.80,
+    "options": [
+      "A. (2, 4, -4)",
+      "B. (1, 2, 1)",
+      "C. (1, 1, 1)",
+      "D. (0, 0, 1)"
+    ]
+  },
+  {
+    "id": "h_svp_001",
+    "item_type": "choice",
+    "stem": "已知直线 l 的方向向量 a = (1, 1, 0), 平面 α 的法向量 n = (1, -1, 0), 且 l 不在 α 内，则 l 与 α 的位置关系是（　）",
+    "kps": ["kp_h11_sv_parallel"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 相交且不垂直",
+      "D. l 在 α 内"
+    ]
+  },
+  {
+    "id": "h_svp_002",
+    "item_type": "choice",
+    "stem": "已知直线 l₁, l₂ 的方向向量分别为 a₁ = (1, 2, 3), a₂ = (-2, -4, -6)，则 l₁, l₂ 的位置关系是（　）",
+    "kps": ["kp_h11_sv_parallel"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 平行或重合",
+      "B. 垂直",
+      "C. 相交",
+      "D. 异面"
+    ]
+  },
+  {
+    "id": "h_svp_003",
+    "item_type": "choice",
+    "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 2, 3), n₂ = (2, 4, 6)，则 α, β 的位置关系是（　）",
+    "kps": ["kp_h11_sv_parallel"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 平行或重合",
+      "B. 垂直",
+      "C. 相交不垂直",
+      "D. 既不平行也不垂直"
+    ]
+  },
+  {
+    "id": "h_sve_001",
+    "item_type": "choice",
+    "stem": "已知直线 l₁, l₂ 的方向向量分别为 a₁ = (1, 0, 0), a₂ = (0, 1, 0)，则 l₁, l₂ 的位置关系是（　）",
+    "kps": ["kp_h11_sv_perp"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 相交但不垂直",
+      "D. 不能确定"
+    ]
+  },
+  {
+    "id": "h_sve_002",
+    "item_type": "choice",
+    "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 1, 0), n₂ = (1, -1, 0)，则 α, β 的位置关系是（　）",
+    "kps": ["kp_h11_sv_perp"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 相交但不垂直",
+      "D. 不能确定"
+    ]
+  },
+  {
+    "id": "h_sve_003",
+    "item_type": "choice",
+    "stem": "已知两平面 α, β 的法向量分别为 n₁ = (1, 1, 1), n₂ = (1, -2, 1)，则 α, β 的位置关系是（　）",
+    "kps": ["kp_h11_sv_perp"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 相交但不垂直",
+      "D. 不能确定"
+    ]
+  },
+  {
+    "id": "h_svi_001",
+    "item_type": "choice",
+    "stem": "已知点 A(1, 1, 1), 平面 α: x + y + z + 1 = 0，则 A 到 α 的距离为（　）",
+    "kps": ["kp_h11_sv_distance"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 4√3/3",
+      "B. 4/3",
+      "C. 4",
+      "D. 3√3"
+    ]
+  },
+  {
+    "id": "h_svi_002",
+    "item_type": "choice",
+    "stem": "已知两平行平面 α: x + y + z - 1 = 0, β: x + y + z + 2 = 0，则 α, β 间的距离为（　）",
+    "kps": ["kp_h11_sv_distance"],
+    "difficulty": 0.50,
+    "options": [
+      "A. √3",
+      "B. 3",
+      "C. 3/√3",
+      "D. 1"
+    ]
+  },
+  {
+    "id": "h_svi_003",
+    "item_type": "choice",
+    "stem": "已知异面直线 l₁, l₂ 的公垂线方向 n = (0, 0, 1), l₁ 上的点 P(0, 0, 0), l₂ 上的点 Q(0, 0, 1)，则 l₁ 与 l₂ 间的距离为（　）",
+    "kps": ["kp_h11_sv_distance"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 1",
+      "B. √2",
+      "C. √3",
+      "D. 2"
+    ]
+  },
+  {
+    "id": "h_sva_001",
+    "item_type": "choice",
+    "stem": "已知直线 l 的方向向量 a = (1, 1, 0), 平面 α 的法向量 n = (1, 0, 0)，则 l 与 α 所成角 θ = （　）",
+    "kps": ["kp_h11_sv_angle"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 30°",
+      "B. 45°",
+      "C. 60°",
+      "D. 90°"
+    ]
+  },
+  {
+    "id": "h_sva_002",
+    "item_type": "choice",
+    "stem": "已知平面 α 的法向量 n₁ = (1, 1, 0), 平面 β 的法向量 n₂ = (0, 1, 1)，则二面角 α-l-β 的大小为（　）",
+    "kps": ["kp_h11_sv_angle"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 30°",
+      "B. 45°",
+      "C. 60°",
+      "D. 90°"
+    ]
+  },
+  {
+    "id": "h_sva_003",
+    "item_type": "choice",
+    "stem": "已知直线 l₁, l₂ 的方向向量分别为 a₁ = (1, 1, 0), a₂ = (0, 1, 1)，则 l₁ 与 l₂ 所成角 θ 的余弦值为（　）",
+    "kps": ["kp_h11_sv_angle"],
+    "difficulty": 0.80,
+    "options": [
+      "A. 1/2",
+      "B. √2/2",
+      "C. √3/2",
+      "D. 1"
+    ]
+  },
+  {
+    "id": "h_lsl_001",
+    "item_type": "choice",
+    "stem": "直线 l 经过点 (1, 2) 和 (-1, 4)，则 l 的斜率为（　）",
+    "kps": ["kp_h11_line_slope"],
+    "difficulty": 0.20,
+    "options": [
+      "A. -1",
+      "B. 1",
+      "C. 1/2",
+      "D. -1/2"
+    ]
+  },
+  {
+    "id": "h_lsl_002",
+    "item_type": "choice",
+    "stem": "直线 l 的倾斜角为 135°，则 l 的斜率为（　）",
+    "kps": ["kp_h11_line_slope"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 1",
+      "B. -1",
+      "C. √3",
+      "D. -√3"
+    ]
+  },
+  {
+    "id": "h_lsl_003",
+    "item_type": "choice",
+    "stem": "直线 l 经过点 A(-1, 2), B(3, -2), C(2m, m+2), 若 l 的斜率为 -1，则 m = （　）",
+    "kps": ["kp_h11_line_slope"],
+    "difficulty": 0.80,
+    "options": [
+      "A. -1/3",
+      "B. 1/3",
+      "C. -1",
+      "D. 1"
+    ]
+  },
+  {
+    "id": "h_lpp_001",
+    "item_type": "choice",
+    "stem": "已知 l₁: y = 2x + 1, l₂: y = 2x - 1，则 l₁ 与 l₂ 的位置关系是（　）",
+    "kps": ["kp_h11_line_parallel_perp"],
+    "difficulty": 0.20,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 重合",
+      "D. 相交"
+    ]
+  },
+  {
+    "id": "h_lpp_002",
+    "item_type": "choice",
+    "stem": "直线 l₁ 经过 (1, 2), 斜率为 2, l₂ 经过 (0, 1), 斜率为 -1/2，则 l₁ 与 l₂ 的位置关系是（　）",
+    "kps": ["kp_h11_line_parallel_perp"],
+    "difficulty": 0.50,
+    "options": [
+      "A. 平行",
+      "B. 垂直",
+      "C. 重合",
+      "D. 相交但不垂直"
+    ]
+  },
+  {
+    "id": "h_lpp_003",
+    "item_type": "choice",
+    "stem": "已知 l₁: 2x + y - 1 = 0, l₂: kx - y + 3 = 0, 若 l₁ ⊥ l₂, 则 k = （　）",
+    "kps": ["kp_h11_line_parallel_perp"],
+    "difficulty": 0.80,
+    "options": [
+      "A. -2",
+      "B. 1/2",
+      "C. -1/2",
+      "D. 2"
+    ]
+  }
+]

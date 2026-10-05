@@ -11,6 +11,9 @@
 - --apply：把全部 agree 题的 {"agents": [...], "answers_agree": true} 回填进年级
   源文件（verification 键追加在题 dict 末尾；其余字段与行格式原样保留）。
 
+多学科化（2026-10-02）：年级文件枚举改为 glob 全部 data/items/*.json，
+学科无关（按文件名前缀自然归类 subject）。
+
 用法：
   python tools/dual_agent_verify.py --agent m3-reviewer=key \
       --agent night-reverify-20260929=ledger:data/verification/ledger_night_20260929.json
@@ -18,6 +21,7 @@
 退出码：0=运行成功；2=用法/数据错误。
 """
 import argparse
+import glob
 import json
 import os
 import sys
@@ -34,23 +38,25 @@ from xuexing.dual_verify import (  # noqa: E402
 )
 from xuexing.itembank_v2 import validate_bank_v2  # noqa: E402
 
-GRADE_FILES = {
-    7: os.path.join(ROOT, "data", "items", "math_grade7_items.json"),
-    8: os.path.join(ROOT, "data", "items", "math_grade8_items.json"),
-    9: os.path.join(ROOT, "data", "items", "math_grade9_items.json"),
-}
+ITEMS_GLOB = os.path.join(ROOT, "data", "items", "*.json")
 VERIFICATION_DIR = os.path.join(ROOT, "data", "verification")
 MANIFEST_PATH = os.path.join(VERIFICATION_DIR, "verify_manifest.json")
 QUEUE_PATH = os.path.join(VERIFICATION_DIR, "arbitration_queue.json")
 
 
 def load_grade_files():
-    """[(grade, 原始 dict, items list)] 按年级升序。"""
+    """[(path, 原始 dict, items list)] 按路径升序。
+
+    年级文件枚举改为 glob 全部 data/items/*.json（学科无关，按文件名前缀自然归类 subject）。
+    """
+    paths = sorted(glob.glob(ITEMS_GLOB))
+    if not paths:
+        raise RuntimeError(f"no item files found under {ITEMS_GLOB}")
     out = []
-    for grade in sorted(GRADE_FILES):
-        with open(GRADE_FILES[grade], encoding="utf-8") as f:
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        out.append((grade, data, data["items"]))
+        out.append((path, data, data["items"]))
     return out
 
 
@@ -165,7 +171,7 @@ def main():
         agree_set = set(report.agreed_item_ids)
         records = dict(report.records)
         applied = 0
-        for grade, data, its in grades:
+        for path, data, its in grades:
             changed = False
             for i, it in enumerate(its):
                 if it["id"] in agree_set:
@@ -175,11 +181,12 @@ def main():
             if changed:
                 errs = validate_bank_v2(its)
                 if errs:
-                    print(f"refusing to write grade{grade}: v2 violations {errs[:3]}", file=sys.stderr)
+                    print(f"refusing to write {os.path.relpath(path, ROOT)}: "
+                          f"v2 violations {errs[:3]}", file=sys.stderr)
                     return 2
-                with open(GRADE_FILES[grade], "w", encoding="utf-8", newline="\n") as f:
+                with open(path, "w", encoding="utf-8", newline="\n") as f:
                     f.write(dump_grade(data))
-                print(f"backfilled grade{grade}: {os.path.relpath(GRADE_FILES[grade], ROOT)}")
+                print(f"backfilled {os.path.relpath(path, ROOT)}")
         print(f"applied verification records: {applied}/{len(items)} "
               f"（disagree/incomplete 不回填）")
     return 0

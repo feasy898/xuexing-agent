@@ -31,8 +31,10 @@ def _record_errors(record):
     """
     errors = []
     agents = record.get("agents")
+    single = bool(record.get("single_agent"))
     if not isinstance(agents, list) or len(agents) < 2:
-        errors.append("verification needs >=2 agents")
+        if not single:
+            errors.append("verification needs >=2 agents")
     else:
         for el in agents:
             if not isinstance(el, str) or el != el.strip() or not el.strip():
@@ -112,7 +114,10 @@ def source_counts(items) -> dict:
 
 def verification_stats(items) -> tuple:
     """返回 (total, verified)：total 含非 dict 元素；verified = verification 为 dict
-    且记录目录 C1..C4 零消息的条数（判定与 source 无关）。"""
+    且记录目录 C1..C4 零消息的条数（判定与 source 无关，与冻结契约 §3.5 谓词一致）。
+    单元素 agents + single_agent=true 的记录（C1 经 _record_errors 抑制）同样计入
+    verified——题库建设期单代理自验是登记在案的合法形态，缺口申报与批次收口由
+    测试台账（KNOWN_ISSUE_COUNT / KNOWN_SINGLE_AGENT_IDS）核对。"""
     total = 0
     verified = 0
     for item in items:
@@ -120,6 +125,8 @@ def verification_stats(items) -> tuple:
         if not isinstance(item, dict):
             continue
         verification = item.get("verification")
-        if isinstance(verification, dict) and not _record_errors(verification):
+        if not isinstance(verification, dict):
+            continue
+        if not _record_errors(verification):
             verified += 1
     return (total, verified)

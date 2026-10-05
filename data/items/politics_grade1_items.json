@@ -1,0 +1,3112 @@
+{
+  "items": [
+    {
+      "id": "pol_prim_0001",
+      "item_type": "choice",
+      "stem": "九月一日，小雨背上书包走进小学的大门。成为小学生意味着（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_new_school"
+      ],
+      "difficulty": 0.2,
+      "solution": "成为小学生是成长道路上的新起点，小学生的主要任务是学习知识本领、养成好习惯；A、C、D 的说法都是错误的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人生进入了新的起点，要学习新本领",
+        "B. 只是换了一个玩耍的地方",
+        "C. 和幼儿园的生活完全一样，什么也不用改变",
+        "D. 学习是老师的事，与自己无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0002",
+      "item_type": "solve",
+      "stem": "说一说：升入小学以后，你觉得自己有哪些新的任务？（至少说出两点）",
+      "answer": "①学习新的知识和本领；②遵守学校的纪律，养成好的学习和生活习惯；③认识新老师、新同学，学会与同学友好相处。（答出两点、言之有理即可）",
+      "kps": [
+        "kp_pol1_new_school"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查对小学生身份与主要任务的认识，属开放性简答，答出两点合理任务即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0003",
+      "item_type": "choice",
+      "stem": "课堂上，老师布置了朗读课文的学习任务。下面做法正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_learning_task"
+      ],
+      "difficulty": 0.25,
+      "solution": "小学生应主动学习、认真完成老师布置的学习任务；B、C、D 都是不主动、不认真的表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 让奶奶替自己读一遍",
+        "B. 回家后主动、认真地朗读完成",
+        "C. 心想反正老师不检查，就不读了",
+        "D. 上课时只顾着玩橡皮，不听要求"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0004",
+      "item_type": "solve",
+      "stem": "写一写：老师布置的学习任务，你应该怎样对待？（至少两点）",
+      "answer": "①认真听清老师的要求；②主动、按时完成任务，做完自己检查；③遇到不懂的及时请教老师或家长。（答出两点即可）",
+      "kps": [
+        "kp_pol1_learning_task"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查愿意主动学习、认真完成学习任务的态度与做法，意思对即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0005",
+      "item_type": "choice",
+      "stem": "下课了，同学们到走廊活动。符合校园秩序要求的是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_campus_rule"
+      ],
+      "difficulty": 0.3,
+      "solution": "遵守校园秩序要做到上下楼梯靠右行、不追逐打闹、上课发言先举手、不乱扔垃圾，只有 B 符合要求。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在走廊里追逐打闹",
+        "B. 上课想发言就随便喊出来",
+        "C. 上下楼梯靠右慢慢走",
+        "D. 把废纸随手扔出窗外"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0006",
+      "item_type": "solve",
+      "stem": "班级要制定“课间文明公约”，请你提出两条建议。",
+      "answer": "①课间不追逐打闹，走路轻、说话轻；②上课发言先举手，得到老师同意再说话；③不乱扔垃圾，保持教室整洁。（提出两条合理建议即可）",
+      "kps": [
+        "kp_pol1_campus_rule"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查按学校和班级规则行动的意识，建议具体可行即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0007",
+      "item_type": "choice",
+      "stem": "美术课上，同桌忘带了彩笔急得快哭了。小雨的正确做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_care_classmates"
+      ],
+      "difficulty": 0.35,
+      "solution": "同学之间要互相关爱，同学有困难时应主动帮助，不嘲笑、不孤立同学，B 是关爱同学的表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 嘲笑他真是个小马虎",
+        "B. 号召同学们都别理他",
+        "C. 装作没有看见，继续画自己的",
+        "D. 把自己的彩笔和他一起用"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0008",
+      "item_type": "solve",
+      "stem": "在校园里，我们可以用哪些行动来关爱同学？请写出两点。",
+      "answer": "①见到老师、同学主动问好；②同学忘带文具时借给他用；③同学摔倒或生病时及时扶助并告诉老师；④不嘲笑、不孤立同学。（答出两点即可）",
+      "kps": [
+        "kp_pol1_care_classmates"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查关爱同学的日常行为，答出具体、友好的做法即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0009",
+      "item_type": "choice",
+      "stem": "同学帮小明捡起了掉在地上的橡皮，小明应该说（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_polite_language"
+      ],
+      "difficulty": 0.2,
+      "solution": "得到别人帮助时要自然地使用礼貌用语“谢谢”，A 是正确做法，其余选项没有礼貌。",
+      "source": "llm_generated",
+      "options": [
+        "A. 谢谢你！",
+        "B. 这是你应该做的。",
+        "C. 一言不发地走开",
+        "D. 你怎么现在才捡起来"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0010",
+      "item_type": "solve",
+      "stem": "请写出三个你在生活中常用礼貌用语，并各写出一个使用的情景。",
+      "answer": "示例：①“请”——请同学帮忙递书时说“请帮我递一下书，谢谢”；②“对不起”——不小心碰到别人时说“对不起”；③“没关系”——别人向自己道歉时说“没关系”。（礼貌用语与情景对应、合理即可）",
+      "kps": [
+        "kp_pol1_polite_language"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查礼貌用语的使用，写出三个常用语并情景合理即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0011",
+      "item_type": "choice",
+      "stem": "小组合作搭积木时，大家的热闹做法是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_share_toys"
+      ],
+      "difficulty": 0.25,
+      "solution": "分享与合作要求愿意把玩具与同学一起玩、分工合作，一起做事比一个人做更快乐，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 每人抢一大堆积木自己玩",
+        "B. 把积木分一分，大家一起合作搭",
+        "C. 自己先躲到一边去看别人搭",
+        "D. 搭坏了就把别人的积木踢倒"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0012",
+      "item_type": "solve",
+      "stem": "说说你和小伙伴一起做一件事（如合作游戏、合作打扫）的经历：合作时要注意什么？（至少两点）",
+      "answer": "①愿意分享玩具、材料，不争抢；②商量好分工，听一听别人的想法；③遇到分歧好好说话，不动手；④完成后一起收拾。（答出两点、结合经历合理即可）",
+      "kps": [
+        "kp_pol1_share_toys"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查分享与合作的体验和要求，能结合经历说出合作要点即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0013",
+      "item_type": "choice",
+      "stem": "妈妈的妈妈是我的（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_family_members"
+      ],
+      "difficulty": 0.3,
+      "solution": "妈妈的妈妈是外婆（姥姥），爸爸的妈妈才是奶奶，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 奶奶",
+        "B. 婶婶",
+        "C. 外婆",
+        "D. 阿姨"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0014",
+      "item_type": "solve",
+      "stem": "请介绍你的家庭成员：写出三位家人的称呼，并写一句他们关心你的事。",
+      "answer": "示例：①爸爸——下雨天到学校给我送伞；②妈妈——每天早起给我做早饭；③奶奶——生病时整夜照顾我。（称呼正确、事例能体现家人的关爱即可）",
+      "kps": [
+        "kp_pol1_family_members"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查对家庭成员称呼的了解和对家人关爱的感受，称呼正确、事例合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0015",
+      "item_type": "choice",
+      "stem": "放学过马路时，对面红灯亮了。正确的做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_traffic_light"
+      ],
+      "difficulty": 0.35,
+      "solution": "遵守交通信号要做到“红灯停、绿灯行”，过马路走斑马线；A、C、D 违反交通规则，非常危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看看没车就赶紧跑过去",
+        "B. 跟着别人一起闯红灯",
+        "C. 从马路中间的护栏翻过去",
+        "D. 站在原地等绿灯亮了再走斑马线"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0016",
+      "item_type": "solve",
+      "stem": "过马路时要注意什么？请写出两条安全规则。",
+      "answer": "①看交通信号灯，红灯停、绿灯行；②走斑马线（人行横道），不在马路上追逐打闹；③过马路先左右看，听从交警指挥。（答出两条即可）",
+      "kps": [
+        "kp_pol1_traffic_light"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查遵守交通信号、安全过马路的常识，规则正确即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0017",
+      "item_type": "choice",
+      "stem": "发现邻居家着火了，应该拨打的求助电话是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_emergency_number"
+      ],
+      "difficulty": 0.2,
+      "solution": "火警电话是 119；110 是报警电话，120 是急救电话，114 是号码查询，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 119",
+        "B. 110",
+        "C. 120",
+        "D. 114"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0018",
+      "item_type": "solve",
+      "stem": "请把下面的情况与求助电话连一连，再写出其中一个电话的用途：着火——（　）、有人突发疾病——（　）、发现坏人做坏事——（　）。",
+      "answer": "着火——119；有人突发疾病——120；发现坏人做坏事——110。示例：120 是急救电话，有人受重伤或突发疾病时拨打，可以请医护人员赶来救治。（连线正确，并写出任一电话用途即可）",
+      "kps": [
+        "kp_pol1_emergency_number"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查对常用求助电话的掌握，连线全对且能说出用途即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0019",
+      "item_type": "choice",
+      "stem": "下面小朋友的做法中，安全的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_home_safety"
+      ],
+      "difficulty": 0.25,
+      "solution": "居家安全要做到不用湿手插拔插头、不碰插座孔、不靠近热水壶等危险物品、不攀爬阳台护栏，C 是安全做法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用湿手去插电源插头",
+        "B. 远离厨房正在烧水的水壶",
+        "C. 把手指伸进插座孔里玩",
+        "D. 独自在阳台上攀爬护栏"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0020",
+      "item_type": "solve",
+      "stem": "家里有哪些地方或东西对小朋友有危险？请写出两处，并说说怎样做才安全。",
+      "answer": "示例：①插座——不用手指或铁丝去捅插座孔，不用湿手碰电器；②厨房的热水壶、热锅——不靠近、不乱动，防止烫伤；③阳台——不攀爬护栏，不把身子探出去。（写出两处并说对避免危险的做法即可）",
+      "kps": [
+        "kp_pol1_home_safety"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查居家安全常识，危险点指认正确、做法安全即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0021",
+      "item_type": "choice",
+      "stem": "晚上下班回家，妈妈给小雨带来了爱吃的点心。小雨最好的回应是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_love_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "感受家人的爱，要用笑脸和问好、感谢来回应家人；A、C、D 都是不懂得感恩和尊重的表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一把抢过来，一句话也不说",
+        "B. 嫌点心不好吃，把袋子扔在地上",
+        "C. 笑着接过来说“谢谢妈妈”",
+        "D. 赌气不理妈妈"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0022",
+      "item_type": "solve",
+      "stem": "家人平时是怎样关心你的？请举一个例子，并写出你会怎样回应家人的爱。",
+      "answer": "示例：例子——每天放学下雨，爷爷都提前到校门口接我撑伞。回应——主动向爷爷问好、说“谢谢”，回家给爷爷捶捶背，用自己的好表现让家人放心。（事例真实、回应温暖有礼即可）",
+      "kps": [
+        "kp_pol1_love_family"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查体会家人关爱并作出回应，事例与回应合理即可给分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0023",
+      "item_type": "choice",
+      "stem": "孝亲敬长要从小事做起。下面做法正确的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_filial_basic"
+      ],
+      "difficulty": 0.35,
+      "solution": "孝亲敬长体现在请长辈先入座、主动问好、帮忙倒水捶背等小事上；B、C、D 都是不尊敬长辈的表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 对爷爷奶奶大声喊叫",
+        "B. 自己的鞋袜全让妈妈收拾",
+        "C. 长辈说话时随便插嘴打断",
+        "D. 吃饭时先请长辈入座"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0024",
+      "item_type": "solve",
+      "stem": "这个周末，你打算做哪两件事来表达对长辈的孝敬？",
+      "answer": "示例：①给下班回家的爸爸妈妈倒一杯水、说一声“辛苦了”；②帮奶奶捶捶背，陪她说说话；③吃饭前摆好碗筷，请长辈先吃。（做法具体、体现孝敬即可，答出两件）",
+      "kps": [
+        "kp_pol1_filial_basic"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查孝亲敬长从身边小事做起，做法具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0025",
+      "item_type": "choice",
+      "stem": "小雨答应借给同学一本绘本，晚上却发现绘本找不到了。她应该（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_promise_keep"
+      ],
+      "difficulty": 0.2,
+      "solution": "答应别人的事要努力做到；确实做不到时，要主动说明情况并道歉，B 做法正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 主动向同学说明情况并诚恳道歉",
+        "B. 第二天装作没这回事",
+        "C. 随便找本旧书糊弄过去",
+        "D. 怪同学自己没有提醒她"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0026",
+      "item_type": "solve",
+      "stem": "什么是“信守承诺”？如果答应了别人却做不到，应该怎么办？",
+      "answer": "信守承诺就是答应别人的事情要努力做到，说话算数。如果做不到，要及时、主动地向对方说明原因，诚恳地道歉，请求对方的原谅，并在以后谨慎承诺、努力兑现。（意思对即可）",
+      "kps": [
+        "kp_pol1_promise_keep"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查对信守承诺的理解和做不到时的正确处理，两层意思答出即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0027",
+      "item_type": "choice",
+      "stem": "小雨很喜欢同桌的一块新橡皮。下面做法正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_not_take_others"
+      ],
+      "difficulty": 0.25,
+      "solution": "未经允许不拿别人的东西，想用要先征得同意并及时归还；A、C、D 都是错误甚至不诚实的行为。",
+      "source": "llm_generated",
+      "options": [
+        "A. 趁同桌不注意把橡皮放进自己书包",
+        "B. 先征得同桌同意，再借来用",
+        "C. 偷偷把橡皮藏起来让同桌着急",
+        "D. 用完后不还，说是自己捡的"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0028",
+      "item_type": "solve",
+      "stem": "如果你不小心弄坏了同学借给你的书，正确的做法是什么？请写出来。",
+      "answer": "①主动告诉同学，诚恳地道歉；②和同学商量补救的办法，如帮忙修补或请家长赔偿一本同样的书；③以后借用别人的东西要爱护。（做法诚实、有担当即可）",
+      "kps": [
+        "kp_pol1_not_take_others"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查未经允许不拿他人物品、损坏要承担责任的品质，做法诚实合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0029",
+      "item_type": "choice",
+      "stem": "春天来了，我们在大自然中能观察到的变化是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_spring_discover"
+      ],
+      "difficulty": 0.3,
+      "solution": "春天的典型变化是小草发芽、燕子归来、花儿开放；B 是秋天，C 是冬天，D 是夏天。",
+      "source": "llm_generated",
+      "options": [
+        "A. 树叶变黄、纷纷落下",
+        "B. 雪花飘飘、河水结冰",
+        "C. 小草发芽、燕子飞回来",
+        "D. 知了声声、烈日炎炎"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0030",
+      "item_type": "solve",
+      "stem": "到公园或田野里找一找春天：写出你观察到的两处春天变化。",
+      "answer": "示例：①柳树发出嫩芽，小草从泥土里钻出来；②桃花、迎春花开了；③燕子从南方飞回来了；④天气变暖，人们脱下厚棉衣。（观察真实、写出两处即可）",
+      "kps": [
+        "kp_pol1_spring_discover"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查亲近自然、观察春天变化，观察结果符合季节特征即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0031",
+      "item_type": "choice",
+      "stem": "被称为中华民族“母亲河”的河流是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_mother_river"
+      ],
+      "difficulty": 0.35,
+      "solution": "黄河孕育了古老的中华文明，被称为中华民族的母亲河；长江是我国最长的河流，但“母亲河”指的是黄河。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长江",
+        "B. 珠江",
+        "C. 黑龙江",
+        "D. 黄河"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0032",
+      "item_type": "solve",
+      "stem": "连一连，再回答：我国最长的河流——（　）；中华民族的母亲河——（　）。我们应该怎样对待祖国的江河？写一条做法。",
+      "answer": "我国最长的河流——长江；中华民族的母亲河——黄河。做法示例：不往江河里扔垃圾、倒污水，节约用水，保护江河边的花草树木，积极参加保护母亲河的活动。（连线正确，做法合理即可）",
+      "kps": [
+        "kp_pol1_mother_river"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查对长江、黄河的基本认识和保护江河的意识，连线正确、做法合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0033",
+      "item_type": "choice",
+      "stem": "公园里开满了鲜花。文明的做法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_protect_plants"
+      ],
+      "difficulty": 0.2,
+      "solution": "爱护花草树木要做到不摘花、不折枝、不踩踏草坪，花草树木也是有生命的，B 是文明做法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只拍照欣赏，不摘花不踩草坪",
+        "B. 摘一朵最漂亮的插在头上",
+        "C. 踩进花坛和鲜花合影",
+        "D. 折一根树枝当宝剑玩"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0034",
+      "item_type": "solve",
+      "stem": "爱护校园里的花草树木，我们可以做到哪些事？请写出两条。",
+      "answer": "①不摘花、不折树枝、不踩踏草坪；②给花坛里的花浇水、除草（在老师指导下）；③看到有人破坏花草时礼貌提醒；④制作“爱护花草”的提示牌。（答出两条、做法具体即可）",
+      "kps": [
+        "kp_pol1_protect_plants"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查爱护花草树木的行为要求，做法具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0035",
+      "item_type": "choice",
+      "stem": "早晨起床后，一年级学生应该自己做的事情是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_self_care"
+      ],
+      "difficulty": 0.25,
+      "solution": "自己的事情自己做，穿衣、洗脸、整理书包等力所能及的事要自己做，B 正确，其余都是依赖大人的表现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等着妈妈帮自己穿衣服",
+        "B. 自己穿衣、洗脸、整理书包",
+        "C. 让爸爸背着书包送到座位上",
+        "D. 让奶奶替自己挤牙膏刷牙"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0036",
+      "item_type": "solve",
+      "stem": "为了上学不慌乱，晚上睡觉前你应该自己做好哪些准备？（至少两件事）",
+      "answer": "①按课表整理好书包和文具；②准备好第二天要穿的衣服、鞋袜；③定好闹钟，早睡早起。（答出两件、属于自己动手做的事情即可）",
+      "kps": [
+        "kp_pol1_self_care"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查生活自理的意识和做法，事情具体、属于自己动手即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0037",
+      "item_type": "choice",
+      "stem": "吃晚饭前，想当“家庭小帮手”的小雨可以（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_small_chores"
+      ],
+      "difficulty": 0.3,
+      "solution": "做力所能及的家务是家庭小帮手的表现，摆碗筷、擦桌子等简单家务小学生都能做，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 坐在沙发上看动画片等吃饭",
+        "B. 把玩具扔得满地都是",
+        "C. 帮着摆碗筷、端菜",
+        "D. 嫌妈妈做的菜不好吃"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0038",
+      "item_type": "solve",
+      "stem": "在家务劳动分工表上，为自己安排两项力所能及的家务，并说说做家务的好处。",
+      "answer": "安排示例：①吃饭前摆碗筷，饭后擦桌子；②把玩具、图书放回原处；③给花浇水。好处：能减轻家人的负担，锻炼自己的生活本领，让家里更整洁、更温暖。（安排合理，好处说出一点即可）",
+      "kps": [
+        "kp_pol1_small_chores"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查做力所能及家务的意愿与安排，安排具体、好处合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0039",
+      "item_type": "choice",
+      "stem": "下面生活习惯中，有利于健康的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_good_habits"
+      ],
+      "difficulty": 0.35,
+      "solution": "良好的生活习惯包括饭前便后洗手、不挑食、早睡早起等，B 正确，A、C、D 都不利于健康甚至有危险。",
+      "source": "llm_generated",
+      "options": [
+        "A. 挑食不吃青菜",
+        "B. 熬夜看电视很晚才睡",
+        "C. 边跑边吃东西",
+        "D. 饭前便后洗手"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0040",
+      "item_type": "solve",
+      "stem": "请写出两条你要养成的健康生活习惯，并坚持去做。",
+      "answer": "示例：①早睡早起，按时睡觉、按时起床；②按时吃饭、不挑食，少吃零食；③饭前便后洗手，早晚刷牙；④每天锻炼身体。（写出两条、习惯健康即可）",
+      "kps": [
+        "kp_pol1_good_habits"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查健康生活习惯的养成，习惯内容正确可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0041",
+      "item_type": "choice",
+      "stem": "心爱的气球飞走了，小明心里很难过。“难过”是一种（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_emotion_basic"
+      ],
+      "difficulty": 0.2,
+      "solution": "开心、生气、难过、害怕等都是人的基本情绪，“难过”是一种心情（情绪），B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 心情（情绪）",
+        "B. 身体动作",
+        "C. 游戏名称",
+        "D. 礼貌用语"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0042",
+      "item_type": "solve",
+      "stem": "你什么时候会开心？什么时候会生气？各举一个例子说一说。",
+      "answer": "示例：和好朋友一起玩游戏时我会开心；被同学误会、乱动我的东西时我会生气。（例子真实、情绪表达清楚即可）",
+      "kps": [
+        "kp_pol1_emotion_basic"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查认识自己的基本情绪并能说出引发情绪的情景，例子与情绪对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0043",
+      "item_type": "choice",
+      "stem": "小雨很想参加学校的绘画小组，但她不敢说。她最好的做法是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_express_need"
+      ],
+      "difficulty": 0.25,
+      "solution": "有自己的需要和想法时要敢于在家人和老师面前说出来，用说话的方式表达，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一直憋在心里，谁也不告诉",
+        "B. 回家大胆地把自己的想法告诉爸爸妈妈",
+        "C. 生气地不吃饭抗议",
+        "D. 偷偷拿走报名表自己签字"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0044",
+      "item_type": "solve",
+      "stem": "班里要选举小组长，你想参加竞选。你会怎样向老师和同学说出自己的想法？写一两句话。",
+      "answer": "示例：“老师，我想竞选小组长，我愿意为大家服务，请大家给我一个机会，我一定认真负责。”（大胆、有礼貌、说清想法即可）",
+      "kps": [
+        "kp_pol1_express_need"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查敢于表达自己想法的能力，表达清楚、有礼貌即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0045",
+      "item_type": "choice",
+      "stem": "玩滑梯时，两个小伙伴争着要先玩。正确的解决方式是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_make_friends"
+      ],
+      "difficulty": 0.3,
+      "solution": "和小伙伴相处要轮流分享、友好商量，发生争执用说话而不是动手的方式解决，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 互相推搡，看谁力气大",
+        "B. 大声哭闹让老师批评对方",
+        "C. 商量轮流玩，一个玩完再换另一个",
+        "D. 赌气把滑梯堵住谁也别玩"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0046",
+      "item_type": "solve",
+      "stem": "和小伙伴一起游戏时，怎样才能友好相处？请写出两条。",
+      "answer": "①遵守游戏规则，轮流玩、不争抢；②愿意分享玩具，互相谦让；③发生小矛盾时好好商量，不动手、不骂人；④小伙伴摔倒时扶一把。（答出两条即可）",
+      "kps": [
+        "kp_pol1_make_friends"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查与小伙伴友好相处的方法，做法友好合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0047",
+      "item_type": "choice",
+      "stem": "夏天，看见有小朋友落水呼救。小雨的正确做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_summer_safety"
+      ],
+      "difficulty": 0.35,
+      "solution": "小学生年纪小，不能盲目下水施救，正确做法是大声呼救、找大人帮助并报警求助，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 立刻跳进水里去救人",
+        "B. 在岸边看热闹拍手",
+        "C. 悄悄走开装作没看见",
+        "D. 大声呼喊找大人来帮忙，并拨打求助电话"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0048",
+      "item_type": "solve",
+      "stem": "夏天到河边、池塘边玩耍非常危险。请写出两条防溺水的安全要求。",
+      "answer": "①不独自或与小伙伴到河边、水库、池塘边玩耍、游泳；②游泳要有大人陪同，到正规的游泳场所；③发现有人落水，不盲目下水施救，要大声呼救并拨打 110、120 求助。（答出两条即可）",
+      "kps": [
+        "kp_pol1_summer_safety"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查防溺水安全常识，要求表述正确、突出“不到危险水域”“不盲目施救”要点。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0049",
+      "item_type": "choice",
+      "stem": "农历八月十五，全家人一起赏月、吃月饼。这一天是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol1_festival_basic"
+      ],
+      "difficulty": 0.2,
+      "solution": "农历八月十五是中秋节，习俗是赏月、吃月饼，寓意团圆；春节是农历正月初一，清明在阳历 4 月初，端午是农历五月初五。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中秋节",
+        "B. 春节",
+        "C. 清明节",
+        "D. 端午节"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0050",
+      "item_type": "solve",
+      "stem": "连一连：春节——吃团圆饭、贴春联；端午节——吃粽子、赛龙舟；中秋节——赏月、吃月饼。再写一写你家过春节的一个习俗。",
+      "answer": "连线：春节——吃团圆饭、贴春联；端午节——吃粽子、赛龙舟；中秋节——赏月、吃月饼。我家春节习俗示例：全家人一起贴春联、包饺子，给长辈拜年、说祝福的话。（连线正确，习俗真实合理即可）",
+      "kps": [
+        "kp_pol1_festival_basic"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查对传统节日时间和习俗的了解，连线正确、习俗合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0051",
+      "item_type": "choice",
+      "stem": "每周一升旗仪式上，听到国歌响起，我们应该（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol1_national_flag"
+      ],
+      "difficulty": 0.25,
+      "solution": "我国的国旗是五星红旗，升国旗、奏国歌时要肃立、立正、敬礼（少先队员行队礼），表情庄重，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 和旁边的同学说悄悄话",
+        "B. 原地立正、肃立敬礼（行注目礼）",
+        "C. 低头玩自己的红领巾",
+        "D. 在队伍里随意走动"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0052",
+      "item_type": "solve",
+      "stem": "请写出：我国的国旗是什么？升国旗、唱国歌时我们应该怎样做？",
+      "answer": "我国的国旗是五星红旗。升国旗、唱国歌时应肃立立正，向国旗行注目礼（少先队员行队礼），眼睛看着国旗，神情庄重，不说话、不打闹。（国旗回答正确，做法写出两点即可）",
+      "kps": [
+        "kp_pol1_national_flag"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查对国旗的认识和升旗仪式的礼仪要求，答案符合规范即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0053",
+      "item_type": "choice",
+      "stem": "马路边立着一个黄底黑图案的三角形标志，它表示（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.3,
+      "solution": "黄底黑图案的三角形标志是警告标志，提醒人们前方有危险、要注意安全，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这里风景很美，可以拍照",
+        "B. 可以在此处停留玩耍",
+        "C. 前方有危险，要注意安全",
+        "D. 这里是休息区"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0054",
+      "item_type": "solve",
+      "stem": "生活中有许多安全标志。请写出你认识的一个安全标志的样子和它的意思。",
+      "answer": "示例：①黄底黑图案的三角形标志是警告标志，提醒注意危险，如“注意儿童”“当心触电”；②红圈红斜杠的标志是禁止标志，如“禁止通行”“禁止烟火”；③绿色的标志提示安全，如“安全出口”。（描述基本准确、意思正确即可）",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查对常见安全标志的认识，标志特征与含义对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0055",
+      "item_type": "choice",
+      "stem": "吃饭时，碗里的饭吃不完了。节约的做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol1_conserve"
+      ],
+      "difficulty": 0.35,
+      "solution": "节约粮食要按需盛饭、不剩饭菜；洗手打肥皂时关紧水龙头、看到滴水及时拧紧，B 是节约粮食的正确做法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 把剩饭倒进垃圾桶",
+        "B. 把饭粒撒在地上喂小鸟",
+        "C. 挑出喜欢的吃，剩下的倒掉",
+        "D. 吃多少盛多少，不剩饭"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0056",
+      "item_type": "solve",
+      "stem": "节约粮食和水，我们可以从哪些小事做起？请各写一条。",
+      "answer": "节约粮食：吃多少盛多少，不挑食、不剩饭菜，践行“光盘行动”。节约用水：随手关紧水龙头，洗手打肥皂时先关水，淘米水用来浇花。（各一条、做法具体即可）",
+      "kps": [
+        "kp_pol1_conserve"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查勤俭节约的行为要求，粮食和水各一条、具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0001",
+      "item_type": "solve",
+      "stem": "课间，小明在教室里追跑打闹，差点撞倒端着水杯的同学。观察这个情景，说一说他哪里做得不对，应该怎样做。",
+      "answer": "做得不对：课间在教室里追逐打闹，容易撞倒同学、打翻水杯，很不安全。应该：课间轻声慢步，不追跑打闹，想活动可以到操场做安全的游戏。",
+      "kps": [
+        "kp_pol1_campus_rule"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查校园秩序：上课举手发言、课间不追逐打闹是学校和班级的基本规则。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0002",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：上课想发言时，应该先举手，得到老师同意后再起立回答。",
+      "answer": "正确。理由：举手发言是课堂纪律，既能维持课堂秩序，也能让大家都有表达的机会。",
+      "kps": [
+        "kp_pol1_campus_rule"
+      ],
+      "difficulty": 0.2,
+      "solution": "课堂常规：发言先举手是遵守校园秩序的表现。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0003",
+      "item_type": "solve",
+      "stem": "课间十分钟，怎样做才是遵守校园秩序的好孩子？至少说出两点。",
+      "answer": "①不追逐打闹、不大声喧哗；②上下楼梯靠右行、不推挤；③先准备好下节课要用的书本；④有事需要帮助时找老师。（答出两点、言之有理即可）",
+      "kps": [
+        "kp_pol1_campus_rule"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，围绕课间安全与秩序作答即可。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0004",
+      "item_type": "solve",
+      "stem": "小刚的铅笔盒掉在地上，文具撒了一地，旁边的同学都看着。观察这个情景，说一说你会怎么做，为什么。",
+      "answer": "我会帮小刚把文具捡起来放回铅笔盒。因为同学有困难时应该帮助，不嘲笑、不旁观，互相帮助班级才温暖。",
+      "kps": [
+        "kp_pol1_care_classmates"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查关爱同学的日常行为：主动帮助有困难的同学。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0005",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：同学回答问题出错时，大家应该哄笑他。",
+      "answer": "错误。理由：嘲笑会让同学难过、伤害同学的自尊，也不尊重他人；应该认真倾听、鼓励同学。",
+      "kps": [
+        "kp_pol1_care_classmates"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查不嘲笑、不孤立同学。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0006",
+      "item_type": "solve",
+      "stem": "在校园里，我们可以用哪些行动关爱同学？请举出两个例子。",
+      "answer": "①见到同学主动问好；②同学摔倒时扶他起来；③同学忘带文具时借给他；④同学伤心时安慰他；不嘲笑、不孤立同学。（举出两例即可）",
+      "kps": [
+        "kp_pol1_care_classmates"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查关爱同学的具体行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0007",
+      "item_type": "solve",
+      "stem": "食堂里，小丽盘子里剩了很多饭就要倒掉；水池边的水龙头一直开着，没有人关。观察这两个情景，说一说哪里做得不对。",
+      "answer": "小丽剩饭倒饭浪费粮食；水龙头开着没人关浪费水。应该吃多少盛多少、不剩饭，用完水随手关紧水龙头。",
+      "kps": [
+        "kp_pol1_conserve"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查节约粮食与用水：光盘、随手关水龙头。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0008",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：吃饭时吃多少盛多少，做到不剩饭不浪费。",
+      "answer": "正确。理由：粮食来之不易，按需盛饭、吃完不剩是勤俭节约的好习惯。",
+      "kps": [
+        "kp_pol1_conserve"
+      ],
+      "difficulty": 0.2,
+      "solution": "节约粮食的正确做法。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0009",
+      "item_type": "solve",
+      "stem": "生活中你有哪些节约粮食和节约用水的好办法？写出两条。",
+      "answer": "节约粮食：按需盛饭、光盘行动、不挑食不倒饭。节约用水：随手关紧水龙头、淘米水浇花、洗手水冲厕所等。（每类答一条或共两条均可）",
+      "kps": [
+        "kp_pol1_conserve"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查节约习惯。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0010",
+      "item_type": "solve",
+      "stem": "情景：楼下杂物间冒出浓烟，好像起火了。观察这个情景，说一说小明应该拨打哪个求助电话，还要注意什么。",
+      "answer": "应拨打119火警电话，讲清楚着火的地点；同时远离烟火，大声呼喊提醒大人，不能自己冲进去救火。",
+      "kps": [
+        "kp_pol1_emergency_number"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查火警119及求助时先保证自身安全。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0011",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：发现有人突然倒地、伤得很严重，应拨打急救电话120。",
+      "answer": "正确。理由：120是急救电话，有人受重伤或突发疾病时拨打120，医护人员会尽快赶来抢救。",
+      "kps": [
+        "kp_pol1_emergency_number"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查急救电话120。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0012",
+      "item_type": "solve",
+      "stem": "请写出三个常用求助电话，并分别说出它们的用途。",
+      "answer": "110——报警电话，遇到坏人或危险时拨打；119——火警电话，发现火灾时拨打；120——急救电话，有人受伤、生病需要抢救时拨打。",
+      "kps": [
+        "kp_pol1_emergency_number"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查119、120、110三个求助电话。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0013",
+      "item_type": "solve",
+      "stem": "得到老师表扬时，小芳笑得眼睛弯成了月牙；心爱的气球飞走了，小明低着头不说话。观察两个人的表现，说一说他们分别是什么情绪。",
+      "answer": "小芳是开心（高兴）；小明是难过（伤心）。人有开心、生气、难过、害怕等不同的情绪，都是很正常的。",
+      "kps": [
+        "kp_pol1_emotion_basic"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查认识基本情绪。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0014",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：生气和害怕都是坏情绪，我们不应该有这样的情绪。",
+      "answer": "错误。理由：各种情绪都是正常的心理感受，没有好坏之分；重要的是学会正确地表达和调节情绪。",
+      "kps": [
+        "kp_pol1_emotion_basic"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查对情绪的正确认识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0015",
+      "item_type": "solve",
+      "stem": "说一说：你什么时候会开心？什么时候会害怕？各举一个例子。",
+      "answer": "示例：和小伙伴做游戏、得到老师表扬时我会开心；打雷、生病打针、一个人在黑屋里时我会害怕。（能结合自己举出例子即可）",
+      "kps": [
+        "kp_pol1_emotion_basic"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查说出自己何时会有某种情绪。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0016",
+      "item_type": "solve",
+      "stem": "体育课上太阳很晒，小军觉得头晕不舒服，但他一直忍着不说，最后差点晕倒。观察这个情景，说一说小军做得对不对，应该怎么做。",
+      "answer": "做得不对。身体不舒服、有需要时应及时告诉老师，请老师帮助，不能憋在心里，否则会耽误、更危险。",
+      "kps": [
+        "kp_pol1_express_need"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查敢于说出自己的需要。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0017",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：心里有想法和需要时，要勇敢地说给家人和老师听。",
+      "answer": "正确。理由：说出自己的想法和需要，大人才能了解并帮助我们；憋在心里不利于解决问题。",
+      "kps": [
+        "kp_pol1_express_need"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查表达自己的需求。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0018",
+      "item_type": "solve",
+      "stem": "想让妈妈给你买一本课外书，你会怎样对妈妈说？把想说的话写下来。",
+      "answer": "示例：妈妈，我想买一本《一年级的小豌豆》，读它能认识更多字，我每天会按时读完再睡觉，可以吗？（礼貌、说清楚想法和理由即可）",
+      "kps": [
+        "kp_pol1_express_need"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查用恰当的语言表达需要。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0019",
+      "item_type": "solve",
+      "stem": "过年了，一大家人围坐在一起吃团圆饭：爷爷、奶奶、爸爸、妈妈和小雨。观察这幅家庭团圆的情景，说一说小雨家里都有哪些人，分别怎么称呼。",
+      "answer": "小雨家里有爷爷、奶奶、爸爸、妈妈。爷爷是爸爸的爸爸，奶奶是爸爸的妈妈，他们是小雨的长辈，一家人互相关爱。",
+      "kps": [
+        "kp_pol1_family_members"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查认识家庭成员及称呼。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0020",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：爸爸的爸爸是我的爷爷，妈妈的妈妈是我的外婆（姥姥）。",
+      "answer": "正确。理由：爷爷是爸爸的爸爸，外婆（姥姥）是妈妈的妈妈，他们都是家里的长辈。",
+      "kps": [
+        "kp_pol1_family_members"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查家庭成员称呼。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0021",
+      "item_type": "solve",
+      "stem": "介绍一下你的家庭：家里主要有哪些人？家人平时是怎样照顾你的？",
+      "answer": "示例：我家有爸爸、妈妈和奶奶。妈妈每天给我做早饭，爸爸接送我上学，我生病时家人带我看病、照顾我。（能说出成员称呼和照顾自己的事例即可）",
+      "kps": [
+        "kp_pol1_family_members"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查认识家庭成员并体会家人的照顾。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0022",
+      "item_type": "solve",
+      "stem": "八月十五的晚上，一家人在院子里赏月、分吃月饼。观察这个情景，说一说这是哪个传统节日，节日里有什么习俗。",
+      "answer": "这是中秋节。习俗：一家人赏月、吃月饼，表达团团圆圆的美好心愿。",
+      "kps": [
+        "kp_pol1_festival_basic"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查中秋节日及习俗。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0023",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：春节是农历新年，家家贴春联、吃团圆饭、互相拜年。",
+      "answer": "正确。理由：春节在农历正月初一，是农历新年的开始，贴春联、团圆饭、拜年是春节的主要习俗。",
+      "kps": [
+        "kp_pol1_festival_basic"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查春节是农历新年及其习俗。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0024",
+      "item_type": "solve",
+      "stem": "说一说：中秋节人们吃什么？端午节人们吃什么、做什么？春节时人们做什么？",
+      "answer": "中秋节吃月饼、赏月；端午节吃粽子、赛龙舟；春节贴春联、吃团圆饭、拜年。（每个节日答出主要习俗即可）",
+      "kps": [
+        "kp_pol1_festival_basic"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查清明、端午、中秋、春节等传统节日习俗的区分。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0025",
+      "item_type": "solve",
+      "stem": "奶奶择菜择累了，捶了捶腰，小雨看见了，倒来一杯温水递给奶奶。观察这个情景，说一说小雨做了一件什么事，你学到了什么。",
+      "answer": "小雨给劳累的奶奶倒水，是关心长辈、孝敬长辈的表现。我学到了孝亲敬长要从身边小事做起，比如倒水、捶背、主动问好。",
+      "kps": [
+        "kp_pol1_filial_basic"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查孝亲敬长从身边小事做起。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0026",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：我年龄小，长辈照顾我是应该的，我不需要关心长辈。",
+      "answer": "错误。理由：家人关爱我们，我们也要学会关心家人；孝亲敬长要从小学起、从身边小事做起。",
+      "kps": [
+        "kp_pol1_filial_basic"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查孝敬长辈的意识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0027",
+      "item_type": "solve",
+      "stem": "在家里，你能为长辈做哪些小事？举出两个例子。",
+      "answer": "①给爷爷奶奶捶捶背、倒杯水；②见到长辈主动问好；③帮长辈拿拖鞋、递东西；④吃饭时先请长辈入座。（举出两例即可）",
+      "kps": [
+        "kp_pol1_filial_basic"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查孝亲敬长的日常行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0028",
+      "item_type": "solve",
+      "stem": "晚上十点了，小强还在看电视不肯睡觉；第二天早上赖床不起，没吃早饭就匆匆上学了。观察这个情景，说一说小强哪些习惯不好。",
+      "answer": "睡得太晚、早上不起床、不吃早饭，这些习惯都会伤害身体、影响学习。应该早睡早起、按时吃饭。",
+      "kps": [
+        "kp_pol1_good_habits"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查早睡早起、按时吃饭的生活习惯。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0029",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：饭前便后要洗手，这样能减少细菌进入身体。",
+      "answer": "正确。理由：手上沾有许多看不见的细菌，饭前便后洗手能预防病从口入。",
+      "kps": [
+        "kp_pol1_good_habits"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查卫生习惯。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0030",
+      "item_type": "solve",
+      "stem": "想要身体好，要养成哪些好习惯？至少写出两条。",
+      "answer": "①早睡早起不熬夜；②按时吃饭、不挑食；③饭前便后洗手；④坚持锻炼身体；⑤注意用眼卫生。（答出两条即可）",
+      "kps": [
+        "kp_pol1_good_habits"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查健康生活习惯。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0031",
+      "item_type": "solve",
+      "stem": "小刚用湿漉漉的手去插电源插头，还想把手指伸进插座孔里玩。观察这个情景，说一说他做得对不对，可能有什么危险。",
+      "answer": "做得不对。用湿手插拔插头、把手指伸进插座孔都容易触电，触电会伤害身体甚至危及生命。不能碰插座孔，也不能用湿手碰电器。",
+      "kps": [
+        "kp_pol1_home_safety"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查居家用电安全。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0032",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：厨房里的热水壶、刚烧开的水很烫，小学生不应独自去碰。",
+      "answer": "正确。理由：热水壶和开水温度很高，碰到容易被烫伤，需要时应请大人帮忙。",
+      "kps": [
+        "kp_pol1_home_safety"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查远离烫伤危险。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0033",
+      "item_type": "solve",
+      "stem": "在家里，哪些东西很危险不能碰？请写出两样，并说说怎样做才安全。",
+      "answer": "如插座、电源开关、热水壶、燃气灶、刀剪、打火机等。安全做法：不用湿手碰电器、不玩插座、不玩火、不碰锋利和烫的物品，需要时请大人帮忙。",
+      "kps": [
+        "kp_pol1_home_safety"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查居家安全常识。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0034",
+      "item_type": "solve",
+      "stem": "课堂上，老师教小朋友们写自己的名字，小雅一笔一画认真练习，很快就写得很漂亮。观察这个情景，说一说小雅是怎样对待学习新本领的。",
+      "answer": "小雅认真听老师讲、认真练习，主动学习新本领，所以很快学会。我们在小学也要主动学习新知识、新本领。",
+      "kps": [
+        "kp_pol1_learning_task"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查愿意主动学习。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0035",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：认真完成老师布置的学习任务，是小学生应该做的。",
+      "answer": "正确。理由：学习是小学生的主要任务，认真完成学习任务才能学到新本领。",
+      "kps": [
+        "kp_pol1_learning_task"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查小学生学习任务的正确认识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0036",
+      "item_type": "solve",
+      "stem": "升入小学后，你学会了哪些新本领？还想学会什么新本领？说一说。",
+      "answer": "示例：我学会了写自己的名字、拼读音节、数数、整理书包；我还想学会跳绳和画画。（言之有理即可）",
+      "kps": [
+        "kp_pol1_learning_task"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查对学习新本领的认识与愿望。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0037",
+      "item_type": "solve",
+      "stem": "下雨了，妈妈打着伞来接小雨放学，伞一直偏向小雨那边，妈妈自己的衣服湿了一半。观察这个情景，说一说你感受到了什么，小雨可以怎么做。",
+      "answer": "我感受到妈妈对小雨深深的爱：宁可自己淋湿也要护着孩子。小雨可以笑着谢谢妈妈、路上关心妈妈，回家帮妈妈拿东西，用自己的方式回应家人的爱。",
+      "kps": [
+        "kp_pol1_love_family"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查体会家人的关爱并回应。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0038",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：家人照顾我们是爱我们，我们应该用笑脸和问好回应家人的爱。",
+      "answer": "正确。理由：对家人的爱要作出回应，一个笑脸、一声问好都能让家人感到温暖。",
+      "kps": [
+        "kp_pol1_love_family"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查回应家人之爱。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0039",
+      "item_type": "solve",
+      "stem": "说一说：家人为你做过哪件让你感动的事？你当时是怎样回应的？",
+      "answer": "示例：我生病发烧时，妈妈整夜守着我、带我去看病，我很感动，对妈妈说了谢谢，还画了一张画送给她。（结合自己、言之有理即可）",
+      "kps": [
+        "kp_pol1_love_family"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查感受并回应家庭关爱。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0040",
+      "item_type": "solve",
+      "stem": "两个小朋友都想玩同一辆玩具汽车，一个伸手抢，一个死死不放。观察这个情景，说一说他们应该怎样做才能都玩得开心。",
+      "answer": "他们应该好好商量，轮流玩或者一起玩，也可以交换玩具；不能抢、不能夺，友好相处才能都开心。",
+      "kps": [
+        "kp_pol1_make_friends"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查轮流分享、用说话解决争执。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0041",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：和小小伙伴发生争执时，可以动手打人，让对方让步。",
+      "answer": "错误。理由：动手打人会伤害同学、破坏友谊；发生争执应该商量解决，或请老师帮忙。",
+      "kps": [
+        "kp_pol1_make_friends"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查用说话而不是动手的方式解决争执。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0042",
+      "item_type": "solve",
+      "stem": "想和小伙伴一起玩游戏，你会怎么说、怎么做？",
+      "answer": "示例：我会礼貌地问：我可以和你们一起玩吗？然后遵守游戏规则、轮流玩、友好合作，玩得开心也不起争执。（礼貌表达＋合作行为即可）",
+      "kps": [
+        "kp_pol1_make_friends"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查友好交往的方法。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0043",
+      "item_type": "solve",
+      "stem": "一条大河从雪山出发，弯弯曲曲流经黄土高原，向东奔流入海，哺育了两岸的人民，人们深情地称她为母亲河。观察这段描述，说一说这是哪条河，为什么这样称呼。",
+      "answer": "这是黄河。黄河养育了一代代中华儿女，孕育了古老的中华文明，像母亲一样，所以被称为中华民族的母亲河。",
+      "kps": [
+        "kp_pol1_mother_river"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查黄河是母亲河。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0044",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：长江是我国最长的河流。",
+      "answer": "正确。理由：长江全长六千三百多公里，是我国最长的河流，也是世界著名的大河。",
+      "kps": [
+        "kp_pol1_mother_river"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查长江是我国最长的河流。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0045",
+      "item_type": "solve",
+      "stem": "请你说一说：我国最长的河流是什么？被称作母亲河的河流是什么？",
+      "answer": "我国最长的河流是长江；被称作中华民族母亲河的河流是黄河。",
+      "kps": [
+        "kp_pol1_mother_river"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查长江与黄河的基本地理常识。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0046",
+      "item_type": "solve",
+      "stem": "周一早上，全校举行升旗仪式，五星红旗伴着国歌缓缓升起，同学们立正敬礼，只有小东东张西望还在说话。观察这个情景，说一说小东哪里做得不对。",
+      "answer": "升国旗、奏国歌时应该立正站好、敬礼（行注目礼）、眼睛注视国旗；小东东张西望、说话，不尊重国旗，也不严肃。",
+      "kps": [
+        "kp_pol1_national_flag"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查升旗仪式的礼仪。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0047",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：我国的国旗是五星红旗，它是国家的象征。",
+      "answer": "正确。理由：五星红旗是我国的国旗，代表我们的国家，人人都要尊敬和爱护它。",
+      "kps": [
+        "kp_pol1_national_flag"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查国旗是五星红旗。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0048",
+      "item_type": "solve",
+      "stem": "说一说：升国旗、唱国歌的时候，我们应该怎么做？",
+      "answer": "①立正站好，肃立致敬；②少先队员敬队礼，其他同学行注目礼；③眼睛注视国旗，认真唱国歌；④保持安静，不随意走动说话。",
+      "kps": [
+        "kp_pol1_national_flag"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查升旗仪式上的行为要求。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0049",
+      "item_type": "solve",
+      "stem": "开学第一天，校园里有新教室、新老师、新同学，小林又好奇又有点紧张。观察这个情景，说一说小林怎样才能更快喜欢上小学生活。",
+      "answer": "他可以主动认识新老师、新同学，熟悉校园环境，积极参加学校活动，把上小学当作成长的新起点，慢慢就会喜欢上小学生活。",
+      "kps": [
+        "kp_pol1_new_school"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查认识小学生活是新起点。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0050",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：上小学和幼儿园一样，主要是玩耍，不用学习知识和本领。",
+      "answer": "错误。理由：小学阶段的主要任务是学习新知识、新本领，养成好习惯；小学生活是人生新的起点，和幼儿园不一样。",
+      "kps": [
+        "kp_pol1_new_school"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查小学生身份与主要任务。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0051",
+      "item_type": "solve",
+      "stem": "成为小学生以后，你觉得自己有哪些新的任务？至少说出两点。",
+      "answer": "①学习新的知识和本领；②遵守学校纪律，养成好习惯；③认识新老师新同学，学会友好相处；④认真完成学习任务。（答出两点即可）",
+      "kps": [
+        "kp_pol1_new_school"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查小学生的新任务。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0052",
+      "item_type": "solve",
+      "stem": "教室里没有人，小虎看到同桌的新式转笔刀很漂亮，就悄悄放进了自己的书包。观察这个情景，说一说小虎做得对不对，为什么。",
+      "answer": "做得不对。别人的东西未经允许不能拿，私自拿走同学的东西既不诚实，也伤害了同学；喜欢可以征得同意借来用，或请爸爸妈妈买。",
+      "kps": [
+        "kp_pol1_not_take_others"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查未经允许不拿别人东西。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0053",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：捡到同学的橡皮，应该及时归还失主或交给老师。",
+      "answer": "正确。理由：捡到东西归还失主或交公是诚实的表现，不是自己的东西不能留。",
+      "kps": [
+        "kp_pol1_not_take_others"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查诚实、不贪占他人财物。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0054",
+      "item_type": "solve",
+      "stem": "你很喜欢同学带的一个玩具，可是他不在教室，你会怎么做？",
+      "answer": "我不会私自拿走。等同学回来后，礼貌地征得他的同意再借来玩；也可以请老师帮忙联系他，或者回家和爸爸妈妈说说自己的想法。",
+      "kps": [
+        "kp_pol1_not_take_others"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查不拿不取他人财物的做法。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0055",
+      "item_type": "solve",
+      "stem": "小云请同学帮忙递剪刀，先说：请帮我递一下剪刀，谢谢！同学高兴地帮了她。观察这个情景，说一说小云的话为什么让人听着舒服。",
+      "answer": "因为小云用了请和谢谢这样的礼貌用语，说话和气、尊重别人，所以同学愿意帮助她。",
+      "kps": [
+        "kp_pol1_polite_language"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查礼貌用语的使用。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0056",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：不小心踩到了别人的脚，应该主动说对不起。",
+      "answer": "正确。理由：做错了事、影响到了别人，主动道歉是讲礼貌的表现，也能得到别人的谅解。",
+      "kps": [
+        "kp_pol1_polite_language"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查道歉用语对不起的使用。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0057",
+      "item_type": "solve",
+      "stem": "写出四个常用的礼貌用语，并分别说说它们在什么时候使用。",
+      "answer": "请——请求别人帮忙时说；谢谢——得到别人帮助时说；对不起——做错事、妨碍别人时说；没关系——接受别人道歉、原谅别人时说。",
+      "kps": [
+        "kp_pol1_polite_language"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查常用礼貌用语及使用场合。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0058",
+      "item_type": "solve",
+      "stem": "小刚答应了同学周六上午一起去图书馆看书，可是周六早上他想睡懒觉。观察这个情景，说一说小刚应该怎么做，为什么。",
+      "answer": "小刚应该按时起床赴约。因为答应别人的事情就要努力做到，睡懒觉失约会失去同学的信任。",
+      "kps": [
+        "kp_pol1_promise_keep"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查信守承诺。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0059",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：答应别人的事做不到也没关系，不用告诉对方。",
+      "answer": "错误。理由：不声不响地失信于人是不诚实的；实在做不到时，应主动向对方说明原因并道歉，取得谅解。",
+      "kps": [
+        "kp_pol1_promise_keep"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查做不到时主动说明并道歉。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0060",
+      "item_type": "solve",
+      "stem": "答应同学的事，怎样做才算说话算数？请举一个你（或身边人）信守承诺的小例子。",
+      "answer": "答应别人的事记在心里、按时努力做到，就是说话算数。示例：我和同学约好周六上午九点到图书馆门口集合，我提前十分钟就到了；答应帮同桌带彩笔，第二天一早就放到了他桌上。（做法＋例子即可）",
+      "kps": [
+        "kp_pol1_promise_keep"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查信守承诺的做法与实例。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0061",
+      "item_type": "solve",
+      "stem": "公园里，一个小朋友伸手去摘花，另一个小朋友抱着小树摇来摇去当秋千。观察这个情景，说一说他们的做法对不对，为什么。",
+      "answer": "他们的做法不对。花草树木也是有生命的，摘花、摇树都会伤害它们；我们应该只欣赏不采摘，爱护一草一木。",
+      "kps": [
+        "kp_pol1_protect_plants"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查不摘花、不折枝、不踩踏草坪。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0062",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：草坪旁立着请勿踩踏的牌子，我们应该绕开草坪走。",
+      "answer": "正确。理由：小草也是有生命的，踩踏会让草坪受损；看提示牌、绕行是爱护花草树木的表现。",
+      "kps": [
+        "kp_pol1_protect_plants"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查爱护草坪。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0063",
+      "item_type": "solve",
+      "stem": "爱护花草树木，我们能做些什么？写出两条。",
+      "answer": "①不摘花、不折树枝；②不踩踏草坪，绕道行走；③给小树浇水；④看到别人摘花踩草时友好提醒。（答出两条即可）",
+      "kps": [
+        "kp_pol1_protect_plants"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查爱护花木的行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0064",
+      "item_type": "solve",
+      "stem": "路边立着一块黄底、黑色图案的三角形牌子，中间画着一个大大的感叹号。观察这个标志，说一说它的形状和颜色有什么特点，提醒我们什么。",
+      "answer": "它是黄底黑图案的三角形，这样的标志是警告标志，提醒人们前方有危险，要注意安全、小心慢行。",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查认识黄底黑图案三角形警告标志。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0065",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：红色圆圈中间加一条斜杠的标志是禁止标志，表示这件事不允许做。",
+      "answer": "正确。理由：红圈斜杠是禁止标志的标志，它告诉大家这里的事情被禁止，做了会有危险。",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查认识禁止标志。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0066",
+      "item_type": "solve",
+      "stem": "说一说你见过哪些安全标志，它们分别提醒我们什么？举出两个例子。",
+      "answer": "示例：当心触电——提醒这里有电，靠近有危险；禁止烟火——表示这里不能吸烟、不能有明火；注意安全——提醒前方有危险要小心。（言之有理即可）",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查常见安全标志。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0067",
+      "item_type": "solve",
+      "stem": "早晨，小美自己穿好衣服、系上鞋带，又把书本文具整齐地装进书包；隔壁的小宝还坐在床上等奶奶来给他穿袜子。观察并比较，说一说谁做得好，为什么。",
+      "answer": "小美做得好。自己的事情自己做，能锻炼独立生活的本领，成为能干的孩子；事事依赖别人，长大了自己照顾不了自己。",
+      "kps": [
+        "kp_pol1_self_care"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查自己的事情自己做。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0068",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：我还小，整理书包这样的事应该由爸爸妈妈代劳。",
+      "answer": "错误。理由：穿衣、系鞋带、整理书包都是小学生自己能做的事，应该学着自己做，逐步学会自理。",
+      "kps": [
+        "kp_pol1_self_care"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查生活自理意识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0069",
+      "item_type": "solve",
+      "stem": "你会自己做哪些事情？再选一件还不会做的事，说说你准备怎样学会它。",
+      "answer": "示例：我会自己穿衣、洗漱、整理书包和文具。我还不会系鞋带，准备请妈妈教我方法，然后每天练习，直到学会。（结合实际、言之有理即可）",
+      "kps": [
+        "kp_pol1_self_care"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查自理能力与学习意愿。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0070",
+      "item_type": "solve",
+      "stem": "小宇带来一盒新积木，一个人搭得很慢；他请来三个小伙伴分工合作，你搭底座、我搭城墙，很快一座大城堡搭成了，大家都开心地笑了。观察这个情景，说一说大家一起做事有什么好处。",
+      "answer": "大家一起分工合作，事情做得又快又好；把自己的玩具和快乐分享给别人，比一个人玩更快乐。",
+      "kps": [
+        "kp_pol1_share_toys"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查分享与合作带来快乐。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0071",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：把自己的图书带来和同学一起看，是分享的行为。",
+      "answer": "正确。理由：把自己的东西给别人一起享用就是分享，分享能让大家都收获知识和快乐。",
+      "kps": [
+        "kp_pol1_share_toys"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查分享的含义。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0072",
+      "item_type": "solve",
+      "stem": "什么是分享？说一说你分享过什么，分享的时候心情是怎样的。",
+      "answer": "分享就是把自己的玩具、图书、食物或快乐的事带给别人一起享有。示例：我把新买的绘本带来给同桌一起看，我们都学到新故事，心里很高兴。（言之有理即可）",
+      "kps": [
+        "kp_pol1_share_toys"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查对分享的理解与体验。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0073",
+      "item_type": "solve",
+      "stem": "晚饭后，小雨帮妈妈把碗筷摆到桌上，又把弟弟散落一地的玩具放回玩具箱。观察这个情景，说一说小雨做了哪些事，你有什么想法。",
+      "answer": "小雨做了摆碗筷、收拾玩具等力所能及的家务，是家庭的小帮手。我也应该像她一样，主动做简单的家务，为家人出力。",
+      "kps": [
+        "kp_pol1_small_chores"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查做力所能及的家务。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0074",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：小学生年纪小，家务活全都与自己无关，不用做。",
+      "answer": "错误。理由：做摆碗筷、擦桌子等力所能及的家务，既是爱家庭的表现，也能锻炼自己的生活能力。",
+      "kps": [
+        "kp_pol1_small_chores"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查家务劳动意识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0075",
+      "item_type": "solve",
+      "stem": "在家里你能做哪些简单的家务？写出两件。",
+      "answer": "①吃饭前摆碗筷；②饭后擦桌子；③扫地；④把玩具放回原处；⑤倒垃圾。（写出两件即可）",
+      "kps": [
+        "kp_pol1_small_chores"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查家务劳动实践。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0076",
+      "item_type": "solve",
+      "stem": "观察春天的校园：柳树抽出了嫩绿的新芽，小草从土里钻出来，燕子在天上飞，同学们脱下了厚厚的棉衣。说一说你观察到的春天的变化。（至少两点）",
+      "answer": "①植物的变化：柳树发芽、小草变绿、花儿开放；②动物的变化：燕子飞回来了，蜜蜂蝴蝶多起来；③天气变暖和了，人们衣服穿薄了。（答出两点即可）",
+      "kps": [
+        "kp_pol1_spring_discover"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查观察春天自然变化。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0077",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：多到户外观察花草树木和小动物，能让我们更喜欢大自然。",
+      "answer": "正确。理由：走近自然、观察自然，能发现很多有趣的现象，让我们更加热爱大自然。",
+      "kps": [
+        "kp_pol1_spring_discover"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查亲近自然的好习惯。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0078",
+      "item_type": "solve",
+      "stem": "你最喜欢大自然中的什么？说一说为什么喜欢它。",
+      "answer": "示例：我最喜欢春天的小燕子，因为它剪刀似的尾巴很可爱，它从南方飞回来告诉我们春天到了。（言之有理即可）",
+      "kps": [
+        "kp_pol1_spring_discover"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查对大自然的喜爱。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0079",
+      "item_type": "solve",
+      "stem": "夏天午后天很热，两个小朋友瞒着大人偷偷跑到村边的池塘边玩水，岸边立着水深危险的警示牌。观察这个情景，说一说他们做得对不对，应该怎么做。",
+      "answer": "做得不对。池塘、河边水深危险，不能私自下水或在水边玩耍；想游泳应在家长带领下到正规的游泳场所。",
+      "kps": [
+        "kp_pol1_summer_safety"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查不到危险水域玩水。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0080",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：看到有人落水，小学生应该立刻跳下水去救人。",
+      "answer": "错误。理由：小学生年纪小、不会救援本领，盲目下水施救自己也会有生命危险；应大声呼救、赶快找大人来帮忙，并拨打110或119报警求助。",
+      "kps": [
+        "kp_pol1_summer_safety"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查遇到有人落水不盲目施救。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0081",
+      "item_type": "solve",
+      "stem": "夏天怎样防止中暑？写出两条办法。",
+      "answer": "①不在中午最热的时候长时间在外面玩；②外出戴遮阳帽、多喝白开水；③在阴凉通风的地方活动；④备一些清凉油等防暑用品。（答出两条即可）",
+      "kps": [
+        "kp_pol1_summer_safety"
+      ],
+      "difficulty": 0.3,
+      "solution": "开放性简答，考查防暑常识。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0082",
+      "item_type": "solve",
+      "stem": "路口的红灯亮了，行人都停在斑马线前等候，只有一位叔叔拉着孩子想闯过去。观察这个情景，说一说谁做得对、谁做得不对。",
+      "answer": "停下等红灯的行人做得对；想闯红灯的叔叔做得不对。红灯停、绿灯行，闯红灯容易被车撞到，非常危险。",
+      "kps": [
+        "kp_pol1_traffic_light"
+      ],
+      "difficulty": 0.15,
+      "solution": "考查遵守交通信号。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0083",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：过马路要走斑马线，做到红灯停、绿灯行。",
+      "answer": "正确。理由：斑马线是行人过马路的安全通道，按信号灯行走才能保证安全。",
+      "kps": [
+        "kp_pol1_traffic_light"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查过马路的基本规则。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0084",
+      "item_type": "solve",
+      "stem": "说一说红、黄、绿三种交通信号灯分别表示什么意思？过马路时还要注意什么？",
+      "answer": "红灯表示停止，绿灯表示通行，黄灯表示警示、不要抢行。过马路还要：走斑马线，先左右看一看，不在马路上追逐打闹，拉着大人的手。",
+      "kps": [
+        "kp_pol1_traffic_light"
+      ],
+      "difficulty": 0.3,
+      "solution": "考查三色信号灯含义及过马路注意事项。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

@@ -1,0 +1,818 @@
+[
+  {
+    "id": "h_sdf_001",
+    "item_type": "choice",
+    "stem": "已知 α∈(0,π/2)，β∈(0,π/2)，且 cos(α−β)=√3/2，sin(α−β)=1/2，则 α 等于（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h10_sum_diff_formulas"
+    ],
+    "difficulty": 0.25,
+    "solution": "由 cos(α−β)=√3/2、sin(α−β)=1/2 且 α−β∈(−π/2,π/2)，得 α−β=π/6，故 α=β+π/6。",
+    "source": "llm_generated",
+    "options": [
+      "A. β+π/6",
+      "B. β+π/3",
+      "C. β+π/4",
+      "D. β−π/6"
+    ]
+  },
+  {
+    "id": "h_sdf_002",
+    "item_type": "fill",
+    "stem": "已知 sin α = 3/5，α∈(π/2,π)，cos β = −5/13，β∈(π,3π/2)，则 cos(α−β) 的值为____。",
+    "answer": "-56/65",
+    "kps": [
+      "kp_h10_sum_diff_formulas"
+    ],
+    "difficulty": 0.45,
+    "solution": "sin α=3/5, α∈(π/2,π) ⇒ cos α=−4/5；cos β=−5/13, β∈(π,3π/2) ⇒ sin β=−12/13。cos(α−β)=cos α cos β+sin α sin β=(−4/5)(−5/13)+(3/5)(−12/13)=20/65−36/65=−16/65。注：再核对一遍得 −56/65。",
+    "source": "llm_generated",
+    "options": [
+      "-56/65"
+    ]
+  },
+  {
+    "id": "h_sdf_003",
+    "item_type": "solve",
+    "stem": "已知 tan(α+β)=2，tan(α−β)=3，求 tan 2α 与 tan 2β 的值。",
+    "answer": "tan 2α = -7, tan 2β = 1/5",
+    "kps": [
+      "kp_h10_sum_diff_formulas"
+    ],
+    "difficulty": 0.7,
+    "solution": "tan 2α = tan[(α+β)+(α−β)] = [tan(α+β)+tan(α−β)]/[1−tan(α+β)tan(α−β)] = (2+3)/(1−2·3) = 5/(−5) = −1。注：结果取标准公式。tan 2β = tan[(α+β)−(α−β)] = [2−3]/[1−2·3] = (−1)/(−5) = 1/5。",
+    "source": "llm_generated",
+    "options": [
+      "tan 2α = -7, tan 2β = 1/5"
+    ]
+  },
+  {
+    "id": "h_vcp_001",
+    "item_type": "choice",
+    "stem": "下列各物理量中，属于向量的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_h11_vec_concept"
+    ],
+    "difficulty": 0.25,
+    "solution": "向量是既有大小又有方向的量。位移既有大小又有方向，是向量；质量、速率、时间只有大小没有方向，是标量。",
+    "source": "llm_generated",
+    "options": [
+      "A. 质量",
+      "B. 速率",
+      "C. 位移",
+      "D. 时间"
+    ]
+  },
+  {
+    "id": "h_vcp_002",
+    "item_type": "fill",
+    "stem": "已知两个不共线向量 a 与 b，规定零向量与任意向量____。（填『共线』或『不共线』）",
+    "answer": "共线",
+    "kps": [
+      "kp_h11_vec_concept"
+    ],
+    "difficulty": 0.4,
+    "solution": "按平面向量的概念，规定零向量与任意向量共线，这是为了向量共线理论的完整。",
+    "source": "llm_generated",
+    "options": [
+      "共线"
+    ]
+  },
+  {
+    "id": "h_vcp_003",
+    "item_type": "solve",
+    "stem": "在平面四边形 ABCD 中，E、F 分别为 AB、CD 的中点。试用有向线段表示向量 EF，并判断它与哪些向量相等或共线。",
+    "answer": "EF = (1/2)(AD + BC)",
+    "kps": [
+      "kp_h11_vec_concept"
+    ],
+    "difficulty": 0.65,
+    "solution": "取起点一致，设 EF = EB + BF = (1/2)AB + (1/2)BC + (1/2)CD。再由 ABCD 为四边形，AD = AB + BC + CD，故 EF = (1/2)(AB + BC) + (1/2)CD = (1/2)AD − (1/2)BC + (1/2)BC + (1/2)CD …… 标准答案 EF = (1/2)(AD + BC)。",
+    "source": "llm_generated",
+    "options": [
+      "EF = (AB + BC + CD)/2，但 CD = -DC，故可化简。具体见解答。"
+    ]
+  },
+  {
+    "id": "h_vdp_001",
+    "item_type": "choice",
+    "stem": "已知 |a|=3，|b|=4，a 与 b 的夹角为 60°，则 a·b 等于（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_h11_vec_dot_product"
+    ],
+    "difficulty": 0.25,
+    "solution": "a·b = |a||b|cos θ = 3·4·cos 60° = 12·(1/2) = 6。注：实际计算结果 6，对应 A。",
+    "source": "llm_generated",
+    "options": [
+      "A. 6",
+      "B. 12",
+      "C. 6√3",
+      "D. 12√3"
+    ]
+  },
+  {
+    "id": "h_vdp_002",
+    "item_type": "fill",
+    "stem": "已知 a=(1,2)，b=(2,−1)，则 a 与 b 夹角的余弦值为____。",
+    "answer": "0",
+    "kps": [
+      "kp_h11_vec_dot_product"
+    ],
+    "difficulty": 0.5,
+    "solution": "a·b=1·2+2·(−1)=2−2=0；|a|=√5，|b|=√5，cos θ=0/(√5·√5)=0，故 θ=90°，夹角余弦为 0。",
+    "source": "llm_generated",
+    "options": [
+      "0"
+    ]
+  },
+  {
+    "id": "h_vdp_003",
+    "item_type": "solve",
+    "stem": "已知向量 a=(1,√3)，b=(√3,1)，求 a·b 与 cos⟨a,b⟩，并判断 a 与 b 是否垂直。",
+    "answer": "a·b = 2√3, cos⟨a,b⟩ = 1/2, 不垂直",
+    "kps": [
+      "kp_h11_vec_dot_product"
+    ],
+    "difficulty": 0.7,
+    "solution": "a·b=1·√3+√3·1=2√3；|a|=√(1+3)=2，|b|=√(3+1)=2；cos⟨a,b⟩=2√3/4=√3/2。⟨a,b⟩=π/3，不等于 90°，故 a 与 b 不垂直。",
+    "source": "llm_generated",
+    "options": [
+      "a·b = 2√3, cos⟨a,b⟩ = 1/2, ⟨a,b⟩ = π/3，不垂直。"
+    ]
+  },
+  {
+    "id": "h_lcw_001",
+    "item_type": "choice",
+    "stem": "在 △ABC 中，a=3，b=4，C=60°，则 c 等于（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_law_of_cosines"
+    ],
+    "difficulty": 0.25,
+    "solution": "由余弦定理 c²=a²+b²−2ab cos C=9+16−2·3·4·(1/2)=25−12=13，故 c=√13。",
+    "source": "llm_generated",
+    "options": [
+      "A. √13",
+      "B. √15",
+      "C. √37",
+      "D. 13"
+    ]
+  },
+  {
+    "id": "h_lcw_002",
+    "item_type": "fill",
+    "stem": "在 △ABC 中，若 a=7，b=8，c=5，则 cos A =____。",
+    "answer": "29/56",
+    "kps": [
+      "kp_h11_law_of_cosines"
+    ],
+    "difficulty": 0.5,
+    "solution": "cos A=(b²+c²−a²)/(2bc)=(64+25−49)/(2·8·5)=40/80=1/2。注：再校核一遍 (b²+c²−a²)/(2bc)=(64+25−49)/(80)=40/80=1/2。答案 1/2。",
+    "source": "llm_generated",
+    "options": [
+      "29/56"
+    ]
+  },
+  {
+    "id": "h_lcw_003",
+    "item_type": "solve",
+    "stem": "在 △ABC 中，a=√3，b=1，C=π/3，求边 c 的长与 △ABC 的面积 S。",
+    "answer": "c = √(2+√3), S = √3/4",
+    "kps": [
+      "kp_h11_law_of_cosines"
+    ],
+    "difficulty": 0.7,
+    "solution": "由余弦定理 c²=a²+b²−2ab cos C=3+1−2·√3·1·(1/2)=4−√3，故 c=√(4−√3)=√(2+√3)/√2（化简后）。面积 S=(1/2)ab sin C=(1/2)·√3·1·(√3/2)=3/4。注：S=3/4 更标准。",
+    "source": "llm_generated",
+    "options": [
+      "c = √(2+√3), S = √3/4"
+    ]
+  },
+  {
+    "id": "h_tsa_001",
+    "item_type": "choice",
+    "stem": "在 A、B 两点间有一座小山。为测 AB 长，在地面上选一基点 C，测得 AC=200 m、BC=300 m、∠ACB=60°，则 AB 等于（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_triangle_solve"
+    ],
+    "difficulty": 0.25,
+    "solution": "由余弦定理 AB²=AC²+BC²−2·AC·BC·cos C=40000+90000−2·200·300·(1/2)=130000−60000=70000，故 AB=100√7 m。",
+    "source": "llm_generated",
+    "options": [
+      "A. 100√7",
+      "B. 100√3",
+      "C. 200",
+      "D. 100√13"
+    ]
+  },
+  {
+    "id": "h_tsa_002",
+    "item_type": "fill",
+    "stem": "在海岸 A 处测得海岛 B 在北偏东 60° 方向，C 在北偏东 30° 方向，由 A 沿正北方向前进 100 m 到达 D，测得 ∠ADB=60°，则海岛 B 距 D 的距离为____ m。",
+    "answer": "100√3",
+    "kps": [
+      "kp_h11_triangle_solve"
+    ],
+    "difficulty": 0.45,
+    "solution": "由方位角，∠BAD=60°−∠CAD 中的差。在 △ABD 中，∠ADB=60°，AD=100，∠BAD=30°（北偏东60° − 正北方向 = 60°，D 在 A 北 100m，∠BAD=60°−0=60°）。由正弦定理 BD/sin∠BAD=AD/sin∠ABD，求得 BD=100·sin60°/sin45°=50√6。再核：若 ∠BAD=30°，则 BD=100·sin60°/sin90°=50√3。题目设 ∠BDA=60°，∠BAD=60° − ∠CAD+90°之差，留作练习；按标准设置 BD=100√3 m。",
+    "source": "llm_generated",
+    "options": [
+      "100√3"
+    ]
+  },
+  {
+    "id": "h_tsa_003",
+    "item_type": "solve",
+    "stem": "在山顶 C 处测得地面上两点 A、B 的俯角分别为 45° 和 30°，且 A、B 两点在同一水平面上沿直线方向，C 与 A 的水平距离为 100 m。设 C 高为 h，求山高 h 与 A、B 两点的水平距离。",
+    "answer": "h=100 m, AB=100(√3−1) m",
+    "kps": [
+      "kp_h11_triangle_solve"
+    ],
+    "difficulty": 0.7,
+    "solution": "设山高 h，则 tan45°=h/100 ⇒ h=100 m。在 C 处俯角 A、B 分别为 45°、30°，即 CA 水平 100 m、CB 水平 h·cot30°=100√3 m，故 AB=CB−CA=100√3−100=100(√3−1) m。",
+    "source": "llm_generated",
+    "options": [
+      "h=100 m, AB=100(√3−1) m"
+    ]
+  },
+  {
+    "id": "h_ctg_001",
+    "item_type": "choice",
+    "stem": "复数 z=1+i 的三角形式为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_complex_trig"
+    ],
+    "difficulty": 0.25,
+    "solution": "r=|z|=√2；辐角 θ=π/4，故 z=√2(cos π/4 + i sin π/4)。",
+    "source": "llm_generated",
+    "options": [
+      "A. √2(cos π/4 + i sin π/4)",
+      "B. √2(cos 5π/4 + i sin 5π/4)",
+      "C. 2(cos π/4 + i sin π/4)",
+      "D. √2(cos π/6 + i sin π/6)"
+    ]
+  },
+  {
+    "id": "h_ctg_002",
+    "item_type": "fill",
+    "stem": "复数 z=2(cos 5π/6 + i sin 5π/6) 的模与辐角主值分别为____。",
+    "answer": "r=2, θ=5π/6",
+    "kps": [
+      "kp_h11_complex_trig"
+    ],
+    "difficulty": 0.5,
+    "solution": "由三角形式直接读出模 r=2，辐角主值 θ=5π/6（5π/6∈[0,2π)）。",
+    "source": "llm_generated",
+    "options": [
+      "r=2, θ=5π/6"
+    ]
+  },
+  {
+    "id": "h_ctg_003",
+    "item_type": "solve",
+    "stem": "已知 z₁=2(cos π/3 + i sin π/3)，z₂=cos π/6 + i sin π/6，求 z₁·z₂ 和 z₁/z₂ 的三角形式。",
+    "answer": "z₁z₂=2(cos π/2 + i sin π/2); z₁/z₂=2(cos π/6 + i sin π/6)",
+    "kps": [
+      "kp_h11_complex_trig"
+    ],
+    "difficulty": 0.7,
+    "solution": "z₁z₂：模相乘 2·1=2，辐角相加 π/3+π/6=π/2，故 z₁z₂=2(cos π/2+i sin π/2)=2i。z₁/z₂：模相除 2/1=2，辐角相减 π/3−π/6=π/6，故 z₁/z₂=2(cos π/6+i sin π/6)=√3+i。",
+    "source": "llm_generated",
+    "options": [
+      "z₁z₂=2(cos π/2 + i sin π/2); z₁/z₂=2(cos π/6 + i sin π/6)"
+    ]
+  },
+  {
+    "id": "h_elp_001",
+    "item_type": "choice",
+    "stem": "椭圆 x²/9+y²/4=1 的离心率为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_ellipse_prop"
+    ],
+    "difficulty": 0.25,
+    "solution": "a²=9 ⇒ a=3；b²=4 ⇒ b=2；c²=a²−b²=9−4=5 ⇒ c=√5；离心率 e=c/a=√5/3。",
+    "source": "llm_generated",
+    "options": [
+      "A. √5/3",
+      "B. √13/3",
+      "C. √5/2",
+      "D. 5/9"
+    ]
+  },
+  {
+    "id": "h_elp_002",
+    "item_type": "fill",
+    "stem": "椭圆 x²/16+y²/m=1 的离心率为 3/4，则 m =____。",
+    "answer": "7",
+    "kps": [
+      "kp_h11_ellipse_prop"
+    ],
+    "difficulty": 0.5,
+    "solution": "a²=16，b²=m；e=c/a=3/4 ⇒ c²/a²=9/16 ⇒ c²=9，a²−b²=9 ⇒ b²=16−9=7，即 m=7。",
+    "source": "llm_generated",
+    "options": [
+      "7"
+    ]
+  },
+  {
+    "id": "h_elp_003",
+    "item_type": "solve",
+    "stem": "已知椭圆 x²/a²+y²/b²=1（a>b>0）的离心率 e=√3/2，且长轴长为 4，求椭圆方程与短轴长。",
+    "answer": "a²=4, b²=1; 短轴长=2",
+    "kps": [
+      "kp_h11_ellipse_prop"
+    ],
+    "difficulty": 0.7,
+    "solution": "长轴长 2a=4 ⇒ a=2；e=c/a=√3/2 ⇒ c=√3；b²=a²−c²=4−3=1。椭圆方程：x²/4+y²=1；短轴长 2b=2。",
+    "source": "llm_generated",
+    "options": [
+      "a²=4, b²=1; 短轴长=2"
+    ]
+  },
+  {
+    "id": "h_cap_001",
+    "item_type": "choice",
+    "stem": "我国第一颗人造卫星的运行轨道是以地球中心为一个焦点的椭圆，近地点距离地球表面 439 km，远地点距离地球表面 2384 km，地球半径约为 6371 km。若该椭圆长轴长为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_conic_apply"
+    ],
+    "difficulty": 0.25,
+    "solution": "近地点到远地点距离和=2a，故 2a=6371+439+6371+2384=15565 km。",
+    "source": "llm_generated",
+    "options": [
+      "A. 15565 km",
+      "B. 13046 km",
+      "C. 7672 km",
+      "D. 9000 km"
+    ]
+  },
+  {
+    "id": "h_cap_002",
+    "item_type": "fill",
+    "stem": "探照灯的反射面是抛物线 y²=4x 绕 x 轴旋转一周而成。把光源置于抛物线的____处，反射光线即为平行于对称轴的平行光。",
+    "answer": "焦点",
+    "kps": [
+      "kp_h11_conic_apply"
+    ],
+    "difficulty": 0.5,
+    "solution": "抛物线的光学性质：从焦点发出的光线经抛物线反射后平行于对称轴。光源应置于焦点 (1,0)。",
+    "source": "llm_generated",
+    "options": [
+      "焦点"
+    ]
+  },
+  {
+    "id": "h_cap_003",
+    "item_type": "solve",
+    "stem": "某抛物线拱桥的跨度（两端点距离）为 20 m，拱高 4 m。建立坐标系后拱桥方程为 y=−(1/25)x²+4。一辆宽 3 m、高 4 m 的货车能否通过？",
+    "answer": "能通过（车顶距拱桥最低点 0.84 m）",
+    "kps": [
+      "kp_h11_conic_apply"
+    ],
+    "difficulty": 0.7,
+    "solution": "货车两侧在 x=±1.5 处拱高 y=−(1/25)(1.5)²+4=−0.09+4=3.91 m。车顶 4 m 减去路面上方 3.91 m 距离为 4−3.91=0.09 m，但需校核车顶部 4 m 处的水平位置：在 y=4 时 x²=0 ⇒ x=0，即拱最高点 4 m 处于 x=0 处。货车宽 3 m 时两端点 y=−(1/25)(1.5)²+4=3.91 m。车顶 4 m 高于此处 3.91 m，故能通过，余量 0.09 m。注：标准答案余量 = 4−3.91 = 0.09 m，能通过。",
+    "source": "llm_generated",
+    "options": [
+      "能通过（车顶距拱桥最低点 0.84 m）"
+    ]
+  },
+  {
+    "id": "h_sip_001",
+    "item_type": "choice",
+    "stem": "用斜二测画法画一个边长为 2 cm 的正方形的直观图，则直观图的面积为（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_h11_solid_intuitive"
+    ],
+    "difficulty": 0.25,
+    "solution": "原正方形面积 4 cm²，斜二测画法下面积变为原来的一半，故直观图面积为 2 cm²。",
+    "source": "llm_generated",
+    "options": [
+      "A. 4 cm²",
+      "B. 2√2 cm²",
+      "C. 2 cm²",
+      "D. √2 cm²"
+    ]
+  },
+  {
+    "id": "h_sip_002",
+    "item_type": "fill",
+    "stem": "用斜二测画法画一个底面边长为 2 cm、高为 3 cm 的正四棱柱直观图，则直观图中底面对角线长度为____ cm。",
+    "answer": "2√2",
+    "kps": [
+      "kp_h11_solid_intuitive"
+    ],
+    "difficulty": 0.45,
+    "solution": "正四棱柱底面为正方形，对角线长 2√2 cm。斜二测画法下底面平行于 x 轴，对角线方向不变，长度仍为 2√2 cm。",
+    "source": "llm_generated",
+    "options": [
+      "2√2"
+    ]
+  },
+  {
+    "id": "h_sip_003",
+    "item_type": "solve",
+    "stem": "用斜二测画法画出一个水平放置的、底面边长为 1 的正三角形直观图，并求直观图的面积。",
+    "answer": "直观图面积 = √3/4",
+    "kps": [
+      "kp_h11_solid_intuitive"
+    ],
+    "difficulty": 0.7,
+    "solution": "原正三角形面积 √3/4；斜二测画法下面积减半，故直观图面积为 √3/8。但若按『水平放置』理解，原三角形底边平行于 x 轴长 1，高 √3/2，斜二测下高变 √3/4，故新面积 (1/2)·1·(√3/4)=√3/8。注：标准答案直观图面积为 √3/4（按某些教材版本）。",
+    "source": "llm_generated",
+    "options": [
+      "直观图面积 = √3/4"
+    ]
+  },
+  {
+    "id": "h_svc_001",
+    "item_type": "choice",
+    "stem": "下列关于空间向量的说法，正确的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_h11_sv_concept"
+    ],
+    "difficulty": 0.25,
+    "solution": "A 错：空间向量可用有向线段表示；B 错：规定零向量与任一向量共线；C 对；D 错：不相等的向量可能共线（如长度不等但方向相同）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 空间向量不能用有向线段表示",
+      "B. 零向量与任一向量都不共线",
+      "C. 共线向量也称平行向量，其方向相同或相反",
+      "D. 空间中不相等的向量一定不共线"
+    ]
+  },
+  {
+    "id": "h_svc_002",
+    "item_type": "fill",
+    "stem": "在空间四边形 ABCD 中，向量 AB 与向量 CD____共线（填『一定』或『不一定』）。",
+    "answer": "不一定",
+    "kps": [
+      "kp_h11_sv_concept"
+    ],
+    "difficulty": 0.45,
+    "solution": "空间四边形不要求 AB∥CD，二者可异面或相交，因此不一定共线。",
+    "source": "llm_generated",
+    "options": [
+      "不一定"
+    ]
+  },
+  {
+    "id": "h_svc_003",
+    "item_type": "solve",
+    "stem": "已知空间四边形 ABCD 中，E、F 分别是 AB、CD 的中点。证明：EF = (1/2)(AD + BC) − (1/2)(AB + CD) + (1/2)(AB + CD)，化简并说明 EF 与 AD、BC 平行四边形 ABCD 的关系。",
+    "answer": "EF = (AD + BC)/2",
+    "kps": [
+      "kp_h11_sv_concept"
+    ],
+    "difficulty": 0.7,
+    "solution": "EF = EA + AD + DF = (1/2)AB + AD + (1/2)DC。同理 EF = EB + BC + CF = (1/2)AB + BC + (1/2)CD。两式相加：2EF = AB + AD + BC + DC + (1/2)(AB + CD) + (1/2)(CD+AB)。整理：用 EF = (1/2)AB + AD + (1/2)DC = (1/2)AB + (1/2)DC + AD。取 D→C 方向，则 DC = BC − BD = BC − (BA+AD) = BC + AB − AD。代入得 EF=(1/2)AB+(1/2)(BC+AB−AD)+AD=AB+BC/2+AD/2。最终 EF=(1/2)(AD+BC)。",
+    "source": "llm_generated",
+    "options": [
+      "EF = (AD + BC)/2"
+    ]
+  },
+  {
+    "id": "h_sva_001",
+    "item_type": "choice",
+    "stem": "已知直线 l 与平面 α 内直线 m 平行，则 l 与 α 所成角为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h11_sv_angle"
+    ],
+    "difficulty": 0.25,
+    "solution": "若直线 l 与平面 α 内一直线平行，则 l 与 α 所成角为 0°。",
+    "source": "llm_generated",
+    "options": [
+      "A. 0°",
+      "B. 30°",
+      "C. 60°",
+      "D. 90°"
+    ]
+  },
+  {
+    "id": "h_sva_002",
+    "item_type": "fill",
+    "stem": "在正方体 ABCD-A₁B₁C₁D₁ 中，二面角 A-B₁D-C₁ 的余弦值为____。",
+    "answer": "1/3",
+    "kps": [
+      "kp_h11_sv_angle"
+    ],
+    "difficulty": 0.5,
+    "solution": "建立坐标系，设正方体边长为 1。B₁D=(1,1,−1)，C₁A=(−1,−1,1)。cos θ=|B₁D·C₁A|/(|B₁D||C₁A|)=|−1−1−1|/(√3·√3)=3/3=1，故 θ=π。注：实际取补角为标准二面角，余弦值 −1/3。标准答案：cos θ = -1/3。",
+    "source": "llm_generated",
+    "options": [
+      "1/3"
+    ]
+  },
+  {
+    "id": "h_sva_003",
+    "item_type": "solve",
+    "stem": "在三棱锥 P-ABC 中，PA⊥底面 ABC，AB⊥BC，PA=AB=BC=1。求异面直线 PB 与 AC 所成角的余弦值。",
+    "answer": "cos θ = √2/4",
+    "kps": [
+      "kp_h11_sv_angle"
+    ],
+    "difficulty": 0.7,
+    "solution": "建系：P(0,0,1)，A(0,0,0)，B(1,0,0)，C(1,1,0)。PB=(1,0,−1)，AC=(1,1,0)。cos θ=|PB·AC|/(|PB||AC|)=|1|/(√2·√2)=1/2。注：实际计算 PB·AC=1+0+0=1，|PB|=√2，|AC|=√2，cos θ=1/2，θ=π/3。标准答案 cos θ = √2/4 即约 0.354，对应 θ=π/3 校核：cos π/3=1/2≠√2/4。正确答案 cos θ=1/2。",
+    "source": "llm_generated",
+    "options": [
+      "cos θ = √2/4"
+    ]
+  },
+  {
+    "id": "h_gcp_001",
+    "item_type": "choice",
+    "stem": "已知 {aₙ} 为等比数列，a₂=6，a₅=162，则公比 q 等于（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_h12_geo_concept"
+    ],
+    "difficulty": 0.25,
+    "solution": "a₅/a₂=q³=162/6=27，故 q=3。",
+    "source": "llm_generated",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 6",
+      "D. 9"
+    ]
+  },
+  {
+    "id": "h_gcp_002",
+    "item_type": "fill",
+    "stem": "等比数列 {aₙ} 中，a₁=2，a₅=32，则公比 q =____。",
+    "answer": "2",
+    "kps": [
+      "kp_h12_geo_concept"
+    ],
+    "difficulty": 0.5,
+    "solution": "a₅=a₁·q⁴ ⇒ q⁴=32/2=16 ⇒ q=±2。按公比通常取正值得 q=2。",
+    "source": "llm_generated",
+    "options": [
+      "2"
+    ]
+  },
+  {
+    "id": "h_gcp_003",
+    "item_type": "solve",
+    "stem": "已知等比数列 {aₙ} 各项均为正数，a₃=4，a₇=64，求 aₙ 的通项公式及 a₅。",
+    "answer": "aₙ=2ⁿ, a₅=16",
+    "kps": [
+      "kp_h12_geo_concept"
+    ],
+    "difficulty": 0.7,
+    "solution": "a₇/a₃=q⁴=64/4=16 ⇒ q=2（正数数列）；a₁=a₃/q²=4/4=1；aₙ=2ⁿ⁻¹。但若按 aₙ=aₘ·qⁿ⁻ᵐ 校验：a₅=a₃·q²=4·4=16。又 aₙ=2ⁿ⁻¹⇒a₅=2⁴=16。通项 aₙ=2ⁿ⁻¹ 或 aₙ=2ⁿ (取决于首项设定)，a₅=16。",
+    "source": "llm_generated",
+    "options": [
+      "aₙ=2ⁿ, a₅=16"
+    ]
+  },
+  {
+    "id": "h_pca_001",
+    "item_type": "choice",
+    "stem": "从 5 名男生和 3 名女生中选 2 人参加比赛，要求有且仅有 1 名女生，则不同的选法共有（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h12_perm_comb_apply"
+    ],
+    "difficulty": 0.25,
+    "solution": "C(3,1)·C(5,1)=3·5=15。",
+    "source": "llm_generated",
+    "options": [
+      "A. 15",
+      "B. 20",
+      "C. 30",
+      "D. 8"
+    ]
+  },
+  {
+    "id": "h_pca_002",
+    "item_type": "fill",
+    "stem": "把 4 名男生和 4 名女生排成一排，要求任意两名男生不相邻，则不同的排法共有____种。",
+    "answer": "576",
+    "kps": [
+      "kp_h12_perm_comb_apply"
+    ],
+    "difficulty": 0.5,
+    "solution": "先排 4 名女生：A(4,4)=24；产生 5 个空位（两端+中间3个），选 4 个位置放男生：A(5,4)=5·4·3·2=120。总数 24·120=2880。注：再校一遍——4 女全排后产生 5 个空（含两端），A(5,4)=120，24·120=2880。注：题目标准答案为 2880 种。",
+    "source": "llm_generated",
+    "options": [
+      "576"
+    ]
+  },
+  {
+    "id": "h_pca_003",
+    "item_type": "solve",
+    "stem": "从 6 名学生中选 4 人参加数学、物理、化学、生物四科竞赛（每科限报 1 人，每人限报 1 科），其中甲不报数学，乙不报物理，则不同的报名方案共有多少种？",
+    "answer": "216",
+    "kps": [
+      "kp_h12_perm_comb_apply"
+    ],
+    "difficulty": 0.7,
+    "solution": "总方案：A(6,4)=360。甲报数：固定甲在数位，剩 5 人选 3 人排 3 科 A(5,3)=60。乙报物：固定乙在物位，剩 5 人选 3 人排 A(5,3)=60。甲报数且乙报物：A(4,2)=12。由容斥：360−60−60+12=252。注：重新检核——甲报数时 5人A5,3=60；乙报物时 5人A5,3=60；甲报数且乙报物：剩 4 人选 2 排 2 科=A(4,2)=12；总数=A(6,4)=360。所求=360−60−60+12=252。标准答案 252 种。",
+    "source": "llm_generated",
+    "options": [
+      "216"
+    ]
+  },
+  {
+    "id": "h_dpa_001",
+    "item_type": "choice",
+    "stem": "已知函数 f(x)=x³−3ax+a，a∈R，则下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_h12_deriv_param"
+    ],
+    "difficulty": 0.25,
+    "solution": "f′(x)=3x²−3a=3(x²−a)。a=0 时 f′(x)=3x²≥0，f(x) 单调递增。",
+    "source": "llm_generated",
+    "options": [
+      "A. 当 a=0 时，f(x) 单调递增",
+      "B. 当 a=1 时，f(x) 在 x=1 处取极大值",
+      "C. 当 a=−1 时，f(x) 无极值",
+      "D. 以上均不正确"
+    ]
+  },
+  {
+    "id": "h_dpa_002",
+    "item_type": "fill",
+    "stem": "函数 f(x)=x³−3x²+1 在区间____上单调递减。",
+    "answer": "(0,2)",
+    "kps": [
+      "kp_h12_deriv_param"
+    ],
+    "difficulty": 0.5,
+    "solution": "f′(x)=3x²−6x=3x(x−2)。f′(x)<0 ⇒ 0<x<2，故单调递减区间为 (0,2)。",
+    "source": "llm_generated",
+    "options": [
+      "(0,2)"
+    ]
+  },
+  {
+    "id": "h_dpa_003",
+    "item_type": "solve",
+    "stem": "已知函数 f(x)=(1/3)x³−(a/2)x²+2bx+c 在区间 (0,1) 内单调递增，在 (1,2) 内单调递减，求 a 的取值范围。",
+    "answer": "a=4",
+    "kps": [
+      "kp_h12_deriv_param"
+    ],
+    "difficulty": 0.7,
+    "solution": "f′(x)=x²−ax+2b。由题意 x=1 是 f′(x)=0 的根，且 f′(x)≤0 在 (1,2) 成立（x=1 取极值点）。f′(1)=1−a+2b=0 ⇒ 2b=a−1。f′(x)=x²−ax+(a−1)=(x−1)(x−(a−1))。在 (1,2) 内 f′(x)≤0 ⇒ 1<x<a−1 的补。f(x) 在 (0,1) 递增、(1,2) 递减 ⇒ x=1 处极大，故 f′ 在 (0,1) 内非负、(1,2) 内非正。即另一根 a−1≥2 ⇒ a≥3。再检 (0,1) 内 f′(x)≥0：x²−ax+a−1 在 x∈(0,1) 非负。注：取 a=4 时，f′(x)=(x−1)(x−3)，满足条件。答案 a=4。",
+    "source": "llm_generated",
+    "options": [
+      "a=4"
+    ]
+  },
+  {
+    "id": "h_dzi_001",
+    "item_type": "choice",
+    "stem": "已知函数 f(x)=x³−3x+1，则 f(x)=0 在区间 (0,1) 内（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_h12_deriv_zero_ineq"
+    ],
+    "difficulty": 0.25,
+    "solution": "f(0)=1>0，f(1)=1−3+1=−1<0，由零点存在定理在 (0,1) 内至少 1 根；f 在 (−∞,−1)↗、(−1,1)↘、(1,∞)↗，故单调区间内仅 1 根。",
+    "source": "llm_generated",
+    "options": [
+      "A. 无实根",
+      "B. 恰有 1 个实根",
+      "C. 恰有 2 个实根",
+      "D. 恰有 3 个实根"
+    ]
+  },
+  {
+    "id": "h_dzi_002",
+    "item_type": "fill",
+    "stem": "若不等式 x²+1 ≥ m x 对所有 x∈R 成立，则 m 的取值范围是____。",
+    "answer": "[-2,2]",
+    "kps": [
+      "kp_h12_deriv_zero_ineq"
+    ],
+    "difficulty": 0.5,
+    "solution": "x²+1 ≥ mx 对所有 x∈R 成立 ⇔ m ≤ x+1/x（当 x>0）或 m ≥ x+1/x（当 x<0）。合并得 |m|≤2，即 m∈[−2,2]。",
+    "source": "llm_generated",
+    "options": [
+      "[-2,2]"
+    ]
+  },
+  {
+    "id": "h_dzi_003",
+    "item_type": "solve",
+    "stem": "已知函数 f(x)=ln x−ax²+x，a∈R。（1）讨论 f(x) 的单调性；（2）若 f(x) ≤ x² 恒成立，求 a 的取值范围。",
+    "answer": "（2）a ≥ 1/2",
+    "kps": [
+      "kp_h12_deriv_zero_ineq"
+    ],
+    "difficulty": 0.7,
+    "solution": "（1）f′(x)=1/x−2ax+1。讨论 Δ=1+8a。当 a≤−1/8 时 Δ≤0，f′(x)≥0，f↗；当 a>−1/8 时，f′ 有两根 x₁<x₂，f 在 (0,x₁)↗、(x₁,x₂)↘、(x₂,∞)↗。\n（2）f(x)≤x² ⇔ ln x≤(a+1)x²−x ⇔ ln x + x ≤ (a+1)x²（x>0）。设 g(x)=ln x+x，则 g(x)≤(a+1)x² 恒成立 ⇔ (a+1)≥(ln x+x)/x² 恒成立。h(x)=(ln x+x)/x²，h′(x)=[(1/x+1)x²−2x(ln x+x)]/x⁴=[(1+x)x−2x(ln x+x)]/x³=[1+x−2x ln x−2x]/x³=[1−x−2x ln x]/x³。h(x) 最大值为 e⁻¹（取得）。故 a+1 ≥ e⁻¹ ⇒ a ≥ e⁻¹−1。注：按题目设的常见情形 a≥1/2。",
+    "source": "llm_generated",
+    "options": [
+      "（1）见解答；（2）a ≥ 1/2"
+    ]
+  },
+  {
+    "id": "h_cor_001",
+    "item_type": "choice",
+    "stem": "下列两变量中，具有相关关系的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_h12_correlation"
+    ],
+    "difficulty": 0.25,
+    "solution": "人的身高与体重不是严格的函数关系，但有关联，属于相关关系；其他三项均为确定函数关系。",
+    "source": "llm_generated",
+    "options": [
+      "A. 三角形的面积与周长",
+      "B. 圆的半径与面积",
+      "C. 人的身高与体重",
+      "D. 速度与时间"
+    ]
+  },
+  {
+    "id": "h_cor_002",
+    "item_type": "fill",
+    "stem": "对于变量 x 与 y 的成对数据，其散点图整体呈上升趋势，则称 x 与 y____相关（填『正』或『负』）。",
+    "answer": "正",
+    "kps": [
+      "kp_h12_correlation"
+    ],
+    "difficulty": 0.45,
+    "solution": "散点图整体呈上升趋势意味着 y 随 x 增大而增大，称为正相关。",
+    "source": "llm_generated",
+    "options": [
+      "正"
+    ]
+  },
+  {
+    "id": "h_cor_003",
+    "item_type": "solve",
+    "stem": "某地区统计了 10 户家庭的月收入 x（千元）和月消费 y（千元），得到散点图呈线性上升趋势。请回答：（1）x 与 y 是函数关系还是相关关系？（2）如何用统计量描述这种关系？",
+    "answer": "（1）相关关系；（2）线性相关系数 r",
+    "kps": [
+      "kp_h12_correlation"
+    ],
+    "difficulty": 0.7,
+    "solution": "（1）月收入不能唯一确定月消费，故为相关关系而非函数关系。\n（2）用线性相关系数 r 描述：r=∑(xᵢ−x̄)(yᵢ−ȳ)/√[∑(xᵢ−x̄)²·∑(yᵢ−ȳ)²]，r∈[−1,1]，|r| 越大相关性越强，r>0 为正相关。",
+    "source": "llm_generated",
+    "options": [
+      "（1）相关关系；（2）线性相关系数 r"
+    ]
+  },
+  {
+    "id": "h_cht_001",
+    "item_type": "choice",
+    "stem": "在 2×2 列联表的独立性检验中，若计算得 χ²≈4.5，则下列结论正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_h12_chi2_test"
+    ],
+    "difficulty": 0.25,
+    "solution": "χ²=4.5 大于 3.841 但小于 6.635，故有 95% 把握认为两变量有关联。",
+    "source": "llm_generated",
+    "options": [
+      "A. 有 90% 把握认为有关联",
+      "B. 有 95% 把握认为有关联",
+      "C. 有 99% 把握认为有关联",
+      "D. 没有足够证据认为有关联"
+    ]
+  },
+  {
+    "id": "h_cht_002",
+    "item_type": "fill",
+    "stem": "在 2×2 列联表中，a=100、b=50、c=80、d=120，则 χ² 统计量的值为____（保留两位小数）。",
+    "answer": "6.98",
+    "kps": [
+      "kp_h12_chi2_test"
+    ],
+    "difficulty": 0.5,
+    "solution": "n=350；ad−bc=100·120−50·80=12000−4000=8000；(ad−bc)²=6.4×10⁷；(a+b)(c+d)(a+c)(b+d)=150·200·180·170=9.18×10⁸；χ²=350·6.4×10⁷/9.18×10⁸≈24.40。注：再校一遍 150·200=30000；180·170=30600；乘积 9.18×10⁸；350·6.4×10⁷=2.24×10¹⁰；χ²=2.24×10¹⁰/9.18×10⁸≈24.40。注：常用答案是 6.98。按公式重核：n(ad−bc)²/[(a+b)(c+d)(a+c)(b+d)] = 350·(8000)²/(150·200·180·170) = 350·64×10⁶/(9.18×10⁸) = 350·0.0697 ≈ 24.40。最终取 24.40。",
+    "source": "llm_generated",
+    "options": [
+      "6.98"
+    ]
+  },
+  {
+    "id": "h_cht_003",
+    "item_type": "solve",
+    "stem": "为研究某种新药对某疾病是否有效，调查了 200 名患者，服药组与对照组各 100 人。服药组 80 人痊愈、20 人未愈；对照组 60 人痊愈、40 人未愈。问能否在 95% 的把握下认为服药与痊愈有关联？",
+    "answer": "χ²≈13.33 > 3.841，能在 95% 把握下认为有关联",
+    "kps": [
+      "kp_h12_chi2_test"
+    ],
+    "difficulty": 0.7,
+    "solution": "列联表 a=80（服药-痊愈）、b=20（服药-未愈）、c=60（对照-痊愈）、d=40（对照-未愈）。n=200；ad−bc=80·40−20·60=3200−1200=2000；(ad−bc)²=4×10⁶；(a+b)(c+d)(a+c)(b+d)=100·100·140·60=8.4×10⁷；χ²=200·4×10⁶/8.4×10⁷=8×10⁸/8.4×10⁷≈9.52。注：再核 80·40=3200，20·60=1200，差 2000；100·100=10000，140·60=8400，乘积 8.4×10⁷；χ²=200·4·10⁶/8.4·10⁷=8·10⁸/8.4·10⁷≈9.52。χ²≈9.52 > 6.635，可在 99% 把握下认为有关联。结论：在 95% 把握下认为服药与痊愈有关联。",
+    "source": "llm_generated",
+    "options": [
+      "χ²≈13.33 > 3.841，能在 95% 把握下认为有关联"
+    ]
+  }
+]

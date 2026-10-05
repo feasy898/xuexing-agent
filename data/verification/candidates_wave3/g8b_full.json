@@ -1,0 +1,488 @@
+[
+  {
+    "id": "m8_132",
+    "item_type": "fill",
+    "stem": "在平行四边形ABCD中，对角线AC、BD相交于点O，若AC=10，则AO=____。",
+    "answer": "5",
+    "kps": [
+      "kp_parallelogram"
+    ],
+    "difficulty": 0.25,
+    "solution": "平行四边形的对角线互相平分，AO=AC÷2=10÷2=5。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_133",
+    "item_type": "choice",
+    "stem": "四边形ABCD的对角线AC、BD相交于点O，下列条件中能判定四边形ABCD是平行四边形的是（　）",
+    "answer": "A",
+    "options": [
+      "A. OA=OC，OB=OD",
+      "B. OA=OC，OB≠OD",
+      "C. AC=BD",
+      "D. AC⊥BD"
+    ],
+    "kps": [
+      "kp_parallelogram"
+    ],
+    "difficulty": 0.5,
+    "solution": "对角线互相平分的四边形是平行四边形：A中OA=OC且OB=OD，即对角线互相平分，正确；B对角线不互相平分；C对角线相等不一定（如等腰梯形）；D对角线互相垂直不一定（除非已知是平行四边形才能推出菱形）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_134",
+    "item_type": "solve",
+    "stem": "在平行四边形ABCD中，∠B=80°，BE平分∠ABC交AD于点E，求∠AED的度数。",
+    "answer": "140°",
+    "kps": [
+      "kp_parallelogram"
+    ],
+    "difficulty": 0.7,
+    "solution": "BE平分∠ABC，所以∠EBC=½×80°=40°。在平行四边形ABCD中AD∥BC，所以∠AEB=∠EBC=40°（内错角相等）。故∠AED=180°-∠AEB=180°-40°=140°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_135",
+    "item_type": "fill",
+    "stem": "计算：(-3x)·4x²=____。",
+    "answer": "-12x³",
+    "kps": [
+      "kp_poly_multiply"
+    ],
+    "difficulty": 0.3,
+    "solution": "单项式乘单项式：系数相乘-3×4=-12，同底数幂相乘x·x²=x³，得-12x³。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_136",
+    "item_type": "fill",
+    "stem": "计算：(2x-1)(x+4)=____。",
+    "answer": "2x²+7x-4",
+    "kps": [
+      "kp_poly_multiply"
+    ],
+    "difficulty": 0.5,
+    "solution": "多项式乘多项式：2x·x+2x·4+(-1)·x+(-1)·4=2x²+8x-x-4=2x²+7x-4。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_137",
+    "item_type": "choice",
+    "stem": "下列计算中，正确的是（　）",
+    "answer": "D",
+    "options": [
+      "A. (x+2)(x+3)=x²+5",
+      "B. (x-1)(x+1)=x²+2x-1",
+      "C. (2x+1)(x-2)=2x²+5x-2",
+      "D. (x+4)(x-2)=x²+2x-8"
+    ],
+    "kps": [
+      "kp_poly_multiply"
+    ],
+    "difficulty": 0.55,
+    "solution": "A：(x+2)(x+3)=x²+5x+6≠x²+5；B：(x-1)(x+1)=x²-1≠x²+2x-1；C：(2x+1)(x-2)=2x²-4x+x-2=2x²-3x-2≠2x²+5x-2；D：(x+4)(x-2)=x²-2x+4x-8=x²+2x-8，正确。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_138",
+    "item_type": "fill",
+    "stem": "正五边形的每个内角为____°。",
+    "answer": "108",
+    "kps": [
+      "kp_polygon_angles"
+    ],
+    "difficulty": 0.25,
+    "solution": "五边形内角和=(5-2)×180°=540°，正五边形每个内角=540°÷5=108°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_139",
+    "item_type": "choice",
+    "stem": "若一个正多边形的每个外角为45°，则它是（　）边形",
+    "answer": "C",
+    "options": [
+      "A. 六",
+      "B. 七",
+      "C. 八",
+      "D. 九"
+    ],
+    "kps": [
+      "kp_polygon_angles"
+    ],
+    "difficulty": 0.55,
+    "solution": "任意多边形的外角和为360°，故边数=360°÷45°=8，是正八边形，C正确。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_140",
+    "item_type": "solve",
+    "stem": "一个多边形除了一个内角外，其余各内角之和为2750°。求这个内角的度数和该多边形的边数。",
+    "answer": "130°，18边形",
+    "kps": [
+      "kp_polygon_angles"
+    ],
+    "difficulty": 0.7,
+    "solution": "设边数为n，内角和=(n-2)×180°。因为一个内角在(0°，180°)，所以2750°<(n-2)×180°<2750°+180°，即2750<180n-360<2930，解得17.28<n<18.28，故n=18。所求内角=(18-2)×180°-2750°=2880°-2750°=130°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_141",
+    "item_type": "fill",
+    "stem": "计算：a⁵÷a³=____（a≠0）。",
+    "answer": "a²",
+    "kps": [
+      "kp_power_rules"
+    ],
+    "difficulty": 0.3,
+    "solution": "同底数幂相除，底数不变、指数相减：5-3=2，得a²。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_142",
+    "item_type": "fill",
+    "stem": "计算：(a²b)²·(-a³b²)=____。",
+    "answer": "-a⁷b⁴",
+    "kps": [
+      "kp_power_rules"
+    ],
+    "difficulty": 0.55,
+    "solution": "(a²b)²=a⁴b²，再乘(-a³b²)，系数为-，a⁴·a³=a⁷，b²·b²=b⁴，得-a⁷b⁴。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_143",
+    "item_type": "fill",
+    "stem": "已知2ᵐ=4，2ⁿ=½，求2^(3m+2n)的值。",
+    "answer": "16",
+    "kps": [
+      "kp_power_rules"
+    ],
+    "difficulty": 0.65,
+    "solution": "由2ᵐ=4=2²得m=2；由2ⁿ=½=2⁻¹得n=-1。所以3m+2n=3×2+2×(-1)=6-2=4，2⁴=16。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_144",
+    "item_type": "fill",
+    "stem": "直角三角形的斜边长为13，一条直角边长为5，则另一条直角边长为____。",
+    "answer": "12",
+    "kps": [
+      "kp_pythagorean"
+    ],
+    "difficulty": 0.4,
+    "solution": "由勾股定理，另一条直角边=√(13²-5²)=√(169-25)=√144=12。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_145",
+    "item_type": "solve",
+    "stem": "飞机沿水平方向飞行，先向正东方向飞行40km，再向正北方向飞行30km。求飞机相对于起点的直线距离。",
+    "answer": "50km",
+    "kps": [
+      "kp_pythagorean"
+    ],
+    "difficulty": 0.7,
+    "solution": "东向与北向互相垂直，构成直角三角形。设飞机相对于起点距离为d，由勾股定理d=√(40²+30²)=√(1600+900)=√2500=50(km)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_146",
+    "item_type": "fill",
+    "stem": "若三角形三边长a=3、b=4、c=5，则∠C=____°（c为最大边）。",
+    "answer": "90",
+    "kps": [
+      "kp_pythagorean_converse"
+    ],
+    "difficulty": 0.3,
+    "solution": "因为a²+b²=3²+4²=9+16=25=5²=c²，由勾股定理的逆定理，△ABC是直角三角形，最大边c所对的角∠C=90°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_147",
+    "item_type": "choice",
+    "stem": "下列各组数中，能作为直角三角形三边长的是（　）",
+    "answer": "A",
+    "options": [
+      "A. 3，4，5",
+      "B. 5，6，8",
+      "C. 6，9，12",
+      "D. 7，9，11"
+    ],
+    "kps": [
+      "kp_pythagorean_converse"
+    ],
+    "difficulty": 0.5,
+    "solution": "A：3²+4²=9+16=25=5²，满足勾股定理的逆定理；B：5²+6²=61≠8²=64；C：6²+9²=117≠12²=144；D：7²+9²=130≠11²=121。A正确。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_148",
+    "item_type": "solve",
+    "stem": "在△ABC中，三边长AB=8，AC=15，BC=17。判断△ABC的形状，并指出哪个角是直角。",
+    "answer": "直角三角形，∠A=90°",
+    "kps": [
+      "kp_pythagorean_converse"
+    ],
+    "difficulty": 0.7,
+    "solution": "最大边为BC=17。因为AB²+AC²=8²+15²=64+225=289=17²=BC²，由勾股定理的逆定理，△ABC是直角三角形，最大边BC所对的角∠A是直角。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_149",
+    "item_type": "fill",
+    "stem": "若x<0，则√(x²)=____。",
+    "answer": "-x",
+    "kps": [
+      "kp_quadratic_radical"
+    ],
+    "difficulty": 0.4,
+    "solution": "√(x²)=|x|。当x<0时，|x|=-x（-x>0），所以√(x²)=-x。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_151",
+    "item_type": "fill",
+    "stem": "计算：√6·√15=____。",
+    "answer": "3√10",
+    "kps": [
+      "kp_radical_ops"
+    ],
+    "difficulty": 0.3,
+    "solution": "√6·√15=√(6×15)=√90=√(9×10)=3√10。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_152",
+    "item_type": "fill",
+    "stem": "计算：(√3+1)(√3-1)=____。",
+    "answer": "2",
+    "kps": [
+      "kp_radical_ops"
+    ],
+    "difficulty": 0.55,
+    "solution": "用平方差公式(a+b)(a-b)=a²-b²：(√3+1)(√3-1)=(√3)²-1²=3-1=2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_153",
+    "item_type": "solve",
+    "stem": "已知x=√3+1，y=√3-1，求x²-y²的值。",
+    "answer": "4√3",
+    "kps": [
+      "kp_radical_ops"
+    ],
+    "difficulty": 0.7,
+    "solution": "x²-y²=(x+y)(x-y)=(√3+1+√3-1)(√3+1-√3+1)=2√3·2=4√3。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_154",
+    "item_type": "fill",
+    "stem": "矩形ABCD的对角线AC=10，则另一条对角线BD=____。",
+    "answer": "10",
+    "kps": [
+      "kp_special_quadrilaterals"
+    ],
+    "difficulty": 0.3,
+    "solution": "矩形的对角线相等且互相平分，所以BD=AC=10。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_156",
+    "item_type": "solve",
+    "stem": "菱形ABCD的一条对角线长为6，面积为24，求另一条对角线的长。",
+    "answer": "8",
+    "kps": [
+      "kp_special_quadrilaterals"
+    ],
+    "difficulty": 0.7,
+    "solution": "菱形的面积等于两条对角线乘积的一半：面积=½×AC×BD，即24=½×6×BD，解得BD=8。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_157",
+    "item_type": "fill",
+    "stem": "在△ABC中，∠A=∠B=∠C，则∠A=____°。",
+    "answer": "60",
+    "kps": [
+      "kp_triangle_angles"
+    ],
+    "difficulty": 0.4,
+    "solution": "三角形内角和为180°，三内角相等则每个角=180°÷3=60°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_158",
+    "item_type": "solve",
+    "stem": "在△ABC中，∠A的外角为130°，∠A比∠B大20°，求∠C的度数。",
+    "answer": "100°",
+    "kps": [
+      "kp_triangle_angles"
+    ],
+    "difficulty": 0.65,
+    "solution": "∠A的外角为130°，所以∠A=180°-130°=50°。又∠A比∠B大20°，所以∠B=50°-20°=30°。故∠C=180°-∠A-∠B=180°-50°-30°=100°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_159",
+    "item_type": "fill",
+    "stem": "在△ABC中，D、E分别是AB、AC的中点，若DE=4，则BC=____。",
+    "answer": "8",
+    "kps": [
+      "kp_triangle_midsegment"
+    ],
+    "difficulty": 0.3,
+    "solution": "三角形中位线等于第三边的一半，即DE=½BC，所以BC=2DE=2×4=8。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_160",
+    "item_type": "choice",
+    "stem": "下列关于三角形中位线的说法中，正确的是（　）",
+    "answer": "C",
+    "options": [
+      "A. 三角形的中位线等于第三边",
+      "B. 三角形的中线等于第三边的一半",
+      "C. 三角形的中位线平行且等于第三边的一半",
+      "D. 三角形的中位线垂直于第三边"
+    ],
+    "kps": [
+      "kp_triangle_midsegment"
+    ],
+    "difficulty": 0.55,
+    "solution": "三角形中位线平行于第三边且等于第三边的一半，C正确。A错在中位线只是等于第三边的一半，不是等于第三边；B中线是顶点到对边中点的线段，与第三边长度无确定关系；D中位线平行于第三边，不是垂直。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_161",
+    "item_type": "solve",
+    "stem": "在△ABC中，D、E、F分别是BC、CA、AB的中点，若△ABC的面积为18，求△DEF的面积。",
+    "answer": "4.5",
+    "kps": [
+      "kp_triangle_midsegment"
+    ],
+    "difficulty": 0.7,
+    "solution": "△DEF是△ABC的中点三角形（medial triangle），其三条边都是△ABC的中位线，长度为对应边的½，△DEF与△ABC相似比为1:2，面积比为1:4。所以△DEF的面积=18÷4=4.5。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_162",
+    "item_type": "fill",
+    "stem": "已知三角形两边长分别为3和7，则第三边长a的取值范围是____。",
+    "answer": "4<a<10",
+    "kps": [
+      "kp_triangle_segments"
+    ],
+    "difficulty": 0.3,
+    "solution": "由三角形三边关系，两边之和大于第三边：3+7>a且|a-7|<3，即4<a<10。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_163",
+    "item_type": "fill",
+    "stem": "在△ABC中，AD平分∠BAC交BC于点D，若∠BAC=80°，∠B=60°，则∠ADB=____°。",
+    "answer": "80",
+    "kps": [
+      "kp_triangle_segments"
+    ],
+    "difficulty": 0.55,
+    "solution": "AD平分∠BAC，所以∠BAD=½×80°=40°。在△ABD中，∠ADB=180°-∠B-∠BAD=180°-60°-40°=80°。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_164",
+    "item_type": "solve",
+    "stem": "等腰三角形的两边长分别为5和11，求它的周长。",
+    "answer": "27",
+    "kps": [
+      "kp_triangle_segments"
+    ],
+    "difficulty": 0.7,
+    "solution": "若5为腰，则5+5=10<11，违反三边关系，舍去；故腰为11、底为5，周长=11+11+5=27。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_165",
+    "item_type": "fill",
+    "stem": "数据2，2，2，2，2的方差为____。",
+    "answer": "0",
+    "kps": [
+      "kp_variance"
+    ],
+    "difficulty": 0.3,
+    "solution": "平均数=2，每个数据与平均数之差都是0，方差=0。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_166",
+    "item_type": "choice",
+    "stem": "已知数据x1，x2，…，xn的平均数为5，方差为3，则新数据2x1-1，2x2-1，…，2xn-1的平均数和方差分别为（　）",
+    "answer": "A",
+    "options": [
+      "A. 9，12",
+      "B. 9，6",
+      "C. 4.5，12",
+      "D. 4.5，6"
+    ],
+    "kps": [
+      "kp_variance"
+    ],
+    "difficulty": 0.55,
+    "solution": "每个数据先乘以2再减1：新平均数=2×5-1=9；方差只受乘以2的影响（平移不减方差），新方差=2²×3=12。A正确。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_167",
+    "item_type": "solve",
+    "stem": "已知甲组数据：3，4，5，6，7；乙组数据：13，14，15，16，17。分别计算甲、乙两组数据的方差，并比较两组数据的稳定性。",
+    "answer": "甲、乙两组方差均为2；两组数据稳定性相同",
+    "kps": [
+      "kp_variance"
+    ],
+    "difficulty": 0.7,
+    "solution": "甲组平均数=(3+4+5+6+7)÷5=5，方差=[(3-5)²+(4-5)²+(5-5)²+(6-5)²+(7-5)²]÷5=(4+1+0+1+4)÷5=2。乙组每个数据比甲组对应数据大10，即整体平移10，方差不变，仍为2。两组方差相同，稳定性相同。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_168",
+    "item_type": "fill",
+    "stem": "某小组10人参加测试，其中8人得分为80分，2人得分为90分，则该小组的平均成绩为____分。",
+    "answer": "82",
+    "kps": [
+      "kp_weighted_average"
+    ],
+    "difficulty": 0.3,
+    "solution": "用频数作权的加权平均数=(80×8+90×2)÷(8+2)=(640+180)÷10=82(分)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_169",
+    "item_type": "choice",
+    "stem": "某校八年级(一)班有40人，期末数学考试中前20名的平均分为88分，后20名的平均分为72分，则该班期末数学考试的平均分为（　）分。",
+    "answer": "B",
+    "options": [
+      "A. 78",
+      "B. 80",
+      "C. 82",
+      "D. 84"
+    ],
+    "kps": [
+      "kp_weighted_average"
+    ],
+    "difficulty": 0.55,
+    "solution": "加权平均数=(88×20+72×20)÷40=3200÷40=80(分)，B正确。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "m8_170",
+    "item_type": "solve",
+    "stem": "某商店同时销售两种规格的礼品：A礼品售价50元/件，售出40件；B礼品售价30元/件，售出60件。求该批礼品的平均售价。",
+    "answer": "38元",
+    "kps": [
+      "kp_weighted_average"
+    ],
+    "difficulty": 0.7,
+    "solution": "用售出件数作权的加权平均数=(50×40+30×60)÷(40+60)=(2000+1800)÷100=3800÷100=38(元/件)。",
+    "source": "llm_generated"
+  }
+]

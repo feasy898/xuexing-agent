@@ -1,0 +1,32 @@
+离线冒烟（httpx ASGITransport 进程内直连，零网络不占端口）：15 项（14 端点 + 1 多租户专项；bank=math_grade7_items.json items=222 kps=37）
+  [01/15] POST /papers/diagnostic              FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [02/15] POST /learners/smoke-1/responses     FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [03/15] GET /learners/smoke-1/profile        FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [04/15] GET /learners/smoke-1/plan           FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [05/15] GET /learners/smoke-1/next_item      FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [06/15] POST /learners/smoke-1/reviews       FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [07/15] GET /orgs                            FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [08/15] POST /attribute                      FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [09/15] POST /trace                          FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [10/15] POST /blueprint                      FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [11/15] POST /grade                          FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [12/15] POST /recommend                      FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [13/15] POST /itembank/v2/validate           FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [14/15] POST /coverage/standard              FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+  [15/15] X-Org-Id 多租户隔离（trace/orgs × org-a）   FAIL  AttributeError: 'ASGITransport' object has no attribute 'handle_request'
+SMOKE_FAIL 0/15，失败端点：
+  - POST /papers/diagnostic
+  - POST /learners/smoke-1/responses
+  - GET /learners/smoke-1/profile
+  - GET /learners/smoke-1/plan
+  - GET /learners/smoke-1/next_item
+  - POST /learners/smoke-1/reviews
+  - GET /orgs
+  - POST /attribute
+  - POST /trace
+  - POST /blueprint
+  - POST /grade
+  - POST /recommend
+  - POST /itembank/v2/validate
+  - POST /coverage/standard
+  - X-Org-Id 多租户隔离（trace/orgs × org-a）

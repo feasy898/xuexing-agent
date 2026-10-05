@@ -1,0 +1,63 @@
+{
+  "subject": "english",
+  "grade_band": [1, 2],
+  "note": "一二年级英语母题库（预备级·听说与兴趣为主）：听选字母与大小写配对、听指令做动作、问候告别对话、看图说词说句、图片提示听小故事、歌谣演唱展示、看动画抓大意等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade1.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g1_letter_match",
+      "name": "听选字母与大小写配对",
+      "pattern": "典型情境：教师读出字母名称音，学生从打乱的字母卡中圈出所听到的字母，或把大写字母与小写字母连线配对。通法：按“音—形”两步定位：先听清字母名称音，在心里默唱字母歌找到它的邻居（如 g 的前面是 f、后面是 h）帮助确认；再辨形防错——b 与 d、p 与 q 看半圆朝向（b 半圆朝右、d 朝左），m 与 n 数拱门（两个拱是 m、一个拱是 n），i 与 l 看是否带点。最后把圈出的字母按字母歌连唱一遍验证顺序与读音。",
+      "example": "例：听老师读字母，把听到的大写字母和对应的小写字母连线。老师依次读出：Bb、Qq、Dd、Gg。连线项打乱为：B—q／D—b／G—d／Q—g。参考答案：B—b、D—d、G—g、Q—q。解析：听名称音后先在字母歌中定位（b 的邻居是 a 和 c，d 的邻居是 c 和 e），再检查小写形体：b 半圆朝右、d 半圆朝左；g 的尾巴带弯钩、q 的尾巴带点是常见混淆点，连线后把每组大小写连起来读两遍（big B, small b）即可确认。",
+      "kp_ids": ["kp_eng1_pha1_song", "kp_eng1_lis1_class_command", "kp_eng1_lsm1_picture_word_link"],
+      "variant_axes": ["听音圈字母（单个/连续三个）", "大小写配对连线", "形近字母组（b-d/p-q/m-n/i-l/u-v/w）专项辨析", "按字母表顺序找邻居（给出 f 和 h 缺中间字母）"]
+    },
+    {
+      "id": "arch_eng_g1_tpr_command",
+      "name": "听课堂指令做动作（TPR 反应）",
+      "pattern": "典型情境：教师发出 Stand up. / Sit down. / Open your book. / Point to the door. 等课堂指令，学生做出相应动作或指出实物。通法：把指令拆成“句首动词＋对象名词”两段听：先抓句首动词定动作类型（stand 站、sit 坐、open 打开、point 指、touch 摸、close 关上），再听后半段的限定对象（your book 你的书／the blackboard 黑板／your nose 你的鼻子）；听清两段再动，不要只听第一个词就抢答；没反应过来时举手说 Pardon? 或 One more time, please.，请老师放慢再说一遍，动作做完看同伴是否一致来自查。",
+      "example": "例：听指令，做动作。录音依次播放：① Stand up, please. ② Point to the blackboard. ③ Open your book. ④ Touch your nose. 参考答案：①起立；②用手指向黑板；③翻开自己的书；④用手摸自己的鼻子。解析：四条指令都遵循“动词＋宾语”结构，句首动词 stand（站立）、point（指）、open（打开）、touch（摸）决定做什么动作，宾语 the blackboard、your book、your nose 决定动作对象；听见 please 只表示礼貌，不改变动作，按顺序逐一执行即可全对。",
+      "kp_ids": ["kp_eng1_lis1_class_command", "kp_eng1_voc1_school", "kp_eng1_spk1_game_talk"],
+      "variant_axes": ["动作类指令（stand/sit/jump/clap）", "实物指认类指令（point to＋教室物品）", "书页操作类指令（open/close/turn to page 5）", "两步连续指令（Come here and touch the door.）"]
+    },
+    {
+      "id": "arch_eng_g1_greet_roleplay",
+      "name": "问候与告别情景对话选择（角色扮演）",
+      "pattern": "典型情境：给出早晨到校、课间遇见同学、晚上道别等情景，选出或补全该情景下应说的问候语、告别语，并进行两人角色扮演。通法：先看“时间＋场合”定句型：早晨用 Good morning.，下午用 Good afternoon.，晚上见面用 Good evening.（Good night. 只用于睡前告别）；初次/正式场合用 Hello!／How are you? — I'm fine, thank you. 回答；告别统一用 Goodbye.／Bye-bye.。再看对象（老师 Miss Li／同学 Mike）决定是否加称呼；最后两人交换角色把对话完整演一遍，注意问句用升调、答句用降调。",
+      "example": "例：早晨你到学校遇见李老师，你应该说：____。A. Good night, Miss Li. B. Good morning, Miss Li. C. Goodbye, Miss Li. 参考答案：B。解析：题干限定时间是早晨（morning）、场合是到校见面，见面问候应选 Good morning 并加称呼 Miss Li；A 项 Good night 是晚上睡前道别语，C 项 Goodbye 是分别时说的话，都与“早晨见面”的情景不符；选出后还可延伸口答：老师回说 Good morning. 时，用 How are you? — I'm fine, thank you. 完成一轮完整对话。",
+      "kp_ids": ["kp_eng1_voc1_greeting", "kp_eng1_spk1_greet_pair", "kp_eng1_prg1_greet"],
+      "variant_axes": ["时间轴换词（morning/afternoon/evening/night）", "见面寒暄（Hello! / How are you?）与告别（Goodbye. / Bye-bye.）", "称谓与对象（老师 Miss/Mr＋姓、同学直呼名）", "两人角色扮演＋动作（挥手、鞠躬）配合"]
+    },
+    {
+      "id": "arch_eng_g1_picture_speak",
+      "name": "看图说单词与套句型说短句",
+      "pattern": "典型情境：给出教室、家庭、动物园等主题图片，学生先说出图中物品/人物的单词，再套用句型框架说短句。通法：三步走——①整体看图定场景（这是教室还是家里）；②按“从左到右、从近到远”的顺序扫视，逐个用学过的单词命名物品（school/teacher/desk/book/bag/pencil），说不出时联想同主题词群；③套句型框架造句：This is a/an＋单数名词（This is a desk.）、I see a＋单数名词（I see a book.）、It is＋颜色/大小（It is big.）。说短句时手指图片、边指边说，把“事物—词语—句子”连成一条线。",
+      "example": "例：看教室图片，先说出图中物品的单词，再用 This is a/an… 说出两个短句。参考答案：单词：desk（课桌）、chair（椅子）、book（书）、bag（书包）、pencil（铅笔）；短句：This is a desk. / This is a chair.（或 This is a book. / I see a pencil.）。解析：先按从左到右的顺序指认物品说出单词，再套用句型框架 This is a＋单数名词逐句输出；注意 desk、chair 是以辅音音素开头的词前用 a，若换成 apple 这类元音音素开头的词要说 This is an apple.，边指图边说可保证词、句、图三者对应不漏项。",
+      "kp_ids": ["kp_eng1_spk1_picture_word", "kp_eng1_voc1_school", "kp_eng1_lsm1_picture_word_link"],
+      "variant_axes": ["主题场景轮换（教室/家/动物园/水果店）", "句型框架替换（This is… / I see… / It is…）", "a 与 an 的初步感知（元音音素开头用 an）", "从说单词到说两三个短句的支架递进"]
+    },
+    {
+      "id": "arch_eng_g1_story_listen",
+      "name": "图片提示下听小故事（排序与选图）",
+      "pattern": "典型情境：听教师或录音讲配图小故事（三至四幅图），按听到的顺序给图标序号，或选出“故事里的人物/地点”对应的图片。通法：听前先看图猜情节——三幅图各画了什么、按常识可能怎么排序（先…再…最后…）；听第一遍抓人物和开头（I am… / This is… 确定主人公），听第二遍抓顺序词和动作（then 然后、at last 最后、walk 走、swim 游），在对应图片角落记序号；听到不认识的词不慌，靠图片和动作猜意思；听完按自己排的顺序复述关键词（walk→swim→go home）核对是否与故事线一致。",
+      "example": "例：听录音小故事，按故事发生的顺序给图片标上 1、2、3：图 A 小鸭子在河里游泳，图 B 小鸭子在草地上走，图 C 小鸭子和鸭妈妈回家。录音原文：I am a little duck. I walk on the grass. Then I swim in the river. At last, I go home with Mother Duck. 参考答案：B—1，A—2，C—3。解析：开头 I walk on the grass 对应图 B 排第 1；接着的 Then I swim in the river 对应图 A 排第 2；结尾 At last… go home 对应图 C 排第 3；抓住 then（然后）和 at last（最后）两个顺序词，再结合每幅图的动作（走/游/回家）即可完成排序。",
+      "kp_ids": ["kp_eng1_lis1_story", "kp_eng1_lsm1_picture_word_link"],
+      "variant_axes": ["三幅图排序 → 四幅图排序", "顺序词显性（then/at last）→ 顺序词隐性（只靠动作先后）", "选主人公图片（Who is in the story?）", "听完用关键词复述故事线"]
+    },
+    {
+      "id": "arch_eng_g1_song_rhyme_show",
+      "name": "歌谣演唱与律动展示（评价型任务）",
+      "pattern": "典型情境：独立或小组合作演唱学过的字母歌、问候歌等英语歌曲歌谣，配拍手、动作律动，按评价要点展示。通法：练唱分四步——①先听录音整体跟唱两遍，感受旋律和节奏；②逐句模仿，重点对齐“重读音节落在强拍”（如字母歌里 W-double-u 一口气唱完不拖拍）；③配上动作记歌词（唱 clap 就拍手、唱 jump 就跳），用身体帮嘴巴记词；④小组展示时站姿大方、声音响亮、眼睛看观众，错了不停下来重唱，继续往下接。评价看四点：曲调准、歌词清、有动作、敢开口。",
+      "example": "例：两人一组演唱并表演问候歌 Hello! How are you?，配拍手动作。参考答案（示范与评价要点）：示范演唱——Hello! Hello! How are you? I'm fine, thank you. How are you?（在 Hello 处挥右手、在 I'm fine 处跷大拇指、问句用升调、答句用降调）。评价要点：①曲调节奏基本准确；②单词发音清楚（fine 中 /a/ 拉满、不喊唱）；③问句升调答句降调，动作与歌词同步；④声音响亮、面向同伴微笑。四点各占一颗星，得三颗星以上为达标；唱错词时不重头唱，从下一句接上继续。",
+      "kp_ids": ["kp_eng1_spk1_song_rhyme", "kp_eng1_pha1_rhythm_repeat", "kp_eng1_lsm1_confident"],
+      "variant_axes": ["独唱→小组合作唱（分句接龙）", "歌词挖空补唱（教师停顿处学生接词）", "换动作律动（拍手/跺脚/身体方向）", "升问降答的语调配对练习"]
+    },
+    {
+      "id": "arch_eng_g1_cartoon_gist",
+      "name": "看英语动画抓大意（选人物与场景）",
+      "pattern": "典型情境：观看一段一至两分钟的简单英语动画片（无字幕或英文字幕），回答“故事里有谁、在哪里、发生了什么”的选择题或指图题。通法：看前先读题干和选项，带着问题看（找猫还是找狗？）；看时抓三条线索——①反复出现的主人公形象和它的名字（听到最多的名词多是主人公）；②画面场景（森林、农场、厨房）对应场景词；③人物夸张的表情动作（跑、笑、哭）对应动作词；听不懂个别句子没关系，靠画面猜大意；看完先用中文说一句“这是关于……的故事”，再在选项中找与画面和重复词一致的那项。",
+      "example": "例：看动画片断后回答：Who is in the story? Ａ. A cat. Ｂ. A dog. Ｃ. A bird. 参考答案：Ｂ。解析：片断中反复出现一只黄狗的形象，且角色名字 Dodo 被喊了多次，画面里 Dodo 跑过草地、跳进水里捡球；虽然中间有些句子听不懂，但“狗的图片反复出现＋名字被多次呼叫”两条线索足以判断主人公是 a dog；看完先说一句大意（这是讲一只狗捡球的故事），再回到选项用画面信息逐一排除 A 和 C。",
+      "kp_ids": ["kp_eng1_vie1_cartoon", "kp_eng1_lis1_story"],
+      "variant_axes": ["选主人公 → 选地点场景（Where is it?）", "动画片长（1 分钟→2 分钟）与语速", "选项用图片呈现 → 选项用英文单词呈现", "看完口头说一句大意（中文或英文均可）"]
+    }
+  ]
+}

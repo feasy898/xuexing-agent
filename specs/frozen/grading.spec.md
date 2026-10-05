@@ -378,3 +378,28 @@ learner `"a"` → `True`（正确项与作答都解析到下标 0；若全文趟
   `sign·(|a| + b/c)`（消除草稿 `sign*(a+b/c)` 的符号歧义）；§3.4 写明纯单位词命中即
   返回、不回退更短后缀（`split_unit("小时")` → `("小时", None)`）；§2 装载约束改为
   自包含表述（草稿此处引用其他规格文档，违反自包含要求）。
+
+## 附录：修订 R7 —— 多选子题型 `mcq_multi`（2026-10-03 增补，K12 物理批触发）
+
+**修订条款**（在 R1–R6 之上追加，R1–R6 行为逐字不变）：
+
+- **R7a 形态判定**：`grade_choice` 读 `getattr(item, "form", "choice")`；
+  仅当其恰为 `"mcq_multi"` 时走多选支，**其余一切形态（含无 `form` 属性的鸭子题）走原单选支**。
+- **R7b 多选支绑定次序**（在 R4「空白作答短路」之后、R4「解析正确项」之前插入）：
+  1. `answer` 按分隔符 `[,，、;；]|和` 拆段（**不含空白**——选项全文形如「A. 甲正确」
+     自带空格，按空白切会劈开标签与正文），逐段过 N1–N5 归一，丢弃空段；
+  2. 每段各走一次原「标签趟 → 全文趟」解析（`_resolve_choice`），任一段解析不到
+     → `GradingError: item {id!r}: answer matches no option`；
+  3. 解析出的标签键集合有重复 → 同款 `GradingError`；
+  4. learner 答案同法拆分解析：解析不到（含集合为空/重复）→ `False`；
+  5. 判定 = 两个标签键集合**等值**（`frozenset` 相等，故与书写顺序、与
+     逗号/顿号/全角逗号/空白写法均无关）。
+- **R7c 无部分分**：少选一项、多选一项都是 `False`；`answer_mode` 不参与判定
+  （`"exact"` 与 `"subset"` 同语义）。
+- 单选路径对多选形态答案**不兜底**：`form != "mcq_multi"` 的题若 `answer` 是
+  `"A,D"`，仍按原行为抛 `GradingError`（实测）。
+
+**验证**：`python -m pytest tests/contract/test_mcq_multi_contract.py -q` → 9 passed
+（CPython 3.12.10 x64 / Windows，2026-10-03 实测）；回归基线
+`python -m pytest` 前后同档（2 failed / 752→761 passed / 2 skipped / 3 errors，
+2 failed 与 3 errors 均为改动前既有的语文批闭式问题）。

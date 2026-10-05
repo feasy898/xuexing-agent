@@ -1,0 +1,5332 @@
+{
+  "items": [
+    {
+      "id": "sci_prim_0099",
+      "item_type": "fill",
+      "stem": "判断物体是由一种物质组成还是由多种物质混合组成：干净的玻璃杯是由（　　）种物质组成的；铅笔是由木头和石墨等多种（　　）组成的。",
+      "answer": "一；物质",
+      "kps": [
+        "kp_sci2_material_mixture"
+      ],
+      "difficulty": 0.26,
+      "solution": "干净的玻璃杯可以看作只由玻璃一种物质组成；铅笔把木头和石墨等多种物质混合在一起，属于混合物。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0100",
+      "item_type": "solve",
+      "stem": "小红说：“铁钉是由铁做成的，所以铁钉只含一种物质。”小红的说法对吗？请举一个由多种物质组成的物品为例说明。",
+      "answer": "不对，还要看有没有混入别的物质；铅笔（木头＋石墨）就是由多种物质组成的。",
+      "kps": [
+        "kp_sci2_material_mixture"
+      ],
+      "difficulty": 0.33,
+      "solution": "不对，还要看有没有混入别的物质。铁钉如果表面镀了防锈的锌或漆，就含有多种物质；就算是光铁钉，表面也可能沾有别的杂质。像铅笔（木头＋石墨）、玻璃杯（玻璃＋外面的金属外壳）、桌子（木头＋铁钉）都是由多种物质组成的。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0101",
+      "item_type": "fill",
+      "stem": "请你当“小实验员”：用手摸一摸、看一看、闻一闻，把下面物质的特性记在表里。木头（　　）；玻璃（　　）；食盐水（　　）。",
+      "answer": "木头较粗糙、较硬、不溶于水；玻璃光滑、透明、坚硬；食盐水无色、能溶于水、尝起来是咸的",
+      "kps": [
+        "kp_sci2_material_property"
+      ],
+      "difficulty": 0.3,
+      "solution": "物质的特性包括颜色、气味、硬度、光泽、透明度、是否溶于水等。可以靠看（颜色、透明）、摸（软硬、光滑）、闻（气味）、滴水（溶解）来检验。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0102",
+      "item_type": "fill",
+      "stem": "描述一种物质的特性，可以从它的（　　）、（　　）、软硬、（　　）以及是否溶于水等方面来说。",
+      "answer": "颜色；气味；透明度",
+      "kps": [
+        "kp_sci2_material_property"
+      ],
+      "difficulty": 0.28,
+      "solution": "颜色、气味、软硬、透明度和是否溶于水都是描述物质特性的角度。观察得越全面，对物质的认识就越准确。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0103",
+      "item_type": "fill",
+      "stem": "请比较木头、塑料、玻璃、硬币的软硬：用指甲在它们表面轻轻划一划，看能不能留下痕迹，把软硬排一排。",
+      "answer": "最软到最硬大致是：木头、塑料、玻璃、硬币（玻璃和硬币都很硬）",
+      "kps": [
+        "kp_sci2_soft_hard"
+      ],
+      "difficulty": 0.32,
+      "solution": "不同的材料软硬不同。指甲能在上面留下划痕的（如木头、塑料）比较软，划不动的是硬的（如玻璃、硬币）。软硬是物质的重要特性。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0104",
+      "item_type": "solve",
+      "stem": "为什么用指甲就能比较出材料的软硬？这种方法有什么好处？",
+      "answer": "指甲有一定硬度，划得出痕迹的说明比指甲软；这样比较简单安全，不用损坏仪器。",
+      "kps": [
+        "kp_sci2_soft_hard"
+      ],
+      "difficulty": 0.3,
+      "solution": "人的指甲有一定硬度，能划出痕迹的说明材料比指甲软，划不动的比指甲硬。用指甲划一划简单、安全，不用损坏仪器，就能初步比较不同材料的软硬。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0105",
+      "item_type": "fill",
+      "stem": "请做“光能不能穿过物体”的小实验：把玻璃片、描图纸（木浆纸）、厚纸板依次举在灯前（或手电筒前），看后面的光有什么不同。",
+      "answer": "玻璃后面的光最亮；描图纸后面的光较暗、稍透光；厚纸板后面几乎全黑、光不能穿过",
+      "kps": [
+        "kp_sci2_light_penetrate"
+      ],
+      "difficulty": 0.31,
+      "solution": "光能穿过透明物体（如玻璃），只能穿过一部分半透明物体（如描图纸），不能穿过不透明物体（如厚纸板）。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0106",
+      "item_type": "fill",
+      "stem": "光能完全穿过的是（　　）物体，只能穿过一部分的是（　　）物体，光完全不能穿过的是（　　）物体。",
+      "answer": "透明；半透明；不透明",
+      "kps": [
+        "kp_sci2_light_penetrate"
+      ],
+      "difficulty": 0.27,
+      "solution": "玻璃、水、空气是透明的；描纸、蜡纸是半透明的；木板、金属、纸板是不透明的。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0107",
+      "item_type": "solve",
+      "stem": "一个瓶子看起来是空的，可把瓶口拧紧就紧拧不动了；把一块石头放进装满水的杯子里，水面会升高。请你说说这两件事说明了什么。",
+      "answer": "说明空气和水都占据空间。",
+      "kps": [
+        "kp_sci2_occupy_space"
+      ],
+      "difficulty": 0.34,
+      "solution": "说明空气和水都占据空间。瓶子里本来装满了空气，把它压缩（拧紧瓶塞）就很紧，说明空气占据空间；石头放进水中把水挤开，使水面升高，说明水也占据空间。而且不同的东西占据的空间不能相互替代。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0108",
+      "item_type": "fill",
+      "stem": "请你做“水会占空间”的小实验：在一个杯中装大半杯水，记下水面高度，再放入一颗石子或一块橡皮，看看水面有什么变化。",
+      "answer": "放入石子后水面升高了，说明石头占据了原来水的空间",
+      "kps": [
+        "kp_sci2_occupy_space"
+      ],
+      "difficulty": 0.29,
+      "solution": "物体放进水里会占掉一部分水的空间，把水挤开，所以水面上升。物体和水各自占据自己的空间，互不相让。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0109",
+      "item_type": "solve",
+      "stem": "小明测量时尺子没有与物体靠紧、眼睛也是斜着看刻度，结果量出的长度偏小。请你说说怎样测才准确。",
+      "answer": "尺子要与物体紧贴、0刻度对准一端，视线与尺面垂直；同一物体多测几次结果一致才准确。",
+      "kps": [
+        "kp_sci2_measure_accurate"
+      ],
+      "difficulty": 0.35,
+      "solution": "测量的正确做法是：把尺子的0刻度线对准物体的一端，尺子与物体紧贴、不能翘起；眼睛正对着刻度视线与尺面垂直；同一物体多测几次，如果几次结果一样，说明测量准确。斜视会使读数偏小或偏大。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0110",
+      "item_type": "fill",
+      "stem": "请量一量课桌的桌面长：第一次把尺子放正测量，第二次故意斜着放测量，第三次多测两次取一致结果，比一比三次结果有什么不同。",
+      "answer": "放正测量结果最接近真实值；斜着量结果偏小（偏大）；多次测量结果相同时最可靠",
+      "kps": [
+        "kp_sci2_measure_accurate"
+      ],
+      "difficulty": 0.3,
+      "solution": "测量要尺子与物体贴平、视线正对刻度。斜视或尺子不贴平会使结果有偏差，多测几次结果一致才可靠。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0111",
+      "item_type": "fill",
+      "stem": "请做“声音能不能传过来”的小实验：一个人用指节轻敲桌面，另一个人把耳朵贴在桌面上听；再站起来隔着空气听，比一比有什么不同。",
+      "answer": "耳朵贴在桌面上听得清楚（声音沿固体传得快）；离开桌面隔空气听，声音小得多",
+      "kps": [
+        "kp_sci2_sound_transmit"
+      ],
+      "difficulty": 0.33,
+      "solution": "声音能在固体、液体和气体中传播，但在固体中传得最快，在空气中传得比较慢，所以贴着桌面听更清楚。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0112",
+      "item_type": "fill",
+      "stem": "声音能在（　　）、（　　）和（　　）中传播，其中在（　　）中传播得最快。",
+      "answer": "固体；液体；气体；固体",
+      "kps": [
+        "kp_sci2_sound_transmit"
+      ],
+      "difficulty": 0.28,
+      "solution": "声音要靠物质作介质才能传播，在固体中传得最快、液体次之、气体中最慢。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0113",
+      "item_type": "fill",
+      "stem": "把橡皮筋拴在纸盒上，依次把它拉得很松、比较松、很紧，拨动它听声音，比一比声音的高低有什么变化。",
+      "answer": "橡皮筋拉得越紧，振动越快，发出的声音越高；拉得越松，声音越低",
+      "kps": [
+        "kp_sci2_sound_high_low"
+      ],
+      "difficulty": 0.34,
+      "solution": "物体振动越快，声音越高；振动越慢，声音越低。橡皮筋拉紧后振动加快，所以声音变高。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0114",
+      "item_type": "solve",
+      "stem": "为什么把橡皮筋拉得越紧，拨起来的声音越高？请说说原因。",
+      "answer": "橡皮筋拉紧后振动变快，物体振动越快声音越高。",
+      "kps": [
+        "kp_sci2_sound_high_low"
+      ],
+      "difficulty": 0.31,
+      "solution": "因为橡皮筋被拉紧后长度变短、质量变少，振动变快。物体振动越快，发出的声音就越高。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0115",
+      "item_type": "fill",
+      "stem": "下面这些变化中，物质本身没有变、只是形状或状态变了，属于（　　）变化：水结成冰；纸被折剪；玻璃杯被打碎；铁丝被弯成钩。",
+      "answer": "物理",
+      "kps": [
+        "kp_sci2_physical_change"
+      ],
+      "difficulty": 0.32,
+      "solution": "水结成冰、纸被折剪、玻璃杯打碎、铁丝弯钩，都只是形状或状态改变，物质本身还是原来的物质，属于物理变化。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0116",
+      "item_type": "solve",
+      "stem": "“水结成冰”和“木头燃烧变成灰”都属于变化，它们一样吗？请说说区别。",
+      "answer": "不一样。水结成冰没有生成新物质，是物理变化；木头燃烧生成了灰烬、气体等新物质，是化学变化。",
+      "kps": [
+        "kp_sci2_physical_change"
+      ],
+      "difficulty": 0.36,
+      "solution": "不一样。水结成冰只是由液态变成固态，物质本身还是水，属于物理变化；木头燃烧后生成灰烬、气体和烟，生成了新物质，属于化学变化。判断的关键是看有没有生成新的物质。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0117",
+      "item_type": "fill",
+      "stem": "请做“热往哪里跑”的小实验：一杯热水用盖子盖好，一杯热水不盖，同时放在桌上，每隔几分钟摸一摸（注意不烫伤），记录温度有什么变化。",
+      "answer": "盖了盖子的水温下降得慢一些，不盖的凉得快；热水总是慢慢变凉",
+      "kps": [
+        "kp_sci2_heat_transfer"
+      ],
+      "difficulty": 0.33,
+      "solution": "热总是从温度高的物体传向温度低的物体。盖上盖子能减慢空气对流散热，所以水凉得慢。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0118",
+      "item_type": "solve",
+      "stem": "为什么热水放在桌上会慢慢变凉？请用“热从高温传向低温”解释。",
+      "answer": "热总是从温度高的物体传向温度低的物体，热水把热传给周围的空气和桌子就逐渐变凉。",
+      "kps": [
+        "kp_sci2_heat_transfer"
+      ],
+      "difficulty": 0.32,
+      "solution": "热总是从温度高的物体传向温度低的物体。热水温度比周围空气和桌子高，热就从水传向空气和桌子，水的温度降低，最后和周围一样温度时就不再传热了。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0119",
+      "item_type": "fill",
+      "stem": "请做“谁的传热快”小实验：把一把金属勺和一双木筷同时放进同一杯热水里（请大人陪同，小心烫伤），观察哪一样先变热。",
+      "answer": "金属勺先变热，金属比木头（和塑料）传热快",
+      "kps": [
+        "kp_sci2_conduction"
+      ],
+      "difficulty": 0.35,
+      "solution": "不同的材料传热的快慢不同。金属传热快，塑料、木头、干纸传热慢，所以热水里金属勺先烫手。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0120",
+      "item_type": "fill",
+      "stem": "把金属勺和木筷同时放入热水中，（　　）先变热，说明金属比木头（　　）。",
+      "answer": "金属勺；传热快",
+      "kps": [
+        "kp_sci2_conduction"
+      ],
+      "difficulty": 0.29,
+      "solution": "金属勺先变热，说明金属的传热性能比木头好，金属传热快。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0121",
+      "item_type": "fill",
+      "stem": "阳光照亮大地、晒热衣服、晒干湿衣服，这些都来自太阳提供的（　　），它是一种（　　）能。",
+      "answer": "光和热；太阳",
+      "kps": [
+        "kp_sci2_sun_energy"
+      ],
+      "difficulty": 0.27,
+      "solution": "太阳是一个巨大的能量来源，它发出的光和热给地球带来能量。太阳能清洁并且取之不尽。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0122",
+      "item_type": "solve",
+      "stem": "冬天把棉被晒在太阳下，夜里盖起来为什么更暖和？请说一说。",
+      "answer": "太阳光把棉被晒热并晒干湿气，夜里被子把热量传给身体，所以更暖和。",
+      "kps": [
+        "kp_sci2_sun_energy"
+      ],
+      "difficulty": 0.3,
+      "solution": "太阳光把棉被晒热，也把被子里面的湿气晒掉。被子吸收了太阳的热，夜里盖在身上时把热量传给身体，而且还更干燥保暖，所以更暖和。这说明太阳能给我们的生活带来便利。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0123",
+      "item_type": "fill",
+      "stem": "植物的（　　）吸收水分，（　　）运输水分和养分，（　　）制造养分，（　　）和种子与繁殖有关。",
+      "answer": "根；茎；叶；花",
+      "kps": [
+        "kp_sci2_plant_organ_function"
+      ],
+      "difficulty": 0.3,
+      "solution": "根吸收水分，茎运输水分和养分，叶利用阳光制造养分，花、果实和种子与繁殖有关。各器官分工合作。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0124",
+      "item_type": "solve",
+      "stem": "一株植物的叶被虫吃光了，这株植物还能正常生长吗？请说说理由。",
+      "answer": "不能。叶子是制造养分的器官，叶被吃光后得不到养分，植物会停止生长、慢慢枯死。",
+      "kps": [
+        "kp_sci2_plant_organ_function"
+      ],
+      "difficulty": 0.34,
+      "solution": "不能正常生长。叶是植物制造养分的器官，叶被吃光后不能利用阳光制造养料，植物得不到养分，就会停止生长、慢慢枯死。这也说明根、茎、叶各司其职、缺一不可。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0125",
+      "item_type": "fill",
+      "stem": "请做“植物需要什么条件”的对比实验：取四组相同的绿豆芽，分别放在有光无光、水多水少、温度高低的条件下，三天后比较长势。",
+      "answer": "有光、水适量、温度适宜的那一组长得最好；无光的不长黄、水太多会烂、温度太低不生长",
+      "kps": [
+        "kp_sci2_plant_growth_condition"
+      ],
+      "difficulty": 0.36,
+      "solution": "植物生长需要水、阳光和适宜的温度，三者缺一不可。所以养花要放在合适的位置、适量浇水、保持适宜温度。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0126",
+      "item_type": "solve",
+      "stem": "小明把绿豆芽放在窗台上，两天就长得很好；小红把绿豆芽放在抽屉里，几天后变得又黄又瘦。请说说为什么。",
+      "answer": "窗台上有阳光、水分和适宜温度，是植物生长需要的条件；抽屉里没有阳光，芽得不到养分就变黄变瘦。",
+      "kps": [
+        "kp_sci2_plant_growth_condition"
+      ],
+      "difficulty": 0.33,
+      "solution": "窗台上有阳光、水分和适宜温度，是植物生长需要的三个条件，所以绿豆芽长得壮；抽屉里没有阳光，缺少光照就不能制造养分，芽会变黄变瘦。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0127",
+      "item_type": "solve",
+      "stem": "根扎在土里，除了吸收水和盐以外还有什么作用？请举一个例子说明。",
+      "answer": "根还能把植物牢牢固定在土里，使它不被风吹倒，如路边的大树。",
+      "kps": [
+        "kp_sci2_root_role"
+      ],
+      "difficulty": 0.31,
+      "solution": "根还能把植物牢牢固定在土里，使植物不被风吹倒。路边大树、小区里的树虽然地上部分很大，但都靠根牢牢地扎在土里固定着，同时根在土中向四周伸展，扩大吸收面积。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0128",
+      "item_type": "fill",
+      "stem": "请到户外（或看图片）看看一棵小树或一棵草，试着找出它的根在哪里、往哪个方向伸展，并说说根有什么作用。",
+      "answer": "根在地下向四周伸展，牢牢固定住植物，并从土中吸收水分和无机盐",
+      "kps": [
+        "kp_sci2_root_role"
+      ],
+      "difficulty": 0.28,
+      "solution": "根在土里既起“抓地固定”的作用，又能吸水和无机盐。根伸得越远、扎得越深，植物越牢固、吸收得越多。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0129",
+      "item_type": "fill",
+      "stem": "请做“红墨水走水路”的小实验：把白色（或浅色）芹菜插进滴了红墨水的杯子里，一天后看看茎和叶脉发生了什么变化。",
+      "answer": "茎和叶脉变成了红色（带红色的条纹），说明茎能把水从根向上运输到叶",
+      "kps": [
+        "kp_sci2_stem_role"
+      ],
+      "difficulty": 0.35,
+      "solution": "茎内部有细细的运输通道，能把根吸收的水和无机盐向上运到叶，所以带颜色的水会沿茎上升。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0130",
+      "item_type": "solve",
+      "stem": "把一根插着白花的枝条斜剪一个口子再插入水中，过几天花为什么还能保持鲜艳？",
+      "answer": "斜剪后吸水位置增多、吸水更多，茎仍能把水输送到花，所以花能保持鲜艳。",
+      "kps": [
+        "kp_sci2_stem_role"
+      ],
+      "difficulty": 0.32,
+      "solution": "因为枝条斜剪后露出了更多吸水的位置，吸水更多；而茎仍能把水输送到花，所以花还能得到水、保持鲜艳。这说明茎有运输水的作用，斜剪能增加吸水面积。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0131",
+      "item_type": "solve",
+      "stem": "树叶为什么都摊得很平、伸展开来？这样做有什么用？",
+      "answer": "摊平伸展开来能接住更多阳光、便于制造养料，同时也有利于散失水分。",
+      "kps": [
+        "kp_sci2_leaf_role"
+      ],
+      "difficulty": 0.3,
+      "solution": "叶子摊开、伸展开来能接住更多的阳光，便于利用阳光制造养料；同时叶片大、摊开也能更快地散失水分。摊平的叶子既有面朝光的一面，也能通风。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0132",
+      "item_type": "fill",
+      "stem": "叶子摊开面积大，能（　　）阳光制造养料，同时也能散失（　　）。",
+      "answer": "接收；水分",
+      "kps": [
+        "kp_sci2_leaf_role"
+      ],
+      "difficulty": 0.26,
+      "solution": "叶子摊开面积大，接收的阳光多，能更好地制造养料；叶子上的小孔又会散失水分。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0133",
+      "item_type": "solve",
+      "stem": "种子虽然很小，小到我们几乎看不见，但种子里却藏着植物的（　　），它能长成一株新的植物。请你说说这说明什么。",
+      "answer": "幼芽（新的生命）",
+      "kps": [
+        "kp_sci2_seed_is_life"
+      ],
+      "difficulty": 0.29,
+      "solution": "种子虽小，里面却藏着植物的幼芽和给它准备的“干粮”，条件合适时就能发芽长成一株新的植物。所以小小的种子里面孕育着新的生命。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0134",
+      "item_type": "fill",
+      "stem": "请做“种子有多大”的小实验：取一粒芝麻或绿豆放在白纸上，用放大镜（或尺子量）看看它有多大，再和一粒米比一比。",
+      "answer": "种子非常小（绿豆直径约5毫米，芝麻更小），但它能长成一株比我们高得多的植物",
+      "kps": [
+        "kp_sci2_seed_is_life"
+      ],
+      "difficulty": 0.3,
+      "solution": "种子虽小，却能长成大植物，说明小小的种子里包含着完整的新生命所需的一切。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0135",
+      "item_type": "solve",
+      "stem": "小明做了三组绿豆发芽实验：A给了水，B给了水又给了空气，C给了水但放进冰箱里温度很低。结果只有一组发芽了。请说说结论和理由。",
+      "answer": "种子发芽需要水、充足的空气和适宜的温度，三者缺一不可。",
+      "kps": [
+        "kp_sci2_seed_germination"
+      ],
+      "difficulty": 0.34,
+      "solution": "种子发芽需要水、充足的空气和适宜的温度，三者缺一不可。水是让种子吸水膨胀、发动发芽的必要条件；空气（氧气）供呼吸；温度太低或太高种子都不容易发芽。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0136",
+      "item_type": "fill",
+      "stem": "请做“种子发芽要什么”的对比实验：取三组绿豆，分别放在有水无空气、水少、放在冰箱低温（都有水）的环境下，三天后看哪组发芽。",
+      "answer": "条件合适（有水、有空气、温度适宜）的那组发了芽；缺水、没空气、太冷都不能发芽，说明种子发芽需要水、空气和适宜温度",
+      "kps": [
+        "kp_sci2_seed_germination"
+      ],
+      "difficulty": 0.35,
+      "solution": "设计对照实验时只改变一个条件，其它条件相同，才能说明是这个条件在起作用。这是科学探究的重要方法。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0137",
+      "item_type": "solve",
+      "stem": "果实把种子包在里面，有什么好处？请举两个例子说明。",
+      "answer": "一是保护种子（如桃的果肉包着核），二是帮助种子传播（如苍耳带钩、椰子能漂）。",
+      "kps": [
+        "kp_sci2_fruit_protect"
+      ],
+      "difficulty": 0.31,
+      "solution": "一是能保护种子，不让种子被碰坏、晒坏或被动物提前吃掉（如桃的果肉包着坚硬的核）；二是果实本身常常带小刺、带黏性或颜色鲜艳，能帮助种子传播到远处。像苍耳的果实带钩容易挂在动物身上，椰子的果实能漂到海岛。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0138",
+      "item_type": "fill",
+      "stem": "果实把（　　）包在里面，既能（　　）种子，又能帮助种子（　　）。",
+      "answer": "种子；保护；传播",
+      "kps": [
+        "kp_sci2_fruit_protect"
+      ],
+      "difficulty": 0.27,
+      "solution": "果实包着种子，既保护种子，又借助果实自身的特点帮助种子传播到更远的地方。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0139",
+      "item_type": "fill",
+      "stem": "我们吃的是植物的哪些器官？萝卜吃（　　），马铃薯吃（　　），白菜吃（　　），西红柿吃（　　），葵花籽吃（　　）。",
+      "answer": "根；茎；叶；果实；种子",
+      "kps": [
+        "kp_sci2_edible_plant_parts"
+      ],
+      "difficulty": 0.3,
+      "solution": "萝卜的根、马铃薯的块茎、白菜的叶、西红柿的果实、葵花籽的种子都是我们常吃的部分，不同的器官有不同的食用部位。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0140",
+      "item_type": "solve",
+      "stem": "马铃薯明明长在土里，为什么我们说我们吃的是它的“茎”而不是“根”？",
+      "answer": "马铃薯是块茎，上面有芽眼能发芽长苗，说明它是茎；真正的根是块茎下的细须根。",
+      "kps": [
+        "kp_sci2_edible_plant_parts"
+      ],
+      "difficulty": 0.32,
+      "solution": "马铃薯是块茎，是茎变态形成的，茎上有芽眼（芽），能发芽长成新植株；真正的根长在块茎下面细长的须根上。马铃薯的芽眼能长苗，说明它是茎。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0141",
+      "item_type": "fill",
+      "stem": "把动物分类：身上被毛、胎生的叫（　　）动物；被羽毛、会飞的叫（　　）类；用鳍游泳的叫（　　）类；有六条腿的叫（　　）。",
+      "answer": "哺乳；鸟；鱼；昆虫",
+      "kps": [
+        "kp_sci2_animal_groups"
+      ],
+      "difficulty": 0.31,
+      "solution": "哺乳动物被毛胎生、鸟被羽会飞、鱼用鳍游泳、昆虫有六条腿，此外还有爬行动物和两栖动物。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0142",
+      "item_type": "solve",
+      "stem": "青蛙、蛇、龟分别属于哪一类动物？请说说分类的依据。",
+      "answer": "青蛙是两栖动物，蛇和龟是爬行动物；分类依据是身体结构和生理特点。",
+      "kps": [
+        "kp_sci2_animal_groups"
+      ],
+      "difficulty": 0.34,
+      "solution": "青蛙是两栖动物（幼体用鳃在水中生活，成体用肺和皮肤呼吸、能在陆地生活）；蛇和龟是爬行动物（体表干燥有鳞、靠肺呼吸、卵生、变温）。分类的依据是动物的身体结构和生理特点。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0143",
+      "item_type": "solve",
+      "stem": "鱼用鳍游泳、鸟有羽毛和翅膀会飞、昆虫有六条腿。请你说说这些身体特征和生活方式有什么关系。",
+      "answer": "动物的身体特征与生活方式相适应：用鳍游泳的鱼、被羽有翅的鸟、六条腿的昆虫各有自己生活方式。",
+      "kps": [
+        "kp_sci2_animal_features"
+      ],
+      "difficulty": 0.33,
+      "solution": "鱼在水中生活，用鳍和尾摆动游泳、能呼吸水中的氧气；鸟在天上生活，羽毛轻、能保暖，翅膀大而有力适合飞行；昆虫的六条腿支撑身体、能爬能飞。所以动物的身体特征与它们的生活方式相适应。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0144",
+      "item_type": "fill",
+      "stem": "请观察（或看图片）鱼、鸟、蝴蝶，说出它们各用什么方式运动、用到了身体的什么部位。",
+      "answer": "鱼用鳍和尾游泳，鸟用翅膀飞，蝴蝶用翅膀飞（靠足行走）",
+      "kps": [
+        "kp_sci2_animal_features"
+      ],
+      "difficulty": 0.29,
+      "solution": "不同动物的运动方式不同：鱼靠鳍和尾，鸟靠翅膀，蝴蝶靠翅膀扇动飞行。身体结构和运动方式相配合。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0145",
+      "item_type": "fill",
+      "stem": "人体主要的器官有：跳动的是（　　），把食物消化吸收的是（　　），看东西用（　　），听声音用（　　），感觉冷热和疼痛用（　　）。",
+      "answer": "心脏；胃；眼；耳；皮肤",
+      "kps": [
+        "kp_sci2_body_organ"
+      ],
+      "difficulty": 0.28,
+      "solution": "心脏、心跳；胃、消化食物；眼、视觉；耳、听觉；皮肤、触觉。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0146",
+      "item_type": "solve",
+      "stem": "请指着自己的身体，说出心脏、胃、眼、耳、皮肤的位置，并各说一说它们的大概作用。",
+      "answer": "心脏在胸腔偏左像泵一样推动血液；胃在腹部左上储存并消化食物；眼在头部看东西；耳在头两侧听声音；皮肤覆盖全身感觉冷热和疼。",
+      "kps": [
+        "kp_sci2_body_organ"
+      ],
+      "difficulty": 0.31,
+      "solution": "心脏在胸腔偏左，像泵一样把血液送到全身；胃在腹部左上，储存并消化食物；眼在头部看东西；耳在头两侧听声音；皮肤覆盖全身，感觉冷热和疼。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0147",
+      "item_type": "solve",
+      "stem": "小红放学后先吃饭不洗手，晚上很晚才睡觉。请你说说这样做为什么不好，并说出正确的做法。",
+      "answer": "饭前不洗手，细菌会随食物进入身体容易生病；晚睡休息不足影响长身体和第二天的学习。应该洗手、按时早睡早起、坚持锻炼、不挑食。",
+      "kps": [
+        "kp_sci2_healthy_habit"
+      ],
+      "difficulty": 0.32,
+      "solution": "饭前不洗手，手上的细菌会随食物进入身体，容易生病；晚睡会让身体得不到充分的休息，影响第二天的学习和长身体。应该饭前便后用肥皂洗手、按时早睡早起、坚持锻炼、不挑食。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0148",
+      "item_type": "fill",
+      "stem": "有益健康的生活习惯有：（　　）、早睡早起、坚持（　　）和不挑食等。",
+      "answer": "饭前便后洗手；锻炼",
+      "kps": [
+        "kp_sci2_healthy_habit"
+      ],
+      "difficulty": 0.26,
+      "solution": "洗手、早睡早起、坚持锻炼、不挑食都是良好的生活习惯，有助于身体健康。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0149",
+      "item_type": "solve",
+      "stem": "燕子春天飞来、秋天南飞，蚂蚁忙着搬食物回家过冬。请说说这些行为对动物生存有什么意义。",
+      "answer": "觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要，能帮它们找到食物、躲避危险、繁殖后代。",
+      "kps": [
+        "kp_sci2_animal_behavior"
+      ],
+      "difficulty": 0.33,
+      "solution": "动物的行为（如觅食、筑巢、育幼、迁徙）是生存和繁衍的需要。燕子迁徙是为了寻找温暖和食物的南方；蚂蚁储食是为了过冬。这些行为帮助动物找到食物、躲避危险、繁殖后代。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0150",
+      "item_type": "fill",
+      "stem": "请观察（或看视频）小鸟喂雏鸟、小猫捉老鼠，说说这些行为在动物生活中有什么作用。",
+      "answer": "喂雏鸟属于育幼行为，保证小鸟长大；小猫捉老鼠属于觅食行为，获得生存需要的食物",
+      "kps": [
+        "kp_sci2_animal_behavior"
+      ],
+      "difficulty": 0.28,
+      "solution": "育幼和觅食都是动物的重要行为，它们关系到动物能不能生存和繁衍下去。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0151",
+      "item_type": "solve",
+      "stem": "在海边看远处的帆船，总是先看到桅杆的顶端，然后才看到船身。请说说这为什么能说明地球是圆的。",
+      "answer": "因为地面和海面是弯曲的，所以先看到高高的桅杆、后看到低的船身，说明地球是球形。",
+      "kps": [
+        "kp_sci2_earth_shape"
+      ],
+      "difficulty": 0.35,
+      "solution": "如果地面是平的，海面也是平的，应该先看到离我们近的船身、后看到远处的桅杆。现在先看到最高的桅杆、后看到低的船身，说明地面和海面是弯曲的，也就是地球是一个球形。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0152",
+      "item_type": "fill",
+      "stem": "地球是一个不规则的（　　）体，从海边看船总是先看到（　　），这说明地球表面是弯的。",
+      "answer": "球；桅杆（最高的部分）",
+      "kps": [
+        "kp_sci2_earth_shape"
+      ],
+      "difficulty": 0.27,
+      "solution": "地球是个不规则的球体，因为表面是弯曲的，所以远处的船先露出高高的桅杆。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0153",
+      "item_type": "solve",
+      "stem": "把球向上抛出去，球总会落下来。请你解释这是为什么。",
+      "answer": "因为地球对物体有向下的吸引力（重力），所以抛出的球总会落回地面。",
+      "kps": [
+        "kp_sci2_gravity"
+      ],
+      "difficulty": 0.32,
+      "solution": "因为地球对物体有向下的吸引力，这种力叫重力。抛出的球受到重力的作用，重力方向竖直向下，所以球总会落向地面。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0154",
+      "item_type": "fill",
+      "stem": "地球对物体的吸引力叫做（　　），它的方向是（　　）向下的，所以物体总是落向（　　）。",
+      "answer": "重力；竖直；地面",
+      "kps": [
+        "kp_sci2_gravity"
+      ],
+      "difficulty": 0.28,
+      "solution": "重力是地球对物体的吸引力，方向竖直向下，所以抛出的物体总会落回地面。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0155",
+      "item_type": "solve",
+      "stem": "为什么会有白天和黑夜？请你说说地球自转和昼夜的关系。",
+      "answer": "地球绕地轴不停地自转，转到面向太阳的一面是白天、背向太阳的一面是黑夜，所以昼夜交替。",
+      "kps": [
+        "kp_sci2_day_night_cause"
+      ],
+      "difficulty": 0.36,
+      "solution": "地球在不停地绕地轴自转，转一圈约24小时。转到面向太阳的那一面时被太阳照亮，就是白天；转到背向太阳的那一面时照不到太阳，就是黑夜。因为地球不停自转，面向太阳的一面不断改变，所以昼夜交替出现。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0156",
+      "item_type": "fill",
+      "stem": "地球不停地绕（　　）自转，转到面向太阳的一面是（　　），转到背向太阳的一面是（　　）。",
+      "answer": "地轴；白天；黑夜",
+      "kps": [
+        "kp_sci2_day_night_cause"
+      ],
+      "difficulty": 0.3,
+      "solution": "地球绕地轴自转，被太阳照到的一面是白天，背着太阳的一面是黑夜，昼夜因此交替。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0157",
+      "item_type": "solve",
+      "stem": "一年有春夏秋冬四季。请你从地球运动的角度说说四季是怎样形成的。",
+      "answer": "地球一边自转一边绕太阳公转，地轴是倾斜的，一年中南北半球接受太阳热量多少不同，就形成了四季。",
+      "kps": [
+        "kp_sci2_seasons_change"
+      ],
+      "difficulty": 0.38,
+      "solution": "地球一边绕地轴自转，一边绕太阳公转。由于地轴是倾斜的，一年中太阳照射到南、北半球的角度不同，各地接受太阳热量多少不同：得到热量多的时候是夏季，少的时候是冬季，这样就形成了春夏秋冬。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0158",
+      "item_type": "fill",
+      "stem": "地球一边（　　）一边绕太阳（　　），因为地轴（　　），太阳照射角度南北不同，形成了四季。",
+      "answer": "自转；公转；是倾斜的",
+      "kps": [
+        "kp_sci2_seasons_change"
+      ],
+      "difficulty": 0.33,
+      "solution": "地球自转产生昼夜，公转加上地轴倾斜使南北半球受热不同，形成一年四季。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0159",
+      "item_type": "fill",
+      "stem": "太阳是宇宙中最大的（　　），自己能发光发热；月亮自己不发光，靠（　　）才被我们看见。",
+      "answer": "恒星；反射太阳光",
+      "kps": [
+        "kp_sci2_sun_moon"
+      ],
+      "difficulty": 0.31,
+      "solution": "太阳是离我们最近也是最大的恒星，能自己发光发热；月亮不发光，反射太阳的光，所以看起来很亮。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0160",
+      "item_type": "solve",
+      "stem": "晚上关灯后房间里黑黑的，可是月亮却能把地面照亮。请说说这是为什么。",
+      "answer": "因为月亮自己不发光，它反射的是太阳的光，太阳光照到月亮上再反射到地面。",
+      "kps": [
+        "kp_sci2_sun_moon"
+      ],
+      "difficulty": 0.32,
+      "solution": "因为月亮自己不发光，它反射的是太阳的光。太阳的光照到月亮上再反射到地面，所以我们不用开灯也能看见物体。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0161",
+      "item_type": "solve",
+      "stem": "连续观察会发现月亮有时圆有时弯。请你说说这是为什么。",
+      "answer": "月球绕地球转，不同时刻被照亮的那一面对着我们的多少不同，看到的月亮形状就不同。",
+      "kps": [
+        "kp_sci2_moon_change"
+      ],
+      "difficulty": 0.34,
+      "solution": "因为月球绕着地球转，不同时刻月亮被太阳照亮的那一面对着我们的多少不同。看到被照亮部分多的时候月亮就圆，看到少的时候就是弯的。农历十五前后月圆，月初月末看不到月亮。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0162",
+      "item_type": "fill",
+      "stem": "请你连续两周每晚同一时间到窗边（或户外安全处）看月亮，把月亮的形状画在观察记录表上。",
+      "answer": "记录到的月亮形状由细到圆再变亏，与农历日期相对应",
+      "kps": [
+        "kp_sci2_moon_change"
+      ],
+      "difficulty": 0.32,
+      "solution": "月亮形状会按一定规律变化，连续记录才能发现它大约一个月变化一个周期。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0163",
+      "item_type": "solve",
+      "stem": "晴朗的夜晚能看到很多星星，为什么月亮的夜里星星看起来变少了？请说说原因。",
+      "answer": "因为月亮反射太阳光很亮，月光掩盖了星星的光，并不是星星真的变少了。",
+      "kps": [
+        "kp_sci2_star_sky"
+      ],
+      "difficulty": 0.3,
+      "solution": "因为月亮反射太阳光很亮，月光把夜空照亮，星星的光被掩盖了，所以看起来星星变少，并不是星星真的变少了。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0164",
+      "item_type": "fill",
+      "stem": "晴朗无月的夜晚，能看到许多（　　）；月光很强的夜晚，星星会显得（　　）。",
+      "answer": "星星；变少",
+      "kps": [
+        "kp_sci2_star_sky"
+      ],
+      "difficulty": 0.26,
+      "solution": "星星很多，月光太亮时星星的光被掩盖，看起来就变少了。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0165",
+      "item_type": "fill",
+      "stem": "天气包括（　　）、（　　）、（　　）等方面，一天里要关注多方面的情况。",
+      "answer": "气温；风力（风向）；降水",
+      "kps": [
+        "kp_sci2_weather_element"
+      ],
+      "difficulty": 0.29,
+      "solution": "描述天气要全面，包括气温、天气状况（晴阴）、风向风力、降水等方面。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0166",
+      "item_type": "solve",
+      "stem": "小明说“今天下雨”，这个说法够完整吗？请补充完整。",
+      "answer": "不够完整，还要补充气温、风向风力、降水大小等方面。",
+      "kps": [
+        "kp_sci2_weather_element"
+      ],
+      "difficulty": 0.33,
+      "solution": "不够完整，只说了降水。完整的描述应包括天气状况（下雨）、气温（多少度）、风向和风力（东南风几级）、降水大小（大雨/小雨）等，这样才能完整反映当天的天气。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0167",
+      "item_type": "solve",
+      "stem": "用温度计测水温时，为什么玻璃泡要全部浸入水中、并且不能碰到杯底和杯壁？请说说读数的正确方法。",
+      "answer": "玻璃泡要全部浸入水中且不碰杯底杯壁，测的才是水的温度；读数时视线与液柱上表面齐平。",
+      "kps": [
+        "kp_sci2_temperature_measure"
+      ],
+      "difficulty": 0.34,
+      "solution": "玻璃泡要全部浸入被测的水中，不能碰到容器底和壁，否则测的就是杯底或杯壁的温度而不是水的温度。读数时要把温度计垂直拿稳，眼睛与液柱上表面齐平（不能俯视或仰视），读出的数值就是水的温度，单位是摄氏度（℃）。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0168",
+      "item_type": "fill",
+      "stem": "请用温度计量一量：一杯温水、一杯凉水和室温的体温（用手腕内侧感受作对照），读数时眼睛要与液柱齐平，记录三组温度。",
+      "answer": "温水温度最高、凉水的最低，温度计上的液柱上表面与眼睛齐平处所指的刻度就是读数",
+      "kps": [
+        "kp_sci2_temperature_measure"
+      ],
+      "difficulty": 0.31,
+      "solution": "用温度计量温度时，玻璃泡要完全浸入被测物、不能碰容器壁，读数时视线与液面齐平，否则会读错。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0169",
+      "item_type": "fill",
+      "stem": "请做“测风”的小实验：用纸做一个小风车，观察它转动的快慢；再用一根绑着布条的小棒判断风吹来的方向。",
+      "answer": "风车转得快说明风力大、转得慢说明风力小；布条被风吹向风吹去的方向，而风向指的是风吹来的方向",
+      "kps": [
+        "kp_sci2_measure_wind"
+      ],
+      "difficulty": 0.32,
+      "solution": "用风车转动的快慢可以估计风力大小；风吹动布条时布条飘起的方向是风吹去的方向，箭头应指向风吹来的方向。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0170",
+      "item_type": "fill",
+      "stem": "判断风的大小可以用（　　）转动的快慢；风向指的是风（　　）的方向。",
+      "answer": "风车；吹来",
+      "kps": [
+        "kp_sci2_measure_wind"
+      ],
+      "difficulty": 0.28,
+      "solution": "风车转得越快说明风越大。风向指风吹来的方向，如东南风就是从东南方向吹来。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0171",
+      "item_type": "solve",
+      "stem": "请按顺序说说水在自然界里是怎样循环的（提示：从地面上的水开始）。",
+      "answer": "蒸发（变成水蒸气上升）→ 凝结（遇冷成云）→ 降水（落成雨雪）→ 径流（流回江河湖海），循环往复。",
+      "kps": [
+        "kp_sci2_water_cycle"
+      ],
+      "difficulty": 0.38,
+      "solution": "地面和海洋的水受太阳照射变成水蒸气升到空中；水蒸气升到高空遇冷凝结成小水滴或小冰晶，聚集成云；云中水滴越聚越大，落下来成为雨、雪等降水；水落到地面后，一部分渗入地下成为地下水，一部分沿地表流进江河湖海，再蒸发升空。这样周而复始，叫做水循环。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0172",
+      "item_type": "fill",
+      "stem": "请做“水去哪儿了”的小实验：在小碟子里倒一点水，放在阳光下（或暖气旁），过一天看看水有什么变化。",
+      "answer": "水变少了（少了一部分），因为一部分水变成水蒸气跑到空气里了",
+      "kps": [
+        "kp_sci2_water_cycle"
+      ],
+      "difficulty": 0.33,
+      "solution": "水受热变成水蒸气进入空气，这个过程叫蒸发。温度越高、接触空气面积越大、风越大，蒸发越快。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0173",
+      "item_type": "fill",
+      "stem": "不同季节人们做的事不同：（　　）天要播种，（　　）天可以游泳，（　　）天收获粮食，（　　）天穿棉衣。",
+      "answer": "春；夏；秋；冬",
+      "kps": [
+        "kp_sci2_seasons_activity"
+      ],
+      "difficulty": 0.28,
+      "solution": "春天播种、夏天游泳、秋天收获、冬天穿棉衣，都是与季节相适应的活动。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0174",
+      "item_type": "solve",
+      "stem": "为什么人们在冬天穿棉衣、夏天穿短袖？请用四季与生活的关系说说。",
+      "answer": "冬天气温低，穿棉衣保暖、减少热量散失；夏天气温高，穿短袖凉快。穿衣要随季节变化。",
+      "kps": [
+        "kp_sci2_seasons_activity"
+      ],
+      "difficulty": 0.3,
+      "solution": "天气随季节变化：冬天气温低，人们穿棉衣保暖、减少热量散失；夏天气温高，穿短袖凉快。所以穿衣要随季节变化，这也是人与环境相适应的一种表现。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0175",
+      "item_type": "fill",
+      "stem": "做不同的事要用不同的工具：剪东西用（　　），敲钉子用（　　），拧螺丝用（　　），夹东西用（　　）。",
+      "answer": "剪刀；锤子；螺丝刀；夹子（钳子）",
+      "kps": [
+        "kp_sci2_tool_choose"
+      ],
+      "difficulty": 0.26,
+      "solution": "不同的工作要选择合适的工具，用对工具才能又快又省力。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0176",
+      "item_type": "solve",
+      "stem": "如果要拧一颗很紧的螺丝，应该用普通螺丝刀还是更粗柄的螺丝刀？为什么？",
+      "answer": "用粗柄（长柄）的螺丝刀；柄粗握着能用较大的力，更省力。",
+      "kps": [
+        "kp_sci2_tool_choose"
+      ],
+      "difficulty": 0.29,
+      "solution": "应该用柄更粗（更长）的螺丝刀。粗柄的手握持面积大、可以用较大的力拧，所以更省力，能把紧螺丝拧下来。选择工具要看工具是否适合这项工作。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0177",
+      "item_type": "solve",
+      "stem": "用撬棒撬石头时，为什么把手离支点远一些更省力？请说说杠杆的道理。",
+      "answer": "手离支点越远，动力臂越长，动力越小，所以更省力。",
+      "kps": [
+        "kp_sci2_lever"
+      ],
+      "difficulty": 0.34,
+      "solution": "撬棒、跷跷板、剪刀都是杠杆。杠杆有三个点：支点、动力作用点（手）、阻力作用点（石头）。支点离重物越近、或手离支点越远，动力臂越长，动力就越小，更省力。所以把手离支点远一些更省力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0178",
+      "item_type": "fill",
+      "stem": "请做“撬棒比一比”的小实验：用小棍和铅笔分别当撬棒，支点相同，一端放同一块橡皮，分别在近处和远处用力，看哪种更省力。",
+      "answer": "手离支点越远（橡皮离支点越近）越省力；小棍比铅笔粗，作为杠杆更省力",
+      "kps": [
+        "kp_sci2_lever"
+      ],
+      "difficulty": 0.33,
+      "solution": "杠杆中动力臂大于阻力臂时就省力。手离支点远，动力臂长，用较小的力就能撬动重物。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0179",
+      "item_type": "solve",
+      "stem": "工人用斜坡把货物搬上车，而不是直上直下搬。请你说说斜面为什么省力。",
+      "answer": "斜面是简单机械，沿斜坡推比直直地抬省力；斜面越长越平缓越省力。",
+      "kps": [
+        "kp_sci2_ramp"
+      ],
+      "difficulty": 0.33,
+      "solution": "斜面是简单机械。把货物沿着斜坡推上去比直直地抬上去省力，因为这样可以用较小的力把货物沿斜坡慢慢拉上高处。斜面越长越平缓，就越省力（但要走更远的距离）。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0180",
+      "item_type": "fill",
+      "stem": "请做“斜面长短”的小实验：用一块木板分别以陡、缓两种角度搭在凳子上（当斜面），把同一个重物推上去，比较用力大小。",
+      "answer": "缓的斜面（越长越平缓）更省力，但要推更长的距离；陡的斜面费力但距离短",
+      "kps": [
+        "kp_sci2_ramp"
+      ],
+      "difficulty": 0.32,
+      "solution": "斜面越长越平缓越省力，斜面越短越陡越费力。斜面省力但费距离，要根据需要选择。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0181",
+      "item_type": "fill",
+      "stem": "水龙头、螺丝刀的把手、自行车车轮都是（　　），用它们转动可以（　　）。",
+      "answer": "轮轴；省力",
+      "kps": [
+        "kp_sci2_wheel_axle"
+      ],
+      "difficulty": 0.29,
+      "solution": "轮轴是简单机械，在轮上用力比直接拧轴省力，比如拧开水龙头、拧紧螺丝钉都很省力。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0182",
+      "item_type": "solve",
+      "stem": "拧螺丝钉时为什么要在螺丝刀的柄上用力，而不是直接用手指捏着拧？请说说轮轴的道理。",
+      "answer": "螺丝刀的柄相当于轮，直接用手捏着拧很费劲，用柄转动就省力。",
+      "kps": [
+        "kp_sci2_wheel_axle"
+      ],
+      "difficulty": 0.32,
+      "solution": "轮轴是由轮和轴组成的简单机械。轮越大（柄越长），用力越省。螺丝刀的柄相当于轮，旋转起来省力；直接用手指捏着拧很费力。所以用柄转动螺丝刀更省力。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0183",
+      "item_type": "solve",
+      "stem": "升国旗时，旗子向上升、我们向下拉绳。请说说定滑轮有什么好处。",
+      "answer": "定滑轮能改变用力的方向，我们向下拉绳旗子就向上升，站在地面就能升旗。",
+      "kps": [
+        "kp_sci2_pulley"
+      ],
+      "difficulty": 0.33,
+      "solution": "升国旗的滑轮是定滑轮。它不省力，但能改变用力的方向。我们站在下面向下拉绳，旗子就沿着绳子向上升，这样站在地面就能升旗，很方便。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0184",
+      "item_type": "fill",
+      "stem": "请做“定滑轮”的小实验：把一支笔架在两本书之间的细缝上（当定滑轮），用绳子一端挂重物、另一端用手拉，观察手往哪个方向拉、重物往哪个方向运动。",
+      "answer": "手向下拉，重物向上运动，说明定滑轮能改变用力的方向，但不省力",
+      "kps": [
+        "kp_sci2_pulley"
+      ],
+      "difficulty": 0.32,
+      "solution": "定滑轮固定在一个地方，不随重物移动。它不省力，但能改变用力的方向，让我们在地面上就能把重物提上去。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0185",
+      "item_type": "solve",
+      "stem": "鞋底为什么常常有花纹？瓶盖上为什么有防滑的纹？请说说原因。",
+      "answer": "因为鞋底花纹和瓶盖防滑纹能增大接触面的粗糙程度、增大摩擦，防止打滑。",
+      "kps": [
+        "kp_sci2_friction"
+      ],
+      "difficulty": 0.34,
+      "solution": "因为两个物体接触面滑动时会产生阻碍运动的摩擦力。鞋底花纹和瓶盖防滑纹能增大接触面的粗糙程度，从而增大摩擦，防止打滑。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0186",
+      "item_type": "fill",
+      "stem": "两个物体接触面滑动时会产生阻碍相对运动的力，叫做（　　）。增大摩擦的方法有（　　）和（　　）。",
+      "answer": "摩擦力；加大压力；增大接触面的粗糙程度",
+      "kps": [
+        "kp_sci2_friction"
+      ],
+      "difficulty": 0.28,
+      "solution": "鞋底花纹、防滑纹都是为了增大摩擦。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0187",
+      "item_type": "fill",
+      "stem": "请用“步测法”量一量教室或操场的长度：先量出平常走一步的长度，再数步数估算总长。",
+      "answer": "用步长乘以步数估算出距离，误差较小",
+      "kps": [
+        "kp_sci2_step_measure"
+      ],
+      "difficulty": 0.31,
+      "solution": "步测法是先量出一步的长度，再用步数去估算较长距离的方法，适合没有量天尺时快速估算远近。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0188",
+      "item_type": "solve",
+      "stem": "为什么量距离可以用“步测法”？请说说它的道理和局限。",
+      "answer": "人的步长相对固定，量出一步的长度后用步长乘以步数就能估算距离；局限是只能估算、不能精确测量。",
+      "kps": [
+        "kp_sci2_step_measure"
+      ],
+      "difficulty": 0.3,
+      "solution": "人的步长是相对固定的，量出一步的长度后，用步数乘以步长就能估算较长距离，方法简便。局限是每个人的步长不同，走的速度和方法也会影响结果，所以只能估算、不能精确测量。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0189",
+      "item_type": "solve",
+      "stem": "动手做一个小制作前，为什么要先在纸上画出设计图？请说说理由。",
+      "answer": "设计图能表达各部分的形状、位置和大小，是制作的依据，不容易做错做废，也便于交流和修改。",
+      "kps": [
+        "kp_sci2_draw_design"
+      ],
+      "difficulty": 0.31,
+      "solution": "设计图能表达自己要做的东西长什么样、各部分的位置和大小。画好设计图后再动手，就知道每部分怎么做、怎么组合，不容易做错、做废；也好向别人说明自己的构思、方便交流和修改。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0190",
+      "item_type": "fill",
+      "stem": "请你为“做一个纸飞机”画一张简单的设计图：标出机身、机翼的位置和大致大小，再照着图折一架飞机。",
+      "answer": "先画出机身和机翼的形状与位置，再按图制作，飞机才与设计一致",
+      "kps": [
+        "kp_sci2_draw_design"
+      ],
+      "difficulty": 0.3,
+      "solution": "先画设计图再制作，是技术活动的基本步骤。设计图能表达各部分的形状、位置和大小，是制作的依据。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0191",
+      "item_type": "solve",
+      "stem": "小明用纸筒、竹签和胶水做了一个简易小工具（如简易筷子或小勺）。请你说说他在制作中应该注意什么，试用后还可以怎么改进。",
+      "answer": "要先设计、接口粘牢、注意安全；试用后若不结实或不好用，可换更结实的材料或调整结构改进。",
+      "kps": [
+        "kp_sci2_make_tool"
+      ],
+      "difficulty": 0.32,
+      "solution": "制作时要先想清用途和设计，接口处要粘牢、连接牢固；注意安全使用剪刀。试用后如果发现不好用（如不结实、不顺手），可以改用更结实的材料、加厚接口或调整长短来改进。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0192",
+      "item_type": "fill",
+      "stem": "请用纸筒、竹签和胶水自制一个小工具（如简易小勺或风车），做完后试用一下，看看好不好用、需不需要改进。",
+      "answer": "自己设计并制作出小工具，试用后能说出哪里好用、哪里需要改进",
+      "kps": [
+        "kp_sci2_make_tool"
+      ],
+      "difficulty": 0.33,
+      "solution": "技术制作要先设计、再制作、最后试用和改进。制作工具既要考虑功能，也要考虑安全和结实程度。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0193",
+      "item_type": "solve",
+      "stem": "使用剪刀、刀具和电器时要注意哪些安全？请至少说出三条。",
+      "answer": "手要拿稳、尖端朝外、不打闹；手湿不碰开关；不把金属插入插座孔；用完切断电源。",
+      "kps": [
+        "kp_sci2_tech_safety"
+      ],
+      "difficulty": 0.33,
+      "solution": "使用剪刀、刀具手要拿稳、尖端朝外、不拿工具打闹；手湿时不要碰开关和插头；不要用金属去捅插座孔；插座上不接大功率用电器；用完电器要切断电源。这些都能防止割伤和触电。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_prim_0194",
+      "item_type": "fill",
+      "stem": "手（　　）的时候不能碰开关和插座；不能把（　　）插入插座孔，以免触电。",
+      "answer": "湿；金属",
+      "kps": [
+        "kp_sci2_tech_safety"
+      ],
+      "difficulty": 0.27,
+      "solution": "湿手导电，容易触电，所以手湿时不能碰开关；也不能用金属物捅插座孔。",
+      "source": "llm_generated",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0148",
+      "item_type": "choice",
+      "stem": "下列关于「动物的行为」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_animal_behavior"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 B。动物的行为：觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 动物的行为",
+        "C. 不会随环境变化的结构",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0149",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「动物的行为」时提出了自己的看法：\"动物的行为和我平时的生活没什么关系，记住结论就行了。\"请结合「动物的行为」的要点（觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要……）说明小明的看法为什么不全面，并写出一个生活中跟「动物的行为」有关的例子。",
+      "answer": "小明的看法不全面。「动物的行为」并不只是要记住的结论：觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「动物的行为」相关的现象；②说明「动物的行为」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_animal_behavior"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「动物的行为」的内涵与应用。解题思路：①先复述「动物的行为」的核心知识点——觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0150",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「动物的行为」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「动物的行为」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——动物的行为相关事物；用眼睛看/借助工具观察到的现象——觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要；由此得到的结论——这与「动物的行为」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_animal_behavior"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「动物的行为」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「动物的行为」的关键现象——觅食、筑巢、育幼、迁徙等行为是动物生存和繁衍的需要；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0151",
+      "item_type": "choice",
+      "stem": "下列关于「动物各有特征」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_animal_features"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 C。动物各有特征：鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 动物各有特征",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0152",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「动物各有特征」时提出了自己的看法：\"动物各有特征和我平时的生活没什么关系，记住结论就行了。\"请结合「动物各有特征」的要点（鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿，特征与生活方式相……）说明小明的看法为什么不全面，并写出一个生活中跟「动物各有特征」有关的例子。",
+      "answer": "小明的看法不全面。「动物各有特征」并不只是要记住的结论：鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿，特征与生活方式相适应。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「动物各有特征」相关的现象；②说明「动物各有特征」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_animal_features"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「动物各有特征」的内涵与应用。解题思路：①先复述「动物各有特征」的核心知识点——鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿，特征与生活方式相适应；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0153",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「动物各有特征」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「动物各有特征」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——动物各有特征相关事物；用眼睛看/借助工具观察到的现象——鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿；由此得到的结论——这与「动物各有特征」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_animal_features"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「动物各有特征」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「动物各有特征」的关键现象——鱼用鳍游泳、鸟有羽毛翅膀会飞、昆虫有六条腿，特征与生活方式相适应；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0154",
+      "item_type": "choice",
+      "stem": "下列关于「动物的分类」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_animal_groups"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 D。动物的分类：按体表被毛、用鳍游泳等方式。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 不需要水和阳光也能维持生存",
+        "D. 动物的分类"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0155",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「动物的分类」时提出了自己的看法：\"动物的分类和我平时的生活没什么关系，记住结论就行了。\"请结合「动物的分类」的要点（按体表被毛、用鳍游泳等方式，把常见动物分为哺乳动物、鸟类、鱼……）说明小明的看法为什么不全面，并写出一个生活中跟「动物的分类」有关的例子。",
+      "answer": "小明的看法不全面。「动物的分类」并不只是要记住的结论：按体表被毛、用鳍游泳等方式，把常见动物分为哺乳动物、鸟类、鱼类、昆虫、爬行动物和两栖动物。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「动物的分类」相关的现象；②说明「动物的分类」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_animal_groups"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「动物的分类」的内涵与应用。解题思路：①先复述「动物的分类」的核心知识点——按体表被毛、用鳍游泳等方式，把常见动物分为哺乳动物、鸟类、鱼类、昆虫、爬行动物和两栖动物；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0156",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「动物的分类」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「动物的分类」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——动物的分类相关事物；用眼睛看/借助工具观察到的现象——按体表被毛、用鳍游泳等方式；由此得到的结论——这与「动物的分类」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_animal_groups"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「动物的分类」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「动物的分类」的关键现象——按体表被毛、用鳍游泳等方式，把常见动物分为哺乳动物、鸟类、鱼类、昆虫、爬行动物和两栖动物；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0157",
+      "item_type": "choice",
+      "stem": "下列关于「人体的主要器官」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_body_organ"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 A。人体的主要器官：知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 人体的主要器官",
+        "B. 没有生命现象的非生物",
+        "C. 不会随环境变化的结构",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0158",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「人体的主要器官」时提出了自己的看法：\"人体的主要器官和我平时的生活没什么关系，记住结论就行了。\"请结合「人体的主要器官」的要点（知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置……）说明小明的看法为什么不全面，并写出一个生活中跟「人体的主要器官」有关的例子。",
+      "answer": "小明的看法不全面。「人体的主要器官」并不只是要记住的结论：知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「人体的主要器官」相关的现象；②说明「人体的主要器官」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_body_organ"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「人体的主要器官」的内涵与应用。解题思路：①先复述「人体的主要器官」的核心知识点——知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0159",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「人体的主要器官」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「人体的主要器官」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——人体的主要器官相关事物；用眼睛看/借助工具观察到的现象——知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置；由此得到的结论——这与「人体的主要器官」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_body_organ"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「人体的主要器官」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「人体的主要器官」的关键现象——知道心脏、胃、眼、耳、皮肤等器官的名称和大概位置；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0160",
+      "item_type": "choice",
+      "stem": "下列关于「物体传热的快慢不同」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_conduction"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 B。物体传热的快慢不同：把金属勺和木筷同时放入热水。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 物体传热的快慢不同",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0161",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「物体传热的快慢不同」时提出了自己的看法：\"物体传热的快慢不同和我平时的生活没什么关系，记住结论就行了。\"请结合「物体传热的快慢不同」的要点（把金属勺和木筷同时放入热水，金属勺先变烫，说明金属比木头传热……）说明小明的看法为什么不全面，并写出一个生活中跟「物体传热的快慢不同」有关的例子。",
+      "answer": "小明的看法不全面。「物体传热的快慢不同」并不只是要记住的结论：把金属勺和木筷同时放入热水，金属勺先变烫，说明金属比木头传热快。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「物体传热的快慢不同」相关的现象；②说明「物体传热的快慢不同」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_conduction"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「物体传热的快慢不同」的内涵与应用。解题思路：①先复述「物体传热的快慢不同」的核心知识点——把金属勺和木筷同时放入热水，金属勺先变烫，说明金属比木头传热快；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0162",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「物体传热的快慢不同」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「物体传热的快慢不同」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——物体传热的快慢不同相关事物；用眼睛看/借助工具观察到的现象——把金属勺和木筷同时放入热水；由此得到的结论——这与「物体传热的快慢不同」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_conduction"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「物体传热的快慢不同」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「物体传热的快慢不同」的关键现象——把金属勺和木筷同时放入热水，金属勺先变烫，说明金属比木头传热快；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0163",
+      "item_type": "choice",
+      "stem": "下列关于「昼夜交替的原因」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_day_night_cause"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 C。昼夜交替的原因：地球不停自转。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 昼夜交替的原因",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0164",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「昼夜交替的原因」时提出了自己的看法：\"昼夜交替的原因和我平时的生活没什么关系，记住结论就行了。\"请结合「昼夜交替的原因」的要点（地球不停自转，转到面向太阳的一面是白天，背向太阳的一面是黑夜……）说明小明的看法为什么不全面，并写出一个生活中跟「昼夜交替的原因」有关的例子。",
+      "answer": "小明的看法不全面。「昼夜交替的原因」并不只是要记住的结论：地球不停自转，转到面向太阳的一面是白天，背向太阳的一面是黑夜，24 小时左右转一圈。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「昼夜交替的原因」相关的现象；②说明「昼夜交替的原因」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_day_night_cause"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「昼夜交替的原因」的内涵与应用。解题思路：①先复述「昼夜交替的原因」的核心知识点——地球不停自转，转到面向太阳的一面是白天，背向太阳的一面是黑夜，24 小时左右转一圈；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0165",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「昼夜交替的原因」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「昼夜交替的原因」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——昼夜交替的原因相关事物；用眼睛看/借助工具观察到的现象——地球不停自转；由此得到的结论——这与「昼夜交替的原因」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_day_night_cause"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「昼夜交替的原因」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「昼夜交替的原因」的关键现象——地球不停自转，转到面向太阳的一面是白天，背向太阳的一面是黑夜，24 小时左右转一圈；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0166",
+      "item_type": "choice",
+      "stem": "下列关于「图画与设计图」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_draw_design"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 D。图画与设计图：动手前先在纸上画出想做的样子。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 只用眼睛观察、不动手操作的过程",
+        "C. 只能一次性使用、不可重复的做法",
+        "D. 图画与设计图"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0167",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「图画与设计图」时提出了自己的看法：\"图画与设计图和我平时的生活没什么关系，记住结论就行了。\"请结合「图画与设计图」的要点（动手前先在纸上画出想做的样子，简单标出各部分的位置和大小……）说明小明的看法为什么不全面，并写出一个生活中跟「图画与设计图」有关的例子。",
+      "answer": "小明的看法不全面。「图画与设计图」并不只是要记住的结论：动手前先在纸上画出想做的样子，简单标出各部分的位置和大小。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「图画与设计图」相关的现象；②说明「图画与设计图」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_draw_design"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「图画与设计图」的内涵与应用。解题思路：①先复述「图画与设计图」的核心知识点——动手前先在纸上画出想做的样子，简单标出各部分的位置和大小；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0168",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「图画与设计图」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「图画与设计图」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——图画与设计图相关事物；用眼睛看/借助工具观察到的现象——动手前先在纸上画出想做的样子；由此得到的结论——这与「图画与设计图」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_draw_design"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「图画与设计图」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「图画与设计图」的关键现象——动手前先在纸上画出想做的样子，简单标出各部分的位置和大小；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0169",
+      "item_type": "choice",
+      "stem": "下列关于「地球的形状」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_earth_shape"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 A。地球的形状：地球是一个不规则的球体。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地球的形状",
+        "B. 在短时间内不会出现变化的现象",
+        "C. 只发生在实验室里的现象",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0170",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「地球的形状」时提出了自己的看法：\"地球的形状和我平时的生活没什么关系，记住结论就行了。\"请结合「地球的形状」的要点（地球是一个不规则的球体，从海上远处看帆船先露桅杆后露船身就是……）说明小明的看法为什么不全面，并写出一个生活中跟「地球的形状」有关的例子。",
+      "answer": "小明的看法不全面。「地球的形状」并不只是要记住的结论：地球是一个不规则的球体，从海上远处看帆船先露桅杆后露船身就是证据。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「地球的形状」相关的现象；②说明「地球的形状」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_earth_shape"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「地球的形状」的内涵与应用。解题思路：①先复述「地球的形状」的核心知识点——地球是一个不规则的球体，从海上远处看帆船先露桅杆后露船身就是证据；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0171",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「地球的形状」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「地球的形状」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——地球的形状相关事物；用眼睛看/借助工具观察到的现象——地球是一个不规则的球体；由此得到的结论——这与「地球的形状」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_earth_shape"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「地球的形状」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「地球的形状」的关键现象——地球是一个不规则的球体，从海上远处看帆船先露桅杆后露船身就是证据；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0172",
+      "item_type": "choice",
+      "stem": "下列关于「可食用的植物器官」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_edible_plant_parts"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 B。可食用的植物器官：萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 可食用的植物器官",
+        "C. 不会随环境变化的结构",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0173",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「可食用的植物器官」时提出了自己的看法：\"可食用的植物器官和我平时的生活没什么关系，记住结论就行了。\"请结合「可食用的植物器官」的要点（萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子……）说明小明的看法为什么不全面，并写出一个生活中跟「可食用的植物器官」有关的例子。",
+      "answer": "小明的看法不全面。「可食用的植物器官」并不只是要记住的结论：萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「可食用的植物器官」相关的现象；②说明「可食用的植物器官」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_edible_plant_parts"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「可食用的植物器官」的内涵与应用。解题思路：①先复述「可食用的植物器官」的核心知识点——萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0174",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「可食用的植物器官」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「可食用的植物器官」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——可食用的植物器官相关事物；用眼睛看/借助工具观察到的现象——萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子；由此得到的结论——这与「可食用的植物器官」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_edible_plant_parts"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「可食用的植物器官」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「可食用的植物器官」的关键现象——萝卜吃根、马铃薯吃茎、白菜吃叶、西红柿吃果实、葵花籽吃种子；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0175",
+      "item_type": "choice",
+      "stem": "下列关于「摩擦力」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_friction"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 C。摩擦力：两个物体接触面滑动时会产生阻碍运动的力。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 只用眼睛观察、不动手操作的过程",
+        "C. 摩擦力",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0176",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「摩擦力」时提出了自己的看法：\"摩擦力和我平时的生活没什么关系，记住结论就行了。\"请结合「摩擦力」的要点（两个物体接触面滑动时会产生阻碍运动的力，鞋底有花纹、瓶盖有防……）说明小明的看法为什么不全面，并写出一个生活中跟「摩擦力」有关的例子。",
+      "answer": "小明的看法不全面。「摩擦力」并不只是要记住的结论：两个物体接触面滑动时会产生阻碍运动的力，鞋底有花纹、瓶盖有防滑纹是为了增大摩擦。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「摩擦力」相关的现象；②说明「摩擦力」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_friction"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「摩擦力」的内涵与应用。解题思路：①先复述「摩擦力」的核心知识点——两个物体接触面滑动时会产生阻碍运动的力，鞋底有花纹、瓶盖有防滑纹是为了增大摩擦；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0177",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「摩擦力」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「摩擦力」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——摩擦力相关事物；用眼睛看/借助工具观察到的现象——两个物体接触面滑动时会产生阻碍运动的力；由此得到的结论——这与「摩擦力」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_friction"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「摩擦力」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「摩擦力」的关键现象——两个物体接触面滑动时会产生阻碍运动的力，鞋底有花纹、瓶盖有防滑纹是为了增大摩擦；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0178",
+      "item_type": "choice",
+      "stem": "下列关于「果实保护种子」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_fruit_protect"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 D。果实保护种子：果实包着种子。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 不需要水和阳光也能维持生存",
+        "D. 果实保护种子"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0179",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「果实保护种子」时提出了自己的看法：\"果实保护种子和我平时的生活没什么关系，记住结论就行了。\"请结合「果实保护种子」的要点（果实包着种子，能保护种子并帮助种子传播，果实里有种子……）说明小明的看法为什么不全面，并写出一个生活中跟「果实保护种子」有关的例子。",
+      "answer": "小明的看法不全面。「果实保护种子」并不只是要记住的结论：果实包着种子，能保护种子并帮助种子传播，果实里有种子。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「果实保护种子」相关的现象；②说明「果实保护种子」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_fruit_protect"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「果实保护种子」的内涵与应用。解题思路：①先复述「果实保护种子」的核心知识点——果实包着种子，能保护种子并帮助种子传播，果实里有种子；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0180",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「果实保护种子」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「果实保护种子」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——果实保护种子相关事物；用眼睛看/借助工具观察到的现象——果实包着种子；由此得到的结论——这与「果实保护种子」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_fruit_protect"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「果实保护种子」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「果实保护种子」的关键现象——果实包着种子，能保护种子并帮助种子传播，果实里有种子；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0181",
+      "item_type": "choice",
+      "stem": "下列关于「地球的引力」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_gravity"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 A。地球的引力：地球对物体有向下的吸引力。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 地球的引力",
+        "B. 在短时间内不会出现变化的现象",
+        "C. 只发生在实验室里的现象",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0182",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「地球的引力」时提出了自己的看法：\"地球的引力和我平时的生活没什么关系，记住结论就行了。\"请结合「地球的引力」的要点（地球对物体有向下的吸引力，物体受重力总是落向地面，抛出的球总……）说明小明的看法为什么不全面，并写出一个生活中跟「地球的引力」有关的例子。",
+      "answer": "小明的看法不全面。「地球的引力」并不只是要记住的结论：地球对物体有向下的吸引力，物体受重力总是落向地面，抛出的球总会落下。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「地球的引力」相关的现象；②说明「地球的引力」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_gravity"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「地球的引力」的内涵与应用。解题思路：①先复述「地球的引力」的核心知识点——地球对物体有向下的吸引力，物体受重力总是落向地面，抛出的球总会落下；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0183",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「地球的引力」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「地球的引力」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——地球的引力相关事物；用眼睛看/借助工具观察到的现象——地球对物体有向下的吸引力；由此得到的结论——这与「地球的引力」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_gravity"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「地球的引力」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「地球的引力」的关键现象——地球对物体有向下的吸引力，物体受重力总是落向地面，抛出的球总会落下；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0184",
+      "item_type": "choice",
+      "stem": "下列关于「健康的生活习惯」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_healthy_habit"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 B。健康的生活习惯：饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 健康的生活习惯",
+        "C. 不会随环境变化的结构",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0185",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「健康的生活习惯」时提出了自己的看法：\"健康的生活习惯和我平时的生活没什么关系，记住结论就行了。\"请结合「健康的生活习惯」的要点（饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康……）说明小明的看法为什么不全面，并写出一个生活中跟「健康的生活习惯」有关的例子。",
+      "answer": "小明的看法不全面。「健康的生活习惯」并不只是要记住的结论：饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「健康的生活习惯」相关的现象；②说明「健康的生活习惯」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_healthy_habit"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「健康的生活习惯」的内涵与应用。解题思路：①先复述「健康的生活习惯」的核心知识点——饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0186",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「健康的生活习惯」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「健康的生活习惯」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——健康的生活习惯相关事物；用眼睛看/借助工具观察到的现象——饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康；由此得到的结论——这与「健康的生活习惯」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_healthy_habit"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「健康的生活习惯」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「健康的生活习惯」的关键现象——饭前便后洗手、早睡早起、坚持锻炼、不挑食等有益身体健康；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0187",
+      "item_type": "choice",
+      "stem": "下列关于「热从高温物体传向低温物体」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_heat_transfer"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 C。热从高温物体传向低温物体：热水慢慢变凉。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 永远不会改变的特性",
+        "C. 热从高温物体传向低温物体",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0188",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「热从高温物体传向低温物体」时提出了自己的看法：\"热从高温物体传向低温物体和我平时的生活没什么关系，记住结论就行了。\"请结合「热从高温物体传向低温物体」的要点（热水慢慢变凉，热总是从温度高的物体传向温度低的物体，直到温度……）说明小明的看法为什么不全面，并写出一个生活中跟「热从高温物体传向低温物体」有关的例子。",
+      "answer": "小明的看法不全面。「热从高温物体传向低温物体」并不只是要记住的结论：热水慢慢变凉，热总是从温度高的物体传向温度低的物体，直到温度相同。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「热从高温物体传向低温物体」相关的现象；②说明「热从高温物体传向低温物体」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_heat_transfer"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「热从高温物体传向低温物体」的内涵与应用。解题思路：①先复述「热从高温物体传向低温物体」的核心知识点——热水慢慢变凉，热总是从温度高的物体传向温度低的物体，直到温度相同；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0189",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「热从高温物体传向低温物体」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「热从高温物体传向低温物体」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——热从高温物体传向低温物体相关事物；用眼睛看/借助工具观察到的现象——热水慢慢变凉；由此得到的结论——这与「热从高温物体传向低温物体」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_heat_transfer"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「热从高温物体传向低温物体」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「热从高温物体传向低温物体」的关键现象——热水慢慢变凉，热总是从温度高的物体传向温度低的物体，直到温度相同；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0190",
+      "item_type": "choice",
+      "stem": "下列关于「叶的作用」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_leaf_role"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 D。叶的作用：叶子摊开面积大。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 不需要水和阳光也能维持生存",
+        "D. 叶的作用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0191",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「叶的作用」时提出了自己的看法：\"叶的作用和我平时的生活没什么关系，记住结论就行了。\"请结合「叶的作用」的要点（叶子摊开面积大，能接收阳光制造养料，也能散失水分……）说明小明的看法为什么不全面，并写出一个生活中跟「叶的作用」有关的例子。",
+      "answer": "小明的看法不全面。「叶的作用」并不只是要记住的结论：叶子摊开面积大，能接收阳光制造养料，也能散失水分。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「叶的作用」相关的现象；②说明「叶的作用」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_leaf_role"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「叶的作用」的内涵与应用。解题思路：①先复述「叶的作用」的核心知识点——叶子摊开面积大，能接收阳光制造养料，也能散失水分；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0192",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「叶的作用」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「叶的作用」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——叶的作用相关事物；用眼睛看/借助工具观察到的现象——叶子摊开面积大；由此得到的结论——这与「叶的作用」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_leaf_role"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「叶的作用」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「叶的作用」的关键现象——叶子摊开面积大，能接收阳光制造养料，也能散失水分；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0193",
+      "item_type": "choice",
+      "stem": "下列关于「杠杆」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_lever"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 A。杠杆：撬棒、跷跷板、剪刀都是杠杆。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 杠杆",
+        "B. 完全依靠人力、不借助任何工具的做法",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0194",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「杠杆」时提出了自己的看法：\"杠杆和我平时的生活没什么关系，记住结论就行了。\"请结合「杠杆」的要点（撬棒、跷跷板、剪刀都是杠杆，支点靠近重物或把手离支点远时更省……）说明小明的看法为什么不全面，并写出一个生活中跟「杠杆」有关的例子。",
+      "answer": "小明的看法不全面。「杠杆」并不只是要记住的结论：撬棒、跷跷板、剪刀都是杠杆，支点靠近重物或把手离支点远时更省力。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「杠杆」相关的现象；②说明「杠杆」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_lever"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「杠杆」的内涵与应用。解题思路：①先复述「杠杆」的核心知识点——撬棒、跷跷板、剪刀都是杠杆，支点靠近重物或把手离支点远时更省力；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0195",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「杠杆」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「杠杆」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——杠杆相关事物；用眼睛看/借助工具观察到的现象——撬棒、跷跷板、剪刀都是杠杆；由此得到的结论——这与「杠杆」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_lever"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「杠杆」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「杠杆」的关键现象——撬棒、跷跷板、剪刀都是杠杆，支点靠近重物或把手离支点远时更省力；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0196",
+      "item_type": "choice",
+      "stem": "下列关于「光能穿过物体」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_light_penetrate"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 B。光能穿过物体：把物体放在灯前观察。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 光能穿过物体",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0197",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「光能穿过物体」时提出了自己的看法：\"光能穿过物体和我平时的生活没什么关系，记住结论就行了。\"请结合「光能穿过物体」的要点（把物体放在灯前观察，光能穿过透明物体、只能穿过一部分半透明物……）说明小明的看法为什么不全面，并写出一个生活中跟「光能穿过物体」有关的例子。",
+      "answer": "小明的看法不全面。「光能穿过物体」并不只是要记住的结论：把物体放在灯前观察，光能穿过透明物体、只能穿过一部分半透明物体、不能穿过不透明物体。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「光能穿过物体」相关的现象；②说明「光能穿过物体」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_light_penetrate"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「光能穿过物体」的内涵与应用。解题思路：①先复述「光能穿过物体」的核心知识点——把物体放在灯前观察，光能穿过透明物体、只能穿过一部分半透明物体、不能穿过不透明物体；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0198",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「光能穿过物体」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「光能穿过物体」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——光能穿过物体相关事物；用眼睛看/借助工具观察到的现象——把物体放在灯前观察；由此得到的结论——这与「光能穿过物体」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_light_penetrate"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「光能穿过物体」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「光能穿过物体」的关键现象——把物体放在灯前观察，光能穿过透明物体、只能穿过一部分半透明物体、不能穿过不透明物体；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0199",
+      "item_type": "choice",
+      "stem": "下列关于「制作和使用小工具」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_make_tool"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 C。制作和使用小工具：用纸筒、瓶盖、竹签等材料自制小工具。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 只用眼睛观察、不动手操作的过程",
+        "C. 制作和使用小工具",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0200",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「制作和使用小工具」时提出了自己的看法：\"制作和使用小工具和我平时的生活没什么关系，记住结论就行了。\"请结合「制作和使用小工具」的要点（用纸筒、瓶盖、竹签等材料自制小工具，试用后根据需要修改……）说明小明的看法为什么不全面，并写出一个生活中跟「制作和使用小工具」有关的例子。",
+      "answer": "小明的看法不全面。「制作和使用小工具」并不只是要记住的结论：用纸筒、瓶盖、竹签等材料自制小工具，试用后根据需要修改。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「制作和使用小工具」相关的现象；②说明「制作和使用小工具」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_make_tool"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「制作和使用小工具」的内涵与应用。解题思路：①先复述「制作和使用小工具」的核心知识点——用纸筒、瓶盖、竹签等材料自制小工具，试用后根据需要修改；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0201",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「制作和使用小工具」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「制作和使用小工具」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——制作和使用小工具相关事物；用眼睛看/借助工具观察到的现象——用纸筒、瓶盖、竹签等材料自制小工具；由此得到的结论——这与「制作和使用小工具」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_make_tool"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「制作和使用小工具」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「制作和使用小工具」的关键现象——用纸筒、瓶盖、竹签等材料自制小工具，试用后根据需要修改；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0202",
+      "item_type": "choice",
+      "stem": "下列关于「物体由一种或多种物质组成」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_material_mixture"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 D。物体由一种或多种物质组成：知道物体有的由一种物质组成。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 永远不会改变的特性",
+        "C. 和外界条件完全无关的现象",
+        "D. 物体由一种或多种物质组成"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0203",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「物体由一种或多种物质组成」时提出了自己的看法：\"物体由一种或多种物质组成和我平时的生活没什么关系，记住结论就行了。\"请结合「物体由一种或多种物质组成」的要点（知道物体有的由一种物质组成，有的由几种物质混合组成，能判断物……）说明小明的看法为什么不全面，并写出一个生活中跟「物体由一种或多种物质组成」有关的例子。",
+      "answer": "小明的看法不全面。「物体由一种或多种物质组成」并不只是要记住的结论：知道物体有的由一种物质组成，有的由几种物质混合组成，能判断物体是单一物质还是混合物。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「物体由一种或多种物质组成」相关的现象；②说明「物体由一种或多种物质组成」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_material_mixture"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「物体由一种或多种物质组成」的内涵与应用。解题思路：①先复述「物体由一种或多种物质组成」的核心知识点——知道物体有的由一种物质组成，有的由几种物质混合组成，能判断物体是单一物质还是混合物；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0204",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「物体由一种或多种物质组成」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「物体由一种或多种物质组成」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——物体由一种或多种物质组成相关事物；用眼睛看/借助工具观察到的现象——知道物体有的由一种物质组成；由此得到的结论——这与「物体由一种或多种物质组成」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_material_mixture"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「物体由一种或多种物质组成」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「物体由一种或多种物质组成」的关键现象——知道物体有的由一种物质组成，有的由几种物质混合组成，能判断物体是单一物质还是混合物；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0205",
+      "item_type": "choice",
+      "stem": "下列关于「物质的特性」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_material_property"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 A。物质的特性：能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于水等特性。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物质的特性",
+        "B. 可以忽略不计的属性",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0206",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「物质的特性」时提出了自己的看法：\"物质的特性和我平时的生活没什么关系，记住结论就行了。\"请结合「物质的特性」的要点（能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于……）说明小明的看法为什么不全面，并写出一个生活中跟「物质的特性」有关的例子。",
+      "answer": "小明的看法不全面。「物质的特性」并不只是要记住的结论：能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于水等特性。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「物质的特性」相关的现象；②说明「物质的特性」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_material_property"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「物质的特性」的内涵与应用。解题思路：①先复述「物质的特性」的核心知识点——能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于水等特性；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0207",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「物质的特性」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「物质的特性」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——物质的特性相关事物；用眼睛看/借助工具观察到的现象——能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于水等特性；由此得到的结论——这与「物质的特性」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_material_property"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「物质的特性」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「物质的特性」的关键现象——能通过感官和实验描述物质的颜色、气味、硬度、透明度、是否溶于水等特性；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0208",
+      "item_type": "choice",
+      "stem": "下列关于「测量要准确」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_measure_accurate"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 B。测量要准确：测量时尺子与被测物紧贴、视线正对刻度。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 测量要准确",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0209",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「测量要准确」时提出了自己的看法：\"测量要准确和我平时的生活没什么关系，记住结论就行了。\"请结合「测量要准确」的要点（测量时尺子与被测物紧贴、视线正对刻度，同一物体多测几次结果要……）说明小明的看法为什么不全面，并写出一个生活中跟「测量要准确」有关的例子。",
+      "answer": "小明的看法不全面。「测量要准确」并不只是要记住的结论：测量时尺子与被测物紧贴、视线正对刻度，同一物体多测几次结果要一致。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「测量要准确」相关的现象；②说明「测量要准确」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_measure_accurate"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「测量要准确」的内涵与应用。解题思路：①先复述「测量要准确」的核心知识点——测量时尺子与被测物紧贴、视线正对刻度，同一物体多测几次结果要一致；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0210",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「测量要准确」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「测量要准确」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——测量要准确相关事物；用眼睛看/借助工具观察到的现象——测量时尺子与被测物紧贴、视线正对刻度；由此得到的结论——这与「测量要准确」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_measure_accurate"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「测量要准确」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「测量要准确」的关键现象——测量时尺子与被测物紧贴、视线正对刻度，同一物体多测几次结果要一致；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0211",
+      "item_type": "choice",
+      "stem": "下列关于「风力和风向」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_measure_wind"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 C。风力和风向：用风车转动的快慢判断风力大小。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 风力和风向",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0212",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「风力和风向」时提出了自己的看法：\"风力和风向和我平时的生活没什么关系，记住结论就行了。\"请结合「风力和风向」的要点（用风车转动的快慢判断风力大小，风向标指示风吹来的方向……）说明小明的看法为什么不全面，并写出一个生活中跟「风力和风向」有关的例子。",
+      "answer": "小明的看法不全面。「风力和风向」并不只是要记住的结论：用风车转动的快慢判断风力大小，风向标指示风吹来的方向。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「风力和风向」相关的现象；②说明「风力和风向」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_measure_wind"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「风力和风向」的内涵与应用。解题思路：①先复述「风力和风向」的核心知识点——用风车转动的快慢判断风力大小，风向标指示风吹来的方向；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0213",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「风力和风向」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「风力和风向」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——风力和风向相关事物；用眼睛看/借助工具观察到的现象——用风车转动的快慢判断风力大小；由此得到的结论——这与「风力和风向」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_measure_wind"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「风力和风向」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「风力和风向」的关键现象——用风车转动的快慢判断风力大小，风向标指示风吹来的方向；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0214",
+      "item_type": "choice",
+      "stem": "下列关于「月亮形状的变化」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_moon_change"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 D。月亮形状的变化：连续观察发现月亮有时圆有时弯。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 与日常生活完全无关的过程",
+        "D. 月亮形状的变化"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0215",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「月亮形状的变化」时提出了自己的看法：\"月亮形状的变化和我平时的生活没什么关系，记住结论就行了。\"请结合「月亮形状的变化」的要点（连续观察发现月亮有时圆有时弯，农历十五前后月圆，月初月末看不……）说明小明的看法为什么不全面，并写出一个生活中跟「月亮形状的变化」有关的例子。",
+      "answer": "小明的看法不全面。「月亮形状的变化」并不只是要记住的结论：连续观察发现月亮有时圆有时弯，农历十五前后月圆，月初月末看不到月亮。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「月亮形状的变化」相关的现象；②说明「月亮形状的变化」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_moon_change"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「月亮形状的变化」的内涵与应用。解题思路：①先复述「月亮形状的变化」的核心知识点——连续观察发现月亮有时圆有时弯，农历十五前后月圆，月初月末看不到月亮；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0216",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「月亮形状的变化」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「月亮形状的变化」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——月亮形状的变化相关事物；用眼睛看/借助工具观察到的现象——连续观察发现月亮有时圆有时弯；由此得到的结论——这与「月亮形状的变化」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_moon_change"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「月亮形状的变化」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「月亮形状的变化」的关键现象——连续观察发现月亮有时圆有时弯，农历十五前后月圆，月初月末看不到月亮；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0217",
+      "item_type": "choice",
+      "stem": "下列关于「物体占据空间」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_occupy_space"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 A。物体占据空间：拧紧的瓶塞说明瓶里有空气。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 物体占据空间",
+        "B. 可以忽略不计的属性",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0218",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「物体占据空间」时提出了自己的看法：\"物体占据空间和我平时的生活没什么关系，记住结论就行了。\"请结合「物体占据空间」的要点（拧紧的瓶塞说明瓶里有空气，水放进杯中水面上升，说明水和空气都……）说明小明的看法为什么不全面，并写出一个生活中跟「物体占据空间」有关的例子。",
+      "answer": "小明的看法不全面。「物体占据空间」并不只是要记住的结论：拧紧的瓶塞说明瓶里有空气，水放进杯中水面上升，说明水和空气都占据空间。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「物体占据空间」相关的现象；②说明「物体占据空间」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_occupy_space"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「物体占据空间」的内涵与应用。解题思路：①先复述「物体占据空间」的核心知识点——拧紧的瓶塞说明瓶里有空气，水放进杯中水面上升，说明水和空气都占据空间；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0219",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「物体占据空间」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「物体占据空间」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——物体占据空间相关事物；用眼睛看/借助工具观察到的现象——拧紧的瓶塞说明瓶里有空气；由此得到的结论——这与「物体占据空间」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_occupy_space"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「物体占据空间」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「物体占据空间」的关键现象——拧紧的瓶塞说明瓶里有空气，水放进杯中水面上升，说明水和空气都占据空间；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0220",
+      "item_type": "choice",
+      "stem": "下列关于「物理变化」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_physical_change"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 B。物理变化：水结成冰、纸被折剪、玻璃杯打碎只是形状改变。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 物理变化",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0221",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「物理变化」时提出了自己的看法：\"物理变化和我平时的生活没什么关系，记住结论就行了。\"请结合「物理变化」的要点（水结成冰、纸被折剪、玻璃杯打碎只是形状改变，物质本身没变，是……）说明小明的看法为什么不全面，并写出一个生活中跟「物理变化」有关的例子。",
+      "answer": "小明的看法不全面。「物理变化」并不只是要记住的结论：水结成冰、纸被折剪、玻璃杯打碎只是形状改变，物质本身没变，是物理变化。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「物理变化」相关的现象；②说明「物理变化」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_physical_change"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「物理变化」的内涵与应用。解题思路：①先复述「物理变化」的核心知识点——水结成冰、纸被折剪、玻璃杯打碎只是形状改变，物质本身没变，是物理变化；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0222",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「物理变化」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「物理变化」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——物理变化相关事物；用眼睛看/借助工具观察到的现象——水结成冰、纸被折剪、玻璃杯打碎只是形状改变；由此得到的结论——这与「物理变化」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_physical_change"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「物理变化」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「物理变化」的关键现象——水结成冰、纸被折剪、玻璃杯打碎只是形状改变，物质本身没变，是物理变化；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0223",
+      "item_type": "choice",
+      "stem": "下列关于「植物生长的条件」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_plant_growth_condition"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 C。植物生长的条件：把同种幼苗分别放在有光无光、水多水少、不同温度下生长。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 植物生长的条件",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0224",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「植物生长的条件」时提出了自己的看法：\"植物生长的条件和我平时的生活没什么关系，记住结论就行了。\"请结合「植物生长的条件」的要点（把同种幼苗分别放在有光无光、水多水少、不同温度下生长，通过比……）说明小明的看法为什么不全面，并写出一个生活中跟「植物生长的条件」有关的例子。",
+      "answer": "小明的看法不全面。「植物生长的条件」并不只是要记住的结论：把同种幼苗分别放在有光无光、水多水少、不同温度下生长，通过比较知道植物生长需要水、阳光和适宜温度。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「植物生长的条件」相关的现象；②说明「植物生长的条件」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_plant_growth_condition"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「植物生长的条件」的内涵与应用。解题思路：①先复述「植物生长的条件」的核心知识点——把同种幼苗分别放在有光无光、水多水少、不同温度下生长，通过比较知道植物生长需要水、阳光和适宜温度；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0225",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「植物生长的条件」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「植物生长的条件」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——植物生长的条件相关事物；用眼睛看/借助工具观察到的现象——把同种幼苗分别放在有光无光、水多水少、不同温度下生长；由此得到的结论——这与「植物生长的条件」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_plant_growth_condition"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「植物生长的条件」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「植物生长的条件」的关键现象——把同种幼苗分别放在有光无光、水多水少、不同温度下生长，通过比较知道植物生长需要水、阳光和适宜温度；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0226",
+      "item_type": "choice",
+      "stem": "下列关于「植物器官的作用」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_plant_organ_function"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 D。植物器官的作用：根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有关。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 不需要水和阳光也能维持生存",
+        "D. 植物器官的作用"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0227",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「植物器官的作用」时提出了自己的看法：\"植物器官的作用和我平时的生活没什么关系，记住结论就行了。\"请结合「植物器官的作用」的要点（根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有……）说明小明的看法为什么不全面，并写出一个生活中跟「植物器官的作用」有关的例子。",
+      "answer": "小明的看法不全面。「植物器官的作用」并不只是要记住的结论：根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有关。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「植物器官的作用」相关的现象；②说明「植物器官的作用」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_plant_organ_function"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「植物器官的作用」的内涵与应用。解题思路：①先复述「植物器官的作用」的核心知识点——根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有关；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0228",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「植物器官的作用」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「植物器官的作用」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——植物器官的作用相关事物；用眼睛看/借助工具观察到的现象——根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有关；由此得到的结论——这与「植物器官的作用」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_plant_organ_function"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「植物器官的作用」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「植物器官的作用」的关键现象——根吸收水分、茎运输水分和养分、叶制造养料、花果实种子与繁殖有关；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0229",
+      "item_type": "choice",
+      "stem": "下列关于「定滑轮」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_pulley"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 A。定滑轮：升国旗的滑轮是定滑轮。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 定滑轮",
+        "B. 完全依靠人力、不借助任何工具的做法",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0230",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「定滑轮」时提出了自己的看法：\"定滑轮和我平时的生活没什么关系，记住结论就行了。\"请结合「定滑轮」的要点（升国旗的滑轮是定滑轮，它不省力，但能改变用力的方向，向下拉绳……）说明小明的看法为什么不全面，并写出一个生活中跟「定滑轮」有关的例子。",
+      "answer": "小明的看法不全面。「定滑轮」并不只是要记住的结论：升国旗的滑轮是定滑轮，它不省力，但能改变用力的方向，向下拉绳旗子就上升。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「定滑轮」相关的现象；②说明「定滑轮」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_pulley"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「定滑轮」的内涵与应用。解题思路：①先复述「定滑轮」的核心知识点——升国旗的滑轮是定滑轮，它不省力，但能改变用力的方向，向下拉绳旗子就上升；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0231",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「定滑轮」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「定滑轮」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——定滑轮相关事物；用眼睛看/借助工具观察到的现象——升国旗的滑轮是定滑轮；由此得到的结论——这与「定滑轮」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_pulley"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「定滑轮」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「定滑轮」的关键现象——升国旗的滑轮是定滑轮，它不省力，但能改变用力的方向，向下拉绳旗子就上升；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0232",
+      "item_type": "choice",
+      "stem": "下列关于「斜面」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_ramp"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 B。斜面：斜坡比直上直下搬运货物省力。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 斜面",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0233",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「斜面」时提出了自己的看法：\"斜面和我平时的生活没什么关系，记住结论就行了。\"请结合「斜面」的要点（斜坡比直上直下搬运货物省力，斜面越长越平缓越省力……）说明小明的看法为什么不全面，并写出一个生活中跟「斜面」有关的例子。",
+      "answer": "小明的看法不全面。「斜面」并不只是要记住的结论：斜坡比直上直下搬运货物省力，斜面越长越平缓越省力。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「斜面」相关的现象；②说明「斜面」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_ramp"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「斜面」的内涵与应用。解题思路：①先复述「斜面」的核心知识点——斜坡比直上直下搬运货物省力，斜面越长越平缓越省力；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0234",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「斜面」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「斜面」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——斜面相关事物；用眼睛看/借助工具观察到的现象——斜坡比直上直下搬运货物省力；由此得到的结论——这与「斜面」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_ramp"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「斜面」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「斜面」的关键现象——斜坡比直上直下搬运货物省力，斜面越长越平缓越省力；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0235",
+      "item_type": "choice",
+      "stem": "下列关于「根的作用」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_root_role"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 C。根的作用：根扎在土里固定植株并从土中吸收水分和无机盐。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 根的作用",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0236",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「根的作用」时提出了自己的看法：\"根的作用和我平时的生活没什么关系，记住结论就行了。\"请结合「根的作用」的要点（根扎在土里固定植株并从土中吸收水分和无机盐……）说明小明的看法为什么不全面，并写出一个生活中跟「根的作用」有关的例子。",
+      "answer": "小明的看法不全面。「根的作用」并不只是要记住的结论：根扎在土里固定植株并从土中吸收水分和无机盐。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「根的作用」相关的现象；②说明「根的作用」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_root_role"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「根的作用」的内涵与应用。解题思路：①先复述「根的作用」的核心知识点——根扎在土里固定植株并从土中吸收水分和无机盐；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0237",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「根的作用」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「根的作用」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——根的作用相关事物；用眼睛看/借助工具观察到的现象——根扎在土里固定植株并从土中吸收水分和无机盐；由此得到的结论——这与「根的作用」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_root_role"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「根的作用」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「根的作用」的关键现象——根扎在土里固定植株并从土中吸收水分和无机盐；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0238",
+      "item_type": "choice",
+      "stem": "下列关于「四季与人们生活的关系」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_seasons_activity"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 D。四季与人们生活的关系：春天播种、夏天游泳、秋天收获、冬天穿棉衣。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 与日常生活完全无关的过程",
+        "D. 四季与人们生活的关系"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0239",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「四季与人们生活的关系」时提出了自己的看法：\"四季与人们生活的关系和我平时的生活没什么关系，记住结论就行了。\"请结合「四季与人们生活的关系」的要点（春天播种、夏天游泳、秋天收获、冬天穿棉衣，能说出不同季节的典……）说明小明的看法为什么不全面，并写出一个生活中跟「四季与人们生活的关系」有关的例子。",
+      "answer": "小明的看法不全面。「四季与人们生活的关系」并不只是要记住的结论：春天播种、夏天游泳、秋天收获、冬天穿棉衣，能说出不同季节的典型活动。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「四季与人们生活的关系」相关的现象；②说明「四季与人们生活的关系」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_seasons_activity"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「四季与人们生活的关系」的内涵与应用。解题思路：①先复述「四季与人们生活的关系」的核心知识点——春天播种、夏天游泳、秋天收获、冬天穿棉衣，能说出不同季节的典型活动；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0240",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「四季与人们生活的关系」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「四季与人们生活的关系」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——四季与人们生活的关系相关事物；用眼睛看/借助工具观察到的现象——春天播种、夏天游泳、秋天收获、冬天穿棉衣；由此得到的结论——这与「四季与人们生活的关系」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_seasons_activity"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「四季与人们生活的关系」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「四季与人们生活的关系」的关键现象——春天播种、夏天游泳、秋天收获、冬天穿棉衣，能说出不同季节的典型活动；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0241",
+      "item_type": "choice",
+      "stem": "下列关于「一年四季的形成」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_seasons_change"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 A。一年四季的形成：地球一边自转一边绕太阳公转。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 一年四季的形成",
+        "B. 在短时间内不会出现变化的现象",
+        "C. 只发生在实验室里的现象",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0242",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「一年四季的形成」时提出了自己的看法：\"一年四季的形成和我平时的生活没什么关系，记住结论就行了。\"请结合「一年四季的形成」的要点（地球一边自转一边绕太阳公转，一年中太阳照射角度和南北半球受热……）说明小明的看法为什么不全面，并写出一个生活中跟「一年四季的形成」有关的例子。",
+      "answer": "小明的看法不全面。「一年四季的形成」并不只是要记住的结论：地球一边自转一边绕太阳公转，一年中太阳照射角度和南北半球受热多少不同，形成春夏秋冬。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「一年四季的形成」相关的现象；②说明「一年四季的形成」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_seasons_change"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「一年四季的形成」的内涵与应用。解题思路：①先复述「一年四季的形成」的核心知识点——地球一边自转一边绕太阳公转，一年中太阳照射角度和南北半球受热多少不同，形成春夏秋冬；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0243",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「一年四季的形成」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「一年四季的形成」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——一年四季的形成相关事物；用眼睛看/借助工具观察到的现象——地球一边自转一边绕太阳公转；由此得到的结论——这与「一年四季的形成」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_seasons_change"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「一年四季的形成」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「一年四季的形成」的关键现象——地球一边自转一边绕太阳公转，一年中太阳照射角度和南北半球受热多少不同，形成春夏秋冬；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0244",
+      "item_type": "choice",
+      "stem": "下列关于「种子发芽的条件」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_seed_germination"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 B。种子发芽的条件：对比有无水、有无空气、温度高低三种情况。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 种子发芽的条件",
+        "C. 不会随环境变化的结构",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0245",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「种子发芽的条件」时提出了自己的看法：\"种子发芽的条件和我平时的生活没什么关系，记住结论就行了。\"请结合「种子发芽的条件」的要点（对比有无水、有无空气、温度高低三种情况，得出种子发芽需要水、……）说明小明的看法为什么不全面，并写出一个生活中跟「种子发芽的条件」有关的例子。",
+      "answer": "小明的看法不全面。「种子发芽的条件」并不只是要记住的结论：对比有无水、有无空气、温度高低三种情况，得出种子发芽需要水、空气和适宜温度。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「种子发芽的条件」相关的现象；②说明「种子发芽的条件」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_seed_germination"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「种子发芽的条件」的内涵与应用。解题思路：①先复述「种子发芽的条件」的核心知识点——对比有无水、有无空气、温度高低三种情况，得出种子发芽需要水、空气和适宜温度；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0246",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「种子发芽的条件」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「种子发芽的条件」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——种子发芽的条件相关事物；用眼睛看/借助工具观察到的现象——对比有无水、有无空气、温度高低三种情况；由此得到的结论——这与「种子发芽的条件」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_seed_germination"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「种子发芽的条件」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「种子发芽的条件」的关键现象——对比有无水、有无空气、温度高低三种情况，得出种子发芽需要水、空气和适宜温度；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0247",
+      "item_type": "choice",
+      "stem": "下列关于「种子里有新生命」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_seed_is_life"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 C。种子里有新生命：种子虽然小很小。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 种子里有新生命",
+        "D. 不需要水和阳光也能维持生存"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0248",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「种子里有新生命」时提出了自己的看法：\"种子里有新生命和我平时的生活没什么关系，记住结论就行了。\"请结合「种子里有新生命」的要点（种子虽然小很小，其中却藏着植物的幼芽，能长成一株新的植物……）说明小明的看法为什么不全面，并写出一个生活中跟「种子里有新生命」有关的例子。",
+      "answer": "小明的看法不全面。「种子里有新生命」并不只是要记住的结论：种子虽然小很小，其中却藏着植物的幼芽，能长成一株新的植物。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「种子里有新生命」相关的现象；②说明「种子里有新生命」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_seed_is_life"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「种子里有新生命」的内涵与应用。解题思路：①先复述「种子里有新生命」的核心知识点——种子虽然小很小，其中却藏着植物的幼芽，能长成一株新的植物；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0249",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「种子里有新生命」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「种子里有新生命」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——种子里有新生命相关事物；用眼睛看/借助工具观察到的现象——种子虽然小很小；由此得到的结论——这与「种子里有新生命」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_seed_is_life"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「种子里有新生命」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「种子里有新生命」的关键现象——种子虽然小很小，其中却藏着植物的幼芽，能长成一株新的植物；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0250",
+      "item_type": "choice",
+      "stem": "下列关于「比较材料的软硬」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_soft_hard"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 D。比较材料的软硬：用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 永远不会改变的特性",
+        "C. 和外界条件完全无关的现象",
+        "D. 比较材料的软硬"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0251",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「比较材料的软硬」时提出了自己的看法：\"比较材料的软硬和我平时的生活没什么关系，记住结论就行了。\"请结合「比较材料的软硬」的要点（用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度……）说明小明的看法为什么不全面，并写出一个生活中跟「比较材料的软硬」有关的例子。",
+      "answer": "小明的看法不全面。「比较材料的软硬」并不只是要记住的结论：用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「比较材料的软硬」相关的现象；②说明「比较材料的软硬」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_soft_hard"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「比较材料的软硬」的内涵与应用。解题思路：①先复述「比较材料的软硬」的核心知识点——用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0252",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「比较材料的软硬」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「比较材料的软硬」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——比较材料的软硬相关事物；用眼睛看/借助工具观察到的现象——用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度；由此得到的结论——这与「比较材料的软硬」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_soft_hard"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「比较材料的软硬」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「比较材料的软硬」的关键现象——用指甲、硬币或小木条划一划、压一压来比较不同材料的软硬程度；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0253",
+      "item_type": "choice",
+      "stem": "下列关于「声音的高低」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_sound_high_low"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 A。声音的高低：橡皮筋拉得越紧振动越快发出的声音越高。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 声音的高低",
+        "B. 可以忽略不计的属性",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0254",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「声音的高低」时提出了自己的看法：\"声音的高低和我平时的生活没什么关系，记住结论就行了。\"请结合「声音的高低」的要点（橡皮筋拉得越紧振动越快发出的声音越高，能分辨声音的高低……）说明小明的看法为什么不全面，并写出一个生活中跟「声音的高低」有关的例子。",
+      "answer": "小明的看法不全面。「声音的高低」并不只是要记住的结论：橡皮筋拉得越紧振动越快发出的声音越高，能分辨声音的高低。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「声音的高低」相关的现象；②说明「声音的高低」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_sound_high_low"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「声音的高低」的内涵与应用。解题思路：①先复述「声音的高低」的核心知识点——橡皮筋拉得越紧振动越快发出的声音越高，能分辨声音的高低；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0255",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「声音的高低」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「声音的高低」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——声音的高低相关事物；用眼睛看/借助工具观察到的现象——橡皮筋拉得越紧振动越快发出的声音越高；由此得到的结论——这与「声音的高低」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_sound_high_low"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「声音的高低」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「声音的高低」的关键现象——橡皮筋拉得越紧振动越快发出的声音越高，能分辨声音的高低；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0256",
+      "item_type": "choice",
+      "stem": "下列关于「声音能在物体中传播」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_sound_transmit"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 B。声音能在物体中传播：轻敲桌面、耳朵贴桌面能听到声音。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 声音能在物体中传播",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0257",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「声音能在物体中传播」时提出了自己的看法：\"声音能在物体中传播和我平时的生活没什么关系，记住结论就行了。\"请结合「声音能在物体中传播」的要点（轻敲桌面、耳朵贴桌面能听到声音，说明声音能沿固体传播，也能通……）说明小明的看法为什么不全面，并写出一个生活中跟「声音能在物体中传播」有关的例子。",
+      "answer": "小明的看法不全面。「声音能在物体中传播」并不只是要记住的结论：轻敲桌面、耳朵贴桌面能听到声音，说明声音能沿固体传播，也能通过水、空气传播。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「声音能在物体中传播」相关的现象；②说明「声音能在物体中传播」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_sound_transmit"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「声音能在物体中传播」的内涵与应用。解题思路：①先复述「声音能在物体中传播」的核心知识点——轻敲桌面、耳朵贴桌面能听到声音，说明声音能沿固体传播，也能通过水、空气传播；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0258",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「声音能在物体中传播」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「声音能在物体中传播」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——声音能在物体中传播相关事物；用眼睛看/借助工具观察到的现象——轻敲桌面、耳朵贴桌面能听到声音；由此得到的结论——这与「声音能在物体中传播」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_sound_transmit"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「声音能在物体中传播」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「声音能在物体中传播」的关键现象——轻敲桌面、耳朵贴桌面能听到声音，说明声音能沿固体传播，也能通过水、空气传播；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0259",
+      "item_type": "choice",
+      "stem": "下列关于「夜空中的星星」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_star_sky"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 C。夜空中的星星：晴朗的夜晚能看见许多星星。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 夜空中的星星",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0260",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「夜空中的星星」时提出了自己的看法：\"夜空中的星星和我平时的生活没什么关系，记住结论就行了。\"请结合「夜空中的星星」的要点（晴朗的夜晚能看见许多星星，月光太亮时星星看起来会变少……）说明小明的看法为什么不全面，并写出一个生活中跟「夜空中的星星」有关的例子。",
+      "answer": "小明的看法不全面。「夜空中的星星」并不只是要记住的结论：晴朗的夜晚能看见许多星星，月光太亮时星星看起来会变少。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「夜空中的星星」相关的现象；②说明「夜空中的星星」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_star_sky"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「夜空中的星星」的内涵与应用。解题思路：①先复述「夜空中的星星」的核心知识点——晴朗的夜晚能看见许多星星，月光太亮时星星看起来会变少；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0261",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「夜空中的星星」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「夜空中的星星」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——夜空中的星星相关事物；用眼睛看/借助工具观察到的现象——晴朗的夜晚能看见许多星星；由此得到的结论——这与「夜空中的星星」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_star_sky"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「夜空中的星星」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「夜空中的星星」的关键现象——晴朗的夜晚能看见许多星星，月光太亮时星星看起来会变少；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0262",
+      "item_type": "choice",
+      "stem": "下列关于「茎运输水」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_stem_role"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 D。茎运输水：把带颜色的水（红墨水）吸进白花或芹菜茎中。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 没有生命现象的非生物",
+        "B. 不会随环境变化的结构",
+        "C. 不需要水和阳光也能维持生存",
+        "D. 茎运输水"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0263",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「茎运输水」时提出了自己的看法：\"茎运输水和我平时的生活没什么关系，记住结论就行了。\"请结合「茎运输水」的要点（把带颜色的水（红墨水）吸进白花或芹菜茎中，茎和叶脉变红，说明……）说明小明的看法为什么不全面，并写出一个生活中跟「茎运输水」有关的例子。",
+      "answer": "小明的看法不全面。「茎运输水」并不只是要记住的结论：把带颜色的水（红墨水）吸进白花或芹菜茎中，茎和叶脉变红，说明茎能运输水。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「茎运输水」相关的现象；②说明「茎运输水」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_stem_role"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「茎运输水」的内涵与应用。解题思路：①先复述「茎运输水」的核心知识点——把带颜色的水（红墨水）吸进白花或芹菜茎中，茎和叶脉变红，说明茎能运输水；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0264",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「茎运输水」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「茎运输水」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——茎运输水相关事物；用眼睛看/借助工具观察到的现象——把带颜色的水（红墨水）吸进白花或芹菜茎中；由此得到的结论——这与「茎运输水」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_stem_role"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「茎运输水」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「茎运输水」的关键现象——把带颜色的水（红墨水）吸进白花或芹菜茎中，茎和叶脉变红，说明茎能运输水；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0265",
+      "item_type": "choice",
+      "stem": "下列关于「用步测量距离」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_step_measure"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 A。用步测量距离：先用平常的步子量出教室或操场一步的长。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用步测量距离",
+        "B. 完全依靠人力、不借助任何工具的做法",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0266",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「用步测量距离」时提出了自己的看法：\"用步测量距离和我平时的生活没什么关系，记住结论就行了。\"请结合「用步测量距离」的要点（先用平常的步子量出教室或操场一步的长，再数步数估算较长距离……）说明小明的看法为什么不全面，并写出一个生活中跟「用步测量距离」有关的例子。",
+      "answer": "小明的看法不全面。「用步测量距离」并不只是要记住的结论：先用平常的步子量出教室或操场一步的长，再数步数估算较长距离。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「用步测量距离」相关的现象；②说明「用步测量距离」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_step_measure"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「用步测量距离」的内涵与应用。解题思路：①先复述「用步测量距离」的核心知识点——先用平常的步子量出教室或操场一步的长，再数步数估算较长距离；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0267",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「用步测量距离」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「用步测量距离」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——用步测量距离相关事物；用眼睛看/借助工具观察到的现象——先用平常的步子量出教室或操场一步的长；由此得到的结论——这与「用步测量距离」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_step_measure"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「用步测量距离」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「用步测量距离」的关键现象——先用平常的步子量出教室或操场一步的长，再数步数估算较长距离；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0268",
+      "item_type": "choice",
+      "stem": "下列关于「太阳的光和热」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_sun_energy"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 B。太阳的光和热：太阳光照射和晒热物体都是太阳提供的能量。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 可以忽略不计的属性",
+        "B. 太阳的光和热",
+        "C. 永远不会改变的特性",
+        "D. 和外界条件完全无关的现象"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0269",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「太阳的光和热」时提出了自己的看法：\"太阳的光和热和我平时的生活没什么关系，记住结论就行了。\"请结合「太阳的光和热」的要点（太阳光照射和晒热物体都是太阳提供的能量，能举例说明光照和加热……）说明小明的看法为什么不全面，并写出一个生活中跟「太阳的光和热」有关的例子。",
+      "answer": "小明的看法不全面。「太阳的光和热」并不只是要记住的结论：太阳光照射和晒热物体都是太阳提供的能量，能举例说明光照和加热的作用。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「太阳的光和热」相关的现象；②说明「太阳的光和热」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_sun_energy"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「太阳的光和热」的内涵与应用。解题思路：①先复述「太阳的光和热」的核心知识点——太阳光照射和晒热物体都是太阳提供的能量，能举例说明光照和加热的作用；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0270",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「太阳的光和热」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「太阳的光和热」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——太阳的光和热相关事物；用眼睛看/借助工具观察到的现象——太阳光照射和晒热物体都是太阳提供的能量；由此得到的结论——这与「太阳的光和热」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_sun_energy"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「太阳的光和热」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「太阳的光和热」的关键现象——太阳光照射和晒热物体都是太阳提供的能量，能举例说明光照和加热的作用；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0271",
+      "item_type": "choice",
+      "stem": "下列关于「太阳和月亮」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_sun_moon"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 C。太阳和月亮：太阳是最大的恒星。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 太阳和月亮",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0272",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「太阳和月亮」时提出了自己的看法：\"太阳和月亮和我平时的生活没什么关系，记住结论就行了。\"请结合「太阳和月亮」的要点（太阳是最大的恒星，自己发光发热；月亮不发光，反射太阳光才被我……）说明小明的看法为什么不全面，并写出一个生活中跟「太阳和月亮」有关的例子。",
+      "answer": "小明的看法不全面。「太阳和月亮」并不只是要记住的结论：太阳是最大的恒星，自己发光发热；月亮不发光，反射太阳光才被我们看见。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「太阳和月亮」相关的现象；②说明「太阳和月亮」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_sun_moon"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「太阳和月亮」的内涵与应用。解题思路：①先复述「太阳和月亮」的核心知识点——太阳是最大的恒星，自己发光发热；月亮不发光，反射太阳光才被我们看见；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0273",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「太阳和月亮」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「太阳和月亮」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——太阳和月亮相关事物；用眼睛看/借助工具观察到的现象——太阳是最大的恒星；由此得到的结论——这与「太阳和月亮」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_sun_moon"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「太阳和月亮」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「太阳和月亮」的关键现象——太阳是最大的恒星，自己发光发热；月亮不发光，反射太阳光才被我们看见；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0274",
+      "item_type": "choice",
+      "stem": "下列关于「技术活动中的安全」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_tech_safety"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 D。技术活动中的安全：使用剪刀、刀具、电器和插座时要注意安全。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 只用眼睛观察、不动手操作的过程",
+        "C. 只能一次性使用、不可重复的做法",
+        "D. 技术活动中的安全"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0275",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「技术活动中的安全」时提出了自己的看法：\"技术活动中的安全和我平时的生活没什么关系，记住结论就行了。\"请结合「技术活动中的安全」的要点（使用剪刀、刀具、电器和插座时要注意安全，手湿时不碰开关，插座……）说明小明的看法为什么不全面，并写出一个生活中跟「技术活动中的安全」有关的例子。",
+      "answer": "小明的看法不全面。「技术活动中的安全」并不只是要记住的结论：使用剪刀、刀具、电器和插座时要注意安全，手湿时不碰开关，插座不能插大功率用电器。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「技术活动中的安全」相关的现象；②说明「技术活动中的安全」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_tech_safety"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「技术活动中的安全」的内涵与应用。解题思路：①先复述「技术活动中的安全」的核心知识点——使用剪刀、刀具、电器和插座时要注意安全，手湿时不碰开关，插座不能插大功率用电器；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0276",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「技术活动中的安全」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「技术活动中的安全」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——技术活动中的安全相关事物；用眼睛看/借助工具观察到的现象——使用剪刀、刀具、电器和插座时要注意安全；由此得到的结论——这与「技术活动中的安全」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_tech_safety"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「技术活动中的安全」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「技术活动中的安全」的关键现象——使用剪刀、刀具、电器和插座时要注意安全，手湿时不碰开关，插座不能插大功率用电器；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0277",
+      "item_type": "choice",
+      "stem": "下列关于「用温度计测温度」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_temperature_measure"
+      ],
+      "difficulty": 0.28,
+      "solution": "正确答案是 A。用温度计测温度：温度计的玻璃泡要全部浸入被测物、不碰容器壁。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用温度计测温度",
+        "B. 在短时间内不会出现变化的现象",
+        "C. 只发生在实验室里的现象",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0278",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「用温度计测温度」时提出了自己的看法：\"用温度计测温度和我平时的生活没什么关系，记住结论就行了。\"请结合「用温度计测温度」的要点（温度计的玻璃泡要全部浸入被测物、不碰容器壁，视线与液面齐平读……）说明小明的看法为什么不全面，并写出一个生活中跟「用温度计测温度」有关的例子。",
+      "answer": "小明的看法不全面。「用温度计测温度」并不只是要记住的结论：温度计的玻璃泡要全部浸入被测物、不碰容器壁，视线与液面齐平读数，单位是摄氏度。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「用温度计测温度」相关的现象；②说明「用温度计测温度」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_temperature_measure"
+      ],
+      "difficulty": 0.34,
+      "solution": "本题考察「用温度计测温度」的内涵与应用。解题思路：①先复述「用温度计测温度」的核心知识点——温度计的玻璃泡要全部浸入被测物、不碰容器壁，视线与液面齐平读数，单位是摄氏度；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0279",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「用温度计测温度」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「用温度计测温度」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——用温度计测温度相关事物；用眼睛看/借助工具观察到的现象——温度计的玻璃泡要全部浸入被测物、不碰容器壁；由此得到的结论——这与「用温度计测温度」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_temperature_measure"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「用温度计测温度」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「用温度计测温度」的关键现象——温度计的玻璃泡要全部浸入被测物、不碰容器壁，视线与液面齐平读数，单位是摄氏度；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0280",
+      "item_type": "choice",
+      "stem": "下列关于「选择合适的工具」的说法，最准确的一项是（　　）。",
+      "answer": "B",
+      "kps": [
+        "kp_sci2_tool_choose"
+      ],
+      "difficulty": 0.31,
+      "solution": "正确答案是 B。选择合适的工具：做不同的事要选不同的工具。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 完全依靠人力、不借助任何工具的做法",
+        "B. 选择合适的工具",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0281",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「选择合适的工具」时提出了自己的看法：\"选择合适的工具和我平时的生活没什么关系，记住结论就行了。\"请结合「选择合适的工具」的要点（做不同的事要选不同的工具，能说出哪些工具适合剪、敲、拧、夹……）说明小明的看法为什么不全面，并写出一个生活中跟「选择合适的工具」有关的例子。",
+      "answer": "小明的看法不全面。「选择合适的工具」并不只是要记住的结论：做不同的事要选不同的工具，能说出哪些工具适合剪、敲、拧、夹。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「选择合适的工具」相关的现象；②说明「选择合适的工具」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_tool_choose"
+      ],
+      "difficulty": 0.37,
+      "solution": "本题考察「选择合适的工具」的内涵与应用。解题思路：①先复述「选择合适的工具」的核心知识点——做不同的事要选不同的工具，能说出哪些工具适合剪、敲、拧、夹；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0282",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「选择合适的工具」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「选择合适的工具」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——选择合适的工具相关事物；用眼睛看/借助工具观察到的现象——做不同的事要选不同的工具；由此得到的结论——这与「选择合适的工具」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_tool_choose"
+      ],
+      "difficulty": 0.22,
+      "solution": "本题考察「选择合适的工具」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「选择合适的工具」的关键现象——做不同的事要选不同的工具，能说出哪些工具适合剪、敲、拧、夹；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0283",
+      "item_type": "choice",
+      "stem": "下列关于「水的循环」的说法，最准确的一项是（　　）。",
+      "answer": "C",
+      "kps": [
+        "kp_sci2_water_cycle"
+      ],
+      "difficulty": 0.34,
+      "solution": "正确答案是 C。水的循环：水受热变成水蒸气升到空中。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 水的循环",
+        "D. 与日常生活完全无关的过程"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0284",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「水的循环」时提出了自己的看法：\"水的循环和我平时的生活没什么关系，记住结论就行了。\"请结合「水的循环」的要点（水受热变成水蒸气升到空中，遇冷凝结成云，云中水滴变大落下来成……）说明小明的看法为什么不全面，并写出一个生活中跟「水的循环」有关的例子。",
+      "answer": "小明的看法不全面。「水的循环」并不只是要记住的结论：水受热变成水蒸气升到空中，遇冷凝结成云，云中水滴变大落下来成为降水，地面水又流回江河。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「水的循环」相关的现象；②说明「水的循环」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_water_cycle"
+      ],
+      "difficulty": 0.4,
+      "solution": "本题考察「水的循环」的内涵与应用。解题思路：①先复述「水的循环」的核心知识点——水受热变成水蒸气升到空中，遇冷凝结成云，云中水滴变大落下来成为降水，地面水又流回江河；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0285",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「水的循环」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「水的循环」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——水的循环相关事物；用眼睛看/借助工具观察到的现象——水受热变成水蒸气升到空中；由此得到的结论——这与「水的循环」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_water_cycle"
+      ],
+      "difficulty": 0.24,
+      "solution": "本题考察「水的循环」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「水的循环」的关键现象——水受热变成水蒸气升到空中，遇冷凝结成云，云中水滴变大落下来成为降水，地面水又流回江河；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0286",
+      "item_type": "choice",
+      "stem": "下列关于「天气的要素」的说法，最准确的一项是（　　）。",
+      "answer": "D",
+      "kps": [
+        "kp_sci2_weather_element"
+      ],
+      "difficulty": 0.22,
+      "solution": "正确答案是 D。天气的要素：天气包括气温、风、云、降水等方面。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在短时间内不会出现变化的现象",
+        "B. 只发生在实验室里的现象",
+        "C. 与日常生活完全无关的过程",
+        "D. 天气的要素"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0287",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「天气的要素」时提出了自己的看法：\"天气的要素和我平时的生活没什么关系，记住结论就行了。\"请结合「天气的要素」的要点（天气包括气温、风、云、降水等方面，一天要关注多方面的天气情况……）说明小明的看法为什么不全面，并写出一个生活中跟「天气的要素」有关的例子。",
+      "answer": "小明的看法不全面。「天气的要素」并不只是要记住的结论：天气包括气温、风、云、降水等方面，一天要关注多方面的天气情况。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「天气的要素」相关的现象；②说明「天气的要素」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_weather_element"
+      ],
+      "difficulty": 0.28,
+      "solution": "本题考察「天气的要素」的内涵与应用。解题思路：①先复述「天气的要素」的核心知识点——天气包括气温、风、云、降水等方面，一天要关注多方面的天气情况；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0288",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「天气的要素」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「天气的要素」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——天气的要素相关事物；用眼睛看/借助工具观察到的现象——天气包括气温、风、云、降水等方面；由此得到的结论——这与「天气的要素」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_weather_element"
+      ],
+      "difficulty": 0.26,
+      "solution": "本题考察「天气的要素」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「天气的要素」的关键现象——天气包括气温、风、云、降水等方面，一天要关注多方面的天气情况；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0289",
+      "item_type": "choice",
+      "stem": "下列关于「轮轴」的说法，最准确的一项是（　　）。",
+      "answer": "A",
+      "kps": [
+        "kp_sci2_wheel_axle"
+      ],
+      "difficulty": 0.25,
+      "solution": "正确答案是 A。轮轴：水龙头、螺丝刀把手和自行车车轮都是轮轴。其他三项或把生物/物质现象当成静态结构、或忽略了其随环境/条件变化的规律，与课标要求不符，故不选。",
+      "source": "llm_generated",
+      "options": [
+        "A. 轮轴",
+        "B. 完全依靠人力、不借助任何工具的做法",
+        "C. 只用眼睛观察、不动手操作的过程",
+        "D. 只能一次性使用、不可重复的做法"
+      ],
+      "form": "mcq_single",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0290",
+      "item_type": "solve",
+      "stem": "小明在课堂上学习「轮轴」时提出了自己的看法：\"轮轴和我平时的生活没什么关系，记住结论就行了。\"请结合「轮轴」的要点（水龙头、螺丝刀把手和自行车车轮都是轮轴，用轮轴转动更省力……）说明小明的看法为什么不全面，并写出一个生活中跟「轮轴」有关的例子。",
+      "answer": "小明的看法不全面。「轮轴」并不只是要记住的结论：水龙头、螺丝刀把手和自行车车轮都是轮轴，用轮轴转动更省力。如果只背结论、不理解背后的现象和原因，遇到真实情境就不会灵活运用，也容易形成错误的前概念。生活实例：①结合观察或实验描述与「轮轴」相关的现象；②说明「轮轴」在日常生活/生产/学习中是怎样被用到的。",
+      "kps": [
+        "kp_sci2_wheel_axle"
+      ],
+      "difficulty": 0.31,
+      "solution": "本题考察「轮轴」的内涵与应用。解题思路：①先复述「轮轴」的核心知识点——水龙头、螺丝刀把手和自行车车轮都是轮轴，用轮轴转动更省力；②指出小明的错误在于只记结论、不理解现象和原因；③举出一个贴近生活的实例（如观察、实验、生活场景），把知识点和真实情境对应起来；④总结：科学知识来自对现象的观察和解释，学习时既要记住结论，也要理解它为什么是这样、可以怎样用。",
+      "source": "llm_generated",
+      "form": "short_answer",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "sci_dens04_0291",
+      "item_type": "fill",
+      "stem": "【小观察员任务】请你围绕「轮轴」做一次小观察或小实验，并把你的发现记录在横线上。\n提示语：观察/实验对象是「轮轴」相关的事物（如教材插图、生活中能找到的实物或场景）。",
+      "answer": "示例记录：观察/实验对象——轮轴相关事物；用眼睛看/借助工具观察到的现象——水龙头、螺丝刀把手和自行车车轮都是轮轴；由此得到的结论——这与「轮轴」的知识点一致（写出 1-2 个关键发现即可）。",
+      "kps": [
+        "kp_sci2_wheel_axle"
+      ],
+      "difficulty": 0.2,
+      "solution": "本题考察「轮轴」的观察与实证能力。评分要点：①是否真的做了观察或实验（而不是凭空想象）；②记录中是否体现了「轮轴」的关键现象——水龙头、螺丝刀把手和自行车车轮都是轮轴，用轮轴转动更省力；③是否能从观察结果归纳出简短的结论；④观察过程是否使用了合适的方法（多角度、借助工具、对比等），并注意安全。",
+      "source": "llm_generated",
+      "form": "observation",
+      "verification": {
+        "agents": [
+          "sci-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

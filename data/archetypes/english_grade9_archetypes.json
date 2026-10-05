@@ -1,0 +1,71 @@
+{
+  "subject": "english",
+  "grade_band": [7, 8, 9],
+  "note": "九年级英语母题库（中考向）：完形填空高频考点、阅读篇章结构与主次分析、词义猜测、语法填空时态综合、宾语从句、听力意图推断、话题作文、图表说明写作等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade9.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g9_cloze_hifreq",
+      "name": "完形填空高频考点（词义复现·搭配·情感线）",
+      "pattern": "典型情境：一篇 200—250 词的记叙文挖 10—12 空，每空四选一，考查动词、名词、形容词辨析与固定搭配。通法：三遍作答——①跳读全文抓主线（1 分钟）：不看选项通读，划出主人公、事件线和情感词（nervous→happy 的情绪转折往往在第 3—4 空处）；②逐空定位证据（主体）：每个空先看本句，再看上一句和下一句，优先找“原词复现/同义复现”（前文出现 help，后空选 helpful 类）、“搭配照应”（not only…but also 平行结构决定后空词性）、“情感一致”（全段消极，空格选 sad 类不选 excited 类）；③回读验证（2 分钟）：把所选词代入连读，检查情节是否闭环、感情线是否顺畅。切忌提笔就选：完形考的是“语篇中的词”而非孤立词义。",
+      "example": "例：完形节选（主题：男孩捡到钱包归还失主）。… Tom picked it up and found some money and a card in it. He wanted to find the __1__. On the card, there was a phone number, so he __2__ it at once. … Finally, the owner got her wallet back and thanked Tom again and again. 1. A. owner B. money C. card D. shop 2. A. closed B. called C. lost D. sold。参考答案：1. A；2. B。解析：第 1 空后文 the owner got her wallet back 出现原词复现 owner（首尾呼应），选 A；第 2 空前文说卡上有 phone number（电话号码），“有号码→立刻打电话”构成因果链，called 与之照应，且 at once 表立即行动与捡到钱包的急切心情一致。两空都体现“先找语篇证据再选词”的通法：复现定 1 空，因果与搭配定 2 空。",
+      "kp_ids": ["kp_eng9_voc9_polysemy", "kp_eng9_voc9_1600_master", "kp_eng9_gra9_tense_master"],
+      "variant_axes": ["考点词类轮换（动词/名词/形副/连词/搭配）", "复现线索显性 → 需跨段找同义复现", "记叙文情感线 → 夹叙夹议的转折把握（but/however 处设空）", "10 空 → 12 空＋首句不设空的中考真题体量"]
+    },
+    {
+      "id": "arch_eng_g9_reading_structure",
+      "name": "阅读理解篇章结构分析题（段落功能与主次）",
+      "pattern": "典型情境：给一篇 300 词左右的说明文或议论文，判断段落大意、划分结构（总—分—总等）或回答“第 2 段的作用”。通法：结构分析四步——①标段落序号，逐段用 5 个词以内概括段意（写段旁）；②找“结构信号词”：first/second/then 表并列展开，for example 表例证，however 表转折对比，so/as a result 表因果归纳，in short/to sum up 表总结；③画结构图：说明文常见“总起（现象/概念）—分述（分类/步骤/例子）—收尾（评价/建议）”，议论文为“观点—论据—结论”；④答题对照：问某段作用时，把该段放入结构图判断它是“提出观点/举例支撑/转折反方/总结建议”，选项中过度细节或跨段概括的都是干扰。人物传记类则按“早年—成就—影响”时间轴分析。",
+      "example": "例：读说明文《The Paper Cut》后回答：What is Paragraph 3 mainly about? A. The history of paper cutting. B. How to make a paper cut. C. The uses of paper cuts today. D. Why paper cutting is popular. 短文第 3 段原文：Making a paper cut is not difficult. First, fold a piece of red paper twice. Then draw some pictures on it with a pencil. Next, cut along the lines carefully. At last, open the paper, and you will see a beautiful pattern. 参考答案：B。解析：该段以 Making a paper cut is not difficult 总起，随后 first—then—next—at last 四个顺序词展开“折纸—画图—沿线剪—展开”的制作步骤，是典型的“过程说明段”，段意归纳为“如何制作剪纸”，选 B；A（历史）与 C（当今用途）是相邻段落的内容，属于张冠李戴干扰；D（流行原因）文中未论述。解题时先圈顺序词判断段落类型是“过程说明”，再与选项逐比对。",
+      "kp_ids": ["kp_eng9_red9_structure", "kp_eng9_red9_biography_news", "kp_eng9_dis9_argument_structure"],
+      "variant_axes": ["段落大意概括 → 全文结构图（总分类/步骤类/对比类）", "说明文（顺序词定位）→ 议论文（论点—论据—结论）", "判断第 N 段作用的段落功能题", "传记与新闻类按时间轴/倒金字塔结构分析"]
+    },
+    {
+      "id": "arch_eng_g9_word_inference",
+      "name": "阅读词义猜测题（上下文＋构词法推断）",
+      "pattern": "典型情境：文中划线生词或短语，要求结合上下文推断词义选择或释义。通法：证据链四问——①定义解释：生词前后的 be, that is, in other words, or 之后常直接给释义；②举例归纳：such as, for example 后的例子反推上位词义（…, such as roses, tulips and lilies → 花类总称）；③因果/转折：because, so, but 前后的逻辑决定生词褒贬与方向；④构词拆解：前缀改变方向（im-/in-/un- 否定，re- 再），后缀定词性（-tion 名词、-ous 形容词），合成词拆件（sun＋light）。步骤：定位生词句→前后各找一句证据→用证据短语替换生词回读→比对选项；警惕“认识词的错误义项”和字面直译陷阱，最后用代入法验证句子是否通顺。",
+      "example": "例：推断划线词词义。句子：Many students stay up late playing with phones before exams. They think it can help them study, but in fact it usually has the opposite effect—they feel sleepy and can't focus the next day. The underlined phrase has the opposite effect means ____. A. 有相同的效果 B. 有相反的效果 C. 没有效果 D. 有很好的效果。参考答案：B。解析：but in fact 表转折，其后破折号给出结果：feel sleepy and can't focus（犯困、无法专注），与 think it can help（以为有帮助）方向相反，故 opposite 意为“相反的”，整短语为“有相反的效果”；构词上 op-（对着）＋-posite（放置）＝放在对面，也指向“相反”。排除法验证：A 与 but 转折矛盾，C（没有效果）弱于文中明确的负面结果，D 与 sleepy 冲突。本题展示“转折逻辑＋结果句＋构词”三线合证的猜词通法。",
+      "kp_ids": ["kp_eng9_red9_word_from_context_wordform", "kp_eng9_voc9_polysemy"],
+      "variant_axes": ["释义线索类型（定义/举例/因果/转折）轮换", "构词线索（前后缀/合成词）专项", "旧词新义与熟词僻义（book v. 预订）", "选项从近义辨析升级为反义与逻辑方向辨析"]
+    },
+    {
+      "id": "arch_eng_g9_grammar_fill_tense",
+      "name": "语法填空·时态与语态综合（谓语动词定形）",
+      "pattern": "典型情境：语篇型语法填空中给出 10 空，其中 2—3 空给了动词原形，要求填入正确的谓语形式（时态与语态）。通法：谓语定形四步——①判谓语/非谓语：句中若无别的谓语动词，所给动词就是谓语，需要变形；已有谓语则考虑非谓语（to do/doing/done）；②定时态：找时间标志（last year→过去；now/look→进行；since/so far/already→完成；every day→一般现在），无标志看语境和上下文时态；③定语态：主语是动作承受者用被动（be done），执行者用主动；④定形式：三单加 s/es、进行加 be v-ing、完成用 have/has done、被动按主语配 be。最后把答案代入全句通读，检查主谓一致与句意。",
+      "example": "例：语法填空（谓语动词定形）。① The Greens ____ (move) to Shanghai in 2018 and they ____ (live) there since then. ② English ____ (speak) by people in many countries. ③ Look! The boys ____ (swim) in the river. 参考答案：① moved, have lived；② is spoken；③ are swimming。解析：①第一空 in 2018 是明确过去时间用 moved；第二空 since then 是完成时标志，live 延续动词，用 have lived，两句形成“过去搬来→至今一直住”的时间线；②主语 English 与 speak 是动宾（被动）关系，“英语被说”，且陈述一般事实，用一般现在时的被动 is spoken；③Look! 提示动作正在进行，boys 复数，用 are swimming。三题依次覆盖“时间标志定过去/完成”“被动判断”“进行时标志”三个高频考点，作答均遵循“判谓语→定时态→定语态→定形式”流程。",
+      "kp_ids": ["kp_eng9_gra9_tense_master", "kp_eng9_gra9_passive_all", "kp_eng9_voc9_1600_master"],
+      "variant_axes": ["六大时态轮换＋与被动叠加（进行被动 has been done 不作要求）", "时间标志显性 → 隐性（靠上下文语境）", "谓语空 → 混编非谓语空（需先判谓/非谓）", "整篇语篇填空（10 空）而非单句"]
+    },
+    {
+      "id": "arch_eng_g9_object_clause",
+      "name": "宾语从句三要素（连接词·语序·时态呼应）",
+      "pattern": "典型情境：单项选择或完成句子中考查宾语从句的连接词选择、陈述语序和主从句时态呼应。通法：三关依次过——①连接词关：从句不缺成分且表“是否”用 if/whether；缺主语/宾语（物）用 what，缺人用 who；缺状语（时间 when、地点 where、原因 why）；不缺任何成分用 that（可省）；②语序关：从句一律用陈述语序“主语＋谓语”，尤其疑问词提前后不能保留助动词（I don't know where he lives. 不能写 where does he live）；③时态关：主句过去时，从句用相应过去时态；但从句是客观真理仍用一般现在时（The teacher said the earth goes around the sun.）。写完把从句单独抽出来读，还原成陈述句检查语序。",
+      "example": "例：单项选择。① Could you tell me ____? A. where is the nearest bank B. where the nearest bank is C. where was the nearest bank ② I want to know ____ he will come to the party tomorrow. A. that B. if C. what ③ The teacher said that light ____ faster than sound. A. traveled B. travels C. has traveled。参考答案：① B；② B；③ B。解析：①疑问词 where 引导宾语从句必须用陈述语序 the nearest bank is，A、C 都是疑问语序；②从句 he will come to the party 成分完整（有主语有宾语），只缺“是否”义，用 if；③虽然主句 said 是过去时，但“光速快于声速”是客观真理，从句仍用一般现在时 travels。三题对应宾语从句三要素：语序、连接词、时态呼应，任何一关失守全句皆错。",
+      "kp_ids": ["kp_eng9_gra9_object_clause_master", "kp_eng9_gra9_tense_master"],
+      "variant_axes": ["三要素单点考 → 混合考（连接词＋语序同题）", "直接引语变间接引语（人称与时间词同步变化）", "if/whether 的使用限制（介词后只用 whether）", "情景交际中的委婉问路/询问信息应用"]
+    },
+    {
+      "id": "arch_eng_g9_listen_intent",
+      "name": "听力意图与观点推断题（说话人态度）",
+      "pattern": "典型情境：听对话或独白，推断说话人的意图、观点态度或下一步行动。通法：三听三看——一听重音：说话人重读的词往往是态度核心（That's a GOOD idea 赞成）；二听语气：升调礼貌征询、降调肯定；虚拟语气（If I were you, I would…）是建议；三听弦外之音：I'd love to, but… 委婉拒绝；Why not try again? 实为建议。一看选项性质：积极/消极/中立先分类；二看问句类型：What does the man mean / What will the woman do / How does Tom feel 分别对应意图—行动—态度；三看结尾句：对话最后一句常是考点（决定、建议、约定）。听完先给说话人贴情绪标签（支持/反对/犹豫），再选最贴近标签的选项，避免被字面同义词迷惑。",
+      "example": "例：听对话回答：What does the woman mean? A. She will go to the concert. B. She has to look after her sister. C. She doesn't like the concert. 录音原文：M: There will be a concert this Saturday evening. Would you like to go with me? W: I'd love to, but I have to look after my little sister at home. 参考答案：B。解析：I'd love to, but… 是“乐意去，但是……”的委婉拒绝句式，but 之后才是真实原因 have to look after my little sister（得在家照看妹妹）；她并非不喜欢音乐会（C 曲解），只是不能去；A 与 but 分句矛盾。听到 I'd love to, but / I'm afraid… 应立即标记“拒绝＋原因”，答案通常就是 but 后的内容；若问 What will she do? 则答案仍指向照看妹妹这一行动。",
+      "kp_ids": ["kp_eng9_lis9_intent", "kp_eng9_lis9_selective_note", "kp_eng9_gra9_object_clause_master"],
+      "variant_axes": ["推断意图 → 推断态度（赞成/反对/犹豫）→ 推断下一步行动", "委婉拒绝句式（I'd love to, but…/I'm afraid…）专项", "虚拟语气表建议（If I were you…）的听力辨识", "独白中作者观点词（luckily, unfortunately, in my opinion）抓取"]
+    },
+    {
+      "id": "arch_eng_g9_topic_composition",
+      "name": "话题作文（观点＋理由支撑的书面表达）",
+      "pattern": "典型情境：围绕中考高频话题（志愿服务、环境保护、健康生活）写一篇 80—100 词短文，要求观点明确、理由充分。通法：审题三定（定人称、定时态、定要点）后按“三段论”搭骨架——①开头亮观点：用 From my point of view… / I think… 直给立场，或用现象引入（Nowadays, more and more…）；②主体给两三条理由：用 First/Second/Besides/What's more 排列，每条理由走“论点句＋一句展开或例证”的小结构，避免只罗列口号；③结尾收束重申：In a word / Let's… 发出倡议。语言升级三招：换高级衔接（because→for the reason that 慎用，实用的是 besides/what's more）、用被动或 there be 句式变换句型、结尾用倒装或感叹（Only in this way can we… 或 How important…）。写完数要点：漏点是最大扣分项。",
+      "example": "例：以 Saving Water 为题写一篇 80 词左右的短文，内容包括：①水很重要；②水资源短缺的现状；③两条节水建议。参考答案：Water is very important to us. People, animals and plants can't live without it. However, many places in the world are short of water now, so it's necessary for everyone to save water. Here are my suggestions. First, we should turn off the tap after washing hands and never let it run. Second, we can reuse water. For example, the water used for washing vegetables can water the flowers. In a word, saving water is everyone's duty. Let's start from small things around us. 解析：审题三定——人称 we、以一般现在时为主、要点三条全含；结构上开头亮背景（水重要）＋现状（however 转折引短缺），主体 First/Second 给两条建议且第二条带 for example 例证，结尾 In a word＋倡议句收束；语言上用了 it's necessary for everyone to…、定语从句 the water used for washing vegetables 等加分句式，字数约 90 词。",
+      "kp_ids": ["kp_eng9_spk9_opinion_reason", "kp_eng9_wri9_draft_modify_finish", "kp_eng9_thm9_env_protect"],
+      "variant_axes": ["话题轮换（环保/志愿服务/健康生活/传统文化）", "提纲式（给要点）→ 半开放（给话题自拟提纲）", "理由条数 2 条 → 3 条并要求例证", "草稿—修改—誊写的两遍写作流程训练"]
+    },
+    {
+      "id": "arch_eng_g9_chart_caption",
+      "name": "图表说明写作（数据描述＋结论）",
+      "pattern": "典型情境：给柱状图/饼图/表格（如班级课外活动选择、零花钱用途），写一篇 80 词左右的说明短文，描述数据并得出结论或建议。通法：三段式写数据——①开头总述图表主题（The chart shows what activities students like best after school.）；②主体描述数据：抓“最值＋对比”，用 most（最多）、the number of…、percent、more…than、twice as…as 等表达，按从大到小或分类顺序写 3—4 个数据点，避免逐条罗列全部数字；③结尾下结论/给建议（From the chart, we can see…/ Maybe schools should…）。时态用一般现在时；比较句是核心句型；数字大写注意用阿拉伯数字加单位。",
+      "example": "例：下表是某班 40 名学生最喜爱的课外活动调查结果：阅读 10 人、运动 18 人、绘画 6 人、其他 6 人。据此写一篇 80 词左右的短文，需含数据描述和你的建议。参考答案：The chart shows the favourite after-school activities of the 40 students in our class. According to the chart, most students like sports best—18 students choose ball games and running. Reading comes second, with 10 students enjoying it. Only 6 students prefer drawing, and another 6 choose other activities. From the chart, we can see that students today like activities that keep them active. In my opinion, reading is also important, so we should spend more time on books to open our eyes. 解析：写作按“总述—数据—结论建议”三段：数据段抓最值（sports 最多 18 人）用 most…best 突出，第二位用 comes second＋with 短语引人数，避免逐项平铺；结论段 From the chart, we can see… 归纳趋势，再用 In my opinion 给建议；全文一般现在时，数字与单位（40 students, 18 students）书写规范，约 95 词。",
+      "kp_ids": ["kp_eng9_wri9_chart_caption", "kp_eng9_wri9_draft_modify_finish", "kp_eng9_lsm9_topic_plan"],
+      "variant_axes": ["图表类型（柱状图/饼图/表格）", "数据点数量 3 个 → 5 个（需取舍与归类）", "只描述 → 描述＋结论 → 描述＋结论＋建议", "百分比与倍数表达（percent, twice as…as）专项"]
+    }
+  ]
+}

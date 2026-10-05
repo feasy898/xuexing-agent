@@ -1,0 +1,17 @@
+离线冒烟（httpx ASGITransport 进程内直连，零网络不占端口）：15 项（14 端点 + 1 多租户专项；bank=math_grade7_items.json items=222 kps=37）
+  [01/15] POST /papers/diagnostic              PASS  200 | item_ids×3 title='诊断卷'
+  [02/15] POST /learners/smoke-1/responses     PASS  200 | mastery×37 clusters×10
+  [03/15] GET /learners/smoke-1/profile        PASS  200 | mastery×37 confidence×37
+  [04/15] GET /learners/smoke-1/plan           PASS  200 | steps×37 reviews×0 首个策略=s_retrieval
+  [05/15] GET /learners/smoke-1/next_item      PASS  200 | item_id=m7_006
+  [06/15] POST /learners/smoke-1/reviews       PASS  200 | kp_id=smoke-1 due=2026-10-04 interval=2 (rating 9 → 400 按设计；kp_id 即 learner_id，server.py:208)
+  [07/15] GET /orgs                            PASS  200 | orgs=['default']
+  [08/15] POST /attribute                      PASS  200 | misconception_id=mc_sign_neg（签名命中，MockLLM 路径）
+  [09/15] POST /trace                          PASS  200 | profile_saved=True snapshots×2
+  [10/15] POST /blueprint                      PASS  200 | counts={'kp_eq_solve': 2, 'kp_rational_add': 1} dimensions=['应用', '理解', '记忆']
+  [11/15] POST /grade                          PASS  200 | 原子 correct=True；批量 n=3 判定=[True,True,False]（ghost → 404 按设计）
+  [12/15] POST /recommend                      PASS  200 | kp 模式 item_ids×6；画像最弱 kp=kp_rational_add
+  [13/15] POST /itembank/v2/validate           PASS  200 | valid=True total=222 counts={'original': 129, 'adapted': 0, 'llm_generated': 93}
+  [14/15] POST /coverage/standard              PASS  200 | coverage_rate=0.429 未覆盖条目×16
+  [15/15] X-Org-Id 多租户隔离（trace/orgs × org-a）   PASS  200/404 | org-a 与 default 隔离；/orgs 可见 org-a
+SMOKE_OK 15/15

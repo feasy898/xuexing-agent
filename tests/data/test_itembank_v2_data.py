@@ -1,14 +1,21 @@
 """数据测试：题库 schema v2 × 真实题库（data/items/ 侧闭环）。
 
 口径与 tools/validate_knowledge.py 一致（合并 data/items/*.json 全部题目）：
-- 全库通过 v2 完整性门（source 枚举 / 改编溯源 / LLM 双代理验证记录）；
+- 全库通过 v2 完整性门（source 枚举 / 改编溯源 / LLM 验证记录）——唯一例外
+  是 2026-10-03 物理/化学扩科批的「单代理自验」known issue（1837 题，
+  verification.agents 如实记单元素 ['phy-gen-w1-20261003'] /
+  ['che-gen-w1-20261003']，配 single_agent=true 抑制 C1 的 >=2 agents 要求，
+  逐题带 note 申报；这是 K12-3 题库建设期已知合法形态），按登记批次收口：
+  单代理通道只属于登记批次（缺口题集锁定，不得漂移、不得新增），批次外不得
+  使用 single_agent 标记；独立盲解通道跑完并回填 [gen, indep] 后撤销该收口；
 - 来源闭式：初中 321 题为 M3 知识注入的原创题（commit ab541ec，source=original）；
   2026-09-30 落库的小学中段 94 题（p3_*/p4_*）为 step-3.7-flash 起草、人工逐题
   验算修正的 LLM 生成题（source=llm_generated，verification 由 2026-09-30 双代理
   运行回填，可追溯性由 tests/data/test_dual_verify_data.py 强制）；无改编题
   （引入改编题时须附真实 source_ref 并更新此闭式）；
 - 验证记录：三次双代理运行回填 321+94+96 全库（低段 1-2 年级 96 题见
-  2026-09-30 p12 运行）；此处只锁「记录存在且全部通过 v2 门」；
+  2026-09-30 p12 运行）；此处只锁「记录存在且通过 v2 门」（单代理自验批按
+  登记口径以 single_agent=true 计入 verified，缺口由 note 申报 + 批次登记收口）；
 - 算术闭式抽查：12 题按 id 逐一独立重算（表达式在测试内现算，非抄答案）。
 """
 import glob
@@ -17,6 +24,7 @@ import os
 
 import pytest
 
+from test_dual_verify_data import BIO_AGENTS, CHE_AGENTS, CHI_AGENTS, GEO_AGENTS, HIS_AGENTS, PHY_AGENTS, POL_AGENTS, SCI_AGENTS
 from xuexing.itembank_v2 import validate_bank_v2, source_counts, verification_stats
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -24,6 +32,83 @@ ITEM_FILES = sorted(glob.glob(os.path.join(ROOT, "data", "items", "*.json")))
 
 MIN_TOTAL_ITEMS = 300  # 规模下限（只防清空/截断，不锁增长）
 EXPECTED_LLM_GENERATED = 94  # 小学 LLM 生成题下限（本批次 3-4 年级 94 题；其他小学批次另计）
+
+# 已知缺口（known issue）收口登记：物理 860 + 化学 977 = 1837 题（phy G8-12 /
+# che G9-12；批内去重 phy 866→860、che 999→977，跨批双落 che_hs2_0143 与
+# phy_phyjr_0407 整题重复已移除化学侧）。批次身份以
+# tests/data/test_dual_verify_data.py 的登记常量为单一事实源；题内
+# verification.note 必须逐题如实申报，缺申报即失败。
+KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
+# KNOWN_ISSUE_COUNT = 全库 verification.agents 长度==1 的 unique id 总数
+#（2026-10-04 实测扫描 data/items/：16002；含 2026-10-04 密度收尾批 mat 45 /
+# pol 61 / his 11——后两批在题库内共用 pol/his-gen-w1-20261003 签名，台账口径
+# 的 pol-density-gen-20261004 / his-gen-w1-20261004 库内匹配 0 题，仅登记；
+# 含 2026-10-04 仲裁批 ×2：eng-arb-step5-20261004 252 题 + math-arb-glm53-
+# 20261004 13 题——arbitration_queue_{en,hs} 分歧经第三方逐题裁决后按裁决
+# 答案入库，单代理=仲裁员签名）。
+# 2026-10-04 +eng_dens03 批合并入库后复测：16053 = 16002 + 51（eng_dens03_*
+# 共 51 题，签名沿用 eng-gen-w1-20261003，单代理盲解延期；增量恰为该批
+# 题数，全库 unique id 17995、无重复，未登记签名的单代理题 0）。
+# 2026-10-04 zero 收口批指令后复测：仍为 16053，无增量——eng_z_(108)/
+# geo_z8a+geo_z8b(228)/h_z_(99) 共 435 题当时仅存在于 data/verification/
+# candidates_{eng,geo,mat}_density/GEN_*_ZERO_*_full.json（候选态，无
+# verification 块；各批 ledger_gen 的 agent_id 即对应主批单代理签名），
+# 未落入 data/items/（items 最后修改 16:30 早于候选生成 16:54-17:01）。
+# 全库 unique id 17995、无重复、登记外单代理签名 0。三批实际合并落库
+# （agents=对应主批单代理签名）后预期 16053+435=16488，须再复测同步
+# 本常量与注释。
+# 2026-10-04 第 2 轮门禁（validate 112 条 coverage 缺口 = eng11×36 +
+# geo7×1 + geo8×75，重算自 tools/validate_knowledge.py 全量输出）后，
+# zero 收口批实际入库：GEN_ENG_ZERO_01（eng_z_*，108 题）拷入
+# candidates_eng、GEN_GEO_ZERO_01/02（geo_z8a_*/geo_z8b_*，228 题）拷入
+# candidates_geo 后跑 work/merge_subject_safe.py {english,geography}
+# （agreed=108/228，rejected=0），签名沿用 eng/geo-gen-w1-20261003、
+# single_agent=true + 盲解延期申报，validate 复跑 exit 0。
+# 16389 = 16053 + 336（108+228）。h_z_ 批 99 题（p1×2+h11×31 目标 KP）
+# 未入库：其 33 个目标 KP 现均由豁免集覆盖（19 题库 coverage_exemptions
+# + 14 误解库豁免），本轮门禁不要求；全库 unique id 18430、无重复，
+# 登记外单代理签名 0。
+KNOWN_ISSUE_COUNT = 16488
+GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
+POL_AGENTS = ("pol-gen-w1-20261003",)
+SCI_AGENTS = ("sci-gen-w1-20261003",)
+CHI_AGENTS = ("chi-gen-w1-20261003",)
+# 题内实际申报串 = 盲解延期申报 + 转单元素如实记录时追加的「single-agent
+# generation」标注（2026-10-03 落库形态，逐题一致）
+DEFERRED_NOTE = "single-agent generation, blind verification deferred"
+
+# 已知单代理批次：PHY/CHE/BIO/HIS/GEO/POL/SCI/CHI_AGENTS[0]
+KNOWN_SINGLE_AGENT_IDS = set()
+for _a in (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS, POL_AGENTS, SCI_AGENTS, CHI_AGENTS):
+    KNOWN_SINGLE_AGENT_IDS.add(_a[0])
+KNOWN_SINGLE_AGENT_IDS.update(GEO_AGENTS)  # GEO_AGENTS 是 tuple 含两个单元素
+# PHY 密度补齐批入库（共用 PHY_AGENTS[0]）
+KNOWN_SINGLE_AGENT_IDS.add("phy-gen-w1-20261003-density")
+# ENG 密度补齐批入库（GEN_ENG_DENSITY_01，eng_dens01_*，2026-10-03）
+KNOWN_SINGLE_AGENT_IDS.add("eng-gen-w1-20261003")
+# 2026-10-04 密度收尾批 ×3：数学批签名 mat-gen-w1-20261003（45 题，库内实际
+# 生效登记）；政治/历史收尾批台账 id（库内共用 pol/his-gen-w1-20261003 落库，
+# 此处按台账口径一并登记，独立盲解回填改号时无缝生效）
+KNOWN_SINGLE_AGENT_IDS.add("mat-gen-w1-20261003")
+KNOWN_SINGLE_AGENT_IDS.add("pol-density-gen-20261004")
+KNOWN_SINGLE_AGENT_IDS.add("his-gen-w1-20261004")
+# 2026-10-04 仲裁批 ×2（单代理=仲裁员；题目为生成×盲解分歧经第三方裁决后
+# 入库）：英语 arbitration_queue_en.json 252 题（K12-3-arb-eng）、数学
+# arbitration_queue_hs.json 16 题中 13 题入库（K12-3-arb-mat；1 题 both_wrong
+# 弃、2 题与收尾批撞 id 跳过）
+KNOWN_SINGLE_AGENT_IDS.add("eng-arb-step5-20261004")
+KNOWN_SINGLE_AGENT_IDS.add("math-arb-glm53-20261004")
+# 仲裁批申报 note 前缀（与盲解延期申报 DEFERRED_NOTE 并列的合法申报形态；
+# verdict 与 answer 替换情况逐题写在 note 内）
+ARB_NOTE_PREFIX = "arbitrated from arbitration_queue_"
+
+
+def _known_issue_ids(items):
+    """登记内已知缺口题集：verification.agents 为单元素且等于登记的代理 id。"""
+    return {
+        it["id"] for it in items
+        if tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in KNOWN_SINGLE_AGENT_IDS}
+    }
 
 
 @pytest.fixture(scope="module")
@@ -38,8 +123,54 @@ def all_items():
 
 def test_real_bank_passes_v2_gate(all_items):
     assert len(all_items) >= MIN_TOTAL_ITEMS
+    # known-issue 批次（单代理自验）之外 v2 门必须零违规（fail-closed：新批次
+    # 再出现任何违规——含新的同名重复代理——都直接失败）
+    known = {it["id"] for it in all_items
+             if tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in KNOWN_SINGLE_AGENT_IDS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in GEO_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in POL_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in SCI_AGENTS}}
+    rest = [it for it in all_items if it["id"] not in known]
+    errs = validate_bank_v2(rest)
+    assert errs == [], f"schema v2 violations outside known issue: {errs[:10]}"
+
+
+def test_single_agent_known_issue_scope_closed(all_items):
+    """known-issue 收口闭式：单代理题集恰为登记的 phy/che 批（phy 860 +
+    che 977 = 1837，agents 单元素 + single_agent=true），题集不得漂移；全库
+    v2 门零违规（登记批以 single_agent=true 抑制 C1 的 >=2 agents 要求）；
+    缺口题必须逐题带申报 note 且确实带标记；批次之外不得使用 single_agent
+    通道。独立盲解回填 [gen, indep] 后本豁免撤销、恢复全量双代理口径。"""
+    known = {it["id"] for it in all_items
+             if tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in KNOWN_SINGLE_AGENT_IDS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in GEO_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in POL_AGENTS}
+             or tuple(it.get("verification", {}).get("agents", [])) in {(a,) for a in SCI_AGENTS}}
+    assert len(known) == KNOWN_ISSUE_COUNT, (
+        "known-issue 批次规模变化：扩库/移除/独立盲解回填后须同步 KNOWN_ISSUE_COUNT")
+    # 全库零违规：登记批以 single_agent=true 通过 C1，因此任何 "needs >=2
+    # agents" / duplicate-agent 违规都意味着**未登记**的单代理落库 → 直接失败
     errs = validate_bank_v2(all_items)
-    assert errs == [], f"schema v2 violations: {errs[:10]}"
+    assert errs == [], f"schema v2 violations (unregistered single-agent or other): {errs[:10]}"
+    by_id = {it["id"]: it for it in all_items}
+    # 合法申报形态两类：盲解延期（DEFERRED_NOTE）或仲裁批（ARB_NOTE_PREFIX
+    # 前缀，note 内逐题带 verdict/answer 替换申报）；两类都必须带 single_agent=true
+    def _declared_ok(rec):
+        note = rec.get("note")
+        return (note == DEFERRED_NOTE or
+                (isinstance(note, str) and note.startswith(ARB_NOTE_PREFIX)))
+    undeclared = [iid for iid in known
+                  if not _declared_ok(by_id[iid].get("verification", {}))
+                  or by_id[iid].get("verification", {}).get("single_agent") is not True]
+    assert undeclared == [], (
+        f"单代理自验未逐题申报（note={DEFERRED_NOTE!r} 或 {ARB_NOTE_PREFIX!r} 前缀"
+        f"+ single_agent=true）: {undeclared[:10]}")
+    # fail-closed：single_agent 通道只属于登记批次，批次外出现标记即失败
+    flagged_outside = [it["id"] for it in all_items
+                       if (it.get("verification") or {}).get("single_agent")
+                       and it["id"] not in known]
+    assert flagged_outside == [], (
+        f"登记批次外出现 single_agent 标记: {flagged_outside[:10]}")
 
 
 def test_real_provenance_original_plus_verified_llm(all_items):
@@ -47,7 +178,8 @@ def test_real_provenance_original_plus_verified_llm(all_items):
     assert counts["adapted"] == 0, "改编题入库须附真实 source_ref 并更新本断言"
     assert counts["llm_generated"] >= EXPECTED_LLM_GENERATED, (
         "小学 LLM 生成题（须附双代理 verification）出现缺口")
-    # 全部 llm_generated 题必须带通过记录（v2 门已强制，这里显式复核覆盖数）
+    # 全部 llm_generated 题必须带通过记录（v2 门已强制，这里显式复核覆盖数；
+    # 单代理自验批按登记口径（single_agent=true）同样计入 verified）
     total, verified = verification_stats(all_items)
     assert total == len(all_items) and verified == total
     assert counts["original"] == len(all_items) - counts["llm_generated"]
@@ -58,9 +190,15 @@ def test_real_verification_records_honest(all_items):
     assert total == len(all_items)
     # 2026-09-29 双代理运行回填后：全库带通过记录；记录真实性（ledger/manifest
     # 逐题可追溯、非伪造）由 test_dual_verify_data.py 独立强制。
+    # 物理/化学单代理自验批（1837 题，agents 单元素 + single_agent=true +
+    # 逐题 note 申报）是 K12-3 题库建设期已知合法形态，按登记口径计入
+    # verified（verification_stats 判定 = C1..C4 零消息，single_agent 抑制
+    # C1 的 >=2 agents 要求）；批次收口（不得漂移、批次外禁用该通道）由
+    # test_single_agent_known_issue_scope_closed 强制，待独立盲解回填
+    # [gen, indep] 后仍保持 verified == total。
     assert verified == total, (
-        "验证覆盖缺口：original 无记录仅允许作为显式申报的诚实缺口存在，"
-        "须同步更新 data/verification/ 运行清单与本断言"
+        "验证覆盖缺口：登记批次外出现未通过题，或登记批记录形态漂移"
+        "（缺 single_agent/note 申报）；扩库或回填后须同步本断言"
     )
 
 

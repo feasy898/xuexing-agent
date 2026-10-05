@@ -1,0 +1,79 @@
+{
+  "subject": "english",
+  "grade_band": [10, 11, 12],
+  "note": "高一英语母题库（必修阶段）：阅读主旨与细节定位、词义猜测、语法填空时态语态与非谓语、定语从句、完形搭配、应用文书信、说明文写作、听力主旨信息提取等典型题 + 通法 + 变式轴。kp_ids 均取自 data/knowledge/english_grade10.json。",
+  "archetypes": [
+    {
+      "id": "arch_eng_g10_reading_main",
+      "name": "阅读理解主旨要义题（首末段＋高频词定位法）",
+      "pattern": "典型情境：300—350 词的说明文或议论文，选最佳标题、概括全文主旨或判断作者的写作意图。通法：四步定主旨——①略读首末段：首段末句提出话题或论点，末段回应升华，两处划线标记；②扫读各段首句并列成提纲，用“每段＝一个关键词”合成主线；③统计高频名词群，剔除只在例子中出现的词（局部词）；④按文体套模板：说明文主旨多为“研究对象＋核心特征”，议论文为“论点（作者立场）”，新闻报道为导语段（首段含 when/where/who/what）。验证标准：正确答案必须能覆盖全文各段，只覆盖例证段或细节段的选项一律排除；标题还要“短而准”。",
+      "example": "例：读短文选标题。短文大意：首段提出“很多人认为熬夜刷手机能放松，实际上适得其反”；第二段讲睡眠不足导致记忆力下降（引用实验：睡眠不足组单词记忆量低 40%）；第三段讲屏幕蓝光抑制褪黑素分泌使人更难入睡；末段总结“想休息好，睡前一小时应放下手机”。选项：A. How Phones Change Our Life B. Less Sleep, Poorer Memory C. Put Down Your Phone Before Bed D. The History of Mobile Phones。参考答案：C。解析：高频词群是 phone、sleep、before bed；首段末句“适得其反”亮出立场，末段建议“睡前一小时放下手机”点题收束；A 范围过宽（未聚焦睡眠），B 只覆盖第二段的实验细节，D 无中生有；C 覆盖“手机—睡眠”主线且给出行动指向，短而准。主旨题证据链：首末段立场＋段首句提纲＋高频词群三线合一。",
+      "kp_ids": ["kp_eng10_red10_skimming_read", "kp_eng10_lsm10_skimming", "kp_eng10_dis10_narrative_expo_purpose"],
+      "variant_axes": ["选标题 → 概括主旨 → 判断写作目的（to inform/persuade/entertain）", "主题句显性（首末段）→ 隐性（需合并各段要点）", "说明文 → 议论文 → 新闻（导语定主旨）", "干扰项专项：过宽项/过窄项/细节项/无中生有项"]
+    },
+    {
+      "id": "arch_eng_g10_word_guess",
+      "name": "词义猜测题（语境线索＋构词法双引擎）",
+      "pattern": "典型情境：文中划线词为生词、旧词新义或代词，要求推断其指代或含义。通法：语境五线索＋构词一引擎——①定义句：be, that is (to say), in other words, refer to 后直接给释义；②例证句：such as, like, for instance 后的例子反推词义；③因果链：because/since/so/therefore 前后互为解释；④对比链：unlike, while, whereas, on the contrary 提示反义；⑤指代链：代词往前找最近的名词复指，注意单复数一致。构词引擎：前缀改方向（dis-/in-/im- 否定、over- 过度、under- 不足、mis- 错误），后缀定词性（-less 无、-ful 充满、-wise 方式），合成与转化（access n.→v.）。作答后必做代入检验：把猜测义放回原句通读一遍。",
+      "example": "例：猜出划线词词义。句子：My grandfather is a vigorous old man. Although he is seventy, he gets up at six every morning, walks five kilometers, and even climbs mountains with young people. What does the word vigorous mean? A. weak and slow B. full of energy C. quiet and shy D. strict and serious。参考答案：B。解析：Although（尽管七十岁）引导让步，其后三个并列证据（六点起床、日行五公里、与年轻人爬山）都是“精力充沛”的表现，属“例证＋对比”双线索：七十岁本应迟缓 vs 实际表现活跃，反推 vigorous 意为 full of energy；构词上 vigor（活力）＋-ous（形容词后缀）＝有活力的。A 与证据相反，C、D 在文中无支撑。代入检验：a full-of-energy old man… gets up at six… 语义自洽。",
+      "kp_ids": ["kp_eng10_red10_guess_from_context", "kp_eng10_voc10_root_affix", "kp_eng10_lsm10_context_learn"],
+      "variant_axes": ["线索类型轮换（定义/例证/因果/对比/指代）", "构词引擎专项（前后缀表方向与词性）", "旧词新义（address 处理/演讲，book 预订）", "猜代词指代（it/they/this 的复现链）"]
+    },
+    {
+      "id": "arch_eng_g10_grammar_fill_tense",
+      "name": "语法填空·谓语时态与语态定形",
+      "pattern": "典型情境：语篇型语法填空中给动词原形的空，要求填出正确的谓语形式（时态＋语态＋主谓一致）。通法：谓语三问流程——一问“是否谓语”：该句若已无边从属连词的谓语动词，所给动词即谓语，需变形；若句中已有谓语（含从句谓语），则走非谓语通道。二问“什么时态”：显性标志（ago/last＋时间→过去；since/so far/recently/in the past few years→完成；now/look/listen→进行；always/every year/客观事实→一般现在）缺标志时看上下文叙事基调和时间状语从句（主将从现）。三问“什么语态”：主语是动作承受者用被动 be done，按新主语配 be 形式（is/are/was/were/has been 等）。落笔前最后一查主谓一致（三单、复数、不可数）。",
+      "example": "例：语法填空。① The cinema ____ (build) in 1950 and ____ (stand) in the center of town ever since. ② As soon as the rain ____ (stop), we will go out for a walk. ③ So far, more than 2,000 trees ____ (plant) on the hill. 参考答案：① was built, has stood；② stops；③ have been planted。解析：①build 与主语 cinema 是被动关系（影院被建），in 1950 用过去时被动 was built；stand 是影院自身状态（主动），ever since 是完成时标志，用 has stood；②as soon as 时间状语从句遵循“主将从现”，主句 will go，从句用一般现在时 stops；③so far 配完成时，trees 与 plant 被动，复数主语得 have been planted（完成被动）。三空覆盖“被动＋时态”“主将从现”“完成被动”三大高频组合。",
+      "kp_ids": ["kp_eng10_gra10_grammar_fill", "kp_eng10_gra10_tense_review", "kp_eng10_gra10_voice_review"],
+      "variant_axes": ["时态标志显性 → 隐性（靠语境与时间线）", "主动 → 被动 → 完成被动叠加", "主将从现与时间/条件状语从句联动", "主谓一致陷阱（A number of/The number of）"]
+    },
+    {
+      "id": "arch_eng_g10_grammar_fill_nonfinite",
+      "name": "语法填空·非谓语动词三形式选择（to do/doing/done）",
+      "pattern": "典型情境：所给动词不作谓语时，选择不定式、v-ing 或 v-ed 形式填空。通法：三步定形——①定逻辑主语：找非谓语动词所修饰或依附的对象（句首状语的逻辑主语是句子主语）；②定语态：逻辑主语与动词是主动执行用 doing/to do，是被动承受用 done（Seen from the hill, the city looks beautiful. 城市被看）；③定功能与时态：表目的/将来用 to do（He got up early to catch the train）；作主语宾语多用 doing（Swimming is fun）；感官动词后接 doing 表进行、do 表过程、done 表被动；完成式 having done 表动作先于谓语。高频搭配记忆：enjoy/finish/mind/suggest＋doing；decide/hope/refuse/plan＋to do；forget/remember/regret＋doing（已做）与＋to do（未做）之别。",
+      "example": "例：语法填空。① ____ (see) from space, the earth looks like a blue ball. ② The old man sat in the chair, ____ (read) a newspaper. ③ We are looking forward to ____ (hear) from you soon. 参考答案：① Seen；② reading；③ hearing。解析：①句子主语 the earth 与 see 是“被看”关系，句首状语用过去分词 Seen（主动看见应为 Seeing，但地球不会自己看）；②sat 已是谓语，read 为伴随状语，主语 the old man 主动在读，用 reading 表伴随；③look forward to 中 to 是介词，后接 doing，得 hearing，属“介词 to”高频陷阱。三空分别对应“被动含义 done”“伴随主动 doing”“介词后 doing”三个考点，解题均走“定逻辑主语→定语态→定功能”流程。",
+      "kp_ids": ["kp_eng10_gra10_nonfinite_form", "kp_eng10_gra10_grammar_fill", "kp_eng10_gra10_ing_attr"],
+      "variant_axes": ["句首/句末状语位 → 定语位（the rising sun, a written report）", "感官动词后三选一（see sb do/doing/done）", "介词 to 陷阱（look forward to/be used to＋doing）", "having done 完成式与否定式 not to do"]
+    },
+    {
+      "id": "arch_eng_g10_relative_clause",
+      "name": "定语从句（关系代词与关系副词·介词＋which）",
+      "pattern": "典型情境：语法填空或改错中选择 who/whom/whose/which/that/where/when/why，并处理“介词＋关系代词”结构。通法：两步定词——第一步找先行词并分类：人（who/whom/whose）、物（which/that）、时间（when）、地点（where）、原因（why）；第二步看关系词在从句中的成分：作主语用 who/that 或 which/that；作宾语用 whom/which/that 且可省；作定语用 whose（the girl whose mother is a doctor）；作状语用 when/where/why（先行词分别是时间/地点/reason）。两处易错：①关系词前有介词时只用 which/whom（in which we live ＝ where we live）；先行词是 way 时可用 in which/that/不填。②判断“缺什么成分”的办法：把先行词放回从句，缺主语宾语用代词型，缺状语用副词型（This is the school where I studied. 从句不缺主宾，缺地点状语）。",
+      "example": "例：语法填空。① This is the factory ____ my father worked ten years ago. ② The man ____ wallet was stolen called the police. ③ Do you still remember the day ____ we first met? 参考答案：① where（或 in which）；② whose；③ when（或 on which）。解析：①先行词 factory 是地点，从句 my father worked ____ 缺地点状语（worked 不及物，不缺宾语），用 where；若用介词结构则为 in which；②先行词 the man 与 wallet 是所属关系（人的钱包），用 whose 引导并在从句中作定语；③先行词 the day 表时间，从句 we first met 不缺主宾，缺时间状语，用 when，介词版为 on which（meet on that day）。三空演示“先行词分类＋成分回填”两步法的完整应用。",
+      "kp_ids": ["kp_eng10_gra10_rel_pron_rel", "kp_eng10_gra10_grammar_fill", "kp_eng10_dis10_explicit_cohesion"],
+      "variant_axes": ["关系代词 → 关系副词 → 介词＋which/whom 转换", "whose 与 of which（物的所属）", "先行词 way/informal situation 的三种填法", "定语从句与同位语从句 that 的辨析"]
+    },
+    {
+      "id": "arch_eng_g10_cloze_collocation",
+      "name": "完形填空·固定搭配与语境衔接（高频动词短语）",
+      "pattern": "典型情境：记叙文或夹叙夹议语篇挖空中，考查动词短语搭配（give up/take on）、介词搭配与连接词衔接。通法：三线定位——①搭配线：先看空格前后 1—2 词的固定搭配信号：动词＋介词（look forward to、put up with）、动词＋副词（turn down 拒绝、work out 解决）、名词＋介词（attitude to/towards）；②复现线：空前文或后文出现同词根、同义词（前文 challenge，后空选 challenge 相关短语）；③逻辑线：空前后的连词决定方向（but/however 反向，so/therefore 同向因果，not only…but also 平行）。做完形先通读抓主线再逐空定位，每空必须有文本证据（搭配、复现或逻辑三选一），凭语感孤证不落笔。",
+      "example": "例：完形节选（主题：作者参加演讲比赛失利后坚持练习）。… At first, my voice was shaking and I wanted to give __1__. But my teacher told me to keep on practising. I read the speech again and again and asked my friends to point __2__ my mistakes. Three weeks later, I won the first prize in the school competition. 1. A. in B. up C. away D. out 2. A. at B. for C. out D. to。参考答案：1. B；2. C。解析：第 1 空前 wanted to give＋介/副词，give up 意为“放弃”，与前文 voice was shaking（紧张发抖）和后文 But 转折（老师鼓励坚持）逻辑吻合；give in 屈服后需 to，give away 泄露赠送，give out 分发用尽，均不合语境。第 2 空考查 point out（指出），宾语 my mistakes（指出错误）是经典搭配，且与“反复练习求进步”的主线一致。两空分别体现“逻辑线（转折）＋搭配线”与“搭配线（point out＋错误）”的定位法。",
+      "kp_ids": ["kp_eng10_voc10_verb_phrase", "kp_eng10_voc10_chunks_", "kp_eng10_dis10_context_role"],
+      "variant_axes": ["动词短语（give 系/take 系/turn 系）家族专项", "连接词空（however/therefore/until）的逻辑定位", "同词复现与同义复现跨段定位", "15 空整篇完形的节奏与回读策略"]
+    },
+    {
+      "id": "arch_eng_g10_letter_writing",
+      "name": "应用文书信写作（正式与非正式语域切换）",
+      "pattern": "典型情境：给外教、笔友或组委会写 100 词左右的建议信、咨询信、感谢信或邀请信。通法：写信五步——①审“关系”定语域：对长辈外教用较正式语体（I would appreciate it if…），对朋友笔友用非正式（How's it going? / Can you…?）；②定格式三件套：称呼 Dear Mr. Smith, / 落款 Yours sincerely,（正式）或 Best wishes,（非正式）＋姓名，正文分段；③开头一句点目的：I'm writing to ask for your help with… / Thank you so much for…；④主体成段：咨询信逐条列问题（First… Second…），建议信给两条建议各配一句理由，感谢信用具体事例支撑；⑤结尾礼貌收束（I'm looking forward to your reply.）。语言升级：用 would/could 委婉、定语从句与状语从句合并短句，避免通篇 I think 句型。",
+      "example": "例：假设你是李华，外教 Mr. Green 即将回国，请写一封感谢信（约 100 词），内容包括：感谢他的帮助、一件印象深刻的事、美好祝愿。参考答案：Dear Mr. Green,  I'm sorry to hear that you are leaving for your hometown soon. Before you go, I'd like to say thank you for everything you have done for us. I still remember the English corner you organized every Friday, where I overcame my fear of speaking English and made great progress. Your patient encouragement has changed my attitude towards learning. I hope you will have a wonderful journey home, and I believe we will keep in touch. Best wishes!  Yours sincerely,  Li Hua。解析：语域判断为“学生对老师”→正式偏温情：称呼 Dear Mr. Green＋落款 Yours sincerely 规范；开头一句点目的（say thank you），主体用 you organized 的定语从句嵌具体事例（English corner），感谢有细节支撑；结尾祝愿＋keep in touch 收束；would like to、I believe 等表达得体，全文约 105 词，格式三件套齐全。",
+      "kp_ids": ["kp_eng10_wri10_letter_formal", "kp_eng10_prg10_register", "kp_eng10_spk10_formality_choose"],
+      "variant_axes": ["信件类型（建议/咨询/感谢/邀请/申请）", "语域切换（正式→半正式→非正式）与句式配套", "要点给全 → 要点＋自主发挥（细节与情感）", "落款称呼规范与常见格式失分点"]
+    },
+    {
+      "id": "arch_eng_g10_exposition_writing",
+      "name": "说明文写作（人物·地点·流程介绍）",
+      "pattern": "典型情境：写一篇 100—120 词的说明文，介绍名人、家乡、传统技艺或活动流程。通法：按“对象定位—结构组织—语言特征”三步走——①定位说明对象与读者：介绍人按“身份总述—具体成就/事迹—评价影响”；介绍地按“位置—特色—感受建议”；流程类按时间与步骤顺序。②结构模板：总起句（…, located in… / …, known as…）＋分述段（On the one hand…, On the other… 或 First, Next, Then, Finally）＋收尾（It is well worth visiting/learning.）。③语言特征：多用一般现在时与客观表述（there be、被动语态、it is said that），数据与例子增强可信度（has a history of over 1,000 years），避免主观抒情句堆砌；衔接用 moreover、in addition、as a result。写完自查三问：信息准确？条理清晰？语言客观？",
+      "example": "例：请根据以下要点写一篇介绍中国剪纸（paper cutting）的说明文（约 100 词）：历史悠久（1500 多年）、节日用途（贴窗花求好运）、传播情况（深受外国朋友喜爱）。参考答案：Paper cutting is one of the most popular traditional arts in China, with a history of more than 1,500 years. During the Spring Festival, many families put up paper cuts on their windows to express good wishes for luck and happiness. Red is the most commonly used colour, because it stands for joy in Chinese culture. Making paper cuts is not difficult: first, a piece of paper is folded; then, patterns are drawn and cut carefully; finally, the paper is opened, and a beautiful picture appears. Nowadays, this art is so attractive that it is loved by more and more foreign friends. 解析：结构上总起（定位＋历史数据）—节日用途（because 给文化理由）—制作流程（first/then/finally 三步）—传播收尾，条理完整；语言上以一般现在时和被动语态（is folded, are drawn）保持客观，用数据（1,500 years）与色彩文化细节支撑，as so…that 句式自然收束，约 110 词。",
+      "kp_ids": ["kp_eng10_wri10_exposition_writing", "kp_eng10_wri10_layout", "kp_eng10_dis10_narrative_expo_purpose"],
+      "variant_axes": ["说明对象（人物/地点/流程/现象）模板切换", "说明顺序（时间/空间/逻辑）", "数据与例证支撑的密度要求", "书面语特征强化（被动、名词化、客观表述）"]
+    },
+    {
+      "id": "arch_eng_g10_listen_mainpoint",
+      "name": "听力长对话/独白·主要信息与逻辑关系提取",
+      "pattern": "典型情境：听 200 词左右的对话或独白两遍，完成主旨概括、细节填表或推理题。通法：三阶段作业法——听前：读题干与表格标题，预测信息类型与词性（空格前是 on 表日期、is 后接职业/状态）；用 20 秒把问题转化成“听什么”（数字、人名、时间、地点各就各位）。听中：首句定话题（Now, let's talk about…）；抓信号词定位结构——first of all/then/finally 对应表格行序，but/however 标记转折考点，because/since 标记因果考点，I think/in my opinion 标记观点；速记用缩写与符号（Mon. 、↑、$、≈），长数字分节记（three hundred and fifty → 350）。听后：按题目顺序回填，检查词性与单复数；没听清的空凭笔记上下文合理推断，不留空白。",
+      "example": "例：听独白完成表格（每空一词）。Topic: The School Open Day — Time: this ①____; Activities: visiting the science labs, watching a robot show, and ②____ with teachers; Place to meet: at the school ③____. 录音原文（节选）：Good morning, everyone. The School Open Day will be held this Saturday. First of all, parents can visit our new science labs. After that, there will be a robot show in the gym. Parents are also invited to have a talk with teachers in the meeting room. Finally, everyone should meet at the school gate at four o'clock. 参考答案：① Saturday；② (have a) talk；③ gate。解析：①首句 held this Saturday 直接给出时间；②are also invited to have a talk with teachers 对应活动第三项，have a talk 与 talk 均可，关键听记动词短语；③finally 是收尾信号，其后 meet at the school gate 给出集合地。三空按“首句—列举—finally”的结构信号依次捕获，验证了边听边按结构定位的通法。",
+      "kp_ids": ["kp_eng10_lis10_main_point", "kp_eng10_lis10_note_form", "kp_eng10_lis10_logic"],
+      "variant_axes": ["信息类型（时间/地点/数字/职业）轮换的填表", "结构信号词（first/then/finally/but）定位专项", "选择题 → 表格填空（拼写与词形要求）", "对话 → 独白 → 讲座式长语篇的信息分层"]
+    }
+  ]
+}

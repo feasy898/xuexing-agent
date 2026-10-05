@@ -1,51 +1,1902 @@
 {
   "items": [
-    {"id": "p4_001", "item_type": "fill", "stem": "某市去年新建绿地305000平方米，横线上的数读作____。", "answer": "三十万五千", "kps": ["kp_p4_bignum_read"], "difficulty": 0.15, "solution": "分级30|5000：万级30读“三十万”，个级5000读“五千”，合起来读三十万五千。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_002", "item_type": "choice", "stem": "下面四个数中，最大的是（　）", "options": ["A. 304000", "B. 340000", "C. 300400", "D. 3040000"], "answer": "D", "kps": ["kp_p4_bignum_read"], "difficulty": 0.3, "solution": "D是七位数，其余都是六位数，位数多的数大。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_003", "item_type": "fill", "stem": "由5个万和40个一组成的数写作____。", "answer": "50040", "kps": ["kp_p4_bignum_read"], "difficulty": 0.45, "solution": "5个万是50000，40个一是40，合起来50040；十位、百位、千位上都没有单位，要写0占位。写成5040的同学是漏了0，位数变少。", "misconceptions": ["mc_p4_big_write_zero"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_004", "item_type": "choice", "stem": "教室的面积大约是40（　）", "options": ["A. 平方米", "B. 公顷", "C. 平方千米", "D. 平方分米"], "answer": "A", "kps": ["kp_p4_hectare"], "difficulty": 0.15, "solution": "1公顷=10000平方米，1平方千米=100公顷，教室用平方米合适。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_005", "item_type": "fill", "stem": "3平方千米=____公顷。", "answer": "300", "kps": ["kp_p4_hectare"], "difficulty": 0.3, "solution": "1平方千米=100公顷，3×100=300公顷。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_006", "item_type": "choice", "stem": "下面的换算或比较中，正确的是（　）", "options": ["A. 50000平方米＞5公顷", "B. 8平方千米=800公顷", "C. 120公顷=120000平方米", "D. 3平方千米＜300公顷"], "answer": "B", "kps": ["kp_p4_hectare"], "difficulty": 0.45, "solution": "5公顷=50000平方米，A错；8×100=800，B对；120公顷=1200000平方米，C错；3平方千米=300公顷，两边相等，D错。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_007", "item_type": "fill", "stem": "小于90°的角叫做____。", "answer": "锐角", "kps": ["kp_p4_angle_measure"], "difficulty": 0.15, "solution": "锐角小于90°，直角等于90°，钝角大于90°而小于180°。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_008", "item_type": "choice", "stem": "用量角器量得一个角是70°，这个角是（　）", "options": ["A. 锐角", "B. 直角", "C. 钝角", "D. 平角"], "answer": "A", "kps": ["kp_p4_angle_measure"], "difficulty": 0.25, "solution": "70°小于90°，是锐角。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_009", "item_type": "fill", "stem": "下午3时整，钟面上时针和分针的夹角是____度。", "answer": "90", "kps": ["kp_p4_angle_measure"], "difficulty": 0.4, "solution": "钟面每个大格是360°÷12=30°，3时整相差3大格，30°×3=90°，正好是直角。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_010", "item_type": "choice", "stem": "计算125×80，积的末尾一共有（　）个0。", "options": ["A. 1", "B. 2", "C. 3", "D. 4"], "answer": "D", "kps": ["kp_p4_mult_3x2digit"], "difficulty": 0.3, "solution": "125×8=1000，再添一个0，125×80=10000，末尾有4个0。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_011", "item_type": "fill", "stem": "240×35=____。", "answer": "8400", "kps": ["kp_p4_mult_3x2digit"], "difficulty": 0.3, "solution": "先算24×35=840，再在末尾添1个0，得8400。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_012", "item_type": "choice", "stem": "302×29的积最接近（　）", "options": ["A. 9000", "B. 6000", "C. 12000", "D. 3000"], "answer": "A", "kps": ["kp_p4_mult_3x2digit"], "difficulty": 0.4, "solution": "把302看作300、29看作30，300×30=9000，积最接近9000。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_013", "item_type": "fill", "stem": "840÷21=____。", "answer": "40", "kps": ["kp_p4_div_2digit"], "difficulty": 0.3, "solution": "前两位84÷21商4，正好除尽；个位的0÷21不够商1，商的个位写0占位，商是40。漏写末尾的0会错算成4。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_014", "item_type": "fill", "stem": "145÷21=____……____。（填“商……余数”）", "answer": "6……19", "kps": ["kp_p4_div_2digit"], "difficulty": 0.4, "solution": "把21看作20试商：21×6=126，145-126=19，19＜21，商6余19。写成“5……40”的同学余数比除数大，商小了要调大。", "misconceptions": ["mc_p4_div_bigrem"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_015", "item_type": "fill", "stem": "一道有余数的除法算式：除数是23，商是15，余数是8，被除数是____。", "answer": "353", "kps": ["kp_p4_div_2digit"], "difficulty": 0.4, "solution": "被除数=商×除数+余数=23×15+8=345+8=353。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_016", "item_type": "choice", "stem": "教室的窗框两组对边分别平行，窗框的形状是（　）", "options": ["A. 平行四边形", "B. 梯形", "C. 三角形", "D. 一般四边形"], "answer": "A", "kps": ["kp_p4_quad_shape"], "difficulty": 0.15, "solution": "两组对边分别平行的四边形是平行四边形（长方形是特殊的平行四边形）；梯形只有一组对边平行。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_017", "item_type": "fill", "stem": "两腰相等的梯形叫做____梯形。", "answer": "等腰", "kps": ["kp_p4_quad_shape"], "difficulty": 0.25, "solution": "两腰相等的梯形是等腰梯形，它同一底上的两个角也相等。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_018", "item_type": "choice", "stem": "只有一组对边平行的四边形是（　）", "options": ["A. 平行四边形", "B. 梯形", "C. 长方形", "D. 正方形"], "answer": "B", "kps": ["kp_p4_quad_shape"], "difficulty": 0.4, "solution": "只有一组对边平行是梯形；平行四边形是两组对边分别平行。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_019", "item_type": "fill", "stem": "条形统计图中1格表示5本，童话书对应的直条有6格，童话书有____本。", "answer": "30", "kps": ["kp_p4_barchart"], "difficulty": 0.15, "solution": "1格5本，6格是5×6=30本。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_020", "item_type": "choice", "stem": "三个班运动会得分是12分、24分、30分，画条形统计图时1格表示（　）分比较合适。", "options": ["A. 1", "B. 2", "C. 10", "D. 12"], "answer": "B", "kps": ["kp_p4_barchart"], "difficulty": 0.4, "solution": "1格表示2分：6格、12格、15格，既画得下又好比较；表示10分或12分时有的数除不尽。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_021", "item_type": "fill", "stem": "统计图1格表示10箱：橙汁8格、矿泉水12格，矿泉水比橙汁多卖____箱。", "answer": "40", "kps": ["kp_p4_barchart"], "difficulty": 0.4, "solution": "橙汁8×10=80箱，矿泉水12×10=120箱，120-80=40箱。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_022", "item_type": "choice", "stem": "计算12+3×4时，要先算（　）", "options": ["A. 加法", "B. 乘法", "C. 从左往右依次算", "D. 除法"], "answer": "B", "kps": ["kp_p4_arith_order"], "difficulty": 0.15, "solution": "先乘除后加减：先算3×4=12，再算12+12=24。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_023", "item_type": "fill", "stem": "计算（15-3）×2时，第一步要先算____。", "answer": "15-3", "kps": ["kp_p4_arith_order"], "difficulty": 0.3, "solution": "有括号先算括号里面的：15-3=12，再算12×2=24。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_024", "item_type": "choice", "stem": "要使24-6×2先算减法，算式应改成（　）", "options": ["A. （24-6）×2", "B. 24-（6×2）", "C. 24+6×2", "D. 24-6+2"], "answer": "A", "kps": ["kp_p4_arith_order"], "difficulty": 0.45, "solution": "给24-6添上小括号，减法就先算了：（24-6）×2=18×2=36。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_025", "item_type": "fill", "stem": "计算37+59=59+37，运用了____律。", "answer": "加法交换", "kps": ["kp_p4_operation_laws"], "difficulty": 0.1, "solution": "交换两个加数的位置，和不变，这是加法交换律。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_026", "item_type": "choice", "stem": "计算100-37-23，最简便的方法是（　）", "options": ["A. 100-（37+23）", "B. 100-37+23", "C. （100-37）-23", "D. 100+23-37"], "answer": "A", "kps": ["kp_p4_operation_laws"], "difficulty": 0.3, "solution": "连减一个数等于减去两个数的和：100-（37+23）=100-60=40。选B的同学把减号当成了加号。", "misconceptions": ["mc_p4_law_minus"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_027", "item_type": "fill", "stem": "用简便方法计算102×45=____。", "answer": "4590", "kps": ["kp_p4_operation_laws"], "difficulty": 0.4, "solution": "102×45=（100+2）×45=100×45+2×45=4500+90=4590。写成4502的同学漏算了2×45。", "misconceptions": ["mc_p4_law_distrib"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_028", "item_type": "choice", "stem": "3.5里面有（　）个0.1。", "options": ["A. 3", "B. 5", "C. 35", "D. 350"], "answer": "C", "kps": ["kp_p4_decimal_meaning"], "difficulty": 0.25, "solution": "3.5是35个十分之一，即35个0.1。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_029", "item_type": "fill", "stem": "0.5×10=____。", "answer": "5", "kps": ["kp_p4_decimal_meaning"], "difficulty": 0.3, "solution": "乘10就是把小数点向右移动一位：0.5→5。写成0.50的同学只在末尾添0，大小没变。", "misconceptions": ["mc_p4_dec_shift"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_030", "item_type": "choice", "stem": "0.3和0.30相比，（　）", "options": ["A. 0.3大", "B. 0.30大", "C. 相等", "D. 无法比较"], "answer": "C", "kps": ["kp_p4_decimal_meaning"], "difficulty": 0.3, "solution": "小数末尾添0或去0，大小不变：0.3=0.30；不同的是0.3表示3个0.1，0.30表示30个0.01。误选B的同学以为0多就大。", "misconceptions": ["mc_p4_dec_pad"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_031", "item_type": "choice", "stem": "买一本笔记本3.5元、一支铅笔0.8元，一共要付（　）", "options": ["A. 3.13元", "B. 4.3元", "C. 4.5元", "D. 4.08元"], "answer": "B", "kps": ["kp_p4_decimal_addsub"], "difficulty": 0.2, "solution": "小数点对齐再相加：3.5+0.8=4.3元。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_032", "item_type": "fill", "stem": "小明有5.2元，小华有4.35元，两人一共有____元。", "answer": "9.55", "kps": ["kp_p4_decimal_addsub"], "difficulty": 0.3, "solution": "5.2写成5.20补足位数，5.20+4.35=9.55元。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_033", "item_type": "choice", "stem": "买文具用了12.5元，付出20元，应找回（　）", "options": ["A. 8.5元", "B. 7.5元", "C. 12.5元", "D. 7元"], "answer": "B", "kps": ["kp_p4_decimal_addsub"], "difficulty": 0.4, "solution": "20-12.5=7.5元；想12.5+7.5=20。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_034", "item_type": "choice", "stem": "有一个角是直角的三角形叫做（　）三角形。", "options": ["A. 锐角", "B. 直角", "C. 钝角", "D. 等腰"], "answer": "B", "kps": ["kp_p4_triangle"], "difficulty": 0.1, "solution": "按角分类：有一个直角的三角形是直角三角形。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_035", "item_type": "fill", "stem": "三角形两个内角分别是30°和70°，第三个内角是____度。", "answer": "80", "kps": ["kp_p4_triangle"], "difficulty": 0.3, "solution": "内角和180°：180-30-70=80度。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_036", "item_type": "choice", "stem": "三根小棒长2厘米、3厘米、6厘米，能围成三角形吗？（　）", "options": ["A. 能", "B. 不能", "C. 不确定", "D. 以上都不对"], "answer": "B", "kps": ["kp_p4_triangle"], "difficulty": 0.35, "solution": "2+3=5＜6，两边之和小于第三边，围不成。误选A的同学没有检查每两边之和。", "misconceptions": ["mc_p4_tri_inequality"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_037", "item_type": "fill", "stem": "复式条形统计图里：四（1）班喜欢跳绳的男生有10人、女生有14人，喜欢跳绳的一共有____人。", "answer": "24", "kps": ["kp_p4_compound_bar"], "difficulty": 0.15, "solution": "看图例区分男、女生两组直条，合计10+14=24人。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_038", "item_type": "fill", "stem": "复式条形统计图记录四（2）班戴眼镜人数：上学期男生5人、女生3人；下学期男生8人、女生5人。下学期比上学期戴眼镜的学生一共多____人。", "answer": "5", "kps": ["kp_p4_compound_bar"], "difficulty": 0.45, "solution": "上学期5+3=8人，下学期8+5=13人，13-8=5人。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_039", "item_type": "fill", "stem": "复式条形统计图里：喜欢踢毽子的男生有10人，女生的直条比男生的高出4人，喜欢踢毽子的女生有____人。", "answer": "14", "kps": ["kp_p4_compound_bar"], "difficulty": 0.35, "solution": "10+4=14人。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_040", "item_type": "choice", "stem": "鸡兔同笼：一共5个头、14条腿。正确的答案是（　）", "options": ["A. 鸡2只兔3只", "B. 鸡3只兔2只", "C. 鸡4只兔1只", "D. 鸡1只兔4只"], "answer": "B", "kps": ["kp_p4_jituitonglong"], "difficulty": 0.2, "solution": "3只鸡2只兔：3×2+2×4=14条腿，头数3+2=5，符合。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_041", "item_type": "fill", "stem": "鸡兔同笼：一共10个头、28条腿，兔有____只。", "answer": "4", "kps": ["kp_p4_jituitonglong"], "difficulty": 0.3, "solution": "假设全是鸡：10×2=20条腿，少了28-20=8条，每只兔补2条腿，兔有8÷2=4只。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_042", "item_type": "choice", "stem": "大船坐6人，小船坐4人，30人正好坐满6条船，大船有（　）条。", "options": ["A. 1", "B. 2", "C. 3", "D. 4"], "answer": "C", "kps": ["kp_p4_jituitonglong"], "difficulty": 0.45, "solution": "假设全是小船：6×4=24人，差30-24=6人，每条大船多坐2人，大船6÷2=3条。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_043", "item_type": "fill", "stem": "一个数的万级是3005，个级是0702，这个数读作____。", "answer": "三千零五万零七百零二", "kps": ["kp_p4_bignum_read"], "difficulty": 0.45, "solution": "万级3005读“三千零五万”，个级0702千位有0要读“零”，读“零七百零二”，合起来是三千零五万零七百零二。漏读中间的零会错成“三千零五万七百零二”。", "misconceptions": ["mc_p4_big_read_zero"], "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_044", "item_type": "choice", "stem": "□32÷48的商是两位数，□里最小填（　）", "options": ["A. 4", "B. 5", "C. 6", "D. 7"], "answer": "B", "kps": ["kp_p4_div_2digit"], "difficulty": 0.45, "solution": "商是两位数，被除数前两位要≥48：□3≥48，□最小是5。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_045", "item_type": "fill", "stem": "根据乘法分配律填空：25×37+25×63=25×（□+□），□里依次应填____。（用“、”隔开）", "answer": "37、63", "kps": ["kp_p4_operation_laws"], "difficulty": 0.45, "solution": "相同因数25提出来，剩下37和63相加：25×（37+63）=25×100=2500。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_046", "item_type": "choice", "stem": "3.05米=（　）厘米", "options": ["A. 30.5", "B. 305", "C. 350", "D. 35"], "answer": "B", "kps": ["kp_p4_decimal_meaning"], "difficulty": 0.4, "solution": "米化厘米是低级单位，×100，小数点向右移两位：3.05米=305厘米。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}},
-    {"id": "p4_047", "item_type": "fill", "stem": "一个等腰三角形两边长分别是5厘米和10厘米，它的周长是____厘米。", "answer": "25", "kps": ["kp_p4_triangle"], "difficulty": 0.45, "solution": "腰不能是5：5+5=10不大于10，围不成；所以腰是10，周长10+10+5=25厘米。", "source": "llm_generated", "verification": {"agents": ["p34-reviewer", "recheck-20260930"], "answers_agree": true}}
+    {
+      "id": "p4_001",
+      "item_type": "fill",
+      "stem": "某市去年新建绿地305000平方米，横线上的数读作____。",
+      "answer": "三十万五千",
+      "kps": [
+        "kp_p4_bignum_read"
+      ],
+      "difficulty": 0.15,
+      "solution": "分级30|5000：万级30读“三十万”，个级5000读“五千”，合起来读三十万五千。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_002",
+      "item_type": "choice",
+      "stem": "下面四个数中，最大的是（　）",
+      "options": [
+        "A. 304000",
+        "B. 340000",
+        "C. 300400",
+        "D. 3040000"
+      ],
+      "answer": "D",
+      "kps": [
+        "kp_p4_bignum_read"
+      ],
+      "difficulty": 0.3,
+      "solution": "D是七位数，其余都是六位数，位数多的数大。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_003",
+      "item_type": "fill",
+      "stem": "由5个万和40个一组成的数写作____。",
+      "answer": "50040",
+      "kps": [
+        "kp_p4_bignum_read"
+      ],
+      "difficulty": 0.45,
+      "solution": "5个万是50000，40个一是40，合起来50040；十位、百位、千位上都没有单位，要写0占位。写成5040的同学是漏了0，位数变少。",
+      "misconceptions": [
+        "mc_p4_big_write_zero"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_004",
+      "item_type": "choice",
+      "stem": "教室的面积大约是40（　）",
+      "options": [
+        "A. 平方米",
+        "B. 公顷",
+        "C. 平方千米",
+        "D. 平方分米"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.15,
+      "solution": "1公顷=10000平方米，1平方千米=100公顷，教室用平方米合适。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_005",
+      "item_type": "fill",
+      "stem": "3平方千米=____公顷。",
+      "answer": "300",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.3,
+      "solution": "1平方千米=100公顷，3×100=300公顷。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_006",
+      "item_type": "choice",
+      "stem": "下面的换算或比较中，正确的是（　）",
+      "options": [
+        "A. 50000平方米＞5公顷",
+        "B. 8平方千米=800公顷",
+        "C. 120公顷=120000平方米",
+        "D. 3平方千米＜300公顷"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.45,
+      "solution": "5公顷=50000平方米，A错；8×100=800，B对；120公顷=1200000平方米，C错；3平方千米=300公顷，两边相等，D错。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_007",
+      "item_type": "fill",
+      "stem": "小于90°的角叫做____。",
+      "answer": "锐角",
+      "kps": [
+        "kp_p4_angle_measure"
+      ],
+      "difficulty": 0.15,
+      "solution": "锐角小于90°，直角等于90°，钝角大于90°而小于180°。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_008",
+      "item_type": "choice",
+      "stem": "用量角器量得一个角是70°，这个角是（　）",
+      "options": [
+        "A. 锐角",
+        "B. 直角",
+        "C. 钝角",
+        "D. 平角"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_angle_measure"
+      ],
+      "difficulty": 0.25,
+      "solution": "70°小于90°，是锐角。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_009",
+      "item_type": "fill",
+      "stem": "下午3时整，钟面上时针和分针的夹角是____度。",
+      "answer": "90",
+      "kps": [
+        "kp_p4_angle_measure"
+      ],
+      "difficulty": 0.4,
+      "solution": "钟面每个大格是360°÷12=30°，3时整相差3大格，30°×3=90°，正好是直角。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_010",
+      "item_type": "choice",
+      "stem": "计算125×80，积的末尾一共有（　）个0。",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "answer": "D",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.3,
+      "solution": "125×8=1000，再添一个0，125×80=10000，末尾有4个0。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_011",
+      "item_type": "fill",
+      "stem": "240×35=____。",
+      "answer": "8400",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.3,
+      "solution": "先算24×35=840，再在末尾添1个0，得8400。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_012",
+      "item_type": "choice",
+      "stem": "302×29的积最接近（　）",
+      "options": [
+        "A. 9000",
+        "B. 6000",
+        "C. 12000",
+        "D. 3000"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.4,
+      "solution": "把302看作300、29看作30，300×30=9000，积最接近9000。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_013",
+      "item_type": "fill",
+      "stem": "840÷21=____。",
+      "answer": "40",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.3,
+      "solution": "前两位84÷21商4，正好除尽；个位的0÷21不够商1，商的个位写0占位，商是40。漏写末尾的0会错算成4。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_014",
+      "item_type": "fill",
+      "stem": "145÷21=____……____。（填“商……余数”）",
+      "answer": "6……19",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.4,
+      "solution": "把21看作20试商：21×6=126，145-126=19，19＜21，商6余19。写成“5……40”的同学余数比除数大，商小了要调大。",
+      "misconceptions": [
+        "mc_p4_div_bigrem"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_015",
+      "item_type": "fill",
+      "stem": "一道有余数的除法算式：除数是23，商是15，余数是8，被除数是____。",
+      "answer": "353",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.4,
+      "solution": "被除数=商×除数+余数=23×15+8=345+8=353。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_016",
+      "item_type": "choice",
+      "stem": "教室的窗框两组对边分别平行，窗框的形状是（　）",
+      "options": [
+        "A. 平行四边形",
+        "B. 梯形",
+        "C. 三角形",
+        "D. 一般四边形"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.15,
+      "solution": "两组对边分别平行的四边形是平行四边形（长方形是特殊的平行四边形）；梯形只有一组对边平行。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_017",
+      "item_type": "fill",
+      "stem": "两腰相等的梯形叫做____梯形。",
+      "answer": "等腰",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.25,
+      "solution": "两腰相等的梯形是等腰梯形，它同一底上的两个角也相等。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_018",
+      "item_type": "choice",
+      "stem": "只有一组对边平行的四边形是（　）",
+      "options": [
+        "A. 平行四边形",
+        "B. 梯形",
+        "C. 长方形",
+        "D. 正方形"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.4,
+      "solution": "只有一组对边平行是梯形；平行四边形是两组对边分别平行。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_019",
+      "item_type": "fill",
+      "stem": "条形统计图中1格表示5本，童话书对应的直条有6格，童话书有____本。",
+      "answer": "30",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.15,
+      "solution": "1格5本，6格是5×6=30本。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_020",
+      "item_type": "choice",
+      "stem": "三个班运动会得分是12分、24分、30分，画条形统计图时1格表示（　）分比较合适。",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 10",
+        "D. 12"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.4,
+      "solution": "1格表示2分：6格、12格、15格，既画得下又好比较；表示10分或12分时有的数除不尽。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_021",
+      "item_type": "fill",
+      "stem": "统计图1格表示10箱：橙汁8格、矿泉水12格，矿泉水比橙汁多卖____箱。",
+      "answer": "40",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.4,
+      "solution": "橙汁8×10=80箱，矿泉水12×10=120箱，120-80=40箱。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_022",
+      "item_type": "choice",
+      "stem": "计算12+3×4时，要先算（　）",
+      "options": [
+        "A. 加法",
+        "B. 乘法",
+        "C. 从左往右依次算",
+        "D. 除法"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.15,
+      "solution": "先乘除后加减：先算3×4=12，再算12+12=24。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_023",
+      "item_type": "fill",
+      "stem": "计算（15-3）×2时，第一步要先算____。",
+      "answer": "15-3",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.3,
+      "solution": "有括号先算括号里面的：15-3=12，再算12×2=24。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_024",
+      "item_type": "choice",
+      "stem": "要使24-6×2先算减法，算式应改成（　）",
+      "options": [
+        "A. （24-6）×2",
+        "B. 24-（6×2）",
+        "C. 24+6×2",
+        "D. 24-6+2"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.45,
+      "solution": "给24-6添上小括号，减法就先算了：（24-6）×2=18×2=36。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_025",
+      "item_type": "fill",
+      "stem": "计算37+59=59+37，运用了____律。",
+      "answer": "加法交换",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.1,
+      "solution": "交换两个加数的位置，和不变，这是加法交换律。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_026",
+      "item_type": "choice",
+      "stem": "计算100-37-23，最简便的方法是（　）",
+      "options": [
+        "A. 100-（37+23）",
+        "B. 100-37+23",
+        "C. （100-37）-23",
+        "D. 100+23-37"
+      ],
+      "answer": "A",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.3,
+      "solution": "连减一个数等于减去两个数的和：100-（37+23）=100-60=40。选B的同学把减号当成了加号。",
+      "misconceptions": [
+        "mc_p4_law_minus"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_027",
+      "item_type": "fill",
+      "stem": "用简便方法计算102×45=____。",
+      "answer": "4590",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.4,
+      "solution": "102×45=（100+2）×45=100×45+2×45=4500+90=4590。写成4502的同学漏算了2×45。",
+      "misconceptions": [
+        "mc_p4_law_distrib"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_028",
+      "item_type": "choice",
+      "stem": "3.5里面有（　）个0.1。",
+      "options": [
+        "A. 3",
+        "B. 5",
+        "C. 35",
+        "D. 350"
+      ],
+      "answer": "C",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.25,
+      "solution": "3.5是35个十分之一，即35个0.1。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_029",
+      "item_type": "fill",
+      "stem": "0.5×10=____。",
+      "answer": "5",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.3,
+      "solution": "乘10就是把小数点向右移动一位：0.5→5。写成0.50的同学只在末尾添0，大小没变。",
+      "misconceptions": [
+        "mc_p4_dec_shift"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_030",
+      "item_type": "choice",
+      "stem": "0.3和0.30相比，（　）",
+      "options": [
+        "A. 0.3大",
+        "B. 0.30大",
+        "C. 相等",
+        "D. 无法比较"
+      ],
+      "answer": "C",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.3,
+      "solution": "小数末尾添0或去0，大小不变：0.3=0.30；不同的是0.3表示3个0.1，0.30表示30个0.01。误选B的同学以为0多就大。",
+      "misconceptions": [
+        "mc_p4_dec_pad"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_031",
+      "item_type": "choice",
+      "stem": "买一本笔记本3.5元、一支铅笔0.8元，一共要付（　）",
+      "options": [
+        "A. 3.13元",
+        "B. 4.3元",
+        "C. 4.5元",
+        "D. 4.08元"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.2,
+      "solution": "小数点对齐再相加：3.5+0.8=4.3元。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_032",
+      "item_type": "fill",
+      "stem": "小明有5.2元，小华有4.35元，两人一共有____元。",
+      "answer": "9.55",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.3,
+      "solution": "5.2写成5.20补足位数，5.20+4.35=9.55元。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_033",
+      "item_type": "choice",
+      "stem": "买文具用了12.5元，付出20元，应找回（　）",
+      "options": [
+        "A. 8.5元",
+        "B. 7.5元",
+        "C. 12.5元",
+        "D. 7元"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.4,
+      "solution": "20-12.5=7.5元；想12.5+7.5=20。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_034",
+      "item_type": "choice",
+      "stem": "有一个角是直角的三角形叫做（　）三角形。",
+      "options": [
+        "A. 锐角",
+        "B. 直角",
+        "C. 钝角",
+        "D. 等腰"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.1,
+      "solution": "按角分类：有一个直角的三角形是直角三角形。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_035",
+      "item_type": "fill",
+      "stem": "三角形两个内角分别是30°和70°，第三个内角是____度。",
+      "answer": "80",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.3,
+      "solution": "内角和180°：180-30-70=80度。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_036",
+      "item_type": "choice",
+      "stem": "三根小棒长2厘米、3厘米、6厘米，能围成三角形吗？（　）",
+      "options": [
+        "A. 能",
+        "B. 不能",
+        "C. 不确定",
+        "D. 以上都不对"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.35,
+      "solution": "2+3=5＜6，两边之和小于第三边，围不成。误选A的同学没有检查每两边之和。",
+      "misconceptions": [
+        "mc_p4_tri_inequality"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_037",
+      "item_type": "fill",
+      "stem": "复式条形统计图里：四（1）班喜欢跳绳的男生有10人、女生有14人，喜欢跳绳的一共有____人。",
+      "answer": "24",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.15,
+      "solution": "看图例区分男、女生两组直条，合计10+14=24人。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_038",
+      "item_type": "fill",
+      "stem": "复式条形统计图记录四（2）班戴眼镜人数：上学期男生5人、女生3人；下学期男生8人、女生5人。下学期比上学期戴眼镜的学生一共多____人。",
+      "answer": "5",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.45,
+      "solution": "上学期5+3=8人，下学期8+5=13人，13-8=5人。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_039",
+      "item_type": "fill",
+      "stem": "复式条形统计图里：喜欢踢毽子的男生有10人，女生的直条比男生的高出4人，喜欢踢毽子的女生有____人。",
+      "answer": "14",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.35,
+      "solution": "10+4=14人。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_040",
+      "item_type": "choice",
+      "stem": "鸡兔同笼：一共5个头、14条腿。正确的答案是（　）",
+      "options": [
+        "A. 鸡2只兔3只",
+        "B. 鸡3只兔2只",
+        "C. 鸡4只兔1只",
+        "D. 鸡1只兔4只"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_jituitonglong"
+      ],
+      "difficulty": 0.2,
+      "solution": "3只鸡2只兔：3×2+2×4=14条腿，头数3+2=5，符合。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_041",
+      "item_type": "fill",
+      "stem": "鸡兔同笼：一共10个头、28条腿，兔有____只。",
+      "answer": "4",
+      "kps": [
+        "kp_p4_jituitonglong"
+      ],
+      "difficulty": 0.3,
+      "solution": "假设全是鸡：10×2=20条腿，少了28-20=8条，每只兔补2条腿，兔有8÷2=4只。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_042",
+      "item_type": "choice",
+      "stem": "大船坐6人，小船坐4人，30人正好坐满6条船，大船有（　）条。",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "answer": "C",
+      "kps": [
+        "kp_p4_jituitonglong"
+      ],
+      "difficulty": 0.45,
+      "solution": "假设全是小船：6×4=24人，差30-24=6人，每条大船多坐2人，大船6÷2=3条。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_043",
+      "item_type": "fill",
+      "stem": "一个数的万级是3005，个级是0702，这个数读作____。",
+      "answer": "三千零五万零七百零二",
+      "kps": [
+        "kp_p4_bignum_read"
+      ],
+      "difficulty": 0.45,
+      "solution": "万级3005读“三千零五万”，个级0702千位有0要读“零”，读“零七百零二”，合起来是三千零五万零七百零二。漏读中间的零会错成“三千零五万七百零二”。",
+      "misconceptions": [
+        "mc_p4_big_read_zero"
+      ],
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_044",
+      "item_type": "choice",
+      "stem": "□32÷48的商是两位数，□里最小填（　）",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 6",
+        "D. 7"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.45,
+      "solution": "商是两位数，被除数前两位要≥48：□3≥48，□最小是5。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_045",
+      "item_type": "fill",
+      "stem": "根据乘法分配律填空：25×37+25×63=25×（□+□），□里依次应填____。（用“、”隔开）",
+      "answer": "37、63",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.45,
+      "solution": "相同因数25提出来，剩下37和63相加：25×（37+63）=25×100=2500。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_046",
+      "item_type": "choice",
+      "stem": "3.05米=（　）厘米",
+      "options": [
+        "A. 30.5",
+        "B. 305",
+        "C. 350",
+        "D. 35"
+      ],
+      "answer": "B",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.4,
+      "solution": "米化厘米是低级单位，×100，小数点向右移两位：3.05米=305厘米。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_047",
+      "item_type": "fill",
+      "stem": "一个等腰三角形两边长分别是5厘米和10厘米，它的周长是____厘米。",
+      "answer": "25",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.45,
+      "solution": "腰不能是5：5+5=10不大于10，围不成；所以腰是10，周长10+10+5=25厘米。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "p34-reviewer",
+          "recheck-20260930"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_049",
+      "item_type": "choice",
+      "stem": "下面各数中，最接近100万的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p4_bignum_read"
+      ],
+      "difficulty": 0.7,
+      "solution": "1000001与1000000只差1；D差100、A差2000、B差5000。",
+      "source": "llm_generated",
+      "options": [
+        "A. 998000",
+        "B. 1005000",
+        "C. 1000001",
+        "D. 999900"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_050",
+      "item_type": "fill",
+      "stem": "50000平方米=____公顷。",
+      "answer": "5",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.35,
+      "solution": "1公顷=10000平方米，50000÷10000=5公顷。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_051",
+      "item_type": "choice",
+      "stem": "一块标准足球场的面积大约是1（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.5,
+      "solution": "足球场面积约7000多平方米，近似1公顷；1平方千米=100公顷太大，1平方米或平方分米太小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 平方米",
+        "B. 公顷",
+        "C. 平方千米",
+        "D. 平方分米"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_052",
+      "item_type": "solve",
+      "stem": "一块长方形菜地长250米、宽120米，这块菜地的面积是多少公顷？",
+      "answer": "3公顷",
+      "kps": [
+        "kp_p4_hectare"
+      ],
+      "difficulty": 0.65,
+      "solution": "面积=250×120=30000平方米；1公顷=10000平方米，30000÷10000=3公顷。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_054",
+      "item_type": "choice",
+      "stem": "钟面上时针和分针成直角的时刻是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p4_angle_measure"
+      ],
+      "difficulty": 0.45,
+      "solution": "钟面每个大格30°，成直角需相差3大格（90°）；3时整差3格成90°。5时=150°、6时=180°、8时=120°都不成直角。",
+      "source": "llm_generated",
+      "options": [
+        "A. 3时整",
+        "B. 5时整",
+        "C. 6时整",
+        "D. 8时整"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_056",
+      "item_type": "fill",
+      "stem": "204×38=____。",
+      "answer": "7752",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.35,
+      "solution": "204×38=204×(40−2)=8160−408=7752；或者列竖式逐位相乘再相加。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_057",
+      "item_type": "choice",
+      "stem": "估算198×51的积，下面比较合理的是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.55,
+      "solution": "198≈200，51≈50，200×50=10000；实际198×51≈10098，所以约10000。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大约1000",
+        "B. 大约10000",
+        "C. 大约20000",
+        "D. 大约100000"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_058",
+      "item_type": "solve",
+      "stem": "一辆汽车每小时行驶65千米，从甲地到乙地用了12小时。甲、乙两地相距多少千米？",
+      "answer": "780千米",
+      "kps": [
+        "kp_p4_mult_3x2digit"
+      ],
+      "difficulty": 0.7,
+      "solution": "速度×时间=路程，65×12=780（千米）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_059",
+      "item_type": "fill",
+      "stem": "576÷36=____。",
+      "answer": "16",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.5,
+      "solution": "把36看作40试商偏大，调小商为16：36×16=576；用乘法验算，576÷16=36。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_060",
+      "item_type": "choice",
+      "stem": "计算720÷68时，把68看作70来试商，初商容易（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_div_2digit"
+      ],
+      "difficulty": 0.7,
+      "solution": "把除数68看作70变大了，除数变大商容易偏小，需要把商调大1。",
+      "source": "llm_generated",
+      "options": [
+        "A. 偏大",
+        "B. 偏小",
+        "C. 正好",
+        "D. 不确定"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_061",
+      "item_type": "fill",
+      "stem": "平行四边形容易变形，具有____性。（填“不稳定”或“稳定”）",
+      "answer": "不稳定",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.3,
+      "solution": "平行四边形受外力容易变形，是“不稳定”四边形；生活中利用它做伸缩门、升降架。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_062",
+      "item_type": "choice",
+      "stem": "一个四边形两组对边分别平行，其中一组邻边相等、另一组邻边不相等，这个四边形是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.5,
+      "solution": "两组对边分别平行是平行四边形；邻边都等是正方形，相邻边垂直等长是长方形；梯形只有一组对边平行。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方形",
+        "B. 正方形",
+        "C. 平行四边形",
+        "D. 梯形"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_063",
+      "item_type": "fill",
+      "stem": "画一个上底3厘米、下底5厘米、高2厘米的梯形，这个梯形的面积是____平方厘米。",
+      "answer": "8",
+      "kps": [
+        "kp_p4_quad_shape"
+      ],
+      "difficulty": 0.7,
+      "solution": "梯形面积=(上底+下底)×高÷2=(3+5)×2÷2=8平方厘米。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_064",
+      "item_type": "fill",
+      "stem": "条形统计图中1格表示8人，五年级参加合唱队对应的直条有7格，参加合唱队的有____人。",
+      "answer": "56",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.25,
+      "solution": "7格×8人/格=56人。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_065",
+      "item_type": "choice",
+      "stem": "三种图书数量分别为48本、72本、96本，画条形统计图时1格表示（　）本最合适。",
+      "answer": "C",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.55,
+      "solution": "1格=12本：48÷12=4格、72÷12=6格、96÷12=8格，全部整格且总格数少画起来紧凑；20不能整除48。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 6",
+        "C. 12",
+        "D. 20"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_066",
+      "item_type": "solve",
+      "stem": "某小学四年级四个班读书节捐赠图书分别为15本、28本、36本、41本，平均每个班捐多少本？",
+      "answer": "30本",
+      "kps": [
+        "kp_p4_barchart"
+      ],
+      "difficulty": 0.7,
+      "solution": "总本数=15+28+36+41=120本；平均=120÷4=30本。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_067",
+      "item_type": "fill",
+      "stem": "计算(25+15)×3−12÷4时，第一步应先算____。",
+      "answer": "25+15",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.25,
+      "solution": "有括号先算括号里的：(25+15)×3−12÷4，第一步先算25+15=40。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_068",
+      "item_type": "choice",
+      "stem": "把24−6×2+8改成先算减法的算式，应是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.5,
+      "solution": "要让24−6先算，把它放进小括号：(24−6)×2+8=18×2+8=44；A是先算乘法，C先算加法，D括号内仍是乘法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 24−(6×2)+8",
+        "B. (24−6)×2+8",
+        "C. 24−(6×2+8)",
+        "D. (24−6×2)+8"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_069",
+      "item_type": "solve",
+      "stem": "计算(80−20)÷(6+4)×5=____。",
+      "answer": "30",
+      "kps": [
+        "kp_p4_arith_order"
+      ],
+      "difficulty": 0.7,
+      "solution": "按四则混合运算顺序：先算(80−20)=60，(6+4)=10；再算60÷10=6；最后算6×5=30。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_070",
+      "item_type": "fill",
+      "stem": "用简便方法计算125×32=____。",
+      "answer": "4000",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.5,
+      "solution": "125×32=125×8×4=1000×4=4000（把32拆成8×4用125×8=1000的积）；直接算125×32=4000。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_071",
+      "item_type": "choice",
+      "stem": "下面各式中，运用了乘法分配律的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p4_operation_laws"
+      ],
+      "difficulty": 0.75,
+      "solution": "C是(a+b)×c=a×c+b×c即乘法分配律；A和B是乘法结合律，D是乘法交换律。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4×25×2=4×(25×2)",
+        "B. 25×(8×4)=25×8×4",
+        "C. (25+8)×4=25×4+8×4",
+        "D. 25×14=14×25"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_072",
+      "item_type": "fill",
+      "stem": "2.07里面有____个0.01。",
+      "answer": "207",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.5,
+      "solution": "2.07=2+0.07，0.07里有7个0.01；2里面有200个0.01；合计2.07=207个0.01。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_073",
+      "item_type": "choice",
+      "stem": "下面的小数中，与5.40不相等的是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_p4_decimal_meaning"
+      ],
+      "difficulty": 0.7,
+      "solution": "小数末尾添0或去0大小不变：5.4=5.40=5.400；但5.04≠5.40（5.40=5.4，5.04只比5大0.04）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5.4",
+        "B. 5.40",
+        "C. 5.400",
+        "D. 5.04"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_074",
+      "item_type": "fill",
+      "stem": "7.5+2.86=____。",
+      "answer": "10.36",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.3,
+      "solution": "把7.5写成7.50补足小数位数，对齐后相加：7.50+2.86=10.36。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_075",
+      "item_type": "choice",
+      "stem": "水果店原有苹果35.6千克，上午卖出12.8千克，下午又运进20.5千克，现在有苹果（　）千克。",
+      "answer": "B",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.5,
+      "solution": "35.6−12.8=22.8千克（剩下的）；22.8+20.5=43.3千克；也可一步列式35.6−12.8+20.5=43.3。",
+      "source": "llm_generated",
+      "options": [
+        "A. 22.8",
+        "B. 43.3",
+        "C. 56.1",
+        "D. 32.7"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_076",
+      "item_type": "solve",
+      "stem": "小明带20元买文具：一支钢笔8.5元、一本笔记本6.5元、一支铅笔1.2元。带的钱够吗？若够还剩多少元？",
+      "answer": "够，还剩3.8元",
+      "kps": [
+        "kp_p4_decimal_addsub"
+      ],
+      "difficulty": 0.75,
+      "solution": "合计花费：8.5+6.5+1.2=16.2元；20−16.2=3.8元；16.2<20，带的钱够，还剩3.8元。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_077",
+      "item_type": "fill",
+      "stem": "一个三角形的两个内角分别是65°和45°，第三个内角是____度。",
+      "answer": "70",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.45,
+      "solution": "三角形内角和180°：180−65−45=70°。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_078",
+      "item_type": "choice",
+      "stem": "一个三角形两条边的长分别是6厘米和10厘米，第三条边的长不可能是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_p4_triangle"
+      ],
+      "difficulty": 0.6,
+      "solution": "三角形任意两边之和大于第三边：6+10=16>15不对，因为第三边<两长边之和且>差10−6=4；15<16不满足；12/8/5都符合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5厘米",
+        "B. 8厘米",
+        "C. 12厘米",
+        "D. 15厘米"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_079",
+      "item_type": "fill",
+      "stem": "复式条形统计图显示四（1）班图书角故事书18本、科技书比故事书多9本，科技书有____本。",
+      "answer": "27",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.4,
+      "solution": "看图例区分两组数据：科技书比故事书多9本，18+9=27本。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_080",
+      "item_type": "choice",
+      "stem": "四（1）班喜欢运动的有男生16人、女生12人；四（2）班喜欢运动的有男生14人、女生18人。两个班喜欢运动的总人数是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.6,
+      "solution": "把两组数据相加：16+12+14+18=60人；A、B、D分别只是部分人数。",
+      "source": "llm_generated",
+      "options": [
+        "A. 30人",
+        "B. 32人",
+        "C. 60人",
+        "D. 46人"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_081",
+      "item_type": "fill",
+      "stem": "复式条形统计图显示四（2）班参加合唱队：男生8人、女生14人；参加舞蹈队：男生6人、女生10人。参加合唱队的比舞蹈队多____人。",
+      "answer": "6",
+      "kps": [
+        "kp_p4_compound_bar"
+      ],
+      "difficulty": 0.7,
+      "solution": "合唱队8+14=22人；舞蹈队6+10=16人；22−16=6人。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_082",
+      "item_type": "fill",
+      "stem": "鸡兔同笼：一共有8个头、22条腿，兔有____只。",
+      "answer": "3",
+      "kps": [
+        "kp_p4_jituitonglong"
+      ],
+      "difficulty": 0.4,
+      "solution": "假设全是鸡：8×2=16条腿；少22−16=6条，每只兔比鸡多2条腿，兔有6÷2=3只。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p4_083",
+      "item_type": "choice",
+      "stem": "鸡兔同笼：一共有12个头、40条腿，鸡和兔各有多少只？（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p4_jituitonglong"
+      ],
+      "difficulty": 0.6,
+      "solution": "4只鸡8只兔：4+8=12个头；4×2+8×4=8+32=40条腿，符合条件。",
+      "source": "llm_generated",
+      "options": [
+        "A. 鸡4只兔8只",
+        "B. 鸡8只兔4只",
+        "C. 鸡6只兔6只",
+        "D. 鸡5只兔7只"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_z_0088",
+      "item_type": "choice",
+      "stem": "把 40800000 改写成用“万”作单位的数是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.3,
+      "solution": "整万数改写成“万”作单位：去掉末尾 4 个 0 再加上“万”字，40800000=4080 万。",
+      "source": "llm_generated",
+      "options": [
+        "A. 408 万",
+        "B. 4080 万",
+        "C. 40800 万",
+        "D. 408 亿"
+      ],
+      "form": "大数改写选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0089",
+      "item_type": "fill",
+      "stem": "5300000000=____亿。",
+      "answer": "53",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.25,
+      "solution": "整亿数改写成“亿”作单位：去掉末尾 8 个 0 再加上“亿”字，5300000000=53 亿。",
+      "source": "llm_generated",
+      "form": "大数改写填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0090",
+      "item_type": "solve",
+      "stem": "用四舍五入法省略万位后面的尾数，求 396500 的近似数（用“万”作单位），并写出思考过程。",
+      "answer": "396500 省略万位后面的尾数，看尾数的最高位（千位）：千位上是 6，6≥5，向前一位进一，39 万+1 万=40 万，所以 396500≈40 万。",
+      "kps": [
+        "kp_p4_bignum_rewrite"
+      ],
+      "difficulty": 0.4,
+      "solution": "396500=39 万+6500，尾数最高位是千位，千位上的 6≥5 舍去尾数并向万位进 1，得 396500≈40 万。",
+      "source": "llm_generated",
+      "form": "四舍五入求近似数解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0091",
+      "item_type": "choice",
+      "stem": "妈妈给客人沏茶，要做的事情及所需时间如下：洗水壶 1 分钟、烧水 8 分钟、洗茶杯 2 分钟、拿茶叶 1 分钟、沏茶 1 分钟（沏茶前必须先烧开水，其余事情顺序可以调整）。妈妈最少要（　）分钟才能让客人喝上茶。",
+      "answer": "A",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.4,
+      "solution": "先洗水壶 1 分钟，再烧水 8 分钟（烧水等待的同时洗茶杯 2 分钟、拿茶叶 1 分钟，共 3 分钟<8 分钟，可同时完成），最后沏茶 1 分钟，最少 1+8+1=10 分钟。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10",
+        "B. 11",
+        "C. 12",
+        "D. 13"
+      ],
+      "form": "沏茶优化选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0092",
+      "item_type": "fill",
+      "stem": "用一个平底锅烙饼，每次最多烙 2 张饼，两面都要烙，每面需要 3 分钟。烙 3 张饼最少需要____分钟。",
+      "answer": "9",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.45,
+      "solution": "轮换烙法：第 1 次烙饼 1 正面和饼 2 正面，第 2 次烙饼 1 反面和饼 3 正面，第 3 次烙饼 2 反面和饼 3 反面，每次锅内都有 2 张饼，3×3=9 分钟。",
+      "source": "llm_generated",
+      "form": "烙饼优化填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0093",
+      "item_type": "solve",
+      "stem": "用一个平底锅烙饼，每次最多烙 2 张饼，两面都要烙，每面需要 3 分钟。请为烙 4 张饼设计一种最省时的方案，并求出最少时间。",
+      "answer": "两张两张地烙：第 1 次烙饼 1、饼 2 的正面（3 分钟），第 2 次烙饼 1、饼 2 的反面（3 分钟），第 3 次烙饼 3、饼 4 的正面（3 分钟），第 4 次烙饼 3、饼 4 的反面（3 分钟）。共 4 次×3 分钟=12 分钟，每次锅内都有 2 张饼，没有空位，最省时，最少 12 分钟。",
+      "kps": [
+        "kp_p4_optimize"
+      ],
+      "difficulty": 0.5,
+      "solution": "锅每次最多烙 2 张，最优方案是让锅内每次都满（2 张），4 张饼共 8 个面，每烙一次完成 2 个面，需 8÷2=4 次，每次 3 分钟，共 12 分钟。",
+      "source": "llm_generated",
+      "form": "烙饼方案设计解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
   ]
 }

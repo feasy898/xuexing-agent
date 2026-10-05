@@ -1,0 +1,6166 @@
+{
+  "items": [
+    {
+      "id": "chi_chi_jr_0150",
+      "item_type": "choice",
+      "stem": "关于消息这种新闻体裁，说法不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_news_read"
+      ],
+      "difficulty": 0.4,
+      "solution": "消息的要素通常包括\"何时、何地、何人、何事、为何、如何\"（5W1H），说\"只有三项\"错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 消息具有真实性、时效性和准确性的特点",
+        "B. 消息的结构包括标题、导语、主体、背景、结语",
+        "C. 消息的要素只有\"时间、地点、人物\"三项",
+        "D. 导语一般是一则消息中最重要、最新鲜的事实概括"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0151",
+      "item_type": "solve",
+      "stem": "\"我三十万大军胜利南渡长江\"。请从标题中读出这则消息包含的要素。",
+      "answer": "\"何人？我三十万大军；何事？胜利南渡长江。\"标题中\"胜利\"一词既交代了结果，也带有鲜明的立场和胜利的豪迈，体现新闻语言准确简明又带感情色彩的特点。",
+      "kps": [
+        "kp_chi8_news_read"
+      ],
+      "difficulty": 0.45,
+      "solution": "读标题要抓\"谁+做了什么（结果）\"，并注意词语的感情色彩。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0152",
+      "item_type": "solve",
+      "stem": "《\"飞天\"凌空》是一篇新闻特写。它与普通消息在写法上最大的不同是什么？",
+      "answer": "消息重在\"报道事实\"，概括简明；新闻特写则像电影的特写镜头，截取最有代表性的场面和瞬间，用细节描写（动作、神态、环境）放大描写、营造氛围，让读者如临其境。",
+      "kps": [
+        "kp_chi8_news_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "抓住\"特写镜头\"与\"细节描写\"两个关键词作比较说明。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0153",
+      "item_type": "choice",
+      "stem": "对《首届诺贝尔奖颁发》一文理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_nobel"
+      ],
+      "difficulty": 0.4,
+      "solution": "诺贝尔是瑞典人（1833—1896），“瑞典国王已故化学家诺贝尔”。",
+      "source": "llm_generated",
+      "options": [
+        "A. 消息报道的是诺贝尔奖的首次颁发，时间是 1901 年 12 月 10 日",
+        "B. 诺贝尔是瑞士人，他把遗产捐了出来设立奖项",
+        "C. 首届物理学奖授予德国物理学家伦琴，以表彰他发现 X 射线",
+        "D. 消息来自路透社，体现了电讯新闻的特点"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0154",
+      "item_type": "solve",
+      "stem": "《首届诺贝尔奖颁发》作为电讯，为什么要在导语中写明\"根据诺贝尔的遗嘱\"？",
+      "answer": "这句话交代了奖项的由来和权威来源——诺贝尔用遗产设立奖项，体现他的遗愿；同时它也是后文各项奖金的用途、授奖机构的依据。导语中点明遗嘱，既增强事实的可信度，也交代了背景。",
+      "kps": [
+        "kp_chi8_nobel"
+      ],
+      "difficulty": 0.45,
+      "solution": "新闻的\"背景\"交代来源、依据；回答要联系\"遗嘱\"在文中的作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0155",
+      "item_type": "solve",
+      "stem": "学校运动会上你班夺得接力赛第一名。请拟一句话新闻（含标题、不超过 30 字）。",
+      "answer": "示例：标题\"我班勇夺年级接力赛冠军\"；正文：\"昨天下午，我班在年级接力赛中以 46 秒 2 的成绩夺冠。\"（人物—时间—事件—结果齐备即可）",
+      "kps": [
+        "kp_chi8_news_write"
+      ],
+      "difficulty": 0.45,
+      "solution": "一句话新闻要\"一什么事+怎么样\"，言简意明，关键要素不可缺。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0156",
+      "item_type": "solve",
+      "stem": "下面是小记者写的一则消息，请指出两处不符合新闻写作要求之处并修改：\"我班爱心义卖好热闹啊！！！同学们把心爱的玩具都拿了出来，那个热闹劲儿就别提了！最后居然卖掉了三千多元，大家都很开心，义卖真是太棒了！以后还要多多举办！\"",
+      "answer": "①\"好热闹啊！！！\"\"就别提了\"口语化、抒情化，新闻语言要求准确、简明、客观，应改为客观陈述；②缺少明确的时间、地点、事件结果等要素，应补出（如\"4 月 12 日下午，我班在教学楼前举行爱心义卖，共筹得 3000 余元，全部捐给山区小学\"）。",
+      "kps": [
+        "kp_chi8_news_write"
+      ],
+      "difficulty": 0.5,
+      "solution": "新闻以\"事实\"为主，忌夸张感叹，须交代清楚时间、地点、事件和结果。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0157",
+      "item_type": "choice",
+      "stem": "对新闻语言特点理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_news_lang"
+      ],
+      "difficulty": 0.4,
+      "solution": "新闻语言必须真实准确、简明扼要，不能夸张虚构，D 项错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"准确\"：用语精确，数据和程度恰当",
+        "B. \"简明\"：指语言简洁明快、不啰嗦",
+        "C. \"客观\"：主要报道事实，少发主观议论",
+        "D. \"新闻语言可以像散文一样随意抒情、随意夸张\""
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0158",
+      "item_type": "solve",
+      "stem": "\"至发电时止，该路军已渡过西起湖口东至江阴的浩瀚战线……\"加点的表达体现了新闻语言的什么特点？",
+      "answer": "时间限定\"至发电时止\"和\"西起……东至……\"的地域界定都极为精确，体现新闻语言\"准确\"的特点；同时也体现事实清楚、边界分明、不容含糊的新闻品格。",
+      "kps": [
+        "kp_chi8_news_lang"
+      ],
+      "difficulty": 0.45,
+      "solution": "从\"时间限定词\"和\"空间界定\"入手，说明\"准确、严密\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0159",
+      "item_type": "choice",
+      "stem": "《藤野先生》中，促使鲁迅\"弃医从文\"的转折事件是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_tengye"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"凡是愚弱的国民……只能做毫无意义的示众的材料和看客\"，鲁迅意识到改变国民精神比治疗身体更迫切，于是弃医从文。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看见细菌的体积",
+        "B. 看电影（幻灯片）事件：中国人给俄国人做侦探被日军枪毙，而围观的中国观众竟喝彩",
+        "C. 藤野先生为他添改讲义",
+        "D. 学生会干事怀疑他的考试成绩"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0160",
+      "item_type": "solve",
+      "stem": "\"他的性格，在我的眼里和心里是伟大的，虽然他的姓名并不为许多人所知道。\"这句话表达了鲁迅对藤野先生怎样的情感？",
+      "answer": "\"伟大\"指藤野先生毫无民族偏见、治学严谨、待人真诚热情；\"姓名并不为许多人所知道\"是说他不求名利、默默无闻。全句饱含鲁迅对恩师的感激、敬爱与深情怀念。",
+      "kps": [
+        "kp_chi8_tengye"
+      ],
+      "difficulty": 0.45,
+      "solution": "评价性语句要扣住\"伟大\"的内涵（品格）与作者情感两个层次。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0161",
+      "item_type": "solve",
+      "stem": "文章写藤野先生\"起初穿衣服太模糊，有时竟会忘记带领结\"这类\"小\"细节，对写人物有什么作用？",
+      "answer": "以小见大：生活上的马虎与治学、对人的认真形成对照，写他\"只知学问、不拘小节\"，同一细节也透着亲切与真实，使一个可敬可亲的日本学者形象跃然纸上，也为后文添改讲义、关心解剖实习等情节作了铺垫。",
+      "kps": [
+        "kp_chi8_tengye"
+      ],
+      "difficulty": 0.5,
+      "solution": "细节描写的作用要先说明\"细\"在何处，再说明\"性格\"与\"情感\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0162",
+      "item_type": "choice",
+      "stem": "对朱德《回忆我的母亲》理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_mother"
+      ],
+      "difficulty": 0.4,
+      "solution": "朱德用朴素平实的语言、具体事例回忆母亲，结尾的抒情议论自然升华，并不\"华丽\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章按时间顺序回忆母亲勤劳的一生",
+        "B. 母亲一生最大的特点是勤劳俭朴、宽厚仁慈",
+        "C. 文章由爱母亲推广到爱劳动人民，感情升华",
+        "D. 全文用华丽的感叹句抒发对母亲的爱"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0163",
+      "item_type": "solve",
+      "stem": "\"母亲现在离我而去了，我将永不能再见她一面了\"\"我用什么方法来报答母亲的深恩呢？\"这样的句子与全文平实的叙述相比，有什么作用？",
+      "answer": "全文叙述如叙家常，平实中蓄满深情；这两句直抒胸臆（设问自答：\"尽忠于民族和人民，尽忠于中国共产党\"），把个人的丧母之痛升华为报答人民、忠于党的事业，情感浓度最高，也点明文章主旨。",
+      "kps": [
+        "kp_chi8_mother"
+      ],
+      "difficulty": 0.45,
+      "solution": "直抒胸臆句多出现在结尾：从\"个人之爱\"到\"家国之志\"的升华。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0164",
+      "item_type": "solve",
+      "stem": "\"眼睛的光芒像枪弹穿透，像金刚刀切开\"用了什么修辞？写出了托尔斯泰眼神的什么特点？",
+      "answer": "比喻（博喻）。把目光比作枪弹和金刚刀，写出他目光锐利、深邃、能洞察一切的\"穿透力\"——那是天才艺术家独有的观察力，\"凡是你从他眼神里看到的东西，都逃不出他的眼睛\"。",
+      "kps": [
+        "kp_chi8_liefu"
+      ],
+      "difficulty": 0.4,
+      "solution": "比喻的作用：化抽象为具象；分析要写出\"眼光\"与\"人格与思想\"的联系。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0165",
+      "item_type": "choice",
+      "stem": "《列夫·托尔斯泰》中，作者为什么先着力描写托尔斯泰\"粗劣\"的长相？",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_liefu"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"欲扬先抑（先抑后扬）\"：相貌的平庸与精神的巨人形成强烈反差，使\"伟大\"更令人信服。",
+      "source": "llm_generated",
+      "options": [
+        "A. 先抑后扬：以外貌的平凡粗劣，反衬他灵魂与精神的伟大高贵",
+        "B. 因为作者不喜欢托尔斯泰",
+        "C. 为了凑字数，所以写了一大段外貌",
+        "D. 为了说明托尔斯泰完全不修边幅，不尊重读者"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0166",
+      "item_type": "choice",
+      "stem": "对《美丽的颜色》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_marie"
+      ],
+      "difficulty": 0.4,
+      "solution": "《美丽的颜色》节选自艾芙·居里（居里夫人的女儿）所著的《居里夫人传》，并非居里夫人自撰的回忆录。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章写居里夫妇在棚屋里提取镭的过程",
+        "B. 文章的作者是居里夫人本人，写的是她晚年写的回忆录",
+        "C. \"美丽的颜色\"指镭在黑暗中发出的荧光",
+        "D. 居里夫妇在艰苦条件下坚持科学研究，令人敬佩"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0167",
+      "item_type": "solve",
+      "stem": "文章写居里夫妇在破旧的棚屋里劳作：\"穿着满是酸渍的工作服\"，在酷暑与严寒中反复提炼，终于看到镭的荧光。这类细节对表现人物有什么作用？",
+      "answer": "这些细节写出居里夫妇实验条件的极其艰苦：棚屋夏如蒸笼、酸液腐蚀、身体疲惫，但他们\"仍旧继续工作\"。艰苦环境越具体，越能衬托他们对科学理想执着坚定、甘于奉献的精神，\"美丽的颜色\"也更动人。",
+      "kps": [
+        "kp_chi8_marie"
+      ],
+      "difficulty": 0.45,
+      "solution": "以艰苦环境衬托人物精神，回答时要把\"细节—环境—精神—情感\"串起来。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0168",
+      "item_type": "fill",
+      "stem": "郦道元《三峡》中，写山之\"连\"与\"高\"、侧面烘托峡谷幽深的句子是：\"____，____。\"",
+      "answer": "重岩叠嶂，隐天蔽日（自非亭午夜分，不见曦月）",
+      "kps": [
+        "kp_chi8_sanxia"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"叠\"\"曦\"字写法；\"亭午\"\"夜分\"分指正午和半夜。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0169",
+      "item_type": "choice",
+      "stem": "对《三峡》中加点词解释不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_sanxia"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"襄陵\"是说水漫上山陵，\"襄\"是\"上、漫上\"之意，不是\"平安\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"沿溯阻绝\"：溯，逆流而上",
+        "B. \"虽乘奔御风\"：奔，这里指飞奔的马",
+        "C. \"属引凄异\"：属引，接连不断",
+        "D. \"夏水襄陵\"：襄，平安、安稳"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0170",
+      "item_type": "solve",
+      "stem": "《三峡》结尾写\"高猿长啸，属引凄异，空谷传响，哀转久绝\"，有什么表达效果？",
+      "answer": "以声衬静：猿声凄厉悠长、空谷回响不绝，越是凄异哀转，越显出三峡秋景的肃杀凄清和林寒涧肃；\"哀转久绝\"余音袅袅，又给读者留下悠长余韵，令人真切感受到作者面对大好河山的感慨。",
+      "kps": [
+        "kp_chi8_sanxia"
+      ],
+      "difficulty": 0.55,
+      "solution": "\"以声衬静\"是写景常用手法，还要点明季节特征与情感氛围。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0171",
+      "item_type": "fill",
+      "stem": "陶弘景《答谢中书书》中，写晨昏之景的句子是：\"晓雾将歇，猿鸟乱鸣；____，____。\"",
+      "answer": "夕日欲颓，沉鳞竞跃",
+      "kps": [
+        "kp_chi8_short_two"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"颓\"\"沉鳞\"（潜游的鱼）的写法；两句对仗工整，写出山川的生机。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0172",
+      "item_type": "solve",
+      "stem": "将《记承天寺夜游》中的句子译成现代汉语：\"庭下如积水空明，水中藻、荇交横，盖竹柏影也。\"",
+      "answer": "月光照在庭院里像积了一滩水一样澄澈透明，水里的藻、荇交错纵横——原来是竹子和柏树的影子。",
+      "kps": [
+        "kp_chi8_short_two"
+      ],
+      "difficulty": 0.45,
+      "solution": "三个要点：比喻（月色如水）、错觉（藻荇）、点破（竹柏影）。\"盖\"是\"原来是\"。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0173",
+      "item_type": "solve",
+      "stem": "苏轼在《记承天寺夜游》结尾说\"何夜无月？何处无竹柏？但少闲人如吾两人者耳\"，表达了怎样的复杂情感？",
+      "answer": "既有赏月的欣喜、漫步的悠闲，也有贬谪黄州的悲凉与失意。\"闲人\"二字意味深长：既有超脱名利、沉醉山水的从容，也藏着生不逢时、壮志难酬的悲叹。旷达与感伤交织，是苏轼的人生态度，也是全文感情的升华。",
+      "kps": [
+        "kp_chi8_short_two"
+      ],
+      "difficulty": 0.55,
+      "solution": "\"闲人\"是文眼，要答出\"旷达之喜\"与\"贬谪之悲\"的双重情感。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0174",
+      "item_type": "fill",
+      "stem": "吴均《与朱元思书》中，表达作者鄙弃名利、向往自然的句子是：\"鸢飞戾天者，____；经纶世务者，____。\"",
+      "answer": "望峰息心；窥谷忘反",
+      "kps": [
+        "kp_chi8_zhuyuan"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"戾\"读 lì，\"反\"通\"返\"，返回。注意两处通假。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0175",
+      "item_type": "choice",
+      "stem": "对《与朱元思书》中加点词解释不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_zhuyuan"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"轩邈\"指向高处和远处伸展（形容词作动词用），\"平原\"之说错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"从流飘荡\"：从，顺、随",
+        "B. \"急湍甚箭，猛浪若奔\"：奔，这里指飞奔的马",
+        "C. \"互相轩邈，争高直指\"：轩邈，广阔的平原",
+        "D. \"蝉则千转不穷\"：转，同\"啭\"，鸟鸣，这里指蝉鸣"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0176",
+      "item_type": "solve",
+      "stem": "《与朱元思书》\"奇山异水，天下独绝\"一句总领全文。请结合下文具体说说山\"奇\"在哪里，水\"异\"在哪里。",
+      "answer": "水之\"异\"：静——\"水皆缥碧，千丈见底\"，清澈见底；动——\"急湍甚箭，猛浪若奔\"，湍急如箭。山之\"奇\"：形——山势\"负势竞上……千百成峰\"，争先恐后直插云天；声——\"泉水激石……嘤嘤成韵\"，蝉唱猿啼；意——\"横柯上蔽，在昼犹昏\"，幽深静谧。\"独绝\"二字总收，一切让人息心忘反。",
+      "kps": [
+        "kp_chi8_zhuyuan"
+      ],
+      "difficulty": 0.5,
+      "solution": "总起句的分析题要先分层，再各举一两个原文语句佐证。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0179",
+      "item_type": "solve",
+      "stem": "王绩《野望》\"树树皆秋色，山山唯落晖\"描绘了一幅怎样的画面？",
+      "answer": "秋天的傍晚，每一棵树都染上了秋色，每一座山都披着落日的余晖。\"树树\"\"山山\"反复，写出秋色的无边无际；\"皆\"\"唯\"暗含诗人的孤独——满眼秋色，却\"相顾无相识\"，景是静的，情是寂的，情景交融。",
+      "kps": [
+        "kp_chi8_tangpoem5"
+      ],
+      "difficulty": 0.5,
+      "solution": "画面描述题：先译句，再点睛（色彩、情感），避免只翻译不分析。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0180",
+      "item_type": "solve",
+      "stem": "《背影》中，作者为什么要\"特写\"父亲攀爬月台买橘子的过程？",
+      "answer": "这是全文的高潮：\"攀\"\"缩\"\"倾\"三个动词，写出父亲年老体胖、攀爬艰难，而这一切只为给儿子买几个橘子。高难度的动作与\"几个橘子\"的分量形成强烈反差，定格了父亲对儿子深沉的爱，也定格了\"我\"的眼泪与愧疚。",
+      "kps": [
+        "kp_chi8_back"
+      ],
+      "difficulty": 0.4,
+      "solution": "特写镜头的作用：动词细节+反差+情感高潮，答出这三点即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0181",
+      "item_type": "fill",
+      "stem": "朱自清《背影》中，描写父亲背影\"混入人群\"\"再也找不着\"时，\"我\"的泪水又来了。请默写文中写\"那肥胖的、青布棉袍黑布马褂的背影\"的名句：\"____，____。\"",
+      "answer": "他用两手攀着上面，两脚再向上缩；他肥胖的身子向左微倾，显出努力的样子",
+      "kps": [
+        "kp_chi8_back"
+      ],
+      "difficulty": 0.45,
+      "solution": "题目指向最经典的攀爬动作细节；背诵时注意动词\"攀\"\"缩\"\"倾\"的准确。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0182",
+      "item_type": "solve",
+      "stem": "朱自清说《背影》\"只凭真实的情感\"取胜。请结合\"我北来后，他写了一信给我……大约大去之期不远矣\"说说\"我\"当时的态度与心情。",
+      "answer": "父亲在信里\"缓缓\"说起\"大去之期\"，可见他既思念儿子又怕他担心；而\"我\"读信时既有\"少年出外\"奔波在外的愧疚，又有面对父子深情的酸楚——\"在晶莹的泪光中\"又见背影。真实、克制的父子之情，看似平淡，却最动人。",
+      "kps": [
+        "kp_chi8_back"
+      ],
+      "difficulty": 0.55,
+      "solution": "情感分析要结合父子双方的处境（各自隐忍着爱），才能体会\"平淡中的深情\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0183",
+      "item_type": "solve",
+      "stem": "《白杨礼赞》中\"白杨树实在不是平凡的树\"这句话在结构上有什么作用？",
+      "answer": "全文的抒情线索：开篇点明白杨树\"不是平凡的\"，接下来层层展开——生长环境（高原）的不平凡、形态（力争上游）的不平凡、精神（伟岸、正直、朴质、严肃、坚强不屈）的不平凡，最后\"我要高声赞美白杨树\"收束，\"不平凡\"一句勾连首尾、提纲挈领。",
+      "kps": [
+        "kp_chi8_poplar"
+      ],
+      "difficulty": 0.4,
+      "solution": "线索句的作用：串联材料、点明主旨、照应全文，须\"位置+内容\"合说。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0184",
+      "item_type": "solve",
+      "stem": "《白杨礼赞》结尾说白杨树\"宛然象征了今天在华北平原纵横决荡，用血写出新中国历史的那种精神和意志\"。请说明作者\"象征手法的运用\"。",
+      "answer": "作者借白杨树\"力争上游、伟岸正直、不折不挠\"的形象，象征北方抗日军民的英雄气概：\"朴质、严肃、坚强不屈\"是他们的品格；\"枝枝叶叶靠紧团结\"是他们的团结。以树喻人，不点破而自明，使抒情更形象、更有感染力。",
+      "kps": [
+        "kp_chi8_poplar"
+      ],
+      "difficulty": 0.5,
+      "solution": "象征=物→人（精神）的映射，回答要先说树的特点，再讲所象征的人。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0185",
+      "item_type": "choice",
+      "stem": "对《永久的生命》（严文井）理解不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_prose_two"
+      ],
+      "difficulty": 0.4,
+      "solution": "作者以个体的不幸衬托生命的延续，是\"豁达地赞美生命\"，不是\"及时行乐\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章写了小草、河岸、潮汐等生生不息的景象",
+        "B. \"生命是短暂的，然而生命又是永久的\"是全文核心句",
+        "C. 作者感叹生命短暂，劝人及时行乐",
+        "D. 文章表达了在有限的生命中创造永恒价值的达观"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0186",
+      "item_type": "solve",
+      "stem": "罗素《我为什么而活着》\"对爱情的渴望，对知识的追求，对人类苦难不可遏制的同情心\"这三者，概括了作者怎样的人生境界？",
+      "answer": "爱情带来狂喜，\"解除我精神孤寂的圣典\"；知识让\"我\"理解人类心灵、进而能\"爱\"；同情心指向人间苦难。三者由个人情感走向对人类的关怀，构成罗素一生的精神坐标——为爱与真理、为他人而活。",
+      "kps": [
+        "kp_chi8_prose_two"
+      ],
+      "difficulty": 0.45,
+      "solution": "哲理性散文要抓住作者的核心观点与情感，\"三层递进\"是理解的关键。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0187",
+      "item_type": "solve",
+      "stem": "汪曾祺写\"昆明的雨季是明亮的、丰满的，使人动情的\"，对全文有什么作用？",
+      "answer": "总起全文：\"明亮\"写出雨季光线充足、草木繁盛；\"丰满\"写出雨季雨水丰沛、生命力旺盛；\"使人动情\"直接抒情，奠定全文感情的基调。下文写菌子、杨梅、缅桂花、草木花实和市井小景，都是这一情感的具体展开。",
+      "kps": [
+        "kp_chi8_kunming"
+      ],
+      "difficulty": 0.4,
+      "solution": "总起句作用题：分层解释中心词+点明情感基调，下文往往是展开论证。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0188",
+      "item_type": "choice",
+      "stem": "对《昆明的雨》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_kunming"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"我想念昆明的雨\"是战乱流亡中对昆明生活与友人的怀念，更是一份乡愁，不只是雨量大小。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章写昆明雨季的菌子、杨梅、缅桂花等风物",
+        "B. \"我想念昆明的雨\"只是因为昆明雨量大",
+        "C. 文章写卖杨梅的苗族女孩子\"戴小花帽\"\"穿绣花鞋\"，有画面美",
+        "D. \"昆明的雨季是明亮的、丰满的\"与全文情感基调不符"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0189",
+      "item_type": "solve",
+      "stem": "茅以升为什么把赵州桥一节写得特别详细？",
+      "answer": "赵州桥历史悠久（一千四百年）、结构巧妙（单孔石拱、大拱两肩各有两个小拱，即\"敞肩拱\"，既减轻桥身重量又增加泄洪能力），最能体现\"中国石拱桥形式优美、结构坚固\"的特点，也最具代表性；详写它能突出说明重点，给人以具体深刻的印象。",
+      "kps": [
+        "kp_chi8_bridge"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"详略得当\"要从\"说明对象的特点\"和\"说明意图\"两方面说明，不能只说\"更重要\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0190",
+      "item_type": "choice",
+      "stem": "对《中国石拱桥》的说明方法分析不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_bridge"
+      ],
+      "difficulty": 0.45,
+      "solution": "D 句是摹状貌（对石狮形态作形象描摹），不是作比较。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"石拱桥的桥洞成弧形，就像虹\"是打比方",
+        "B. \"赵州桥非常雄伟，全长五十点八二米\"是列数字",
+        "C. 拿卢沟桥与赵州桥作比较，说明我国石拱桥有许多杰出创造",
+        "D. 文中\"这些石刻的狮子，有的母子相抱……好像在与游人数数\"是作比较"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0191",
+      "item_type": "solve",
+      "stem": "《苏州园林》的总特点是什么？作者\"务必使游览者……眼前总是一幅完美的图画\"这句话在文中有什么作用？",
+      "answer": "总特点是\"图画美\"：亭台轩榭的布局美、假山池沼的配合美、花草树木的映衬美、近景远景的层次美。这句话是全文的中心句：既点明苏州园林共同的审美追求，又统领下文四个\"讲究\"，使说明对象的特点集中而鲜明。",
+      "kps": [
+        "kp_chi8_garden"
+      ],
+      "difficulty": 0.4,
+      "solution": "中心句作用题：内容+结构（总领全文）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0192",
+      "item_type": "choice",
+      "stem": "对《苏州园林》分析不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_garden"
+      ],
+      "difficulty": 0.45,
+      "solution": "叶圣炉的说明文也讲究语言的\"艺术性\"，赞叹与说明可以统一，不矛盾。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章介绍苏州园林的\"四\"个讲究，条理清晰",
+        "B. 说明中穿插着\"没有一个不\"等表达赞叹之情的语句",
+        "C. \"苏州园林是我国各地园林的标本\"说明其代表性强",
+        "D. 说明文只能客观说明，偶尔有一点感情就不能叫说明文"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0193",
+      "item_type": "choice",
+      "stem": "《昆虫记》中关于\"蝉\"，说法不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_cicada"
+      ],
+      "difficulty": 0.4,
+      "solution": "蝉用尖利的\"嘴\"刺穿树皮、吮吸植物的汁液，并不是花蜜；\"四年黑暗中的苦功，一个月阳光下的享乐\"正是该书名句。",
+      "source": "llm_generated",
+      "options": [
+        "A. 蝉的幼虫在地下生活多年才爬到地面",
+        "B. 蝉靠吮吸花蜜生活",
+        "C. 雌蝉在树枝上产卵，卵孵化成幼虫后落到地面钻入土中",
+        "D. 法布尔是法国昆虫学家"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0194",
+      "item_type": "solve",
+      "stem": "《蝉》\"四年黑暗中的苦功，一个月阳光下的享乐\"这句话有什么含义？",
+      "answer": "写蝉的生命历程：幼虫在地下漫长的蛰伏，才换来一个月的阳光下高歌。既是对蝉的科学观察，也寄寓着作者对生命的尊重与体悟：长久的忍耐、蓄力，才有短暂的绽放——苦与乐在生命里是相连的。",
+      "kps": [
+        "kp_chi8_cicada"
+      ],
+      "difficulty": 0.45,
+      "solution": "科学小品要\"科学+文学\"两面答：既写观察所得，也点出其中的人生况味。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0195",
+      "item_type": "choice",
+      "stem": "对《梦回繁华》理解不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_meng"
+      ],
+      "difficulty": 0.4,
+      "solution": "《清明上河图》是风俗画（城市生活长卷），不是山水画。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章介绍的《清明上河图》是北宋画家张择端的作品",
+        "B. 画卷描绘了北宋都城汴京（今开封）的繁华景象",
+        "C. 《清明上河图》是一幅山水画",
+        "D. 文章介绍时按照\"从总体到局部\"的顺序行文"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0196",
+      "item_type": "solve",
+      "stem": "说明《梦回繁华》\"由总到分\"的说明顺序有什么好处？",
+      "answer": "先总写《清明上河图》的规模（全长五米多）、内容（汴京繁华）和价值，再分写\"郊野\"\"汴河\"\"街市\"各段场景。由总到分，先给人整体印象，再逐步具体，条理清楚，符合人们认识事物的规律。",
+      "kps": [
+        "kp_chi8_meng"
+      ],
+      "difficulty": 0.45,
+      "solution": "结构作用题要落到\"读者认知\"与\"条理\"两点。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0197",
+      "item_type": "fill",
+      "stem": "《孟子》\"二章\"中，《富贵不能淫》提出\"一怒而诸侯惧，安居而天下熄\"的威势并非大丈夫，真正的大丈夫要\"居天下之广居，立天下之正位，____\"。",
+      "answer": "行天下之大道",
+      "kps": [
+        "kp_chi8_mengzi"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"大道\"的\"道\"；与后文\"富贵不能淫，贫贱不能移，威武不能屈\"一起构成\"大丈夫\"的标准。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0198",
+      "item_type": "fill",
+      "stem": "《生于忧患，死于安乐》中，列举舜、傅说等六人逆境成才的句子是：\"____，管夷吾举于士，孙叔敖举于海，百里奚举于市。\"（原句）",
+      "answer": "舜发于畎亩之中，傅说举于版筑之间",
+      "kps": [
+        "kp_chi8_mengzi"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"畎亩\"\"版筑\"\"傅说\"（yuè）的写法；三句排比铺陈，论证\"逆境出人才\"。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0199",
+      "item_type": "solve",
+      "stem": "《富贵不能淫》中，孟子为什么反问景春\"以顺为正者，妾妇之道也\"？",
+      "answer": "因为公孙衍、张仪之流的\"怒\"只是靠摇唇鼓舌、顺从君王意旨换来的功名，与妾妇\"以顺为正\"没有区别。孟子用一个巧妙的类比，指出他们不是真正坚持仁义礼的大丈夫，批判\"以顺为正\"，提出\"富贵不能淫，贫贱不能移，威武不能屈\"的人格标准。",
+      "kps": [
+        "kp_chi8_mengzi"
+      ],
+      "difficulty": 0.5,
+      "solution": "答孟子的\"反驳\"要抓\"类比—否定—正面立论\"三步。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0200",
+      "item_type": "choice",
+      "stem": "对《愚公移山》中加点词解释不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_yugong"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"荷\"是\"负荷、挑\"，\"荷担者即挑担子的三个人，C项解作\"荷花\"错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"惩山北之塞，出入之迂也\"：迂，曲折，绕远",
+        "B. \"指通豫南，达于汉阴，可乎？\"：阴，山的北面、水的南面",
+        "C. \"遂率子孙荷担者三夫\"：荷，荷花",
+        "D. \"寒暑易节，始一反焉\"：反，同\"返\"，往返"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0201",
+      "item_type": "solve",
+      "stem": "将《愚公移山》中的句子译成现代汉语：\"子子孙孙无穷匮也，而山不加增，何苦而不平？\"",
+      "answer": "子子孙孙没有穷尽，可是山不会增高加大，为什么还担心挖不平呢？",
+      "kps": [
+        "kp_chi8_yugong"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"穷匮\"是穷尽；\"加增\"指增高加大；\"何苦\"是\"愁什么\"。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0202",
+      "item_type": "solve",
+      "stem": "愚公\"年且九十\"仍要移山，智叟\"笑而止之\"。作者这样安排有什么用意？",
+      "answer": "愚公目光远大，能看到\"子子孙孙无穷匮\"；智叟鼠目寸光，只看到山高、人少、年老。两人对比，\"愚\"与\"智\"之名相互颠倒——愚公不愚，智叟不智，说明做大事要目光远大、不畏艰难、持之以恒。",
+      "kps": [
+        "kp_chi8_yugong"
+      ],
+      "difficulty": 0.56,
+      "solution": "对比的作用：突出\"智\"在识见而非年龄；移山神话式的结局也印证了\"诚能通神\"的精神。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0203",
+      "item_type": "choice",
+      "stem": "对《周亚夫军细柳》中加点词解释不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_zhouyafu"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"军霸上\"的\"军\"是名词作动词，意为\"驻军、驻扎\"；B 项解为\"军队\"错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"天子先驱至，不得入\"：先驱，汉代皇帝出行时前导的仪卫",
+        "B. \"以宗正刘礼为将军，军霸上\"：军，军队",
+        "C. \"介胄之士不拜，请以军礼见\"：介胄，甲胄，这里指戴甲穿盔的将士",
+        "D. \"军中闻将军令，不闻天子之诏\"：诏，皇帝发布的命令"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0204",
+      "item_type": "solve",
+      "stem": "将《周亚夫军细柳》中的句子译成现代汉语：\"介胄之士不拜，请以军礼见。\"",
+      "answer": "穿戴着盔甲的将士不行跪拜礼，请允许我以军礼参见（陛下）。",
+      "kps": [
+        "kp_chi8_zhouyafu"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"介胄\"：甲胄；\"请\"：谦辞；注意\"以军礼\"的方式状语。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0205",
+      "item_type": "solve",
+      "stem": "汉文帝为什么称周亚夫为\"真将军\"？",
+      "answer": "因为周亚夫治军严明、刚正不阿：细柳营中\"军中闻将军令，不闻天子之诏\"，连天子也必须按军规见礼；将士们\"被甲，锐兵刃，彀弓弩，持满\"。与霸上、棘门两营\"若儿戏耳\"对照，周亚夫确实\"不可得而犯也\"，这才是真将军、真将领。",
+      "kps": [
+        "kp_chi8_zhouyafu"
+      ],
+      "difficulty": 0.56,
+      "solution": "要结合对比（霸上、棘门）和细节（军容军令）两方面展开。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0208",
+      "item_type": "solve",
+      "stem": "杜牧《赤壁》\"东风不与周郎便，铜雀春深锁二乔\"表达了什么见解？",
+      "answer": "诗人观赤壁古战场遗物发出假设：倘若没有东风之便，周瑜未必能胜，东吴或许灭亡，二乔就会被掳到铜雀台。以小见大，以美人命运暗指国家兴亡，指出历史成败带有偶然性，也流露诗人对自己生不逢时、功业无成的感慨。",
+      "kps": [
+        "kp_chi8_poems5"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"以小见大\"（二乔与家国）、\"假设\"（东风）是关键；注意\"锁二乔\"的言外之意。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0209",
+      "item_type": "solve",
+      "stem": "仿写练习：模仿\"盼望着，盼望着，东风来了，春天的脚步近了\"的反复手法和句式，写两句话描述\"秋雨将至\"。",
+      "answer": "略（仿写句示例：\"盼望着，盼望着，云厚了，秋雨的脚步近了\"；写\"赶忙着，赶忙着，蝉声歇了，夏天的影子远了\"）。",
+      "kps": [
+        "kp_chi8_imitation"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：仿句在句式和修辞（反复、拟人）上与原句一致；意境切合\"秋雨\"特征，不违和；语言有节奏感；不改动原句、抄出的部分有新意。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0210",
+      "item_type": "choice",
+      "stem": "关于仿写，理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_imitation"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"抄一遍改几字\"不是仿写；仿写是借鉴范文的形式与写法写自己的内容。",
+      "source": "llm_generated",
+      "options": [
+        "A. 仿写要\"仿其形\"，关注句式、修辞、节奏等",
+        "B. 仿写要\"仿其神\"，领会原句的情感与气质",
+        "C. 好的仿写不是照搬原句，而是\"仿中有创\" ",
+        "D. 仿写就是把原句抄一遍，稍改几个字"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0211",
+      "item_type": "solve",
+      "stem": "请为身边的一位长辈（父母、祖辈或其他）写一篇小传。要求：事实基本属实，能通过两三件事表现人物的主要特点，600 字左右。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_biography"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：传主特点鲜明；有事例支撑且事实真实；叙事线索清楚；语言朴素得体，600 字左右，无真实校名人名。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0212",
+      "item_type": "choice",
+      "stem": "关于传记，说法正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_biography"
+      ],
+      "difficulty": 0.45,
+      "solution": "传记以\"真\"为第一，通过典型事例、言行细节刻画人物，不必面面俱到。",
+      "source": "llm_generated",
+      "options": [
+        "A. 写传记可以虚构人物的主要经历",
+        "B. 传记只写大人物的功绩，不写普通人的日常生活",
+        "C. 传记要求真实，通过典型事例表现人物，也可适当引用言行细节",
+        "D. 写传记就是记流水账，时间越全越好"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0213",
+      "item_type": "solve",
+      "stem": "请以《校园的早晨》（或《日落时分》）为题，写一段描写文字并扩展成一篇散文，600 字左右，注意抓住景物特征、多角度描写。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_scenery"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：景物特征抓得准（声音、光线、色彩、气味）；有层次、有顺序；修辞贴切；情景交融，600 字左右。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0214",
+      "item_type": "choice",
+      "stem": "\"借景抒情\"\"情景交融\"的说法，正确的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_scenery"
+      ],
+      "difficulty": 0.45,
+      "solution": "借景抒情是把感情融进景物描写之中，景中含情；衰败之景同样能抒情。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"枯藤老树昏鸦\"用衰败之景写游子之悲，是借景抒情",
+        "B. 写景就写景，抒情要靠结尾直接喊出来",
+        "C. 景与情只能各写一段，不能融合",
+        "D. 借景抒情只能写令人高兴的景"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0215",
+      "item_type": "solve",
+      "stem": "下面一段话顺序混乱，请重新排列并说明理由。\"①走进书店，各种书扑面而来。②那是离我家不远的一家小书店。③小时候，我最爱去的地方就是书店。④最后我在儿童读物前站了很久。⑤穿过一排排书架，我慢慢往里走。\"",
+      "answer": "③②①⑤④。先点明\"最爱去书店\"，再交代书店位置，接着写\"走进书店\"的总体印象，然后写\"穿过书架往里走\"，最后写\"在儿童读物前停留\"，由外到内、由总到分，顺序清楚，语言就连贯了。",
+      "kps": [
+        "kp_chi8_coherent"
+      ],
+      "difficulty": 0.45,
+      "solution": "连贯的\"法宝\"：围绕一个中心、按一定顺序、用好过渡性词语（\"走进\"\"穿过\"\"最后\"）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0216",
+      "item_type": "choice",
+      "stem": "要做到\"语言连贯\"，下列做法不恰当的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_coherent"
+      ],
+      "difficulty": 0.4,
+      "solution": "语言华丽并不等于连贯，反而容易因追求辞藻而意思脱节、重心漂移。",
+      "source": "llm_generated",
+      "options": [
+        "A. 前后叙述的角度（人称、顺序）保持一致",
+        "B. 注意句子之间的衔接与过渡",
+        "C. 围绕一个中心来组织句群",
+        "D. 多用华丽的辞藻和复杂的从句，才能显示水平"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0217",
+      "item_type": "solve",
+      "stem": "请选择一种自己熟悉的事物（如一种文具、一种家乡小吃、一座桥），写一篇说明文，600 字左右，要求抓住事物的特征。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_expository"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：说明对象特征抓得准、说得清；说明顺序合理（结构或制作流程）；至少用两种说明方法；语言准确简明；字数达标（600 字左右）。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0218",
+      "item_type": "choice",
+      "stem": "\"说明事物要抓住特征\"，下列理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_expository"
+      ],
+      "difficulty": 0.45,
+      "solution": "抓特征要抓住\"本质区别\"（功能、构造、原理），只写颜色形状是浮于表象。",
+      "source": "llm_generated",
+      "options": [
+        "A. 说明前要仔细观察、比较，找出事物与众不同之处",
+        "B. 只要把事物的颜色形状写出来就算抓住了特征",
+        "C. 说明要围绕特征选用恰当的顺序和方法",
+        "D. 特征是事物区别于其他事物的独特之处"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0219",
+      "item_type": "solve",
+      "stem": "下列场合的表达均不得体，请任选两处修改并说明理由：①约同学去图书馆，说\"你必须七点到\"；②向老师请教，说\"喂，你过来一下\"；③邀请同学参加生日会，说\"不来是孙子\"。",
+      "answer": "①改为\"麻烦你七点前到图书馆，好吗？\"，用商量语气；②改为\"老师，您好！我想向您请教一个问题，请问您现在方便吗？\"，用礼貌称呼和商量语气；③改为\"期待你来参加我的生日会\"，不用强迫或粗鄙语言。理由：说话要看对象、场合，注意身份和语气，尊重他人才得体。",
+      "kps": [
+        "kp_chi8_appropriate"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"得体\"三看：看对象（身份辈分）、看场合（正式与否）、看用语（敬辞谦辞、语气）",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0220",
+      "item_type": "choice",
+      "stem": "下列表达得体的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_appropriate"
+      ],
+      "difficulty": 0.4,
+      "solution": "得体要真诚、尊重、看对象；B 羞辱、C 唐突、D 失礼。",
+      "source": "llm_generated",
+      "options": [
+        "A. 到医院探望病人：\"您好些了吗？我们都很惦记您，您安心养病。\"",
+        "B. 劝同学迟到的同桌：\"你怎么又迟到了，真是懒到家了\"",
+        "C. 老师家访，学生对家长说：\"你来学校干嘛？\"",
+        "D. 托同学帮忙后不说谢谢，说\"这是你应该的\""
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0221",
+      "item_type": "solve",
+      "stem": "请用两三句话向同学讲述《西游记》中你最难忘的一个情节，要求讲清楚来龙去脉，能吸引听众。",
+      "answer": "示例：我最难忘\"三打白骨精\"：白骨精三次变化来骗唐僧，都被悟空的火眼金睛识破。唐僧误以为悟空滥杀无辜，硬要赶他走。读到这儿我又急又恨——急的是唐僧不辨真假，恨的是妖怪太狡猾。",
+      "kps": [
+        "kp_chi8_oral_tell"
+      ],
+      "difficulty": 0.4,
+      "solution": "讲述要\"有头有尾、有波澜、有感受\"，讲前先在心里列个提纲最稳妥。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0222",
+      "item_type": "solve",
+      "stem": "口语交际课上让你\"讲述一件成长中难忘的事\"。请写出你的讲述提纲（开头怎么说、中间讲什么、结尾怎么收）。",
+      "answer": "示例：开头用一句话概括事件并用悬念引入（\"那次我真的以为我要输了\"）；中间按起因、经过、结果讲，突出最紧张的一个片段；结尾谈这件事对我的影响（\"从那以后我明白，冷静比什么都重要\"）。",
+      "kps": [
+        "kp_chi8_oral_tell"
+      ],
+      "difficulty": 0.45,
+      "solution": "讲述提纲要\"凤头（引入）—猪肚（细节）—豹尾（感悟）\"，并标注详略。",
+      "source": "llm_generated",
+      "form": "applied-writing",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0223",
+      "item_type": "choice",
+      "stem": "关于《红星照耀中国》（又名《西行漫记》），说法正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_book_hongxing"
+      ],
+      "difficulty": 0.4,
+      "solution": "斯诺是美国记者；作品真实记录了他 1936 年在陕北苏区的采访，向全世界介绍中国共产党和红军，不是虚构小说。",
+      "source": "llm_generated",
+      "options": [
+        "A. 作者是英国记者斯诺",
+        "B. 作者是美国记者埃德加·斯诺，1936 年进入陕甘宁边区采访后写成",
+        "C. 这本书是一部虚构的小说",
+        "D. 斯诺在书中详细描写了上海租界的生活"
+      ],
+      "form": "connection",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0224",
+      "item_type": "choice",
+      "stem": "《红星照耀中国》中，关于红军人物的描绘，与原著不符的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_book_hongxing"
+      ],
+      "difficulty": 0.45,
+      "solution": "书中的彭德怀生活俭朴、性情爽朗、与士兵同甘共苦，深受爱戴，绝无\"贪生怕死\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 毛泽东被描述为博学、精力过人、对革命前途有坚定信念的领导人",
+        "B. 周恩来温文尔雅、头脑冷静，与斯诺进行了长谈",
+        "C. 彭德怀被描写成一个贪生怕死、高高在上的军官",
+        "D. 红军的将领和士兵一样过着艰苦朴素的生活"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0225",
+      "item_type": "solve",
+      "stem": "为什么说《红星照耀中国》\"让全世界了解了中国共产党\"？",
+      "answer": "因为它以外国记者的实地采访和亲眼所见，冲破国民党的新闻封锁，用事实报道了根据地军民的斗争、生活和领袖的形象：它的真实性和\"第三只眼\"的客观视角，使中国共产党的主张和红军的形象第一次准确地呈现在世界面前。",
+      "kps": [
+        "kp_chi8_book_hongxing"
+      ],
+      "difficulty": 0.5,
+      "solution": "关键词：\"真实报道\"\"客观视角\"\"冲破封锁\"，结合作品性质（纪实作品）作答。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0226",
+      "item_type": "choice",
+      "stem": "关于《昆虫记》的表述，正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_book_kunchong"
+      ],
+      "difficulty": 0.4,
+      "solution": "法布尔耗尽一生观察昆虫，写出\"昆虫的史诗\"；他不是达尔文（英国人，\"进化论的奠基人\"）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 作者是英国的达尔文",
+        "B. 这是一部记录昆虫情感的爱情小说",
+        "C. 全书只写了一种昆虫（蝉）",
+        "D. 作者是法国昆虫学家法布尔，全书共十卷，堪称\"昆虫的史诗\""
+      ],
+      "form": "connection",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0227",
+      "item_type": "choice",
+      "stem": "《昆虫记》中关于\"螳螂\"的写法，最能体现法布尔观察特点的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_book_kunchong"
+      ],
+      "difficulty": 0.45,
+      "solution": "法布尔的特点是长期耐心观察、用\"拟人化\"笔法写出昆虫的\"个性\"；A 项\"祈祷般的伪装、闪电般的攻击\"正是书中经典细节。",
+      "source": "llm_generated",
+      "options": [
+        "A. 写它捕食前\"像在祈祷\"般举起双臂、伪装诱敌，攻击时迅如闪电",
+        "B. 写它是昆虫界最美丽、最聪明的昆虫，无可挑剔",
+        "C. 写它从不伪装，总是正面进攻猎物",
+        "D. 写它对人类极度友好，会主动靠近人"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0228",
+      "item_type": "solve",
+      "stem": "法布尔为什么把昆虫写得像人一样有\"性情\"？这样的写法有什么好处？",
+      "answer": "因为他常年与昆虫相对，观察到了它们各具特色的\"行为逻辑\"（螳螂捕食时的伪装、蝉的地穴工程），便用拟人化的笔法写出来：既忠于科学观察，又让昆虫有了\"个性\"和趣味。这样写把科学与文学融为一体，既传播科学知识，又能唤起读者对生命的尊重与热爱。",
+      "kps": [
+        "kp_chi8_book_kunchong"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"拟人\"不是歪曲科学，而是帮助读者理解与共情，这是《昆虫记》的独特魅力。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0229",
+      "item_type": "choice",
+      "stem": "对鲁迅《社戏》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_shexi"
+      ],
+      "difficulty": 0.4,
+      "solution": "文中的戏并不好看（老旦唱个没完），\"我\"怀念的是双喜、阿发、六一公公的淳朴和月夜行船的美妙，不是戏本身。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章写\"我\"少年时代到赵庄看社戏的经历",
+        "B. \"我\"看到的那夜的戏非常精彩，让人百看不厌",
+        "C. \"我\"怀念的是那夜的人和景，而不是戏本身",
+        "D. 结尾说\"也不再看到那夜似的好戏\"，是说那夜的情味再难追寻"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0230",
+      "item_type": "solve",
+      "stem": "《社戏》写月夜航船一段被誉为\"小说的诗\"。请结合原文说说它的美在哪里。",
+      "answer": "写景：豆麦和水草的清香\"夹杂在水气中扑面的吹来\"，月色\"朦胧在这水气里\"，山淡得像奔涌而来——嗅觉、视觉、触觉交织，朦胧如画；写人：双喜、阿发等少年活泼机灵，\"骂\"里带亲；写情：少年们 \"载\" 着\"我\"的欣喜，连远山、渔火、笛声都带着童年的甜。景、人、情水乳交融，所以说它\"像诗\"。",
+      "kps": [
+        "kp_chi8_shexi"
+      ],
+      "difficulty": 0.45,
+      "solution": "分析要\"景+人+情\"结合，并各引一两处原文词汇，切忌空泛说\"很美\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0231",
+      "item_type": "fill",
+      "stem": "贺敬之《回延安》中，用比兴手法写出诗人回到延安时激动心情的句子是：\"手抓黄土我不放，____。\"",
+      "answer": "紧紧儿贴在心窝上",
+      "kps": [
+        "kp_chi8_huian"
+      ],
+      "difficulty": 0.4,
+      "solution": "陕北\"信天游\"的典型写法：上句起兴、下句抒情，黄土与心窝写尽对延安的深情。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0232",
+      "item_type": "solve",
+      "stem": "《回延安》采用\"信天游\"形式，两行一节、比兴铺陈，对抒情有什么好处？",
+      "answer": "信天游是陕北民歌，句式简短、节奏鲜明，两句一节，上句写物起兴，下句抒情——如\"树梢树枝树根根，亲山亲水有亲人\"\"羊羔羔吃奶眼望着妈，小米饭养活我长大\"。这样写回环往复、层层推进，既像放声歌唱，又把回到\"母亲\"延安的激动、感恩与欢庆表达得浓烈而质朴。",
+      "kps": [
+        "kp_chi8_huian"
+      ],
+      "difficulty": 0.45,
+      "solution": "分析要「形式（句式、节奏）+内容（比兴）+情感」三合一。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0233",
+      "item_type": "solve",
+      "stem": "《安塞腰鼓》为什么反复咏叹\"好一个安塞腰鼓！\"？",
+      "answer": "全文多次以\"好一个安塞腰鼓！\"独立成段（或放在段末），构成全文的感情线索与节奏支点：既是对后生们刚劲舞姿的由衷赞叹，又形成一唱三叹、层层递进的效果，让热烈的情绪在反复咏叹中推向高潮，也与腰鼓本身\"骤雨一样\"的节奏相呼应。",
+      "kps": [
+        "kp_chi8_saigu"
+      ],
+      "difficulty": 0.4,
+      "solution": "反复咏叹的作用=结构线索+情感递进+呼应内容。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0234",
+      "item_type": "choice",
+      "stem": "刘成章写\"后生们的胳膊、腿、全身，有力地搏击着，疾速地搏击着，大起大落地搏击着\"，对这种写法理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_saigu"
+      ],
+      "difficulty": 0.45,
+      "solution": "排比、反复和短句的选择是服从于内容和情感的，重复正是\"节奏\"与\"气势\"的需要，不是啰嗦。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用排比和反复增强鼓点的节奏感",
+        "B. \"搏击\"一词化静为动，写出后生的力量",
+        "C. 短句急促，与安塞腰鼓的鼓点相呼应",
+        "D. 这样写只是单纯为了凑字数，重复啰嗦"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0235",
+      "item_type": "solve",
+      "stem": "《灯笼》由\"灯笼\"联想到乡俗、亲情，又联想到霍去病\"匈奴未灭，何以家为\"，为什么会有这样的联想？",
+      "answer": "灯笼是乡俗与亲情的载体（村口挂灯、夜行有光、游子归家），是温暖的日常；由\"亮\"自然想到\"燎原之火\"\"挑灯看剑\"的将士，从而联想到霍去病\"匈奴未灭，何以家为\"的壮语——由个人亲情的温暖升华为家国的担当。小小的灯笼串起个人记忆与民族气节，情感由近及远、由家及国，愈发深沉。",
+      "kps": [
+        "kp_chi8_lantern"
+      ],
+      "difficulty": 0.45,
+      "solution": "散文\"形散神不散\"：抓主线（灯笼之\"光\"），说明联想如何层层推进。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0236",
+      "item_type": "choice",
+      "stem": "对吴伯箫《灯笼》理解不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_lantern"
+      ],
+      "difficulty": 0.4,
+      "solution": "《灯笼》的落脚点正是灯笼背后的人情、亲情与家国情怀，并不仅仅写用途。",
+      "source": "llm_generated",
+      "options": [
+        "A. 灯笼是贯穿全文的线索",
+        "B. 文章写了乡俗、亲情与家国情怀",
+        "C. 文章只写灯笼的用途，没有情感",
+        "D. 文章由灯笼联想到霍去病等历史名将，抒发了报国的志气"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0237",
+      "item_type": "choice",
+      "stem": "对竺可桢《大自然的语言》理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_dayu"
+      ],
+      "difficulty": 0.4,
+      "solution": "《大自然的语言》是事理说明文，说明\"物候现象的成因\"，用逻辑顺序而非季节时间顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"大自然的语言\"指草木荣枯、候鸟去来等物候现象",
+        "B. 介绍决定物候现象的因素，用的是由主到次的逻辑顺序",
+        "C. 文章举了\"杏花开了\"\"布谷鸟唱歌了\"等例子说明物候",
+        "D. 文章按时间顺序介绍了春夏秋冬四季更替的规律"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0238",
+      "item_type": "solve",
+      "stem": "\"如在早春三四月间，南京桃花要比北京早开二十天，但是到晚春五月初\"——这个例子用了什么说明方法？想说明什么？",
+      "answer": "用了作比较、列数字（举例子）的方法。将南京与北京的桃花开放时间相比，具体说明纬度的差异（南北温差）是影响物候的重要因素，使抽象的道理变得具体可感。",
+      "kps": [
+        "kp_chi8_dayu"
+      ],
+      "difficulty": 0.45,
+      "solution": "说明方法+说明对象（道理）=完整答案。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0239",
+      "item_type": "solve",
+      "stem": "《恐龙无处不有》中，作者由\"恐龙化石在寒冷的两极也曾被发现\"推出\"大陆曾经连成一片\"，这体现了科学研究怎样的思维方法？",
+      "answer": "体现了\"联系与推理\"的思维方法：科学家发现不同大洲的恐龙化石相似且分布极广，便把它与\"大陆漂移学说\"联系起来，由一个领域的事实推断另一个领域的规律——\"不同领域的科学发现可以互相启发、互相印证\"。这正是\"科学是相通的\"的体现。",
+      "kps": [
+        "kp_chi8_konglong"
+      ],
+      "difficulty": 0.4,
+      "solution": "抓住\"跨领域联系\"与\"逻辑推理\"两个关键词，结合文中具体事实作答。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0240",
+      "item_type": "choice",
+      "stem": "关于《被压扁的沙子》一文，说法正确的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_konglong"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"撞击说\"：巨大的陨石撞击造成极高压，斯石英就是撞击留下的证据；作者还谨慎地说这\"可能是\"——体现科学设想的严谨。",
+      "source": "llm_generated",
+      "options": [
+        "A. 斯石英\"被压扁的沙子\"只在极高压下才能形成，作者据此支持恐龙灭绝的\"撞击说\"",
+        "B. 文章认为恐龙灭绝完全是因为火山喷发",
+        "C. 文章证明恐龙从未灭绝，至今仍生活在地球上",
+        "D. 文章是一篇科幻小说，情节跌宕起伏"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0241",
+      "item_type": "fill",
+      "stem": "利奥波德《大雁归来》中，写大雁归来就是春天到来的句子是：\"____；____。\"",
+      "answer": "一只燕子的来临说明不了春天，但当一群大雁冲破三月暖流的雾霭时，春天就来到了",
+      "kps": [
+        "kp_chi8_dayan"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"冲破\"\"雾霭\"写出大雁的顽强；作者把大雁视为春天的信使。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0242",
+      "item_type": "solve",
+      "stem": "《大雁归来》中，作者为什么反对猎杀大雁，说它们是\"我们的客人\"？",
+      "answer": "因为大雁是顺乎自然、迁徙有序的生命：它们三月的归来、联合狩猎的聪慧、孤雁的哀鸣，既是春天的象征，也让人类感受到生命的亲密与灵动。把它们当作\"客人\"，体现的是尊重生命、与自然和谐相处的生态伦理——这正是《沙乡年鉴》的思想。",
+      "kps": [
+        "kp_chi8_dayan"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"客人\"是关键词：平等尊重而非人类中心；结合《沙乡年鉴》的生态观作答。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0243",
+      "item_type": "choice",
+      "stem": "对《时间的脚印》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_time"
+      ],
+      "difficulty": 0.4,
+      "solution": "本文用\"脚印\"比喻地球历史在岩石中的\"记录\"，不是人踩的脚印。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"时间的脚印\"指岩石记录的地质变迁与古代生物的痕迹（化石）",
+        "B. \"时间的脚印\"指人们用手在泥地上踩出的脚印",
+        "C. 文章说明了岩石可以\"记录\"时间的科学道理",
+        "D. 文章综合运用了设问、比喻等手法，语言生动"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0244",
+      "item_type": "solve",
+      "stem": "\"不要认为岩石是坚固不坏的。它无时无刻不经受着从各方面来的'攻击'\"一句用了什么方法？有什么效果？",
+      "answer": "拟人（\"攻击\"）加比喻，把阳光、空气、水、植物对岩石的风化侵蚀说成\"攻击\"，把看不见的地质作用写得像有生命的对手，既生动又准确；下文\"高山被剥层皮\"等表达同样通俗形象，让读者在具体画面中理解科学道理。",
+      "kps": [
+        "kp_chi8_time"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"科学+生动\"是本文语言的显著特点，分析要举出具体的词语。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0245",
+      "item_type": "fill",
+      "stem": "陶渊明《桃花源记》中，写桃花林优美景色的句子是：\"夹岸数百步，中无杂树，____，____。\"",
+      "answer": "芳草鲜美，落英缤纷",
+      "kps": [
+        "kp_chi8_taohuayuan"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"缤纷\"二字；\"落英\"指落花，为渔人发现桃源作铺垫。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0246",
+      "item_type": "solve",
+      "stem": "将《桃花源记》中的句子译成现代汉语：\"问今是何世，乃不知有汉，无论魏晋。\"",
+      "answer": "（他们）问现在是什么朝代，竟然不知道有过汉朝，更不必说魏朝和晋朝了。",
+      "kps": [
+        "kp_chi8_taohuayuan"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"何世\"：什么朝代；\"乃\"：竟然；\"无论\"：不要说，更不必说（古今异义）。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0247",
+      "item_type": "solve",
+      "stem": "《桃花源记》中，渔人\"处处志之\"，刘子骥\"规往\"却\"未果\"，作者这样写有什么用意？",
+      "answer": "渔人做标记却再也找不到，刘子骥这样的高士寻而不得，使桃花源变得若有若无、似真似幻。作者用这个\"不可复得\"的结尾强调：桃花源是作者心中的理想社会，它在污浊的现实里无处可寻；既表达对现实的失望，也强化了理想的美好与珍贵，余味悠长。",
+      "kps": [
+        "kp_chi8_taohuayuan"
+      ],
+      "difficulty": 0.5,
+      "solution": "\"亦真亦幻\"的结尾=强化理想的珍贵+对现实的含蓄批判。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0248",
+      "item_type": "choice",
+      "stem": "对《小石潭记》理解不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_xiaoshi"
+      ],
+      "difficulty": 0.4,
+      "solution": "作者的情绪由\"乐\"转\"悲\"：幽静冷寂的环境触动了他贬谪生活的孤凄，说\"始终快乐轻松\"错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章按\"发现小潭—潭中景物—小潭源流—潭上感受\"的顺序写",
+        "B. \"如鸣珮环\"写水声清脆，是未见其潭先闻其声",
+        "C. 文中作者的情感自始至终都是快乐轻松的",
+        "D. \"斗折蛇行，明灭可见\"用比喻写出溪流的曲折"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0249",
+      "item_type": "solve",
+      "stem": "柳宗元发现小石潭时\"心乐之\"，最后却\"凄神寒骨，悄怆幽邃\"，情感为什么会有这样的变化？",
+      "answer": "初闻水声\"如鸣珮环\"，见潭中鱼\"往来翕忽，似与游者相乐\"，他一时忘却贬谪之苦，所以\"心乐之\"；但久坐之后，寂寥无人、四面竹树环合、幽深冷寂的环境触动了他内心深处的孤凄——\"乐\"是暂时的、表面的，\"悲\"才是他贬谪生涯的底色。",
+      "kps": [
+        "kp_chi8_xiaoshi"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"由乐到悲\"的关键：环境之\"幽\"触发内心之\"凄\"，联系柳宗元的贬谪背景。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0250",
+      "item_type": "fill",
+      "stem": "柳宗元《小石潭记》中，写鱼儿好像在空中游动、无所依傍的句子是：\"潭中鱼可百许头，____。\"",
+      "answer": "皆若空游无所依",
+      "kps": [
+        "kp_chi8_xiaoshi"
+      ],
+      "difficulty": 0.45,
+      "solution": "侧面写水之清：\"空游\"写出水的透明，是全篇写水的点睛之笔。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0251",
+      "item_type": "solve",
+      "stem": "将《核舟记》中的句子译成现代汉语：\"罔不因势象形，各具情态。\"",
+      "answer": "没有一件不是就着木头原来的形状模拟各种事物的形象的，各有各的神情姿态。",
+      "kps": [
+        "kp_chi8_hezhou"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"罔不\"：无不、全都；\"因\"：顺着、就着；\"象\"：模拟。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0252",
+      "item_type": "choice",
+      "stem": "对《核舟记》中加点词解释不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_hezhou"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"了了\"是清清楚楚、分明可数的样子，形容字迹虽细却清晰，D 项解释成\"很少\"错误。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"尝贻余核舟一\"：贻，赠",
+        "B. \"神情与苏黄不属\"：不属，不相类似",
+        "C. \"其船背稍夷\"：夷，平",
+        "D. \"细若蚊足，钩画了了\"：了了，很少很少"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0253",
+      "item_type": "solve",
+      "stem": "作者写\"珠可历历数也\"并详写\"船背稍夷\"的题名，有什么用意？",
+      "answer": "详细写舟上的人、窗、佛印、念珠、题名与篆文，是为了突出王叔远\"奇巧\"：在\"径寸之木\"的核舟上，能刻五个人、八扇窗、篷、楫、炉、壶、手卷、念珠，连题名的字都\"细若蚊足，钩画了了\"。越写细节之微，越见技艺之高，\"技亦灵怪矣哉\"的赞叹也就顺理成章。",
+      "kps": [
+        "kp_chi8_hezhou"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"微中见奇\"：全部细节都服务于\"奇巧\"这一核心。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0254",
+      "item_type": "fill",
+      "stem": "《诗经·关雎》中，写男子求之不得、夜不能寐的句子是：\"悠哉悠哉，____。\"",
+      "answer": "辗转反侧",
+      "kps": [
+        "kp_chi8_shijing"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"悠哉\"写思念之长，\"辗转反侧\"写焦灼之态；注意\"辗转\"二字写法。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0255",
+      "item_type": "fill",
+      "stem": "《诗经·蒹葭》中，点明深秋时节（白露为霜）的句子是：\"蒹葭苍苍，____。所谓伊人，____。\"",
+      "answer": "白露为霜；在水一方",
+      "kps": [
+        "kp_chi8_shijing"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"苍苍\"写芦苇繁茂；\"伊人\"指那个人，\"在水一方\"是追寻而不可及的怅惘之源。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0256",
+      "item_type": "solve",
+      "stem": "《蒹葭》全诗三章只换少数词语（这种写法叫\"重章叠句\"），这样写有什么好处？",
+      "answer": "三章分别写\"白露为霜\"\"白露未晞\"\"白露未已\"，和\"溯洄从之\"\"溯游从之\"的反复出现，通过时间的推移（霜—晞—未已）和空间的转换（央—坻—沚），一层层渲染追寻的执着与道路的艰难，情意绵绵、一唱三叹；既保留诗歌的音乐性，又使情感在复沓中层层加深。",
+      "kps": [
+        "kp_chi8_shijing"
+      ],
+      "difficulty": 0.5,
+      "solution": "重章叠句的作用：层次递进+回环往复的音乐美+情感深化。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0257",
+      "item_type": "solve",
+      "stem": "闻一多在李公朴追悼会上质问特务\"今天，这里有没有特务？你站出来！是好汉的站出来！\"这样厉声质问，有什么表达效果？",
+      "answer": "面对敌人的暗杀，闻一多毫无惧色，当面揭穿、厉声质问，如当面掌掴无耻之徒：既表现了他大无畏的斗争精神和愤怒的激情，也号召听众认清敌人的本质，短促有力的反问（\"你站出来！\"）像匕首投枪，极具战斗性和鼓动性。",
+      "kps": [
+        "kp_chi8_zhuyan"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"现场感\"是分析演说的关键：对象是谁（特务、群众）、语气如何（厉声质问）、效果如何（震慑、鼓动）",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0258",
+      "item_type": "solve",
+      "stem": "\"我们不怕死，我们不牺牲，谁能牺牲？\"这句反问很有力量。请结合全文说说它的力量来自哪里。",
+      "answer": "来自讲演者在场的真实处境：敌人已经暗杀了李公朴，下一颗子弹可能对准他，他说\"前脚跨出大门，后脚就不准备再跨进大门\"。明知必死而不惧，为真理为人民慷慨赴死；反问句式又逼着听众和他一道抉择——正义与牺牲在此时此地成为最直接的拷问，所以格外有力量。",
+      "kps": [
+        "kp_chi8_zhuyan"
+      ],
+      "difficulty": 0.5,
+      "solution": "句子的力量=内容（视死如归）+语气（反问）+场合（特务在场）三者合一。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0259",
+      "item_type": "choice",
+      "stem": "关于丁肇中《应有格物致知精神》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_gewu"
+      ],
+      "difficulty": 0.4,
+      "solution": "丁肇中是美籍华裔物理学家，不是英国人；1976 年他与里希特同获诺贝尔物理学奖。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"格物致知\"出自《礼记·大学》，意思是推究事物的原理而获得知识",
+        "B. 丁肇中是英国物理学家，1976 年获诺贝尔奖",
+        "C. 文章认为中国学生应重视\"实验精神\"，即通过实践探察事物",
+        "D. 文章用王阳明\"格\"竹子失败和自己在实验室的经历作论据"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0260",
+      "item_type": "solve",
+      "stem": "丁肇中为什么用王阳明\"格竹\"的故事作论据？",
+      "answer": "王阳明对着竹子静坐\"格\"了七天七夜而病倒，说明他把\"格物致知\"当成静观冥想而不是实地考察，最终一无所获。用这个反面事例，从反面说明了\"真正的格物致知精神\"必须在\"实验\"中、在实地探察中才能获得，比单纯讲道理更有说服力。",
+      "kps": [
+        "kp_chi8_gewu"
+      ],
+      "difficulty": 0.45,
+      "solution": "论据作用要\"对着论点回答\"：反例→论证\"实验精神\"的必要。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0261",
+      "item_type": "choice",
+      "stem": "关于王选和他的演讲，说法正确的一项是（　　）",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_xuanze"
+      ],
+      "difficulty": 0.4,
+      "solution": "王选是著名计算机文字信息处理专家，\"当代毕昇\"；他谈的是人生抉择与\"扶植年轻人\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 王选是\"汉字激光照排系统\"的创始人和技术负责人，被誉为\"当代毕昇\"",
+        "B. 王选是文学家，写的是自己一生的文学创作",
+        "C. 王选认为选择越来越少，只要一条路走到底",
+        "D. 王选认为自己年轻时不如老一辈的科学家能干"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0262",
+      "item_type": "solve",
+      "stem": "王选说自己一生\"第六次重要抉择\"是\"扶植年轻人\"。联系全文，说说他为什么把扶植年轻人看得和几次技术抉择一样重要。",
+      "answer": "因为高新技术的竞争、一个学科的延续，靠的不是一个人，而是\"一代人\"。王选先生自己多次说如果没有团队，没有年轻人接棒，激光照排不可能成功；他把扶植年轻人看作让事业长盛、让\"人类智慧\"持续发光的抉择，体现了一位科学家的远见与胸襟。",
+      "kps": [
+        "kp_chi8_xuanze"
+      ],
+      "difficulty": 0.45,
+      "solution": "要结合\"团队\"\"接棒\"\"事业的长远\"作答，避免空谈\"谦虚\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0263",
+      "item_type": "choice",
+      "stem": "对《庆祝奥林匹克运动复兴25周年》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_aolinpike"
+      ],
+      "difficulty": 0.4,
+      "solution": "演讲发表于 20 世纪初，是庆祝奥林匹克运动\"复兴 25 周年\"（复兴始于 1894 年国际奥委会成立），不是 1894 年当时。",
+      "source": "llm_generated",
+      "options": [
+        "A. 演讲者是顾拜旦，被誉为\"现代奥林匹克之父\"",
+        "B. 演讲发表于 1894 年第一届现代奥运会举办时",
+        "C. 演讲阐述了奥林匹克主义和奥运精神的意义",
+        "D. 演讲面向国际奥委会及社会公众，语言庄重而有感召力"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0264",
+      "item_type": "solve",
+      "stem": "顾拜旦在演讲中说，奥林匹克精神不是\"奖牌与冠军\"的争夺，而是将全世界的青年\"聚集在一起\"。请结合演讲说说奥林匹克精神的内涵。",
+      "answer": "奥林匹克精神的内涵是和平、友谊、进步，是\"更快、更高、更强——更团结\"的追求。顾拜旦希望借体育把各国青年团结到一起，在公平竞争中相互理解、相互尊重；它超越胜负，指向人的全面发展与世界和平，这正是奥林匹克主义的理想。",
+      "kps": [
+        "kp_chi8_aolinpike"
+      ],
+      "difficulty": 0.45,
+      "solution": "回答要紧扣\"超越胜负、崇尚和平与团结、促进人的发展\"三个层次。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0265",
+      "item_type": "solve",
+      "stem": "梁衡写\"黄河在这里由宽而窄，由高到低，便有了气势\"，又说\"博大宽厚，柔中有刚；挟而不服，压而不弯；不平则呼，遇强则抗\"，这样写有什么深刻含义？",
+      "answer": "前一句写黄河的\"势\"，是自然之景；后几句借黄河写\"魂\"——那就是中华民族的精神：博大宽厚却又柔中有刚，受压而不服，遇强而敢抗。由景入理、借水喻人，把自然的瀑布升华成民族性格的象征，升华了文章主题。",
+      "kps": [
+        "kp_chi8_hukou"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"借物喻人\"（借黄河喻民族）是本文最大特色，答出由景到理的升华即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0266",
+      "item_type": "choice",
+      "stem": "对《壶口瀑布》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_hukou"
+      ],
+      "difficulty": 0.4,
+      "solution": "两次游历之所以都写，是因为感受不同、认识层层深入；不是简单重复。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章按\"枯水期—汛期\"两次游览壶口的经历组织材料",
+        "B. 作者两次所见之景感受相同，只是简单重复",
+        "C. \"洪流便向两边涌去，如千军万马\"用比喻写水势之猛",
+        "D. 文章由水势写到水石相击，再写黄河的\"性格\"与民族精神"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0267",
+      "item_type": "choice",
+      "stem": "对马丽华《在长江源头各拉丹冬》理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_ladandong"
+      ],
+      "difficulty": 0.4,
+      "solution": "本文是游记散文，既有真实见闻，也有强烈的主观感受与生命体验，不是只列数据的说明文。",
+      "source": "llm_generated",
+      "options": [
+        "A. 各拉丹冬是唐古拉山脉的主峰，是长江的源头",
+        "B. 文章是一篇说明文，只客观介绍雪山的地理数据",
+        "C. 作者写了自己在高原缺氧环境下的真实感受",
+        "D. 文章写\"冰塔林\"等景观，写出了雪域的神秘壮美"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0268",
+      "item_type": "solve",
+      "stem": "游记散文与说明文都写\"景物\"，二者有什么不同？请结合本文说一说。",
+      "answer": "说明文以\"说明\"为主，要求准确、客观，重事实与数据；游记散文以\"游\"与\"记\"为线，写自己的行踪、见闻与感受，主观色彩浓。《在长江源头各拉丹冬》写各拉丹冬的雪峰、冰塔林，同时写\"头痛得像要裂开\"\"呼吸变得短促\"的真实体感，是在壮美与艰险中感受生命的坚韧，所以动人。",
+      "kps": [
+        "kp_chi8_ladandong"
+      ],
+      "difficulty": 0.45,
+      "solution": "比较要抓住\"表现手法（说明 vs 记叙描写）+情感态度（客观 vs 主观）\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0269",
+      "item_type": "solve",
+      "stem": "马克·吐温笔下的车夫是怎样一个人？作者用幽默的笔法写他，有什么作用？",
+      "answer": "车夫健谈、自信又风趣：他吹嘘自己驾车如何稳当，\"说时迟那时快，我们的马车猛地一跃\"的险状却与他泰然的神情形成反差。作者一边吐槽自己的狼狈，一边极力夸赞车夫，自嘲式的幽默让险峻的山路变得妙趣横生，也写出旅途的新鲜感。",
+      "kps": [
+        "kp_chi8_bailang"
+      ],
+      "difficulty": 0.45,
+      "solution": "幽默=夸张+自嘲+反差；分析效果要落到人物性格与文章趣味。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0270",
+      "item_type": "choice",
+      "stem": "对《登勃朗峰》理解不正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_bailang"
+      ],
+      "difficulty": 0.4,
+      "solution": "作者笔调轻松幽默，对勃朗峰的奇景充满赞叹，绝不是\"最糟糕\"。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文章写\"我\"与仆人一同前往勃朗峰的见闻",
+        "B. 上山的路险峻，车夫却从容自信",
+        "C. 作者看到勃朗峰周围群峰的奇幻景象，有\"目之所及\"的惊叹",
+        "D. 作者一路抱怨旅途无趣，认为这是最糟糕的旅行"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0271",
+      "item_type": "choice",
+      "stem": "对阿来《一滴水经过丽江》的构思理解最恰当的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_yidishui"
+      ],
+      "difficulty": 0.4,
+      "solution": "\"一滴水\"是贯穿全篇的线索与叙述视角：它是融雪、是时光的见证人，串起丽江的雪山、森林、古城、四方街与市井生活。",
+      "source": "llm_generated",
+      "options": [
+        "A. 作者用\"一滴水\"作线索，只是为了让文章显得离奇",
+        "B. \"一滴水\"指玉龙雪山的融雪，从源头流到大海",
+        "C. 以一滴水从玉龙雪山出发、经过丽江古城的\"视线\"结构全篇，视角新颖，把丽江的历史与现实串成一幅流动的画",
+        "D. \"一滴水\"是作者的朋友，全文用第一人称写他的故事"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0272",
+      "item_type": "solve",
+      "stem": "《一滴水经过丽江》以\"一滴水\"的视角行文，有什么好处？",
+      "answer": "①视角新颖：一滴水\"有生命\"、有经历，既能上天（云雾）又能入地（地下水），自由穿越时空；②结构自由：不必受\"我\"脚步的限制，可以把丽江的自然风光、古城建筑、市井民俗与千年历史连为一体；③情感亲切：像一位老朋友娓娓道来，让丽江的美丽有了温度。",
+      "kps": [
+        "kp_chi8_yidishui"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"视角新颖\"是本文最大亮点，答出视角、结构、情感三个层面的好处。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0273",
+      "item_type": "solve",
+      "stem": "《北冥有鱼》中，大鹏\"水击三千里，抟扶摇而上者九万里\"的描写好在哪里？",
+      "answer": "以\"水击三千里\"写起飞时的磅礴气势，以\"抟扶摇而上九万里\"写直上云霄的伟力，数字夸张而气势恢宏；大鹏虽\"去以六月息\"，仍不失为\"志存高远\"的象征。想象雄奇、境界开阔，最能体现庄子散文\"汪洋恣肆、想象奇特\"的风格。",
+      "kps": [
+        "kp_chi8_zhuangzi"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"想象奇特+气势恢宏+风格\"是赏析庄子散文的三把钥匙。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0274",
+      "item_type": "solve",
+      "stem": "\"子非鱼，安知鱼之乐\"\"子非我，安知我不知鱼之乐\"，庄子与惠子的辩论各自\"赢\"在哪里？",
+      "answer": "惠子的逻辑是严密的：\"我非子，固不知子；子固非鱼，子之不知鱼之乐，全矣\"——按他的推理，庄子确实无法\"知鱼之乐\"。但庄子用\"请循其本\"把\"你怎么知道\"重新解读成\"你在哪里知道\"，答以\"我知之濠上也\"——他在濠上观鱼，见鱼\"出游从容\"而悠然自得其乐。庄子赢在\"境界\"：物我相融的超然；惠子赢在\"逻辑\"：严谨的思辨。",
+      "kps": [
+        "kp_chi8_zhuangzi"
+      ],
+      "difficulty": 0.56,
+      "solution": "要\"双赢\"式评价：惠子重逻辑，庄子重审美与超然，不能只说一方有理。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0275",
+      "item_type": "fill",
+      "stem": "《礼记·大道之行也》中，写大同社会人们各尽所能、各得所需的句子是：\"货恶其弃于地也，____；____，不必为己。\"",
+      "answer": "不必藏于己；力恶其不出于身也",
+      "kps": [
+        "kp_chi8_liji"
+      ],
+      "difficulty": 0.56,
+      "solution": "注意\"恶\"读 wù，是\"憎恶、厌恶\"；两句对举，写出\"公\"的境界。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0276",
+      "item_type": "solve",
+      "stem": "将《虽有嘉肴》中的句子译成现代汉语：\"故曰：教学相长也。\"",
+      "answer": "所以说：教与学是互相推动、互相促进的。",
+      "kps": [
+        "kp_chi8_liji"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"长\"：促进、增长。全文\"嘉肴弗食不知其旨\"类比\"至道弗学不知其善\"，以此推出\"教学相长\"。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0277",
+      "item_type": "solve",
+      "stem": "\"大道之行也，天下为公\"中的\"大同社会\"有哪些特征？作者描述这样的社会有怎样的理想色彩？",
+      "answer": "特征：①人人都受到社会关爱（\"不独亲其亲，不独子其子\"，老有所终、幼有所长、废疾者皆有所养）；②人人都能安居乐业（\"男有分，女有归\"）；③物尽其用、人尽其力（\"货不必藏于己，力不必为己\"）；④社会安定（\"盗窃乱贼而不作，外户而不闭\"）。\"天下为公\"的\"大同\"是儒家对理想社会的最高构想，在阶级社会里是实现不了的，但它至今仍是人类的美好愿景。",
+      "kps": [
+        "kp_chi8_liji"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"公\"是核心：\"天下为公\"；逐条引用原文作答最稳妥。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0278",
+      "item_type": "fill",
+      "stem": "韩愈《马说》中，写千里马悲惨遭遇的句子是：\"____，____，不以千里称也。\"",
+      "answer": "祗辱于奴隶人之手，骈死于槽枥之间",
+      "kps": [
+        "kp_chi8_mashuo"
+      ],
+      "difficulty": 0.56,
+      "solution": "注意\"祗\"\"骈\"\"槽枥\"写法；这句话写尽人才被埋没的悲哀。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0279",
+      "item_type": "solve",
+      "stem": "将《马说》中的句子译成现代汉语：\"策之不以其道，食之不能尽其才，鸣之而不能通其意。",
+      "answer": "用马鞭赶它，却不按照（驱使千里马的）正确方法；喂它，却不能让它竭尽才能；它鸣叫，却不能通晓它的意思。",
+      "kps": [
+        "kp_chi8_mashuo"
+      ],
+      "difficulty": 0.56,
+      "solution": "\"策\"：马鞭，这里作动词，用鞭子打；\"食\"：同\"饲\"，喂；\"尽其才\"：竭尽它的才能。",
+      "source": "llm_generated",
+      "form": "translation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0280",
+      "item_type": "solve",
+      "stem": "\"其真无马邪？其真不知马也！\"这一结尾有怎样的表达效果？",
+      "answer": "两个反问（一正一反）形成强烈的诘问：\"真的没有千里马吗？其实是真不识马啊！\"作者用斩截的语气，把矛头指向\"不知马\"的统治者，与开头\"世有伯乐，然后有千里马\"呼应，表达对埋没人才、摧残人才的愤懑与不平，余味无穷。",
+      "kps": [
+        "kp_chi8_mashuo"
+      ],
+      "difficulty": 0.56,
+      "solution": "反问+卒章显志；\"知\"\"不知\"之辨是全篇立论核心。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0281",
+      "item_type": "fill",
+      "stem": "杜甫《茅屋为秋风所破歌》中，表现诗人舍己为人、至死不悔的博大胸怀的句子是：\"____，____！\"",
+      "answer": "何时眼前突兀见此屋，吾庐独破受冻死亦足",
+      "kps": [
+        "kp_chi8_tangpoem3"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"突兀\"\"见\"（同\"现\"）；由自家茅屋被破想到天下寒士，情怀博大。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0283",
+      "item_type": "solve",
+      "stem": "杜甫《茅屋为秋风所破歌》从\"群童抱茅\"的怒到\"愿天下寒士俱欢颜\"的愿，情感是怎样转变的？",
+      "answer": "\"群童抱茅\"写诗人急怒而又无奈（\"唇焦口燥呼不得\"），叙自家之苦；但\"俄顷风定云墨色\"\"床头屋漏\"\"长夜沾湿\"之后，他推己及人，由\"吾庐独破\"想到\"天下寒士\"，于是\"安得广厦千万间，大庇天下寒士俱欢颜\"。由己及人、由苦入达，个人的苦难升华为对天下人的关怀，此即杜甫\"沉郁顿挫\"中的博大胸怀。",
+      "kps": [
+        "kp_chi8_tangpoem3"
+      ],
+      "difficulty": 0.5,
+      "solution": "关键：\"由己及人\"的胸怀+\"苦\"\"达\"（圣）的升华。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0284",
+      "item_type": "choice",
+      "stem": "下列各句的说明顺序，判断正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_explain_order"
+      ],
+      "difficulty": 0.4,
+      "solution": "B 项\"总—分\"\"由现象到成因\"是逻辑顺序；A、C 按年代是时间顺序，D 由外到内是空间顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. \"赵州桥建于隋代，卢沟桥建于金代\"是逻辑顺序",
+        "B. 《中国石拱桥》先总说石拱桥特点，再举赵州桥、卢沟桥两例，是逻辑顺序",
+        "C. 《恐龙无处不有》按恐龙生活的年代先后说明，是时间顺序",
+        "D. 介绍自家的房间由外到内，是逻辑顺序"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0285",
+      "item_type": "solve",
+      "stem": "说明顺序有哪几种？《中国石拱桥》\"石拱桥—赵州桥—卢沟桥—我国石拱桥成就\"的展开，属于哪一种？为什么？",
+      "answer": "有时间、空间、逻辑三种。《中国石拱桥》是逻辑顺序：先总说石拱桥\"形式优美、结构坚固\"的特点，再举两个典型例子具体说明，最后谈当代成就与复兴——\"总—分—总\"、由现象到发展，层层递进，符合人们的认识规律。",
+      "kps": [
+        "kp_chi8_explain_order"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"总—分\"\"由现象到事物发展\"都是逻辑顺序的常见形式。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0286",
+      "item_type": "solve",
+      "stem": "读《钢铁是怎样炼成的》《昆虫记》或本学期任何一部名著（课文亦可），写一篇读后感，600 字左右。要求：有\"感\"有\"悟\"，联系自身。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_review_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：\"读\"的内容简明扼要；\"感\"是核心、观点明确；能结合自身实际；结构完整（引—议—联—结），600 字左右。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0287",
+      "item_type": "choice",
+      "stem": "关于写读后感，理解不正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_review_write"
+      ],
+      "difficulty": 0.45,
+      "solution": "\"复述全书\"是内容梗概，不是读后感；\"感点集中\"\"联系实际\"才是重点。",
+      "source": "llm_generated",
+      "options": [
+        "A. 读后感的重点是\"感\"，不是复述全书情节",
+        "B. 读后感要把全书从头到尾复述一遍",
+        "C. 感点要集中，最好抓住一处最触动自己的内容",
+        "D. 感想要联系自身实际，才真实深刻"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0288",
+      "item_type": "solve",
+      "stem": "以\"书香伴我成长\"为题，写一篇演讲稿（600 字左右）。要求：观点明确，有针对性，语言有感染力。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_speech_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：观点鲜明、针对听众；有称呼、开场白，结构清晰；用事实或名言作论据；语言有感染力（呼告、排比等），600 字左右。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0289",
+      "item_type": "choice",
+      "stem": "撰写演讲稿，下列做法不恰当的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_speech_write"
+      ],
+      "difficulty": 0.45,
+      "solution": "演讲稿要\"上口入耳\"，深奥冗长、书面腔浓的表达反而疏远听众。",
+      "source": "llm_generated",
+      "options": [
+        "A. 有鲜明的观点，并围绕观点选择材料",
+        "B. 开头有称呼、开场白，结尾有收束语",
+        "C. 语言越深奥、句子越长，越能显示水平",
+        "D. 适当用排比、呼告、设问增强感染力"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0290",
+      "item_type": "solve",
+      "stem": "以《游____》（横线上可填一处你游览过的名胜或一处难忘的地方）为题，写一篇游记，600 字左右。要求：交代游踪，详略得当，情景交融。",
+      "answer": "略（作文，见评分要点）",
+      "kps": [
+        "kp_chi8_travel_write"
+      ],
+      "difficulty": 0.4,
+      "solution": "评分要点：游踪清楚（移步换景，交代行止）；详略得当，重点景致写详；写景兼有感受，情景交融；结构完整；字数达标（600 字左右）。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0291",
+      "item_type": "choice",
+      "stem": "关于游记，说法正确的一项是（　　）",
+      "answer": "D",
+      "kps": [
+        "kp_chi8_travel_write"
+      ],
+      "difficulty": 0.45,
+      "solution": "游记三要素：游踪、景观、感受；\"移步换景\"是最常见的写法。",
+      "source": "llm_generated",
+      "options": [
+        "A. 游记就是把景点说明书抄下来",
+        "B. 写游记只能按时间顺序，不能写感受",
+        "C. 游记只要写景，不必交代游踪",
+        "D. 游记要交代游踪线索，写景与感受结合，有所取舍"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0292",
+      "item_type": "choice",
+      "stem": "关于朱自清《经典常谈》，说法正确的一项是（　　）",
+      "answer": "B",
+      "kps": [
+        "kp_chi8_book_jingdian"
+      ],
+      "difficulty": 0.4,
+      "solution": "《经典常谈》共 13 篇，依次介绍《说文解字》《周易》《尚书》《诗经》、三礼、《春秋》三传、四书、《战国策》《史记》《汉书》、诸子、辞赋、诗、文，是\"以浅近语言谈古\"的入门书。",
+      "source": "llm_generated",
+      "options": [
+        "A. 这是一部分析现代文学流派的理论著作",
+        "B. 全书共 13 篇，用通俗流畅的语言向读者介绍中国古代经典",
+        "C. 全书只研究《诗经》一部经典",
+        "D. 这是一本供专业学者使用的高深学术专著"
+      ],
+      "form": "connection",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0293",
+      "item_type": "solve",
+      "stem": "为什么要用\"常谈\"而不是\"概论\"或\"研究\"为书名？这体现了作者怎样的写作姿态？",
+      "answer": "\"常谈\"是\"平常地谈\"，也就是用聊天般亲切、不居高临下的语气谈那些高深的经典；它不像\"概论\"那样板着面孔罗列知识，也不像\"研究\"那样堆砌考据。作者希望把经典介绍给普通人、特别是中学生，体现了他\"把学问写得人人可读\"的良苦用心和平易近人的姿态。",
+      "kps": [
+        "kp_chi8_book_jingdian"
+      ],
+      "difficulty": 0.45,
+      "solution": "回答要扣住\"读者对象（普通读者/中学生）\"与\"语言风格（通俗浅显）\"。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0294",
+      "item_type": "fill",
+      "stem": "《钢铁是怎样炼成的》中，主人公保尔·柯察金在烈士墓前有一段关于生命意义的名言：人最宝贵的是生命……不因虚度年华而悔恨，也不因碌碌无为而羞愧——他要在临死的时候说：\"我的整个生命和全部的精力，____。\"",
+      "answer": "都已献给了世界上最壮丽的事业——为人类的解放而斗争",
+      "kps": [
+        "kp_chi8_book_gangtie"
+      ],
+      "difficulty": 0.4,
+      "solution": "注意\"解放\"的写法；这段名言是全书的灵魂，也塑造了保尔的形象。",
+      "source": "llm_generated",
+      "form": "connection",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0295",
+      "item_type": "choice",
+      "stem": "对《钢铁是怎样炼成的》理解不正确的一项是（　　）",
+      "answer": "C",
+      "kps": [
+        "kp_chi8_book_gangtie"
+      ],
+      "difficulty": 0.45,
+      "solution": "保尔经历过战场负伤、疾病缠身、全身瘫痪、双目失明等重重打击，\"钢铁\"是在不幸与斗争中炼成的。",
+      "source": "llm_generated",
+      "options": [
+        "A. 保尔在朱赫来的引导下走上革命道路",
+        "B. 保尔即使全身瘫痪、双目失明，仍坚持写作，重返\"战斗\"行列",
+        "C. 保尔的成长过程一帆风顺，从未遇到任何挫折",
+        "D. 作品表现了坚定的革命信念和钢铁般的意志"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_chi_jr_0296",
+      "item_type": "solve",
+      "stem": "结合保尔在病榻上完成小说的情节，说说\"钢铁\"是怎样\"炼成\"的。",
+      "answer": "\"钢铁\"既是比喻：一个人的意志要像钢铁一样坚硬。保尔的身体被伤病\"击溃\"（瘫痪、失明），但他没有向命运低头，而是以笔为武器继续战斗，在病榻上写作《暴风雨所诞生的》。由此可见：钢铁的意志不是天生的，是在与困难、疾病、绝望的斗争中锤炼出来的，理想与信念是这股力量的源泉。",
+      "kps": [
+        "kp_chi8_book_gangtie"
+      ],
+      "difficulty": 0.5,
+      "solution": "回答要扣住\"病榻与写作\"这一具体情节和\"意志\"的锤炼过程。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0409",
+      "item_type": "choice",
+      "stem": "《首届诺贝尔奖颁发》报道的核心事实是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_nobel"
+      ],
+      "difficulty": 0.4,
+      "solution": "消息导语点明核心事实：首届诺贝尔奖于 1901 年 12 月 10 日（诺贝尔逝世五周年）颁发，瑞典国王和王后出席并在斯德哥尔摩颁发。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1901 年 12 月 10 日，即诺贝尔逝世 5 周年纪念日，首次颁发了诺贝尔奖",
+        "B. 诺贝尔出生在瑞典",
+        "C. 诺贝尔发明了炸药并获得专利",
+        "D. 诺贝尔奖奖金来自瑞典国王的拨款"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0410",
+      "item_type": "solve",
+      "stem": "根据课文回答：诺贝尔遗嘱中设立了哪几个奖项？设立奖项的目的（遗愿）是什么？",
+      "answer": "示例：设立了物理学、化学、生理学或医学、文学、和平五个奖项（其中和平奖由挪威议会评定）。目的：奖励“前一年为人类作出最大贡献的人”，将遗产利息作为奖金，鼓励造福人类的科学文化事业。",
+      "kps": [
+        "kp_chi8_nobel"
+      ],
+      "difficulty": 0.44,
+      "solution": "准确提取新闻关键信息：奖项设置与遗愿。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0411",
+      "item_type": "solve",
+      "stem": "这则消息的标题、导语、主体各交代了什么？用一句话概括每部分的内容。",
+      "answer": "示例：标题——首届诺贝尔奖颁发（事件）；导语——瑞典国王和挪威诺贝尔基金会今天首次颁发了诺贝尔奖（时间、机构、事件）；主体——获奖者名单及各自的贡献、奖金来源与分配。",
+      "kps": [
+        "kp_chi8_nobel"
+      ],
+      "difficulty": 0.42,
+      "solution": "按消息结构（标题—导语—主体）提取信息，是新闻阅读的基本功。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0412",
+      "item_type": "choice",
+      "stem": "拟消息标题最基本的要求是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_news_write"
+      ],
+      "difficulty": 0.38,
+      "solution": "消息标题要准确、凝练、醒目，概括新闻核心事实；导语交代时间地点事件结果，主体按重要性递减安排。",
+      "source": "llm_generated",
+      "options": [
+        "A. 用最简明的语言概括最重要的事实，醒目传神",
+        "B. 用抒情优美的长句子",
+        "C. 只写“我校开运动会”几个字也不管事实",
+        "D. 把标题写成悬念小说的开头"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0413",
+      "item_type": "solve",
+      "stem": "给下面消息拟一个标题：10 月 15 日下午，我校在操场举行秋季运动会开幕式，48 个班级近两千名学生参加了广播操比赛和入场式表演，校长宣布运动会开幕。",
+      "answer": "示例：《我校秋季运动会开幕　两千学子精彩亮相》（或：我校举行秋季运动会开幕式）",
+      "kps": [
+        "kp_chi8_news_write"
+      ],
+      "difficulty": 0.44,
+      "solution": "标题＝人物/单位＋核心事件，简洁醒目；次要信息留给导语。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0414",
+      "item_type": "solve",
+      "stem": "写一则简短消息：报道班级（学校）最近开展的一项活动（如朗诵比赛、志愿服务）。要求有标题、导语（时间地点事件结果）、主体（重要事实在前），语言准确客观，120 字左右。",
+      "answer": "示例：我班举行“金秋诗韵”朗诵比赛\n10 月 20 日下午，我班在教室举行“金秋诗韵”朗诵比赛，42 名同学观摩，10 组选手参赛。比赛由班委主办，语文老师担任评委。选手们朗诵了《沁园春·长沙》《再别康桥》等作品，第三组同学配乐朗诵《黄河颂》获得一等奖。老师点评说，活动展示了同学们的朗读水平，也加深了大家对诗歌的理解。比赛在掌声中圆满结束。",
+      "kps": [
+        "kp_chi8_news_write"
+      ],
+      "difficulty": 0.48,
+      "solution": "消息三要求：标题醒目、导语四要素、倒金字塔主体，语言客观简洁。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0415",
+      "item_type": "choice",
+      "stem": "《首届诺贝尔奖颁发》中写德国科学家伦琴“发现了 X 射线（也称伦琴射线）”，括号内的补充体现新闻语言的什么特点？",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_news_lang"
+      ],
+      "difficulty": 0.42,
+      "solution": "新闻语言准确、客观、简洁：括号补充确保信息严密无误，是“准确”的体现。",
+      "source": "llm_generated",
+      "options": [
+        "A. 准确——对关键信息作严密补充说明，避免歧义",
+        "B. 罗嗦，应当删去",
+        "C. 抒情性强",
+        "D. 追求华丽辞藻"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0416",
+      "item_type": "solve",
+      "stem": "比较：“我国发射了一颗卫星”和“10 月 16 日 0 时 23 分，我国在西昌卫星发射中心用长征二号丙运载火箭成功发射遥感三十六号卫星”。后一句为什么更符合新闻语言的要求？",
+      "answer": "示例：后一句具备准确的时间（日时分）、地点（发射中心）、事件（运载火箭型号、卫星名称）和结果（成功发射），表述严密、信息完整、不含糊；前一句时间地点缺位、对象笼统，不合新闻语言的准确性要求。",
+      "kps": [
+        "kp_chi8_news_lang"
+      ],
+      "difficulty": 0.44,
+      "solution": "体会新闻语言对数字、时间、地点准确表述的追求。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0417",
+      "item_type": "solve",
+      "stem": "下面一句是报道事实还是主观评价？说明理由：“赛场上的他简直像换了一个人，太了不起了！”",
+      "answer": "示例：这是主观评价（抒情议论）。“简直像换了一个人”“太了不起了”是作者的赞叹，没有交代具体表现。新闻要以事实说话，可改为客观陈述：“他本场比赛得到 38 分，抢下 12 个篮板。”",
+      "kps": [
+        "kp_chi8_news_lang"
+      ],
+      "difficulty": 0.42,
+      "solution": "分清客观报道与主观评价，感受新闻语言的表达分寸。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0418",
+      "item_type": "choice",
+      "stem": "《回忆我的母亲》回忆了母亲多方面的事，贯穿其中的主线是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_mother"
+      ],
+      "difficulty": 0.42,
+      "solution": "文章按时间顺序回忆母亲勤劳简朴、宽厚仁慈的一生：针线活、煮饭、挑水、逃荒租地……“勤劳”是全文主线。",
+      "source": "llm_generated",
+      "options": [
+        "A. 母亲勤劳的一生——“整日劳碌着”，煮饭、种田、养蚕、纺线样样能干",
+        "B. 母亲严厉管教“我”读书",
+        "C. 母亲游山玩水",
+        "D. 母亲参加革命工作"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0419",
+      "item_type": "solve",
+      "stem": "文末“母亲教给我与困难作斗争的经验……她教给我生产的知识和革命的意志，鼓励我以后走上革命的道路。”这些议论抒情的句子在记叙中起什么作用？",
+      "answer": "示例：在记叙描写的基础上穿插议论抒情，点明母亲对“我”的教育和影响，把对母亲的感谢上升到“尽忠于民族和人民、尽忠于党”的报答，深化了文章主题，情感真挚深沉。",
+      "kps": [
+        "kp_chi8_mother"
+      ],
+      "difficulty": 0.46,
+      "solution": "学习记叙中穿插议论抒情的表达方式及其作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0420",
+      "item_type": "solve",
+      "stem": "从“母亲最大的特点是一生不曾脱离过劳动……直到临死前，还在灶房里转”一句中，你读出一位怎样的母亲？结合全文说说作者对母亲的感情。",
+      "answer": "示例：一位勤劳一生、热爱劳动、坚韧朴实的中国农村母亲。作者对母亲怀有深情的回忆与哀思，更怀着感激与崇敬——母亲的美德和教诲给了“我”革命的意志；报答母亲深恩的方式是尽忠于民族和人民。",
+      "kps": [
+        "kp_chi8_mother"
+      ],
+      "difficulty": 0.44,
+      "solution": "抓关键句分析母亲形象与作者的双重感情（哀思＋敬重）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0421",
+      "item_type": "choice",
+      "stem": "《列夫·托尔斯泰》前半部分极写托尔斯泰长相粗劣（多毛、失调、平庸甚至愚钝），后半部分却盛赞他的眼睛。这种写法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_liefu"
+      ],
+      "difficulty": 0.44,
+      "solution": "前半写须发浓密、面部粗劣为“抑”，后半写眼光犀利、蕴含丰富感情为“扬”，欲扬先抑突出眼睛是灵魂的窗户。",
+      "source": "llm_generated",
+      "options": [
+        "A. 欲扬先抑——先抑外貌之“丑”，后扬目光之“神”，反差中突出精神世界的伟大",
+        "B. 前后矛盾",
+        "C. 对比论证论点",
+        "D. 倒叙手法"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0422",
+      "item_type": "solve",
+      "stem": "文中写托尔斯泰的目光“像枪弹穿透了伪装的甲胄，像金刚刀切开玻璃”。这两个比喻写出目光怎样的特点？",
+      "answer": "示例：写出目光的犀利精准——能洞察一切、撕开伪装、直抵人心最深处；这正是托尔斯泰作为清醒的现实主义作家审视社会与灵魂的写照，与其平庸的外貌形成强烈反差。",
+      "kps": [
+        "kp_chi8_liefu"
+      ],
+      "difficulty": 0.46,
+      "solution": "体会比喻、夸张对表现人物精神世界的作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0423",
+      "item_type": "solve",
+      "stem": "作者说托尔斯泰“可以任意支配整个世界及其知识财富”却又“肯定缺少一样东西，那就是属于自己的那一份幸福”。怎样理解这句话？",
+      "answer": "示例：托尔斯泰目光能看透社会与人心，拥有影响世界的精神力量；但正因为他看得太透，看清了俄国社会的黑暗与人民的苦难，又无法闭上眼睛，因而终生痛苦、忧虑，难获个人的安宁与幸福。这是伟人“清醒的痛苦”，作者充满敬仰与同情。",
+      "kps": [
+        "kp_chi8_liefu"
+      ],
+      "difficulty": 0.44,
+      "solution": "理解评传结尾的深意：清醒者以痛苦为代价。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0424",
+      "item_type": "choice",
+      "stem": "《美丽的颜色》标题“美丽的颜色”指的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_marie"
+      ],
+      "difficulty": 0.42,
+      "solution": "“美丽的颜色”一语双关：既是镭盐在黑暗中幽幽闪烁的蓝色荧光，也是科学发现之美、居里夫妇以苦为乐的精神之美。",
+      "source": "llm_generated",
+      "options": [
+        "A. 镭在黑暗中发出的略带蓝色的荧光——凝结着居里夫妇艰辛与快乐的光",
+        "B. 居里夫人衣服的颜色",
+        "C. 实验室墙壁的油漆",
+        "D. 巴黎街头的霓虹灯"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0425",
+      "item_type": "solve",
+      "stem": "居里夫妇提炼镭的条件是怎样的？文中引用居里夫人的原话（“我们没有钱，没有实验室……我们的生活是艰苦的”）有什么作用？",
+      "answer": "示例：条件极其简陋——漏雨的木板棚屋、简陋的设备，用大铁锅一锅锅熬炼，历时三年九个月，处理数吨沥青铀矿渣，最终得到 0.3 克镭。引用原话增强纪实性（真实性），居里夫人平淡的语气更显其对科学的执着与淡泊名利。",
+      "kps": [
+        "kp_chi8_marie"
+      ],
+      "difficulty": 0.46,
+      "solution": "了解提炼镭的艰辛过程，体会引用在纪实作品中的作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0426",
+      "item_type": "solve",
+      "stem": "“玛丽和皮埃尔·居里在寒夜走进棚屋，看镭在黑暗中发出微光”的情景为什么感人？从人物精神角度谈谈你的理解。",
+      "answer": "示例：在整整四十五个月的艰辛之后，夫妇俩像看孩子一样凝望那一点蓝光——苦役般的劳动换来的是纯粹的喜悦。他们不求名利（拒绝申请镭的专利），以发现本身为幸福，这种以苦为乐、献身科学的精神令“美丽的颜色”格外动人。",
+      "kps": [
+        "kp_chi8_marie"
+      ],
+      "difficulty": 0.44,
+      "solution": "体会居里夫人对科学的执着与淡泊，感悟人物精神。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0427",
+      "item_type": "choice",
+      "stem": "《白杨礼赞》中白杨树象征的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_poplar"
+      ],
+      "difficulty": 0.44,
+      "solution": "白杨树象征北方农民，象征敌后抗日根据地军民朴质、坚强、力求上进的精神，托物言志、借树颂人。",
+      "source": "llm_generated",
+      "options": [
+        "A. 北方的农民和敌后抗日军民朴质、坚强、力求上进的精神",
+        "B. 南方的榕树",
+        "C. 园林工人",
+        "D. 单纯的一种杨树"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0428",
+      "item_type": "solve",
+      "stem": "文章连用四个反问句“难道你就只觉得它只是树？……”由树及人、层层递进。这组反问有什么作用？",
+      "answer": "示例：四个反问一句进一层：由树想到农民，想到守卫家乡的哨兵，想到民族精神在敌后“并联”生长；语气强烈，感情激越，把对白杨的赞美推向对北方军民的礼赞，点明象征意义，深化主旨。",
+      "kps": [
+        "kp_chi8_poplar"
+      ],
+      "difficulty": 0.46,
+      "solution": "体会排比反问、欲扬先抑等手法与激越的感情。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0429",
+      "item_type": "solve",
+      "stem": "作者写楠木“那也是直挺秀颀的”，却说要“去鄙视它”。这样写用意何在？",
+      "answer": "示例：以贵族化的楠木反衬白杨——楠木象征国民党反动派中“贵族”式的所谓精英，姿态优雅却不能代表民众的力量；鄙视楠木正是对比中突出白杨（北方军民）的平凡伟大，爱憎分明，强化礼赞。",
+      "kps": [
+        "kp_chi8_poplar"
+      ],
+      "difficulty": 0.44,
+      "solution": "理解对比反衬对象征表意的作用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0430",
+      "item_type": "choice",
+      "stem": "严文井《永久的生命》对生命的基本观点是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_prose_two"
+      ],
+      "difficulty": 0.42,
+      "solution": "文章先感慨个体生命短暂，再写生命“充满着希望，永不休止地繁殖着”，以整体的永久反观个体的有限，礼赞生命。",
+      "source": "llm_generated",
+      "options": [
+        "A. 个体的生命有限，但生命整体永远生机勃勃、永久流转，应当赞美生命",
+        "B. 生命毫无意义",
+        "C. 人可以长生不老",
+        "D. 只有植物的生命永久"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0431",
+      "item_type": "solve",
+      "stem": "罗素《我为什么而活着》说支配他一生的三种激情是什么？说说这三种激情之间的关系。",
+      "answer": "示例：对爱情的渴望、对知识的追求、对人类苦难不可遏制的同情。前两者把罗素引上九天揽月（美好与智慧），同情又把他带回人间（苦难的世界）；他渴望减轻苦难却不总能做到，所以“我觉得我值得为它活”——三种激情构成崇高而痛苦、充实的一生。",
+      "kps": [
+        "kp_chi8_prose_two"
+      ],
+      "difficulty": 0.46,
+      "solution": "把握哲理散文的思路与情感（伟大的人格境界）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0432",
+      "item_type": "solve",
+      "stem": "两篇散文都谈“生命与人生的价值”，写法上一个重比喻说理、一个重直陈激情。请各摘一处你欣赏的语句并写一句点评。",
+      "answer": "示例：《永久的生命》——作者写地面上小草年年枯荣、逢春又生，以此喻生命的延续与更新（借最平常的小草说最深的哲理，语言浅显而意蕴深长，属借物说理）；《我为什么而活着》——“对人类苦难不可遏制的同情”（直陈激情，不借景不绕弯，感情如瀑布倾泻，人格力量扑面而来）。（可另择作品、另摘语句，点评能落到“怎么写”与“为何动人”即可，答案可多样）",
+      "kps": [
+        "kp_chi8_prose_two"
+      ],
+      "difficulty": 0.44,
+      "solution": "比较两篇哲理散文的语言与说理方式：一篇借物说理（意象＋感悟），一篇直陈激情（直抒胸臆）；摘句必须准确，点评要落到“用了什么写法、表达出怎样的思想感情”。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0433",
+      "item_type": "choice",
+      "stem": "《昆明的雨》全文的线索与情感基调是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_kunming"
+      ],
+      "difficulty": 0.42,
+      "solution": "开篇即言“我想念昆明的雨”，串起仙人掌、菌子、杨梅、缅桂花、苗家女孩、与德熙喝酒等小事，情味淡而有味。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以“我想念昆明的雨”为情感线索，写雨中菌子、杨梅、缅桂花和友人小酌，怀念中含着明亮、丰满的暖意",
+        "B. 以雨的大小变化为线索，写洪灾",
+        "C. 以游踪为线索的导游词",
+        "D. 冷峻批判昆明的气候"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0434",
+      "item_type": "solve",
+      "stem": "写牛肝菌“滑，嫩，鲜，香，很好吃”，干巴菌“乍一看那样子，真叫人怀疑……入口便会使你张目结舌”。这种语言有什么特色？",
+      "answer": "示例：平淡质朴又幽默风趣、如话家常——短句白描，似贬实褒（说干巴菌“像个被踩破的马蜂窝”再翻出“人间至味”），口语中见真切的生活之爱与对昆明的深情。",
+      "kps": [
+        "kp_chi8_kunming"
+      ],
+      "difficulty": 0.45,
+      "solution": "体会汪曾祺“淡而有味”的语言风格。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0435",
+      "item_type": "solve",
+      "stem": "写作片段：学习《昆明的雨》以小物小事写情的方法，写家乡（或你生活的地方）的一种吃食或景物，表达怀念之情（五六句话）。",
+      "answer": "示例：我想念外婆家的槐花。五月的风一吹，满树槐花像落了一场香雪。外婆用长竿绑上铁钩捋下花来，和上面粉蒸成槐花麦饭，掀开锅盖，甜香扑了满屋。如今街口也有卖槐花的，我却总觉着少了点什么——大概是竿子起落间，外婆仰头笑的样子吧。",
+      "kps": [
+        "kp_chi8_kunming"
+      ],
+      "difficulty": 0.46,
+      "solution": "学“以小见大、淡而有味”：择一物一事，白描传情。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0436",
+      "item_type": "choice",
+      "stem": "《中国石拱桥》介绍赵州桥时写“大拱长达 37.4 米，当时可算是世界上最长的石拱”。这用的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_bridge"
+      ],
+      "difficulty": 0.44,
+      "solution": "“37.4 米”列数字准确，“当时可算是世界最长”作比较（与同类事物比），突出赵州桥设计施工的杰出。",
+      "source": "llm_generated",
+      "options": [
+        "A. 列数字、作比较——用准确数据并与世界长拱比较，突出其建造水平之高",
+        "B. 打比方、拟人",
+        "C. 分类别、下定义",
+        "D. 举例子、引资料"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0437",
+      "item_type": "solve",
+      "stem": "文章先总说中国石拱桥的特点，再以赵州桥、卢沟桥为例具体说明。这样“由一般到个别”的安排有什么好处？",
+      "answer": "示例：先概括（形式优美、结构坚固、历史悠久），再用两个典型例子（独拱的赵州桥、联拱的卢沟桥）分说印证，一般与个别结合，条理清楚、说明有据，读者既知全貌又见细节。",
+      "kps": [
+        "kp_chi8_bridge"
+      ],
+      "difficulty": 0.46,
+      "solution": "理清逻辑顺序（由一般到个别）与举例的典型性。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0438",
+      "item_type": "solve",
+      "stem": "结合课文内容，说说卢沟桥“历史悠久”体现在哪里？它还因为什么事件而具有纪念意义？",
+      "answer": "示例：卢沟桥修建于 1189—1192 年（金朝），至今八百多年，桥身坚固如初——“历史悠久”；1937 年“七七事变”（卢沟桥事变）在此爆发，它成为中华民族全面抗战的历史见证，故有纪念意义。",
+      "kps": [
+        "kp_chi8_bridge"
+      ],
+      "difficulty": 0.44,
+      "solution": "从课文中准确提取史实信息，体会说明文语言的准确性。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0439",
+      "item_type": "choice",
+      "stem": "《苏州园林》抓住的苏州园林的总体特征（总说中心句）是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_garden"
+      ],
+      "difficulty": 0.44,
+      "solution": "“眼前总是一幅完美的图画”是全文总说，四个“讲究”从亭台轩榭布局等四个方面分说，总—分结构条理井然。",
+      "source": "llm_generated",
+      "options": [
+        "A. 务必使游览者无论站在哪个点上，眼前总是一幅完美的图画",
+        "B. 苏州园林都是大户人家的宅院",
+        "C. 假山和池沼配得好",
+        "D. 花墙和廊子隔而未隔"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0440",
+      "item_type": "solve",
+      "stem": "文章分说部分按“讲究亭台轩榭的布局……然后到角落、门窗、色彩”的顺序展开。这是由主到次（逻辑顺序）的安排，好在哪里？",
+      "answer": "示例：四个“讲究”是园林“图画美”的主要方面，先讲；角落、门窗、色彩等细节是次要方面，后讲。由主到次要，重点突出，与总说的“完美的图画”逐层照应，眉目清楚，读者易于把握。",
+      "kps": [
+        "kp_chi8_garden"
+      ],
+      "difficulty": 0.46,
+      "solution": "把握总说—分说、由主到次的逻辑顺序。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0441",
+      "item_type": "solve",
+      "stem": "文中写“我国的建筑……绝大部分是对称的，苏州园林可绝不讲究对称”。这用了什么说明方法？有什么作用？",
+      "answer": "示例：作比较。以古代宫殿、住宅的对称布局与苏州园林的“自然之趣”对比，突出苏州园林“避免对称、追求图画美”的独特之处，特征鲜明。",
+      "kps": [
+        "kp_chi8_garden"
+      ],
+      "difficulty": 0.44,
+      "solution": "识别作比较并分析其突出特征的作用。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0442",
+      "item_type": "choice",
+      "stem": "法布尔《蝉》介绍幼虫出洞时写道“它表演了一种奇怪的体操……像 一个可怜的撬杠”。这种文字属于：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_cicada"
+      ],
+      "difficulty": 0.42,
+      "solution": "《昆虫记》以文学笔法写科学观察：精确的观察（撬杠般的动作）＋拟人比喻，庄谐并重，是科学与文学结合的科学小品。",
+      "source": "llm_generated",
+      "options": [
+        "A. 文学笔法写科学观察——拟人化的“体操”与比喻，准确又生动地写出幼虫脱壳的动作",
+        "B. 纯粹的抒情散文，无科学内容",
+        "C. 神话想象",
+        "D. 诗歌"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0443",
+      "item_type": "solve",
+      "stem": "课文详细写了蝉的地穴和蝉的卵两部分。作者为什么对“四年黑暗中的苦工”与“阳光下的歌唱”这样概括蝉的一生？",
+      "answer": "示例：幼虫在地下生活四年，才换来一个月阳光下的歌唱——作者用数字对比表达对生命的悲悯与敬意：小小的蝉以漫长的黑暗劳作换来短暂而尽情的高歌。这正是法布尔人文情怀与求实观察的结合。",
+      "kps": [
+        "kp_chi8_cicada"
+      ],
+      "difficulty": 0.44,
+      "solution": "把握科学小品内容结构，体会作者的求实精神与生命情怀。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0444",
+      "item_type": "solve",
+      "stem": "《蝉》与《中国石拱桥》同为说明性文章，语言风格有何不同？各举一例。",
+      "answer": "示例：《蝉》——拟人比喻，生动形象（“奇怪的体操”“像个撬杠”），有文学趣味；《中国石拱桥》——平实准确（“37.4 米”“当时可算是世界最长”），用数据与比较客观说明。一为文艺性说明文（科学小品），一为平实说明文。",
+      "kps": [
+        "kp_chi8_cicada"
+      ],
+      "difficulty": 0.42,
+      "solution": "比较平实说明与生动说明（科学小品）的语言差异。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0445",
+      "item_type": "choice",
+      "stem": "《梦回繁华》介绍的《清明上河图》的作者是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_meng"
+      ],
+      "difficulty": 0.42,
+      "solution": "《清明上河图》为北宋张择端所作，长 528.7 厘米、宽 24.8 厘米，描绘北宋都城汴京（今开封）的繁华景象。",
+      "source": "llm_generated",
+      "options": [
+        "A. 北宋画家张择端",
+        "B. 唐代吴道子",
+        "C. 元代黄公望",
+        "D. 明代仇英"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0446",
+      "item_type": "solve",
+      "stem": "文章按什么顺序介绍画面内容？画作的“繁华”体现在哪里？",
+      "answer": "示例：按画面展开的空间顺序（卷首市郊—中段汴河（虹桥为高潮）—后段城内街市）依次介绍。“繁华”体现在：汴河上船只往来、虹桥上人马拥挤，街市店铺林立、各行各业人物众多（数百人物、牲畜、船只、房屋），再现了北宋都城的生活全貌。",
+      "kps": [
+        "kp_chi8_meng"
+      ],
+      "difficulty": 0.45,
+      "solution": "把握美术作品介绍类说明文的材料组织（按画面空间顺序）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0447",
+      "item_type": "solve",
+      "stem": "标题“梦回繁华”中的“梦回”是什么意思？结合文章说说这个标题好在哪里。",
+      "answer": "示例：“梦回”指通过观赏画作，仿佛回到千年前的北宋汴京。标题既点出《清明上河图》再现都城繁华的内容（繁华），又传达出观画如梦回千年历史的意境与对古代文明盛世的追怀，典雅含蓄，激发读者兴趣。",
+      "kps": [
+        "kp_chi8_meng"
+      ],
+      "difficulty": 0.44,
+      "solution": "理解标题的意蕴：内容概括＋文化情怀。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0448",
+      "item_type": "choice",
+      "stem": "给熟悉的人写小传，最合适的组织材料的方式是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_biography"
+      ],
+      "difficulty": 0.38,
+      "solution": "小传要求：按时间线索组织，选典型事例与细节，写出性格志趣成就，并含评价与情感，语言真实准确简洁。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以时间顺序为经，选典型事例和细节表现性格、志趣与成就",
+        "B. 按外貌、语言、动作分类罗列",
+        "C. 从现在倒着写到出生",
+        "D. 只写优点不写其他"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0449",
+      "item_type": "solve",
+      "stem": "为爷爷写小传需要搜集资料。写出你可以搜集的三类资料。",
+      "answer": "示例：①口述访谈——请爷爷讲人生各阶段的重要经历（求学、工作、成家）；②实物资料——老照片、证件、日记、奖状；③旁证资料——向奶奶、父亲等亲人求证补充年代与细节。",
+      "kps": [
+        "kp_chi8_biography"
+      ],
+      "difficulty": 0.44,
+      "solution": "传记写作先占有材料：访谈＋实物＋旁证。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0450",
+      "item_type": "solve",
+      "stem": "写作片段：为一位你熟悉的人（长辈、老师、同学）写一篇 150 字左右的小传，按时间线索，用一两件典型事例表现其性格或品质，结尾含评价。",
+      "answer": "示例：李文清，1948 年生于川南山村。少年家贫，一边放牛一边读书，1966 年以全乡第一考入县中学。回乡后任民办教师三十年，一人教三个年级，白天上课，晚上就着煤油灯批改作业，送出的学生有百余人考上大学。乡亲们说：“李老师是村里的一盏灯。”他一生清贫，却把亮光给了山里的孩子。",
+      "kps": [
+        "kp_chi8_biography"
+      ],
+      "difficulty": 0.5,
+      "solution": "小传要素：时间线索＋典型事例＋细节＋客观评价，语言简洁。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0451",
+      "item_type": "choice",
+      "stem": "要把景物写得“有声有色、有画面感”，下面做法最有效的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_scenery"
+      ],
+      "difficulty": 0.38,
+      "solution": "描写景物：抓特征，多感官，按顺序，用修辞，动静结合、点面结合、正侧面结合。",
+      "source": "llm_generated",
+      "options": [
+        "A. 调动多种感官，综合运用修辞和动静、点面、正侧面结合的方法，按顺序描写",
+        "B. 多用“美丽极了”这样的感叹",
+        "C. 把所有景物各写一句",
+        "D. 抄一段导游词"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0452",
+      "item_type": "solve",
+      "stem": "把“秋天到了，树叶落了，风吹在身上很冷”改写成一段有画面感的景物描写（三四句话），至少用一种修辞和一处感官描写。",
+      "answer": "示例：秋风一起，梧桐叶便打着旋儿飘落，给小路铺了层金黄的地毯。风钻进衣领，凉丝丝的，我不由得缩了缩脖子。空气里浮着淡淡的桂花香，天高得像被谁擦洗过一样。",
+      "kps": [
+        "kp_chi8_scenery"
+      ],
+      "difficulty": 0.44,
+      "solution": "改写示范：修辞（比喻拟人）＋触觉嗅觉视觉多感官＋顺序（由物到人）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0453",
+      "item_type": "solve",
+      "stem": "写作片段：描写校园（街头、公园）的一处景物，抓住特征，做到动静结合、有多感官描写（五六句话）。",
+      "answer": "示例：喷泉是校园里最热闹的角落。正午，一柱柱清泉冲天而起，又哗啦啦碎成千万颗珍珠洒落池面，阳光一照，架起一道小小的彩虹。池边的垂柳却静得很，长长的枝条一动不动地垂着，倒影在水里轻轻摇晃。水声、蝉声、远处的读书声混在一起，风过处，送来一缕湿湿的凉意。",
+      "kps": [
+        "kp_chi8_scenery"
+      ],
+      "difficulty": 0.48,
+      "solution": "景物描写综合训练：动静结合（喷泉动/垂柳静）＋多感官＋比喻。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0454",
+      "item_type": "choice",
+      "stem": "填入下面横线上最连贯的一项是：学了课文，我深受启发。______，______。因此，我们青少年更应该珍惜今天的学习条件。①旧时代的孩子们求学何等艰难 ②张海迪身残志坚自学成才",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_coherent"
+      ],
+      "difficulty": 0.38,
+      "solution": "连贯要看话题与逻辑：先举正面（张海迪自学成才）再对比旧时代孩子求学难，得出“珍惜今天条件”的结论；顺序 ②①（先今后昔、由人到社会）衔接最顺。",
+      "source": "llm_generated",
+      "options": [
+        "A. ②①",
+        "B. ①②",
+        "C. ①①",
+        "D. ②②"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0455",
+      "item_type": "solve",
+      "stem": "下文话题不统一，请找出并修改：“春天的公园真美。桃花开得灿烂，游人们拍照留念。我昨天数学考了满分。湖水在阳光下闪着金光。”",
+      "answer": "示例：第三句“我昨天数学考了满分”偏离了“春天的公园”的话题，应删去。修改后：桃花、湖水两句连写，再以游人活动收束，话题统一、文气贯通。",
+      "kps": [
+        "kp_chi8_coherent"
+      ],
+      "difficulty": 0.44,
+      "solution": "话题统一是连贯的第一要求：游离句坚决删除。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0456",
+      "item_type": "solve",
+      "stem": "写作片段：以“晚自习后的校园”为话题写四五句话，注意表述顺序合理、前后呼应、语句连贯。",
+      "answer": "示例：晚自习的铃声响过，教学楼次第熄了灯，校园安静下来。走廊里只剩下值日老师的手电光，一晃一晃地移向楼梯口。走出大门，回头望去，唯有天上的月亮还亮着，像要替我们守着这沉睡的校园。明天清晨，它又会准时醒来。",
+      "kps": [
+        "kp_chi8_coherent"
+      ],
+      "difficulty": 0.46,
+      "solution": "连贯三要诀：话题统一（校园之夜）、顺序合理（楼内—门口—回望）、前后呼应（结尾“醒来”呼应“安静”）。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0457",
+      "item_type": "choice",
+      "stem": "要写《我们的教学楼》说明文，最重要的第一步是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_expository"
+      ],
+      "difficulty": 0.38,
+      "solution": "说明文写作先抓特征：对象区别于他事物的独特点，再定顺序、选方法、求准确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 观察并抓住说明对象的特征（外观、结构、功能上的独特点）",
+        "B. 抒发对教学楼的热爱",
+        "C. 编一个教学楼里的故事",
+        "D. 把所有教室都拍成照片"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0458",
+      "item_type": "solve",
+      "stem": "写《我的文具盒》：写出你打算抓住的三个特征和相应的说明方法。",
+      "answer": "示例：①外形——双层设计（列数字：长 22 厘米、宽 8 厘米，作比较：比课本小得多）；②结构——分格收纳、磁扣开合（举例子：上格放笔、下格放尺）；③功能与情感——便携耐用（打比方：像铅笔们的“双层小楼”）。",
+      "kps": [
+        "kp_chi8_expository"
+      ],
+      "difficulty": 0.44,
+      "solution": "特征＋方法对应训练：每个特征配一种说明方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0459",
+      "item_type": "solve",
+      "stem": "写作片段：介绍你熟悉的一种物品（文具、玩具、电器），抓住特征，用上两种以上说明方法，语言准确（150 字左右）。",
+      "answer": "示例：我的台灯是只“小猫头鹰”。它高约 35 厘米，底座直径 18 厘米，比一本语文书略大一点（列数字、作比较）。轻拍它的“脑袋”，眼睛似的灯罩就亮起柔和白光。灯臂能折叠 180 度，像猫头鹰灵活的脖子，想照哪儿就转向哪儿（打比方）。它陪我写作业三年了，是我书桌上的“夜班卫士”。",
+      "kps": [
+        "kp_chi8_expository"
+      ],
+      "difficulty": 0.48,
+      "solution": "说明文片段：特征明确＋三种说明方法＋准确而不失生动。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0460",
+      "item_type": "choice",
+      "stem": "校学生会向全校同学发出节约用水倡议，下面哪句最得体？",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_appropriate"
+      ],
+      "difficulty": 0.38,
+      "solution": "倡议书要面向对象（称呼亲切）、有礼貌、语言富有号召力；B 命令粗鲁、C 冷漠威胁、D 推卸责任，均不得体。",
+      "source": "llm_generated",
+      "options": [
+        "A. 亲爱的同学们：水是生命之源，让我们从随手关紧水龙头做起，共同守护每一滴水！",
+        "B. 你们这些人都给我节约用水！",
+        "C. 节约用水，不节拉倒。",
+        "D. 水的问题与我无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0461",
+      "item_type": "solve",
+      "stem": "小明给老师的请假条写道：“王老师，我明天有事不能来，就这样吧。”请指出两处不得体并修改。",
+      "answer": "示例：①缺称呼、无礼貌用语——应写“尊敬的王老师”，说明原因后加“恳请批准，谢谢”；②语气生硬随意——“就这样吧”应改为“特向您请假一天，望批准”。此外应有落款署名和日期。",
+      "kps": [
+        "kp_chi8_appropriate"
+      ],
+      "difficulty": 0.44,
+      "solution": "应用文得体：看对象（师长）、有礼貌、格式完整。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0462",
+      "item_type": "solve",
+      "stem": "应用文写作：以班委会名义写一份 100 字左右的倡议书（如“课间轻声慢步”），注意称呼、正文（倡议理由＋具体内容）、署名和日期，语言得体。",
+      "answer": "示例：倡议书\n亲爱的同学们：\n课间是大家放松休息的时间，但楼道里追逐奔跑既影响他人，也存在安全隐患。为此，班委会倡议：一、课间活动轻声慢步，右行礼让；二、不在楼道追逐打闹、大声喧哗；三、互相提醒，共建文明课间。让我们从自己做起，让校园更安宁、更美好！\n八年级（3）班班委会\n2026 年 10 月 4 日",
+      "kps": [
+        "kp_chi8_appropriate"
+      ],
+      "difficulty": 0.46,
+      "solution": "倡议书得体四要素：称呼妥帖、理由充分、内容具体、格式完整。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0463",
+      "item_type": "choice",
+      "stem": "讲述一件事的基本要求是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_oral_tell"
+      ],
+      "difficulty": 0.36,
+      "solution": "讲述要中心明确、条理清楚，有详有略，辅以恰当的语气、语调、表情手势。",
+      "source": "llm_generated",
+      "options": [
+        "A. 讲清起因、经过、结果，安排好详略和顺序，注意语气语调与肢体语言，不离题",
+        "B. 想到哪说到哪",
+        "C. 声音越大越好",
+        "D. 把细节全部讲完不许省略"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0464",
+      "item_type": "solve",
+      "stem": "给同学讲“我第一次做饭”的经历：先列一个讲述提纲（起因—经过（含波折）—结果），并标注哪里详讲、哪里略讲。",
+      "answer": "示例：起因——爸妈加班，我决定自己做饭（略）。经过——学淘米煮饭（略）；炒鸡蛋时油溅出来吓一跳、盐放多了想办法补救（详：加水和番茄变成“番茄炒蛋”）。结果——爸妈回家惊喜，尝了直夸，我也悟出“遇事不慌”的道理（略中带情）。",
+      "kps": [
+        "kp_chi8_oral_tell"
+      ],
+      "difficulty": 0.42,
+      "solution": "讲述先列提纲定详略：波折处详讲最有味。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0465",
+      "item_type": "solve",
+      "stem": "讲述时怎样运用语气、语调和肢体语言让故事更吸引人？以“讲恐怖（惊喜）情节”为例各写一条。",
+      "answer": "示例：语气语调——讲到紧张处放慢、压低声音，制造悬念，到转折突然扬起；肢体语言——眼睛睁大看听众，身体前倾，配合“猛地一转身”的手势。（得体、自然，不夸张做作）",
+      "kps": [
+        "kp_chi8_oral_tell"
+      ],
+      "difficulty": 0.4,
+      "solution": "讲述的临场技巧：语速语调起伏＋自然的表情动作。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0466",
+      "item_type": "choice",
+      "stem": "《社戏》中“我”觉得那夜的戏“并不好看”，豆也只是普通罗汉豆，结尾却说“再没有吃到那夜似的好豆”。对这一矛盾理解最恰当的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_shexi"
+      ],
+      "difficulty": 0.42,
+      "solution": "豆和戏本身平常，难忘的是月夜行船的惬意、伙伴们的真诚与乡村的自由天地——以物寄情，怀念童年与故乡。",
+      "source": "llm_generated",
+      "options": [
+        "A. “好豆”“好戏”寄寓着童年伙伴的淳朴友情和乡村生活的自由美好，“我”怀念的是那段生活",
+        "B. 豆真的特别好吃",
+        "C. 戏其实很精彩",
+        "D. 作者自相矛盾写错了"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0467",
+      "item_type": "solve",
+      "stem": "月夜行船一段“淡黑的起伏的连山，仿佛是踊跃的铁的兽脊似的，都远远地向船尾跑去了”是从哪种感官角度写的？有什么表达效果？",
+      "answer": "示例：视觉＋化静为动。把静态的连山写成“踊跃的兽脊”向后“跑去”，以山的移动反写船行之快，烘托“我”看戏途中的急切与愉悦，充满诗意。",
+      "kps": [
+        "kp_chi8_shexi"
+      ],
+      "difficulty": 0.46,
+      "solution": "品读写景中的诗意语言：多角度感官与化静为动的手法。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0468",
+      "item_type": "solve",
+      "stem": "双喜、阿发等小伙伴身上有哪些美好的品质？结合具体情节写出两点。",
+      "answer": "示例：①聪明能干、善解人意——双喜看出“我”的失落，提议“我们可以偷了豆煮着吃”，还替“我”打包票说服外祖母和母亲；②淳朴无私——阿发让大家“偷我们的罢，我们的大得多”，宁可偷自家的豆；归航时桂生忙着摇船、大家争先摇橹，友爱互助。",
+      "kps": [
+        "kp_chi8_shexi"
+      ],
+      "difficulty": 0.44,
+      "solution": "从情节中分析小伙伴群像：淳朴善良、热情无私。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0469",
+      "item_type": "choice",
+      "stem": "《回延安》采用陕北“信天游”的形式，其形式特点是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_huian"
+      ],
+      "difficulty": 0.42,
+      "solution": "信天游两行一节、押韵自由活泼，善用比兴、叠字（“树根根”“羊羔羔”），具有浓郁的陕北民歌风味。",
+      "source": "llm_generated",
+      "options": [
+        "A. 两行一节，节内押韵，多用比兴、叠字，口语入诗",
+        "B. 每行字数完全相同的格律诗",
+        "C. 不分行不押韵",
+        "D. 外国十四行诗体"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0470",
+      "item_type": "solve",
+      "stem": "“羊羔羔吃奶眼望着妈，小米饭养活我长大”用了什么手法？表达怎样的情感？",
+      "answer": "示例：比兴——先以羊羔吃奶恋母起兴，引出延安母亲用小米饭养育“我”长大，抒发诗人对延安母亲养育之恩的感激和重回延安的激动、眷恋之情。",
+      "kps": [
+        "kp_chi8_huian"
+      ],
+      "difficulty": 0.45,
+      "solution": "理解比兴手法与诗人对延安的深情。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0471",
+      "item_type": "solve",
+      "stem": "全诗五个部分的感情脉络是怎样推进的？用每部分的一个关键词连起来说一说。",
+      "answer": "示例：①“逢着个好的地方”（初到延安的欣喜）→②“十年前别延安”（追忆当年的养育与深情）→③“回延安”（重逢的激动欢腾）→④“看延安”（瞻望新貌的振奋）→⑤“几回回梦里回延安”（魂牵梦萦的深情礼赞）。情感由初见的喜悦，到回想离别时“几回回梦里”的深情，再到重逢的欢腾、看新延安的振奋，最后在反复的梦境中升华为对延安精神的礼赞，一层比一层深入。",
+      "kps": [
+        "kp_chi8_huian"
+      ],
+      "difficulty": 0.42,
+      "solution": "梳理长诗五部分的标题：逢着个好的地方—十年前别延安—回延安—看延安—几回回梦里回延安，用标题串起“喜悦—追忆—欢腾—振奋—礼赞”的感情主线；概括情感要用诗中的关键词句作证。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0472",
+      "item_type": "choice",
+      "stem": "《安塞腰鼓》写鼓点“如骤雨一样，是急促的鼓点……”连用多个比喻和排比，主要表现：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_saigu"
+      ],
+      "difficulty": 0.42,
+      "solution": "排比、反复、短句与铿锵节奏，写出腰鼓的气壮山河，歌颂生命力量的磅礴。",
+      "source": "llm_generated",
+      "options": [
+        "A. 安塞腰鼓壮阔、豪放、火烈的气势和陕北后生旺盛的生命力量",
+        "B. 雨下得很大",
+        "C. 打鼓的技巧简单",
+        "D. 作者讨厌噪音"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0473",
+      "item_type": "solve",
+      "stem": "文章开头结尾都写“耳畔是一声渺远的鸡啼”，这一静景有什么作用？",
+      "answer": "示例：以静衬动——寂静衬托出腰鼓表演前后的蓄势与余韵；鸡啼声渺远，宣告鼓声歇止后的天地宁静，也更显腰鼓惊天动地的力量；首尾呼应，余味悠长。",
+      "kps": [
+        "kp_chi8_saigu"
+      ],
+      "difficulty": 0.45,
+      "solution": "体会动静相衬与首尾呼应的结构艺术。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0474",
+      "item_type": "solve",
+      "stem": "朗读《安塞腰鼓》中间鼓声大作的部分，应怎样处理节奏和语气？写出你的朗读设计（三条）。",
+      "answer": "示例：①节奏加快、短促有力，短语连读（“骤雨一样，旋风一样……”）；②声音层层拔高，读到“落日照大旗”等排比处一浪高过一浪；③“好一个安塞腰鼓！”反复处读出酣畅淋漓的赞叹，重音砸在“好”字上。",
+      "kps": [
+        "kp_chi8_saigu"
+      ],
+      "difficulty": 0.42,
+      "solution": "在朗读中体会短句排比的节奏美与语言的力量美。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0475",
+      "item_type": "choice",
+      "stem": "《灯笼》围绕“灯笼”回忆和联想了很多事，文章的行文思路是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_lantern"
+      ],
+      "difficulty": 0.44,
+      "solution": "作者借小小灯笼串起亲情、乡情与历史情思，情感由个人温情升华为保家卫国的豪情。",
+      "source": "llm_generated",
+      "options": [
+        "A. 由物及人、由往事到家国——从孩子的灯笼、祖父的灯笼等亲情乡情，延伸到“塞外点兵”的家国情怀",
+        "B. 按灯笼从古到今的年代排列",
+        "C. 只写了一种灯笼",
+        "D. 以灯笼买卖为线索"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0476",
+      "item_type": "solve",
+      "stem": "结尾引“‘萧萧班马鸣’……壮士出征，旗帜上和马头上都有灯笼”等句，情感发生了怎样的变化？",
+      "answer": "示例：由对亲人乡俗的温情怀想，转向对历史上宋、汉名将（雪夜入蔡州的李愬、匹马戍梁州的健儿）的追慕，升华为愿做“灯笼下的马前卒”、献身家国的豪情。小小的灯笼承载起厚重的家国情怀。",
+      "kps": [
+        "kp_chi8_lantern"
+      ],
+      "difficulty": 0.46,
+      "solution": "把握散文由小及大、情感升华的写法与主旨。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0477",
+      "item_type": "solve",
+      "stem": "文中说“真的，灯笼的缘结得太多，记忆的网里挤着的就都是”。作者为什么对灯笼情有独钟？分两点作答。",
+      "answer": "示例：①灯笼连着温暖的亲情乡情——挑灯迎祖父、母亲留灯、村社灯火，是童年与故乡的符号；②灯笼连着文化与家国——进士第的红灯、历史典故中的灯，寄托着文化记忆与报国之志。",
+      "kps": [
+        "kp_chi8_lantern"
+      ],
+      "difficulty": 0.44,
+      "solution": "由具体事项归纳情感内涵：一物而系万情。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0478",
+      "item_type": "choice",
+      "stem": "《大自然的语言》中“大自然的语言”指的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_dayu"
+      ],
+      "difficulty": 0.42,
+      "solution": "作者把花香鸟语、草长莺飞等物候现象形象地称作“大自然的语言”，它们如实地反映气候变化。",
+      "source": "llm_generated",
+      "options": [
+        "A. 草木荣枯、候鸟去来等年年出现的物候现象",
+        "B. 动物之间传递信息的声音",
+        "C. 风声雨声",
+        "D. 人类使用的语言"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0479",
+      "item_type": "solve",
+      "stem": "决定物候现象来临的四个因素是什么？文章按怎样的顺序安排这四个因素？",
+      "answer": "示例：四个因素：纬度的差异、经度的差异、高下的差异、古今的差异。按由主到次（空间因素在前、时间因素在后）的逻辑顺序、影响程度由大到小排列，条理清晰，体现说明的科学性。",
+      "kps": [
+        "kp_chi8_dayu"
+      ],
+      "difficulty": 0.46,
+      "solution": "把握事理说明文的逻辑顺序（四个因素由主到次）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0480",
+      "item_type": "solve",
+      "stem": "“南京的桃花要比北京早开 20 天”一句用了什么说明方法？“早”“要”这些词去掉行不行？为什么？",
+      "answer": "示例：举例子、作比较（南京与北京比）兼列数字（20 天）。“不行”——“早”“要”表示估计和推断，物候差异因年景而略有变化，去掉后表述绝对化，就不准确了。体现说明文语言准确、严谨的特点。",
+      "kps": [
+        "kp_chi8_dayu"
+      ],
+      "difficulty": 0.44,
+      "solution": "体会准确的语言与说明方法在事理说明中的作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0481",
+      "item_type": "choice",
+      "stem": "《被压扁的沙子》中“被压扁的沙子”（斯石英）成为关键证据，是因为：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_konglong"
+      ],
+      "difficulty": 0.44,
+      "solution": "作者由“斯石英的性质”这一物证推理：地壳深处的高压与陨石撞击都可形成斯石英，结合其出现位置等推理恐龙灭绝的“撞击说”，体现科学的推理过程。",
+      "source": "llm_generated",
+      "options": [
+        "A. 斯石英只在巨大压力（如陨石撞击）下形成，且在一定条件下会变回普通沙子，可据此推断恐龙灭绝的原因",
+        "B. 沙子很漂亮",
+        "C. 斯石英是恐龙的食物",
+        "D. 沙子到处都有"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0482",
+      "item_type": "solve",
+      "stem": "《恐龙无处不有》由“南极洲发现恐龙化石”推出什么结论？这一推理过程给了你怎样的科学思维启示？",
+      "answer": "示例：结论——恐龙无处不有，说明恐龙曾经遍布世界各地；南极洲的恐龙不可能自己渡海迁徙，由此推断南极洲原本与其他大陆相连，是“板块构造”学说（大陆漂移）的有力证据。启示：科学要善于从看似无关的现象（化石分布与地质学说）之间建立联系，用证据链条推理，跨界思维、严谨求证。",
+      "kps": [
+        "kp_chi8_konglong"
+      ],
+      "difficulty": 0.46,
+      "solution": "理清“现象—推理—结论”的过程，学习科学假说的论证方式。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0483",
+      "item_type": "solve",
+      "stem": "两篇短文同以恐龙为话题，说明的目的有什么不同？",
+      "answer": "示例：《恐龙无处不有》借恐龙化石证明地质学“板块构造”学说（生物学证据服务于地质学）；《被压扁的沙子》借斯石英探讨恐龙灭绝的原因（撞击说），落脚于一个问题的多角度求解。两者都是跨学科说明的典范：证据不同、目的不同，而科学推理一以贯之。",
+      "kps": [
+        "kp_chi8_konglong"
+      ],
+      "difficulty": 0.44,
+      "solution": "比较两文说明目的与思路的异同。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0484",
+      "item_type": "choice",
+      "stem": "《大雁归来》中作者把大雁三月归来称为“春天的大合唱”，说大雁“低语”“争论”。这种写法及其情感是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_dayan"
+      ],
+      "difficulty": 0.42,
+      "solution": "利奥波德以拟人笔触写大雁的鸣叫、集会与“联合观念”，视其为土地共同体的成员，充满喜爱与敬畏。",
+      "source": "llm_generated",
+      "options": [
+        "A. 拟人——把大雁当作有灵性的朋友，字里行间是对大雁的喜爱与敬意",
+        "B. 排比——渲染数量之多",
+        "C. 对比——贬低其他鸟类",
+        "D. 夸张——制造恐怖气氛"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0485",
+      "item_type": "solve",
+      "stem": "作者为什么说大雁是“我们的伙伴”？从大雁的“联合观念”谈谈你的理解。",
+      "answer": "示例：大雁迁徙时成群结队、孤雁是“为家庭所累的悲剧角色”，群体内互助联合；它们每年如约归来，与人共享春天。作者借此倡导人与野生动物、与自然平等相处的“土地伦理”——大雁是伙伴而非猎物，体现出对生命的敬畏和对自然的尊重。",
+      "kps": [
+        "kp_chi8_dayan"
+      ],
+      "difficulty": 0.45,
+      "solution": "理解作者的生态伦理观（敬畏生命、尊重自然）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0486",
+      "item_type": "solve",
+      "stem": "文中对比了“我们的农场”与猎枪下的大雁（三月的大雁一触到枪声便不寒而栗）。这种对比表达了作者怎样的态度？",
+      "answer": "示例：作者对猎杀大雁的行为反感、痛惜，对不受猎枪威胁、能够自由鸣叫的春天充满渴望。对比之中见立场：反对无节制的猎杀，主张把大雁当作享有生存权利的朋友。",
+      "kps": [
+        "kp_chi8_dayan"
+      ],
+      "difficulty": 0.42,
+      "solution": "从对比手法中读出作者的爱憎与生态情怀。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0487",
+      "item_type": "choice",
+      "stem": "《时间的脚印》说“岩石会记录时间”，主要依据是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_time"
+      ],
+      "difficulty": 0.42,
+      "solution": "泥沙沉积成岩、层层岩石与其中化石记录着地球的历史；岩石的侵蚀、搬运、再胶结也是时间作用的结果。",
+      "source": "llm_generated",
+      "options": [
+        "A. 岩石的破坏与生成、岩层与化石都保存着时间流逝的信息",
+        "B. 岩石上有钟表",
+        "C. 岩石会说话唱歌",
+        "D. 岩石的颜色会变"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0488",
+      "item_type": "solve",
+      "stem": "文章开头从“时间”谈起，再引到“岩石”，中间还写了人的忧虑（“我们看不到时间……”）。这样由已知到未知地说明有什么好处？",
+      "answer": "示例：从人人熟悉的时间引入陌生的“岩石记录时间”，再层层深入（现象—原理—意义），把抽象的地质年代讲得亲切可感；设问与拟人（“时间的脚印”）激发读者兴趣，体现事理说明文由已知到未知的逻辑顺序。",
+      "kps": [
+        "kp_chi8_time"
+      ],
+      "difficulty": 0.45,
+      "solution": "体会由已知到未知的逻辑顺序与设问、拟人对说明的作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0489",
+      "item_type": "solve",
+      "stem": "根据课文，岩石的“破坏—搬运—沉积—成岩”过程是怎样记录时间的？用三四句话复述这一过程。",
+      "answer": "示例：风吹雨打、水流冲刷使岩石被破坏，碎屑被河流搬运到低处；泥沙和碎屑一层层沉积下来，经过亿万年的重压和胶结，又变成新的沉积岩；一层层的岩层和封存其中的化石，就像一页页日记，记录下各个年代的环境与生物信息，读懂它们就读懂了时间留下的脚印。",
+      "kps": [
+        "kp_chi8_time"
+      ],
+      "difficulty": 0.44,
+      "solution": "复述事理：破坏—搬运—沉积—成岩的循环及记录原理。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0490",
+      "item_type": "choice",
+      "stem": "对《最后一次讲演》语言最突出的特点，概括恰当的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_zhuyan"
+      ],
+      "difficulty": 0.44,
+      "solution": "闻一多在追悼会上拍案而起，痛斥特务、赞扬李公朴和昆明人民，感情喷薄，人称呼告频繁切换，感叹反问连用，如匕首投枪。",
+      "source": "llm_generated",
+      "options": [
+        "A. 感情强烈，爱憎分明，多用感叹句、反问句、褒贬词，具有极大的鼓动性",
+        "B. 平和委婉，细声细语",
+        "C. 词藻华丽，引经据典",
+        "D. 幽默诙谐，轻松风趣"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0491",
+      "item_type": "solve",
+      "stem": "“他们这样疯狂地来制造恐怖，正是他们自己在慌啊！在害怕啊！”分析这两句人称与句式的表达效果。",
+      "answer": "示例：连用感叹句，直呼“他们”（特务），层层揭穿其色厉内荏；短句急促如当面斥责，把演讲者的愤怒与蔑视推向高潮，也点燃了听众的情绪，极具鼓动性和战斗力。",
+      "kps": [
+        "kp_chi8_zhuyan"
+      ],
+      "difficulty": 0.46,
+      "solution": "从人称、句式切入体会演讲词的战斗性与感染力。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0492",
+      "item_type": "solve",
+      "stem": "闻一多先生说“我们不怕死，我们有牺牲的精神！我们随时像李先生一样，前脚跨出大门，后脚就不准备再跨进大门！”这段话表现了他怎样的精神？",
+      "answer": "示例：表现了不畏强暴、视死如归、为民主献身的斗争精神和大义凛然的人格力量。这次讲演后数小时，闻一多果然倒在特务的枪口下，以生命践行了自己的誓言——言行一致，令人肃然起敬。",
+      "kps": [
+        "kp_chi8_zhuyan"
+      ],
+      "difficulty": 0.44,
+      "solution": "理解讲演内容与演讲者人格的统一，感受其精神境界。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0493",
+      "item_type": "choice",
+      "stem": "丁肇中在《应有格物致知精神》中提出的中心观点是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_gewu"
+      ],
+      "difficulty": 0.44,
+      "solution": "作者由“格物致知”的本义谈起，指出传统教育偏重内心修养而轻视实验，呼吁中国青年重视实验精神——在实验中探求万物之理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 中国学生应该重实验（真正的格物致知），培养实事求是、以实验探求真理的精神",
+        "B. 中国学生考试成绩不好",
+        "C. 不需要学习书本知识",
+        "D. 外国的教育一切都好"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0494",
+      "item_type": "solve",
+      "stem": "作者用自己在美国读书时“埋头读书、不重视实验而吃亏”的经历来论证，这属于什么论证方法？有什么好处？",
+      "answer": "示例：举例论证（事实论证，且是亲身经历）。以名家自己的切身教训为据，真实可信、亲切有说服力，有力地证明了“重视实验”观点的必要性，也拉近了与青年读者的距离。",
+      "kps": [
+        "kp_chi8_gewu"
+      ],
+      "difficulty": 0.46,
+      "solution": "学习议论文用事例论证观点的写法。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0495",
+      "item_type": "solve",
+      "stem": "文中所说的“格物致知”的真正意义是什么？结合学习实际谈谈怎样培养“实验精神”。",
+      "answer": "示例：“格物致知”的真正意义：从探查物体（实验）而得到知识——凡事保留怀疑求真的态度，靠实践、靠动手发现事物的真相，再以此为基础建立理论。学习中：不满足于背结论，主动做实验验证（物理化学生物实验、数学测量）、在探究活动中提出假设动手求证，实事求是，不盲从书本和权威。",
+      "kps": [
+        "kp_chi8_gewu"
+      ],
+      "difficulty": 0.44,
+      "solution": "理解科学精神的内涵并联系自身实际。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0496",
+      "item_type": "choice",
+      "stem": "王选在演讲中重点讲的“第六个重要抉择”是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_xuanze"
+      ],
+      "difficulty": 0.44,
+      "solution": "演讲的重点（第六个抉择）是大力扶植年轻人，认为这是历史规律，体现科学家的胸怀与远见。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大力扶持年轻人，让年轻一代出来取代自己（造就新秀）",
+        "B. 选择计算机专业",
+        "C. 选择出国留学",
+        "D. 选择激光照排项目"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0497",
+      "item_type": "solve",
+      "stem": "王选说自己“已经堕落到了靠卖狗皮膏药为生的时候”，又讲名人沾沾自喜的现状。这种自嘲式的语言在演讲中起什么作用？",
+      "answer": "示例：自嘲显出坦诚与谦逊，幽默风趣中见清醒的自我认识（警惕名人之害），既拉近与听众的距离，又自然引出“扶植年轻人”的主张——让位、让贤，把名和利看淡。这种坦诚幽默是演讲感人的重要因素。",
+      "kps": [
+        "kp_chi8_xuanze"
+      ],
+      "difficulty": 0.46,
+      "solution": "体会演讲中幽默风趣的语言风格及其效果。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0498",
+      "item_type": "solve",
+      "stem": "这篇演讲思路清晰：先总说抉择背景，再逐层阐述第六个抉择的理由（历史规律、名利观）和做法。请用“先—再—后”概括演讲的结构。",
+      "answer": "示例：先——开门见山交代演讲主题（一生中的第六个重要抉择：扶植年轻人）；再——阐述为什么（名人现象的反思、创造条件让年轻人脱颖而出的历史规律）；后——指出怎样做（不迷信权威、师长要有让贤的胸怀，呼吁青年抓住机遇）。观点鲜明、层层推进。",
+      "kps": [
+        "kp_chi8_xuanze"
+      ],
+      "difficulty": 0.44,
+      "solution": "理清演讲的结构层次，学习层层深入的论述。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0499",
+      "item_type": "choice",
+      "stem": "顾拜旦演讲中阐述的奥林匹克主义的基本原则（基础）是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_aolinpike"
+      ],
+      "difficulty": 0.44,
+      "solution": "奥林匹克主义以“更快更高更强”之外的和平友谊为魂：大众参与、从奋斗中体验乐趣、以优秀者为榜样、坚守公平伦理。",
+      "source": "llm_generated",
+      "options": [
+        "A. 奋进的乐趣、榜样的教育价值、对伦理基本原则的推崇",
+        "B. 赢得比赛就是一切",
+        "C. 商业利益最大化",
+        "D. 个人英雄主义"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0500",
+      "item_type": "solve",
+      "stem": "顾拜旦说“奥林匹克精神开始为渐趋平和而又充满自信的青少年所推崇”，他期望奥林匹克运动起到怎样的社会作用？",
+      "answer": "示例：期望以体育凝聚分裂的世界——让各国青年在公平竞技中相互了解、增进和平，通过榜样的力量与奋进的乐趣培育健全人格，从而推动社会进步、人类团结（面向大众、超越竞技本身）。",
+      "kps": [
+        "kp_chi8_aolinpike"
+      ],
+      "difficulty": 0.46,
+      "solution": "理解演讲的宏大主旨：奥林匹克主义的社会理想。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0501",
+      "item_type": "solve",
+      "stem": "这篇 1919 年的演讲庄重典雅、气势恢宏。朗读结尾祝福语“奥林匹克精神必将以今天的样子出现在 5 年后、50 年后……”应怎样处理？写出你的设计。",
+      "answer": "示例：语调庄重上扬，语速沉稳而渐强，重音落在“必将”“50 年后”“胜利”等词；目光远望，收束时饱满有力，读出对奥林匹克未来的坚定信念与祝福之情。",
+      "kps": [
+        "kp_chi8_aolinpike"
+      ],
+      "difficulty": 0.44,
+      "solution": "在朗诵设计中体会演讲词的庄重与感染力。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0502",
+      "item_type": "choice",
+      "stem": "《壶口瀑布》写作者两次看壶口：雨季的和枯水季节的。文章重点写哪一次？为什么这样安排？",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_hukou"
+      ],
+      "difficulty": 0.44,
+      "solution": "雨季远观（胆战心惊）为铺垫，枯水季近察（沟壑、龙槽、各种形态的水）为主体，重点突出、层次分明。",
+      "source": "llm_generated",
+      "options": [
+        "A. 重点写枯水季——能走到河心近距离观察，描写更细致深入，雨季之险作铺垫",
+        "B. 重点写雨季因为人多",
+        "C. 两次平均用力",
+        "D. 只写了第三次"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0503",
+      "item_type": "solve",
+      "stem": "结尾写黄河“博大宽厚，柔中有刚；挟而不服，压而不弯；不平则呼，遇强则抗；死地必生，勇往直前”。这段议论有什么深意？",
+      "answer": "示例：由水及人、由河及民族——黄河的性格正是中华民族百折不挠、自强不息的民族精神写照；个人也当如黄河，柔中带刚、遇挫愈勇。借景言理，画龙点睛地升华了主旨。",
+      "kps": [
+        "kp_chi8_hukou"
+      ],
+      "difficulty": 0.46,
+      "solution": "理解黄河的象征意义与结尾议论的升华作用。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0504",
+      "item_type": "solve",
+      "stem": "文章用“排”“冲”“跌”“碎”“砸”等动词和博喻写水，试分析其表达效果（举两例）。",
+      "answer": "示例：①“其时其势，兵马奔腾”——以万马奔腾喻洪流裹挟而下，声势撼人；②水“跌”上去又“碎”成水花——动词精准写出河水在龙槽前受阻回弹、粉身碎骨仍前赴后继的形态，动词与比喻并用，形声兼备，令人如临其境。",
+      "kps": [
+        "kp_chi8_hukou"
+      ],
+      "difficulty": 0.44,
+      "solution": "品味动词与博喻对写活黄河之水的表达效果。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0505",
+      "item_type": "solve",
+      "stem": "《在长江源头各拉丹冬》在写景之外，反复写自己身体的高反（缺氧、摔跤、骨折般疼痛）。这样写有什么作用？",
+      "answer": "示例：以“我”的艰难反衬各拉丹冬环境的严酷与人迹罕至，突出长江源头的神奇壮美得之不易；同时坦陈探险者的痛苦与坚持，使游记更真实，也表现了敬畏自然、执着探索的精神。",
+      "kps": [
+        "kp_chi8_ladandong"
+      ],
+      "difficulty": 0.42,
+      "solution": "理解“随感”与景物交织的写法：身体状况也是游记的有机部分。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0506",
+      "item_type": "solve",
+      "stem": "作者为什么说各拉丹冬是“白色金字塔”？冰塔林的描写给你怎样的感受？",
+      "answer": "示例：“白色金字塔”写出雪峰的圣洁、雄伟、庄严（远望之形）。冰塔林如“高大建筑群的静穆”、冰体晶莹纵横（阳光下的“冰淇淋”质感和裂缝年轮），奇幻壮美又幽静苍茫，让人惊叹造化伟力，心生敬畏。",
+      "kps": [
+        "kp_chi8_ladandong"
+      ],
+      "difficulty": 0.45,
+      "solution": "品味比喻性描写，感受长江源头的神奇壮美。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0507",
+      "item_type": "solve",
+      "stem": "游记按什么线索组织材料？请以本文为例说说“移步换景”的写法。",
+      "answer": "示例：以游踪为线索——从草坝子远观各拉丹冬，到冰塔林脚下近察，再进入冰河深处（阴面/阳面）。随着立足点变化，所见景物与感受随之变化（远观的雄奇→近看的精巧→冰河深处的苍茫），移步换景，景随人行，感随景迁。",
+      "kps": [
+        "kp_chi8_ladandong"
+      ],
+      "difficulty": 0.44,
+      "solution": "掌握游记按游踪（移步换景）组织材料的方法。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0508",
+      "item_type": "choice",
+      "stem": "《登勃朗峰》下山途中，作者重点写的“车夫之王”及其同伴的形象是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_bailang"
+      ],
+      "difficulty": 0.42,
+      "solution": "马克·吐温以漫画式笔法写“车夫之王”驾马车下山如履平地、谈笑自若，幽默夸张，令人莞尔。",
+      "source": "llm_generated",
+      "options": [
+        "A. 自信豪爽、诙谐风趣——自称“车夫之王”，车技惊人，一路飞驰而镇定自若",
+        "B. 谨小慎微、慢慢吞吞",
+        "C. 贪财小气",
+        "D. 粗鲁无礼"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0509",
+      "item_type": "solve",
+      "stem": "文章上半部分写景（峰巅云雾），下半部分写人（车夫）。这种“景与事、庄与谐”的穿插有什么好处？",
+      "answer": "示例：上山以从容之笔写勃朗峰的奇美（云朵如游丝霓裳，庄严雄浑），下山以幽默之笔写车夫的奇人奇事，一庄一谐、张弛有度；既展示自然之壮美，又见人情之趣味，游记因穿插故事而摇曳生姿。",
+      "kps": [
+        "kp_chi8_bailang"
+      ],
+      "difficulty": 0.44,
+      "solution": "学习写游记穿插故事、幽默表达的写法。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0510",
+      "item_type": "solve",
+      "stem": "作者为什么说那天的马车之旅“是我生平最愉快的旅行之一”？结合内容谈谈你的理解。",
+      "answer": "示例：一方面得览勃朗峰顶的壮丽云山（自然之美），另一方面邂逅“车夫之王”这样的奇人（人事之趣）——美景与妙事兼得，惊险与欢笑同在。旅行之乐不仅在风景，更在旅途中的奇遇与心境，这正是幽默作家的旅行哲学。",
+      "kps": [
+        "kp_chi8_bailang"
+      ],
+      "difficulty": 0.42,
+      "solution": "理解作者在幽默中寄寓的旅行之乐与人生态度。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0511",
+      "item_type": "choice",
+      "stem": "《一滴水经过丽江》最显著的写作特色是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_yidishui"
+      ],
+      "difficulty": 0.42,
+      "solution": "作者化身“一滴水”，由雪变成冰再化成水，穿过驿道、纳西人院落、四方街、酒吧与果园，最后跃入金沙江，构思奇巧。",
+      "source": "llm_generated",
+      "options": [
+        "A. 以一滴水的拟人化视角，串起从玉龙雪山到丽江古城的旅程，视角新颖独特",
+        "B. 用第一人称写作者爬山",
+        "C. 按百科词条式介绍丽江历史",
+        "D. 以日记形式记录天气"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0512",
+      "item_type": "solve",
+      "stem": "这滴水“经过”了哪些地方？按顺序列出四个，并说说这些地方各体现丽江的什么特色。",
+      "answer": "示例：玉龙雪山（化雪之始，自然圣洁）→驿道/草甸（茶马古道的沧桑）→四方街（古城心脏，五花石路与水相依的建筑民俗）→纳西人院落与东巴文字（民俗文化）→夜晚的酒吧街与果园灯下（古城今日的生活气息）→金沙江（汇入长江，旅程完成）。（列四处并简说特色即可）",
+      "kps": [
+        "kp_chi8_yidishui"
+      ],
+      "difficulty": 0.45,
+      "solution": "按视角行进顺序梳理内容，把握丽江的自然与人文风情。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0513",
+      "item_type": "solve",
+      "stem": "写作片段：学用拟人化视角，以“一片落叶的旅行”“一缕阳光的一天”等为题，写一段经过校园（街道）的旅程（五六句话）。",
+      "answer": "示例：我是一片银杏叶，在秋阳里告别枝头。风把我轻轻放上教学楼的窗台，早读的琅琅书声托着我打了个旋。我又飘过操场，落在跑道上，看少年们如鹿般掠过我的身边。最后，我歇在花坛的泥土上——旁边一株月季轻轻问我：新来的旅人，一路可看见了春天留下的脚印？",
+      "kps": [
+        "kp_chi8_yidishui"
+      ],
+      "difficulty": 0.46,
+      "solution": "训练新颖独特的叙述视角：拟人＋游踪＋见闻感受。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0514",
+      "item_type": "choice",
+      "stem": "对“鲲之大，不知其几千里也；化而为鸟，其名为鹏”的理解，最恰当的一项是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_zhuangzi"
+      ],
+      "difficulty": 0.44,
+      "solution": "鲲鹏之变出自《逍遥游》，想象奇特（几千里之躯、水击三千里、扶摇九万里），象征超脱束缚、追求逍遥的境界。",
+      "source": "llm_generated",
+      "options": [
+        "A. 庄子以奇幻的想象塑造硕大无比、志存高远的鲲鹏形象，寄寓对精神自由的追求",
+        "B. 庄子在记录真实的动物",
+        "C. 说明鲲会变成鸟是生物进化",
+        "D. 讽刺鹏太大飞不高"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0515",
+      "item_type": "solve",
+      "stem": "《庄子与惠子游于濠梁之上》中，庄子与惠子辩论“鱼之乐”。惠子说“子非鱼，安知鱼之乐”，庄子答“子非我，安知我不知鱼之乐”。两人的论辩各有怎样的特点？",
+      "answer": "示例：惠子重逻辑实证——异类不相知，你不是鱼就不可能知道鱼的感受；庄子重直觉与移情——以“请循其本”机智地回到最初“我知之濠上”的体验，将心比心、物我交融。一者理性的逻辑，一者诗意的机辩，机趣横生。",
+      "kps": [
+        "kp_chi8_zhuangzi"
+      ],
+      "difficulty": 0.46,
+      "solution": "把握庄子善用寓言、机智论辩的风格。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0516",
+      "item_type": "fill",
+      "stem": "默写填空：①北冥有鱼，其名为鲲。鲲之大，（　　　　　　）。②怒而飞，其翼若（　　　　　　）。",
+      "answer": "①不知其几千里也；②垂天之云",
+      "kps": [
+        "kp_chi8_zhuangzi"
+      ],
+      "difficulty": 0.48,
+      "solution": "《北冥有鱼》名句默写：注意“冥”“翼”“垂天之云”的写法。",
+      "source": "llm_generated",
+      "form": "dictation",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0517",
+      "item_type": "choice",
+      "stem": "关于“仿写”，下面理解正确的是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_imitation"
+      ],
+      "difficulty": 0.38,
+      "solution": "仿写是写作入门的重要方法：模仿形式与技巧，内容须是自己的——在模仿中学会表达，逐步形成个人风格。",
+      "source": "llm_generated",
+      "options": [
+        "A. 从段落、篇章层面模仿范文的选材、结构、手法和语言，并融入自己的生活体验",
+        "B. 把范文抄一遍交上去",
+        "C. 只能模仿同学的作文",
+        "D. 换掉范文的标题就是仿写"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0518",
+      "item_type": "solve",
+      "stem": "仿写《安塞腰鼓》的句式：以“好一个……！”的反复和排比短句，写一段表现运动会上百米决赛的场面（三四句）。",
+      "answer": "示例：好一场百米决赛！看——起跑线上，八道身影如满弓待发；枪声一响，骤风一样，是闪电般的起跑；火花一样，是蹬地的双脚；雷鸣一样，是看台上的呐喊。好一场酣畅淋漓的百米决赛！",
+      "kps": [
+        "kp_chi8_imitation"
+      ],
+      "difficulty": 0.44,
+      "solution": "句式仿写训练：反复、排比、比喻的移植与场面再造。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0519",
+      "item_type": "solve",
+      "stem": "写作片段：仿照《昆明的雨》“以小物小事写怀念”的写法，写一段怀念故乡（母校、旧居）的文字（五六句话），仿其结构而不抄其内容。",
+      "answer": "示例：我想念老屋后的那口井。夏天的清晨，井水凉丝丝的，浸着的西瓜切开来满屋清甜。祖母摇着蒲扇坐在井台边，给我讲牛郎织女。井绳一年年磨得发亮，把光阴都磨进了那圈圈涟漪里。如今城里的水龙头一拧就哗哗地响，可我总觉得，少了那口井的清凉与安静。",
+      "kps": [
+        "kp_chi8_imitation"
+      ],
+      "difficulty": 0.48,
+      "solution": "篇章仿写：借一物串小事，淡语传情，结构仿而内容新。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0520",
+      "item_type": "choice",
+      "stem": "介绍一座古塔的修建年代、历代修缮和今天的样子，最合适的说明顺序是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_explain_order"
+      ],
+      "difficulty": 0.38,
+      "solution": "涉及沿革变迁（修建—修缮—今貌）的事物用时间顺序；介绍建筑构造多用空间顺序；讲原理事理用逻辑顺序。",
+      "source": "llm_generated",
+      "options": [
+        "A. 时间顺序",
+        "B. 空间顺序",
+        "C. 逻辑顺序（由主到次）",
+        "D. 不需要顺序"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0521",
+      "item_type": "solve",
+      "stem": "写《智能手机》一文，说明“外观—功能—影响人们生活”应按什么顺序？说明“手机发展史”又应按什么顺序？各写出理由。",
+      "answer": "示例：前者按逻辑顺序（由实体到功能再到社会影响，由具体到抽象、由主到次）；后者按时间顺序（从大哥大到智能手机，按发展先后）。顺序由说明对象和写作目的决定。",
+      "kps": [
+        "kp_chi8_explain_order"
+      ],
+      "difficulty": 0.44,
+      "solution": "根据对象与目的选择说明顺序的训练。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0522",
+      "item_type": "solve",
+      "stem": "写作片段：介绍你的教室，按空间顺序写（入口—前—中—后—窗），并用一句过渡句衔接层次（五六句话）。",
+      "answer": "示例：推开教室的前门，首先映入眼帘的是墨绿色的黑板和讲台。讲台后上方悬着五星红旗和“勤学善思”的班训。由讲台向后看，一排排课桌椅整整齐齐，桌面上的书本码放有序。教室后方则是图书角与黑板报，那是我们的“精神角落”。而两侧的窗户让阳光洒满整个房间——明亮、整洁，这就是我们朝夕相处的教室。",
+      "kps": [
+        "kp_chi8_explain_order"
+      ],
+      "difficulty": 0.46,
+      "solution": "空间顺序说明训练：立足点清楚＋方位词准确＋过渡自然。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0523",
+      "item_type": "choice",
+      "stem": "写读后感最关键的一步是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_review_write"
+      ],
+      "difficulty": 0.38,
+      "solution": "读后感重在一个“感”字：感点要小而深，先简述原文再联系自身与社会，有感而发、观点明确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 选取感受最深的一点确立“感点”，围绕它联系实际展开",
+        "B. 把原文从头到尾详细复述",
+        "C. 大量摘抄原文好词好句",
+        "D. 只写这本书的作者生平"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0524",
+      "item_type": "solve",
+      "stem": "读《钢铁是怎样炼成的》，有同学确立感点“生命的意义在于奋斗”。请帮他列出读后感的写作提纲（引—议—联—结）。",
+      "answer": "示例：引——简述保尔在修筑铁路时忍着伤病苦干、双目失明后写作的情节（两三句）；议——奋斗让保尔平凡的生命有了钢铁般的光辉（分析感点）；联——联系自己遇到难题就想放弃的经历与转变；结——点题：人最宝贵的是生命，让生命在奋斗中发光（呼应感点）。",
+      "kps": [
+        "kp_chi8_review_write"
+      ],
+      "difficulty": 0.44,
+      "solution": "读后感四步结构：引（概述）—议（析感点）—联（实际）—结（升华）。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0525",
+      "item_type": "solve",
+      "stem": "写作片段：就你读过的一本书或一篇文章写一段读后感（150 字左右），要求感点明确、简述原文、联系自身。",
+      "answer": "示例：《老人与海》读后感\n合上书，老人圣地亚哥的话久久回响：“人可以被毁灭，但不能被打败。”他拖回的只是鱼骨，却在精神上赢得了整片大海。我想起自己练琴，一首曲子弹不好就想合上琴盖。今后再想放弃时，我会想起那位在星夜里与鲨鱼搏斗的老人——真正的胜利，是跌倒一百次仍第一百零一次扬起帆。",
+      "kps": [
+        "kp_chi8_review_write"
+      ],
+      "difficulty": 0.48,
+      "solution": "读后感片段：感点单一集中＋引议联结完整。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0526",
+      "item_type": "choice",
+      "stem": "演讲稿开头最重要的作用是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_speech_write"
+      ],
+      "difficulty": 0.38,
+      "solution": "演讲稿开头要抓人（故事、设问、情境）并迅速亮明观点；主体层层展开，结尾呼吁号召；语言要有感染力。",
+      "source": "llm_generated",
+      "options": [
+        "A. 吸引听众，亮出观点，建立与听众的联系",
+        "B. 把所有论据摆完",
+        "C. 道歉说自己讲不好",
+        "D. 从宇宙起源讲起"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0527",
+      "item_type": "solve",
+      "stem": "以“读书点亮青春”为题写演讲稿的开头和结尾各一段。要求：开头有称呼、亮观点；结尾发出号召。",
+      "answer": "示例：开头——亲爱的同学们：大家好！有人说青春是一张白纸，那么我要说，读书就是给这张纸染上五彩的画笔。今天我演讲的题目是《读书点亮青春》。结尾——同学们，最是书香能致远。让我们从今天起，与好书为伴，让阅读点亮我们的青春，照亮我们前行的路！谢谢大家！",
+      "kps": [
+        "kp_chi8_speech_write"
+      ],
+      "difficulty": 0.44,
+      "solution": "演讲稿首尾训练：称呼＋观点；号召＋致谢。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0528",
+      "item_type": "solve",
+      "stem": "写作片段：以“我的梦想”为主题写一篇 200 字左右的演讲稿片段：观点明确、有两层理由、结尾有号召，语言有感染力。",
+      "answer": "示例：亲爱的老师、同学们：大家好！我的梦想是成为一名医生。为什么？因为十岁那年，是医生从病痛中夺回了我的外婆，那一刻我懂得：白衣之下，是托举生命的手。也因为新闻里那些逆行出征的身影告诉我：危难时刻，总要有人挺身而出。同学们，梦想不是挂在嘴边的星辰，而是脚下日复一日的跋涉。让我们从今天的每一节课、每一次努力出发，向着梦想奔跑！谢谢大家！",
+      "kps": [
+        "kp_chi8_speech_write"
+      ],
+      "difficulty": 0.5,
+      "solution": "演讲稿综合训练：观点—两层理由—号召，口语化有气势。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0529",
+      "item_type": "choice",
+      "stem": "写游记最容易犯的毛病是记成“流水账”。避免的办法是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_travel_write"
+      ],
+      "difficulty": 0.38,
+      "solution": "游记三要素：游踪（线索）、景物的特征描写、所见所闻引发的感受；详略得当才能不落流水账。",
+      "source": "llm_generated",
+      "options": [
+        "A. 梳理游踪线索，重点景物详写（特征＋感受），其余略写，情景交融",
+        "B. 把每个景点各用一句话带过",
+        "C. 只写购物和吃饭",
+        "D. 抄旅行社的介绍词"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0530",
+      "item_type": "solve",
+      "stem": "以《游长城》为题列出游记提纲：写出游踪线索（三站）、详写的景物（一处）、感受的落点。",
+      "answer": "示例：游踪——山脚远望（略）→登城近观垛口、方砖（详：特征如“砖上凹痕是岁月的脚窝”）→烽火台极目（略中升华）。感受落点——由长城的雄伟沧桑生发对古代劳动者智慧与血汗的敬意。",
+      "kps": [
+        "kp_chi8_travel_write"
+      ],
+      "difficulty": 0.44,
+      "solution": "游记提纲：线索清楚＋详略设计＋情与景的落点。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0531",
+      "item_type": "solve",
+      "stem": "写作片段：写一次游览经历（公园、古迹、山水），梳理游踪、抓住景物特征、情景交融，五六句话，不记流水账。",
+      "answer": "示例：去年深秋，我们登上了泰山日观峰。从中天门拾级而上，两侧崖壁如削，古松从石缝里探出身子。越往上，雾越浓，石阶仿佛通向云里。登上南天门回望，群山尽收眼底，云海在脚下翻涌如雪浪。那一刻我忽然懂了“会当凌绝顶，一览众山小”的豪情——山高人为峰，路远脚更长。",
+      "kps": [
+        "kp_chi8_travel_write"
+      ],
+      "difficulty": 0.5,
+      "solution": "游记片段：游踪（中天门—南天门—日观峰）＋特征描写＋引用抒情。",
+      "source": "llm_generated",
+      "form": "essay",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0532",
+      "item_type": "choice",
+      "stem": "朱自清《经典常谈》介绍的第一部书（首篇）是：",
+      "answer": "A",
+      "kps": [
+        "kp_chi8_book_jingdian"
+      ],
+      "difficulty": 0.42,
+      "solution": "《经典常谈》首篇《〈说文解字〉第一》，从仓颉造字传说讲到“六书”，此后依次介绍《周易》《尚书》《诗经》、三《礼》、《春秋》三传、四书、《战国策》《史记》《汉书》、诸子、辞赋、诗、文。",
+      "source": "llm_generated",
+      "options": [
+        "A. 《说文解字》第一（介绍汉字的起源与造字法）",
+        "B. 《红楼梦》",
+        "C. 《西游记》",
+        "D. 《狂人日记》"
+      ],
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0533",
+      "item_type": "solve",
+      "stem": "《经典常谈》中“四书”指的是哪四部？它是哪个朝代开始成为科举标准读物的？",
+      "answer": "示例：四书是《大学》《中庸》《论语》《孟子》。南宋朱熹为四书作注（《四书章句集注》），元代起成为科举考试的标准教材，影响此后数百年读书人的必读书目。",
+      "kps": [
+        "kp_chi8_book_jingdian"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查古代文化常识积累（四书及其地位）。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "chi_dens02_0534",
+      "item_type": "solve",
+      "stem": "《经典常谈》被称为“传统文化的启蒙地图”。选择其中一篇（如《〈诗经〉第四》），说说朱自清是怎样把深奥的经典讲得明白有趣的（举一法）。",
+      "answer": "示例：如《〈诗经〉第四》从“诗言志”和人们熟识的诗句入手，先讲诗的源头（歌谣），再讲孔子删诗说、赋诗言志的风气，按源流娓娓道来；语言平实亲切如话家常，善用小故事（断章取义的赋诗趣例）化深为浅，引人入门。",
+      "kps": [
+        "kp_chi8_book_jingdian"
+      ],
+      "difficulty": 0.44,
+      "solution": "了解学术性普及读物的写法，积累文化常识。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "chi-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

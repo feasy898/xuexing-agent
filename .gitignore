@@ -13,3 +13,12 @@ data/items/_parts/
 .env
 .env.*
 !.env.example
+
+# GPU 端重建的虚拟环境（可再生物，不入库）
+.venv/
+_research_tmp/
+work/
+tmp/
+tmp_*.tsv
+regen/
+tmp_fix_*/

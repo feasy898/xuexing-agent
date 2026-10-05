@@ -1,0 +1,2454 @@
+[
+  {
+    "id": "phy_hs2_0001",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "长度为 L=0.2 m 的直导线水平放置在 B=0.5 T 的匀强磁场中，导线与磁场方向夹角为 30°，通有 I=2 A 的电流，导线所受安培力大小为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_ampere_force"
+    ],
+    "difficulty": 0.45,
+    "solution": "F=BILsinθ=0.5×2×0.2×sin30°=0.5×2×0.2×0.5=0.1 N，选 A。",
+    "source": "llm_generated",
+    "options": [
+      "A. 0.1 N",
+      "B. 0.2 N",
+      "C. 0.05 N",
+      "D. 0.4 N"
+    ]
+  },
+  {
+    "id": "phy_hs2_0002",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "一段通电直导线在磁场中所受安培力方向由左手定则判定：让磁感线穿过手心，四指指向____方向，拇指所指方向即为安培力方向。",
+    "answer": "电流",
+    "kps": [
+      "kp_phy12_ampere_force"
+    ],
+    "difficulty": 0.4,
+    "solution": "左手定则：磁感线穿手心，四指指电流方向，拇指为安培力方向。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0003",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "两根平行光滑水平导轨，间距 L=0.4 m，处于竖直向上匀强磁场中，B=0.5 T。导体棒质量 m=0.1 kg，电阻 R=0.5 Ω，棒中通入 I=2 A 电流时，棒的加速度大小为（不计摩擦）（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_ampere_motion"
+    ],
+    "difficulty": 0.55,
+    "solution": "安培力 F=BIL=0.5×2×0.4=0.4 N；a=F/m=0.4/0.1=4 m/s²。",
+    "source": "llm_generated",
+    "options": [
+      "A. 1 m/s²",
+      "B. 2 m/s²",
+      "C. 4 m/s²",
+      "D. 8 m/s²"
+    ]
+  },
+  {
+    "id": "phy_hs2_0004",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "光滑平行导轨水平放置，间距 L=0.5 m，匀强磁场 B=0.4 T 竖直向上。导体棒质量 m=0.1 kg，电阻 R=0.5 Ω，回路其他电阻不计。给棒通入 I=2 A 的恒定电流。求：(1) 棒所受安培力大小；(2) 棒的加速度大小。",
+    "answer": "F=0.4 N；a=4 m/s²",
+    "kps": [
+      "kp_phy12_ampere_motion"
+    ],
+    "difficulty": 0.55,
+    "solution": "(1) F=BIL=0.4×2×0.5=0.4 N。 (2) 由牛顿第二定律 a=F/m=0.4/0.1=4 m/s²。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0005",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一带正电粒子以速度 v 沿 +x 方向射入匀强磁场，磁场方向沿 +z 方向，则粒子所受洛伦兹力方向为（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_lorentz_force"
+    ],
+    "difficulty": 0.5,
+    "solution": "由 F=qv×B，v 沿 +x、B 沿 +z，右手定则 v×B=x̂×ẑ=-ŷ，故正电荷受力方向为 -y。",
+    "source": "llm_generated",
+    "options": [
+      "A. +x 方向",
+      "B. +y 方向",
+      "C. -y 方向",
+      "D. -z 方向"
+    ]
+  },
+  {
+    "id": "phy_hs2_0006",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "一电荷量为 q 的带电粒子以速度 v 在磁感应强度为 B 的匀强磁场中运动，若 v 与 B 平行，则洛伦兹力大小为____。",
+    "answer": "0",
+    "kps": [
+      "kp_phy12_lorentz_force"
+    ],
+    "difficulty": 0.42,
+    "solution": "F=qvBsinθ，v∥B 时 θ=0 或 π，sinθ=0，F=0。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0007",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一质子以速度 v 垂直射入磁感应强度为 B 的匀强磁场中，质子质量为 m、电量为 e，则轨道半径为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_circle_in_field"
+    ],
+    "difficulty": 0.45,
+    "solution": "洛伦兹力提供向心力：evB=mv²/r，解得 r=mv/(eB)。",
+    "source": "llm_generated",
+    "options": [
+      "A. r = mv/(eB)",
+      "B. r = eB/(mv)",
+      "C. r = mvB",
+      "D. r = eB/m"
+    ]
+  },
+  {
+    "id": "phy_hs2_0008",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一带电粒子质量 m=2×10⁻²⁵ kg，电量 q=1.6×10⁻¹⁹ C，以 v=2×10⁶ m/s 垂直射入 B=0.5 T 的匀强磁场中。求粒子轨道半径。",
+    "answer": "r=5 m",
+    "kps": [
+      "kp_phy12_circle_in_field"
+    ],
+    "difficulty": 0.55,
+    "solution": "r=mv/(qB)=(2×10⁻²⁵×2×10⁶)/(1.6×10⁻¹⁹×0.5)=4×10⁻¹⁹/(8×10⁻²⁰)=5 m。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0009",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "两种带电粒子以相同速度垂直射入同一匀强磁场，测得轨道半径之比 r₁:r₂=1:2，则它们的比荷之比 q₁/m₁ : q₂/m₂ 为（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_circle_period"
+    ],
+    "difficulty": 0.65,
+    "solution": "由 r=mv/(qB)，q/m=v/(rB)，v、B 相同时 q/m 与 r 成反比，故 q₁/m₁:q₂/m₂=r₂:r₁=2:1。",
+    "source": "llm_generated",
+    "options": [
+      "A. 1:1",
+      "B. 1:2",
+      "C. 2:1",
+      "D. 4:1"
+    ]
+  },
+  {
+    "id": "phy_hs2_0010",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "带电粒子在匀强磁场中做圆周运动时，其周期 T 与粒子速度无关，表达式为 T=____（用 m、q、B 表示）。",
+    "answer": "2πm/(qB)",
+    "kps": [
+      "kp_phy12_circle_period"
+    ],
+    "difficulty": 0.45,
+    "solution": "由 qvB=mv²/r 及 T=2πr/v，联立得 T=2πm/(qB)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0011",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "正方形匀强磁场区域边长为 a，一带正电粒子沿磁场左边界垂直射入，做半圆运动后从左边界射出，则粒子轨道半径 r 与 a 的关系为（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_boundary_problem"
+    ],
+    "difficulty": 0.55,
+    "solution": "粒子垂直左边界射入，做半圆从左边界射出时直径等于 a，故半径 r=a/2。",
+    "source": "llm_generated",
+    "options": [
+      "A. r < a",
+      "B. r = a/2",
+      "C. r = a",
+      "D. r > a"
+    ]
+  },
+  {
+    "id": "phy_hs2_0012",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "在 xOy 平面第一象限内有磁感应强度 B=0.5 T、方向垂直纸面向里的匀强磁场。一质量 m=1.6×10⁻²⁵ kg、电量 q=3.2×10⁻¹⁹ C 的正粒子，从 y 轴上 P(0, 0.2 m) 点以 v=2×10⁶ m/s 沿 -x 方向射入磁场。求粒子做圆周运动的半径和离开磁场的位置。",
+    "answer": "r=2 m；离开点(0, 0)即原点",
+    "kps": [
+      "kp_phy12_boundary_problem"
+    ],
+    "difficulty": 0.75,
+    "solution": "r=mv/(qB)=(1.6×10⁻²⁵×2×10⁶)/(3.2×10⁻¹⁹×0.5)=3.2×10⁻¹⁹/(1.6×10⁻¹⁹)=2 m。由 v 沿 -x、B 向里，正电荷由 F=qv×B 所受洛伦兹力向 -y，圆心在 P 正下方 (0, 0)，粒子沿半圆从 (0, 0.2) 到 (0, 0) 离开磁场。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0013",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "质谱仪中离子经加速电场加速后垂直进入速度选择器（电场 E、磁场 B₁ 同向），能通过速度选择器的离子速度必须满足（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_mass_spectrometer"
+    ],
+    "difficulty": 0.5,
+    "solution": "速度选择器中 qE=qvB₁，故 v=E/B₁。",
+    "source": "llm_generated",
+    "options": [
+      "A. v = E/B₁",
+      "B. v = B₁/E",
+      "C. v = E·B₁",
+      "D. v = B₁²/E"
+    ]
+  },
+  {
+    "id": "phy_hs2_0014",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "质谱仪中，离子在偏转磁场 B₂ 中做圆周运动的半径 r=____（用 m、q、v、B₂ 表示）。",
+    "answer": "mv/(qB₂)",
+    "kps": [
+      "kp_phy12_mass_spectrometer"
+    ],
+    "difficulty": 0.45,
+    "solution": "由 qvB₂=mv²/r 解得 r=mv/(qB₂)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0015",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "回旋加速器中粒子在磁场中做圆周运动的频率 f 与 q/m 和 B 的关系为（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_cyclotron"
+    ],
+    "difficulty": 0.5,
+    "solution": "T=2πm/(qB)，f=1/T=qB/(2πm)。",
+    "source": "llm_generated",
+    "options": [
+      "A. f = 2πm/(qB)",
+      "B. f = qB/m",
+      "C. f = qB/(2πm)",
+      "D. f = m/(qB)"
+    ]
+  },
+  {
+    "id": "phy_hs2_0016",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一回旋加速器 D 形盒半径 R=0.5 m，B=1 T，加速质子（q=1.6×10⁻¹⁹ C，m=1.67×10⁻²⁷ kg）。求：(1) 加速电源频率；(2) 质子获得的最大动能。",
+    "answer": "f≈1.53×10⁷ Hz；E_kmax≈1.92×10⁻¹² J",
+    "kps": [
+      "kp_phy12_cyclotron"
+    ],
+    "difficulty": 0.7,
+    "solution": "(1) f=qB/(2πm)=(1.6×10⁻¹⁹×1)/(2π×1.67×10⁻²⁷)≈1.53×10⁷ Hz。 (2) 由 qvB=mv²/R，v=qBR/m，E_k=½mv²=q²B²R²/(2m)=(1.6×10⁻¹⁹)²×1×0.25/(2×1.67×10⁻²⁷)=6.4×10⁻³⁹/3.34×10⁻²⁷≈1.92×10⁻¹² J。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0017",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在探究影响感应电流方向因素的实验中，当条形磁铁 N 极向下插入螺线管时，从上往下看，螺线管中产生的感应电流方向为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_exp_lenz"
+    ],
+    "difficulty": 0.55,
+    "solution": "N 极向下插入，穿过螺线管向下的磁通量增加。由楞次定律，感应电流磁场向上，由右手螺旋定则，从上往下看电流为顺时针。",
+    "source": "llm_generated",
+    "options": [
+      "A. 顺时针",
+      "B. 逆时针",
+      "C. 先顺时针后逆时针",
+      "D. 无感应电流"
+    ]
+  },
+  {
+    "id": "phy_hs2_0018",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "在探究影响感应电流方向因素的实验中，改变磁铁的____或磁铁插入(拔出)的____，均可改变感应电流方向。",
+    "answer": "极性；方向",
+    "kps": [
+      "kp_phy12_exp_lenz"
+    ],
+    "difficulty": 0.5,
+    "solution": "感应电流方向由磁场方向(磁极极性)和磁通量变化趋势共同决定，改变其一即可改变感应电流方向。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0019",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "楞次定律的内容是：感应电流的磁场总要____引起感应电流的磁通量的变化。",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_lenz_law"
+    ],
+    "difficulty": 0.4,
+    "solution": "楞次定律：感应电流的磁场总要阻碍引起感应电流的磁通量的变化。",
+    "source": "llm_generated",
+    "options": [
+      "A. 增加",
+      "B. 阻碍",
+      "C. 抵消",
+      "D. 等于"
+    ]
+  },
+  {
+    "id": "phy_hs2_0020",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "水平放置的导体圆环正上方有一条形磁铁（N 极朝下）。当条形磁铁向下运动靠近圆环时，分析圆环中感应电流的方向，并说明圆环所受安培力的方向。",
+    "answer": "从上往下看圆环中感应电流为顺时针；圆环受向上的排斥力",
+    "kps": [
+      "kp_phy12_lenz_law"
+    ],
+    "difficulty": 0.55,
+    "solution": "磁铁 N 极朝下靠近，穿过圆环向下的磁通量增加。由楞次定律，感应电流磁场向上，由右手螺旋定则，从上往下看电流为顺时针。感应电流磁场向上与磁铁 N 极磁场方向相反，由同极相斥，圆环所受安培力方向向上。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0021",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一段导体棒 ab 在匀强磁场中水平向右运动，磁场方向垂直纸面向里。由右手定则，棒中感应电动势方向（电流方向）为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_right_hand"
+    ],
+    "difficulty": 0.45,
+    "solution": "右手定则：磁感线（向里）穿手心，拇指指运动方向（右），四指指 a，即 b→a 方向。",
+    "source": "llm_generated",
+    "options": [
+      "A. b→a",
+      "B. a→b",
+      "C. 由 a 流向 b 或 b 流向 a 不确定",
+      "D. 无感应电流"
+    ]
+  },
+  {
+    "id": "phy_hs2_0022",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "右手定则用于判定导体切割磁感线时感应电流的方向：让磁感线垂直穿过手心，拇指指向____方向，四指所指方向即为感应电流方向。",
+    "answer": "导体运动",
+    "kps": [
+      "kp_phy12_right_hand"
+    ],
+    "difficulty": 0.4,
+    "solution": "右手定则：磁感线穿手心，拇指指导体运动方向，四指为感应电流方向。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0023",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一面积为 S 的线圈在匀强磁场 B 中，线圈平面与磁场方向夹角为 θ，穿过线圈的磁通量 Φ 为（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_flux_change"
+    ],
+    "difficulty": 0.55,
+    "solution": "设线圈平面法线与磁场夹角 α，Φ=BS·cosα。题中线圈平面与磁场夹角 θ，则 α=90°-θ，故 Φ=BS·cos(90°-θ)=BS·sinθ。",
+    "source": "llm_generated",
+    "options": [
+      "A. BS",
+      "B. BS·sinθ",
+      "C. BS·cosθ",
+      "D. 0"
+    ]
+  },
+  {
+    "id": "phy_hs2_0024",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "矩形线圈面积 S=200 cm²，共 N=100 匝，在 B=0.5 T 的匀强磁场中由平行于磁场方向转过 90° 至垂直于磁场方向。求此过程中单匝磁通量的变化量 ΔΦ。",
+    "answer": "ΔΦ=0.01 Wb",
+    "kps": [
+      "kp_phy12_flux_change"
+    ],
+    "difficulty": 0.5,
+    "solution": "初态 Φ₁=0；末态 Φ₂=BS=0.5×200×10⁻⁴=0.01 Wb。ΔΦ=Φ₂-Φ₁=0.01 Wb。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0025",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "法拉第电磁感应定律指出：闭合电路中感应电动势的大小，跟穿过这一电路的磁通量的变化率____。",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_faraday_law"
+    ],
+    "difficulty": 0.4,
+    "solution": "E=N·ΔΦ/Δt，感应电动势与磁通量的变化率成正比。",
+    "source": "llm_generated",
+    "options": [
+      "A. 成正比",
+      "B. 成反比",
+      "C. 相等",
+      "D. 的平方成正比"
+    ]
+  },
+  {
+    "id": "phy_hs2_0026",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "匝数 N=100 的矩形线圈面积 S=200 cm²，在 B=0.5 T 匀强磁场中匀速转动，0.1 s 内线圈平面从平行磁场转到垂直磁场。求平均感应电动势。",
+    "answer": "E_avg=10 V",
+    "kps": [
+      "kp_phy12_faraday_law"
+    ],
+    "difficulty": 0.5,
+    "solution": "ΔΦ=BS=0.5×200×10⁻⁴=0.01 Wb。E_avg=N·ΔΦ/Δt=100×0.01/0.1=10 V。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0027",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一根长 L=0.5 m 的导体棒以 v=2 m/s 垂直于匀强磁场（B=0.4 T）运动，若 v、B、L 三者两两垂直，棒中感应电动势大小为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_motional_emf"
+    ],
+    "difficulty": 0.4,
+    "solution": "E=BLv=0.4×0.5×2=0.4 V。",
+    "source": "llm_generated",
+    "options": [
+      "A. 0.4 V",
+      "B. 0.8 V",
+      "C. 0.2 V",
+      "D. 1 V"
+    ]
+  },
+  {
+    "id": "phy_hs2_0028",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "导体在匀强磁场中垂直切割磁感线时，感应电动势大小 E=____（用 B、L、v 表示）。",
+    "answer": "BLv",
+    "kps": [
+      "kp_phy12_motional_emf"
+    ],
+    "difficulty": 0.4,
+    "solution": "导体切割磁感线产生的感应电动势公式为 E=BLv（v 垂直于 B、L）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0029",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "导体棒 ab 在磁感应强度 B=0.5 T 的匀强磁场中以 v=2 m/s 沿水平导轨运动，棒长 L=0.4 m，回路电阻 R=0.5 Ω（其他电阻不计）。求：(1) 棒中感应电动势大小；(2) 回路中感应电流大小；(3) 棒所受安培力大小。",
+    "answer": "E=0.4 V；I=0.8 A；F=0.16 N",
+    "kps": [
+      "kp_phy12_induction_circuit"
+    ],
+    "difficulty": 0.55,
+    "solution": "(1) E=BLv=0.5×0.4×2=0.4 V。 (2) I=E/R=0.4/0.5=0.8 A。 (3) F=BIL=0.5×0.8×0.4=0.16 N。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0030",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在电磁感应现象中，闭合回路中通过导体的电荷量 q 与磁通量变化量 ΔΦ、回路电阻 R 的关系为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_charge_quantity"
+    ],
+    "difficulty": 0.5,
+    "solution": "q=∫I·dt=∫(E/R)dt=∫(N·dΦ/dt/R)dt=N·ΔΦ/R。",
+    "source": "llm_generated",
+    "options": [
+      "A. q = N·ΔΦ/R",
+      "B. q = N·ΔΦ·R",
+      "C. q = R/(N·ΔΦ)",
+      "D. q = N·R/ΔΦ"
+    ]
+  },
+  {
+    "id": "phy_hs2_0031",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "匝数 N=50 的线圈，电阻 R=2 Ω，在 0.5 s 内磁通量由 Φ₁=0.02 Wb 减小到 Φ₂=0.01 Wb。求：(1) 线圈中感应电动势的平均值；(2) 通过线圈的电荷量。",
+    "answer": "E_avg=1 V；q=0.25 C",
+    "kps": [
+      "kp_phy12_charge_quantity"
+    ],
+    "difficulty": 0.55,
+    "solution": "(1) E_avg=N·|ΔΦ|/Δt=50×(0.02-0.01)/0.5=1 V。 (2) q=N·|ΔΦ|/R=50×0.01/2=0.25 C。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0032",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "光滑水平平行导轨间距 L=0.5 m，处于 B=0.4 T 竖直向上的匀强磁场中。导体棒 ab 质量 m=0.1 kg，电阻 R=0.5 Ω，电源电动势 ε=2 V，内阻 r=0.1 Ω。求：(1) 棒中电流；(2) 棒所受安培力；(3) 棒的加速度。",
+    "answer": "I≈3.33 A；F≈0.667 N；a≈6.67 m/s²",
+    "kps": [
+      "kp_phy12_induction_dynamics"
+    ],
+    "difficulty": 0.65,
+    "solution": "(1) I=ε/(R+r)=2/0.6≈3.33 A。 (2) F=BIL=0.4×3.33×0.5≈0.667 N。 (3) a=F/m=0.667/0.1=6.67 m/s²。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0033",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在电磁感应现象中，下列说法正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_induction_energy"
+    ],
+    "difficulty": 0.55,
+    "solution": "由能量守恒，纯电阻电路中外力克服安培力做的功等于回路产生的焦耳热。",
+    "source": "llm_generated",
+    "options": [
+      "A. 感应电流的电能全部由磁场能转化",
+      "B. 安培力做正功",
+      "C. 感应电流电能全部转化为焦耳热",
+      "D. 外力克服安培力做的功等于回路产生的焦耳热"
+    ]
+  },
+  {
+    "id": "phy_hs2_0034",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "电磁感应现象中，外力克服安培力做的功等于____，遵守能量守恒定律。",
+    "answer": "回路消耗的电能（或焦耳热）",
+    "kps": [
+      "kp_phy12_induction_energy"
+    ],
+    "difficulty": 0.5,
+    "solution": "外力克服安培力做的功转化为电能，在纯电阻电路中再全部转化为焦耳热。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0035",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "矩形线圈在匀强磁场中匀速转动产生交变电动势。设从中性面开始计时，则感应电动势 e 随时间 t 变化的图像是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_induction_image"
+    ],
+    "difficulty": 0.5,
+    "solution": "从中性面起 e=E_max·sin(ωt)，是正弦曲线，过原点时斜率最大。",
+    "source": "llm_generated",
+    "options": [
+      "A. 矩形波",
+      "B. 正弦曲线，过原点，起始斜率最大",
+      "C. 余弦曲线，起点为最大值",
+      "D. 锯齿波"
+    ]
+  },
+  {
+    "id": "phy_hs2_0036",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于自感现象，下列说法正确的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_mutual_self_induction"
+    ],
+    "difficulty": 0.55,
+    "solution": "A 错（自感电动势阻碍电流变化，不是阻碍原电流）；B 错（L 由线圈本身决定）；C 对；D 错（L 单位是 H）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 自感电动势总是阻碍原电流",
+      "B. 自感系数 L 与电流大小有关",
+      "C. 自感电动势方向遵循楞次定律",
+      "D. 自感系数 L 的单位是 Wb"
+    ]
+  },
+  {
+    "id": "phy_hs2_0037",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "自感系数的国际单位是____，符号为____。",
+    "answer": "亨利；H",
+    "kps": [
+      "kp_phy12_mutual_self_induction"
+    ],
+    "difficulty": 0.4,
+    "solution": "自感系数 L 的国际单位是亨利，符号 H。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0038",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "电磁阻尼的原理是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_eddy_current"
+    ],
+    "difficulty": 0.5,
+    "solution": "电磁阻尼：导体在磁场中运动时产生涡流，涡流受安培力方向阻碍导体运动。",
+    "source": "llm_generated",
+    "options": [
+      "A. 静电感应",
+      "B. 涡流在磁场中受安培力",
+      "C. 磁滞效应",
+      "D. 库仑力"
+    ]
+  },
+  {
+    "id": "phy_hs2_0039",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "电磁炉的锅体通常采用导磁性良好的金属（如铁）制成，其工作原理是利用____在锅体中产生的热效应。",
+    "answer": "涡流",
+    "kps": [
+      "kp_phy12_eddy_current"
+    ],
+    "difficulty": 0.45,
+    "solution": "电磁炉的高频交变磁场在金属锅体中产生涡流，涡流的焦耳热加热食物。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0040",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "矩形线圈在匀强磁场中匀速转动产生交变电流。当线圈平面与磁场方向平行时，线圈中（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_ac_generation"
+    ],
+    "difficulty": 0.5,
+    "solution": "线圈平面与磁场平行时，切割磁感线速度最大，感应电动势最大；此时线圈平面法线垂直磁场，磁通量为零。",
+    "source": "llm_generated",
+    "options": [
+      "A. 感应电动势为零",
+      "B. 磁通量为零",
+      "C. 感应电动势最大且磁通量为零",
+      "D. 感应电动势最大且磁通量最大"
+    ]
+  },
+  {
+    "id": "phy_hs2_0041",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "矩形线圈在匀强磁场中匀速转动一周，产生一个完整周期的交变电动势。线圈经过____面（中性面）时磁通量最大、感应电动势为零。",
+    "answer": "线圈平面垂直磁场",
+    "kps": [
+      "kp_phy12_ac_generation"
+    ],
+    "difficulty": 0.45,
+    "solution": "中性面：线圈平面垂直于磁场方向的位置，磁通量最大，感应电动势为零。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0042",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "我国民用交流电的频率为 50 Hz，则其周期为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_ac_description"
+    ],
+    "difficulty": 0.4,
+    "solution": "T=1/f=1/50=0.02 s。",
+    "source": "llm_generated",
+    "options": [
+      "A. 0.02 s",
+      "B. 0.04 s",
+      "C. 0.2 s",
+      "D. 0.5 s"
+    ]
+  },
+  {
+    "id": "phy_hs2_0043",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一正弦交流电的峰值电压 U_max=311 V，频率 f=50 Hz。求：(1) 有效值电压 U；(2) 周期 T；(3) 电压瞬时值表达式（从中性面开始计时）。",
+    "answer": "U=220 V；T=0.02 s；u=311·sin(100πt) V",
+    "kps": [
+      "kp_phy12_ac_description"
+    ],
+    "difficulty": 0.5,
+    "solution": "(1) U=U_max/√2=311/1.414≈220 V。 (2) T=1/f=0.02 s。 (3) ω=2πf=100π rad/s，u=U_max·sin(ωt)=311·sin(100πt) V。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0044",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于交变电流的峰值、有效值、瞬时值、平均值，下列说法正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_four_values"
+    ],
+    "difficulty": 0.55,
+    "solution": "A 错（交流电压表测有效值）；B 对；C 错（计算热量用有效值）；D 错（击穿电压指峰值）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 交流电压表测的是峰值",
+      "B. 交流电压表测的是有效值",
+      "C. 计算交流电通过电阻产生的热量用瞬时值",
+      "D. 击穿电压指有效值"
+    ]
+  },
+  {
+    "id": "phy_hs2_0045",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在探究变压器电压与匝数关系的实验中，用匝数比 N₁:N₂=2:1 的变压器，原线圈接在 u₁=10 V 交流电源上，则副线圈两端电压 u₂ 约为（理想变压器）（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_exp_transformer"
+    ],
+    "difficulty": 0.45,
+    "solution": "理想变压器 U₁/U₂=N₁/N₂=2/1，故 U₂=U₁·N₂/N₁=10×1/2=5 V。",
+    "source": "llm_generated",
+    "options": [
+      "A. 5 V",
+      "B. 10 V",
+      "C. 20 V",
+      "D. 1 V"
+    ]
+  },
+  {
+    "id": "phy_hs2_0046",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "理想变压器原副线圈匝数比 N₁:N₂=10:1，原线圈接 U₁=220 V 交流电源，则副线圈两端电压为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_transformer"
+    ],
+    "difficulty": 0.4,
+    "solution": "U₂=U₁·N₂/N₁=220×1/10=22 V。",
+    "source": "llm_generated",
+    "options": [
+      "A. 22 V",
+      "B. 2200 V",
+      "C. 110 V",
+      "D. 11 V"
+    ]
+  },
+  {
+    "id": "phy_hs2_0047",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "理想变压器原线圈 N₁=1100 匝，副线圈 N₂=40 匝，原线圈接 U₁=220 V 交流电源，副线圈接 '8 V 20 W' 的灯泡。求：(1) 副线圈两端电压；(2) 灯泡正常发光时原线圈中的电流。",
+    "answer": "U₂=8 V；I₁≈0.091 A",
+    "kps": [
+      "kp_phy12_transformer"
+    ],
+    "difficulty": 0.6,
+    "solution": "(1) U₂=U₁·N₂/N₁=220×40/1100=8 V。 (2) 灯泡正常发光 I₂=P/U₂=20/8=2.5 A，由 I₁/I₂=N₂/N₁，I₁=I₂·N₂/N₁=2.5×40/1100≈0.091 A。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0048",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "远距离输电时，为减少输电线路上的功率损耗，通常采用（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_power_transmission"
+    ],
+    "difficulty": 0.5,
+    "solution": "输电功率 P=UI 一定，提高电压 U 可减小电流 I，由 P_loss=I²R，减小 I 可大幅减小线损。",
+    "source": "llm_generated",
+    "options": [
+      "A. 提高输电电压",
+      "B. 采用高压输电",
+      "C. 加大输电电流",
+      "D. 用粗导线代替细导线"
+    ]
+  },
+  {
+    "id": "phy_hs2_0049",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "发电厂输出功率 P=100 kW，输电电压 U₁=250 V，输电线总电阻 R=0.4 Ω。求：(1) 输电电流；(2) 输电线上损耗的功率；(3) 用户得到的实际功率。",
+    "answer": "I=400 A；P_loss=64 kW；P_用=36 kW",
+    "kps": [
+      "kp_phy12_power_transmission"
+    ],
+    "difficulty": 0.6,
+    "solution": "(1) I=P/U₁=100000/250=400 A。 (2) P_loss=I²R=400²×0.4=64000 W=64 kW。 (3) P_用=P-P_损=100-64=36 kW。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0050",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "LC 振荡电路中，当电容器极板上电荷为零时，电路中（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_em_oscillation"
+    ],
+    "difficulty": 0.5,
+    "solution": "电荷 q=0 时电场能最小（为零），由能量守恒磁场能最大、电流最大。",
+    "source": "llm_generated",
+    "options": [
+      "A. 电流为零，电场能最大",
+      "B. 电流最大，磁场能最大",
+      "C. 电流最大，电场能最大",
+      "D. 电流为零，磁场能最大"
+    ]
+  },
+  {
+    "id": "phy_hs2_0051",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "LC 振荡电路的周期公式 T=____（用 L、C 表示）。",
+    "answer": "2π√(LC)",
+    "kps": [
+      "kp_phy12_em_oscillation"
+    ],
+    "difficulty": 0.45,
+    "solution": "LC 振荡电路的周期 T=2π√(LC)（汤姆孙公式）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0052",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于电磁波的发射与接收，说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_em_wave_send_receive"
+    ],
+    "difficulty": 0.55,
+    "solution": "发射电磁波需要开放电路（频率足够高），接收电磁波需要调谐（选频）与检波。",
+    "source": "llm_generated",
+    "options": [
+      "A. 发射电磁波需要开放电路，接收需要调谐",
+      "B. 接收电磁波需要开放电路，发射需要调谐",
+      "C. 发射和接收都不需要开放电路",
+      "D. 发射和接收都需要开放电路但不需要调谐"
+    ]
+  },
+  {
+    "id": "phy_hs2_0053",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在电磁波谱中，波长最长的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_em_spectrum_app"
+    ],
+    "difficulty": 0.4,
+    "solution": "电磁波谱按波长从长到短：无线电波 > 红外线 > 可见光 > 紫外线 > X 射线 > γ 射线。",
+    "source": "llm_generated",
+    "options": [
+      "A. 紫外线",
+      "B. 可见光",
+      "C. X 射线",
+      "D. 无线电波"
+    ]
+  },
+  {
+    "id": "phy_hs2_0054",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "电磁波谱中，频率最高、波长最短的是____射线。",
+    "answer": "γ",
+    "kps": [
+      "kp_phy12_em_spectrum_app"
+    ],
+    "difficulty": 0.4,
+    "solution": "γ 射线是电磁波谱中频率最高、波长最短的电磁波，主要来自放射性核衰变。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0055",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "电磁波在真空中传播时（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_em_energy_transfer"
+    ],
+    "difficulty": 0.4,
+    "solution": "电磁波在真空中速度恒为 c=3×10⁸ m/s，频率由波源决定不变。",
+    "source": "llm_generated",
+    "options": [
+      "A. 速度恒为 c，频率不变",
+      "B. 速度随频率变化",
+      "C. 波长随传播距离增大",
+      "D. 频率随速度变化"
+    ]
+  },
+  {
+    "id": "phy_hs2_0056",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列器件中，不属于传感器的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_sensor_principle"
+    ],
+    "difficulty": 0.5,
+    "solution": "动圈式话筒、遥控器接收器、电子秤都能将非电学量转换为电学量，属于传感器；干电池本身是电源，不属于传感器。",
+    "source": "llm_generated",
+    "options": [
+      "A. 动圈式话筒",
+      "B. 电视机遥控器接收器",
+      "C. 干电池",
+      "D. 电子秤"
+    ]
+  },
+  {
+    "id": "phy_hs2_0057",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "传感器的基本工作原理是：将所感受的____信号按一定规律转换成便于测量的____信号。",
+    "answer": "非电学；电学",
+    "kps": [
+      "kp_phy12_sensor_principle"
+    ],
+    "difficulty": 0.45,
+    "solution": "传感器能将力、热、光、声等非电学信号转换为电压、电流等电学信号输出。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0058",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "光敏电阻的阻值随光照强度增大而（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_sensor_types"
+    ],
+    "difficulty": 0.45,
+    "solution": "光敏电阻基于半导体的光电效应，光照越强载流子越多电阻越小。",
+    "source": "llm_generated",
+    "options": [
+      "A. 减小",
+      "B. 增大",
+      "C. 不变",
+      "D. 先增大后减小"
+    ]
+  },
+  {
+    "id": "phy_hs2_0059",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "热敏电阻分为正温度系数（PTC）和负温度系数（NTC）两类，其中 PTC 阻值随温度升高而____。",
+    "answer": "增大",
+    "kps": [
+      "kp_phy12_sensor_types"
+    ],
+    "difficulty": 0.45,
+    "solution": "PTC（正温度系数）热敏电阻：温度升高时阻值增大；NTC 相反。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0060",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "利用光敏电阻制作的自动控制装置，当光照减弱时，下列叙述正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_exp_sensor"
+    ],
+    "difficulty": 0.5,
+    "solution": "光照减弱时光敏电阻阻值增大，回路电流减小。",
+    "source": "llm_generated",
+    "options": [
+      "A. 光敏电阻阻值减小，电路电流增大",
+      "B. 光敏电阻阻值增大，电路电流减小",
+      "C. 光敏电阻阻值不变",
+      "D. 装置无反应"
+    ]
+  },
+  {
+    "id": "phy_hs2_0061",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "用油膜法估测分子直径的实验中，若一滴油酸体积为 V，铺成的单分子油膜面积为 S，则油酸分子直径约为（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_molecular_size"
+    ],
+    "difficulty": 0.45,
+    "solution": "分子直径 d=V/S（单分子油膜厚度即分子直径）。",
+    "source": "llm_generated",
+    "options": [
+      "A. d=V·S",
+      "B. d=V/S",
+      "C. d=S/V",
+      "D. d=√(V/S)"
+    ]
+  },
+  {
+    "id": "phy_hs2_0062",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "阿伏加德罗常数 N_A 的数值约为____mol⁻¹。",
+    "answer": "6.02×10²³",
+    "kps": [
+      "kp_phy12_molecular_size"
+    ],
+    "difficulty": 0.4,
+    "solution": "阿伏加德罗常数 N_A≈6.02×10²³ mol⁻¹。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0063",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "用油膜法估测分子大小实验中，下列说法错误的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_exp_oilfilm"
+    ],
+    "difficulty": 0.5,
+    "solution": "D 错误：油膜应充分扩散为单分子层，体积过大反而使油膜重叠或破裂，体积适中且扩散充分时测量准确。",
+    "source": "llm_generated",
+    "options": [
+      "A. 油酸酒精溶液的浓度需事先测定",
+      "B. 痱子粉的作用是显示油膜边界",
+      "C. 油膜面积测量越精确越好",
+      "D. 油膜体积越大测量越准确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0064",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "已知水的密度 ρ=1.0×10³ kg/m³，阿伏加德罗常数 N_A=6.0×10²³ mol⁻¹，水的摩尔质量 M=1.8×10⁻² kg/mol。则 1 cm³ 水中含有的分子数约为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_molecular_estimation"
+    ],
+    "difficulty": 0.55,
+    "solution": "水的质量 m=ρV=1.0×10³×1×10⁻⁶=1×10⁻³ kg；物质的量 n=m/M=1×10⁻³/1.8×10⁻²≈5.56×10⁻² mol；分子数 N=n·N_A≈5.56×10⁻²×6.0×10²³≈3.3×10²² 个。",
+    "source": "llm_generated",
+    "options": [
+      "A. 3.3×10²² 个",
+      "B. 3.3×10²³ 个",
+      "C. 6.0×10²³ 个",
+      "D. 3.3×10²⁰ 个"
+    ]
+  },
+  {
+    "id": "phy_hs2_0065",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "已知铜的摩尔质量 M=6.4×10⁻² kg/mol，密度 ρ=8.9×10³ kg/m³，阿伏加德罗常数 N_A=6.0×10²³ mol⁻¹。求：(1) 1 个铜原子的质量；(2) 1 个铜原子的体积（视为球）。",
+    "answer": "m_原子≈1.07×10⁻²⁵ kg；V_原子≈1.2×10⁻²⁹ m³",
+    "kps": [
+      "kp_phy12_molecular_estimation"
+    ],
+    "difficulty": 0.6,
+    "solution": "(1) m_原子=M/N_A=6.4×10⁻²/6.0×10²³≈1.07×10⁻²⁵ kg。 (2) V_原子=M/(ρ·N_A)=6.4×10⁻²/(8.9×10³×6.0×10²³)=6.4×10⁻²/(5.34×10²⁷)≈1.2×10⁻²⁹ m³。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0066",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于布朗运动的说法，正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_brown_motion"
+    ],
+    "difficulty": 0.45,
+    "solution": "布朗运动是悬浮在液体（或气体）中固体小颗粒的无规则运动，反映液体分子的无规则运动，温度越高越剧烈。",
+    "source": "llm_generated",
+    "options": [
+      "A. 布朗运动是液体分子的运动",
+      "B. 布朗运动是无规则运动，温度越高越剧烈",
+      "C. 布朗运动是固体分子的运动",
+      "D. 布朗运动是有规则运动"
+    ]
+  },
+  {
+    "id": "phy_hs2_0067",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于分子间作用力，下列说法正确的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_molecular_force_high"
+    ],
+    "difficulty": 0.55,
+    "solution": "分子间同时存在引力和斥力；r=r₀ 时引力等于斥力，分子力为零；r<r₀ 时斥力大于引力；r>r₀ 时引力大于斥力。",
+    "source": "llm_generated",
+    "options": [
+      "A. 分子间只存在引力",
+      "B. 分子间只存在斥力",
+      "C. 分子间距离 r=r₀ 时引力等于斥力",
+      "D. 分子间距离 r<r₀ 时引力大于斥力"
+    ]
+  },
+  {
+    "id": "phy_hs2_0068",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "分子间同时存在相互作用的引力和斥力，当分子间距离等于 r₀ 时，分子力表现为____。",
+    "answer": "零",
+    "kps": [
+      "kp_phy12_molecular_force_high"
+    ],
+    "difficulty": 0.45,
+    "solution": "r=r₀ 时引力等于斥力，分子力合力为零。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0069",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于分子动能、分子势能与内能，下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_molecular_energy"
+    ],
+    "difficulty": 0.55,
+    "solution": "温度是分子平均动能的标志（A 对）；B 错（势能随距离变化非单调）；C 错（内能还与体积、分子数有关）；D 错（0℃ 时仍有分子动能）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 温度是分子平均动能的唯一标志",
+      "B. 分子势能随分子间距离增大而单调增大",
+      "C. 物体的内能只与温度有关",
+      "D. 0℃ 时物体分子动能为零"
+    ]
+  },
+  {
+    "id": "phy_hs2_0070",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_temperature_scale"
+    ],
+    "difficulty": 0.5,
+    "solution": "A 对（标准大气压下冰水混合物 0℃）；B 错（热力学温标零点是 -273.15℃，即绝对零度）；C 数值近似正确；D 错（1℃ 变化等于 1 K 变化）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 摄氏温标规定标准大气压下冰水混合物的温度为 0℃",
+      "B. 热力学温标的零点为 0℃",
+      "C. 摄氏温度与热力学温度的换算关系为 T=t+273.15",
+      "D. 1℃ 温度变化等于 1 K 温度变化的 100 倍"
+    ]
+  },
+  {
+    "id": "phy_hs2_0071",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "热力学温度 T 与摄氏温度 t 的关系为 T=____（保留整数近似）。",
+    "answer": "t+273",
+    "kps": [
+      "kp_phy12_temperature_scale"
+    ],
+    "difficulty": 0.4,
+    "solution": "T=t+273（K），近似关系。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0072",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一定质量的气体，在温度不变时，下列物理量中可能发生变化的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_gas_isothermal"
+    ],
+    "difficulty": 0.5,
+    "solution": "等温变化中可改变体积，由 pV=B' (常量)，体积变化则压强变化；密度=质量/体积也变化；分子数不变。",
+    "source": "llm_generated",
+    "options": [
+      "A. 体积",
+      "B. 压强",
+      "C. 密度",
+      "D. 分子数"
+    ]
+  },
+  {
+    "id": "phy_hs2_0073",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一定质量的气体在等温变化中，体积 V₁=2 L 时压强 p₁=1.5×10⁵ Pa，求体积 V₂=3 L 时气体的压强 p₂。",
+    "answer": "p₂=1.0×10⁵ Pa",
+    "kps": [
+      "kp_phy12_gas_isothermal"
+    ],
+    "difficulty": 0.5,
+    "solution": "由玻意耳定律 p₁V₁=p₂V₂：1.5×10⁵×2=p₂×3，p₂=1.0×10⁵ Pa。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0074",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在'探究气体等温变化规律'实验中，下列操作错误的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_exp_isothermal"
+    ],
+    "difficulty": 0.5,
+    "solution": "C 错误：手紧握注射器会使气体温度升高，违反等温条件。",
+    "source": "llm_generated",
+    "options": [
+      "A. 实验时缓慢推动活塞",
+      "B. 读取压强值时视线与刻度垂直",
+      "C. 实验过程中用手紧握注射器",
+      "D. 多测几组数据求平均值"
+    ]
+  },
+  {
+    "id": "phy_hs2_0075",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "查理定律表明：一定质量的气体，在体积不变时（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_gas_isochoric"
+    ],
+    "difficulty": 0.45,
+    "solution": "查理定律 p/T=C（常量），即压强与热力学温度成正比。",
+    "source": "llm_generated",
+    "options": [
+      "A. 压强与摄氏温度成正比",
+      "B. 压强与热力学温度成正比",
+      "C. 压强与体积成正比",
+      "D. 体积与温度成正比"
+    ]
+  },
+  {
+    "id": "phy_hs2_0076",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "查理定律的表达式为 p/T=____（用 p₁、T₁、p₂、T₂ 表示）。",
+    "answer": "p₁/T₁=p₂/T₂",
+    "kps": [
+      "kp_phy12_gas_isochoric"
+    ],
+    "difficulty": 0.45,
+    "solution": "一定质量气体等容变化时 p/T=常量，即 p₁/T₁=p₂/T₂。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0077",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "盖-吕萨克定律表明：一定质量的气体，在压强不变时（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_gas_isobaric"
+    ],
+    "difficulty": 0.45,
+    "solution": "盖-吕萨克定律 V/T=C（常量），体积与热力学温度成正比。",
+    "source": "llm_generated",
+    "options": [
+      "A. 体积与热力学温度成正比",
+      "B. 体积与压强成正比",
+      "C. 压强与热力学温度成正比",
+      "D. 体积与热力学温度成反比"
+    ]
+  },
+  {
+    "id": "phy_hs2_0078",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一定质量理想气体的等温线在 p-V 图上是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_gas_images"
+    ],
+    "difficulty": 0.5,
+    "solution": "等温线 pV=C，是双曲线的一支。",
+    "source": "llm_generated",
+    "options": [
+      "A. 过原点的直线",
+      "B. 双曲线的一支",
+      "C. 平行于 V 轴的直线",
+      "D. 平行于 p 轴的直线"
+    ]
+  },
+  {
+    "id": "phy_hs2_0079",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一定质量理想气体从状态 A(p₁=2×10⁵ Pa, V₁=2 L) 经等温变化到状态 B(p₂=4×10⁵ Pa)。求 B 状态的体积 V₂；若再从 B 经等容变化到 p₃=2×10⁵ Pa，求温度变化过程（用图象法）。",
+    "answer": "V₂=1 L；B→C 等容过程",
+    "kps": [
+      "kp_phy12_gas_images"
+    ],
+    "difficulty": 0.6,
+    "solution": "(1) 等温 p₁V₁=p₂V₂：2×10⁵×2=4×10⁵×V₂，V₂=1 L。 (2) 等容过程中 p/T 恒定，从 p=4×10⁵ Pa 降到 p=2×10⁵ Pa 时 T 减半。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0080",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "理想气体状态方程为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_ideal_gas"
+    ],
+    "difficulty": 0.5,
+    "solution": "理想气体状态方程 pV/T=C（对一定质量气体）；对 n 摩尔理想气体 pV=nRT。",
+    "source": "llm_generated",
+    "options": [
+      "A. pV/T=C（常量）",
+      "B. pV=RT",
+      "C. pV=nRT",
+      "D. p+V=R"
+    ]
+  },
+  {
+    "id": "phy_hs2_0081",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一定质量理想气体，初始状态 p₁=1×10⁵ Pa，V₁=2 L，T₁=300 K。变化后 p₂=2×10⁵ Pa，V₂=4 L，求 T₂。",
+    "answer": "T₂=1200 K",
+    "kps": [
+      "kp_phy12_ideal_gas"
+    ],
+    "difficulty": 0.5,
+    "solution": "由理想气体状态方程 p₁V₁/T₁=p₂V₂/T₂：1×10⁵×2/300=2×10⁵×4/T₂，T₂=300×8/2=1200 K。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0082",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "从微观角度看，气体压强的大小与下列因素有关的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_gas_microscopic"
+    ],
+    "difficulty": 0.5,
+    "solution": "气体压强微观意义：单位体积内分子数越多、分子平均动能越大（即温度越高），压强越大；压强本质是分子碰撞器壁的动量变化率。",
+    "source": "llm_generated",
+    "options": [
+      "A. 单位体积内的分子数",
+      "B. 分子的平均动能",
+      "C. 分子碰撞器壁的速度",
+      "D. 上述全部"
+    ]
+  },
+  {
+    "id": "phy_hs2_0083",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "从微观角度看，气体压强的大小取决于两个因素：单位体积内的分子数和分子的____。",
+    "answer": "平均动能",
+    "kps": [
+      "kp_phy12_gas_microscopic"
+    ],
+    "difficulty": 0.45,
+    "solution": "气体压强由单位体积内分子数和分子平均动能（温度）共同决定。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0084",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于晶体和非晶体的说法，正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_solid_crystal"
+    ],
+    "difficulty": 0.45,
+    "solution": "A 对（晶体具有规则几何外形）；B 错；C 错（晶体有固定熔点，非晶体没有）；D 错（玻璃是非晶体）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 晶体有规则的几何外形",
+      "B. 非晶体有规则的几何外形",
+      "C. 晶体和非晶体都有固定的熔点",
+      "D. 玻璃是晶体"
+    ]
+  },
+  {
+    "id": "phy_hs2_0085",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于液体的表面张力，下列说法正确的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_liquid_surface"
+    ],
+    "difficulty": 0.5,
+    "solution": "表面张力方向沿液面切向、与液面边界垂直，使液面有收缩趋势；表面张力随温度升高而减小。",
+    "source": "llm_generated",
+    "options": [
+      "A. 表面张力方向平行于液面",
+      "B. 表面张力方向垂直于液面",
+      "C. 表面张力使液面收缩",
+      "D. 表面张力与温度无关"
+    ]
+  },
+  {
+    "id": "phy_hs2_0086",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "液体表面层分子比液体内部稀疏，分子间距较大，分子间作用力表现为____，因此液面有收缩趋势。",
+    "answer": "引力",
+    "kps": [
+      "kp_phy12_liquid_surface"
+    ],
+    "difficulty": 0.45,
+    "solution": "液体表面层分子间距较大，分子间作用力表现为引力，使液面收缩。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0087",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于浸润与不浸润现象，下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_wetting_capillary"
+    ],
+    "difficulty": 0.5,
+    "solution": "A 对（水能浸润玻璃）；B 错（水银不浸润玻璃）；C 对（浸润时毛细管中液面上升）；D 错（不浸润时下降）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 水能浸润玻璃",
+      "B. 水银能浸润玻璃",
+      "C. 浸润时液体在毛细管中上升",
+      "D. 不浸润时液体在毛细管中上升"
+    ]
+  },
+  {
+    "id": "phy_hs2_0088",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于液晶的说法，正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_liquid_crystal"
+    ],
+    "difficulty": 0.5,
+    "solution": "液晶既具有液体的流动性，又具有晶体的各向异性，广泛用于显示器件。",
+    "source": "llm_generated",
+    "options": [
+      "A. 液晶具有流动性",
+      "B. 液晶具有各向异性",
+      "C. 液晶常用于显示器件",
+      "D. 上述都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0089",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_saturated_vapor"
+    ],
+    "difficulty": 0.5,
+    "solution": "A 对（饱和汽压随温度升高而增大）；B 错（100% 时空气潮湿）；C 错（饱和汽压只与温度有关）；D 错（饱和汽压有限定值）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 饱和汽压随温度升高而增大",
+      "B. 相对湿度为 100% 时空气干燥",
+      "C. 饱和汽压与体积有关",
+      "D. 在同一温度下饱和汽压可以无限增大"
+    ]
+  },
+  {
+    "id": "phy_hs2_0090",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "在某一温度下，空气中水蒸气的实际压强与同温度下饱和水蒸气压强的比值称为____。",
+    "answer": "相对湿度",
+    "kps": [
+      "kp_phy12_saturated_vapor"
+    ],
+    "difficulty": 0.45,
+    "solution": "相对湿度=实际水蒸气压强/同温度下饱和水蒸气压强×100%。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0091",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "热力学第一定律的内容是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_first_law"
+    ],
+    "difficulty": 0.45,
+    "solution": "A 是热力学第一定律（能量守恒定律）；B 是热力学第二定律（开尔文表述）；C、D 是熵增加原理。",
+    "source": "llm_generated",
+    "options": [
+      "A. 能量既不能凭空产生也不能凭空消失，只能从一种形式转化为另一种形式，或从一个物体转移到另一个物体，而能的总量保持不变",
+      "B. 不可能从单一热源吸热使之完全变为有用功而不产生其他影响",
+      "C. 一切涉及热现象的宏观过程都具有方向性",
+      "D. 孤立系统内一切自然过程总是向着熵增加的方向进行"
+    ]
+  },
+  {
+    "id": "phy_hs2_0092",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "热力学第一定律的表达式为 ΔU=____（用 Q 和 W 表示），其中 Q 为气体吸收的热量，W 为外界对气体做的功。",
+    "answer": "Q+W",
+    "kps": [
+      "kp_phy12_first_law"
+    ],
+    "difficulty": 0.45,
+    "solution": "热力学第一定律 ΔU=Q+W。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0093",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "一定质量理想气体等压压缩时，下列说法正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_gas_first_law"
+    ],
+    "difficulty": 0.55,
+    "solution": "等压压缩气体体积减小，外界对气体做功（W>0）；温度降低内能减小（ΔU<0）；由 ΔU=Q+W，Q=ΔU-W<0，气体放热。",
+    "source": "llm_generated",
+    "options": [
+      "A. 气体对外做功",
+      "B. 外界对气体做功",
+      "C. 气体一定吸热",
+      "D. 气体一定放热"
+    ]
+  },
+  {
+    "id": "phy_hs2_0094",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "一定质量理想气体等压膨胀，对外做功 W=200 J，吸热 Q=500 J。求气体内能的变化 ΔU。",
+    "answer": "ΔU=300 J（增加）",
+    "kps": [
+      "kp_phy12_gas_first_law"
+    ],
+    "difficulty": 0.55,
+    "solution": "由热力学第一定律 ΔU=Q+W（外界对气体做功时 W>0）=500+200=700 J? 注意: 气体对外做功时外界对气体做功 W 为负值。设气体对外做功 W'=200 J，则 W=-200 J。ΔU=Q+W=500-200=300 J。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0095",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "热力学第二定律的开尔文表述是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_second_law"
+    ],
+    "difficulty": 0.5,
+    "solution": "A 是克劳修斯表述；B 是开尔文表述；D 是反命题。",
+    "source": "llm_generated",
+    "options": [
+      "A. 热量不能自发地从低温物体传到高温物体而不引起其他变化",
+      "B. 不可能从单一热源吸热使之完全变为有用功而不产生其他影响",
+      "C. 一切自然过程都是可逆的",
+      "D. 孤立系统的熵总是减小的"
+    ]
+  },
+  {
+    "id": "phy_hs2_0096",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于熵的概念，下列说法正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_entropy"
+    ],
+    "difficulty": 0.55,
+    "solution": "熵是系统无序程度的量度；孤立系统的熵总是增大的（熵增加原理），决定了自然过程的方向。",
+    "source": "llm_generated",
+    "options": [
+      "A. 熵是系统无序程度的量度",
+      "B. 孤立系统的熵总是减小的",
+      "C. 熵增加过程是不可逆过程的方向",
+      "D. A 和 C 都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0097",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "孤立系统内发生的任何自然过程，其总熵____。",
+    "answer": "总是增大",
+    "kps": [
+      "kp_phy12_entropy"
+    ],
+    "difficulty": 0.45,
+    "solution": "孤立系统的熵总是增大（熵增加原理）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0098",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "汤姆孙发现电子的实验是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_electron_discovery"
+    ],
+    "difficulty": 0.5,
+    "solution": "汤姆孙通过研究阴极射线在电场和磁场中的偏转，测出电子的比荷，发现电子。",
+    "source": "llm_generated",
+    "options": [
+      "A. α 粒子散射实验",
+      "B. 阴极射线在电场磁场中的偏转实验",
+      "C. 油滴实验",
+      "D. 光的干涉实验"
+    ]
+  },
+  {
+    "id": "phy_hs2_0099",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "α 粒子散射实验的结果表明（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_alpha_scattering"
+    ],
+    "difficulty": 0.55,
+    "solution": "α 粒子散射实验中绝大多数 α 粒子穿过金箔后仍沿原方向前进，少数发生较大偏转，极少数发生大角度偏转，表明原子中心有一个很小但质量很大的核。",
+    "source": "llm_generated",
+    "options": [
+      "A. 原子内存在均匀分布的正电荷",
+      "B. 原子中心有一个很小但质量很大的核",
+      "C. 原子核由质子和中子组成",
+      "D. 原子能级是不连续的"
+    ]
+  },
+  {
+    "id": "phy_hs2_0100",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "玻尔原子理论的基本假设不包括（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_bohr_model"
+    ],
+    "difficulty": 0.55,
+    "solution": "D 错误：玻尔假设电子在定态轨道运动时不辐射电磁波（克服了经典电磁理论的矛盾）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 原子只能处于一系列不连续的能量状态",
+      "B. 原子从一种定态跃迁到另一种定态时辐射或吸收光子",
+      "C. 电子在原子核外做匀速圆周运动",
+      "D. 电子绕核运动时辐射电磁波"
+    ]
+  },
+  {
+    "id": "phy_hs2_0101",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "氢原子基态能量 E₁=-13.6 eV，电子从 n=3 跃迁到 n=1 时辐射的光子能量为多少？对应光的频率为多少（h=3.6×10⁻³⁴ J·s）？",
+    "answer": "E_光子=12.09 eV；ν=2.92×10¹⁵ Hz",
+    "kps": [
+      "kp_phy12_bohr_model"
+    ],
+    "difficulty": 0.7,
+    "solution": "E_n=E₁/n²，E₃=-13.6/9≈-1.51 eV；ΔE=E₃-E₁=-1.51-(-13.6)=12.09 eV。ΔE=hν：ν=ΔE/h=12.09×1.6×10⁻¹⁹/3.6×10⁻³⁴≈2.92×10¹⁵ Hz。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0102",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于原子光谱，下列说法正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_spectrum"
+    ],
+    "difficulty": 0.45,
+    "solution": "稀薄气体发光产生线状光谱（明线光谱）；吸收光谱为暗线光谱；不同原子光谱不同。",
+    "source": "llm_generated",
+    "options": [
+      "A. 连续光谱",
+      "B. 线状光谱",
+      "C. 吸收光谱是连续光谱",
+      "D. 任何原子光谱都相同"
+    ]
+  },
+  {
+    "id": "phy_hs2_0103",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于黑体辐射，下列说法正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_blackbody"
+    ],
+    "difficulty": 0.55,
+    "solution": "黑体辐射按波长分布与温度有关；普朗克提出能量量子化假说（ε=hν）解释了黑体辐射规律。",
+    "source": "llm_generated",
+    "options": [
+      "A. 黑体辐射的强度按波长分布与温度无关",
+      "B. 黑体辐射的强度按波长分布与温度有关",
+      "C. 普朗克提出能量量子化假说解释黑体辐射",
+      "D. B 和 C 都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0104",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "普朗克能量量子化假说认为，物体辐射或吸收能量时，能量只能是某一最小能量____的整数倍。",
+    "answer": "ε=hν",
+    "kps": [
+      "kp_phy12_blackbody"
+    ],
+    "difficulty": 0.45,
+    "solution": "普朗克假说：ε=hν 为最小能量单位，能量只能是 ε 的整数倍。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0105",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "关于光电效应，下列说法正确的是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_photoelectric_effect"
+    ],
+    "difficulty": 0.55,
+    "solution": "A 错（必须大于极限频率）；B 错（与强度无关）；C 对；D 对（光电效应体现粒子性）。故选 C（单选）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 任何频率的光照射金属都能产生光电效应",
+      "B. 光电子的最大初动能与入射光强度成正比",
+      "C. 光电子的最大初动能与入射光频率有关",
+      "D. 光电效应是粒子性的体现"
+    ]
+  },
+  {
+    "id": "phy_hs2_0106",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "爱因斯坦光电效应方程为（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_einstein_photon"
+    ],
+    "difficulty": 0.5,
+    "solution": "爱因斯坦光电效应方程 E_k=hν-W（hν 为光子能量，W 为金属逸出功）。",
+    "source": "llm_generated",
+    "options": [
+      "A. E_k=hν",
+      "B. E_k=hν-W",
+      "C. E_k=W-hν",
+      "D. E_k=hν+W"
+    ]
+  },
+  {
+    "id": "phy_hs2_0107",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "某金属逸出功 W=2 eV，用频率 ν=8×10¹⁴ Hz 的光照射，求光电子的最大初动能（h=4.14×10⁻¹⁵ eV·s）。",
+    "answer": "E_k≈1.31 eV",
+    "kps": [
+      "kp_phy12_einstein_photon"
+    ],
+    "difficulty": 0.55,
+    "solution": "hν=4.14×10⁻¹⁵×8×10¹⁴≈3.31 eV；E_k=hν-W=3.31-2=1.31 eV。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0108",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在光电效应实验中，遏止电压 U_c 与入射光频率 ν 的关系图像是（　　）",
+    "answer": "C",
+    "kps": [
+      "kp_phy12_photoelectric_image"
+    ],
+    "difficulty": 0.5,
+    "solution": "由 eU_c=hν-W，U_c=ν·h/e-W/e，是倾斜直线，截距为 -W/e（对应极限频率）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 平行于 ν 轴的直线",
+      "B. 平行于 U_c 轴的直线",
+      "C. 一条不过原点的倾斜直线",
+      "D. 双曲线"
+    ]
+  },
+  {
+    "id": "phy_hs2_0109",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "德布罗意物质波的波长 λ 与粒子动量 p 的关系为（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_matter_wave"
+    ],
+    "difficulty": 0.45,
+    "solution": "德布罗意公式 λ=h/p。",
+    "source": "llm_generated",
+    "options": [
+      "A. λ=hp",
+      "B. λ=h/p",
+      "C. λ=p/h",
+      "D. λ=h²/p"
+    ]
+  },
+  {
+    "id": "phy_hs2_0110",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "德布罗意提出实物粒子也具有波动性，其波长 λ=____（用 h 和 p 表示）。",
+    "answer": "h/p",
+    "kps": [
+      "kp_phy12_matter_wave"
+    ],
+    "difficulty": 0.45,
+    "solution": "德布罗意波长 λ=h/p。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0111",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于概率波和不确定性关系的说法，正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_probability_wave"
+    ],
+    "difficulty": 0.55,
+    "solution": "A 错（电子无确定轨迹）；B 对；C 错（位置越准、动量越不准）；D 错（对微观粒子成立）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 电子的轨迹可精确确定",
+      "B. 概率波描述电子在空间某处出现的概率",
+      "C. 位置测得越准，动量测得也越准",
+      "D. 不确定性关系只对宏观物体成立"
+    ]
+  },
+  {
+    "id": "phy_hs2_0112",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列按时间顺序排列人类对光本性的认识，正确的是（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_wave_particle_history"
+    ],
+    "difficulty": 0.55,
+    "solution": "牛顿主张粒子说（17 世纪），惠更斯等主张波动说（19 世纪），20 世纪爱因斯坦等确立波粒二象性。",
+    "source": "llm_generated",
+    "options": [
+      "A. 粒子说→波动说→波粒二象性",
+      "B. 波动说→粒子说→波粒二象性",
+      "C. 波粒二象性→波动说→粒子说",
+      "D. 粒子说→波粒二象性→波动说"
+    ]
+  },
+  {
+    "id": "phy_hs2_0113",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "原子核由下列粒子组成（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_nucleus_composition"
+    ],
+    "difficulty": 0.45,
+    "solution": "原子核由质子和中子组成，电子在核外运动。",
+    "source": "llm_generated",
+    "options": [
+      "A. 电子和质子",
+      "B. 质子和中子",
+      "C. 电子和中子",
+      "D. 质子、中子和电子"
+    ]
+  },
+  {
+    "id": "phy_hs2_0114",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "原子核中质子数=核外电子数=元素的____序数。",
+    "answer": "原子",
+    "kps": [
+      "kp_phy12_nucleus_composition"
+    ],
+    "difficulty": 0.4,
+    "solution": "原子序数=质子数=核外电子数。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0115",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列射线中，电离能力最强、穿透能力最弱的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_radioactivity"
+    ],
+    "difficulty": 0.5,
+    "solution": "α 射线（氦核）电离最强、穿透最弱（一张纸可挡住）；γ 射线电离最弱、穿透最强。",
+    "source": "llm_generated",
+    "options": [
+      "A. α 射线",
+      "B. β 射线",
+      "C. γ 射线",
+      "D. 中子"
+    ]
+  },
+  {
+    "id": "phy_hs2_0116",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "三种射线 α、β、γ 在匀强磁场（方向垂直纸面向里）中运动，α 粒子和 β 粒子由于带电不同而偏转方向相反。试判断 γ 射线在磁场中的偏转情况。",
+    "answer": "γ 射线不带电，不偏转",
+    "kps": [
+      "kp_phy12_radioactivity"
+    ],
+    "difficulty": 0.45,
+    "solution": "γ 射线是高频电磁波，不带电，在磁场中不受洛伦兹力作用，沿直线前进，不偏转。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0117",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "某种放射性元素的半衰期为 8 天，则 16 天后剩余质量为原来的（　　）",
+    "answer": "B",
+    "kps": [
+      "kp_phy12_decay"
+    ],
+    "difficulty": 0.45,
+    "solution": "16 天为 2 个半衰期，剩余比例=(1/2)²=1/4。",
+    "source": "llm_generated",
+    "options": [
+      "A. 1/2",
+      "B. 1/4",
+      "C. 1/8",
+      "D. 1/16"
+    ]
+  },
+  {
+    "id": "phy_hs2_0118",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "半衰期是指放射性元素的原子核有____发生衰变所需的时间。",
+    "answer": "一半",
+    "kps": [
+      "kp_phy12_decay"
+    ],
+    "difficulty": 0.45,
+    "solution": "半衰期：原子核衰变掉一半所需的时间。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0119",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在核反应中，下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_nuclear_reaction"
+    ],
+    "difficulty": 0.5,
+    "solution": "核反应中质量数守恒、电荷数守恒；质量（严格说）转化为能量，但总能量守恒。",
+    "source": "llm_generated",
+    "options": [
+      "A. 核反应中质量数守恒、电荷数守恒",
+      "B. 核反应中质量守恒",
+      "C. 核反应中能量不守恒",
+      "D. 核反应中只有质量数守恒"
+    ]
+  },
+  {
+    "id": "phy_hs2_0120",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "写出 ¹⁴₇N + ⁴₂He → ¹⁷₈O + X 核反应中 X 的符号。",
+    "answer": "X=¹₁H（质子）",
+    "kps": [
+      "kp_phy12_nuclear_reaction"
+    ],
+    "difficulty": 0.55,
+    "solution": "由质量数守恒 14+4=17+A，A=1；电荷数守恒 7+2=8+Z，Z=1。故 X=¹₁H（质子）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0121",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "原子核的结合能是指（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_binding_energy"
+    ],
+    "difficulty": 0.55,
+    "solution": "原子核的结合能：自由核子结合成原子核所释放的能量（数值上等于原子核分解为自由核子所吸收的能量）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 原子核分解为自由核子所吸收的能量",
+      "B. 自由核子结合成原子核所释放的能量",
+      "C. 原子核的总能量",
+      "D. 上述 A 和 B 都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0122",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "原子核的结合能与原子核内总核子数之比称为____，它反映原子核的稳定程度。",
+    "answer": "平均结合能",
+    "kps": [
+      "kp_phy12_binding_energy"
+    ],
+    "difficulty": 0.45,
+    "solution": "平均结合能=结合能/核子数，反映原子核的稳定程度。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0123",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "在核反应中释放的能量 ΔE 与质量亏损 Δm 的关系为（　　）",
+    "answer": "A",
+    "kps": [
+      "kp_phy12_nuclear_energy_calc"
+    ],
+    "difficulty": 0.5,
+    "solution": "爱因斯坦质能方程 ΔE=Δm·c²。",
+    "source": "llm_generated",
+    "options": [
+      "A. ΔE=Δm·c²",
+      "B. ΔE=Δm·c",
+      "C. ΔE=Δm/c²",
+      "D. ΔE=c²/Δm"
+    ]
+  },
+  {
+    "id": "phy_hs2_0124",
+    "item_type": "solve",
+    "form": "calculation",
+    "stem": "已知 1 u（原子质量单位）=1.66×10⁻²⁷ kg，某核反应质量亏损 Δm=0.02 u。求释放的能量 ΔE（单位 J 和 eV）。",
+    "answer": "ΔE≈2.99×10⁻¹² J≈1.87×10⁷ eV",
+    "kps": [
+      "kp_phy12_nuclear_energy_calc"
+    ],
+    "difficulty": 0.65,
+    "solution": "Δm=0.02×1.66×10⁻²⁷=3.32×10⁻²⁹ kg；ΔE=Δm·c²=3.32×10⁻²⁹×(3×10⁸)²≈2.99×10⁻¹² J；转换为 eV：2.99×10⁻¹²/(1.6×10⁻¹⁹)≈1.87×10⁷ eV。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0125",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于重核裂变的说法，正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_fission"
+    ],
+    "difficulty": 0.5,
+    "solution": "重核（如 ²³⁵U）在中子轰击下分裂为几个中等质量原子核，释放巨大能量；维持链式反应需临界体积等。",
+    "source": "llm_generated",
+    "options": [
+      "A. 重核分裂为几个中等质量核子的过程",
+      "B. 释放巨大能量",
+      "C. 链式反应条件之一是临界体积",
+      "D. 上述都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0126",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "核电站中，反应堆里发生的核反应是____，常用核燃料为浓缩铀 ²³⁵U。",
+    "answer": "重核裂变",
+    "kps": [
+      "kp_phy12_fission"
+    ],
+    "difficulty": 0.45,
+    "solution": "核电站的反应堆中发生的是重核裂变（链式反应）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0127",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于轻核聚变的说法，错误的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_fusion"
+    ],
+    "difficulty": 0.5,
+    "solution": "D 错误：轻核聚变需在极高温度下才能发生（如太阳内部），常温下因库仑斥力无法实现。",
+    "source": "llm_generated",
+    "options": [
+      "A. 轻核结合为较重核的过程",
+      "B. 释放巨大能量",
+      "C. 太阳能来自轻核聚变",
+      "D. 轻核聚变在常温下容易发生"
+    ]
+  },
+  {
+    "id": "phy_hs2_0128",
+    "item_type": "choice",
+    "form": "mcq_single",
+    "stem": "下列关于放射性的应用与防护，说法正确的是（　　）",
+    "answer": "D",
+    "kps": [
+      "kp_phy12_radiation_app"
+    ],
+    "difficulty": 0.5,
+    "solution": "A 对（工业 γ 探伤）；B 对（如 CT、放射治疗）；C 对（铅能有效屏蔽 γ 射线）。",
+    "source": "llm_generated",
+    "options": [
+      "A. 放射线可以用于工业探伤",
+      "B. 放射线可以用于医疗诊断和治疗",
+      "C. 放射源应保存在铅容器中",
+      "D. 上述都正确"
+    ]
+  },
+  {
+    "id": "phy_hs2_0129",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "在可能存在放射性的工作场所，应佩戴____剂量计以监测个人受照剂量，并尽量远离放射源。",
+    "answer": "个人",
+    "kps": [
+      "kp_phy12_radiation_app"
+    ],
+    "difficulty": 0.45,
+    "solution": "佩戴个人剂量计监测受照剂量，工作人员要尽量远离放射源、缩短受照时间、用铅等屏蔽。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0130",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "电磁感应现象中, 闭合回路中产生感应电流的条件是穿过回路的____。",
+    "answer": "磁通量发生变化",
+    "kps": [
+      "kp_phy12_induction_circuit"
+    ],
+    "difficulty": 0.45,
+    "solution": "闭合回路产生感应电流的条件：穿过回路的磁通量发生变化。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0131",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "导体棒在安培力作用下加速, 当棒速增大时感应电动势____, 回路电流____, 加速度减小。",
+    "answer": "增大; 增大",
+    "kps": [
+      "kp_phy12_induction_dynamics"
+    ],
+    "difficulty": 0.55,
+    "solution": "由 E=BLv, v 增大则 E 增大, I=E/R 增大, 安培力 F=BIL 增大, 但 F=m·a 增加幅度小于速度增加, a 减小。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0132",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "线圈在匀强磁场中匀速转动产生正弦交流电, 线圈从中性面转过 90° 时, 穿过线圈的磁通量为____, 感应电动势为____。",
+    "answer": "0; 最大",
+    "kps": [
+      "kp_phy12_induction_image"
+    ],
+    "difficulty": 0.5,
+    "solution": "中性面磁通量最大、电动势为零; 转过 90°（线圈平面平行磁场）时磁通量为零、电动势最大。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0133",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "正弦交流电的峰值 U_max 与有效值 U 的关系为 U=____。",
+    "answer": "U_max/√2",
+    "kps": [
+      "kp_phy12_four_values"
+    ],
+    "difficulty": 0.45,
+    "solution": "正弦交流电的有效值 U=U_max/√2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0134",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "理想变压器原副线圈匝数比 N₁:N₂=3:1, 原线圈接 6 V 交流电源, 则副线圈两端电压为____ V。",
+    "answer": "2",
+    "kps": [
+      "kp_phy12_exp_transformer"
+    ],
+    "difficulty": 0.45,
+    "solution": "U₂=U₁·N₂/N₁=6×1/3=2 V。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0135",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "发射电磁波必须使用____电路, 使电磁场能量有效地发射出去。",
+    "answer": "开放",
+    "kps": [
+      "kp_phy12_em_wave_send_receive"
+    ],
+    "difficulty": 0.45,
+    "solution": "发射电磁波必须采用开放电路（振荡频率足够高时, 电磁场才能有效辐射）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0136",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "电磁波在真空中的传播速度为____m/s。",
+    "answer": "3×10⁸",
+    "kps": [
+      "kp_phy12_em_energy_transfer"
+    ],
+    "difficulty": 0.4,
+    "solution": "电磁波在真空中速度 c=3×10⁸ m/s。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0137",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "利用光敏电阻制作的自动控制装置中, 光敏电阻阻值随光照减弱而____。",
+    "answer": "增大",
+    "kps": [
+      "kp_phy12_exp_sensor"
+    ],
+    "difficulty": 0.45,
+    "solution": "光敏电阻阻值随光照减弱而增大。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0138",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "用油膜法估测分子直径时, 需事先测定油酸酒精溶液中油酸的____。",
+    "answer": "浓度（体积比）",
+    "kps": [
+      "kp_phy12_exp_oilfilm"
+    ],
+    "difficulty": 0.5,
+    "solution": "需事先知道油酸酒精溶液中油酸的体积分数（浓度）才能计算一滴溶液中油酸的体积。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0139",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "布朗运动是指悬浮在液体（或气体）中____微粒的无规则运动, 它反映了液体分子的无规则运动。",
+    "answer": "固体",
+    "kps": [
+      "kp_phy12_brown_motion"
+    ],
+    "difficulty": 0.45,
+    "solution": "布朗运动是悬浮在液体中固体小颗粒的无规则运动, 反映了液体分子的无规则运动。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0140",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "温度是物体分子____动能的标志。",
+    "answer": "平均",
+    "kps": [
+      "kp_phy12_molecular_energy"
+    ],
+    "difficulty": 0.45,
+    "solution": "温度是物体分子平均动能的标志。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0141",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "在'探究气体等温变化规律'实验中, 推拉活塞时动作要____, 以保证气体温度不变。",
+    "answer": "缓慢",
+    "kps": [
+      "kp_phy12_exp_isothermal"
+    ],
+    "difficulty": 0.5,
+    "solution": "推拉活塞时要缓慢, 避免气体因快速压缩或膨胀而升温或降温。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0142",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "盖-吕萨克定律表达式为 V/T=____（用 V₁、T₁、V₂、T₂ 表示）。",
+    "answer": "V₁/T₁=V₂/T₂",
+    "kps": [
+      "kp_phy12_gas_isobaric"
+    ],
+    "difficulty": 0.45,
+    "solution": "盖-吕萨克定律 V/T=C (常量), 即 V₁/T₁=V₂/T₂。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0143",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "固体分为____体和____体两类, 它们在熔点上有显著区别。",
+    "answer": "晶; 非晶",
+    "kps": [
+      "kp_phy12_solid_crystal"
+    ],
+    "difficulty": 0.45,
+    "solution": "固体分为晶体和非晶体两类, 晶体有固定熔点, 非晶体没有固定熔点。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0144",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "浸润液体在细管（毛细管）中____，不浸润液体在毛细管中____。",
+    "answer": "上升; 下降",
+    "kps": [
+      "kp_phy12_wetting_capillary"
+    ],
+    "difficulty": 0.5,
+    "solution": "浸润液体在毛细管中上升，不浸润液体在毛细管中下降。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0145",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "液晶既具有液体的____性, 又具有晶体的____性。",
+    "answer": "流动; 各向异性",
+    "kps": [
+      "kp_phy12_liquid_crystal"
+    ],
+    "difficulty": 0.5,
+    "solution": "液晶既具有液体的流动性，又具有晶体的各向异性。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0146",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "热力学第二定律表明, 涉及热现象的宏观过程具有____性。",
+    "answer": "方向",
+    "kps": [
+      "kp_phy12_second_law"
+    ],
+    "difficulty": 0.45,
+    "solution": "热力学第二定律表明涉及热现象的宏观过程具有方向性。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0147",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "汤姆孙发现电子的实验, 是通过研究____射线在电场和磁场中的偏转。",
+    "answer": "阴极",
+    "kps": [
+      "kp_phy12_electron_discovery"
+    ],
+    "difficulty": 0.45,
+    "solution": "汤姆孙通过研究阴极射线在电场和磁场中的偏转, 发现并测定了电子。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0148",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "α 粒子散射实验中, 绝大多数 α 粒子穿过金箔后____, 少数发生较大偏转, 极少数发生大角度偏转。",
+    "answer": "仍沿原方向前进",
+    "kps": [
+      "kp_phy12_alpha_scattering"
+    ],
+    "difficulty": 0.5,
+    "solution": "绝大多数 α 粒子穿过金箔后仍沿原方向前进, 说明原子内部大部分是空的; 少数偏转说明原子中心有正电荷集中。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0149",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "稀薄气体发光产生的光谱是____光谱（明线光谱/连续光谱）。",
+    "answer": "明线",
+    "kps": [
+      "kp_phy12_spectrum"
+    ],
+    "difficulty": 0.45,
+    "solution": "稀薄气体发光产生不连续的明线光谱。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0150",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "光电效应中, 入射光频率必须大于金属的____频率, 才能产生光电效应。",
+    "answer": "极限",
+    "kps": [
+      "kp_phy12_photoelectric_effect"
+    ],
+    "difficulty": 0.45,
+    "solution": "入射光频率必须大于金属的极限频率才能产生光电效应。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0151",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "由 eU_c=hν-W 可知, 遏止电压 U_c 与入射光频率 ν 是____关系（线性/反比）。",
+    "answer": "线性",
+    "kps": [
+      "kp_phy12_photoelectric_image"
+    ],
+    "difficulty": 0.45,
+    "solution": "U_c=ν·h/e-W/e, U_c 与 ν 是线性关系。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0152",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "概率波描述粒子在空间各处出现的____。",
+    "answer": "概率",
+    "kps": [
+      "kp_phy12_probability_wave"
+    ],
+    "difficulty": 0.45,
+    "solution": "概率波描述粒子在空间各处出现的概率。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0153",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "人类对光的本性的认识, 经历了粒子说、____说, 最后确立____二象性。",
+    "answer": "波动; 波粒",
+    "kps": [
+      "kp_phy12_wave_particle_history"
+    ],
+    "difficulty": 0.5,
+    "solution": "人类对光本性的认识: 粒子说(牛顿)→波动(惠更斯)→波粒二象性(爱因斯坦等)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "phy_hs2_0154",
+    "item_type": "fill",
+    "form": "fill_blank",
+    "stem": "轻核聚变是指轻核结合成____质量原子核的过程。",
+    "answer": "较",
+    "kps": [
+      "kp_phy12_fusion"
+    ],
+    "difficulty": 0.45,
+    "solution": "轻核聚变是指轻核结合成较重核的过程, 释放巨大能量（如氘氚聚变）。",
+    "source": "llm_generated"
+  }
+]

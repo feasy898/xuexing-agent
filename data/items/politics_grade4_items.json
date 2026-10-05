@@ -1,0 +1,3556 @@
+{
+  "items": [
+    {
+      "id": "pol_prim_0173",
+      "item_type": "choice",
+      "stem": "同样努力，成绩却不同，往往是因为学习方法不一样。科学的学习流程是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_plan_method"
+      ],
+      "difficulty": 0.3,
+      "solution": "掌握学习方法要做到课前预习、课上专心、课后复习整理错题，并不断摸索适合自己的方法，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 课前不预习，课上不听，考前突击",
+        "B. 只刷题不总结",
+        "C. 课前预习、课上专心听讲、课后及时复习整理错题",
+        "D. 只听讲从不动笔练习"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0174",
+      "item_type": "solve",
+      "stem": "结合一门学科，说说你用过的有效的学习方法（至少一条），它给你带来了什么变化？",
+      "answer": "示例：数学——坚持整理错题本，把错因写清楚，每周重做一遍错题，考试时同类错误明显减少。语文——课前预习圈出生字和不懂的问题，带着问题听课，听讲效率更高。（方法具体，变化真实即可）",
+      "kps": [
+        "kp_pol4_plan_method"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查学习方法的总结与运用，方法可行、效果言之有理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0175",
+      "item_type": "choice",
+      "stem": "小组讨论时，合作学习的正确表现是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_group_coop"
+      ],
+      "difficulty": 0.35,
+      "solution": "合作学习要求认真倾听、表达自我、分工配合，共同完成学习任务，不能只说不听或推卸责任，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只顾说自己的，不听别人的",
+        "B. 把任务都推给学习好的同学",
+        "C. 讨论时聊与学习无关的话题",
+        "D. 认真倾听他人意见，清楚表达自己的想法，共同完成任务"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0176",
+      "item_type": "solve",
+      "stem": "小组合作学习有方法。请写出两条让小组讨论更有效的做法。",
+      "answer": "①先明确任务和分工（记录员、汇报员等），人人参与；②发言时先听清别人的观点，再清楚表达自己的想法，可以补充但不起哄；③意见不一致时摆事实讲道理，最后形成小组共同意见。（答出两条即可）",
+      "kps": [
+        "kp_pol4_group_coop"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查合作学习的技能，做法具体有效即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0177",
+      "item_type": "choice",
+      "stem": "定了每天晨跑一千米的目标，坚持两周后想放弃。锻炼毅力的正确做法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_persevere"
+      ],
+      "difficulty": 0.4,
+      "solution": "学习与锻炼贵在坚持，目标定了就要克服困难坚持完成，可以请人监督、自我激励，不半途而废，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 想想定目标的原因，请家人监督，坚持完成计划",
+        "B. 找个借口从此不跑了",
+        "C. 把目标偷偷改小到每天十米",
+        "D. 三天打鱼两天晒网，跑不跑随心情"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0178",
+      "item_type": "solve",
+      "stem": "“宝剑锋从磨砺出”。请写一件你坚持做成的事，并总结一条坚持下来的经验。",
+      "answer": "示例：我坚持每天练字一页，三个月后书写明显进步，还在班级书法展上展出。经验：①把大目标分成每天的小任务，完成就打个勾；②请家长或同学监督提醒；③想放弃时想一想当初的目标，鼓励自己再坚持一天。（事情真实，经验具体即可）",
+      "kps": [
+        "kp_pol4_persevere"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查毅力品质的体验与养成，事例与经验合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0179",
+      "item_type": "choice",
+      "stem": "真正的友谊应该是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_friendship_quality"
+      ],
+      "difficulty": 0.45,
+      "solution": "友谊的特质是真诚、平等、互助，能指出朋友的缺点、共同进步；友谊不是不分是非的“哥们义气”，更不能包庇错误，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 只跟对自己“有用”的同学玩",
+        "B. 真诚、平等、互助，共同进步",
+        "C. 帮朋友隐瞒错误、包庇缺点",
+        "D. 朋友说什么都听，讲“哥们义气”"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0180",
+      "item_type": "solve",
+      "stem": "同学想抄你的作业，还说“真朋友就该帮这个忙”。请写一段话，说说你会怎样回应，并说明什么是真正的友谊。",
+      "answer": "回应示例：“我们是好朋友，但抄作业不是帮忙而是害你。我可以给你讲思路，咱们一起把题弄懂。”真正的友谊是真诚、平等、互助的：朋友有困难真心帮助，有缺点坦诚指出，一起进步，而不是不分是非地迁就和包庇。（回应得体，友谊理解正确即可）",
+      "kps": [
+        "kp_pol4_friendship_quality"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查对友谊特质的理解与辨析，能区分友谊与“哥们义气”即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0181",
+      "item_type": "choice",
+      "stem": "与同学友好相处，下面做法正确的是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_get_along"
+      ],
+      "difficulty": 0.3,
+      "solution": "同学之间要真诚相待、互相尊重鼓励，不给别人起侮辱性绰号，不嘲笑缺陷，不孤立同学，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 给胖同学起侮辱性绰号",
+        "B. 拿同学的缺陷开玩笑",
+        "C. 真诚相待，互相鼓励，尊重同学",
+        "D. 闹矛盾就拉拢别人孤立他"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0182",
+      "item_type": "solve",
+      "stem": "班里新转来一名同学，比较内向。请写出两条帮助他尽快融入班级的做法。",
+      "answer": "①主动和他打招呼、介绍自己，下课邀请他一起活动；②向他介绍班级的同学和活动，小组活动时主动和他一组；③他遇到不懂的事耐心帮助，不议论、不冷落他。（做法友善具体即可）",
+      "kps": [
+        "kp_pol4_get_along"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查与同学友好相处的能力，做法友善可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0183",
+      "item_type": "choice",
+      "stem": "同学脚受伤行动不便。下面帮助同学的做法可取的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_share_help"
+      ],
+      "difficulty": 0.35,
+      "solution": "帮助同学要主动、量力而行，帮他解决实际困难，同时鼓励他自己努力，而不是包办一切，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 事事包办，连上课翻书都替他做",
+        "B. 口头说帮忙，转身就去玩了",
+        "C. 嫌他走得慢，先自己去教室",
+        "D. 帮他背书包、扶他上下楼梯，同时鼓励他自己锻炼恢复"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0184",
+      "item_type": "solve",
+      "stem": "帮助同学也要讲方法。请写出两种不同情况下帮助同学的做法（如学习上、生活上）。",
+      "answer": "学习上：同桌数学题不会，耐心讲思路而不是直接给答案；同学缺课，帮他补笔记、讲重点。生活上：同学身体不舒服，扶他去医务室并告诉老师；同学忘带雨具，和他共用一把伞送他到家长接送点。（两种情境的做法均合理即可）",
+      "kps": [
+        "kp_pol4_share_help"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查主动帮助同学的方式方法，做法具体、体现真诚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0185",
+      "item_type": "choice",
+      "stem": "家庭除了生养我们，还承担着（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_family_structure"
+      ],
+      "difficulty": 0.4,
+      "solution": "家庭是抚养、教育和保护未成年人的场所，家庭成员相互依存、彼此关爱，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 抚养、教育和保护未成年人的功能",
+        "B. 替我们完成学校作业的功能",
+        "C. 满足孩子一切要求的功能",
+        "D. 只管吃住的功能"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0186",
+      "item_type": "solve",
+      "stem": "家庭是我们成长的第一所学校。请写出家庭生活给你的两样宝贵的东西，并各举一个例子。",
+      "answer": "示例：①抚养与照顾——家人为我准备三餐、生病时带我看病照顾我；②教育——父母教我懂礼貌、诚实做人，辅导我学习；③保护与温暖——遇到委屈时家人安慰我、保护我。（两样内容与例子对应合理即可）",
+      "kps": [
+        "kp_pol4_family_structure"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查对家庭结构与功能的理解，内容与例证对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0187",
+      "item_type": "choice",
+      "stem": "“百善孝为先”。下列做法体现了“孝”的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_family_duty"
+      ],
+      "difficulty": 0.45,
+      "solution": "孝敬父母要关心父母的健康与心情，懂事听话、主动分担家务，不忤逆长辈，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 父母生病时漠不关心",
+        "B. 关心父母的身体和心情，听话懂事，主动分担家务",
+        "C. 向父母提出超出家庭条件的消费要求",
+        "D. 和父母顶嘴赌气"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0188",
+      "item_type": "solve",
+      "stem": "孝顺父母不一定要做大事。请写出两件你孝敬父母（长辈）的具体小事。",
+      "answer": "示例：①父母下班回家，递上一杯水、一声问候，帮忙拿拖鞋；②主动做洗碗、扫地等家务，减轻父母负担；③记住父母的生日，送上自己做的贺卡；④学习自觉，不让父母为我的学习操心。（做法具体、真心即可）",
+      "kps": [
+        "kp_pol4_family_duty"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查对孝的理解与践行，做法具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0189",
+      "item_type": "choice",
+      "stem": "你想参加航模社团，父母却认为影响学习坚决反对。处理这场亲子冲突，第一步应该（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_parent_conflict"
+      ],
+      "difficulty": 0.3,
+      "solution": "处理亲子冲突要先冷静，换位思考理解父母的出发点，再心平气和地表达想法、商量办法，不顶撞不赌气，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 大吵大闹绝食抗议",
+        "B. 冷战不理父母",
+        "C. 先冷静下来，听听父母反对的理由，再说明自己的想法",
+        "D. 偷偷报名先斩后奏"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0190",
+      "item_type": "solve",
+      "stem": "和父母意见不一致时，怎样化解矛盾？请写出两条有效做法。",
+      "answer": "①先冷静，不顶嘴不赌气，想一想父母为什么这样考虑（换位思考）；②找合适的时机心平气和地说明自己的想法和计划（如保证成绩不落下），请父母放心；③请老师或家里长辈帮忙沟通，达成互相理解的方案。（答出两条即可）",
+      "kps": [
+        "kp_pol4_parent_conflict"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查处理亲子冲突的方法，做法理性可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0191",
+      "item_type": "choice",
+      "stem": "使用零花钱，合理的做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_pocket_money"
+      ],
+      "difficulty": 0.35,
+      "solution": "零花钱要计划着花、够用就好，不攀比、不浪费，把钱用在有意义的地方，还可以养成储蓄的习惯，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看见同学买什么就跟着买什么",
+        "B. 把钱全部用来买零食和玩具",
+        "C. 为了面子抢着请同学吃东西",
+        "D. 有计划地安排，把钱用在学习用品等有意义的地方"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0192",
+      "item_type": "solve",
+      "stem": "如果你每月有 50 元零花钱，请说说你打算怎样安排，并写出一条理由。",
+      "answer": "示例：①20 元买文具和课外书；②15 元存进储蓄罐积累起来；③10 元自由支配买小零食；④5 元留作备用或捐给需要帮助的同学。理由：把钱花在有用的地方，既满足需要又不浪费，还能养成节约和储蓄的好习惯。（分配合理，理由言之有理即可）",
+      "kps": [
+        "kp_pol4_pocket_money"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查合理消费与理财意识，安排合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0193",
+      "item_type": "choice",
+      "stem": "了解家乡的地理位置，正确的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_hometown_geography"
+      ],
+      "difficulty": 0.4,
+      "solution": "认识家乡要说出家乡所在的省市自治区，了解家乡的地理位置、河流山川和特产物产，热爱家乡，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 要知道家乡属于哪个省（自治区、直辖市），了解家乡的山川河流与物产",
+        "B. 家乡属于哪个省市自治区与自己无关",
+        "C. 家乡的山水毫无价值",
+        "D. 物产是指家乡的人口数量"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0194",
+      "item_type": "solve",
+      "stem": "请你为家乡制作一张“名片”：写出家乡所在的省（市、自治区）、一处山川或河流、一种特产。",
+      "answer": "示例（海南）：我的家乡在海南省；有南渡江（五指山、万泉河）；特产有椰子、芒果、兴隆咖啡。示例（湖南）：湖南省；湘江（洞庭湖、南岳衡山）；特产湘莲、茶油。（三项内容真实对应即可，学生按自己家乡作答）",
+      "kps": [
+        "kp_pol4_hometown_geography"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查对家乡地理与物产的了解，内容真实即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0195",
+      "item_type": "choice",
+      "stem": "下列不属于了解家乡文化内容的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_hometown_culture"
+      ],
+      "difficulty": 0.45,
+      "solution": "家乡文化包括家乡的语言（方言）、饮食、节庆、戏曲、传说等，外地旅游门票价格不属于家乡文化，D 符合题意。",
+      "source": "llm_generated",
+      "options": [
+        "A. 家乡的方言和特色饮食",
+        "B. 外地旅游景点的门票价格",
+        "C. 家乡的传统节庆和戏曲",
+        "D. 家乡的神话传说和民间故事"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0196",
+      "item_type": "solve",
+      "stem": "家乡的文化独特而珍贵。请写出家乡的一种文化习俗（饮食、节庆、戏曲等），并说说它的特点。",
+      "answer": "示例（按学生家乡作答）：海南——“三月三”节庆，黎族苗族同胞对歌跳舞、制作五色饭，热闹隆重；陕西——秦腔，唱腔高亢激昂；广东——早茶文化，一盅两件、亲友相聚。（习俗真实，特点清楚即可）",
+      "kps": [
+        "kp_pol4_hometown_culture"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查对家乡文化的了解与认同，内容真实合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0197",
+      "item_type": "choice",
+      "stem": "发现“家乡的变化”，可以用的调查方法是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_hometown_change"
+      ],
+      "difficulty": 0.3,
+      "solution": "了解家乡变化可以通过访问长辈、比较新旧照片、实地观察等方式，发现道路、房屋、环境和生活的变化，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 凭空想象编一些变化",
+        "B. 只看电视连续剧",
+        "C. 访问长辈、查阅老照片、实地看一看",
+        "D. 问问隔壁家小孩的考试成绩"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0198",
+      "item_type": "solve",
+      "stem": "对比过去和现在，说一说你发现家乡的两个变化，并提一条让家乡更美好的建议。",
+      "answer": "变化示例：①过去的泥巴路变成了宽阔的水泥路（柏油路），通了公交车；②村里（小区）新建了文化广场、图书馆（卫生站），生活更方便；③河水变清了，垃圾有了固定投放点。建议示例：多设分类垃圾桶、爱护绿化，把家乡建设得更美丽。（变化真实，建议合理即可）",
+      "kps": [
+        "kp_pol4_hometown_change"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查观察家乡变化并为家乡发展出主意，内容合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0199",
+      "item_type": "choice",
+      "stem": "转学到新班级，想结识新朋友。合适的做法是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_make_friends"
+      ],
+      "difficulty": 0.35,
+      "solution": "结交新朋友要主动、真诚：微笑问好、发现共同兴趣、互相帮助、真诚待人，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 等别人主动来求自己玩",
+        "B. 送礼物收买同学",
+        "C. 先观察谁家有钱就交谁",
+        "D. 主动微笑问好，从共同感兴趣的话题和活动开始交往"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0200",
+      "item_type": "solve",
+      "stem": "请你总结三条“交友小妙招”，帮助腼腆的同学交到新朋友。",
+      "answer": "①主动微笑、打招呼，大胆介绍自己；②找共同感兴趣的话题和活动，如一起打球、下棋、讨论图书；③真诚待人，同学有困难主动帮助，答应的事说到做到。（三条合理即可）",
+      "kps": [
+        "kp_pol4_make_friends"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查交友方法，妙招具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0201",
+      "item_type": "choice",
+      "stem": "关于网络交友，下列认识正确的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_online_friend"
+      ],
+      "difficulty": 0.4,
+      "solution": "网络交友方便交流但看不清对方真实身份，有风险：不轻信网友、不透露家庭住址和隐私信息、不与网友私自见面，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 网络交友有便利也有风险，不能轻信网友，更不能私自见面",
+        "B. 网上的朋友都比现实中的朋友可靠",
+        "C. 把家庭住址告诉网友才显得真诚",
+        "D. 网友说什么都要相信"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0202",
+      "item_type": "solve",
+      "stem": "网友小A多次打听你的家庭住址，还约你周末见面。你应该怎样做？写出两条。",
+      "answer": "①不透露姓名、住址、电话、学校等个人信息，警惕地终止这个话题；②不答应私自见面，把情况告诉家长或老师；③如果对方纠缠不休，拉黑并向平台举报，必要时请家长报警。（做法安全、有警惕性即可）",
+      "kps": [
+        "kp_pol4_online_friend"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查网络交友的风险防范，做法安全合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0203",
+      "item_type": "choice",
+      "stem": "做文明的小网民，应该（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_civil_net"
+      ],
+      "difficulty": 0.45,
+      "solution": "文明上网要做到不说不文明的话、不在网上欺凌他人、不造谣传谣、尊重他人隐私、控制上网时长，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在群里辱骂和自己意见不同的人",
+        "B. 文明发言，不欺凌他人，控制上网时间",
+        "C. 转发没有根据的谣言",
+        "D. 冒用他人头像和姓名发帖"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0204",
+      "item_type": "solve",
+      "stem": "请写出两条“网络文明公约”式的要求，并说明其中一条的理由。",
+      "answer": "要求示例：①文明发言，不辱骂、不嘲讽他人；②不造谣、不传谣，不明信息先核实；③不发布他人隐私，不冒用他人身份；④控制上网时间，不沉迷网络。理由示例：网络上辱骂他人同样会伤害别人、违反规则，情节严重的还要承担法律责任，所以要文明发言。（两条要求正确，理由言之有理即可）",
+      "kps": [
+        "kp_pol4_civil_net"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查文明上网的要求，要求合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0205",
+      "item_type": "choice",
+      "stem": "同学比赛失利伤心地哭了。换位思考的做法是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_empathy"
+      ],
+      "difficulty": 0.3,
+      "solution": "换位思考是站在他人的角度体会他的感受和困难，理解别人的选择，再给予安慰帮助，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 嘲笑他输不起",
+        "B. 故意大声讲笑话给他听",
+        "C. 体会他此刻的心情，安慰并鼓励他",
+        "D. 说“这有什么好哭的”"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0206",
+      "item_type": "solve",
+      "stem": "什么是换位思考？请举一个例子说明怎样站在他人的角度理解别人。",
+      "answer": "换位思考就是设身处地站在对方的立场想问题，体会别人的感受和难处。示例：同学因为要照顾生病的妈妈迟到了，我不该指责他“又迟到”，而应想到他既要照顾家人又怕耽误学习，主动帮他补上落下的功课。（概念正确，例子能体现换位思考即可）",
+      "kps": [
+        "kp_pol4_empathy"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查换位思考、理解他人的能力，概念与例子对应即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0207",
+      "item_type": "choice",
+      "stem": "下列属于助人为乐行为的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_help_others"
+      ],
+      "difficulty": 0.35,
+      "solution": "助人为乐是在他人需要时主动提供帮助，如让座、扶助老人、帮同学补课，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 看到老人过马路困难却扭头走开",
+        "B. 把别人的功劳说成自己的",
+        "C. 值日时只扫自己脚下那一块",
+        "D. 在公交车上主动给抱小孩的阿姨让座"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0208",
+      "item_type": "solve",
+      "stem": "帮助别人，快乐自己。请写出你帮助别人的一件事和当时的感受。",
+      "answer": "示例：下大雨时，我把伞借给了没带伞的同学，两人合打一把伞送他到校门口。感受：看到同学不再淋雨、连声道谢，我心里暖暖的，帮助别人真的让自己也很快乐。（事情真实，感受真诚即可）",
+      "kps": [
+        "kp_pol4_help_others"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查助人为乐的体验，事例与感受真实即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0209",
+      "item_type": "choice",
+      "stem": "关爱他人也要讲究方式。恰当的做法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_kind_way"
+      ],
+      "difficulty": 0.4,
+      "solution": "关爱他人要尊重对方、顾及他人的自尊，帮助要自然得体、不揭短、不打扰，在别人不需要时不强行插手，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 悄悄地帮助同学，尊重他的自尊心，不打扰别人",
+        "B. 当众大声宣布某同学家困难，要大家捐款",
+        "C. 别人不需要也硬要帮到底",
+        "D. 帮助别人就要到处宣扬"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0210",
+      "item_type": "solve",
+      "stem": "帮助同学时怎样照顾到他的自尊心？请写出两条注意事项。",
+      "answer": "①不当众大声宣扬同学的困难，可以悄悄地、私下帮助；②不居高临下、不怜悯施舍，用平等尊重的态度；③帮助前先问一问对方是否需要，尊重对方的意愿；④事后不四处宣扬自己帮助过谁。（答出两条即可）",
+      "kps": [
+        "kp_pol4_kind_way"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查关爱他人的正确方式，体现尊重即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0211",
+      "item_type": "choice",
+      "stem": "社区开展“垃圾分类宣传”活动。小学生参加社区活动的正确态度是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_community_activity"
+      ],
+      "difficulty": 0.45,
+      "solution": "社区是我们的家园，应积极参加社区的宣传、敬老、环保等活动，为社区建设出力，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 学习太忙，从不参加",
+        "B. 积极参加力所能及的活动，为社区建设出一份力",
+        "C. 参加活动就是为了领奖品",
+        "D. 嫌社区活动又脏又累"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0212",
+      "item_type": "solve",
+      "stem": "请你为社区设计一个适合小学生参加的活动方案：写出活动主题、参加人员和两项活动内容。",
+      "answer": "示例：主题——“小手拉大手，垃圾分类进社区”宣传实践活动。参加人员——本小区少先队员（在社区工作人员和家长带领下）。内容：①向居民发放垃圾分类宣传单、讲解分类知识；②在垃圾投放点引导居民正确投放，捡拾小区绿化带垃圾。（主题积极，人员与内容可行即可）",
+      "kps": [
+        "kp_pol4_community_activity"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查参与社区活动的设计能力，要素齐全可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0213",
+      "item_type": "choice",
+      "stem": "关于志愿服务，下列说法正确的是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_volunteer"
+      ],
+      "difficulty": 0.3,
+      "solution": "志愿服务是自愿、不计报酬地为他人和社会服务的公益活动，小学生可在成人带领下力所能及地参与，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 志愿服务是有报酬的打工",
+        "B. 小学生绝对不能参加志愿服务",
+        "C. 志愿服务是自愿、无偿地服务他人和社会的公益活动",
+        "D. 志愿服务就是打扫自己家的卫生"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0214",
+      "item_type": "solve",
+      "stem": "在成人带领下，你参加过（或想参加）什么志愿服务？写出活动内容，并说说你的收获。",
+      "answer": "示例：跟随社区志愿者到敬老院看望老人，为老人表演节目、打扫房间、陪他们聊天。收获：体会到帮助别人的快乐，懂得要尊敬关爱老人，也感受到志愿者无私奉献的精神，自己更独立、更有责任感了。（内容合理，收获真实即可）",
+      "kps": [
+        "kp_pol4_volunteer"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查志愿服务的体验与认识，内容真实即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0215",
+      "item_type": "choice",
+      "stem": "《国旗法》《国歌法》要求我们，在升国旗、奏国歌时应当（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_national_symbol_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "《国旗法》《国歌法》规定升国旗、奏国歌时在场人员应当肃立、举止庄重，不得有不尊重国旗国歌的行为；故意损毁国旗、在公共场合故意以焚烧等方式侮辱国旗国歌是违法行为，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 继续说笑打闹",
+        "B. 随手把小国旗丢弃在地上",
+        "C. 把国歌当手机铃声随意播放",
+        "D. 面向国旗肃立、举止庄重，向国旗行礼（注目礼或队礼）"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0216",
+      "item_type": "solve",
+      "stem": "学习了《国旗法》《国歌法》，请写出两条我们爱护国旗、国歌的具体要求。",
+      "answer": "①升国旗、奏国歌时肃立庄重，面向国旗行注目礼（少先队员行队礼），认真跟唱国歌，不嬉笑打闹；②不倒挂、不任意丢弃、不污损国旗，破旧国旗要按规范处理；③不歪曲、贬损国歌，不在不适宜的场合商用或随意播放国歌。（答出两条即可）",
+      "kps": [
+        "kp_pol4_national_symbol_law"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查国旗法与国歌法的基本要求，要求符合法律规定即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0217",
+      "item_type": "choice",
+      "stem": "下列民族与其特色文化搭配正确的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_ethnic_affect"
+      ],
+      "difficulty": 0.4,
+      "solution": "傣族有泼水节；那达慕大会是蒙古族的传统盛会，藏族有锅庄舞、献哈达的礼俗，A 搭配正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 傣族——泼水节",
+        "B. 蒙古族——泼水节",
+        "C. 藏族——那达慕大会",
+        "D. 回族——竹筒饭"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0218",
+      "item_type": "solve",
+      "stem": "各民族文化多姿多彩。请写出两个少数民族及其一项特色文化（服饰、节日、舞蹈、美食等）。",
+      "answer": "示例：①蒙古族——那达慕大会（摔跤、赛马）、马头琴；②傣族——泼水节、孔雀舞、竹筒饭；③藏族——献哈达、锅庄舞、青稞酒；④维吾尔族——手鼓舞、烤馕；⑤苗族——银饰、芦笙舞；⑥朝鲜族——长鼓舞、冷面。（两组搭配正确即可）",
+      "kps": [
+        "kp_pol4_ethnic_affect"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查对各民族风情的了解与尊重，搭配正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0219",
+      "item_type": "choice",
+      "stem": "关于台湾的说法，正确的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_taiwan"
+      ],
+      "difficulty": 0.45,
+      "solution": "台湾自古以来就是中国神圣领土不可分割的一部分，台湾岛是我国第一大岛，海峡两岸同胞同根同源，我们盼望祖国早日统一，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 台湾是一个独立的国家",
+        "B. 台湾是祖国神圣领土不可分割的一部分",
+        "C. 台湾与祖国大陆没有任何联系",
+        "D. 台湾问题与每个中国人无关"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0220",
+      "item_type": "solve",
+      "stem": "为什么说台湾是祖国领土不可分割的一部分？请写出两点理由，并表达一句盼望祖国统一的心愿。",
+      "answer": "理由：①从历史看，台湾自古以来就是中国的领土，中国历代政府都在台湾行使管辖权（如元朝设澎湖巡检司，清朝设台湾省）；②从地缘、血缘与文化看，台湾同胞的祖先大多来自大陆福建、广东等地，两岸同胞同根同源、同文同种，都过春节、中秋等传统节日；③国际社会普遍承认一个中国原则。心愿示例：“两岸一家亲，盼望祖国早日统一，共同实现中华民族伟大复兴！”（答出两点理由，心愿积极即可）",
+      "kps": [
+        "kp_pol4_taiwan"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查台湾问题的正确认识，立场正确、理由言之有理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0221",
+      "item_type": "choice",
+      "stem": "香港、澳门回归祖国的时间分别是（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_hk_macao"
+      ],
+      "difficulty": 0.3,
+      "solution": "1997 年 7 月 1 日中国政府对香港恢复行使主权，1999 年 12 月 20 日对澳门恢复行使主权，两地回归后设立特别行政区，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 1999 年 7 月 1 日、1997 年 12 月 20 日",
+        "B. 1980 年 7 月 1 日、1982 年 12 月 20 日",
+        "C. 1997 年 7 月 1 日、1999 年 12 月 20 日",
+        "D. 2001 年 7 月 1 日、2003 年 12 月 20 日"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0222",
+      "item_type": "solve",
+      "stem": "香港、澳门回归后为什么还能保持原来的社会制度和生活方式？请写出相关制度名称，并说说港澳回归的意义。",
+      "answer": "国家在香港、澳门实行“一个国家，两种制度”（“一国两制”）的基本国策，设立特别行政区。意义：洗雪了民族耻辱，标志着祖国统一大业迈出重要一步，保持了港澳的繁荣稳定，也为解决台湾问题提供了借鉴。（制度名称正确，意义答出一点即可）",
+      "kps": [
+        "kp_pol4_hk_macao"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查港澳回归的史实与“一国两制”，时间准确、制度正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0223",
+      "item_type": "choice",
+      "stem": "下列属于中华传统艺术的是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_traditional_art"
+      ],
+      "difficulty": 0.35,
+      "solution": "书法、剪纸、京剧、刺绣、陶瓷等是中华传统艺术，京剧被称为我国的“国粹”，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 街舞、说唱",
+        "B. 动漫、电子游戏",
+        "C. 踢足球、打篮球",
+        "D. 书法、剪纸、京剧"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0224",
+      "item_type": "solve",
+      "stem": "中华传统艺术形式多样。请写出一种你了解或喜欢的传统艺术，并说说它的美（特点）。",
+      "answer": "示例：京剧——有唱、念、做、打，脸谱色彩鲜艳、不同颜色代表不同人物性格，被称为国粹；书法——汉字的点画结构富有韵味，一撇一捺气韵生动；剪纸——一把剪刀一张红纸就能剪出栩栩如生的图案，寄托美好祝愿。（艺术形式正确，特点清楚即可）",
+      "kps": [
+        "kp_pol4_traditional_art"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查对中华传统艺术的认识与审美，内容正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0225",
+      "item_type": "choice",
+      "stem": "下列属于非物质文化遗产的是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_intangible"
+      ],
+      "difficulty": 0.4,
+      "solution": "皮影戏、剪纸、传统节日习俗等以技艺和民俗形态传承的文化属于非物质文化遗产；长城、故宫、兵马俑、青铜器属于物质文化遗产（文物古迹），A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 皮影戏、剪纸艺术",
+        "B. 长城、故宫建筑",
+        "C. 兵马俑陶俑",
+        "D. 青铜鼎实物"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0226",
+      "item_type": "solve",
+      "stem": "为什么要保护非物质文化遗产？请写出两条理由，并写一条你能做的小事。",
+      "answer": "理由：①非物质文化遗产承载着中华民族的历史记忆和智慧，一旦失传就难以恢复；②保护和传承非遗能增强文化自信，让优秀传统文化代代相传。小事示例：学习剪窗花、学唱一段家乡戏曲，向同学介绍一项非遗；参观非遗展览，做非遗小宣传员。（理由合理，小事可行即可）",
+      "kps": [
+        "kp_pol4_intangible"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查非遗保护意识，理由与做法合理即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0227",
+      "item_type": "choice",
+      "stem": "游览长城、故宫等文物古迹时，正确的做法是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_heritage"
+      ],
+      "difficulty": 0.45,
+      "solution": "文物古迹是国家和民族的宝贵财富，参观时要遵守秩序、爱护文物，不刻画不触摸不带走，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 在城墙上刻“××到此一游”",
+        "B. 遵守参观秩序，不刻画、不触摸文物，文明游览",
+        "C. 爬到文物上拍照摆酷",
+        "D. 捡走一块带花纹的古砖留纪念"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0228",
+      "item_type": "solve",
+      "stem": "请写出两处我国著名的文物古迹和它们所在的城市，再写一条文明参观的要求。",
+      "answer": "古迹与城市示例：长城——北京（蜿蜒于北方多省，北京段最著名）；故宫——北京；秦始皇陵兵马俑——陕西西安；莫高窟——甘肃敦煌。文明参观要求：不刻画、不攀爬、不触摸文物，遵守秩序、听从引导，做文明游客。（两处对应正确，要求合理即可）",
+      "kps": [
+        "kp_pol4_heritage"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查文物古迹常识与文明游览，对应正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0229",
+      "item_type": "choice",
+      "stem": "刘胡兰面对敌人的铡刀坚贞不屈，英勇就义时年仅 15 岁。毛泽东同志为她题词（　）。",
+      "answer": "C",
+      "kps": [
+        "kp_pol4_hero_red"
+      ],
+      "difficulty": 0.3,
+      "solution": "刘胡兰牺牲后，毛泽东同志为她题词“生的伟大，死的光荣”；“向雷锋同志学习”是为雷锋题词，A 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. “为人民服务”",
+        "B. “向雷锋同志学习”",
+        "C. “生的伟大，死的光荣”",
+        "D. “好好学习，天天向上”"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0230",
+      "item_type": "solve",
+      "stem": "革命先烈用生命换来了今天的幸福生活。请写一位你敬佩的革命烈士（或“小萝卜头”等小英雄）和他（她）的一件事迹，并说说你学到了什么精神。",
+      "answer": "示例：刘胡兰——被敌人逮捕后坚贞不屈，宁死不泄露党的秘密，牺牲时年仅 15 岁；“小萝卜头”宋振中——在监狱中坚持学习、帮助传递消息，是年纪最小的烈士。学到的精神：热爱祖国、坚定信念、不怕牺牲、艰苦奋斗；我们要铭记先烈，珍惜幸福生活，好好学习，报效祖国。（人物与事迹真实，精神概括正确即可）",
+      "kps": [
+        "kp_pol4_hero_red"
+      ],
+      "difficulty": 0.4,
+      "solution": "考查革命传统与烈士事迹，史实准确、精神提炼正确即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0231",
+      "item_type": "choice",
+      "stem": "对于各行各业的劳动者，正确的态度是（　）。",
+      "answer": "D",
+      "kps": [
+        "kp_pol4_labor_honor"
+      ],
+      "difficulty": 0.35,
+      "solution": "各行各业的劳动者都在为社会作贡献，劳动没有高低贵贱之分，要尊重劳动者、珍惜劳动成果，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 清洁工没文化才扫地",
+        "B. 农民的劳动最不重要",
+        "C. 只有赚大钱的工作才值得尊重",
+        "D. 尊重每一位劳动者，珍惜他们的劳动成果"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0232",
+      "item_type": "solve",
+      "stem": "请你采访一位身边的劳动者（如环卫工、快递员、厨师、教师），写出他的工作内容和辛苦之处，再说一句你想对他说的话。",
+      "answer": "示例：环卫工人——每天凌晨开始清扫街道，夏天顶烈日、冬天冒寒风，把城市打扫得干干净净。想说的话：“叔叔（阿姨）您辛苦了！谢谢您让我们的城市这么整洁，我一定不乱扔垃圾，尊重您的劳动。”（工作与辛苦描述真实，话语真诚即可）",
+      "kps": [
+        "kp_pol4_labor_honor"
+      ],
+      "difficulty": 0.45,
+      "solution": "考查尊重劳动与劳动者的态度，内容真实、态度真诚即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0233",
+      "item_type": "choice",
+      "stem": "践行“光盘行动”，正确的做法是（　）。",
+      "answer": "A",
+      "kps": [
+        "kp_pol4_anti_waste"
+      ],
+      "difficulty": 0.4,
+      "solution": "勤俭节约是中华民族的传统美德，就餐要按需点餐、光盘行动、剩菜打包，反对讲排场、比阔气，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 吃多少点多少，吃不完打包带走",
+        "B. 点一大桌菜显得热情，吃不完就倒掉",
+        "C. 专点贵的菜显示阔气",
+        "D. 聚会必须多点才够面子"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0234",
+      "item_type": "solve",
+      "stem": "除了“光盘行动”，生活中还有哪些勤俭节约的做法？请写出两条。",
+      "answer": "①节约用水用电，随手关灯关水，一水多用；②爱惜文具衣物，不攀比、不盲目买新；③旧物利用，如旧衣服做抹布、纸箱做收纳盒；④少用一次性餐具、水杯和塑料袋。（答出两条即可）",
+      "kps": [
+        "kp_pol4_anti_waste"
+      ],
+      "difficulty": 0.5,
+      "solution": "考查勤俭节约的美德践行，做法具体即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0235",
+      "item_type": "choice",
+      "stem": "下列属于绿色低碳生活方式的是（　）。",
+      "answer": "B",
+      "kps": [
+        "kp_pol4_low_carbon"
+      ],
+      "difficulty": 0.45,
+      "solution": "低碳生活包括绿色出行（步行、公交）、随手关灯节水节电、旧物利用、少用一次性用品等，B 正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 让爸爸每天开车送自己上很近的学校",
+        "B. 上学步行或乘公交车，随手关灯，旧物改造再利用",
+        "C. 夏天空调开到最低温度",
+        "D. 一次性筷子用完就扔"
+      ],
+      "form": "choice",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_prim_0236",
+      "item_type": "solve",
+      "stem": "请你为家庭制定一份“绿色低碳生活公约”，写出三条约定。",
+      "answer": "①出行：近距离步行或骑自行车，较远乘公交（地铁），减少开私家车；②用电用水：随手关灯、拔插头，空调温度适中，一水多用；③用品：自带购物袋和水杯，少用一次性用品，旧物改造利用，垃圾分类投放。（三条具体可行即可）",
+      "kps": [
+        "kp_pol4_low_carbon"
+      ],
+      "difficulty": 0.55,
+      "solution": "考查低碳生活的践行能力，约定具体可行即可。",
+      "source": "llm_generated",
+      "form": "comprehension",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0259",
+      "item_type": "solve",
+      "stem": "观察餐厅里的两桌客人：第一桌点了很多菜，剩下大半就结账离开；第二桌按人数点餐，吃不完的打包带走，桌上立着光盘行动的提示牌。说一说两桌客人的做法有什么不同，我们应向谁学习。",
+      "answer": "第一桌多点剩菜造成浪费，第二桌按需点餐、吃不完打包，践行了光盘行动。勤俭节约是中华民族的传统美德，我们应该按需点餐、不剩饭菜、打包剩余，反对浪费。",
+      "kps": [
+        "kp_pol4_anti_waste"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查按需点餐、光盘行动、勤俭节约。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0260",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：现在生活条件好了，浪费一点粮食没有关系。",
+      "answer": "错误。理由：粮食来之不易，是农民辛勤劳动的成果；节约是美德，浪费粮食既不尊重劳动，也不利于资源节约型社会建设，任何时候都不能浪费。",
+      "kps": [
+        "kp_pol4_anti_waste"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查节约美德不能丢。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0261",
+      "item_type": "solve",
+      "stem": "生活中怎样做到勤俭节约、反对浪费？请写出两条具体做法。",
+      "answer": "①按需点餐、适量盛饭，践行光盘行动，吃不完打包；②少用一次性筷子、纸杯等一次性用品；③节约用水用电，旧物利用；④爱惜衣物文具，不盲目攀比追新。（答出两条即可）",
+      "kps": [
+        "kp_pol4_anti_waste"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查节约行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0262",
+      "item_type": "solve",
+      "stem": "观察网络世界的两种行为：小北在班级群里说话文明、按时下线；小南却在游戏里辱骂队友，还在论坛发帖嘲笑别人，常常上网到深夜。说一说两人上网方式的差别，小南错在哪里。",
+      "answer": "小北文明、健康、有节制地上网；小南网上骂人、发帖嘲笑别人属于网络欺凌和不文明言行，深夜上网说明沉迷网络。网络不是法外之地，要文明上网、控制时长、健康使用网络。",
+      "kps": [
+        "kp_pol4_civil_net"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查文明上网。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0263",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：在网上用网名骂人，别人不知道我是谁，不会有什么后果。",
+      "answer": "错误。理由：网络言行也要遵守道德和法律，网上欺凌、辱骂他人会伤害别人的身心，情节严重的还要承担法律责任；文明上网是对每个人的要求。",
+      "kps": [
+        "kp_pol4_civil_net"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不进行网络欺凌。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0264",
+      "item_type": "solve",
+      "stem": "文明健康上网，小学生要做到哪些？写出两条。",
+      "answer": "①不说不文明的话，不辱骂、欺凌他人，不传播不良信息；②控制上网时长，不沉迷网络游戏，保护视力；③在家长指导下浏览健康网站；④保护个人和家庭信息，不轻信网友。（答出两条即可）",
+      "kps": [
+        "kp_pol4_civil_net"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查文明上网要求。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0265",
+      "item_type": "solve",
+      "stem": "社区公告栏贴出通知：本周末开展垃圾分类宣传活动、敬老院慰问活动和小区环保清洁行动。四（2）班同学分成小队，分别参加了这三项活动。观察这次社区活动，说一说参加社区活动有什么意义。",
+      "answer": "参加社区宣传、敬老、环保等活动，能帮助居民、关爱老人、美化环境，为社区建设出力；同时也锻炼了同学们的能力，增强了社会责任感。",
+      "kps": [
+        "kp_pol4_community_activity"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查参加社区活动的意义。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0266",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：社区是大家共同生活的家园，社区建设与我们小学生也有关系。",
+      "answer": "正确。理由：社区是我们生活的家园，人人都是社区的一员；参加力所能及的社区活动，为社区建设出力，是每个居民包括小学生的责任。",
+      "kps": [
+        "kp_pol4_community_activity"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查社区共建意识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0267",
+      "item_type": "solve",
+      "stem": "你的社区可以开展哪些活动？你愿意参加哪种活动，能做些什么？",
+      "answer": "示例：社区可以开展垃圾分类宣传、敬老助残、环保清洁、文艺演出等活动。我愿意参加环保清洁活动，帮忙捡拾垃圾、清除小广告、宣传垃圾分类知识。（活动＋做法即可）",
+      "kps": [
+        "kp_pol4_community_activity"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查参与社区活动。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0268",
+      "item_type": "solve",
+      "stem": "小明的新鞋被同学踩了一脚，他正要发火，想到上次自己不小心把墨水溅到同学身上时多么希望被原谅，于是说：没关系，你又不是故意的。观察这个情景，说一说小明运用了什么方法化解怒气。",
+      "answer": "小明运用了换位思考（将心比心）：站在同学的角度想对方的感受和处境，理解了别人不是故意的，于是原谅了对方，避免了矛盾。",
+      "kps": [
+        "kp_pol4_empathy"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查换位思考理解他人。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0269",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：理解他人就是不管事情对错，都要同意别人的做法。",
+      "answer": "错误。理由：换位思考是理解别人的感受和处境，理解不等于无原则认同；理解他人后仍可以表达不同意见，但要尊重、体谅对方。",
+      "kps": [
+        "kp_pol4_empathy"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查理解不等于无原则附和。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0270",
+      "item_type": "solve",
+      "stem": "什么是换位思考？请你举一个自己换位思考化解矛盾或理解他人的例子。",
+      "answer": "换位思考就是站在他人的角度想一想别人的感受和困难，将心比心地理解别人。示例：同桌不小心弄坏了我的笔，我很生气，但想到自己也曾弄坏过别人的东西，希望得到原谅，就原谅了他。（含义＋例子即可）",
+      "kps": [
+        "kp_pol4_empathy"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查换位思考的理解与应用。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0271",
+      "item_type": "solve",
+      "stem": "观察民族风情展：蒙古族同胞住蒙古包、举行那达慕大会，傣族姑娘泼水祝福，藏族同胞献上洁白的哈达，维吾尔族的手鼓舞欢快热情。说一说观看展览后你对各民族文化的感受。",
+      "answer": "各民族在服饰、饮食、居住、节日、歌舞等方面各具特色、绚丽多彩；我们要欣赏、尊重各民族的文化差异，像爱护眼睛一样爱护民族团结。",
+      "kps": [
+        "kp_pol4_ethnic_affect"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查各具特色的民族风情。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0272",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：各民族的文化风俗不同，有高低优劣之分，应该统一成一种。",
+      "answer": "错误。理由：各民族文化都是中华文化的重要组成部分，没有高低优劣之分；应尊重差异、欣赏特色、相互交流，共同繁荣发展。",
+      "kps": [
+        "kp_pol4_ethnic_affect"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查尊重民族文化差异。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0273",
+      "item_type": "solve",
+      "stem": "请举出两个少数民族的特色文化（节日、歌舞、习俗等），并说说我们应怎样对待各民族的文化差异。",
+      "answer": "示例：傣族的泼水节，人们互相泼水送祝福；蒙古族的那达慕大会，有摔跤、赛马等活动；藏族献哈达表示敬意。对待差异：尊重各民族的风俗习惯，欣赏各民族文化的独特之处，平等友好相处。（举例＋态度即可）",
+      "kps": [
+        "kp_pol4_ethnic_affect"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查民族风情与尊重差异。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0274",
+      "item_type": "solve",
+      "stem": "爸爸最近工作压力大，常常叹气；妈妈感冒发烧还在准备晚饭。小圆注意到了，给妈妈倒水拿药，主动洗碗，还画了一张画写着爸爸妈妈辛苦了放在桌上。观察这个情景，说一说小圆是怎样孝敬父母的。",
+      "answer": "小圆关心父母的健康和心情，用倒水拿药、主动做家务、送上祝福等行动表达关爱。孝敬父母不仅要听话，更要主动关心他们的健康与心情，用行动尽孝。",
+      "kps": [
+        "kp_pol4_family_duty"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查孝的含义与关心父母。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0275",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：孝顺就是物质上供养父母，只要给钱买东西就算尽了孝心。",
+      "answer": "错误。理由：孝不仅是物质上的赡养，更是精神上的关爱和尊敬；对小学生来说，听话懂事、关心父母健康心情、主动分担家务就是孝。",
+      "kps": [
+        "kp_pol4_family_duty"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查孝的全面含义。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0276",
+      "item_type": "solve",
+      "stem": "作为子女，怎样把孝落实到日常生活中？写出两条做法。",
+      "answer": "①关心父母的身体健康和心情，父母生病时照顾问候；②主动分担力所能及的家务，减轻父母负担；③好好学习、品行端正，不让父母操心；④听父母正确的话，有分歧时心平气和地沟通。（答出两条即可）",
+      "kps": [
+        "kp_pol4_family_duty"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查孝行落实。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0277",
+      "item_type": "solve",
+      "stem": "观察两个家庭：小安家三代同堂，爷爷奶奶帮忙照顾他；小月和妈妈生活在一起，妈妈又当爹又当妈。这两个家庭结构虽然不同，但家人都在抚育孩子成长。说一说家庭对未成年人的作用。",
+      "answer": "家庭是未成年人成长的摇篮：父母抚养、教育我们，家人相互依存、彼此照顾；家庭还承担着保护未成年人的责任。家庭结构可以不同，但亲情和责任是相同的。",
+      "kps": [
+        "kp_pol4_family_structure"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查家庭结构与功能。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0278",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：家庭只是吃饭睡觉的地方，抚养教育孩子是学校的事。",
+      "answer": "错误。理由：家庭是抚养、教育和保护未成年人的第一场所，父母是孩子的第一任老师；家庭、学校各有职责，缺一不可。",
+      "kps": [
+        "kp_pol4_family_structure"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查家庭的教育功能。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0279",
+      "item_type": "solve",
+      "stem": "家庭对我们的成长有哪些作用？请写出两条，并说说家庭成员之间应该是怎样的关系。",
+      "answer": "作用：①家庭抚养我们长大，为我们提供生活费用保障；②家庭是我们的第一所学校，父母教育我们做人做事；③家庭保护我们的安全和健康。关系：家庭成员相互依存、互相关爱、共同分担责任。（作用两条＋关系即可）",
+      "kps": [
+        "kp_pol4_family_structure"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查家庭功能。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0280",
+      "item_type": "solve",
+      "stem": "期中考试时，好朋友小鹏递纸条让小晨帮他传答案，说：咱俩是好朋友，你不帮就是不够朋友。小晨拒绝了他，考后又主动帮小鹏补习弱科。观察这个情景，说一说什么是真正的友谊。",
+      "answer": "真正的友谊是真诚、平等、互助的，帮助朋友进步而不是纵容朋友犯错。小晨拒绝作弊、考后帮补习，是对朋友真正负责；小鹏把作弊当帮忙，是把友谊误解成了不讲原则的哥们义气。",
+      "kps": [
+        "kp_pol4_friendship_quality"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查友谊的特质与哥们义气的区别。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0281",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：朋友之间就要讲义气，朋友让帮忙作弊也应该答应。",
+      "answer": "错误。理由：友谊需要讲原则、明辨是非，作弊既违反考试纪律又害了朋友；不分是非的哥们义气不是真友谊，真诚的友谊应该互相帮助进步。",
+      "kps": [
+        "kp_pol4_friendship_quality"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查友谊不是哥们义气。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0282",
+      "item_type": "solve",
+      "stem": "真正的友谊具有哪些特质？请写出两条，并各用一个小例子说明。",
+      "answer": "①真诚：对朋友说真话，不欺骗，考试不帮朋友作弊而是帮他复习；②平等：朋友之间互相尊重，不凌驾于人，不起侮辱性绰号；③互助：朋友有困难时伸出援手，一起进步。（两条＋例子即可）",
+      "kps": [
+        "kp_pol4_friendship_quality"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查友谊特质。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0283",
+      "item_type": "solve",
+      "stem": "观察班级里的一幕：同学们给小磊起了个侮辱性绰号，哄堂大笑，小磊低着头很难受；班长制止了大家，说这样不尊重人。观察这个情景，说一说绰号事件错在哪里，同学之间应怎样相处。",
+      "answer": "给同学起侮辱性绰号是不尊重人、伤害同学自尊的行为。同学之间应真诚相待、互相尊重、互相鼓励，不做伤害同学的事。",
+      "kps": [
+        "kp_pol4_get_along"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查与同学友好相处。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0284",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：开个玩笑而已，给同学起难听的绰号不算什么大事。",
+      "answer": "错误。理由：侮辱性绰号会伤害同学的自尊心，属于言语欺凌；玩笑要以尊重为前提，拿别人的短处取乐是不道德的。",
+      "kps": [
+        "kp_pol4_get_along"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不起侮辱性绰号。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0285",
+      "item_type": "solve",
+      "stem": "同学之间怎样友好相处？写出两条具体做法。",
+      "answer": "①真诚相待，说话有礼貌，不给同学起侮辱性绰号；②互相鼓励、互相帮助，不嘲笑同学的短处；③发生矛盾时友好沟通，不动手不骂人；④尊重同学的不同特点和爱好。（答出两条即可）",
+      "kps": [
+        "kp_pol4_get_along"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查同学相处之道。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0286",
+      "item_type": "solve",
+      "stem": "小组讨论交流会上：一组同学各说各的、互不相让，最后没形成结果；二组同学先认真倾听每个人的意见，再由记录员汇总，取长补短形成了完整方案。观察两组的讨论，说一说合作学习要注意什么。",
+      "answer": "合作学习要认真倾听他人意见、充分表达自己的想法，相互补充、取长补短，共同完成学习任务；只顾自己说、不听别人的，讨论就没有效果。",
+      "kps": [
+        "kp_pol4_group_coop"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查合作学习的方法。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0287",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：小组合作时成绩好的同学包办一切，其他人不用参与。",
+      "answer": "错误。理由：合作学习的目的是人人参与、共同提高；包办代替让其他成员失去锻炼机会，也不是真正的合作，应分工明确、人人尽责。",
+      "kps": [
+        "kp_pol4_group_coop"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查人人参与的合作。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0288",
+      "item_type": "solve",
+      "stem": "小组合作学习时应该怎样倾听和表达？写出两条要求。",
+      "answer": "①认真倾听：别人发言时不打断，听清别人的观点和理由；②充分表达：声音清楚地说出自己的看法和依据；③互相补充：吸收别人意见的合理部分，完善小组结论；④服从分工，按规则有序发言。（答出两条即可）",
+      "kps": [
+        "kp_pol4_group_coop"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查合作学习要求。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0289",
+      "item_type": "solve",
+      "stem": "公交车上，小然看到抱小孩的阿姨吃力地站着，主动起身让座；放学后，高年级同学给生病落课的伙伴补课；路边，一位大姐姐扶起摔倒的老人。观察这些情景，说一说它们的共同点。",
+      "answer": "共同点是助人为乐：在他人需要时主动提供帮助。帮助他人能给他人带去温暖，也让自己收获快乐，是中华民族的传统美德。",
+      "kps": [
+        "kp_pol4_help_others"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查助人为乐。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0290",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：帮助别人会耽误自己的时间，是吃亏的事。",
+      "answer": "错误。理由：助人为乐是传统美德，帮助他人的同时自己也能收获快乐和成长；人人互帮互助，社会才会更温暖，今天的付出也会得到别人的回报。",
+      "kps": [
+        "kp_pol4_help_others"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查助人的价值。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0291",
+      "item_type": "solve",
+      "stem": "在生活中你可以帮助别人做哪些事？写出两件，并说说帮助别人时要注意什么。",
+      "answer": "可以做的事：①公交车上给老弱病残孕让座；②扶助行动不便的老人过马路；③帮学习有困难的同学补习；④帮邻居拿东西。注意：帮助他人要出于真心、量力而行，还要注意方式方法，比如扶老人要注意安全、必要时请大人帮忙。（两件＋注意点即可）",
+      "kps": [
+        "kp_pol4_help_others"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查助人实践。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0292",
+      "item_type": "solve",
+      "stem": "观察一组文物古迹的图片：蜿蜒的万里长城、金碧辉煌的北京故宫、气势恢宏的秦始皇陵兵马俑、敦煌莫高窟的壁画。说一说这些文物古迹有什么价值，参观时应注意什么。",
+      "answer": "长城、故宫、兵马俑、莫高窟等是中华民族悠久历史和灿烂文明的见证，是宝贵的文化遗产，很多已列入世界遗产名录。参观时要遵守秩序，不刻画、不触摸、不损坏文物。",
+      "kps": [
+        "kp_pol4_heritage"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查认识文物古迹及参观礼仪。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0293",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：在文物古迹上刻下某某到此一游只是留个纪念，无伤大雅。",
+      "answer": "错误。理由：在文物古迹上刻画会损坏不可再生的文化遗产，是违反治安管理处罚法等法律法规的行为；文明参观、爱护文物是每个游客的义务。",
+      "kps": [
+        "kp_pol4_heritage"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不刻画文物。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0294",
+      "item_type": "solve",
+      "stem": "请写出两处你知道的著名文物古迹，并说说参观文物古迹时应该怎样做。",
+      "answer": "文物古迹：长城、故宫、兵马俑、莫高窟、布达拉宫等。做法：遵守参观秩序，不刻画不触摸文物，不乱扔垃圾，听从工作人员引导，看到损坏文物的行为及时劝阻或报告。（两处＋做法即可）",
+      "kps": [
+        "kp_pol4_heritage"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查文物古迹认知与保护行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0295",
+      "item_type": "solve",
+      "stem": "观察革命故事展：刘胡兰面对敌人的铡刀坚贞不屈，牺牲时年仅十五岁；监狱中的小萝卜头在艰苦条件下坚持学习，向往自由和光明。说一说这些革命先辈的事迹给你带来怎样的感受。",
+      "answer": "革命先辈为了理想信念和人民幸福，不怕牺牲、坚贞不屈，他们的精神令人敬佩；我们今天的幸福生活是无数先烈用鲜血和生命换来的，要铭记他们的革命精神，好好学习、报效祖国。",
+      "kps": [
+        "kp_pol4_hero_red"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查革命传统与革命烈士事迹。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0296",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：革命烈士的事迹已经过去很久了，和今天的我们没有关系。",
+      "answer": "错误。理由：今天的幸福生活正是革命先烈流血牺牲换来的；铭记先烈事迹、传承不怕牺牲艰苦奋斗的革命精神，是我们对历史应有的敬重，也是前进的动力。",
+      "kps": [
+        "kp_pol4_hero_red"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查铭记革命精神。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0297",
+      "item_type": "solve",
+      "stem": "请讲一位你了解的革命烈士（如刘胡兰、小萝卜头等）的事迹，并说说我们应该学习他们的什么精神。",
+      "answer": "示例：刘胡兰在敌人威胁面前坚贞不屈、保守党的秘密，牺牲时年仅十五岁，毛主席为她题词生的伟大，死的光荣。我们要学习她坚定信念、不怕牺牲、忠于祖国的革命精神，珍惜幸福生活，努力学习报效祖国。（事迹＋精神即可）",
+      "kps": [
+        "kp_pol4_hero_red"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查革命传统教育。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0298",
+      "item_type": "solve",
+      "stem": "观察两张历史照片：1997年7月1日，香港回归交接仪式上五星红旗升起；1999年12月20日，澳门回到祖国怀抱。观察照片并结合所学，说一说香港、澳门的地位和回归的意义。",
+      "answer": "香港、澳门自古以来就是中国的领土，分别于1997年7月1日和1999年12月20日回归祖国。回归洗雪了民族耻辱，标志着祖国统一大业迈出重要一步；两地回归后作为特别行政区同属伟大祖国。",
+      "kps": [
+        "kp_pol4_hk_macao"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查港澳回归史实。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0299",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：香港于1997年回归祖国，澳门于1999年回归祖国，两地都是中国领土。",
+      "answer": "正确。理由：1997年7月1日香港回归、1999年12月20日澳门回归，两地设立特别行政区，都是中国领土不可分割的一部分。",
+      "kps": [
+        "kp_pol4_hk_macao"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查港澳回归时间。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0300",
+      "item_type": "solve",
+      "stem": "香港和澳门分别是哪一年回归祖国的？香港、澳门与祖国内地是怎样的关系？",
+      "answer": "香港1997年7月1日回归，澳门1999年12月20日回归。香港、澳门是中国的特别行政区，同属伟大祖国，与祖国内地血脉相连、相互支持、共同发展。",
+      "kps": [
+        "kp_pol4_hk_macao"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查港澳知识与祖国认同。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0301",
+      "item_type": "solve",
+      "stem": "爷爷指着两张照片感慨：三十年前的家乡是泥泞的土路、低矮的平房；如今是宽阔的柏油马路、整齐的楼房和新建的公园、文化站。观察家乡的新旧对比，说一说家乡发生了哪些变化，这些变化说明什么。",
+      "answer": "变化：道路从土路变柏油路，平房变楼房，新建了公园、文化站等设施，生活更方便舒适。这说明家乡在党和政府的领导下不断发展，人们的生活水平不断提高。",
+      "kps": [
+        "kp_pol4_hometown_change"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查观察家乡变化。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0302",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：家乡的发展变化是大人们的事，小学生不用关心。",
+      "answer": "错误。理由：家乡是我们成长的地方，家乡的发展与每个人息息相关；小学生了解家乡、热爱家乡，长大为家乡发展贡献力量，也是责任感的体现。",
+      "kps": [
+        "kp_pol4_hometown_change"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查关心家乡发展。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0303",
+      "item_type": "solve",
+      "stem": "你的家乡（生活的地方）近年来有哪些变化？请举出两个例子，并说说你希望家乡未来变成什么样。",
+      "answer": "示例：变化：①修建了新公园和健身广场，人们有了休闲的好去处；②道路拓宽，通了公交车，出行更方便；③学校翻新，有了新教学楼和图书室。期望：希望家乡天更蓝水更清，交通更便利，大家生活更幸福。（两例＋期望即可）",
+      "kps": [
+        "kp_pol4_hometown_change"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查家乡变化与发展愿望。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0304",
+      "item_type": "solve",
+      "stem": "家乡文化采风活动中，同学们记录了本地的方言童谣、特色小吃、庙会灯会和地方戏曲，还采访了剪纸老艺人。观察这次采风的收获，说一说家乡文化有什么价值。",
+      "answer": "家乡的方言、饮食、节庆、戏曲、手工艺等世代相传，凝结着家乡人民的智慧和情感，具有独特的文化价值，值得了解、认同和传承。",
+      "kps": [
+        "kp_pol4_hometown_culture"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查家乡文化的独特价值。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0305",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：地方戏曲、方言土话太土了，没有什么价值，迟早要消失。",
+      "answer": "错误。理由：家乡文化承载着历史记忆和乡情，许多已列入非物质文化遗产；认同并传承家乡文化，才能保住文化根脉，让中华文化丰富多彩。",
+      "kps": [
+        "kp_pol4_hometown_culture"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查认同家乡文化。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0306",
+      "item_type": "solve",
+      "stem": "你的家乡有哪些特色文化（语言、饮食、节庆、戏曲、手工艺等）？写出两项，并说说我们可以为传承家乡文化做些什么。",
+      "answer": "示例：家乡有过年舞龙舞狮的习俗，还有皮影戏、竹编手艺、特色小吃等。可以做的：向长辈学习了解家乡文化，当好小宣传员向别人介绍；参加民俗活动，学习传统手艺；提醒大家爱护文化古迹。（两项＋做法即可）",
+      "kps": [
+        "kp_pol4_hometown_culture"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查家乡文化认知与传承。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0307",
+      "item_type": "solve",
+      "stem": "同学们绘制家乡小地图：标出家乡所在的省市自治区，画出穿城而过的河流、城郊的山峦，还标注了特产果园和工业园区。观察这幅地图，说一说了解家乡地理要掌握哪些内容。",
+      "answer": "要了解家乡所在的省（市、自治区）位置，家乡的河流山川等地形特点，以及家乡的物产资源，从而更全面地认识家乡、热爱家乡。",
+      "kps": [
+        "kp_pol4_hometown_geography"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查认识家乡地理。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0308",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：知道家乡属于哪个省很重要，这有助于我们了解祖国的行政区划，增强家乡认同。",
+      "answer": "正确。理由：知道家乡所属的省级行政区，是认识家乡位置的基础，也让我们知道家乡是祖国大家庭的一员。",
+      "kps": [
+        "kp_pol4_hometown_geography"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查家乡与行政区划。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0309",
+      "item_type": "solve",
+      "stem": "请介绍你家乡的地理位置（属于哪个省市自治区）、主要的河流或山川、有名的物产各一项。",
+      "answer": "示例（请结合实际作答）：我的家乡属于××省××市，境内有××河，出产××（水果/茶叶/大米等）。（三项各答一项、表述清楚即可）",
+      "kps": [
+        "kp_pol4_hometown_geography"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查家乡地理认知。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0310",
+      "item_type": "solve",
+      "stem": "非物质文化遗产进校园活动上，老艺人表演了皮影戏和剪纸，教同学们剪窗花；展板上介绍传统节日习俗也属于非物质文化遗产。观察这次活动，说一说什么是非物质文化遗产，为什么要保护它。",
+      "answer": "非物质文化遗产是世代相传的传统文化表现形式，如皮影戏、剪纸、传统节日习俗等。它们凝结着民族的智慧和文化记忆，一旦失传就难以恢复，所以要学习、传承和保护。",
+      "kps": [
+        "kp_pol4_intangible"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查非物质文化遗产概念与保护。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0311",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：皮影戏、剪纸这些老手艺过时了，让它们自然消失也没什么。",
+      "answer": "错误。理由：这些老手艺是珍贵的非物质文化遗产，承载着中华文化的基因；消失了就找不回来，我们有责任学习传承，让古老文化焕发新的光彩。",
+      "kps": [
+        "kp_pol4_intangible"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查非遗保护意识。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0312",
+      "item_type": "solve",
+      "stem": "请举出两项非物质文化遗产，并说说小学生可以为传承它们做些什么。",
+      "answer": "示例：剪纸、皮影戏、京剧、传统节日习俗、刺绣等。可以做的：认真观看学习非遗表演和技艺，向长辈和艺人请教；向同学、家人宣传非遗知识；参加学校组织的非遗社团活动。（两项＋做法即可）",
+      "kps": [
+        "kp_pol4_intangible"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查非遗认知与传承行动。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0313",
+      "item_type": "solve",
+      "stem": "班里组织给家庭困难的同学捐款，班长在大庭广众下大声念出受捐同学的姓名和家庭情况，那位同学红着脸低下了头。观察这个情景，说一说班长的做法有什么不妥，帮助别人时应注意什么。",
+      "answer": "班长的做法让受助同学当众难堪，伤害了自尊。帮助别人要尊重对方，不揭短、不张扬别人的困难；在别人不需要帮助时不强行插手，把握好方式和分寸。",
+      "kps": [
+        "kp_pol4_kind_way"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查关爱他人的正确方式。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0314",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：我是为同学好，帮不帮、怎么帮由我说了算。",
+      "answer": "错误。理由：帮助他人要建立在尊重对方意愿的基础上；不顾对方感受、强行插手或大声张扬，好心也可能办坏事。",
+      "kps": [
+        "kp_pol4_kind_way"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查尊重受助者。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0315",
+      "item_type": "solve",
+      "stem": "帮助别人时，怎样做才是讲究方式的关爱？写出两点。",
+      "answer": "①尊重对方，不揭短、不张扬别人的困难和隐私；②注意场合和分寸，尽量不让对方难堪；③在别人确实需要时提供帮助，不强行插手；④量力而行，必要时请老师大人协助。（答出两点即可）",
+      "kps": [
+        "kp_pol4_kind_way"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查关爱的正确方式。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0316",
+      "item_type": "solve",
+      "stem": "凌晨四点，环卫工人开始清扫街道；早高峰，交警在路口指挥交通；中午，外卖员冒雨送餐；深夜，医生还在诊室值班。观察这些劳动场景，说一说你的感想。",
+      "answer": "各行各业劳动者都在自己的岗位上辛勤付出，正是他们的劳动让城市正常运转、生活方便美好。劳动没有高低贵贱之分，我们要尊重每一位劳动者，珍惜劳动成果。",
+      "kps": [
+        "kp_pol4_labor_honor"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查尊重劳动与劳动者。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0317",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：清洁工的工作又脏又累，是没出息的人才干的。",
+      "answer": "错误。理由：劳动只有分工不同，没有高低贵贱；环卫工人用辛勤劳动换来城市的干净整洁，同样光荣，理应受到尊重。",
+      "kps": [
+        "kp_pol4_labor_honor"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查劳动平等观念。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0318",
+      "item_type": "solve",
+      "stem": "怎样做到尊重劳动者、珍惜劳动成果？写出两条。",
+      "answer": "尊重劳动者：①对各行各业的劳动者有礼貌，不说轻视的话；②体谅他们的辛苦，如配合环卫工人的清扫、遵守交通规则。珍惜劳动成果：③不浪费粮食、水电和物品；④爱护公共设施和环境卫生。（答出两条即可）",
+      "kps": [
+        "kp_pol4_labor_honor"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查尊重劳动。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0319",
+      "item_type": "solve",
+      "stem": "低碳生活宣传栏展示：出行优先选择公交、地铁和自行车；随手关灯、使用节能灯泡；旧衣物做成收纳袋；购物自带布袋、少用一次性用品。观察这些做法，说一说它们为什么被称为低碳生活。",
+      "answer": "这些做法节约了能源资源、减少了二氧化碳等温室气体排放和垃圾产生，降低了生活对环境的影响，所以叫低碳生活，即绿色环保的生活方式。",
+      "kps": [
+        "kp_pol4_low_carbon"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查低碳生活与环境保护。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0320",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：低碳生活是政府和工厂的事，与个人的日常生活无关。",
+      "answer": "错误。理由：每个人的衣食住行都消耗能源、产生排放；乘公交、随手关灯、少用一次性用品等点滴行动汇聚起来就是巨大的环保力量，低碳生活人人可为。",
+      "kps": [
+        "kp_pol4_low_carbon"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查个人践行低碳。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0321",
+      "item_type": "solve",
+      "stem": "绿色低碳生活，你在衣食住行方面可以怎么做？写出两条。",
+      "answer": "①出行尽量步行、骑自行车或乘公共交通；②随手关灯、关水，使用节能电器；③少用一次性筷子、纸杯、塑料袋，购物自带布袋；④旧物改造利用，垃圾分类投放；⑤节约粮食，光盘行动。（答出两条即可）",
+      "kps": [
+        "kp_pol4_low_carbon"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查低碳行为。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0322",
+      "item_type": "solve",
+      "stem": "新学期，小柯转学到新班级。他主动微笑着向同学问好，课间发现同桌也喜欢下象棋，就约他一起下；同学忘带尺子，他热心借出。不久，他交到了好几个好朋友。观察这个情景，说一说小柯是怎样结交新朋友的。",
+      "answer": "小柯主动微笑问好给人留下好印象，通过共同兴趣（下棋）拉近距离，还热心帮助同学。真诚待人、主动交往、寻找共同爱好、互相帮助，是结交朋友的好方法。",
+      "kps": [
+        "kp_pol4_make_friends"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查结交新朋友的方法。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0323",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：交朋友要等别人先来找我，主动打招呼会显得掉价。",
+      "answer": "错误。理由：友谊需要主动争取，微笑问好、主动交流是热情大方的表现，不是掉价；被动等待反而容易错过交朋友的机会。",
+      "kps": [
+        "kp_pol4_make_friends"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查主动交往。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0324",
+      "item_type": "solve",
+      "stem": "到一个新环境，怎样才能交到新朋友？写出两条做法。",
+      "answer": "①主动微笑问好，礼貌地介绍自己；②发现共同兴趣，邀请一起活动；③真诚待人，同学有困难主动帮助；③多倾听、多赞美，不斤斤计较。（答出两条即可）",
+      "kps": [
+        "kp_pol4_make_friends"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查交友方法。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0325",
+      "item_type": "solve",
+      "stem": "运动会颁奖仪式上奏响国歌，全体人员起立、庄重敬礼；宣传栏里张贴着《国旗法》《国歌法》的要点：升国旗、奏国歌时要肃立敬礼，不得故意损毁国旗、歪曲贬损国歌。观察这些内容，说一说国家为什么要专门为国旗国歌立法。",
+      "answer": "国旗、国歌是国家象征，代表国家尊严；专门立法是为了维护国家尊严，规范升挂国旗、奏唱国歌的礼仪，惩治损毁国旗、亵渎国歌的行为，增强公民的国家观念和爱国情感。",
+      "kps": [
+        "kp_pol4_national_symbol_law"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查国旗法国歌法的要求。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0326",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：在公共场所故意焚烧、损毁国旗只是个人行为，不算违法。",
+      "answer": "错误。理由：《国旗法》和国旗法相关法律责任明确规定，故意焚烧、损毁国旗是违法行为，情节严重的要依法追究刑事责任；国旗国歌代表国家尊严，人人必须尊敬爱护。",
+      "kps": [
+        "kp_pol4_national_symbol_law"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查损毁国旗违法。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0327",
+      "item_type": "solve",
+      "stem": "《国旗法》《国歌法》对公民有哪些基本要求？写出两条。",
+      "answer": "①升国旗、奏唱国歌时肃立、庄重，行注目礼（少先队员敬队礼），态度庄严；②不得升挂破损、污损、褪色或不合格的国旗；③不得故意损毁国旗，不得歪曲、贬损国歌，不得在不适宜的场合奏唱国歌。（答出两条即可）",
+      "kps": [
+        "kp_pol4_national_symbol_law"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查国旗法国歌法常识。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0328",
+      "item_type": "solve",
+      "stem": "小超在游戏里认识了一个网名叫大飞的网友，两人聊得很投机。大飞提出周末见面，还问小超家的住址和电话，说有好装备要送他。小超有些心动又有些犹豫。观察这个情景，说一说小超面临着什么风险，应该怎么做。",
+      "answer": "风险：网络交友对方身份不明，见面可能遇到坏人，泄露住址电话可能带来安全隐患。应该：不透露家庭住址、电话等真实信息，拒绝单独见面；把情况告诉父母，在家长指导下判断处理。",
+      "kps": [
+        "kp_pol4_online_friend"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查网络交友的风险与防范。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0329",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：网友聊得来就是好朋友，可以放心把家庭住址告诉他。",
+      "answer": "错误。理由：网络上的人身份难辨，骗子里不乏冒充同龄人的坏人；泄露住址、电话等隐私信息可能给家庭带来危险，网上交友要保护个人信息。",
+      "kps": [
+        "kp_pol4_online_friend"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不泄露隐私。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0330",
+      "item_type": "solve",
+      "stem": "网络交友有哪些利与弊？与网友交往要注意什么？写出两条。",
+      "answer": "利：开阔眼界、交流兴趣、倾诉心声方便。弊：对方身份真假难辨，存在被骗、被侵害的风险。注意：①不透露真实姓名、住址、电话等隐私；②不单独与网友见面，不轻信对方的承诺和馈赠；③遇到纠缠或不良企图立即告诉家长并拉黑；④把网络交友的情况告诉父母。（利弊＋注意两条即可）",
+      "kps": [
+        "kp_pol4_online_friend"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查网络交友利弊与安全。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0331",
+      "item_type": "solve",
+      "stem": "小凡想参加学校足球队，爸爸却认为踢球耽误学习坚决反对，小凡气得摔门而出。冷静下来后，他给爸爸写了一张纸条：爸爸，我知道您担心我的学习，我保证先完成作业再训练，成绩退步我就退出，我们能再谈谈吗？爸爸看后点了头。观察这个情景，说一说小凡处理亲子冲突的方式好在哪里。",
+      "answer": "小凡与父母意见不一致时先冷静下来，没有继续顶撞赌气；他换位理解爸爸担心的出发点，再心平气和地沟通并提出保证，最终化解了冲突。冷静、换位、真诚沟通是处理亲子冲突的正确方式。",
+      "kps": [
+        "kp_pol4_parent_conflict"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查处理亲子冲突的方法。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0332",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：和父母有分歧时，摔门、赌气、不吃饭，父母就会让步。",
+      "answer": "错误。理由：赌气对抗会伤害亲子感情，也解决不了分歧；父母反对往往有他们的考虑，应该先冷静、换位思考，再心平气和地沟通商量。",
+      "kps": [
+        "kp_pol4_parent_conflict"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不顶撞不赌气。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0333",
+      "item_type": "solve",
+      "stem": "与父母意见不一致时，应该怎样处理？按顺序写出你的做法。",
+      "answer": "①先冷静下来，控制情绪，不顶撞、不赌气；②换位思考，想一想父母为什么这样认为，理解他们的出发点；③选择合适时机，心平气和地说出自己的想法和理由；④与父母商量出双方都能接受的办法，如作出保证、签订约定。（顺序合理即可）",
+      "kps": [
+        "kp_pol4_parent_conflict"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查亲子冲突处理。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0334",
+      "item_type": "solve",
+      "stem": "小柳定下目标：一学期内跳绳达到每分钟140个。第一个星期她最多只能跳90个，手臂酸痛也想放弃，但她坚持每天练，第二个月到120个，学期末终于突破了140个。观察这个过程，说一说小柳的成功靠的是什么。",
+      "answer": "靠的是坚持与毅力：目标定了就不半途而废，天天练习、不怕困难，锻炼了意志品质，最终实现目标。",
+      "kps": [
+        "kp_pol4_persevere"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查学习中的坚持与毅力。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0335",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：定的目标太难了，练几天没效果就放弃，再换个容易的。",
+      "answer": "错误。理由：实现目标需要坚持不懈的努力，遇到困难就放弃会一事无成，也锻炼不了意志；可以把大目标分成小步骤，坚持完成，逐步逼近目标。",
+      "kps": [
+        "kp_pol4_persevere"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不半途而废。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0336",
+      "item_type": "solve",
+      "stem": "怎样培养坚持不解的意志品质？结合自己的一个目标，说说你的打算。",
+      "answer": "方法：①定下明确可行的目标，分解成每天的小任务；②天天坚持练习，不因短期没效果而放弃；③请同学家长监督鼓励，记录进步。示例：我的目标是本学期数学计算不出错，我打算每天练十道题并订正，坚持一学期。（方法＋打算即可）",
+      "kps": [
+        "kp_pol4_persevere"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查毅力培养。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0337",
+      "item_type": "solve",
+      "stem": "班里举行学习方法交流会：小伍说每堂新课前他都先预习、把疑问标出来；小陆说她的秘诀是课后及时复习、整理错题本；小柒说课上紧跟老师思路、当堂消化。观察这次交流会，说一说这些方法有什么共同点。",
+      "answer": "他们都是围绕学习全过程讲究方法：课前预习带着问题听、课上专心当堂消化、课后复习整理错题。共同点是主动学习、讲求方法，适合自己的好方法能事半功倍。",
+      "kps": [
+        "kp_pol4_plan_method"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查掌握学习方法。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0338",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：学习方法无所谓好坏，别人怎么学我就怎么学。",
+      "answer": "错误。理由：学习方法因人而异，要结合自己的习惯和薄弱环节摸索适合自己的方法，照搬别人的方法不一定适合自己。",
+      "kps": [
+        "kp_pol4_plan_method"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查适合自己的学习方法。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0339",
+      "item_type": "solve",
+      "stem": "请写出两条适合你的学习方法，并说说它们各自的作用。",
+      "answer": "示例：①课前预习：提前了解新课内容、标出疑问，听课时更有针对性；②课后复习、整理错题：及时巩固、避免重复犯错；③课上专心听讲、当堂消化，提高听课效率；④制定学习计划，有序安排时间。（两条＋作用即可）",
+      "kps": [
+        "kp_pol4_plan_method"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查学习方法总结。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0340",
+      "item_type": "solve",
+      "stem": "观察三位同学的零花钱用法：小甲看到新出的玩具马上就买，钱总不够花；小乙羡慕同学的名牌文具，缠着妈妈多要钱攀比；小丙把零花钱分成三份——学习用品、储蓄罐和小额献爱心，花得明明白白。说一说谁用得最合理，为什么。",
+      "answer": "小丙用得最合理：她对零花钱有计划，把钱用在学习用品、储蓄和献爱心等有意义的地方，够用就好、不攀比。合理使用零花钱要有计划、量力而行、把钱花得有意义。",
+      "kps": [
+        "kp_pol4_pocket_money"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查合理使用零花钱。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0341",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：零花钱是我的，想怎么花就怎么花，买多贵的玩具都行。",
+      "answer": "错误。理由：零花钱也要花得合理有意义，随意乱花会养成大手大脚的坏习惯；盲目攀比更是不可取，应学会计划用钱、适度消费、勤俭节约。",
+      "kps": [
+        "kp_pol4_pocket_money"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查不乱花、不攀比。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0342",
+      "item_type": "solve",
+      "stem": "怎样合理使用零花钱？写出两条做法。",
+      "answer": "①先作计划再花钱，把钱优先用在学习用品、图书等有意义的地方；②够用就好，不盲目攀比、不冲动购买；③拿出一部分储蓄，养成节约习惯；④可以拿出一小部分献爱心、帮助他人。（答出两条即可）",
+      "kps": [
+        "kp_pol4_pocket_money"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查零花钱管理。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0343",
+      "item_type": "solve",
+      "stem": "同桌小桃生病请假一周，回校后功课落下一大截。小杨主动把笔记借给她，每天课间花十分钟给她讲重点，同时鼓励她自己动脑，只在卡住时提示。观察这个情景，说一说小杨帮助同学的方式好在哪里。",
+      "answer": "小杨看到同学需要主动伸出援手，借笔记、讲重点，帮助得法；同时鼓励同学自己努力而不是包办代替。主动帮助、量力而行、鼓励自立，是帮助同学的正确方式。",
+      "kps": [
+        "kp_pol4_share_help"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查主动帮助同学并鼓励自立。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0344",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：帮同学就应该直接把作业本给他抄，这样最快。",
+      "answer": "错误。理由：给作业抄是害了同学，让他失去独立思考的机会还养成抄袭习惯；真正的帮助是讲解思路、鼓励他自己完成。",
+      "kps": [
+        "kp_pol4_share_help"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查帮助不是包办。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0345",
+      "item_type": "solve",
+      "stem": "同学需要帮助时，怎样帮助才恰当？写出两条。",
+      "answer": "①主动伸出援手，同时量力而行，超出能力范围时请老师或大人帮助；②注重启发引导，讲方法、鼓劲，而不是代替他完成；③保护同学自尊，不当众张扬他的困难。（答出两条即可）",
+      "kps": [
+        "kp_pol4_share_help"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查助人方式。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0346",
+      "item_type": "solve",
+      "stem": "观察一组材料：地图上台湾岛与祖国大陆隔海相望，最近处仅约一百三十公里；台湾同胞与大陆同胞同过春节、中秋，同讲汉语、同写汉字，共祭妈祖和黄帝。观察这些材料，说一说它们说明了什么。",
+      "answer": "说明台湾是中国神圣领土不可分割的一部分：台湾与祖国大陆地缘相近、血缘相亲、同根同源，两岸同胞同属中华民族，共同期盼祖国统一。",
+      "kps": [
+        "kp_pol4_taiwan"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查台湾是祖国领土的一部分。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0347",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：台湾是中国神圣领土不可分割的一部分。",
+      "answer": "正确。理由：台湾自古以来就是中国的领土，两岸同胞同根同源、血脉相连；实现祖国完全统一是全体中华儿女的共同愿望。",
+      "kps": [
+        "kp_pol4_taiwan"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查台湾地位。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0348",
+      "item_type": "solve",
+      "stem": "为什么说台湾是祖国领土不可分割的一部分？请从地理、历史、文化等方面说一说。",
+      "answer": "地理上，台湾岛与祖国大陆隔台湾海峡相望，最近处仅约一百三十公里，远古时曾连为一体；历史上，中国历代政府都在台湾设立机构进行管辖；文化上，两岸同胞同根同源，语言文字、风俗习惯相同，共祭共同的祖先。所以台湾是我国神圣领土，盼望祖国早日完全统一。",
+      "kps": [
+        "kp_pol4_taiwan"
+      ],
+      "difficulty": 0.35,
+      "solution": "考查台湾问题的多角度认识。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0349",
+      "item_type": "solve",
+      "stem": "文化艺术节上，同学们欣赏了遒劲的书法作品、精美的剪纸、韵味十足的京剧唱段、绚丽的刺绣和温润的陶瓷。观察这些传统艺术，说一说你的感受。",
+      "answer": "书法、剪纸、京剧、刺绣、陶瓷等中华传统艺术历史悠久、技艺精湛，凝结着中华民族的智慧和审美，展现了中华文化的独特魅力，让我们感到自豪，应当传承发扬。",
+      "kps": [
+        "kp_pol4_traditional_art"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查中华传统艺术之美。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0350",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：京剧是我们的国粹，被列入非物质文化遗产，值得欣赏和传承。",
+      "answer": "正确。理由：京剧集唱、念、做、打于一体，是中华民族艺术的瑰宝，被誉为国粹，已入选人类非物质文化遗产代表作名录。",
+      "kps": [
+        "kp_pol4_traditional_art"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查传统艺术的价值。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0351",
+      "item_type": "solve",
+      "stem": "请写出两种中华传统艺术形式，并说说我们小学生可以怎样亲近、传承它们。",
+      "answer": "传统艺术：书法、剪纸、京剧、刺绣、陶瓷等。做法：认真上好书法、美术课，学写毛笔字、学剪纸；观看京剧等传统艺术演出，了解其历史和美；向老艺人学习请教，参加学校传统文化社团。（两种＋做法即可）",
+      "kps": [
+        "kp_pol4_traditional_art"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查传统艺术认知与传承。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0352",
+      "item_type": "solve",
+      "stem": "在老师的带领下，四（3）班志愿服务队来到社区敬老院：为老人们表演节目、打扫房间、陪老人聊天。活动后同学们说，看到爷爷奶奶开心，自己心里也暖暖的。观察这次志愿活动，说一说志愿服务有什么意义。",
+      "answer": "志愿服务奉献了爱心、帮助了他人、服务了社会；在成人带领下参与志愿服务，能体验到奉献社会的快乐，增强社会责任感，收获成长。",
+      "kps": [
+        "kp_pol4_volunteer"
+      ],
+      "difficulty": 0.2,
+      "solution": "考查志愿服务的意义。",
+      "source": "llm_generated",
+      "form": "观察",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0353",
+      "item_type": "solve",
+      "stem": "判断下面的说法是否正确，并说明理由：小学生做志愿服务纯粹是浪费时间，对学习没有帮助。",
+      "answer": "错误。理由：志愿服务培养爱心、责任感和社会交往能力，是课堂学习之外重要的成长课堂；奉献社会、服务他人本身就是有意义的学习。",
+      "kps": [
+        "kp_pol4_volunteer"
+      ],
+      "difficulty": 0.25,
+      "solution": "考查志愿服务的价值。",
+      "source": "llm_generated",
+      "form": "判断",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "pol_dens01_0354",
+      "item_type": "solve",
+      "stem": "在成人带领下，你可以参加哪些志愿服务活动？写出一项并说说注意事项。",
+      "answer": "可以参加：到敬老院慰问表演、社区环保清洁、垃圾分类宣传、图书角整理等。注意事项：在老师或家长带领下活动，服从安排；注意礼貌和安全；力所能及，认真完成分工。（一项＋注意即可）",
+      "kps": [
+        "kp_pol4_volunteer"
+      ],
+      "difficulty": 0.35,
+      "solution": "开放性简答，考查志愿服务实践。",
+      "source": "llm_generated",
+      "form": "简答",
+      "verification": {
+        "agents": [
+          "pol-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    }
+  ]
+}

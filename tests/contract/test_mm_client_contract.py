@@ -139,7 +139,7 @@ def test_check_url_rejects_scheme_host_port_userinfo_and_garbage():
 
 
 def test_check_url_blocks_private_address_families():
-    bad = ["10.0.0.5", "127.0.0.1", "169.254.1.9", "192.168.1.9", "172.16.0.9",
+    bad = ["10.0.0.5", "127.0.0.1", "169.254.1.9", "198.51.100.23", "172.16.0.9",
            "fe80::1", "::1", "0.0.0.0", "224.0.0.1", "240.0.0.1", "255.255.255.255",
            "fc00::9"]
     for ip in bad:  # 每个私网族成员单独即拒

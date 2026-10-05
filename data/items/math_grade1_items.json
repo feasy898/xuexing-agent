@@ -1120,6 +1120,1036 @@
         ],
         "answers_agree": true
       }
+    },
+    {
+      "id": "p1_051",
+      "item_type": "choice",
+      "stem": "个位上是7，十位上是1，这个数是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_num20"
+      ],
+      "difficulty": 0.3,
+      "solution": "十位是1表示1个十，个位是7表示7个一，合起来是17。",
+      "source": "llm_generated",
+      "options": [
+        "A. 71",
+        "B. 17",
+        "C. 7",
+        "D. 8"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_052",
+      "item_type": "fill",
+      "stem": "十位是1、个位是6的数是____",
+      "answer": "16",
+      "kps": [
+        "kp_p1_num20"
+      ],
+      "difficulty": 0.5,
+      "solution": "1个十是10，6个一是6，合起来是16。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_053",
+      "item_type": "fill",
+      "stem": "5和4合起来是____",
+      "answer": "9",
+      "kps": [
+        "kp_p1_addsub10"
+      ],
+      "difficulty": 0.2,
+      "solution": "5+4=9。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_054",
+      "item_type": "choice",
+      "stem": "小明原来有6支铅笔，又买了2支，现在有（　）支",
+      "answer": "B",
+      "kps": [
+        "kp_p1_addsub10"
+      ],
+      "difficulty": 0.45,
+      "solution": "原来的6支加上又买的2支：6+2=8（支）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 4",
+        "B. 8",
+        "C. 3",
+        "D. 9"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_055",
+      "item_type": "fill",
+      "stem": "6+7=____",
+      "answer": "13",
+      "kps": [
+        "kp_p1_carry20"
+      ],
+      "difficulty": 0.35,
+      "solution": "把7分成4和3，6加4凑成10，再加3得13。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_056",
+      "item_type": "choice",
+      "stem": "用凑十法算8+4，第一步把4分成（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_carry20"
+      ],
+      "difficulty": 0.5,
+      "solution": "8缺2凑成10，所以把4分成2和2。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2和2",
+        "B. 3和1",
+        "C. 4和0",
+        "D. 1和3"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_057",
+      "item_type": "fill",
+      "stem": "11-4=____",
+      "answer": "7",
+      "kps": [
+        "kp_p1_borrow20"
+      ],
+      "difficulty": 0.3,
+      "solution": "破十法：10-4=6，6加个位的1得7。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_058",
+      "item_type": "choice",
+      "stem": "用破十法算12-5，第一步把12分成（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_borrow20"
+      ],
+      "difficulty": 0.45,
+      "solution": "破十法先把12分成10和2，再算10-5。",
+      "source": "llm_generated",
+      "options": [
+        "A. 10和2",
+        "B. 8和4",
+        "C. 5和7",
+        "D. 12和5"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_059",
+      "item_type": "fill",
+      "stem": "由5个十和9个一组成的数是____",
+      "answer": "59",
+      "kps": [
+        "kp_p1_num100"
+      ],
+      "difficulty": 0.35,
+      "solution": "5个十是50，9个一是9，合起来是59。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_060",
+      "item_type": "choice",
+      "stem": "下面哪个数最接近60？（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p1_num100"
+      ],
+      "difficulty": 0.55,
+      "solution": "58与60只差2，是四个选项中最近的数。",
+      "source": "llm_generated",
+      "options": [
+        "A. 45",
+        "B. 53",
+        "C. 58",
+        "D. 71"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_061",
+      "item_type": "fill",
+      "stem": "45+3=____",
+      "answer": "48",
+      "kps": [
+        "kp_p1_addsub100"
+      ],
+      "difficulty": 0.25,
+      "solution": "先把个位5+3=8，再合上40得48。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_062",
+      "item_type": "fill",
+      "stem": "56-20=____",
+      "answer": "36",
+      "kps": [
+        "kp_p1_addsub100"
+      ],
+      "difficulty": 0.4,
+      "solution": "5个十里减去2个十剩3个十，是36。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_063",
+      "item_type": "choice",
+      "stem": "书架上有28本书，又买来10本，现在有（　）本",
+      "answer": "B",
+      "kps": [
+        "kp_p1_addsub100"
+      ],
+      "difficulty": 0.5,
+      "solution": "28+10=38（本）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 18",
+        "B. 38",
+        "C. 40",
+        "D. 30"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_064",
+      "item_type": "fill",
+      "stem": "5角+5角=____元",
+      "answer": "1",
+      "kps": [
+        "kp_p1_money"
+      ],
+      "difficulty": 0.3,
+      "solution": "5角+5角=10角，1元=10角，所以是1元。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_065",
+      "item_type": "choice",
+      "stem": "买一本3元5角的笔记本，付了5元，应找回（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_money"
+      ],
+      "difficulty": 0.45,
+      "solution": "5元减去3元5角等于1元5角。",
+      "source": "llm_generated",
+      "options": [
+        "A. 2元",
+        "B. 1元5角",
+        "C. 3元",
+        "D. 8元5角"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_066",
+      "item_type": "choice",
+      "stem": "小红有1张5元和3张1角，她一共有（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_money"
+      ],
+      "difficulty": 0.55,
+      "solution": "1张5元是5元，3张1角是3角，合起来是5元3角。",
+      "source": "llm_generated",
+      "options": [
+        "A. 5元",
+        "B. 5元3角",
+        "C. 5元1角",
+        "D. 8元"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_067",
+      "item_type": "fill",
+      "stem": "时针指着12，分针指着12，这时是____时",
+      "answer": "12",
+      "kps": [
+        "kp_p1_clock"
+      ],
+      "difficulty": 0.2,
+      "solution": "分针指12是整时，时针指12就是12时。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_068",
+      "item_type": "choice",
+      "stem": "分针指着12，时针指着6，这时是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_clock"
+      ],
+      "difficulty": 0.35,
+      "solution": "分针指12是整时，时针指6就是6时。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6时",
+        "B. 12时",
+        "C. 6时半",
+        "D. 12时半"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_069",
+      "item_type": "choice",
+      "stem": "现在是4时半，分针应该指着（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_clock"
+      ],
+      "difficulty": 0.5,
+      "solution": "几时半分针就指着6。",
+      "source": "llm_generated",
+      "options": [
+        "A. 12",
+        "B. 6",
+        "C. 3",
+        "D. 9"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_070",
+      "item_type": "fill",
+      "stem": "树上有15只小鸟，飞走7只，还剩____只",
+      "answer": "8",
+      "kps": [
+        "kp_p1_wordprob"
+      ],
+      "difficulty": 0.3,
+      "solution": "从15只里去掉飞走的7只：15-7=8（只）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_071",
+      "item_type": "choice",
+      "stem": "篮子里有11个苹果，吃了4个，又放进2个，现在有（　）个",
+      "answer": "A",
+      "kps": [
+        "kp_p1_wordprob"
+      ],
+      "difficulty": 0.45,
+      "solution": "11-4=7，7+2=9（个）。",
+      "source": "llm_generated",
+      "options": [
+        "A. 9",
+        "B. 13",
+        "C. 7",
+        "D. 15"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_072",
+      "item_type": "fill",
+      "stem": "小明有5支铅笔，小红比小明多3支，小红有____支",
+      "answer": "8",
+      "kps": [
+        "kp_p1_wordprob"
+      ],
+      "difficulty": 0.55,
+      "solution": "小红比小明多3支：5+3=8（支）。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_073",
+      "item_type": "choice",
+      "stem": "按\"○△○△\"的规律排列，下一个是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_pattern"
+      ],
+      "difficulty": 0.3,
+      "solution": "周期是2，奇数位是○，偶数位是△；第5个是奇数位，是○。",
+      "source": "llm_generated",
+      "options": [
+        "A. ○",
+        "B. △",
+        "C. □",
+        "D. ◇"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_074",
+      "item_type": "fill",
+      "stem": "找规律填数：3、6、9、____",
+      "answer": "12",
+      "kps": [
+        "kp_p1_pattern"
+      ],
+      "difficulty": 0.4,
+      "solution": "每个数比前一个多3，9+3=12。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_075",
+      "item_type": "choice",
+      "stem": "按\"红蓝蓝红蓝蓝\"的规律串珠子，第6颗是（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_pattern"
+      ],
+      "difficulty": 0.55,
+      "solution": "周期3，6÷3=2正好走完2个周期，第6颗对应每组第3颗蓝。",
+      "source": "llm_generated",
+      "options": [
+        "A. 红",
+        "B. 蓝",
+        "C. 绿",
+        "D. 黄"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_076",
+      "item_type": "fill",
+      "stem": "两根铅笔，第一根长12厘米，第二根长8厘米，第____根长一些",
+      "answer": "一",
+      "kps": [
+        "kp_p1_compare"
+      ],
+      "difficulty": 0.25,
+      "solution": "12厘米比8厘米长，所以第一根长一些。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_077",
+      "item_type": "choice",
+      "stem": "下面四组数中，最大的一组是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p1_compare"
+      ],
+      "difficulty": 0.4,
+      "solution": "四组最大数分别是19、15、21、20，21最大。",
+      "source": "llm_generated",
+      "options": [
+        "A. 18和19",
+        "B. 12和15",
+        "C. 21和17",
+        "D. 16和20"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_078",
+      "item_type": "fill",
+      "stem": "三个小朋友比体重，小强25千克，小明22千克，小亮27千克，最重的是____",
+      "answer": "小亮",
+      "kps": [
+        "kp_p1_compare"
+      ],
+      "difficulty": 0.55,
+      "solution": "27>25>22，小亮最重。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_079",
+      "item_type": "choice",
+      "stem": "搭积木时，最容易滚下来的是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p1_3dshapes"
+      ],
+      "difficulty": 0.25,
+      "solution": "球没有平平的面，最容易滚动。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方体积木",
+        "B. 圆柱立着放",
+        "C. 球",
+        "D. 正方体积木"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_080",
+      "item_type": "fill",
+      "stem": "卫生纸卷的形状是____体",
+      "answer": "圆柱",
+      "kps": [
+        "kp_p1_3dshapes"
+      ],
+      "difficulty": 0.4,
+      "solution": "卫生纸卷上下一样粗、两端是圆形面，是圆柱体。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_081",
+      "item_type": "choice",
+      "stem": "教室里，粉笔盒最有可能是（　）",
+      "answer": "D",
+      "kps": [
+        "kp_p1_3dshapes"
+      ],
+      "difficulty": 0.55,
+      "solution": "粉笔盒通常是长方体，方便放在讲台或粉笔槽里。",
+      "source": "llm_generated",
+      "options": [
+        "A. 球",
+        "B. 正方体",
+        "C. 圆柱",
+        "D. 长方体"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_082",
+      "item_type": "fill",
+      "stem": "钟表面的形状是____",
+      "answer": "圆",
+      "kps": [
+        "kp_p1_2dshapes"
+      ],
+      "difficulty": 0.2,
+      "solution": "钟面是圆形的。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_083",
+      "item_type": "choice",
+      "stem": "教室里学生课桌的桌面是什么形状？（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_2dshapes"
+      ],
+      "difficulty": 0.35,
+      "solution": "学生课桌桌面大多是长方形。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方形",
+        "B. 正方形",
+        "C. 三角形",
+        "D. 圆"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_084",
+      "item_type": "choice",
+      "stem": "有3条边、3个角的图形是（　）",
+      "answer": "C",
+      "kps": [
+        "kp_p1_2dshapes"
+      ],
+      "difficulty": 0.5,
+      "solution": "三角形有3条边和3个角。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方形",
+        "B. 正方形",
+        "C. 三角形",
+        "D. 圆"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_085",
+      "item_type": "choice",
+      "stem": "你走进教室，黑板在同学们的（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_position"
+      ],
+      "difficulty": 0.3,
+      "solution": "同学们面向黑板坐，所以黑板在前方。",
+      "source": "llm_generated",
+      "options": [
+        "A. 前方",
+        "B. 后方",
+        "C. 左侧",
+        "D. 右侧"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_086",
+      "item_type": "fill",
+      "stem": "用右手写字，笔在你身体的____侧",
+      "answer": "右",
+      "kps": [
+        "kp_p1_position"
+      ],
+      "difficulty": 0.4,
+      "solution": "右手在身体的右侧。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_087",
+      "item_type": "choice",
+      "stem": "小芳站在小华的左面，小华站在小芳的（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_position"
+      ],
+      "difficulty": 0.55,
+      "solution": "面对面的左右正好相反，小华在小芳的右面。",
+      "source": "llm_generated",
+      "options": [
+        "A. 左面",
+        "B. 右面",
+        "C. 前面",
+        "D. 后面"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_088",
+      "item_type": "fill",
+      "stem": "把苹果、橘子、铅笔、橡皮分类，按\"是不是水果\"来分，水果一共有____种",
+      "answer": "2",
+      "kps": [
+        "kp_p1_sort"
+      ],
+      "difficulty": 0.35,
+      "solution": "苹果和橘子是水果，共2种；铅笔和橡皮不是水果。",
+      "source": "llm_generated",
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_089",
+      "item_type": "choice",
+      "stem": "下面哪组物品可以分成\"水果\"和\"蔬菜\"两类？（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_sort"
+      ],
+      "difficulty": 0.45,
+      "solution": "苹果、香蕉是水果，白菜、萝卜是蔬菜，能分成两类。",
+      "source": "llm_generated",
+      "options": [
+        "A. 苹果、白菜、香蕉、萝卜",
+        "B. 铅笔、橡皮、尺子、转笔刀",
+        "C. 小鸡、小鸭、小鹅、小鸟",
+        "D. 积木、玩具、书本、画笔"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "p1_090",
+      "item_type": "choice",
+      "stem": "把长方形、正方形、三角形和圆这4种图形按\"有没有角\"来分类，下面分法正确的是（　）",
+      "answer": "A",
+      "kps": [
+        "kp_p1_sort"
+      ],
+      "difficulty": 0.55,
+      "solution": "长方形、正方形、三角形都有角；圆没有角，A选项分法正确。",
+      "source": "llm_generated",
+      "options": [
+        "A. 长方形、三角形一组，圆一组",
+        "B. 长方形、正方形一组，圆、三角形一组",
+        "C. 三角形、圆一组，正方形、长方形一组",
+        "D. 全部一组"
+      ],
+      "verification": {
+        "agents": [
+          "m3-gen-wave3-20261002",
+          "step5-indep-wave3-20261002"
+        ],
+        "answers_agree": true
+      }
+    },
+    {
+      "id": "h_z_0001",
+      "item_type": "choice",
+      "stem": "盘子里原来有2个桃子，小猴把桃子全吃完了。现在盘子里一个桃子也没有，可以用哪个数表示？",
+      "answer": "A",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.15,
+      "solution": "一个也没有用 0 表示：2 个桃子被吃光后，盘子里剩下 2−2=0 个桃子，所以用 0 表示。",
+      "source": "llm_generated",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "form": "情境理解选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0002",
+      "item_type": "fill",
+      "stem": "在直尺上，“0”排在“1”的前面，量长度时从 0 开始量，这说明 0 除了表示“没有”，还可以表示____。",
+      "answer": "起点",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.15,
+      "solution": "直尺上的 0 是开始计量的地方，说明 0 可以表示起点。",
+      "source": "llm_generated",
+      "form": "概念填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0003",
+      "item_type": "solve",
+      "stem": "算一算，写出得数：4+0、4−0、0+0。",
+      "answer": "4+0=4，4−0=4，0+0=0",
+      "kps": [
+        "kp_p1_num0"
+      ],
+      "difficulty": 0.2,
+      "solution": "一个数加 0 或减 0 都还得这个数本身，0 加 0 还得 0，所以 4+0=4，4−0=4，0+0=0。",
+      "source": "llm_generated",
+      "form": "口算解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0004",
+      "item_type": "choice",
+      "stem": "玩“数字接龙”游戏，同学们按 1、2、3、4……的顺序轮流报数。小丽前面的同学刚报完“7”，接下来小丽应该报（　）",
+      "answer": "B",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.2,
+      "solution": "按数的顺序，7 后面的一个数是 8，所以小丽应报 8。",
+      "source": "llm_generated",
+      "options": [
+        "A. 6",
+        "B. 8",
+        "C. 9",
+        "D. 10"
+      ],
+      "form": "游戏规则选择题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0005",
+      "item_type": "fill",
+      "stem": "联欢会上同学们排队做游戏，从前往后数小红排第 3，从后往前数她排第 5，这一队一共有____人。",
+      "answer": "7",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.3,
+      "solution": "小红从前往后被数了 1 次、从后往前又被数了 1 次，多数了 1 次，所以总人数=3+5−1=7（人）。",
+      "source": "llm_generated",
+      "form": "排队问题填空题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
+    },
+    {
+      "id": "h_z_0006",
+      "item_type": "solve",
+      "stem": "元旦联欢会上小明玩投沙包游戏：第一次投中得 4 分，第二次投中得 3 分，第三次没有投中。小明三次一共得多少分？请写出算式。",
+      "answer": "4+3+0=7（分），三次一共得 7 分",
+      "kps": [
+        "kp_p1_theme_inquiry"
+      ],
+      "difficulty": 0.25,
+      "solution": "没有投中得 0 分，把三次得分合起来：4+3+0=7（分）。",
+      "source": "llm_generated",
+      "form": "主题活动解答题",
+      "verification": {
+        "agents": [
+          "mat-gen-w1-20261003"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "note": "single-agent generation, blind verification deferred"
+      }
     }
   ]
 }

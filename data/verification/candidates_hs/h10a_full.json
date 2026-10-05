@@ -1,0 +1,883 @@
+[
+  {
+    "id": "h_10a_001",
+    "item_type": "choice",
+    "stem": "下列各组对象中，能组成集合的是（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_set_concept"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 我们班的全体同学",
+      "B. 接近 0 的实数",
+      "C. 著名的数学家",
+      "D. 比 5 大的所有整数中的较小几个"
+    ],
+    "solution": "集合的元素必须具有确定性'我们班的全体同学'标准明确；'接近 0 的实数'、'著名的数学家'、'较小几个' 标准模糊，故选 A。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_002",
+    "item_type": "choice",
+    "stem": "用描述法表示集合 {2, 4, 6, 8}，下列写法正确的是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_set_concept"],
+    "difficulty": 0.5,
+    "options": [
+      "A. {x | x 是偶数}",
+      "B. {x | x 是小于 10 的正偶数}",
+      "C. {x | x ∈ N, x ≤ 8}",
+      "D. {x | x = 2k, k ∈ N}"
+    ],
+    "solution": "A 是全部偶数（含负偶数），过多；C 含 0, 1 等；D 含 0 及无限多正偶数；只有 B 精确描述该集合。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_003",
+    "item_type": "choice",
+    "stem": "已知 A = {a, b, c}，下列四个式子：① a ∈ A；② {a} ⊆ A；③ ∅ ⊆ A；④ {a, b} ∈ A。其中正确个数为（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_set_concept"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 1 个",
+      "B. 2 个",
+      "C. 3 个",
+      "D. 4 个"
+    ],
+    "solution": "① a ∈ A 正确；② {a} 是单元素集合，是 A 的子集，正确；③ ∅ 是任何集合的子集，正确；④ {a, b} 是 A 的子集而不是 A 的元素，故错。正确个数为 3。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_004",
+    "item_type": "choice",
+    "stem": "下列各式中，正确的是（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_set_relations"],
+    "difficulty": 0.2,
+    "options": [
+      "A. ∅ ⊆ {0}",
+      "B. ∅ ∈ {0}",
+      "C. {0} ⊆ ∅",
+      "D. ∅ ∈ ∅"
+    ],
+    "solution": "空集是任何集合的子集，A 正确；B 中 {0} 的元素是 0 而不是 ∅；C 错误（∅ 不含元素）；D 错误（∅ 不含任何元素）。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_005",
+    "item_type": "choice",
+    "stem": "已知集合 A = {x | x² - 1 = 0}，则 A 的所有子集为（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_set_relations"],
+    "difficulty": 0.5,
+    "options": [
+      "A. ∅, {1}, {-1}, {1, -1}",
+      "B. {1}, {-1}, {1, -1}",
+      "C. ∅, {1}, {-1}",
+      "D. {1, -1}"
+    ],
+    "solution": "A = {-1, 1} 含两个元素，子集数为 2² = 4，依次为 ∅, {-1}, {1}, {-1, 1}。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_006",
+    "item_type": "choice",
+    "stem": "若 {1, 2} ⊆ M ⊆ {1, 2, 3, 4}，则满足条件的集合 M 的个数为（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_set_relations"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 2 个",
+      "B. 3 个",
+      "C. 4 个",
+      "D. 8 个"
+    ],
+    "solution": "M 必须包含 1, 2，且是 {1,2,3,4} 的子集，所以从 {3,4} 中任选子集并入 {1,2}：{1,2}, {1,2,3}, {1,2,4}, {1,2,3,4}，共 4 个。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_007",
+    "item_type": "choice",
+    "stem": "设 A = {1, 2, 3}, B = {3, 4, 5}，则 A ∪ B = （　　）",
+    "answer": "C",
+    "kps": ["kp_h10_set_ops"],
+    "difficulty": 0.2,
+    "options": [
+      "A. {3}",
+      "B. {1, 2, 3, 4}",
+      "C. {1, 2, 3, 4, 5}",
+      "D. {4, 5}"
+    ],
+    "solution": "并集包含所有属于 A 或属于 B 的元素，A ∪ B = {1, 2, 3, 4, 5}。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_008",
+    "item_type": "choice",
+    "stem": "设全集 U = {1, 2, 3, 4, 5, 6}，A = {2, 4, 6}，则 ∁ᵤA = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_set_ops"],
+    "difficulty": 0.5,
+    "options": [
+      "A. {2, 4, 6}",
+      "B. {1, 3, 5}",
+      "C. {1, 2, 3, 4, 5, 6}",
+      "D. ∅"
+    ],
+    "solution": "补集 ∁ᵤA 为 U 中不属于 A 的元素，即 {1, 3, 5}。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_009",
+    "item_type": "choice",
+    "stem": "设 A = {x | x² - 4x + 3 < 0}，B = {x | x ≥ 2}，则 A ∩ B = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_set_ops"],
+    "difficulty": 0.8,
+    "options": [
+      "A. {x | 1 < x < 3}",
+      "B. {x | 2 ≤ x < 3}",
+      "C. {x | x > 2}",
+      "D. {x | x ≥ 2}"
+    ],
+    "solution": "由 (x-1)(x-3) < 0 得 A = {x | 1 < x < 3}；与 B = {x | x ≥ 2} 取交集为 {x | 2 ≤ x < 3}。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_010",
+    "item_type": "choice",
+    "stem": "x = 2 是 x² = 4 的（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_sufficient_condition"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 充分不必要条件",
+      "B. 必要不充分条件",
+      "C. 充要条件",
+      "D. 既不充分也不必要条件"
+    ],
+    "solution": "x = 2 ⇒ x² = 4，充分成立；x² = 4 不能推出 x = 2（x 可能为 -2），故不必要。x = 2 是 x² = 4 的充分不必要条件。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_011",
+    "item_type": "choice",
+    "stem": "a > 0 且 b > 0 是 ab > 0 的（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_sufficient_condition"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 充分不必要条件",
+      "B. 必要不充分条件",
+      "C. 充要条件",
+      "D. 既不充分也不必要条件"
+    ],
+    "solution": "a > 0 且 b > 0 ⇒ ab > 0，充分；ab > 0 时 a, b 同号（也可都为负），不能推出都为正，不必要。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_012",
+    "item_type": "choice",
+    "stem": "设 p：x ∈ A ∩ B；q：x ∈ A ∪ B，则 p 是 q 的（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_sufficient_condition"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 充分不必要条件",
+      "B. 必要不充分条件",
+      "C. 充要条件",
+      "D. 既不充分也不必要条件"
+    ],
+    "solution": "由 A ∩ B ⊆ A ∪ B 知 p ⇒ q，充分；反之 q 不能推出 p（x 只在 A 或只在 B 时），不必要。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_013",
+    "item_type": "choice",
+    "stem": "命题 '∀x ∈ R, x² ≥ 0' 的真假为（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_quantifiers"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 真命题",
+      "B. 假命题",
+      "C. 与 x 有关",
+      "D. 不能判断"
+    ],
+    "solution": "任意实数的平方都非负，故该全称命题为真命题。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_014",
+    "item_type": "choice",
+    "stem": "命题 '∃x ∈ N, x² = x' 是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_quantifiers"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 假命题",
+      "B. 真命题",
+      "C. 不能判断",
+      "D. 不一定存在"
+    ],
+    "solution": "x = 1 ∈ N 满足 1² = 1，故该存在量词命题为真。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_015",
+    "item_type": "choice",
+    "stem": "命题 '∀x ∈ R, x² > 0' 的否定是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_quantifiers"],
+    "difficulty": 0.8,
+    "options": [
+      "A. ∀x ∈ R, x² ≤ 0",
+      "B. ∃x ∈ R, x² ≤ 0",
+      "C. ∃x ∈ R, x² < 0",
+      "D. ∀x ∈ R, x² < 0"
+    ],
+    "solution": "全称命题的否定为存在量词命题，且谓词取否：'∀x, p(x)' 的否定为 '∃x, ¬p(x)'，即 ∃x ∈ R, x² ≤ 0。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_016",
+    "item_type": "choice",
+    "stem": "若 a > b，则下列不等式一定成立的是（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_ineq_props"],
+    "difficulty": 0.2,
+    "options": [
+      "A. ac² > bc²",
+      "B. a² > b²",
+      "C. a + c > b + c",
+      "D. 1/a < 1/b"
+    ],
+    "solution": "A 中 c = 0 时不成立；B 反例 a = 1, b = -2；D 反例 a, b 同为负。D 错。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_017",
+    "item_type": "choice",
+    "stem": "已知 a > b > 0，比较 a² 与 ab 的大小（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_ineq_props"],
+    "difficulty": 0.5,
+    "options": [
+      "A. a² > ab",
+      "B. a² < ab",
+      "C. a² = ab",
+      "D. 不能比较"
+    ],
+    "solution": "作差法：a² - ab = a(a - b)，因 a > 0 且 a - b > 0，故 a² - ab > 0，即 a² > ab。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_018",
+    "item_type": "choice",
+    "stem": "已知 a > b，c 是任意实数，比较 ac² 与 bc²（　　）",
+    "answer": "D",
+    "kps": ["kp_h10_ineq_props"],
+    "difficulty": 0.8,
+    "options": [
+      "A. ac² > bc²",
+      "B. ac² < bc²",
+      "C. ac² = bc²",
+      "D. 不能确定"
+    ],
+    "solution": "作差 ac² - bc² = (a - b)c²，因 a - b > 0，c² ≥ 0。当 c ≠ 0 时 c² > 0，则 ac² > bc²；当 c = 0 时 ac² = bc² = 0。故不能确定。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_019",
+    "item_type": "choice",
+    "stem": "已知 a > 0, b > 0，则 (a + b)/2 与 √(ab) 的大小关系是（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_basic_inequality"],
+    "difficulty": 0.2,
+    "options": [
+      "A. (a+b)/2 > √(ab)",
+      "B. (a+b)/2 < √(ab)",
+      "C. (a+b)/2 ≥ √(ab)",
+      "D. (a+b)/2 ≤ √(ab)"
+    ],
+    "solution": "基本不等式 (a+b)/2 ≥ √(ab)（a > 0, b > 0），当且仅当 a = b 时取等号。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_020",
+    "item_type": "choice",
+    "stem": "当 x > 0 时，函数 y = x + 4/x 的最小值为（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_basic_inequality"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 2",
+      "B. 4",
+      "C. 8",
+      "D. 不存在"
+    ],
+    "solution": "由基本不等式 x + 4/x ≥ 2√(x · 4/x) = 2√4 = 4，当 x = 4/x 即 x = 2 时取等号。故最小值为 4。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_021",
+    "item_type": "choice",
+    "stem": "已知 x > 0, y > 0，且 x + 2y = 1，则 1/x + 1/y 的最小值为（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_basic_inequality"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 3",
+      "B. 3 + 2√2",
+      "C. 4",
+      "D. 5"
+    ],
+    "solution": "1/x + 1/y = (x + 2y)(1/x + 1/y) = 1 + x/y + 2y/x + 2 = 3 + (x/y + 2y/x) ≥ 3 + 2√(x/y · 2y/x) = 3 + 2√2，当 x/y = 2y/x 即 x = √2 y 时取等。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_022",
+    "item_type": "choice",
+    "stem": "不等式 x² - 4 > 0 的解集是（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_quadratic_inequality"],
+    "difficulty": 0.2,
+    "options": [
+      "A. {x | x > 2}",
+      "B. {x | x < -2}",
+      "C. {x | x > 2 或 x < -2}",
+      "D. {x | -2 < x < 2}"
+    ],
+    "solution": "(x - 2)(x + 2) > 0，解集为 x > 2 或 x < -2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_023",
+    "item_type": "choice",
+    "stem": "不等式 -x² + 5x - 6 > 0 的解集是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_quadratic_inequality"],
+    "difficulty": 0.5,
+    "options": [
+      "A. {x | x < 2 或 x > 3}",
+      "B. {x | 2 < x < 3}",
+      "C. {x | x > 3}",
+      "D. {x | x < 2}"
+    ],
+    "solution": "两边乘 -1 得 x² - 5x + 6 < 0，即 (x - 2)(x - 3) < 0，解集为 2 < x < 3。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_024",
+    "item_type": "choice",
+    "stem": "已知关于 x 的方程 x² + mx + 1 = 0 有两个不相等的实数根，则 m 的取值范围是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_quadratic_inequality"],
+    "difficulty": 0.8,
+    "options": [
+      "A. m ≥ 2 或 m ≤ -2",
+      "B. m > 2 或 m < -2",
+      "C. -2 < m < 2",
+      "D. m = ±2"
+    ],
+    "solution": "Δ = m² - 4 > 0 ⇒ m² > 4 ⇒ m > 2 或 m < -2。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_025",
+    "item_type": "choice",
+    "stem": "函数 y = √(x - 1) 的定义域是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_concept"],
+    "difficulty": 0.2,
+    "options": [
+      "A. R",
+      "B. {x | x ≥ 1}",
+      "C. {x | x > 1}",
+      "D. {x | x ≤ 1}"
+    ],
+    "solution": "根号下需 x - 1 ≥ 0，即 x ≥ 1。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_026",
+    "item_type": "choice",
+    "stem": "下列四组函数中，表示同一函数的是（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_function_concept"],
+    "difficulty": 0.5,
+    "options": [
+      "A. f(x) = x, g(x) = √(x²)",
+      "B. f(x) = x², g(x) = x·x",
+      "C. f(x) = x, g(x) = ∛(x³)",
+      "D. f(x) = x², g(x) = (√x)²"
+    ],
+    "solution": "A 中 g(x) = |x| 与 f(x) = x 值域不同；B 中看似相同但 g 写法不规范；C 中 ∛(x³) = x，定义域与对应关系都相同；D 中 f 定义域为 R，g 定义域为 [0, +∞)，定义域不同。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_027",
+    "item_type": "choice",
+    "stem": "已知 f(x) 的定义域为 [0, 1]，则函数 f(2x + 1) 的定义域为（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_concept"],
+    "difficulty": 0.8,
+    "options": [
+      "A. [0, 1]",
+      "B. [-1/2, 0]",
+      "C. [-1/2, 1]",
+      "D. [0, 2]"
+    ],
+    "solution": "由 0 ≤ 2x + 1 ≤ 1，得 -1 ≤ 2x ≤ 0，即 -1/2 ≤ x ≤ 0，故定义域为 [-1/2, 0]。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_028",
+    "item_type": "choice",
+    "stem": "设分段函数 f(x) = { x²,  x ≥ 0; -x,  x < 0 }，则 f(-2) = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_repr"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 4",
+      "B. 2",
+      "C. -2",
+      "D. -4"
+    ],
+    "solution": "因 -2 < 0，代入第二段 f(-2) = -(-2) = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_029",
+    "item_type": "choice",
+    "stem": "设分段函数 f(x) = { x + 1,  x ≤ 0; 2^x,  x > 0 }，则 f(f(-1)) = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_repr"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "solution": "f(-1) = -1 + 1 = 0；再求 f(0)：因 0 ≤ 0 代入第一段 f(0) = 0 + 1 = 1。故 f(f(-1)) = 1。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_030",
+    "item_type": "choice",
+    "stem": "已知分段函数 f(x) = { x² + 1,  x > 0; 0,  x = 0; -x² - 1,  x < 0 }，则下列说法正确的是（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_function_repr"],
+    "difficulty": 0.8,
+    "options": [
+      "A. f(x) 是奇函数",
+      "B. f(x) 是偶函数",
+      "C. f(x) 既奇又偶",
+      "D. f(x) 非奇非偶"
+    ],
+    "solution": "对 x > 0，f(x) = x² + 1, f(-x) = -x² - 1 = -f(x)；对 x < 0，f(x) = -x² - 1, f(-x) = x² + 1 = -f(x)；对 x = 0，f(0) = 0 = -f(0)。故 f(x) 是 R 上的奇函数。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_031",
+    "item_type": "choice",
+    "stem": "函数 y = -x + 1 在 R 上的单调性是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_monotonicity"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 在 R 上单调递增",
+      "B. 在 R 上单调递减",
+      "C. 在 R 上先增后减",
+      "D. 在 R 上先减后增"
+    ],
+    "solution": "一次函数 y = -x + 1 的斜率为 -1 < 0，故在 R 上单调递减。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_032",
+    "item_type": "choice",
+    "stem": "已知函数 f(x) 在 [0, +∞) 上单调递增，且 f(1) = 2，则 f(x) < 2 的解集是（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_monotonicity"],
+    "difficulty": 0.5,
+    "options": [
+      "A. {x | x < 0}",
+      "B. {x | x > 0}",
+      "C. {x | 0 ≤ x < 1}",
+      "D. {x | x ≥ 1}"
+    ],
+    "solution": "由单调递增与 f(1) = 2，f(x) < 2 等价于 x < 1；又 x ∈ [0, +∞)，故解集为 0 ≤ x < 1。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_033",
+    "item_type": "choice",
+    "stem": "已知 f(x) 是 R 上的减函数，a, b ∈ R 且 a + b < 0，则（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_monotonicity"],
+    "difficulty": 0.8,
+    "options": [
+      "A. f(a) + f(b) < f(-a) + f(-b)",
+      "B. f(a) + f(b) > f(-a) + f(-b)",
+      "C. f(a) + f(b) ≤ f(-a) + f(-b)",
+      "D. f(a) + f(b) ≥ f(-a) + f(-b)"
+    ],
+    "solution": "由 a + b < 0 得 a < -b，f 递减 ⇒ f(a) > f(-b)；同理 b < -a ⇒ f(b) > f(-a)。两式相加得 f(a) + f(b) > f(-a) + f(-b)。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_034",
+    "item_type": "choice",
+    "stem": "函数 y = x² - 2x + 3 在 x = 1 处的函数值为（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_extremum"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 0",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "solution": "代入 x = 1，y = 1 - 2 + 3 = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_035",
+    "item_type": "choice",
+    "stem": "函数 y = x² - 2x + 3 在区间 [0, 3] 上的最小值为（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_function_extremum"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 5"
+    ],
+    "solution": "配方 y = (x - 1)² + 2，对称轴 x = 1 ∈ [0, 3]，故最小值 y_min = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_036",
+    "item_type": "choice",
+    "stem": "已知 x > 0, y > 0 且 x + 2y = 2，则 xy 的最大值为（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_extremum"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 1/4",
+      "B. 1/2",
+      "C. 1",
+      "D. 2"
+    ],
+    "solution": "由基本不等式 xy = (1/2)·x·2y ≤ (1/2)·((x + 2y)/2)² = (1/2)·1 = 1/2，当 x = 1, y = 1/2 时取等。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_037",
+    "item_type": "choice",
+    "stem": "下列函数中，偶函数是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_parity"],
+    "difficulty": 0.2,
+    "options": [
+      "A. y = x",
+      "B. y = x²",
+      "C. y = x³",
+      "D. y = 1/x"
+    ],
+    "solution": "f(-x) = (-x)² = x² = f(x)，B 是偶函数；A, C, D 都是奇函数。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_038",
+    "item_type": "choice",
+    "stem": "已知 f(x) 是奇函数，且 f(2) = 3，则 f(-2) = （　　）",
+    "answer": "A",
+    "kps": ["kp_h10_parity"],
+    "difficulty": 0.5,
+    "options": [
+      "A. -3",
+      "B. 3",
+      "C. 0",
+      "D. 不能确定"
+    ],
+    "solution": "由奇函数定义 f(-x) = -f(x)，故 f(-2) = -f(2) = -3。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_039",
+    "item_type": "choice",
+    "stem": "若 f(x) 是定义在 R 上的奇函数，且当 x ≥ 0 时 f(x) = x² - 2x，则 f(-1) = （　　）",
+    "answer": "D",
+    "kps": ["kp_h10_parity"],
+    "difficulty": 0.8,
+    "options": [
+      "A. -3",
+      "B. 3",
+      "C. -1",
+      "D. 1"
+    ],
+    "solution": "f(1) = 1 - 2 = -1；由 f(-x) = -f(x) 得 f(-1) = -f(1) = 1。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_040",
+    "item_type": "choice",
+    "stem": "幂函数 y = √x 的定义域是（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_power_function"],
+    "difficulty": 0.2,
+    "options": [
+      "A. R",
+      "B. {x | x ≥ 0}",
+      "C. {x | x > 0}",
+      "D. {x | x ≠ 0}"
+    ],
+    "solution": "幂函数 y = √x = x^{1/2} 要求 x ≥ 0。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_041",
+    "item_type": "choice",
+    "stem": "幂函数 y = x² 与 y = x³ 在区间 (0, +∞) 上的单调性为（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_power_function"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 都单调递增",
+      "B. 都单调递减",
+      "C. y = x² 递增, y = x³ 递减",
+      "D. y = x² 递减, y = x³ 递增"
+    ],
+    "solution": "在 (0, +∞) 上，指数 α = 2 > 0 与 α = 3 > 0 的幂函数均单调递增。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_042",
+    "item_type": "choice",
+    "stem": "已知幂函数 f(x) = x^α 的图象过点 (4, 2)，则 f(16) = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_power_function"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 2",
+      "B. 4",
+      "C. 8",
+      "D. 不能确定"
+    ],
+    "solution": "由 4^α = 2 得 α = 1/2，故 f(16) = 16^{1/2} = 4。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_043",
+    "item_type": "choice",
+    "stem": "一辆汽车以 60 km/h 的速度匀速行驶 3 小时，行驶的路程为（　　）",
+    "answer": "C",
+    "kps": ["kp_h10_function_app1"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 20 km",
+      "B. 60 km",
+      "C. 180 km",
+      "D. 240 km"
+    ],
+    "solution": "路程 s = v·t = 60 × 3 = 180 km。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_044",
+    "item_type": "choice",
+    "stem": "某出租车计费方法：起步价 10 元（3 公里内），超过 3 公里部分按 2 元/公里收取。行驶 5 公里需付费（　　）元",
+    "answer": "C",
+    "kps": ["kp_h10_function_app1"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 10",
+      "B. 12",
+      "C. 14",
+      "D. 16"
+    ],
+    "solution": "3 公里内 10 元；超过 2 公里 × 2 元 = 4 元；合计 10 + 4 = 14 元。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_045",
+    "item_type": "choice",
+    "stem": "某商店销售某种商品，进价为 20 元/件，售价 x 元/件（x ≥ 21），销量为 (100 - x) 件。当售价为多少元时利润最大（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_function_app1"],
+    "difficulty": 0.8,
+    "options": [
+      "A. 50 元",
+      "B. 60 元",
+      "C. 80 元",
+      "D. 100 元"
+    ],
+    "solution": "利润 L = (x - 20)(100 - x) = -(x - 60)² + 1600；当 x = 60 时 L 取最大值 1600 元。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_046",
+    "item_type": "choice",
+    "stem": "√4 = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_fractional_exponent"],
+    "difficulty": 0.2,
+    "options": [
+      "A. ±2",
+      "B. 2",
+      "C. -2",
+      "D. 4"
+    ],
+    "solution": "算术平方根默认取非负值，√4 = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_047",
+    "item_type": "choice",
+    "stem": "化简：⁵√32 = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_fractional_exponent"],
+    "difficulty": 0.5,
+    "options": [
+      "A. ±2",
+      "B. 2",
+      "C. -2",
+      "D. 4"
+    ],
+    "solution": "由 2⁵ = 32，得 ⁵√32 = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_048",
+    "item_type": "choice",
+    "stem": "化简：(a^(1/2) · b^(1/3)) / (a^(1/3) · b^(1/2))（a > 0, b > 0） = （　　）",
+    "answer": "A",
+    "kps": ["kp_h10_fractional_exponent"],
+    "difficulty": 0.8,
+    "options": [
+      "A. (a/b)^(1/6)",
+      "B. (a/b)^(1/3)",
+      "C. a^(1/6) · b^(-1/6)",
+      "D. (b/a)^(1/6)"
+    ],
+    "solution": "= a^(1/2 - 1/3) · b^(1/3 - 1/2) = a^(1/6) · b^(-1/6) = (a/b)^(1/6)。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_049",
+    "item_type": "choice",
+    "stem": "指数函数 y = a^x（a > 0, a ≠ 1）的图象必过定点（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_exponential_fn"],
+    "difficulty": 0.2,
+    "options": [
+      "A. (0, 0)",
+      "B. (0, 1)",
+      "C. (1, 0)",
+      "D. (1, 1)"
+    ],
+    "solution": "任何 a^0 = 1（a > 0, a ≠ 1），故指数函数图象过定点 (0, 1)。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_050",
+    "item_type": "choice",
+    "stem": "比较 1.5^0.3 与 1.5^0.5 的大小（　　）",
+    "answer": "B",
+    "kps": ["kp_h10_exponential_fn"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 1.5^0.3 > 1.5^0.5",
+      "B. 1.5^0.3 < 1.5^0.5",
+      "C. 1.5^0.3 = 1.5^0.5",
+      "D. 不能比较"
+    ],
+    "solution": "底数 1.5 > 1，指数函数 y = 1.5^x 单调递增；0.3 < 0.5，故 1.5^0.3 < 1.5^0.5。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_051",
+    "item_type": "choice",
+    "stem": "设 0 < a < 1，则 a^(1/2), a^(1/3), a^0 的大小关系为（　　）",
+    "answer": "A",
+    "kps": ["kp_h10_exponential_fn"],
+    "difficulty": 0.8,
+    "options": [
+      "A. a^(1/2) < a^(1/3) < a^0",
+      "B. a^(1/3) < a^(1/2) < a^0",
+      "C. 1 < a^(1/3) < a^(1/2)",
+      "D. a^(1/2) < a^0 < a^(1/3)"
+    ],
+    "solution": "0 < a < 1，指数函数 y = a^x 单调递减；1/2 > 1/3 > 0，所以 a^(1/2) < a^(1/3) < a^0 = 1。",
+    "source": "llm_generated"
+  },
+
+  {
+    "id": "h_10a_052",
+    "item_type": "choice",
+    "stem": "log₂ 8 = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_log_concept"],
+    "difficulty": 0.2,
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 8"
+    ],
+    "solution": "由 2^3 = 8，得 log₂ 8 = 3。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_053",
+    "item_type": "choice",
+    "stem": "lg 100 = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_log_concept"],
+    "difficulty": 0.5,
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 10",
+      "D. 100"
+    ],
+    "solution": "lg 100 = log₁₀ 100 = 2。",
+    "source": "llm_generated"
+  },
+  {
+    "id": "h_10a_054",
+    "item_type": "choice",
+    "stem": "若 logₐ 2 = 1/2，则 a = （　　）",
+    "answer": "B",
+    "kps": ["kp_h10_log_concept"],
+    "difficulty": 0.8,
+    "options": [
+      "A. √2",
+      "B. 4",
+      "C. 2",
+      "D. 1/2"
+    ],
+    "solution": "由 logₐ 2 = 1/2 得 a^(1/2) = 2，两边平方得 a = 4。",
+    "source": "llm_generated"
+  }
+]

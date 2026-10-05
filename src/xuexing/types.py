@@ -38,6 +38,8 @@ class Item:
     discrimination: float = 0.6  # [0,1]
     guess: Optional[float] = None  # None 则由 item_type 默认值决定
     misconceptions: list[str] = field(default_factory=list)
+    form: str = "choice"  # "mcq_single" | "mcq_multi"；非 mcq_multi 一律走单选语义
+    answer_mode: str = "exact"  # "exact" | "subset"；多选按拆分后标签集合等值判
 
     def effective_guess(self) -> float:
         if self.guess is not None:
