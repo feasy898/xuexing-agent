@@ -1,6 +1,7 @@
 # INTENT · Owner 开发意图与项目目标（新 agent 冷启动必读）
 
-> 编制于 2026-10-05；来源=本机 ZCode 会话历史中 owner 真实发言（本项目相关共 681 条，其中 owner 直接发言 41 条已逐条精读，其余为 owner 授意的工作流子代理发言，抽样核对；逐条含时间戳与会话ID的汇编留存在 windev 本机 intent-src/xuexing-agent.txt）。
+> 编制于 2026-10-05；来源=本机 ZCode 会话历史中 owner 真实发言（本项目相关共 681 条，其中 owner 直接发言 41 条已逐条精读，其余为 owner 授意的工作流子代理发言，抽样核对；逐条含时间戳与会话ID的汇编留存在本机 `D:\workspace\intent-src-archive\xuexing-agent.txt`，同目录另有 `grep-dump.txt` 全量检索转储）。
+> 引用复校（2026-10-05）：本文档引用的 12 条关键原话已对本机会话库（`D:\new-workspace\学情agent\*` 与 `D:\workspace\学情agent` 两目录共 2,521 条 user 消息）逐条比对，时间戳与原文全部吻合。
 > 标注约定：【owner 原话】尽量逐字引用并注日期；【owner 拍板】注日期（含 owner 以一句"继续/可以/照此"确认的既定方案）；【推断】为编制者根据发言与仓内文档的推断，非 owner 原文。
 > 本文件只描述意图与口径，不含任何密钥/凭据值；owner 发言中出现过的密钥一律只描述意图不复述。
 
@@ -171,9 +172,9 @@
 14. `src/xuexing/` + `tests/`（unit/integration/contract/data 四层）+ `tools/run_contract.py`、`tools/validate_knowledge.py`、`tools/dual_agent_verify.py`、`tools/smoke_api.py`——代码与验收工具。
 15. `worklog.md` 与 `docs/audits/`——过程留痕与对齐审计快照（k12-5/k12-6 审计等）。
 
-> 给新 agent 的一句话：以 owner 2026-10-02 的 K12 全量建设令为当前使命，以 G0 五门+题目四问为验收口径，以"不停、不留遗留、不弃成果"为工作纪律；凡涉渠道/合规/商业模式，等 owner 拍板，不要代签；所有发言汇编（含时间戳）在 windev 本机 intent-src/xuexing-agent.txt 可查证。
+> 给新 agent 的一句话：以 owner 2026-10-02 的 K12 全量建设令为当前使命，以 G0 五门+题目四问为验收口径，以"不停、不留遗留、不弃成果"为工作纪律；凡涉渠道/合规/商业模式，等 owner 拍板，不要代签；所有发言汇编（含时间戳）在本机 `D:\workspace\intent-src-archive\xuexing-agent.txt` 可查证。
 
-## 附录 A · owner 关键发言速查索引（汇编行号为 intent-src/xuexing-agent.txt 内位置）
+## 附录 A · owner 关键发言速查索引（汇编行号为 `D:\workspace\intent-src-archive\xuexing-agent.txt` 内位置）
 
 | 日期 | 主题 | 要点 | 汇编起始行 |
 |---|---|---|---|
