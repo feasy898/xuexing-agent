@@ -9,7 +9,10 @@ specs/drafts/
 _research_tmp/
 nul
 data/items/_parts/
-%TEMP%rc_out.txt
+
+# Windows 重定向事故产物（%TEMP%foo.txt / %TEMP%bar.txt 一类，cmd 重定向写错目标）
+%TEMP%*
+
 .env
 .env.*
 !.env.example
@@ -22,3 +25,7 @@ tmp/
 tmp_*.tsv
 regen/
 tmp_fix_*/
+
+# 说明：work/ 与 regen/ 已在库内跟踪（work/ 是题库与知识库的可复现构建脚本，
+# regen/ 是契约盲重生成内核源码），上面的忽略项对已跟踪文件不生效；
+# 保留条目仅为拦住新产生的临时产物，勿据此以为 work/、regen/ 不在库内。
