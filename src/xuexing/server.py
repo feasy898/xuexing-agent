@@ -1,10 +1,21 @@
 """确定性 REST API：出卷 / 提交作答 / 查画像 / 查计划 / 复习打卡，以及新模块
 API（/trace /blueprint /grade /recommend /itembank/v2/validate
-/coverage/standard /papers/by-spec）与机构多租户（X-Org-Id 头 + /orgs）。
+/coverage/standard /papers/by-spec /exam）与机构多租户（X-Org-Id 头 + /orgs）。
 
 薄胶水层：所有逻辑都在内核模块里，这里只做 HTTP 编解码与会话存储。
 领域校验失败（内核 ValueError 族）映射 400，资源不存在映射 404，
 请求体形态违规由 pydantic 映射 422；端点不实现任何领域算法。
+
+学生作答闭环 /exam/*（实现全在 xuexing.exam + paper_render.render_exam_html）：
+    GET  /exam/{spec_id}/start?learner_id=&seed=&difficulty_target=
+         -> 200 可作答 HTML 卷页（form 提交到 submit），X-Exam-Session 头带会话 id
+    POST /exam/{session_id}/submit   （urlencoded form 或 JSON）
+         -> 303 跳 /exam/{session_id}/report.html（form）；JSON 提交回机器可读摘要
+    GET  /exam/{session_id}/report.html -> 200 个人报告页
+三步共用同一份已装订卷面：判分走 grading.grade_to_response（= /grade 口径），
+画像走 diagnosis.diagnose，落库序列与 POST /learners/{id}/responses 一致，故
+/profile 与 /plan 在交卷后立即反映本卷。会话进程内保存、按 X-Org-Id 分域，
+过期/跨 org/不存在一律 404；重复提交 409；未提交先看报告 409。
 
 机构多租户（specs/drafts/multitenant.spec.md §3.6-3.7）：全部有状态端点接受
 可选请求头 X-Org-Id（缺省/空串/空白归并 DEFAULT_ORG_ID，见
@@ -17,16 +28,27 @@ xuexing.multitenant.resolve_org）；store 与 attempt 计数按 (org, learner)
 run_contract.py --impl-dir <dir> --modules server 装载。
 """
 import os
+import uuid
 from datetime import date
 from typing import Any
 
-from fastapi import FastAPI, Header, HTTPException
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi import FastAPI, Header, HTTPException, Request
+from fastapi.responses import HTMLResponse, PlainTextResponse, RedirectResponse
 from pydantic import BaseModel
 
 from xuexing.agent_shell import MockLLM, attribute_error
 from xuexing.blueprint import build_blueprint
 from xuexing.diagnosis import aggregate_to_clusters, diagnose
+from xuexing.exam import (
+    ExamError,
+    ExamSession,
+    ExamSessions,
+    SessionNotFound,
+    build_report,
+    grade_submission,
+    parse_submission_body,
+    render_report_html,
+)
 from xuexing.grading import grade_to_response
 from xuexing.itembank import ItemBank
 from xuexing.itembank_v2 import source_counts, validate_bank_v2, verification_stats
@@ -40,7 +62,7 @@ from xuexing.paper_by_spec import (
     load_spec_catalog,
     load_stage_bank,
 )
-from xuexing.paper_render import render_paper_html, render_paper_text
+from xuexing.paper_render import render_exam_html, render_paper_html, render_paper_text
 from xuexing.pedagogy import StrategyLibrary
 from xuexing.recommend import (
     attach_recommendations,
@@ -141,11 +163,21 @@ def create_app(
     misconceptions: list[Misconception] | None = None,
     spec_catalog: dict[str, dict] | None = None,
     stage_bank_loader=None,
+    subject_graph_loader=None,
+    exam_sessions: ExamSessions | None = None,
 ) -> FastAPI:
     """spec_catalog：卷型库 {spec_id: 卷型 dict}（缺省装 data/curriculum/
     paper_specs.json）；stage_bank_loader：callable(subject, stage) -> ItemBank，
     卷型学段题库注入点（缺省按 data/items 文件装载并进程内缓存）。测试注入
-    自闭式夹具用，与 bank/graph/strategies 同一套路。"""
+    自闭式夹具用，与 bank/graph/strategies 同一套路。
+
+    subject_graph_loader：callable(subject) -> KPGraph，**作答环专用**——卷型
+    按学段跨年级出卷（physics/junior = 8-9 年级题库），其知识点不在 create_app
+    注入的单年级 graph 里，诊断/路线必须用该学科合并图谱（kpgraph_subject
+    .load_kpgraph_subject，缺省从 data/knowledge 装载并进程内缓存）。既有端点
+    一律仍用注入的 graph，不受影响。
+    exam_sessions：作答环会话表（缺省进程内 ExamSessions，TTL 2h）；测试可注入
+    自己的时钟以确定性地构造过期态。"""
     app = FastAPI(title="xuexing-agent")
     store = OrgStore()
     misconceptions = misconceptions or []
@@ -154,12 +186,21 @@ def create_app(
         spec_catalog = load_spec_catalog(
             os.path.join(DEFAULT_CURRICULUM_DIR, "curriculum", "paper_specs.json")
         )
-    if stage_bank_loader is None:
+    if stage_bank_loader is None or subject_graph_loader is None:
         from functools import lru_cache
 
-        @lru_cache(maxsize=None)
-        def stage_bank_loader(subject: str, stage: str):  # noqa: F811
-            return load_stage_bank(DEFAULT_CURRICULUM_DIR, subject, stage)[0]
+        if stage_bank_loader is None:
+            @lru_cache(maxsize=None)
+            def stage_bank_loader(subject: str, stage: str):  # noqa: F811
+                return load_stage_bank(DEFAULT_CURRICULUM_DIR, subject, stage)[0]
+
+        if subject_graph_loader is None:
+            from xuexing.kpgraph_subject import load_kpgraph_subject
+
+            @lru_cache(maxsize=None)
+            def subject_graph_loader(subject: str):  # noqa: F811
+                return load_kpgraph_subject(
+                    os.path.join(DEFAULT_CURRICULUM_DIR, "knowledge"), subject)
 
     @app.post("/papers/diagnostic")
     def make_paper(body: BlueprintIn):
@@ -229,6 +270,126 @@ def create_app(
         except ValueError as e:  # PaperRenderError：结构/题库侧 fail-closed
             raise HTTPException(400, str(e))
         return PlainTextResponse(text_doc)
+
+    # ---- 学生作答闭环（/exam/*）：起卷发卷 -> 提交判分 -> 个人报告页 ----
+    #
+    # 薄胶水：组卷走 _paper_by_spec_or_error、卷页走 paper_render.render_exam_html、
+    # 判分走 exam.grade_submission（内含 grading.grade_to_response）、落库与
+    # 画像走与 POST /learners/{id}/responses 同一段序列、报告页走
+    # exam.render_report_html（内含 diagnosis/route 内核）。本层不实现任何
+    # 领域算法。表单提交 303 跳报告页（浏览器零胶水闭环），JSON 提交回机器可读
+    # 摘要（渠道无关：家长端/学校端/脚本都走同一判分口径）。
+
+    sessions = exam_sessions if exam_sessions is not None else ExamSessions()
+    # 会话表挂在 app.state 上：验收工具/测试可确定性构造过期态与 ghost 题库，
+    # 端点自身只经 ExamSessions 的公开 API 访问。
+    app.state.exam_sessions = sessions
+
+    def _session_or_error(session_id: str, x_org_id: str | None) -> ExamSession:
+        try:
+            return sessions.get(session_id, x_org_id)
+        except SessionNotFound as e:
+            raise HTTPException(404, str(e))
+
+    @app.get("/exam/{spec_id}/start")
+    def exam_start(spec_id: str, learner_id: str = "", seed: int = 42,
+                   difficulty_target: float = 0.5,
+                   x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """开卷：装订卷面 -> 冻结会话 -> 直接返回可作答的 HTML 卷页。
+
+        learner_id 必填非空白（400）；卷型不存在 404、卷型不一致/同型题不足 400
+        （与既有出卷路径同口径）。会话 id 走 X-Exam-Session 响应头，卷页表单的
+        action 与页面上均回显，机器客户端与浏览器都拿得到。
+        """
+        if not isinstance(learner_id, str) or not learner_id.strip():
+            raise HTTPException(400, "learner_id is required")
+        learner_id = learner_id.strip()
+        paper = _paper_by_spec_or_error(spec_id, seed, difficulty_target)
+        stage_bank = stage_bank_loader(
+            spec_catalog[spec_id]["subject"], spec_catalog[spec_id]["stage"])
+        session_id = f"exam-{uuid.uuid4().hex[:16]}"
+        sessions.create(x_org_id, ExamSession(
+            session_id=session_id,
+            org_id=resolve_org(x_org_id),
+            learner_id=learner_id,
+            spec_id=spec_id,
+            seed=seed,
+            difficulty_target=difficulty_target,
+            paper=paper,
+            subject=spec_catalog[spec_id]["subject"],
+            stage=spec_catalog[spec_id]["stage"],
+        ))
+        try:
+            html_doc = render_exam_html(paper, stage_bank, session_id, learner_id)
+        except ValueError as e:  # PaperRenderError：结构/题库侧 fail-closed
+            raise HTTPException(400, str(e))
+        return HTMLResponse(html_doc, headers={"X-Exam-Session": session_id})
+
+    @app.post("/exam/{session_id}/submit")
+    async def exam_submit(session_id: str, request: Request,
+                          x_org_id: str | None = Header(default=None,
+                                                       alias="X-Org-Id")):
+        """提交作答：form（urlencoded）或 JSON 皆收 -> 逐题判分 -> 落库 ->
+        form 交 303 跳报告页、JSON 回机器可读摘要。
+
+        未知/已过期会话 404（与跨 org 取用同一码，不泄露存在性）；重复提交 409；
+        题目侧非法（题不在库、答案匹配不到选项）400。
+        """
+        session = _session_or_error(session_id, x_org_id)
+        if session.status == "submitted":
+            raise HTTPException(409, f"exam session already submitted: {session_id}")
+        try:
+            raw, mode = parse_submission_body(
+                await request.body(), request.headers.get("content-type", ""))
+        except ExamError as e:
+            raise HTTPException(400, str(e))
+        stage_bank = stage_bank_loader(session.subject, session.stage)
+        try:
+            subject_graph = subject_graph_loader(session.subject)
+        except ValueError as e:  # KPGraphError：学科无知识点图谱
+            raise HTTPException(400, str(e))
+        try:
+            responses = grade_submission(session, session.paper, stage_bank, raw)
+        except ExamError as e:
+            raise HTTPException(400, str(e))
+        org = resolve_org(x_org_id)
+        entry = store.entry(org, session.learner_id)
+        prior_profile = entry.get("profile")
+        # 落库与 POST /learners/{id}/responses 同一段序列：responses 追加、
+        # profile 由 diagnose 覆盖（画像语义 = 最近一次提交）
+        report = build_report(session, session.paper, stage_bank, subject_graph,
+                              strategies, misconceptions, responses, raw,
+                              prior_profile=prior_profile, today=date.today())
+        entry["responses"].extend(to_dict(r) for r in responses)
+        entry["profile"] = report["profile"]
+        sessions.mark_submitted(session, report)
+        report_url = f"/exam/{session_id}/report.html"
+        if mode == "form":
+            return RedirectResponse(report_url, status_code=303)
+        return {
+            "session_id": session_id,
+            "learner_id": session.learner_id,
+            "mode": "json",
+            "score": report["earned_points"],
+            "total_points": report["total_points"],
+            "correct_count": report["correct_count"],
+            "wrong_count": report["wrong_count"],
+            "mastery": entry["profile"].mastery,
+            "weak_points": [u["kp_id"] for u in report["weak_points"]],
+            "report_url": report_url,
+        }
+
+    @app.get("/exam/{session_id}/report.html")
+    def exam_report(session_id: str,
+                    x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """个人报告页：本次对错逐题 + 知识点掌握更新 + 薄弱点 + 下一步学习建议。
+
+        未提交 409（先交卷再看报告，不给半成品页面）；未知/过期会话 404。
+        """
+        session = _session_or_error(session_id, x_org_id)
+        if session.status != "submitted" or session.report is None:
+            raise HTTPException(409, f"exam session not submitted: {session_id}")
+        return HTMLResponse(render_report_html(session.report))
 
     @app.post("/learners/{learner_id}/responses")
     def submit(learner_id: str, body: SubmitIn,

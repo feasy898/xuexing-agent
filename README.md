@@ -22,7 +22,8 @@
 - 全量测试：`.venv/bin/python -m pytest`（pytest.ini 已含 `-q`，无需重复加）
 - 知识库校验：`.venv/bin/python tools/validate_knowledge.py`
 - 契约测试：`.venv/bin/python tools/run_contract.py`
-- API 起服（产品化第一站）：按 [docs/runbook.md](docs/runbook.md) 注入知识库后 `.venv/bin/uvicorn xuexing.server:create_app --factory`（冒烟脚本 `tools/smoke_api.py`，14/14 端点通过）
+- API 起服（产品化第一站）：按 [docs/runbook.md](docs/runbook.md) 注入知识库后 `.venv/bin/uvicorn xuexing.server:create_app --factory`（冒烟脚本 `tools/smoke_api.py`，15/15 端点通过）
+- 学生作答闭环（无浏览器全环门）：`.venv/bin/python tools/check_exam_loop.py` —— 起卷 → 全对/半错两份提交 → 报告页 → 边界码，打印 `EXAM-LOOP-OK` 即 exit 0；curl 走查见 [docs/runbook.md](docs/runbook.md) §6.3
 
 ## 验收基线（2026-10-02 第三波收口实测）
 

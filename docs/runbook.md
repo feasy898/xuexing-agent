@@ -167,7 +167,7 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 
 ## 4. 端点速查表
 
-共 **17 个端点**（`src/xuexing/server.py` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。15–17 为卷型出卷族（2026-10-06 新增/补记），由离线门 `tools/check_paper_spec.py`（结构）与 `tools/check_paper_render.py`（成品渲染）覆盖，不在 §6 的 15 项冒烟内。
+共 **20 个端点**（`src/xuexing/server.py` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。15–17 为卷型出卷族（2026-10-06 新增/补记），由离线门 `tools/check_paper_spec.py`（结构）与 `tools/check_paper_render.py`（成品渲染）覆盖；18–20 为学生作答闭环（见本节末），由 `tools/check_exam_loop.py` 覆盖——两组均不在 §6 的 15 项冒烟内。
 
 | # | 方法 路径 | 请求体 / 参数示例 | 关键响应字段 |
 |---|---|---|---|
@@ -189,6 +189,16 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 | 15 | POST `/papers/by-spec` | `{"spec_id": "spec_phy_jr_final", "seed": 42}`（可选 `difficulty_target=0.5`；`learner_id` 仅回显） | `spec_id` `seed` `subject` `stage` `usage` `duration_min` `total_points` `question_count` `sections[]`（大题-小题层级：`title` `form` `count` `points_each` `section_points` `questions[]{question_no,item_id,points}`，小题号全卷连续） `item_ids`；未知卷型 404；卷型分值矛盾（V8）/同型题不足/学段无题库 → 400（fail-closed） |
 | 16 | GET `/papers/by-spec/{spec_id}/render.html` | query 可选 `seed=42`、`difficulty_target=0.5`（与端点 15 同参数出同一份卷） | **自包含打印友好 HTML**（`text/html`；内联 CSS、`@page A4` 分页、卷头=卷型标题/满分/时长/满分注意、大题标题带每题分值、选项竖排、解答/填空留作答区、页脚页码；学生卷红线：不含任何作答依据，全卷无 answer/solution 字样）；未知卷型 404，领域错 400，query 形态错 422 |
 | 17 | GET `/papers/by-spec/{spec_id}/render.txt` | 同端点 16 | 纯文本简版（`text/plain`；同一次装订同题序，HTML 不可用时的备用） |
+
+18–20 为学生作答闭环（2026-10-06 新增），由离线门 `tools/check_exam_loop.py` 覆盖（TestClient 无浏览器全环：起卷→全对/半错两份提交→报告页→边界码），不在 §6 的 15 项冒烟内。判分口径 = 端点 11、落库序列 = 端点 2、路线 = 端点 4——本环只把它们串起来，没有第二套实现。
+
+| # | 方法 路径 | 请求体 / 参数示例 | 关键响应字段 |
+|---|---|---|---|
+| 18 | GET `/exam/{spec_id}/start` | query `learner_id=stu-1`（必填非空白）、可选 `seed=42`、`difficulty_target=0.5`【X-Org-Id】 | **可作答卷页 HTML**（`text/html`；自包含、纯 form、无 JS/外链：单选 radio、多选 checkbox 同名多值、填空 input、解答 textarea，控件名恒为 `item_{题号}`，卷头回显考生与作答编号；学生卷红线同端点 16），响应头 `X-Exam-Session` 带会话 id。`learner_id` 空白 → 400，未知卷型 404，`seed` 形态错 422 |
+| 19 | POST `/exam/{session_id}/submit` | 浏览器 form（urlencoded）：`item_1=B&item_3=A&item_3=C&…`（缺题号 = 未作答）；JSON：`{"item_1": "B", "item_3": ["A","C"], "item_4": 12.5}` 或 `{"answers": {"1": "B", …}}`【X-Org-Id】 | form → **303** 跳 `Location: /exam/{session_id}/report.html`；JSON → `session_id` `learner_id` `mode` `score` `total_points` `correct_count` `wrong_count` `mastery` `weak_points[]` `report_url`。交卷同时落库（端点 2 的同一段序列），故端点 3/4 随后立即反映本卷。未知/过期/跨 org 会话 404，重复提交 409，题不在库或体形态错 400 |
+| 20 | GET `/exam/{session_id}/report.html` | 路径参数即可【X-Org-Id】 | **个人报告页 HTML**（`text/html`；内联 CSS、无 JS：本次得分 → 逐题对错（你的作答/正确答案/判定/得分）与解析 → 知识点掌握更新（诊断前→后/证据/置信度）与知识点群均分 → 薄弱知识点 → 下一步学习建议（`build_plan` 的策略、依据与推荐练习题））。未提交 409，未知/过期/跨 org 404 |
+
+**作答环的已知边界（如实登记）**：会话在进程内（`app.state.exam_sessions`，缺省 TTL 2 小时），重启即失效并如实以 404 暴露；解答题按 `POST /grade` 的同一字面/数值等值支自动判分，**本环不含教师批改通道**，报告页据此措辞；画像语义 = 最近一次提交（与端点 2 一致，不跨次累积），报告页的「诊断前」取自被覆盖掉的旧画像，首次交卷显示「首次诊断」。
 
 【X-Org-Id】= 接受可选多租户头（见 §3.4）。错误对照速记：400 = 语义错（内核 ValueError），404 = 资源不存在，422 = JSON 形态错。
 
@@ -278,6 +288,42 @@ curl -s -o NUL -w "%{http_code}" -X POST http://127.0.0.1:8000/trace -H "Content
 
 停止：终端 1 **Ctrl+C**。全程无网络外呼，符合 G0-5。
 
+### 6.3 学生作答闭环 curl 走查（端点 18–20，浏览器零胶水）
+
+三步：开卷拿会话 → 提交作答 → 看报告。全程 `curl`，可对着 §6.2 起的服务直接粘。
+
+```bash
+# ① 开卷：X-Exam-Session 响应头即会话 id（卷页本身是可直接双击打开的 HTML）
+curl -s -D - -o /tmp/exam.html \
+  "http://127.0.0.1:8000/exam/spec_phy_hs_final/start?learner_id=stu-1&seed=42" | grep -i x-exam-session
+# → X-Exam-Session: exam-xxxxxxxxxxxxxxxx
+grep -o 'name="item_[0-9]*"' /tmp/exam.html | sort -u | wc -l
+# → 16（控件组数 = 题数；控件总数 49——单选一题 3-4 个 radio，多选一题一个 checkbox 组）
+
+# ② 提交：JSON 形态回机器可读摘要（form 形态则 303 跳报告页）
+curl -s -X POST http://127.0.0.1:8000/exam/exam-xxxxxxxxxxxxxxxx/submit \
+  -H "Content-Type: application/json" \
+  -d '{"item_1":"B","item_2":"C","item_3":"A","item_4":"D"}'
+# → {"session_id":"exam-…","learner_id":"stu-1","mode":"json","score":12.0,
+#    "total_points":100.0,"correct_count":3,"wrong_count":13,"mastery":{…},
+#    "weak_points":[…],"report_url":"/exam/exam-…/report.html"}
+#   （只答了前 4 题，其余 12 题按「未作答」判错——与卷页逐题判分同一口径）
+
+# ③ 报告页：家长可读的 HTML（对错逐题 + 掌握更新 + 薄弱点 + 学习建议）
+curl -s http://127.0.0.1:8000/exam/exam-xxxxxxxxxxxxxxxx/report.html | head -c 400
+
+# form 形态：303 跳转（浏览器零胶水闭环）
+curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" -X POST \
+  http://127.0.0.1:8000/exam/exam-yyyyyyyyyyyyyyyyy/submit -d "item_1=B"
+# → 303 -> http://127.0.0.1:8000/exam/exam-yyyyyyyyyyyyyyyyy/report.html
+
+# 错误映射（实测语义）
+curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8000/exam/exam-nope/report.html   # 404
+curl -s -o /dev/null -w "%{http_code}\n" "http://127.0.0.1:8000/exam/spec_phy_hs_final/start?learner_id=%20"  # 400
+```
+
+离线同款全环（无需起服、无浏览器、零网络）：`.venv/bin/python tools/check_exam_loop.py`。
+
 ## 7. 已知坑
 
 1. **pytest 双 `-q` 吃掉统计行**（worklog.md:7 留痕，本日复现）：`pytest.ini` 已含 `addopts = -q`，命令行再补一个 `-q` 会双重安静、末行 `N passed` 消失——`tools/run_contract.py:78` 自己又传了 `-q`，所以 G0-3 输出只有进度点没有统计行，属预期。脚本取数用单 `-q` 或 `-rA`/junitxml，不要 grep "passed"。
@@ -290,7 +336,9 @@ curl -s -o NUL -w "%{http_code}" -X POST http://127.0.0.1:8000/trace -H "Content
 8. **grade7 语义断言钉题**：`tools/smoke_api.py` 的判分/归因检查钉住 `m7_010`（标答 `2`）、`m7_013`（标答 `-6`）与误解 `mc_sign_neg`（签名含 `5`）。未来注入批次重划 grade7 子库时若这些题变动，需同步改 `smoke_api.py`，否则冒烟会如实报 FAIL。
 9. **reviews 端点的 `kp_id` 其实是 learner_id**：`server.py:208` 调 `schedule(learner_id, …)` 把 learner_id 传进 schedule 的 `kp_id` 形参，响应 `kp_id` 字段因此等于路径里的 learner_id（冒烟第 6 项实测 `kp_id=smoke-1`）。内核 `schedule` 本身没错（`scheduler.py:24-31`），是胶水层字段穿线怪癖；消费该字段做按知识点统计会踩坑。
 10. **httpx 0.28 的 `ASGITransport` 仅 async**：同步 `httpx.Client(transport=ASGITransport(...))` 报 `'ASGITransport' object has no attribute 'handle_request'`（本日实测）。进程内直连要用 `httpx.AsyncClient` + `asyncio.run`，`tools/smoke_api.py` 即此写法。
+11. **`Request.form()` 在本仓不可用**（作答环 2026-10-06 实测）：starlette 1.7 的 form 解析**即使纯 urlencoded 也先 assert `python-multipart` 在位**，而本仓零新依赖是硬约束，故 `POST /exam/{session}/submit` 用标准库 `urllib.parse.parse_qsl` 自解（`exam.py:parse_submission_body`）。同名多值键在 dict 里天然聚成 list，与多选 checkbox 语义一一对应。若将来允许引入 `python-multipart`，可换回 `Request.form()`，但那会改变依赖基线。
+12. **`create_app` 新增两个注入点只服务 `/exam/*`**：`subject_graph_loader`（按学科合并装载知识点图谱——卷型跨年级出卷，其 kp 不在 `create_app` 注入的单年级 `graph` 里，诊断/路线必须用学科级图谱）与 `exam_sessions`（会话表）。既有端点一律仍用注入的 `graph`/`bank`，行为逐字节不变（`check_paper_render` 的 9 套真实卷渲染产物与改动前逐字节相同，已实测）。
 
 ---
 
-*本手册由阶段 P 会话于 2026-10-02 撰写；全部命令与输出均当日在本仓实测（G0-1/2/3、G0-4、离线冒烟、起服 curl、factory 直启失败复现）。*
+*本手册由阶段 P 会话于 2026-10-02 撰写，2026-10-06 补记卷型出卷族（端点 15–17）与学生作答闭环（端点 18–20）；全部命令与输出均当日在本仓实测（G0-1/2/3、G0-4、离线冒烟、起服 curl、factory 直启失败复现、check_paper_spec / check_paper_render / check_exam_loop 三门）。*
