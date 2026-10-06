@@ -1,6 +1,6 @@
 """确定性 REST API：出卷 / 提交作答 / 查画像 / 查计划 / 复习打卡，以及新模块
 API（/trace /blueprint /grade /recommend /itembank/v2/validate
-/coverage/standard）与机构多租户（X-Org-Id 头 + /orgs）。
+/coverage/standard /papers/by-spec）与机构多租户（X-Org-Id 头 + /orgs）。
 
 薄胶水层：所有逻辑都在内核模块里，这里只做 HTTP 编解码与会话存储。
 领域校验失败（内核 ValueError 族）映射 400，资源不存在映射 404，
@@ -16,6 +16,7 @@ xuexing.multitenant.resolve_org）；store 与 attempt 计数按 (org, learner)
 （见 specs/drafts/server.spec.md §2），本文件可被
 run_contract.py --impl-dir <dir> --modules server 装载。
 """
+import os
 from datetime import date
 from typing import Any
 
@@ -32,6 +33,12 @@ from xuexing.kpgraph import KPGraph
 from xuexing.kt import KTEvent, trace, to_profile
 from xuexing.multitenant import AttemptCounter, OrgStore, resolve_org
 from xuexing.paper import generate_paper, select_next_item
+from xuexing.paper_by_spec import (
+    DEFAULT_CURRICULUM_DIR,
+    generate_paper_by_spec,
+    load_spec_catalog,
+    load_stage_bank,
+)
 from xuexing.pedagogy import StrategyLibrary
 from xuexing.recommend import (
     attach_recommendations,
@@ -87,6 +94,14 @@ class BlueprintReq(BaseModel):
     ratios: dict[str, float] | None = None
 
 
+class PaperBySpecIn(BaseModel):
+    spec_id: str
+    seed: int = 42
+    difficulty_target: float = 0.5
+    # 个性化选题尚未启用：当前仅随卷面回显（家长端/学校端预留字段）
+    learner_id: str | None = None
+
+
 class GradeAnswerIn(BaseModel):
     item_id: str
     learner_answer: str | None = None
@@ -122,11 +137,27 @@ def create_app(
     graph: KPGraph,
     strategies: StrategyLibrary,
     misconceptions: list[Misconception] | None = None,
+    spec_catalog: dict[str, dict] | None = None,
+    stage_bank_loader=None,
 ) -> FastAPI:
+    """spec_catalog：卷型库 {spec_id: 卷型 dict}（缺省装 data/curriculum/
+    paper_specs.json）；stage_bank_loader：callable(subject, stage) -> ItemBank，
+    卷型学段题库注入点（缺省按 data/items 文件装载并进程内缓存）。测试注入
+    自闭式夹具用，与 bank/graph/strategies 同一套路。"""
     app = FastAPI(title="xuexing-agent")
     store = OrgStore()
     misconceptions = misconceptions or []
     attempt_counts = AttemptCounter()
+    if spec_catalog is None:
+        spec_catalog = load_spec_catalog(
+            os.path.join(DEFAULT_CURRICULUM_DIR, "curriculum", "paper_specs.json")
+        )
+    if stage_bank_loader is None:
+        from functools import lru_cache
+
+        @lru_cache(maxsize=None)
+        def stage_bank_loader(subject: str, stage: str):  # noqa: F811
+            return load_stage_bank(DEFAULT_CURRICULUM_DIR, subject, stage)[0]
 
     @app.post("/papers/diagnostic")
     def make_paper(body: BlueprintIn):
@@ -137,6 +168,25 @@ def create_app(
         except ValueError as e:
             raise HTTPException(400, str(e))
         return to_dict(paper)
+
+    @app.post("/papers/by-spec")
+    def paper_by_spec(body: PaperBySpecIn):
+        """卷型库驱动的出卷：按卷型学段/题型/分值约束从对应学段题库选题，
+        装订大题-小题层级（分值合计==卷型总分由 paper_spec V8 保证）。
+        spec_id 不存在 → 404；卷型内部不一致/同型题不足/学段无题库 → 400
+        （fail-closed：不降级凑题）。逻辑全在 xuexing.paper_by_spec。"""
+        raw_spec = spec_catalog.get(body.spec_id)
+        if raw_spec is None:
+            raise HTTPException(404, f"paper spec not found: {body.spec_id}")
+        try:
+            stage_bank = stage_bank_loader(raw_spec["subject"], raw_spec["stage"])
+            paper = generate_paper_by_spec(
+                stage_bank, raw_spec, seed=body.seed,
+                difficulty_target=body.difficulty_target, spec_id=body.spec_id,
+            )
+        except ValueError as e:  # PaperSpecError / PaperBySpecError 均为 ValueError 子类
+            raise HTTPException(400, str(e))
+        return {"learner_id": body.learner_id, **paper}
 
     @app.post("/learners/{learner_id}/responses")
     def submit(learner_id: str, body: SubmitIn,

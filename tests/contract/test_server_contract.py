@@ -510,3 +510,160 @@ def test_no_domain_error_becomes_500(client):
 
 def test_profile_404_before_any_trace(client):
     assert client.get("/learners/nobody/profile").status_code == 404  # 既有行为不变
+
+
+# ---------- /papers/by-spec（卷型库驱动的出卷） ----------
+# 自闭式夹具：卷型目录 / 学段题库注入 create_app，不依赖 data/。
+# 题面形态覆盖：mcq_single（单选等价类）、简答（solve 等价类）、判断
+# （独立形态，item_type=choice —— 反泄漏探针：绝不允许进选择题大题）、
+# 无 form 题（按 item_type 粗类回退）。
+
+_BY_SPEC = {
+    "id": "spec_demo_final",
+    "subject": "demo",
+    "stage": "junior",
+    "usage": "final_exam",
+    "duration_min": 90,
+    "total_points": 10,
+    "sections": [
+        {"title": "一、选择题", "form": "choice", "count": 2, "points_each": 3},
+        {"title": "二、解答题", "form": "solve", "count": 1, "points_each": 4},
+    ],
+}
+_BY_SPEC_BAD_TOTAL = dict(
+    _BY_SPEC, id="spec_demo_badtotal", total_points=11
+)  # 节和 2×3+1×4=10 != 11 → paper_spec V8 fail-closed
+_BY_SPEC_UNMAPPED = dict(
+    _BY_SPEC, id="spec_demo_unmapped",
+    sections=[{"title": "一、情景表演", "form": "mime", "count": 1, "points_each": 10}],
+)  # "mime" 不在题型等价类表 → fail-closed（truefalse 已收录，对应题库 form=判断）
+_BY_SPEC_HUNGRY = dict(
+    _BY_SPEC, id="spec_demo_hungry",
+    sections=[{"title": "一、选择题", "form": "choice", "count": 5, "points_each": 2}],
+)  # 同型仅 4 道 → fail-closed 报缺
+_BY_SPEC_FILL = dict(
+    _BY_SPEC, id="spec_demo_fill",
+    sections=[{"title": "一、填空题", "form": "fill", "count": 1, "points_each": 10}],
+)  # 无 form 题（item_type=fill）按粗类回退命中
+
+
+@pytest.fixture
+def byspec_bank():
+    b = ItemBank()
+
+    def add(item_id, kp, difficulty, item_type, options=None, answer="ans", form="choice"):
+        b.add(Item(id=item_id, item_type=item_type, stem=f"s-{item_id}", answer=answer,
+                   kps=[kp], difficulty=difficulty, options=options or [], form=form))
+
+    for i, d in enumerate(("0.2", "0.5", "0.8"), 1):
+        add(f"c{i}", "a", float(d), "choice", options=["A. 1", "B. 2"], answer="B",
+            form="mcq_single")
+    add("tf1", "a", 0.5, "choice", options=["A. 对", "B. 错"], answer="A", form="判断")
+    add("bare_choice", "b", 0.5, "choice", options=["A. 1", "B. 2"], answer="A", form=None)
+    add("bare_fill", "b", 0.5, "fill", form=None)
+    add("j1", "b", 0.3, "solve", form="简答")
+    add("j2", "b", 0.9, "solve", form="简答")
+    return b
+
+
+@pytest.fixture
+def byspec_catalog():
+    return {s["id"]: s for s in
+            (_BY_SPEC, _BY_SPEC_BAD_TOTAL, _BY_SPEC_UNMAPPED, _BY_SPEC_HUNGRY, _BY_SPEC_FILL)}
+
+
+@pytest.fixture
+def byspec_client(bank, graph, strategies, mcs, byspec_catalog, byspec_bank):
+    app = create_app(bank, graph, strategies, mcs, spec_catalog=byspec_catalog,
+                     stage_bank_loader=lambda subject, stage: byspec_bank)
+    return TestClient(app)
+
+
+def test_papers_by_spec_structure_matches_catalog(byspec_client, byspec_bank):
+    r = byspec_client.post("/papers/by-spec", json={"spec_id": "spec_demo_final", "seed": 42})
+    assert r.status_code == 200, r.text
+    p = r.json()
+    # 顶层结构：卷型元信息 + 大题-小题层级 + 平铺题序
+    assert p["spec_id"] == "spec_demo_final" and p["seed"] == 42
+    assert p["learner_id"] is None  # 未传仅回显 None
+    assert (p["subject"], p["stage"], p["usage"], p["duration_min"]) == \
+        ("demo", "junior", "final_exam", 90)
+    assert p["total_points"] == 10 and p["question_count"] == 3
+    # 逐大题与 spec 一致（标题/形态/题数/每题分值/大题分值）
+    assert [(s["title"], s["form"], s["count"], s["points_each"], s["section_points"])
+            for s in p["sections"]] == [
+        ("一、选择题", "choice", 2, 3, 6), ("二、解答题", "solve", 1, 4, 4)]
+    # 小题号全卷连续，小题分值=所在大题 points_each
+    nos = [q["question_no"] for s in p["sections"] for q in s["questions"]]
+    assert nos == [1, 2, 3]
+    assert all(q["points"] == s["points_each"]
+               for s in p["sections"] for q in s["questions"])
+    # 分值合计 == 卷型总分（V8 保证，端到端复核）
+    assert sum(q["points"] for s in p["sections"] for q in s["questions"]) == p["total_points"]
+    # 题目全部来自注入题库、无重复、平铺题序与装订序一致
+    flat = [q["item_id"] for s in p["sections"] for q in s["questions"]]
+    assert p["item_ids"] == flat
+    assert len(set(flat)) == len(flat)
+    assert all(byspec_bank.get(i) is not None for i in flat)
+    # 题型保真：选择题大题只收单选等价类（tf1 判断题绝不入选）；解答题收简答
+    choice_ids = [q["item_id"] for q in p["sections"][0]["questions"]]
+    solve_ids = [q["item_id"] for q in p["sections"][1]["questions"]]
+    assert set(choice_ids) <= {"c1", "c2", "c3", "bare_choice"} and "tf1" not in choice_ids
+    assert len(solve_ids) == 1 and solve_ids[0] in {"j1", "j2"}  # 简答等价类内选题
+
+
+def test_papers_by_spec_deterministic(byspec_client):
+    body = {"spec_id": "spec_demo_final", "seed": 42}
+    r1 = byspec_client.post("/papers/by-spec", json=body)
+    r2 = byspec_client.post("/papers/by-spec", json=body)
+    assert r1.content == r2.content  # 同输入逐字节同卷
+    r3 = byspec_client.post("/papers/by-spec", json={**body, "seed": 7})
+    assert r3.status_code == 200
+    assert {q["item_id"] for q in r3.json()["sections"][0]["questions"]} <= \
+        {"c1", "c2", "c3", "bare_choice"}
+
+
+def test_papers_by_spec_learner_id_echoed(byspec_client):
+    r = byspec_client.post("/papers/by-spec",
+                           json={"spec_id": "spec_demo_final", "learner_id": "l-1"})
+    assert r.status_code == 200 and r.json()["learner_id"] == "l-1"
+
+
+def test_papers_by_spec_unknown_spec_404(byspec_client):
+    assert byspec_client.post("/papers/by-spec",
+                              json={"spec_id": "no_such_spec"}).status_code == 404
+
+
+def test_papers_by_spec_inconsistent_total_400(byspec_client):
+    # 卷型分值自相矛盾（节和 10 != total 11）：fail-closed，绝不降级凑 11 分
+    r = byspec_client.post("/papers/by-spec", json={"spec_id": "spec_demo_badtotal"})
+    assert r.status_code == 400
+    assert "points sum 10 != total_points 11" in r.json()["detail"]
+
+
+def test_papers_by_spec_unmapped_form_400(byspec_client):
+    r = byspec_client.post("/papers/by-spec", json={"spec_id": "spec_demo_unmapped"})
+    assert r.status_code == 400
+    assert "has no bank form mapping" in r.json()["detail"]
+
+
+def test_papers_by_spec_insufficient_items_400(byspec_client):
+    # 同型题只有 4 道，卷型要 5 道：如实报缺，不用判断题/解答题凑选择题
+    r = byspec_client.post("/papers/by-spec", json={"spec_id": "spec_demo_hungry"})
+    assert r.status_code == 400
+    assert "not enough eligible items: need 5, have 4" in r.json()["detail"]
+
+
+def test_papers_by_spec_difficulty_out_of_range_400(byspec_client):
+    r = byspec_client.post("/papers/by-spec",
+                           json={"spec_id": "spec_demo_final", "difficulty_target": 1.5})
+    assert r.status_code == 400
+    assert "difficulty_target out of range" in r.json()["detail"]
+
+
+def test_papers_by_spec_formless_items_fallback(byspec_client):
+    # 无 form 的题按 item_type 粗类回退：item_type=fill 可进填空大题
+    r = byspec_client.post("/papers/by-spec", json={"spec_id": "spec_demo_fill"})
+    assert r.status_code == 200, r.text
+    p = r.json()
+    assert [q["item_id"] for q in p["sections"][0]["questions"]] == ["bare_fill"]
