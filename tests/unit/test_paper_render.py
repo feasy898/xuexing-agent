@@ -357,3 +357,33 @@ def test_endpoint_render_bad_query_422(render_client):
     # difficulty_target 越界是合法 float → 领域校验 400（与 POST 出卷同语义）
     assert render_client.get(f"/papers/by-spec/{MINI_SPEC['id']}/render.html",
                              params={"difficulty_target": 7}).status_code == 400
+
+
+# ---------------------------------------------------------------------------
+# 红线语料适配（2026-10-06）——短数字巧合豁免与英语卷词根豁免的边界钉板
+# ---------------------------------------------------------------------------
+
+def test_short_numeric_exemption_boundary():
+    """纯数字短值(≤4, 至多一个小数点)豁免；长数字串/含字母值不豁免。"""
+    from xuexing.paper_render import _is_short_numeric
+    assert _is_short_numeric("25") and _is_short_numeric("1.5") and _is_short_numeric("13")
+    assert not _is_short_numeric("11010519491231002X")  # 身份证形态长值
+    assert not _is_short_numeric("1.2.3") and not _is_short_numeric("abc") and not _is_short_numeric("")
+    assert not _is_short_numeric("123456")  # 长数字串不豁免
+
+
+def test_english_token_exempt_only_for_english_papers():
+    """英语卷豁免 ASCII 词根；非英语卷出现 answer 词根仍判违规。"""
+    from xuexing.paper_render import redline_report
+    # 中文卷(html 含 'answer') 应违规
+    paper = {"subject": "math", "total_points": 10, "duration_min": 40,
+             "sections": []}
+    v = redline_report(paper, {}, "see answer here", "")
+    assert any("answer" in x for x in v)
+    # 英语卷同内容不违规(ASCII 词根豁免), 但中文禁词照扫
+    paper_en = {"subject": "english", "total_points": 10, "duration_min": 40,
+                "sections": []}
+    v2 = redline_report(paper_en, {}, "see answer here", "")
+    assert not any("answer" in x for x in v2)
+    v3 = redline_report(paper_en, {}, "参考答案", "")
+    assert any("参考答案" in x for x in v3)

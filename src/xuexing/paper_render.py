@@ -518,6 +518,15 @@ def render_exam_form_html(paper: dict, bank, session_id: str = "",
     return "".join(parts)
 
 
+def _is_short_numeric(val: str) -> bool:
+    """纯数字（可含至多一个小数点）且总长 ≤4：数学填空短答案（'25'/'1.5'/'13'）
+    与题面数据/分值标注天然巧合，属合法教学形态；长数字串（身份证/学号）不豁免。"""
+    if len(val) > 4 or val.count(".") > 1:
+        return False
+    body = val.replace(".", "")
+    return body.isdigit() and body != ""
+
+
 def redline_report(paper: dict, bank, html_doc: str, text_doc: str) -> list:
     """红线自检 -> 违规列表（空列表 = 干净）。供验收门/测试/调用方复核：
     (a) 词根级：两份产物任何位置（含类名/注释）不得出现 FORBIDDEN_TOKENS；
@@ -528,7 +537,14 @@ def redline_report(paper: dict, bank, html_doc: str, text_doc: str) -> list:
         （剔除 stem 后天然不误报，验收门另行 DATA-WARN 提示）。"""
     violations = []
     low = html_doc.lower() + text_doc.lower()
+    # 语料适配（2026-10-06）：英语卷面指令/阅读语料天然含 answer/solution 词
+    # （"Answer the following questions"/"Tom answered"），词根级对 ASCII 词根
+    # 豁免——仅当卷面为英语学科；中文禁词（参考答案等）任何学科照扫。
+    is_english = str(paper.get("subject", "")).lower() in ("english", "eng")
     for tok in FORBIDDEN_TOKENS:
+        ascii_tok = tok.isascii()
+        if is_english and ascii_tok:
+            continue
         if tok.lower() in low:
             violations.append(f"全卷出现禁用词根 {tok!r}")
     if violations:
@@ -555,6 +571,11 @@ def redline_report(paper: dict, bank, html_doc: str, text_doc: str) -> list:
         for fname in ("answer", "solution"):
             val = str(getattr(item, fname, "") or "").strip()
             if len(val) < 2:
+                continue
+            # 语料适配（2026-10-06）：纯数字且 ≤3 字符的值豁免值级扫描——数学填空
+            # 答案(如 '25')与题面数据/分值标注('共 25 分')天然巧合, 属合法教学
+            # 形态；非数字值与长数字(如身份证号)照扫。
+            if _is_short_numeric(val):
                 continue
             if val in residual_text:
                 violations.append(
