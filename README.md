@@ -23,6 +23,7 @@
 - 知识库校验：`.venv/bin/python tools/validate_knowledge.py`
 - 契约测试：`.venv/bin/python tools/run_contract.py`
 - API 起服（产品化第一站）：按 [docs/runbook.md](docs/runbook.md) 注入知识库后 `.venv/bin/uvicorn xuexing.server:create_app --factory`（冒烟脚本 `tools/smoke_api.py`，14/14 端点通过）
+- 知识地图可视化：`GET /learners/{id}/knowledge-map.html?subject=X` 自包含 HTML（内联 CSS/SVG、零外部库/JS）——按年级→章→KP 热力呈现掌握度（红薄弱→绿熟练，透明度=置信度），薄弱 top10 带建议动作（与 `/plan` 同引擎），页头含学习者/学科/数据更新时间；不带 `subject` 即跨学科总览。渲染门 `tools/check_kmap.py`（exit 0），人工视检样本 `tools/render_kmap_sample.py` → `out/kmap_sample/`
 
 ## 验收基线（2026-10-02 第三波收口实测）
 

@@ -1,6 +1,8 @@
 """确定性 REST API：出卷 / 提交作答 / 查画像 / 查计划 / 复习打卡，以及新模块
 API（/trace /blueprint /grade /recommend /itembank/v2/validate
-/coverage/standard /papers/by-spec）与机构多租户（X-Org-Id 头 + /orgs）。
+/coverage/standard /papers/by-spec）与机构多租户（X-Org-Id 头 + /orgs）；
+成品卷渲染（GET /papers/by-spec/{spec_id}/render.html|render.txt）与知识地图
+可视化（GET /learners/{id}/knowledge-map.html，自包含 HTML）。
 
 薄胶水层：所有逻辑都在内核模块里，这里只做 HTTP 编解码与会话存储。
 领域校验失败（内核 ValueError 族）映射 400，资源不存在映射 404，
@@ -30,7 +32,9 @@ from xuexing.diagnosis import aggregate_to_clusters, diagnose
 from xuexing.grading import grade_to_response
 from xuexing.itembank import ItemBank
 from xuexing.itembank_v2 import source_counts, validate_bank_v2, verification_stats
-from xuexing.kpgraph import KPGraph
+from xuexing.kpgraph import KPGraph, KPGraphError
+from xuexing.kpgraph_subject import discover_subjects, load_kpgraph_subject
+from xuexing.kmap import build_overview_kmap, build_subject_kmap, render_kmap_html
 from xuexing.kt import KTEvent, trace, to_profile
 from xuexing.multitenant import AttemptCounter, OrgStore, resolve_org
 from xuexing.paper import generate_paper, select_next_item
@@ -141,11 +145,14 @@ def create_app(
     misconceptions: list[Misconception] | None = None,
     spec_catalog: dict[str, dict] | None = None,
     stage_bank_loader=None,
+    kmap_knowledge_dir: str | None = None,
 ) -> FastAPI:
     """spec_catalog：卷型库 {spec_id: 卷型 dict}（缺省装 data/curriculum/
     paper_specs.json）；stage_bank_loader：callable(subject, stage) -> ItemBank，
     卷型学段题库注入点（缺省按 data/items 文件装载并进程内缓存）。测试注入
-    自闭式夹具用，与 bank/graph/strategies 同一套路。"""
+    自闭式夹具用，与 bank/graph/strategies 同一套路。kmap_knowledge_dir：
+    知识地图的学科图谱目录（缺省 data/knowledge，按 <subject>_grade<N>.json
+    学科级装载 load_kpgraph_subject，进程内缓存）。"""
     app = FastAPI(title="xuexing-agent")
     store = OrgStore()
     misconceptions = misconceptions or []
@@ -160,6 +167,15 @@ def create_app(
         @lru_cache(maxsize=None)
         def stage_bank_loader(subject: str, stage: str):  # noqa: F811
             return load_stage_bank(DEFAULT_CURRICULUM_DIR, subject, stage)[0]
+
+    from functools import lru_cache as _lru_cache
+
+    kmap_dir = kmap_knowledge_dir or os.path.join(DEFAULT_CURRICULUM_DIR, "knowledge")
+
+    @_lru_cache(maxsize=None)
+    def kmap_subject_graph(subject: str) -> KPGraph:
+        """知识地图的学科图谱（进程内缓存；未知学科抛 KPGraphError → 404）。"""
+        return load_kpgraph_subject(kmap_dir, subject)
 
     @app.post("/papers/diagnostic")
     def make_paper(body: BlueprintIn):
@@ -270,6 +286,34 @@ def create_app(
             raise HTTPException(404, "learner not found")
         plan = build_plan(entry["profile"], bank, graph, strategies, date.today())
         return to_dict(plan)
+
+    # ---- 知识地图可视化（owner："根据错误就可以绘制知识地图" 的"绘制"字面交付）。
+    # 与成品卷渲染同一取舍：交付物是给人看的文档，浏览器直接打开 URL 即得
+    # text/html；自包含（内联 CSS/SVG，零外部库/JS）。数据全部来自诊断内核
+    # 真实产出：逐 KP mastery/置信度（与 /profile 同一 Profile）、学习路线
+    # （与 /plan 同一 build_plan 同一入参）、学科图谱（load_kpgraph_subject）。
+    # 画像没有的知识点一律"画像外"灰显，绝不编造；空学习者/无数据学科渲染
+    # 诚实空态页。subject 缺省 → 跨学科总览（逐学科汇总）。----
+
+    @app.get("/learners/{learner_id}/knowledge-map.html")
+    def knowledge_map_html(learner_id: str, subject: str = "",
+                           x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        org = resolve_org(x_org_id)
+        entry = store.get(org, learner_id)
+        if not entry or "profile" not in entry:
+            raise HTTPException(404, "learner not found")
+        profile = entry["profile"]
+        if subject:
+            try:
+                subject_graph = kmap_subject_graph(subject)
+            except KPGraphError as e:  # 未知学科（目录下无该学科年级文件）
+                raise HTTPException(404, str(e))
+            data = build_subject_kmap(profile, subject_graph, strategies,
+                                      bank, date.today(), subject=subject)
+        else:
+            data = build_overview_kmap(profile, discover_subjects(kmap_dir),
+                                       kmap_subject_graph)
+        return HTMLResponse(render_kmap_html(data))
 
     @app.get("/learners/{learner_id}/next_item")
     def next_item(learner_id: str, scope: str = "", per_kp_cap: int = 3,
