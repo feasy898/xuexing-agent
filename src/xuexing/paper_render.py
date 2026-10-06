@@ -38,6 +38,7 @@ __all__ = [
     "format_points",
     "render_paper_html",
     "render_paper_text",
+    "render_exam_sheet_html",
     "redline_report",
     "check_html_tag_balance",
 ]
@@ -312,7 +313,123 @@ def render_paper_html(paper: dict, bank) -> str:
     return "".join(parts)
 
 
+_SHEET_CSS = """  .learner-line { font-size: 11pt; color: #222; margin: 0 0 3mm; }
+  .q-input { display: block; margin: 1mm 0 1mm 7mm; }
+  .q-input input[type="text"] {
+    border: 1px solid #999; border-radius: 2px; padding: 1mm 2mm;
+    width: 70%; font-size: 10.5pt; font-family: inherit;
+  }
+  .q-input textarea {
+    border: 1px solid #999; border-radius: 2px; padding: 1mm 2mm;
+    width: 86%; font-size: 10.5pt; font-family: inherit; min-height: 24mm;
+  }
+  .q-options label.q-option { cursor: pointer; }
+  .submit-row { margin-top: 8mm; text-align: center; }
+  .submit-row button {
+    font-size: 12pt; padding: 2mm 8mm; border: 1px solid #444;
+    border-radius: 3px; background: #f2f2f2; font-family: inherit;
+  }
+"""
+
+
+def render_exam_sheet_html(paper: dict, bank, session_id: str,
+                           learner_id: str) -> str:
+    """结构卷 + 题库 -> **可作答**卷面 HTML（学生在线答题页）。
+
+    与 :func:`render_paper_html` 同源：共用 ``_validate_paper`` 的 fail-closed
+    校验、``_item_for`` 的取题、``human_paper_title``/``format_points`` 的措辞，
+    并追加 ``_SHEET_CSS`` 的表单控件样式（打印时控件照常呈现）。红线同
+    ``render_paper_html``：只读 Item 的 stem/options，绝不触碰 answer/solution；
+    CSS 类名同样避开 answer/solution 词根（作答框仍是 ``reply-box``）。
+
+    差异仅在作答载体：每小题给出恰好一个可提交控件，``name="item_{题号}"``——
+    选择题（``form=mcq_multi`` 为复选、其余为单选）每个选项一个 radio/checkbox
+    （同 name 多值）；填空题一个 ``<input type="text">``；其余题类（解答/简答/
+    材料分析等）一个 ``<textarea>``。整卷一个 ``<form method="post">``，action
+    指向 ``/exam/{session_id}/submit``，提交后由 xuexing.exam 判分。
+    """
+    _validate_paper(paper)
+    title = human_paper_title(paper)
+    total_s = format_points(paper["total_points"])
+    esc_spec = _esc(paper["spec_id"])
+    esc_session = _esc(session_id)
+    esc_learner = _esc(learner_id)
+
+    parts = [
+        "<!DOCTYPE html>\n",
+        '<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n',
+        f"<title>{_esc(title)} · 在线作答</title>\n",
+        f"<!-- 可作答卷：会话 {esc_session}，学习者 {esc_learner}，卷型 {esc_spec}。"
+        f"由 xuexing.paper_render 渲染。红线：本页不含任何作答依据。 -->\n",
+        f"<style>\n{_CSS}\n{_SHEET_CSS}</style>\n</head>\n<body>\n",
+        '<header class="paper-head">\n',
+        f'  <h1 class="paper-title">{_esc(title)}</h1>\n',
+        '  <div class="paper-meta">'
+        f'<span>满分 {total_s} 分</span>'
+        f'<span>考试时长 {paper["duration_min"]} 分钟</span>'
+        f'<span>共 {paper["question_count"]} 题</span>'
+        f'<span>卷型 {esc_spec}</span></div>\n',
+        f'  <p class="learner-line">姓名/学号：<b>{esc_learner}</b>'
+        f'（会话号 {esc_session}）</p>\n',
+        '  <p class="paper-note">满分注意：本卷满分 '
+        f'{total_s} 分，考试时长 {paper["duration_min"]} 分钟。请按题号顺序作答：'
+        '选择题点选选项；填空题把结论填进输入框；解答题在文本框内写出必要过程。'
+        '全部作答完成后点页面底部「交卷」。</p>\n',
+        "</header>\n",
+        f'<form method="post" action="/exam/{esc_session}/submit">\n',
+    ]
+
+    for sec in paper["sections"]:
+        parts.extend([
+            '<section class="section">\n',
+            f'  <h2 class="section-title">{_esc(sec["title"])}'
+            f'<span class="section-points">（每题 {format_points(sec["points_each"])} 分，'
+            f'共 {format_points(sec["section_points"])} 分）</span></h2>\n',
+        ])
+        for q in sec["questions"]:
+            item = _item_for(bank, q["item_id"], q["question_no"])
+            no = q["question_no"]
+            name = f"item_{no}"
+            stem = item.stem.strip()
+            options = [str(o).strip() for o in (getattr(item, "options", None) or [])]
+            parts.append(f'  <div class="question" id="q{no}">\n')
+            parts.append(
+                '    <div class="q-head">'
+                f'<span class="q-no">{no}.</span>'
+                f'<span class="q-points">（{format_points(q["points"])}分）</span>'
+                f'<span class="q-stem">{_esc(stem)}</span></div>\n')
+            if options:
+                # 多选（form=mcq_multi）用 checkbox，同 name 多值；其余单选 radio
+                input_type = "checkbox" if getattr(item, "form", "") == "mcq_multi" else "radio"
+                parts.append('    <div class="q-options">\n')
+                for idx, opt in enumerate(options):
+                    parts.append(
+                        f'      <label class="q-option">'
+                        f'<input type="{input_type}" name="{name}" '
+                        f'value="{_esc(opt)}"> {_esc(opt)}</label>\n')
+                parts.append("    </div>\n")
+            elif getattr(item, "item_type", "") == "fill":
+                parts.append(f'    <div class="q-input">'
+                             f'<input type="text" name="{name}" size="40"></div>\n')
+            else:
+                parts.append(f'    <div class="q-input">'
+                             f'<textarea name="{name}" rows="6"></textarea></div>\n')
+            parts.append("  </div>\n")
+        parts.append("</section>\n")
+
+    parts.extend([
+        '  <div class="submit-row">'
+        '<button type="submit">交卷</button></div>\n',
+        "</form>\n",
+        f'<footer class="page-footer">{_esc(title)} · 满分 {total_s} 分 · '
+        f"共 {paper['question_count']} 题</footer>\n",
+        "</body>\n</html>\n",
+    ])
+    return "".join(parts)
+
+
 def redline_report(paper: dict, bank, html_doc: str, text_doc: str) -> list:
+
     """红线自检 -> 违规列表（空列表 = 干净）。供验收门/测试/调用方复核：
     (a) 词根级：两份产物任何位置（含类名/注释）不得出现 FORBIDDEN_TOKENS；
     (b) 值级：把全部已选题的 stem/options 文本剔除后，残余（= 渲染层自己生成

@@ -167,7 +167,7 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 
 ## 4. 端点速查表
 
-共 **17 个端点**（`src/xuexing/server.py` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。15–17 为卷型出卷族（2026-10-06 新增/补记），由离线门 `tools/check_paper_spec.py`（结构）与 `tools/check_paper_render.py`（成品渲染）覆盖，不在 §6 的 15 项冒烟内。
+共 **20 个端点**（`src/xuexing/server.py` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。15–17 为卷型出卷族（2026-10-06 新增/补记），由离线门 `tools/check_paper_spec.py`（结构）与 `tools/check_paper_render.py`（成品渲染）覆盖，不在 §6 的 15 项冒烟内。18–20 为学生作答闭环（2026-10-06 新增），由离线门 `tools/check_exam_loop.py` 覆盖，同样不在 §6 的 15 项冒烟内。
 
 | # | 方法 路径 | 请求体 / 参数示例 | 关键响应字段 |
 |---|---|---|---|
@@ -189,6 +189,9 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 | 15 | POST `/papers/by-spec` | `{"spec_id": "spec_phy_jr_final", "seed": 42}`（可选 `difficulty_target=0.5`；`learner_id` 仅回显） | `spec_id` `seed` `subject` `stage` `usage` `duration_min` `total_points` `question_count` `sections[]`（大题-小题层级：`title` `form` `count` `points_each` `section_points` `questions[]{question_no,item_id,points}`，小题号全卷连续） `item_ids`；未知卷型 404；卷型分值矛盾（V8）/同型题不足/学段无题库 → 400（fail-closed） |
 | 16 | GET `/papers/by-spec/{spec_id}/render.html` | query 可选 `seed=42`、`difficulty_target=0.5`（与端点 15 同参数出同一份卷） | **自包含打印友好 HTML**（`text/html`；内联 CSS、`@page A4` 分页、卷头=卷型标题/满分/时长/满分注意、大题标题带每题分值、选项竖排、解答/填空留作答区、页脚页码；学生卷红线：不含任何作答依据，全卷无 answer/solution 字样）；未知卷型 404，领域错 400，query 形态错 422 |
 | 17 | GET `/papers/by-spec/{spec_id}/render.txt` | 同端点 16 | 纯文本简版（`text/plain`；同一次装订同题序，HTML 不可用时的备用） |
+| 18 | GET `/exam/{spec_id}/start` | query 必填 `learner_id`，可选 `seed=42`、`difficulty_target=0.5`【X-Org-Id：开卷时定机构】 | **可作答卷 HTML**（`text/html`；自包含、无 JS、每题恰一组 `name="item_{题号}"` 控件：单选/多选每选项一个 radio/checkbox、填空一个 text input、解答一个 textarea；卷头回显 learner 与会话号；学生卷红线同端点 16）；未知卷型 404，空 `learner_id` 400，缺 `learner_id` 422，越界 `difficulty_target` 400 |
+| 19 | POST `/exam/{session_id}/submit` | 原生表单 `item_1=…&item_3=…`（多选取同名字段多值，重复提交 409）或 JSON `{"answers": {"1": "B", "3": "50"}}`（值可为 str / list[str] / null） | **303** + `Location: /exam/{session_id}/report.html`（表单交卷即浏览器跳转）；客观题经 `POST /grade` 同一内核判分并落进 `/responses` 同一 store entry（随后 `/profile`、`/plan` 可见）；解答题等主观题不自动判分、不计分、不入画像（报告标「待批改」）。未知会话 404，越界题号/非法字段名/JSON 形态违规 400，重复交卷 409，会话过期 410 |
+| 20 | GET `/exam/{session_id}/report.html` | 路径参数即可 | **自包含报告页 HTML**（`text/html`；逐题对错标记、错题展开正确答案/解析、知识点掌握更新「本次前 → 后」、cluster 知识地图、薄弱点与下一步学习建议（`/plan` 同一 route 内核 + 母题推荐）、复习日程）；未知会话 404，未交卷 409，过期 410 |
 
 【X-Org-Id】= 接受可选多租户头（见 §3.4）。错误对照速记：400 = 语义错（内核 ValueError），404 = 资源不存在，422 = JSON 形态错。
 
@@ -276,6 +279,23 @@ curl -s -o NUL -w "%{http_code}" -X POST http://127.0.0.1:8000/trace -H "Content
 
 （Linux 侧把 `-o NUL` 换成 `-o /dev/null`，`^` 续行符换成 `\`。）
 
+学生作答闭环（端点 18–20）在浏览器里走最顺：开 `http://127.0.0.1:8000/exam/spec_phy_jr_final/start?learner_id=stu-1&seed=42` → 页面上作答 → 点「交卷」→ 303 自动落到报告页。命令行等价（会话号从 form action 里取）：
+
+```bash
+:: 开卷：从 form action 取会话号
+SID=$(curl -s "http://127.0.0.1:8000/exam/spec_phy_jr_final/start?learner_id=stu-1&seed=42" | grep -o 'action="/exam/[0-9a-f]*/submit"' | cut -d/ -f3)
+:: → 16 位十六进制会话号
+
+:: 交卷（原生表单；只看状态码与跳转目标）
+curl -s -o /dev/null -w "%{http_code} %{redirect_url}\n" -X POST \
+  "http://127.0.0.1:8000/exam/$SID/submit" --data-urlencode "item_1=A. 某选项"
+:: → 303 http://127.0.0.1:8000/exam/<会话号>/report.html
+
+:: 报告页
+curl -s "http://127.0.0.1:8000/exam/$SID/report.html" | head -3
+:: → <!DOCTYPE html> … 家长可读的自包含报告
+```
+
 停止：终端 1 **Ctrl+C**。全程无网络外呼，符合 G0-5。
 
 ## 7. 已知坑
@@ -290,6 +310,8 @@ curl -s -o NUL -w "%{http_code}" -X POST http://127.0.0.1:8000/trace -H "Content
 8. **grade7 语义断言钉题**：`tools/smoke_api.py` 的判分/归因检查钉住 `m7_010`（标答 `2`）、`m7_013`（标答 `-6`）与误解 `mc_sign_neg`（签名含 `5`）。未来注入批次重划 grade7 子库时若这些题变动，需同步改 `smoke_api.py`，否则冒烟会如实报 FAIL。
 9. **reviews 端点的 `kp_id` 其实是 learner_id**：`server.py:208` 调 `schedule(learner_id, …)` 把 learner_id 传进 schedule 的 `kp_id` 形参，响应 `kp_id` 字段因此等于路径里的 learner_id（冒烟第 6 项实测 `kp_id=smoke-1`）。内核 `schedule` 本身没错（`scheduler.py:24-31`），是胶水层字段穿线怪癖；消费该字段做按知识点统计会踩坑。
 10. **httpx 0.28 的 `ASGITransport` 仅 async**：同步 `httpx.Client(transport=ASGITransport(...))` 报 `'ASGITransport' object has no attribute 'handle_request'`（本日实测）。进程内直连要用 `httpx.AsyncClient` + `asyncio.run`，`tools/smoke_api.py` 即此写法。
+11. **`/exam/*` 的机构取自会话、不取请求头**（与 §3.4 的常规约定不同，这是有意的）：原生 `<form>` 发不了 `X-Org-Id`，故机构在开卷时（端点 18）记入会话，提交（端点 19）一律写回该机构域。后果：**开卷不带头 = 落 default 域**，事后带 `X-Org-Id` 去查 `/profile` 仍是 404（本日 curl 实测）。要分机构就在开卷那一步带 `X-Org-Id`。
+12. **作答闭环的会话是进程内内存态**（`exam.ExamStore`，默认 TTL 2 小时、单进程上限 512 个会话，超量淘汰最旧）：多 worker 部署下「开卷在一个 worker、交卷在另一个」会 404（会话不在那个进程里）。单进程起服（`smoke_api.py --serve`）无此问题；多进程部署需要先把 `ExamStore` 换成共享后端。
 
 ---
 
