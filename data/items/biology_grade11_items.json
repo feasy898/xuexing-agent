@@ -1770,6 +1770,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_llm_039",
+      "item_type": "solve",
+      "stem": "胰岛素和胰高血糖素是调节血糖的两种重要激素。请回答：（1）胰岛素降低血糖的作用原理是①______；（2）胰高血糖素升高血糖的作用原理是②______；（3）胰岛素分泌不足会引起糖尿病，其机理是③______。",
+      "answer": "①促进组织细胞加速摄取、利用和储存葡萄糖，抑制糖原分解和非糖物质转化为葡萄糖；②促进肝糖原分解，并促进非糖物质转化为葡萄糖；③胰岛素分泌不足，组织细胞摄取、利用和储存葡萄糖的能力下降，血糖浓度升高，超过一定限度后部分糖随尿排出，形成糖尿",
+      "kps": [
+        "kp_bio11_blood_sugar_regulation"
+      ],
+      "difficulty": 0.5,
+      "solution": "1. 胰岛素和胰高血糖素的作用：胰岛素的作用描述准确，胰高血糖素的作用描述准确。2. 糖尿病机理：胰岛素分泌不足描述准确，胰岛素抵抗描述准确，血糖浓度升高描述准确。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_hs_solve"
+    },
+    {
+      "id": "biology_gap_a023",
+      "item_type": "solve",
+      "stem": "某人缩手反射的传入神经受损，反射弧的其他结构都正常。请回答：（1）该缩手反射①______（填“能”或“不能”）完成，原因是②______；（3）此人手指被针刺时③______（填“能”或“不能”）产生痛觉，原因是④______。",
+      "answer": "（1）①不能；（2）②传入神经受损，感受器产生的兴奋无法传导至脊髓（神经中枢），反射弧不完整；（3）③不能；（4）④兴奋无法经传入神经传入脊髓，更无法沿脊髓白质上传至大脑皮层的感觉中枢",
+      "kps": [
+        "kp_bio11_reflex_arc_hs"
+      ],
+      "difficulty": 0.6,
+      "solution": "反射的发生依赖完整反射弧，传入神经断了，反射与感觉都无从谈起（对比：若传出神经受损，反射不能完成，但痛觉仍可产生）。",
+      "source": "original",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

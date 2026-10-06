@@ -3540,6 +3540,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_llm_036",
+      "item_type": "solve",
+      "stem": "有氧呼吸是细胞呼吸的主要形式。请回答：（1）有氧呼吸第一阶段的场所是①______，第二阶段的场所是②______，第三阶段的场所是③______；（2）三个阶段中释放能量最多的是第④______阶段；（3）有氧呼吸中氧气直接参与的是第⑤______阶段。",
+      "answer": "①细胞质基质；②线粒体基质；③线粒体内膜；④三；⑤三",
+      "kps": [
+        "kp_bio10_cell_respiration"
+      ],
+      "difficulty": 0.2,
+      "solution": "细胞有氧呼吸的第三阶段是在线粒体内膜上进行的，这是因为线粒体内膜上有进行氧化磷酸化的酶，可以催化[H]与氧结合生成水并释放大量能量。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_hs_solve"
+    },
+    {
+      "id": "biology_gap_a021",
+      "item_type": "solve",
+      "stem": "豌豆的高茎对矮茎为显性（由 D、d 控制）。请回答：（1）杂合高茎豌豆（Dd）自交，后代中高茎与矮茎的比例是①______；（2）后代矮茎植株的基因型是②______；（3）若取后代中全部高茎植株分别自交，则它们的后代中矮茎植株的比例是③______。",
+      "answer": "（1）3:1；（2）dd；（3）1/6",
+      "kps": [
+        "kp_bio10_segregation_law"
+      ],
+      "difficulty": 0.6,
+      "solution": "Dd×Dd→1DD:2Dd:1dd，高:矮＝3:1。后代高茎中 1/3DD、2/3Dd：1/3DD 自交后代全高茎，2/3Dd 自交后代矮茎占 2/3×1/4＝1/6，故高茎自交后代中矮茎占 1/6。（程序验算：2/3×1/4＝1/6 ✓）",
+      "source": "original",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
+    },
+    {
+      "id": "biology_gap_a022",
+      "item_type": "solve",
+      "stem": "在“绿叶中色素的提取和分离”实验中，滤纸条上出现了四条色素带。请回答：（1）分离色素的原理是①______；（2）滤纸条上从上到下的第二条色素带是②______；（3）研磨时加入少许二氧化硅的目的是③______。",
+      "answer": "（1）绿叶中的各种色素在层析液中的溶解度不同：溶解度高的随层析液在滤纸上扩散得快，反之则慢，从而使色素分离；（2）叶黄素；（3）使研磨充分",
+      "kps": [
+        "kp_bio10_photosynthesis"
+      ],
+      "difficulty": 0.55,
+      "solution": "四条色素带从上到下依次为胡萝卜素、叶黄素、叶绿素 a、叶绿素 b（扩散速度递减）。二氧化硅有助于破坏细胞结构使研磨充分；加碳酸钙可防止色素被破坏。",
+      "source": "original",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

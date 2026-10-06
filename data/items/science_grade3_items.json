@@ -9074,6 +9074,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "science_gap_llm_049",
+      "item_type": "solve",
+      "stem": "小明的妈妈在做菜时，需要将食盐和沙子加入水中。请回答以下问题：\n1. 我们怎么知道盐和沙子能不能溶解在水中呢？\n2. 有什么方法能帮助盐和沙子更快地溶解在水中呢？",
+      "answer": "1. 把食盐和沙子分别放入水中，搅拌后观察：食盐能溶解在水中，形成透明、均匀的食盐水；沙子不能溶解，静置后沉在水底。2. 用搅拌、用温水等方法可以加快食盐的溶解；沙子不能溶解于水，不存在加快溶解的方法。",
+      "kps": [
+        "kp_sci3_soluble"
+      ],
+      "difficulty": 0.2,
+      "solution": "{'Q1': '正确识别溶解现象：能溶解的物质会消失在水中，不能溶解的物质会留在水底。', 'Q2': '提供加快溶解的方法：搅拌、使用热水、将颗粒研碎等，这些方法都是符合物质溶解的原理。'}",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "sci_prim_experiment"
     }
   ]
 }

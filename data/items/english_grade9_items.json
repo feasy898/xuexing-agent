@@ -4799,6 +4799,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_llm_016",
+      "item_type": "solve",
+      "stem": "M: I've always wanted to participate in environmental protection activities. Do you have any suggestions, Wang Mei?\nW: Sure, I think you could join the local community clean-up project. It's great for the environment and a chance to meet new people.\nM: That sounds interesting. What time does it start?\nW: It starts at 8 am and ends at 12 pm. They provide lunch for all the volunteers.\nM: I'm a bit worried about the tasks we have to do.\nW: Don't worry, the tasks are quite simple. You just need to pick up litter and plant some trees.\nM: Okay, I'm ready to help!\nW: Great! Let's meet at the community center at 7:45 am.\n\nQuestions:\n1. What does Wang Mei suggest to M?\nA. Start an environmental club at school.\nB. Join the local community clean-up project.\nC. Organize a charity run.\n\n2. When does the clean-up project start?\nA. At 7:45 am.\nB. At 8 am.\nC. At 12 pm.\n\n3. What will the volunteers do in the clean-up project?\nA. Clean the streets.\nB. Paint the buildings.\nC. Pick up litter and plant trees.",
+      "answer": "1. B\n2. B\n3. C",
+      "kps": [
+        "kp_eng9_voc9_1600_master"
+      ],
+      "difficulty": 0.3,
+      "solution": "1. 答案A正确，因为王美建议M加入社区清洁活动。\n2. 答案A正确，因为对话中提到清洁活动从上午8点开始。\n3. 答案A正确，因为对话中提到志愿者的任务是捡垃圾和种树。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
     }
   ]
 }

@@ -6161,6 +6161,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chinese_gap_a002",
+      "item_type": "fill",
+      "stem": "王维《使至塞上》中，以传神笔墨勾勒塞外雄浑壮丽景象、被王国维赞为“千古壮观”的名句是：①______，②______。",
+      "answer": "①大漠孤烟直；②长河落日圆",
+      "kps": [
+        "kp_chi8_tangpoem5"
+      ],
+      "difficulty": 0.5,
+      "solution": "出自八上《使至塞上》。一个“直”、一个“圆”，精准写出塞外景物的苍劲与浑圆；“孤烟”指烽烟（一说炊烟）。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
+    },
+    {
+      "id": "chinese_gap_a004",
+      "item_type": "fill",
+      "stem": "《红星照耀中国》的作者是美国记者①______。1936 年，他冲破重重封锁进入②______苏区，成为第一个采访红色中国的西方记者，向全世界真实报道了中国共产党和红军的故事。",
+      "answer": "①埃德加·斯诺；②陕北（西北）",
+      "kps": [
+        "kp_chi8_book_hongxing"
+      ],
+      "difficulty": 0.35,
+      "solution": "埃德加·斯诺 1936 年 6 月进入陕北苏区采访，写成《红星照耀中国》（中译本曾名《西行漫记》）。注意是“陕北苏区”，不是“长征路上”。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
     }
   ]
 }

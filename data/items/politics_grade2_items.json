@@ -2996,6 +2996,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "politics_gap_a027",
+      "item_type": "fill",
+      "stem": "把交通信号灯和正确的做法连起来（把字母填在横线上）。\n1. 红灯亮时　______\n2. 绿灯亮时　______\n3. 黄灯亮时　______\n4. 过路口既无信号灯又无斑马线　______\nA. 在停止线外耐心等候　　B. 走人行横道，先看左再看右，安全通过\nC. 已越过停止线的继续通行，未越线的停在原地等候　　D. 一停二看三通过，确认安全后快步通过",
+      "answer": "1-A；2-B；3-C；4-D",
+      "kps": [
+        "kp_pol2_traffic_sign"
+      ],
+      "difficulty": 0.3,
+      "solution": "红灯停、绿灯行、黄灯亮时不抢行（越线继续走、未越线停）。没有信号灯和斑马线路口要“一停二看三通过”。",
+      "source": "original",
+      "form": "matching",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "politics_authored"
     }
   ]
 }

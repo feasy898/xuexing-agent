@@ -61,6 +61,16 @@
   work/merge_subject_safe.py 按 {学科}-gen-w1-20261003 签名落库——题库内三批
   实际签名均为 *-gen-w1-20261003，POL_DENSITY_AGENTS/HIS_DENSITY_AGENTS 按
   台账口径登记（库内现匹配 0 题，独立盲解回填若改用新 id 须同步本闭式）。
+- 2026-10-06 卷型缺口补齐批 ×3（单代理自验 known issue，题内 verification
+  记录即为覆盖凭证；check_paper_spec 12 套 FAIL-CLOSED 卷型全部转 OK）：
+  数学模板/人工命题 50 题（mgap_*，g1-12，签名 math-template-gen-20261006，
+  source=original，答案由代码精确分数验算）；LLM（glm-4-flash）初稿 + 会话内
+  人工逐题修订 18 题（english/biology/geography/science 的 *_gap_llm_*，签名
+  gapfill-gen-20261006，source=llm_generated）；LLM 初稿 34 稿人工审核未过
+  （泄漏答案/事实错误/结构残破，弃稿理由见 worklog.md）后人工命题 29 题
+  （chinese/english/biology/politics 的 *_gap_a0*，签名 gapfill-author-20261006，
+  source=original）。共 97 题，独立盲解未运行，逐题 note 盲解延期申报；
+  修订与弃稿明细见 worklog.md 与该批 commit message。
 
 三次 ledger 运行各自验证：ledger 逐题覆盖其子库且与标答判等；manifest 与
 现场重跑裁决逐位一致；回填记录 agents 与 manifest 代理身份一致、
@@ -286,6 +296,43 @@ def _is_geo(it):
     return ag in (GEO_AGENTS_HS, GEO_AGENTS_JR)
 
 
+# 2026-10-06 卷型缺口补齐批 ×3（单代理自验 known issue，与 phy/che 批同口径；
+# 题内 verification 记录即为覆盖凭证，逐题 note=盲解延期申报）：
+# - math-template-gen-20261006：数学 50 题（mgap_*，g1-12）——程序模板/人工命题，
+#   source=original，答案由代码以精确分数验算（gen_math_templates.py）；
+# - gapfill-gen-20261006：LLM（glm-4-flash）初稿 + 会话内人工逐题修订批 18 题
+#   （english/biology/geography/science 的 *_gap_llm_*，source=llm_generated）；
+# - gapfill-author-20261006：LLM 初稿 34 稿未过人工审核（泄漏答案/事实错误/
+#   结构残破，逐条弃稿理由见 worklog），改由会话内人工命题批 29 题
+#   （chinese/english/biology/politics 的 *_gap_a0*，source=original）。
+# 三批共 97 题；独立盲解通道未运行，回填 [gen, indep] 后改登记并撤销收口。
+GAPFILL_TMPL_AGENTS = ["math-template-gen-20261006"]
+GAPFILL_TMPL_PREFIX = "mgap_"
+GAPFILL_GEN_AGENTS = ["gapfill-gen-20261006"]
+GAPFILL_GEN_PREFIXES = ("english_gap_llm_", "biology_gap_llm_",
+                        "geography_gap_llm_", "science_gap_llm_")
+GAPFILL_AUTHOR_AGENTS = ["gapfill-author-20261006"]
+GAPFILL_AUTHOR_PREFIXES = ("chinese_gap_a0", "english_gap_a0",
+                           "biology_gap_a0", "politics_gap_a0")
+
+
+def _is_gapfill_tmpl(it):
+    return it.get("verification", {}).get("agents") == GAPFILL_TMPL_AGENTS
+
+
+def _is_gapfill_gen(it):
+    return it.get("verification", {}).get("agents") == GAPFILL_GEN_AGENTS
+
+
+def _is_gapfill_author(it):
+    return it.get("verification", {}).get("agents") == GAPFILL_AUTHOR_AGENTS
+
+
+def _is_gapfill(it):
+    return (_is_gapfill_tmpl(it) or _is_gapfill_gen(it)
+            or _is_gapfill_author(it))
+
+
 # deepen/扩库批（代理对与落库记录原序一致；未登记批次落库即失败，fail-closed）
 DEEPEN_AGENTS_BY_GRADE = {
     "m7": [["step-3.7-flash", "g7-deepen-review-20260930"]],
@@ -343,9 +390,10 @@ def night_bank(night_items, ledger):
 @pytest.fixture(scope="module")
 def p34_items():
     # 2026-10-02 wave3 扩库批的 3-4 年级新题不属于本运行，按代理身份剔除；
-    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p3_*/kp_p4_* 补题）同理剔除
+    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p3_*/kp_p4_* 补题）与 2026-10-06
+    # 卷型缺口补齐批（GAPFILL_TMPL_AGENTS，mgap_*）同理剔除
     return [it for it in _load_items(P34_ITEM_FILES)
-            if not _is_wave3(it) and not _is_mat(it)]
+            if not _is_wave3(it) and not _is_mat(it) and not _is_gapfill(it)]
 
 
 @pytest.fixture(scope="module")
@@ -386,9 +434,10 @@ def p34_queue():
 @pytest.fixture(scope="module")
 def p12_items():
     # 2026-10-02 wave3 扩库批的 1-2 年级新题不属于本运行，按代理身份剔除；
-    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p1_*/kp_p2_* 补题）同理剔除
+    # 2026-10-04 zero 收口批（MAT_AGENTS，kp_p1_*/kp_p2_* 补题）与 2026-10-06
+    # 卷型缺口补齐批（GAPFILL_TMPL_AGENTS，mgap_*）同理剔除
     return [it for it in _load_items(P12_ITEM_FILES)
-            if not _is_wave3(it) and not _is_mat(it)]
+            if not _is_wave3(it) and not _is_mat(it) and not _is_gapfill(it)]
 
 
 @pytest.fixture(scope="module")
@@ -795,11 +844,38 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert all(i.startswith(CHI_PREFIX) for i in chi_ids), "语文批题 id 前缀须为 chi_"
     assert not (chi_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids)), (
         "语文批与既有批次重叠")
+    # 2026-10-06 卷型缺口补齐批 ×3 闭式（单代理自验 known issue，见文件头）：
+    # 数学模板/人工命题 50 题（mgap_*）、LLM 初稿+人工修订 18 题（*_gap_llm_*）、
+    # LLM 弃稿后人工命题 29 题（*_gap_a0*），共 97 题；下限式断言。
+    gapfill_tmpl_ids = {it["id"] for it in all_items if _is_gapfill_tmpl(it)}
+    gapfill_gen_ids = {it["id"] for it in all_items if _is_gapfill_gen(it)}
+    gapfill_author_ids = {it["id"] for it in all_items if _is_gapfill_author(it)}
+    assert len(gapfill_tmpl_ids) >= 50, (
+        "数学缺口模板批规模异常（< 50）：扩库须先登记 GAPFILL_TMPL_AGENTS 并在本闭式同步")
+    assert all(i.startswith(GAPFILL_TMPL_PREFIX) for i in gapfill_tmpl_ids), (
+        "数学缺口模板批题 id 前缀须为 mgap_")
+    assert len(gapfill_gen_ids) >= 18, (
+        "LLM 初稿修订批规模异常（< 18）：扩库须先登记 GAPFILL_GEN_AGENTS 并在本闭式同步")
+    assert all(i.startswith(GAPFILL_GEN_PREFIXES) for i in gapfill_gen_ids), (
+        "LLM 初稿修订批题 id 前缀须为 *_gap_llm_*")
+    assert len(gapfill_author_ids) >= 29, (
+        "人工命题批规模异常（< 29）：扩库须先登记 GAPFILL_AUTHOR_AGENTS 并在本闭式同步")
+    assert all(i.startswith(GAPFILL_AUTHOR_PREFIXES) for i in gapfill_author_ids), (
+        "人工命题批题 id 前缀须为 *_gap_a0*")
+    gapfill_all = gapfill_tmpl_ids | gapfill_gen_ids | gapfill_author_ids
+    assert len(gapfill_all) == len(gapfill_tmpl_ids) + len(gapfill_gen_ids) + len(gapfill_author_ids), (
+        "缺口补齐三批互不重叠（按代理签名圈定，不得交叉）")
+    assert not (gapfill_all
+                & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | eng_dens_ids
+                   | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
+                   | mat_ids | pol_den_ids | his_den_ids | eng_arb_ids | mat_arb_ids)), (
+        "卷型缺口补齐批与既有批次重叠")
     # 全库划分：每题恰属一个 ledger 运行或一个扩库批
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
         | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
         | mat_ids | pol_den_ids | his_den_ids | eng_arb_ids | mat_arb_ids
+        | gapfill_tmpl_ids | gapfill_gen_ids | gapfill_author_ids
     ) == all_ids
 
 
@@ -847,6 +923,15 @@ def test_verification_agents_match_owning_run(all_items, ledger):
         elif rec["agents"] == HIS_DENSITY_AGENTS:
             assert iid.startswith(HIS_PREFIXES), iid
             assert rec.get("single_agent") is True, iid  # 2026-10-04 历史收尾批台账 id（现库内 0 题）
+        elif rec["agents"] == GAPFILL_TMPL_AGENTS:
+            assert iid.startswith(GAPFILL_TMPL_PREFIX), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-06 数学缺口模板批（程序验算）
+        elif rec["agents"] == GAPFILL_GEN_AGENTS:
+            assert iid.startswith(GAPFILL_GEN_PREFIXES), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-06 LLM 初稿+人工修订批
+        elif rec["agents"] == GAPFILL_AUTHOR_AGENTS:
+            assert iid.startswith(GAPFILL_AUTHOR_PREFIXES), iid
+            assert rec.get("single_agent") is True, iid  # 2026-10-06 LLM 弃稿后人工命题批
         elif rec["agents"] in (CHI_AGENTS, CHI_AGENTS_DUAL):
             assert iid.startswith(CHI_PREFIX), iid
             if rec["agents"] == CHI_AGENTS:

@@ -6874,6 +6874,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chinese_gap_a001",
+      "item_type": "fill",
+      "stem": "王湾《次北固山下》中，描写时序交替中的景物，蕴含新旧更替自然理趣的名句是：①______，②______。",
+      "answer": "①海日生残夜；②江春入旧年",
+      "kps": [
+        "kp_chi7_poem_dictation"
+      ],
+      "difficulty": 0.5,
+      "solution": "出自七上《次北固山下》。注意“生”不要误写为“升”，“残夜”指天将亮之时。这两句写海日生于残夜、江春闯入旧年，时序交替中蕴含哲理。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
+    },
+    {
+      "id": "chinese_gap_a003",
+      "item_type": "fill",
+      "stem": "《西游记》的作者是明代小说家①______。孙悟空大闹天宫后被如来佛祖压在②______下，五百年后经观音菩萨点化，保护唐僧西天取经。",
+      "answer": "①吴承恩；②五行山",
+      "kps": [
+        "kp_chi7_book_xiyou"
+      ],
+      "difficulty": 0.35,
+      "solution": "《西游记》作者吴承恩，明代人。孙悟空被压五行山（书中亦称“两界山”）下五百年，是全书前七回的高潮收束。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
     }
   ]
 }

@@ -1139,6 +1139,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chinese_gap_a008",
+      "item_type": "fill",
+      "stem": "白居易《琵琶行》中，写诗人与琵琶人同为沦落之人，以“同”“相逢”二字道尽同病相怜之情的名句是：①______，②______。",
+      "answer": "①同是天涯沦落人；②相逢何必曾相识",
+      "kps": [
+        "kp_chi12_gk_dictation"
+      ],
+      "difficulty": 0.5,
+      "solution": "选必下/72 篇《琵琶行》名句。“天涯沦落”点身世之悲，“何必曾相识”写相知之切。注意“涯”不要误写为“崖”。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
     }
   ]
 }

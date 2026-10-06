@@ -11615,6 +11615,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "science_gap_llm_051",
+      "item_type": "solve",
+      "stem": "实验中，小明把同一把钢尺伸出桌面不同的长度，用手拨动钢尺伸出桌面的一端，观察并记录听到的声音。请回答以下问题：\n1. 小明改变什么条件来探究声音的高低（音调）与物体振动快慢的关系？\n2. 小明听到了什么样的变化？\n3. 小明得出了什么结论？",
+      "answer": "1. 改变钢尺伸出桌面的长度（同时控制每次拨动的力度相同）。2. 钢尺伸出桌面越短，振动越快，听到的声音越高；伸出桌面越长，振动越慢，声音越低。3. 结论：音调的高低与声源振动的快慢有关，振动越快，音调越高。",
+      "kps": [
+        "kp_sci5_sound_pitch"
+      ],
+      "difficulty": 0.5,
+      "solution": "{'Q1': '改变钢尺伸出桌面的长度是为了改变钢尺振动的快慢，从而观察声音的高低（音调）变化。', 'Q2': '听到声音的变化是音调的变化，即声音的高低。', 'Q3': '结论是基于观察到的现象，通过科学推理得出的，符合声音的高低（音调）与物体振动快慢的关系。'}",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "sci_prim_experiment"
     }
   ]
 }

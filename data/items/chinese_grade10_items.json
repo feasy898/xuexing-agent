@@ -9110,6 +9110,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "chinese_gap_a007",
+      "item_type": "fill",
+      "stem": "《荀子·劝学》中，以“金”“石”为喻强调学习贵在坚持的名句是：①______，②______。",
+      "answer": "①锲而不舍；②金石可镂",
+      "kps": [
+        "kp_chi10_dictation_high"
+      ],
+      "difficulty": 0.5,
+      "solution": "出自必修上《劝学》：“锲而舍之，朽木不折；锲而不舍，金石可镂。”注意“锲”字从“钅”，“镂”不要误写为“漏”。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
+    },
+    {
+      "id": "chinese_gap_a009",
+      "item_type": "fill",
+      "stem": "下面句子有语病，请按要求修改。\n“博物馆展出了两千多年前新出土的文物。”\n①这个句子的病因是：______；②修改后的正确说法是：______。",
+      "answer": "①语序不当（表意矛盾）——“两千多年前”错放在“新出土”前，好像文物两千多年前就出土了；②改为“博物馆展出了新出土的两千多年前的文物。”",
+      "kps": [
+        "kp_chi10_languse"
+      ],
+      "difficulty": 0.55,
+      "solution": "多层定语语序不当的经典题：时间（出土先后）与文物年代两层意思叠放错位，造成歧义与矛盾。调整定语顺序即可。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
+    },
+    {
+      "id": "chinese_gap_a010",
+      "item_type": "fill",
+      "stem": "阅读下面的句子，完成①②两空。\n“莫高窟保存着规模宏大的石窟群，殿宇巍峨，彩塑精美，真可谓①______（妙手回春／美轮美奂／络绎不绝／恰到好处）。窟中的壁画——飞天，衣袂飘飘，仿佛真的在天空中飞翔。句中破折号的作用是②______（填：解释说明／声音延长／话题转换）。",
+      "answer": "①美轮美奂；②解释说明",
+      "kps": [
+        "kp_chi10_languse"
+      ],
+      "difficulty": 0.5,
+      "solution": "“美轮美奂”多形容建筑高大华美，用于石窟群恰当；“妙手回春”指医术，“络绎不绝”指人流，“恰到好处”指分寸，均不合语境。破折号后“飞天”是对“壁画”内容的解释说明。",
+      "source": "original",
+      "form": "fill",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "chinese_authored"
     }
   ]
 }

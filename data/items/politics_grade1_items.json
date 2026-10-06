@@ -3107,6 +3107,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "politics_gap_a026",
+      "item_type": "fill",
+      "stem": "把下面的安全标志和它的含义连起来（把字母填在横线上）。\n1. 红色圆形中间一道白杠　______\n2. 黄色三角形中间一个黑色感叹号　______\n3. 蓝色圆形中间一个白色箭头　______\n4. 红色八角形里写着 STOP　______\nA. 允许通行、按指示方向前进　　B. 注意安全、当心危险\nC. 禁止通行　　D. 停车让行",
+      "answer": "1-C；2-B；3-A；4-D",
+      "kps": [
+        "kp_pol1_safety_sign"
+      ],
+      "difficulty": 0.25,
+      "solution": "红色＋圆形＋白杠＝禁止类（禁止通行）；黄色三角形＝警告类（注意危险）；蓝色圆形箭头＝指示类（允许通行）；八角形 STOP＝停车让行。",
+      "source": "original",
+      "form": "matching",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "politics_authored"
     }
   ]
 }

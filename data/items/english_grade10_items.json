@@ -5529,6 +5529,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_a011",
+      "item_type": "solve",
+      "stem": "【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。\nGetting Better at Time Management\nMany students say they do not have enough time for study, hobbies or rest. In fact, the problem is usually not the amount of time but the way it is used. ①____\nFirst, write down everything you need to do tomorrow before you go to bed. A short list on paper frees your mind from trying to remember ten things at once. ②____ When each task has a clear order, it is much easier to start working instead of worrying.\nSecond, deal with the most difficult task first. Most of us start with easy jobs because they feel pleasant, but then the hardest task is left for the evening when we are tired. ③____\nThird, protect your rest time. Some students cut their sleeping hours to gain two more hours of study, and then spend the next day fighting sleep in class. ④____ A well-rested brain remembers more in forty minutes than a tired one does in two hours.\nTime management is not a magic skill. ⑤____ Start tonight: make a list, rank the tasks, and go to bed on time.\nA. Then rank the tasks from the most to the least important.\nB. It is a set of small choices you make every day.\nC. Doing the hardest job first actually saves energy and time.\nD. In the long run, this habit hurts both health and grades.\nE. Here are three simple habits that can help.\nF. Time flies when you are doing something you enjoy.\nG. Ask your teachers to give you less homework.",
+      "answer": "E-A-C-D-B",
+      "kps": [
+        "kp_eng10_red10_structure_read"
+      ],
+      "difficulty": 0.5,
+      "solution": "①总起句（引出三个习惯）→E；②承接“写下清单”的动作顺序→A；③承接“先做难事”的观点→C；④承接“熬夜学习”的危害→D；⑤呼应主题句“不是魔法而是小选择”→B。F、G 与语篇话题（自我管理）不符，为多余选项。",
+      "source": "original",
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "english_authored"
+    },
+    {
+      "id": "english_gap_a012",
+      "item_type": "solve",
+      "stem": "【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。\nDon't Skip Breakfast\nSome students leave home without breakfast to save time in the morning. ①____ After about ten hours without food, a person's blood sugar is at its lowest level. ②____ Without enough glucose, it is hard to listen, remember and think clearly in the first lessons. Teachers often notice that hungry students lose focus long before lunch. ③____\nA good breakfast does not have to be big or expensive. ④____ Even a banana with a glass of milk is much better than nothing. What matters is giving the body energy before study begins.\nIn the long run, eating breakfast also helps the body keep a stable weight and a better mood. ⑤____ Ten quiet minutes at the table can make the whole school day easier.\nA. That is why students who eat breakfast often do better in morning classes.\nB. So tomorrow morning, give yourself ten minutes for a real breakfast.\nC. However, this habit does more harm than good.\nD. Whole-grain bread, eggs, milk and fruit are all good choices.\nE. The brain in particular lives on glucose in the blood.\nF. Skipping dinner is popular among office workers.\nG. Coffee is one of the most popular drinks in the world.",
+      "answer": "C-E-A-D-B",
+      "kps": [
+        "kp_eng10_dis10_explicit_cohesion"
+      ],
+      "difficulty": 0.5,
+      "solution": "①“However”转折承接上文“不吃早饭省时间”→C；②“blood sugar 最低”与“大脑靠血糖”语义复现衔接→E；③上句“饿着肚子走神”引出结果→A；④上句“不必丰盛昂贵”引出具体食物→D；⑤尾段呼吁行动→B。F、G 偏离“早餐”话题，为多余选项。",
+      "source": "original",
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "english_authored"
     }
   ]
 }

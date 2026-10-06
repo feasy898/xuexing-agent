@@ -5960,6 +5960,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geography_gap_llm_044",
+      "item_type": "solve",
+      "stem": "某湖泊近期出现水体富营养化现象，水质恶化严重。\n（1）分析该湖泊水体富营养化的主要成因。\n（2）列举治理该湖泊水体富营养化的具体措施。",
+      "answer": "（1）主要成因：①城市生活污水和工业废水未经处理直接排入湖泊，氮、磷等营养物质增多；②流域内农业面源污染（化肥、农药随地表径流入湖）；③湖泊水体更新慢、自净能力弱。（2）治理措施：①严控污水排放，建设污水处理设施，实现达标排放；②推广科学施肥，减少化肥农药使用，控制面源污染；③实施生态修复（种植水生植物、清淤、生态引水）；④加强水质监测，落实河（湖）长制。",
+      "kps": [
+        "kp_geo11_pollution_governance"
+      ],
+      "difficulty": 0.3,
+      "solution": "{'correct': ['(1)答对工业废水和生活污水排放可给1分，答对农业面源污染和旅游活动污染可各给1分，答对城市生活污水未经处理直接排放可给1分；\\n(2)答对污水处理厂建设和污水管网建立可给1分，答对污水处理能力加强可给1分，答对生态修复工程和种植水生植物可各给1分，答对水质监测和河长制可给1分。']}",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "geo_hs_solve"
     }
   ]
 }

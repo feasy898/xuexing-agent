@@ -1,0 +1,182 @@
+# 卷型缺口补齐批 —— 抽检样例（每类型 3 题，人工可读）
+
+== math_hs 多选（程序模板，代码验算）
+  ◆ mgap_msmc_004 [math_grade11_items.json] 难度0.5 kp=kp_h11_vec_dot_product source=original
+    题干：关于平面向量 a、b（均非零向量）与复数，下列说法正确的是（多选）： / A. 若 a∥b，则存在实数 λ 使 b＝λa / B. 若 a·b＝0，则 a⊥b / C. 复数 z＝3＋4i 的模为 5 / D. 若复数 z＝a＋bi 与 2＋3i 相等（a, b∈R），则只需 a＝2
+    答案：A,B,C
+  ◆ mgap_msmc_006 [math_grade11_items.json] 难度0.55 kp=kp_h11_prob_props source=original
+    题干：关于随机事件 A、B 的概率，下列说法正确的是（多选）： / A. 若事件 A 与 B 互斥，则 P(A∪B)＝P(A)＋P(B) / B. 若 P(A)＝0.3，则 P(A 的对立事件)＝0.7 / C. 互斥事件一定是对立事件 / D. 若 P(A∪B)＝1，则 A 与 B 一定是对立事件
+    答案：A,B
+  ◆ mgap_msmc_001 [math_grade10_items.json] 难度0.45 kp=kp_h10_set_relations source=original
+    题干：下列命题正确的是（多选）： / A. ∅ 是任何集合的子集 / B. {1, 2, 3} 的真子集个数是 7 / C. 若 A⊆B 且 B⊆A，则 A＝B / D. 任何集合都有真子集
+    答案：A,B,C
+
+== math_primary 判断（程序模板）
+  ◆ mgap_tf_005 [math_grade3_items.json] 难度0.25 kp=kp_p3_measure_units source=original
+    题干：判断：1 吨 ＝ 1000 千克。（对的画“√”，错的画“×”）
+    答案：√
+  ◆ mgap_tf_006 [math_grade3_items.json] 难度0.3 kp=kp_p3_measure_units source=original
+    题干：判断：3 千米 ＝ 300 米。（对的画“√”，错的画“×”）
+    答案：×
+  ◆ mgap_tf_001 [math_grade1_items.json] 难度0.15 kp=kp_p1_carry20 source=original
+    题干：判断：9 ＋ 6 ＝ 15。（对的画“√”，错的画“×”）
+    答案：√
+
+== math_primary 应用题（程序模板）
+  ◆ mgap_wp_002 [math_grade3_items.json] 难度0.35 kp=kp_p3_addsub_3digit source=original
+    题干：书店原来运进故事书 480 本，第一天卖出 265 本，后来又运来 180 本。书店现在有故事书多少本？
+    答案：395 本
+  ◆ mgap_wp_003 [math_grade3_items.json] 难度0.3 kp=kp_p3_mult_2x2digit source=original
+    题干：学校礼堂每排有 24 个座位，共 12 排。这个礼堂一共有多少个座位？
+    答案：288 个
+  ◆ mgap_wp_001 [math_grade2_items.json] 难度0.25 kp=kp_p2_muldiv_rel source=original
+    题干：妈妈去超市买苹果，每千克 3 元，买了 4 千克。一共要付多少元？
+    答案：12 元
+
+== math_primary 看图列式/作图（程序模板）
+  ◆ mgap_cons_001 [math_grade3_items.json] 难度0.5 kp=kp_p3_perimeter source=original
+    题干：在方格纸（每格边长 1 厘米）上画一个周长是 18 厘米的长方形。你画的长方形长几格、宽几格？
+    答案：长 5 格、宽 4 格（答案不唯一：长＋宽＝9 格即可）
+  ◆ mgap_cons_004 [math_grade6_items.json] 难度0.4 kp=kp_p6_circle source=original
+    题干：以点 O 为圆心、半径 2 厘米画一个圆，并在圆中画出一条直径。这条直径长多少厘米？
+    答案：直径 4 厘米
+  ◆ mgap_cons_002 [math_grade4_items.json] 难度0.45 kp=kp_p4_angle_measure source=original
+    题干：用量角器画一个 120° 的角，并简要写出画法。
+    答案：①画一条射线 OA；②量角器中心与端点 O 重合、零刻度线与射线 OA 重合，找到 120° 刻度处点一个点 B；③连接 O、B 并延长，∠AOB 即为 120°。
+
+== math_jr 计算（程序模板）
+  ◆ mgap_jcomp_004 [math_grade9_items.json] 难度0.5 kp=kp_qe_factor source=original
+    题干：解方程：x² − 5x ＋ 6 ＝ 0。
+    答案：x₁ ＝ 2，x₂ ＝ 3
+  ◆ mgap_jcomp_003 [math_grade8_items.json] 难度0.5 kp=kp_radical_ops source=original
+    题干：计算：√12 × √3 − √8 ÷ √2。
+    答案：4
+  ◆ mgap_jcomp_001 [math_grade7_items.json] 难度0.4 kp=kp_eq_solve source=original
+    题干：解方程：3x ＋ 2 ＝ x ＋ 10。
+    答案：x ＝ 4
+
+== math_jr 统计与概率材料（程序模板）
+  ◆ mgap_jstat_002 [math_grade9_items.json] 难度0.55 kp=kp_re_list source=original
+    题干：袋中装有 3 个红球和 2 个白球，除颜色外完全相同。搅匀后从中任意摸出 2 个球，恰好摸出 1 个红球和 1 个白球的概率是多少？
+    答案：3/5
+  ◆ mgap_jstat_001 [math_grade8_items.json] 难度0.45 kp=kp_median_mode source=original
+    题干：某小组 10 名男生立定跳远成绩（单位：cm）如下：152、155、158、160、160、162、165、168、160、172。这组数据的中位数和众数各是多少？
+    答案：中位数 160 cm；众数 160 cm
+
+== math_jr 尺规作图/几何证明（人工命题）
+  ◆ mgap_jcons_001 [math_grade8_items.json] 难度0.5 kp=kp_isosceles_triangle source=original
+    题干：尺规作图（保留作图痕迹，并写出作法）：已知线段 AB，求作线段 AB 的垂直平分线。
+    答案：作法：①分别以点 A、B 为圆心，以大于 ½AB 的长为半径画弧，两弧分别交于点 P、Q；②作直线 PQ。直线 PQ 即为线段 AB 的垂直平分线。依据：到线段两端距离相等的点在线段的垂直平分线上（PA＝PB，QA＝QB
+  ◆ mgap_jcons_002 [math_grade8_items.json] 难度0.5 kp=kp_bisector_property source=original
+    题干：尺规作图（保留作图痕迹，并写出作法）：已知 ∠AOB，求作射线 OP，使 OP 平分 ∠AOB。
+    答案：作法：①以点 O 为圆心、适当长为半径画弧，交 OA 于点 M，交 OB 于点 N；②分别以点 M、N 为圆心、大于 ½MN 的长为半径画弧，两弧在 ∠AOB 的内部交于点 P；③画射线 OP。射线 OP 即为 ∠AOB
+  ◆ mgap_jproof_001 [math_grade8_items.json] 难度0.55 kp=kp_isosceles_triangle source=original
+    题干：在 △ABC 中，AB＝AC，点 D、E 分别在边 AB、AC 上，且 AD＝AE。求证：△ABE ≌ △ACD。
+    答案：证明：在 △ABE 和 △ACD 中，AB＝AC（已知），∠A＝∠A（公共角），AE＝AD（已知），∴△ABE≌△ACD（SAS）。
+
+== math_hs 计算（程序模板）
+  ◆ mgap_hcomp_001 [math_grade11_items.json] 难度0.55 kp=kp_h11_law_of_cosines source=original
+    题干：在 △ABC 中，内角 A、B、C 所对的边分别为 a、b、c，已知 a＝5，b＝8，C＝60°。（1）求边 c；（2）求 cosB。
+    答案：（1）c ＝ 7；（2）cosB ＝ 1/7
+  ◆ mgap_hcomp_002 [math_grade11_items.json] 难度0.5 kp=kp_h11_law_of_sines source=original
+    题干：在 △ABC 中，已知 C＝90°，A＝30°，斜边 c＝8。解这个直角三角形（求边 a、b 和角 B）。
+    答案：a ＝ 4，b ＝ 4√3，B ＝ 60°
+  ◆ mgap_hcomp_006 [math_grade11_items.json] 难度0.5 kp=kp_h11_classical_prob source=original
+    题干：同时掷两枚质地均匀的骰子，设两枚骰子点数之和为 X。（1）求 X＝7 的概率；（2）求 X 为偶数的概率。
+    答案：（1）1/6；（2）1/2
+
+== math_hs 证明/压轴综合（程序模板）
+  ◆ mgap_hproof_001 [math_grade11_items.json] 难度0.6 kp=kp_h11_line_plane_perp source=original
+    题干：在正方体 ABCD−A₁B₁C₁D₁ 中，棱 AA₁⊥底面 ABCD。求证：BD ⊥ 平面 ACC₁A₁。
+    答案：证明：①正方形 ABCD 中对角线互相垂直，故 BD⊥AC。②AA₁⊥平面 ABCD（正方体侧棱垂直于底面），BD⊂平面 ABCD，故 BD⊥AA₁。③AA₁∩AC＝A，AA₁、AC⊂平面 ACC₁A₁，且 BD 不在该
+  ◆ mgap_hproof_002 [math_grade12_items.json] 难度0.6 kp=kp_h12_arith_judge source=original
+    题干：已知数列 {aₙ} 满足 a₁＝1，aₙ₊₁＝2aₙ＋1（n∈N*）。设 bₙ＝aₙ＋1，证明：{bₙ} 是等比数列，并求 {aₙ} 的通项公式。
+    答案：证明：bₙ₊₁＝aₙ₊₁＋1＝2aₙ＋2＝2(aₙ＋1)＝2bₙ，且 b₁＝a₁＋1＝2≠0，故 {bₙ} 是首项为 2、公比为 2 的等比数列。于是 bₙ＝2·2ⁿ⁻¹＝2ⁿ，即 aₙ＝2ⁿ−1。（检验：a₅＝2⁵−1
+  ◆ mgap_hsyn_001 [math_grade11_items.json] 难度0.7 kp=kp_h11_ellipse_def source=original
+    题干：已知椭圆 C 的两个焦点为 F₁(−1, 0)、F₂(1, 0)，且椭圆 C 经过点 P(0, √3)。（1）求椭圆 C 的标准方程；（2）过原点且斜率为 1 的直线 l 与 C 交于 A、B 两点，求弦长 |AB|。
+    答案：（1）x²/4 ＋ y²/3 ＝ 1；（2）|AB| ＝ 4√42/7
+
+== chi_jr/chi_hs 默写·名著·语言运用（人工命题）
+  ◆ chinese_gap_a005 [chinese_grade9_items.json] 难度0.5 kp=kp_chi9_kaodian_zeng source=original
+    题干：下面句子有语病，请按要求修改。 / “通过这次社会实践活动，使同学们开阔了眼界，增长了才干。” / ①这个句子的病因是：______；②修改方法是：______。
+    答案：①成分残缺（缺主语）——“通过……使……”连用，使句子失去了主语；②删去“通过”或删去“使”，让“同学们”或“这次社会实践活动”充当主语
+  ◆ chinese_gap_a006 [chinese_grade9_items.json] 难度0.4 kp=kp_chi9_kaodian_zeng source=original
+    题干：下列句子中加点成语使用是否恰当？请判断并说明理由。 / “他演讲时声音抑扬顿挫，富有感染力，赢得了台下阵阵掌声。” / （抑扬顿挫：形容声音高低起伏、停顿转折，和谐悦耳） / ①判断：______；②理由：______。
+    答案：①恰当；②“抑扬顿挫”形容声音的高低起伏和停顿转折，用来形容演讲的声音节奏恰当贴切，与“富有感染力”“掌声”语境相合
+  ◆ chinese_gap_a008 [chinese_grade12_items.json] 难度0.5 kp=kp_chi12_gk_dictation source=original
+    题干：白居易《琵琶行》中，写诗人与琵琶人同为沦落之人，以“同”“相逢”二字道尽同病相怜之情的名句是：①______，②______。
+    答案：①同是天涯沦落人；②相逢何必曾相识
+
+== eng_jr 听力（LLM 初稿+人工修订）
+  ◆ english_gap_llm_013 [english_grade8_items.json] 难度0.2 kp=kp_eng8_lis8_broadcast source=llm_generated
+    题干：校园广播（听力材料）： / Attention, everyone! The school canteen will be closed for maintenance next Friday, June 2nd. The canteen will reopen on June 5th. All stu
+    答案：1. C / 2. C / 3. B
+  ◆ english_gap_llm_014 [english_grade8_items.json] 难度0.2 kp=kp_eng8_lis8_broadcast source=llm_generated
+    题干：电话对话（听力材料）： / M: Hello, is this Mr. Smith? / W: Yes, it is. How can I help you? / M: Hi, Mr. Smith. This is Tom from the library. We have a book club meetin
+    答案：1. A / 2. A / 3. B
+  ◆ english_gap_llm_015 [english_grade8_items.json] 难度0.2 kp=kp_eng8_lis8_broadcast source=llm_generated
+    题干：采访对话（听力材料）： / M: Hey, John, can you tell us about your favorite sport? / W: Sure, it's basketball. Why do you ask? / M: I'm curious about what students like
+    答案：1. B / 2. B / 3. C
+
+== eng_hs 七选五（人工命题）
+  ◆ english_gap_a013 [english_grade11_items.json] 难度0.55 kp=kp_eng11_red11_implied source=original
+    题干：【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。 / How to Argue with a Friend—and Stay Friends / Disagreements with friends are normal, but they can hurt a 
+    答案：B-E-A-D-C
+  ◆ english_gap_a014 [english_grade11_items.json] 难度0.55 kp=kp_eng11_spk11_cohesion source=original
+    题干：【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。 / Training Your Attention in the Digital Age / Smartphones put the world at our fingertips, but they also p
+    答案：C-D-A-B-E
+  ◆ english_gap_a015 [english_grade12_items.json] 难度0.6 kp=kp_eng12_red12_structure_deep source=original
+    题干：【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。 / Sleep and Memory / Every night, as you fall asleep, your brain keeps working. Sleep is not a pause in lea
+    答案：E-B-D-A-C
+
+== bio_jr 非选择题（人工命题+LLM 修订）
+  ◆ biology_gap_a021 [biology_grade10_items.json] 难度0.6 kp=kp_bio10_segregation_law source=original
+    题干：豌豆的高茎对矮茎为显性（由 D、d 控制）。请回答：（1）杂合高茎豌豆（Dd）自交，后代中高茎与矮茎的比例是①______；（2）后代矮茎植株的基因型是②______；（3）若取后代中全部高茎植株分别自交，则它们的后代中矮茎植株的比例是③______。
+    答案：（1）3:1；（2）dd；（3）1/6
+  ◆ biology_gap_a022 [biology_grade10_items.json] 难度0.55 kp=kp_bio10_photosynthesis source=original
+    题干：在“绿叶中色素的提取和分离”实验中，滤纸条上出现了四条色素带。请回答：（1）分离色素的原理是①______；（2）滤纸条上从上到下的第二条色素带是②______；（3）研磨时加入少许二氧化硅的目的是③______。
+    答案：（1）绿叶中的各种色素在层析液中的溶解度不同：溶解度高的随层析液在滤纸上扩散得快，反之则慢，从而使色素分离；（2）叶黄素；（3）使研磨充分
+  ◆ biology_gap_a019 [biology_grade9_items.json] 难度0.55 kp=kp_bio9_inquiry_experiment source=original
+    题干：某小组探究“光对鼠妇分布的影响”：在铁盘内以横轴中线为界，一侧盖上黑纸板，另一侧不盖，在两侧中央各放入 5 只鼠妇，静置 2 分钟后每分钟统计一次明亮处和阴暗处的鼠妇数量，共统计 10 次。请回答：本实验的变量是①______；设置明暗两侧的目的是②______；用 10 只鼠妇而不是 1 只，原因
+    答案：①光照（光）；②形成对照（只保留光照这一个变量）；③避免偶然性，减小实验误差
+
+== bio_hs 非选择题（人工命题+LLM 修订）
+  ◆ biology_gap_a021 [biology_grade10_items.json] 难度0.6 kp=kp_bio10_segregation_law source=original
+    题干：豌豆的高茎对矮茎为显性（由 D、d 控制）。请回答：（1）杂合高茎豌豆（Dd）自交，后代中高茎与矮茎的比例是①______；（2）后代矮茎植株的基因型是②______；（3）若取后代中全部高茎植株分别自交，则它们的后代中矮茎植株的比例是③______。
+    答案：（1）3:1；（2）dd；（3）1/6
+  ◆ biology_gap_a022 [biology_grade10_items.json] 难度0.55 kp=kp_bio10_photosynthesis source=original
+    题干：在“绿叶中色素的提取和分离”实验中，滤纸条上出现了四条色素带。请回答：（1）分离色素的原理是①______；（2）滤纸条上从上到下的第二条色素带是②______；（3）研磨时加入少许二氧化硅的目的是③______。
+    答案：（1）绿叶中的各种色素在层析液中的溶解度不同：溶解度高的随层析液在滤纸上扩散得快，反之则慢，从而使色素分离；（2）叶黄素；（3）使研磨充分
+  ◆ biology_gap_a019 [biology_grade9_items.json] 难度0.55 kp=kp_bio9_inquiry_experiment source=original
+    题干：某小组探究“光对鼠妇分布的影响”：在铁盘内以横轴中线为界，一侧盖上黑纸板，另一侧不盖，在两侧中央各放入 5 只鼠妇，静置 2 分钟后每分钟统计一次明亮处和阴暗处的鼠妇数量，共统计 10 次。请回答：本实验的变量是①______；设置明暗两侧的目的是②______；用 10 只鼠妇而不是 1 只，原因
+    答案：①光照（光）；②形成对照（只保留光照这一个变量）；③避免偶然性，减小实验误差
+
+== geo_hs 选考题（LLM 初稿+人工修订）
+  ◆ geography_gap_llm_043 [geography_grade10_items.json] 难度0.5 kp=kp_geo10_natural_hazards source=llm_generated
+    题干：某山区位于我国西南地区，近年来频繁发生滑坡灾害。分析该地区滑坡灾害的成因，并提出相应的防灾措施。
+    答案：（1）成因：①该山区地质构造复杂，岩石破碎，碎屑物质多；②连续强降雨使土壤含水趋于饱和，岩土体抗剪强度降低；③过度开垦、滥伐森林等人类活动破坏植被，地表径流加大，诱发滑坡。（2）防灾措施：①加强地质监测，建立滑坡预警系统
+  ◆ geography_gap_llm_044 [geography_grade11_items.json] 难度0.3 kp=kp_geo11_pollution_governance source=llm_generated
+    题干：某湖泊近期出现水体富营养化现象，水质恶化严重。 / （1）分析该湖泊水体富营养化的主要成因。 / （2）列举治理该湖泊水体富营养化的具体措施。
+    答案：（1）主要成因：①城市生活污水和工业废水未经处理直接排入湖泊，氮、磷等营养物质增多；②流域内农业面源污染（化肥、农药随地表径流入湖）；③湖泊水体更新慢、自净能力弱。（2）治理措施：①严控污水排放，建设污水处理设施，实现达
+
+== pol_primary 连线（人工命题）
+  ◆ politics_gap_a028 [politics_grade3_items.json] 难度0.35 kp=kp_pol3_safety_emergency source=original
+    题干：把突发情况和正确的应对办法连起来（把字母填在横线上）。 / 1. 教室里发生火灾　______ / 2. 发现有人落水　______ / 3. 在陌生地方与家人走散　______ / 4. 户外遇到雷雨天气　______ / A. 用湿毛巾捂住口鼻，低身沿安全通道有序撤离，不乘电梯 / B. 不盲目下水施救，大声呼救并拨打
+    答案：1-A；2-B；3-C；4-D
+  ◆ politics_gap_a027 [politics_grade2_items.json] 难度0.3 kp=kp_pol2_traffic_sign source=original
+    题干：把交通信号灯和正确的做法连起来（把字母填在横线上）。 / 1. 红灯亮时　______ / 2. 绿灯亮时　______ / 3. 黄灯亮时　______ / 4. 过路口既无信号灯又无斑马线　______ / A. 在停止线外耐心等候　　B. 走人行横道，先看左再看右，安全通过 / C. 已越过停止线的继续通行，未越线的
+    答案：1-A；2-B；3-C；4-D
+  ◆ politics_gap_a026 [politics_grade1_items.json] 难度0.25 kp=kp_pol1_safety_sign source=original
+    题干：把下面的安全标志和它的含义连起来（把字母填在横线上）。 / 1. 红色圆形中间一道白杠　______ / 2. 黄色三角形中间一个黑色感叹号　______ / 3. 蓝色圆形中间一个白色箭头　______ / 4. 红色八角形里写着 STOP　______ / A. 允许通行、按指示方向前进　　B. 注意安全、当心危险
+    答案：1-C；2-B；3-A；4-D
+
+== sci_prim 实验探究（LLM 初稿+人工修订）
+  ◆ science_gap_llm_051 [science_grade5_items.json] 难度0.5 kp=kp_sci5_sound_pitch source=llm_generated
+    题干：实验中，小明把同一把钢尺伸出桌面不同的长度，用手拨动钢尺伸出桌面的一端，观察并记录听到的声音。请回答以下问题： / 1. 小明改变什么条件来探究声音的高低（音调）与物体振动快慢的关系？ / 2. 小明听到了什么样的变化？ / 3. 小明得出了什么结论？
+    答案：1. 改变钢尺伸出桌面的长度（同时控制每次拨动的力度相同）。2. 钢尺伸出桌面越短，振动越快，听到的声音越高；伸出桌面越长，振动越慢，声音越低。3. 结论：音调的高低与声源振动的快慢有关，振动越快，音调越高。
+  ◆ science_gap_llm_052 [science_grade6_items.json] 难度0.2 kp=kp_sci6_experiment_design source=llm_generated
+    题干：为了探究绿豆发芽与水分的关系，小明同学设计了一个实验。他准备了两组绿豆种子，A组和B组。A组放置在干燥的环境中，B组放置在湿润的环境中。其他条件都保持相同。请回答以下问题： / 1. 小明同学想要探究的问题是绿豆发芽与什么因素有关？ / 2. 在这个实验中，小明同学改变了哪个条件作为变量？ / 3. 除了变量以
+    答案：1. 绿豆种子发芽与水分（水）是否有关。2. 变量是水分（A 组干燥、B 组湿润，只改变水分这一条件）。3. 温度、光照、空气、种子数量与品种等其他条件都保持相同。
+  ◆ science_gap_llm_049 [science_grade3_items.json] 难度0.2 kp=kp_sci3_soluble source=llm_generated
+    题干：小明的妈妈在做菜时，需要将食盐和沙子加入水中。请回答以下问题： / 1. 我们怎么知道盐和沙子能不能溶解在水中呢？ / 2. 有什么方法能帮助盐和沙子更快地溶解在水中呢？
+    答案：1. 把食盐和沙子分别放入水中，搅拌后观察：食盐能溶解在水中，形成透明、均匀的食盐水；沙子不能溶解，静置后沉在水底。2. 用搅拌、用温水等方法可以加快食盐的溶解；沙子不能溶解于水，不存在加快溶解的方法。

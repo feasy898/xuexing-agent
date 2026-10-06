@@ -6395,6 +6395,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_llm_027",
+      "item_type": "fill",
+      "stem": "在“绿叶在光下制造有机物”的实验中：①实验前把盆栽天竺葵放到黑暗处一昼夜，目的是______；②用黑纸片把叶片的一部分从上、下两面遮盖起来，光照数小时后摘叶、去纸、酒精脱色、滴加碘液，这样处理的目的是______；③结果只有见光部分变蓝，说明光合作用制造的有机物是______。",
+      "answer": "①让叶片内原有的淀粉运走、耗尽；②与见光部分形成对照（只保留光照一个变量）；③淀粉",
+      "kps": [
+        "kp_bio7_photosynthesis_experiment"
+      ],
+      "difficulty": 0.5,
+      "solution": "答案中的①对应暗处理的目的是耗尽原有淀粉，保证实验结果的准确性。答案中的②对应部分遮光处理的目的，即与光照部分形成对照，以便观察光照对淀粉合成的影响。答案中的③再次强调部分遮光处理的对照作用。这些答案均与课本原词一致，符合实验设计和实验结果。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_jr_cloze"
+    },
+    {
+      "id": "biology_gap_llm_028",
+      "item_type": "fill",
+      "stem": "在稻田生态系统中：①______通过光合作用制造有机物，属于生产者；以稻谷为食的鼠、鸟等②______属于消费者；③______能将动植物遗体和粪便分解成无机物，属于分解者。",
+      "answer": "①绿色植物（如水稻）；②动物；③细菌和真菌",
+      "kps": [
+        "kp_bio7_ecosystem_components"
+      ],
+      "difficulty": 0.2,
+      "solution": "①处为生产者，符合生态系统中生产者通过光合作用提供能量的特点；②处为消费者，符合生态系统中动物以植物为食的特点；③处为分解者，符合生态系统中分解者分解有机物的特点。所有答案均为课本原词，符合命题要求。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_jr_cloze"
+    },
+    {
+      "id": "biology_gap_a016",
+      "item_type": "fill",
+      "stem": "草原生态系统中存在食物链“草→兔→鹰”。请回答：该食物链中数量最多的生物是①______；若大量捕杀鹰，短时间内兔的数量会②______（填“增多”或“减少”），随后因草的数量减少，兔的数量又会③______（填“增多”或“减少”）。",
+      "answer": "①草；②增多；③减少",
+      "kps": [
+        "kp_bio7_food_chain_web"
+      ],
+      "difficulty": 0.45,
+      "solution": "能量沿食物链逐级递减，营养级越低数量越多，故草最多。鹰减少→兔失去天敌控制先增多→草被大量啃食减少→兔因食物短缺再减少，体现生态系统的自动调节。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

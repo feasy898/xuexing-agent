@@ -4752,6 +4752,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_a013",
+      "item_type": "solve",
+      "stem": "【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。\nHow to Argue with a Friend—and Stay Friends\nDisagreements with friends are normal, but they can hurt a friendship if they are handled badly. ①____\nFirst, take a moment to think about the situation from your friend's point of view. Understanding why they feel that way does not mean you have to agree, but it shows that you take their feelings seriously. ②____\nSecond, use “I” messages instead of “you” messages. Saying “I felt hurt when you forgot our plan” sounds very different from “You always forget things”. ③____\nThird, look for a solution together. A disagreement ends faster when both sides feel heard. ④____\nFinally, if the argument gets too heated, it is wise to pause and continue the talk later when both of you are calm. ⑤____ True friends can survive an honest disagreement—and often come out closer.\nA. This small change keeps the other person from feeling attacked.\nB. Here are some ways to disagree without damaging the friendship.\nC. Even a ten-minute break can prevent words you may regret.\nD. Working out a plan that suits both of you turns an argument into teamwork.\nE. Their answer may reveal something you had not noticed.\nF. Shouting louder is the quickest way to win an argument.\nG. Friends should never talk about problems directly.",
+      "answer": "B-E-A-D-C",
+      "kps": [
+        "kp_eng11_red11_implied"
+      ],
+      "difficulty": 0.55,
+      "solution": "①总起句（如何不伤感情地表达分歧）→B；②承接“换位思考”的推论→E；③“这种小改变”回指“I”消息法→A；④“一起找办法”的落点→D；⑤承接“暂停再谈”的具体建议→C。F、G 与文意相悖，为多余选项。",
+      "source": "original",
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "english_authored"
+    },
+    {
+      "id": "english_gap_a014",
+      "item_type": "solve",
+      "stem": "【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。\nTraining Your Attention in the Digital Age\nSmartphones put the world at our fingertips, but they also put endless interruptions there. Many students check their phones every few minutes even when nothing new has appeared. ①____\nStart by making the phone less visible. Put it in another room or in your bag while studying. Out of sight really can mean out of mind. ②____\nNext, give deep work a fixed time slot. Decide that you will study for forty minutes, then reward yourself with ten minutes of messaging. ③____\nFinally, train your attention like a muscle. When your mind wanders, gently bring it back to the page. Each time you do this, focusing becomes a little easier. ④____\nAttention is not a gift; it is a skill. ⑤____ The students who protect it today will be the ones who think deeply tomorrow.\nA. A fixed rhythm like this trains the brain to expect both work and rest.\nB. Over time, you will notice you can read for longer stretches without checking anything.\nC. The good news is that attention can be rebuilt with a few simple habits.\nD. Notifications are designed to pull you back, so distance is your first tool.\nE. Like any skill, it grows with patient practice.\nF. Turning off the internet completely is the only way to study.\nG. Deep focus always leads to perfect exam scores.",
+      "answer": "C-D-A-B-E",
+      "kps": [
+        "kp_eng11_spk11_cohesion"
+      ],
+      "difficulty": 0.55,
+      "solution": "①承上“不断被打断”引出“可以重建”→C；②承接“让手机不可见”的原因（通知设计）→D；③承接“40+10 节奏”的效果→A；④承接“每次拉回注意力”的长期结果→B；⑤呼应“attention is a skill”→E。F、G 表述绝对化且文中无据，为多余选项。",
+      "source": "original",
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "english_authored"
     }
   ]
 }

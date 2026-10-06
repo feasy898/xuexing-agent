@@ -5158,6 +5158,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_llm_013",
+      "item_type": "solve",
+      "stem": "校园广播（听力材料）：\nAttention, everyone! The school canteen will be closed for maintenance next Friday, June 2nd. The canteen will reopen on June 5th. All students are advised to bring their lunch from home on that day. And remember to keep away from the canteen area to ensure safety.\n\n请根据以上广播内容回答：\n1. What day will the canteen be closed for maintenance?\nA. May 31st\nB. June 1st\nC. June 2nd\n2. When will the canteen reopen after maintenance?\nA. June 3rd\nB. June 4th\nC. June 5th\n3. What should students do on June 2nd?\nA. Go to the canteen\nB. Bring their lunch from home\nC. Eat in the classroom",
+      "answer": "1. C\n2. C\n3. B",
+      "kps": [
+        "kp_eng8_lis8_broadcast"
+      ],
+      "difficulty": 0.2,
+      "solution": "解析/给分要点：\n1. 答案C正确，因为广播中提到canteen will be closed for maintenance next Friday, June 2nd.\n2. 答案C正确，因为广播中提到The canteen will reopen on June 5th.\n3. 答案B正确，因为广播中提到All students are advised to bring their lunch from home on that day.",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
+    },
+    {
+      "id": "english_gap_llm_014",
+      "item_type": "solve",
+      "stem": "电话对话（听力材料）：\nM: Hello, is this Mr. Smith?\nW: Yes, it is. How can I help you?\nM: Hi, Mr. Smith. This is Tom from the library. We have a book club meeting scheduled for next week. Could we set up a time for the meeting?\nW: Sure, Tom. When would you suggest we meet?\nM: How about Friday afternoon?\nW: That sounds good. What time would be convenient for you?\nM: I'm free from 3:00 to 5:00. How about you?\nW: I'm available during that time. Let's make it 3:30. Can we meet in the conference room?\nM: Perfect. 3:30 in the conference room on Friday. See you then.\nW: See you then, Tom.\n\n请根据以上对话回答：\n1. Who is calling Mr. Smith?\nA. Tom.\nB. Peter.\nC. Mr. Green.\n2. When will they meet?\nA. This Friday afternoon.\nB. Next Monday morning.\nC. Tomorrow evening.\n3. Where will they meet?\nA. In the library.\nB. In the conference room.\nC. At Tom's home.",
+      "answer": "1. A\n2. A\n3. B",
+      "kps": [
+        "kp_eng8_lis8_broadcast"
+      ],
+      "difficulty": 0.2,
+      "solution": "1. A. 正确，对话中提到‘How about Friday afternoon? That sounds good.’\n2. B. 正确，对话中提到‘Let's make it 3:30.’\n3. C. 正确，对话中提到‘Can we meet in the conference room? Perfect.’",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
+    },
+    {
+      "id": "english_gap_llm_015",
+      "item_type": "solve",
+      "stem": "采访对话（听力材料）：\nM: Hey, John, can you tell us about your favorite sport?\nW: Sure, it's basketball. Why do you ask?\nM: I'm curious about what students like these days.\nW: Well, I've always been interested in playing basketball since I was a kid. It's fast-paced and exciting.\nM: Do you play basketball every day?\nW: Not really. I play a couple of times a week, usually on weekends.\nM: That's great. Where do you play?\nW: I mostly play at the school gym with my friends.\nM: Do you prefer playing with boys or girls?\nW: I don't really have a preference. I enjoy playing with anyone who's up for it.\n\n请根据以上对话回答：\n1. What is John's favorite sport?\nA. Football.\nB. Basketball.\nC. Volleyball.\n2. How often does John play basketball?\nA. Every day.\nB. A couple of times a week.\nC. Hardly ever.\n3. Who does John like to play with?\nA. Only boys.\nB. Only girls.\nC. Anyone.",
+      "answer": "1. B\n2. B\n3. C",
+      "kps": [
+        "kp_eng8_lis8_broadcast"
+      ],
+      "difficulty": 0.2,
+      "solution": "问题1: B（篮球是John最喜欢的运动，对话中提到'it's basketball'）。\n问题2: B（John提到'play a couple of times a week, usually on weekends'，说明他每周打篮球两三次）。\n问题3: C（John说'Enjoy playing with anyone who's up for it'，表明他并不介意和男生或女生一起打篮球）。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
     }
   ]
 }

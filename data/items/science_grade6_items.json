@@ -11936,6 +11936,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "science_gap_llm_052",
+      "item_type": "solve",
+      "stem": "为了探究绿豆发芽与水分的关系，小明同学设计了一个实验。他准备了两组绿豆种子，A组和B组。A组放置在干燥的环境中，B组放置在湿润的环境中。其他条件都保持相同。请回答以下问题：\n1. 小明同学想要探究的问题是绿豆发芽与什么因素有关？\n2. 在这个实验中，小明同学改变了哪个条件作为变量？\n3. 除了变量以外，小明同学还保持了哪些条件相同？",
+      "answer": "1. 绿豆种子发芽与水分（水）是否有关。2. 变量是水分（A 组干燥、B 组湿润，只改变水分这一条件）。3. 温度、光照、空气、种子数量与品种等其他条件都保持相同。",
+      "kps": [
+        "kp_sci6_experiment_design"
+      ],
+      "difficulty": 0.2,
+      "solution": "{'q1': '答案正确地指出了小明同学想要探究的问题，即绿豆发芽与水分的关系。', 'q2': '答案正确地识别了实验中的变量，即水分。', 'q3': '答案正确地列出了除了变量以外的其他保持相同的条件，如温度、光照、土壤等。'}",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "sci_prim_experiment"
     }
   ]
 }

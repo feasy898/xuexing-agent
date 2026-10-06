@@ -3440,6 +3440,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "politics_gap_a028",
+      "item_type": "fill",
+      "stem": "把突发情况和正确的应对办法连起来（把字母填在横线上）。\n1. 教室里发生火灾　______\n2. 发现有人落水　______\n3. 在陌生地方与家人走散　______\n4. 户外遇到雷雨天气　______\nA. 用湿毛巾捂住口鼻，低身沿安全通道有序撤离，不乘电梯\nB. 不盲目下水施救，大声呼救并拨打 110／120 求助\nC. 原地等待或找警察、工作人员求助，不跟陌生人走\nD. 不在大树、电杆下避雨，尽快进入室内并拔掉电器插头",
+      "answer": "1-A；2-B；3-C；4-D",
+      "kps": [
+        "kp_pol3_safety_emergency"
+      ],
+      "difficulty": 0.35,
+      "solution": "火灾捂口鼻低姿走安全通道（电梯断电最危险）；未成年人不下水救人，要呼救报警；走散原地等或找警察；雷电天远离高大树木与金属，进屋断电。",
+      "source": "original",
+      "form": "matching",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "politics_authored"
     }
   ]
 }

@@ -7052,6 +7052,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "geography_gap_llm_043",
+      "item_type": "solve",
+      "stem": "某山区位于我国西南地区，近年来频繁发生滑坡灾害。分析该地区滑坡灾害的成因，并提出相应的防灾措施。",
+      "answer": "（1）成因：①该山区地质构造复杂，岩石破碎，碎屑物质多；②连续强降雨使土壤含水趋于饱和，岩土体抗剪强度降低；③过度开垦、滥伐森林等人类活动破坏植被，地表径流加大，诱发滑坡。（2）防灾措施：①加强地质监测，建立滑坡预警系统；②保护植被、退耕还林，提高山体固土能力；③合理规划土地利用，避免在滑坡易发区进行工程建设；④加强防灾减灾宣传教育，提高居民避灾自救能力。",
+      "kps": [
+        "kp_geo10_natural_hazards"
+      ],
+      "difficulty": 0.5,
+      "solution": "{'1': '1. 成因分析正确，包括地质构造、降雨、人类活动等多个方面，符合题干描述。2. 防灾措施合理，包括监测预警、植被保护、土地利用规划、公众教育等，具有针对性。', '2': '1. 成因分析正确，包括地质构造、降雨、人类活动等多个方面，符合题干描述。2. 防灾措施合理，包括监测预警、植被保护、土地利用规划、公众教育等，具有针对性。'}",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "geo_hs_solve"
     }
   ]
 }

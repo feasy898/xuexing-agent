@@ -9089,6 +9089,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "science_gap_llm_050",
+      "item_type": "solve",
+      "stem": "在水的净化实验中，我们需要进行过滤操作。请回答以下两个问题：\n1. 进行过滤实验时，我们需要准备哪些器材？\n2. 在进行过滤操作时，我们应该注意哪些事项？",
+      "answer": "1. 漏斗、滤纸、烧杯、玻璃棒、铁架台（带铁圈）等。2. 要点（一贴、二低、三靠）：滤纸紧贴漏斗内壁；滤纸边缘略低于漏斗边缘，液面低于滤纸边缘；倾倒时烧杯口紧靠玻璃棒，玻璃棒下端斜靠三层滤纸一边，漏斗下端管口紧靠承接烧杯内壁。",
+      "kps": [
+        "kp_sci4_water_purify"
+      ],
+      "difficulty": 0.3,
+      "solution": "{'q1': '答案正确地列出了进行过滤实验所需的器材，包括漏斗、滤纸、烧杯、玻璃棒等，符合实验操作的基本要求。', 'q2': '答案正确地指出了进行过滤操作时应注意的事项，如过滤器稳定放置、液体流速控制、滤纸贴合等，这些都是确保过滤效果的关键点。'}",
+      "source": "llm_generated",
+      "form": "experiment",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "sci_prim_experiment"
     }
   ]
 }

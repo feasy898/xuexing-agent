@@ -166,11 +166,13 @@ def test_item_v2_real_bank_honest_disclosure(client, grade7_items):
     assert r.status_code == 200
     out = r.json()
     assert out["valid"] is True and out["errors"] == []
-    # 诚实披露闭式（2026-09-30 g7 深挖批扩库后重算）：存量 129 题 original
-    # （2026-09-29 双代理运行回填）+ 深挖批 93 题 llm_generated（step-3.7-flash
-    # 起草 × g7-deepen-review-20260930 人工验算复核回填）；无改编题
-    assert out["counts"] == {"original": 129, "adapted": 0, "llm_generated": 93}
-    assert out["total"] == 222 and out["verified"] == 222
+    # 诚实披露闭式（2026-09-30 g7 深挖批扩库后重算；2026-10-06 卷型缺口补齐批
+    # 在 math_grade7 增 2 题 mgap_jcomp_001/002（source=original，程序验算）后再算）：
+    # 存量 129 题 original（2026-09-29 双代理运行回填）+ 深挖批 93 题 llm_generated
+    #（step-3.7-flash 起草 × g7-deepen-review-20260930 人工验算复核回填）
+    # + 缺口批 2 题 original；无改编题
+    assert out["counts"] == {"original": 131, "adapted": 0, "llm_generated": 93}
+    assert out["total"] == 224 and out["verified"] == 224
 
 
 # ---------- /coverage/standard × 真实课标清单 ----------

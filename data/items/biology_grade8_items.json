@@ -5534,6 +5534,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_llm_032",
+      "item_type": "fill",
+      "stem": "流感是一种常见的呼吸道传染病，其流行必须同时具备三个基本环节：①______（如患流感的人）；②______（如空气、飞沫）；③______（如未接种流感疫苗、抵抗力弱的人群）。",
+      "answer": "①传染源；②传播途径；③易感人群",
+      "kps": [
+        "kp_bio8_epidemic_links"
+      ],
+      "difficulty": 0.5,
+      "solution": "此答案正确地涵盖了传染病流行的三个基本环节。①传染源明确指出病原体，②传播途径指明了传播方式，③易感人群指出了易受感染的人群。这些都是流感流行的必要条件，符合题意要求。",
+      "source": "llm_generated",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_jr_cloze"
+    },
+    {
+      "id": "biology_gap_a017",
+      "item_type": "fill",
+      "stem": "人有耳垂对无耳垂为显性（用 A、a 表示）。父母双方的基因组成都是 Aa。请回答：他们生一个无耳垂孩子的可能性是①______；这个无耳垂孩子的基因组成是②______。",
+      "answer": "①1/4（25%）；②aa",
+      "kps": [
+        "kp_bio8_dominant_recessive"
+      ],
+      "difficulty": 0.5,
+      "solution": "Aa×Aa 后代基因型及比例为 AA:Aa:aa＝1:2:1；无耳垂为隐性性状，只有 aa 才表现，占 1/4。表现隐性性状时基因组成成对相同。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
+    },
+    {
+      "id": "biology_gap_a018",
+      "item_type": "fill",
+      "stem": "水痘痊愈后，人体内产生了只抵抗水痘病毒的抗体，这种免疫属于①______免疫（填“特异性”或“非特异性”）；皮肤和黏膜的屏障作用属于②______免疫，是生来就有的第③______道防线。",
+      "answer": "①特异性；②非特异性；③一",
+      "kps": [
+        "kp_bio8_specific_immunity"
+      ],
+      "difficulty": 0.5,
+      "solution": "抗体只对特定病原体起作用→特异性免疫（第三道防线）。皮肤和黏膜是生来就有、对多种病原体都有作用的第一道防线→非特异性免疫。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

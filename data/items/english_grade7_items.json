@@ -9196,6 +9196,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_llm_011",
+      "item_type": "solve",
+      "stem": "图书馆借书\n听力材料：\nM: Hey, Wang Mei, are you going to the library today?\nW: Yes, I am. I need to borrow some books for our project.\nM: Great! Do you know where the bookshelf for our history books is?\nW: No, I don't. Can you show me the way?\nM: Sure, it's on the second floor. Just take the stairs and go straight. You can't miss it.\nW: Thanks a lot! I really appreciate your help.\nM: No problem, Wang Mei. Let's go together.\n\n1. Who is Wang Mei going to the library with?\nA. By herself\nB. With her teacher\nC. With her friend\n\n2. What does Wang Mei need to borrow from the library?\nA. Books for English class\nB. Books for history project\nC. Books for math class\n\n3. How does Wang Mei know where the history books are?\nA. She has been there before\nB. Her friend tells her\nC. The library staff guides her",
+      "answer": "1. C\n2. B\n3. B",
+      "kps": [
+        "kp_eng7_lis7_visual_support"
+      ],
+      "difficulty": 0.3,
+      "solution": "1. 答案是 C，因为对话中 M 问道 Wang Mei 是否和谁一起去图书馆，Wang Mei 回答她是要自己一个人去。因此排除 A 和 B。\n2. 答案是 B，因为对话中 Wang Mei 说她需要借些书来做项目，这指的是历史项目。排除 A 和 C。\n3. 答案是 B，因为对话中 M 帮助 Wang Mei 指路，所以 Wang Mei 是通过她的朋友 M 得到的信息，排除 A 和 C。",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
+    },
+    {
+      "id": "english_gap_llm_012",
+      "item_type": "solve",
+      "stem": "Listen to the following dialogue about a family's daily routine. Then answer the questions.\n\nM: Good morning! Today, I'm going to talk about my family's daily routine. Every morning, my parents wake up at 6:00 a.m. They have breakfast together at 7:00 a.m. After that, my father goes to work and my mother stays at home.\n\nW: What does your mother do at home?\nM: She does some housework and takes care of my little sister. My sister has school at 8:00 a.m., so she leaves for school at 7:45 a.m.\n\nW: And what about the evening routine?\nM: In the evening, we usually have dinner together at 6:00 p.m. After dinner, my father reads a book, and my mother watches TV. My sister does her homework and then goes to bed at 9:00 p.m.\n\nQuestions:\n1. What time do the parents wake up every morning?\nA. 6:00 a.m.\nB. 7:00 a.m.\nC. 8:00 a.m.\n2. What does the mother do after breakfast?\nA. She goes to work.\nB. She does housework and takes care of her little daughter.\nC. She leaves for school.\n3. What time does the sister go to bed every night?\nA. 8:00 p.m.\nB. 9:00 p.m.\nC. 10:00 p.m.",
+      "answer": "1. A\n2. B\n3. B",
+      "kps": [
+        "kp_eng7_lis7_visual_support"
+      ],
+      "difficulty": 0.2,
+      "solution": "The answers are directly derived from the dialogue. Question 1 is answered by 'Every morning, my parents wake up at 6:00 a.m.' in the dialogue. Question 2 is answered by 'She does some housework and takes care of my little sister' in the dialogue. Question 3 is answered by 'My sister goes to bed at 9:00 p.m.' in the dialogue.",
+      "source": "llm_generated",
+      "form": "listening",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "eng_jr_listening"
     }
   ]
 }

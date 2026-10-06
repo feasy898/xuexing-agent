@@ -923,6 +923,75 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_llm_041",
+      "item_type": "solve",
+      "stem": "碳在无机环境与生物群落之间不断循环。请回答：（1）碳从无机环境进入生物群落的主要途径是①______；（2）碳在生物群落内部以②______的形式沿食物链（网）传递；（3）碳从生物群落回到无机环境的途径包括动植物的呼吸作用、分解者的分解作用和③______；（4）大气中 CO₂ 短期内迅速增多会导致④______效应增强。",
+      "answer": "①生产者的光合作用（化能合成作用等）；②含碳有机物；③化石燃料的大量燃烧；④温室",
+      "kps": [
+        "kp_bio12_material_cycle"
+      ],
+      "difficulty": 0.5,
+      "solution": "1. 光合作用和呼吸作用是碳循环的主要途径。\n2. 有机物形式是碳在生物群落内部传递的方式。",
+      "source": "llm_generated",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-gen-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "bio_hs_solve"
+    },
+    {
+      "id": "biology_gap_a024",
+      "item_type": "solve",
+      "stem": "某生态系统中的食物链为：草→兔→狐。若草固定的太阳能总量为 2000 kJ，兔同化的能量为 200 kJ，狐同化的能量为 20 kJ。请回答：（1）草到兔的能量传递效率是①______；（2）兔到狐的能量传递效率是②______；（3）兔同化的能量中，用于自身生长、发育和繁殖的能量＝同化量−③______。",
+      "answer": "（1）10%；（2）10%；（3）呼吸作用以热能形式散失的能量",
+      "kps": [
+        "kp_bio12_energy_flow"
+      ],
+      "difficulty": 0.6,
+      "solution": "传递效率＝下一营养级同化量÷上一营养级同化量：200/2000＝10%，20/200＝10%（程序验算 ✓）。每一营养级同化量的去向中，呼吸散失是最大去向之一，余下才用于生长、发育和繁殖。（程序验算：200/2000、20/200 ✓）",
+      "source": "original",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
+    },
+    {
+      "id": "biology_gap_a025",
+      "item_type": "solve",
+      "stem": "与森林生态系统相比，农田生态系统①______（填“抵抗力”或“恢复力”）稳定性通常较低，原因是②______；要提高农田生态系统的稳定性，可以采取的措施是③______（答出一条即可）。",
+      "answer": "（1）①抵抗力；（2）②生物种类少，营养结构简单，自我调节能力弱；（3）③合理增加生物种类（如间作套种、轮作、田埂种草），科学施肥灌水等（合理即可）",
+      "kps": [
+        "kp_bio12_ecosystem_stability"
+      ],
+      "difficulty": 0.55,
+      "solution": "组分多少与营养结构复杂程度决定自我调节能力，进而决定抵抗力稳定性。人为管理（增加种类、防虫防病）可提高农田生态系统的稳定性。",
+      "source": "original",
+      "form": "solve",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

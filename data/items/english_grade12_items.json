@@ -10396,6 +10396,29 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "english_gap_a015",
+      "item_type": "solve",
+      "stem": "【七选五】阅读下面短文，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。\nSleep and Memory\nEvery night, as you fall asleep, your brain keeps working. Sleep is not a pause in learning; it is part of learning. ①____\nDuring deep sleep, the brain replays the day's experiences and moves important information from short-term memory into long-term storage. Students who review their notes before bed often remember more the next morning. ②____\nSleep also clears waste products that build up in the brain during the day. Without enough sleep, this cleaning system falls behind. ③____ That is why after several short nights, even a clever mind becomes slow and forgetful.\nHow much sleep is enough? For teenagers, most experts recommend eight to ten hours. ④____\nSo if you want to learn well, do not treat sleep as lost time. ⑤____ Turn off the screens early, and let your brain finish its night shift.\nA. More sleep does not automatically mean better grades, but too little clearly harms memory.\nB. The timing of sleep matters as much as its length, because the brain stores what was learned recently.\nC. In fact, it is one of the most powerful study tools you already own.\nD. As a result, the mind loses its edge and new learning becomes harder.\nE. This process is called memory consolidation.\nF. Dreaming every night is a sign of a serious sleep problem.\nG. Drinking coffee before bed helps the brain memorize faster.",
+      "answer": "E-B-D-A-C",
+      "kps": [
+        "kp_eng12_red12_structure_deep"
+      ],
+      "difficulty": 0.6,
+      "solution": "①承接“睡眠是学习的一部分”，引出术语→E；②“睡前复习记得多”的机制解释→B；③承接“清洁系统落后”的结果→D；④回应“睡多久才够”且避免绝对化→A；⑤呼应“不是浪费时间”给出结论→C。F、G 违背常识且无文内依据，为多余选项。",
+      "source": "original",
+      "form": "seven_to_five_sequence",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "english_authored"
     }
   ]
 }

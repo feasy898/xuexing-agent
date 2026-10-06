@@ -374,6 +374,52 @@
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
       }
+    },
+    {
+      "id": "biology_gap_a019",
+      "item_type": "fill",
+      "stem": "某小组探究“光对鼠妇分布的影响”：在铁盘内以横轴中线为界，一侧盖上黑纸板，另一侧不盖，在两侧中央各放入 5 只鼠妇，静置 2 分钟后每分钟统计一次明亮处和阴暗处的鼠妇数量，共统计 10 次。请回答：本实验的变量是①______；设置明暗两侧的目的是②______；用 10 只鼠妇而不是 1 只，原因是③______。",
+      "answer": "①光照（光）；②形成对照（只保留光照这一个变量）；③避免偶然性，减小实验误差",
+      "kps": [
+        "kp_bio9_inquiry_experiment"
+      ],
+      "difficulty": 0.55,
+      "solution": "对照实验要求变量唯一：明暗两侧除光外其他条件（湿度、温度等）都相同。单只鼠妇的行为有偶然性，多用多只并取平均值（多次统计）才能使结论可靠。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
+    },
+    {
+      "id": "biology_gap_a020",
+      "item_type": "fill",
+      "stem": "人的性别由性染色体决定。请回答：男性体细胞的性染色体组成是①______，女性体细胞的性染色体组成是②______；生男生女取决于父亲提供的精子类型，父亲传给女儿的一定是③______染色体（填“X”或“Y”）。",
+      "answer": "①XY；②XX；③X",
+      "kps": [
+        "kp_bio9_diagram_comprehension"
+      ],
+      "difficulty": 0.45,
+      "solution": "女性产生一种含 X 的卵细胞，男性产生含 X 和含 Y 两种精子。含 X 精子＋卵细胞→XX（女），含 Y 精子＋卵细胞→XY（男），故女儿一定得到父亲的 X。",
+      "source": "original",
+      "form": "cloze",
+      "verification": {
+        "agents": [
+          "gapfill-author-20261006"
+        ],
+        "answers_agree": true,
+        "single_agent": true,
+        "dual_agent": false,
+        "note": "single-agent generation, blind verification deferred"
+      },
+      "_batch": "biology_authored"
     }
   ]
 }

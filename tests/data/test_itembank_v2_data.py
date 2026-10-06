@@ -24,7 +24,11 @@ import os
 
 import pytest
 
-from test_dual_verify_data import BIO_AGENTS, CHE_AGENTS, CHI_AGENTS, GEO_AGENTS, HIS_AGENTS, PHY_AGENTS, POL_AGENTS, SCI_AGENTS
+from test_dual_verify_data import (
+    BIO_AGENTS, CHE_AGENTS, CHI_AGENTS, GEO_AGENTS, HIS_AGENTS, PHY_AGENTS,
+    POL_AGENTS, SCI_AGENTS,
+    GAPFILL_TMPL_AGENTS, GAPFILL_GEN_AGENTS, GAPFILL_AUTHOR_AGENTS,
+)
 from xuexing.itembank_v2 import validate_bank_v2, source_counts, verification_stats
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -68,7 +72,12 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 未入库：其 33 个目标 KP 现均由豁免集覆盖（19 题库 coverage_exemptions
 # + 14 误解库豁免），本轮门禁不要求；全库 unique id 18430、无重复，
 # 登记外单代理签名 0。
-KNOWN_ISSUE_COUNT = 16488
+# 2026-10-06 卷型缺口补齐批 ×3 复测：16585 = 16488 + 97（数学模板/人工命题
+# mgap_* 50 题 math-template-gen-20261006 + LLM 初稿人工修订 *_gap_llm_* 18 题
+# gapfill-gen-20261006 + LLM 弃稿后人工命题 *_gap_a0* 29 题
+# gapfill-author-20261006；check_paper_spec OK 9→21）。全库 unique id、
+# 无重复、登记外单代理签名 0，须再复测同步本常量与注释。
+KNOWN_ISSUE_COUNT = 16585
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
 SCI_AGENTS = ("sci-gen-w1-20261003",)
@@ -82,6 +91,10 @@ KNOWN_SINGLE_AGENT_IDS = set()
 for _a in (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS, POL_AGENTS, SCI_AGENTS, CHI_AGENTS):
     KNOWN_SINGLE_AGENT_IDS.add(_a[0])
 KNOWN_SINGLE_AGENT_IDS.update(GEO_AGENTS)  # GEO_AGENTS 是 tuple 含两个单元素
+# 2026-10-06 卷型缺口补齐批 ×3（数学模板 / LLM 初稿修订 / 人工命题）
+KNOWN_SINGLE_AGENT_IDS.add(GAPFILL_TMPL_AGENTS[0])
+KNOWN_SINGLE_AGENT_IDS.add(GAPFILL_GEN_AGENTS[0])
+KNOWN_SINGLE_AGENT_IDS.add(GAPFILL_AUTHOR_AGENTS[0])
 # PHY 密度补齐批入库（共用 PHY_AGENTS[0]）
 KNOWN_SINGLE_AGENT_IDS.add("phy-gen-w1-20261003-density")
 # ENG 密度补齐批入库（GEN_ENG_DENSITY_01，eng_dens01_*，2026-10-03）
