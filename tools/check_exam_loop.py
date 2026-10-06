@@ -167,8 +167,31 @@ def check_paper_page(paper, bank, session_id, learner_id, html_doc) -> dict:
     assert "<textarea" in html_doc, "解答题缺 textarea"
     assert '<input class="q-text" type="text"' in html_doc, "填空题缺文本 input"
 
-    for needle in ("<script", "<link", "src=", "http://", "https://", "url("):
+    # 自包含：无脚本/外链；src 仅允许听力题的站内音频（/audio/<纯文件名>.mp3，
+    # server.py 的 StaticFiles 挂载点），出现任何其它 src 即失败。
+    for needle in ("<script", "<link", "http://", "https://", "url("):
         assert needle not in html_doc.lower(), f"非自包含，出现 {needle!r}"
+    for src in re.findall(r'src\s*=\s*["\']([^"\']*)["\']', html_doc, re.IGNORECASE):
+        assert re.fullmatch(r"/audio/[A-Za-z0-9._-]+\.mp3", src), \
+            f"非自包含，出现白名单外的 src={src!r}"
+
+    # 听力音频：题库 item.audio 有值的题，作答页恰好一个 <audio controls>，
+    # src 与题库声明逐字一致；无 audio 的题零音频标记（打印卷 render.html 不渲染）。
+    want_audio = {}
+    for sec in paper["sections"]:
+        for q in sec["questions"]:
+            fname = str(getattr(bank.get(q["item_id"]), "audio", "") or "").strip()
+            if fname:
+                want_audio[q["question_no"]] = f"/audio/{fname}"
+    for no, src in want_audio.items():
+        block = html_doc.split(f'<div class="question" id="q{no}">')[1].split(
+            '<div class="question"')[0]
+        assert f'<audio class="q-audio" controls preload="none" src="{src}">' in block, \
+            f"第 {no} 题缺音频控件 src={src}"
+        assert block.count("<audio") == 1, f"第 {no} 题音频控件不止一个"
+    assert html_doc.count("<audio") == len(want_audio), \
+        f"音频标记总数 {html_doc.count('<audio')} != 带音频题数 {len(want_audio)}"
+
     errs = check_html_tag_balance(html_doc)
     assert not errs, f"标签配平错误 {errs[:3]}"
 
@@ -426,6 +449,83 @@ def run(spec_id: str, seed: int) -> int:
         assert not bad_multi, f"勾选全部正确项仍被判错：第 {bad_multi} 题"
         ok(f"9. 多选（checkbox 同名多值）{len(multi)} 题按标签全勾 → 全判对"
            f"（守住「value 用标签、提交不按顿号切碎选项正文」）")
+
+    # ---- 10. 教师批改端：pending -> grade-subjective -> 总分/画像/报告刷新 ----
+    sid_g = client.get(f"/exam/{spec_id}/start",
+                       params={"learner_id": "grade-kid", "seed": seed,
+                               "format": "json"}).json()["session_id"]
+    # 未提交就取清单 → 409
+    r = client.get(f"/exam/{sid_g}/pending")
+    assert r.status_code == 409, f"未提交取待批改清单应 409，实得 {r.status_code}"
+    sub = {f"item_{q['question_no']}": bank.get(q["item_id"]).answer
+           for sec in paper["sections"] for q in sec["questions"]
+           if exam_loop.is_objective(bank.get(q["item_id"]))}
+    r = client.post(f"/exam/{sid_g}/submit", json={"answers": sub},
+                    follow_redirects=False)
+    assert r.status_code == 303, f"批改环提交 {r.status_code}"
+    prof_before = client.get(f"/learners/grade-kid/profile").json()
+    n_subj = n_q - obj_n
+    r = client.get(f"/exam/{sid_g}/pending")
+    assert r.status_code == 200, f"pending {r.status_code}"
+    pend = r.json()
+    assert pend["n_pending"] == n_subj, \
+        f"待批改 {pend['n_pending']} != 主观题 {n_subj}"
+    assert abs(pend["pending_points"] - (paper["total_points"] - obj_total)) < 1e-9, \
+        f"待批改分值 {pend['pending_points']} != 满分-客观分"
+    if n_subj:
+        head = pend["items"][0]
+        for field in ("question_no", "item_id", "stem", "learner_answer",
+                      "points", "expected", "rubric", "kps"):
+            assert field in head, f"待批改清单缺字段 {field}"
+        ok(f"10a. pending 200：待批改 {pend['n_pending']} 题/{pend['pending_points']:g} 分，"
+           f"题面/作答/分值/参考答案/评分要点字段齐备")
+    else:
+        ok("10a. pending 200：本卷无主观题，清单为诚实空表")
+
+    no_g = pend["items"][0]["question_no"] if n_subj else None
+    if no_g is not None:
+        pts_g = next(it["points"] for it in pend["items"]
+                     if it["question_no"] == no_g)
+        kp_g = pend["items"][0]["kps"][0]
+        given_g = next(it["learner_answer"] for it in pend["items"]
+                       if it["question_no"] == no_g)
+        # 越界给分 400；未知题号 400；批到客观题 409（提交时已自动判分，终审不覆盖）
+        assert client.post(f"/exam/{sid_g}/grade-subjective",
+                           json={"question_no": no_g, "score": pts_g + 1}).status_code == 400
+        assert client.post(f"/exam/{sid_g}/grade-subjective",
+                           json={"question_no": 9999, "score": 1}).status_code == 400
+        bad_obj = next((q["question_no"] for sec in paper["sections"]
+                        for q in sec["questions"]
+                        if exam_loop.is_objective(bank.get(q["item_id"]))), None)
+        if bad_obj is not None:
+            assert client.post(f"/exam/{sid_g}/grade-subjective",
+                               json={"question_no": bad_obj, "score": 1}).status_code == 409
+        # 半分批改：得分率 < 0.65 → 证据记错（不给对）
+        r = client.post(f"/exam/{sid_g}/grade-subjective",
+                        json={"question_no": no_g, "score": pts_g / 2,
+                              "comment": "过程对一半，注意审题。"})
+        assert r.status_code == 200, f"grade-subjective {r.status_code} {r.text[:200]}"
+        out = r.json()
+        assert out["correct"] is False, "半分不应记对（达标线 0.65）"
+        assert out["comment"] == "过程对一半，注意审题。"
+        rep3 = client.get(f"/exam/{sid_g}/report.html").text
+        m3 = re.search(r'<div class="score-big">([0-9.]+)', rep3)
+        assert float(m3.group(1)) == obj_total + pts_g / 2, "报告页总分未含教师给分"
+        assert "教师批改" in rep3 and "评语：过程对一半" in rep3, "报告页未呈现教师批改与评语"
+        ev_after = client.get(f"/learners/grade-kid/profile").json()["evidence"]
+        assert ev_after.get(kp_g, 0) == prof_before["evidence"].get(kp_g, 0) + 1, \
+            f"批改后 KP {kp_g} 证据未 +1（画像没吃进主观题）"
+        # 重复批改 → 409（终审不静默覆盖）
+        r = client.post(f"/exam/{sid_g}/grade-subjective",
+                        json={"question_no": no_g, "score": pts_g})
+        assert r.status_code == 409, f"重复批改应 409，实得 {r.status_code}"
+        # 剩余待批改数量随批改递减
+        pend2 = client.get(f"/exam/{sid_g}/pending").json()
+        assert pend2["n_pending"] == n_subj - 1, "批改后待批改数未减一"
+        assert f"{no_g}" not in [str(it["question_no"]) for it in pend2["items"]]
+        ok(f"10b. grade-subjective：第 {no_g} 题批 {pts_g / 2:g}/{pts_g:g} 分 → "
+           f"总分 {obj_total + pts_g / 2:g}（报告页刷新可见）、KP 证据 +1、"
+           f"待批改余 {pend2['n_pending']}；越界/未知题/客观题 400、重复批改 409")
 
     print(f"\n样本已写入 {os.path.relpath(OUT_DIR, ROOT)}/（paper.html / 两份 report.html）")
     print(f"EXAM-LOOP-OK {len(checks)}/{len(checks)}（{spec_id} seed={seed}，"

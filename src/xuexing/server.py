@@ -25,19 +25,23 @@ from urllib.parse import parse_qsl
 
 from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.responses import HTMLResponse, PlainTextResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from xuexing.agent_shell import MockLLM, attribute_error
 from xuexing.blueprint import build_blueprint
 from xuexing.diagnosis import aggregate_to_clusters, diagnose
 from xuexing.exam_loop import (
+    ExamAlreadyGraded,
     ExamLoopError,
     ExamSessionExpired,
     ExamSessionNotFound,
     ExamSessionStore,
+    apply_subjective_grade,
     build_report,
     exam_html,
     grade_submission,
+    pending_payload,
 )
 from xuexing.exam_report import render_report_html
 from xuexing.grading import grade_to_response
@@ -157,6 +161,13 @@ class ExamSubmitIn(BaseModel):
     answers: dict[str, Any] = {}
 
 
+class GradeSubjectiveIn(BaseModel):
+    """教师批分请求体：{题号, 得分, 评语}。评语可选；给分越界由内核拒（400）。"""
+    question_no: int
+    score: float
+    comment: str = ""
+
+
 def create_app(
     bank: ItemBank,
     graph: KPGraph,
@@ -167,6 +178,7 @@ def create_app(
     kmap_knowledge_dir: str | None = None,
     stage_graph_loader=None,
     exam_sessions: ExamSessionStore | None = None,
+    audio_dir: str | None = None,
 ) -> FastAPI:
     """spec_catalog：卷型库 {spec_id: 卷型 dict}（缺省装 data/curriculum/
     paper_specs.json）；stage_bank_loader：callable(subject, stage) -> ItemBank，
@@ -182,12 +194,22 @@ def create_app(
     契约跳过，画像全空。
 
     exam_sessions：考试会话存储（缺省进程内 ExamSessionStore）。注入点让测试
-    换 TTL/时钟（会话过期用例），生产走缺省。"""
+    换 TTL/时钟（会话过期用例），生产走缺省。
+
+    audio_dir：听力音频目录（缺省 data/audio，挂 /audio 静态路由供作答页
+    <audio controls> 播放题库 item.audio 指向的 mp3；目录自动建、文件缺失按
+    404 如实回，不崩）。"""
     app = FastAPI(title="xuexing-agent")
     store = OrgStore()
     misconceptions = misconceptions or []
     attempt_counts = AttemptCounter()
     sessions = exam_sessions if exam_sessions is not None else ExamSessionStore()
+    # 听力音频静态挂载（作答页 <audio src="/audio/..."> 的取文件处）。目录保证
+    # 在位（mp3 是可再生产物不入库，但目录+sha256 清单入库）；文件缺失按 404
+    # 如实回，不崩。
+    _audio_dir = audio_dir or os.path.join(DEFAULT_CURRICULUM_DIR, "audio")
+    os.makedirs(_audio_dir, exist_ok=True)
+    app.mount("/audio", StaticFiles(directory=_audio_dir), name="audio")
     if spec_catalog is None:
         spec_catalog = load_spec_catalog(
             os.path.join(DEFAULT_CURRICULUM_DIR, "curriculum", "paper_specs.json")
@@ -399,6 +421,7 @@ def create_app(
             {"item_id": r.item_id, "correct": r.correct, "learner_answer": r.learner_answer}
             for r in graded["responses"])
         entry["profile"] = report["profile"]
+        session["graded"] = graded  # 教师批改端（pending/grade-subjective）的就地账本
         session["report"] = report
         session["submitted"] = True
         return RedirectResponse(f"/exam/{session_id}/report.html", status_code=303)
@@ -413,6 +436,65 @@ def create_app(
         if not session.get("submitted"):
             raise HTTPException(409, f"exam session not submitted yet: {session_id}")
         return HTMLResponse(render_report_html(session["report"]))
+
+    # ---- 教师批改端：待批改清单 -> 教师批分 -> 总分/画像/报告就地刷新。
+    # 内核在 xuexing.exam_loop（pending_payload / apply_subjective_grade），
+    # 端点只做 HTTP 编解码；批分后的报告用与 submit 同一个 build_report 原路
+    # 重算（画像 = diagnose 既有内核吃「客观题 + 已批改主观题」的全部证据），
+    # 不另写第二条报告装配路径。 ----
+
+    @app.get("/exam/{session_id}/pending")
+    def exam_pending(session_id: str,
+                     x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """待批改清单（教师视图）：题面/学生作答/分值/参考答案/评分要点（题库
+        solution 字段若有）/知识点。未提交 → 409；不存在 404、过期 410。"""
+        session = _session_or_http(resolve_org(x_org_id), session_id)
+        if not session.get("submitted"):
+            raise HTTPException(409, f"exam session not submitted yet: {session_id}")
+        return pending_payload(session)
+
+    @app.post("/exam/{session_id}/grade-subjective")
+    def exam_grade_subjective(session_id: str, body: GradeSubjectiveIn,
+                              x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """教师批分一道主观题（{question_no, score, comment}）→ 入总分、按达标线
+        落画像证据（/learners/{id}/profile 可复核）、报告页重算刷新。
+        未提交 409；重复批改/批到已自动判分的客观题 409（终审不覆盖）；
+        题号不在本卷、给分越界 400。"""
+        session = _session_or_http(resolve_org(x_org_id), session_id)
+        org = session["org_id"]
+        if not session.get("submitted"):
+            raise HTTPException(409, f"exam session not submitted yet: {session_id}")
+        try:
+            resp = apply_subjective_grade(session, body.question_no, body.score,
+                                          body.comment)
+        except ExamAlreadyGraded as e:
+            raise HTTPException(409, str(e))
+        except ExamLoopError as e:
+            raise HTTPException(400, str(e))
+        # 报告与画像原路重算（与 submit 同一装配），教师批改即时可见。
+        report = build_report(session, session["graded"], session["graph"], strategies,
+                              misconceptions, bank=session["bank"])
+        entry = store.entry(org, session["learner_id"])
+        entry["responses"].append(
+            {"item_id": resp.item_id, "correct": resp.correct,
+             "learner_answer": resp.learner_answer})
+        entry["profile"] = report["profile"]
+        session["report"] = report
+        graded = session["graded"]
+        return {
+            "session_id": session_id,
+            "question_no": body.question_no,
+            "item_id": resp.item_id,
+            "score": body.score,
+            "points": next(it["points"] for it in graded["items"]
+                           if it["question_no"] == body.question_no),
+            "correct": resp.correct,
+            "comment": body.comment,
+            "total_score": report["score"],
+            "pending_points": report["pending_points"],
+            "n_pending": sum(1 for it in graded["items"] if not it["graded"]),
+            "report_url": f"/exam/{session_id}/report.html",
+        }
 
     @app.post("/learners/{learner_id}/responses")
     def submit(learner_id: str, body: SubmitIn,

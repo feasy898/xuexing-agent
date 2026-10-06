@@ -84,6 +84,17 @@ _TEXT_REPLY_LINE = "＿" * 18
 # 提交端（exam_loop）按同一函数反解，两端永不各写一份字面量。
 REPLY_FIELD_PREFIX = "item_"
 
+# 听力音频：题库 item.audio 存**纯文件名**（如 "english_gap_llm_011.mp3"），
+# 渲染层统一加站内前缀 /audio/（server.py 挂 StaticFiles 的挂载点）。文件本体
+# 是可再生产物（tools/gen_listening_audio.py，TTS 生成），sha256 清单见
+# data/audio/manifest.json；mp3 不入库（.gitignore），清单入库。
+AUDIO_SRC_PREFIX = "/audio/"
+
+# 音频文件名字符白名单 + 首字符禁「.」（防 ".."、隐藏文件、路径分隔符混进题库
+# 数据后被渲染成 src——学生卷不引外部/逃逸路径是自包含红线的音频版）。
+_AUDIO_NAME_CHARS = frozenset(
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._-")
+
 
 def reply_field_name(question_no: int) -> str:
     """题号 -> 表单字段名（"item_{no}"）。唯一约定出口，渲染端与提交端共用。"""
@@ -357,6 +368,7 @@ _EXAM_CSS = """  .exam-bar {
   }
   .q-area { min-height: 8em; resize: vertical; }
   .q-input-hint { font-size: 0.85em; color: #555; margin: 0.15em 0 0 1em; }
+  .q-audio { display: block; width: 100%; max-width: 96%; height: 2.2em; margin-top: 0.3em; }
 """
 
 # 单选题（单选/多选）按 form 字段区分控件：多选（form == "mcq_multi"）用
@@ -383,6 +395,28 @@ def option_label(option: str) -> str:
 
 def _option_input_type(item) -> str:
     return "checkbox" if getattr(item, "form", "") == _MULTI_FORM else "radio"
+
+
+def _audio_html(item) -> str:
+    """听力题的作答页音频控件（仅学生网页卷用；打印卷 render_paper_html 不渲染
+    ——纸面上放不出声音，打印版绝不携带 <audio> 标记）。
+
+    item.audio 是纯文件名（白名单字符），渲染成站内相对 src=/audio/{name}
+    （StaticFiles 挂载点）；题库数据里混进外链/路径分隔符/上级目录 →
+    PaperRenderError fail-closed，绝不渲染成可疑 src。
+    """
+    raw = str(getattr(item, "audio", "") or "").strip()
+    if not raw:
+        return ""
+    fname = raw[len(AUDIO_SRC_PREFIX):] if raw.startswith(AUDIO_SRC_PREFIX) else raw
+    if (not fname or fname.startswith(".") or "/" in fname or "\\" in fname
+            or not set(fname) <= _AUDIO_NAME_CHARS):
+        raise PaperRenderError(
+            f"item {getattr(item, 'id', '?')}: unsafe audio path {raw!r} "
+            "(want a plain file name like 'xxx.mp3')")
+    return (f'    <audio class="q-audio" controls preload="none" '
+            f'src="{AUDIO_SRC_PREFIX}{_esc(fname)}">'
+            f'您的浏览器不支持音频播放。</audio>\n')
 
 
 def _reply_input_html(item, question_no: int) -> str:
@@ -431,8 +465,10 @@ def render_exam_form_html(paper: dict, bank, session_id: str = "",
     控件 name 为 ``item_{no}``（reply_field_name），每题**恰好一个 name**
     （选择题多个 radio/checkbox 共用一个 name），提交端按此名回填 learner_answer。
 
-    红线与成品卷同：只读 stem/options，answer/solution 零触碰；无 JS、无外链
-    （纯 form 提交，无 fetch）。CSS 类名同样避开 answer/solution 词根，且**一律用
+    红线与成品卷同：只读 stem/options（外加听力题的 audio 文件名），answer/
+    solution 零触碰；无 JS、无 fetch——唯一放行的站内资源是听力题的
+    ``<audio src="/audio/{纯文件名}">``（server.py 的 StaticFiles 挂载点，
+    绝无 http(s) 外链）。CSS 类名同样避开 answer/solution 词根，且**一律用
     em/百分比**（不写 150mm 这类裸多位数）——否则 CSS 数字会被 redline_report 的
     值级扫描误当成某题答案值（实测踩过：answer ``50`` 撞上 ``max-width: 150mm``）。
     """
@@ -492,6 +528,8 @@ def render_exam_form_html(paper: dict, bank, session_id: str = "",
                 f'<span class="q-no">{no}.</span>'
                 f'<span class="q-points">（{format_points(q["points"])}分）</span>'
                 f'<span class="q-stem">{_esc(item.stem.strip())}</span></div>\n')
+            # 听力题：题面下先给音频控件（先听后答），有音频才渲染、无音频零标记
+            parts.append(_audio_html(item))
             if options:
                 parts.append('    <div class="q-options">\n')
                 for opt in options:

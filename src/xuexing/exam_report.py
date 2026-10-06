@@ -108,8 +108,35 @@ def _validate(report: dict) -> dict:
     return report
 
 
+def _format_num(x) -> str:
+    """分值/得分 -> 人话数字（整数去小数尾：7.0 -> "7"；7.5 -> "7.5"）。"""
+    f = float(x)
+    return str(int(f)) if f.is_integer() else f"{f:g}"
+
+
+def _verdict_html(it: dict) -> str:
+    """单题判定标记：✓ 正确 / ✗ 错误 / 待批改 三态；教师已批改题带得分与评语。"""
+    if it.get("teacher_score") is not None:
+        cls = "ok" if it.get("correct") else "bad"
+        word = "✓" if it.get("correct") else "✗"
+        html = (f'<span class="verdict {cls}">{word} 教师批改 '
+                f'{_format_num(it["teacher_score"])}/{_format_num(it.get("points", 0))}'
+                ' 分</span>')
+        comment = str(it.get("teacher_comment") or "").strip()
+        if comment:
+            html += f'<div class="why">评语：{_esc(comment)}</div>'
+        return html
+    if it.get("correct") is True:
+        return '<span class="verdict ok">✓ 正确</span>'
+    if it.get("correct") is False:
+        return '<span class="verdict bad">✗ 错误</span>'
+    # 主观题：本闭环不自动判分（不假装能判），如实标「待批改」而非
+    # 计入对/错——凭字符串相等判解答题会造出假的错。
+    return '<span class="verdict pending">待批改</span>'
+
+
 def _render_items(report: dict) -> str:
-    """逐题对错表：题号/分值/我的作答/正确答案/判定/涉及知识点。"""
+    """逐题对错表：题号/分值/题目/我的作答/正确答案/判定/涉及知识点。"""
     if not report["items"]:
         return '<p class="empty">本卷没有题目记录。</p>'
     rows = [
@@ -117,14 +144,6 @@ def _render_items(report: dict) -> str:
         "<th>正确答案</th><th>判定</th></tr>",
     ]
     for it in report["items"]:
-        if it.get("correct") is True:
-            verdict = '<span class="verdict ok">✓ 正确</span>'
-        elif it.get("correct") is False:
-            verdict = '<span class="verdict bad">✗ 错误</span>'
-        else:
-            # 主观题：本闭环不自动判分（不假装能判），如实标「待批改」而非
-            # 计入对/错——凭字符串相等判解答题会造出假的错。
-            verdict = '<span class="verdict pending">待批改</span>'
         given = it.get("learner_answer") or ""
         given_html = (f'<div class="answer-box">{_esc(given)}</div>' if given.strip()
                       else '<span class="empty">（未作答）</span>')
@@ -136,7 +155,7 @@ def _render_items(report: dict) -> str:
             f'<tr><td class="num">{it.get("question_no")}</td>'
             f'<td class="num">{it.get("points")}</td>'
             f'<td><div class="stem">{_esc(it.get("stem", ""))}</div>{kp_tags}</td>'
-            f'<td>{given_html}</td><td>{right_html}</td><td>{verdict}</td></tr>')
+            f'<td>{given_html}</td><td>{right_html}</td><td>{_verdict_html(it)}</td></tr>')
     rows.append("</table>")
     return "".join(rows)
 
@@ -203,6 +222,15 @@ def _render_next(report: dict) -> str:
     return f'<ol class="next">{"".join(items)}</ol>'
 
 
+def _score_line(n_pending: int, pending, score_note: str) -> str:
+    """卷头得分构成一句话：还有待批改才报「待批改 N 道涉及 X 分」；
+    全批完/纯客观卷只报得分构成，不报零待办。"""
+    if n_pending:
+        return (f"本次共 {n_pending} 道主观题待人工批改，涉及 {pending:g} 分"
+                f"（{score_note}）。")
+    return f"得分构成：{score_note}。"
+
+
 def render_report_html(report: dict) -> str:
     """报告数据 dict -> 自包含 HTML 文档（UTF-8，无 JS/外链）。"""
     _validate(report)
@@ -211,11 +239,18 @@ def render_report_html(report: dict) -> str:
     n_correct = sum(1 for it in report["items"] if it.get("correct") is True)
     n_wrong = sum(1 for it in report["items"] if it.get("correct") is False)
     n_pending = sum(1 for it in report["items"] if it.get("correct") is None)
+    n_teacher = sum(1 for it in report["items"] if it.get("teacher_score") is not None)
     rate = (score / total) if total else 0.0
     pending = report.get("pending_points") or 0
-    # 得分构成说明：主观题（解答题/实验题等）不在自动判分口径内，其分值既不计入
-    # 得分也不算扣分——如实标出，否则「34 / 100」会被读成「扣了 66 分」。
-    score_note = ("主观题的分值未计入得分，也未扣分" if pending else "全卷均为客观题")
+    # 得分构成说明（诚实三分账）：还有待批改 → 主观题分值未计入也未扣；
+    # 教师已批改 → 已计入（家长看到的总分含教师给分）；纯客观卷 → 全自动判分。
+    if pending:
+        score_note = "主观题的分值未计入得分，也未扣分"
+    elif n_teacher:
+        score_note = f"主观题已经教师批改 {n_teacher} 题，得分已计入总分"
+    else:
+        score_note = "全卷均为客观题"
+    answered = "答对" if not n_teacher else "答对（含教师批改）"
     return "".join([
         "<!DOCTYPE html>\n",
         '<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n',
@@ -228,11 +263,10 @@ def render_report_html(report: dict) -> str:
         f'  <div class="report-meta">'
         f'<span>考生 <b>{_esc(report["learner_id"])}</b></span>'
         f'<span>卷型 {_esc(report["spec_id"])}</span>'
-        f'<span>客观题答对 {n_correct}/{n_correct + n_wrong} 题</span>'
+        f'<span>{answered} {n_correct}/{n_correct + n_wrong} 题</span>'
         f'<span>得分率 {_pct(rate)}</span></div>\n',
         f'  <div class="score-big">{score:g}<span class="full"> / {total:g} 分</span></div>\n',
-        f'  <p class="why">本次共 {n_pending} 道主观题待人工批改，涉及 {pending:g} 分'
-        f'（{score_note}）。</p>\n',
+        f'  <p class="why">{_score_line(n_pending, pending, score_note)}</p>\n',
         "</div>\n",
         '<div class="card"><h2>一、逐题对错</h2>\n', _render_items(report), "\n</div>\n",
         '<div class="card"><h2>二、知识点掌握更新</h2>\n', _render_kp_rows(report), "\n",

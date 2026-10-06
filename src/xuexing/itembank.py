@@ -152,5 +152,6 @@ def itembank_from_dict(data: dict) -> ItemBank:
             misconceptions=list(it["misconceptions"]) if "misconceptions" in it else [],
             form=it.get("form", "choice"),
             answer_mode=it.get("answer_mode", "exact"),
+            audio=str(it.get("audio", "") or ""),
         ))
     return bank

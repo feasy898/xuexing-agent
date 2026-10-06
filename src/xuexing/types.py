@@ -40,6 +40,11 @@ class Item:
     misconceptions: list[str] = field(default_factory=list)
     form: str = "choice"  # "mcq_single" | "mcq_multi"；非 mcq_multi 一律走单选语义
     answer_mode: str = "exact"  # "exact" | "subset"；多选按拆分后标签集合等值判
+    # 听力音频文件名（相对 /audio 静态挂载点，如 "english_gap_llm_011.mp3"）；
+    # 空 = 无音频（绝大多数题）。渲染层仅作答页据此出 <audio controls>，
+    # 打印卷不渲染；文件本体是可再生产物（tools/gen_listening_audio.py），
+    # sha256 清单见 data/audio/manifest.json。
+    audio: str = ""
 
     def effective_guess(self) -> float:
         if self.guess is not None:

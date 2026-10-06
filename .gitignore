@@ -34,3 +34,9 @@ out/exam_loop/
 # 说明：work/ 与 regen/ 已在库内跟踪（work/ 是题库与知识库的可复现构建脚本，
 # regen/ 是契约盲重生成内核源码），上面的忽略项对已跟踪文件不生效；
 # 保留条目仅为拦住新产生的临时产物，勿据此以为 work/、regen/ 不在库内。
+
+# TTS 听力音频（data/audio/）：mp3 是可再生产物（tools/gen_listening_audio.py
+# 重跑生成，stepaudio-2.5-tts），照仓内资产惯例不入库；sha256 清单
+# manifest.json 入库，供复跑校验与消费方核对（同 .env 忽略 / .env.example 入库
+# 的「可再生产物忽略、清单/样例入库」策略）。
+data/audio/*.mp3

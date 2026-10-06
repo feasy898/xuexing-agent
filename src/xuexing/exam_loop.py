@@ -19,11 +19,14 @@ server.py）只做编解码，本模块承担全部判定。
   ``GET /learners/{id}/plan`` / ``POST /recommend?attach`` 同一实现；
 - 报告页：``exam_report.render_report_html``（纯渲染）。
 
-**客观题即时判分、主观题不假装判**：``item_type`` 为 ``choice``/``fill`` 的题走
-``grade_to_response`` 即时判分（客观题口径 = ``POST /grade`` 口径）；``solve``
-（解答题）在本最小闭环里**不自动判分**——仓内没有主观题评分器，凭字符串相等判
-解答题会造出假的「错」，故记为待批改（``correct=None``）、不进画像证据。这与
-``types.Response`` 的注释「主观题由教师/批改端给」一致。
+**客观题即时判分、主观题交教师批改（不假装判）**：``item_type`` 为
+``choice``/``fill`` 的题走 ``grade_to_response`` 即时判分（客观题口径 =
+``POST /grade`` 口径）；``solve``（解答题）在提交时**不自动判分**——仓内没有
+主观题评分器，凭字符串相等判解答题会造出假的「错」，故记为待批改
+（``correct=None``）、不进画像证据。这与 ``types.Response`` 的注释「主观题由
+教师/批改端给」一致。闭环的另一半在本模块：``pending_payload``（教师待批改
+清单）+ ``apply_subjective_grade``（教师批分 → 入总分、按达标线落画像证据，
+端点用既有 ``build_report`` 原路重算报告 → 报告页刷新即见）。
 
 **画像范围（诚实声明）**：本模块诊断用的是**本场考试所属学科的 KP 图**
 （``kpgraph_subject.load_kpgraph_subject`` 装载，见 server.py 注入点），不是
@@ -42,6 +45,7 @@ OrgStore（``entry["responses"]`` / ``entry["profile"]``），所以 ``/profile`
 """
 from __future__ import annotations
 
+import math
 import secrets
 import time
 from typing import Callable
@@ -58,12 +62,15 @@ __all__ = [
     "ExamLoopError",
     "ExamSessionNotFound",
     "ExamSessionExpired",
+    "ExamAlreadyGraded",
     "ExamSessionStore",
     "DEFAULT_SESSION_TTL_SECONDS",
     "MASTERY_TARGET",
     "is_objective",
     "collect_answers",
     "grade_submission",
+    "pending_payload",
+    "apply_subjective_grade",
     "build_report",
     "exam_html",
 ]
@@ -92,6 +99,10 @@ class ExamSessionNotFound(ExamLoopError):
 
 class ExamSessionExpired(ExamLoopError):
     """会话已过 TTL → 410（Gone：资源曾存在、现不可用）。"""
+
+
+class ExamAlreadyGraded(ExamLoopError):
+    """该题已被教师批改过，重复批改被拒 → 409（批改是终审，不静默覆盖）。"""
 
 
 def _pct(x) -> str:
@@ -261,12 +272,115 @@ def grade_submission(session: dict, raw: dict) -> dict:
             "item_type": getattr(item, "item_type", ""),
             "stem": item.stem,
             "expected": getattr(item, "answer", ""),
+            # 评分要点（题库 solution 字段，若有）：教师批改端（GET pending）要靠
+            # 它给分；学生报告渲染（exam_report）不消费此键，红线不受影响。
+            "solution": str(getattr(item, "solution", "") or ""),
             "learner_answer": given,
             "correct": correct,
             "graded": objective,
             "kps": list(getattr(item, "kps", []) or []),
         })
     return {"items": items, "score": score, "responses": responses}
+
+
+def _require_submitted(session: dict) -> dict:
+    """取已交卷会话的判分结果；未交卷（无 graded）→ ExamLoopError（端点映射 409）。"""
+    graded = session.get("graded")
+    if not session.get("submitted") or not isinstance(graded, dict):
+        raise ExamLoopError(f"exam session not submitted yet: {session['session_id']}")
+    return graded
+
+
+def pending_payload(session: dict) -> dict:
+    """已交卷会话 -> 待批改清单（教师批改端视图，GET /exam/{s}/pending 的内核）。
+
+    每道待批改题给：题号/题型/题面/学生作答/分值/参考答案/评分要点（题库
+    solution 字段，若有——「评分要点字段若有」的落点）/知识点。已批改题不在
+    清单里（批过即消失，剩几道由 n_pending/pending_points 如实说出）；全批完
+    items 为空表（诚实空态，不编造待办）。
+    """
+    graded = _require_submitted(session)
+    rows = [it for it in graded["items"] if not it["graded"]]
+    return {
+        "session_id": session["session_id"],
+        "learner_id": session["learner_id"],
+        "spec_id": session["spec_id"],
+        "title": session["title"],
+        "n_pending": len(rows),
+        "pending_points": sum(it["points"] for it in rows),
+        "items": [
+            {
+                "question_no": it["question_no"],
+                "item_id": it["item_id"],
+                "item_type": it["item_type"],
+                "points": it["points"],
+                "stem": it["stem"],
+                "learner_answer": it["learner_answer"],
+                "expected": it["expected"],
+                "rubric": it.get("solution", ""),
+                "kps": list(it.get("kps") or []),
+            }
+            for it in sorted(rows, key=lambda it: it["question_no"])
+        ],
+    }
+
+
+def _validate_subjective_score(score, points) -> float:
+    """教师给分守卫：有限数字、非 bool、0 <= score <= points（越界 → 400）。"""
+    if isinstance(score, bool) or not isinstance(score, (int, float)):
+        raise ExamLoopError(f"score must be a number, got {type(score).__name__}")
+    score = float(score)
+    if not math.isfinite(score):
+        raise ExamLoopError(f"score must be finite, got {score!r}")
+    if not 0.0 <= score <= float(points):
+        raise ExamLoopError(
+            f"score must be within [0, points={points}], got {score}")
+    return score
+
+
+def apply_subjective_grade(session: dict, question_no: int, score, comment: str = "") -> Response:
+    """教师批分一道主观题 -> 本次批改落入画像的 Response（POST grade-subjective 内核）。
+
+    语义（与「主观题不假装判」同一诚实口径的另一半）：
+    - 只对**本会话已交卷**的题生效：未交卷 409（端点映射）、题号不在本卷 → 400；
+    - 只对**待批改**题生效：客观题（已即时判分）与已批改题 → 拒绝
+      （已批改抛 ExamAlreadyGraded → 409；批改是终审，不静默覆盖）；
+    - 给分越界（[0, points] 之外）→ 400；评语可选（原样保存，渲染层转义）；
+    - 入画像的判定：得分率达到本闭环达标线（``MASTERY_TARGET``，与薄弱点判定
+      同一条 0.65 线）才记 correct=True——半对不给对，与客观题「全有全无」的
+      证据口径一致，不让教师同情分悄悄抬高掌握度；
+    - 总分与待批改分值**就地更新**在 session["graded"] 上（score += 教师给分、
+      该题 graded=True），报告由端点用既有 build_report 原路重算 → 报告页刷新
+      即见新总分/新画像。
+    """
+    graded = _require_submitted(session)
+    if isinstance(question_no, bool) or not isinstance(question_no, int):
+        raise ExamLoopError(f"question_no must be an int, got {question_no!r}")
+    row = next((it for it in graded["items"] if it["question_no"] == question_no), None)
+    if row is None:
+        raise ExamLoopError(f"question {question_no} is not in this exam")
+    if row["graded"]:
+        if row["item_type"] in OBJECTIVE_TYPES:
+            raise ExamAlreadyGraded(
+                f"question {question_no} is objective ({row['item_type']}) "
+                "and was auto-graded at submit; teacher grading is for subjective questions")
+        raise ExamAlreadyGraded(
+            f"question {question_no} already graded by teacher "
+            f"(score={row.get('teacher_score')}); grading is final and not overwritten")
+    points = row["points"]
+    score = _validate_subjective_score(score, points)
+    if not isinstance(comment, str):
+        raise ExamLoopError(f"comment must be a str, got {type(comment).__name__}")
+    correct = points > 0 and (score / float(points)) >= MASTERY_TARGET
+    row["correct"] = correct
+    row["graded"] = True
+    row["teacher_score"] = score
+    row["teacher_comment"] = comment
+    graded["score"] = float(graded["score"]) + score
+    resp = Response(item_id=row["item_id"], correct=correct,
+                    learner_answer=row["learner_answer"])
+    graded["responses"].append(resp)
+    return resp
 
 
 def _kp_stats(items: list[dict], graph) -> tuple[dict, set]:
