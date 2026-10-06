@@ -1,119 +1,461 @@
 {
-  "note": "归因不回填，仅供后续人工裁定",
+  "note": "归因不回填，仅供后续人工裁定。2026-10-06 双代理复核回填：19 条逐条经 step-5-preview 独立复判（盲式输入=仅题干/选项/两判；与单代理归因及原题解析隔离），17 条保留原判、2 条改判（p2_061 wrong_solve→format_diff、p4_048 format_diff→wrong_key），逐条见 status/dual_review。",
   "queue": [
     {
       "item_id": "p2_061",
       "grade": 2,
       "verdict": "wrong_solve",
-      "note": "proposed \"4,10\" 缺少时间单位且用逗号分隔，无法对应题干两个空格。"
+      "note": "proposed \"4,10\" 缺少时间单位且用逗号分隔，无法对应题干两个空格。",
+      "status": "reviewed_revised",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "4时10分",
+          "proposed(盲解)": "4,10"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "4时10分",
+        "review_reason": "两候选均表示下午4时10分，仅格式表述不同",
+        "disposition": "revised",
+        "final_verdict": "format_diff",
+        "disposition_reason": "改判 format_diff：题干为两个空且单位「时/分」已印出，盲解「4,10」即按序两空取值，与标答「4时10分」同为下午4时10分，仅多空联写的序列化格式差异（同类缺单位差异如 m8_110「6」vs「6 km」本队列已按 format_diff 口径）；原判理由「无法对应题干两个空格」与题干两空结构不符，故改判。"
+      }
     },
     {
       "item_id": "p3_075",
       "grade": 3,
       "verdict": "format_diff",
-      "note": "proposed \"12小时30分钟\" 数值正确，但题干已给出单位小时/分钟，key 只需填数字。"
+      "note": "proposed \"12小时30分钟\" 数值正确，但题干已给出单位小时/分钟，key 只需填数字。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "12、30",
+          "proposed(盲解)": "12小时30分钟"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "12小时30分钟",
+        "review_reason": "两候选均表示营业时长为12小时30分钟，仅填空格式与完整表述差异，实质等价。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "p4_048",
       "grade": 4,
       "verdict": "format_diff",
-      "note": "proposed \"480万\" 与 key\"480\" 数值等价，但 key 只要求填用万作单位的数。"
+      "note": "proposed \"480万\" 与 key\"480\" 数值等价，但 key 只要求填用万作单位的数。",
+      "status": "reviewed_revised",
+      "final_verdict": "wrong_key",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "480",
+          "proposed(盲解)": "480万"
+        },
+        "review_verdict": "wrong_key",
+        "review_answer": "480万",
+        "review_reason": "改写成用“万”作单位应保留单位，4800000=480万，标答缺“万”字。",
+        "disposition": "revised",
+        "final_verdict": "wrong_key",
+        "disposition_reason": "改判 wrong_key：题干「将4800000改写成用『万』作单位的数是____」空后未印单位，规范答案应为「480万」（原题解析亦写 4800000=480万），标答「480」只是万级数值、不构成「用万作单位的数」的规范形式，盲解正确，故改判（wrong_key，本队列首条）。"
+      }
     },
     {
       "item_id": "p4_053",
       "grade": 4,
       "verdict": "wrong_solve",
-      "note": "题干为\"____角\"，proposed\"平角\"填入后变成\"平角角\"，语义重复错误。"
+      "note": "题干为\"____角\"，proposed\"平角\"填入后变成\"平角角\"，语义重复错误。",
+      "status": "reviewed_kept",
+      "final_verdict": "wrong_solve",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "平",
+          "proposed(盲解)": "平角"
+        },
+        "review_verdict": "wrong_solve",
+        "review_answer": "平",
+        "review_reason": "题干为'____角'，应填'平'；盲解'平角'填入后成'平角角'，与题型不符。",
+        "disposition": "kept",
+        "final_verdict": "wrong_solve",
+        "disposition_reason": "复判与原判一致（wrong_solve），保留原判。"
+      }
     },
     {
       "item_id": "p4_055",
       "grade": 4,
       "verdict": "format_diff",
-      "note": "proposed\"115°\"与 key\"115\" 数值相同，仅差度数符号，属格式差异。"
+      "note": "proposed\"115°\"与 key\"115\" 数值相同，仅差度数符号，属格式差异。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "115",
+          "proposed(盲解)": "115°"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "115°",
+        "review_reason": "邻角与65°角互为补角，应为115°，仅单位表示不同",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "p4_084",
       "grade": 4,
       "verdict": "format_diff",
-      "note": "proposed\"小汽车2辆\" 数值正确，但 key\"2辆\"已足够回答数量。"
+      "note": "proposed\"小汽车2辆\" 数值正确，但 key\"2辆\"已足够回答数量。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "2辆",
+          "proposed(盲解)": "小汽车2辆"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "小汽车有2辆",
+        "review_reason": "两候选均表示小汽车2辆，仅表述格式不同",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "p5_080",
       "grade": 5,
       "verdict": "wrong_solve",
-      "note": "右下方需列数>3且行数>4，仅(4,5)即C符合；proposed 选B错误。"
+      "note": "右下方需列数>3且行数>4，仅(4,5)即C符合；proposed 选B错误。",
+      "status": "reviewed_kept",
+      "final_verdict": "wrong_solve",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "C",
+          "proposed(盲解)": "B"
+        },
+        "review_verdict": "wrong_solve",
+        "review_answer": "C",
+        "review_reason": "数对前表列、后表行，右下方要求列数>3且行数>4，故选(4,5)；B行数变小，不符。",
+        "disposition": "kept",
+        "final_verdict": "wrong_solve",
+        "disposition_reason": "保留 wrong_solve：双判一致（标答 C=(4,5) 正确）。位置口径依题库解析（行数增大为靠下，数对前列后行），复判独立重推与原判同一结论；若按方格图行自下而上口径存在歧义，仅在此备注备查，不改判。"
+      }
     },
     {
       "item_id": "m8_88",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "(x+y)(x-y) 与 x²-y² 为恒等变形，公分母数学等价。"
+      "note": "(x+y)(x-y) 与 x²-y² 为恒等变形，公分母数学等价。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "x²-y²",
+          "proposed(盲解)": "(x+y)(x-y)"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "(x+y)(x-y)",
+        "review_reason": "x²-y²与(x+y)(x-y)为恒等变形，数值与语义一致，仅形式不同。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_95",
       "grade": 8,
       "verdict": "wrong_solve",
-      "note": "③错误（角平分线是射线不是对称轴），正确选项为C；proposed 选D错误。"
+      "note": "③错误（角平分线是射线不是对称轴），正确选项为C；proposed 选D错误。",
+      "status": "reviewed_kept",
+      "final_verdict": "wrong_solve",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "C",
+          "proposed(盲解)": "D"
+        },
+        "review_verdict": "wrong_solve",
+        "review_answer": "C",
+        "review_reason": "③错误：角平分线是射线，角的对称轴是角平分线所在的直线；①②④正确。",
+        "disposition": "kept",
+        "final_verdict": "wrong_solve",
+        "disposition_reason": "复判与原判一致（wrong_solve），保留原判。"
+      }
     },
     {
       "item_id": "m8_99",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"SAS（△ABD≌△ACE）\"与 key\"△ABD≌△ACE（证明见解析）\"结论一致，仅格式不同。"
+      "note": "proposed\"SAS（△ABD≌△ACE）\"与 key\"△ABD≌△ACE（证明见解析）\"结论一致，仅格式不同。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "△ABD≌△ACE（证明见解析）",
+          "proposed(盲解)": "SAS（△ABD≌△ACE）"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "△ABD≌△ACE（SAS）",
+        "review_reason": "两候选均正确：由AB=AC、BD=CE及夹角∠ABD=∠ACE，可用SAS证全等；盲解仅补充了判定方法。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_100",
       "grade": 8,
       "verdict": "wrong_solve",
-      "note": "题干\"能够____完全重合\"，填\"完全重合\"语义重复，正确用词应为\"叠合\"。"
+      "note": "题干\"能够____完全重合\"，填\"完全重合\"语义重复，正确用词应为\"叠合\"。",
+      "status": "reviewed_kept",
+      "final_verdict": "wrong_solve",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "叠合",
+          "proposed(盲解)": "完全重合"
+        },
+        "review_verdict": "wrong_solve",
+        "review_answer": "叠合",
+        "review_reason": "按题干应填“叠合”；盲解填“完全重合”与题干后文重复。",
+        "disposition": "kept",
+        "final_verdict": "wrong_solve",
+        "disposition_reason": "复判与原判一致（wrong_solve），保留原判。"
+      }
     },
     {
       "item_id": "m8_105",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"SAS（△ABC≌△DEF）\"与 key\"△ABC≌△DEF（证明见解析）\"结论一致。"
+      "note": "proposed\"SAS（△ABC≌△DEF）\"与 key\"△ABC≌△DEF（证明见解析）\"结论一致。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "△ABC≌△DEF（证明见解析）",
+          "proposed(盲解)": "SAS（△ABC≌△DEF）"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "△ABC≌△DEF（SAS）",
+        "review_reason": "两候选均正确，实质等价，仅表述详略不同",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_110",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"6\" 与 key\"6 km\" 数值相同，仅缺单位。"
+      "note": "proposed\"6\" 与 key\"6 km\" 数值相同，仅缺单位。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "6 km",
+          "proposed(盲解)": "6"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "6 km",
+        "review_reason": "设距离为s，s/4-s/6=0.5，解得s=6 km；盲解仅缺单位，实质等价",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_116",
       "grade": 8,
       "verdict": "wrong_solve",
-      "note": "由周长24得 y=12-x，自变量需满足长宽均大于0，即 0<x<12；proposed 写成 6<x<12 错误。"
+      "note": "由周长24得 y=12-x，自变量需满足长宽均大于0，即 0<x<12；proposed 写成 6<x<12 错误。",
+      "status": "reviewed_kept",
+      "final_verdict": "wrong_solve",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "y=12−x（0<x<12）",
+          "proposed(盲解)": "y=12-x；6<x<12"
+        },
+        "review_verdict": "wrong_solve",
+        "review_answer": "y=12−x（0<x<12）",
+        "review_reason": "由周长得y=12-x；边长只需为正，故0<x<12，6<x<12额外限制长>宽。",
+        "disposition": "kept",
+        "final_verdict": "wrong_solve",
+        "disposition_reason": "复判与原判一致（wrong_solve），保留原判。"
+      }
     },
     {
       "item_id": "m8_122",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"2.4\" 与 key\"2.4小时\" 数值相同，仅缺单位。"
+      "note": "proposed\"2.4\" 与 key\"2.4小时\" 数值相同，仅缺单位。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "2.4小时",
+          "proposed(盲解)": "2.4"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "2.4小时",
+        "review_reason": "两答案数值一致，仅盲解缺少单位“小时”",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_125",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed 中 k=-1,b=3；y=4；(0,3) 与 key 完全对应，仅叙述顺序不同。"
+      "note": "proposed 中 k=-1,b=3；y=4；(0,3) 与 key 完全对应，仅叙述顺序不同。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "k=-1，b=3；y=4；(0,3)",
+          "proposed(盲解)": "k=-1，b=3；当x=-1时y=4；与y轴交点(0,3)"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "k=-1，b=3；当x=-1时，y=4；图象与y轴的交点坐标是(0,3)",
+        "review_reason": "两候选答案数值与语义一致，仅表述格式略有差异。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_128",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed 中三个统计量数值与 key 完全一致，仅多了众数/中位数/平均数标签。"
+      "note": "proposed 中三个统计量数值与 key 完全一致，仅多了众数/中位数/平均数标签。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "（1）162；（2）162；（3）163",
+          "proposed(盲解)": "(1)众数162；(2)中位数162；(3)平均数163"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "（1）162；（2）162；（3）163",
+        "review_reason": "两候选答案数值与语义一致，仅表述格式不同。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_148",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"∠A为直角\"与 key\"∠A=90°\"等价，仅表述方式不同。"
+      "note": "proposed\"∠A为直角\"与 key\"∠A=90°\"等价，仅表述方式不同。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "直角三角形，∠A=90°",
+          "proposed(盲解)": "直角三角形，∠A为直角"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "直角三角形，∠A=90°",
+        "review_reason": "两候选均判定为直角三角形且直角为∠A，仅表述不同，实质等价。",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     },
     {
       "item_id": "m8_167",
       "grade": 8,
       "verdict": "format_diff",
-      "note": "proposed\"甲、乙方差均为2，两组数据稳定性相同\"与 key 数值结论完全一致。"
+      "note": "proposed\"甲、乙方差均为2，两组数据稳定性相同\"与 key 数值结论完全一致。",
+      "status": "reviewed_kept",
+      "final_verdict": "format_diff",
+      "dual_review": {
+        "reviewer": "step-5-preview",
+        "endpoint": "https://api.stepfun.com/step_plan/v1/chat/completions（OpenAI 兼容）",
+        "reviewed_at": "2026-10-06",
+        "blind_input": "仅题干/选项/标答/盲解；未提供原判与原题解析",
+        "two_judgments": {
+          "key_answer(标答)": "甲、乙两组方差均为2；两组数据稳定性相同",
+          "proposed(盲解)": "甲、乙方差均为2，两组数据稳定性相同"
+        },
+        "review_verdict": "format_diff",
+        "review_answer": "甲、乙两组方差均为2，两组数据稳定性相同",
+        "review_reason": "两候选实质等价，仅表述格式略有差异",
+        "disposition": "kept",
+        "final_verdict": "format_diff",
+        "disposition_reason": "复判与原判一致（format_diff），保留原判。"
+      }
     }
   ]
 }

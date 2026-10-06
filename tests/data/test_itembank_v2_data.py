@@ -77,6 +77,9 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # gapfill-gen-20261006 + LLM 弃稿后人工命题 *_gap_a0* 29 题
 # gapfill-author-20261006；check_paper_spec OK 9→21）。全库 unique id、
 # 无重复、登记外单代理签名 0，须再复测同步本常量与注释。
+# 2026-10-06 wave3 仲裁分歧双代理复核批复测：仍为 16585（本批仅回填
+# arbitration_queue_wave3_annotated.json 复核标注，data/items/ 零增删改，
+# 全库 18527 题 unique id 无重复）。
 KNOWN_ISSUE_COUNT = 16585
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")
 POL_AGENTS = ("pol-gen-w1-20261003",)
