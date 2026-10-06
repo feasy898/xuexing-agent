@@ -167,7 +167,7 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 
 ## 4. 端点速查表
 
-共 **14 个端点**（`src/xuexing/server.py:131-357` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。
+共 **17 个端点**（`src/xuexing/server.py` 实读；错误映射全局固定：领域 `ValueError`→400、资源缺失→404、pydantic 形态违规→422、绝不 500，`server.py:6-7`）。示例值取自 `tests/integration/test_module_apis.py`（grade7 真实数据，可直接对 §3.2 起的服务粘贴）。15–17 为卷型出卷族（2026-10-06 新增/补记），由离线门 `tools/check_paper_spec.py`（结构）与 `tools/check_paper_render.py`（成品渲染）覆盖，不在 §6 的 15 项冒烟内。
 
 | # | 方法 路径 | 请求体 / 参数示例 | 关键响应字段 |
 |---|---|---|---|
@@ -185,6 +185,10 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 | 12 | POST `/recommend` | kp 模式：`{"kp_id": "kp_rational_add", "limit": 2}`；画像模式：`{"learner_id": "stu-1", "mastery_threshold": 0.65}`；`attach: true` 返回带推荐的完整计划【X-Org-Id】 | kp → `mode:"kp"` `kp_id` `item_ids[]`（误解绑定题 Tier1 在前）；profile → `mode:"profile"` `recommendations[]`（最弱 kp 优先）；plan → `mode:"plan"` `plan`。皆空 400；未知 kp → 200 空列表；未知 learner → 404；`limit` ≤ 0 或 `mastery_threshold` ∉ (0,1) → 400 |
 | 13 | POST `/itembank/v2/validate` | `{"items": [...]}`（元素可为任意 JSON 值，校验器是全函数，**恒 200**） | `valid` `errors[]`（如 `"i2: llm_generated requires verification"`、`"item is not a dict"`） `counts{original,adapted,llm_generated}` `total` `verified` |
 | 14 | POST `/coverage/standard` | `{"kp_dicts": [{"id": "k1", "standard_ref": "…"}], "topics": {课标清单 JSON}}`（清单可取 `data/curriculum/math_standard_2022_topics.json`） | `coverage_rate` `is_complete` `uncovered_topic_ids`（覆盖缺口） `unmatched_kp_ids`（归属缺口） `matched_kp_ids` `covered_topic_ids` `matches[]`（`kp_id` `topic_ids`）；别名重复/清单为空 → 400，`kp_dicts` 非列表 → 422 |
+
+| 15 | POST `/papers/by-spec` | `{"spec_id": "spec_phy_jr_final", "seed": 42}`（可选 `difficulty_target=0.5`；`learner_id` 仅回显） | `spec_id` `seed` `subject` `stage` `usage` `duration_min` `total_points` `question_count` `sections[]`（大题-小题层级：`title` `form` `count` `points_each` `section_points` `questions[]{question_no,item_id,points}`，小题号全卷连续） `item_ids`；未知卷型 404；卷型分值矛盾（V8）/同型题不足/学段无题库 → 400（fail-closed） |
+| 16 | GET `/papers/by-spec/{spec_id}/render.html` | query 可选 `seed=42`、`difficulty_target=0.5`（与端点 15 同参数出同一份卷） | **自包含打印友好 HTML**（`text/html`；内联 CSS、`@page A4` 分页、卷头=卷型标题/满分/时长/满分注意、大题标题带每题分值、选项竖排、解答/填空留作答区、页脚页码；学生卷红线：不含任何作答依据，全卷无 answer/solution 字样）；未知卷型 404，领域错 400，query 形态错 422 |
+| 17 | GET `/papers/by-spec/{spec_id}/render.txt` | 同端点 16 | 纯文本简版（`text/plain`；同一次装订同题序，HTML 不可用时的备用） |
 
 【X-Org-Id】= 接受可选多租户头（见 §3.4）。错误对照速记：400 = 语义错（内核 ValueError），404 = 资源不存在，422 = JSON 形态错。
 

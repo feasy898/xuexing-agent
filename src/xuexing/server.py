@@ -21,6 +21,7 @@ from datetime import date
 from typing import Any
 
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.responses import HTMLResponse, PlainTextResponse
 from pydantic import BaseModel
 
 from xuexing.agent_shell import MockLLM, attribute_error
@@ -39,6 +40,7 @@ from xuexing.paper_by_spec import (
     load_spec_catalog,
     load_stage_bank,
 )
+from xuexing.paper_render import render_paper_html, render_paper_text
 from xuexing.pedagogy import StrategyLibrary
 from xuexing.recommend import (
     attach_recommendations,
@@ -169,24 +171,64 @@ def create_app(
             raise HTTPException(400, str(e))
         return to_dict(paper)
 
+    def _paper_by_spec_or_error(spec_id: str, seed: int,
+                                difficulty_target: float) -> dict:
+        """spec_id -> 卷面结构 dict。spec 不在卷型库 → 404；卷型内部不一致/
+        同型题不足/学段无题库 → 400（fail-closed：不降级凑题）。POST 出卷与
+        GET 渲染共用同一条装订路径，保证「结构卷」与「成品卷」永远同源。"""
+        raw_spec = spec_catalog.get(spec_id)
+        if raw_spec is None:
+            raise HTTPException(404, f"paper spec not found: {spec_id}")
+        try:
+            stage_bank = stage_bank_loader(raw_spec["subject"], raw_spec["stage"])
+            return generate_paper_by_spec(
+                stage_bank, raw_spec, seed=seed,
+                difficulty_target=difficulty_target, spec_id=spec_id,
+            )
+        except ValueError as e:  # PaperSpecError / PaperBySpecError 均为 ValueError 子类
+            raise HTTPException(400, str(e))
+
     @app.post("/papers/by-spec")
     def paper_by_spec(body: PaperBySpecIn):
         """卷型库驱动的出卷：按卷型学段/题型/分值约束从对应学段题库选题，
         装订大题-小题层级（分值合计==卷型总分由 paper_spec V8 保证）。
         spec_id 不存在 → 404；卷型内部不一致/同型题不足/学段无题库 → 400
         （fail-closed：不降级凑题）。逻辑全在 xuexing.paper_by_spec。"""
-        raw_spec = spec_catalog.get(body.spec_id)
-        if raw_spec is None:
-            raise HTTPException(404, f"paper spec not found: {body.spec_id}")
-        try:
-            stage_bank = stage_bank_loader(raw_spec["subject"], raw_spec["stage"])
-            paper = generate_paper_by_spec(
-                stage_bank, raw_spec, seed=body.seed,
-                difficulty_target=body.difficulty_target, spec_id=body.spec_id,
-            )
-        except ValueError as e:  # PaperSpecError / PaperBySpecError 均为 ValueError 子类
-            raise HTTPException(400, str(e))
+        paper = _paper_by_spec_or_error(body.spec_id, body.seed, body.difficulty_target)
         return {"learner_id": body.learner_id, **paper}
+
+    # ---- 成品卷渲染（家长/学校可打印）。走独立 GET 而非塞进 POST 响应：
+    # 交付物是给人打印的文档，浏览器/学校系统直接打开 URL 即得 text/html，
+    # 零客户端胶水；by-spec 出卷对 (spec_id, seed, difficulty_target) 确定性，
+    # GET 幂等/可缓存语义诚实；机器客户端的结构 JSON 保持精瘦。纯文本备用走
+    # 姊妹路径 render.txt（同一内核同一次装订，不产生第二条出卷路径）。 ----
+
+    @app.get("/papers/by-spec/{spec_id}/render.html")
+    def paper_by_spec_render_html(spec_id: str, seed: int = 42,
+                                  difficulty_target: float = 0.5):
+        """成品卷 HTML（自包含：内联 CSS、A4 打印分页、页脚页码）。与 POST
+        /papers/by-spec 同 seed 同 difficulty_target 时装订出同一份卷。"""
+        paper = _paper_by_spec_or_error(spec_id, seed, difficulty_target)
+        stage_bank = stage_bank_loader(
+            spec_catalog[spec_id]["subject"], spec_catalog[spec_id]["stage"])
+        try:
+            html_doc = render_paper_html(paper, stage_bank)
+        except ValueError as e:  # PaperRenderError：结构/题库侧 fail-closed
+            raise HTTPException(400, str(e))
+        return HTMLResponse(html_doc)
+
+    @app.get("/papers/by-spec/{spec_id}/render.txt")
+    def paper_by_spec_render_text(spec_id: str, seed: int = 42,
+                                  difficulty_target: float = 0.5):
+        """成品卷纯文本简版（HTML 不可用时的备用，同一内核渲染）。"""
+        paper = _paper_by_spec_or_error(spec_id, seed, difficulty_target)
+        stage_bank = stage_bank_loader(
+            spec_catalog[spec_id]["subject"], spec_catalog[spec_id]["stage"])
+        try:
+            text_doc = render_paper_text(paper, stage_bank)
+        except ValueError as e:  # PaperRenderError：结构/题库侧 fail-closed
+            raise HTTPException(400, str(e))
+        return PlainTextResponse(text_doc)
 
     @app.post("/learners/{learner_id}/responses")
     def submit(learner_id: str, body: SubmitIn,
