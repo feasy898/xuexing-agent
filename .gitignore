@@ -26,6 +26,11 @@ tmp_*.tsv
 regen/
 tmp_fix_*/
 
+# out/exam_loop/：tools/check_exam_loop.py 每次运行重写的可视检样本（学生卷页 +
+# 两份报告页）。内容含随机 session_id，重复运行必变——是可再生产物，不入库
+# （要人工视检就跑一次 tools/check_exam_loop.py）。
+out/exam_loop/
+
 # 说明：work/ 与 regen/ 已在库内跟踪（work/ 是题库与知识库的可复现构建脚本，
 # regen/ 是契约盲重生成内核源码），上面的忽略项对已跟踪文件不生效；
 # 保留条目仅为拦住新产生的临时产物，勿据此以为 work/、regen/ 不在库内。

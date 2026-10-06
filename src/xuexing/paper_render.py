@@ -22,6 +22,12 @@ Chromium 131+）自动打页码；不支持时由 ``position: fixed`` 的页脚�
 交付物是给人打印的文档，浏览器/学校系统直接打开 URL 即得 text/html，零客户端
 胶水；且 by-spec 出卷对 (spec_id, seed, difficulty_target) 确定性，GET 幂等语义
 诚实，机器客户端的结构 JSON 也保持精瘦。
+
+学生端网页卷（``render_exam_form_html``，GET /exam/{session}/paper.html）在本模块
+内实现而非另起炉灶：与成品卷共用 ``_validate_paper``/``_item_for``/``_esc``/``_CSS``，
+只把「打印留白作答区」换成 radio/checkbox/input/textarea 控件，控件 name 走
+``reply_field_name``（"item_{no}"）这一唯一约定出口，提交端（exam_loop）按同一函数
+反解。纯 form 提交（无 JS、无 fetch、无外链），与打印卷同守 answer/solution 红线。
 """
 from __future__ import annotations
 
@@ -34,9 +40,13 @@ __all__ = [
     "STAGE_LABELS",
     "USAGE_LABELS",
     "FORBIDDEN_TOKENS",
+    "REPLY_FIELD_PREFIX",
     "human_paper_title",
     "format_points",
+    "option_label",
+    "reply_field_name",
     "render_paper_html",
+    "render_exam_form_html",
     "render_paper_text",
     "redline_report",
     "check_html_tag_balance",
@@ -69,6 +79,15 @@ _VOID_TAGS = frozenset({
 _REPLY_HEIGHTS = {"choice": "8mm", "fill": "8mm", "solve": "48mm"}
 _REPLY_DEFAULT_HEIGHT = "30mm"
 _TEXT_REPLY_LINE = "＿" * 18
+
+# 可作答卷（学生端网页）的表单字段名约定：题号 no -> "item_{no}"。
+# 提交端（exam_loop）按同一函数反解，两端永不各写一份字面量。
+REPLY_FIELD_PREFIX = "item_"
+
+
+def reply_field_name(question_no: int) -> str:
+    """题号 -> 表单字段名（"item_{no}"）。唯一约定出口，渲染端与提交端共用。"""
+    return f"{REPLY_FIELD_PREFIX}{question_no}"
 
 
 def _esc(text) -> str:
@@ -305,6 +324,193 @@ def render_paper_html(paper: dict, bank) -> str:
         parts.append("</section>\n")
 
     parts.extend([
+        f'<footer class="page-footer">{_esc(title)} · 满分 {total_s} 分 · '
+        f"共 {n_q} 题</footer>\n",
+        "</body>\n</html>\n",
+    ])
+    return "".join(parts)
+
+
+_EXAM_CSS = """  .exam-bar {
+    position: sticky; top: 0; z-index: 5;
+    background: #f4f6fa; border: thin solid #c3ccdb; border-radius: 0.2em;
+    padding: 0.3em 0.5em; margin: 0 0 0.6em;
+    display: flex; flex-wrap: wrap; gap: 0.3em 0.8em; align-items: center;
+    font-size: 0.95em;
+  }
+  .exam-bar .who { font-weight: 700; }
+  .exam-bar .grow { flex: 1 1 auto; }
+  .exam-submit {
+    font: inherit; font-size: 1em; font-weight: 700;
+    padding: 0.2em 0.9em; cursor: pointer;
+    border: thin solid #2f5d9e; border-radius: 0.2em;
+    background: #2f5d9e; color: #fff;
+  }
+  .exam-submit:hover { background: #24487a; }
+  .q-input { margin-top: 0.3em; }
+  .q-choice { display: block; margin: 0.1em 0; cursor: pointer; }
+  .q-choice input { margin-right: 0.2em; }
+  .q-text, .q-area {
+    font: inherit; font-size: 1em;
+    border: thin solid #888; border-radius: 0.15em; padding: 0.15em 0.2em;
+    width: 100%; max-width: 96%;
+  }
+  .q-area { min-height: 8em; resize: vertical; }
+  .q-input-hint { font-size: 0.85em; color: #555; margin: 0.15em 0 0 1em; }
+"""
+
+# 单选题（单选/多选）按 form 字段区分控件：多选（form == "mcq_multi"）用
+# checkbox（同名多值），其余选择题用 radio。题库 form 词表见 grading §3.8b。
+_MULTI_FORM = "mcq_multi"
+
+
+def option_label(option: str) -> str:
+    """选项全文 -> 选项标签（首个「.」之前的部分，去空白）。
+
+    与 ``grading.grade_choice`` 的标签派生**逐字同口径**（那边是
+    ``text.split(".", 1)[0].strip()``），此处独立实现是因为渲染层与判分内核
+    分属两个模块、不互相 import；口径由 tests/unit/test_exam_render.py 的
+    「渲染出的每个选项标签都能被 grade_to_response 判对」钉住。
+
+    为什么表单 value 用标签而不是选项全文：多选题的作答串要走
+    ``grading._split_multi``，它按「、，,;；和」切分——而选项正文里本来就有
+    「与 Q、U 无关」这类带顿号的文本，提交全文会被切成碎片判错。标签（A/B/C/D）
+    无分隔符，是多选唯一可靠的提交载体。标签重复（同标签两选项）时内核按最小
+    下标解析，属题库数据质量，渲染层如实呈现不猜测。
+    """
+    return str(option).split(".", 1)[0].strip()
+
+
+def _option_input_type(item) -> str:
+    return "checkbox" if getattr(item, "form", "") == _MULTI_FORM else "radio"
+
+
+def _reply_input_html(item, question_no: int) -> str:
+    """题面之后的网页作答控件：选择题 radio/checkbox、填空 input、解答 textarea。
+
+    控件 name 一律 ``item_{no}``（reply_field_name），与提交端同源；每题**恰好一个
+    name**（选择题多个 radio/checkbox 共用一个 name）。选择题控件 value 取**选项
+    标签**（option_label）而非全文——多选作答串要过 ``grading._split_multi`` 的顿号
+    切分，全文里的「、」（如「与 Q、U 无关」）会被切碎判错；label 文本仍是完整选项。
+    红线：只读 stem/options。
+    """
+    name = _esc(reply_field_name(question_no))
+    options = [str(o) for o in (getattr(item, "options", None) or [])]
+    if options:
+        itype = _option_input_type(item)
+        parts = [f'    <div class="q-input q-choices">\n']
+        for idx, opt in enumerate(options):
+            oid = _esc(f"{name}_{idx}")
+            # value 用选项标签（见 option_label docstring），label 文本仍是全文：
+            # 学生看到的是完整选项，提交的是稳定标签。
+            parts.append(
+                f'      <label class="q-choice" for="{oid}">'
+                f'<input type="{itype}" id="{oid}" name="{name}" '
+                f'value="{_esc(option_label(opt))}">{_esc(opt.strip())}</label>\n')
+        parts.append("    </div>\n")
+        return "".join(parts)
+    kind = getattr(item, "item_type", "")
+    if kind == "solve":
+        return (f'    <div class="q-input">\n'
+                f'      <textarea class="q-area" id="{name}" name="{name}" '
+                f'rows="5" placeholder="在此写出解答过程"></textarea>\n'
+                f'    </div>\n')
+    return (f'    <div class="q-input">\n'
+            f'      <input class="q-text" type="text" id="{name}" name="{name}" '
+            f'placeholder="在此填写答案">\n'
+            f'    </div>\n')
+
+
+def render_exam_form_html(paper: dict, bank, session_id: str = "",
+                          learner_id: str = "", title_suffix: str = "（在线作答）") -> str:
+    """卷面结构 + 题库 -> 自包含**可作答**HTML（学生端网页，GET /exam/.../paper.html）。
+
+    与 render_paper_html 的关系：同一份结构、同一套校验（_validate_paper）、
+    同一个题面取题口径（_item_for）、同一份转义（_esc）——只把「打印留白作答区」
+    换成网页输入控件，并把整卷包进一个 ``<form method="post" action=...>``。
+    控件 name 为 ``item_{no}``（reply_field_name），每题**恰好一个 name**
+    （选择题多个 radio/checkbox 共用一个 name），提交端按此名回填 learner_answer。
+
+    红线与成品卷同：只读 stem/options，answer/solution 零触碰；无 JS、无外链
+    （纯 form 提交，无 fetch）。CSS 类名同样避开 answer/solution 词根，且**一律用
+    em/百分比**（不写 150mm 这类裸多位数）——否则 CSS 数字会被 redline_report 的
+    值级扫描误当成某题答案值（实测踩过：answer ``50`` 撞上 ``max-width: 150mm``）。
+    """
+    _validate_paper(paper)
+    title = human_paper_title(paper)
+    esc_spec = _esc(paper["spec_id"])
+    total_s = format_points(paper["total_points"])
+    duration = paper["duration_min"]
+    n_q = paper["question_count"]
+    who = _esc(learner_id) if learner_id else "（未指定学习者）"
+    action = _esc(f"/exam/{session_id}/submit") if session_id else ""
+
+    parts = [
+        "<!DOCTYPE html>\n",
+        '<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n',
+        f'<meta name="viewport" content="width=device-width, initial-scale=1">\n',
+        f"<title>{_esc(title)}{_esc(title_suffix)}</title>\n",
+        f"<!-- 可作答卷：由 xuexing.paper_render 渲染；卷型 {esc_spec}，"
+        f"seed {paper.get('seed', '')}。红线：本卷不含任何作答依据。 -->\n",
+        f"<style>\n{_CSS}{_EXAM_CSS}</style>\n</head>\n<body>\n",
+        '<header class="paper-head">\n',
+        f'  <h1 class="paper-title">{_esc(title)}{_esc(title_suffix)}</h1>\n',
+        '  <div class="paper-meta">'
+        f'<span>满分 {total_s} 分</span>'
+        f'<span>考试时长 {duration} 分钟</span>'
+        f'<span>共 {n_q} 题</span>'
+        f'<span>卷型 {esc_spec}</span></div>\n',
+        '  <p class="paper-note">满分注意：本卷满分 '
+        f'{total_s} 分，考试时长 {duration} 分钟。选择题点选选项（可多选的题可勾选'
+        '多项），填空题把结论写在输入框里，解答题在文本框内写出必要过程。'
+        '全部作答完成后点「交卷」，系统即时判分并生成个人报告。</p>\n',
+        "</header>\n",
+        # 顶部作答条：学习者回显 + 交卷按钮（form 提交，无 JS）
+        f'<form method="post" action="{action}" accept-charset="utf-8">\n',
+        '<div class="exam-bar">',
+        f'<span class="who">考生：{who}</span>',
+        f'<span>共 {n_q} 题</span>',
+        '<span class="grow"></span>',
+        '<button class="exam-submit" type="submit">交卷</button>',
+        "</div>\n",
+    ]
+
+    for sec in paper["sections"]:
+        parts.extend([
+            '<section class="section">\n',
+            f'  <h2 class="section-title">{_esc(sec["title"])}'
+            f'<span class="section-points">（每题 {format_points(sec["points_each"])} 分，'
+            f'共 {format_points(sec["section_points"])} 分）</span></h2>\n',
+        ])
+        for q in sec["questions"]:
+            no = q["question_no"]
+            item = _item_for(bank, q["item_id"], no)
+            options = [str(o) for o in (getattr(item, "options", None) or [])]
+            parts.append(f'  <div class="question" id="q{no}">\n')
+            parts.append(
+                '    <div class="q-head">'
+                f'<span class="q-no">{no}.</span>'
+                f'<span class="q-points">（{format_points(q["points"])}分）</span>'
+                f'<span class="q-stem">{_esc(item.stem.strip())}</span></div>\n')
+            if options:
+                parts.append('    <div class="q-options">\n')
+                for opt in options:
+                    parts.append(f'      <div class="q-option">{_esc(opt.strip())}</div>\n')
+                parts.append("    </div>\n")
+            parts.append(_reply_input_html(item, no))
+            if options and _option_input_type(item) == "checkbox":
+                parts.append(
+                    '    <p class="q-input-hint">本题可多选，勾选全部正确选项后交卷。</p>\n')
+            parts.append("  </div>\n")
+        parts.append("</section>\n")
+
+    parts.extend([
+        '<div class="exam-bar">',
+        f'<span class="who">考生：{who}</span>',
+        '<span class="grow"></span>',
+        '<button class="exam-submit" type="submit">交卷</button>',
+        "</div>\n",
+        "</form>\n",
         f'<footer class="page-footer">{_esc(title)} · 满分 {total_s} 分 · '
         f"共 {n_q} 题</footer>\n",
         "</body>\n</html>\n",

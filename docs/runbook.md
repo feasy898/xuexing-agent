@@ -151,7 +151,7 @@ app = load_app()  # 模块级 app 对象，uvicorn 直接挂载，不需要 --fa
 
 依据 `src/xuexing/server.py:9-13` 与 `src/xuexing/multitenant.py`：
 
-- **全部有状态端点**接受可选请求头 `X-Org-Id`：`/learners/{id}/responses|profile|plan|next_item|reviews`、`/trace`、`/recommend`。
+- **全部有状态端点**接受可选请求头 `X-Org-Id`：`/learners/{id}/responses|profile|plan|next_item|reviews`、`/trace`、`/recommend`、`/exam` 族（考试会话按 `(org, session_id)` 分域：换 org 取卷/提交/报告一律 404，与 `/learners` 隔离同构）。
 - 缺省 / 空串 / 纯空白 → 归并到内置机构 `"default"`（`multitenant.py:21-30` `resolve_org`）；不做大小写折叠、不做 Unicode 规范化，其余值去首尾空白后原样使用。
 - 会话存储与选题计数按 `(org, learner_id)` 分域：**同一 learner_id 在不同机构下完全隔离**；不带头的请求行为与单租户时代逐字节一致（`server.py:12-13`）。
 - 无状态端点（`/papers/diagnostic`、`/blueprint`、`/grade`、`/attribute`、`/itembank/v2/validate`、`/coverage/standard`）**忽略**该头。
@@ -189,6 +189,13 @@ curl -i -H "X-Org-Id: org-a" http://127.0.0.1:8000/learners/stu-1/profile   rem 
 | 15 | POST `/papers/by-spec` | `{"spec_id": "spec_phy_jr_final", "seed": 42}`（可选 `difficulty_target=0.5`；`learner_id` 仅回显） | `spec_id` `seed` `subject` `stage` `usage` `duration_min` `total_points` `question_count` `sections[]`（大题-小题层级：`title` `form` `count` `points_each` `section_points` `questions[]{question_no,item_id,points}`，小题号全卷连续） `item_ids`；未知卷型 404；卷型分值矛盾（V8）/同型题不足/学段无题库 → 400（fail-closed） |
 | 16 | GET `/papers/by-spec/{spec_id}/render.html` | query 可选 `seed=42`、`difficulty_target=0.5`（与端点 15 同参数出同一份卷） | **自包含打印友好 HTML**（`text/html`；内联 CSS、`@page A4` 分页、卷头=卷型标题/满分/时长/满分注意、大题标题带每题分值、选项竖排、解答/填空留作答区、页脚页码；学生卷红线：不含任何作答依据，全卷无 answer/solution 字样）；未知卷型 404，领域错 400，query 形态错 422 |
 | 17 | GET `/papers/by-spec/{spec_id}/render.txt` | 同端点 16 | 纯文本简版（`text/plain`；同一次装订同题序，HTML 不可用时的备用） |
+
+| 18 | GET `/exam/{spec_id}/start` | query **`learner_id` 必填**（空白 → 400，缺省 → 422），可选 `seed=42`、`difficulty_target=0.5`、`format=json`【X-Org-Id】 | 缺省 `format=html` 返回**可作答学生卷 HTML**（`text/html`：选择题 radio/多选 checkbox、填空 input、解答 textarea，字段名 `item_{题号}`，纯 form 提交、无 JS）；`format=json` 返回 `session_id` `spec_id` `learner_id` `title` `question_count` `total_points` `paper_url` `submit_url` `report_url` `expires_in_seconds` |
+| 19 | GET `/exam/{session_id}/paper.html` | 路径参数即可【X-Org-Id】 | 与端点 18 同一份卷（会话冻结，重开幂等）；会话不存在 404、过期 410 |
+| 20 | POST `/exam/{session_id}/submit` | **网页 form**（`application/x-www-form-urlencoded`，字段名 `item_{题号}`，多选同名多值）或 **JSON**（`{"answers": {"1": "A", "3": "50"}}`，值可为 str 或 list） | `303` + `Location: /exam/{session_id}/report.html`；越界题号/非题号键 → 400，JSON 形态错 → 422，未知会话 404，过期 410。**判分口径同端点 11**：客观题（choice/fill）即时判分；主观题（solve）标「待批改」、不进画像证据、不预扣分 |
+| 21 | GET `/exam/{session_id}/report.html` | 路径参数即可【X-Org-Id】 | **个人报告页**（`text/html`，家长可读）：得分 + 待批改分值说明、逐题对错（✓正确/✗错误/待批改）、知识点掌握更新、板块总览、薄弱知识点（中文名）、下一步学习建议（策略名 + 练习题）；未提交 409、未知会话 404、过期 410 |
+
+【X-Org-Id】= 接受可选多租户头（见 §3.4）。错误对照速记：400 = 语义错（内核 ValueError），404 = 资源不存在，409 = 会话未提交，410 = 会话已过期，422 = 请求体形态错。
 
 【X-Org-Id】= 接受可选多租户头（见 §3.4）。错误对照速记：400 = 语义错（内核 ValueError），404 = 资源不存在，422 = JSON 形态错。
 
