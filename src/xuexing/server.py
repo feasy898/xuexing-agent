@@ -19,18 +19,30 @@ run_contract.py --impl-dir <dir> --modules server 装载。
 import os
 from datetime import date
 from typing import Any
+from urllib.parse import parse_qsl
 
-from fastapi import FastAPI, Header, HTTPException
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi import FastAPI, Header, HTTPException, Request
+from fastapi.responses import HTMLResponse, PlainTextResponse, RedirectResponse
 from pydantic import BaseModel
 
 from xuexing.agent_shell import MockLLM, attribute_error
 from xuexing.blueprint import build_blueprint
 from xuexing.diagnosis import aggregate_to_clusters, diagnose
+from xuexing.exam_loop import (
+    ExamLoopError,
+    ExamSessionExpired,
+    ExamSessionNotFound,
+    ExamSessionStore,
+    build_report,
+    exam_html,
+    grade_submission,
+)
+from xuexing.exam_report import render_report_html
 from xuexing.grading import grade_to_response
 from xuexing.itembank import ItemBank
 from xuexing.itembank_v2 import source_counts, validate_bank_v2, verification_stats
 from xuexing.kpgraph import KPGraph
+from xuexing.kpgraph_subject import load_kpgraph_subject
 from xuexing.kt import KTEvent, trace, to_profile
 from xuexing.multitenant import AttemptCounter, OrgStore, resolve_org
 from xuexing.paper import generate_paper, select_next_item
@@ -40,7 +52,7 @@ from xuexing.paper_by_spec import (
     load_spec_catalog,
     load_stage_bank,
 )
-from xuexing.paper_render import render_paper_html, render_paper_text
+from xuexing.paper_render import human_paper_title, render_paper_html, render_paper_text
 from xuexing.pedagogy import StrategyLibrary
 from xuexing.recommend import (
     attach_recommendations,
@@ -134,6 +146,12 @@ class CoverageIn(BaseModel):
     topics: dict
 
 
+class ExamSubmitIn(BaseModel):
+    """JSON 提交体。网页 form 提交不走这里（urlencoded 载荷在端点里用标准库
+    parse_qsl 解析，见 exam_submit），只有 application/json 才走这个模型。"""
+    answers: dict[str, Any] = {}
+
+
 def create_app(
     bank: ItemBank,
     graph: KPGraph,
@@ -141,15 +159,27 @@ def create_app(
     misconceptions: list[Misconception] | None = None,
     spec_catalog: dict[str, dict] | None = None,
     stage_bank_loader=None,
+    stage_graph_loader=None,
+    exam_sessions: ExamSessionStore | None = None,
 ) -> FastAPI:
     """spec_catalog：卷型库 {spec_id: 卷型 dict}（缺省装 data/curriculum/
     paper_specs.json）；stage_bank_loader：callable(subject, stage) -> ItemBank，
     卷型学段题库注入点（缺省按 data/items 文件装载并进程内缓存）。测试注入
-    自闭式夹具用，与 bank/graph/strategies 同一套路。"""
+    自闭式夹具用，与 bank/graph/strategies 同一套路。
+
+    stage_graph_loader：callable(subject) -> KPGraph，作答闭环**按学科**诊断
+    用的知识点图注入点（缺省 data/knowledge/<subject>_grade*.json 学科级合并装载
+    并进程内缓存）。为什么需要它：/exam 的卷子来自该学科题库，若拿 create_app
+    注入的单年级图（默认 math_grade7）去 diagnose，图外知识点会被诊断内核按
+    契约跳过，画像全空。
+
+    exam_sessions：考试会话存储（缺省进程内 ExamSessionStore）。注入点让测试
+    换 TTL/时钟（会话过期用例），生产走缺省。"""
     app = FastAPI(title="xuexing-agent")
     store = OrgStore()
     misconceptions = misconceptions or []
     attempt_counts = AttemptCounter()
+    sessions = exam_sessions if exam_sessions is not None else ExamSessionStore()
     if spec_catalog is None:
         spec_catalog = load_spec_catalog(
             os.path.join(DEFAULT_CURRICULUM_DIR, "curriculum", "paper_specs.json")
@@ -160,6 +190,14 @@ def create_app(
         @lru_cache(maxsize=None)
         def stage_bank_loader(subject: str, stage: str):  # noqa: F811
             return load_stage_bank(DEFAULT_CURRICULUM_DIR, subject, stage)[0]
+
+    if stage_graph_loader is None:
+        from functools import lru_cache
+
+        @lru_cache(maxsize=None)
+        def stage_graph_loader(subject: str) -> KPGraph:  # noqa: F811
+            return load_kpgraph_subject(
+                os.path.join(DEFAULT_CURRICULUM_DIR, "knowledge"), subject)
 
     @app.post("/papers/diagnostic")
     def make_paper(body: BlueprintIn):
@@ -229,6 +267,136 @@ def create_app(
         except ValueError as e:  # PaperRenderError：结构/题库侧 fail-closed
             raise HTTPException(400, str(e))
         return PlainTextResponse(text_doc)
+
+    # ---- 学生作答闭环：开卷 -> 提交判分 -> 个人报告（内核在 xuexing.exam_loop，
+    # 学生卷渲染在 xuexing.paper_render，报告渲染在 xuexing.exam_report）。
+    # 端点只做 HTTP 编解码：会话存取/判分/画像/路线一律委托既有内核。 ----
+
+    def _session_or_http(org: str, session_id: str) -> dict:
+        try:
+            return sessions.get(org, session_id)
+        except ExamSessionNotFound as e:
+            raise HTTPException(404, str(e))
+        except ExamSessionExpired as e:
+            raise HTTPException(410, str(e))
+
+    @app.get("/exam/{spec_id}/start")
+    def exam_start(spec_id: str, learner_id: str, seed: int = 42,
+                   difficulty_target: float = 0.5, format: str = "html",
+                   x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """开卷：装订结构卷（与 POST /papers/by-spec 同一内核）-> 登记会话 ->
+        返回可作答卷 HTML（选择题 radio/checkbox、填空 input、解答 textarea，
+        字段名 item_{no}）。learner_id 必填（query）——没有学习者的画像无处落。
+
+        机器客户端想要会话 id 而不解析 HTML 时加 ``format=json``：返回
+        {session_id, spec_id, learner_id, question_count, paper_url,
+        report_url, expires_in_seconds}。
+        """
+        if not isinstance(learner_id, str) or not learner_id.strip():
+            raise HTTPException(400, "learner_id is required (query, non-blank str)")
+        org = resolve_org(x_org_id)
+        paper = _paper_by_spec_or_error(spec_id, seed, difficulty_target)
+        raw_spec = spec_catalog[spec_id]
+        session = {
+            "session_id": sessions.new_session_id(),
+            "org_id": org,
+            "learner_id": learner_id,
+            "spec_id": spec_id,
+            "seed": seed,
+            "difficulty_target": difficulty_target,
+            "paper": paper,
+            "bank": stage_bank_loader(raw_spec["subject"], raw_spec["stage"]),
+            "graph": stage_graph_loader(raw_spec["subject"]),
+            "title": human_paper_title(paper),
+        }
+        sessions.put(org, session)
+        if format == "json":
+            return {
+                "session_id": session["session_id"],
+                "spec_id": spec_id,
+                "learner_id": learner_id,
+                "title": session["title"],
+                "question_count": paper["question_count"],
+                "total_points": paper["total_points"],
+                "paper_url": f"/exam/{session['session_id']}/paper.html",
+                "submit_url": f"/exam/{session['session_id']}/submit",
+                "report_url": f"/exam/{session['session_id']}/report.html",
+                "expires_in_seconds": int(sessions.ttl_seconds),
+            }
+        return HTMLResponse(exam_html(session))
+
+    @app.get("/exam/{session_id}/paper.html")
+    def exam_paper(session_id: str,
+                   x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """重新打开可作答卷（刷新/收藏用）。会话由 start 装订后冻结，重开是
+        同一份卷（幂等）；不存在 404、过期 410。"""
+        session = _session_or_http(resolve_org(x_org_id), session_id)
+        return HTMLResponse(exam_html(session))
+
+    @app.post("/exam/{session_id}/submit")
+    async def exam_submit(session_id: str, request: Request,
+                          x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """提交作答 -> 即时判分（客观题，口径同 POST /grade）-> 落既有学习者
+        store（/profile 可复核）-> 303 跳个人报告页。
+
+        两种载荷：**网页 form**（application/x-www-form-urlencoded，字段名
+        item_{no}，多选同名多值）与 **JSON**（{"answers": {"1": "A", ...}}，
+        值可为 str 或 list）。按 Content-Type 分派，解析器在 exam_loop。
+        """
+        session = _session_or_http(resolve_org(x_org_id), session_id)
+        content_type = (request.headers.get("content-type") or "").split(";")[0].strip()
+        try:
+            if content_type == "application/json":
+                payload = ExamSubmitIn(**(await request.json()))
+                raw = payload.answers
+            else:
+                # urlencoded 走标准库 parse_qsl 而非 request.form()：后者要
+                # python-multipart（multipart 专用），而本闭环坚持零新依赖——
+                # 学生卷是纯 form 提交（无 enctype=multipart/form-data、无文件），
+                # 浏览器发的正是 urlencoded，parse_qsl 覆盖得一模一样。
+                # 同名键归成 list（多选题的 checkbox 就是一个 name 多个 value）。
+                pairs = parse_qsl((await request.body()).decode("utf-8"),
+                                  keep_blank_values=True)
+                raw = {}
+                for key, value in pairs:
+                    if key in raw:
+                        prev = raw[key]
+                        raw[key] = prev + [value] if isinstance(prev, list) else [prev, value]
+                    else:
+                        raw[key] = value
+        except ExamLoopError as e:
+            raise HTTPException(400, str(e))
+        except (ValueError, UnicodeDecodeError) as e:  # JSON 解析失败/缺 answers
+            raise HTTPException(422, f"cannot parse submission body: {e}")
+        try:
+            graded = grade_submission(session, raw)
+        except ExamLoopError as e:
+            raise HTTPException(400, str(e))
+
+        # 落既有学习者 store：与 POST /learners/{id}/responses 同一形状，
+        # 画像用本卷学科图（见 exam_loop 模块 docstring 的画像范围说明）。
+        report = build_report(session, graded, session["graph"], strategies,
+                              misconceptions, bank=session["bank"])
+        org = session["org_id"]
+        entry = store.entry(org, session["learner_id"])
+        entry["responses"].extend(
+            {"item_id": r.item_id, "correct": r.correct, "learner_answer": r.learner_answer}
+            for r in graded["responses"])
+        entry["profile"] = report["profile"]
+        session["report"] = report
+        session["submitted"] = True
+        return RedirectResponse(f"/exam/{session_id}/report.html", status_code=303)
+
+    @app.get("/exam/{session_id}/report.html")
+    def exam_report(session_id: str,
+                    x_org_id: str | None = Header(default=None, alias="X-Org-Id")):
+        """个人报告页：逐题对错 + 知识点掌握更新 + 薄弱点 + 下一步学习建议
+        （全部来自 diagnosis/route/recommend 既有内核）。未提交 → 409（会话还
+        在，只是还没交卷）；不存在 404、过期 410。"""
+        session = _session_or_http(resolve_org(x_org_id), session_id)
+        if not session.get("submitted"):
+            raise HTTPException(409, f"exam session not submitted yet: {session_id}")
+        return HTMLResponse(render_report_html(session["report"]))
 
     @app.post("/learners/{learner_id}/responses")
     def submit(learner_id: str, body: SubmitIn,
