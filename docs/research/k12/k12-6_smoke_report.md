@@ -36,3 +36,15 @@ XX_MM_SMOKE=1 .venv/Scripts/python.exe -m pytest tests/contract/test_mm_client_c
 
 - v0.4.0 收口报告 K12-6 部分标注「K12-6 待真调环境就绪后重测」
 - 接口族在本地局域网（h.k-gateway）已实测可用；本沙箱恢复出站后立即重测
+
+## 解锁条件与一键冒烟命令（2026-10-08 D-3 裁定补记）
+
+- **状态**：真调搁置（签署代理 D-3 裁定，2026-10-08）。搁置原因：运行环境未注入 key（同日实测 api.stepfun.com 网络可达，HTTP 401 = 未鉴权）。
+- **解锁条件（可判定）**：运行环境已注入 `STEPFUN_API_KEY`（或 `XX_LLM_API_KEY`，key 只从环境变量读、值绝不写入任何文件或日志）且 api.stepfun.com 网络可达。
+- **解锁后一键冒烟（无需再签署，结果按实况登记）**：
+
+```bash
+XX_MM_SMOKE=1 .venv/bin/python -m pytest -k smoke
+```
+
+- **纪律不变**：冒烟样本只能是合成音频/图片，禁止使用任何真实学生的语音或照片；G0-5 零网络默认保持（不设 `XX_MM_SMOKE` 时全套测试断网可过）；mm 五模块冻结契约不动。

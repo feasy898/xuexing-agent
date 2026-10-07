@@ -1,6 +1,6 @@
 # PM-STATE — 学情诊断 Agent 开发台账
 
-> 更新：2026-10-02 契约第三波 + D 扩量 + P 阶段收口会话。本文件是断点续作的权威依据：任何新会话从这里恢复上下文。
+> 更新：2026-10-08 台账对齐（签署测试卡 TC-DOC）。本文件是断点续作的权威依据：任何新会话从这里恢复上下文。
 
 ## 产品愿景（一句话）
 
@@ -36,16 +36,13 @@
 ## 当前状态（下一会话从这里开始）
 
 - **v0.4.0 已收口（2026-10-04，tag 已推 GitHub）**：K12 全量建设完成——10 学科 4318 KP、题库 17134 题（去重后）、母题 600+ 条十学科全覆盖、卷型库 21 实例、题型覆盖 99.5%（超 owner 98% 目标）。剩余尾巴：validate 的 173 条 coverage 进度项（bio 97/math 17/eng10 culture 等 KP <3 题）与语文 1626 道开放答案题 LLM 校准，均已登记待下一批次。
+- （历史存档，2026-10-02 时点）v0.3.0 时期：契约第三波 + D 扩量 + P runbook/冒烟收口，远端同步 59 提交 + 双 tag；当时基线为 709 passed、validate 189 kps / 1111 items（1111 dual-agent-verified）、run_contract exit 0。主线自 2026-10-02 起为 K12 全量建设（9 学科 × 小一～高三 × 课标全对齐 × 卷子生成为核心，海南默认 profile），2026-10-04 收口 v0.4.0。
 
-- 仓库在 **v0.3.0**（tag = 545392d「C-5 第三波终版入库」；其后为 P 阶段文档收口与 K12 立项文档），契约第三波 + D 扩量 + P runbook/冒烟全部收口；远端 github.com/feasy898/xuexing-agent 已同步（59 提交 + 双 tag）。
-- 2026-10-02 实测基线：`python -m pytest` → **709 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → **VALIDATION OK: 189 kps, 1111 items, 343 misconceptions (58 exempt), 52 archetypes, 1111/1111 dual-agent-verified**；`tools/run_contract.py` → exit 0；`git ls-files` 无 `.env`。本地 tag：`v0.3.0`、`wave3-contracts-list`。
-- **当前主线（2026-10-02 owner 新使命）：K12 全量建设**——9 学科 × 小一～高三 × 课标全对齐 × 卷子生成为核心，验收四指标（KP 全入 / 题型覆盖 ≥98% / 答案三层准确性 / 加权对齐+海南默认 profile），阶段 K12-0..6 详见 TASK.md §4 与 BACKLOG「K12 全量建设」节。StepFun step_plan 凭据在 `.env`（已验证可用）。
-- 待办（等 owner / 下一批）：
-  **P-3 三渠道路线裁定 = WAITING_HUMAN（不可代签，裁定前不扩做渠道）**；
-  仲裁队列 19 条分歧待人工裁定（`data/verification/arbitration_queue_wave3_annotated.json`，归因 wrong_solve=6，未回填）；
-  数学初中母题 52→100+ 与全库 6 题/KP 加密（K12-3 后排期）。
-- 恢复协议：读本文件 → `python -m pytest`（应 709 passed）→ 读 TASK.md §4 K12 阶段 →
-  按学科流水线跑 K12 工作流（研究→图谱→题库→卷型→审计）→ 每次完成通知后审查+提交+发下一项。
+- **v0.4.0 之后成果台账（2026-10-05～10-08，TC-DOC 补记）**：10-05 拆仓上 GitHub（feasy898/xuexing-agent 独立公开仓，main 与 windev 快照线合并保成果）；8887ccc 卷型分值自相矛盾修复（paper_spec V8）；fd66816 卷型库驱动出卷 POST /papers/by-spec；f1717a8 成品卷渲染层 GET render.html|render.txt；2ee0470 知识地图可视化 /knowledge-map.html；63b29d3 学生作答闭环最小 Web 版；04c047c 卷型缺口补齐（check_paper_spec OK 9→21，+97 题，math form 数据伤修复）；d4f5f4d 教师批改端闭环 + eng_jr 听力真音频；30bdcf0 wave3 仲裁 19 条双代理复判收口（step-5-preview 逐条独立盲判，17 保留/2 改判；data/items 零改动、题目未回填入库）。
+- **2026-10-08 owner 授权签署代理代签（D-1..D-6 全部裁定）**：签署人 opus/alpha（new-provider-2/alpha）——静态卷文件优先（不建在线渠道，合规五关只做触发矩阵）；商业模式暂不锁定；多模态真调搁置（等运行环境注入 key，解锁后无需再签）；质量扩量顺序 = 地理 grade9 配置修正→单代理题 16,585 双验→语文开放题 1,846 结构化校准（密度加密本轮不做）；冷启动平均画像 v0 即刻定义；坚持 100% 原创（采购挂起）。裁定全文与 9 张测试卡：`docs/SIGNOFF-2026-10-08.md`；当日基线与差距分析：`docs/GAP-ANALYSIS-2026-10-08.md`。**本轮开发按测试卡执行，验收命令与通过标准以卡为准。**
+- 2026-10-08 实测基线：`python -m pytest` → **912 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → 10 学科全 VALIDATION OK（合计 4,263 KP / 18,527 题；验证结构 = 双代理 1,942 + 单代理登记 16,585，闭式 KNOWN_ISSUE_COUNT 锁定，README 已披露口径）；`tools/run_contract.py` → exit 0；`tools/check_paper_spec.py` → OK=21 FAIL-CLOSED=0；`tools/smoke_api.py` → SMOKE_OK 15/15；`tools/check_exam_loop.py` → EXAM-LOOP-OK 17/17；`git ls-files` 无 `.env`。
+- 待办（按签署测试卡推进）：TC-DOC 台账对齐 → TC-1 地理 grade9 不开设声明 → TC-2 来源门 → TC-3 冷启动画像 v0 → TC-4 静态卷包 → TC-5 --verified-only 索引 → TC-6 合规矩阵（并行）→ TC-7/TC-8 双验与语文结构化（分批长跑）。
+- 恢复协议：读本文件 → `python -m pytest`（应 912 passed）→ 读 `docs/SIGNOFF-2026-10-08.md` 测试卡 → 按卡开发；每张卡收口即主会话审查 diff 后提交，再发下一张。
 
 ## 模块与契约清单（重生成范围）
 
@@ -83,6 +80,10 @@
 
 ## 已知问题 / 风险
 
+- **2026-10-08 登记（签署测试卡 TC-DOC 要求，如实披露）**：
+  1. 生物 grade9 现有 17 题：待按课标口径复核（初中生物通常七/八年级结课；题目不删）。
+  2. `tools/audit_k12_alignment.py`：不识别 `--help`，直接运行即改写 `docs/audits/k12-5_alignment_audit.json`（2026-10-08 实测，已用 git checkout 恢复）；且其输出各学科题数为 0、9 学科课标文件为 ❌，与 validate 实况不符——本轮只登记不修。
+  3. 语文无选项开放答案题实测 **1,846 道**（此前登记「约 1,600」不准），分布：comprehension 612 / solve 506 / dictation 202 / essay 199 / cloze 143 / fill 108 / applied-writing 39 / translation 20 / correction 6 / connection 6 / transcription 5；三结构化字段（acceptable_variants/scoring_points/rubric）全缺，按 v3 校验 238 道作文类报错——由签署测试卡 TC-8 处理。
 - Mimosa 扫描提示若干 low + 1 条 high（test_kt_contract.py:248“路径穿越”）：**已人工复核为误报**——该行是 pytest `tmp_path` 沙箱内写 CSV 夹具（`tmp_path / "seq.csv"`），属标准测试实践，无真实穿越风险；扫描器启发式无法识别 tmp_path 沙箱。其余 low 均为固定种子确定性用途（测试+组卷洗牌）。每次提交的低危提示已评估接受。
 - `.zcode/`、`_research_tmp/`、`nul` 已 gitignore（调研子代理的临时产物，报告已沉淀到 docs/）。
 - 契约重生成的"禁读参考实现"靠指令约束（子代理有全盘读权限），诚信依赖 persona + 事后抽查
@@ -90,7 +91,7 @@
 
 ## 恢复指南（新会话从这里开始）
 
-1. `cd D:\workspace\学情agent && python -m pytest` 应 110 passed。
+1. （历史存档：本节为 M2 时期指南，当时全量通过数为 110；恢复协议已上移至「当前状态」节，现为 912 passed。）
 2. 看 `ListWorkflowRuns` / `.zcode` 确认 M2 工作流状态。
 3. M2 完成后：审查 specs/frozen/*.spec.md，`git add specs && git commit`，然后提交 M3 知识注入工作流。
 4. M4：把通过矩阵里连续两轮 100% 的模块做终版重生成，全绿后 `git tag v0.1.0`。

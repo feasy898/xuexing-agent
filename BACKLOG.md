@@ -277,7 +277,8 @@
   实绩：MiniMax-M3 原创命题 320 → 双代理 agree 301 合并（分布 g1+40/g2+37/g3+36/g4+33/g5+45/g6+39/g8+71）/19 分歧入仲裁队列未回填/3 跨年级重复移除+3 补题替换；
   台账 data/verification/verify_manifest_wave3.json + ledger_m3_gen/step5_indep_wave3.json（提交 ce192fa/431648c/9bca515/e3ae481）。
   残留如实注记：原行内『母题 52→100+』未纳入本轮（现 52）；全库均值 ~5.9 题/KP（原注 6-10 未严格达成）——如需列入下一批待 owner 定优先级）
-- [ ] **学段扩张·小学 1-6 年级数学**：图谱~80 KP（低龄策略：游戏化优先）+ 基础题库~200 + 误解库，validate_knowledge 覆盖
+- [x] **学段扩张·小学 1-6 年级数学**：图谱~80 KP（低龄策略：游戏化优先）+ 基础题库~200 + 误解库，validate_knowledge 覆盖
+  （✅ 已由 K12-1/K12-2 覆盖，2026-10-08 实测：math grade1-6 共 96 KP / 567 题，误解文件齐全，validate_knowledge 全绿；原注「游戏化优先」已被 owner 2026-10-02「低龄游戏化不做」取代）
 - [x] **冻结契约第三波 + 终版入库 v0.3.0**
   （✅ 完成于 2026-10-02：C-1 9 模块清单冻结 tag `wave3-contracts-list`（9839a3f）→ C-2 契约 9 份冻结（specs/frozen 16→25，028eafa/1776b3a）→
   C-3 两轮盲重写全过（b571523 GLM-5.3-Flash / 058fe72 MiniMax-M3.1-Flash 异模型）→ C-5 终版入库 regen/wave3final→src 打 **tag `v0.3.0`**（545392d）；
@@ -292,7 +293,10 @@
 - [x] **K12-3 九学科题库 + 母题（全量完成，2026-10-04 零缺口收口）**：题库 **18430 题**（math 1644 / 语文 2769 / 英语 2732 / 物理 2157 / 化学 1253 / 生物 743 / 历史 1488 / 地理 1287 / 政治 2080 / 小学科学 2277），母题档案 522 个（10 学科全覆盖），形态 choice 8954 / fill 4239 / solve 5237，**0 题缺答案或缺 rubric**；验证结构 = 双代理 agree 1942 + 单代理如实标注 16488（KNOWN_ISSUE_COUNT=16488 闭式锁定，含 eng-arb / math-arb 两轮分歧仲裁与 eng03/zero 三个密度收口批）；owner 裁定「无真题文件」后全程按课标+教材+行业区间自推；全库 id/stem/公式级三重查重
 - [x] **K12-4 卷型库 paper_spec + 海南默认 profile**：`data/curriculum/paper_specs.json` 21 套卷型（学科×学段×用途），默认海南 profile；无可核真题下所有分值标可信度（中/低），对外只说「对齐课标与教材」
 - [x] **K12-5 比对审计**：`tools/audit_k12_alignment.py` + `docs/audits/k12-5_alignment_audit.json`——**密度 ≥3 题/KP 覆盖 100%（0 个 KP 缺口，validate_knowledge 口径全库同步清零 exit 0）**；题型形态矩阵按研究文档题型目录配额；答案质量抽检由双代理/单代理台账结构承载
-- [x] **K12-6 多模态真调**：`docs/research/k12/k12-6_smoke_report.md` + audio_smoke_plan.md（stepaudio asr/tts + step-5 vision 冒烟方案与历史证据存档；本机网络受限未真调，方案与调用面就绪）
+- [x] **K12-6 多模态真调·方案与调用面就绪**：docs/research/k12/k12-6_smoke_report.md + audio_smoke_plan.md（stepaudio asr/tts + step-5 vision 冒烟方案与历史证据存档，调用面就绪）
+- [ ] **K12-6 多模态真调·真调冒烟**：解锁条件（D-3 裁定，2026-10-08）= 运行环境注入 `STEPFUN_API_KEY`（或 `XX_LLM_API_KEY`）且 api.stepfun.com 可达；届时直接 `XX_MM_SMOKE=1 .venv/bin/python -m pytest -k smoke`，无需再签署，结果按实况登记（2026-10-08 搁置原因：运行环境未注入 key，网络可达）
+- [x] （沿承）19 条仲裁分歧复核：2026-10-06 由 30bdcf0 收口——19 条逐条 step-5-preview **双代理复判**（非人工复核），17 保留/2 改判；终判分布 format_diff 13 / wrong_solve 5 / wrong_key 1；data/items 零改动，**题目本身未回填入库**
+- [x] （沿承）P-3 渠道裁定：2026-10-08 owner 授权签署代理（opus/alpha）代签 = **A 静态卷文件优先**（裁定与测试卡见 docs/SIGNOFF-2026-10-08.md；不建在线渠道，合规五关只做触发矩阵）
 - [x] **收口 v0.4.0**：pytest 767 passed / 0 failed、run_contract exit 0、凭据零入库（`git ls-files .env` = 0）、全量推 GitHub `feasy898/xuexing-agent` tag `v0.4.0`
 - [x] （沿承）母题 52→522（10 学科全覆盖）；数学全库密度 ≥3 题/KP 达成
-- [ ] （沿承）P-3 渠道裁定 WAITING_HUMAN；19 条仲裁分歧人工复核
+- [ ] **2026-10-08 签署轮（owner 授权 opus/alpha 代签，测试卡 docs/SIGNOFF-2026-10-08.md）**：TC-DOC 台账对齐；TC-1 地理 grade9 不开设声明；TC-2 来源门；TC-3 冷启动画像 v0；TC-4 静态卷包；TC-5 --verified-only 索引；TC-6 合规触发矩阵；TC-7 单代理题双验 14,753（分批，收口判据 UNEXPLAINED_NONCHI=0）；TC-8 语文开放题 1,846 结构化+校准（分批）
