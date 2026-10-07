@@ -52,6 +52,18 @@ SUBJECT_GRADE_RANGES = {
     "geography": (7, 12),   # 初中地理 7-9 + 高中地理 10-12
 }
 
+# 学科『不开设年级』显式声明（2026-10-08 签署测试卡 TC-1；owner 授权签署
+# 代理裁定 D-4③：地理 grade9 属年级配置错位，不是内容缺口，不编造九年级
+# 地理题）。依据：
+#   - docs/research/k12/geography.md「初中（七/八年级，来自教材非课标）」
+#     及其年级分布表（仅七上至八下，无九年级）；
+#   - docs/research/k12/hainan.md：海南生地会考在八年级结课。
+# 语义：声明年级不再计入 pending；数据侧一旦出现该年级的任何学科文件即
+# 报错（fail-closed，防止声明与数据漂移）。
+SUBJECT_GRADES_NOT_OFFERED = {
+    "geography": (9,),
+}
+
 # 学科文件命名规范：<subject>_grade<N>{_items|_archetypes|_misconceptions}.json
 SUBJECT_KNOWLEDGE_RE = re.compile(r"^(?P<subject>[a-z]+)_grade(?P<grade>\d+)\.json$")
 SUBJECT_ITEM_RE = re.compile(r"^(?P<subject>[a-z]+)_grade(?P<grade>\d+)_items\.json$")
@@ -94,6 +106,23 @@ def _discover_mc_subjects(directory):
     return out
 
 
+def _fail_closed_not_offered(subject_grades, errors):
+    """fail-closed：声明『不开设』的年级一旦出现任何学科数据文件即报错。
+
+    SUBJECT_GRADES_NOT_OFFERED 声明的是课标/教材不开设的年级；数据侧若
+    出现该年级文件，说明声明与数据漂移，必须显式报错而不是静默通过
+    （签署测试卡 TC-1，2026-10-08）。
+    """
+    for subject, grades in subject_grades:
+        not_offered = SUBJECT_GRADES_NOT_OFFERED.get(subject, ())
+        for g in sorted({g for g in grades if g is not None}):
+            if g in not_offered:
+                errors.append(
+                    f"subject {subject!r}: grade {g} declared not offered "
+                    f"(SUBJECT_GRADES_NOT_OFFERED) but data files exist"
+                )
+
+
 def _validate_subject_grades(subject, grade_paths, errors):
     """学科开设年级档位内的连续性检查。
 
@@ -125,10 +154,12 @@ def _validate_subject_grades(subject, grade_paths, errors):
                 f"{band_start}..{band_end}"
             )
 
-    # 2) 档内连续性
+    # 2) 档内连续性（被声明为不开设的年级不算缺口、不计 pending）
+    not_offered = SUBJECT_GRADES_NOT_OFFERED.get(subject, ())
     in_band = [g for g in grades_present if band_start <= g <= band_end]
     missing_in_band = [
-        g for g in range(band_start, band_end + 1) if g not in in_band
+        g for g in range(band_start, band_end + 1)
+        if g not in in_band and g not in not_offered
     ]
 
     if subject == "math":
@@ -408,6 +439,15 @@ def main() -> int:
         )
         subjects_state[subject]["arch_total"] = total
         subjects_state[subject]["arch_files"] = per_file
+
+    # ---------- 5) fail-closed：不开设年级出现数据文件即报错（TC-1） ----------
+    not_offered_pairs = []
+    for mapping in (knowledge_subjects, item_subjects, arch_subjects):
+        for subject, grade_paths in mapping.items():
+            not_offered_pairs.append((subject, [g for g, _ in grade_paths]))
+    for subject, info in mc_subjects.items():
+        not_offered_pairs.append((subject, sorted(info["grades"])))
+    _fail_closed_not_offered(not_offered_pairs, errors)
 
     # ---------- 覆盖率校验：每学科主知识点题数 + 误解归属 ----------
     for subject, st in subjects_state.items():
