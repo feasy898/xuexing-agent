@@ -43,6 +43,7 @@ MODULE_TEST_FILES = {
     "itembank_v3": ["test_itembank_v3_contract.py"],
     "paper_spec": ["test_paper_spec_contract.py"],
     "cold_start_profile": ["test_cold_start_profile_contract.py"],
+    "static_paper": ["test_static_paper_contract.py"],
     # server 是薄胶水层（PM-STATE：不重生成），登记仅为让 run_contract 能按模块
     # 选择性运行其契约测试；--impl-dir 注入需目录内有 server.py（绝对导入约定，
     # 参考实现 src/xuexing/server.py 满足，regen/round* 冻结八模块目录不含）。
