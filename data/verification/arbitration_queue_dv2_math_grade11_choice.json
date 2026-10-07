@@ -1,0 +1,31 @@
+{
+  "batch": "math_grade11_choice",
+  "queue": [
+    {
+      "id": "h_vdp_001",
+      "form": "choice",
+      "bank_answer": "C",
+      "solver_answer": "A",
+      "verdict": "disagree",
+      "status": "resolved",
+      "judge_agent": "minimax-m3-arb-dv2-20261008",
+      "judge_model": "MiniMax-M3",
+      "judge_verdict": "wrong_key",
+      "judge_reason": "<think>The problem states: |a| = 3, |b| = 4, the angle between a and b is 60°. Find a·b.",
+      "disposition": "标答错已手算复核修正（h_vdp_001→A、h_sip_001→D），二轮 kimi 盲解 agree 后回填 dv2 批"
+    },
+    {
+      "id": "h_sip_001",
+      "form": "choice",
+      "bank_answer": "C",
+      "solver_answer": "D",
+      "verdict": "disagree",
+      "status": "resolved",
+      "judge_agent": "minimax-m3-arb-dv2-20261008",
+      "judge_model": "MiniMax-M3",
+      "judge_verdict": "wrong_key",
+      "judge_reason": "<think>The problem: Use the oblique projection method (斜二测画法) to draw a perspective view of a square with side length 2 cm. Find the area of the perspective view.",
+      "disposition": "标答错已手算复核修正（h_vdp_001→A、h_sip_001→D），二轮 kimi 盲解 agree 后回填 dv2 批"
+    }
+  ]
+}

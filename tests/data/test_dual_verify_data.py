@@ -280,9 +280,26 @@ CHI_AGENTS = ["chi-gen-w1-20261003"]
 CHI_AGENTS_DUAL = ["chi-gen-w1-20261003", "chi-indep-w1-20261003"]
 CHI_PREFIX = "chi_"
 
+# 2026-10-08 chiopen 批（TC-8 第一批 g8dictfill01）：grade8 dictation/fill
+# 9 题第二代理 agree 回填——结构化 kimi3 + 盲答 minimax-m3
+# （method=keypoint-judge，台账 verify_manifest_chiopen_g8dictfill01.json）。
+CHIOPEN_BLIND_AGENT = "minimax-m3-blind-chiopen-20261008"
+CHIOPEN_G8DICTFILL01_AGREE_IDS = {
+    "chi_chi_jr_0171", "chi_chi_jr_0174", "chi_chi_jr_0197",
+    "chi_chi_jr_0245", "chi_chi_jr_0250", "chi_chi_jr_0254",
+    "chi_chi_jr_0255", "chi_chi_jr_0275", "chi_chi_jr_0281",
+}
+
+
+def _is_chiopen_g8(it):
+    agents = it.get("verification", {}).get("agents") or []
+    return (len(agents) == 2 and agents[1] == CHIOPEN_BLIND_AGENT
+            and agents[0] == "chi-gen-w1-20261003")
+
 
 def _is_chi(it):
-    return it.get("verification", {}).get("agents") in (CHI_AGENTS, CHI_AGENTS_DUAL)
+    return (it.get("verification", {}).get("agents") in (CHI_AGENTS, CHI_AGENTS_DUAL)
+            or _is_chiopen_g8(it))
 
 
 GEO_AGENTS_HS = ["geo-gen-w1-20261003"]
@@ -315,6 +332,34 @@ GAPFILL_AUTHOR_AGENTS = ["gapfill-author-20261006"]
 GAPFILL_AUTHOR_PREFIXES = ("chinese_gap_a0", "english_gap_a0",
                            "biology_gap_a0", "politics_gap_a0")
 
+# 2026-10-08 dv2 批（签署测试卡 TC-7，docs/SIGNOFF-2026-10-08.md）：math_grade11
+# choice 类 38 题双代理复验回填。generator=逐题原签名（key 通道语义：
+# mat-gen-w1-20261003 ×36 / math-template-gen-20261006 ×2），solver=kimi k3
+# 盲解（moonshot 族）。第一轮 2 题 disagree（h_vdp_001/h_sip_001）经
+# minimax-m3 第三族仲裁判 wrong_key——手算复核确认标答错（前者解析自相
+# 矛盾：a·b=6 对应 A 却标 C；后者斜二测面积=√2 非 2），修正 answer/solution
+# 后二轮盲解 38/38 全 agree 回填，KNOWN_ISSUE_COUNT 16585→16547。
+# 题 id 集由 r2 盲解 ledger 圈定（台账即覆盖凭证）：
+#   data/verification/ledger_dv2_math_grade11_r2_20261008.json
+#   data/verification/verify_manifest_dv2_math_grade11_choice_r2.json
+DV2_KIMI3_SOLVER = "kimi3-blind-dv2r2-20261008"
+DV2_MATH11_GENERATORS = ("mat-gen-w1-20261003", "math-template-gen-20261006")
+
+
+def _dv2_math11_ids():
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
+                        "data", "verification",
+                        "ledger_dv2_math_grade11_r2_20261008.json")
+    with open(path, encoding="utf-8") as f:
+        return set(json.load(f)["answers"])
+
+
+def _is_dv2_math11(it):
+    rec = it.get("verification", {})
+    agents = rec.get("agents") or []
+    return (len(agents) == 2 and agents[1] == DV2_KIMI3_SOLVER
+            and agents[0] in DV2_MATH11_GENERATORS)
+
 
 def _is_gapfill_tmpl(it):
     return it.get("verification", {}).get("agents") == GAPFILL_TMPL_AGENTS
@@ -346,7 +391,8 @@ DEEPEN_AGENTS_BY_GRADE = {
     "pol": [POL_AGENTS],
     "his": [HIS_AGENTS],
     "sci": [SCI_AGENTS],
-    "chi": [CHI_AGENTS, CHI_AGENTS_DUAL],
+    "chi": [CHI_AGENTS, CHI_AGENTS_DUAL,
+            ["chi-gen-w1-20261003", CHIOPEN_BLIND_AGENT]],
 }
 
 
@@ -850,8 +896,9 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     gapfill_tmpl_ids = {it["id"] for it in all_items if _is_gapfill_tmpl(it)}
     gapfill_gen_ids = {it["id"] for it in all_items if _is_gapfill_gen(it)}
     gapfill_author_ids = {it["id"] for it in all_items if _is_gapfill_author(it)}
-    assert len(gapfill_tmpl_ids) >= 50, (
-        "数学缺口模板批规模异常（< 50）：扩库须先登记 GAPFILL_TMPL_AGENTS 并在本闭式同步")
+    assert len(gapfill_tmpl_ids) >= 48, (
+        "数学缺口模板批规模异常（< 48）：扩库须先登记 GAPFILL_TMPL_AGENTS 并在本闭式同步"
+        "（2026-10-08 dv2 批迁移 2 题 mgap 选择题到双代理对，50→48）")
     assert all(i.startswith(GAPFILL_TMPL_PREFIX) for i in gapfill_tmpl_ids), (
         "数学缺口模板批题 id 前缀须为 mgap_")
     assert len(gapfill_gen_ids) >= 18, (
@@ -870,12 +917,15 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
                    | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
                    | mat_ids | pol_den_ids | his_den_ids | eng_arb_ids | mat_arb_ids)), (
         "卷型缺口补齐批与既有批次重叠")
-    # 全库划分：每题恰属一个 ledger 运行或一个扩库批
+    # 全库划分：每题恰属一个 ledger 运行或一个扩库批（2026-10-08 dv2 批加入）
+    dv2_math11_ids = _dv2_math11_ids()
     assert (
         night_ids | p34_ids | p12_ids | deepen_ids | p56_ids | wave3_ids | hs_ids
         | eng_ids | eng_dens_ids | chi_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids
         | mat_ids | pol_den_ids | his_den_ids | eng_arb_ids | mat_arb_ids
         | gapfill_tmpl_ids | gapfill_gen_ids | gapfill_author_ids
+        | dv2_math11_ids
+        | {it["id"] for it in all_items if _is_chiopen_g8(it)}
     ) == all_ids
 
 
@@ -939,6 +989,14 @@ def test_verification_agents_match_owning_run(all_items, ledger):
             # CHI_AGENTS_DUAL 是早期双代理入库（30 题），已带 verification.answers_agree=True，无须 single_agent
         elif rec["agents"] == WAVE3_AGENTS:
             assert iid.startswith(WAVE3_PREFIXES), iid
+        elif _is_dv2_math11(it):
+            assert iid in _dv2_math11_ids(), iid
+            # 2026-10-08 dv2 批：单代理题双代理复验回填（single_agent 标记消失）
+            assert rec.get("single_agent") is None, iid
+        elif _is_chiopen_g8(it):
+            assert iid in CHIOPEN_G8DICTFILL01_AGREE_IDS, iid
+            # 2026-10-08 chiopen 批：结构化+盲答 agree 回填（single_agent 标记消失）
+            assert rec.get("single_agent") is None, iid
         elif iid.startswith(("p3_", "p4_")):
             assert rec["agents"] == P34_AGENTS, iid
         elif iid.startswith(("p1_", "p2_")):
