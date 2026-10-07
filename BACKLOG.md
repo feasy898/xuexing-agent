@@ -299,4 +299,6 @@
 - [x] （沿承）P-3 渠道裁定：2026-10-08 owner 授权签署代理（opus/alpha）代签 = **A 静态卷文件优先**（裁定与测试卡见 docs/SIGNOFF-2026-10-08.md；不建在线渠道，合规五关只做触发矩阵）
 - [x] **收口 v0.4.0**：pytest 767 passed / 0 failed、run_contract exit 0、凭据零入库（`git ls-files .env` = 0）、全量推 GitHub `feasy898/xuexing-agent` tag `v0.4.0`
 - [x] （沿承）母题 52→522（10 学科全覆盖）；数学全库密度 ≥3 题/KP 达成
-- [ ] **2026-10-08 签署轮（owner 授权 opus/alpha 代签，测试卡 docs/SIGNOFF-2026-10-08.md）**：TC-DOC 台账对齐；TC-1 地理 grade9 不开设声明；TC-2 来源门；TC-3 冷启动画像 v0；TC-4 静态卷包；TC-5 --verified-only 索引；TC-6 合规触发矩阵；TC-7 单代理题双验 14,753（分批，收口判据 UNEXPLAINED_NONCHI=0）；TC-8 语文开放题 1,846 结构化+校准（分批）
+- [x] **2026-10-08 签署轮（owner 授权 opus/alpha 代签，测试卡 docs/SIGNOFF-2026-10-08.md）**：TC-DOC（2720c1f）/TC-1（e87fbd8）/TC-2（6baba3e）/TC-3（820709f）/TC-4（ea8cd30）/TC-5（7bec7fd）/TC-6（0aa14e4）七卡收口
+- [ ] **TC-7 单代理题双代理复验（分批长跑）**：第一批 math_grade11 choice 38/38 双验回填（1fcca1a，含 2 标答错修正+第三族仲裁）；管线四工具就绪；**剩余 14,715 道**（UNEXPLAINED_NONCHI 口径，逐批推进直至 0）
+- [ ] **TC-8 语文开放题 1,846 道结构化+校准（分批）**：第一批 grade8 dictation/fill 17 题——15 结构化、9 第二代理回填、8 入队；作文 rubric+calibration（238 题）未启动；**剩余 UNEXPLAINED_CHI 1,815**

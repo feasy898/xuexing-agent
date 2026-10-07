@@ -43,6 +43,7 @@
 - 2026-10-08 实测基线：`python -m pytest` → **912 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → 10 学科全 VALIDATION OK（合计 4,263 KP / 18,527 题；验证结构 = 双代理 1,942 + 单代理登记 16,585，闭式 KNOWN_ISSUE_COUNT 锁定，README 已披露口径）；`tools/run_contract.py` → exit 0；`tools/check_paper_spec.py` → OK=21 FAIL-CLOSED=0；`tools/smoke_api.py` → SMOKE_OK 15/15；`tools/check_exam_loop.py` → EXAM-LOOP-OK 17/17；`git ls-files` 无 `.env`。
 - 待办（按签署测试卡推进）：TC-DOC 台账对齐 → TC-1 地理 grade9 不开设声明 → TC-2 来源门 → TC-3 冷启动画像 v0 → TC-4 静态卷包 → TC-5 --verified-only 索引 → TC-6 合规矩阵（并行）→ TC-7/TC-8 双验与语文结构化（分批长跑）。
 - **RELEASABLE 登记（2026-10-08，TC-5）**：`data/releases/static_paper_index_v0.json` 21 条，**RELEASABLE=0**——双代理 agree 题存量（1,942 题）尚未覆盖任何卷型的全部大题形态（缺口如实见索引 shortages），且现有出卷按难度目标选题致实际配比偏离海南 7:2:1（超 0.15 阈值）。此数为 D-2 复议条件 (2) 判据，随 TC-7/TC-8 回填推进如实增长。
+- **签署轮分批长跑进度（2026-10-08，TC-7/TC-8，未收口不勾）**：TC-7 第一批 math_grade11 choice 38/38 回填（含 2 标答错修正，第三族 minimax-m3 仲裁，1fcca1a）；TC-8 第一批 chinese grade8 dictation/fill 17 题（15 结构化/9 回填/8 入队）。**当前 KNOWN_ISSUE_COUNT=16,538；UNEXPLAINED_NONCHI=14,715；UNEXPLAINED_CHI=1,815**（10 题在未结仲裁队列）。管线：tools/blind_solve_items.py（kimi k3 盲解，异族于生成方）→ dv2_batch_verify.py（agree 回填/队列/manifest/KNOWN 同步）→ dv2_arbitrate.py（minimax-m3 第三族仲裁）→ chiopen_structure_batch.py（双族结构化）。key 经 OpenBao（governance 机）SSH 注入环境变量，零回显零落盘。
 - 恢复协议：读本文件 → `python -m pytest`（应 912 passed）→ 读 `docs/SIGNOFF-2026-10-08.md` 测试卡 → 按卡开发；每张卡收口即主会话审查 diff 后提交，再发下一张。
 
 ## 模块与契约清单（重生成范围）
