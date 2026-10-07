@@ -42,6 +42,7 @@
 - **2026-10-08 owner 授权签署代理代签（D-1..D-6 全部裁定）**：签署人 opus/alpha（new-provider-2/alpha）——静态卷文件优先（不建在线渠道，合规五关只做触发矩阵）；商业模式暂不锁定；多模态真调搁置（等运行环境注入 key，解锁后无需再签）；质量扩量顺序 = 地理 grade9 配置修正→单代理题 16,585 双验→语文开放题 1,846 结构化校准（密度加密本轮不做）；冷启动平均画像 v0 即刻定义；坚持 100% 原创（采购挂起）。裁定全文与 9 张测试卡：`docs/SIGNOFF-2026-10-08.md`；当日基线与差距分析：`docs/GAP-ANALYSIS-2026-10-08.md`。**本轮开发按测试卡执行，验收命令与通过标准以卡为准。**
 - 2026-10-08 实测基线：`python -m pytest` → **912 passed, 2 skipped, 0 failed**；`tools/validate_knowledge.py` → 10 学科全 VALIDATION OK（合计 4,263 KP / 18,527 题；验证结构 = 双代理 1,942 + 单代理登记 16,585，闭式 KNOWN_ISSUE_COUNT 锁定，README 已披露口径）；`tools/run_contract.py` → exit 0；`tools/check_paper_spec.py` → OK=21 FAIL-CLOSED=0；`tools/smoke_api.py` → SMOKE_OK 15/15；`tools/check_exam_loop.py` → EXAM-LOOP-OK 17/17；`git ls-files` 无 `.env`。
 - 待办（按签署测试卡推进）：TC-DOC 台账对齐 → TC-1 地理 grade9 不开设声明 → TC-2 来源门 → TC-3 冷启动画像 v0 → TC-4 静态卷包 → TC-5 --verified-only 索引 → TC-6 合规矩阵（并行）→ TC-7/TC-8 双验与语文结构化（分批长跑）。
+- **RELEASABLE 登记（2026-10-08，TC-5）**：`data/releases/static_paper_index_v0.json` 21 条，**RELEASABLE=0**——双代理 agree 题存量（1,942 题）尚未覆盖任何卷型的全部大题形态（缺口如实见索引 shortages），且现有出卷按难度目标选题致实际配比偏离海南 7:2:1（超 0.15 阈值）。此数为 D-2 复议条件 (2) 判据，随 TC-7/TC-8 回填推进如实增长。
 - 恢复协议：读本文件 → `python -m pytest`（应 912 passed）→ 读 `docs/SIGNOFF-2026-10-08.md` 测试卡 → 按卡开发；每张卡收口即主会话审查 diff 后提交，再发下一张。
 
 ## 模块与契约清单（重生成范围）

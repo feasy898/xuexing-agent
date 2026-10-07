@@ -35,6 +35,8 @@ from xuexing.static_paper import (  # noqa: E402
     CONTENT_FILES,
     StaticPaperError,
     build_bundle,
+    verified_only_bank,
+    verified_shortages,
 )
 
 
@@ -79,6 +81,8 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--out-dir", default="")
     ap.add_argument("--data-dir", default=os.path.join(ROOT, "data"))
+    ap.add_argument("--verified-only", action="store_true",
+                    help="只从双代理 agree 题中选题；同型题不足如实报缺，不降级凑题")
     args = ap.parse_args()
 
     catalog_path = os.path.join(args.data_dir, "curriculum", "paper_specs.json")
@@ -96,6 +100,22 @@ def main() -> int:
     records = load_item_records(args.data_dir, raw["subject"], grades)
     kp_index = load_kp_index(args.data_dir, raw["subject"], grades)
     profile = load_profile(args.data_dir)
+
+    if args.verified_only:
+        shortages = verified_shortages(raw["sections"], bank, records)
+        if shortages:
+            for s in shortages:
+                print(
+                    f"SHORTAGE section={s['section']} form={s['form']} "
+                    f"need={s['need']} have_verified={s['have_verified']}"
+                )
+            print("VERIFIED-ONLY-UNAVAILABLE（双代理 agree 题不足，不产出可发布卷包，不降级凑题）")
+            return 1
+        bank = verified_only_bank(bank, records)
+        paper = generate_paper_by_spec(bank, raw, seed=args.seed, spec_id=args.spec_id)
+        paper["paper_id"] = f"{args.spec_id}_seed{args.seed}"
+        paper["stage_grades"] = list(grades)
+
     bundle = build_bundle(paper, bank, records, kp_index, profile)
 
     out_dir = args.out_dir or os.path.join(

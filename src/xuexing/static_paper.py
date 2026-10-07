@@ -22,6 +22,7 @@ import hashlib
 import json
 from collections import OrderedDict
 
+from xuexing.itembank import ItemBank
 from xuexing.cold_start_profile import (  # noqa: F401  (复用画像口径)
     DIFFICULTY_BANDS,
     PROFILE_VERSION,
@@ -53,6 +54,46 @@ def is_dual_verified(record) -> bool:
     v = (record or {}).get("verification") or {}
     agents = v.get("agents")
     return isinstance(agents, (list, tuple)) and len(agents) >= 2 and v.get("answers_agree") is True
+
+
+def verified_only_bank(bank, item_records):
+    """题库 -> 仅含双代理 agree 题的新题库（--verified-only 选题池）。
+
+    不降级凑题的根基：过滤后题不足由 paper_by_spec 的 fail-closed 选题
+    原样报缺（PaperBySpecError），绝不回退到单代理题。
+    """
+    pool = ItemBank()
+    for item in bank.items():
+        if is_dual_verified(item_records.get(item.id)):
+            pool.add(item)
+    return pool
+
+
+def verified_shortages(sections, bank, item_records):
+    """逐大题核对「双代理 agree 题存量」-> 缺口列表（only need > have_verified）。
+
+    sections 为卷型 sections（含 form/count/title）；have_verified 由
+    eligible_items(bank, form) 逐题对照原始记录独立重算。空列表 = 全部
+    大题的双代理题量都够（该卷型可 --verified-only 出卷）。
+    """
+    shortages = []
+    for section in sections:
+        form = section.get("form") if isinstance(section, dict) else section.form
+        need = section.get("count") if isinstance(section, dict) else section.count
+        title = section.get("title") if isinstance(section, dict) else section.title
+        from xuexing.paper_by_spec import eligible_items
+        have = sum(
+            1 for item in eligible_items(bank, form)
+            if is_dual_verified(item_records.get(item.id))
+        )
+        if need > have:
+            shortages.append({
+                "section": title,
+                "form": form,
+                "need": need,
+                "have_verified": have,
+            })
+    return shortages
 
 
 def band_of(difficulty) -> str:

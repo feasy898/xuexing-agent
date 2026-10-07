@@ -48,7 +48,25 @@
 21 套卷型 `releasable` 均为 false——这是如实状态；双代理补验（TC-7/TC-8）
 与发布索引（TC-5）按签署卡推进。
 
-## 5. 校验门
+## 5. 对外发布判定（--verified-only 与发布索引）
+
+```bash
+.venv/bin/python tools/export_static_paper.py --spec-id <id> --verified-only
+# 双代理 agree 题不足时逐大题打印 SHORTAGE，不产出可发布卷包，不降级凑题
+.venv/bin/python tools/build_static_paper_index.py
+# 生成 data/releases/static_paper_index_v0.json（21 条，RELEASABLE k 如实）
+```
+
+- `--verified-only` 只从「双代理 agree（verification.agents≥2 且
+  answers_agree=true）」的题中选题；这是「可对外分发」的唯一题源口径。
+- 发布索引 `data/releases/static_paper_index_v0.json` 逐卷型记录
+  releasable 与逐大题缺口（section/form/need/have_verified），只能由
+  `build_static_paper_index.py` 重建（确定性），禁止手改；TC-7/TC-8
+  每批双代理回填后重跑，RELEASABLE 数随之如实增长。
+- 2026-10-08 基线：RELEASABLE=0（双代理题存量尚未覆盖任何卷型的全部
+  大题形态）——如实登记于 PM-STATE，作为 D-2 复议条件 (2) 的判据。
+
+## 6. 校验门
 
 ```bash
 .venv/bin/python tools/check_static_paper.py   # 21 套卷型逐套判定，末行 STATIC-PAPER-CHECK-OK
@@ -59,7 +77,7 @@ kp_map/答题卡/manifest 五处一致；kp_map 逐题 KP 对应；零外链零�
 固定文案逐字在位且「真题」不出文案之外；单代理标签与 releasable 联动；
 两次构建逐字节一致；manifest 哈希与画像版本自洽。
 
-## 6. 视检样本
+## 7. 视检样本
 
 `docs/samples/static_paper/spec_phy_jr_final_seed42/` 为入库样本卷包
 （spec_phy_jr_final × seed 42），可用 `tools/export_static_paper.py` 逐字节再生。
