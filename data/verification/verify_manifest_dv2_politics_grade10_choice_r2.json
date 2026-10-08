@@ -1,0 +1,27 @@
+{
+  "batch": "politics_grade10_choice_r2",
+  "date": "2026-10-08",
+  "scope": {
+    "subject": "politics",
+    "grade": 10,
+    "forms": "all",
+    "item_types": [
+      "choice"
+    ]
+  },
+  "generator_model_family": "glm/step-workflow-wave1",
+  "generator_family_evidence": "tests/data/test_dual_verify_data.py（POL_AGENTS 登记）+ BACKLOG.md K12-3 台账",
+  "generator_agents": {
+    "pol-gen-w1-20261003": 2
+  },
+  "solver_model_family": "moonshot-kimi-k3",
+  "judge_model_family": "minimax-m3",
+  "solver_agent": "kimi3-blind-dv2-20261008d",
+  "counts": {
+    "agree": 2,
+    "disagree": 0,
+    "incomplete": 0
+  },
+  "disagree_rate": 0.0,
+  "applied": true
+}
