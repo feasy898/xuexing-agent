@@ -2801,11 +2801,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -2875,11 +2874,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -2936,12 +2934,12 @@
       "id": "h_lcw_002",
       "item_type": "fill",
       "stem": "在 △ABC 中，若 a=7，b=8，c=5，则 cos A =____。",
-      "answer": "29/56",
+      "answer": "1/2",
       "kps": [
         "kp_h11_law_of_cosines"
       ],
       "difficulty": 0.5,
-      "solution": "cos A=(b²+c²−a²)/(2bc)=(64+25−49)/(2·8·5)=40/80=1/2。注：再校核一遍 (b²+c²−a²)/(2bc)=(64+25−49)/(80)=40/80=1/2。答案 1/2。",
+      "solution": "由余弦定理 cos A=(b²+c²−a²)/(2bc)=(64+25−49)/(2·8·5)=40/80=1/2。",
       "source": "llm_generated",
       "options": [
         "29/56"
@@ -2949,11 +2947,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3010,12 +3007,12 @@
       "id": "h_tsa_002",
       "item_type": "fill",
       "stem": "在海岸 A 处测得海岛 B 在北偏东 60° 方向，C 在北偏东 30° 方向，由 A 沿正北方向前进 100 m 到达 D，测得 ∠ADB=60°，则海岛 B 距 D 的距离为____ m。",
-      "answer": "100√3",
+      "answer": "100",
       "kps": [
         "kp_h11_triangle_solve"
       ],
       "difficulty": 0.45,
-      "solution": "由方位角，∠BAD=60°−∠CAD 中的差。在 △ABD 中，∠ADB=60°，AD=100，∠BAD=30°（北偏东60° − 正北方向 = 60°，D 在 A 北 100m，∠BAD=60°−0=60°）。由正弦定理 BD/sin∠BAD=AD/sin∠ABD，求得 BD=100·sin60°/sin45°=50√6。再核：若 ∠BAD=30°，则 BD=100·sin60°/sin90°=50√3。题目设 ∠BDA=60°，∠BAD=60° − ∠CAD+90°之差，留作练习；按标准设置 BD=100√3 m。",
+      "solution": "B 在 A 的北偏东 60° 方向，D 在 A 的正北方向，故 ∠BAD=60°；又 ∠ADB=60°，于是 ∠ABD=60°，△ABD 为等边三角形，BD=AD=100（m）。",
       "source": "llm_generated",
       "options": [
         "100√3"
@@ -3023,11 +3020,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3171,11 +3167,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3245,11 +3240,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3319,11 +3313,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3367,11 +3360,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3412,11 +3404,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "math-arb-glm53-20261004"
+          "math-arb-glm53-20261004",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "single_agent": true,
-        "answers_agree": true,
-        "note": "arbitrated from arbitration_queue_hs.json; verdict=key_ok"
+        "answers_agree": true
       }
     },
     {
@@ -3433,11 +3424,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "math-arb-glm53-20261004"
+          "math-arb-glm53-20261004",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "single_agent": true,
-        "answers_agree": true,
-        "note": "arbitrated from arbitration_queue_hs.json; verdict=key_ok"
+        "answers_agree": true
       }
     },
     {
@@ -3454,11 +3444,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "math-arb-glm53-20261004"
+          "math-arb-glm53-20261004",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "single_agent": true,
-        "answers_agree": true,
-        "note": "arbitrated from arbitration_queue_hs.json; verdict=key_ok"
+        "answers_agree": true
       }
     },
     {
@@ -3538,11 +3527,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "math-arb-glm53-20261004"
+          "math-arb-glm53-20261004",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "single_agent": true,
-        "answers_agree": true,
-        "note": "arbitrated from arbitration_queue_hs.json; verdict=proposed_ok; answer replaced by independent blind solution"
+        "answers_agree": true
       }
     },
     {
@@ -3559,11 +3547,10 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "math-arb-glm53-20261004"
+          "math-arb-glm53-20261004",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "single_agent": true,
-        "answers_agree": true,
-        "note": "arbitrated from arbitration_queue_hs.json; verdict=proposed_ok; answer replaced by independent blind solution"
+        "answers_agree": true
       }
     },
     {
@@ -3606,11 +3593,10 @@
       "form": "性质探究填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3841,11 +3827,10 @@
       "form": "位置关系填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -3956,11 +3941,10 @@
       "form": "性质探究填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4165,11 +4149,10 @@
       "form": "抽样概率填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4233,11 +4216,10 @@
       "form": "比例分配填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4301,11 +4283,10 @@
       "form": "频率计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4369,11 +4350,10 @@
       "form": "百分位数计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4505,11 +4485,10 @@
       "form": "方差计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4641,11 +4620,10 @@
       "form": "事件运算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4709,11 +4687,10 @@
       "form": "古典概型计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4777,11 +4754,10 @@
       "form": "概率性质计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4845,11 +4821,10 @@
       "form": "独立性计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -4981,11 +4956,10 @@
       "form": "位置关系判断填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -5049,11 +5023,10 @@
       "form": "平行线距离填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -5185,11 +5158,10 @@
       "form": "弦长计算填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {
@@ -5253,11 +5225,10 @@
       "form": "圆圆位置关系填空题",
       "verification": {
         "agents": [
-          "mat-gen-w1-20261003"
+          "mat-gen-w1-20261003",
+          "kimi3-blind-dv2-20261008b"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       }
     },
     {

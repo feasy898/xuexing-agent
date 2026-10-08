@@ -80,7 +80,9 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 2026-10-06 wave3 仲裁分歧双代理复核批复测：仍为 16585（本批仅回填
 # arbitration_queue_wave3_annotated.json 复核标注，data/items/ 零增删改，
 # 全库 18527 题 unique id 无重复）。
-KNOWN_ISSUE_COUNT = 16538
+KNOWN_ISSUE_COUNT = 16509
+# 2026-10-08 dv2 批 math_grade11_fill_r2：agree 29 回填后全库复扫。
+
 # 2026-10-08 dv2 批 math_grade11_choice_r2：agree 38 回填后全库复扫。
 
 GEO_AGENTS = ("geo-gen-w1-20261003", "geo-gen-w1jr-20261003")

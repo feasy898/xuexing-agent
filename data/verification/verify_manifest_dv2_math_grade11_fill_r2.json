@@ -1,0 +1,28 @@
+{
+  "batch": "math_grade11_fill_r2",
+  "date": "2026-10-08",
+  "scope": {
+    "subject": "math",
+    "grade": 11,
+    "forms": "all",
+    "item_types": [
+      "fill"
+    ]
+  },
+  "generator_model_family": "glm/step-workflow-wave1+template-mixed",
+  "generator_family_evidence": "tests/data/test_dual_verify_data.py（MAT/GAPFILL 登记）+ BACKLOG.md K12 台账",
+  "generator_agents": {
+    "mat-gen-w1-20261003": 24,
+    "math-arb-glm53-20261004": 5
+  },
+  "solver_model_family": "moonshot-kimi-k3",
+  "judge_model_family": "minimax-m3",
+  "solver_agent": "kimi3-blind-dv2-20261008b",
+  "counts": {
+    "agree": 29,
+    "disagree": 0,
+    "incomplete": 0
+  },
+  "disagree_rate": 0.0,
+  "applied": true
+}

@@ -37,11 +37,24 @@ def load_scope(data_dir, subject, grade, forms, itypes):
     path = os.path.join(data_dir, "items", f"{subject}_grade{grade}_items.json")
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
+    # 已仲裁 resolved 的题退出批次范围（仲裁终判：标答保留的书写等价题留作
+    # TC-8 结构化候选；标答修正题已改答案、另行重验），避免重复裁决。
+    resolved = set()
+    vdir = os.path.join(data_dir, "verification")
+    if os.path.isdir(vdir):
+        for name in sorted(os.listdir(vdir)):
+            if not (name.startswith("arbitration_queue_dv2_") and name.endswith(".json")):
+                continue
+            with open(os.path.join(vdir, name), encoding="utf-8") as f:
+                for row in json.load(f).get("queue", []):
+                    if row.get("status") == "resolved":
+                        resolved.add(row.get("id"))
     scope = [
         it for it in data["items"]
         if len((it.get("verification") or {}).get("agents", [])) == 1
         and (not forms or it.get("form") in forms)
         and (not itypes or it.get("item_type") in itypes)
+        and it["id"] not in resolved
     ]
     return path, data, scope
 
