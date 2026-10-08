@@ -55,8 +55,8 @@ def main() -> int:
     ap.add_argument("--item-types", default="", help="逗号分隔 item_type 白名单（须与盲解范围一致）")
     ap.add_argument("--solver-agent", required=True)
     ap.add_argument("--ledger", required=True)
-    ap.add_argument("--generator-agent", required=True, help="批内单代理题的既有生成方签名")
-    ap.add_argument("--generator-model-family", required=True)
+    ap.add_argument("--generator-model-family", required=True,
+                    help="批内主体生成方模型族描述（逐题签名以库内原签名为准）")
     ap.add_argument("--generator-family-evidence", required=True,
                     help="仓内证据路径（相对仓库根），证明生成方模型族")
     ap.add_argument("--solver-model-family", required=True)
@@ -85,14 +85,19 @@ def main() -> int:
 
     vdir = os.path.join(args.data_dir, "verification")
     agree, disagree, incomplete = [], [], []
+    gen_counter = {}
     for it in scope:
+        # 逐题原生归因：第一代理 = 该题既有单代理签名（key 通道语义：其独立
+        # 解题产物即库内标答）；绝不跨题共用签名。
+        gen0 = it["verification"]["agents"][0]
+        gen_counter[gen0] = gen_counter.get(gen0, 0) + 1
         result = verify_item(it, {
-            "generator": it["answer"],
-            "solver": answers[it["id"]],
+            gen0: it["answer"],
+            args.solver_agent: answers[it["id"]],
         })
-        # verify_item 的通道名即 agent 键：库内 kernel 语义为两通道答案一致裁决
         row = {
             "id": it["id"], "form": it.get("form"),
+            "generator_agent": gen0,
             "bank_answer": it["answer"], "solver_answer": answers[it["id"]],
             "verdict": result["verdict"],
         }
@@ -116,7 +121,7 @@ def main() -> int:
         by_id = {it["id"]: it for it in data["items"]}
         for it, _row in agree:
             by_id[it["id"]] = backfill_item(it, {
-                "agents": [args.generator_agent, args.solver_agent],
+                "agents": [it["verification"]["agents"][0], args.solver_agent],
                 "answers_agree": True,
             })
         data["items"] = [by_id[orig["id"]] for orig in data["items"]]
@@ -147,13 +152,15 @@ def main() -> int:
     manifest = {
         "batch": args.batch,
         "date": args.date,
-        "scope": {"subject": args.subject, "grade": args.grade, "forms": sorted(forms) if forms else "all", "item_types": sorted(itypes) if itypes else "all"},
+        "scope": {"subject": args.subject, "grade": args.grade,
+                  "forms": sorted(forms) if forms else "all",
+                  "item_types": sorted(itypes) if itypes else "all"},
         "generator_model_family": args.generator_model_family,
         "generator_family_evidence": args.generator_family_evidence,
+        "generator_agents": gen_counter,
         "solver_model_family": args.solver_model_family,
         "judge_model_family": args.judge_model_family,
         "solver_agent": args.solver_agent,
-        "generator_agent": args.generator_agent,
         "counts": {"agree": len(agree), "disagree": len(disagree), "incomplete": len(incomplete)},
         "disagree_rate": round(disagree_rate, 4),
         "applied": applied,
