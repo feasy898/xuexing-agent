@@ -269,12 +269,14 @@
       "form": "dictation",
       "verification": {
         "agents": [
-          "chi-gen-w1-20261003"
+          "chi-gen-w1-20261003",
+          "minimax-m31f-blind-chiopen-20261008"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
-      }
+        "answers_agree": true
+      },
+      "acceptable_variants": [
+        "无以至千里"
+      ]
     },
     {
       "id": "chi_hs_0263",
@@ -290,12 +292,14 @@
       "form": "dictation",
       "verification": {
         "agents": [
-          "chi-gen-w1-20261003"
+          "chi-gen-w1-20261003",
+          "minimax-m31f-blind-chiopen-20261008"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
-      }
+        "answers_agree": true
+      },
+      "acceptable_variants": [
+        "旌旗蔽空"
+      ]
     },
     {
       "id": "chi_hs_0264",
@@ -311,12 +315,16 @@
       "form": "dictation",
       "verification": {
         "agents": [
-          "chi-gen-w1-20261003"
+          "chi-gen-w1-20261003",
+          "minimax-m31f-blind-chiopen-20261008"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "note": "single-agent generation, blind verification deferred"
-      }
+        "answers_agree": true
+      },
+      "acceptable_variants": [
+        "无边落木萧萧下，不尽长江滚滚来",
+        "无边落木萧萧下，不尽长江滚滚来。",
+        "无边落木萧萧下,不尽长江滚滚来"
+      ]
     },
     {
       "id": "chi_hs_0265",
@@ -364,7 +372,12 @@
         "answers_agree": true,
         "single_agent": true,
         "note": "single-agent generation, blind verification deferred"
-      }
+      },
+      "acceptable_variants": [
+        "示例：\"空穴来风\"古义指有了洞穴才有风进来，喻传言有因；今义多指传言毫无根据。又如\"明目张胆\"古为褒义（有胆识、敢作敢为），今指公开大胆地做坏事。",
+        "示例：\"空穴来风\"古义指有了洞穴才有风进来，喻传言有因；今义多指传言毫无根据。",
+        "示例：\"明目张胆\"古为褒义（有胆识、敢作敢为），今指公开大胆地做坏事。"
+      ]
     },
     {
       "id": "chi_hs_0267",
@@ -1154,14 +1167,18 @@
       "form": "fill",
       "verification": {
         "agents": [
-          "gapfill-author-20261006"
+          "gapfill-author-20261006",
+          "minimax-m31f-blind-chiopen-20261008"
         ],
-        "answers_agree": true,
-        "single_agent": true,
-        "dual_agent": false,
-        "note": "single-agent generation, blind verification deferred"
+        "answers_agree": true
       },
-      "_batch": "chinese_authored"
+      "_batch": "chinese_authored",
+      "acceptable_variants": [
+        "①同是天涯沦落人；②相逢何必曾相识",
+        "①同是天涯沦落人，②相逢何必曾相识",
+        "同是天涯沦落人，相逢何必曾相识",
+        "同是天涯沦落人；相逢何必曾相识"
+      ]
     }
   ]
 }
