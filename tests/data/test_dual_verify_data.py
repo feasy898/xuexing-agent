@@ -168,12 +168,19 @@ def _is_dv2(it):
 
 
 def _dv2_ids():
+    # 覆盖口径以库内 dv2 二代理对为准（ledger 台账为过程证据；批次收口后
+    # ledger 可能被后续轮覆盖，库内 verification 状态才是迁移的 ground truth）。
     out = set()
     for p in sorted(glob.glob(os.path.join(VERIFICATION_DIR, "ledger_dv2_*.json"))):
         if p.endswith(".raw.jsonl"):
             continue
         with open(p, encoding="utf-8") as f:
             out |= set(json.load(f)["answers"])
+    for path in glob.glob(os.path.join(ROOT, "data", "items", "*.json")):
+        with open(path, encoding="utf-8") as f:
+            for it in json.load(f)["items"]:
+                if _is_dv2(it):
+                    out.add(it["id"])
     return out
 
 
@@ -184,10 +191,17 @@ def _is_chiopen(it):
 
 
 def _chiopen_ids():
+    # 同 _dv2_ids：库内 chiopen 二代理对（agents 末位 ∈ CHIOPEN_BLIND_AGENTS）为准，
+    # struct ledger 为过程证据。
     out = set()
     for p in sorted(glob.glob(os.path.join(VERIFICATION_DIR, "chiopen_struct_*.json"))):
         with open(p, encoding="utf-8") as f:
             out |= {r["id"] for r in json.load(f).get("records", [])}
+    for path in glob.glob(os.path.join(ROOT, "data", "items", "*.json")):
+        with open(path, encoding="utf-8") as f:
+            for it in json.load(f)["items"]:
+                if _is_chiopen(it):
+                    out.add(it["id"])
     return out
 
 
