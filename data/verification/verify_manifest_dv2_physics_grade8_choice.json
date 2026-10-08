@@ -1,0 +1,27 @@
+{
+  "batch": "physics_grade8_choice",
+  "date": "2026-10-08",
+  "scope": {
+    "subject": "physics",
+    "grade": 8,
+    "forms": "all",
+    "item_types": [
+      "choice"
+    ]
+  },
+  "generator_model_family": "glm/step-workflow-wave1",
+  "generator_family_evidence": "tests/data/test_dual_verify_data.py",
+  "generator_agents": {
+    "phy-gen-w1-20261003": 230
+  },
+  "solver_model_family": "moonshot-kimi-k3",
+  "judge_model_family": "none",
+  "solver_agent": "kimi3-blind-dv2-20261008",
+  "counts": {
+    "agree": 230,
+    "disagree": 0,
+    "incomplete": 0
+  },
+  "disagree_rate": 0.0,
+  "applied": true
+}

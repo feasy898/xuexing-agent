@@ -80,7 +80,15 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 2026-10-06 wave3 仲裁分歧双代理复核批复测：仍为 16585（本批仅回填
 # arbitration_queue_wave3_annotated.json 复核标注，data/items/ 零增删改，
 # 全库 18527 题 unique id 无重复）。
-KNOWN_ISSUE_COUNT = 15709
+KNOWN_ISSUE_COUNT = 15277
+# 2026-10-08 dv2 批 science_grade6_choice_r2：agree 1 回填后全库复扫。
+
+# 2026-10-08 dv2 批 physics_grade8_choice_r2：agree 1 回填后全库复扫。
+
+# 2026-10-08 dv2 批 science_grade6_choice：agree 200 回填后全库复扫。
+
+# 2026-10-08 dv2 批 physics_grade8_choice：agree 230 回填后全库复扫。
+
 # 2026-10-08 dv2 批 chemistry_grade9_choice_r2：agree 6 回填后全库复扫。
 
 # 2026-10-08 dv2 批 chemistry_grade9_choice：agree 256 回填后全库复扫。
