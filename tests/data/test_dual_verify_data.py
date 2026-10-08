@@ -130,7 +130,12 @@ def _is_wave3(it):
 # 题量覆盖由 ledger/struct 台账承载（_dv2_ids() 等运行时聚合）。
 # 新批次只需：把盲解方签名加进 DV2_SOLVER_AGENTS / CHIOPEN_BLIND_AGENTS。
 # --------------------------------------------------------------------------
-DV2_SOLVER_AGENTS = {"kimi3-blind-dv2r2-20261008"}
+DV2_SOLVER_AGENTS = {
+    "kimi3-blind-dv2r2-20261008",   # 首批 math_grade11 choice（r2）
+    "kimi3-blind-dv2-20261008b",    # math_grade11 fill
+    "kimi3-blind-dv2-20261008c",    # history_grade7 choice
+    "kimi3-blind-dv2-20261008d",    # politics_grade10 choice
+}
 CHIOPEN_BLIND_AGENTS = {"minimax-m3-blind-chiopen-20261008"}
 
 # 可作为 dv2 第一代理（原单代理签名）的登记集——与
@@ -911,8 +916,9 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
         "英语仲裁批规模异常（< 250）：扩库须先登记 ENG_ARB_AGENTS 并在本闭式同步")
     assert all(i.startswith(ENG_PREFIX) for i in eng_arb_ids), (
         "英语仲裁批题 id 前缀须为 eng_")
-    assert len(mat_arb_ids) >= 13, (
-        "数学仲裁批规模异常（< 13）：扩库须先登记 MAT_ARB_AGENTS 并在本闭式同步")
+    assert len(mat_arb_ids) >= 8, (
+        "数学仲裁批规模异常（< 8）：扩库须先登记 MAT_ARB_AGENTS 并在本闭式同步"
+        "（2026-10-08 dv2 math_grade11 choice/fill 批迁移 5 题到盲解二代理对，13→8）")
     assert all(i.startswith(MAT_PREFIX) for i in mat_arb_ids), (
         "数学仲裁批题 id 前缀须为 h_")
     assert not ((eng_arb_ids | mat_arb_ids)
