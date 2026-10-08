@@ -300,5 +300,5 @@
 - [x] **收口 v0.4.0**：pytest 767 passed / 0 failed、run_contract exit 0、凭据零入库（`git ls-files .env` = 0）、全量推 GitHub `feasy898/xuexing-agent` tag `v0.4.0`
 - [x] （沿承）母题 52→522（10 学科全覆盖）；数学全库密度 ≥3 题/KP 达成
 - [x] **2026-10-08 签署轮（owner 授权 opus/alpha 代签，测试卡 docs/SIGNOFF-2026-10-08.md）**：TC-DOC（2720c1f）/TC-1（e87fbd8）/TC-2（6baba3e）/TC-3（820709f）/TC-4（ea8cd30）/TC-5（7bec7fd）/TC-6（0aa14e4）七卡收口
-- [ ] **TC-7 单代理题双代理复验（分批长跑）**：第一批 math_grade11 choice 38/38 双验回填（1fcca1a，含 2 标答错修正+第三族仲裁）；管线四工具就绪；**剩余 14,715 道**（UNEXPLAINED_NONCHI 口径，逐批推进直至 0）
-- [ ] **TC-8 语文开放题 1,846 道结构化+校准（分批）**：第一批 grade8 dictation/fill 17 题——15 结构化、9 第二代理回填、8 入队；作文 rubric+calibration（238 题）未启动；**剩余 UNEXPLAINED_CHI 1,815**
+- [ ] **TC-7 单代理题双代理复验（分批长跑）**：choice 类 14 批已收口（累计回填 3,035 题，KNOWN 16,585→13,550，标答错修正 13 处）；solve/fill 等 open 型与未跑批次续跑；**收口判据 UNEXPLAINED_NONCHI=0 未达**
+- [ ] **TC-8 语文开放答案题结构化+校准（分批）**：12 年级结构化+盲答全量跑完（结构化 302、agree 148 回填、156+ 入队）；作文 rubric+calibration（238 题）未启动；**UNEXPLAINED_CHI 未清零**

@@ -80,7 +80,33 @@ KNOWN_ISSUE_AGENTS = (PHY_AGENTS, CHE_AGENTS, BIO_AGENTS, HIS_AGENTS)
 # 2026-10-06 wave3 仲裁分歧双代理复核批复测：仍为 16585（本批仅回填
 # arbitration_queue_wave3_annotated.json 复核标注，data/items/ 零增删改，
 # 全库 18527 题 unique id 无重复）。
-KNOWN_ISSUE_COUNT = 15138
+KNOWN_ISSUE_COUNT = 13528
+# 2026-10-08 dv2 批 english_grade7_choice_r2：agree 8 回填后全库复扫。
+
+# 2026-10-08 dv2 批 english_grade12_choice_r2：agree 12 回填后全库复扫。
+
+# 2026-10-08 dv2 批 chemistry_grade12_choice_r2：agree 1 回填后全库复扫。
+
+# 2026-10-08 dv2 批 geography_grade7_choice_r2：agree 1 回填后全库复扫。
+
+# 2026-10-08 dv2 批 history_grade9_choice：agree 181 回填后全库复扫。
+
+# 2026-10-08 dv2 批 english_grade7_choice：agree 161 回填后全库复扫。
+
+# 2026-10-08 dv2 批 chinese_grade8_choice：agree 89 回填后全库复扫。
+
+# 2026-10-08 dv2 批 geography_grade7_choice：agree 183 回填后全库复扫。
+
+# 2026-10-08 dv2 批 politics_grade11_choice：agree 198 回填后全库复扫。
+
+# 2026-10-08 dv2 批 science_grade5_choice：agree 192 回填后全库复扫。
+
+# 2026-10-08 dv2 批 history_grade10_choice：agree 199 回填后全库复扫。
+
+# 2026-10-08 dv2 批 english_grade12_choice：agree 179 回填后全库复扫。
+
+# 2026-10-08 dv2 批 chemistry_grade12_choice：agree 206 回填后全库复扫。
+
 # 2026-10-08 chiopen g10-g12 批（64 题 agree 回填后全库复扫。
 
 # 2026-10-08 chiopen g6/g7/g9 批（26 题 agree 回填后全库复扫。

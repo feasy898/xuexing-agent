@@ -1,0 +1,33 @@
+{
+  "batch": "politics_grade11_choice",
+  "queue": [
+    {
+      "id": "pol_hs_0422",
+      "form": "mcq_single",
+      "generator_agent": "pol-gen-w1-20261003",
+      "bank_answer": "A",
+      "solver_answer": "C",
+      "verdict": "disagree",
+      "status": "open",
+      "judge_agent": "minimax-m27hs-arb-dv2-20261008",
+      "judge_model": "MiniMax-M2.7-highspeed",
+      "judge_verdict": "unparsed",
+      "judge_reason": "<think>"
+    },
+    {
+      "id": "pol_hs_0492",
+      "form": "mcq_multi",
+      "generator_agent": "pol-gen-w1-20261003",
+      "bank_answer": "A,B,C,D",
+      "solver_answer": "A,B,C",
+      "verdict": "disagree",
+      "status": "resolved",
+      "judge_agent": "minimax-m27hs-arb-dv2-20261008",
+      "judge_model": "MiniMax-M2.7-highspeed",
+      "judge_verdict": "format_diff",
+      "judge_reason": "<think>",
+      "final_verdict": "format_diff",
+      "disposition": "保留库内标答"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "batch": "history_grade10_choice",
+  "date": "2026-10-08",
+  "scope": {
+    "subject": "history",
+    "grade": 10,
+    "forms": "all",
+    "item_types": [
+      "choice"
+    ]
+  },
+  "generator_model_family": "glm/step-workflow-wave1",
+  "generator_family_evidence": "tests/data/test_dual_verify_data.py",
+  "generator_agents": {
+    "his-gen-w1-20261003": 202
+  },
+  "solver_model_family": "minimax-M3.1-Flash",
+  "judge_model_family": "none",
+  "solver_agent": "minimax-m31f-blind-dv2-20261008",
+  "counts": {
+    "agree": 199,
+    "disagree": 3,
+    "incomplete": 0
+  },
+  "disagree_rate": 0.0149,
+  "applied": true
+}

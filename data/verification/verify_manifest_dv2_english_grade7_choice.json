@@ -1,0 +1,28 @@
+{
+  "batch": "english_grade7_choice",
+  "date": "2026-10-08",
+  "scope": {
+    "subject": "english",
+    "grade": 7,
+    "forms": "all",
+    "item_types": [
+      "choice"
+    ]
+  },
+  "generator_model_family": "glm/step-workflow-wave1",
+  "generator_family_evidence": "tests/data/test_dual_verify_data.py",
+  "generator_agents": {
+    "eng-gen-w1-20261003": 178,
+    "eng-arb-step5-20261004": 2
+  },
+  "solver_model_family": "minimax-M3.1-Flash",
+  "judge_model_family": "none",
+  "solver_agent": "minimax-m31f-blind-dv2-20261008",
+  "counts": {
+    "agree": 161,
+    "disagree": 19,
+    "incomplete": 0
+  },
+  "disagree_rate": 0.1056,
+  "applied": true
+}

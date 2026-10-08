@@ -151,6 +151,7 @@ _DV2_GEN0_SIGS = {
     "his-gen-w1-20261003", "his-gen-w1-20261004",
     "pol-gen-w1-20261003", "pol-density-gen-20261004",
     "sci-gen-w1-20261003", "chi-gen-w1-20261003",
+    "geo-gen-w1-20261003", "geo-gen-w1jr-20261003",
     "mat-gen-w1-20261003", "eng-gen-w1-20261003",
     "math-template-gen-20261006", "gapfill-gen-20261006",
     "gapfill-author-20261006", "eng-arb-step5-20261004",
