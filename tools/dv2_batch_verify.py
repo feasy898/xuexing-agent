@@ -33,13 +33,14 @@ from xuexing.itembank_v2 import validate_bank_v2  # noqa: E402
 KNOWN_FILE = os.path.join(ROOT, "tests", "data", "test_itembank_v2_data.py")
 
 
-def load_scope(data_dir, subject, grade, forms, itypes):
+def load_scope(data_dir, subject, grade, forms, itypes, include_ids=None):
     path = os.path.join(data_dir, "items", f"{subject}_grade{grade}_items.json")
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
-    # 已仲裁 resolved 的题退出批次范围（仲裁终判：标答保留的书写等价题留作
-    # TC-8 结构化候选；标答修正题已改答案、另行重验），避免重复裁决。
-    resolved = set()
+    # 已进 dv2 仲裁队列的题退出常规批次范围（open=待仲裁复验；resolved=终判
+    # 保留/缺陷登记）；标答修正后的显式重验名单（--include-ids）豁免排除。
+    include_ids = {i.strip() for i in (include_ids or []) if i.strip()}
+    arbitrated = set()
     vdir = os.path.join(data_dir, "verification")
     if os.path.isdir(vdir):
         for name in sorted(os.listdir(vdir)):
@@ -47,14 +48,13 @@ def load_scope(data_dir, subject, grade, forms, itypes):
                 continue
             with open(os.path.join(vdir, name), encoding="utf-8") as f:
                 for row in json.load(f).get("queue", []):
-                    if row.get("status") == "resolved":
-                        resolved.add(row.get("id"))
+                    arbitrated.add(row.get("id"))
     scope = [
         it for it in data["items"]
         if len((it.get("verification") or {}).get("agents", [])) == 1
         and (not forms or it.get("form") in forms)
         and (not itypes or it.get("item_type") in itypes)
-        and it["id"] not in resolved
+        and (it["id"] in include_ids or it["id"] not in arbitrated)
     ]
     return path, data, scope
 
@@ -76,13 +76,16 @@ def main() -> int:
     ap.add_argument("--judge-model-family", default="none")
     ap.add_argument("--apply", action="store_true", help="回填 agree（ disagree_rate>0.15 拒绝）")
     ap.add_argument("--sync-known-issue-count", action="store_true")
+    ap.add_argument("--include-ids", default="",
+                    help="逗号分隔的显式重验 id 名单（标答修正后豁免仲裁队列排除）")
     ap.add_argument("--data-dir", default=os.path.join(ROOT, "data"))
     ap.add_argument("--date", default=date.today().isoformat())
     args = ap.parse_args()
     forms = {x.strip() for x in args.forms.split(",") if x.strip()}
     itypes = {x.strip() for x in args.item_types.split(",") if x.strip()}
 
-    path, data, scope = load_scope(args.data_dir, args.subject, args.grade, forms, itypes)
+    path, data, scope = load_scope(args.data_dir, args.subject, args.grade, forms, itypes,
+                                   include_ids=args.include_ids.split(",") if args.include_ids else None)
     if not scope:
         print("NOTHING-TO-VERIFY（该范围无单代理题）")
         return 0

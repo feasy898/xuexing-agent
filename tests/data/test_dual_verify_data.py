@@ -131,6 +131,7 @@ def _is_wave3(it):
 # 新批次只需：把盲解方签名加进 DV2_SOLVER_AGENTS / CHIOPEN_BLIND_AGENTS。
 # --------------------------------------------------------------------------
 DV2_SOLVER_AGENTS = {
+    "kimi3-blind-dv2-20261008",     # 稳定签名（r1 math_grade11 与后续批次共用）
     "kimi3-blind-dv2r2-20261008",   # 首批 math_grade11 choice（r2）
     "kimi3-blind-dv2-20261008b",    # math_grade11 fill
     "kimi3-blind-dv2-20261008c",    # history_grade7 choice
