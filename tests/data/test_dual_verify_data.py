@@ -139,7 +139,8 @@ DV2_SOLVER_AGENTS = {
     "minimax-m31f-blind-dv2-20261008",  # 2026-10-08 模型合规调整后：minimax M3.1 Flash 盲解（与生成方 glm/step 异族）
 }
 CHIOPEN_BLIND_AGENTS = {
-    "minimax-m3-blind-chiopen-20261008",  # TC-8 盲解工作流（g8 首批与 g1-g7 批次）
+    "minimax-m3-blind-chiopen-20261008",     # TC-8 盲解（g8 首API批与 g1-g5 工作流批，minimax-m3）
+    "minimax-m31f-blind-chiopen-20261008",   # TC-8 盲解（g6/g7/g9 工作流批，minimax-m3.1-flash；2026-10-08 模型合规后）
 }
 
 # 可作为 dv2 第一代理（原单代理签名）的登记集——与
@@ -946,7 +947,10 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
     assert len(chi_ids) >= 1600, (
         "语文批规模异常（< 1600）：扩库须先登记 CHI_AGENTS 并在本闭式同步；"
         "独立盲解回填后改登记为 [gen, indep]")
-    assert all(i.startswith(CHI_PREFIX) for i in chi_ids), "语文批题 id 前缀须为 chi_"
+    # 语文批合法前缀：chi_（主批/密度批/扩科批）与 chinese_gap_a0（2026-10-06
+    # 人工命题批，个别语篇题归属语文批量）——泛化 chiown 后一并圈入。
+    assert all(i.startswith(CHI_PREFIX) or i.startswith(GAPFILL_AUTHOR_PREFIXES)
+               for i in chi_ids), "语文批题 id 前缀须为 chi_（或 chinese_gap_a0）"
     assert not (chi_ids & (night_ids | p34_ids | p12_ids | wave3_ids | hs_ids | eng_ids | phy_ids | che_ids | bio_ids | his_ids | geo_ids | pol_ids | sci_ids)), (
         "语文批与既有批次重叠")
     # 2026-10-06 卷型缺口补齐批 ×3 闭式（单代理自验 known issue，见文件头）：
@@ -964,8 +968,9 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
         "LLM 初稿修订批规模异常（< 18）：扩库须先登记 GAPFILL_GEN_AGENTS 并在本闭式同步")
     assert all(i.startswith(GAPFILL_GEN_PREFIXES) for i in gapfill_gen_ids), (
         "LLM 初稿修订批题 id 前缀须为 *_gap_llm_*")
-    assert len(gapfill_author_ids) >= 29, (
-        "人工命题批规模异常（< 29）：扩库须先登记 GAPFILL_AUTHOR_AGENTS 并在本闭式同步")
+    assert len(gapfill_author_ids) >= 28, (
+        "人工命题批规模异常（< 28）：扩库须先登记 GAPFILL_AUTHOR_AGENTS 并在本闭式同步"
+        "（2026-10-08 chinese_gap_a0 有 1 题经 chiopen g1-g9 盲解回填迁出，29→28）")
     assert all(i.startswith(GAPFILL_AUTHOR_PREFIXES) for i in gapfill_author_ids), (
         "人工命题批题 id 前缀须为 *_gap_a0*")
     gapfill_all = gapfill_tmpl_ids | gapfill_gen_ids | gapfill_author_ids
