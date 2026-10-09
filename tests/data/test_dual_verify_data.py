@@ -137,6 +137,7 @@ DV2_SOLVER_AGENTS = {
     "kimi3-blind-dv2-20261008c",    # history_grade7 choice
     "kimi3-blind-dv2-20261008d",    # politics_grade10 choice
     "minimax-m31f-blind-dv2-20261008",  # 2026-10-08 模型合规调整后：minimax M3.1 Flash 盲解（与生成方 glm/step 异族）
+    "minimax-m27hs-blind-dv2-20261008", # 2026-10-08 fill 补解批：minimax M2.7-highspeed（flash 类，异族）
 }
 CHIOPEN_BLIND_AGENTS = {
     "minimax-m3-blind-chiopen-20261008",     # TC-8 盲解（g8 首API批与 g1-g5 工作流批，minimax-m3）

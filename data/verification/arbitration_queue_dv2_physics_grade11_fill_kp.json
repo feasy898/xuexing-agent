@@ -1,0 +1,38 @@
+{
+  "batch": "physics_grade11_fill_kp",
+  "queue": [
+    {
+      "id": "phy_hs1_0198",
+      "form": "fill_blank",
+      "generator_agent": "phy-gen-w1-20261003",
+      "bank_answer": "r/(E·R_A)；E 和 R_A",
+      "solver_answer": "r/E，电动势E（斜率=1/E）",
+      "verdict": "disagree",
+      "status": "resolved",
+      "final_verdict": "equivalent",
+      "disposition": "主会话复核判等价：截距表达式两种写法同义，补变体回填"
+    },
+    {
+      "id": "phy_hs1_0246",
+      "form": "fill_blank",
+      "generator_agent": "phy-gen-w1-20261003",
+      "bank_answer": "一部分",
+      "solver_answer": "一",
+      "verdict": "disagree",
+      "status": "resolved",
+      "final_verdict": "arbiter_wrong",
+      "disposition": "仲裁误判：题干空后已有「部分」二字，填「一」=「一部分」与标答同义，但盲解方写法使句子重复；库内「一部分」为标准完整答案，保留"
+    },
+    {
+      "id": "phy_hs1_0268",
+      "form": "fill_blank",
+      "generator_agent": "phy-gen-w1-20261003",
+      "bank_answer": "下坡/上坡",
+      "solver_answer": "下坡",
+      "verdict": "disagree",
+      "status": "resolved",
+      "final_verdict": "arbiter_wrong",
+      "disposition": "仲裁误判：「下坡/上坡」为完整口径（两种坡向），盲解只答「下坡」不完整；保留库内键"
+    }
+  ]
+}
