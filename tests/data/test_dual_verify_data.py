@@ -969,9 +969,9 @@ def test_runs_cover_own_banks_without_overlap(all_items, ledger, p34_ledger, p12
         "LLM 初稿修订批规模异常（< 18）：扩库须先登记 GAPFILL_GEN_AGENTS 并在本闭式同步")
     assert all(i.startswith(GAPFILL_GEN_PREFIXES) for i in gapfill_gen_ids), (
         "LLM 初稿修订批题 id 前缀须为 *_gap_llm_*")
-    assert len(gapfill_author_ids) >= 25, (
-        "人工命题批规模异常（< 25）：扩库须先登记 GAPFILL_AUTHOR_AGENTS 并在本闭式同步"
-        "（2026-10-08 chinese_gap_a0 有 4 题经 chiopen g1-g12 盲解回填迁出，29→25）")
+    assert len(gapfill_author_ids) >= 22, (
+        "人工命题批规模异常（< 22）：扩库须先登记 GAPFILL_AUTHOR_AGENTS 并在本闭式同步"
+        "（2026-10-08 chinese_gap_a0 有 7 题经 chiopen g1-g12 盲解回填迁出，29→22）")
     assert all(i.startswith(GAPFILL_AUTHOR_PREFIXES) for i in gapfill_author_ids), (
         "人工命题批题 id 前缀须为 *_gap_a0*")
     gapfill_all = gapfill_tmpl_ids | gapfill_gen_ids | gapfill_author_ids
