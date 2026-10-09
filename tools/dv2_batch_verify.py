@@ -37,18 +37,21 @@ def load_scope(data_dir, subject, grade, forms, itypes, include_ids=None):
     path = os.path.join(data_dir, "items", f"{subject}_grade{grade}_items.json")
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
-    # 已进 dv2 仲裁队列的题退出常规批次范围（open=待仲裁复验；resolved=终判
-    # 保留/缺陷登记）；标答修正后的显式重验名单（--include-ids）豁免排除。
+    # 已进 dv2 仲裁队列的题退出常规批次范围——但仅限仲裁给出否定终判的行
+    #（wrong_solve/bank_wrong/ambiguous/unparsed）；等价/书写差异（kp-agree 渠道）
+    # 与 wrong_key（修正重验渠道）不在此列。
     include_ids = {i.strip() for i in (include_ids or []) if i.strip()}
     arbitrated = set()
     vdir = os.path.join(data_dir, "verification")
+    NEGATIVE_VERDICTS = {"wrong_solve", "bank_wrong", "ambiguous", "unparsed", "defect"}
     if os.path.isdir(vdir):
         for name in sorted(os.listdir(vdir)):
             if not (name.startswith("arbitration_queue_dv2_") and name.endswith(".json")):
                 continue
             with open(os.path.join(vdir, name), encoding="utf-8") as f:
                 for row in json.load(f).get("queue", []):
-                    arbitrated.add(row.get("id"))
+                    if row.get("judge_verdict") in NEGATIVE_VERDICTS:
+                        arbitrated.add(row.get("id"))
     scope = [
         it for it in data["items"]
         if len((it.get("verification") or {}).get("agents", [])) == 1
@@ -78,6 +81,9 @@ def main() -> int:
     ap.add_argument("--sync-known-issue-count", action="store_true")
     ap.add_argument("--include-ids", default="",
                     help="逗号分隔的显式重验 id 名单（标答修正后豁免仲裁队列排除）")
+    ap.add_argument("--kp-agree-queue", default="",
+                    help="dv2 仲裁队列路径：其中 judge_verdict∈{equivalent,format_diff} 的行按 "
+                         "keypoint-judge 口径视为 agree 回填（TC-7 (3) 非选择题流程）")
     ap.add_argument("--data-dir", default=os.path.join(ROOT, "data"))
     ap.add_argument("--date", default=date.today().isoformat())
     args = ap.parse_args()
@@ -86,6 +92,12 @@ def main() -> int:
 
     path, data, scope = load_scope(args.data_dir, args.subject, args.grade, forms, itypes,
                                    include_ids=args.include_ids.split(",") if args.include_ids else None)
+    kp_agree_ids = set()
+    if args.kp_agree_queue:
+        with open(args.kp_agree_queue, encoding="utf-8") as f:
+            for row in json.load(f).get("queue", []):
+                if row.get("judge_verdict") in ("equivalent", "format_diff"):
+                    kp_agree_ids.add(row["id"])
     if not scope:
         print("NOTHING-TO-VERIFY（该范围无单代理题）")
         return 0
@@ -117,7 +129,8 @@ def main() -> int:
             "bank_answer": it["answer"], "solver_answer": answers[it["id"]],
             "verdict": result["verdict"],
         }
-        if result["verdict"] == "agree":
+        if result["verdict"] == "agree" or row["id"] in kp_agree_ids:
+            row["method"] = "answers-match" if result["verdict"] == "agree" else "keypoint-judge"
             agree.append((it, row))
         elif result["verdict"] == "disagree":
             disagree.append((it, row))
@@ -178,6 +191,10 @@ def main() -> int:
         "judge_model_family": args.judge_model_family,
         "solver_agent": args.solver_agent,
         "counts": {"agree": len(agree), "disagree": len(disagree), "incomplete": len(incomplete)},
+        "agree_methods": {
+            "answers-match": sum(1 for _it, r in agree if r.get("method", "answers-match") == "answers-match"),
+            "keypoint-judge": sum(1 for _it, r in agree if r.get("method") == "keypoint-judge"),
+        },
         "disagree_rate": round(disagree_rate, 4),
         "applied": applied,
     }
